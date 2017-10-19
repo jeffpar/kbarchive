@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127185: Tandberg 3820 Driver Does Not Support 6150 (150 MB) Tapes"
-permalink: kb/127/Q127185/
+permalink: /kb/127/Q127185/
 ---
 
 ## Q127185: Tandberg 3820 Driver Does Not Support 6150 (150 MB) Tapes

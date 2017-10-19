@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99087: Can't Add Function to List in RQBE Expression Builder"
-permalink: kb/099/Q99087/
+permalink: /kb/099/Q99087/
 ---
 
 ## Q99087: Can't Add Function to List in RQBE Expression Builder

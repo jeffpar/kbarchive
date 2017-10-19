@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173650: PRB: Version Number Not Incrementing Using Command Line /Make"
-permalink: kb/173/Q173650/
+permalink: /kb/173/Q173650/
 ---
 
 ## Q173650: PRB: Version Number Not Incrementing Using Command Line /Make

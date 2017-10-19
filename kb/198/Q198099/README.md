@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198099: XGEN: ODK: &quot;The disk labeled 'default' is now required&quot;"
-permalink: kb/198/Q198099/
+permalink: /kb/198/Q198099/
 ---
 
 ## Q198099: XGEN: ODK: &quot;The disk labeled 'default' is now required&quot;

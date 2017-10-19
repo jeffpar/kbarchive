@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167726: XFOR: Err Msg: The Message Could Not Be Delivered"
-permalink: kb/167/Q167726/
+permalink: /kb/167/Q167726/
 ---
 
 ## Q167726: XFOR: Err Msg: The Message Could Not Be Delivered

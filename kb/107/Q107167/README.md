@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107167: Using Tabs in Windows Help or Viewer Titles"
-permalink: kb/107/Q107167/
+permalink: /kb/107/Q107167/
 ---
 
 ## Q107167: Using Tabs in Windows Help or Viewer Titles

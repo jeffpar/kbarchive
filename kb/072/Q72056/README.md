@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72056: User's Guide Incorrectly Describes How Paintbrush Uses Fonts"
-permalink: kb/072/Q72056/
+permalink: /kb/072/Q72056/
 ---
 
 ## Q72056: User's Guide Incorrectly Describes How Paintbrush Uses Fonts

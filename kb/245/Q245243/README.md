@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245243: HOW TO: Configure ODBC Logging in IIS"
-permalink: kb/245/Q245243/
+permalink: /kb/245/Q245243/
 ---
 
 ## Q245243: HOW TO: Configure ODBC Logging in IIS

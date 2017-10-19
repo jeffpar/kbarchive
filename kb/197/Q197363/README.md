@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197363: XFOR: Messages Containing .PCX Attachments May Crash CCMC"
-permalink: kb/197/Q197363/
+permalink: /kb/197/Q197363/
 ---
 
 ## Q197363: XFOR: Messages Containing .PCX Attachments May Crash CCMC

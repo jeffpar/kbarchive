@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186501: Enabling Auto Admin Logon on the Terminal Server Console"
-permalink: kb/186/Q186501/
+permalink: /kb/186/Q186501/
 ---
 
 ## Q186501: Enabling Auto Admin Logon on the Terminal Server Console

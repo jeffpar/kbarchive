@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142568: Error 128 Upsizing Default Value to SQL Server"
-permalink: kb/142/Q142568/
+permalink: /kb/142/Q142568/
 ---
 
 ## Q142568: Error 128 Upsizing Default Value to SQL Server

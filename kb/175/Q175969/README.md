@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175969: XCLN: NT Client Generates Application Error, Exception"
-permalink: kb/175/Q175969/
+permalink: /kb/175/Q175969/
 ---
 
 ## Q175969: XCLN: NT Client Generates Application Error, Exception

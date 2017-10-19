@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196485: Computer Loses Network Connectivity"
-permalink: kb/196/Q196485/
+permalink: /kb/196/Q196485/
 ---
 
 ## Q196485: Computer Loses Network Connectivity

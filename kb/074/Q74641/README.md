@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74641: Required Mouse Drivers for MS-DOS 5.0 or 6.0 Shell"
-permalink: kb/074/Q74641/
+permalink: /kb/074/Q74641/
 ---
 
 ## Q74641: Required Mouse Drivers for MS-DOS 5.0 or 6.0 Shell

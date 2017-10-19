@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133112: NetWkstaSetUid2 API Returns Access Denied"
-permalink: kb/133/Q133112/
+permalink: /kb/133/Q133112/
 ---
 
 ## Q133112: NetWkstaSetUid2 API Returns Access Denied

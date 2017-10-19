@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203638: HOWTO: Return Information About SQL Server Linked Servers"
-permalink: kb/203/Q203638/
+permalink: /kb/203/Q203638/
 ---
 
 ## Q203638: HOWTO: Return Information About SQL Server Linked Servers

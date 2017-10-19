@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153800: Install Not Found Installing IIS on MSDN Level III CD"
-permalink: kb/153/Q153800/
+permalink: /kb/153/Q153800/
 ---
 
 ## Q153800: Install Not Found Installing IIS on MSDN Level III CD

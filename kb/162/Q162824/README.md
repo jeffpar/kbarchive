@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162824: Errors in Vtdi.386 with Early Cyrix Processors"
-permalink: kb/162/Q162824/
+permalink: /kb/162/Q162824/
 ---
 
 ## Q162824: Errors in Vtdi.386 with Early Cyrix Processors

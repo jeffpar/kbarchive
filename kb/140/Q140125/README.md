@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140125: Microsoft Plus! Batch-Mode Setup Is Not Supported"
-permalink: kb/140/Q140125/
+permalink: /kb/140/Q140125/
 ---
 
 ## Q140125: Microsoft Plus! Batch-Mode Setup Is Not Supported

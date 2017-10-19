@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271280: Microsoft Reader: Cannot Download E-Books with Internet Explorer"
-permalink: kb/271/Q271280/
+permalink: /kb/271/Q271280/
 ---
 
 ## Q271280: Microsoft Reader: Cannot Download E-Books with Internet Explorer

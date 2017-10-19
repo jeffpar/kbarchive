@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177628: HOWTO: Use OLE_TRISTATE Property Data Type"
-permalink: kb/177/Q177628/
+permalink: /kb/177/Q177628/
 ---
 
 ## Q177628: HOWTO: Use OLE_TRISTATE Property Data Type

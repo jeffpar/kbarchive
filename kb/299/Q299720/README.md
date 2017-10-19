@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299720: MapPoint 2002: Contents of the Readme.wri File"
-permalink: kb/299/Q299720/
+permalink: /kb/299/Q299720/
 ---
 
 ## Q299720: MapPoint 2002: Contents of the Readme.wri File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236596: SMS: Client Components Fail to Install with SMS 2.0 SP1"
-permalink: kb/236/Q236596/
+permalink: /kb/236/Q236596/
 ---
 
 ## Q236596: SMS: Client Components Fail to Install with SMS 2.0 SP1

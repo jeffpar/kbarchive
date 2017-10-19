@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225063: SMS: INVMAC Reports Incorrect Processor Name"
-permalink: kb/225/Q225063/
+permalink: /kb/225/Q225063/
 ---
 
 ## Q225063: SMS: INVMAC Reports Incorrect Processor Name

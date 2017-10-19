@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93202: C. Itoh Support Under Windows"
-permalink: kb/093/Q93202/
+permalink: /kb/093/Q93202/
 ---
 
 ## Q93202: C. Itoh Support Under Windows

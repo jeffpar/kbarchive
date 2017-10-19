@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141321: Dangerous Creatures: Pop-ups Stop and Reset Movies"
-permalink: kb/141/Q141321/
+permalink: /kb/141/Q141321/
 ---
 
 ## Q141321: Dangerous Creatures: Pop-ups Stop and Reset Movies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164126: XFOR: How to Enable Diagnostic Logging for NNTP"
-permalink: kb/164/Q164126/
+permalink: /kb/164/Q164126/
 ---
 
 ## Q164126: XFOR: How to Enable Diagnostic Logging for NNTP

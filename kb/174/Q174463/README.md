@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174463: Reduce Potential Problems Performing WinNT 3.51 to 4.0 Upgrade"
-permalink: kb/174/Q174463/
+permalink: /kb/174/Q174463/
 ---
 
 ## Q174463: Reduce Potential Problems Performing WinNT 3.51 to 4.0 Upgrade

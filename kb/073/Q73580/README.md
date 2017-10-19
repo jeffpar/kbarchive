@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73580: Configuring AutoCAD 386 or AutoCAD Release 11 with MS-DOS"
-permalink: kb/073/Q73580/
+permalink: /kb/073/Q73580/
 ---
 
 ## Q73580: Configuring AutoCAD 386 or AutoCAD Release 11 with MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75968: DOCERR: Errors in MASM 6.0 &quot;Installing and Using...&quot; Manual"
-permalink: kb/075/Q75968/
+permalink: /kb/075/Q75968/
 ---
 
 ## Q75968: DOCERR: Errors in MASM 6.0 &quot;Installing and Using...&quot; Manual

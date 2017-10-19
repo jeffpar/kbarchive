@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177684: Application Using SetOwner May Hang Windows NT User Interface"
-permalink: kb/177/Q177684/
+permalink: /kb/177/Q177684/
 ---
 
 ## Q177684: Application Using SetOwner May Hang Windows NT User Interface

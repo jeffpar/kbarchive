@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164890: SMS Software Inventory Package Is Limited to 40 Characters"
-permalink: kb/164/Q164890/
+permalink: /kb/164/Q164890/
 ---
 
 ## Q164890: SMS Software Inventory Package Is Limited to 40 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160047: 3DMM: Cannot Load Studio.chk File"
-permalink: kb/160/Q160047/
+permalink: /kb/160/Q160047/
 ---
 
 ## Q160047: 3DMM: Cannot Load Studio.chk File

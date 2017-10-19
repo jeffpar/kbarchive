@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143026: Dinosaurs: Windows Command Buttons Are Missing"
-permalink: kb/143/Q143026/
+permalink: /kb/143/Q143026/
 ---
 
 ## Q143026: Dinosaurs: Windows Command Buttons Are Missing

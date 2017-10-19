@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175573: XWEB: Outlook Web Access Gives Bus Error"
-permalink: kb/175/Q175573/
+permalink: /kb/175/Q175573/
 ---
 
 ## Q175573: XWEB: Outlook Web Access Gives Bus Error

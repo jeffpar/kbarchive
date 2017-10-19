@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189149: Disk Counters on Clustered Disk Record Zero Values"
-permalink: kb/189/Q189149/
+permalink: /kb/189/Q189149/
 ---
 
 ## Q189149: Disk Counters on Clustered Disk Record Zero Values

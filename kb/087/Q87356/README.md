@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87356: EMS Unavailable at MS-DOS Prompt in Standard Mode"
-permalink: kb/087/Q87356/
+permalink: /kb/087/Q87356/
 ---
 
 ## Q87356: EMS Unavailable at MS-DOS Prompt in Standard Mode

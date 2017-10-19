@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11270: INFO: CreatePen() and CreatePenIndirect() Use Predefined Styles"
-permalink: kb/011/Q11270/
+permalink: /kb/011/Q11270/
 ---
 
 ## Q11270: INFO: CreatePen() and CreatePenIndirect() Use Predefined Styles

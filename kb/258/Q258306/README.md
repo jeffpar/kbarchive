@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258306: Microsoft INTERIX Installation Program Stops Responding"
-permalink: kb/258/Q258306/
+permalink: /kb/258/Q258306/
 ---
 
 ## Q258306: Microsoft INTERIX Installation Program Stops Responding

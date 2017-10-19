@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185898: SMS: Scalar Information Is Incorrect When Accessed Through API"
-permalink: kb/185/Q185898/
+permalink: /kb/185/Q185898/
 ---
 
 ## Q185898: SMS: Scalar Information Is Incorrect When Accessed Through API

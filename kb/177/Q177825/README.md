@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177825: XWEB: Support for Multiple SSI Providers Is Missing"
-permalink: kb/177/Q177825/
+permalink: /kb/177/Q177825/
 ---
 
 ## Q177825: XWEB: Support for Multiple SSI Providers Is Missing

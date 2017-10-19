@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132636: Warning Msg: Windows Cannot Determine if it Can Remove this..."
-permalink: kb/132/Q132636/
+permalink: /kb/132/Q132636/
 ---
 
 ## Q132636: Warning Msg: Windows Cannot Determine if it Can Remove this...

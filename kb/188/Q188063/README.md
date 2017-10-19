@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188063: SMS: SMS 1.2 SP3 Cannot Be Distributed Using PCM as a Service"
-permalink: kb/188/Q188063/
+permalink: /kb/188/Q188063/
 ---
 
 ## Q188063: SMS: SMS 1.2 SP3 Cannot Be Distributed Using PCM as a Service

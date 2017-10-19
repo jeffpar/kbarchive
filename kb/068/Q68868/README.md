@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68868: Unable to run Standard Mode Windows with EMM386"
-permalink: kb/068/Q68868/
+permalink: /kb/068/Q68868/
 ---
 
 ## Q68868: Unable to run Standard Mode Windows with EMM386

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71563: Map Analysis Doesn't Run in the Background"
-permalink: kb/071/Q71563/
+permalink: /kb/071/Q71563/
 ---
 
 ## Q71563: Map Analysis Doesn't Run in the Background

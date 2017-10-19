@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108084: Server Fails, Internal Processing Error RMN:SFT LCK"
-permalink: kb/108/Q108084/
+permalink: /kb/108/Q108084/
 ---
 
 ## Q108084: Server Fails, Internal Processing Error RMN:SFT LCK

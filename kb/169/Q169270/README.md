@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169270: IIS Running with Open File Manager  Will Blue Screen"
-permalink: kb/169/Q169270/
+permalink: /kb/169/Q169270/
 ---
 
 ## Q169270: IIS Running with Open File Manager  Will Blue Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140828: SNA Windows 3.x Trace Utility (WINTRACE)"
-permalink: kb/140/Q140828/
+permalink: /kb/140/Q140828/
 ---
 
 ## Q140828: SNA Windows 3.x Trace Utility (WINTRACE)

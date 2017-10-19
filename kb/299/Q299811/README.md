@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299811: Train Simulator: Shortcuts Not Removed When You Cancel Reinstall"
-permalink: kb/299/Q299811/
+permalink: /kb/299/Q299811/
 ---
 
 ## Q299811: Train Simulator: Shortcuts Not Removed When You Cancel Reinstall

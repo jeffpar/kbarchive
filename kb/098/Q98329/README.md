@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98329: PC DB: 3.0a Mail Server Disk 2 [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/098/Q98329/
+title: "Q98329: PC DB: 3.0a Mail Server Disk 2 &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98329/
 ---
 
-## Q98329: PC DB: 3.0a Mail Server Disk 2 [3.5, 720K; 5.25, 1.2 MB]
+## Q98329: PC DB: 3.0a Mail Server Disk 2 &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q98329
 	Product(s): Microsoft Mail For PC Networks

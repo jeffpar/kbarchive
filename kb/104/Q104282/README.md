@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104282: X400: Transports Supported by the X.400 Gateway"
-permalink: kb/104/Q104282/
+permalink: /kb/104/Q104282/
 ---
 
 ## Q104282: X400: Transports Supported by the X.400 Gateway

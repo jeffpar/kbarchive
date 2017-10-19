@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141842: Sounds Played Repeatedly with Sigma Designs ReelMagic Board"
-permalink: kb/141/Q141842/
+permalink: /kb/141/Q141842/
 ---
 
 ## Q141842: Sounds Played Repeatedly with Sigma Designs ReelMagic Board

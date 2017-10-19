@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143278: 28,800 bps Modem May Connect to MSN at a Slower Speed"
-permalink: kb/143/Q143278/
+permalink: /kb/143/Q143278/
 ---
 
 ## Q143278: 28,800 bps Modem May Connect to MSN at a Slower Speed

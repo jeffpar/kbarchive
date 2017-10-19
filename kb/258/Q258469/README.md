@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258469: Cluster Service May Not Start After Restricting IP Ports for RPC"
-permalink: kb/258/Q258469/
+permalink: /kb/258/Q258469/
 ---
 
 ## Q258469: Cluster Service May Not Start After Restricting IP Ports for RPC

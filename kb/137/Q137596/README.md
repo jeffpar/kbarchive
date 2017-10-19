@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137596: PPT7: Can't Print Multiple Copies to HP DeskJet Printer"
-permalink: kb/137/Q137596/
+permalink: /kb/137/Q137596/
 ---
 
 ## Q137596: PPT7: Can't Print Multiple Copies to HP DeskJet Printer

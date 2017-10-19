@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136850: HOWTO: Connect Network Printers in Different Windows Platforms"
-permalink: kb/136/Q136850/
+permalink: /kb/136/Q136850/
 ---
 
 ## Q136850: HOWTO: Connect Network Printers in Different Windows Platforms

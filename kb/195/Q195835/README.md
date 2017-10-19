@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195835: PRB: Images Are Not Exported From the Report Writer"
-permalink: kb/195/Q195835/
+permalink: /kb/195/Q195835/
 ---
 
 ## Q195835: PRB: Images Are Not Exported From the Report Writer

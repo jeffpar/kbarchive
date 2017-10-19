@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242093: Windows 95 Clients Cannot Run Logon Scripts Consistently"
-permalink: kb/242/Q242093/
+permalink: /kb/242/Q242093/
 ---
 
 ## Q242093: Windows 95 Clients Cannot Run Logon Scripts Consistently

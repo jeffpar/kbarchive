@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222440: XCLN: Err. Mssg.: The Information Store Could Not Be Opened"
-permalink: kb/222/Q222440/
+permalink: /kb/222/Q222440/
 ---
 
 ## Q222440: XCLN: Err. Mssg.: The Information Store Could Not Be Opened

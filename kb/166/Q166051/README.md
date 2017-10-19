@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166051: WD97: Starting Word Viewer Starts Word Instead"
-permalink: kb/166/Q166051/
+permalink: /kb/166/Q166051/
 ---
 
 ## Q166051: WD97: Starting Word Viewer Starts Word Instead

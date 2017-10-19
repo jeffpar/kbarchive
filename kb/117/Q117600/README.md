@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117600: MS-DOS 6.22 Supplemental Disk: Description &amp; How to Obtain"
-permalink: kb/117/Q117600/
+permalink: /kb/117/Q117600/
 ---
 
 ## Q117600: MS-DOS 6.22 Supplemental Disk: Description &amp; How to Obtain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173753: Duplicate IP Addresses After Upgrading DHCP Clients to SP2"
-permalink: kb/173/Q173753/
+permalink: /kb/173/Q173753/
 ---
 
 ## Q173753: Duplicate IP Addresses After Upgrading DHCP Clients to SP2

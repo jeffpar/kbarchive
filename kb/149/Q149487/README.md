@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149487: BUG: Mouse Captured After Clicking DBGrid Column Header"
-permalink: kb/149/Q149487/
+permalink: /kb/149/Q149487/
 ---
 
 ## Q149487: BUG: Mouse Captured After Clicking DBGrid Column Header

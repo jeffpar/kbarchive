@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100312: Error Messages During Boot Sequence on Intel x86 Machines"
-permalink: kb/100/Q100312/
+permalink: /kb/100/Q100312/
 ---
 
 ## Q100312: Error Messages During Boot Sequence on Intel x86 Machines

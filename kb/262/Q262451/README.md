@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262451: XCLN: Workaround for Events That Span Two Days Across Time Zones"
-permalink: kb/262/Q262451/
+permalink: /kb/262/Q262451/
 ---
 
 ## Q262451: XCLN: Workaround for Events That Span Two Days Across Time Zones

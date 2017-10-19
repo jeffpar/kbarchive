@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280306: XADM: Client Stops Responding If You Open Another User's Folder"
-permalink: kb/280/Q280306/
+permalink: /kb/280/Q280306/
 ---
 
 ## Q280306: XADM: Client Stops Responding If You Open Another User's Folder

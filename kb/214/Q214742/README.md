@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214742: XCLN: Placing Resource Account Aliases in the Resource Box"
-permalink: kb/214/Q214742/
+permalink: /kb/214/Q214742/
 ---
 
 ## Q214742: XCLN: Placing Resource Account Aliases in the Resource Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124959: Err Msg: ...the Package Requires an NTFS Drive to Install..."
-permalink: kb/124/Q124959/
+permalink: /kb/124/Q124959/
 ---
 
 ## Q124959: Err Msg: ...the Package Requires an NTFS Drive to Install...

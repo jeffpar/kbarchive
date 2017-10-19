@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169231: Name Resolution Slow over RAS Connection"
-permalink: kb/169/Q169231/
+permalink: /kb/169/Q169231/
 ---
 
 ## Q169231: Name Resolution Slow over RAS Connection

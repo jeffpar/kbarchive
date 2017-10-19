@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174160: Redirecting Files in Batch Files Inserts Incorrect Characters"
-permalink: kb/174/Q174160/
+permalink: /kb/174/Q174160/
 ---
 
 ## Q174160: Redirecting Files in Batch Files Inserts Incorrect Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150487: 3D Movie Maker: How to Import Sounds"
-permalink: kb/150/Q150487/
+permalink: /kb/150/Q150487/
 ---
 
 ## Q150487: 3D Movie Maker: How to Import Sounds

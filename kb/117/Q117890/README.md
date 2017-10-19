@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117890: Encarta: Can't Display Population or Climate Charts"
-permalink: kb/117/Q117890/
+permalink: /kb/117/Q117890/
 ---
 
 ## Q117890: Encarta: Can't Display Population or Climate Charts

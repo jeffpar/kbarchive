@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137055: PPT7: PowerPoint Presentation Conferencing Fails"
-permalink: kb/137/Q137055/
+permalink: /kb/137/Q137055/
 ---
 
 ## Q137055: PPT7: PowerPoint Presentation Conferencing Fails

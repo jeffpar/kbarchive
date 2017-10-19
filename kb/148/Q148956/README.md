@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148956: Removing SNA Server Removes Installed Transaction Programs"
-permalink: kb/148/Q148956/
+permalink: /kb/148/Q148956/
 ---
 
 ## Q148956: Removing SNA Server Removes Installed Transaction Programs

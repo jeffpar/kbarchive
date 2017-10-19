@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33382: DOCERR: Programmer's Guide FREE ST(num) Reference Is Incorrect"
-permalink: kb/033/Q33382/
+permalink: /kb/033/Q33382/
 ---
 
 ## Q33382: DOCERR: Programmer's Guide FREE ST(num) Reference Is Incorrect

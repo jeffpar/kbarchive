@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186812: PRB: Error Message: 403.7 Forbidden: Client Certificate Required"
-permalink: kb/186/Q186812/
+permalink: /kb/186/Q186812/
 ---
 
 ## Q186812: PRB: Error Message: 403.7 Forbidden: Client Certificate Required

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138313: World of Flight: Symbols for Videos, Peelaways, Animations"
-permalink: kb/138/Q138313/
+permalink: /kb/138/Q138313/
 ---
 
 ## Q138313: World of Flight: Symbols for Videos, Peelaways, Animations

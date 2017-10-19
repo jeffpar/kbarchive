@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80570: Switching from DR-DOS 6.0 to MS-DOS 5.0"
-permalink: kb/080/Q80570/
+permalink: /kb/080/Q80570/
 ---
 
 ## Q80570: Switching from DR-DOS 6.0 to MS-DOS 5.0

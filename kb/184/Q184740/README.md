@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184740: HOWTO: Call Functions Using the Script Control"
-permalink: kb/184/Q184740/
+permalink: /kb/184/Q184740/
 ---
 
 ## Q184740: HOWTO: Call Functions Using the Script Control

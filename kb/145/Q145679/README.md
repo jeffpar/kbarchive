@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145679: HOWTO: Use the Registry API to Save and Retrieve Setting"
-permalink: kb/145/Q145679/
+permalink: /kb/145/Q145679/
 ---
 
 ## Q145679: HOWTO: Use the Registry API to Save and Retrieve Setting

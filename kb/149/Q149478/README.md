@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149478: BUG: F1001 Error /4fps1 and /Ox with Exponent Calculation"
-permalink: kb/149/Q149478/
+permalink: /kb/149/Q149478/
 ---
 
 ## Q149478: BUG: F1001 Error /4fps1 and /Ox with Exponent Calculation

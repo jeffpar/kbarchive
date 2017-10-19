@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135190: Part of the Paint Window May Be Offscreen When Tiled"
-permalink: kb/135/Q135190/
+permalink: /kb/135/Q135190/
 ---
 
 ## Q135190: Part of the Paint Window May Be Offscreen When Tiled

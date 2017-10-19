@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192978: PRB: Query Output to Label or Report Prints All Records"
-permalink: kb/192/Q192978/
+permalink: /kb/192/Q192978/
 ---
 
 ## Q192978: PRB: Query Output to Label or Report Prints All Records

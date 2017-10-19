@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199438: WD97: Cannot Add Vertical Bar Tab from Ruler"
-permalink: kb/199/Q199438/
+permalink: /kb/199/Q199438/
 ---
 
 ## Q199438: WD97: Cannot Add Vertical Bar Tab from Ruler

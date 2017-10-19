@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250209: Printing to LPR Port Does Not Succeed"
-permalink: kb/250/Q250209/
+permalink: /kb/250/Q250209/
 ---
 
 ## Q250209: Printing to LPR Port Does Not Succeed

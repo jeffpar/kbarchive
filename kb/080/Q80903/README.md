@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80903: Compatibility Test For Windows 3.1 Checklist"
-permalink: kb/080/Q80903/
+permalink: /kb/080/Q80903/
 ---
 
 ## Q80903: Compatibility Test For Windows 3.1 Checklist

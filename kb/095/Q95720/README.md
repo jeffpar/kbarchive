@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95720: How to Write to Windows-Style .INI Files"
-permalink: kb/095/Q95720/
+permalink: /kb/095/Q95720/
 ---
 
 ## Q95720: How to Write to Windows-Style .INI Files

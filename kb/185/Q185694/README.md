@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185694: Thread Deadlock When Windows NT Backup Is Stopped"
-permalink: kb/185/Q185694/
+permalink: /kb/185/Q185694/
 ---
 
 ## Q185694: Thread Deadlock When Windows NT Backup Is Stopped

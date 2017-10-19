@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188984: Office 97/2000 Is Not Supported in a Clustered Environment"
-permalink: kb/188/Q188984/
+permalink: /kb/188/Q188984/
 ---
 
 ## Q188984: Office 97/2000 Is Not Supported in a Clustered Environment

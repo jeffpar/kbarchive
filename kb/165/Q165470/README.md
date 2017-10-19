@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165470: WD97: Outline Numbering Links to All Styles After Style Copy"
-permalink: kb/165/Q165470/
+permalink: /kb/165/Q165470/
 ---
 
 ## Q165470: WD97: Outline Numbering Links to All Styles After Style Copy

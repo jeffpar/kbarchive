@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95113: WFWG: Creating a WGPO on a Novell NetWare Server"
-permalink: kb/095/Q95113/
+permalink: /kb/095/Q95113/
 ---
 
 ## Q95113: WFWG: Creating a WGPO on a Novell NetWare Server

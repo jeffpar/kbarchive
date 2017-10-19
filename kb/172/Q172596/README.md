@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172596: Clip.exe Not Compatible wth Notepad"
-permalink: kb/172/Q172596/
+permalink: /kb/172/Q172596/
 ---
 
 ## Q172596: Clip.exe Not Compatible wth Notepad

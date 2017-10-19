@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274398: MSN Companion Entries Missing in Address Book"
-permalink: kb/274/Q274398/
+permalink: /kb/274/Q274398/
 ---
 
 ## Q274398: MSN Companion Entries Missing in Address Book

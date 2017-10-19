@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299489: Error 80004005, Network Server Objects Not Initialized!"
-permalink: kb/299/Q299489/
+permalink: /kb/299/Q299489/
 ---
 
 ## Q299489: Error 80004005, Network Server Objects Not Initialized!

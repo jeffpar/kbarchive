@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254961: INFO:Recommendations for Use of Windows 2000 Traffic Control API"
-permalink: kb/254/Q254961/
+permalink: /kb/254/Q254961/
 ---
 
 ## Q254961: INFO:Recommendations for Use of Windows 2000 Traffic Control API

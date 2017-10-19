@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143369: 3D Movie Maker: How to Add Frames While Freezing Actor"
-permalink: kb/143/Q143369/
+permalink: /kb/143/Q143369/
 ---
 
 ## Q143369: 3D Movie Maker: How to Add Frames While Freezing Actor

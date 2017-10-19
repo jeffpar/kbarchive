@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111955: Description of Networking Diagram Inaccurate in Resource Kit"
-permalink: kb/111/Q111955/
+permalink: /kb/111/Q111955/
 ---
 
 ## Q111955: Description of Networking Diagram Inaccurate in Resource Kit

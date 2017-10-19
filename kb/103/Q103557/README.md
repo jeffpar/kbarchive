@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103557: HIMEM.SYS Fails to See More than 64 MB on EISA Machine"
-permalink: kb/103/Q103557/
+permalink: /kb/103/Q103557/
 ---
 
 ## Q103557: HIMEM.SYS Fails to See More than 64 MB on EISA Machine

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94383: Error Copying Files with Interlnk on Stacker Volume"
-permalink: kb/094/Q94383/
+permalink: /kb/094/Q94383/
 ---
 
 ## Q94383: Error Copying Files with Interlnk on Stacker Volume

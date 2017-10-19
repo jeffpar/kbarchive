@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87958: README.WRI from WinLogin 1.0"
-permalink: kb/087/Q87958/
+permalink: /kb/087/Q87958/
 ---
 
 ## Q87958: README.WRI from WinLogin 1.0

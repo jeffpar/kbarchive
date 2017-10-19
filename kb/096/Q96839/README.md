@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96839: Mac Srv: Upgrade from Version 2.0 to 3.1 Does Not Work"
-permalink: kb/096/Q96839/
+permalink: /kb/096/Q96839/
 ---
 
 ## Q96839: Mac Srv: Upgrade from Version 2.0 to 3.1 Does Not Work

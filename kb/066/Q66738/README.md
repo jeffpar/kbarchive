@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66738: PRB: Unpredictable Results When &gt;1 va_arg() in Parameter List"
-permalink: kb/066/Q66738/
+permalink: /kb/066/Q66738/
 ---
 
 ## Q66738: PRB: Unpredictable Results When &gt;1 va_arg() in Parameter List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66646: PRB: U4007 Error Can Be Caused By Missing Quotation Marks"
-permalink: kb/066/Q66646/
+permalink: /kb/066/Q66646/
 ---
 
 ## Q66646: PRB: U4007 Error Can Be Caused By Missing Quotation Marks

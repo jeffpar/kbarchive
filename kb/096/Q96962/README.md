@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96962: Printing Problems When Using Disney Sound Source"
-permalink: kb/096/Q96962/
+permalink: /kb/096/Q96962/
 ---
 
 ## Q96962: Printing Problems When Using Disney Sound Source

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261044: Motocross Madness 2: Textures in Game Appear Blocky or Jagged"
-permalink: kb/261/Q261044/
+permalink: /kb/261/Q261044/
 ---
 
 ## Q261044: Motocross Madness 2: Textures in Game Appear Blocky or Jagged

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156691: System Attribute Check Box Disabled In Explorer and My Computer"
-permalink: kb/156/Q156691/
+permalink: /kb/156/Q156691/
 ---
 
 ## Q156691: System Attribute Check Box Disabled In Explorer and My Computer

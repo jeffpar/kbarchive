@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98559: Undelete or Anti-Virus Err Msg: NQ30.ZFD Not Found"
-permalink: kb/098/Q98559/
+permalink: /kb/098/Q98559/
 ---
 
 ## Q98559: Undelete or Anti-Virus Err Msg: NQ30.ZFD Not Found

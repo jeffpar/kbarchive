@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235858: A CPI-C Application May Hang When Internal Tracing Is Enabled"
-permalink: kb/235/Q235858/
+permalink: /kb/235/Q235858/
 ---
 
 ## Q235858: A CPI-C Application May Hang When Internal Tracing Is Enabled

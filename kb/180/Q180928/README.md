@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q180928: 5250 Applet Fails to Connect, Displaying Error [0003][00000005]"
-permalink: kb/180/Q180928/
+title: "Q180928: 5250 Applet Fails to Connect, Displaying Error &#91;0003&#93;&#91;00000005&#93;"
+permalink: /kb/180/Q180928/
 ---
 
-## Q180928: 5250 Applet Fails to Connect, Displaying Error [0003][00000005]
+## Q180928: 5250 Applet Fails to Connect, Displaying Error &#91;0003&#93;&#91;00000005&#93;
 
 	Article: Q180928
 	Product(s): Microsoft SNA Server

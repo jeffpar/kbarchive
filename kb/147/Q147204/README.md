@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147204: Stop 0x0000000A in NDIS.SYS on a Multi-Processor Computer"
-permalink: kb/147/Q147204/
+permalink: /kb/147/Q147204/
 ---
 
 ## Q147204: Stop 0x0000000A in NDIS.SYS on a Multi-Processor Computer

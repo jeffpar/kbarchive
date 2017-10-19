@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82351: Relay Gold 5.0 and Gateway Computers"
-permalink: kb/082/Q82351/
+permalink: /kb/082/Q82351/
 ---
 
 ## Q82351: Relay Gold 5.0 and Gateway Computers

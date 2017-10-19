@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170462: Error Message Sharing Folder on Drive Created by SUBST Command"
-permalink: kb/170/Q170462/
+permalink: /kb/170/Q170462/
 ---
 
 ## Q170462: Error Message Sharing Folder on Drive Created by SUBST Command

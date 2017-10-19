@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298892: SNA/HIS Client Logon Fails After New Password Prompt"
-permalink: kb/298/Q298892/
+permalink: /kb/298/Q298892/
 ---
 
 ## Q298892: SNA/HIS Client Logon Fails After New Password Prompt

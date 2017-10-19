@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177581: Bookshelf: Taskbar Icon Replaces QuickShelf Toolbar"
-permalink: kb/177/Q177581/
+permalink: /kb/177/Q177581/
 ---
 
 ## Q177581: Bookshelf: Taskbar Icon Replaces QuickShelf Toolbar

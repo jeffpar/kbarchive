@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269278: &quot;Stop 0x0000007f&quot; During Windows NT 4.0 Setup"
-permalink: kb/269/Q269278/
+permalink: /kb/269/Q269278/
 ---
 
 ## Q269278: &quot;Stop 0x0000007f&quot; During Windows NT 4.0 Setup

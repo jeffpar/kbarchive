@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172599: Rmtshare.exe Does Not Work with Numeric Usernames"
-permalink: kb/172/Q172599/
+permalink: /kb/172/Q172599/
 ---
 
 ## Q172599: Rmtshare.exe Does Not Work with Numeric Usernames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111653: BUG: Printer Driver Receives &quot;bigfonts&quot; When Not Supported"
-permalink: kb/111/Q111653/
+permalink: /kb/111/Q111653/
 ---
 
 ## Q111653: BUG: Printer Driver Receives &quot;bigfonts&quot; When Not Supported

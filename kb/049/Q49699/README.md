@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49699: DOCERR: MASM Err Msg A2063, Name in .MODEL SMALL Not Ignored"
-permalink: kb/049/Q49699/
+permalink: /kb/049/Q49699/
 ---
 
 ## Q49699: DOCERR: MASM Err Msg A2063, Name in .MODEL SMALL Not Ignored

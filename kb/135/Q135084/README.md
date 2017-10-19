@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135084: SMS Software Inventory Fails to Find Office 95 or Word 95"
-permalink: kb/135/Q135084/
+permalink: /kb/135/Q135084/
 ---
 
 ## Q135084: SMS Software Inventory Fails to Find Office 95 or Word 95

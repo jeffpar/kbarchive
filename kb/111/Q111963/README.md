@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111963: Enabling Sound Events for WinPopup in WFWG 3.11"
-permalink: kb/111/Q111963/
+permalink: /kb/111/Q111963/
 ---
 
 ## Q111963: Enabling Sound Events for WinPopup in WFWG 3.11

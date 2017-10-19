@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148406: HOWTO: How to Create a Microsoft Excel Remote View from Visual F"
-permalink: kb/148/Q148406/
+permalink: /kb/148/Q148406/
 ---
 
 ## Q148406: HOWTO: How to Create a Microsoft Excel Remote View from Visual F

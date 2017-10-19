@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135322: Default Printer Not Changed in PowerPoint"
-permalink: kb/135/Q135322/
+permalink: /kb/135/Q135322/
 ---
 
 ## Q135322: Default Printer Not Changed in PowerPoint

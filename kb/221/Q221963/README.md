@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221963: PC DB: Recovering Messages in the Inqueue3 and P1 Folder"
-permalink: kb/221/Q221963/
+permalink: /kb/221/Q221963/
 ---
 
 ## Q221963: PC DB: Recovering Messages in the Inqueue3 and P1 Folder

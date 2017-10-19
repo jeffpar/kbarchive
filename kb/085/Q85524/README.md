@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85524: Page Size Unavailable for Toshiba P351/P1351"
-permalink: kb/085/Q85524/
+permalink: /kb/085/Q85524/
 ---
 
 ## Q85524: Page Size Unavailable for Toshiba P351/P1351

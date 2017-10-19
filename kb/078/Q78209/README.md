@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78209: An Overview of the Netlogon Service and How It Works"
-permalink: kb/078/Q78209/
+permalink: /kb/078/Q78209/
 ---
 
 ## Q78209: An Overview of the Netlogon Service and How It Works

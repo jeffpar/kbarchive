@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99192: Lanabase Changes when DOS Client not In Default Directory"
-permalink: kb/099/Q99192/
+permalink: /kb/099/Q99192/
 ---
 
 ## Q99192: Lanabase Changes when DOS Client not In Default Directory

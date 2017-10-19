@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177426: PRB: CodeView for Windows Does Not Run in Windows 95 and NT"
-permalink: kb/177/Q177426/
+permalink: /kb/177/Q177426/
 ---
 
 ## Q177426: PRB: CodeView for Windows Does Not Run in Windows 95 and NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260256: Java Plug-in Leaves Browser Processes and NTVDMs Running"
-permalink: kb/260/Q260256/
+permalink: /kb/260/Q260256/
 ---
 
 ## Q260256: Java Plug-in Leaves Browser Processes and NTVDMs Running

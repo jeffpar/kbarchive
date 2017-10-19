@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223817: XWEB: POST w/ Long URLs May Fail; 2-KB Limit in Exchfilt.dll"
-permalink: kb/223/Q223817/
+permalink: /kb/223/Q223817/
 ---
 
 ## Q223817: XWEB: POST w/ Long URLs May Fail; 2-KB Limit in Exchfilt.dll

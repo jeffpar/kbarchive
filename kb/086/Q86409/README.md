@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86409: BUG: LIBENTRY.ASM Missing Include File Error"
-permalink: kb/086/Q86409/
+permalink: /kb/086/Q86409/
 ---
 
 ## Q86409: BUG: LIBENTRY.ASM Missing Include File Error

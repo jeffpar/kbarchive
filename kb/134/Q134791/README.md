@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134791: PRB: Error at End of Visual FoxPro Installation on Windows NT"
-permalink: kb/134/Q134791/
+permalink: /kb/134/Q134791/
 ---
 
 ## Q134791: PRB: Error at End of Visual FoxPro Installation on Windows NT

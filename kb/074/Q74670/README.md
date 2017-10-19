@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74670: FIX: MASM 5.1/5.1a Cause LINK to Put Uninitialized Data in .EXE"
-permalink: kb/074/Q74670/
+permalink: /kb/074/Q74670/
 ---
 
 ## Q74670: FIX: MASM 5.1/5.1a Cause LINK to Put Uninitialized Data in .EXE

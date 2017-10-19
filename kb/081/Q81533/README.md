@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81533: PC Win: Deep Nested Folders Not Displayed in Dialog Box"
-permalink: kb/081/Q81533/
+permalink: /kb/081/Q81533/
 ---
 
 ## Q81533: PC Win: Deep Nested Folders Not Displayed in Dialog Box

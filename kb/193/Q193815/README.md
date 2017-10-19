@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193815: Improved APPC/CPIC Performance on SNA Client Computer"
-permalink: kb/193/Q193815/
+permalink: /kb/193/Q193815/
 ---
 
 ## Q193815: Improved APPC/CPIC Performance on SNA Client Computer

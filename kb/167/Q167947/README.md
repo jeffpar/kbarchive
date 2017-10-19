@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167947: FIX: ODBC CAB File Does Not Install 16-bit ODBC Files"
-permalink: kb/167/Q167947/
+permalink: /kb/167/Q167947/
 ---
 
 ## Q167947: FIX: ODBC CAB File Does Not Install 16-bit ODBC Files

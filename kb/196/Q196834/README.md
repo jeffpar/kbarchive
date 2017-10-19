@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196834: PRB: MFC Active Document Container May Not Hide Toolbars"
-permalink: kb/196/Q196834/
+permalink: /kb/196/Q196834/
 ---
 
 ## Q196834: PRB: MFC Active Document Container May Not Hide Toolbars

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135248: Exposition Error Message: &quot;Incompatible PICCLIP.VBX&quot;"
-permalink: kb/135/Q135248/
+permalink: /kb/135/Q135248/
 ---
 
 ## Q135248: Exposition Error Message: &quot;Incompatible PICCLIP.VBX&quot;

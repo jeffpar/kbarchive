@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128338: BASEBALL: Dialog Box Truncates Long Path Names"
-permalink: kb/128/Q128338/
+permalink: /kb/128/Q128338/
 ---
 
 ## Q128338: BASEBALL: Dialog Box Truncates Long Path Names

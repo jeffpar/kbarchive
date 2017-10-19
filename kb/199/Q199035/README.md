@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199035: PRB: Solution and Web Files Are Added to Different Databases"
-permalink: kb/199/Q199035/
+permalink: /kb/199/Q199035/
 ---
 
 ## Q199035: PRB: Solution and Web Files Are Added to Different Databases

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195533: INFO: Application Object Protected in Custom VFP COM Servers"
-permalink: kb/195/Q195533/
+permalink: /kb/195/Q195533/
 ---
 
 ## Q195533: INFO: Application Object Protected in Custom VFP COM Servers

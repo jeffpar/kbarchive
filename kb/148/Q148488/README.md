@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148488: XCLN: British Dictionary Not Enabled by Default"
-permalink: kb/148/Q148488/
+permalink: /kb/148/Q148488/
 ---
 
 ## Q148488: XCLN: British Dictionary Not Enabled by Default

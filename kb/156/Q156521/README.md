@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156521: PC NTMMTA: Error Message: Setup Has Encountered a Problem"
-permalink: kb/156/Q156521/
+permalink: /kb/156/Q156521/
 ---
 
 ## Q156521: PC NTMMTA: Error Message: Setup Has Encountered a Problem

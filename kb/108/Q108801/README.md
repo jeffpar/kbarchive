@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108801: Loading NetBEUI or NetPopup in Conventional Memory"
-permalink: kb/108/Q108801/
+permalink: /kb/108/Q108801/
 ---
 
 ## Q108801: Loading NetBEUI or NetPopup in Conventional Memory

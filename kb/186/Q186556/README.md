@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186556: Terminal Server Commands: SHADOW"
-permalink: kb/186/Q186556/
+permalink: /kb/186/Q186556/
 ---
 
 ## Q186556: Terminal Server Commands: SHADOW

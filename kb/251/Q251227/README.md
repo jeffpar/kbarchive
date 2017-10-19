@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251227: Interpretation of Polaris ESCON Channel Adapter Error Messages"
-permalink: kb/251/Q251227/
+permalink: /kb/251/Q251227/
 ---
 
 ## Q251227: Interpretation of Polaris ESCON Channel Adapter Error Messages

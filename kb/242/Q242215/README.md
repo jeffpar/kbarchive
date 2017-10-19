@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242215: IAS RADIUS Realms/Prefixes Do Not Work Per Design Specifications"
-permalink: kb/242/Q242215/
+permalink: /kb/242/Q242215/
 ---
 
 ## Q242215: IAS RADIUS Realms/Prefixes Do Not Work Per Design Specifications

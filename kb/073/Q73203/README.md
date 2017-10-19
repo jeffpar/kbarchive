@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73203: BUG: Problems Passing Arguments to ENTRY Statement"
-permalink: kb/073/Q73203/
+permalink: /kb/073/Q73203/
 ---
 
 ## Q73203: BUG: Problems Passing Arguments to ENTRY Statement

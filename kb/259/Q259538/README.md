@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259538: Eventrap Uses 100% of CPU Resources Enumerating Event Source"
-permalink: kb/259/Q259538/
+permalink: /kb/259/Q259538/
 ---
 
 ## Q259538: Eventrap Uses 100% of CPU Resources Enumerating Event Source

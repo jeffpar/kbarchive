@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165153: SNA Server Name Cannot Be Changed in Manager"
-permalink: kb/165/Q165153/
+permalink: /kb/165/Q165153/
 ---
 
 ## Q165153: SNA Server Name Cannot Be Changed in Manager

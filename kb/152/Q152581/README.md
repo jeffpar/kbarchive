@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152581: Complete Gardening: Can't Add Just One Plant to Plant List"
-permalink: kb/152/Q152581/
+permalink: /kb/152/Q152581/
 ---
 
 ## Q152581: Complete Gardening: Can't Add Just One Plant to Plant List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130158: PPT: Double-Clicking File Opens Wrong Version of PowerPoint"
-permalink: kb/130/Q130158/
+permalink: /kb/130/Q130158/
 ---
 
 ## Q130158: PPT: Double-Clicking File Opens Wrong Version of PowerPoint

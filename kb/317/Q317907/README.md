@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317907: Games and Hardware: How to Get Information for Rebates"
-permalink: kb/317/Q317907/
+permalink: /kb/317/Q317907/
 ---
 
 ## Q317907: Games and Hardware: How to Get Information for Rebates

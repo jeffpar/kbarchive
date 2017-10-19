@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174646: SNA Server Access Violation in snaservr!s1pufnty()"
-permalink: kb/174/Q174646/
+permalink: /kb/174/Q174646/
 ---
 
 ## Q174646: SNA Server Access Violation in snaservr!s1pufnty()

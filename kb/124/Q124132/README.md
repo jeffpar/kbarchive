@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124132: Golf 2.0: Top View Windows Moves with Mouse"
-permalink: kb/124/Q124132/
+permalink: /kb/124/Q124132/
 ---
 
 ## Q124132: Golf 2.0: Top View Windows Moves with Mouse

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120253: Multimedia Registration Kit Revision 3.0"
-permalink: kb/120/Q120253/
+permalink: /kb/120/Q120253/
 ---
 
 ## Q120253: Multimedia Registration Kit Revision 3.0

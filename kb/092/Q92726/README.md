@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92726: Applications Appearing in Windows 3.1 APPS.HLP (A-C)"
-permalink: kb/092/Q92726/
+permalink: /kb/092/Q92726/
 ---
 
 ## Q92726: Applications Appearing in Windows 3.1 APPS.HLP (A-C)

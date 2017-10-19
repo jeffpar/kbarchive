@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81529: Epson Printer Emulation Modes for Windows"
-permalink: kb/081/Q81529/
+permalink: /kb/081/Q81529/
 ---
 
 ## Q81529: Epson Printer Emulation Modes for Windows

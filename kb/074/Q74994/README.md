@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74994: Display Drivers and Background Drawing to Memory Bitmaps"
-permalink: kb/074/Q74994/
+permalink: /kb/074/Q74994/
 ---
 
 ## Q74994: Display Drivers and Background Drawing to Memory Bitmaps

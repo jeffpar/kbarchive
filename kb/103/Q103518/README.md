@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103518: DBLSPACE /UNCOMPRESS Doesn't Run ScanDisk After Interruption"
-permalink: kb/103/Q103518/
+permalink: /kb/103/Q103518/
 ---
 
 ## Q103518: DBLSPACE /UNCOMPRESS Doesn't Run ScanDisk After Interruption

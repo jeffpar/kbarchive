@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180001: XADM: The Service Cannot Accept Control Messages at This Time"
-permalink: kb/180/Q180001/
+permalink: /kb/180/Q180001/
 ---
 
 ## Q180001: XADM: The Service Cannot Accept Control Messages at This Time

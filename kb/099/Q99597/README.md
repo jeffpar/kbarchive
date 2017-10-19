@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99597: FoxBASE+/Mac Err Msg: Cannot Write to a Read-Only File"
-permalink: kb/099/Q99597/
+permalink: /kb/099/Q99597/
 ---
 
 ## Q99597: FoxBASE+/Mac Err Msg: Cannot Write to a Read-Only File

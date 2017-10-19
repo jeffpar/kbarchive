@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141209: BUG: Delete User Help Error: &quot;No Additional Help Is Available&quot;"
-permalink: kb/141/Q141209/
+permalink: /kb/141/Q141209/
 ---
 
 ## Q141209: BUG: Delete User Help Error: &quot;No Additional Help Is Available&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110316: Flight Simulator: FS5.INI Line by Line Description"
-permalink: kb/110/Q110316/
+permalink: /kb/110/Q110316/
 ---
 
 ## Q110316: Flight Simulator: FS5.INI Line by Line Description

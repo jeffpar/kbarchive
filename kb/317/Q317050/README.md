@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317050: Error Message: Disk I/O Error: Status = 00000001"
-permalink: kb/317/Q317050/
+permalink: /kb/317/Q317050/
 ---
 
 ## Q317050: Error Message: Disk I/O Error: Status = 00000001

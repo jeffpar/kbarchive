@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171116: HOWTO: Enable VSS Integration with FrontPage and Visual InterDev"
-permalink: kb/171/Q171116/
+permalink: /kb/171/Q171116/
 ---
 
 ## Q171116: HOWTO: Enable VSS Integration with FrontPage and Visual InterDev

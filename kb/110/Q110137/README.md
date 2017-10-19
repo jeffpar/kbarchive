@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110137: PC Win: Err Msg: There Is Not Enough Memory or System..."
-permalink: kb/110/Q110137/
+permalink: /kb/110/Q110137/
 ---
 
 ## Q110137: PC Win: Err Msg: There Is Not Enough Memory or System...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139912: Saving Programmatically-Created Form &amp; Data Environment to SCX"
-permalink: kb/139/Q139912/
+permalink: /kb/139/Q139912/
 ---
 
 ## Q139912: Saving Programmatically-Created Form &amp; Data Environment to SCX

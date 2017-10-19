@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119566: Intel SatisFAXtion Inaccessible: &quot;Write Fault Error...&quot;"
-permalink: kb/119/Q119566/
+permalink: /kb/119/Q119566/
 ---
 
 ## Q119566: Intel SatisFAXtion Inaccessible: &quot;Write Fault Error...&quot;

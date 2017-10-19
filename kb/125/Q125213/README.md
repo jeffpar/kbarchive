@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125213: PRB: Spawn with _P_WAIT Returns Immediately on Win32s"
-permalink: kb/125/Q125213/
+permalink: /kb/125/Q125213/
 ---
 
 ## Q125213: PRB: Spawn with _P_WAIT Returns Immediately on Win32s

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q83386: Windows 3.1 SYSTEM.INI [boot] Section"
-permalink: kb/083/Q83386/
+title: "Q83386: Windows 3.1 SYSTEM.INI &#91;boot&#93; Section"
+permalink: /kb/083/Q83386/
 ---
 
-## Q83386: Windows 3.1 SYSTEM.INI [boot] Section
+## Q83386: Windows 3.1 SYSTEM.INI &#91;boot&#93; Section
 
 	Article: Q83386
 	Product(s): Microsoft Windows 95.x Retail Product

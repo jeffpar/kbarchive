@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161696: XCLN: Unable to Open DCX (FAX) Attachments"
-permalink: kb/161/Q161696/
+permalink: /kb/161/Q161696/
 ---
 
 ## Q161696: XCLN: Unable to Open DCX (FAX) Attachments

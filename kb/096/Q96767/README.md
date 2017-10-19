@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96767: Using the SETVER Command"
-permalink: kb/096/Q96767/
+permalink: /kb/096/Q96767/
 ---
 
 ## Q96767: Using the SETVER Command

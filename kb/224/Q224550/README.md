@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224550: STOP 0x0000000A in Netbt.sys When Parsing LMHOSTS File"
-permalink: kb/224/Q224550/
+permalink: /kb/224/Q224550/
 ---
 
 ## Q224550: STOP 0x0000000A in Netbt.sys When Parsing LMHOSTS File

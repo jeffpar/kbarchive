@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158142: WM_DDE_EXECUTE API Causes a Memory Leak in the WOW Subsystem"
-permalink: kb/158/Q158142/
+permalink: /kb/158/Q158142/
 ---
 
 ## Q158142: WM_DDE_EXECUTE API Causes a Memory Leak in the WOW Subsystem

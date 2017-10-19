@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131625: Multiple APPN-capable Connections to Same AS/400 Not Supported"
-permalink: kb/131/Q131625/
+permalink: /kb/131/Q131625/
 ---
 
 ## Q131625: Multiple APPN-capable Connections to Same AS/400 Not Supported

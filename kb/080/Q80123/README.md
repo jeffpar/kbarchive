@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q80123: Why Error L2044 Suggests Using /NOE[XTDICTIONARY] Option"
-permalink: kb/080/Q80123/
+title: "Q80123: Why Error L2044 Suggests Using /NOE&#91;XTDICTIONARY&#93; Option"
+permalink: /kb/080/Q80123/
 ---
 
-## Q80123: Why Error L2044 Suggests Using /NOE[XTDICTIONARY] Option
+## Q80123: Why Error L2044 Suggests Using /NOE&#91;XTDICTIONARY&#93; Option
 
 	Article: Q80123
 	Product(s): Microsoft Programming Utilities

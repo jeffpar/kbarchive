@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85982: TI Microlaser 35 Turbo Won't Print from Selected Paper Tray"
-permalink: kb/085/Q85982/
+permalink: /kb/085/Q85982/
 ---
 
 ## Q85982: TI Microlaser 35 Turbo Won't Print from Selected Paper Tray

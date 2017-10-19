@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262849: XADM: Exchange Server 5.5 Post-SP3 Mailbox Manager Fixes"
-permalink: kb/262/Q262849/
+permalink: /kb/262/Q262849/
 ---
 
 ## Q262849: XADM: Exchange Server 5.5 Post-SP3 Mailbox Manager Fixes

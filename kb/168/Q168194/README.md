@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168194: PRB: DAO Recordset Name Property Is Limited to 256 Characters"
-permalink: kb/168/Q168194/
+permalink: /kb/168/Q168194/
 ---
 
 ## Q168194: PRB: DAO Recordset Name Property Is Limited to 256 Characters

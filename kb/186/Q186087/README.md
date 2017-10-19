@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186087: PRB: Perceived Problems Populating General Fields Using Word"
-permalink: kb/186/Q186087/
+permalink: /kb/186/Q186087/
 ---
 
 ## Q186087: PRB: Perceived Problems Populating General Fields Using Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170641: WD97: ODMA: DMS Does Not Track Changes to Template"
-permalink: kb/170/Q170641/
+permalink: /kb/170/Q170641/
 ---
 
 ## Q170641: WD97: ODMA: DMS Does Not Track Changes to Template

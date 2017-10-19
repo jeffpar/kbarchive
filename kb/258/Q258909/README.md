@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258909: Err Msg: NBA2000 Caused a General Protection Fault in Module..."
-permalink: kb/258/Q258909/
+permalink: /kb/258/Q258909/
 ---
 
 ## Q258909: Err Msg: NBA2000 Caused a General Protection Fault in Module...

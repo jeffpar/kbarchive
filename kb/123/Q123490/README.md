@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123490: DocErr in WFWG 3.11 SETUP.TXT Mentions TIGA Drivers"
-permalink: kb/123/Q123490/
+permalink: /kb/123/Q123490/
 ---
 
 ## Q123490: DocErr in WFWG 3.11 SETUP.TXT Mentions TIGA Drivers

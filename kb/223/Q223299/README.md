@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223299: MSB Animals: Unable to click Quit or Cancel to Quit Program"
-permalink: kb/223/Q223299/
+permalink: /kb/223/Q223299/
 ---
 
 ## Q223299: MSB Animals: Unable to click Quit or Cancel to Quit Program

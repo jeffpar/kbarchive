@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238791: Specifying a Catalog in ASP Code (IXSSO Query)"
-permalink: kb/238/Q238791/
+permalink: /kb/238/Q238791/
 ---
 
 ## Q238791: Specifying a Catalog in ASP Code (IXSSO Query)

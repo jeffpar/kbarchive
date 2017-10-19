@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170356: BUG: Cannot Reference Excel 8.0 Object Library from VB 4.0x"
-permalink: kb/170/Q170356/
+permalink: /kb/170/Q170356/
 ---
 
 ## Q170356: BUG: Cannot Reference Excel 8.0 Object Library from VB 4.0x

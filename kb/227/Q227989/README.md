@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227989: STOP 0x0000000A Error Message Caused by Fcascsi.sys Driver"
-permalink: kb/227/Q227989/
+permalink: /kb/227/Q227989/
 ---
 
 ## Q227989: STOP 0x0000000A Error Message Caused by Fcascsi.sys Driver

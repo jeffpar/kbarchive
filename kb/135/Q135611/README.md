@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135611: FIX: Try to Modify Label Previewed by Another, Calls Converter"
-permalink: kb/135/Q135611/
+permalink: /kb/135/Q135611/
 ---
 
 ## Q135611: FIX: Try to Modify Label Previewed by Another, Calls Converter

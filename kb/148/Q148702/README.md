@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148702: AT Command Line Accepts 127 Character Path"
-permalink: kb/148/Q148702/
+permalink: /kb/148/Q148702/
 ---
 
 ## Q148702: AT Command Line Accepts 127 Character Path

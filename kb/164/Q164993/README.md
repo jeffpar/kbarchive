@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164993: WD97: IncludePicture Inserts Blank Placeholder"
-permalink: kb/164/Q164993/
+permalink: /kb/164/Q164993/
 ---
 
 ## Q164993: WD97: IncludePicture Inserts Blank Placeholder

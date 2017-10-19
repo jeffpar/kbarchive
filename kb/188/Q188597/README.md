@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188597: XCON: Delivery Report Discarded Over 1984 X.400 Connector"
-permalink: kb/188/Q188597/
+permalink: /kb/188/Q188597/
 ---
 
 ## Q188597: XCON: Delivery Report Discarded Over 1984 X.400 Connector

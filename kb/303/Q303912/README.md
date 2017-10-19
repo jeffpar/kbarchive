@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303912: MechCommander 2.0: Err Msg: STOP Error -3 UnCompressing File"
-permalink: kb/303/Q303912/
+permalink: /kb/303/Q303912/
 ---
 
 ## Q303912: MechCommander 2.0: Err Msg: STOP Error -3 UnCompressing File

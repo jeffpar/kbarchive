@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163629: Schedule+ Cannot Print Notes or Meeting Attendees"
-permalink: kb/163/Q163629/
+permalink: /kb/163/Q163629/
 ---
 
 ## Q163629: Schedule+ Cannot Print Notes or Meeting Attendees

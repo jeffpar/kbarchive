@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134561: Problems with Novell/Eagle NE200T PCMCIA Network Adapter"
-permalink: kb/134/Q134561/
+permalink: /kb/134/Q134561/
 ---
 
 ## Q134561: Problems with Novell/Eagle NE200T PCMCIA Network Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221533: INF: EZY1309E IBM Runtime Error on Mainframe Using CICS MS Link"
-permalink: kb/221/Q221533/
+permalink: /kb/221/Q221533/
 ---
 
 ## Q221533: INF: EZY1309E IBM Runtime Error on Mainframe Using CICS MS Link

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173510: XCON: NDR Sent to Originator Instead of DL Owner"
-permalink: kb/173/Q173510/
+permalink: /kb/173/Q173510/
 ---
 
 ## Q173510: XCON: NDR Sent to Originator Instead of DL Owner

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98493: SYS1733 Error Caused by Hardware Configuration Problems"
-permalink: kb/098/Q98493/
+permalink: /kb/098/Q98493/
 ---
 
 ## Q98493: SYS1733 Error Caused by Hardware Configuration Problems

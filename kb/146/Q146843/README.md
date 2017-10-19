@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146843: XCLN: Caption Fields Created in EFD Are Truncated"
-permalink: kb/146/Q146843/
+permalink: /kb/146/Q146843/
 ---
 
 ## Q146843: XCLN: Caption Fields Created in EFD Are Truncated

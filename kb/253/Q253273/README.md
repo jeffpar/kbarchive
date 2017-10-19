@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253273: Tapi Service Provider New Lines Are Not Seen by Remote Client"
-permalink: kb/253/Q253273/
+permalink: /kb/253/Q253273/
 ---
 
 ## Q253273: Tapi Service Provider New Lines Are Not Seen by Remote Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299528: FIX: Focus Moves From Textbox In Grid Despite RETURN 0"
-permalink: kb/299/Q299528/
+permalink: /kb/299/Q299528/
 ---
 
 ## Q299528: FIX: Focus Moves From Textbox In Grid Despite RETURN 0

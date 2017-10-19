@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105275: Using the &quot;BR&quot; Command in WDEB386.EXE"
-permalink: kb/105/Q105275/
+permalink: /kb/105/Q105275/
 ---
 
 ## Q105275: Using the &quot;BR&quot; Command in WDEB386.EXE

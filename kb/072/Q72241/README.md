@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72241: HP IIID PostScript Driver Available from HP"
-permalink: kb/072/Q72241/
+permalink: /kb/072/Q72241/
 ---
 
 ## Q72241: HP IIID PostScript Driver Available from HP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193174: PRB: Filename Must Contain Text Error Msg When Packaging Project"
-permalink: kb/193/Q193174/
+permalink: /kb/193/Q193174/
 ---
 
 ## Q193174: PRB: Filename Must Contain Text Error Msg When Packaging Project

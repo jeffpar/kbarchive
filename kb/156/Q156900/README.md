@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156900: INFO: STL Sample for the Predicate Version of inplace_merge Func"
-permalink: kb/156/Q156900/
+permalink: /kb/156/Q156900/
 ---
 
 ## Q156900: INFO: STL Sample for the Predicate Version of inplace_merge Func

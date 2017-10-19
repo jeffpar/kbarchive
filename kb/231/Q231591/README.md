@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231591: HOWTO: Use Dialog Template to Create MFC Dialog with ActiveX"
-permalink: kb/231/Q231591/
+permalink: /kb/231/Q231591/
 ---
 
 ## Q231591: HOWTO: Use Dialog Template to Create MFC Dialog with ActiveX

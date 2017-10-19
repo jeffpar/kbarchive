@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246401: MS99-061: IIS May Improperly Parse Specific Escape Characters"
-permalink: kb/246/Q246401/
+permalink: /kb/246/Q246401/
 ---
 
 ## Q246401: MS99-061: IIS May Improperly Parse Specific Escape Characters

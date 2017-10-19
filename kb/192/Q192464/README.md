@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192464: Err Msg: Unable to Start the Program. One of the Required..."
-permalink: kb/192/Q192464/
+permalink: /kb/192/Q192464/
 ---
 
 ## Q192464: Err Msg: Unable to Start the Program. One of the Required...

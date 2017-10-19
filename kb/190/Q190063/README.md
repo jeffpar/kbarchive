@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190063: PRB: Form Wizard &quot;Scrolling Grid&quot; Option Does Not Add Pages"
-permalink: kb/190/Q190063/
+permalink: /kb/190/Q190063/
 ---
 
 ## Q190063: PRB: Form Wizard &quot;Scrolling Grid&quot; Option Does Not Add Pages

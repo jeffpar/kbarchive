@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130928: Restoring a Backup of Windows NT to Another Computer"
-permalink: kb/130/Q130928/
+permalink: /kb/130/Q130928/
 ---
 
 ## Q130928: Restoring a Backup of Windows NT to Another Computer

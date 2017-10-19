@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124581: Explorapedia: Minimum System Requirements"
-permalink: kb/124/Q124581/
+permalink: /kb/124/Q124581/
 ---
 
 ## Q124581: Explorapedia: Minimum System Requirements

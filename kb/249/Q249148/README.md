@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249148: XADM: Handles Leak During Online Backup"
-permalink: kb/249/Q249148/
+permalink: /kb/249/Q249148/
 ---
 
 ## Q249148: XADM: Handles Leak During Online Backup

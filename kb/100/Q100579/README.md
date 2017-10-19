@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100579: Claiming Critical Sections on Timer Ticks"
-permalink: kb/100/Q100579/
+permalink: /kb/100/Q100579/
 ---
 
 ## Q100579: Claiming Critical Sections on Timer Ticks

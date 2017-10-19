@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72099: Greater than 16 MB RAM in System in Windows 3.0"
-permalink: kb/072/Q72099/
+permalink: /kb/072/Q72099/
 ---
 
 ## Q72099: Greater than 16 MB RAM in System in Windows 3.0

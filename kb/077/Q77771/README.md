@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77771: Err Msg: &quot;Error Reading/Writing Drive x&quot; with WD-1006V-SR2"
-permalink: kb/077/Q77771/
+permalink: /kb/077/Q77771/
 ---
 
 ## Q77771: Err Msg: &quot;Error Reading/Writing Drive x&quot; with WD-1006V-SR2

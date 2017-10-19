@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89465: LAN Man 2.1 Test Summary (American Power Smart-UPS 2000)"
-permalink: kb/089/Q89465/
+permalink: /kb/089/Q89465/
 ---
 
 ## Q89465: LAN Man 2.1 Test Summary (American Power Smart-UPS 2000)

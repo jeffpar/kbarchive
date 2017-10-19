@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89959: Music Box Titles List Box Does Not Close with ESC Key"
-permalink: kb/089/Q89959/
+permalink: /kb/089/Q89959/
 ---
 
 ## Q89959: Music Box Titles List Box Does Not Close with ESC Key

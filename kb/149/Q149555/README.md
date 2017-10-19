@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149555: Winlogon &amp; PerfMon Rpc Too Busy or Access Violation"
-permalink: kb/149/Q149555/
+permalink: /kb/149/Q149555/
 ---
 
 ## Q149555: Winlogon &amp; PerfMon Rpc Too Busy or Access Violation

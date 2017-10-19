@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104060: PC WSPlus: Alarm Pop-Up Dialog Box Is Not Pen Aware"
-permalink: kb/104/Q104060/
+permalink: /kb/104/Q104060/
 ---
 
 ## Q104060: PC WSPlus: Alarm Pop-Up Dialog Box Is Not Pen Aware

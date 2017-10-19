@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143378: Rclient.exe Fails After 9 Connections"
-permalink: kb/143/Q143378/
+permalink: /kb/143/Q143378/
 ---
 
 ## Q143378: Rclient.exe Fails After 9 Connections

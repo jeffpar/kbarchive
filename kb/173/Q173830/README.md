@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173830: Office 97/VB Programmer's Guide Does Not Cover Macintosh"
-permalink: kb/173/Q173830/
+permalink: /kb/173/Q173830/
 ---
 
 ## Q173830: Office 97/VB Programmer's Guide Does Not Cover Macintosh

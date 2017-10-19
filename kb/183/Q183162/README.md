@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183162: BUG: VB Crashes After Ending Application While in Break Mode"
-permalink: kb/183/Q183162/
+permalink: /kb/183/Q183162/
 ---
 
 ## Q183162: BUG: VB Crashes After Ending Application While in Break Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171675: FP: Socket Code 13101 Error Opening, Creating New Web"
-permalink: kb/171/Q171675/
+permalink: /kb/171/Q171675/
 ---
 
 ## Q171675: FP: Socket Code 13101 Error Opening, Creating New Web

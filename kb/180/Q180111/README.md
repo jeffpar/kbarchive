@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180111: XADM: Setting Up View Only Admin for Message Tracking"
-permalink: kb/180/Q180111/
+permalink: /kb/180/Q180111/
 ---
 
 ## Q180111: XADM: Setting Up View Only Admin for Message Tracking

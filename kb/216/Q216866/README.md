@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216866: WD97: Summary Information Under Properties Is Not Encrypted"
-permalink: kb/216/Q216866/
+permalink: /kb/216/Q216866/
 ---
 
 ## Q216866: WD97: Summary Information Under Properties Is Not Encrypted

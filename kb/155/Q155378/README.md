@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155378: XCLN: Message Field Elements not Propagated to EFD Form"
-permalink: kb/155/Q155378/
+permalink: /kb/155/Q155378/
 ---
 
 ## Q155378: XCLN: Message Field Elements not Propagated to EFD Form

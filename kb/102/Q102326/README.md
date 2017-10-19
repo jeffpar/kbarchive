@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102326: Generating Browser Information with an External Makefile"
-permalink: kb/102/Q102326/
+permalink: /kb/102/Q102326/
 ---
 
 ## Q102326: Generating Browser Information with an External Makefile

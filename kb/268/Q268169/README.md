@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268169: SMS: Audit of Successful Use of User Rights Creates Mult Entries"
-permalink: kb/268/Q268169/
+permalink: /kb/268/Q268169/
 ---
 
 ## Q268169: SMS: Audit of Successful Use of User Rights Creates Mult Entries

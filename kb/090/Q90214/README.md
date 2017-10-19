@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90214: WC Mail Defaults to Two Lines Per Page When Printing"
-permalink: kb/090/Q90214/
+permalink: /kb/090/Q90214/
 ---
 
 ## Q90214: WC Mail Defaults to Two Lines Per Page When Printing

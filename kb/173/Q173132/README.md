@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173132: Replacing Missing Control Panel Icons"
-permalink: kb/173/Q173132/
+permalink: /kb/173/Q173132/
 ---
 
 ## Q173132: Replacing Missing Control Panel Icons

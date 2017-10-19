@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129920: PRB: INDEX ON produces 'File is read-only' Error with Cursor"
-permalink: kb/129/Q129920/
+permalink: /kb/129/Q129920/
 ---
 
 ## Q129920: PRB: INDEX ON produces 'File is read-only' Error with Cursor

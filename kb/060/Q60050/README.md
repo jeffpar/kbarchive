@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60050: Using PWB Features to Build a Program with Overlays"
-permalink: kb/060/Q60050/
+permalink: /kb/060/Q60050/
 ---
 
 ## Q60050: Using PWB Features to Build a Program with Overlays

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254496: HOWTO: Change Printer Settings for Kodak Image Edit Control"
-permalink: kb/254/Q254496/
+permalink: /kb/254/Q254496/
 ---
 
 ## Q254496: HOWTO: Change Printer Settings for Kodak Image Edit Control

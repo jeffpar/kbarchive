@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129951: Problems Using Orchid Celsius VLB Display Card in Windows 95"
-permalink: kb/129/Q129951/
+permalink: /kb/129/Q129951/
 ---
 
 ## Q129951: Problems Using Orchid Celsius VLB Display Card in Windows 95

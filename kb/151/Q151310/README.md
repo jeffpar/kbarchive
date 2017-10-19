@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151310: Mastering Visual C++: Testing CD-ROM Drive for File Access"
-permalink: kb/151/Q151310/
+permalink: /kb/151/Q151310/
 ---
 
 ## Q151310: Mastering Visual C++: Testing CD-ROM Drive for File Access

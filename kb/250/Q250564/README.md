@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250564: SMS: Online License Metering Won't Work in Multi-Domain Scenario"
-permalink: kb/250/Q250564/
+permalink: /kb/250/Q250564/
 ---
 
 ## Q250564: SMS: Online License Metering Won't Work in Multi-Domain Scenario

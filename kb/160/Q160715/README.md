@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160715: Using LUA_correlator Field Causes WNAP to GPF"
-permalink: kb/160/Q160715/
+permalink: /kb/160/Q160715/
 ---
 
 ## Q160715: Using LUA_correlator Field Causes WNAP to GPF

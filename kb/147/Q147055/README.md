@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147055: XCLN: Reply to a Posted Message Does Not Retain the Subject"
-permalink: kb/147/Q147055/
+permalink: /kb/147/Q147055/
 ---
 
 ## Q147055: XCLN: Reply to a Posted Message Does Not Retain the Subject

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190771: FILE: Vfp6rt.exe Distributing Run-Time Files w/ Active Document"
-permalink: kb/190/Q190771/
+permalink: /kb/190/Q190771/
 ---
 
 ## Q190771: FILE: Vfp6rt.exe Distributing Run-Time Files w/ Active Document

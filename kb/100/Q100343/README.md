@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100343: MS-DOS Editor Does Not Print to Laser Printer"
-permalink: kb/100/Q100343/
+permalink: /kb/100/Q100343/
 ---
 
 ## Q100343: MS-DOS Editor Does Not Print to Laser Printer

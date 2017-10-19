@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97606: MSAV Err Msg Under Windows 3.0 Real Mode: MWAVABSI.DLL Error"
-permalink: kb/097/Q97606/
+permalink: /kb/097/Q97606/
 ---
 
 ## Q97606: MSAV Err Msg Under Windows 3.0 Real Mode: MWAVABSI.DLL Error

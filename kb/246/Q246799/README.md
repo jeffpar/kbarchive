@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246799: Drive in Volume Set Is Missing After You Use Repair Process"
-permalink: kb/246/Q246799/
+permalink: /kb/246/Q246799/
 ---
 
 ## Q246799: Drive in Volume Set Is Missing After You Use Repair Process

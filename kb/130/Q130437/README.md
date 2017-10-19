@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130437: The Macintosh Hierarchical File System (HFS)"
-permalink: kb/130/Q130437/
+permalink: /kb/130/Q130437/
 ---
 
 ## Q130437: The Macintosh Hierarchical File System (HFS)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190177: BUG: Stop Statement in ActiveX Server Causes VB to Fail"
-permalink: kb/190/Q190177/
+permalink: /kb/190/Q190177/
 ---
 
 ## Q190177: BUG: Stop Statement in ActiveX Server Causes VB to Fail

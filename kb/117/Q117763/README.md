@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117763: PC Gen: README.TXT: Supplementary Modem Scripts Disk"
-permalink: kb/117/Q117763/
+permalink: /kb/117/Q117763/
 ---
 
 ## Q117763: PC Gen: README.TXT: Supplementary Modem Scripts Disk

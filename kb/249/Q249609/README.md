@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249609: Unable to Index PDF Files after Upgrading to Windows 2000"
-permalink: kb/249/Q249609/
+permalink: /kb/249/Q249609/
 ---
 
 ## Q249609: Unable to Index PDF Files after Upgrading to Windows 2000

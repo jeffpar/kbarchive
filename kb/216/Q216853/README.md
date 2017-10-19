@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216853: FIX: Application Error When Calling Documents.Open"
-permalink: kb/216/Q216853/
+permalink: /kb/216/Q216853/
 ---
 
 ## Q216853: FIX: Application Error When Calling Documents.Open

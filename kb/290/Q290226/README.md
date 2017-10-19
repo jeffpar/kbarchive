@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290226: XADM: Cannot Apply Exchange Server 5.5 SP3 with Error 0xc0020002"
-permalink: kb/290/Q290226/
+permalink: /kb/290/Q290226/
 ---
 
 ## Q290226: XADM: Cannot Apply Exchange Server 5.5 SP3 with Error 0xc0020002

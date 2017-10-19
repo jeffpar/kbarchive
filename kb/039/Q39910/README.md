@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39910: PRB: Initializing Non-Primary Union Element Produces Errors"
-permalink: kb/039/Q39910/
+permalink: /kb/039/Q39910/
 ---
 
 ## Q39910: PRB: Initializing Non-Primary Union Element Produces Errors

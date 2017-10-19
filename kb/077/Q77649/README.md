@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77649: Sample Source Code Demonstrates Playing Metafiles"
-permalink: kb/077/Q77649/
+permalink: /kb/077/Q77649/
 ---
 
 ## Q77649: Sample Source Code Demonstrates Playing Metafiles

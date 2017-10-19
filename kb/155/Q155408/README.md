@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155408: Oleaut32.dll Overwritten When Applying Service Packs 1-4"
-permalink: kb/155/Q155408/
+permalink: /kb/155/Q155408/
 ---
 
 ## Q155408: Oleaut32.dll Overwritten When Applying Service Packs 1-4

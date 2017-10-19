@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216879: BUG: 'Errors occurred' Results When Converting OS/390 Signed Zon"
-permalink: kb/216/Q216879/
+permalink: /kb/216/Q216879/
 ---
 
 ## Q216879: BUG: 'Errors occurred' Results When Converting OS/390 Signed Zon

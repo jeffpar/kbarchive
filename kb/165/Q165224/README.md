@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165224: Cannot Run MS-DOS Application from Shortcut"
-permalink: kb/165/Q165224/
+permalink: /kb/165/Q165224/
 ---
 
 ## Q165224: Cannot Run MS-DOS Application from Shortcut

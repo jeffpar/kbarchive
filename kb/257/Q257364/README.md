@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257364: SMS: French Security: Wuser32.exe Has Everyone Full Control"
-permalink: kb/257/Q257364/
+permalink: /kb/257/Q257364/
 ---
 
 ## Q257364: SMS: French Security: Wuser32.exe Has Everyone Full Control

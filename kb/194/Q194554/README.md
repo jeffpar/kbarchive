@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194554: WD97: Error Running WinFax Macros in SR-2"
-permalink: kb/194/Q194554/
+permalink: /kb/194/Q194554/
 ---
 
 ## Q194554: WD97: Error Running WinFax Macros in SR-2

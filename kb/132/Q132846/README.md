@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132846: Rodney's Funscreen Does Not Install Properly in Windows 95"
-permalink: kb/132/Q132846/
+permalink: /kb/132/Q132846/
 ---
 
 ## Q132846: Rodney's Funscreen Does Not Install Properly in Windows 95

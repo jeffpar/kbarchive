@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195908: XADM: Backout of Upgrade Causes Replication to Fail"
-permalink: kb/195/Q195908/
+permalink: /kb/195/Q195908/
 ---
 
 ## Q195908: XADM: Backout of Upgrade Causes Replication to Fail

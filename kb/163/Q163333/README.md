@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163333: Autosynch Compatible COM Applications May Fail w/ FIFO Enabled"
-permalink: kb/163/Q163333/
+permalink: /kb/163/Q163333/
 ---
 
 ## Q163333: Autosynch Compatible COM Applications May Fail w/ FIFO Enabled

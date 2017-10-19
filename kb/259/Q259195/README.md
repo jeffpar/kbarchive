@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259195: Cannot Control COMMIT or ROLLBACK Commands Using ADO with DB2 an"
-permalink: kb/259/Q259195/
+permalink: /kb/259/Q259195/
 ---
 
 ## Q259195: Cannot Control COMMIT or ROLLBACK Commands Using ADO with DB2 an

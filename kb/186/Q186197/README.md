@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186197: XCLN: Admin Mode Setup Suggests Exchange as Default Directory"
-permalink: kb/186/Q186197/
+permalink: /kb/186/Q186197/
 ---
 
 ## Q186197: XCLN: Admin Mode Setup Suggests Exchange as Default Directory

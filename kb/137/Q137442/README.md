@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137442: Why the Check Box Object Has No ReadOnly Property"
-permalink: kb/137/Q137442/
+permalink: /kb/137/Q137442/
 ---
 
 ## Q137442: Why the Check Box Object Has No ReadOnly Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132078: How to Use _beginthreadex() and _endthreadex()"
-permalink: kb/132/Q132078/
+permalink: /kb/132/Q132078/
 ---
 
 ## Q132078: How to Use _beginthreadex() and _endthreadex()

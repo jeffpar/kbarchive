@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75712: Alphabetical Listing of the MS-DOS 5.0 Working Disks Contents"
-permalink: kb/075/Q75712/
+permalink: /kb/075/Q75712/
 ---
 
 ## Q75712: Alphabetical Listing of the MS-DOS 5.0 Working Disks Contents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78524: SMARTDRV.SYS Incompatible with Some Disk Managing Programs"
-permalink: kb/078/Q78524/
+permalink: /kb/078/Q78524/
 ---
 
 ## Q78524: SMARTDRV.SYS Incompatible with Some Disk Managing Programs

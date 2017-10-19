@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65666: Emulation Modes for for Xerox 4045 Printer"
-permalink: kb/065/Q65666/
+permalink: /kb/065/Q65666/
 ---
 
 ## Q65666: Emulation Modes for for Xerox 4045 Printer

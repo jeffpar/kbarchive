@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232855: Microsoft Windows 95 Year 2000 Corporate Update Readme File"
-permalink: kb/232/Q232855/
+permalink: /kb/232/Q232855/
 ---
 
 ## Q232855: Microsoft Windows 95 Year 2000 Corporate Update Readme File

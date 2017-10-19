@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137955: PRB: &quot;Error loading file...&quot; When Opening a Form"
-permalink: kb/137/Q137955/
+permalink: /kb/137/Q137955/
 ---
 
 ## Q137955: PRB: &quot;Error loading file...&quot; When Opening a Form

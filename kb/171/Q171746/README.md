@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171746: PRB: ListBox/ComboBox Picture Won't Display If Defined in Class"
-permalink: kb/171/Q171746/
+permalink: /kb/171/Q171746/
 ---
 
 ## Q171746: PRB: ListBox/ComboBox Picture Won't Display If Defined in Class

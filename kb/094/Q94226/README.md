@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94226: Remote Boot Machines Format 3.5-inch Disks for 720K Only"
-permalink: kb/094/Q94226/
+permalink: /kb/094/Q94226/
 ---
 
 ## Q94226: Remote Boot Machines Format 3.5-inch Disks for 720K Only

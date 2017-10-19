@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231485: XCLN: How to Remove Outlook 98 Completely"
-permalink: kb/231/Q231485/
+permalink: /kb/231/Q231485/
 ---
 
 ## Q231485: XCLN: How to Remove Outlook 98 Completely

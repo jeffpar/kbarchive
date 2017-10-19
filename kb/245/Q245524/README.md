@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245524: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part II)"
-permalink: kb/245/Q245524/
+permalink: /kb/245/Q245524/
 ---
 
 ## Q245524: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part II)

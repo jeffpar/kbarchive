@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177409: BUG: &quot;Failed to Reload Project&quot; Error When Checking In VB File"
-permalink: kb/177/Q177409/
+permalink: /kb/177/Q177409/
 ---
 
 ## Q177409: BUG: &quot;Failed to Reload Project&quot; Error When Checking In VB File

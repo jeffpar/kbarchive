@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141058: PRB: Visual Basic .FRX File Not Added to SourceSafe"
-permalink: kb/141/Q141058/
+permalink: /kb/141/Q141058/
 ---
 
 ## Q141058: PRB: Visual Basic .FRX File Not Added to SourceSafe

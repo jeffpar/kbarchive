@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72735: Loading SMARTDRV.SYS High with Adaptec Controller Hangs System"
-permalink: kb/072/Q72735/
+permalink: /kb/072/Q72735/
 ---
 
 ## Q72735: Loading SMARTDRV.SYS High with Adaptec Controller Hangs System

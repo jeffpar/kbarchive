@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191787: BUG: Selecting RecordSource for Data Control Causes VB to Hang"
-permalink: kb/191/Q191787/
+permalink: /kb/191/Q191787/
 ---
 
 ## Q191787: BUG: Selecting RecordSource for Data Control Causes VB to Hang

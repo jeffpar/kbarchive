@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37925: Mac DOS: Apple LocalTalk PC Network Card"
-permalink: kb/037/Q37925/
+permalink: /kb/037/Q37925/
 ---
 
 ## Q37925: Mac DOS: Apple LocalTalk PC Network Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278970: AoE II Expansion: Some Units or Technologies Are Not Available"
-permalink: kb/278/Q278970/
+permalink: /kb/278/Q278970/
 ---
 
 ## Q278970: AoE II Expansion: Some Units or Technologies Are Not Available

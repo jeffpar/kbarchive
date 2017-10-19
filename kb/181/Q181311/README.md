@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181311: Data Corruption Occurs with Record Locking on FPNW Server"
-permalink: kb/181/Q181311/
+permalink: /kb/181/Q181311/
 ---
 
 ## Q181311: Data Corruption Occurs with Record Locking on FPNW Server

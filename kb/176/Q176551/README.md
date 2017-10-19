@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176551: FIX: Automation Events Not Received by VBasic Applications"
-permalink: kb/176/Q176551/
+permalink: /kb/176/Q176551/
 ---
 
 ## Q176551: FIX: Automation Events Not Received by VBasic Applications

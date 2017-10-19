@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156341: PRB: Cannot Load the Same Class Library More Than Once"
-permalink: kb/156/Q156341/
+permalink: /kb/156/Q156341/
 ---
 
 ## Q156341: PRB: Cannot Load the Same Class Library More Than Once

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182827: XADM: Store Uses 100 Percent CPU When Sending Postscript Attachm"
-permalink: kb/182/Q182827/
+permalink: /kb/182/Q182827/
 ---
 
 ## Q182827: XADM: Store Uses 100 Percent CPU When Sending Postscript Attachm

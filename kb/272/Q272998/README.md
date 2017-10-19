@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272998: XADM: Setup Doesn't Work with 0XC103FC93"
-permalink: kb/272/Q272998/
+permalink: /kb/272/Q272998/
 ---
 
 ## Q272998: XADM: Setup Doesn't Work with 0XC103FC93

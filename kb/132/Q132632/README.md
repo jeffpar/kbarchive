@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132632: No Digitized Sound Running BloodNet"
-permalink: kb/132/Q132632/
+permalink: /kb/132/Q132632/
 ---
 
 ## Q132632: No Digitized Sound Running BloodNet

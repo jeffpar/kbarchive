@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268706: AOE II Expansion: Game Quits with 3DLabs Oxygen VX1-Based Video"
-permalink: kb/268/Q268706/
+permalink: /kb/268/Q268706/
 ---
 
 ## Q268706: AOE II Expansion: Game Quits with 3DLabs Oxygen VX1-Based Video

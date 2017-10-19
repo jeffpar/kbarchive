@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175950: HOWTO: Change the Name of a Visual SourceSafe Database"
-permalink: kb/175/Q175950/
+permalink: /kb/175/Q175950/
 ---
 
 ## Q175950: HOWTO: Change the Name of a Visual SourceSafe Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166213: PRB: Right-Clicking CRichEditView Doesn't Activate Frame"
-permalink: kb/166/Q166213/
+permalink: /kb/166/Q166213/
 ---
 
 ## Q166213: PRB: Right-Clicking CRichEditView Doesn't Activate Frame

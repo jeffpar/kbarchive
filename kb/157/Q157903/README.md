@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157903: FIX: Changes Lost When Changing Variable During Debugging"
-permalink: kb/157/Q157903/
+permalink: /kb/157/Q157903/
 ---
 
 ## Q157903: FIX: Changes Lost When Changing Variable During Debugging

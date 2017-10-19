@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156964: Windows NT 4.0 Cannot Remove/Reinstall Internet Explorer 2.0"
-permalink: kb/156/Q156964/
+permalink: /kb/156/Q156964/
 ---
 
 ## Q156964: Windows NT 4.0 Cannot Remove/Reinstall Internet Explorer 2.0

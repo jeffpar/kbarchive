@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101899: Recreating the Windows NT Mail Postoffice"
-permalink: kb/101/Q101899/
+permalink: /kb/101/Q101899/
 ---
 
 ## Q101899: Recreating the Windows NT Mail Postoffice

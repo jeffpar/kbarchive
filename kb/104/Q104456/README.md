@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104456: Dinosaurs: GP Fault When Using ATI Card with Mach32 Chip Set"
-permalink: kb/104/Q104456/
+permalink: /kb/104/Q104456/
 ---
 
 ## Q104456: Dinosaurs: GP Fault When Using ATI Card with Mach32 Chip Set

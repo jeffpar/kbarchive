@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161689: CG3: Error Messages Appear When You Install Extra Clip Art"
-permalink: kb/161/Q161689/
+permalink: /kb/161/Q161689/
 ---
 
 ## Q161689: CG3: Error Messages Appear When You Install Extra Clip Art

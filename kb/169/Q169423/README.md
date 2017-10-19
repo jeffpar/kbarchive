@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169423: Return Of Arcade Trial Version Is Available"
-permalink: kb/169/Q169423/
+permalink: /kb/169/Q169423/
 ---
 
 ## Q169423: Return Of Arcade Trial Version Is Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132131: INF: ODBC Database Drivers 2.0 Supported Platforms"
-permalink: kb/132/Q132131/
+permalink: /kb/132/Q132131/
 ---
 
 ## Q132131: INF: ODBC Database Drivers 2.0 Supported Platforms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205539: WD97: Recorded Macro Doesn't Insert Frame Contained in AutoText"
-permalink: kb/205/Q205539/
+permalink: /kb/205/Q205539/
 ---
 
 ## Q205539: WD97: Recorded Macro Doesn't Insert Frame Contained in AutoText

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159462: SNA Server 802.2 Connection Stays in Pending State"
-permalink: kb/159/Q159462/
+permalink: /kb/159/Q159462/
 ---
 
 ## Q159462: SNA Server 802.2 Connection Stays in Pending State

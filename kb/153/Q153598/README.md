@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153598: World Atlas: Exception 0E Error in VxD IFSMGR"
-permalink: kb/153/Q153598/
+permalink: /kb/153/Q153598/
 ---
 
 ## Q153598: World Atlas: Exception 0E Error in VxD IFSMGR

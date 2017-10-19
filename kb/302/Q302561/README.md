@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302561: LinkSys USB 10T Ethernet Adaptor Status Light"
-permalink: kb/302/Q302561/
+permalink: /kb/302/Q302561/
 ---
 
 ## Q302561: LinkSys USB 10T Ethernet Adaptor Status Light

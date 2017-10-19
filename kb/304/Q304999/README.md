@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304999: How to Replace Missing System and TrueType Fonts"
-permalink: kb/304/Q304999/
+permalink: /kb/304/Q304999/
 ---
 
 ## Q304999: How to Replace Missing System and TrueType Fonts

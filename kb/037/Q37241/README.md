@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37241: Older Versions of FDISK Do Not Remove Non-DOS Partitions"
-permalink: kb/037/Q37241/
+permalink: /kb/037/Q37241/
 ---
 
 ## Q37241: Older Versions of FDISK Do Not Remove Non-DOS Partitions

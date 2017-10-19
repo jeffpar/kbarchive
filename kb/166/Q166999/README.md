@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166999: Using SetArcDirection Results in Incorrect Output"
-permalink: kb/166/Q166999/
+permalink: /kb/166/Q166999/
 ---
 
 ## Q166999: Using SetArcDirection Results in Incorrect Output

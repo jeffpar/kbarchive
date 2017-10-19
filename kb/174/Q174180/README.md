@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174180: Err Msg: The Wininet.dll File Is Linked to the Missing Export..."
-permalink: kb/174/Q174180/
+permalink: /kb/174/Q174180/
 ---
 
 ## Q174180: Err Msg: The Wininet.dll File Is Linked to the Missing Export...

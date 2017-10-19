@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199264: XIMS: Top 10 Network News Transport Protocol (NNTP) References"
-permalink: kb/199/Q199264/
+permalink: /kb/199/Q199264/
 ---
 
 ## Q199264: XIMS: Top 10 Network News Transport Protocol (NNTP) References

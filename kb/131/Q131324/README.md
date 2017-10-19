@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131324: Use New Flags to Speed Up C Run-time Low-Level I/O Functions"
-permalink: kb/131/Q131324/
+permalink: /kb/131/Q131324/
 ---
 
 ## Q131324: Use New Flags to Speed Up C Run-time Low-Level I/O Functions

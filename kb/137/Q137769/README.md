@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137769: Baseball Daily 1995: How to Download Previous Issues"
-permalink: kb/137/Q137769/
+permalink: /kb/137/Q137769/
 ---
 
 ## Q137769: Baseball Daily 1995: How to Download Previous Issues

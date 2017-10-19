@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138257: Inconsistent Print Results Using HP LaserJet 5L"
-permalink: kb/138/Q138257/
+permalink: /kb/138/Q138257/
 ---
 
 ## Q138257: Inconsistent Print Results Using HP LaserJet 5L

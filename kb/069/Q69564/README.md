@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69564: Using Adobe Type Manager with Windows 3.0"
-permalink: kb/069/Q69564/
+permalink: /kb/069/Q69564/
 ---
 
 ## Q69564: Using Adobe Type Manager with Windows 3.0

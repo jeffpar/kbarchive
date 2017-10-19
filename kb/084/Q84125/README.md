@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84125: Cannot Install Windows SDK Over Debugging Windows"
-permalink: kb/084/Q84125/
+permalink: /kb/084/Q84125/
 ---
 
 ## Q84125: Cannot Install Windows SDK Over Debugging Windows

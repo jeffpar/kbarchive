@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129933: PRB: Comparing Bookmarks Generates Type Mismatch Error"
-permalink: kb/129/Q129933/
+permalink: /kb/129/Q129933/
 ---
 
 ## Q129933: PRB: Comparing Bookmarks Generates Type Mismatch Error

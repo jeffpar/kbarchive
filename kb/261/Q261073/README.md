@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261073: MCM2: Game Stops Responding When You Select Motorcycle or Rider"
-permalink: kb/261/Q261073/
+permalink: /kb/261/Q261073/
 ---
 
 ## Q261073: MCM2: Game Stops Responding When You Select Motorcycle or Rider

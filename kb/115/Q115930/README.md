@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115930: TBMI2.COM May Be Required on Alpha and MIPS Computers"
-permalink: kb/115/Q115930/
+permalink: /kb/115/Q115930/
 ---
 
 ## Q115930: TBMI2.COM May Be Required on Alpha and MIPS Computers

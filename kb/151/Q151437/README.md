@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151437: BUG: Wizard Button Display Problem with KEYCOMP Set to Windows"
-permalink: kb/151/Q151437/
+permalink: /kb/151/Q151437/
 ---
 
 ## Q151437: BUG: Wizard Button Display Problem with KEYCOMP Set to Windows

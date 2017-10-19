@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164962: Added Support for the Character Mapping Section of the PDF File"
-permalink: kb/164/Q164962/
+permalink: /kb/164/Q164962/
 ---
 
 ## Q164962: Added Support for the Character Mapping Section of the PDF File

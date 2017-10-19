@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126301: FIX: CMDIFrameWnd Caption Not Updated When Child Closed"
-permalink: kb/126/Q126301/
+permalink: /kb/126/Q126301/
 ---
 
 ## Q126301: FIX: CMDIFrameWnd Caption Not Updated When Child Closed

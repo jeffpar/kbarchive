@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200730: SMS: NetWare Clients Do Not Show NetBIOS Machine Name"
-permalink: kb/200/Q200730/
+permalink: /kb/200/Q200730/
 ---
 
 ## Q200730: SMS: NetWare Clients Do Not Show NetBIOS Machine Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82426: KEAterm 1.1.0 Does Not Print TrueType Fonts to an HP III"
-permalink: kb/082/Q82426/
+permalink: /kb/082/Q82426/
 ---
 
 ## Q82426: KEAterm 1.1.0 Does Not Print TrueType Fonts to an HP III

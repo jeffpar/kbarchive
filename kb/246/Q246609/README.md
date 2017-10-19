@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246609: HOWTO: Start Internet Explorer and Navigate to a URL Using OLE"
-permalink: kb/246/Q246609/
+permalink: /kb/246/Q246609/
 ---
 
 ## Q246609: HOWTO: Start Internet Explorer and Navigate to a URL Using OLE

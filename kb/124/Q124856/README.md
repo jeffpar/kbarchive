@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124856: Do Not Type &quot;1&quot; in Dialing Properties to Dial Long Distance"
-permalink: kb/124/Q124856/
+permalink: /kb/124/Q124856/
 ---
 
 ## Q124856: Do Not Type &quot;1&quot; in Dialing Properties to Dial Long Distance

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158057: WD97: Backslash, Semicolon Dropped from XE Field"
-permalink: kb/158/Q158057/
+permalink: /kb/158/Q158057/
 ---
 
 ## Q158057: WD97: Backslash, Semicolon Dropped from XE Field

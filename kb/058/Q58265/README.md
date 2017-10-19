@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58265: Windows 3.0 Standard/386 Enhanced Fatal Error Definition"
-permalink: kb/058/Q58265/
+permalink: /kb/058/Q58265/
 ---
 
 ## Q58265: Windows 3.0 Standard/386 Enhanced Fatal Error Definition

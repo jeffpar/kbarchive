@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74206: Packard Bell Mouse Driver for MS-DOS Shell 5.0 or Later"
-permalink: kb/074/Q74206/
+permalink: /kb/074/Q74206/
 ---
 
 ## Q74206: Packard Bell Mouse Driver for MS-DOS Shell 5.0 or Later

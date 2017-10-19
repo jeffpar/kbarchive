@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306861: How to Connect to a Remote Server Using Remote Access"
-permalink: kb/306/Q306861/
+permalink: /kb/306/Q306861/
 ---
 
 ## Q306861: How to Connect to a Remote Server Using Remote Access

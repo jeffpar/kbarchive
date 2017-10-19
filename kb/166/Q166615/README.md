@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166615: XFOR: Message Characters Corrupted When Different Locale Used"
-permalink: kb/166/Q166615/
+permalink: /kb/166/Q166615/
 ---
 
 ## Q166615: XFOR: Message Characters Corrupted When Different Locale Used

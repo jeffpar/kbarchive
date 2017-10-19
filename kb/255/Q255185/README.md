@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255185: Cannot Access Internet E-Mail in Outlook 98 from Terminal Server"
-permalink: kb/255/Q255185/
+permalink: /kb/255/Q255185/
 ---
 
 ## Q255185: Cannot Access Internet E-Mail in Outlook 98 from Terminal Server

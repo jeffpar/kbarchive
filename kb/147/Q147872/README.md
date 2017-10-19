@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147872: Unable to Lease IP Address from DHCP Server"
-permalink: kb/147/Q147872/
+permalink: /kb/147/Q147872/
 ---
 
 ## Q147872: Unable to Lease IP Address from DHCP Server

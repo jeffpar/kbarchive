@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164103: Auto Insert Notification Polling May Prevent Automatic Suspend"
-permalink: kb/164/Q164103/
+permalink: /kb/164/Q164103/
 ---
 
 ## Q164103: Auto Insert Notification Polling May Prevent Automatic Suspend

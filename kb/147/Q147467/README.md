@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147467: Using the Migration Tool for NetWare to Migrate Login Scripts"
-permalink: kb/147/Q147467/
+permalink: /kb/147/Q147467/
 ---
 
 ## Q147467: Using the Migration Tool for NetWare to Migrate Login Scripts

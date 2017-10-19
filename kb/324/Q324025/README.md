@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324025: XCON: POP3 &amp; IMAP4 Clients Can't Log On, Event ID 13003 Occurs"
-permalink: kb/324/Q324025/
+permalink: /kb/324/Q324025/
 ---
 
 ## Q324025: XCON: POP3 &amp; IMAP4 Clients Can't Log On, Event ID 13003 Occurs

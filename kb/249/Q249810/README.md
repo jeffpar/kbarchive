@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249810: XADM: Plain Text Message Becomes RTF upon Autoforward"
-permalink: kb/249/Q249810/
+permalink: /kb/249/Q249810/
 ---
 
 ## Q249810: XADM: Plain Text Message Becomes RTF upon Autoforward

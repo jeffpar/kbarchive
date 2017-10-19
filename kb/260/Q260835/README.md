@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260835: XADM: How to Log Mailbox Access by Computer Name"
-permalink: kb/260/Q260835/
+permalink: /kb/260/Q260835/
 ---
 
 ## Q260835: XADM: How to Log Mailbox Access by Computer Name

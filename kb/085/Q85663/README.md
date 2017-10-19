@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85663: Description of Windows for Pen Computing Pens"
-permalink: kb/085/Q85663/
+permalink: /kb/085/Q85663/
 ---
 
 ## Q85663: Description of Windows for Pen Computing Pens

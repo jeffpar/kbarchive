@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218989: Windows 95 Clients Registering in WINS as Multihomed Computers"
-permalink: kb/218/Q218989/
+permalink: /kb/218/Q218989/
 ---
 
 ## Q218989: Windows 95 Clients Registering in WINS as Multihomed Computers

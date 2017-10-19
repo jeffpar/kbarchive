@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246915: Using &lt;% %&gt; Instead of &lt;SCRIPT&gt; Tags Affects Processing Order"
-permalink: kb/246/Q246915/
+permalink: /kb/246/Q246915/
 ---
 
 ## Q246915: Using &lt;% %&gt; Instead of &lt;SCRIPT&gt; Tags Affects Processing Order

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124802: CONN: CNU Err Msg: No Gateway Driver Loaded"
-permalink: kb/124/Q124802/
+permalink: /kb/124/Q124802/
 ---
 
 ## Q124802: CONN: CNU Err Msg: No Gateway Driver Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158277: How to Configure DOS for Remoteboot In Windows NT 4.0"
-permalink: kb/158/Q158277/
+permalink: /kb/158/Q158277/
 ---
 
 ## Q158277: How to Configure DOS for Remoteboot In Windows NT 4.0

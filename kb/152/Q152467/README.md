@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152467: PGC Errors at the Client When Registry Entry Contains a Space"
-permalink: kb/152/Q152467/
+permalink: /kb/152/Q152467/
 ---
 
 ## Q152467: PGC Errors at the Client When Registry Entry Contains a Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178106: Encarta: Taskbar Covered at 640 x 480 Display Resolution"
-permalink: kb/178/Q178106/
+permalink: /kb/178/Q178106/
 ---
 
 ## Q178106: Encarta: Taskbar Covered at 640 x 480 Display Resolution

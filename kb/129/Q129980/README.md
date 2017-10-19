@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129980: INFO: Private Data Session Resets the Environment"
-permalink: kb/129/Q129980/
+permalink: /kb/129/Q129980/
 ---
 
 ## Q129980: INFO: Private Data Session Resets the Environment

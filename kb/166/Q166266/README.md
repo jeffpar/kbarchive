@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166266: STOP 0x0000000A Using OpenNT Commands and Utilities"
-permalink: kb/166/Q166266/
+permalink: /kb/166/Q166266/
 ---
 
 ## Q166266: STOP 0x0000000A Using OpenNT Commands and Utilities

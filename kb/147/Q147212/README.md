@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147212: Send Fax Wizard Does Not Convert Long File Name for Attachment"
-permalink: kb/147/Q147212/
+permalink: /kb/147/Q147212/
 ---
 
 ## Q147212: Send Fax Wizard Does Not Convert Long File Name for Attachment

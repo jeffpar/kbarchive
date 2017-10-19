@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123352: BUG: Uninstalling FoxPro Leaves Some Files Behind"
-permalink: kb/123/Q123352/
+permalink: /kb/123/Q123352/
 ---
 
 ## Q123352: BUG: Uninstalling FoxPro Leaves Some Files Behind

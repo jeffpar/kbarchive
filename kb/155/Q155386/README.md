@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155386: FIX: C1001 in Compiler File MSC1.CPP at Line 1089"
-permalink: kb/155/Q155386/
+permalink: /kb/155/Q155386/
 ---
 
 ## Q155386: FIX: C1001 in Compiler File MSC1.CPP at Line 1089

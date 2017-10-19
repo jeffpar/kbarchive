@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218445: How to Configure Certificate Server for Use with SSL on IIS"
-permalink: kb/218/Q218445/
+permalink: /kb/218/Q218445/
 ---
 
 ## Q218445: How to Configure Certificate Server for Use with SSL on IIS

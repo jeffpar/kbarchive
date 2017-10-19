@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152335: How to Set Up the Motorola BitSurfr Pro for Dual-Channel ISDN"
-permalink: kb/152/Q152335/
+permalink: /kb/152/Q152335/
 ---
 
 ## Q152335: How to Set Up the Motorola BitSurfr Pro for Dual-Channel ISDN

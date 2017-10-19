@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175316: Internet Mail Does Not Download E-mail Messages Using MSN"
-permalink: kb/175/Q175316/
+permalink: /kb/175/Q175316/
 ---
 
 ## Q175316: Internet Mail Does Not Download E-mail Messages Using MSN

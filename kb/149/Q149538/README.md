@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149538: System Restarts Every 5 Hours if Workstation to Server Upgrade"
-permalink: kb/149/Q149538/
+permalink: /kb/149/Q149538/
 ---
 
 ## Q149538: System Restarts Every 5 Hours if Workstation to Server Upgrade

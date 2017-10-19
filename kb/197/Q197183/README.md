@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197183: XFOR: Cisco PIX Software Causes Strange Content in SMTP Msgs"
-permalink: kb/197/Q197183/
+permalink: /kb/197/Q197183/
 ---
 
 ## Q197183: XFOR: Cisco PIX Software Causes Strange Content in SMTP Msgs

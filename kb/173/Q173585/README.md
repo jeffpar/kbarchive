@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173585: General Protection Faults Printing to Color PostScript Printer"
-permalink: kb/173/Q173585/
+permalink: /kb/173/Q173585/
 ---
 
 ## Q173585: General Protection Faults Printing to Color PostScript Printer

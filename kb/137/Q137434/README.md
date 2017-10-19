@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137434: Mandatory User Profiles: Random Default Printers Selected"
-permalink: kb/137/Q137434/
+permalink: /kb/137/Q137434/
 ---
 
 ## Q137434: Mandatory User Profiles: Random Default Printers Selected

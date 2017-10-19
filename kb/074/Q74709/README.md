@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74709: Cannot Format High Density Floppy Disk as Low Density"
-permalink: kb/074/Q74709/
+permalink: /kb/074/Q74709/
 ---
 
 ## Q74709: Cannot Format High Density Floppy Disk as Low Density

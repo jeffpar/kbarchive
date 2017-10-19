@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173174: Activating SNA DLC 802.2 Local SAP 0xC4 Fails with Error #0235"
-permalink: kb/173/Q173174/
+permalink: /kb/173/Q173174/
 ---
 
 ## Q173174: Activating SNA DLC 802.2 Local SAP 0xC4 Fails with Error #0235

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123869: BUG: Trouble Changing Where SETUP Installs MASM"
-permalink: kb/123/Q123869/
+permalink: /kb/123/Q123869/
 ---
 
 ## Q123869: BUG: Trouble Changing Where SETUP Installs MASM

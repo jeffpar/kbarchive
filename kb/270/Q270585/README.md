@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270585: PC Gen: Usrdmp Utility Lists Deleted Users"
-permalink: kb/270/Q270585/
+permalink: /kb/270/Q270585/
 ---
 
 ## Q270585: PC Gen: Usrdmp Utility Lists Deleted Users

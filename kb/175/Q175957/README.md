@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175957: Event ID 5770 When Installing New Member Server"
-permalink: kb/175/Q175957/
+permalink: /kb/175/Q175957/
 ---
 
 ## Q175957: Event ID 5770 When Installing New Member Server

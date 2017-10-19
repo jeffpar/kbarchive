@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253555: FIX:&quot;Report Width Is Larger Than the Paper Width&quot; on Data Report"
-permalink: kb/253/Q253555/
+permalink: /kb/253/Q253555/
 ---
 
 ## Q253555: FIX:&quot;Report Width Is Larger Than the Paper Width&quot; on Data Report

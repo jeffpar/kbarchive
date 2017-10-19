@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156228: Incorrect Help for NE1000 Network Adapter Setup"
-permalink: kb/156/Q156228/
+permalink: /kb/156/Q156228/
 ---
 
 ## Q156228: Incorrect Help for NE1000 Network Adapter Setup

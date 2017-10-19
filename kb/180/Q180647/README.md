@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180647: Disabling WinNT 3.51 Video Drivers to Enable Unattend Install"
-permalink: kb/180/Q180647/
+permalink: /kb/180/Q180647/
 ---
 
 ## Q180647: Disabling WinNT 3.51 Video Drivers to Enable Unattend Install

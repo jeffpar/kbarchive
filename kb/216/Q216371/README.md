@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216371: XCLN: Attendees Don't Publish Correct Free/Busy Calendar Info"
-permalink: kb/216/Q216371/
+permalink: /kb/216/Q216371/
 ---
 
 ## Q216371: XCLN: Attendees Don't Publish Correct Free/Busy Calendar Info

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156484: Process Launched with CreateProcess() May Terminate Prematurely"
-permalink: kb/156/Q156484/
+permalink: /kb/156/Q156484/
 ---
 
 ## Q156484: Process Launched with CreateProcess() May Terminate Prematurely

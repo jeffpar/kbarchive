@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184595: Err Msg: Error Submitting Fax to the Print Server..."
-permalink: kb/184/Q184595/
+permalink: /kb/184/Q184595/
 ---
 
 ## Q184595: Err Msg: Error Submitting Fax to the Print Server...

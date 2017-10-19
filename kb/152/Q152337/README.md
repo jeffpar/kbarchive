@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152337: Problems Disabling DNS for Windows Resolution"
-permalink: kb/152/Q152337/
+permalink: /kb/152/Q152337/
 ---
 
 ## Q152337: Problems Disabling DNS for Windows Resolution

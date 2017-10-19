@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218441: Err Msg: Server Encountered Bad Data from the Client"
-permalink: kb/218/Q218441/
+permalink: /kb/218/Q218441/
 ---
 
 ## Q218441: Err Msg: Server Encountered Bad Data from the Client

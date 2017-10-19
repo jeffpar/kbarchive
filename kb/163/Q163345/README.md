@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163345: ACC97: Error Running Switchboard Manager in SourceSafe Database"
-permalink: kb/163/Q163345/
+permalink: /kb/163/Q163345/
 ---
 
 ## Q163345: ACC97: Error Running Switchboard Manager in SourceSafe Database

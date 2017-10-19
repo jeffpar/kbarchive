@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125764: Writer: Edited Stickers Are Not Saved"
-permalink: kb/125/Q125764/
+permalink: /kb/125/Q125764/
 ---
 
 ## Q125764: Writer: Edited Stickers Are Not Saved

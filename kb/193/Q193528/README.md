@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193528: Internet Service Manager Does Not Allow Wildcard Redirections"
-permalink: kb/193/Q193528/
+permalink: /kb/193/Q193528/
 ---
 
 ## Q193528: Internet Service Manager Does Not Allow Wildcard Redirections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98050: SMTP: FFAPI Models Used in SMTP Gateway"
-permalink: kb/098/Q98050/
+permalink: /kb/098/Q98050/
 ---
 
 ## Q98050: SMTP: FFAPI Models Used in SMTP Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95972: PC Ext: Dispatch Cannot Spawn External with Break Options"
-permalink: kb/095/Q95972/
+permalink: /kb/095/Q95972/
 ---
 
 ## Q95972: PC Ext: Dispatch Cannot Spawn External with Break Options

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131010: How To Speed Site Property Changes"
-permalink: kb/131/Q131010/
+permalink: /kb/131/Q131010/
 ---
 
 ## Q131010: How To Speed Site Property Changes

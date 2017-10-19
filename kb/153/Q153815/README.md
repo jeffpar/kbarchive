@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153815: XCLN: Exchange Client Cannot Send Mail Across Router"
-permalink: kb/153/Q153815/
+permalink: /kb/153/Q153815/
 ---
 
 ## Q153815: XCLN: Exchange Client Cannot Send Mail Across Router

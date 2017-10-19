@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168303: Masking IRQ's for PCMCIA Devices"
-permalink: kb/168/Q168303/
+permalink: /kb/168/Q168303/
 ---
 
 ## Q168303: Masking IRQ's for PCMCIA Devices

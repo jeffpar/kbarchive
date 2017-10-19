@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128930: Err Msg: NTVDM.EXE Has Encountered a System Error"
-permalink: kb/128/Q128930/
+permalink: /kb/128/Q128930/
 ---
 
 ## Q128930: Err Msg: NTVDM.EXE Has Encountered a System Error

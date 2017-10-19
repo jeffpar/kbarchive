@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235929: Single Sign-On Fails if the Windows NT Primary Domain Controller"
-permalink: kb/235/Q235929/
+permalink: /kb/235/Q235929/
 ---
 
 ## Q235929: Single Sign-On Fails if the Windows NT Primary Domain Controller

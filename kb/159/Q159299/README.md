@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159299: XFOR: IMC Unable to Resolve Host Addr. Using Raptor Firewall"
-permalink: kb/159/Q159299/
+permalink: /kb/159/Q159299/
 ---
 
 ## Q159299: XFOR: IMC Unable to Resolve Host Addr. Using Raptor Firewall

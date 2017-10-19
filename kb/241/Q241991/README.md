@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241991: TN3270 Emulator Displays Corrupted Data"
-permalink: kb/241/Q241991/
+permalink: /kb/241/Q241991/
 ---
 
 ## Q241991: TN3270 Emulator Displays Corrupted Data

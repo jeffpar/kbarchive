@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143282: No Documents Appear in the File Open Dialog Box"
-permalink: kb/143/Q143282/
+permalink: /kb/143/Q143282/
 ---
 
 ## Q143282: No Documents Appear in the File Open Dialog Box

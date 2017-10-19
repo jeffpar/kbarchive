@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44896: Combined Library Much Larger than Components"
-permalink: kb/044/Q44896/
+permalink: /kb/044/Q44896/
 ---
 
 ## Q44896: Combined Library Much Larger than Components

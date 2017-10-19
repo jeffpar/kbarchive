@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146689: Cursor Flashes While Determining Free and Busy Times"
-permalink: kb/146/Q146689/
+permalink: /kb/146/Q146689/
 ---
 
 ## Q146689: Cursor Flashes While Determining Free and Busy Times

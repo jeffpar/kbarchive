@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263378: SMS: Software Distribution 'Stop Program' Does Not Work Properly"
-permalink: kb/263/Q263378/
+permalink: /kb/263/Q263378/
 ---
 
 ## Q263378: SMS: Software Distribution 'Stop Program' Does Not Work Properly

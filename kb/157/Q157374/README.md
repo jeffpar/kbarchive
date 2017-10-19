@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157374: Soccer: System Requirements"
-permalink: kb/157/Q157374/
+permalink: /kb/157/Q157374/
 ---
 
 ## Q157374: Soccer: System Requirements

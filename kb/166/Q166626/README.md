@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166626: XADM: Thai Character Set Enabled in Exchange 5.0 SP1"
-permalink: kb/166/Q166626/
+permalink: /kb/166/Q166626/
 ---
 
 ## Q166626: XADM: Thai Character Set Enabled in Exchange 5.0 SP1

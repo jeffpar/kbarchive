@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148248: Gardening: Unable to Add a Plant Name to the Shopping List"
-permalink: kb/148/Q148248/
+permalink: /kb/148/Q148248/
 ---
 
 ## Q148248: Gardening: Unable to Add a Plant Name to the Shopping List

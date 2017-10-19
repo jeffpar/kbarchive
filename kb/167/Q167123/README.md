@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167123: FIX: Comctl32.ocx Is Binary Incompatible with Previous Version"
-permalink: kb/167/Q167123/
+permalink: /kb/167/Q167123/
 ---
 
 ## Q167123: FIX: Comctl32.ocx Is Binary Incompatible with Previous Version

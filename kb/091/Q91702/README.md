@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91702: PC DOS: Deleting Messages from Shared Folders"
-permalink: kb/091/Q91702/
+permalink: /kb/091/Q91702/
 ---
 
 ## Q91702: PC DOS: Deleting Messages from Shared Folders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271963: Services Do Not Start, Event ID 7023 Generates Message, 'Duplica"
-permalink: kb/271/Q271963/
+permalink: /kb/271/Q271963/
 ---
 
 ## Q271963: Services Do Not Start, Event ID 7023 Generates Message, 'Duplica

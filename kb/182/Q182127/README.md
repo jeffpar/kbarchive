@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182127: Computer Hangs With VoiceView Modem"
-permalink: kb/182/Q182127/
+permalink: /kb/182/Q182127/
 ---
 
 ## Q182127: Computer Hangs With VoiceView Modem

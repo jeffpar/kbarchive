@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80158: PC Adm: Storage Status in ADMIN.EXE Reports 0 Bytes Used"
-permalink: kb/080/Q80158/
+permalink: /kb/080/Q80158/
 ---
 
 ## Q80158: PC Adm: Storage Status in ADMIN.EXE Reports 0 Bytes Used

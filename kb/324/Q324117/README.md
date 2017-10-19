@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324117: Microsoft Computer Dictionary, Fifth Edition Comments and Correc"
-permalink: kb/324/Q324117/
+permalink: /kb/324/Q324117/
 ---
 
 ## Q324117: Microsoft Computer Dictionary, Fifth Edition Comments and Correc

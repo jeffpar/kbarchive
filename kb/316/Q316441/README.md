@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316441: FIX: XMLToCursor Does Not Convert XML Dates with Seconds"
-permalink: kb/316/Q316441/
+permalink: /kb/316/Q316441/
 ---
 
 ## Q316441: FIX: XMLToCursor Does Not Convert XML Dates with Seconds

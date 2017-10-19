@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90485: Passing Ink Between Hedit Controls"
-permalink: kb/090/Q90485/
+permalink: /kb/090/Q90485/
 ---
 
 ## Q90485: Passing Ink Between Hedit Controls

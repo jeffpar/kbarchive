@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160827: ErrMsg: Failed to Purged the NBT Remote Cache Table"
-permalink: kb/160/Q160827/
+permalink: /kb/160/Q160827/
 ---
 
 ## Q160827: ErrMsg: Failed to Purged the NBT Remote Cache Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179226: PRB: RDO: CommitTrans/RollBackTrans Closes Cursor Causing Error"
-permalink: kb/179/Q179226/
+permalink: /kb/179/Q179226/
 ---
 
 ## Q179226: PRB: RDO: CommitTrans/RollBackTrans Closes Cursor Causing Error

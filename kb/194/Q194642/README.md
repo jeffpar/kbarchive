@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194642: XWEB: Netscape 4.04: Contact Form Not Visible in Public Folder"
-permalink: kb/194/Q194642/
+permalink: /kb/194/Q194642/
 ---
 
 ## Q194642: XWEB: Netscape 4.04: Contact Form Not Visible in Public Folder

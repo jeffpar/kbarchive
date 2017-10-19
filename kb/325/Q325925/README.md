@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325925: FIX: Event 25 Error Message When You Print by Using SNACFG"
-permalink: kb/325/Q325925/
+permalink: /kb/325/Q325925/
 ---
 
 ## Q325925: FIX: Event 25 Error Message When You Print by Using SNACFG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267560: Changing the URL May Expose Contents of a File"
-permalink: kb/267/Q267560/
+permalink: /kb/267/Q267560/
 ---
 
 ## Q267560: Changing the URL May Expose Contents of a File

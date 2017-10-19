@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126111: Baseball 1994: Boston Team Franchise Dates Not Consistent"
-permalink: kb/126/Q126111/
+permalink: /kb/126/Q126111/
 ---
 
 ## Q126111: Baseball 1994: Boston Team Franchise Dates Not Consistent

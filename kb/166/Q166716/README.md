@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166716: BUG: Header File Listed in SYSINCL.DAT in Dependency List"
-permalink: kb/166/Q166716/
+permalink: /kb/166/Q166716/
 ---
 
 ## Q166716: BUG: Header File Listed in SYSINCL.DAT in Dependency List

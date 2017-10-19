@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71433: Grid Systems OEM Windows Installs WIN.BAT"
-permalink: kb/071/Q71433/
+permalink: /kb/071/Q71433/
 ---
 
 ## Q71433: Grid Systems OEM Windows Installs WIN.BAT

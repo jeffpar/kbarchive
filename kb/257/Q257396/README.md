@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257396: XFOR: Read Receipts Between Exchange Servers in Different Orgs"
-permalink: kb/257/Q257396/
+permalink: /kb/257/Q257396/
 ---
 
 ## Q257396: XFOR: Read Receipts Between Exchange Servers in Different Orgs

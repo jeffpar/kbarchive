@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179441: XCLN: Exchange Server Slows with Message Stuck in User Mailbox"
-permalink: kb/179/Q179441/
+permalink: /kb/179/Q179441/
 ---
 
 ## Q179441: XCLN: Exchange Server Slows with Message Stuck in User Mailbox

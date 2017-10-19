@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178304: XADM: Directory Takes a Long Time to Start with EventID 1107"
-permalink: kb/178/Q178304/
+permalink: /kb/178/Q178304/
 ---
 
 ## Q178304: XADM: Directory Takes a Long Time to Start with EventID 1107

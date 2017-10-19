@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157071: FIX: GetFieldValue Returns Empty String for SQL_LONGVARCHAR"
-permalink: kb/157/Q157071/
+permalink: /kb/157/Q157071/
 ---
 
 ## Q157071: FIX: GetFieldValue Returns Empty String for SQL_LONGVARCHAR

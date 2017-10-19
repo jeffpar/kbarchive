@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174098: How to Stop Receiving MSN-Sponsored Promotions Through E-mail"
-permalink: kb/174/Q174098/
+permalink: /kb/174/Q174098/
 ---
 
 ## Q174098: How to Stop Receiving MSN-Sponsored Promotions Through E-mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149030: Event Error 132 When Processing RAW File"
-permalink: kb/149/Q149030/
+permalink: /kb/149/Q149030/
 ---
 
 ## Q149030: Event Error 132 When Processing RAW File

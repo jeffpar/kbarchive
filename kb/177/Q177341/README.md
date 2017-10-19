@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177341: HOWTO: Remove the Sizing Grip from a Status Bar"
-permalink: kb/177/Q177341/
+permalink: /kb/177/Q177341/
 ---
 
 ## Q177341: HOWTO: Remove the Sizing Grip from a Status Bar

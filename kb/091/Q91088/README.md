@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91088: HIMEM.SYS Memory Allocation Scheme"
-permalink: kb/091/Q91088/
+permalink: /kb/091/Q91088/
 ---
 
 ## Q91088: HIMEM.SYS Memory Allocation Scheme

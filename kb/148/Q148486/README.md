@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148486: Bookshelf 96-97: Playing Sounds Close the China Fact Box"
-permalink: kb/148/Q148486/
+permalink: /kb/148/Q148486/
 ---
 
 ## Q148486: Bookshelf 96-97: Playing Sounds Close the China Fact Box

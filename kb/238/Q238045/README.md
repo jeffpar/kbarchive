@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238045: Encarta Reference Suite 2000: Setup Stops Responding"
-permalink: kb/238/Q238045/
+permalink: /kb/238/Q238045/
 ---
 
 ## Q238045: Encarta Reference Suite 2000: Setup Stops Responding

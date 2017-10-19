@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158866: How to Manually Create an Emergency Repair Disk"
-permalink: kb/158/Q158866/
+permalink: /kb/158/Q158866/
 ---
 
 ## Q158866: How to Manually Create an Emergency Repair Disk

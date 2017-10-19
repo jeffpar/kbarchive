@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175892: XWEB: Permissions Required for Outlook Web Access"
-permalink: kb/175/Q175892/
+permalink: /kb/175/Q175892/
 ---
 
 ## Q175892: XWEB: Permissions Required for Outlook Web Access

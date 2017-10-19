@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124065: PC Win: Err Msg: There is not a valid workgroup postoffice...."
-permalink: kb/124/Q124065/
+permalink: /kb/124/Q124065/
 ---
 
 ## Q124065: PC Win: Err Msg: There is not a valid workgroup postoffice....

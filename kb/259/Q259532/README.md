@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259532: The X500.db File Is Not Found on Tape Backup"
-permalink: kb/259/Q259532/
+permalink: /kb/259/Q259532/
 ---
 
 ## Q259532: The X500.db File Is Not Found on Tape Backup

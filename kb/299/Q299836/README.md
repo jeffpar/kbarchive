@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299836: FIX: Destroy() Does Not Fire for LOCAL And PRIVATE Objects"
-permalink: kb/299/Q299836/
+permalink: /kb/299/Q299836/
 ---
 
 ## Q299836: FIX: Destroy() Does Not Fire for LOCAL And PRIVATE Objects

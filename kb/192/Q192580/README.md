@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192580: SAMPLE: ADSfshare.exe Demonstrates Manipulating ADS File Shares"
-permalink: kb/192/Q192580/
+permalink: /kb/192/Q192580/
 ---
 
 ## Q192580: SAMPLE: ADSfshare.exe Demonstrates Manipulating ADS File Shares

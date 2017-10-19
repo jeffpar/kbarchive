@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284984: Event ID 115 When Attempting to Connect to Web Site Using HTTPS"
-permalink: kb/284/Q284984/
+permalink: /kb/284/Q284984/
 ---
 
 ## Q284984: Event ID 115 When Attempting to Connect to Web Site Using HTTPS

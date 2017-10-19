@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234600: Publisher 2000 At a Glance Comments and Corrections"
-permalink: kb/234/Q234600/
+permalink: /kb/234/Q234600/
 ---
 
 ## Q234600: Publisher 2000 At a Glance Comments and Corrections

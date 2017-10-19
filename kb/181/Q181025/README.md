@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181025: Print Server Doesn't Support Vertical Channel Select SCS Code"
-permalink: kb/181/Q181025/
+permalink: /kb/181/Q181025/
 ---
 
 ## Q181025: Print Server Doesn't Support Vertical Channel Select SCS Code

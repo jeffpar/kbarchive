@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253885: XCLN: Outlook for Macintosh Exchange Server Edition 8.2.1"
-permalink: kb/253/Q253885/
+permalink: /kb/253/Q253885/
 ---
 
 ## Q253885: XCLN: Outlook for Macintosh Exchange Server Edition 8.2.1

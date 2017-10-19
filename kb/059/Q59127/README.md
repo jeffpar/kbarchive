@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59127: Testing Math Coprocessor Instructions FLD FADD FSTP FST"
-permalink: kb/059/Q59127/
+permalink: /kb/059/Q59127/
 ---
 
 ## Q59127: Testing Math Coprocessor Instructions FLD FADD FSTP FST

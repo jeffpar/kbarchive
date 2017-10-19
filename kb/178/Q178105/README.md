@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178105: Using &quot;Winnt.exe /e&quot; Command May Interfere with ZAK Setup"
-permalink: kb/178/Q178105/
+permalink: /kb/178/Q178105/
 ---
 
 ## Q178105: Using &quot;Winnt.exe /e&quot; Command May Interfere with ZAK Setup

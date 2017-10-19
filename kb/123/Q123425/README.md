@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123425: Docerr: SMSVIEW Program Item Not Available"
-permalink: kb/123/Q123425/
+permalink: /kb/123/Q123425/
 ---
 
 ## Q123425: Docerr: SMSVIEW Program Item Not Available

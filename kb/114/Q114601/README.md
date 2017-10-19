@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114601: PRB: dmPrintQuality Does Not Affect Text Print Quality"
-permalink: kb/114/Q114601/
+permalink: /kb/114/Q114601/
 ---
 
 ## Q114601: PRB: dmPrintQuality Does Not Affect Text Print Quality

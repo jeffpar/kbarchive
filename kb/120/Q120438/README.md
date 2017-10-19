@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120438: Starting Lotus Improv Installed from Server Fails w/ Net Error"
-permalink: kb/120/Q120438/
+permalink: /kb/120/Q120438/
 ---
 
 ## Q120438: Starting Lotus Improv Installed from Server Fails w/ Net Error

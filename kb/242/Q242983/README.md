@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242983: Error Message: Stop 0x0000001E in Win32k!GreRealizePalette()"
-permalink: kb/242/Q242983/
+permalink: /kb/242/Q242983/
 ---
 
 ## Q242983: Error Message: Stop 0x0000001E in Win32k!GreRealizePalette()

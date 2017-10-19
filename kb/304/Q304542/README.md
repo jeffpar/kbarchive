@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304542: FP: Warning Message and Content Appears Duplicated Opening Page"
-permalink: kb/304/Q304542/
+permalink: /kb/304/Q304542/
 ---
 
 ## Q304542: FP: Warning Message and Content Appears Duplicated Opening Page

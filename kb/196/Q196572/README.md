@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196572: Assign LU Dialog Box May Not Show All Available Connections"
-permalink: kb/196/Q196572/
+permalink: /kb/196/Q196572/
 ---
 
 ## Q196572: Assign LU Dialog Box May Not Show All Available Connections

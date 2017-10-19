@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299754: Train Simulator: Uncoupling Possible During Intro Train Ride"
-permalink: kb/299/Q299754/
+permalink: /kb/299/Q299754/
 ---
 
 ## Q299754: Train Simulator: Uncoupling Possible During Intro Train Ride

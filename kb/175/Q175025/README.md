@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175025: How to Build and Reset a Trust Relationship from a Command Line"
-permalink: kb/175/Q175025/
+permalink: /kb/175/Q175025/
 ---
 
 ## Q175025: How to Build and Reset a Trust Relationship from a Command Line

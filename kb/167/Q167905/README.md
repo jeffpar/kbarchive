@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167905: HOWTO: Exclude Include File Class Definitions from ClassView"
-permalink: kb/167/Q167905/
+permalink: /kb/167/Q167905/
 ---
 
 ## Q167905: HOWTO: Exclude Include File Class Definitions from ClassView

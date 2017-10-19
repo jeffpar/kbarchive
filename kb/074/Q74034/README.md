@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74034: Running Mickey's ABCs with Windows 3.0"
-permalink: kb/074/Q74034/
+permalink: /kb/074/Q74034/
 ---
 
 ## Q74034: Running Mickey's ABCs with Windows 3.0

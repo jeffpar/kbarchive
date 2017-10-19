@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260343: XCON: ContentReturnRequest Field Cannot Be Changed Across a Site"
-permalink: kb/260/Q260343/
+permalink: /kb/260/Q260343/
 ---
 
 ## Q260343: XCON: ContentReturnRequest Field Cannot Be Changed Across a Site

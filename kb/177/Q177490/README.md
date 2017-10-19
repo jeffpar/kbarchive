@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177490: TN3270 Does Not Appear in Manager Without TN5250 Installed"
-permalink: kb/177/Q177490/
+permalink: /kb/177/Q177490/
 ---
 
 ## Q177490: TN3270 Does Not Appear in Manager Without TN5250 Installed

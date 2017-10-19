@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136769: Memory Requirements of Setup Wizard &amp; Distributed Applications"
-permalink: kb/136/Q136769/
+permalink: /kb/136/Q136769/
 ---
 
 ## Q136769: Memory Requirements of Setup Wizard &amp; Distributed Applications

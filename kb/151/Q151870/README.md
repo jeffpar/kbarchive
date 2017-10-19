@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151870: BUG: Mastering Exchange: Help Option Doesn't Work During Setup"
-permalink: kb/151/Q151870/
+permalink: /kb/151/Q151870/
 ---
 
 ## Q151870: BUG: Mastering Exchange: Help Option Doesn't Work During Setup

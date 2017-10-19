@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193623: HOWTO: Determine the Logical Drives on a System"
-permalink: kb/193/Q193623/
+permalink: /kb/193/Q193623/
 ---
 
 ## Q193623: HOWTO: Determine the Logical Drives on a System

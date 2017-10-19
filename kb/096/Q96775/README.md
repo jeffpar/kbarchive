@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96775: DoubleSpace Err Msg: DoubleSpace Did Not Find Any Drives..."
-permalink: kb/096/Q96775/
+permalink: /kb/096/Q96775/
 ---
 
 ## Q96775: DoubleSpace Err Msg: DoubleSpace Did Not Find Any Drives...

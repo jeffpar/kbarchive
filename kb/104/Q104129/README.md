@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104129: PC WSPlus: Subject Field Incorrect for X.400 User"
-permalink: kb/104/Q104129/
+permalink: /kb/104/Q104129/
 ---
 
 ## Q104129: PC WSPlus: Subject Field Incorrect for X.400 User

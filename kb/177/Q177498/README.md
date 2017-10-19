@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177498: Configuration Preferences May Not Be Applied to Other Users"
-permalink: kb/177/Q177498/
+permalink: /kb/177/Q177498/
 ---
 
 ## Q177498: Configuration Preferences May Not Be Applied to Other Users

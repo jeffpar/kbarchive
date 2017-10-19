@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178530: FS98: How to Register Online After Program Is Installed"
-permalink: kb/178/Q178530/
+permalink: /kb/178/Q178530/
 ---
 
 ## Q178530: FS98: How to Register Online After Program Is Installed

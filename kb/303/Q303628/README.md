@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303628: Relative Path Issue Lets Program Be Run Under System Context"
-permalink: kb/303/Q303628/
+permalink: /kb/303/Q303628/
 ---
 
 ## Q303628: Relative Path Issue Lets Program Be Run Under System Context

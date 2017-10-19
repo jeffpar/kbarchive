@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274795: SMS: Site System Status Summary Dates Appear Out-of-Date"
-permalink: kb/274/Q274795/
+permalink: /kb/274/Q274795/
 ---
 
 ## Q274795: SMS: Site System Status Summary Dates Appear Out-of-Date

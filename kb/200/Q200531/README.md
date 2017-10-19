@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200531: RasDial() Does Not Connect Dual Channels with Some ISDN Adapters"
-permalink: kb/200/Q200531/
+permalink: /kb/200/Q200531/
 ---
 
 ## Q200531: RasDial() Does Not Connect Dual Channels with Some ISDN Adapters

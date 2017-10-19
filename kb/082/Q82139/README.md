@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82139: IBM Personal Printer 2390/2391 Drivers Available for Windows"
-permalink: kb/082/Q82139/
+permalink: /kb/082/Q82139/
 ---
 
 ## Q82139: IBM Personal Printer 2390/2391 Drivers Available for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168501: ASP Downloads Text Instead of Executing"
-permalink: kb/168/Q168501/
+permalink: /kb/168/Q168501/
 ---
 
 ## Q168501: ASP Downloads Text Instead of Executing

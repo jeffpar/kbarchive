@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192623: FP97: Memory Leak When Deleting Articles from Discussion Web"
-permalink: kb/192/Q192623/
+permalink: /kb/192/Q192623/
 ---
 
 ## Q192623: FP97: Memory Leak When Deleting Articles from Discussion Web

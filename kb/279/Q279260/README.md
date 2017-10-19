@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279260: Asynch ACTIVATE/DEACTIVATE_SESSION May Complete Three Times"
-permalink: kb/279/Q279260/
+permalink: /kb/279/Q279260/
 ---
 
 ## Q279260: Asynch ACTIVATE/DEACTIVATE_SESSION May Complete Three Times

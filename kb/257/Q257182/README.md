@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257182: SMS: Remote Tools Window Displays Incorrect Port Number"
-permalink: kb/257/Q257182/
+permalink: /kb/257/Q257182/
 ---
 
 ## Q257182: SMS: Remote Tools Window Displays Incorrect Port Number

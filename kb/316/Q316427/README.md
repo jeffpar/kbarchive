@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316427: Computer Hangs During Startup If DMA Mode Is Set for IDE Devices"
-permalink: kb/316/Q316427/
+permalink: /kb/316/Q316427/
 ---
 
 ## Q316427: Computer Hangs During Startup If DMA Mode Is Set for IDE Devices

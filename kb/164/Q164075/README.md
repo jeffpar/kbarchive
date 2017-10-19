@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164075: SNA 2.11 Service Pack 2 Readme.txt File"
-permalink: kb/164/Q164075/
+permalink: /kb/164/Q164075/
 ---
 
 ## Q164075: SNA 2.11 Service Pack 2 Readme.txt File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138003: PC Forms: Err Msg: ...No E-forms Available in Shared Mail..."
-permalink: kb/138/Q138003/
+permalink: /kb/138/Q138003/
 ---
 
 ## Q138003: PC Forms: Err Msg: ...No E-forms Available in Shared Mail...

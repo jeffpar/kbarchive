@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234422: XFOR: Cannot Install AppleTalk Connector on Windows NT 4.0 SP5"
-permalink: kb/234/Q234422/
+permalink: /kb/234/Q234422/
 ---
 
 ## Q234422: XFOR: Cannot Install AppleTalk Connector on Windows NT 4.0 SP5

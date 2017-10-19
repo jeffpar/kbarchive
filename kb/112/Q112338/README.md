@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112338: Visual C++ 32-bit Edition Phar Lap Requires 16-Bit GRAPHICS.LIB"
-permalink: kb/112/Q112338/
+permalink: /kb/112/Q112338/
 ---
 
 ## Q112338: Visual C++ 32-bit Edition Phar Lap Requires 16-Bit GRAPHICS.LIB

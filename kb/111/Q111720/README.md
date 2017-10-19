@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111720: Event Log: Error 1501"
-permalink: kb/111/Q111720/
+permalink: /kb/111/Q111720/
 ---
 
 ## Q111720: Event Log: Error 1501

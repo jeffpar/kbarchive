@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q100020: WFWG Err Msg: An Error Occurred While Reconnecting...[SYS0000]"
-permalink: kb/100/Q100020/
+title: "Q100020: WFWG Err Msg: An Error Occurred While Reconnecting...&#91;SYS0000&#93;"
+permalink: /kb/100/Q100020/
 ---
 
-## Q100020: WFWG Err Msg: An Error Occurred While Reconnecting...[SYS0000]
+## Q100020: WFWG Err Msg: An Error Occurred While Reconnecting...&#91;SYS0000&#93;
 
 	Article: Q100020
 	Product(s): Microsoft Windows 3.x Retail Product

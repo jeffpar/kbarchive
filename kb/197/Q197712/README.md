@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197712: XCLN: How to Configure Default Free/Busy Options"
-permalink: kb/197/Q197712/
+permalink: /kb/197/Q197712/
 ---
 
 ## Q197712: XCLN: How to Configure Default Free/Busy Options

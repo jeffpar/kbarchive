@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256900: WD97: AV Using German Spelling Checker in Doc with Long Name"
-permalink: kb/256/Q256900/
+permalink: /kb/256/Q256900/
 ---
 
 ## Q256900: WD97: AV Using German Spelling Checker in Doc with Long Name

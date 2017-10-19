@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135849: List of Documentation Errors in Windows 95 Resource Kit"
-permalink: kb/135/Q135849/
+permalink: /kb/135/Q135849/
 ---
 
 ## Q135849: List of Documentation Errors in Windows 95 Resource Kit

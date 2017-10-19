@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153648: Cannot Delete Secondary Site After Installing Admin Tools"
-permalink: kb/153/Q153648/
+permalink: /kb/153/Q153648/
 ---
 
 ## Q153648: Cannot Delete Secondary Site After Installing Admin Tools

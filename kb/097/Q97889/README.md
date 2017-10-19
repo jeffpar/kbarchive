@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97889: PC WRmt: Duplicate Mail Messages Download"
-permalink: kb/097/Q97889/
+permalink: /kb/097/Q97889/
 ---
 
 ## Q97889: PC WRmt: Duplicate Mail Messages Download

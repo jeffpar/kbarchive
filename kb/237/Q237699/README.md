@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237699: Error Message: Stop 0x0000000A in ScsiPort.sys on SMP Systems"
-permalink: kb/237/Q237699/
+permalink: /kb/237/Q237699/
 ---
 
 ## Q237699: Error Message: Stop 0x0000000A in ScsiPort.sys on SMP Systems

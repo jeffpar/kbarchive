@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184778: XADM: Unable to Modify Public Folder Client Permissions"
-permalink: kb/184/Q184778/
+permalink: /kb/184/Q184778/
 ---
 
 ## Q184778: XADM: Unable to Modify Public Folder Client Permissions

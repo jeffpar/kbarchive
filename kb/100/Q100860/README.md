@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100860: OmniBook DoubleSpace Sets Drive E as Host Drive"
-permalink: kb/100/Q100860/
+permalink: /kb/100/Q100860/
 ---
 
 ## Q100860: OmniBook DoubleSpace Sets Drive E as Host Drive

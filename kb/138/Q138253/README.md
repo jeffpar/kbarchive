@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138253: Write-Up Does Not Display Slides in Word 95"
-permalink: kb/138/Q138253/
+permalink: /kb/138/Q138253/
 ---
 
 ## Q138253: Write-Up Does Not Display Slides in Word 95

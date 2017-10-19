@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141378: NEC Versa P Models Do Not Function with Xircom PS-CE2-10"
-permalink: kb/141/Q141378/
+permalink: /kb/141/Q141378/
 ---
 
 ## Q141378: NEC Versa P Models Do Not Function with Xircom PS-CE2-10

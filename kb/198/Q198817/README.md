@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198817: CHAT: Channel with Keys Set May Block Sysop"
-permalink: kb/198/Q198817/
+permalink: /kb/198/Q198817/
 ---
 
 ## Q198817: CHAT: Channel with Keys Set May Block Sysop

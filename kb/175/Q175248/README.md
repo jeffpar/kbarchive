@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175248: Extra Modem Settings N-P for Connecting to MSN"
-permalink: kb/175/Q175248/
+permalink: /kb/175/Q175248/
 ---
 
 ## Q175248: Extra Modem Settings N-P for Connecting to MSN

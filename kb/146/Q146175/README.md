@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146175: Seven Habits Wizard and the Six Step Process"
-permalink: kb/146/Q146175/
+permalink: /kb/146/Q146175/
 ---
 
 ## Q146175: Seven Habits Wizard and the Six Step Process

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177643: Cyrillic Characters Are Not Displayed Properly in Some Programs"
-permalink: kb/177/Q177643/
+permalink: /kb/177/Q177643/
 ---
 
 ## Q177643: Cyrillic Characters Are Not Displayed Properly in Some Programs

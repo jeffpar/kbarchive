@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177768: XADM: How to Hide the Schedule+ Free/Busy Connector"
-permalink: kb/177/Q177768/
+permalink: /kb/177/Q177768/
 ---
 
 ## Q177768: XADM: How to Hide the Schedule+ Free/Busy Connector

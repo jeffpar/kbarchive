@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195694: PRB: Method Code Not Returned Using Object Reference with GETPEM"
-permalink: kb/195/Q195694/
+permalink: /kb/195/Q195694/
 ---
 
 ## Q195694: PRB: Method Code Not Returned Using Object Reference with GETPEM

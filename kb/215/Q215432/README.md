@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215432: PRB: CE TabStrip Images Might Not Be Redrawn Properly"
-permalink: kb/215/Q215432/
+permalink: /kb/215/Q215432/
 ---
 
 ## Q215432: PRB: CE TabStrip Images Might Not Be Redrawn Properly

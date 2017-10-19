@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189779: BUG: Enabling Accelerator Keys in Visual Basic ActiveX Controls"
-permalink: kb/189/Q189779/
+permalink: /kb/189/Q189779/
 ---
 
 ## Q189779: BUG: Enabling Accelerator Keys in Visual Basic ActiveX Controls

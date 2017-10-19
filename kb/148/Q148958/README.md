@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148958: DCA X.25 Link Service Problem in SNA Server Setup"
-permalink: kb/148/Q148958/
+permalink: /kb/148/Q148958/
 ---
 
 ## Q148958: DCA X.25 Link Service Problem in SNA Server Setup

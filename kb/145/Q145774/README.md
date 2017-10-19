@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145774: HTML File Fails to Open from File Manager"
-permalink: kb/145/Q145774/
+permalink: /kb/145/Q145774/
 ---
 
 ## Q145774: HTML File Fails to Open from File Manager

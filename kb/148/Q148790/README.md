@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148790: DOC: mktime Fails for January 1, 1970 in Several Time Zones"
-permalink: kb/148/Q148790/
+permalink: /kb/148/Q148790/
 ---
 
 ## Q148790: DOC: mktime Fails for January 1, 1970 in Several Time Zones

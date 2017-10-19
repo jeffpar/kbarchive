@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284195: Encarta 99: Cannot Use Research Organizer on Windows 2000"
-permalink: kb/284/Q284195/
+permalink: /kb/284/Q284195/
 ---
 
 ## Q284195: Encarta 99: Cannot Use Research Organizer on Windows 2000

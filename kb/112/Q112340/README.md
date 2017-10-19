@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112340: DOC: QuickWin Does Not Support Run Time in a DLL (/MD)"
-permalink: kb/112/Q112340/
+permalink: /kb/112/Q112340/
 ---
 
 ## Q112340: DOC: QuickWin Does Not Support Run Time in a DLL (/MD)

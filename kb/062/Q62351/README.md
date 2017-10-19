@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62351: Hard Disk Compatibility in Windows 3.0"
-permalink: kb/062/Q62351/
+permalink: /kb/062/Q62351/
 ---
 
 ## Q62351: Hard Disk Compatibility in Windows 3.0

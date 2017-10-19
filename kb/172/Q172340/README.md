@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172340: STOP C0000221 Bad Image Checksum After Adding RAM"
-permalink: kb/172/Q172340/
+permalink: /kb/172/Q172340/
 ---
 
 ## Q172340: STOP C0000221 Bad Image Checksum After Adding RAM

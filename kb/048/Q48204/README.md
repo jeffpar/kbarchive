@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48204: Linker Can Indiscriminately Bind Different Types"
-permalink: kb/048/Q48204/
+permalink: /kb/048/Q48204/
 ---
 
 ## Q48204: Linker Can Indiscriminately Bind Different Types

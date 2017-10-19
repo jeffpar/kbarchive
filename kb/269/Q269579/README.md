@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269579: PRB: Tabbed Dialog Control Has Different Behavior on Non-VB Form"
-permalink: kb/269/Q269579/
+permalink: /kb/269/Q269579/
 ---
 
 ## Q269579: PRB: Tabbed Dialog Control Has Different Behavior on Non-VB Form

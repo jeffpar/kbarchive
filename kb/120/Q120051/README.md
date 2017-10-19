@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120051: DNS Reverse Name Resolution Requests Are Incorrect"
-permalink: kb/120/Q120051/
+permalink: /kb/120/Q120051/
 ---
 
 ## Q120051: DNS Reverse Name Resolution Requests Are Incorrect

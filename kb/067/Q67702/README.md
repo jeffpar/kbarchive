@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67702: Windows 3.0 PIF Settings for Quicken Version 3.0"
-permalink: kb/067/Q67702/
+permalink: /kb/067/Q67702/
 ---
 
 ## Q67702: Windows 3.0 PIF Settings for Quicken Version 3.0

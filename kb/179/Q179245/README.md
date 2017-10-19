@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179245: WD97: Format Painter Does Not Work with Inline Objects"
-permalink: kb/179/Q179245/
+permalink: /kb/179/Q179245/
 ---
 
 ## Q179245: WD97: Format Painter Does Not Work with Inline Objects

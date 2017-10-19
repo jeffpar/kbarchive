@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266062: VFP6 Sample: Distributes VFP 6.0 SP3 Run Time w/Active Document"
-permalink: kb/266/Q266062/
+permalink: /kb/266/Q266062/
 ---
 
 ## Q266062: VFP6 Sample: Distributes VFP 6.0 SP3 Run Time w/Active Document

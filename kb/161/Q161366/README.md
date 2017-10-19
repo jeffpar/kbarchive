@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161366: Err Msg: The Password You Specified Is Incorrect..."
-permalink: kb/161/Q161366/
+permalink: /kb/161/Q161366/
 ---
 
 ## Q161366: Err Msg: The Password You Specified Is Incorrect...

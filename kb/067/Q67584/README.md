@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67584: Active Code Page Versus Selected Code Page"
-permalink: kb/067/Q67584/
+permalink: /kb/067/Q67584/
 ---
 
 ## Q67584: Active Code Page Versus Selected Code Page

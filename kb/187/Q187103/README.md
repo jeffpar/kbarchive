@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187103: Issue Connecting from Computers with Different Display Settings"
-permalink: kb/187/Q187103/
+permalink: /kb/187/Q187103/
 ---
 
 ## Q187103: Issue Connecting from Computers with Different Display Settings

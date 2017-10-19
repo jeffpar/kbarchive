@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126297: WinNT 3.5 RAS Server Doesn't Call Back Non-3.5 Clients Over ISDN"
-permalink: kb/126/Q126297/
+permalink: /kb/126/Q126297/
 ---
 
 ## Q126297: WinNT 3.5 RAS Server Doesn't Call Back Non-3.5 Clients Over ISDN

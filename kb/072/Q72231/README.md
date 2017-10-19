@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72231: Paintbrush: No Cursor After Loading Write or Word for Windows"
-permalink: kb/072/Q72231/
+permalink: /kb/072/Q72231/
 ---
 
 ## Q72231: Paintbrush: No Cursor After Loading Write or Word for Windows

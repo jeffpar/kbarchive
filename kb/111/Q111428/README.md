@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111428: What is a Clean Boot for WFWG 3.11 with NetWare?"
-permalink: kb/111/Q111428/
+permalink: /kb/111/Q111428/
 ---
 
 ## Q111428: What is a Clean Boot for WFWG 3.11 with NetWare?

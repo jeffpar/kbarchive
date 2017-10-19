@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97153: Norton Desktop Unmounts DoubleSpace-compressed Bernoulli Drive"
-permalink: kb/097/Q97153/
+permalink: /kb/097/Q97153/
 ---
 
 ## Q97153: Norton Desktop Unmounts DoubleSpace-compressed Bernoulli Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278020: Visual C++ 6.0 Programmer's Guide Comments and Corrections"
-permalink: kb/278/Q278020/
+permalink: /kb/278/Q278020/
 ---
 
 ## Q278020: Visual C++ 6.0 Programmer's Guide Comments and Corrections

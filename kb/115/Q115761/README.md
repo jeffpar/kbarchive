@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115761: SAMPLE: SPINDIB Demonstrates 90-degree DIB Rotation"
-permalink: kb/115/Q115761/
+permalink: /kb/115/Q115761/
 ---
 
 ## Q115761: SAMPLE: SPINDIB Demonstrates 90-degree DIB Rotation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154137: XCLN: How to View, Print MS Exchange Personal Address Book Files"
-permalink: kb/154/Q154137/
+permalink: /kb/154/Q154137/
 ---
 
 ## Q154137: XCLN: How to View, Print MS Exchange Personal Address Book Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296255: Setting the MaxFailedObjects Key in Microsoft Directory Synchron"
-permalink: kb/296/Q296255/
+permalink: /kb/296/Q296255/
 ---
 
 ## Q296255: Setting the MaxFailedObjects Key in Microsoft Directory Synchron

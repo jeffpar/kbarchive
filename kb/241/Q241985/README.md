@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241985: TCP/IP Clients May Intermittently Lose 3270 Sessions"
-permalink: kb/241/Q241985/
+permalink: /kb/241/Q241985/
 ---
 
 ## Q241985: TCP/IP Clients May Intermittently Lose 3270 Sessions

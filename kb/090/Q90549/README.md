@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90549: Novell NETX.COM May Reset System Time"
-permalink: kb/090/Q90549/
+permalink: /kb/090/Q90549/
 ---
 
 ## Q90549: Novell NETX.COM May Reset System Time

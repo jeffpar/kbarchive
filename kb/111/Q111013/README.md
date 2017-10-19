@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111013: FIX: DDE Warning Message: Invalid Value: -32767"
-permalink: kb/111/Q111013/
+permalink: /kb/111/Q111013/
 ---
 
 ## Q111013: FIX: DDE Warning Message: Invalid Value: -32767

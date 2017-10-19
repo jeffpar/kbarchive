@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164636: Tab Function Does Not Work on 3270 Printer LU Page"
-permalink: kb/164/Q164636/
+permalink: /kb/164/Q164636/
 ---
 
 ## Q164636: Tab Function Does Not Work on 3270 Printer LU Page

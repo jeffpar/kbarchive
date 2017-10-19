@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194733: PC Rmt: Attachments from MAC Clients Show Garbage File Names"
-permalink: kb/194/Q194733/
+permalink: /kb/194/Q194733/
 ---
 
 ## Q194733: PC Rmt: Attachments from MAC Clients Show Garbage File Names

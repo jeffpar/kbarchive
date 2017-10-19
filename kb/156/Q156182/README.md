@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156182: XCLN: Changing Windows NT 4.0 Password in Microsoft Exchange"
-permalink: kb/156/Q156182/
+permalink: /kb/156/Q156182/
 ---
 
 ## Q156182: XCLN: Changing Windows NT 4.0 Password in Microsoft Exchange

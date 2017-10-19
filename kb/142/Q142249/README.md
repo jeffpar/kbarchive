@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142249: HOWTO: Implement &quot;What's This?&quot; Help in Visual Basic"
-permalink: kb/142/Q142249/
+permalink: /kb/142/Q142249/
 ---
 
 ## Q142249: HOWTO: Implement &quot;What's This?&quot; Help in Visual Basic

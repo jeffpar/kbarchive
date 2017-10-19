@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256934: S&amp;T 2000 Error Message: Cannot Launch Main Application"
-permalink: kb/256/Q256934/
+permalink: /kb/256/Q256934/
 ---
 
 ## Q256934: S&amp;T 2000 Error Message: Cannot Launch Main Application

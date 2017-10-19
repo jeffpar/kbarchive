@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103669: Flight Simulator 1.02 Disk Contents"
-permalink: kb/103/Q103669/
+permalink: /kb/103/Q103669/
 ---
 
 ## Q103669: Flight Simulator 1.02 Disk Contents

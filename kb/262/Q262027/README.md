@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262027: Enabling SyncPoint May Cause SNA Server Event 60, 730"
-permalink: kb/262/Q262027/
+permalink: /kb/262/Q262027/
 ---
 
 ## Q262027: Enabling SyncPoint May Cause SNA Server Event 60, 730

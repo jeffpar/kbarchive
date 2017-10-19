@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237573: SSO May Not Work After User Changes Windows NT Password"
-permalink: kb/237/Q237573/
+permalink: /kb/237/Q237573/
 ---
 
 ## Q237573: SSO May Not Work After User Changes Windows NT Password

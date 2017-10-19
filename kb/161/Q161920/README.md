@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161920: SMS: Program Group Control Fails to Set Up Localized Office 95"
-permalink: kb/161/Q161920/
+permalink: /kb/161/Q161920/
 ---
 
 ## Q161920: SMS: Program Group Control Fails to Set Up Localized Office 95

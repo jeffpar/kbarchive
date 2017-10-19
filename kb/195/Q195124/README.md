@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195124: XCON: NDR When Replying All to Message Sent to Moved User"
-permalink: kb/195/Q195124/
+permalink: /kb/195/Q195124/
 ---
 
 ## Q195124: XCON: NDR When Replying All to Message Sent to Moved User

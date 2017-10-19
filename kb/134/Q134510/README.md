@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134510: ScanDisk States That Compression Ratio Is Too High"
-permalink: kb/134/Q134510/
+permalink: /kb/134/Q134510/
 ---
 
 ## Q134510: ScanDisk States That Compression Ratio Is Too High

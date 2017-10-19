@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171510: FIX: Setting Font Property Causes Error 438 with RichTextBox"
-permalink: kb/171/Q171510/
+permalink: /kb/171/Q171510/
 ---
 
 ## Q171510: FIX: Setting Font Property Causes Error 438 with RichTextBox

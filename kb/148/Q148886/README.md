@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148886: Return of Arcade: Information About Joystick Support"
-permalink: kb/148/Q148886/
+permalink: /kb/148/Q148886/
 ---
 
 ## Q148886: Return of Arcade: Information About Joystick Support

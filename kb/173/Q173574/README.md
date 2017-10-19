@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173574: WD97: Cannot Use Visual Fox Pro ODBC Driver in Word Mail Merge"
-permalink: kb/173/Q173574/
+permalink: /kb/173/Q173574/
 ---
 
 ## Q173574: WD97: Cannot Use Visual Fox Pro ODBC Driver in Word Mail Merge

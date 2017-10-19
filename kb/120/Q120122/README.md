@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120122: Network DDE Applications Fail with TCP/IP-32"
-permalink: kb/120/Q120122/
+permalink: /kb/120/Q120122/
 ---
 
 ## Q120122: Network DDE Applications Fail with TCP/IP-32

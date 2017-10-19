@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81532: PC Win: Row/Column Numbers Missing in Excel OLE Object"
-permalink: kb/081/Q81532/
+permalink: /kb/081/Q81532/
 ---
 
 ## Q81532: PC Win: Row/Column Numbers Missing in Excel OLE Object

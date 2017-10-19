@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189914: BUG: Wrapped CoolBar Control May GPF Client EXE Program"
-permalink: kb/189/Q189914/
+permalink: /kb/189/Q189914/
 ---
 
 ## Q189914: BUG: Wrapped CoolBar Control May GPF Client EXE Program

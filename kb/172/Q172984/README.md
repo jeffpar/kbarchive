@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172984: TI 850/855 Printer Will Not Print Margins Less Than 1 Inch"
-permalink: kb/172/Q172984/
+permalink: /kb/172/Q172984/
 ---
 
 ## Q172984: TI 850/855 Printer Will Not Print Margins Less Than 1 Inch

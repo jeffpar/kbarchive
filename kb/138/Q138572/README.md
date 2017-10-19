@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138572: SMS Administrator GPFaults Accessing Machine Properties Info"
-permalink: kb/138/Q138572/
+permalink: /kb/138/Q138572/
 ---
 
 ## Q138572: SMS Administrator GPFaults Accessing Machine Properties Info

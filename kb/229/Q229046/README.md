@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229046: System Event 20 Logged When Printing with SNA Print Server"
-permalink: kb/229/Q229046/
+permalink: /kb/229/Q229046/
 ---
 
 ## Q229046: System Event 20 Logged When Printing with SNA Print Server

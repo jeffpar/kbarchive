@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268565: XWEB: Contact Created in OWA Can't Be Added As Recipient in OL"
-permalink: kb/268/Q268565/
+permalink: /kb/268/Q268565/
 ---
 
 ## Q268565: XWEB: Contact Created in OWA Can't Be Added As Recipient in OL

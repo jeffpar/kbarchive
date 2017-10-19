@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89893: FoxBASE+/Mac 2.01 Disk Directory Listing"
-permalink: kb/089/Q89893/
+permalink: /kb/089/Q89893/
 ---
 
 ## Q89893: FoxBASE+/Mac 2.01 Disk Directory Listing

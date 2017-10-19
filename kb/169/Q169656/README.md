@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169656: XCON: MTA Fails to Start and Logs Event ID 2143"
-permalink: kb/169/Q169656/
+permalink: /kb/169/Q169656/
 ---
 
 ## Q169656: XCON: MTA Fails to Start and Logs Event ID 2143

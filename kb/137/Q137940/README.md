@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137940: Error Message: The File C:&#92;W95undo.dat Cannot Be Read"
-permalink: kb/137/Q137940/
+permalink: /kb/137/Q137940/
 ---
 
 ## Q137940: Error Message: The File C:&#92;W95undo.dat Cannot Be Read

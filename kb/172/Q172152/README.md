@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172152: Unable to read the Appletalk Registry Section"
-permalink: kb/172/Q172152/
+permalink: /kb/172/Q172152/
 ---
 
 ## Q172152: Unable to read the Appletalk Registry Section

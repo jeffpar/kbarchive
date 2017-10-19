@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244597: HOWTO: Enumerate Cluster Resources by Resource Type in VB"
-permalink: kb/244/Q244597/
+permalink: /kb/244/Q244597/
 ---
 
 ## Q244597: HOWTO: Enumerate Cluster Resources by Resource Type in VB

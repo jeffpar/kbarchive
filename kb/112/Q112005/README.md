@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112005: BUG: Illegal Formal Argument and -Zi Crash Compiler"
-permalink: kb/112/Q112005/
+permalink: /kb/112/Q112005/
 ---
 
 ## Q112005: BUG: Illegal Formal Argument and -Zi Crash Compiler

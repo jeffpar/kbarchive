@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71554: BUG: Bad Results Displayed by CodeView for Huge COMMON Blocks"
-permalink: kb/071/Q71554/
+permalink: /kb/071/Q71554/
 ---
 
 ## Q71554: BUG: Bad Results Displayed by CodeView for Huge COMMON Blocks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226363: HTMLA Web Administration Forms Display Incorrect Max Log Size"
-permalink: kb/226/Q226363/
+permalink: /kb/226/Q226363/
 ---
 
 ## Q226363: HTMLA Web Administration Forms Display Incorrect Max Log Size

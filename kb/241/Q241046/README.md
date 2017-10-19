@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241046: Cannot Create a Memory.dmp File on Computers with over 4 GB RAM"
-permalink: kb/241/Q241046/
+permalink: /kb/241/Q241046/
 ---
 
 ## Q241046: Cannot Create a Memory.dmp File on Computers with over 4 GB RAM

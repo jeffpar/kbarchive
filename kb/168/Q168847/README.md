@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168847: PRB: &quot;DM0025: Error attaching to process&quot; in Windows 95"
-permalink: kb/168/Q168847/
+permalink: /kb/168/Q168847/
 ---
 
 ## Q168847: PRB: &quot;DM0025: Error attaching to process&quot; in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154066: Removing Everyone(Read) from %WinRoot% Shuts Down at Logon"
-permalink: kb/154/Q154066/
+permalink: /kb/154/Q154066/
 ---
 
 ## Q154066: Removing Everyone(Read) from %WinRoot% Shuts Down at Logon

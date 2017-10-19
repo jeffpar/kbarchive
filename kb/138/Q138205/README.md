@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138205: HOWTO: Use OLE Automation with Microsoft Word"
-permalink: kb/138/Q138205/
+permalink: /kb/138/Q138205/
 ---
 
 ## Q138205: HOWTO: Use OLE Automation with Microsoft Word

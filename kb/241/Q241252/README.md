@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241252: VPN Tunnels - PPTP Protocol Packet Description and Use"
-permalink: kb/241/Q241252/
+permalink: /kb/241/Q241252/
 ---
 
 ## Q241252: VPN Tunnels - PPTP Protocol Packet Description and Use

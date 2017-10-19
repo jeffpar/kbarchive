@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233490: Access Violation When Using Multi-Protocol Router Function Calls"
-permalink: kb/233/Q233490/
+permalink: /kb/233/Q233490/
 ---
 
 ## Q233490: Access Violation When Using Multi-Protocol Router Function Calls

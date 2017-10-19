@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103906: PC DOS: Err Msg: Notice 80: Failure to Create Folder"
-permalink: kb/103/Q103906/
+permalink: /kb/103/Q103906/
 ---
 
 ## Q103906: PC DOS: Err Msg: Notice 80: Failure to Create Folder

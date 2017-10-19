@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113930: ADT2: Shortcut Menus Cannot Be Disabled in Microsoft Access"
-permalink: kb/113/Q113930/
+permalink: /kb/113/Q113930/
 ---
 
 ## Q113930: ADT2: Shortcut Menus Cannot Be Disabled in Microsoft Access

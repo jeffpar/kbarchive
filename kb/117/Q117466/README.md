@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117466: Cannot Create Shortcuts with File Manager in Windows 95"
-permalink: kb/117/Q117466/
+permalink: /kb/117/Q117466/
 ---
 
 ## Q117466: Cannot Create Shortcuts with File Manager in Windows 95

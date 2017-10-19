@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159274: TN3270E Does Not Support RTM"
-permalink: kb/159/Q159274/
+permalink: /kb/159/Q159274/
 ---
 
 ## Q159274: TN3270E Does Not Support RTM

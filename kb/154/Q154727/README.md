@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154727: Close Combat: Playing Over the Internet"
-permalink: kb/154/Q154727/
+permalink: /kb/154/Q154727/
 ---
 
 ## Q154727: Close Combat: Playing Over the Internet

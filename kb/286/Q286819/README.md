@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286819: SMS 1.2 SP3 Inventory Agent May Corrupt Network Adapter Data"
-permalink: kb/286/Q286819/
+permalink: /kb/286/Q286819/
 ---
 
 ## Q286819: SMS 1.2 SP3 Inventory Agent May Corrupt Network Adapter Data

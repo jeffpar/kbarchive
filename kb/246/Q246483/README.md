@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246483: Installation Unsuccessful for 3Com 3C575-TX CardBus Network Card"
-permalink: kb/246/Q246483/
+permalink: /kb/246/Q246483/
 ---
 
 ## Q246483: Installation Unsuccessful for 3Com 3C575-TX CardBus Network Card

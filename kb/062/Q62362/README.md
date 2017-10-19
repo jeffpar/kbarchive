@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62362: Printing from a Network Aware/Unaware MS-DOS Application"
-permalink: kb/062/Q62362/
+permalink: /kb/062/Q62362/
 ---
 
 ## Q62362: Printing from a Network Aware/Unaware MS-DOS Application

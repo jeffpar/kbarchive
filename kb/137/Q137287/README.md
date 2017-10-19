@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137287: Windows NT Backup Causes Access Violation When Started"
-permalink: kb/137/Q137287/
+permalink: /kb/137/Q137287/
 ---
 
 ## Q137287: Windows NT Backup Causes Access Violation When Started

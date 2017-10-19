@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177887: XCON: MTA Terminates Suddenly with 2175, 100, and 9405 Events"
-permalink: kb/177/Q177887/
+permalink: /kb/177/Q177887/
 ---
 
 ## Q177887: XCON: MTA Terminates Suddenly with 2175, 100, and 9405 Events

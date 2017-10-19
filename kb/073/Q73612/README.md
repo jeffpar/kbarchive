@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73612: MS-DOS 5 Upgrade Incorrectly Detects Monochrome Monitors"
-permalink: kb/073/Q73612/
+permalink: /kb/073/Q73612/
 ---
 
 ## Q73612: MS-DOS 5 Upgrade Incorrectly Detects Monochrome Monitors

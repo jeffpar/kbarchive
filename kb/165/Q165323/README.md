@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165323: Print Server Does Not Allow Font Size Selection"
-permalink: kb/165/Q165323/
+permalink: /kb/165/Q165323/
 ---
 
 ## Q165323: Print Server Does Not Allow Font Size Selection

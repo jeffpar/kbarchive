@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245830: XCLN: Using the Outlook LDAP Service to View Global Address List"
-permalink: kb/245/Q245830/
+permalink: /kb/245/Q245830/
 ---
 
 ## Q245830: XCLN: Using the Outlook LDAP Service to View Global Address List

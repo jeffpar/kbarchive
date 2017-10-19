@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164224: Inserting PC Card in Dock with CardBus Card May Cause Reboot"
-permalink: kb/164/Q164224/
+permalink: /kb/164/Q164224/
 ---
 
 ## Q164224: Inserting PC Card in Dock with CardBus Card May Cause Reboot

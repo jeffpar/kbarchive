@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138979: How to Create a Builder That Changes the Font of Form Objects"
-permalink: kb/138/Q138979/
+permalink: /kb/138/Q138979/
 ---
 
 ## Q138979: How to Create a Builder That Changes the Font of Form Objects

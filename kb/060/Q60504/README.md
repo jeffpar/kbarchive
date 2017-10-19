@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60504: Can't Disable Communications Server Error Dialog Boxes"
-permalink: kb/060/Q60504/
+permalink: /kb/060/Q60504/
 ---
 
 ## Q60504: Can't Disable Communications Server Error Dialog Boxes

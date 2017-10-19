@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124121: Memory Loss During Application Process Creation"
-permalink: kb/124/Q124121/
+permalink: /kb/124/Q124121/
 ---
 
 ## Q124121: Memory Loss During Application Process Creation

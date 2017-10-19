@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113098: Bookshelf: Can't Run Reinstall from a Different Drive"
-permalink: kb/113/Q113098/
+permalink: /kb/113/Q113098/
 ---
 
 ## Q113098: Bookshelf: Can't Run Reinstall from a Different Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136964: Event File Not Saved After Choosing No To Clear All Events"
-permalink: kb/136/Q136964/
+permalink: /kb/136/Q136964/
 ---
 
 ## Q136964: Event File Not Saved After Choosing No To Clear All Events

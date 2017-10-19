@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140124: NetWare Search Mapping Works Only in Current MS-DOS Session"
-permalink: kb/140/Q140124/
+permalink: /kb/140/Q140124/
 ---
 
 ## Q140124: NetWare Search Mapping Works Only in Current MS-DOS Session

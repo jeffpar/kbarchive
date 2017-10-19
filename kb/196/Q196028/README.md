@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196028: PRB: FileListBox Control May Not List File Names Properly"
-permalink: kb/196/Q196028/
+permalink: /kb/196/Q196028/
 ---
 
 ## Q196028: PRB: FileListBox Control May Not List File Names Properly

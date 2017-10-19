@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310934: Event 51 Logged During Failed Host-Initiated Password Change"
-permalink: kb/310/Q310934/
+permalink: /kb/310/Q310934/
 ---
 
 ## Q310934: Event 51 Logged During Failed Host-Initiated Password Change

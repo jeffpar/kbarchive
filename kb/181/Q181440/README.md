@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181440: HOWTO: Add Full Row Select Functionality to a ListView Control"
-permalink: kb/181/Q181440/
+permalink: /kb/181/Q181440/
 ---
 
 ## Q181440: HOWTO: Add Full Row Select Functionality to a ListView Control

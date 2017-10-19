@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128074: How to Refer to a Form from a Menu or a Program"
-permalink: kb/128/Q128074/
+permalink: /kb/128/Q128074/
 ---
 
 ## Q128074: How to Refer to a Form from a Menu or a Program

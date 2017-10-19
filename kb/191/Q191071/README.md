@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191071: BUG: Controls Do Not Refresh After Exit From Screen Saver on NT"
-permalink: kb/191/Q191071/
+permalink: /kb/191/Q191071/
 ---
 
 ## Q191071: BUG: Controls Do Not Refresh After Exit From Screen Saver on NT

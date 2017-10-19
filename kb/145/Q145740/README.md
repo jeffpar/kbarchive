@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145740: How to Start Dial-Up Networking Connection Using Command Line"
-permalink: kb/145/Q145740/
+permalink: /kb/145/Q145740/
 ---
 
 ## Q145740: How to Start Dial-Up Networking Connection Using Command Line

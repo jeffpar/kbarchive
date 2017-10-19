@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275601: Virtual Directory Names with Executable Extensions Are Not Used"
-permalink: kb/275/Q275601/
+permalink: /kb/275/Q275601/
 ---
 
 ## Q275601: Virtual Directory Names with Executable Extensions Are Not Used

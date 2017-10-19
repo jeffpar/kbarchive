@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84563: Windows Err Msg: You Are Already Running Enhanced Mode..."
-permalink: kb/084/Q84563/
+permalink: /kb/084/Q84563/
 ---
 
 ## Q84563: Windows Err Msg: You Are Already Running Enhanced Mode...

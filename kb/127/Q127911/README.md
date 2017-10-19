@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127911: Err Msg: Cannot Create This File When This File Already Exists"
-permalink: kb/127/Q127911/
+permalink: /kb/127/Q127911/
 ---
 
 ## Q127911: Err Msg: Cannot Create This File When This File Already Exists

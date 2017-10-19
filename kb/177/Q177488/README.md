@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177488: SNA Client Takes Longer to Connect Than Normal"
-permalink: kb/177/Q177488/
+permalink: /kb/177/Q177488/
 ---
 
 ## Q177488: SNA Client Takes Longer to Connect Than Normal

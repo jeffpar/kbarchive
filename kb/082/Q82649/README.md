@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82649: The Benefits of OLE in Windows 3.1"
-permalink: kb/082/Q82649/
+permalink: /kb/082/Q82649/
 ---
 
 ## Q82649: The Benefits of OLE in Windows 3.1

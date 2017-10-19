@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165705: Client Functions Can't Use TCP/IP Sockets on SNA Server"
-permalink: kb/165/Q165705/
+permalink: /kb/165/Q165705/
 ---
 
 ## Q165705: Client Functions Can't Use TCP/IP Sockets on SNA Server

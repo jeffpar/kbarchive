@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131489: Week Entry in Go To Dialog Allows Week 0 through 99"
-permalink: kb/131/Q131489/
+permalink: /kb/131/Q131489/
 ---
 
 ## Q131489: Week Entry in Go To Dialog Allows Week 0 through 99

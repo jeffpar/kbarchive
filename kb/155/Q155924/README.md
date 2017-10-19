@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155924: &quot;Not Enough Resources&quot; Error Running WINS Administrator"
-permalink: kb/155/Q155924/
+permalink: /kb/155/Q155924/
 ---
 
 ## Q155924: &quot;Not Enough Resources&quot; Error Running WINS Administrator

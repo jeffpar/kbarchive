@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253196: XFOR: cc:Mail DB8 SMTP PAB Entries Are Not Migrated to Exchange"
-permalink: kb/253/Q253196/
+permalink: /kb/253/Q253196/
 ---
 
 ## Q253196: XFOR: cc:Mail DB8 SMTP PAB Entries Are Not Migrated to Exchange

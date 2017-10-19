@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138529: PRB: Visual Basic 4.0 Does Not Support Color Cursor Files"
-permalink: kb/138/Q138529/
+permalink: /kb/138/Q138529/
 ---
 
 ## Q138529: PRB: Visual Basic 4.0 Does Not Support Color Cursor Files

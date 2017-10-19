@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176030: Reducing RIP Requests with NWLINK"
-permalink: kb/176/Q176030/
+permalink: /kb/176/Q176030/
 ---
 
 ## Q176030: Reducing RIP Requests with NWLINK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247248: PRB: BuffDirty and the Class Browser"
-permalink: kb/247/Q247248/
+permalink: /kb/247/Q247248/
 ---
 
 ## Q247248: PRB: BuffDirty and the Class Browser

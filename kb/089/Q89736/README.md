@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89736: Sharing Violation with Norton Desktop Smart Erase"
-permalink: kb/089/Q89736/
+permalink: /kb/089/Q89736/
 ---
 
 ## Q89736: Sharing Violation with Norton Desktop Smart Erase

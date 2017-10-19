@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304693: Event ID 644 May Be Logged When Auditing Is Not Enabled"
-permalink: kb/304/Q304693/
+permalink: /kb/304/Q304693/
 ---
 
 ## Q304693: Event ID 644 May Be Logged When Auditing Is Not Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154688: DPT PCI-SCSI Fails on PPC if IRQ Greater Than 15"
-permalink: kb/154/Q154688/
+permalink: /kb/154/Q154688/
 ---
 
 ## Q154688: DPT PCI-SCSI Fails on PPC if IRQ Greater Than 15

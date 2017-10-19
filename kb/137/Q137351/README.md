@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137351: PC Forms: MEFROUTE.XLA Will Not Route Excel 5 Workbooks"
-permalink: kb/137/Q137351/
+permalink: /kb/137/Q137351/
 ---
 
 ## Q137351: PC Forms: MEFROUTE.XLA Will Not Route Excel 5 Workbooks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312984: Microsoft Access Version 2002 Step by Step Comments and Correcti"
-permalink: kb/312/Q312984/
+permalink: /kb/312/Q312984/
 ---
 
 ## Q312984: Microsoft Access Version 2002 Step by Step Comments and Correcti

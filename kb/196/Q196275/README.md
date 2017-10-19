@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196275: PRB: Repeatedly Pressing F1 Key on VB Application May Crash Help"
-permalink: kb/196/Q196275/
+permalink: /kb/196/Q196275/
 ---
 
 ## Q196275: PRB: Repeatedly Pressing F1 Key on VB Application May Crash Help

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147121: XADM: Cannot Incremental Restore Until Full Backup Is Restored"
-permalink: kb/147/Q147121/
+permalink: /kb/147/Q147121/
 ---
 
 ## Q147121: XADM: Cannot Incremental Restore Until Full Backup Is Restored

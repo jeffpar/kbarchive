@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163563: TN3270E Printer Emulators May Have Flow Control Issues"
-permalink: kb/163/Q163563/
+permalink: /kb/163/Q163563/
 ---
 
 ## Q163563: TN3270E Printer Emulators May Have Flow Control Issues

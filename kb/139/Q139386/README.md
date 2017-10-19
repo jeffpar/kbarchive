@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139386: Features not Available in a Distributed Application"
-permalink: kb/139/Q139386/
+permalink: /kb/139/Q139386/
 ---
 
 ## Q139386: Features not Available in a Distributed Application

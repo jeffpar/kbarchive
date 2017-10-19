@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173380: XWEB: Pressing Enter when Focus is on Header Field will Send Msg"
-permalink: kb/173/Q173380/
+permalink: /kb/173/Q173380/
 ---
 
 ## Q173380: XWEB: Pressing Enter when Focus is on Header Field will Send Msg

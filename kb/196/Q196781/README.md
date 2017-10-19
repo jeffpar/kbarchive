@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196781: XCON: Multiple SMTP and NNTP Entries within Key Manager"
-permalink: kb/196/Q196781/
+permalink: /kb/196/Q196781/
 ---
 
 ## Q196781: XCON: Multiple SMTP and NNTP Entries within Key Manager

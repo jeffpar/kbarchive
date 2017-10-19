@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272725: BUG: Playing WMF with a Palette into Another WMF Leaks a Palette"
-permalink: kb/272/Q272725/
+permalink: /kb/272/Q272725/
 ---
 
 ## Q272725: BUG: Playing WMF with a Palette into Another WMF Leaks a Palette

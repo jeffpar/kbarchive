@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149527: XCLN: Can't Add Fax Service After Installing Exchange"
-permalink: kb/149/Q149527/
+permalink: /kb/149/Q149527/
 ---
 
 ## Q149527: XCLN: Can't Add Fax Service After Installing Exchange

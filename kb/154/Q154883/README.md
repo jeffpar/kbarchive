@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154883: Home Products Containing Multimedia Version of Msinfo32.exe"
-permalink: kb/154/Q154883/
+permalink: /kb/154/Q154883/
 ---
 
 ## Q154883: Home Products Containing Multimedia Version of Msinfo32.exe

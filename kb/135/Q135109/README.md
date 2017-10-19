@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135109: HOWTO: Use Updatable Joins in an MFC ODBC Application"
-permalink: kb/135/Q135109/
+permalink: /kb/135/Q135109/
 ---
 
 ## Q135109: HOWTO: Use Updatable Joins in an MFC ODBC Application

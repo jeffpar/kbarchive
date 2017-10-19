@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136852: FIX: Objects Are Missing the Destroy Event"
-permalink: kb/136/Q136852/
+permalink: /kb/136/Q136852/
 ---
 
 ## Q136852: FIX: Objects Are Missing the Destroy Event

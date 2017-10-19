@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262384: SMS: Info on Configuring Collection Evaluator Resync Interval"
-permalink: kb/262/Q262384/
+permalink: /kb/262/Q262384/
 ---
 
 ## Q262384: SMS: Info on Configuring Collection Evaluator Resync Interval

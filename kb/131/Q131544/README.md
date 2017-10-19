@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131544: HP Fast Ethernet Network Adapters Fail with Incorrect Cabling"
-permalink: kb/131/Q131544/
+permalink: /kb/131/Q131544/
 ---
 
 ## Q131544: HP Fast Ethernet Network Adapters Fail with Incorrect Cabling

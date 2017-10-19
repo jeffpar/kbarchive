@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108660: MS TCP/IP Does Not Load with ODINSUP on Token Ring"
-permalink: kb/108/Q108660/
+permalink: /kb/108/Q108660/
 ---
 
 ## Q108660: MS TCP/IP Does Not Load with ODINSUP on Token Ring

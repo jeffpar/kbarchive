@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226839: SMS: Win 3.x Computers Can't Run Hardware Inventory"
-permalink: kb/226/Q226839/
+permalink: /kb/226/Q226839/
 ---
 
 ## Q226839: SMS: Win 3.x Computers Can't Run Hardware Inventory

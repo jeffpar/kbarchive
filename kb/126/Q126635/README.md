@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126635: MS PRESS COMPUTER DICTIONARY: Corrections and Comments"
-permalink: kb/126/Q126635/
+permalink: /kb/126/Q126635/
 ---
 
 ## Q126635: MS PRESS COMPUTER DICTIONARY: Corrections and Comments

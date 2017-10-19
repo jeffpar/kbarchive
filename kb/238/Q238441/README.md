@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238441: Remove Personalized Settings for New Users After Installing IE5"
-permalink: kb/238/Q238441/
+permalink: /kb/238/Q238441/
 ---
 
 ## Q238441: Remove Personalized Settings for New Users After Installing IE5

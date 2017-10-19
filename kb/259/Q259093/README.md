@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259093: INFO: Logo FAQ: How Difficult Is it to Comply with the App Spec?"
-permalink: kb/259/Q259093/
+permalink: /kb/259/Q259093/
 ---
 
 ## Q259093: INFO: Logo FAQ: How Difficult Is it to Comply with the App Spec?

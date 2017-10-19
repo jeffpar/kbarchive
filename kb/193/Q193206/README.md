@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193206: Acquiring SNMP Info For OSPF in RRAS Hangs"
-permalink: kb/193/Q193206/
+permalink: /kb/193/Q193206/
 ---
 
 ## Q193206: Acquiring SNMP Info For OSPF in RRAS Hangs

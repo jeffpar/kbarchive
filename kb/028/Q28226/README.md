@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28226: DOCERR: Division Rather than Multiplication"
-permalink: kb/028/Q28226/
+permalink: /kb/028/Q28226/
 ---
 
 ## Q28226: DOCERR: Division Rather than Multiplication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189418: INFO: Difference Between INDEXSEEK and KEYMATCH Functions"
-permalink: kb/189/Q189418/
+permalink: /kb/189/Q189418/
 ---
 
 ## Q189418: INFO: Difference Between INDEXSEEK and KEYMATCH Functions

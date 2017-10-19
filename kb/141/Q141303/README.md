@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141303: Dynasets w/ CLongBinary Fields Throws Incorrect Exception"
-permalink: kb/141/Q141303/
+permalink: /kb/141/Q141303/
 ---
 
 ## Q141303: Dynasets w/ CLongBinary Fields Throws Incorrect Exception

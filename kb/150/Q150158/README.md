@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150158: NTFS: Directory Changes Reported to LMREPL Erroneously"
-permalink: kb/150/Q150158/
+permalink: /kb/150/Q150158/
 ---
 
 ## Q150158: NTFS: Directory Changes Reported to LMREPL Erroneously

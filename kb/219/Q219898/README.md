@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219898: How the Bad Password Count Is Incremented in Windows NT"
-permalink: kb/219/Q219898/
+permalink: /kb/219/Q219898/
 ---
 
 ## Q219898: How the Bad Password Count Is Incremented in Windows NT

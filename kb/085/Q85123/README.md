@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85123: Vector Fonts Can't Be Printed If TrueType As Graphics Selected"
-permalink: kb/085/Q85123/
+permalink: /kb/085/Q85123/
 ---
 
 ## Q85123: Vector Fonts Can't Be Printed If TrueType As Graphics Selected

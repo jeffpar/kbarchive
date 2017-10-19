@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163135: WD97: Word Hangs When Printing Open Document from Open Dialog"
-permalink: kb/163/Q163135/
+permalink: /kb/163/Q163135/
 ---
 
 ## Q163135: WD97: Word Hangs When Printing Open Document from Open Dialog

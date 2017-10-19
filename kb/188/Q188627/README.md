@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188627: XADM: MSExchangeIS Move Mailbox Error Event IDs"
-permalink: kb/188/Q188627/
+permalink: /kb/188/Q188627/
 ---
 
 ## Q188627: XADM: MSExchangeIS Move Mailbox Error Event IDs

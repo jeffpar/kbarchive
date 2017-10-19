@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243615: Distortion of Screen Colors and Text Occurs During the MSN Setup"
-permalink: kb/243/Q243615/
+permalink: /kb/243/Q243615/
 ---
 
 ## Q243615: Distortion of Screen Colors and Text Occurs During the MSN Setup

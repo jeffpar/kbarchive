@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177405: Disabled Zones or Failed Reverse Queries Using DNS Root Server"
-permalink: kb/177/Q177405/
+permalink: /kb/177/Q177405/
 ---
 
 ## Q177405: Disabled Zones or Failed Reverse Queries Using DNS Root Server

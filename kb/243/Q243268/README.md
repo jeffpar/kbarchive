@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243268: AoE II: How to Set Up a Multiplayer Game Sharing CD-ROMs"
-permalink: kb/243/Q243268/
+permalink: /kb/243/Q243268/
 ---
 
 ## Q243268: AoE II: How to Set Up a Multiplayer Game Sharing CD-ROMs

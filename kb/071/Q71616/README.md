@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71616: Windows Entertainment Pack 1 Will Not Set Up"
-permalink: kb/071/Q71616/
+permalink: /kb/071/Q71616/
 ---
 
 ## Q71616: Windows Entertainment Pack 1 Will Not Set Up

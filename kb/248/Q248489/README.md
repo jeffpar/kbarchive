@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248489: XADM: Insufficient Access Rights When Creating Site Connectors"
-permalink: kb/248/Q248489/
+permalink: /kb/248/Q248489/
 ---
 
 ## Q248489: XADM: Insufficient Access Rights When Creating Site Connectors

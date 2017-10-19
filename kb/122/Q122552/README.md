@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122552: SNA Server Client Error 629 or 546 when Using Named Pipes"
-permalink: kb/122/Q122552/
+permalink: /kb/122/Q122552/
 ---
 
 ## Q122552: SNA Server Client Error 629 or 546 when Using Named Pipes

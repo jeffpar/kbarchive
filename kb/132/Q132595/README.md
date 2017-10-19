@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132595: Quick View Does Not Support Older Lotus 1-2-3 Versions"
-permalink: kb/132/Q132595/
+permalink: /kb/132/Q132595/
 ---
 
 ## Q132595: Quick View Does Not Support Older Lotus 1-2-3 Versions

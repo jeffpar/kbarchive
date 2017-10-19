@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151853: INFO: Required Files For The Pivot Table Wizard"
-permalink: kb/151/Q151853/
+permalink: /kb/151/Q151853/
 ---
 
 ## Q151853: INFO: Required Files For The Pivot Table Wizard

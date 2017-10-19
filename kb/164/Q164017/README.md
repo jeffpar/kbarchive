@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164017: Explanation of a DNS Zone Transfer"
-permalink: kb/164/Q164017/
+permalink: /kb/164/Q164017/
 ---
 
 ## Q164017: Explanation of a DNS Zone Transfer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186053: Removing DLS Removes Application Event Log Registry Keys"
-permalink: kb/186/Q186053/
+permalink: /kb/186/Q186053/
 ---
 
 ## Q186053: Removing DLS Removes Application Event Log Registry Keys

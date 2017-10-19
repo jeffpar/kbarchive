@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84358: Write Err Msg: Problem with Object/Link"
-permalink: kb/084/Q84358/
+permalink: /kb/084/Q84358/
 ---
 
 ## Q84358: Write Err Msg: Problem with Object/Link

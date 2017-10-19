@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98"
-permalink: kb/189/Q189928/
+permalink: /kb/189/Q189928/
 ---
 
 ## Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98

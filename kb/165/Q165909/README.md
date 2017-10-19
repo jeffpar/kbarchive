@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165909: WV: Form Fields Are Not Editable in Word Viewer 97-2000"
-permalink: kb/165/Q165909/
+permalink: /kb/165/Q165909/
 ---
 
 ## Q165909: WV: Form Fields Are Not Editable in Word Viewer 97-2000

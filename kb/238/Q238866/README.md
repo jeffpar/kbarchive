@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238866: SMS: Event 1011 on Smsperf.dll Appears in Windows NT Event Log"
-permalink: kb/238/Q238866/
+permalink: /kb/238/Q238866/
 ---
 
 ## Q238866: SMS: Event 1011 on Smsperf.dll Appears in Windows NT Event Log

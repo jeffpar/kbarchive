@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215130: Scheduler Routes &quot;Send&quot; Requests to Deleted Addresses"
-permalink: kb/215/Q215130/
+permalink: /kb/215/Q215130/
 ---
 
 ## Q215130: Scheduler Routes &quot;Send&quot; Requests to Deleted Addresses

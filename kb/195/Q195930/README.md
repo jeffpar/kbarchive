@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195930: Memory Usage by MS-DOS Application Steadily Increases"
-permalink: kb/195/Q195930/
+permalink: /kb/195/Q195930/
 ---
 
 ## Q195930: Memory Usage by MS-DOS Application Steadily Increases

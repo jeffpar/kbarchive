@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159326: WD97: Macros Not Listed After Creating New Document in Explorer"
-permalink: kb/159/Q159326/
+permalink: /kb/159/Q159326/
 ---
 
 ## Q159326: WD97: Macros Not Listed After Creating New Document in Explorer

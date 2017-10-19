@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186429: HOWTO: Create Scrollable Viewports"
-permalink: kb/186/Q186429/
+permalink: /kb/186/Q186429/
 ---
 
 ## Q186429: HOWTO: Create Scrollable Viewports

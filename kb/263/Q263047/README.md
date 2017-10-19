@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263047: Games: How to Troubleshoot Sound Related Issues"
-permalink: kb/263/Q263047/
+permalink: /kb/263/Q263047/
 ---
 
 ## Q263047: Games: How to Troubleshoot Sound Related Issues

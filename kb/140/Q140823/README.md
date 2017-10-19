@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140823: MS-DOS Client Setup Fails with Error CSU7520"
-permalink: kb/140/Q140823/
+permalink: /kb/140/Q140823/
 ---
 
 ## Q140823: MS-DOS Client Setup Fails with Error CSU7520

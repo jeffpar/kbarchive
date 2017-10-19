@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67390: Converting Flight Simulator Coordinates to Meters or Feet"
-permalink: kb/067/Q67390/
+permalink: /kb/067/Q67390/
 ---
 
 ## Q67390: Converting Flight Simulator Coordinates to Meters or Feet

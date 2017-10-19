@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157876: FIX: SetFieldNull() Asserts in DBCORE.CPP Line 4055 or 4062"
-permalink: kb/157/Q157876/
+permalink: /kb/157/Q157876/
 ---
 
 ## Q157876: FIX: SetFieldNull() Asserts in DBCORE.CPP Line 4055 or 4062

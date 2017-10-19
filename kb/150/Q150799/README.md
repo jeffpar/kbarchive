@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150799: Changes to Supported Platforms Options in Package Properties"
-permalink: kb/150/Q150799/
+permalink: /kb/150/Q150799/
 ---
 
 ## Q150799: Changes to Supported Platforms Options in Package Properties

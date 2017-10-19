@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125427: Writer: Rebus Pictures Don't Print on ImageWriter"
-permalink: kb/125/Q125427/
+permalink: /kb/125/Q125427/
 ---
 
 ## Q125427: Writer: Rebus Pictures Don't Print on ImageWriter

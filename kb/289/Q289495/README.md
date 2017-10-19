@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289495: XADM: Pfadmin Version 1.30 Error Messages"
-permalink: kb/289/Q289495/
+permalink: /kb/289/Q289495/
 ---
 
 ## Q289495: XADM: Pfadmin Version 1.30 Error Messages

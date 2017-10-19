@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86926: Using the Dynamic Data Exchange Management Library"
-permalink: kb/086/Q86926/
+permalink: /kb/086/Q86926/
 ---
 
 ## Q86926: Using the Dynamic Data Exchange Management Library

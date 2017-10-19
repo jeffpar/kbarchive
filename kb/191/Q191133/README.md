@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191133: CG4: &quot;Can't open this item&quot; Error Opening Message with Clip Art"
-permalink: kb/191/Q191133/
+permalink: /kb/191/Q191133/
 ---
 
 ## Q191133: CG4: &quot;Can't open this item&quot; Error Opening Message with Clip Art

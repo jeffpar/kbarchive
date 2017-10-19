@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123456: BUG: MSCDEX May Not Detect Disk Change"
-permalink: kb/123/Q123456/
+permalink: /kb/123/Q123456/
 ---
 
 ## Q123456: BUG: MSCDEX May Not Detect Disk Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154762: How to Remove Jet&lt;n&gt;.log Files Created by DSMN"
-permalink: kb/154/Q154762/
+permalink: /kb/154/Q154762/
 ---
 
 ## Q154762: How to Remove Jet&lt;n&gt;.log Files Created by DSMN

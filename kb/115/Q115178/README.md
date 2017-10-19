@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115178: Drive Access Problems with Dual-Capacity Bernoulli Drive"
-permalink: kb/115/Q115178/
+permalink: /kb/115/Q115178/
 ---
 
 ## Q115178: Drive Access Problems with Dual-Capacity Bernoulli Drive

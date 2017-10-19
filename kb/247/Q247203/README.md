@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247203: BUG: Try/Catch Block Fails when Global Optimizations Enabled"
-permalink: kb/247/Q247203/
+permalink: /kb/247/Q247203/
 ---
 
 ## Q247203: BUG: Try/Catch Block Fails when Global Optimizations Enabled

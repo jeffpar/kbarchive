@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175345: Age Of Empires Err Msg: Not Enough Memory or Swap File Space"
-permalink: kb/175/Q175345/
+permalink: /kb/175/Q175345/
 ---
 
 ## Q175345: Age Of Empires Err Msg: Not Enough Memory or Swap File Space

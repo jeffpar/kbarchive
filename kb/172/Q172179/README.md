@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172179: WD97: Saving to a Banyan Vines Server Hangs Word"
-permalink: kb/172/Q172179/
+permalink: /kb/172/Q172179/
 ---
 
 ## Q172179: WD97: Saving to a Banyan Vines Server Hangs Word

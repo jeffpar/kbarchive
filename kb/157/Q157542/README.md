@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157542: Private Meetings Not Created as Private on Attendee's Calendar"
-permalink: kb/157/Q157542/
+permalink: /kb/157/Q157542/
 ---
 
 ## Q157542: Private Meetings Not Created as Private on Attendee's Calendar

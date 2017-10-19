@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183218: HOWTO: Subclass a Dialog Item in ATL"
-permalink: kb/183/Q183218/
+permalink: /kb/183/Q183218/
 ---
 
 ## Q183218: HOWTO: Subclass a Dialog Item in ATL

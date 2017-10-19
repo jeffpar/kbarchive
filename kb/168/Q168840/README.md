@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168840: WD97: New File Types Still Open in Version 7.0 After Upgrade"
-permalink: kb/168/Q168840/
+permalink: /kb/168/Q168840/
 ---
 
 ## Q168840: WD97: New File Types Still Open in Version 7.0 After Upgrade

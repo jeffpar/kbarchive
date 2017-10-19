@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126868: error with how to setup event logging"
-permalink: kb/126/Q126868/
+permalink: /kb/126/Q126868/
 ---
 
 ## Q126868: error with how to setup event logging

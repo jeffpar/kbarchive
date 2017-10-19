@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153502: PRB: Unable to Open Project Error When Running Analyze"
-permalink: kb/153/Q153502/
+permalink: /kb/153/Q153502/
 ---
 
 ## Q153502: PRB: Unable to Open Project Error When Running Analyze

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137403: &quot;Access Denied&quot; Errors Using Files on Windows NT 3.5 Server"
-permalink: kb/137/Q137403/
+permalink: /kb/137/Q137403/
 ---
 
 ## Q137403: &quot;Access Denied&quot; Errors Using Files on Windows NT 3.5 Server

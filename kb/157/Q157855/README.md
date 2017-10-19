@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157855: PRB: AfterRowColChange Event Code Does Not Enable Grid Cell"
-permalink: kb/157/Q157855/
+permalink: /kb/157/Q157855/
 ---
 
 ## Q157855: PRB: AfterRowColChange Event Code Does Not Enable Grid Cell

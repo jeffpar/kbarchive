@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257308: XCON: Dynamic RAS Doesn't Work w. &quot;-RpcServerUseProtSeqEp...&quot;"
-permalink: kb/257/Q257308/
+permalink: /kb/257/Q257308/
 ---
 
 ## Q257308: XCON: Dynamic RAS Doesn't Work w. &quot;-RpcServerUseProtSeqEp...&quot;

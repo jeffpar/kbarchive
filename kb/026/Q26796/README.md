@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26796: FIX: &quot;Operand Expected&quot; Error Message"
-permalink: kb/026/Q26796/
+permalink: /kb/026/Q26796/
 ---
 
 ## Q26796: FIX: &quot;Operand Expected&quot; Error Message

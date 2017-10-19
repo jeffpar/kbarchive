@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221582: STOP 0x0000000a Running Citrix MetaFrame on Terminal Server"
-permalink: kb/221/Q221582/
+permalink: /kb/221/Q221582/
 ---
 
 ## Q221582: STOP 0x0000000a Running Citrix MetaFrame on Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89409: X400: Definition of ADMD"
-permalink: kb/089/Q89409/
+permalink: /kb/089/Q89409/
 ---
 
 ## Q89409: X400: Definition of ADMD

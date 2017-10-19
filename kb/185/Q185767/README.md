@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185767: MTM2: How to Configure the CB Radio Feature"
-permalink: kb/185/Q185767/
+permalink: /kb/185/Q185767/
 ---
 
 ## Q185767: MTM2: How to Configure the CB Radio Feature

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137454: Err Msg: Cannot Find a Device File...Vnetsup.vxd"
-permalink: kb/137/Q137454/
+permalink: /kb/137/Q137454/
 ---
 
 ## Q137454: Err Msg: Cannot Find a Device File...Vnetsup.vxd

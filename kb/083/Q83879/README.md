@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83879: Screen Saver Disabled When MS-DOS Application Is Active"
-permalink: kb/083/Q83879/
+permalink: /kb/083/Q83879/
 ---
 
 ## Q83879: Screen Saver Disabled When MS-DOS Application Is Active

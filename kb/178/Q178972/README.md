@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178972: Description of Windows 95 OEM Service Release 2.5"
-permalink: kb/178/Q178972/
+permalink: /kb/178/Q178972/
 ---
 
 ## Q178972: Description of Windows 95 OEM Service Release 2.5

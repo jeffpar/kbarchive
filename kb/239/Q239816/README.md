@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239816: XIMS: Internet Mail Service Crashes with a Particular Message"
-permalink: kb/239/Q239816/
+permalink: /kb/239/Q239816/
 ---
 
 ## Q239816: XIMS: Internet Mail Service Crashes with a Particular Message

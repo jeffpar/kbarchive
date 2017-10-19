@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134701: Uninitialized Pointers in DHCPSSVC.DLL Cause Access Violation"
-permalink: kb/134/Q134701/
+permalink: /kb/134/Q134701/
 ---
 
 ## Q134701: Uninitialized Pointers in DHCPSSVC.DLL Cause Access Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187060: Printer Test Page Says Windows NT"
-permalink: kb/187/Q187060/
+permalink: /kb/187/Q187060/
 ---
 
 ## Q187060: Printer Test Page Says Windows NT

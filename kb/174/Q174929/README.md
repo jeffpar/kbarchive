@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174929: No Response to ARP Causes Duplicate IP Addresses on Network"
-permalink: kb/174/Q174929/
+permalink: /kb/174/Q174929/
 ---
 
 ## Q174929: No Response to ARP Causes Duplicate IP Addresses on Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163751: XCLN: &quot;Don't Know&quot; Send Option Uses Exchange Server Default"
-permalink: kb/163/Q163751/
+permalink: /kb/163/Q163751/
 ---
 
 ## Q163751: XCLN: &quot;Don't Know&quot; Send Option Uses Exchange Server Default

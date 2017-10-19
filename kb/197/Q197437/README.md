@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197437: Print Server Data Filter DLL causes Access Violation in SNAPRINT"
-permalink: kb/197/Q197437/
+permalink: /kb/197/Q197437/
 ---
 
 ## Q197437: Print Server Data Filter DLL causes Access Violation in SNAPRINT

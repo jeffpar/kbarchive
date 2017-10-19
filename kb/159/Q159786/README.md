@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159786: BUG: Setup Wizard Cannot Locate Files on Non-English Mac OS"
-permalink: kb/159/Q159786/
+permalink: /kb/159/Q159786/
 ---
 
 ## Q159786: BUG: Setup Wizard Cannot Locate Files on Non-English Mac OS

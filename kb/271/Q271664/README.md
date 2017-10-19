@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271664: BUG: Events with Names Containing Underscore Not Received in VB"
-permalink: kb/271/Q271664/
+permalink: /kb/271/Q271664/
 ---
 
 ## Q271664: BUG: Events with Names Containing Underscore Not Received in VB

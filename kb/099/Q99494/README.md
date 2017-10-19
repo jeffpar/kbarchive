@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99494: Err Msg Starting Windows: Access to Specified Device, Path..."
-permalink: kb/099/Q99494/
+permalink: /kb/099/Q99494/
 ---
 
 ## Q99494: Err Msg Starting Windows: Access to Specified Device, Path...

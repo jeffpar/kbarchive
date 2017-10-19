@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71453: Using a Wacom HD-648A Tablet with Pen Windows"
-permalink: kb/071/Q71453/
+permalink: /kb/071/Q71453/
 ---
 
 ## Q71453: Using a Wacom HD-648A Tablet with Pen Windows

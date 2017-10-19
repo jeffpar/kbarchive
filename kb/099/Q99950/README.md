@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99950: QH.EXE Does Not Support Most Cross-Reference Commands"
-permalink: kb/099/Q99950/
+permalink: /kb/099/Q99950/
 ---
 
 ## Q99950: QH.EXE Does Not Support Most Cross-Reference Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96697: Using ANSI Characters with the CHOICE Command"
-permalink: kb/096/Q96697/
+permalink: /kb/096/Q96697/
 ---
 
 ## Q96697: Using ANSI Characters with the CHOICE Command

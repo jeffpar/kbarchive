@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123411: BIOS and System Vendors That MSD.EXE Identifies"
-permalink: kb/123/Q123411/
+permalink: /kb/123/Q123411/
 ---
 
 ## Q123411: BIOS and System Vendors That MSD.EXE Identifies

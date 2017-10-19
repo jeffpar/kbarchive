@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143355: XCLN: Address Book Delete Button Not Unavailable"
-permalink: kb/143/Q143355/
+permalink: /kb/143/Q143355/
 ---
 
 ## Q143355: XCLN: Address Book Delete Button Not Unavailable

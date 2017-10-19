@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192129: PRB: Run-Time Error '373' or '-2147417848(80010108)'"
-permalink: kb/192/Q192129/
+permalink: /kb/192/Q192129/
 ---
 
 ## Q192129: PRB: Run-Time Error '373' or '-2147417848(80010108)'

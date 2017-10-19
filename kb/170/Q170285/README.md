@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170285: SNA Server APPC Activation Fails With Event 18, Sense = 0877000E"
-permalink: kb/170/Q170285/
+permalink: /kb/170/Q170285/
 ---
 
 ## Q170285: SNA Server APPC Activation Fails With Event 18, Sense = 0877000E

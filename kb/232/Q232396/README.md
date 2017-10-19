@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232396: XCON: Content Conversion Failure, Reroute to Another Server"
-permalink: kb/232/Q232396/
+permalink: /kb/232/Q232396/
 ---
 
 ## Q232396: XCON: Content Conversion Failure, Reroute to Another Server

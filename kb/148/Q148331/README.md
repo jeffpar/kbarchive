@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148331: PRB: Cannot Open Form That Has =CREATEOBJECT() Property Value"
-permalink: kb/148/Q148331/
+permalink: /kb/148/Q148331/
 ---
 
 ## Q148331: PRB: Cannot Open Form That Has =CREATEOBJECT() Property Value

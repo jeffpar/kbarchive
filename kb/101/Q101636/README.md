@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101636: &quot;Access Denied&quot; Message Accessing File Open Elsewhere"
-permalink: kb/101/Q101636/
+permalink: /kb/101/Q101636/
 ---
 
 ## Q101636: &quot;Access Denied&quot; Message Accessing File Open Elsewhere

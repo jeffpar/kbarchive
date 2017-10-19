@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180399: Missing Outlook 97 CD Key on BackOffice Server 4.0 CD-ROM"
-permalink: kb/180/Q180399/
+permalink: /kb/180/Q180399/
 ---
 
 ## Q180399: Missing Outlook 97 CD Key on BackOffice Server 4.0 CD-ROM

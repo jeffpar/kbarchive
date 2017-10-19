@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293225: SMS: All Hardware Inventory Goes to BADMIFS Folder After Upgrade"
-permalink: kb/293/Q293225/
+permalink: /kb/293/Q293225/
 ---
 
 ## Q293225: SMS: All Hardware Inventory Goes to BADMIFS Folder After Upgrade

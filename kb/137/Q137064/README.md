@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137064: Unable to Read Error 52225 During Windows NT Setup"
-permalink: kb/137/Q137064/
+permalink: /kb/137/Q137064/
 ---
 
 ## Q137064: Unable to Read Error 52225 During Windows NT Setup

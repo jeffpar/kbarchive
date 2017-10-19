@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269789: Err Msg: Streets Caused General Protection Fault in Kernel32.dll"
-permalink: kb/269/Q269789/
+permalink: /kb/269/Q269789/
 ---
 
 ## Q269789: Err Msg: Streets Caused General Protection Fault in Kernel32.dll

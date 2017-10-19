@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201000: Encarta 98 Err Msg: Fatal Exception 0E"
-permalink: kb/201/Q201000/
+permalink: /kb/201/Q201000/
 ---
 
 ## Q201000: Encarta 98 Err Msg: Fatal Exception 0E

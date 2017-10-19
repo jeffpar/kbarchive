@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219318: Net Use to IPC&#36; Share from Multihomed Computer Does Not Complete"
-permalink: kb/219/Q219318/
+permalink: /kb/219/Q219318/
 ---
 
 ## Q219318: Net Use to IPC&#36; Share from Multihomed Computer Does Not Complete

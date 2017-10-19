@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193506: BUG: SET(&quot;DATE&quot;,&quot;TO&quot;) Returns &quot;0&quot; Rather Than Valid Setting"
-permalink: kb/193/Q193506/
+permalink: /kb/193/Q193506/
 ---
 
 ## Q193506: BUG: SET(&quot;DATE&quot;,&quot;TO&quot;) Returns &quot;0&quot; Rather Than Valid Setting

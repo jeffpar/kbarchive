@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q21357: Using NAV Radio and OBI for VOR Navigation"
-permalink: kb/021/Q21357/
+permalink: /kb/021/Q21357/
 ---
 
 ## Q21357: Using NAV Radio and OBI for VOR Navigation

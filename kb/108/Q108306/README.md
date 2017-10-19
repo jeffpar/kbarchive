@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108306: dwBearerModes and dwMaxRate in LINEDEVCAPS"
-permalink: kb/108/Q108306/
+permalink: /kb/108/Q108306/
 ---
 
 ## Q108306: dwBearerModes and dwMaxRate in LINEDEVCAPS

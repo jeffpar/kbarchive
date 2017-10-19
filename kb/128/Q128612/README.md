@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128612: SMS: Visual Basic Application Setup Fails When Executed by PCM"
-permalink: kb/128/Q128612/
+permalink: /kb/128/Q128612/
 ---
 
 ## Q128612: SMS: Visual Basic Application Setup Fails When Executed by PCM

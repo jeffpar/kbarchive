@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168606: XFOR: MS Mail Migration Stops with Event ID 7000 and 7007"
-permalink: kb/168/Q168606/
+permalink: /kb/168/Q168606/
 ---
 
 ## Q168606: XFOR: MS Mail Migration Stops with Event ID 7000 and 7007

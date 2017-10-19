@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180063: Err Msg: The WINS Server Whose IP Address You Have Specified..."
-permalink: kb/180/Q180063/
+permalink: /kb/180/Q180063/
 ---
 
 ## Q180063: Err Msg: The WINS Server Whose IP Address You Have Specified...

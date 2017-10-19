@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116377: WFWG 3.11: Fax Machines That Are Incompatible with AWFAX"
-permalink: kb/116/Q116377/
+permalink: /kb/116/Q116377/
 ---
 
 ## Q116377: WFWG 3.11: Fax Machines That Are Incompatible with AWFAX

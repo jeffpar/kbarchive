@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247677: Error Message: 403.2 Forbidden: Read Access Forbidden"
-permalink: kb/247/Q247677/
+permalink: /kb/247/Q247677/
 ---
 
 ## Q247677: Error Message: 403.2 Forbidden: Read Access Forbidden

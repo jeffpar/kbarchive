@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273945: XCON: X.400 Connector Ignores OU2 During Routing"
-permalink: kb/273/Q273945/
+permalink: /kb/273/Q273945/
 ---
 
 ## Q273945: XCON: X.400 Connector Ignores OU2 During Routing

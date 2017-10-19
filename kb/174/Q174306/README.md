@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174306: XADM: Cannot Delete the Internet Newsgroups Public Folder"
-permalink: kb/174/Q174306/
+permalink: /kb/174/Q174306/
 ---
 
 ## Q174306: XADM: Cannot Delete the Internet Newsgroups Public Folder

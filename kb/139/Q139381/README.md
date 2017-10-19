@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139381: Copperplate Gothic Bold Font Disappears in WordPad"
-permalink: kb/139/Q139381/
+permalink: /kb/139/Q139381/
 ---
 
 ## Q139381: Copperplate Gothic Bold Font Disappears in WordPad

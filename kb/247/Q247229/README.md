@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247229: SMS: Failure to Write to Log File Affects Executive Performance"
-permalink: kb/247/Q247229/
+permalink: /kb/247/Q247229/
 ---
 
 ## Q247229: SMS: Failure to Write to Log File Affects Executive Performance

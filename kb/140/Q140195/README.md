@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140195: PRB: The Word &quot;Setup&quot; Is Appended to Application Title"
-permalink: kb/140/Q140195/
+permalink: /kb/140/Q140195/
 ---
 
 ## Q140195: PRB: The Word &quot;Setup&quot; Is Appended to Application Title

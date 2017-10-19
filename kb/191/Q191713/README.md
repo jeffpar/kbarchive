@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191713: INFO: Type Declaration Character to Data Type Chart"
-permalink: kb/191/Q191713/
+permalink: /kb/191/Q191713/
 ---
 
 ## Q191713: INFO: Type Declaration Character to Data Type Chart

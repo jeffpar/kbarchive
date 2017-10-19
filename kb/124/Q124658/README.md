@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124658: DCA IRMA Token Ring Adapter is not Detected"
-permalink: kb/124/Q124658/
+permalink: /kb/124/Q124658/
 ---
 
 ## Q124658: DCA IRMA Token Ring Adapter is not Detected

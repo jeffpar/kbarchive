@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138041: 1ToMany.exe Form for One-to-Many Order Entry Application"
-permalink: kb/138/Q138041/
+permalink: /kb/138/Q138041/
 ---
 
 ## Q138041: 1ToMany.exe Form for One-to-Many Order Entry Application

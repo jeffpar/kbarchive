@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302978: MSN Explorer Dials But Does Not Connect"
-permalink: kb/302/Q302978/
+permalink: /kb/302/Q302978/
 ---
 
 ## Q302978: MSN Explorer Dials But Does Not Connect

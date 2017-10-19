@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150565: Creating DHCP Scopes Using DHCP Manager"
-permalink: kb/150/Q150565/
+permalink: /kb/150/Q150565/
 ---
 
 ## Q150565: Creating DHCP Scopes Using DHCP Manager

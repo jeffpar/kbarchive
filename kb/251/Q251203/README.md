@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251203: PRB: DAO OpenRecordset Hangs if Table/Index Name Over 63 Chars"
-permalink: kb/251/Q251203/
+permalink: /kb/251/Q251203/
 ---
 
 ## Q251203: PRB: DAO OpenRecordset Hangs if Table/Index Name Over 63 Chars

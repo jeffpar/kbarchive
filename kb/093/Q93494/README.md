@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93494: TCP NODE Problem on OS/2 Workstations and Peer Servers"
-permalink: kb/093/Q93494/
+permalink: /kb/093/Q93494/
 ---
 
 ## Q93494: TCP NODE Problem on OS/2 Workstations and Peer Servers

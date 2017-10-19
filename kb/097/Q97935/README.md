@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q97935: PC WFW: 3.0 Windows Client Disk 2 [5.25, 1.2 MB]"
-permalink: kb/097/Q97935/
+title: "Q97935: PC WFW: 3.0 Windows Client Disk 2 &#91;5.25, 1.2 MB&#93;"
+permalink: /kb/097/Q97935/
 ---
 
-## Q97935: PC WFW: 3.0 Windows Client Disk 2 [5.25, 1.2 MB]
+## Q97935: PC WFW: 3.0 Windows Client Disk 2 &#91;5.25, 1.2 MB&#93;
 
 	Article: Q97935
 	Product(s): Microsoft Mail For PC Networks

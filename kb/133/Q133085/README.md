@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133085: EPS Picture Appears Transparent on PCL Printers"
-permalink: kb/133/Q133085/
+permalink: /kb/133/Q133085/
 ---
 
 ## Q133085: EPS Picture Appears Transparent on PCL Printers

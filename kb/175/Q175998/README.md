@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175998: WD97: Reference Type Changed in Code, Not in Cross-reference"
-permalink: kb/175/Q175998/
+permalink: /kb/175/Q175998/
 ---
 
 ## Q175998: WD97: Reference Type Changed in Code, Not in Cross-reference

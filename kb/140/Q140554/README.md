@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140554: SNA Server Pool Limit Extended to 10,000."
-permalink: kb/140/Q140554/
+permalink: /kb/140/Q140554/
 ---
 
 ## Q140554: SNA Server Pool Limit Extended to 10,000.

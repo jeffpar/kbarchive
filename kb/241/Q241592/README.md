@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241592: BUG: Compiling with the In-Line Function Expansion Optimizations"
-permalink: kb/241/Q241592/
+permalink: /kb/241/Q241592/
 ---
 
 ## Q241592: BUG: Compiling with the In-Line Function Expansion Optimizations

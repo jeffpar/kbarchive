@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86985: X400: How Changing a Network Name Affects X.400 Gateway"
-permalink: kb/086/Q86985/
+permalink: /kb/086/Q86985/
 ---
 
 ## Q86985: X400: How Changing a Network Name Affects X.400 Gateway

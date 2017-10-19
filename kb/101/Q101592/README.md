@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101592: Support for the AS Clause in RQBE"
-permalink: kb/101/Q101592/
+permalink: /kb/101/Q101592/
 ---
 
 ## Q101592: Support for the AS Clause in RQBE

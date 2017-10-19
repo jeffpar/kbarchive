@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195472: HOWTO: Highlight a Specific Row in the DataGrid Control 6.0"
-permalink: kb/195/Q195472/
+permalink: /kb/195/Q195472/
 ---
 
 ## Q195472: HOWTO: Highlight a Specific Row in the DataGrid Control 6.0

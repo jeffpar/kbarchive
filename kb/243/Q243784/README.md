@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243784: SNARAS Traces Continually Grow in Size If Left Enabled"
-permalink: kb/243/Q243784/
+permalink: /kb/243/Q243784/
 ---
 
 ## Q243784: SNARAS Traces Continually Grow in Size If Left Enabled

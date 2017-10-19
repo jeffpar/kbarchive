@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130600: PRB: dBASE Functions Give &quot;File &lt;name&gt; Does not exist&quot; Error"
-permalink: kb/130/Q130600/
+permalink: /kb/130/Q130600/
 ---
 
 ## Q130600: PRB: dBASE Functions Give &quot;File &lt;name&gt; Does not exist&quot; Error

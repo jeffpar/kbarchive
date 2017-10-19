@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323561: MSN Explorer returning error at sign-in after installing Microgr"
-permalink: kb/323/Q323561/
+permalink: /kb/323/Q323561/
 ---
 
 ## Q323561: MSN Explorer returning error at sign-in after installing Microgr

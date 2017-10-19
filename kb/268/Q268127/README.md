@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268127: TN3270 LUs Must Be Pooled Across Multiple Nodes or Connections"
-permalink: kb/268/Q268127/
+permalink: /kb/268/Q268127/
 ---
 
 ## Q268127: TN3270 LUs Must Be Pooled Across Multiple Nodes or Connections

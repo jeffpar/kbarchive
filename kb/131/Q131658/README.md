@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131658: Use Ftedit.exe to Recover Fault Tolerant Disk Configuration"
-permalink: kb/131/Q131658/
+permalink: /kb/131/Q131658/
 ---
 
 ## Q131658: Use Ftedit.exe to Recover Fault Tolerant Disk Configuration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179012: FIX: ClassView Lacks &quot;Go to Declaration&quot; for Static Data Members"
-permalink: kb/179/Q179012/
+permalink: /kb/179/Q179012/
 ---
 
 ## Q179012: FIX: ClassView Lacks &quot;Go to Declaration&quot; for Static Data Members

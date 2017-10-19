@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168920: Disabling Documents Folder on the Start Menu"
-permalink: kb/168/Q168920/
+permalink: /kb/168/Q168920/
 ---
 
 ## Q168920: Disabling Documents Folder on the Start Menu

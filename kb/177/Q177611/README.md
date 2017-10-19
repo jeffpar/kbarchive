@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177611: NWConv Incorrectly Measures Disk Space Larger Than 4 GB"
-permalink: kb/177/Q177611/
+permalink: /kb/177/Q177611/
 ---
 
 ## Q177611: NWConv Incorrectly Measures Disk Space Larger Than 4 GB

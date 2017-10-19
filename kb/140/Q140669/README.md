@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140669: FIX: CSingleLock: Bogus Assert in CSingleLock::CSingleLock"
-permalink: kb/140/Q140669/
+permalink: /kb/140/Q140669/
 ---
 
 ## Q140669: FIX: CSingleLock: Bogus Assert in CSingleLock::CSingleLock

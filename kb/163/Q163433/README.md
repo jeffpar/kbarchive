@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163433: Kids Plus!: Uninstalling Protect It!"
-permalink: kb/163/Q163433/
+permalink: /kb/163/Q163433/
 ---
 
 ## Q163433: Kids Plus!: Uninstalling Protect It!

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122903: Error Message with Compaq Smart SCSI"
-permalink: kb/122/Q122903/
+permalink: /kb/122/Q122903/
 ---
 
 ## Q122903: Error Message with Compaq Smart SCSI

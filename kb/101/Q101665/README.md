@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101665: Adding Banyan VINES to Windows for Workgroups"
-permalink: kb/101/Q101665/
+permalink: /kb/101/Q101665/
 ---
 
 ## Q101665: Adding Banyan VINES to Windows for Workgroups

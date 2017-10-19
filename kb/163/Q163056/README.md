@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163056: ACC97: Access IPF Using Find on Object That Is Checked In"
-permalink: kb/163/Q163056/
+permalink: /kb/163/Q163056/
 ---
 
 ## Q163056: ACC97: Access IPF Using Find on Object That Is Checked In

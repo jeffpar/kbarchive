@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140685: MAC Clients Get Access Denied on Newly Created Folders"
-permalink: kb/140/Q140685/
+permalink: /kb/140/Q140685/
 ---
 
 ## Q140685: MAC Clients Get Access Denied on Newly Created Folders

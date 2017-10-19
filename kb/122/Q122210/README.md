@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122210: Communication Fails with NWLink and Even Length Packets"
-permalink: kb/122/Q122210/
+permalink: /kb/122/Q122210/
 ---
 
 ## Q122210: Communication Fails with NWLink and Even Length Packets

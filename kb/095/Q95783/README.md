@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95783: Compatibility Issues for Microsoft Windows Versions 3.x"
-permalink: kb/095/Q95783/
+permalink: /kb/095/Q95783/
 ---
 
 ## Q95783: Compatibility Issues for Microsoft Windows Versions 3.x

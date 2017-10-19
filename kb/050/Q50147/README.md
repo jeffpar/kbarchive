@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50147: Mac Gty: Using a Bridge or Router on an AppleTalk Network"
-permalink: kb/050/Q50147/
+permalink: /kb/050/Q50147/
 ---
 
 ## Q50147: Mac Gty: Using a Bridge or Router on an AppleTalk Network

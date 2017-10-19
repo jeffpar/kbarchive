@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180027: Troubleshooting: How to Remove and Reinstall a Program"
-permalink: kb/180/Q180027/
+permalink: /kb/180/Q180027/
 ---
 
 ## Q180027: Troubleshooting: How to Remove and Reinstall a Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105668: Windows Err Msg: Not Enough Environment Space"
-permalink: kb/105/Q105668/
+permalink: /kb/105/Q105668/
 ---
 
 ## Q105668: Windows Err Msg: Not Enough Environment Space

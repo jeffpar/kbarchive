@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186861: BUG: Install Wizard Cannot Distinguish Between MIPS CPUs"
-permalink: kb/186/Q186861/
+permalink: /kb/186/Q186861/
 ---
 
 ## Q186861: BUG: Install Wizard Cannot Distinguish Between MIPS CPUs

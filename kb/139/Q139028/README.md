@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139028: FIX: Incomplete pragma Directive May Cause C1001 Error"
-permalink: kb/139/Q139028/
+permalink: /kb/139/Q139028/
 ---
 
 ## Q139028: FIX: Incomplete pragma Directive May Cause C1001 Error

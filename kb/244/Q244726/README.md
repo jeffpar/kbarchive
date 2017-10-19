@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244726: Encarta 2000: Unable to Install Program"
-permalink: kb/244/Q244726/
+permalink: /kb/244/Q244726/
 ---
 
 ## Q244726: Encarta 2000: Unable to Install Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105167: PC Win: Err Msg: Additional Data... Could Not Be Retrieved"
-permalink: kb/105/Q105167/
+permalink: /kb/105/Q105167/
 ---
 
 ## Q105167: PC Win: Err Msg: Additional Data... Could Not Be Retrieved

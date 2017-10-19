@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234702: XGEN: MTA Queue to Information Store Processing Slowly"
-permalink: kb/234/Q234702/
+permalink: /kb/234/Q234702/
 ---
 
 ## Q234702: XGEN: MTA Queue to Information Store Processing Slowly

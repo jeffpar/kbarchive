@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174041: XADM: Error Installing Microsoft Exchange Eximwiz Utility"
-permalink: kb/174/Q174041/
+permalink: /kb/174/Q174041/
 ---
 
 ## Q174041: XADM: Error Installing Microsoft Exchange Eximwiz Utility

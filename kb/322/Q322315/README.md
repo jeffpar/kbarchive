@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322315: XADM: &quot;2147500037&quot; Err Msg and Event IDs 1121 and 5000"
-permalink: kb/322/Q322315/
+permalink: /kb/322/Q322315/
 ---
 
 ## Q322315: XADM: &quot;2147500037&quot; Err Msg and Event IDs 1121 and 5000

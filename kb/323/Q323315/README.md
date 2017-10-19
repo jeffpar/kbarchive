@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323315: HOW TO: Create an IIS Baseline by Using the Processor Object"
-permalink: kb/323/Q323315/
+permalink: /kb/323/Q323315/
 ---
 
 ## Q323315: HOW TO: Create an IIS Baseline by Using the Processor Object

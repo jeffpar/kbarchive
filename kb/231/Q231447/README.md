@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231447: Search for Files or Folders Uses MS-DOS Date and Time Limitation"
-permalink: kb/231/Q231447/
+permalink: /kb/231/Q231447/
 ---
 
 ## Q231447: Search for Files or Folders Uses MS-DOS Date and Time Limitation

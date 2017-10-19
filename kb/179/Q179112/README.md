@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179112: WD97: Distribute Relative to Page Ignores Landscape Page Setting"
-permalink: kb/179/Q179112/
+permalink: /kb/179/Q179112/
 ---
 
 ## Q179112: WD97: Distribute Relative to Page Ignores Landscape Page Setting

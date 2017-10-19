@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111588: BUG: OpenFile() Doesn't Handle Forward Slash (&quot;/&quot;) Character"
-permalink: kb/111/Q111588/
+permalink: /kb/111/Q111588/
 ---
 
 ## Q111588: BUG: OpenFile() Doesn't Handle Forward Slash (&quot;/&quot;) Character

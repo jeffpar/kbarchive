@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121416: PRB: GetPrivateProfileString() Generates &quot;Data Type Mismatch&quot;"
-permalink: kb/121/Q121416/
+permalink: /kb/121/Q121416/
 ---
 
 ## Q121416: PRB: GetPrivateProfileString() Generates &quot;Data Type Mismatch&quot;

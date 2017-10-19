@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168518: SMS: Troubleshooting SMS Windows NT Client Services Installation"
-permalink: kb/168/Q168518/
+permalink: /kb/168/Q168518/
 ---
 
 ## Q168518: SMS: Troubleshooting SMS Windows NT Client Services Installation

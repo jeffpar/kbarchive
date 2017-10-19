@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82763: PS/2 Appears to Hang When Exiting Windows 3.1"
-permalink: kb/082/Q82763/
+permalink: /kb/082/Q82763/
 ---
 
 ## Q82763: PS/2 Appears to Hang When Exiting Windows 3.1

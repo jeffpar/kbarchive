@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98754: How to Prevent Recursion Within ON KEY LABEL Routines"
-permalink: kb/098/Q98754/
+permalink: /kb/098/Q98754/
 ---
 
 ## Q98754: How to Prevent Recursion Within ON KEY LABEL Routines

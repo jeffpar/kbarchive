@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132820: Resizing the Desktop or Taskbar May Clip Some Dialog Boxes"
-permalink: kb/132/Q132820/
+permalink: /kb/132/Q132820/
 ---
 
 ## Q132820: Resizing the Desktop or Taskbar May Clip Some Dialog Boxes

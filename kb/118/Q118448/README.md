@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118448: PC Ext: Features and Uses of EXTERNAL.EXE F2 Key Option"
-permalink: kb/118/Q118448/
+permalink: /kb/118/Q118448/
 ---
 
 ## Q118448: PC Ext: Features and Uses of EXTERNAL.EXE F2 Key Option

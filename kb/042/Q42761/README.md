@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42761: PRB: Use /Op to Avoid Loss of Precision from Optimization"
-permalink: kb/042/Q42761/
+permalink: /kb/042/Q42761/
 ---
 
 ## Q42761: PRB: Use /Op to Avoid Loss of Precision from Optimization

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132843: Warm Undocking Causes Errors While MS Exchange is Running"
-permalink: kb/132/Q132843/
+permalink: /kb/132/Q132843/
 ---
 
 ## Q132843: Warm Undocking Causes Errors While MS Exchange is Running

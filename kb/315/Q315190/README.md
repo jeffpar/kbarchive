@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315190: Flight Simulator 2002: Aircraft Do Not Appear on Selection Menu"
-permalink: kb/315/Q315190/
+permalink: /kb/315/Q315190/
 ---
 
 ## Q315190: Flight Simulator 2002: Aircraft Do Not Appear on Selection Menu

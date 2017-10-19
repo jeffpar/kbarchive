@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146542: XCLN: No Indication of Attachments Associated with Appointment"
-permalink: kb/146/Q146542/
+permalink: /kb/146/Q146542/
 ---
 
 ## Q146542: XCLN: No Indication of Attachments Associated with Appointment

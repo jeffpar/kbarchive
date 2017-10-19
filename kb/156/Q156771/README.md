@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156771: PRB: DisplayValue of ComboBox is Truncated in a Grid"
-permalink: kb/156/Q156771/
+permalink: /kb/156/Q156771/
 ---
 
 ## Q156771: PRB: DisplayValue of ComboBox is Truncated in a Grid

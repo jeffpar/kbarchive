@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177118: Registry Keys Added by Remote Access Service"
-permalink: kb/177/Q177118/
+permalink: /kb/177/Q177118/
 ---
 
 ## Q177118: Registry Keys Added by Remote Access Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177448: Bookshelf Err Msg: Setup Caused an Invalid Page Fault..."
-permalink: kb/177/Q177448/
+permalink: /kb/177/Q177448/
 ---
 
 ## Q177448: Bookshelf Err Msg: Setup Caused an Invalid Page Fault...

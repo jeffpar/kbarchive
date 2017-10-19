@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165017: Description of Event ID 9302"
-permalink: kb/165/Q165017/
+permalink: /kb/165/Q165017/
 ---
 
 ## Q165017: Description of Event ID 9302

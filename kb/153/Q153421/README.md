@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153421: V-Chat Folders Created in Transferred Files Folder"
-permalink: kb/153/Q153421/
+permalink: /kb/153/Q153421/
 ---
 
 ## Q153421: V-Chat Folders Created in Transferred Files Folder

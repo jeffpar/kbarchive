@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165125: Elink-III Net Card Detected Multiple Times on Alpha Raptor"
-permalink: kb/165/Q165125/
+permalink: /kb/165/Q165125/
 ---
 
 ## Q165125: Elink-III Net Card Detected Multiple Times on Alpha Raptor

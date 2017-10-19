@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222940: SNA 5250 Print Service (PPV5250) May Log Event 4097 In Error"
-permalink: kb/222/Q222940/
+permalink: /kb/222/Q222940/
 ---
 
 ## Q222940: SNA 5250 Print Service (PPV5250) May Log Event 4097 In Error

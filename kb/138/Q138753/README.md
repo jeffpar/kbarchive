@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138753: PRB: Unable to Compile 32-bit CDK Samples"
-permalink: kb/138/Q138753/
+permalink: /kb/138/Q138753/
 ---
 
 ## Q138753: PRB: Unable to Compile 32-bit CDK Samples

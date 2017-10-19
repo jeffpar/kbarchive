@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100940: 4DOS Causes &quot;Write Protected&quot; Error When Disk Is Full"
-permalink: kb/100/Q100940/
+permalink: /kb/100/Q100940/
 ---
 
 ## Q100940: 4DOS Causes &quot;Write Protected&quot; Error When Disk Is Full

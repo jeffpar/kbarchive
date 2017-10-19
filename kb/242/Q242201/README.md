@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242201: XADM: Information Store Stops Processing a Replication Message"
-permalink: kb/242/Q242201/
+permalink: /kb/242/Q242201/
 ---
 
 ## Q242201: XADM: Information Store Stops Processing a Replication Message

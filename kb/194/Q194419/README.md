@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194419: XWEB: Group by Categories Cannot Be Viewed Using OWA"
-permalink: kb/194/Q194419/
+permalink: /kb/194/Q194419/
 ---
 
 ## Q194419: XWEB: Group by Categories Cannot Be Viewed Using OWA

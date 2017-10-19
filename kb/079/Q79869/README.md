@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79869: Pressing ALT+TAB to Switch Between Applications"
-permalink: kb/079/Q79869/
+permalink: /kb/079/Q79869/
 ---
 
 ## Q79869: Pressing ALT+TAB to Switch Between Applications

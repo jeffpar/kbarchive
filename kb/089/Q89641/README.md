@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89641: BUG: Complex Clipping Region Might Cause UAE/GP Fault"
-permalink: kb/089/Q89641/
+permalink: /kb/089/Q89641/
 ---
 
 ## Q89641: BUG: Complex Clipping Region Might Cause UAE/GP Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246147: FS2000: Computer Stops Responding After a Few Minutes of Play"
-permalink: kb/246/Q246147/
+permalink: /kb/246/Q246147/
 ---
 
 ## Q246147: FS2000: Computer Stops Responding After a Few Minutes of Play

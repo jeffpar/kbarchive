@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197027: BUG: WhatsThisHelpID on Toolbar Does Not Function as Expected"
-permalink: kb/197/Q197027/
+permalink: /kb/197/Q197027/
 ---
 
 ## Q197027: BUG: WhatsThisHelpID on Toolbar Does Not Function as Expected

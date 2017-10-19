@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74201: MS-DOS: Program and Group Item Passwords Are Case Sensitive"
-permalink: kb/074/Q74201/
+permalink: /kb/074/Q74201/
 ---
 
 ## Q74201: MS-DOS: Program and Group Item Passwords Are Case Sensitive

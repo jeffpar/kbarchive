@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250542: &quot;Msnls.dll Cannot Be Found&quot; Error Message When Browsing with AOL"
-permalink: kb/250/Q250542/
+permalink: /kb/250/Q250542/
 ---
 
 ## Q250542: &quot;Msnls.dll Cannot Be Found&quot; Error Message When Browsing with AOL

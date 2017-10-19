@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196306: XFOR: Err Msg: The Remote Access Service Phone Book Cannot..."
-permalink: kb/196/Q196306/
+permalink: /kb/196/Q196306/
 ---
 
 ## Q196306: XFOR: Err Msg: The Remote Access Service Phone Book Cannot...

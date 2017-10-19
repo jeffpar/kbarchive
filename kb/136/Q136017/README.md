@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136017: PRB: Cannot Update Cursor Error Occurs as Buildapp Builds .EXE"
-permalink: kb/136/Q136017/
+permalink: /kb/136/Q136017/
 ---
 
 ## Q136017: PRB: Cannot Update Cursor Error Occurs as Buildapp Builds .EXE

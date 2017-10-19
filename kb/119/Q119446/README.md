@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119446: Repeating Image (Ghosting) with the HP LaserJet Printer"
-permalink: kb/119/Q119446/
+permalink: /kb/119/Q119446/
 ---
 
 ## Q119446: Repeating Image (Ghosting) with the HP LaserJet Printer

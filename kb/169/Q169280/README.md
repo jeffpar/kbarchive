@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169280: Cannot Size Pre-Dial and After Dial Terminal Screen"
-permalink: kb/169/Q169280/
+permalink: /kb/169/Q169280/
 ---
 
 ## Q169280: Cannot Size Pre-Dial and After Dial Terminal Screen

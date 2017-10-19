@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104120: ALT+T Causes Find List to Keep Scrolling"
-permalink: kb/104/Q104120/
+permalink: /kb/104/Q104120/
 ---
 
 ## Q104120: ALT+T Causes Find List to Keep Scrolling

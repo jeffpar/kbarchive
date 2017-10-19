@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129706: X400: Incoming X.400 Receipt Notifications"
-permalink: kb/129/Q129706/
+permalink: /kb/129/Q129706/
 ---
 
 ## Q129706: X400: Incoming X.400 Receipt Notifications

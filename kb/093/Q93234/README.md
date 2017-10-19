@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93234: How a CD-ROM Drive Letter Is Assigned"
-permalink: kb/093/Q93234/
+permalink: /kb/093/Q93234/
 ---
 
 ## Q93234: How a CD-ROM Drive Letter Is Assigned

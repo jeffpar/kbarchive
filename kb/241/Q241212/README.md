@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241212: Japanese WV: Cannot Open File w/Name That Includes 0x5c in DBCS"
-permalink: kb/241/Q241212/
+permalink: /kb/241/Q241212/
 ---
 
 ## Q241212: Japanese WV: Cannot Open File w/Name That Includes 0x5c in DBCS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148626: BUG: D2013 Internal Compiler Error Reshape of Character Array"
-permalink: kb/148/Q148626/
+permalink: /kb/148/Q148626/
 ---
 
 ## Q148626: BUG: D2013 Internal Compiler Error Reshape of Character Array

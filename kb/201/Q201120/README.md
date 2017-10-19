@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201120: XFOR: Missing Postoffice in the MSMI Connection Tab"
-permalink: kb/201/Q201120/
+permalink: /kb/201/Q201120/
 ---
 
 ## Q201120: XFOR: Missing Postoffice in the MSMI Connection Tab

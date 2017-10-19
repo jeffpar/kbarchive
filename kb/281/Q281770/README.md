@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281770: How to Perform Clean-Boot Troubleshooting for Windows 2000"
-permalink: kb/281/Q281770/
+permalink: /kb/281/Q281770/
 ---
 
 ## Q281770: How to Perform Clean-Boot Troubleshooting for Windows 2000

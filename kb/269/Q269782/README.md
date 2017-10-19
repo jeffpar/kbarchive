@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269782: XADM: Err 3355443765 Starting Information Store After Restore"
-permalink: kb/269/Q269782/
+permalink: /kb/269/Q269782/
 ---
 
 ## Q269782: XADM: Err 3355443765 Starting Information Store After Restore

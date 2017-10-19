@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73189: FIX: MASM 6.0 ML Driver Does Not Pass /nologo to LINK Correctly"
-permalink: kb/073/Q73189/
+permalink: /kb/073/Q73189/
 ---
 
 ## Q73189: FIX: MASM 6.0 ML Driver Does Not Pass /nologo to LINK Correctly

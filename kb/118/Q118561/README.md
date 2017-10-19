@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118561: GTWY: EXTERNAL.EXE Doesn't Pick Up Mail from Outgoing Gateway"
-permalink: kb/118/Q118561/
+permalink: /kb/118/Q118561/
 ---
 
 ## Q118561: GTWY: EXTERNAL.EXE Doesn't Pick Up Mail from Outgoing Gateway

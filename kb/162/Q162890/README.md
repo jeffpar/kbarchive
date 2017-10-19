@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162890: Unable to Copy Audio from Encarta 97"
-permalink: kb/162/Q162890/
+permalink: /kb/162/Q162890/
 ---
 
 ## Q162890: Unable to Copy Audio from Encarta 97

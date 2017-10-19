@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230308: Contents of NNTP Service Release Notes"
-permalink: kb/230/Q230308/
+permalink: /kb/230/Q230308/
 ---
 
 ## Q230308: Contents of NNTP Service Release Notes

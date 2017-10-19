@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247323: BUG: BN_DOUBLECLICKED Message Handler Not Hit in MFC Dialog Box"
-permalink: kb/247/Q247323/
+permalink: /kb/247/Q247323/
 ---
 
 ## Q247323: BUG: BN_DOUBLECLICKED Message Handler Not Hit in MFC Dialog Box

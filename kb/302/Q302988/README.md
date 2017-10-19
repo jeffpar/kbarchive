@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302988: HOW TO: Programmatically Add or Remove an ISAPI Filter in IIS by"
-permalink: kb/302/Q302988/
+permalink: /kb/302/Q302988/
 ---
 
 ## Q302988: HOW TO: Programmatically Add or Remove an ISAPI Filter in IIS by

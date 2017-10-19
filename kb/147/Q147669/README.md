@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147669: PRB: SetupWiz Generated Setup Program Fails to Start Correctly"
-permalink: kb/147/Q147669/
+permalink: /kb/147/Q147669/
 ---
 
 ## Q147669: PRB: SetupWiz Generated Setup Program Fails to Start Correctly

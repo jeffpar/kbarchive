@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112820: PRIVATE Memory Variables and Memory Allocation"
-permalink: kb/112/Q112820/
+permalink: /kb/112/Q112820/
 ---
 
 ## Q112820: PRIVATE Memory Variables and Memory Allocation

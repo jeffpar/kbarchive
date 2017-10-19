@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107665: How to Create a Table Structure Using an ASCII File"
-permalink: kb/107/Q107665/
+permalink: /kb/107/Q107665/
 ---
 
 ## Q107665: How to Create a Table Structure Using an ASCII File

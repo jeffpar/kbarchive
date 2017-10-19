@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156901: INFO: STL Sample for the inplace_merge Function"
-permalink: kb/156/Q156901/
+permalink: /kb/156/Q156901/
 ---
 
 ## Q156901: INFO: STL Sample for the inplace_merge Function

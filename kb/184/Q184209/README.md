@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184209: XADM: Error Msg: JET_errPageNotInitialized When Starting Store"
-permalink: kb/184/Q184209/
+permalink: /kb/184/Q184209/
 ---
 
 ## Q184209: XADM: Error Msg: JET_errPageNotInitialized When Starting Store

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120044: BUG: Access ODBC: SQLGetInfo(SQL_NON_NULLABLE_COLUMNS)"
-permalink: kb/120/Q120044/
+permalink: /kb/120/Q120044/
 ---
 
 ## Q120044: BUG: Access ODBC: SQLGetInfo(SQL_NON_NULLABLE_COLUMNS)

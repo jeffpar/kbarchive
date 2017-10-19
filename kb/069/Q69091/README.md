@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69091: Novell Map Insert Drive Not Added to Path Inside Windows"
-permalink: kb/069/Q69091/
+permalink: /kb/069/Q69091/
 ---
 
 ## Q69091: Novell Map Insert Drive Not Added to Path Inside Windows

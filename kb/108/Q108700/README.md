@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108700: ODIHLP.EXE Load Error Messages"
-permalink: kb/108/Q108700/
+permalink: /kb/108/Q108700/
 ---
 
 ## Q108700: ODIHLP.EXE Load Error Messages

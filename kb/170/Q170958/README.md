@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170958: FP: Multiple Body Tags Not Recognized by FrontPage Editor"
-permalink: kb/170/Q170958/
+permalink: /kb/170/Q170958/
 ---
 
 ## Q170958: FP: Multiple Body Tags Not Recognized by FrontPage Editor

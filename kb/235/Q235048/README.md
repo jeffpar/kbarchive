@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235048: Quick Course in Microsoft Internet Explorer 5"
-permalink: kb/235/Q235048/
+permalink: /kb/235/Q235048/
 ---
 
 ## Q235048: Quick Course in Microsoft Internet Explorer 5

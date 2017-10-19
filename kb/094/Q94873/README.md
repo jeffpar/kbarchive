@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94873: GP Fault with More Windows by Aristosoft"
-permalink: kb/094/Q94873/
+permalink: /kb/094/Q94873/
 ---
 
 ## Q94873: GP Fault with More Windows by Aristosoft

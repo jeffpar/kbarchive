@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121518: Confusing Definition in User Manager for Domains Help"
-permalink: kb/121/Q121518/
+permalink: /kb/121/Q121518/
 ---
 
 ## Q121518: Confusing Definition in User Manager for Domains Help

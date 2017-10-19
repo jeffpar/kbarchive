@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116416: Mac Bookshelf 94: Err Msg: &quot;Installation Was Cancelled...&quot;"
-permalink: kb/116/Q116416/
+permalink: /kb/116/Q116416/
 ---
 
 ## Q116416: Mac Bookshelf 94: Err Msg: &quot;Installation Was Cancelled...&quot;

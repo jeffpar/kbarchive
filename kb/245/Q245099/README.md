@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245099: Content Location Does Not Return the Port Number Is Not 80"
-permalink: kb/245/Q245099/
+permalink: /kb/245/Q245099/
 ---
 
 ## Q245099: Content Location Does Not Return the Port Number Is Not 80

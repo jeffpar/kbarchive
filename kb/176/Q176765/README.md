@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176765: BUG: Placing Icons in Picture Object Causes Memory Leak"
-permalink: kb/176/Q176765/
+permalink: /kb/176/Q176765/
 ---
 
 ## Q176765: BUG: Placing Icons in Picture Object Causes Memory Leak

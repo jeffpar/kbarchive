@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161801: Chkdsk Reports an Erroneous Event ID 41"
-permalink: kb/161/Q161801/
+permalink: /kb/161/Q161801/
 ---
 
 ## Q161801: Chkdsk Reports an Erroneous Event ID 41

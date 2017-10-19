@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104031: PC Win: Can't Jump to End of Address List by Typing &quot;zz&quot;"
-permalink: kb/104/Q104031/
+permalink: /kb/104/Q104031/
 ---
 
 ## Q104031: PC Win: Can't Jump to End of Address List by Typing &quot;zz&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159417: WD97: System Requirements for Microsoft Word 97"
-permalink: kb/159/Q159417/
+permalink: /kb/159/Q159417/
 ---
 
 ## Q159417: WD97: System Requirements for Microsoft Word 97

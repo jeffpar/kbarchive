@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151739: How to Create a List of Users from Other Domains"
-permalink: kb/151/Q151739/
+permalink: /kb/151/Q151739/
 ---
 
 ## Q151739: How to Create a List of Users from Other Domains

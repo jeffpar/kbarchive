@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131095: How to Control the Occurrence of a Default Event"
-permalink: kb/131/Q131095/
+permalink: /kb/131/Q131095/
 ---
 
 ## Q131095: How to Control the Occurrence of a Default Event

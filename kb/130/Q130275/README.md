@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130275: How to Implement OLE Custom Control Context Sensitive Help"
-permalink: kb/130/Q130275/
+permalink: /kb/130/Q130275/
 ---
 
 ## Q130275: How to Implement OLE Custom Control Context Sensitive Help

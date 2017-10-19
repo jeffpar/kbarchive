@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263534: XGEN: Err. Mssg. When Using the Global Address List Modify Tool"
-permalink: kb/263/Q263534/
+permalink: /kb/263/Q263534/
 ---
 
 ## Q263534: XGEN: Err. Mssg. When Using the Global Address List Modify Tool

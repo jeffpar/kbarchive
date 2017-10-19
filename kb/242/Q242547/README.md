@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242547: Roaming Profiles Are Not Deleted from the Local Hard Disk"
-permalink: kb/242/Q242547/
+permalink: /kb/242/Q242547/
 ---
 
 ## Q242547: Roaming Profiles Are Not Deleted from the Local Hard Disk

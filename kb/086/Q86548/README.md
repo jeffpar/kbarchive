@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86548: MHS: Software &amp; Hardware Required for Downstream Postoffice"
-permalink: kb/086/Q86548/
+permalink: /kb/086/Q86548/
 ---
 
 ## Q86548: MHS: Software &amp; Hardware Required for Downstream Postoffice

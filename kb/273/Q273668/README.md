@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273668: Event 1339 Messages Are Logged When You Use Host Security"
-permalink: kb/273/Q273668/
+permalink: /kb/273/Q273668/
 ---
 
 ## Q273668: Event 1339 Messages Are Logged When You Use Host Security

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222616: Unable to Send Attachments by Fax When Source Program Is Open"
-permalink: kb/222/Q222616/
+permalink: /kb/222/Q222616/
 ---
 
 ## Q222616: Unable to Send Attachments by Fax When Source Program Is Open

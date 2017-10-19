@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186147: Installing pcANYWHERE32 8.0 on Windows NT 4.0 w/ ATI Rage Card"
-permalink: kb/186/Q186147/
+permalink: /kb/186/Q186147/
 ---
 
 ## Q186147: Installing pcANYWHERE32 8.0 on Windows NT 4.0 w/ ATI Rage Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217069: Serial Printer Communication Fault Pop-up Notification Available"
-permalink: kb/217/Q217069/
+permalink: /kb/217/Q217069/
 ---
 
 ## Q217069: Serial Printer Communication Fault Pop-up Notification Available

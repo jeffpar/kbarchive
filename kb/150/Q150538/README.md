@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150538: Support for Music Sampler for Windows 95"
-permalink: kb/150/Q150538/
+permalink: /kb/150/Q150538/
 ---
 
 ## Q150538: Support for Music Sampler for Windows 95

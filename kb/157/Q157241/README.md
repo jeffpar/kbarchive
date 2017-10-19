@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157241: Reboot Prompt After Installing Compaq Business Audio Driver"
-permalink: kb/157/Q157241/
+permalink: /kb/157/Q157241/
 ---
 
 ## Q157241: Reboot Prompt After Installing Compaq Business Audio Driver

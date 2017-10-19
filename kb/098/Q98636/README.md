@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98636: VSAFE Looks for VIRSIGS.CPS Rather Than VIRSIGS.MS"
-permalink: kb/098/Q98636/
+permalink: /kb/098/Q98636/
 ---
 
 ## Q98636: VSAFE Looks for VIRSIGS.CPS Rather Than VIRSIGS.MS

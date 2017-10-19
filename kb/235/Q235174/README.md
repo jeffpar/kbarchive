@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235174: SMS: Remote Control Connection Issues w/ Win2K and IP Security"
-permalink: kb/235/Q235174/
+permalink: /kb/235/Q235174/
 ---
 
 ## Q235174: SMS: Remote Control Connection Issues w/ Win2K and IP Security

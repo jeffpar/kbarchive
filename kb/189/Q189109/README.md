@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189109: BUG: Printing 'Find in Files' Adds alt-0176 After File Name"
-permalink: kb/189/Q189109/
+permalink: /kb/189/Q189109/
 ---
 
 ## Q189109: BUG: Printing 'Find in Files' Adds alt-0176 After File Name

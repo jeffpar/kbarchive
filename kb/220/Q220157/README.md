@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220157: PRB: GETPRINTER()  Behaves Differently Based on Machine's OS"
-permalink: kb/220/Q220157/
+permalink: /kb/220/Q220157/
 ---
 
 ## Q220157: PRB: GETPRINTER()  Behaves Differently Based on Machine's OS

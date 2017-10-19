@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253006: Account Joiner Utility Hangs with Application Error Message on S"
-permalink: kb/253/Q253006/
+permalink: /kb/253/Q253006/
 ---
 
 ## Q253006: Account Joiner Utility Hangs with Application Error Message on S

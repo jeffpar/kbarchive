@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106623: FFAPI: ERR MSG: Unknown Service or Bad Address"
-permalink: kb/106/Q106623/
+permalink: /kb/106/Q106623/
 ---
 
 ## Q106623: FFAPI: ERR MSG: Unknown Service or Bad Address

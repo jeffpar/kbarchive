@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221432: XFOR: Pickup Folder Mishandles Read-Only File Permissions"
-permalink: kb/221/Q221432/
+permalink: /kb/221/Q221432/
 ---
 
 ## Q221432: XFOR: Pickup Folder Mishandles Read-Only File Permissions

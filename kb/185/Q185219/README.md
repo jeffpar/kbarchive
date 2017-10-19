@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185219: IIS 4.0 with Multiple Certificates May Return Error"
-permalink: kb/185/Q185219/
+permalink: /kb/185/Q185219/
 ---
 
 ## Q185219: IIS 4.0 with Multiple Certificates May Return Error

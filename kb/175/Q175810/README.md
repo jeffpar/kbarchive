@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175810: XADM: Upgrade to Exchange Server 5.0 Takes a Long Time"
-permalink: kb/175/Q175810/
+permalink: /kb/175/Q175810/
 ---
 
 ## Q175810: XADM: Upgrade to Exchange Server 5.0 Takes a Long Time

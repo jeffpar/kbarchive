@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81550: PC Win: OLE Object from Excel 3.0 Creates Strange Title"
-permalink: kb/081/Q81550/
+permalink: /kb/081/Q81550/
 ---
 
 ## Q81550: PC Win: OLE Object from Excel 3.0 Creates Strange Title

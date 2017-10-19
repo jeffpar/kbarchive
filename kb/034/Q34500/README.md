@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34500: FIX: Mixing &#92; and / in Command Line Causes Problems"
-permalink: kb/034/Q34500/
+permalink: /kb/034/Q34500/
 ---
 
 ## Q34500: FIX: Mixing &#92; and / in Command Line Causes Problems

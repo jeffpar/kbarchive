@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165095: XCLN: Form Allows Incorrect or Missing Data in Required Fields"
-permalink: kb/165/Q165095/
+permalink: /kb/165/Q165095/
 ---
 
 ## Q165095: XCLN: Form Allows Incorrect or Missing Data in Required Fields

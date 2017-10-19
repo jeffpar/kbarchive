@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183398: SMSINST: Duplicate SMS IDs Exist After a Package Is Deployed"
-permalink: kb/183/Q183398/
+permalink: /kb/183/Q183398/
 ---
 
 ## Q183398: SMSINST: Duplicate SMS IDs Exist After a Package Is Deployed

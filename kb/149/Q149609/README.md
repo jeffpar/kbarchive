@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149609: How to Search for Duplicate Character Strings"
-permalink: kb/149/Q149609/
+permalink: /kb/149/Q149609/
 ---
 
 ## Q149609: How to Search for Duplicate Character Strings

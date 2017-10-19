@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85346: FAX: What Software Drivers Are Running on the Gateway PC"
-permalink: kb/085/Q85346/
+permalink: /kb/085/Q85346/
 ---
 
 ## Q85346: FAX: What Software Drivers Are Running on the Gateway PC

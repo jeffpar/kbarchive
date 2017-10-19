@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164261: Ntbackup Causes Cache to Grow During Restore"
-permalink: kb/164/Q164261/
+permalink: /kb/164/Q164261/
 ---
 
 ## Q164261: Ntbackup Causes Cache to Grow During Restore

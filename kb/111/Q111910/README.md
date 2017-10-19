@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111910: Stacker Conversion: Your Computer Is Running Stacker..."
-permalink: kb/111/Q111910/
+permalink: /kb/111/Q111910/
 ---
 
 ## Q111910: Stacker Conversion: Your Computer Is Running Stacker...

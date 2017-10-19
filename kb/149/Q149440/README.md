@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149440: Err Msg: &quot;Invalid Parameter&quot; or &quot;Incorrect Parameter&quot;"
-permalink: kb/149/Q149440/
+permalink: /kb/149/Q149440/
 ---
 
 ## Q149440: Err Msg: &quot;Invalid Parameter&quot; or &quot;Incorrect Parameter&quot;

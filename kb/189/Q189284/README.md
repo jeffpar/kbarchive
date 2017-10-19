@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189284: Entering Suspend Mode While in Standby Mode Hangs USB Computer"
-permalink: kb/189/Q189284/
+permalink: /kb/189/Q189284/
 ---
 
 ## Q189284: Entering Suspend Mode While in Standby Mode Hangs USB Computer

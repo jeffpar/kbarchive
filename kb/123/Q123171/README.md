@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123171: WINS Event Log IDs 4145 - 4290 (Error Conditions) for 3.5"
-permalink: kb/123/Q123171/
+permalink: /kb/123/Q123171/
 ---
 
 ## Q123171: WINS Event Log IDs 4145 - 4290 (Error Conditions) for 3.5

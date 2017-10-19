@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174054: MSN Error Message: Task Cannot Be Completed at This Time"
-permalink: kb/174/Q174054/
+permalink: /kb/174/Q174054/
 ---
 
 ## Q174054: MSN Error Message: Task Cannot Be Completed at This Time

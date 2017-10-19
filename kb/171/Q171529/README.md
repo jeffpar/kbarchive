@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171529: FIX: Can't Open a Project Group from the Root Directory"
-permalink: kb/171/Q171529/
+permalink: /kb/171/Q171529/
 ---
 
 ## Q171529: FIX: Can't Open a Project Group from the Root Directory

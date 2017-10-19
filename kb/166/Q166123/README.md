@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166123: Mac Encarta 97: Collage Introductions and Sounds Stutter"
-permalink: kb/166/Q166123/
+permalink: /kb/166/Q166123/
 ---
 
 ## Q166123: Mac Encarta 97: Collage Introductions and Sounds Stutter

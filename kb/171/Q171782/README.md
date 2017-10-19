@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171782: INFO: How to Map a Network Drive During an Unattended Setup"
-permalink: kb/171/Q171782/
+permalink: /kb/171/Q171782/
 ---
 
 ## Q171782: INFO: How to Map a Network Drive During an Unattended Setup

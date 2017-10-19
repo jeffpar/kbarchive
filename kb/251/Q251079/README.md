@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251079: MSB Bugs: Does Not Run or Quits on Terminal Server"
-permalink: kb/251/Q251079/
+permalink: /kb/251/Q251079/
 ---
 
 ## Q251079: MSB Bugs: Does Not Run or Quits on Terminal Server

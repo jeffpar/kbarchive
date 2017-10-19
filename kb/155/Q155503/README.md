@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155503: SMS: IPX Address Not Inventoried When You Use TCP/IP"
-permalink: kb/155/Q155503/
+permalink: /kb/155/Q155503/
 ---
 
 ## Q155503: SMS: IPX Address Not Inventoried When You Use TCP/IP

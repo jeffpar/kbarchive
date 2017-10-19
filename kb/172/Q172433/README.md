@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172433: ODE97: Error: &quot;Object ID 435&quot; Installing French Run-Time"
-permalink: kb/172/Q172433/
+permalink: /kb/172/Q172433/
 ---
 
 ## Q172433: ODE97: Error: &quot;Object ID 435&quot; Installing French Run-Time

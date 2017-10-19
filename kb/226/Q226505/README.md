@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226505: SMS: Read/View Rights at Instance Level Not Providing Access"
-permalink: kb/226/Q226505/
+permalink: /kb/226/Q226505/
 ---
 
 ## Q226505: SMS: Read/View Rights at Instance Level Not Providing Access

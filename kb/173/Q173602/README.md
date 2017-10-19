@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173602: MSB Rainforest: How to Play the Games"
-permalink: kb/173/Q173602/
+permalink: /kb/173/Q173602/
 ---
 
 ## Q173602: MSB Rainforest: How to Play the Games

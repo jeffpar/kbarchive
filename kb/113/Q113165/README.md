@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113165: PC Ext: Err Msg: Retry Count Exceeded"
-permalink: kb/113/Q113165/
+permalink: /kb/113/Q113165/
 ---
 
 ## Q113165: PC Ext: Err Msg: Retry Count Exceeded

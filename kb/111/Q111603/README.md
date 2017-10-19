@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111603: BUG: GlobalCompact() May Return an Inaccurate Value"
-permalink: kb/111/Q111603/
+permalink: /kb/111/Q111603/
 ---
 
 ## Q111603: BUG: GlobalCompact() May Return an Inaccurate Value

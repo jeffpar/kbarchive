@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173801: WD97: Word Count Is Zero When Object Is Selected"
-permalink: kb/173/Q173801/
+permalink: /kb/173/Q173801/
 ---
 
 ## Q173801: WD97: Word Count Is Zero When Object Is Selected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173493: Loss of Performance or Functionality in Microsoft Exchange"
-permalink: kb/173/Q173493/
+permalink: /kb/173/Q173493/
 ---
 
 ## Q173493: Loss of Performance or Functionality in Microsoft Exchange

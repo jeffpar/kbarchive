@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252494: XWEB: Attachments Cannot Be Opened in OWA 5.5 SP3"
-permalink: kb/252/Q252494/
+permalink: /kb/252/Q252494/
 ---
 
 ## Q252494: XWEB: Attachments Cannot Be Opened in OWA 5.5 SP3

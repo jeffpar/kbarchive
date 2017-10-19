@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183170: Dial on Demand Works but Connections to the Internet Do Not"
-permalink: kb/183/Q183170/
+permalink: /kb/183/Q183170/
 ---
 
 ## Q183170: Dial on Demand Works but Connections to the Internet Do Not

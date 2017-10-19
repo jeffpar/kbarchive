@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132896: FTP Client Scripts Terminate Without Completing"
-permalink: kb/132/Q132896/
+permalink: /kb/132/Q132896/
 ---
 
 ## Q132896: FTP Client Scripts Terminate Without Completing

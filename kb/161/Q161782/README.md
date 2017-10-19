@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161782: SMS: Stop 0xC000021a Error with SMS Remote Agent Installed"
-permalink: kb/161/Q161782/
+permalink: /kb/161/Q161782/
 ---
 
 ## Q161782: SMS: Stop 0xC000021a Error with SMS Remote Agent Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220948: Problems Using a Non-US WinNT Workstation w/ US Terminal Server"
-permalink: kb/220/Q220948/
+permalink: /kb/220/Q220948/
 ---
 
 ## Q220948: Problems Using a Non-US WinNT Workstation w/ US Terminal Server

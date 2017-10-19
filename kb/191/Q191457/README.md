@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191457: PRB: DataEnvironment Recordset Requery Does Not Refresh Controls"
-permalink: kb/191/Q191457/
+permalink: /kb/191/Q191457/
 ---
 
 ## Q191457: PRB: DataEnvironment Recordset Requery Does Not Refresh Controls

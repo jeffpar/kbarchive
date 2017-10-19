@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51163: Tandy 1000 Beeps When Flight Simulator 4.00 Is Started"
-permalink: kb/051/Q51163/
+permalink: /kb/051/Q51163/
 ---
 
 ## Q51163: Tandy 1000 Beeps When Flight Simulator 4.00 Is Started

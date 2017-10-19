@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149281: Adding Extensions to Macintosh File Names for Windows 95"
-permalink: kb/149/Q149281/
+permalink: /kb/149/Q149281/
 ---
 
 ## Q149281: Adding Extensions to Macintosh File Names for Windows 95

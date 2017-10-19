@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98244: Installing OS/2 1.3x on a Unisys PW2-3256 Computer"
-permalink: kb/098/Q98244/
+permalink: /kb/098/Q98244/
 ---
 
 ## Q98244: Installing OS/2 1.3x on a Unisys PW2-3256 Computer

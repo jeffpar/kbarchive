@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139757: FIX: Upsize Wizard Falsely Creates Timestamp Field on SQL 6.0"
-permalink: kb/139/Q139757/
+permalink: /kb/139/Q139757/
 ---
 
 ## Q139757: FIX: Upsize Wizard Falsely Creates Timestamp Field on SQL 6.0

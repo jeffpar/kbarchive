@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169512: PRB: Controls Show on All Pages in Tabbed Dialog Control"
-permalink: kb/169/Q169512/
+permalink: /kb/169/Q169512/
 ---
 
 ## Q169512: PRB: Controls Show on All Pages in Tabbed Dialog Control

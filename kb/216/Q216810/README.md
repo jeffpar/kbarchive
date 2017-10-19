@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider"
-permalink: kb/216/Q216810/
+permalink: /kb/216/Q216810/
 ---
 
 ## Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider

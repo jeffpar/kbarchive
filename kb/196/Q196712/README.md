@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196712: Performance Monitor Hangs on Startup or When Adding Counters"
-permalink: kb/196/Q196712/
+permalink: /kb/196/Q196712/
 ---
 
 ## Q196712: Performance Monitor Hangs on Startup or When Adding Counters

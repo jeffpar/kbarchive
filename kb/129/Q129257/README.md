@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129257: Error Message: The Briefcase Cannot Be Opened..."
-permalink: kb/129/Q129257/
+permalink: /kb/129/Q129257/
 ---
 
 ## Q129257: Error Message: The Briefcase Cannot Be Opened...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130057: Supporting Multiple Languages in a Single Application"
-permalink: kb/130/Q130057/
+permalink: /kb/130/Q130057/
 ---
 
 ## Q130057: Supporting Multiple Languages in a Single Application

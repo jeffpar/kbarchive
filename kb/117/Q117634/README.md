@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117634: Baseball 1994: Manual Installation Instructions"
-permalink: kb/117/Q117634/
+permalink: /kb/117/Q117634/
 ---
 
 ## Q117634: Baseball 1994: Manual Installation Instructions

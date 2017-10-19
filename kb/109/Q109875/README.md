@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109875: FIX: Improper Debug Stepping in Routines w/ ENTRY Points"
-permalink: kb/109/Q109875/
+permalink: /kb/109/Q109875/
 ---
 
 ## Q109875: FIX: Improper Debug Stepping in Routines w/ ENTRY Points

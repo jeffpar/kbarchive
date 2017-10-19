@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP"
-permalink: kb/131/Q131865/
+permalink: /kb/131/Q131865/
 ---
 
 ## Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP

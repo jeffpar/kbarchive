@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120463: Scenes 2.0: Causes Divide by Zero Error Under Windows NT"
-permalink: kb/120/Q120463/
+permalink: /kb/120/Q120463/
 ---
 
 ## Q120463: Scenes 2.0: Causes Divide by Zero Error Under Windows NT

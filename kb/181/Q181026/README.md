@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181026: New SNA Print Server Tracing Option"
-permalink: kb/181/Q181026/
+permalink: /kb/181/Q181026/
 ---
 
 ## Q181026: New SNA Print Server Tracing Option

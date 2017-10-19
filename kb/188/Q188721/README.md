@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188721: BUG: AV Using ios-Derived Type in Multithreaded Apps"
-permalink: kb/188/Q188721/
+permalink: /kb/188/Q188721/
 ---
 
 ## Q188721: BUG: AV Using ios-Derived Type in Multithreaded Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140523: How to Update the Phone Number List for MSN and the Internet"
-permalink: kb/140/Q140523/
+permalink: /kb/140/Q140523/
 ---
 
 ## Q140523: How to Update the Phone Number List for MSN and the Internet

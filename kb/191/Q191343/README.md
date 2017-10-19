@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191343: PRB: Connection Busy Error with a Shared Connection"
-permalink: kb/191/Q191343/
+permalink: /kb/191/Q191343/
 ---
 
 ## Q191343: PRB: Connection Busy Error with a Shared Connection

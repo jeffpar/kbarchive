@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119875: Limitations Using Only the Keyboard in Windows 95"
-permalink: kb/119/Q119875/
+permalink: /kb/119/Q119875/
 ---
 
 ## Q119875: Limitations Using Only the Keyboard in Windows 95

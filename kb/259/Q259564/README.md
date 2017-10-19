@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259564: INFO: Windowless Controls in the Mswless.ocx File Not Supported"
-permalink: kb/259/Q259564/
+permalink: /kb/259/Q259564/
 ---
 
 ## Q259564: INFO: Windowless Controls in the Mswless.ocx File Not Supported

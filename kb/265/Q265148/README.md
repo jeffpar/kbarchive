@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265148: XCCC: Conversation Box Is Missing from a Meeting Request in OWA"
-permalink: kb/265/Q265148/
+permalink: /kb/265/Q265148/
 ---
 
 ## Q265148: XCCC: Conversation Box Is Missing from a Meeting Request in OWA

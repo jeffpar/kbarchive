@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308462: MCSE Readiness Review Exam 70-228 Microsoft SQL Server 2000 Admi"
-permalink: kb/308/Q308462/
+permalink: /kb/308/Q308462/
 ---
 
 ## Q308462: MCSE Readiness Review Exam 70-228 Microsoft SQL Server 2000 Admi

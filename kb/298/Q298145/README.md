@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298145: FIX: REPAIR_DB Option Removes Encryption from Access 2000 DB"
-permalink: kb/298/Q298145/
+permalink: /kb/298/Q298145/
 ---
 
 ## Q298145: FIX: REPAIR_DB Option Removes Encryption from Access 2000 DB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140381: Evaluation Copies of SWEEP On July 1995 TechNet Disk"
-permalink: kb/140/Q140381/
+permalink: /kb/140/Q140381/
 ---
 
 ## Q140381: Evaluation Copies of SWEEP On July 1995 TechNet Disk

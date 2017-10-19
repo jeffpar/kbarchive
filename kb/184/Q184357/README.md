@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184357: PRB: Visual C++ Opens Project in Wrong VSS Database"
-permalink: kb/184/Q184357/
+permalink: /kb/184/Q184357/
 ---
 
 ## Q184357: PRB: Visual C++ Opens Project in Wrong VSS Database

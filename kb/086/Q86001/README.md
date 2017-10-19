@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86001: PC Win: Horizontal Scroll Bar Blocks Bottom Line"
-permalink: kb/086/Q86001/
+permalink: /kb/086/Q86001/
 ---
 
 ## Q86001: PC Win: Horizontal Scroll Bar Blocks Bottom Line

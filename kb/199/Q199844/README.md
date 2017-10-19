@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199844: FS98/2000: No Lessons Are Displayed in the Lessons List"
-permalink: kb/199/Q199844/
+permalink: /kb/199/Q199844/
 ---
 
 ## Q199844: FS98/2000: No Lessons Are Displayed in the Lessons List

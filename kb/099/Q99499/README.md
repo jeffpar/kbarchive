@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99499: DBLSPACE.EXE Modifies the DBLSPACE.INI Settings"
-permalink: kb/099/Q99499/
+permalink: /kb/099/Q99499/
 ---
 
 ## Q99499: DBLSPACE.EXE Modifies the DBLSPACE.INI Settings

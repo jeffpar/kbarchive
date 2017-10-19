@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258987: SMS: False Errors Are Recorded in the Smsprov.log File"
-permalink: kb/258/Q258987/
+permalink: /kb/258/Q258987/
 ---
 
 ## Q258987: SMS: False Errors Are Recorded in the Smsprov.log File

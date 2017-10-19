@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89903: Quick Recorder Does Not Save Alternate File Extensions"
-permalink: kb/089/Q89903/
+permalink: /kb/089/Q89903/
 ---
 
 ## Q89903: Quick Recorder Does Not Save Alternate File Extensions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164386: Print Disk Administrator Screen to Record Hard Drive Info"
-permalink: kb/164/Q164386/
+permalink: /kb/164/Q164386/
 ---
 
 ## Q164386: Print Disk Administrator Screen to Record Hard Drive Info

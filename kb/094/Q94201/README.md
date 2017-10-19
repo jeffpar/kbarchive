@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94201: TopDesk Conflicts with SoundBits Sound Events"
-permalink: kb/094/Q94201/
+permalink: /kb/094/Q94201/
 ---
 
 ## Q94201: TopDesk Conflicts with SoundBits Sound Events

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76564: Receiving a Physical COM Port from the Windows VCD"
-permalink: kb/076/Q76564/
+permalink: /kb/076/Q76564/
 ---
 
 ## Q76564: Receiving a Physical COM Port from the Windows VCD

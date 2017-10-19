@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96086: HP DeskJet Printer Driver Support in Windows 3.1"
-permalink: kb/096/Q96086/
+permalink: /kb/096/Q96086/
 ---
 
 ## Q96086: HP DeskJet Printer Driver Support in Windows 3.1

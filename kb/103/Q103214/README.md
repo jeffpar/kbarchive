@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103214: Updating the Screen Without Flicker"
-permalink: kb/103/Q103214/
+permalink: /kb/103/Q103214/
 ---
 
 ## Q103214: Updating the Screen Without Flicker

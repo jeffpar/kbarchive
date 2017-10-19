@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138251: PPT: Viewer Quits After the First Show in Playlist."
-permalink: kb/138/Q138251/
+permalink: /kb/138/Q138251/
 ---
 
 ## Q138251: PPT: Viewer Quits After the First Show in Playlist.

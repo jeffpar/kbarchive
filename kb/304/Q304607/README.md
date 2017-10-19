@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304607: PRB: Visual Basic Doesn't Load .ocx When Starting Visual Basic"
-permalink: kb/304/Q304607/
+permalink: /kb/304/Q304607/
 ---
 
 ## Q304607: PRB: Visual Basic Doesn't Load .ocx When Starting Visual Basic

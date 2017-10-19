@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130831: Converter: How the Position of Screens Is Converted"
-permalink: kb/130/Q130831/
+permalink: /kb/130/Q130831/
 ---
 
 ## Q130831: Converter: How the Position of Screens Is Converted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147052: XADM: Setup Displays Remote Server Does Not Respond Error"
-permalink: kb/147/Q147052/
+permalink: /kb/147/Q147052/
 ---
 
 ## Q147052: XADM: Setup Displays Remote Server Does Not Respond Error

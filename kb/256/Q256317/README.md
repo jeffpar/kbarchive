@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256317: SMS 1.2 Administrator Loses Package Workstation Command Lines"
-permalink: kb/256/Q256317/
+permalink: /kb/256/Q256317/
 ---
 
 ## Q256317: SMS 1.2 Administrator Loses Package Workstation Command Lines

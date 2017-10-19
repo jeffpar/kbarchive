@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171458: Windows NT May Fail On Request to Open Large Files"
-permalink: kb/171/Q171458/
+permalink: /kb/171/Q171458/
 ---
 
 ## Q171458: Windows NT May Fail On Request to Open Large Files

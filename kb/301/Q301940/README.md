@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301940: HOW TO: Migrate Objects from One Domain to Another in Windows NT"
-permalink: kb/301/Q301940/
+permalink: /kb/301/Q301940/
 ---
 
 ## Q301940: HOW TO: Migrate Objects from One Domain to Another in Windows NT

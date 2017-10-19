@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159297: XADM: High Store.exe CPU Utilization During IS Maintenance"
-permalink: kb/159/Q159297/
+permalink: /kb/159/Q159297/
 ---
 
 ## Q159297: XADM: High Store.exe CPU Utilization During IS Maintenance

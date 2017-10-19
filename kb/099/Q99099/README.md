@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99099: Procedure for Upgrading LMSFM on a Headless 3Server"
-permalink: kb/099/Q99099/
+permalink: /kb/099/Q99099/
 ---
 
 ## Q99099: Procedure for Upgrading LMSFM on a Headless 3Server

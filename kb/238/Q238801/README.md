@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238801: Setting up Demand-Dial Connections with RRAS Document Available"
-permalink: kb/238/Q238801/
+permalink: /kb/238/Q238801/
 ---
 
 ## Q238801: Setting up Demand-Dial Connections with RRAS Document Available

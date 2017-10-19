@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155391: PRB: ACME Setup Problems During 16-bit Installation of VSS 4.0"
-permalink: kb/155/Q155391/
+permalink: /kb/155/Q155391/
 ---
 
 ## Q155391: PRB: ACME Setup Problems During 16-bit Installation of VSS 4.0

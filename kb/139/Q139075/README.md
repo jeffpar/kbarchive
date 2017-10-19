@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139075: BUG: MF4024/MF1005 Generated for Serial Communication Settings"
-permalink: kb/139/Q139075/
+permalink: /kb/139/Q139075/
 ---
 
 ## Q139075: BUG: MF4024/MF1005 Generated for Serial Communication Settings

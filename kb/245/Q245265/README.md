@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245265: Documentation Error: Disabling the OS/2 Subsystem"
-permalink: kb/245/Q245265/
+permalink: /kb/245/Q245265/
 ---
 
 ## Q245265: Documentation Error: Disabling the OS/2 Subsystem

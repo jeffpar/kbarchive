@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129515: File Transfer Using Zmodem Protocol Hangs HyperTerminal"
-permalink: kb/129/Q129515/
+permalink: /kb/129/Q129515/
 ---
 
 ## Q129515: File Transfer Using Zmodem Protocol Hangs HyperTerminal

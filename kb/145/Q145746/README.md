@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145746: DOC: Technical Note 38: MFC/OLE IUnknown Implementation"
-permalink: kb/145/Q145746/
+permalink: /kb/145/Q145746/
 ---
 
 ## Q145746: DOC: Technical Note 38: MFC/OLE IUnknown Implementation

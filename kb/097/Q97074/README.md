@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97074: PC WRmt: Changing the AT&amp;T Driver User Sign In ID or Password"
-permalink: kb/097/Q97074/
+permalink: /kb/097/Q97074/
 ---
 
 ## Q97074: PC WRmt: Changing the AT&amp;T Driver User Sign In ID or Password

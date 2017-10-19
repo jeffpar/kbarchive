@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271516: Offline Servers Are Not Removed from the Service Table"
-permalink: kb/271/Q271516/
+permalink: /kb/271/Q271516/
 ---
 
 ## Q271516: Offline Servers Are Not Removed from the Service Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276319: Adsiis.dll Leaks Memory Because of Unreleased String Allocation"
-permalink: kb/276/Q276319/
+permalink: /kb/276/Q276319/
 ---
 
 ## Q276319: Adsiis.dll Leaks Memory Because of Unreleased String Allocation

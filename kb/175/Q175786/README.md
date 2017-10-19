@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175786: XWEB: Outlook Web Access Creates a Profile Marked as Deleted"
-permalink: kb/175/Q175786/
+permalink: /kb/175/Q175786/
 ---
 
 ## Q175786: XWEB: Outlook Web Access Creates a Profile Marked as Deleted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151901: PRB: StatusBar Pane Enabled by Default"
-permalink: kb/151/Q151901/
+permalink: /kb/151/Q151901/
 ---
 
 ## Q151901: PRB: StatusBar Pane Enabled by Default

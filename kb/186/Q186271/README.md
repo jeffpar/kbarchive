@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186271: HOWTO: Manipulate Text Box Contents"
-permalink: kb/186/Q186271/
+permalink: /kb/186/Q186271/
 ---
 
 ## Q186271: HOWTO: Manipulate Text Box Contents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176883: WD97: Double-Clicking Graphic File in Explorer Opens in IE 4.0"
-permalink: kb/176/Q176883/
+permalink: /kb/176/Q176883/
 ---
 
 ## Q176883: WD97: Double-Clicking Graphic File in Explorer Opens in IE 4.0

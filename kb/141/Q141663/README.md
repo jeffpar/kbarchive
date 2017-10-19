@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141663: SMTP: Err Msg: Sockets 0116: TCP Access Failure by Sockets"
-permalink: kb/141/Q141663/
+permalink: /kb/141/Q141663/
 ---
 
 ## Q141663: SMTP: Err Msg: Sockets 0116: TCP Access Failure by Sockets

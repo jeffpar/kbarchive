@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174481: Phantom Zone Appears in the Chooser List"
-permalink: kb/174/Q174481/
+permalink: /kb/174/Q174481/
 ---
 
 ## Q174481: Phantom Zone Appears in the Chooser List

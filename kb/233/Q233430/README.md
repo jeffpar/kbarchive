@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233430: Business Planner: Printed Output Cut Off at Right Margin of Page"
-permalink: kb/233/Q233430/
+permalink: /kb/233/Q233430/
 ---
 
 ## Q233430: Business Planner: Printed Output Cut Off at Right Margin of Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151851: BUG: Mastering Exchange Development: Product ID Is Zeros"
-permalink: kb/151/Q151851/
+permalink: /kb/151/Q151851/
 ---
 
 ## Q151851: BUG: Mastering Exchange Development: Product ID Is Zeros

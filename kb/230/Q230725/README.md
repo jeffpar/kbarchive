@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230725: Err Msg: GRPCONV.EXE Is Not a Valid Windows NT Application"
-permalink: kb/230/Q230725/
+permalink: /kb/230/Q230725/
 ---
 
 ## Q230725: Err Msg: GRPCONV.EXE Is Not a Valid Windows NT Application

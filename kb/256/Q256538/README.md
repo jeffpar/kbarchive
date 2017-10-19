@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256538: Creating an XML Page and Style Sheet to Display FoxPro Data"
-permalink: kb/256/Q256538/
+permalink: /kb/256/Q256538/
 ---
 
 ## Q256538: Creating an XML Page and Style Sheet to Display FoxPro Data

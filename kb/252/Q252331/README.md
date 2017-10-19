@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252331: XADM: Error Message: Failed to Get ADSI Object: 8007203A"
-permalink: kb/252/Q252331/
+permalink: /kb/252/Q252331/
 ---
 
 ## Q252331: XADM: Error Message: Failed to Get ADSI Object: 8007203A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131092: PRB: Keyword Expansion Is Case Sensitive"
-permalink: kb/131/Q131092/
+permalink: /kb/131/Q131092/
 ---
 
 ## Q131092: PRB: Keyword Expansion Is Case Sensitive

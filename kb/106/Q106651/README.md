@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106651: Font Assistant Tips and Information"
-permalink: kb/106/Q106651/
+permalink: /kb/106/Q106651/
 ---
 
 ## Q106651: Font Assistant Tips and Information

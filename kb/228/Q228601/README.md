@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228601: XFOR:How to Exchange Templates between Exchange Server &amp; MS Mail"
-permalink: kb/228/Q228601/
+permalink: /kb/228/Q228601/
 ---
 
 ## Q228601: XFOR:How to Exchange Templates between Exchange Server &amp; MS Mail

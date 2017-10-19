@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136571: How WINS Resolves Name Conflicts During Replication"
-permalink: kb/136/Q136571/
+permalink: /kb/136/Q136571/
 ---
 
 ## Q136571: How WINS Resolves Name Conflicts During Replication

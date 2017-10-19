@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180771: PRB: Enabled Property of Label Does Not Change Appearance"
-permalink: kb/180/Q180771/
+permalink: /kb/180/Q180771/
 ---
 
 ## Q180771: PRB: Enabled Property of Label Does Not Change Appearance

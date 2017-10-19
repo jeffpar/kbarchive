@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155299: XADM: Err Msg: Parameter is Incorrect ID No: 0xc0020057"
-permalink: kb/155/Q155299/
+permalink: /kb/155/Q155299/
 ---
 
 ## Q155299: XADM: Err Msg: Parameter is Incorrect ID No: 0xc0020057

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185657: HOWTO: Utilize the Hyperlink Foundation Class"
-permalink: kb/185/Q185657/
+permalink: /kb/185/Q185657/
 ---
 
 ## Q185657: HOWTO: Utilize the Hyperlink Foundation Class

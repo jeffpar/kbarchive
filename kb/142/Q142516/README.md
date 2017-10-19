@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142516: MSB Ocean: CD Audio MCI Driver Not Installed with Aztech Sound"
-permalink: kb/142/Q142516/
+permalink: /kb/142/Q142516/
 ---
 
 ## Q142516: MSB Ocean: CD Audio MCI Driver Not Installed with Aztech Sound

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260397: SMS: Program Does Not Run When System.lkp Is Busy"
-permalink: kb/260/Q260397/
+permalink: /kb/260/Q260397/
 ---
 
 ## Q260397: SMS: Program Does Not Run When System.lkp Is Busy

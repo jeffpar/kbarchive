@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96703: Defining Custom Events for SoundBits"
-permalink: kb/096/Q96703/
+permalink: /kb/096/Q96703/
 ---
 
 ## Q96703: Defining Custom Events for SoundBits

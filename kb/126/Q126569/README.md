@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126569: Error Message: &quot;VNETSUP: Error 6102&quot;"
-permalink: kb/126/Q126569/
+permalink: /kb/126/Q126569/
 ---
 
 ## Q126569: Error Message: &quot;VNETSUP: Error 6102&quot;

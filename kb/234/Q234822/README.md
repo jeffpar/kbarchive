@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234822: MOD2000:Undo Check Out Doesn't Update the VSS SCC Status Window"
-permalink: kb/234/Q234822/
+permalink: /kb/234/Q234822/
 ---
 
 ## Q234822: MOD2000:Undo Check Out Doesn't Update the VSS SCC Status Window

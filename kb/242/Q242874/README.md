@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242874: Age of Empires II: Pointer Blinks on Windows 2000-Based Computer"
-permalink: kb/242/Q242874/
+permalink: /kb/242/Q242874/
 ---
 
 ## Q242874: Age of Empires II: Pointer Blinks on Windows 2000-Based Computer

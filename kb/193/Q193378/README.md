@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193378: XFOR: List of Default Jet Database Files in DXADATA"
-permalink: kb/193/Q193378/
+permalink: /kb/193/Q193378/
 ---
 
 ## Q193378: XFOR: List of Default Jet Database Files in DXADATA

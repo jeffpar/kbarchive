@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194614: HOWTO: Avoid Problems Associated with Installing New SDKs"
-permalink: kb/194/Q194614/
+permalink: /kb/194/Q194614/
 ---
 
 ## Q194614: HOWTO: Avoid Problems Associated with Installing New SDKs

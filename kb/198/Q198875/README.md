@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198875: PRB: Text in Controls Are Clipped on Chinese/Korean Windows"
-permalink: kb/198/Q198875/
+permalink: /kb/198/Q198875/
 ---
 
 ## Q198875: PRB: Text in Controls Are Clipped on Chinese/Korean Windows

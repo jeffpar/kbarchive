@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105044: ERR: &quot;File Does Not Exist&quot; After Source Code Is Removed"
-permalink: kb/105/Q105044/
+permalink: /kb/105/Q105044/
 ---
 
 ## Q105044: ERR: &quot;File Does Not Exist&quot; After Source Code Is Removed

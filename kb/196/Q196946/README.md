@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196946: SNAOLEDB Fails with &quot;Data conversion (DCONV.DLL) not found&quot;"
-permalink: kb/196/Q196946/
+permalink: /kb/196/Q196946/
 ---
 
 ## Q196946: SNAOLEDB Fails with &quot;Data conversion (DCONV.DLL) not found&quot;

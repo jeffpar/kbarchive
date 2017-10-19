@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95333: Copying a File"
-permalink: kb/095/Q95333/
+permalink: /kb/095/Q95333/
 ---
 
 ## Q95333: Copying a File

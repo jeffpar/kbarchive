@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188823: XCLN: Attachment Dropped During Forward of Message"
-permalink: kb/188/Q188823/
+permalink: /kb/188/Q188823/
 ---
 
 ## Q188823: XCLN: Attachment Dropped During Forward of Message

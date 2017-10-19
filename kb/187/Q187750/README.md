@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187750: Internet Information Server Returns Old Content to Browsers"
-permalink: kb/187/Q187750/
+permalink: /kb/187/Q187750/
 ---
 
 ## Q187750: Internet Information Server Returns Old Content to Browsers

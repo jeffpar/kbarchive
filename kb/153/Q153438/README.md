@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153438: Microsoft Phone Does Not Translate Letters to Numbers"
-permalink: kb/153/Q153438/
+permalink: /kb/153/Q153438/
 ---
 
 ## Q153438: Microsoft Phone Does Not Translate Letters to Numbers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162168: DLC Printers Show &quot;Status Unknown&quot; After Restarting Spooler"
-permalink: kb/162/Q162168/
+permalink: /kb/162/Q162168/
 ---
 
 ## Q162168: DLC Printers Show &quot;Status Unknown&quot; After Restarting Spooler

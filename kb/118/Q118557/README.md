@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118557: How FoxPro Uses Universal Thunking for 32-Bit API Calls"
-permalink: kb/118/Q118557/
+permalink: /kb/118/Q118557/
 ---
 
 ## Q118557: How FoxPro Uses Universal Thunking for 32-Bit API Calls

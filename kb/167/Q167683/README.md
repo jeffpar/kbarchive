@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167683: SMS: Audit32 Causes an Access Violation"
-permalink: kb/167/Q167683/
+permalink: /kb/167/Q167683/
 ---
 
 ## Q167683: SMS: Audit32 Causes an Access Violation

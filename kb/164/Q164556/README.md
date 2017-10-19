@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164556: WD97: Two Similar Macro Errors Occur for Same Line of Macro Code"
-permalink: kb/164/Q164556/
+permalink: /kb/164/Q164556/
 ---
 
 ## Q164556: WD97: Two Similar Macro Errors Occur for Same Line of Macro Code

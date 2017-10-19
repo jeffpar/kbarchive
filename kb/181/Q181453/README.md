@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181453: XADM: Help for Advance Tab in Mailbox Help Is Incorrect"
-permalink: kb/181/Q181453/
+permalink: /kb/181/Q181453/
 ---
 
 ## Q181453: XADM: Help for Advance Tab in Mailbox Help Is Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257790: BUG: CancelUpdate After AddNew Causes Error If Datatype Invalid"
-permalink: kb/257/Q257790/
+permalink: /kb/257/Q257790/
 ---
 
 ## Q257790: BUG: CancelUpdate After AddNew Causes Error If Datatype Invalid

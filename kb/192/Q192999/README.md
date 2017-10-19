@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192999: Web Links in Bookshelf 98 and Encarta 98 Updated by Redirector"
-permalink: kb/192/Q192999/
+permalink: /kb/192/Q192999/
 ---
 
 ## Q192999: Web Links in Bookshelf 98 and Encarta 98 Updated by Redirector

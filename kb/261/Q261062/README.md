@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261062: MCM2: Cannot Select Video Adapter When You Use Multiple Monitors"
-permalink: kb/261/Q261062/
+permalink: /kb/261/Q261062/
 ---
 
 ## Q261062: MCM2: Cannot Select Video Adapter When You Use Multiple Monitors

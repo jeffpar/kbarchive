@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95116: WFWG: System Hangs with Novell NetWare and Token Ring"
-permalink: kb/095/Q95116/
+permalink: /kb/095/Q95116/
 ---
 
 ## Q95116: WFWG: System Hangs with Novell NetWare and Token Ring

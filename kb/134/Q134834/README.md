@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134834: PRB: SourceSafe Fails with Norton Desktop Version 3.0"
-permalink: kb/134/Q134834/
+permalink: /kb/134/Q134834/
 ---
 
 ## Q134834: PRB: SourceSafe Fails with Norton Desktop Version 3.0

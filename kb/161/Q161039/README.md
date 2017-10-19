@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161039: Snaservr.exe Application Exception in SAPUGETI Function"
-permalink: kb/161/Q161039/
+permalink: /kb/161/Q161039/
 ---
 
 ## Q161039: Snaservr.exe Application Exception in SAPUGETI Function

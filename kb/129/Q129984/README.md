@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129984: SWITCH.INF Script Unavailable as Option in Remote Access"
-permalink: kb/129/Q129984/
+permalink: /kb/129/Q129984/
 ---
 
 ## Q129984: SWITCH.INF Script Unavailable as Option in Remote Access

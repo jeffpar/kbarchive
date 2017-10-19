@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140157: How to Right-Click by Using the Keyboard in Visual FoxPro"
-permalink: kb/140/Q140157/
+permalink: /kb/140/Q140157/
 ---
 
 ## Q140157: How to Right-Click by Using the Keyboard in Visual FoxPro

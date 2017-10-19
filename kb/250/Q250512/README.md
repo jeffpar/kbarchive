@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250512: OS() Function May Not Return &quot;NT&quot; Under Windows 2000"
-permalink: kb/250/Q250512/
+permalink: /kb/250/Q250512/
 ---
 
 ## Q250512: OS() Function May Not Return &quot;NT&quot; Under Windows 2000

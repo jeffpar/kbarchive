@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151723: How to Re-create Default Icons Deleted from Desktop"
-permalink: kb/151/Q151723/
+permalink: /kb/151/Q151723/
 ---
 
 ## Q151723: How to Re-create Default Icons Deleted from Desktop

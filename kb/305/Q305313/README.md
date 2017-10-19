@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305313: Optimizing Internet Information Services 5.0"
-permalink: kb/305/Q305313/
+permalink: /kb/305/Q305313/
 ---
 
 ## Q305313: Optimizing Internet Information Services 5.0

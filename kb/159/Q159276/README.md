@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159276: TN3270E May Encounter Unexpected Application Exception"
-permalink: kb/159/Q159276/
+permalink: /kb/159/Q159276/
 ---
 
 ## Q159276: TN3270E May Encounter Unexpected Application Exception

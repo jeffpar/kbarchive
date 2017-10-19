@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156856: XFOR: MSMail and HMail 3.5 PO Migration to Exchange Server"
-permalink: kb/156/Q156856/
+permalink: /kb/156/Q156856/
 ---
 
 ## Q156856: XFOR: MSMail and HMail 3.5 PO Migration to Exchange Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262840: The New SMS 2.0 Site Is Unable to Run SQL Setup"
-permalink: kb/262/Q262840/
+permalink: /kb/262/Q262840/
 ---
 
 ## Q262840: The New SMS 2.0 Site Is Unable to Run SQL Setup

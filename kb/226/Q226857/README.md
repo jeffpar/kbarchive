@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226857: SMS: Intersite License Balancing Still Runs After Being Disabled"
-permalink: kb/226/Q226857/
+permalink: /kb/226/Q226857/
 ---
 
 ## Q226857: SMS: Intersite License Balancing Still Runs After Being Disabled

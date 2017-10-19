@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131742: DLL Files in the HyperTerminal Folder"
-permalink: kb/131/Q131742/
+permalink: /kb/131/Q131742/
 ---
 
 ## Q131742: DLL Files in the HyperTerminal Folder

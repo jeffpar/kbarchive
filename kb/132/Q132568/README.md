@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132568: PRB: Creating Instance of OLE Control Causes Exception Error"
-permalink: kb/132/Q132568/
+permalink: /kb/132/Q132568/
 ---
 
 ## Q132568: PRB: Creating Instance of OLE Control Causes Exception Error

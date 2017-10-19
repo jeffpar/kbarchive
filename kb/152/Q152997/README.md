@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152997: Using the Micro Solutions Backpack CD-ROM Drive w/ Windows NT"
-permalink: kb/152/Q152997/
+permalink: /kb/152/Q152997/
 ---
 
 ## Q152997: Using the Micro Solutions Backpack CD-ROM Drive w/ Windows NT

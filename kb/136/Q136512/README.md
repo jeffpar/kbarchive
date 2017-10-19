@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136512: PC WRmt: System Selector Not Display Installed Mail Options"
-permalink: kb/136/Q136512/
+permalink: /kb/136/Q136512/
 ---
 
 ## Q136512: PC WRmt: System Selector Not Display Installed Mail Options

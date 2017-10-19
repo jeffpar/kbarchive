@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196616: Deadlock When Updating ASP Pages on a Multiprocessor Server"
-permalink: kb/196/Q196616/
+permalink: /kb/196/Q196616/
 ---
 
 ## Q196616: Deadlock When Updating ASP Pages on a Multiprocessor Server

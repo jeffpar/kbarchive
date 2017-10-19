@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85405: Epson T-750 Does Not Handle US Fanfold Correctly"
-permalink: kb/085/Q85405/
+permalink: /kb/085/Q85405/
 ---
 
 ## Q85405: Epson T-750 Does Not Handle US Fanfold Correctly

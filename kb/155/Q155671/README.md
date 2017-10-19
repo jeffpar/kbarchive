@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155671: DBWEB: NT 3.51 SP4 Doesn't Restart After Installing dbWeb1.1a"
-permalink: kb/155/Q155671/
+permalink: /kb/155/Q155671/
 ---
 
 ## Q155671: DBWEB: NT 3.51 SP4 Doesn't Restart After Installing dbWeb1.1a

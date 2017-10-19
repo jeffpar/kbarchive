@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174743: XADM: Cannot Install 4.0/5.0 KMS After Installing 5.5 Server"
-permalink: kb/174/Q174743/
+permalink: /kb/174/Q174743/
 ---
 
 ## Q174743: XADM: Cannot Install 4.0/5.0 KMS After Installing 5.5 Server

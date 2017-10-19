@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156438: Internet Mail or News Reader Software Hangs or Times Out"
-permalink: kb/156/Q156438/
+permalink: /kb/156/Q156438/
 ---
 
 ## Q156438: Internet Mail or News Reader Software Hangs or Times Out

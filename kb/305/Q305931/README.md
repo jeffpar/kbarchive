@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305931: INFO: DELIMITED WITH BLANK Differs in Various FoxPro Versions"
-permalink: kb/305/Q305931/
+permalink: /kb/305/Q305931/
 ---
 
 ## Q305931: INFO: DELIMITED WITH BLANK Differs in Various FoxPro Versions

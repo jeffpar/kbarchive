@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110263: Asimov: Buttons Don't Appear to be Active in 16-Color Mode"
-permalink: kb/110/Q110263/
+permalink: /kb/110/Q110263/
 ---
 
 ## Q110263: Asimov: Buttons Don't Appear to be Active in 16-Color Mode

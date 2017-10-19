@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148985: XFOR: Frequently Asked Questions for IMC"
-permalink: kb/148/Q148985/
+permalink: /kb/148/Q148985/
 ---
 
 ## Q148985: XFOR: Frequently Asked Questions for IMC

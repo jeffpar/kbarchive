@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321403: FIX: SNA Server May Trap When Receiving Long BINDs"
-permalink: kb/321/Q321403/
+permalink: /kb/321/Q321403/
 ---
 
 ## Q321403: FIX: SNA Server May Trap When Receiving Long BINDs

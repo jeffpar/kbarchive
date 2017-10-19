@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76865: IBM MOUSE.COM Version 1.1 or Later with MS-DOS Shell"
-permalink: kb/076/Q76865/
+permalink: /kb/076/Q76865/
 ---
 
 ## Q76865: IBM MOUSE.COM Version 1.1 or Later with MS-DOS Shell

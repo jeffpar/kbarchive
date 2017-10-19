@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181088: Windows 95 DFS Client Switches Drive Mappings to DFS Shares"
-permalink: kb/181/Q181088/
+permalink: /kb/181/Q181088/
 ---
 
 ## Q181088: Windows 95 DFS Client Switches Drive Mappings to DFS Shares

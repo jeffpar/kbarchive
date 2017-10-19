@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305467: Microsoft Windows Script Host 2.0 Developer's Guide Comments and"
-permalink: kb/305/Q305467/
+permalink: /kb/305/Q305467/
 ---
 
 ## Q305467: Microsoft Windows Script Host 2.0 Developer's Guide Comments and

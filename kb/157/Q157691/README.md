@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157691: XADM: TNS Resolution Causes Buffer Overflow"
-permalink: kb/157/Q157691/
+permalink: /kb/157/Q157691/
 ---
 
 ## Q157691: XADM: TNS Resolution Causes Buffer Overflow

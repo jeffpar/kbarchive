@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313813: SSL Fails When You Use an SGC Certificate with Missing OID"
-permalink: kb/313/Q313813/
+permalink: /kb/313/Q313813/
 ---
 
 ## Q313813: SSL Fails When You Use an SGC Certificate with Missing OID

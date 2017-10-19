@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168009: FIX: Smartptr Property in Interface Causes C2512 Error"
-permalink: kb/168/Q168009/
+permalink: /kb/168/Q168009/
 ---
 
 ## Q168009: FIX: Smartptr Property in Interface Causes C2512 Error

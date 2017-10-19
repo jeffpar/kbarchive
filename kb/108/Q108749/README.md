@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108749: IPX&#92;SPX Compatible Transport Generates Error 7361"
-permalink: kb/108/Q108749/
+permalink: /kb/108/Q108749/
 ---
 
 ## Q108749: IPX&#92;SPX Compatible Transport Generates Error 7361

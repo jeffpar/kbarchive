@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254358: MapPoint 2001: How to Install and Remove Pocket Streets"
-permalink: kb/254/Q254358/
+permalink: /kb/254/Q254358/
 ---
 
 ## Q254358: MapPoint 2001: How to Install and Remove Pocket Streets

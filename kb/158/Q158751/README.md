@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158751: Printing Problems Caused By Fax Software"
-permalink: kb/158/Q158751/
+permalink: /kb/158/Q158751/
 ---
 
 ## Q158751: Printing Problems Caused By Fax Software

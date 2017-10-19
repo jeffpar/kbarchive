@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95360: WFWG: Unable to Log on to Banyan VINES"
-permalink: kb/095/Q95360/
+permalink: /kb/095/Q95360/
 ---
 
 ## Q95360: WFWG: Unable to Log on to Banyan VINES

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189040: How to Print to File for Readable File Format"
-permalink: kb/189/Q189040/
+permalink: /kb/189/Q189040/
 ---
 
 ## Q189040: How to Print to File for Readable File Format

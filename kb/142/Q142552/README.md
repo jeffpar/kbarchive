@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142552: FIX: OLE Error Playing .WAV Object"
-permalink: kb/142/Q142552/
+permalink: /kb/142/Q142552/
 ---
 
 ## Q142552: FIX: OLE Error Playing .WAV Object

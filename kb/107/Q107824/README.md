@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107824: PRB: Orientation and Paper Settings Not Transported"
-permalink: kb/107/Q107824/
+permalink: /kb/107/Q107824/
 ---
 
 ## Q107824: PRB: Orientation and Paper Settings Not Transported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194095: Encarta: Blank Rectangle on Screen When You View Virtual Tour"
-permalink: kb/194/Q194095/
+permalink: /kb/194/Q194095/
 ---
 
 ## Q194095: Encarta: Blank Rectangle on Screen When You View Virtual Tour

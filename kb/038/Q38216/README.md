@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38216: PRB: Possible Cause of L2002 for Mixed C, MASM in Large Model"
-permalink: kb/038/Q38216/
+permalink: /kb/038/Q38216/
 ---
 
 ## Q38216: PRB: Possible Cause of L2002 for Mixed C, MASM in Large Model

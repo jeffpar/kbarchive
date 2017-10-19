@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149112: Some Image Maps Do Not Work with IIS"
-permalink: kb/149/Q149112/
+permalink: /kb/149/Q149112/
 ---
 
 ## Q149112: Some Image Maps Do Not Work with IIS

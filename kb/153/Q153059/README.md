@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153059: BUG: Incorrect Edition Starts in Different Operating Systems"
-permalink: kb/153/Q153059/
+permalink: /kb/153/Q153059/
 ---
 
 ## Q153059: BUG: Incorrect Edition Starts in Different Operating Systems

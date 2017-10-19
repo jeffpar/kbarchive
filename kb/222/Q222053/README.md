@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222053: RAS May Not Answer After Proxy Autodisconnects"
-permalink: kb/222/Q222053/
+permalink: /kb/222/Q222053/
 ---
 
 ## Q222053: RAS May Not Answer After Proxy Autodisconnects

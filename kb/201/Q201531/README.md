@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201531: XFOR: F/B Request by Calendar Connector May Crash NetWare Server"
-permalink: kb/201/Q201531/
+permalink: /kb/201/Q201531/
 ---
 
 ## Q201531: XFOR: F/B Request by Calendar Connector May Crash NetWare Server

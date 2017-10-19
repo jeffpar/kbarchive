@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243478: STOP 0xA in Netbt.sys Occurs on Domain Master Browser"
-permalink: kb/243/Q243478/
+permalink: /kb/243/Q243478/
 ---
 
 ## Q243478: STOP 0xA in Netbt.sys Occurs on Domain Master Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180701: CPIC Application CMINIT May Stop on SNA Windows NT Client"
-permalink: kb/180/Q180701/
+permalink: /kb/180/Q180701/
 ---
 
 ## Q180701: CPIC Application CMINIT May Stop on SNA Windows NT Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65403: LINK Creating Temporary File Can Hang on 3Com 3+ Open Network"
-permalink: kb/065/Q65403/
+permalink: /kb/065/Q65403/
 ---
 
 ## Q65403: LINK Creating Temporary File Can Hang on 3Com 3+ Open Network

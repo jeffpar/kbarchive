@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153968: Unattended Installation of Service Pack 4 After NT Installed"
-permalink: kb/153/Q153968/
+permalink: /kb/153/Q153968/
 ---
 
 ## Q153968: Unattended Installation of Service Pack 4 After NT Installed

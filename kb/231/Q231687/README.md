@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231687: XFOR: Changing GroupWise Users' Display Name in Exchange GAL"
-permalink: kb/231/Q231687/
+permalink: /kb/231/Q231687/
 ---
 
 ## Q231687: XFOR: Changing GroupWise Users' Display Name in Exchange GAL

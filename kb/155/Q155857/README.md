@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155857: Windows 95 Multiple Provider Router and Network Call Order"
-permalink: kb/155/Q155857/
+permalink: /kb/155/Q155857/
 ---
 
 ## Q155857: Windows 95 Multiple Provider Router and Network Call Order

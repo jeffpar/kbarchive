@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131006: PRB: Dr Watson Won't Log Stack Symbols in Visual C++ App"
-permalink: kb/131/Q131006/
+permalink: /kb/131/Q131006/
 ---
 
 ## Q131006: PRB: Dr Watson Won't Log Stack Symbols in Visual C++ App

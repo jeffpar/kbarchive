@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258623: Baseball 2001: Textures Turn White After You Change Resolution"
-permalink: kb/258/Q258623/
+permalink: /kb/258/Q258623/
 ---
 
 ## Q258623: Baseball 2001: Textures Turn White After You Change Resolution

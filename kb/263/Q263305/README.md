@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263305: High-Encryption Configuration Prevents Outlook Express Replies"
-permalink: kb/263/Q263305/
+permalink: /kb/263/Q263305/
 ---
 
 ## Q263305: High-Encryption Configuration Prevents Outlook Express Replies

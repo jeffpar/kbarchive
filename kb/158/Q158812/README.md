@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158812: XFOR: ErrMsg: Postoffice NETWORK/PO Could Not Be Modified"
-permalink: kb/158/Q158812/
+permalink: /kb/158/Q158812/
 ---
 
 ## Q158812: XFOR: ErrMsg: Postoffice NETWORK/PO Could Not Be Modified

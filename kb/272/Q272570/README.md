@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272570: XADM: Disaster Recovery of Information Store on Exchange Server"
-permalink: kb/272/Q272570/
+permalink: /kb/272/Q272570/
 ---
 
 ## Q272570: XADM: Disaster Recovery of Information Store on Exchange Server

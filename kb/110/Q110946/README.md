@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110946: SP2 Prohibits Administrator Access to Locked Workstations"
-permalink: kb/110/Q110946/
+permalink: /kb/110/Q110946/
 ---
 
 ## Q110946: SP2 Prohibits Administrator Access to Locked Workstations

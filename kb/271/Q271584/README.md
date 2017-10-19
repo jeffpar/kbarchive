@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271584: XCLN: Cannot Download OAB After Using Newprof and Profgen"
-permalink: kb/271/Q271584/
+permalink: /kb/271/Q271584/
 ---
 
 ## Q271584: XCLN: Cannot Download OAB After Using Newprof and Profgen

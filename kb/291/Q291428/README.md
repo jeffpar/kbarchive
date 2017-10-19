@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291428: ICA Clients Cannot Map Drives After Installing ZAK"
-permalink: kb/291/Q291428/
+permalink: /kb/291/Q291428/
 ---
 
 ## Q291428: ICA Clients Cannot Map Drives After Installing ZAK

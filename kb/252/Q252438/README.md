@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252438: HOWTO: Modify Visual Data Manager to Work with Access 2000"
-permalink: kb/252/Q252438/
+permalink: /kb/252/Q252438/
 ---
 
 ## Q252438: HOWTO: Modify Visual Data Manager to Work with Access 2000

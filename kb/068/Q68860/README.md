@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68860: Unable to Move Icons Within Program Groups with Keyboard"
-permalink: kb/068/Q68860/
+permalink: /kb/068/Q68860/
 ---
 
 ## Q68860: Unable to Move Icons Within Program Groups with Keyboard

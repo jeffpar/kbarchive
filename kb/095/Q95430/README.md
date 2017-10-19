@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95430: BUG: GPF/UAE If Multi-Select Controls w/ No Common Properties"
-permalink: kb/095/Q95430/
+permalink: /kb/095/Q95430/
 ---
 
 ## Q95430: BUG: GPF/UAE If Multi-Select Controls w/ No Common Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192233: Winframe 1.x not detected by Terminal Server 4.0 for Upgrade"
-permalink: kb/192/Q192233/
+permalink: /kb/192/Q192233/
 ---
 
 ## Q192233: Winframe 1.x not detected by Terminal Server 4.0 for Upgrade

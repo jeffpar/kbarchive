@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225050: Availability of the Windows 95 Year 2000 Update"
-permalink: kb/225/Q225050/
+permalink: /kb/225/Q225050/
 ---
 
 ## Q225050: Availability of the Windows 95 Year 2000 Update

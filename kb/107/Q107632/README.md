@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107632: Using Novell's ODINSUP and NETx with Windows"
-permalink: kb/107/Q107632/
+permalink: /kb/107/Q107632/
 ---
 
 ## Q107632: Using Novell's ODINSUP and NETx with Windows

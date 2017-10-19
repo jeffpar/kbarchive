@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122764: DOC: Use MFC Migration Toolkit to Translate C Code to C++"
-permalink: kb/122/Q122764/
+permalink: /kb/122/Q122764/
 ---
 
 ## Q122764: DOC: Use MFC Migration Toolkit to Translate C Code to C++

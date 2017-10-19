@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172611: FTP Client Fails to Suppress Remote Server Responses Using -V"
-permalink: kb/172/Q172611/
+permalink: /kb/172/Q172611/
 ---
 
 ## Q172611: FTP Client Fails to Suppress Remote Server Responses Using -V

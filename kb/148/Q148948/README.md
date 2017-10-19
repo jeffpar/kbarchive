@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148948: Windir Environment Variable Lost if Batch File Run from &#42;.PIF"
-permalink: kb/148/Q148948/
+permalink: /kb/148/Q148948/
 ---
 
 ## Q148948: Windir Environment Variable Lost if Batch File Run from &#42;.PIF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254264: XADM: Autoforwarding Rule to a Deleted Custom Recipient NDRs"
-permalink: kb/254/Q254264/
+permalink: /kb/254/Q254264/
 ---
 
 ## Q254264: XADM: Autoforwarding Rule to a Deleted Custom Recipient NDRs

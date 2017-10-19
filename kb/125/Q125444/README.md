@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125444: Visual C++ 2.0 Source Code for Alpha Run-Time Lib"
-permalink: kb/125/Q125444/
+permalink: /kb/125/Q125444/
 ---
 
 ## Q125444: Visual C++ 2.0 Source Code for Alpha Run-Time Lib

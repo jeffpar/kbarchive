@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219277: Load Balancing HTTP with WLBS"
-permalink: kb/219/Q219277/
+permalink: /kb/219/Q219277/
 ---
 
 ## Q219277: Load Balancing HTTP with WLBS

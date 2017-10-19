@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175877: CSNW Connection Leak When Running 16-bit Applications"
-permalink: kb/175/Q175877/
+permalink: /kb/175/Q175877/
 ---
 
 ## Q175877: CSNW Connection Leak When Running 16-bit Applications

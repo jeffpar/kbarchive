@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124102: &quot;Out of Paper&quot; Message After DeskJet 560c Tray Is Refilled"
-permalink: kb/124/Q124102/
+permalink: /kb/124/Q124102/
 ---
 
 ## Q124102: &quot;Out of Paper&quot; Message After DeskJet 560c Tray Is Refilled

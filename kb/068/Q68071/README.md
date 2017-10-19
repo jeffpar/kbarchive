@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68071: FIX: MASM Aligns on 4-Byte Boundary After Offset 8000h"
-permalink: kb/068/Q68071/
+permalink: /kb/068/Q68071/
 ---
 
 ## Q68071: FIX: MASM Aligns on 4-Byte Boundary After Offset 8000h

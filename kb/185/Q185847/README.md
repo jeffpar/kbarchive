@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185847: XFOR: Message Conversion Fails If Fixed Font Setting Is Enabled"
-permalink: kb/185/Q185847/
+permalink: /kb/185/Q185847/
 ---
 
 ## Q185847: XFOR: Message Conversion Fails If Fixed Font Setting Is Enabled

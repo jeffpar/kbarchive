@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175638: FTP Login Using Domain and Trusted Domain Accounts"
-permalink: kb/175/Q175638/
+permalink: /kb/175/Q175638/
 ---
 
 ## Q175638: FTP Login Using Domain and Trusted Domain Accounts

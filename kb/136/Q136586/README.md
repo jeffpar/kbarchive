@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136586: Where to Find Info About Visual FoxPro File Structures"
-permalink: kb/136/Q136586/
+permalink: /kb/136/Q136586/
 ---
 
 ## Q136586: Where to Find Info About Visual FoxPro File Structures

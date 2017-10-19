@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190361: XWEB: IIS Hangs When File Upload Is Cancelled from Browser"
-permalink: kb/190/Q190361/
+permalink: /kb/190/Q190361/
 ---
 
 ## Q190361: XWEB: IIS Hangs When File Upload Is Cancelled from Browser

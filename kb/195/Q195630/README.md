@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195630: Unable to Fail-Back the Disk Resource After a Fail-Over"
-permalink: kb/195/Q195630/
+permalink: /kb/195/Q195630/
 ---
 
 ## Q195630: Unable to Fail-Back the Disk Resource After a Fail-Over

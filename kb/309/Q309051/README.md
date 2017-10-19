@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309051: HOW TO: Troubleshoot ASP in IIS 5.0"
-permalink: kb/309/Q309051/
+permalink: /kb/309/Q309051/
 ---
 
 ## Q309051: HOW TO: Troubleshoot ASP in IIS 5.0

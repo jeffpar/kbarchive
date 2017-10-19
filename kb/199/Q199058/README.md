@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199058: BUG: Debugger.SetNextStatement Displays Dialog Box"
-permalink: kb/199/Q199058/
+permalink: /kb/199/Q199058/
 ---
 
 ## Q199058: BUG: Debugger.SetNextStatement Displays Dialog Box

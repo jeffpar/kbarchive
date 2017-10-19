@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77934: Determining That Display Driver Supports Transparent Mode"
-permalink: kb/077/Q77934/
+permalink: /kb/077/Q77934/
 ---
 
 ## Q77934: Determining That Display Driver Supports Transparent Mode

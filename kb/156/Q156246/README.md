@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156246: Bookshelf 1994: Find with &quot;?&quot; Wildcard Search Fails"
-permalink: kb/156/Q156246/
+permalink: /kb/156/Q156246/
 ---
 
 ## Q156246: Bookshelf 1994: Find with &quot;?&quot; Wildcard Search Fails

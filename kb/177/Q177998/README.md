@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177998: XFOR: IMAP/POP3 Clients Cannot Reply to Migrated Messages"
-permalink: kb/177/Q177998/
+permalink: /kb/177/Q177998/
 ---
 
 ## Q177998: XFOR: IMAP/POP3 Clients Cannot Reply to Migrated Messages

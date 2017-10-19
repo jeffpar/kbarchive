@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136333: PC DirSync: Err Msg: Fatal 159 Failure to Send Update Mail..."
-permalink: kb/136/Q136333/
+permalink: /kb/136/Q136333/
 ---
 
 ## Q136333: PC DirSync: Err Msg: Fatal 159 Failure to Send Update Mail...

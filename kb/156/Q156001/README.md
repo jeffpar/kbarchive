@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156001: PowerPoint 4.0 Presentations Not Recognized in Exchange Folder"
-permalink: kb/156/Q156001/
+permalink: /kb/156/Q156001/
 ---
 
 ## Q156001: PowerPoint 4.0 Presentations Not Recognized in Exchange Folder

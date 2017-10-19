@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240019: HOWTO: Dynamically Populate a Data Report in Visual Basic"
-permalink: kb/240/Q240019/
+permalink: /kb/240/Q240019/
 ---
 
 ## Q240019: HOWTO: Dynamically Populate a Data Report in Visual Basic

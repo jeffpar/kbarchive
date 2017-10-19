@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123398: PC DirSync: Groups with 10 Characters Group Address Remain"
-permalink: kb/123/Q123398/
+permalink: /kb/123/Q123398/
 ---
 
 ## Q123398: PC DirSync: Groups with 10 Characters Group Address Remain

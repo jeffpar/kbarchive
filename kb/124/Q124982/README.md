@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124982: Encarta: Some Images Do Not Have the Print or Copy Option"
-permalink: kb/124/Q124982/
+permalink: /kb/124/Q124982/
 ---
 
 ## Q124982: Encarta: Some Images Do Not Have the Print or Copy Option

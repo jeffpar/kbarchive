@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69036: dBASE IV's CACHEDB Disk Cache Incompatible with SMARTDRIVE"
-permalink: kb/069/Q69036/
+permalink: /kb/069/Q69036/
 ---
 
 ## Q69036: dBASE IV's CACHEDB Disk Cache Incompatible with SMARTDRIVE

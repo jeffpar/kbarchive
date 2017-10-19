@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324116: Microsoft C# Language Specifications Comments and Corrections"
-permalink: kb/324/Q324116/
+permalink: /kb/324/Q324116/
 ---
 
 ## Q324116: Microsoft C# Language Specifications Comments and Corrections

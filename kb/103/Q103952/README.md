@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103952: Basic Network Architecture Terms"
-permalink: kb/103/Q103952/
+permalink: /kb/103/Q103952/
 ---
 
 ## Q103952: Basic Network Architecture Terms

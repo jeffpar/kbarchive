@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108627: Writer 1: Macintosh Setup Error Says to Use CHKDSK"
-permalink: kb/108/Q108627/
+permalink: /kb/108/Q108627/
 ---
 
 ## Q108627: Writer 1: Macintosh Setup Error Says to Use CHKDSK

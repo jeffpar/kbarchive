@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125189: Cannot Browse WGAO 3.11 Computer from WFWG 3.1"
-permalink: kb/125/Q125189/
+permalink: /kb/125/Q125189/
 ---
 
 ## Q125189: Cannot Browse WGAO 3.11 Computer from WFWG 3.1

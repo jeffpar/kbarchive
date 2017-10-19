@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187734: Large Version ID Not Completely Visible in WINS Admin"
-permalink: kb/187/Q187734/
+permalink: /kb/187/Q187734/
 ---
 
 ## Q187734: Large Version ID Not Completely Visible in WINS Admin

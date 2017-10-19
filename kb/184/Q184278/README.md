@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184278: Server in One Domain May Disconnect Client in Another Domain"
-permalink: kb/184/Q184278/
+permalink: /kb/184/Q184278/
 ---
 
 ## Q184278: Server in One Domain May Disconnect Client in Another Domain

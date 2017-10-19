@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240941: An Introduction to the IIS Metabase"
-permalink: kb/240/Q240941/
+permalink: /kb/240/Q240941/
 ---
 
 ## Q240941: An Introduction to the IIS Metabase

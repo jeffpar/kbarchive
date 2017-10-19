@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207562: HOWTO: Delete Tables from a Windows CE Device from VBCE or eVB"
-permalink: kb/207/Q207562/
+permalink: /kb/207/Q207562/
 ---
 
 ## Q207562: HOWTO: Delete Tables from a Windows CE Device from VBCE or eVB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271535: MCM2: Computer Hangs When You Quit and Restart Game"
-permalink: kb/271/Q271535/
+permalink: /kb/271/Q271535/
 ---
 
 ## Q271535: MCM2: Computer Hangs When You Quit and Restart Game

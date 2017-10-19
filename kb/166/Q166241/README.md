@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166241: Font-Specific Character Set Not Being Used"
-permalink: kb/166/Q166241/
+permalink: /kb/166/Q166241/
 ---
 
 ## Q166241: Font-Specific Character Set Not Being Used

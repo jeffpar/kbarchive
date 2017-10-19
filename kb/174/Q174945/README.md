@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174945: How to Prevent MSCS from Using Specific Networks"
-permalink: kb/174/Q174945/
+permalink: /kb/174/Q174945/
 ---
 
 ## Q174945: How to Prevent MSCS from Using Specific Networks

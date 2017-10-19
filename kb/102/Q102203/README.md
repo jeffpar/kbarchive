@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102203: BUG: Print Job Is Not Released to Printer"
-permalink: kb/102/Q102203/
+permalink: /kb/102/Q102203/
 ---
 
 ## Q102203: BUG: Print Job Is Not Released to Printer

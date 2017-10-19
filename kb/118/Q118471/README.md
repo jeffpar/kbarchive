@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118471: BUG: Caching GDI Objects Causes Temporary GDI Resource Leak"
-permalink: kb/118/Q118471/
+permalink: /kb/118/Q118471/
 ---
 
 ## Q118471: BUG: Caching GDI Objects Causes Temporary GDI Resource Leak

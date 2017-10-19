@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169963: OFF97: Copy To from Bookshelf Starts Program Not Binder"
-permalink: kb/169/Q169963/
+permalink: /kb/169/Q169963/
 ---
 
 ## Q169963: OFF97: Copy To from Bookshelf Starts Program Not Binder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195711: WD97: How to Place Text over a Graphic in Word 97"
-permalink: kb/195/Q195711/
+permalink: /kb/195/Q195711/
 ---
 
 ## Q195711: WD97: How to Place Text over a Graphic in Word 97

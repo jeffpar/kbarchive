@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154972: PPT7: Some PowerPoint Features Lost Exporting to HTML"
-permalink: kb/154/Q154972/
+permalink: /kb/154/Q154972/
 ---
 
 ## Q154972: PPT7: Some PowerPoint Features Lost Exporting to HTML

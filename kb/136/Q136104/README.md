@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136104: MVP144win Cardinal Modem Does Not Work with 32-Bit Programs"
-permalink: kb/136/Q136104/
+permalink: /kb/136/Q136104/
 ---
 
 ## Q136104: MVP144win Cardinal Modem Does Not Work with 32-Bit Programs

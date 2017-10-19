@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174035: XFOR: Multiple Messages Are Sent When All Mail Is Forwarded"
-permalink: kb/174/Q174035/
+permalink: /kb/174/Q174035/
 ---
 
 ## Q174035: XFOR: Multiple Messages Are Sent When All Mail Is Forwarded

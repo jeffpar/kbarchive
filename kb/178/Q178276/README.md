@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178276: Dependencies Are Unavailable When First Modifying Properties"
-permalink: kb/178/Q178276/
+permalink: /kb/178/Q178276/
 ---
 
 ## Q178276: Dependencies Are Unavailable When First Modifying Properties

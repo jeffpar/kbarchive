@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143315: Unconf.Haunted House: Cirrus Logic Video Drivers Problems"
-permalink: kb/143/Q143315/
+permalink: /kb/143/Q143315/
 ---
 
 ## Q143315: Unconf.Haunted House: Cirrus Logic Video Drivers Problems

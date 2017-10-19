@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155682: XADM: Info Store Won't transfer Some X.400 Messages to Gateway"
-permalink: kb/155/Q155682/
+permalink: /kb/155/Q155682/
 ---
 
 ## Q155682: XADM: Info Store Won't transfer Some X.400 Messages to Gateway

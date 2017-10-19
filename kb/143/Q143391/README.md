@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143391: PC Mac: Err Msg: Could Not Create Preferences File..."
-permalink: kb/143/Q143391/
+permalink: /kb/143/Q143391/
 ---
 
 ## Q143391: PC Mac: Err Msg: Could Not Create Preferences File...

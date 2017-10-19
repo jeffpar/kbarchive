@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137241: CPU Type Information Different in Windows NT Diagnostics"
-permalink: kb/137/Q137241/
+permalink: /kb/137/Q137241/
 ---
 
 ## Q137241: CPU Type Information Different in Windows NT Diagnostics

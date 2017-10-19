@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118853: PC Mac: Incorrect Extended Characters Displayed in Templates"
-permalink: kb/118/Q118853/
+permalink: /kb/118/Q118853/
 ---
 
 ## Q118853: PC Mac: Incorrect Extended Characters Displayed in Templates

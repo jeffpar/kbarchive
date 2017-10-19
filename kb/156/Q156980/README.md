@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156980: Performance Monitor: Disk Transfers Per Second Not Working"
-permalink: kb/156/Q156980/
+permalink: /kb/156/Q156980/
 ---
 
 ## Q156980: Performance Monitor: Disk Transfers Per Second Not Working

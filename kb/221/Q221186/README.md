@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221186: Printers May Not Install on Computers Created from Other Image"
-permalink: kb/221/Q221186/
+permalink: /kb/221/Q221186/
 ---
 
 ## Q221186: Printers May Not Install on Computers Created from Other Image

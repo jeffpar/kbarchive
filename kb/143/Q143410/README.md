@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143410: DOC: Vertical Slider Control Sends WM_VSCROLL Message"
-permalink: kb/143/Q143410/
+permalink: /kb/143/Q143410/
 ---
 
 ## Q143410: DOC: Vertical Slider Control Sends WM_VSCROLL Message

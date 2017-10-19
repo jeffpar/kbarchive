@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141791: Invalid Accounts Created with ADDUSERS.EXE"
-permalink: kb/141/Q141791/
+permalink: /kb/141/Q141791/
 ---
 
 ## Q141791: Invalid Accounts Created with ADDUSERS.EXE

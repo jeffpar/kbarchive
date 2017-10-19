@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88515: Additional Golf Courses Available from Access Software"
-permalink: kb/088/Q88515/
+permalink: /kb/088/Q88515/
 ---
 
 ## Q88515: Additional Golf Courses Available from Access Software

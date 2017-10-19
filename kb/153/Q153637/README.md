@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153637: Remove Package From Server Job Fails if Files Are in Use"
-permalink: kb/153/Q153637/
+permalink: /kb/153/Q153637/
 ---
 
 ## Q153637: Remove Package From Server Job Fails if Files Are in Use

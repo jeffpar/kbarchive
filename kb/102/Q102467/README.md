@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows"
-permalink: kb/102/Q102467/
+permalink: /kb/102/Q102467/
 ---
 
 ## Q102467: HOWTO: Use MAPI.DLL to Invoke MS Mail from FoxPro for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184752: Xerox PCL Does Not Print Landscape"
-permalink: kb/184/Q184752/
+permalink: /kb/184/Q184752/
 ---
 
 ## Q184752: Xerox PCL Does Not Print Landscape

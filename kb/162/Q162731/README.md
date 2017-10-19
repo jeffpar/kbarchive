@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162731: FIX: Class Wizard Displays Incorrect Control IDs"
-permalink: kb/162/Q162731/
+permalink: /kb/162/Q162731/
 ---
 
 ## Q162731: FIX: Class Wizard Displays Incorrect Control IDs

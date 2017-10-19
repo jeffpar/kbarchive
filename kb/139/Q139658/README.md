@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139658: Writer/Artist: ErrMsg: Could Not Create The File Named..."
-permalink: kb/139/Q139658/
+permalink: /kb/139/Q139658/
 ---
 
 ## Q139658: Writer/Artist: ErrMsg: Could Not Create The File Named...

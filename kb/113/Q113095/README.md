@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113095: WFWG 3.11 Disk 6 Directory Listing (3.5 Inch, 1.44 MB)"
-permalink: kb/113/Q113095/
+permalink: /kb/113/Q113095/
 ---
 
 ## Q113095: WFWG 3.11 Disk 6 Directory Listing (3.5 Inch, 1.44 MB)

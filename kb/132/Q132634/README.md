@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132634: Deleted Briefcase Loses Icon when Restored from Recycle Bin"
-permalink: kb/132/Q132634/
+permalink: /kb/132/Q132634/
 ---
 
 ## Q132634: Deleted Briefcase Loses Icon when Restored from Recycle Bin

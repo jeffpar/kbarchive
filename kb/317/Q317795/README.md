@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317795: SMS: The Remote Control Console Displays a Gray Screen"
-permalink: kb/317/Q317795/
+permalink: /kb/317/Q317795/
 ---
 
 ## Q317795: SMS: The Remote Control Console Displays a Gray Screen

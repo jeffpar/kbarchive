@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148728: &quot;Navigator Not Found&quot; When Attempting to Open BBS"
-permalink: kb/148/Q148728/
+permalink: /kb/148/Q148728/
 ---
 
 ## Q148728: &quot;Navigator Not Found&quot; When Attempting to Open BBS

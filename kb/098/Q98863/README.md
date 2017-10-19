@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98863: DOC: SB_ENDSCROLL Code Missing from OnHScroll() Documentation"
-permalink: kb/098/Q98863/
+permalink: /kb/098/Q98863/
 ---
 
 ## Q98863: DOC: SB_ENDSCROLL Code Missing from OnHScroll() Documentation

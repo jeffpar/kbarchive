@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264738: Unable to Start Citrix Installer Service"
-permalink: kb/264/Q264738/
+permalink: /kb/264/Q264738/
 ---
 
 ## Q264738: Unable to Start Citrix Installer Service

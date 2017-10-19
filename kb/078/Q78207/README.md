@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78207: Coda Music Software's Finale 2.0 and Windows"
-permalink: kb/078/Q78207/
+permalink: /kb/078/Q78207/
 ---
 
 ## Q78207: Coda Music Software's Finale 2.0 and Windows

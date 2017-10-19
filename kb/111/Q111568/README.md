@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111568: Video Display Problems with MS-DOS Prompt and Trident Card"
-permalink: kb/111/Q111568/
+permalink: /kb/111/Q111568/
 ---
 
 ## Q111568: Video Display Problems with MS-DOS Prompt and Trident Card

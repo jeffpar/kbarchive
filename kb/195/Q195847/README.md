@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195847: XFOR: Chat Server Fails to Correctly Interpret an Extension"
-permalink: kb/195/Q195847/
+permalink: /kb/195/Q195847/
 ---
 
 ## Q195847: XFOR: Chat Server Fails to Correctly Interpret an Extension

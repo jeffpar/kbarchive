@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50505: IBM SAA Extensions Available in Microsoft FORTRAN 5.1"
-permalink: kb/050/Q50505/
+permalink: /kb/050/Q50505/
 ---
 
 ## Q50505: IBM SAA Extensions Available in Microsoft FORTRAN 5.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202075: Multiple Script Map Entries Created in IIS 4.0"
-permalink: kb/202/Q202075/
+permalink: /kb/202/Q202075/
 ---
 
 ## Q202075: Multiple Script Map Entries Created in IIS 4.0

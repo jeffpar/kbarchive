@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167206: XFOR: Extension LSQVIEW Could Not Be Loaded"
-permalink: kb/167/Q167206/
+permalink: /kb/167/Q167206/
 ---
 
 ## Q167206: XFOR: Extension LSQVIEW Could Not Be Loaded

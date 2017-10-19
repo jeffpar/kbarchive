@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189732: XADM: Required Privilege Not Held By Client"
-permalink: kb/189/Q189732/
+permalink: /kb/189/Q189732/
 ---
 
 ## Q189732: XADM: Required Privilege Not Held By Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233515: PRB: Error &quot;String Literal Too Long&quot; w/ Update/Insert on Oracle"
-permalink: kb/233/Q233515/
+permalink: /kb/233/Q233515/
 ---
 
 ## Q233515: PRB: Error &quot;String Literal Too Long&quot; w/ Update/Insert on Oracle

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140492: PRB: Possible Recursion Problems with OLE Controls"
-permalink: kb/140/Q140492/
+permalink: /kb/140/Q140492/
 ---
 
 ## Q140492: PRB: Possible Recursion Problems with OLE Controls

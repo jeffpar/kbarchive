@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158814: FP: How to Link to Two Target Frames Using a Single Hyperlink"
-permalink: kb/158/Q158814/
+permalink: /kb/158/Q158814/
 ---
 
 ## Q158814: FP: How to Link to Two Target Frames Using a Single Hyperlink

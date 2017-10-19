@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169746: Hellbender Opening Animations Skip Or Hang With Screamin' 3D"
-permalink: kb/169/Q169746/
+permalink: /kb/169/Q169746/
 ---
 
 ## Q169746: Hellbender Opening Animations Skip Or Hang With Screamin' 3D

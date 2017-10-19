@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140240: Screen Saver Files Become Associated with Fax Viewer"
-permalink: kb/140/Q140240/
+permalink: /kb/140/Q140240/
 ---
 
 ## Q140240: Screen Saver Files Become Associated with Fax Viewer

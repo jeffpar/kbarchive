@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236459: XFOR: Meeting Time Off One Hour When Sent by GroupWise Connector"
-permalink: kb/236/Q236459/
+permalink: /kb/236/Q236459/
 ---
 
 ## Q236459: XFOR: Meeting Time Off One Hour When Sent by GroupWise Connector

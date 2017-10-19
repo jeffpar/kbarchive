@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150629: Configuring and Testing a PERL Script with IIS"
-permalink: kb/150/Q150629/
+permalink: /kb/150/Q150629/
 ---
 
 ## Q150629: Configuring and Testing a PERL Script with IIS

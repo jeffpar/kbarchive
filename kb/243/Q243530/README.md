@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243530: PRB: Microsoft Lightweight Controls CAB Not on Web Site"
-permalink: kb/243/Q243530/
+permalink: /kb/243/Q243530/
 ---
 
 ## Q243530: PRB: Microsoft Lightweight Controls CAB Not on Web Site

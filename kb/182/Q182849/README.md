@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182849: PPT: Code to Detect if PowerPoint is Running on a Macintosh"
-permalink: kb/182/Q182849/
+permalink: /kb/182/Q182849/
 ---
 
 ## Q182849: PPT: Code to Detect if PowerPoint is Running on a Macintosh

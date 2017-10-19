@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162260: WD97: Err Msg: &quot;The Subdocument Is Missing&quot; Word Hangs"
-permalink: kb/162/Q162260/
+permalink: /kb/162/Q162260/
 ---
 
 ## Q162260: WD97: Err Msg: &quot;The Subdocument Is Missing&quot; Word Hangs

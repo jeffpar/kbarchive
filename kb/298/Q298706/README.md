@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298706: MSN Explorer (MSN Version 6.1) Sign-in And Sign-up Error Message"
-permalink: kb/298/Q298706/
+permalink: /kb/298/Q298706/
 ---
 
 ## Q298706: MSN Explorer (MSN Version 6.1) Sign-in And Sign-up Error Message

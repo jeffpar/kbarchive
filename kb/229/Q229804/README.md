@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229804: Service Pack Appears to Extract Font Files Only"
-permalink: kb/229/Q229804/
+permalink: /kb/229/Q229804/
 ---
 
 ## Q229804: Service Pack Appears to Extract Font Files Only

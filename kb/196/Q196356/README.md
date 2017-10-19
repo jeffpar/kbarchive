@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196356: Visual J++ Deluxe Learning Edition Comments and Corrections"
-permalink: kb/196/Q196356/
+permalink: /kb/196/Q196356/
 ---
 
 ## Q196356: Visual J++ Deluxe Learning Edition Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300053: Secure and Nonsecure Mode Dialog Boxes When Sign In to Passport"
-permalink: kb/300/Q300053/
+permalink: /kb/300/Q300053/
 ---
 
 ## Q300053: Secure and Nonsecure Mode Dialog Boxes When Sign In to Passport

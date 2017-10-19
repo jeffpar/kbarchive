@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161197: HOWTO: Automate a Word Object Embedded in a Form"
-permalink: kb/161/Q161197/
+permalink: /kb/161/Q161197/
 ---
 
 ## Q161197: HOWTO: Automate a Word Object Embedded in a Form

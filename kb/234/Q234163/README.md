@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234163: CheckPoint FireWall-1 Version 3.x and 4.0 Do Not Support PPTP Th"
-permalink: kb/234/Q234163/
+permalink: /kb/234/Q234163/
 ---
 
 ## Q234163: CheckPoint FireWall-1 Version 3.x and 4.0 Do Not Support PPTP Th

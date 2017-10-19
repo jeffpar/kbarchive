@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237293: XADM: Owner Field Blank in Distribution List Properties"
-permalink: kb/237/Q237293/
+permalink: /kb/237/Q237293/
 ---
 
 ## Q237293: XADM: Owner Field Blank in Distribution List Properties

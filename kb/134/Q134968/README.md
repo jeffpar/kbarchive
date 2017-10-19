@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134968: NetWare Connections Remain Connected After You Log Off"
-permalink: kb/134/Q134968/
+permalink: /kb/134/Q134968/
 ---
 
 ## Q134968: NetWare Connections Remain Connected After You Log Off

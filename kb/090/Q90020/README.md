@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90020: &quot;Cannot Find SETUP.INF&quot; During Windows Sound System Setup"
-permalink: kb/090/Q90020/
+permalink: /kb/090/Q90020/
 ---
 
 ## Q90020: &quot;Cannot Find SETUP.INF&quot; During Windows Sound System Setup

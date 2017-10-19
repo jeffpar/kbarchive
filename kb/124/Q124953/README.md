@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124953: PC Setup: SETUP.INF for Windows for Workgroups 3.11"
-permalink: kb/124/Q124953/
+permalink: /kb/124/Q124953/
 ---
 
 ## Q124953: PC Setup: SETUP.INF for Windows for Workgroups 3.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168321: Creating a DNS Record for a Host with Two or More IP Addresses"
-permalink: kb/168/Q168321/
+permalink: /kb/168/Q168321/
 ---
 
 ## Q168321: Creating a DNS Record for a Host with Two or More IP Addresses

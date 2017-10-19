@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142595: Using a Generic Logon with SBS Shared Installation"
-permalink: kb/142/Q142595/
+permalink: /kb/142/Q142595/
 ---
 
 ## Q142595: Using a Generic Logon with SBS Shared Installation

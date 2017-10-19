@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184823: XADM: Bad Schema Index After Exchange 4.0 to 5.5 Upgrade"
-permalink: kb/184/Q184823/
+permalink: /kb/184/Q184823/
 ---
 
 ## Q184823: XADM: Bad Schema Index After Exchange 4.0 to 5.5 Upgrade

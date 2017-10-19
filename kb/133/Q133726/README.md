@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133726: EISA Bus Computer Detects Display Adapter Incorrectly"
-permalink: kb/133/Q133726/
+permalink: /kb/133/Q133726/
 ---
 
 ## Q133726: EISA Bus Computer Detects Display Adapter Incorrectly

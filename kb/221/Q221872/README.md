@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221872: How to Use Metainfo.asp"
-permalink: kb/221/Q221872/
+permalink: /kb/221/Q221872/
 ---
 
 ## Q221872: How to Use Metainfo.asp

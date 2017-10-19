@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137690: Encarta: Hangs When Playing Sound With Ensoniq Card"
-permalink: kb/137/Q137690/
+permalink: /kb/137/Q137690/
 ---
 
 ## Q137690: Encarta: Hangs When Playing Sound With Ensoniq Card

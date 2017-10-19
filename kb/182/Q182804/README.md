@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182804: XADM: Edbutil /d Fails with Error -1811"
-permalink: kb/182/Q182804/
+permalink: /kb/182/Q182804/
 ---
 
 ## Q182804: XADM: Edbutil /d Fails with Error -1811

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138154: FOR Command Does Not Support Long Filenames in Windows 95"
-permalink: kb/138/Q138154/
+permalink: /kb/138/Q138154/
 ---
 
 ## Q138154: FOR Command Does Not Support Long Filenames in Windows 95

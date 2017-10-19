@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129449: PRB: Object Created w/NEW Instantiated When Passed as Argument"
-permalink: kb/129/Q129449/
+permalink: /kb/129/Q129449/
 ---
 
 ## Q129449: PRB: Object Created w/NEW Instantiated When Passed as Argument

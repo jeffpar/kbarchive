@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298072: URL In Address Bar Incorrect After Clicking Refresh In MSN Explo"
-permalink: kb/298/Q298072/
+permalink: /kb/298/Q298072/
 ---
 
 ## Q298072: URL In Address Bar Incorrect After Clicking Refresh In MSN Explo

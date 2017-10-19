@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139274: Updated System Environment Variables Result in STOP 0x0000021a"
-permalink: kb/139/Q139274/
+permalink: /kb/139/Q139274/
 ---
 
 ## Q139274: Updated System Environment Variables Result in STOP 0x0000021a

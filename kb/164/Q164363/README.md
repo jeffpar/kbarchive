@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164363: Troubleshooting RIP on Routing and Remote Access"
-permalink: kb/164/Q164363/
+permalink: /kb/164/Q164363/
 ---
 
 ## Q164363: Troubleshooting RIP on Routing and Remote Access

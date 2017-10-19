@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145717: DocErr: Resource Kit Procedure to Start The LPDSVC Service"
-permalink: kb/145/Q145717/
+permalink: /kb/145/Q145717/
 ---
 
 ## Q145717: DocErr: Resource Kit Procedure to Start The LPDSVC Service

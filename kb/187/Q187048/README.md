@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187048: Acsr.Exe Has No Help Switches"
-permalink: kb/187/Q187048/
+permalink: /kb/187/Q187048/
 ---
 
 ## Q187048: Acsr.Exe Has No Help Switches

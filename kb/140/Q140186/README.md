@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140186: XFOR: Configuring the PC MTA to Use WAN Drives"
-permalink: kb/140/Q140186/
+permalink: /kb/140/Q140186/
 ---
 
 ## Q140186: XFOR: Configuring the PC MTA to Use WAN Drives

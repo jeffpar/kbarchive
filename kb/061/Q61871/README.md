@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61871: FIX: PWB 1.0 Requires Decimal Value for Stack Size LINK Option"
-permalink: kb/061/Q61871/
+permalink: /kb/061/Q61871/
 ---
 
 ## Q61871: FIX: PWB 1.0 Requires Decimal Value for Stack Size LINK Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129111: PCI Adapter Incorrectly Identified on Dual-bus Computers"
-permalink: kb/129/Q129111/
+permalink: /kb/129/Q129111/
 ---
 
 ## Q129111: PCI Adapter Incorrectly Identified on Dual-bus Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169884: FIX: Unattended Setup Is Unable to Invoke External Program"
-permalink: kb/169/Q169884/
+permalink: /kb/169/Q169884/
 ---
 
 ## Q169884: FIX: Unattended Setup Is Unable to Invoke External Program

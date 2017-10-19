@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184421: Err Msg: Your Account Is Already in Use"
-permalink: kb/184/Q184421/
+permalink: /kb/184/Q184421/
 ---
 
 ## Q184421: Err Msg: Your Account Is Already in Use

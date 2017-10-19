@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281121: Ps.exe and Top.exe Commands Stop Responding in Windows NT 4.0"
-permalink: kb/281/Q281121/
+permalink: /kb/281/Q281121/
 ---
 
 ## Q281121: Ps.exe and Top.exe Commands Stop Responding in Windows NT 4.0

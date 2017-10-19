@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191092: PRB: PDW Appends Script Information to Existing PDM File"
-permalink: kb/191/Q191092/
+permalink: /kb/191/Q191092/
 ---
 
 ## Q191092: PRB: PDW Appends Script Information to Existing PDM File

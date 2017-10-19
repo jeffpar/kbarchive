@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184879: Windows NT Logon Dialog May Disappear"
-permalink: kb/184/Q184879/
+permalink: /kb/184/Q184879/
 ---
 
 ## Q184879: Windows NT Logon Dialog May Disappear

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149495: Remote Control Fails with Lowercase Computer Name"
-permalink: kb/149/Q149495/
+permalink: /kb/149/Q149495/
 ---
 
 ## Q149495: Remote Control Fails with Lowercase Computer Name

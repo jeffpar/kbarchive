@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181293: WD97: Jumping to a Bookmark Located in a Header or Footer"
-permalink: kb/181/Q181293/
+permalink: /kb/181/Q181293/
 ---
 
 ## Q181293: WD97: Jumping to a Bookmark Located in a Header or Footer

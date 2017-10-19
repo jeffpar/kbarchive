@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193840: RAS Fails with NetBEUI Protocol Service Failed to Start Error"
-permalink: kb/193/Q193840/
+permalink: /kb/193/Q193840/
 ---
 
 ## Q193840: RAS Fails with NetBEUI Protocol Service Failed to Start Error

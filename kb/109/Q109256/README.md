@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109256: CONN: Changing Mail Connection Proxy Network &amp; Postoffice"
-permalink: kb/109/Q109256/
+permalink: /kb/109/Q109256/
 ---
 
 ## Q109256: CONN: Changing Mail Connection Proxy Network &amp; Postoffice

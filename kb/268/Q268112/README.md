@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268112: Streets and Trips 2001: How to Clear the Find List"
-permalink: kb/268/Q268112/
+permalink: /kb/268/Q268112/
 ---
 
 ## Q268112: Streets and Trips 2001: How to Clear the Find List

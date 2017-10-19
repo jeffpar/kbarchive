@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191428: WINS Replication Fails If More Than 30 Partners Are Configured"
-permalink: kb/191/Q191428/
+permalink: /kb/191/Q191428/
 ---
 
 ## Q191428: WINS Replication Fails If More Than 30 Partners Are Configured

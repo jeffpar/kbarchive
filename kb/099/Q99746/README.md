@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99746: MS-DOS Upgrade May Not Find AUTOEXEC.BAT If You Use 4DOS"
-permalink: kb/099/Q99746/
+permalink: /kb/099/Q99746/
 ---
 
 ## Q99746: MS-DOS Upgrade May Not Find AUTOEXEC.BAT If You Use 4DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168196: PRB: Error Setting Partition of Grid Too Wide at Design Time"
-permalink: kb/168/Q168196/
+permalink: /kb/168/Q168196/
 ---
 
 ## Q168196: PRB: Error Setting Partition of Grid Too Wide at Design Time

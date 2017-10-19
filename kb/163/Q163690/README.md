@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163690: XCON: MTA: Content Conversion Error 210 with ISO 6937 Bodypart"
-permalink: kb/163/Q163690/
+permalink: /kb/163/Q163690/
 ---
 
 ## Q163690: XCON: MTA: Content Conversion Error 210 with ISO 6937 Bodypart

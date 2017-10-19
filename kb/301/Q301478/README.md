@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301478: Broadband: OOBE with V2.0"
-permalink: kb/301/Q301478/
+permalink: /kb/301/Q301478/
 ---
 
 ## Q301478: Broadband: OOBE with V2.0

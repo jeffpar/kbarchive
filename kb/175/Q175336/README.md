@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175336: 3270 User Connects to Host Session of Previous User"
-permalink: kb/175/Q175336/
+permalink: /kb/175/Q175336/
 ---
 
 ## Q175336: 3270 User Connects to Host Session of Previous User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107427: BUG: getch() Returns Incorrect Extended Key Codes"
-permalink: kb/107/Q107427/
+permalink: /kb/107/Q107427/
 ---
 
 ## Q107427: BUG: getch() Returns Incorrect Extended Key Codes

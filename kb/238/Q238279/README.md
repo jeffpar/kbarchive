@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238279: PRB: Refresh Method Causes Syntax and Method Refresh Errors"
-permalink: kb/238/Q238279/
+permalink: /kb/238/Q238279/
 ---
 
 ## Q238279: PRB: Refresh Method Causes Syntax and Method Refresh Errors

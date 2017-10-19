@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191755: MCM: Program Is Minimized When You Click Options or Multiplayer"
-permalink: kb/191/Q191755/
+permalink: /kb/191/Q191755/
 ---
 
 ## Q191755: MCM: Program Is Minimized When You Click Options or Multiplayer

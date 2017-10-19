@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146102: XCLN: Embedded Objects in Private Messages Can be Modified"
-permalink: kb/146/Q146102/
+permalink: /kb/146/Q146102/
 ---
 
 ## Q146102: XCLN: Embedded Objects in Private Messages Can be Modified

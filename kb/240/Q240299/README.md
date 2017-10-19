@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240299: Unattended Encryption Setup Problem Adds Event Log Entry in SP6"
-permalink: kb/240/Q240299/
+permalink: /kb/240/Q240299/
 ---
 
 ## Q240299: Unattended Encryption Setup Problem Adds Event Log Entry in SP6

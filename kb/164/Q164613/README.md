@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164613: Installation Changes Made by Novell IntranetWare Client"
-permalink: kb/164/Q164613/
+permalink: /kb/164/Q164613/
 ---
 
 ## Q164613: Installation Changes Made by Novell IntranetWare Client

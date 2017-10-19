@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273561: XCLN: How To Use IMAP4 to Migrate E-Mail"
-permalink: kb/273/Q273561/
+permalink: /kb/273/Q273561/
 ---
 
 ## Q273561: XCLN: How To Use IMAP4 to Migrate E-Mail

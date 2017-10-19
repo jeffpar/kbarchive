@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96329: How MemMaker Finds Current Files and Buffers Settings"
-permalink: kb/096/Q96329/
+permalink: /kb/096/Q96329/
 ---
 
 ## Q96329: How MemMaker Finds Current Files and Buffers Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121719: Running AMI Pro 3.0a QuickStart Tutorial with Windows 95"
-permalink: kb/121/Q121719/
+permalink: /kb/121/Q121719/
 ---
 
 ## Q121719: Running AMI Pro 3.0a QuickStart Tutorial with Windows 95

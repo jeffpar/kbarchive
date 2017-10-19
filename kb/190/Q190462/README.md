@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190462: PRB: Insufficient Memory Message Running a FoxPro EXE"
-permalink: kb/190/Q190462/
+permalink: /kb/190/Q190462/
 ---
 
 ## Q190462: PRB: Insufficient Memory Message Running a FoxPro EXE

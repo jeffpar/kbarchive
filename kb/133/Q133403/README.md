@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133403: XCON: Err Msg: The Recipient Name Is Not Recognized"
-permalink: kb/133/Q133403/
+permalink: /kb/133/Q133403/
 ---
 
 ## Q133403: XCON: Err Msg: The Recipient Name Is Not Recognized

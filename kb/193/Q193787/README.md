@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193787: Memory Leaks on HP NetServers Running HP TopTools v3.11"
-permalink: kb/193/Q193787/
+permalink: /kb/193/Q193787/
 ---
 
 ## Q193787: Memory Leaks on HP NetServers Running HP TopTools v3.11

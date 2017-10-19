@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107158: MS-DOS Stacker Conversion CONVERT.BAT and GETPATH.BAT Files"
-permalink: kb/107/Q107158/
+permalink: /kb/107/Q107158/
 ---
 
 ## Q107158: MS-DOS Stacker Conversion CONVERT.BAT and GETPATH.BAT Files

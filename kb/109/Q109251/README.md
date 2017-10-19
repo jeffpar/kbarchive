@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109251: Cannot Remount DoubleSpace Drive (ASPIDRVR.SYS and DOSOAD.SYS)"
-permalink: kb/109/Q109251/
+permalink: /kb/109/Q109251/
 ---
 
 ## Q109251: Cannot Remount DoubleSpace Drive (ASPIDRVR.SYS and DOSOAD.SYS)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140310: FIX: Holding Down the F1 Key a Long Time Crashes Windows Help"
-permalink: kb/140/Q140310/
+permalink: /kb/140/Q140310/
 ---
 
 ## Q140310: FIX: Holding Down the F1 Key a Long Time Crashes Windows Help

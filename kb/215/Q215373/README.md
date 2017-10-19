@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215373: BUG: Intrinsic Controls: Shortcut Keys Do Not Work as Expected"
-permalink: kb/215/Q215373/
+permalink: /kb/215/Q215373/
 ---
 
 ## Q215373: BUG: Intrinsic Controls: Shortcut Keys Do Not Work as Expected

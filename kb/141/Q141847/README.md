@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141847: PPT7: New Slide Dialog Box (AutoLayout) Does Not Appear"
-permalink: kb/141/Q141847/
+permalink: /kb/141/Q141847/
 ---
 
 ## Q141847: PPT7: New Slide Dialog Box (AutoLayout) Does Not Appear

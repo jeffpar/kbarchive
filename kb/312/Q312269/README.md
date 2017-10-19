@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312269: XADM: Duplicate Calendar Entries w Update Method &amp; Outlook 2002"
-permalink: kb/312/Q312269/
+permalink: /kb/312/Q312269/
 ---
 
 ## Q312269: XADM: Duplicate Calendar Entries w Update Method &amp; Outlook 2002

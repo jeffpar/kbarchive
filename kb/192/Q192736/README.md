@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192736: STOP 0x0000000A Blue Screen on Alpha AXP"
-permalink: kb/192/Q192736/
+permalink: /kb/192/Q192736/
 ---
 
 ## Q192736: STOP 0x0000000A Blue Screen on Alpha AXP

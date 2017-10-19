@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172821: Expectation of Unbind Response Can Cause Application Failure"
-permalink: kb/172/Q172821/
+permalink: /kb/172/Q172821/
 ---
 
 ## Q172821: Expectation of Unbind Response Can Cause Application Failure

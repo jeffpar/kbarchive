@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215079: SMS: Unable to Establish Remote Connection to IPX Client"
-permalink: kb/215/Q215079/
+permalink: /kb/215/Q215079/
 ---
 
 ## Q215079: SMS: Unable to Establish Remote Connection to IPX Client

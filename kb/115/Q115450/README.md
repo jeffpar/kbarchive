@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115450: X400: Invalid MAPTBL.OUT Characters Cause Warning on Access"
-permalink: kb/115/Q115450/
+permalink: /kb/115/Q115450/
 ---
 
 ## Q115450: X400: Invalid MAPTBL.OUT Characters Cause Warning on Access

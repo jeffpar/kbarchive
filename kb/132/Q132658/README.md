@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132658: Shortcut to Deleted NetWare File May Open Wrong File"
-permalink: kb/132/Q132658/
+permalink: /kb/132/Q132658/
 ---
 
 ## Q132658: Shortcut to Deleted NetWare File May Open Wrong File

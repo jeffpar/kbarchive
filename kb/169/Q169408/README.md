@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169408: XCLN: Unable to Drag and Drop Attachment in Message"
-permalink: kb/169/Q169408/
+permalink: /kb/169/Q169408/
 ---
 
 ## Q169408: XCLN: Unable to Drag and Drop Attachment in Message

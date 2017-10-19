@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63353: 256-Color Driver Not Showing 256 Colors in Windows 3.0"
-permalink: kb/063/Q63353/
+permalink: /kb/063/Q63353/
 ---
 
 ## Q63353: 256-Color Driver Not Showing 256 Colors in Windows 3.0

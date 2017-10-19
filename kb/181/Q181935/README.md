@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181935: WD97: FileOpen and Auto Macros Renamed"
-permalink: kb/181/Q181935/
+permalink: /kb/181/Q181935/
 ---
 
 ## Q181935: WD97: FileOpen and Auto Macros Renamed

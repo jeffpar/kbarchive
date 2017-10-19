@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75362: CMS Tape Software 2.46 Needed with MS-DOS 5.0 or Later"
-permalink: kb/075/Q75362/
+permalink: /kb/075/Q75362/
 ---
 
 ## Q75362: CMS Tape Software 2.46 Needed with MS-DOS 5.0 or Later

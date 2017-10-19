@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250080: BUG:Mouse Pointer Changes to Default Pointer on Text Box Border"
-permalink: kb/250/Q250080/
+permalink: /kb/250/Q250080/
 ---
 
 ## Q250080: BUG:Mouse Pointer Changes to Default Pointer on Text Box Border

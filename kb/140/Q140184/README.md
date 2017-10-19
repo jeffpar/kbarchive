@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140184: XFOR: How to Get the IMC to Use an Internet Provider"
-permalink: kb/140/Q140184/
+permalink: /kb/140/Q140184/
 ---
 
 ## Q140184: XFOR: How to Get the IMC to Use an Internet Provider

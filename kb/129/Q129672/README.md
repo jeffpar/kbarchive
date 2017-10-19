@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129672: MS Exchange and Dial-Up Networking Problems with Hayes Adapter"
-permalink: kb/129/Q129672/
+permalink: /kb/129/Q129672/
 ---
 
 ## Q129672: MS Exchange and Dial-Up Networking Problems with Hayes Adapter

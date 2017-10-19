@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130287: Spell-Checking Options in Microsoft Exchange"
-permalink: kb/130/Q130287/
+permalink: /kb/130/Q130287/
 ---
 
 ## Q130287: Spell-Checking Options in Microsoft Exchange

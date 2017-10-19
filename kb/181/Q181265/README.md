@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181265: HOWTO: Create ATL COM Objects"
-permalink: kb/181/Q181265/
+permalink: /kb/181/Q181265/
 ---
 
 ## Q181265: HOWTO: Create ATL COM Objects

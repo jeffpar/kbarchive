@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253310: XCON: MTA on RAS Server Stops Repeatedly with Events 9315, 9405"
-permalink: kb/253/Q253310/
+permalink: /kb/253/Q253310/
 ---
 
 ## Q253310: XCON: MTA on RAS Server Stops Repeatedly with Events 9315, 9405

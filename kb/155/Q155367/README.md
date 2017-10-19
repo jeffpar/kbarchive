@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155367: Pressing ESC Key Does Not Cancel Manual Feed Print Job"
-permalink: kb/155/Q155367/
+permalink: /kb/155/Q155367/
 ---
 
 ## Q155367: Pressing ESC Key Does Not Cancel Manual Feed Print Job

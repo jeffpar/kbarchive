@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174689: HOWTO: Set a Primary Key to Updateable in a View"
-permalink: kb/174/Q174689/
+permalink: /kb/174/Q174689/
 ---
 
 ## Q174689: HOWTO: Set a Primary Key to Updateable in a View

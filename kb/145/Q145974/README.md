@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145974: XCLN: Cancel Button Slow to Respond When Using DUN"
-permalink: kb/145/Q145974/
+permalink: /kb/145/Q145974/
 ---
 
 ## Q145974: XCLN: Cancel Button Slow to Respond When Using DUN

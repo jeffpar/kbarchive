@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114418: Adaptec Drivers Include BIOS Detection Code"
-permalink: kb/114/Q114418/
+permalink: /kb/114/Q114418/
 ---
 
 ## Q114418: Adaptec Drivers Include BIOS Detection Code

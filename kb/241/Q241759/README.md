@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241759: Tsspback.cmd Does Not Work on the Japanese Version of Terminal S"
-permalink: kb/241/Q241759/
+permalink: /kb/241/Q241759/
 ---
 
 ## Q241759: Tsspback.cmd Does Not Work on the Japanese Version of Terminal S

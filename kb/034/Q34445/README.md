@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34445: INFO: Installing Language Products on a Network"
-permalink: kb/034/Q34445/
+permalink: /kb/034/Q34445/
 ---
 
 ## Q34445: INFO: Installing Language Products on a Network

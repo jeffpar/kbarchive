@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78404: Print Command Returns Name of List Device Message"
-permalink: kb/078/Q78404/
+permalink: /kb/078/Q78404/
 ---
 
 ## Q78404: Print Command Returns Name of List Device Message

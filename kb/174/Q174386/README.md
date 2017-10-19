@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174386: Err Msg: Selected Message Is No Longer Available on the Server"
-permalink: kb/174/Q174386/
+permalink: /kb/174/Q174386/
 ---
 
 ## Q174386: Err Msg: Selected Message Is No Longer Available on the Server

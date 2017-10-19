@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250893: Zoomit Server Service Does Not Start After Installing MMS"
-permalink: kb/250/Q250893/
+permalink: /kb/250/Q250893/
 ---
 
 ## Q250893: Zoomit Server Service Does Not Start After Installing MMS

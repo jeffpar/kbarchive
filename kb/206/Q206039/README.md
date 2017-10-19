@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206039: WD97: FaxWorks Stops Responding When Faxing with a Cover Sheet"
-permalink: kb/206/Q206039/
+permalink: /kb/206/Q206039/
 ---
 
 ## Q206039: WD97: FaxWorks Stops Responding When Faxing with a Cover Sheet

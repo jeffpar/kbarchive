@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170918: HOWTO: Use ShellExecute to Launch Associated File (32-bit)"
-permalink: kb/170/Q170918/
+permalink: /kb/170/Q170918/
 ---
 
 ## Q170918: HOWTO: Use ShellExecute to Launch Associated File (32-bit)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142294: Cannot Format DT-350 Tape on Conner 250 Tape Drive"
-permalink: kb/142/Q142294/
+permalink: /kb/142/Q142294/
 ---
 
 ## Q142294: Cannot Format DT-350 Tape on Conner 250 Tape Drive

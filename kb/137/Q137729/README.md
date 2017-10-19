@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137729: INFO: LenB Returns in-Memory Size of User-Defined Type"
-permalink: kb/137/Q137729/
+permalink: /kb/137/Q137729/
 ---
 
 ## Q137729: INFO: LenB Returns in-Memory Size of User-Defined Type

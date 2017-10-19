@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137565: System Error 53 When Connecting to a FQDN"
-permalink: kb/137/Q137565/
+permalink: /kb/137/Q137565/
 ---
 
 ## Q137565: System Error 53 When Connecting to a FQDN

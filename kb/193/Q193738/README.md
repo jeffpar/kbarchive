@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193738: WD97: Add Button Unavailable in the Spelling Dialog Box"
-permalink: kb/193/Q193738/
+permalink: /kb/193/Q193738/
 ---
 
 ## Q193738: WD97: Add Button Unavailable in the Spelling Dialog Box

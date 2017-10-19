@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92597: Disabling an Inactive Persistent Connection"
-permalink: kb/092/Q92597/
+permalink: /kb/092/Q92597/
 ---
 
 ## Q92597: Disabling an Inactive Persistent Connection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262728: XFOR: Inbody Addressing Doesn't Work aft. Moving SNADS Connector"
-permalink: kb/262/Q262728/
+permalink: /kb/262/Q262728/
 ---
 
 ## Q262728: XFOR: Inbody Addressing Doesn't Work aft. Moving SNADS Connector

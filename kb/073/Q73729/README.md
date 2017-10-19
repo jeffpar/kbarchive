@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73729: Using an Expanded Memory Board with EMM386.EXE"
-permalink: kb/073/Q73729/
+permalink: /kb/073/Q73729/
 ---
 
 ## Q73729: Using an Expanded Memory Board with EMM386.EXE

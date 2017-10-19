@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143281: Built-In Anti-Virus Support in Windows 95"
-permalink: kb/143/Q143281/
+permalink: /kb/143/Q143281/
 ---
 
 ## Q143281: Built-In Anti-Virus Support in Windows 95

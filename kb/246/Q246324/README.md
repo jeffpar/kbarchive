@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246324: Inetd and the Rutils"
-permalink: kb/246/Q246324/
+permalink: /kb/246/Q246324/
 ---
 
 ## Q246324: Inetd and the Rutils

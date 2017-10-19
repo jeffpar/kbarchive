@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187425: TCP/IP Device Driver Does Not Remember Share Flags"
-permalink: kb/187/Q187425/
+permalink: /kb/187/Q187425/
 ---
 
 ## Q187425: TCP/IP Device Driver Does Not Remember Share Flags

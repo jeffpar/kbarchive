@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175917: How to Correct a Damaged TCP/IP Protocol"
-permalink: kb/175/Q175917/
+permalink: /kb/175/Q175917/
 ---
 
 ## Q175917: How to Correct a Damaged TCP/IP Protocol

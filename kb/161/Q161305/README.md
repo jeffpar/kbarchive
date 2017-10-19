@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161305: PRB: &quot;Hash Marks&quot; on ActiveX Controls After Run-Time Error"
-permalink: kb/161/Q161305/
+permalink: /kb/161/Q161305/
 ---
 
 ## Q161305: PRB: &quot;Hash Marks&quot; on ActiveX Controls After Run-Time Error

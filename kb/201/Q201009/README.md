@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201009: Sample: WrapTBar.exe Wraps Toolbar During CFrameWnd Resizing"
-permalink: kb/201/Q201009/
+permalink: /kb/201/Q201009/
 ---
 
 ## Q201009: Sample: WrapTBar.exe Wraps Toolbar During CFrameWnd Resizing

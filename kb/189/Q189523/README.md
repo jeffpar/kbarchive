@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189523: Virtual Globe 98 Prompts You to Disconnect from the Internet"
-permalink: kb/189/Q189523/
+permalink: /kb/189/Q189523/
 ---
 
 ## Q189523: Virtual Globe 98 Prompts You to Disconnect from the Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187890: WD97: Confirm Data Source Dialog Box Not Accessible in VBA"
-permalink: kb/187/Q187890/
+permalink: /kb/187/Q187890/
 ---
 
 ## Q187890: WD97: Confirm Data Source Dialog Box Not Accessible in VBA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90996: Print Manager Err Msg: Network Error"
-permalink: kb/090/Q90996/
+permalink: /kb/090/Q90996/
 ---
 
 ## Q90996: Print Manager Err Msg: Network Error

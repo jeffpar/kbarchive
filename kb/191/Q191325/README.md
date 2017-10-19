@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191325: FIX: Connection Designer Closes if Verify Connection Fails"
-permalink: kb/191/Q191325/
+permalink: /kb/191/Q191325/
 ---
 
 ## Q191325: FIX: Connection Designer Closes if Verify Connection Fails

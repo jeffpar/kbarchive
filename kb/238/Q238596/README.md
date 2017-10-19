@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238596: Midtown Madness Err Msg: EBU90B4 Caused an Invalid Page Fault..."
-permalink: kb/238/Q238596/
+permalink: /kb/238/Q238596/
 ---
 
 ## Q238596: Midtown Madness Err Msg: EBU90B4 Caused an Invalid Page Fault...

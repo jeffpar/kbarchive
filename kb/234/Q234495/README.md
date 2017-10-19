@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234495: Microsoft Internet Explorer 5 Step by Step Comments and Correcti"
-permalink: kb/234/Q234495/
+permalink: /kb/234/Q234495/
 ---
 
 ## Q234495: Microsoft Internet Explorer 5 Step by Step Comments and Correcti

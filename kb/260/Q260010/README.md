@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260010: StarLancer: Cannot Change the Brightness Level in the Game"
-permalink: kb/260/Q260010/
+permalink: /kb/260/Q260010/
 ---
 
 ## Q260010: StarLancer: Cannot Change the Brightness Level in the Game

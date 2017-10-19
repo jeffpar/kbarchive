@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185025: XFOR: Dr. Watson on Startup Due to Excess DNS Search Entries"
-permalink: kb/185/Q185025/
+permalink: /kb/185/Q185025/
 ---
 
 ## Q185025: XFOR: Dr. Watson on Startup Due to Excess DNS Search Entries

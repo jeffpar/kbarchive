@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168907: SMS: Using the &quot;Gold-Key&quot; May Cause a Blue Screen STOP 1E"
-permalink: kb/168/Q168907/
+permalink: /kb/168/Q168907/
 ---
 
 ## Q168907: SMS: Using the &quot;Gold-Key&quot; May Cause a Blue Screen STOP 1E

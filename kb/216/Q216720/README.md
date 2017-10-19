@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216720: FIX: Bitwise OR for Bool&amp; Types Causes Error When Optimized"
-permalink: kb/216/Q216720/
+permalink: /kb/216/Q216720/
 ---
 
 ## Q216720: FIX: Bitwise OR for Bool&amp; Types Causes Error When Optimized

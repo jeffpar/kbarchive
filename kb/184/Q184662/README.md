@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184662: XADM: Messages Not Rerouted Between 2 X.400 Connectors in Site"
-permalink: kb/184/Q184662/
+permalink: /kb/184/Q184662/
 ---
 
 ## Q184662: XADM: Messages Not Rerouted Between 2 X.400 Connectors in Site

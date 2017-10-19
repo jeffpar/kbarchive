@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279727: XFOR: Exchange SNADS Connector Shuts Down with 22096 Event"
-permalink: kb/279/Q279727/
+permalink: /kb/279/Q279727/
 ---
 
 ## Q279727: XFOR: Exchange SNADS Connector Shuts Down with 22096 Event

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130726: Some Menu Options Unavailable in Distributed Applications"
-permalink: kb/130/Q130726/
+permalink: /kb/130/Q130726/
 ---
 
 ## Q130726: Some Menu Options Unavailable in Distributed Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151626: XCON: Sockets Error When Connecting to Foreign X.400 MTA"
-permalink: kb/151/Q151626/
+permalink: /kb/151/Q151626/
 ---
 
 ## Q151626: XCON: Sockets Error When Connecting to Foreign X.400 MTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82366: Canon LBP III/4 Drivers Can't Print Certain Patterns"
-permalink: kb/082/Q82366/
+permalink: /kb/082/Q82366/
 ---
 
 ## Q82366: Canon LBP III/4 Drivers Can't Print Certain Patterns

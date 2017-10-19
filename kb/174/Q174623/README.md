@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174623: Error Message After Upgrading Windows NT for Second Processor"
-permalink: kb/174/Q174623/
+permalink: /kb/174/Q174623/
 ---
 
 ## Q174623: Error Message After Upgrading Windows NT for Second Processor

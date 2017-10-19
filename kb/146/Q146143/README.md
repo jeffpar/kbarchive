@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146143: XCON: DeferredDeliveryTime Echoed Within DeliveryReportEnvelope"
-permalink: kb/146/Q146143/
+permalink: /kb/146/Q146143/
 ---
 
 ## Q146143: XCON: DeferredDeliveryTime Echoed Within DeliveryReportEnvelope

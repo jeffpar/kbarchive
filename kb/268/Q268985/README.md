@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268985: XADM:Can't Log on to Exchange Information Store with GWClient"
-permalink: kb/268/Q268985/
+permalink: /kb/268/Q268985/
 ---
 
 ## Q268985: XADM:Can't Log on to Exchange Information Store with GWClient

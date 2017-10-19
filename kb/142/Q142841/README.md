@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142841: PC DirSync: No Updated Address List With Multiple T2 Cycles"
-permalink: kb/142/Q142841/
+permalink: /kb/142/Q142841/
 ---
 
 ## Q142841: PC DirSync: No Updated Address List With Multiple T2 Cycles

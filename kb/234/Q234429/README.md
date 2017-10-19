@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234429: How to Manually Restore the Metabase When No Backup Exists"
-permalink: kb/234/Q234429/
+permalink: /kb/234/Q234429/
 ---
 
 ## Q234429: How to Manually Restore the Metabase When No Backup Exists

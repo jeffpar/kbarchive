@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112898: PC Adm: Err Msg: Notice 31 Error Loading Template"
-permalink: kb/112/Q112898/
+permalink: /kb/112/Q112898/
 ---
 
 ## Q112898: PC Adm: Err Msg: Notice 31 Error Loading Template

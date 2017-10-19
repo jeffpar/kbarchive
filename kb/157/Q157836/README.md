@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157836: SMS: Remote Control Chat Session Displays Incorrect Characters"
-permalink: kb/157/Q157836/
+permalink: /kb/157/Q157836/
 ---
 
 ## Q157836: SMS: Remote Control Chat Session Displays Incorrect Characters

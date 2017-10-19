@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161866: XCLN: Stopping Windows 3.x Clients from Prompting for a Domain"
-permalink: kb/161/Q161866/
+permalink: /kb/161/Q161866/
 ---
 
 ## Q161866: XCLN: Stopping Windows 3.x Clients from Prompting for a Domain

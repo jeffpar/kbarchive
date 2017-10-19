@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124075: TAPI Apps Can't Dial Unless UniModem Is First Listed Provider"
-permalink: kb/124/Q124075/
+permalink: /kb/124/Q124075/
 ---
 
 ## Q124075: TAPI Apps Can't Dial Unless UniModem Is First Listed Provider

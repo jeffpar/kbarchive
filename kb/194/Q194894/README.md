@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194894: PRB: Date Comparison Can fail Using Arithmetic Operators"
-permalink: kb/194/Q194894/
+permalink: /kb/194/Q194894/
 ---
 
 ## Q194894: PRB: Date Comparison Can fail Using Arithmetic Operators

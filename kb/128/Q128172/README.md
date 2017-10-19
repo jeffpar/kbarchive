@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128172: PC WSPlus: SPlusReadAppt Fails to Retrieve Creator Information"
-permalink: kb/128/Q128172/
+permalink: /kb/128/Q128172/
 ---
 
 ## Q128172: PC WSPlus: SPlusReadAppt Fails to Retrieve Creator Information

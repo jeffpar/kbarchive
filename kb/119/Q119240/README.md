@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119240: PC DirSync: Err Msg: Error 46 No Fullname"
-permalink: kb/119/Q119240/
+permalink: /kb/119/Q119240/
 ---
 
 ## Q119240: PC DirSync: Err Msg: Error 46 No Fullname

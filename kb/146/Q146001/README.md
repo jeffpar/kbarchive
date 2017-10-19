@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146001: AMD (NexGen) Nx586 Processor Identified as 80386"
-permalink: kb/146/Q146001/
+permalink: /kb/146/Q146001/
 ---
 
 ## Q146001: AMD (NexGen) Nx586 Processor Identified as 80386

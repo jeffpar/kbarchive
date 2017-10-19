@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185630: 3270 Sessions May Hang When Emulator Rejects Host Bind"
-permalink: kb/185/Q185630/
+permalink: /kb/185/Q185630/
 ---
 
 ## Q185630: 3270 Sessions May Hang When Emulator Rejects Host Bind

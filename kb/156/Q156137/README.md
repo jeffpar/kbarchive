@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156137: FIX: Cannot Set Breakpoint at EXECUTE Statement"
-permalink: kb/156/Q156137/
+permalink: /kb/156/Q156137/
 ---
 
 ## Q156137: FIX: Cannot Set Breakpoint at EXECUTE Statement

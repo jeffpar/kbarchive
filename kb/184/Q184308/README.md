@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184308: AutoCAD Web Viewer Directions Incomplete"
-permalink: kb/184/Q184308/
+permalink: /kb/184/Q184308/
 ---
 
 ## Q184308: AutoCAD Web Viewer Directions Incomplete

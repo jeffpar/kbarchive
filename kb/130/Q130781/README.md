@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130781: Trust Fails if PDC Computer Name Exists in a Trusted Domain"
-permalink: kb/130/Q130781/
+permalink: /kb/130/Q130781/
 ---
 
 ## Q130781: Trust Fails if PDC Computer Name Exists in a Trusted Domain

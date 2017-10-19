@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130122: HOWTO: Add SQL SELECT to the Data Environment of a Report"
-permalink: kb/130/Q130122/
+permalink: /kb/130/Q130122/
 ---
 
 ## Q130122: HOWTO: Add SQL SELECT to the Data Environment of a Report

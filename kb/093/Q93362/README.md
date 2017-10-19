@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93362: C2 Evaluation and Certification for Windows NT"
-permalink: kb/093/Q93362/
+permalink: /kb/093/Q93362/
 ---
 
 ## Q93362: C2 Evaluation and Certification for Windows NT

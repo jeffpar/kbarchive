@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169102: BUG: REQUERY() Problem with Private Datasessions Sharing a Table"
-permalink: kb/169/Q169102/
+permalink: /kb/169/Q169102/
 ---
 
 ## Q169102: BUG: REQUERY() Problem with Private Datasessions Sharing a Table

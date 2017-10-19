@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159179: XCON: Message Body Truncated"
-permalink: kb/159/Q159179/
+permalink: /kb/159/Q159179/
 ---
 
 ## Q159179: XCON: Message Body Truncated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278389: Telnet Server from SFU 2.0 Causes Error Message"
-permalink: kb/278/Q278389/
+permalink: /kb/278/Q278389/
 ---
 
 ## Q278389: Telnet Server from SFU 2.0 Causes Error Message

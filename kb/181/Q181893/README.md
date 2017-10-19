@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181893: PRB: Debug Exception Connecting to Oracle Server"
-permalink: kb/181/Q181893/
+permalink: /kb/181/Q181893/
 ---
 
 ## Q181893: PRB: Debug Exception Connecting to Oracle Server

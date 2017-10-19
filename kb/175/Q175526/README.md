@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175526: SMS: Modifying the Default 'User Information' MIF Entry"
-permalink: kb/175/Q175526/
+permalink: /kb/175/Q175526/
 ---
 
 ## Q175526: SMS: Modifying the Default 'User Information' MIF Entry

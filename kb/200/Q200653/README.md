@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200653: SMS: Using Conv20.exe to Check Database Integrity"
-permalink: kb/200/Q200653/
+permalink: /kb/200/Q200653/
 ---
 
 ## Q200653: SMS: Using Conv20.exe to Check Database Integrity

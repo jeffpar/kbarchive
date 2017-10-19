@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182678: COBOL FILLER Generated Incorrectly After Recordset Array"
-permalink: kb/182/Q182678/
+permalink: /kb/182/Q182678/
 ---
 
 ## Q182678: COBOL FILLER Generated Incorrectly After Recordset Array

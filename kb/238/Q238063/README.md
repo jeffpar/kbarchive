@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238063: XADM: How to Do an Online Restore of an Exchange Cluster Server"
-permalink: kb/238/Q238063/
+permalink: /kb/238/Q238063/
 ---
 
 ## Q238063: XADM: How to Do an Online Restore of an Exchange Cluster Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58594: Mac Hyp: AddMacResource Adds Resources to Current Stack"
-permalink: kb/058/Q58594/
+permalink: /kb/058/Q58594/
 ---
 
 ## Q58594: Mac Hyp: AddMacResource Adds Resources to Current Stack

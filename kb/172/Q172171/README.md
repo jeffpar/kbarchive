@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172171: How to Create Write Only Mac Volumes"
-permalink: kb/172/Q172171/
+permalink: /kb/172/Q172171/
 ---
 
 ## Q172171: How to Create Write Only Mac Volumes

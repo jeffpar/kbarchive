@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193032: Cannot Print Directory Listings from Explorer"
-permalink: kb/193/Q193032/
+permalink: /kb/193/Q193032/
 ---
 
 ## Q193032: Cannot Print Directory Listings from Explorer

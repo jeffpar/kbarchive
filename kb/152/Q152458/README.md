@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152458: XADM: Mailbox Resources Reporting Usage Not Seen by Client"
-permalink: kb/152/Q152458/
+permalink: /kb/152/Q152458/
 ---
 
 ## Q152458: XADM: Mailbox Resources Reporting Usage Not Seen by Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274737: XADM: Verifying If ForestPrep and DomainPrep Have Completed"
-permalink: kb/274/Q274737/
+permalink: /kb/274/Q274737/
 ---
 
 ## Q274737: XADM: Verifying If ForestPrep and DomainPrep Have Completed

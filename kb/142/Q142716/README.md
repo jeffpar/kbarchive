@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142716: IIS Version 1.0 Does Not Support Byte-Range Header"
-permalink: kb/142/Q142716/
+permalink: /kb/142/Q142716/
 ---
 
 ## Q142716: IIS Version 1.0 Does Not Support Byte-Range Header

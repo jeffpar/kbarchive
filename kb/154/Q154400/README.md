@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154400: PRB: Cannot Map File to the Project &quot;&#36;&quot; Message in Dev Studio"
-permalink: kb/154/Q154400/
+permalink: /kb/154/Q154400/
 ---
 
 ## Q154400: PRB: Cannot Map File to the Project &quot;&#36;&quot; Message in Dev Studio

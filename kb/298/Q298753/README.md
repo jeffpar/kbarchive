@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298753: Microsoft Windows NT Server 4.0 Enterprise Technologies Training"
-permalink: kb/298/Q298753/
+permalink: /kb/298/Q298753/
 ---
 
 ## Q298753: Microsoft Windows NT Server 4.0 Enterprise Technologies Training

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221735: FIX: Reference to ActiveForm does not Allow Access to all Prop."
-permalink: kb/221/Q221735/
+permalink: /kb/221/Q221735/
 ---
 
 ## Q221735: FIX: Reference to ActiveForm does not Allow Access to all Prop.

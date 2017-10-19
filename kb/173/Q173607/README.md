@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173607: Client Not Authenticated by Domain Through RAS Member Server"
-permalink: kb/173/Q173607/
+permalink: /kb/173/Q173607/
 ---
 
 ## Q173607: Client Not Authenticated by Domain Through RAS Member Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98719: Error M0052 Installing Compaq EISA DualSpeed TRing Card"
-permalink: kb/098/Q98719/
+permalink: /kb/098/Q98719/
 ---
 
 ## Q98719: Error M0052 Installing Compaq EISA DualSpeed TRing Card

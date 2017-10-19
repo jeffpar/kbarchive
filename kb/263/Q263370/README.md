@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263370: SMS: Hardware Inventory Agent on Windows 9x Is Not Re-Enabled"
-permalink: kb/263/Q263370/
+permalink: /kb/263/Q263370/
 ---
 
 ## Q263370: SMS: Hardware Inventory Agent on Windows 9x Is Not Re-Enabled

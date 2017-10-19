@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232296: HOWTO: Return a Collection from Visual Basic to an ASP Page"
-permalink: kb/232/Q232296/
+permalink: /kb/232/Q232296/
 ---
 
 ## Q232296: HOWTO: Return a Collection from Visual Basic to an ASP Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155395: Multiple Instances of Control Panel Tool Started"
-permalink: kb/155/Q155395/
+permalink: /kb/155/Q155395/
 ---
 
 ## Q155395: Multiple Instances of Control Panel Tool Started

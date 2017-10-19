@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182318: XCON: Mad.exe Reaches 100% After You Recalculate Routing"
-permalink: kb/182/Q182318/
+permalink: /kb/182/Q182318/
 ---
 
 ## Q182318: XCON: Mad.exe Reaches 100% After You Recalculate Routing

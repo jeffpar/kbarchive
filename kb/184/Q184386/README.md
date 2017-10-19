@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184386: HOWTO: Using OLE Drag &amp; Drop to Move Controls on a Form"
-permalink: kb/184/Q184386/
+permalink: /kb/184/Q184386/
 ---
 
 ## Q184386: HOWTO: Using OLE Drag &amp; Drop to Move Controls on a Form

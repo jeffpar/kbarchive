@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183518: PRB: Cannot Set TabStops in ListBox Using SendMessage API"
-permalink: kb/183/Q183518/
+permalink: /kb/183/Q183518/
 ---
 
 ## Q183518: PRB: Cannot Set TabStops in ListBox Using SendMessage API

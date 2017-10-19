@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142795: PRB: FoxPro DBF Opened/Saved by MacWord Alters File Type"
-permalink: kb/142/Q142795/
+permalink: /kb/142/Q142795/
 ---
 
 ## Q142795: PRB: FoxPro DBF Opened/Saved by MacWord Alters File Type

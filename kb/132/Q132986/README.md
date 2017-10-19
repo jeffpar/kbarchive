@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132986: Damaged Registry Values Prevent Connection to The MS Network"
-permalink: kb/132/Q132986/
+permalink: /kb/132/Q132986/
 ---
 
 ## Q132986: Damaged Registry Values Prevent Connection to The MS Network

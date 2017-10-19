@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68756: Using COM1.OS2 or COM1.PRN Ports in Windows 3.0"
-permalink: kb/068/Q68756/
+permalink: /kb/068/Q68756/
 ---
 
 ## Q68756: Using COM1.OS2 or COM1.PRN Ports in Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103601: How the Menu Font Is Determined in FoxPro for Windows"
-permalink: kb/103/Q103601/
+permalink: /kb/103/Q103601/
 ---
 
 ## Q103601: How the Menu Font Is Determined in FoxPro for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311825: SMS: IME May Not Be Viewable in a Remote Control Session"
-permalink: kb/311/Q311825/
+permalink: /kb/311/Q311825/
 ---
 
 ## Q311825: SMS: IME May Not Be Viewable in a Remote Control Session

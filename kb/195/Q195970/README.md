@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195970: XADM: STORE Loops While Processing Same DBCS Attachment Files"
-permalink: kb/195/Q195970/
+permalink: /kb/195/Q195970/
 ---
 
 ## Q195970: XADM: STORE Loops While Processing Same DBCS Attachment Files

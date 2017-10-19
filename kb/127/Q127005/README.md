@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127005: PRB: UP/DOWN Arrow Keys Call Click Event in Form"
-permalink: kb/127/Q127005/
+permalink: /kb/127/Q127005/
 ---
 
 ## Q127005: PRB: UP/DOWN Arrow Keys Call Click Event in Form

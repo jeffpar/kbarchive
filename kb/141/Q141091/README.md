@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141091: BUG: SSCommand Control Generates Application Error"
-permalink: kb/141/Q141091/
+permalink: /kb/141/Q141091/
 ---
 
 ## Q141091: BUG: SSCommand Control Generates Application Error

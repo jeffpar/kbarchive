@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168198: WD97: Troubleshooting Invalid Page Faults in Word 97"
-permalink: kb/168/Q168198/
+permalink: /kb/168/Q168198/
 ---
 
 ## Q168198: WD97: Troubleshooting Invalid Page Faults in Word 97

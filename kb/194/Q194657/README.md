@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194657: XADM: Unable to Post a Reply to Exchange 5.5 Newsgroup Folder"
-permalink: kb/194/Q194657/
+permalink: /kb/194/Q194657/
 ---
 
 ## Q194657: XADM: Unable to Post a Reply to Exchange 5.5 Newsgroup Folder

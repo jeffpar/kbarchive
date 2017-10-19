@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183181: COBOL PIC X(32768) or Larger Causes an Error"
-permalink: kb/183/Q183181/
+permalink: /kb/183/Q183181/
 ---
 
 ## Q183181: COBOL PIC X(32768) or Larger Causes an Error

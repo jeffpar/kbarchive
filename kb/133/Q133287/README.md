@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133287: How to Create Hot Spots on Top of a Picture in a Form"
-permalink: kb/133/Q133287/
+permalink: /kb/133/Q133287/
 ---
 
 ## Q133287: How to Create Hot Spots on Top of a Picture in a Form

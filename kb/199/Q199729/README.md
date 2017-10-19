@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199729: SMS: Missing Records in WorkstationStatus Table Generate Badmif"
-permalink: kb/199/Q199729/
+permalink: /kb/199/Q199729/
 ---
 
 ## Q199729: SMS: Missing Records in WorkstationStatus Table Generate Badmif

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235700: ActiveX Property Pages May Appear Erased and Hang Program"
-permalink: kb/235/Q235700/
+permalink: /kb/235/Q235700/
 ---
 
 ## Q235700: ActiveX Property Pages May Appear Erased and Hang Program

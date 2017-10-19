@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133032: Event ID 20087 Appears When You Dial a RAS Server"
-permalink: kb/133/Q133032/
+permalink: /kb/133/Q133032/
 ---
 
 ## Q133032: Event ID 20087 Appears When You Dial a RAS Server

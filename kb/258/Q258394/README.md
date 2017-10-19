@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258394: Baseball 2001: Screen Turns Black and Game Stops Responding"
-permalink: kb/258/Q258394/
+permalink: /kb/258/Q258394/
 ---
 
 ## Q258394: Baseball 2001: Screen Turns Black and Game Stops Responding

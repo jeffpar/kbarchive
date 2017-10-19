@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195770: Print Margins Not Properly Configured When Using SNACFG.EXE"
-permalink: kb/195/Q195770/
+permalink: /kb/195/Q195770/
 ---
 
 ## Q195770: Print Margins Not Properly Configured When Using SNACFG.EXE

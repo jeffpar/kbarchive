@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137436: Error Installing Attachmate Extra! After SNA Server Client"
-permalink: kb/137/Q137436/
+permalink: /kb/137/Q137436/
 ---
 
 ## Q137436: Error Installing Attachmate Extra! After SNA Server Client

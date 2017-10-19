@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164590: Branch Servers Using DLS Cannot Communicate Through Firewalls"
-permalink: kb/164/Q164590/
+permalink: /kb/164/Q164590/
 ---
 
 ## Q164590: Branch Servers Using DLS Cannot Communicate Through Firewalls

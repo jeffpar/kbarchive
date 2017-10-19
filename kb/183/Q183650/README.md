@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183650: Schedule + Won't Print Outlook Private Appointments"
-permalink: kb/183/Q183650/
+permalink: /kb/183/Q183650/
 ---
 
 ## Q183650: Schedule + Won't Print Outlook Private Appointments

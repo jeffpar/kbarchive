@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44112: Using Numeric Keypad with Windows Applications"
-permalink: kb/044/Q44112/
+permalink: /kb/044/Q44112/
 ---
 
 ## Q44112: Using Numeric Keypad with Windows Applications

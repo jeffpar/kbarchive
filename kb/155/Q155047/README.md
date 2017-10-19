@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155047: PRB: A2041 Initializing a Large STRUCT"
-permalink: kb/155/Q155047/
+permalink: /kb/155/Q155047/
 ---
 
 ## Q155047: PRB: A2041 Initializing a Large STRUCT

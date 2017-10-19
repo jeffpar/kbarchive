@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102654: PC Win: New Mail Dialog Appears But No Mail Is Retrieved"
-permalink: kb/102/Q102654/
+permalink: /kb/102/Q102654/
 ---
 
 ## Q102654: PC Win: New Mail Dialog Appears But No Mail Is Retrieved

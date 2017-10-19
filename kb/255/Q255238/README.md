@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255238: Error When Printing from Excel or Word with HP Printer Driver"
-permalink: kb/255/Q255238/
+permalink: /kb/255/Q255238/
 ---
 
 ## Q255238: Error When Printing from Excel or Word with HP Printer Driver

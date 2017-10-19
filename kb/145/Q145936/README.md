@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145936: HOWTO: Insert Existing Projects as Sub-Projects"
-permalink: kb/145/Q145936/
+permalink: /kb/145/Q145936/
 ---
 
 ## Q145936: HOWTO: Insert Existing Projects as Sub-Projects

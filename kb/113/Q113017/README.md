@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113017: PPT: Cannot Branch to PowerPoint Slide Objects"
-permalink: kb/113/Q113017/
+permalink: /kb/113/Q113017/
 ---
 
 ## Q113017: PPT: Cannot Branch to PowerPoint Slide Objects

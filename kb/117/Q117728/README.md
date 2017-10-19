@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117728: No Support for Apple Random Number Exchange"
-permalink: kb/117/Q117728/
+permalink: /kb/117/Q117728/
 ---
 
 ## Q117728: No Support for Apple Random Number Exchange

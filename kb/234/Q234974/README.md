@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234974: PRB: Error C0042116: The Web Server Is Not Responding"
-permalink: kb/234/Q234974/
+permalink: /kb/234/Q234974/
 ---
 
 ## Q234974: PRB: Error C0042116: The Web Server Is Not Responding

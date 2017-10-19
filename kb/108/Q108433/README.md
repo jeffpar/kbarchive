@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108433: Illustrates Multithreaded Programming Techniques"
-permalink: kb/108/Q108433/
+permalink: /kb/108/Q108433/
 ---
 
 ## Q108433: Illustrates Multithreaded Programming Techniques

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173649: PRB: Memory Corruption in VB4-16 When Passing Recordset to Sub"
-permalink: kb/173/Q173649/
+permalink: /kb/173/Q173649/
 ---
 
 ## Q173649: PRB: Memory Corruption in VB4-16 When Passing Recordset to Sub

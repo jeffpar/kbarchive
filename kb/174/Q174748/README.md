@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174748: XADM: ESEUTIL /g Returns Error -1022"
-permalink: kb/174/Q174748/
+permalink: /kb/174/Q174748/
 ---
 
 ## Q174748: XADM: ESEUTIL /g Returns Error -1022

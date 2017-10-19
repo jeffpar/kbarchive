@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272229: Computer Hangs with a Forerunner PCI ATM Network Adapter"
-permalink: kb/272/Q272229/
+permalink: /kb/272/Q272229/
 ---
 
 ## Q272229: Computer Hangs with a Forerunner PCI ATM Network Adapter

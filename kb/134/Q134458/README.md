@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134458: What's New in PowerPoint for Windows 95: Working with Slides"
-permalink: kb/134/Q134458/
+permalink: /kb/134/Q134458/
 ---
 
 ## Q134458: What's New in PowerPoint for Windows 95: Working with Slides

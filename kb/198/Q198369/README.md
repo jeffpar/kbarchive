@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198369: WD97: How to Turn Off Some of the Office Assistant Tips"
-permalink: kb/198/Q198369/
+permalink: /kb/198/Q198369/
 ---
 
 ## Q198369: WD97: How to Turn Off Some of the Office Assistant Tips

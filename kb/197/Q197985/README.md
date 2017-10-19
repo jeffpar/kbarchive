@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197985: PDC Performs Only Full Synchronizations to BDCs"
-permalink: kb/197/Q197985/
+permalink: /kb/197/Q197985/
 ---
 
 ## Q197985: PDC Performs Only Full Synchronizations to BDCs

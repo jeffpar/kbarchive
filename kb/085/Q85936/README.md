@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85936: Real World Accounting Software and Windows 3.1"
-permalink: kb/085/Q85936/
+permalink: /kb/085/Q85936/
 ---
 
 ## Q85936: Real World Accounting Software and Windows 3.1

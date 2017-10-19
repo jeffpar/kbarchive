@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210198: SMS: Triggers Not Being Generated in Specified Inboxes"
-permalink: kb/210/Q210198/
+permalink: /kb/210/Q210198/
 ---
 
 ## Q210198: SMS: Triggers Not Being Generated in Specified Inboxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72132: BACKUP Fails When Writing Log File to Unformatted Disk"
-permalink: kb/072/Q72132/
+permalink: /kb/072/Q72132/
 ---
 
 ## Q72132: BACKUP Fails When Writing Log File to Unformatted Disk

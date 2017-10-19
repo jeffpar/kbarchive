@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95089: Tips on Training Voice Pilot"
-permalink: kb/095/Q95089/
+permalink: /kb/095/Q95089/
 ---
 
 ## Q95089: Tips on Training Voice Pilot

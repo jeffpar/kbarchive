@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90789: Packing List: Windows 3.1 SDK Part 5 (3.5-Inch Disks)"
-permalink: kb/090/Q90789/
+permalink: /kb/090/Q90789/
 ---
 
 ## Q90789: Packing List: Windows 3.1 SDK Part 5 (3.5-Inch Disks)

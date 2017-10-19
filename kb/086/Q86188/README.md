@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86188: MR BIOS Version 1.2 or Later Needed for Windows 3.1"
-permalink: kb/086/Q86188/
+permalink: /kb/086/Q86188/
 ---
 
 ## Q86188: MR BIOS Version 1.2 or Later Needed for Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195702: SMS: CHECK20 Misidentifies SMS 1.2 Client as an SMS 2.0 Client"
-permalink: kb/195/Q195702/
+permalink: /kb/195/Q195702/
 ---
 
 ## Q195702: SMS: CHECK20 Misidentifies SMS 1.2 Client as an SMS 2.0 Client

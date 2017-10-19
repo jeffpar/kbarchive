@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168086: XCLN: MS Schedule+ Time Zones Wrong w/ OEM Service Release 2"
-permalink: kb/168/Q168086/
+permalink: /kb/168/Q168086/
 ---
 
 ## Q168086: XCLN: MS Schedule+ Time Zones Wrong w/ OEM Service Release 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153407: SMS: Inventory Does Not Collect Windows NT Service Pack Versions"
-permalink: kb/153/Q153407/
+permalink: /kb/153/Q153407/
 ---
 
 ## Q153407: SMS: Inventory Does Not Collect Windows NT Service Pack Versions

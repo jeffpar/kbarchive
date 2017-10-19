@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219335: SNMP Application Error After Installation on Exchange Server"
-permalink: kb/219/Q219335/
+permalink: /kb/219/Q219335/
 ---
 
 ## Q219335: SNMP Application Error After Installation on Exchange Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102680: DOCERR: Backslash Edit Descriptor Documented Incorrectly"
-permalink: kb/102/Q102680/
+permalink: /kb/102/Q102680/
 ---
 
 ## Q102680: DOCERR: Backslash Edit Descriptor Documented Incorrectly

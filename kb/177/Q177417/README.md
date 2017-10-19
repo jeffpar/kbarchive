@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177417: XFOR: Could Not Delete an MS Mail Postoffice Connection"
-permalink: kb/177/Q177417/
+permalink: /kb/177/Q177417/
 ---
 
 ## Q177417: XFOR: Could Not Delete an MS Mail Postoffice Connection

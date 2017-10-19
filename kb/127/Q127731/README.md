@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127731: MHS: Err Msg: General Outpost Failure"
-permalink: kb/127/Q127731/
+permalink: /kb/127/Q127731/
 ---
 
 ## Q127731: MHS: Err Msg: General Outpost Failure

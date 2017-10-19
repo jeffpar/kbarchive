@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160070: WD97: Symbol Dialog Different from Previous Versions"
-permalink: kb/160/Q160070/
+permalink: /kb/160/Q160070/
 ---
 
 ## Q160070: WD97: Symbol Dialog Different from Previous Versions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112623: Intel EtherExpress 16 MCA Adapter Requires Updated Files"
-permalink: kb/112/Q112623/
+permalink: /kb/112/Q112623/
 ---
 
 ## Q112623: Intel EtherExpress 16 MCA Adapter Requires Updated Files

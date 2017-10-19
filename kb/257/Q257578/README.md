@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257578: XCON: Internet Mail Doesn't Respond if Recipient Has No Address"
-permalink: kb/257/Q257578/
+permalink: /kb/257/Q257578/
 ---
 
 ## Q257578: XCON: Internet Mail Doesn't Respond if Recipient Has No Address

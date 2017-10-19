@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214480: Err Msg: Incorrect Password or Unknown Username"
-permalink: kb/214/Q214480/
+permalink: /kb/214/Q214480/
 ---
 
 ## Q214480: Err Msg: Incorrect Password or Unknown Username

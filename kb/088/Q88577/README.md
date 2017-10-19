@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88577: Windows 3.0 Setup Fails on Bondwell Laptops"
-permalink: kb/088/Q88577/
+permalink: /kb/088/Q88577/
 ---
 
 ## Q88577: Windows 3.0 Setup Fails on Bondwell Laptops

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138743: Free Disk Space Reported Incorrectly with Norton Utilities 95"
-permalink: kb/138/Q138743/
+permalink: /kb/138/Q138743/
 ---
 
 ## Q138743: Free Disk Space Reported Incorrectly with Norton Utilities 95

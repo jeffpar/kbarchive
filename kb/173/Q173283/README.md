@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173283: XWEB: Netscape Navigator Users Must Use &#92;&#92; to Logon"
-permalink: kb/173/Q173283/
+permalink: /kb/173/Q173283/
 ---
 
 ## Q173283: XWEB: Netscape Navigator Users Must Use &#92;&#92; to Logon

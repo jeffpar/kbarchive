@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174049: E-mail Messages May Not Leave the Outbox When Sent"
-permalink: kb/174/Q174049/
+permalink: /kb/174/Q174049/
 ---
 
 ## Q174049: E-mail Messages May Not Leave the Outbox When Sent

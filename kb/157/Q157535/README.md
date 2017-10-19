@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157535: WD97: Outlook Message Title Shows Invalid Character"
-permalink: kb/157/Q157535/
+permalink: /kb/157/Q157535/
 ---
 
 ## Q157535: WD97: Outlook Message Title Shows Invalid Character

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190143: IIS 4.0 Crashes; IIS 3.0 Generates Corrupted Log Data for HTTPS"
-permalink: kb/190/Q190143/
+permalink: /kb/190/Q190143/
 ---
 
 ## Q190143: IIS 4.0 Crashes; IIS 3.0 Generates Corrupted Log Data for HTTPS

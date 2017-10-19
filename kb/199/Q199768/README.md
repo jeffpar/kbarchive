@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199768: XFOR: USELSX Error w/Exchange Server 5.5 Notes Config. Utility"
-permalink: kb/199/Q199768/
+permalink: /kb/199/Q199768/
 ---
 
 ## Q199768: XFOR: USELSX Error w/Exchange Server 5.5 Notes Config. Utility

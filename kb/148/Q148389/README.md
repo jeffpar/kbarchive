@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148389: XFOR: How to Backbone MSMail 3.x over Exchange"
-permalink: kb/148/Q148389/
+permalink: /kb/148/Q148389/
 ---
 
 ## Q148389: XFOR: How to Backbone MSMail 3.x over Exchange

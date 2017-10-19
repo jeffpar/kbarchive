@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265449: WD97: Word Document Statistics Different in Windows Explorer"
-permalink: kb/265/Q265449/
+permalink: /kb/265/Q265449/
 ---
 
 ## Q265449: WD97: Word Document Statistics Different in Windows Explorer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100376: FIX: Intrinsic REAL Function Assigned to COMPLEX Fails"
-permalink: kb/100/Q100376/
+permalink: /kb/100/Q100376/
 ---
 
 ## Q100376: FIX: Intrinsic REAL Function Assigned to COMPLEX Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181950: XFOR: How to Use the Internet Mail Connector in Console Mode"
-permalink: kb/181/Q181950/
+permalink: /kb/181/Q181950/
 ---
 
 ## Q181950: XFOR: How to Use the Internet Mail Connector in Console Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142845: How to Use SQL Functions in &#42;.IDC Scripts"
-permalink: kb/142/Q142845/
+permalink: /kb/142/Q142845/
 ---
 
 ## Q142845: How to Use SQL Functions in &#42;.IDC Scripts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244016: HOWTO: Back Up a Visual SourceSafe Database"
-permalink: kb/244/Q244016/
+permalink: /kb/244/Q244016/
 ---
 
 ## Q244016: HOWTO: Back Up a Visual SourceSafe Database

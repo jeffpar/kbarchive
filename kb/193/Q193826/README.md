@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193826: How to Hide the Security Tab"
-permalink: kb/193/Q193826/
+permalink: /kb/193/Q193826/
 ---
 
 ## Q193826: How to Hide the Security Tab

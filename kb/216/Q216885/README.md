@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216885: PRB: English Query Using SQL 7.0 Domain May Fail with SQL 6.5"
-permalink: kb/216/Q216885/
+permalink: /kb/216/Q216885/
 ---
 
 ## Q216885: PRB: English Query Using SQL 7.0 Domain May Fail with SQL 6.5

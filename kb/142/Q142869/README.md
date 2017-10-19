@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142869: Event ID 3210 and 5722 Appear When Synchronizing Entire Domain"
-permalink: kb/142/Q142869/
+permalink: /kb/142/Q142869/
 ---
 
 ## Q142869: Event ID 3210 and 5722 Appear When Synchronizing Entire Domain

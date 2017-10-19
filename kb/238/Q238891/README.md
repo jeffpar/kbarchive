@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238891: SP6 Updates Windows NT Kernel to Support Future Processors"
-permalink: kb/238/Q238891/
+permalink: /kb/238/Q238891/
 ---
 
 ## Q238891: SP6 Updates Windows NT Kernel to Support Future Processors

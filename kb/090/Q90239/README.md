@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90239: Windows for Workgroups: How VSHARE.386 Manages File Sharing"
-permalink: kb/090/Q90239/
+permalink: /kb/090/Q90239/
 ---
 
 ## Q90239: Windows for Workgroups: How VSHARE.386 Manages File Sharing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93250: SAMPLE: WinCsv.exe CSV API for 16-bit and 32-Bit Windows"
-permalink: kb/093/Q93250/
+permalink: /kb/093/Q93250/
 ---
 
 ## Q93250: SAMPLE: WinCsv.exe CSV API for 16-bit and 32-Bit Windows

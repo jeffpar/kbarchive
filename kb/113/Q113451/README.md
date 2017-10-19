@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113451: PC Win: Attachment File Type Menu Has a Fixed Width"
-permalink: kb/113/Q113451/
+permalink: /kb/113/Q113451/
 ---
 
 ## Q113451: PC Win: Attachment File Type Menu Has a Fixed Width

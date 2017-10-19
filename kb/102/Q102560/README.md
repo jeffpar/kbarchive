@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102560: PC Win: Err Msg: Notice 8 Error in Transmitting Mail..."
-permalink: kb/102/Q102560/
+permalink: /kb/102/Q102560/
 ---
 
 ## Q102560: PC Win: Err Msg: Notice 8 Error in Transmitting Mail...

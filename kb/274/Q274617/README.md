@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274617: XCLN: Opening Many Contacts Folders in One Outlook Address Book"
-permalink: kb/274/Q274617/
+permalink: /kb/274/Q274617/
 ---
 
 ## Q274617: XCLN: Opening Many Contacts Folders in One Outlook Address Book

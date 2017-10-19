@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235409: SCSI Port Driver Logical Unit Number Count Not Updated Correctly"
-permalink: kb/235/Q235409/
+permalink: /kb/235/Q235409/
 ---
 
 ## Q235409: SCSI Port Driver Logical Unit Number Count Not Updated Correctly

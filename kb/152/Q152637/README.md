@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152637: Cli_dos Error Reading from Drive X - Abort Retry Fail"
-permalink: kb/152/Q152637/
+permalink: /kb/152/Q152637/
 ---
 
 ## Q152637: Cli_dos Error Reading from Drive X - Abort Retry Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195211: Windows NT Setup Detects Partitions as Unformatted or Damaged"
-permalink: kb/195/Q195211/
+permalink: /kb/195/Q195211/
 ---
 
 ## Q195211: Windows NT Setup Detects Partitions as Unformatted or Damaged

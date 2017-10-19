@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132863: BUG: DBGETPROP() for Database Comments Not Working Correctly"
-permalink: kb/132/Q132863/
+permalink: /kb/132/Q132863/
 ---
 
 ## Q132863: BUG: DBGETPROP() for Database Comments Not Working Correctly

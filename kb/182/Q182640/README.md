@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182640: Application Exception in Snaservr.exe in Function SNPUPUTI"
-permalink: kb/182/Q182640/
+permalink: /kb/182/Q182640/
 ---
 
 ## Q182640: Application Exception in Snaservr.exe in Function SNPUPUTI

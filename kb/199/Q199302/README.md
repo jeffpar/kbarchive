@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199302: XFOR: Understanding F/B Flow Between GroupWise &amp; Exchange Server"
-permalink: kb/199/Q199302/
+permalink: /kb/199/Q199302/
 ---
 
 ## Q199302: XFOR: Understanding F/B Flow Between GroupWise &amp; Exchange Server

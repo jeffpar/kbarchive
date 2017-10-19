@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216065: XFOR: PROFS: LME-PROFS-DIAMEX Fails to Process the Incoming Mess"
-permalink: kb/216/Q216065/
+permalink: /kb/216/Q216065/
 ---
 
 ## Q216065: XFOR: PROFS: LME-PROFS-DIAMEX Fails to Process the Incoming Mess

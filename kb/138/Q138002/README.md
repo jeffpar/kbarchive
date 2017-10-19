@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138002: PC WSPlus: Complete List of SCHDPLUS.INI Settings"
-permalink: kb/138/Q138002/
+permalink: /kb/138/Q138002/
 ---
 
 ## Q138002: PC WSPlus: Complete List of SCHDPLUS.INI Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135405: Repairing a Corrupted WINS Database w/ Starting Version Count"
-permalink: kb/135/Q135405/
+permalink: /kb/135/Q135405/
 ---
 
 ## Q135405: Repairing a Corrupted WINS Database w/ Starting Version Count

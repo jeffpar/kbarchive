@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260839: XADM: Installing DMS ADC Prevents Site Replication"
-permalink: kb/260/Q260839/
+permalink: /kb/260/Q260839/
 ---
 
 ## Q260839: XADM: Installing DMS ADC Prevents Site Replication

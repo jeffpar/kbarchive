@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190932: SNMP Service Ignores SNMP Trap PDU Greater Than 4,096 Bytes"
-permalink: kb/190/Q190932/
+permalink: /kb/190/Q190932/
 ---
 
 ## Q190932: SNMP Service Ignores SNMP Trap PDU Greater Than 4,096 Bytes

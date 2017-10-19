@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145727: HOWTO: Call the Unicode Version of an API Function with VB"
-permalink: kb/145/Q145727/
+permalink: /kb/145/Q145727/
 ---
 
 ## Q145727: HOWTO: Call the Unicode Version of an API Function with VB

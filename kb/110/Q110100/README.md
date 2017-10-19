@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110100: PC Gen: PODIAG.EXE NETPO.GLB Error 117"
-permalink: kb/110/Q110100/
+permalink: /kb/110/Q110100/
 ---
 
 ## Q110100: PC Gen: PODIAG.EXE NETPO.GLB Error 117

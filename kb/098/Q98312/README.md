@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98312: How to Install MS-DOS 6 Upgrade to a Drive Other Than C"
-permalink: kb/098/Q98312/
+permalink: /kb/098/Q98312/
 ---
 
 ## Q98312: How to Install MS-DOS 6 Upgrade to a Drive Other Than C

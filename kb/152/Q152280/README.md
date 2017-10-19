@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152280: How To Call a Visual FoxPro Application Using AppleScript"
-permalink: kb/152/Q152280/
+permalink: /kb/152/Q152280/
 ---
 
 ## Q152280: How To Call a Visual FoxPro Application Using AppleScript

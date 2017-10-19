@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246833: XADM: DXA Sends Add Transaction Instead of a Modify Transaction"
-permalink: kb/246/Q246833/
+permalink: /kb/246/Q246833/
 ---
 
 ## Q246833: XADM: DXA Sends Add Transaction Instead of a Modify Transaction

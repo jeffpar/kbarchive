@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114979: BUG: Access Violation or R6018 Executing IF Statement"
-permalink: kb/114/Q114979/
+permalink: /kb/114/Q114979/
 ---
 
 ## Q114979: BUG: Access Violation or R6018 Executing IF Statement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153689: NT 3.51 Setup Fails on IBM Power Series 850 w/IDE"
-permalink: kb/153/Q153689/
+permalink: /kb/153/Q153689/
 ---
 
 ## Q153689: NT 3.51 Setup Fails on IBM Power Series 850 w/IDE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216775: SBS: Console User List Empty When Trying to Manage Users"
-permalink: kb/216/Q216775/
+permalink: /kb/216/Q216775/
 ---
 
 ## Q216775: SBS: Console User List Empty When Trying to Manage Users

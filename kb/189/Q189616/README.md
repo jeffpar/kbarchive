@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189616: BUG: DateTimePicker Overrides ALT+F4 Key Combination"
-permalink: kb/189/Q189616/
+permalink: /kb/189/Q189616/
 ---
 
 ## Q189616: BUG: DateTimePicker Overrides ALT+F4 Key Combination

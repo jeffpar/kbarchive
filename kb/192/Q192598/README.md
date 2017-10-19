@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192598: Account Settings Missing from MSN Sign-In Screen"
-permalink: kb/192/Q192598/
+permalink: /kb/192/Q192598/
 ---
 
 ## Q192598: Account Settings Missing from MSN Sign-In Screen

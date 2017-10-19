@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130523: PRB: VFP300.ESL Installed in Two Places on Dual-Boot Computer"
-permalink: kb/130/Q130523/
+permalink: /kb/130/Q130523/
 ---
 
 ## Q130523: PRB: VFP300.ESL Installed in Two Places on Dual-Boot Computer

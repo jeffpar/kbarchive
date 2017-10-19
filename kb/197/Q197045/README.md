@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197045: CMAK Incorrectly Configures a Customized Sign-in Bitmap"
-permalink: kb/197/Q197045/
+permalink: /kb/197/Q197045/
 ---
 
 ## Q197045: CMAK Incorrectly Configures a Customized Sign-in Bitmap

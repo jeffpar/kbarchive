@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158571: STL Sample for the string::operator&gt;= Function"
-permalink: kb/158/Q158571/
+permalink: /kb/158/Q158571/
 ---
 
 ## Q158571: STL Sample for the string::operator&gt;= Function

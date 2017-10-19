@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120139: Cannot Interactively Boot Windows 95 with Hardcard Drives"
-permalink: kb/120/Q120139/
+permalink: /kb/120/Q120139/
 ---
 
 ## Q120139: Cannot Interactively Boot Windows 95 with Hardcard Drives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88446: Top View Doesn't Show Total Yardage of Hole in Golf"
-permalink: kb/088/Q88446/
+permalink: /kb/088/Q88446/
 ---
 
 ## Q88446: Top View Doesn't Show Total Yardage of Hole in Golf

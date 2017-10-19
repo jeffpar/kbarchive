@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149094: HOWTO: Determine the Contents of a Cell in a DBGrid Control"
-permalink: kb/149/Q149094/
+permalink: /kb/149/Q149094/
 ---
 
 ## Q149094: HOWTO: Determine the Contents of a Cell in a DBGrid Control

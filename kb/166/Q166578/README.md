@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166578: XADM: KCC Fails with More Than 212 Sites in Organization"
-permalink: kb/166/Q166578/
+permalink: /kb/166/Q166578/
 ---
 
 ## Q166578: XADM: KCC Fails with More Than 212 Sites in Organization

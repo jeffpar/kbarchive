@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107428: FIX: Extra New Line Added to Debug Output in Visual Debugger"
-permalink: kb/107/Q107428/
+permalink: /kb/107/Q107428/
 ---
 
 ## Q107428: FIX: Extra New Line Added to Debug Output in Visual Debugger

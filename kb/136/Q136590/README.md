@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136590: AST StarCom Program Reports &quot;Modem Hardware Failure&quot;"
-permalink: kb/136/Q136590/
+permalink: /kb/136/Q136590/
 ---
 
 ## Q136590: AST StarCom Program Reports &quot;Modem Hardware Failure&quot;

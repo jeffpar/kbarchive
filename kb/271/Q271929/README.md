@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271929: SS3:Referring URLs in Usage Analysis Truncated to 100 Characters"
-permalink: kb/271/Q271929/
+permalink: /kb/271/Q271929/
 ---
 
 ## Q271929: SS3:Referring URLs in Usage Analysis Truncated to 100 Characters

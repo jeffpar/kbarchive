@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120421: Quattro Pro causes GPF Printing to Unavailable Printer"
-permalink: kb/120/Q120421/
+permalink: /kb/120/Q120421/
 ---
 
 ## Q120421: Quattro Pro causes GPF Printing to Unavailable Printer

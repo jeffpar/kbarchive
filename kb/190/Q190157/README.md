@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190157: Support for Windows NT 4.0 Option Pack on Terminal Server"
-permalink: kb/190/Q190157/
+permalink: /kb/190/Q190157/
 ---
 
 ## Q190157: Support for Windows NT 4.0 Option Pack on Terminal Server

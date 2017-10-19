@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156677: Logoff Screen Saver Does Not Function in Windows NT"
-permalink: kb/156/Q156677/
+permalink: /kb/156/Q156677/
 ---
 
 ## Q156677: Logoff Screen Saver Does Not Function in Windows NT

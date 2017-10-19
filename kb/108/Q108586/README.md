@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108586: Erratic Serial Mouse Behavior in Microsoft Diagnostics (MSD)"
-permalink: kb/108/Q108586/
+permalink: /kb/108/Q108586/
 ---
 
 ## Q108586: Erratic Serial Mouse Behavior in Microsoft Diagnostics (MSD)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48770: Mac DOS: IRMA Board Not Supported by Mail 1.37, 2.00, 3.00"
-permalink: kb/048/Q48770/
+permalink: /kb/048/Q48770/
 ---
 
 ## Q48770: Mac DOS: IRMA Board Not Supported by Mail 1.37, 2.00, 3.00

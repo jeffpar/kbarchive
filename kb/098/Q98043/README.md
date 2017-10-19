@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98043: PC MAPI WRmt: Problems w/ Simple MAPI and Extended Characters"
-permalink: kb/098/Q98043/
+permalink: /kb/098/Q98043/
 ---
 
 ## Q98043: PC MAPI WRmt: Problems w/ Simple MAPI and Extended Characters

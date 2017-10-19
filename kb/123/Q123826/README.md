@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123826: SMTP: Err Msg: Error (116) Network Read Error"
-permalink: kb/123/Q123826/
+permalink: /kb/123/Q123826/
 ---
 
 ## Q123826: SMTP: Err Msg: Error (116) Network Read Error

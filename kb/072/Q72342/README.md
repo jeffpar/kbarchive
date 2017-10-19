@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72342: Restoring the Original Version Table in SETVER.EXE"
-permalink: kb/072/Q72342/
+permalink: /kb/072/Q72342/
 ---
 
 ## Q72342: Restoring the Original Version Table in SETVER.EXE

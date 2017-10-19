@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154445: A Different OS was Detected...While Upgrading SMS Clients"
-permalink: kb/154/Q154445/
+permalink: /kb/154/Q154445/
 ---
 
 ## Q154445: A Different OS was Detected...While Upgrading SMS Clients

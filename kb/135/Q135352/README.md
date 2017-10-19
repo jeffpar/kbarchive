@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135352: Frequently Asked Questions for Mail for PC Networks"
-permalink: kb/135/Q135352/
+permalink: /kb/135/Q135352/
 ---
 
 ## Q135352: Frequently Asked Questions for Mail for PC Networks

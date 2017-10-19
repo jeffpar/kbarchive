@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242283: 16-Bit Programs Hang Using Dynamic Data Exchange"
-permalink: kb/242/Q242283/
+permalink: /kb/242/Q242283/
 ---
 
 ## Q242283: 16-Bit Programs Hang Using Dynamic Data Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67653: How to Respond When DDE Data Cannot Be Locked"
-permalink: kb/067/Q67653/
+permalink: /kb/067/Q67653/
 ---
 
 ## Q67653: How to Respond When DDE Data Cannot Be Locked

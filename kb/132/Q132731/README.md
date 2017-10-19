@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132731: PC DirSync: Err Msg: NSDA Terminated with Exit Code 2"
-permalink: kb/132/Q132731/
+permalink: /kb/132/Q132731/
 ---
 
 ## Q132731: PC DirSync: Err Msg: NSDA Terminated with Exit Code 2

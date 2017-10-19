@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80553: ExpEdit.exe Changes Size of an Edit Control"
-permalink: kb/080/Q80553/
+permalink: /kb/080/Q80553/
 ---
 
 ## Q80553: ExpEdit.exe Changes Size of an Edit Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100696: Flight Simulator 5.0 Compatability with Version 4.0"
-permalink: kb/100/Q100696/
+permalink: /kb/100/Q100696/
 ---
 
 ## Q100696: Flight Simulator 5.0 Compatability with Version 4.0

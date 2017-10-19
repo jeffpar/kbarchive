@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253904: FS2000: The Transponder and ATC Features"
-permalink: kb/253/Q253904/
+permalink: /kb/253/Q253904/
 ---
 
 ## Q253904: FS2000: The Transponder and ATC Features

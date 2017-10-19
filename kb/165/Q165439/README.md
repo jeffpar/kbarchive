@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165439: Parsing LMHOSTS with Invalid Entries Can Cause Stop 0x1E"
-permalink: kb/165/Q165439/
+permalink: /kb/165/Q165439/
 ---
 
 ## Q165439: Parsing LMHOSTS with Invalid Entries Can Cause Stop 0x1E

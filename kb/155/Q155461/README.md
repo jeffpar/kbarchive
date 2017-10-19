@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155461: MSD Fails w/ Application Error After Clicking OS Version"
-permalink: kb/155/Q155461/
+permalink: /kb/155/Q155461/
 ---
 
 ## Q155461: MSD Fails w/ Application Error After Clicking OS Version

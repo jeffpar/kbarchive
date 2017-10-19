@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165600: WD97: No Error Inserting Invalid Picture Via Macro"
-permalink: kb/165/Q165600/
+permalink: /kb/165/Q165600/
 ---
 
 ## Q165600: WD97: No Error Inserting Invalid Picture Via Macro

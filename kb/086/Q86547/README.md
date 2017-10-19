@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86547: MHS: Software Required to Install the Gateway Postoffice"
-permalink: kb/086/Q86547/
+permalink: /kb/086/Q86547/
 ---
 
 ## Q86547: MHS: Software Required to Install the Gateway Postoffice

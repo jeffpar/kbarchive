@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257765: SNA DDM Service Fails with an Access Violation Error"
-permalink: kb/257/Q257765/
+permalink: /kb/257/Q257765/
 ---
 
 ## Q257765: SNA DDM Service Fails with an Access Violation Error

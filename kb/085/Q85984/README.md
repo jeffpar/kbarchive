@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85984: Epson LQ-950 Prints Jagged Characters or Vertical Lines"
-permalink: kb/085/Q85984/
+permalink: /kb/085/Q85984/
 ---
 
 ## Q85984: Epson LQ-950 Prints Jagged Characters or Vertical Lines

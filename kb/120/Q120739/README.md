@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120739: Raising Max SFM Volume Size Reported to System 7.5 Mac Users"
-permalink: kb/120/Q120739/
+permalink: /kb/120/Q120739/
 ---
 
 ## Q120739: Raising Max SFM Volume Size Reported to System 7.5 Mac Users

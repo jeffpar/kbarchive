@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168880: Mastering Web Development Does Not Run On Windows NT 3.51"
-permalink: kb/168/Q168880/
+permalink: /kb/168/Q168880/
 ---
 
 ## Q168880: Mastering Web Development Does Not Run On Windows NT 3.51

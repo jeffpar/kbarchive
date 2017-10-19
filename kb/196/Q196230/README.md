@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196230: SLI Does Not Reset Lua_flag2.async"
-permalink: kb/196/Q196230/
+permalink: /kb/196/Q196230/
 ---
 
 ## Q196230: SLI Does Not Reset Lua_flag2.async

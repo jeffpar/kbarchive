@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135225: Setting Up Gateway 2000 Aztec Sound Card with Windows 95"
-permalink: kb/135/Q135225/
+permalink: /kb/135/Q135225/
 ---
 
 ## Q135225: Setting Up Gateway 2000 Aztec Sound Card with Windows 95

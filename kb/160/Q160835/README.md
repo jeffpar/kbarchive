@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160835: FP: Renamed Executable Folder No Longer Executable"
-permalink: kb/160/Q160835/
+permalink: /kb/160/Q160835/
 ---
 
 ## Q160835: FP: Renamed Executable Folder No Longer Executable

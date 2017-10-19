@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140886: HOWTO: Print Multiline Text Box Using Windows API Functions"
-permalink: kb/140/Q140886/
+permalink: /kb/140/Q140886/
 ---
 
 ## Q140886: HOWTO: Print Multiline Text Box Using Windows API Functions

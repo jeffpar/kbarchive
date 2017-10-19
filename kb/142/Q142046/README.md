@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142046: License Manager Purchase History Lost Promoting BDC to PDC"
-permalink: kb/142/Q142046/
+permalink: /kb/142/Q142046/
 ---
 
 ## Q142046: License Manager Purchase History Lost Promoting BDC to PDC

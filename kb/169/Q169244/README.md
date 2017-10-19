@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169244: Autodial Fails to Dial Automatically"
-permalink: kb/169/Q169244/
+permalink: /kb/169/Q169244/
 ---
 
 ## Q169244: Autodial Fails to Dial Automatically

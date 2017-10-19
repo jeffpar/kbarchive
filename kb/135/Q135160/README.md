@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135160: Desktop Pythonizer Does Not Change Wallpaper"
-permalink: kb/135/Q135160/
+permalink: /kb/135/Q135160/
 ---
 
 ## Q135160: Desktop Pythonizer Does Not Change Wallpaper

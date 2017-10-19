@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284954: XADM: Extra Read Receipt May Be Sent from Delegate"
-permalink: kb/284/Q284954/
+permalink: /kb/284/Q284954/
 ---
 
 ## Q284954: XADM: Extra Read Receipt May Be Sent from Delegate

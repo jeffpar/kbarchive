@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278452: PRB: Visual C++ 6.0 Break Command Failed"
-permalink: kb/278/Q278452/
+permalink: /kb/278/Q278452/
 ---
 
 ## Q278452: PRB: Visual C++ 6.0 Break Command Failed

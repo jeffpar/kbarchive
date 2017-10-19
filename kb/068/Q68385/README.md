@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68385: PRB: Compiler Lacks Warnings for Options Incompatible with /u"
-permalink: kb/068/Q68385/
+permalink: /kb/068/Q68385/
 ---
 
 ## Q68385: PRB: Compiler Lacks Warnings for Options Incompatible with /u

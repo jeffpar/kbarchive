@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247247: Troubleshooting Steps for DOD Over RRAS with Proxy Server"
-permalink: kb/247/Q247247/
+permalink: /kb/247/Q247247/
 ---
 
 ## Q247247: Troubleshooting Steps for DOD Over RRAS with Proxy Server

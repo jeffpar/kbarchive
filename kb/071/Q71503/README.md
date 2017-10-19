@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71503: Using CorelDRAW! with a Plotter Prints One Copy Only"
-permalink: kb/071/Q71503/
+permalink: /kb/071/Q71503/
 ---
 
 ## Q71503: Using CorelDRAW! with a Plotter Prints One Copy Only

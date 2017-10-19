@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161303: HOWTO: Close a Shelled Process When Finished Under Windows"
-permalink: kb/161/Q161303/
+permalink: /kb/161/Q161303/
 ---
 
 ## Q161303: HOWTO: Close a Shelled Process When Finished Under Windows

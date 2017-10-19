@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163228: Printing from Windows NT 4.0 to NetWare 3.12 Seems Slow"
-permalink: kb/163/Q163228/
+permalink: /kb/163/Q163228/
 ---
 
 ## Q163228: Printing from Windows NT 4.0 to NetWare 3.12 Seems Slow

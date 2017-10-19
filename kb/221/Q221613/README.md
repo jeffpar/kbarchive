@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221613: FIX: Clicking Page Tab Executes Container Click Event"
-permalink: kb/221/Q221613/
+permalink: /kb/221/Q221613/
 ---
 
 ## Q221613: FIX: Clicking Page Tab Executes Container Click Event

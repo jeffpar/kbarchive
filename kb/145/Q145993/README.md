@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145993: BUG: Crystal Reports AppWizard Disables Multi-Language Support"
-permalink: kb/145/Q145993/
+permalink: /kb/145/Q145993/
 ---
 
 ## Q145993: BUG: Crystal Reports AppWizard Disables Multi-Language Support

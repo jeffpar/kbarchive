@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298109: SAMPLE: Create a Context Menu Handler by Using ATL"
-permalink: kb/298/Q298109/
+permalink: /kb/298/Q298109/
 ---
 
 ## Q298109: SAMPLE: Create a Context Menu Handler by Using ATL

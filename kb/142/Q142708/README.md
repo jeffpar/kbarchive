@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142708: WinNT 3.51 SP2 w/ UK Keyboard Gives Wrong Accented Characters"
-permalink: kb/142/Q142708/
+permalink: /kb/142/Q142708/
 ---
 
 ## Q142708: WinNT 3.51 SP2 w/ UK Keyboard Gives Wrong Accented Characters

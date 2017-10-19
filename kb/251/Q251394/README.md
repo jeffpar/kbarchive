@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251394: How to Use the Net User Command"
-permalink: kb/251/Q251394/
+permalink: /kb/251/Q251394/
 ---
 
 ## Q251394: How to Use the Net User Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182666: Inconsistent Length of String When Type Changed to String"
-permalink: kb/182/Q182666/
+permalink: /kb/182/Q182666/
 ---
 
 ## Q182666: Inconsistent Length of String When Type Changed to String

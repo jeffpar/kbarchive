@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179265: XADM: Event 7011 Occurs When Shutting Down Exchange Server"
-permalink: kb/179/Q179265/
+permalink: /kb/179/Q179265/
 ---
 
 ## Q179265: XADM: Event 7011 Occurs When Shutting Down Exchange Server

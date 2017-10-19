@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263332: Uninstall Does Not Remove SMS Provider from Remote SQL Server"
-permalink: kb/263/Q263332/
+permalink: /kb/263/Q263332/
 ---
 
 ## Q263332: Uninstall Does Not Remove SMS Provider from Remote SQL Server

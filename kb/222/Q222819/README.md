@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222819: Terminal Server Clock Does Not Reflect Client Time Zone Setting"
-permalink: kb/222/Q222819/
+permalink: /kb/222/Q222819/
 ---
 
 ## Q222819: Terminal Server Clock Does Not Reflect Client Time Zone Setting

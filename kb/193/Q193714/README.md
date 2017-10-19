@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193714: WD97: Queries Not Available When Using Access Database"
-permalink: kb/193/Q193714/
+permalink: /kb/193/Q193714/
 ---
 
 ## Q193714: WD97: Queries Not Available When Using Access Database

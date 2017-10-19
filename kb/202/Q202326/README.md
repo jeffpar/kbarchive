@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202326: SMS: HowTo  Determine if a File is &quot;Known&quot; or &quot;Unknown&quot;"
-permalink: kb/202/Q202326/
+permalink: /kb/202/Q202326/
 ---
 
 ## Q202326: SMS: HowTo  Determine if a File is &quot;Known&quot; or &quot;Unknown&quot;

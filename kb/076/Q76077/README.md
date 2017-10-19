@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76077: PRB: L1006 Error When /STACK Option Contains a Space"
-permalink: kb/076/Q76077/
+permalink: /kb/076/Q76077/
 ---
 
 ## Q76077: PRB: L1006 Error When /STACK Option Contains a Space

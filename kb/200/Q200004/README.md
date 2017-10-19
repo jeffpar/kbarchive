@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200004: XFOR: Unable to Log On to Migrated Mailbox"
-permalink: kb/200/Q200004/
+permalink: /kb/200/Q200004/
 ---
 
 ## Q200004: XFOR: Unable to Log On to Migrated Mailbox

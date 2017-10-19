@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181939: XCLN: Macintosh Mail Migration Fails to Import SMTP PAB Entries"
-permalink: kb/181/Q181939/
+permalink: /kb/181/Q181939/
 ---
 
 ## Q181939: XCLN: Macintosh Mail Migration Fails to Import SMTP PAB Entries

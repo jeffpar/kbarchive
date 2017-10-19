@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178127: HOWTO: Adjust RowHeight of MSFlexGrid to Accommodate WordWrap"
-permalink: kb/178/Q178127/
+permalink: /kb/178/Q178127/
 ---
 
 ## Q178127: HOWTO: Adjust RowHeight of MSFlexGrid to Accommodate WordWrap

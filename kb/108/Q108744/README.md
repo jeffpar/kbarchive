@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108744: Writer: Borders Print Incorrectly with ATI Mach32"
-permalink: kb/108/Q108744/
+permalink: /kb/108/Q108744/
 ---
 
 ## Q108744: Writer: Borders Print Incorrectly with ATI Mach32

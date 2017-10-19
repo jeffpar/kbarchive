@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252770: How to Change Logging Verbosity for Services for UNIX NFS Client"
-permalink: kb/252/Q252770/
+permalink: /kb/252/Q252770/
 ---
 
 ## Q252770: How to Change Logging Verbosity for Services for UNIX NFS Client

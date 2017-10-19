@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96244: SMTP: Err Msg: Socket Error (123) When Starting Gateway"
-permalink: kb/096/Q96244/
+permalink: /kb/096/Q96244/
 ---
 
 ## Q96244: SMTP: Err Msg: Socket Error (123) When Starting Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291815: Program Running in a Terminal Server Session May Hang"
-permalink: kb/291/Q291815/
+permalink: /kb/291/Q291815/
 ---
 
 ## Q291815: Program Running in a Terminal Server Session May Hang

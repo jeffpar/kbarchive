@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138935: Using Socket Handle with Writefile() API Causes STOP Message"
-permalink: kb/138/Q138935/
+permalink: /kb/138/Q138935/
 ---
 
 ## Q138935: Using Socket Handle with Writefile() API Causes STOP Message

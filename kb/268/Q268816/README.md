@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268816: XADM: Using an Active Directory Connector to Rebuild Exchg Dir."
-permalink: kb/268/Q268816/
+permalink: /kb/268/Q268816/
 ---
 
 ## Q268816: XADM: Using an Active Directory Connector to Rebuild Exchg Dir.

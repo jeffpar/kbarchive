@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283897: Developing XML Solutions Comments and Corrections"
-permalink: kb/283/Q283897/
+permalink: /kb/283/Q283897/
 ---
 
 ## Q283897: Developing XML Solutions Comments and Corrections

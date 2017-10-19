@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255233: Windows NT 4.0 Enterprise Edition Domain Controllers May Hang"
-permalink: kb/255/Q255233/
+permalink: /kb/255/Q255233/
 ---
 
 ## Q255233: Windows NT 4.0 Enterprise Edition Domain Controllers May Hang

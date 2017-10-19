@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178147: Unable to Save Typelib Changed in Component Builder"
-permalink: kb/178/Q178147/
+permalink: /kb/178/Q178147/
 ---
 
 ## Q178147: Unable to Save Typelib Changed in Component Builder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275457: IIS 5.0 Loops Infinitely When A User Must Change Their Password"
-permalink: kb/275/Q275457/
+permalink: /kb/275/Q275457/
 ---
 
 ## Q275457: IIS 5.0 Loops Infinitely When A User Must Change Their Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219305: Computer Stops Responding While Viewing Record in Event Viewer"
-permalink: kb/219/Q219305/
+permalink: /kb/219/Q219305/
 ---
 
 ## Q219305: Computer Stops Responding While Viewing Record in Event Viewer

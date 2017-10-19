@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132198: Middle Mouse Button Does Not Work Under Windows NT 3.51"
-permalink: kb/132/Q132198/
+permalink: /kb/132/Q132198/
 ---
 
 ## Q132198: Middle Mouse Button Does Not Work Under Windows NT 3.51

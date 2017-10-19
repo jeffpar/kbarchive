@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74588: DOSSHELL.VID File Needed for Graphics Mode"
-permalink: kb/074/Q74588/
+permalink: /kb/074/Q74588/
 ---
 
 ## Q74588: DOSSHELL.VID File Needed for Graphics Mode

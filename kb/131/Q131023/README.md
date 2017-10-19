@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131023: DOC: How to Set Up a Shadow Directory"
-permalink: kb/131/Q131023/
+permalink: /kb/131/Q131023/
 ---
 
 ## Q131023: DOC: How to Set Up a Shadow Directory

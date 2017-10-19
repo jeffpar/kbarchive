@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246784: RPC Services Do Not Start and 'Not Enough Resources' Message"
-permalink: kb/246/Q246784/
+permalink: /kb/246/Q246784/
 ---
 
 ## Q246784: RPC Services Do Not Start and 'Not Enough Resources' Message

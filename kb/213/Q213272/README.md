@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213272: SMS: Class Rights in User Manager Are Not Added to Groups"
-permalink: kb/213/Q213272/
+permalink: /kb/213/Q213272/
 ---
 
 ## Q213272: SMS: Class Rights in User Manager Are Not Added to Groups

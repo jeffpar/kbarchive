@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154108: XADM: Dead Letter Functionality with Exchange Server 4.0"
-permalink: kb/154/Q154108/
+permalink: /kb/154/Q154108/
 ---
 
 ## Q154108: XADM: Dead Letter Functionality with Exchange Server 4.0

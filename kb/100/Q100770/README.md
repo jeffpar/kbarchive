@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100770: HOWTO: Use Accelerator Keys with Modal Dialog Box Main Window"
-permalink: kb/100/Q100770/
+permalink: /kb/100/Q100770/
 ---
 
 ## Q100770: HOWTO: Use Accelerator Keys with Modal Dialog Box Main Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104147: PC Forms: Extended Characters Lost When Saving Forms"
-permalink: kb/104/Q104147/
+permalink: /kb/104/Q104147/
 ---
 
 ## Q104147: PC Forms: Extended Characters Lost When Saving Forms

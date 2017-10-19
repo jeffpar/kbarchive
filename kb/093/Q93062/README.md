@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93062: Publisher's Paintbrush Err Msg: &quot;Not Enough Memory to Show...&quot;"
-permalink: kb/093/Q93062/
+permalink: /kb/093/Q93062/
 ---
 
 ## Q93062: Publisher's Paintbrush Err Msg: &quot;Not Enough Memory to Show...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92788: 3Com EtherLink III (3C509) in EISA Machines"
-permalink: kb/092/Q92788/
+permalink: /kb/092/Q92788/
 ---
 
 ## Q92788: 3Com EtherLink III (3C509) in EISA Machines

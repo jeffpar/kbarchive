@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135926: SMTP: SMTPPUT 201: Failure Submitting Message to Mail Database"
-permalink: kb/135/Q135926/
+permalink: /kb/135/Q135926/
 ---
 
 ## Q135926: SMTP: SMTPPUT 201: Failure Submitting Message to Mail Database

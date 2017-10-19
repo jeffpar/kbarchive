@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191327: FIX: Double Value Returned from DLL Gets Decimal Portion of 0"
-permalink: kb/191/Q191327/
+permalink: /kb/191/Q191327/
 ---
 
 ## Q191327: FIX: Double Value Returned from DLL Gets Decimal Portion of 0

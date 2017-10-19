@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213226: SMS: NDS Logon Manager Does Not Create Logon Point"
-permalink: kb/213/Q213226/
+permalink: /kb/213/Q213226/
 ---
 
 ## Q213226: SMS: NDS Logon Manager Does Not Create Logon Point

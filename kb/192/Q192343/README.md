@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192343: HOWTO: Associating the Default ProjectHook Class to a Project"
-permalink: kb/192/Q192343/
+permalink: /kb/192/Q192343/
 ---
 
 ## Q192343: HOWTO: Associating the Default ProjectHook Class to a Project

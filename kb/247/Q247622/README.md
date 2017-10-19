@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247622: XFOR: Migrating from Lotus Stops Wizard with Dr. Watson Event"
-permalink: kb/247/Q247622/
+permalink: /kb/247/Q247622/
 ---
 
 ## Q247622: XFOR: Migrating from Lotus Stops Wizard with Dr. Watson Event

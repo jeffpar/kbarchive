@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201999: SMS: ANSI SQL-92 Keywords Used as SMS Database Column Names"
-permalink: kb/201/Q201999/
+permalink: /kb/201/Q201999/
 ---
 
 ## Q201999: SMS: ANSI SQL-92 Keywords Used as SMS Database Column Names

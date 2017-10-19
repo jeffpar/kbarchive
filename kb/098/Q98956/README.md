@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98956: LM File Permission Enforcement on a CD-ROM Drive"
-permalink: kb/098/Q98956/
+permalink: /kb/098/Q98956/
 ---
 
 ## Q98956: LM File Permission Enforcement on a CD-ROM Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296229: XADM: Recovering Exchange Server Computer Using Online Backup"
-permalink: kb/296/Q296229/
+permalink: /kb/296/Q296229/
 ---
 
 ## Q296229: XADM: Recovering Exchange Server Computer Using Online Backup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164182: Index Server: Error: 0x2AF9 Occurred While Running Webhits.exe"
-permalink: kb/164/Q164182/
+permalink: /kb/164/Q164182/
 ---
 
 ## Q164182: Index Server: Error: 0x2AF9 Occurred While Running Webhits.exe

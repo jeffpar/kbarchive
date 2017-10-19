@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137414: Baseball 1995: Copy from Daily Causes Invalid Data"
-permalink: kb/137/Q137414/
+permalink: /kb/137/Q137414/
 ---
 
 ## Q137414: Baseball 1995: Copy from Daily Causes Invalid Data

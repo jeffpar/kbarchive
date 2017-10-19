@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221146: INFO: Description of Visual SourceSafe Versions, Build Numbers"
-permalink: kb/221/Q221146/
+permalink: /kb/221/Q221146/
 ---
 
 ## Q221146: INFO: Description of Visual SourceSafe Versions, Build Numbers

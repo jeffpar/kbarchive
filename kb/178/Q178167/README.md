@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178167: FIX: GeoFacts Sample Causes Automation Error on NT"
-permalink: kb/178/Q178167/
+permalink: /kb/178/Q178167/
 ---
 
 ## Q178167: FIX: GeoFacts Sample Causes Automation Error on NT

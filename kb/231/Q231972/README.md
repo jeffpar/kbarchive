@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231972: How to Set Up Your Windows NT Network File System Server"
-permalink: kb/231/Q231972/
+permalink: /kb/231/Q231972/
 ---
 
 ## Q231972: How to Set Up Your Windows NT Network File System Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164771: No Event Logging Occurs When SNAUDB Is Stopped"
-permalink: kb/164/Q164771/
+permalink: /kb/164/Q164771/
 ---
 
 ## Q164771: No Event Logging Occurs When SNAUDB Is Stopped

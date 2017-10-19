@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141907: PRB: Cannot Set the Visible Property of the PicClip Control"
-permalink: kb/141/Q141907/
+permalink: /kb/141/Q141907/
 ---
 
 ## Q141907: PRB: Cannot Set the Visible Property of the PicClip Control

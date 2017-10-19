@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83491: Windows 3.1 File List (N-Z) with Expanded File Names/Sizes"
-permalink: kb/083/Q83491/
+permalink: /kb/083/Q83491/
 ---
 
 ## Q83491: Windows 3.1 File List (N-Z) with Expanded File Names/Sizes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139128: DOC: Help for WindowType Shows Incorrect Property Settings"
-permalink: kb/139/Q139128/
+permalink: /kb/139/Q139128/
 ---
 
 ## Q139128: DOC: Help for WindowType Shows Incorrect Property Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168428: HOWTO: Test Your ActiveX Documents (.VBD)"
-permalink: kb/168/Q168428/
+permalink: /kb/168/Q168428/
 ---
 
 ## Q168428: HOWTO: Test Your ActiveX Documents (.VBD)

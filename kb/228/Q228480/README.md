@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228480: Error 1722 When Starting Cluster Administrator"
-permalink: kb/228/Q228480/
+permalink: /kb/228/Q228480/
 ---
 
 ## Q228480: Error 1722 When Starting Cluster Administrator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124727: How to Program DMA for Linear Addresses under Windows"
-permalink: kb/124/Q124727/
+permalink: /kb/124/Q124727/
 ---
 
 ## Q124727: How to Program DMA for Linear Addresses under Windows

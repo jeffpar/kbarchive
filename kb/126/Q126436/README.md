@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126436: Q&amp;A: The Role of a Windows NT Server in a Domain"
-permalink: kb/126/Q126436/
+permalink: /kb/126/Q126436/
 ---
 
 ## Q126436: Q&amp;A: The Role of a Windows NT Server in a Domain

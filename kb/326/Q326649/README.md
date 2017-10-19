@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326649: Changes in COMTI Regions (TOR or AOR) Cause Some COMTI Applicati"
-permalink: kb/326/Q326649/
+permalink: /kb/326/Q326649/
 ---
 
 ## Q326649: Changes in COMTI Regions (TOR or AOR) Cause Some COMTI Applicati

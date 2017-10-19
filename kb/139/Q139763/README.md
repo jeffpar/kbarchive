@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139763: Julia Child: Cannot Minimize Program When Playing a Lesson"
-permalink: kb/139/Q139763/
+permalink: /kb/139/Q139763/
 ---
 
 ## Q139763: Julia Child: Cannot Minimize Program When Playing a Lesson

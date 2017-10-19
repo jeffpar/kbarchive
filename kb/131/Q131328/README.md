@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131328: PC WFW: Files Are Not Interchangeable with Mail for Windows"
-permalink: kb/131/Q131328/
+permalink: /kb/131/Q131328/
 ---
 
 ## Q131328: PC WFW: Files Are Not Interchangeable with Mail for Windows

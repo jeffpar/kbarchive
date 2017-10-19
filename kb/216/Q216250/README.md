@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216250: Err Msg: This Program Cannot Be Run in DOS Mode"
-permalink: kb/216/Q216250/
+permalink: /kb/216/Q216250/
 ---
 
 ## Q216250: Err Msg: This Program Cannot Be Run in DOS Mode

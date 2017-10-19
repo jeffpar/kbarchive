@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261278: Terminal Server Ignores NumberOfRings Parameter"
-permalink: kb/261/Q261278/
+permalink: /kb/261/Q261278/
 ---
 
 ## Q261278: Terminal Server Ignores NumberOfRings Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253648: Smsls.bat Cannot Install SMS Client When DOSONLY Is Enabled"
-permalink: kb/253/Q253648/
+permalink: /kb/253/Q253648/
 ---
 
 ## Q253648: Smsls.bat Cannot Install SMS Client When DOSONLY Is Enabled

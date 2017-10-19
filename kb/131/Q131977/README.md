@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131977: Cannot Install Adaptec SCSI AudioMachine or AudioEdge Card"
-permalink: kb/131/Q131977/
+permalink: /kb/131/Q131977/
 ---
 
 ## Q131977: Cannot Install Adaptec SCSI AudioMachine or AudioEdge Card

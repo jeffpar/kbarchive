@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193080: HOWTO: Determine Operating System Regional Setting Language ID"
-permalink: kb/193/Q193080/
+permalink: /kb/193/Q193080/
 ---
 
 ## Q193080: HOWTO: Determine Operating System Regional Setting Language ID

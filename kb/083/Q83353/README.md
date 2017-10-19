@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83353: Windows Repeatedly Prompts for Same Disk for Printer Driver"
-permalink: kb/083/Q83353/
+permalink: /kb/083/Q83353/
 ---
 
 ## Q83353: Windows Repeatedly Prompts for Same Disk for Printer Driver

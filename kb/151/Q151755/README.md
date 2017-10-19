@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151755: Spindate.exe - DateTime Spinner Class Example"
-permalink: kb/151/Q151755/
+permalink: /kb/151/Q151755/
 ---
 
 ## Q151755: Spindate.exe - DateTime Spinner Class Example

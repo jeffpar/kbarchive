@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168231: System Policies Are Not Applied in Windows NT"
-permalink: kb/168/Q168231/
+permalink: /kb/168/Q168231/
 ---
 
 ## Q168231: System Policies Are Not Applied in Windows NT

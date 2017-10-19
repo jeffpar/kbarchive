@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187769: Application Error in NTVDM Running cc:Mail Utilities"
-permalink: kb/187/Q187769/
+permalink: /kb/187/Q187769/
 ---
 
 ## Q187769: Application Error in NTVDM Running cc:Mail Utilities

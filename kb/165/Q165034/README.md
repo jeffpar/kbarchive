@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165034: ODE97: Using Undo Create to Delete Page Removes Tab Control"
-permalink: kb/165/Q165034/
+permalink: /kb/165/Q165034/
 ---
 
 ## Q165034: ODE97: Using Undo Create to Delete Page Removes Tab Control

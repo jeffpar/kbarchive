@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132598: Must Restart Computer Before Running Grolier Encyclopedia"
-permalink: kb/132/Q132598/
+permalink: /kb/132/Q132598/
 ---
 
 ## Q132598: Must Restart Computer Before Running Grolier Encyclopedia

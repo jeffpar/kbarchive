@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271303: Reader Err Msg: Microsoft Reader Encountered an Internal Error"
-permalink: kb/271/Q271303/
+permalink: /kb/271/Q271303/
 ---
 
 ## Q271303: Reader Err Msg: Microsoft Reader Encountered an Internal Error

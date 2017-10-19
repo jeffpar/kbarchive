@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183078: WD97: Language Changes When Text Changes to Hyperlink"
-permalink: kb/183/Q183078/
+permalink: /kb/183/Q183078/
 ---
 
 ## Q183078: WD97: Language Changes When Text Changes to Hyperlink

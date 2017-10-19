@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275245: BUG: Floppy Disks Created by PDW Repeats Prompt to Insert Disks"
-permalink: kb/275/Q275245/
+permalink: /kb/275/Q275245/
 ---
 
 ## Q275245: BUG: Floppy Disks Created by PDW Repeats Prompt to Insert Disks

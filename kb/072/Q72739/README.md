@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72739: The Difference Between HDBKUP.EXE and BACKUP.EXE"
-permalink: kb/072/Q72739/
+permalink: /kb/072/Q72739/
 ---
 
 ## Q72739: The Difference Between HDBKUP.EXE and BACKUP.EXE

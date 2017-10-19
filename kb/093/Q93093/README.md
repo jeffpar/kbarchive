@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93093: BUG: Memory Use Greater With DPMI Memory Than VCPI or XMS"
-permalink: kb/093/Q93093/
+permalink: /kb/093/Q93093/
 ---
 
 ## Q93093: BUG: Memory Use Greater With DPMI Memory Than VCPI or XMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172186: dbWeb No Longer Part of the Resource Kit"
-permalink: kb/172/Q172186/
+permalink: /kb/172/Q172186/
 ---
 
 ## Q172186: dbWeb No Longer Part of the Resource Kit

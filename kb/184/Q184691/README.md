@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184691: MSN Err Msg: Urlmon.dll Is Missing"
-permalink: kb/184/Q184691/
+permalink: /kb/184/Q184691/
 ---
 
 ## Q184691: MSN Err Msg: Urlmon.dll Is Missing

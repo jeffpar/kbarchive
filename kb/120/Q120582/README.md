@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120582: Directory Replicator Service Will Not Start"
-permalink: kb/120/Q120582/
+permalink: /kb/120/Q120582/
 ---
 
 ## Q120582: Directory Replicator Service Will Not Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190863: PRB: Grid Header Alignment Property Accepts Any Value"
-permalink: kb/190/Q190863/
+permalink: /kb/190/Q190863/
 ---
 
 ## Q190863: PRB: Grid Header Alignment Property Accepts Any Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184018: Novell NDS for WinNT Doesn't Support Restrict Anonymous Security"
-permalink: kb/184/Q184018/
+permalink: /kb/184/Q184018/
 ---
 
 ## Q184018: Novell NDS for WinNT Doesn't Support Restrict Anonymous Security

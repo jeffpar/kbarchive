@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74586: Cosmos Revelation Database G.2 May Cause Intermittent Hanging"
-permalink: kb/074/Q74586/
+permalink: /kb/074/Q74586/
 ---
 
 ## Q74586: Cosmos Revelation Database G.2 May Cause Intermittent Hanging

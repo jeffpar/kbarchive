@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181121: Enhanced Event Logging for SNA Server Event 9, 12"
-permalink: kb/181/Q181121/
+permalink: /kb/181/Q181121/
 ---
 
 ## Q181121: Enhanced Event Logging for SNA Server Event 9, 12

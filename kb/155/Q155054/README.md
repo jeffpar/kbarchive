@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155054: PRB: Visual SourceSafe Occasionally Saves .FRX File as Text"
-permalink: kb/155/Q155054/
+permalink: /kb/155/Q155054/
 ---
 
 ## Q155054: PRB: Visual SourceSafe Occasionally Saves .FRX File as Text

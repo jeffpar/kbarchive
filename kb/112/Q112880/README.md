@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112880: PC WSPlus: Access Privileges Invalid After Using MOVEUSER"
-permalink: kb/112/Q112880/
+permalink: /kb/112/Q112880/
 ---
 
 ## Q112880: PC WSPlus: Access Privileges Invalid After Using MOVEUSER

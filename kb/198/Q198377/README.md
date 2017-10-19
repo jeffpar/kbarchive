@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198377: WD97: &quot;Float Over Text&quot; Object Converts with Extra Para Mark"
-permalink: kb/198/Q198377/
+permalink: /kb/198/Q198377/
 ---
 
 ## Q198377: WD97: &quot;Float Over Text&quot; Object Converts with Extra Para Mark

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133335: PRB: Cannot Rename Objects Originally Defined in a Container"
-permalink: kb/133/Q133335/
+permalink: /kb/133/Q133335/
 ---
 
 ## Q133335: PRB: Cannot Rename Objects Originally Defined in a Container

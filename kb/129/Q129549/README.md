@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129549: Cannot View Correct Event Details with Non-Administrative Rights"
-permalink: kb/129/Q129549/
+permalink: /kb/129/Q129549/
 ---
 
 ## Q129549: Cannot View Correct Event Details with Non-Administrative Rights

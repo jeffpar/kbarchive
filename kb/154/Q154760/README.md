@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154760: How to Use the DSMN Utility to Verify Synchronized Passwords"
-permalink: kb/154/Q154760/
+permalink: /kb/154/Q154760/
 ---
 
 ## Q154760: How to Use the DSMN Utility to Verify Synchronized Passwords

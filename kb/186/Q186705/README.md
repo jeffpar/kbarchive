@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186705: XCLN: Explore Web Page Fails Opening FTP Address"
-permalink: kb/186/Q186705/
+permalink: /kb/186/Q186705/
 ---
 
 ## Q186705: XCLN: Explore Web Page Fails Opening FTP Address

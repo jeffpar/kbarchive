@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180595: XFOR: Folder Unread Message Count Shows 4294967294"
-permalink: kb/180/Q180595/
+permalink: /kb/180/Q180595/
 ---
 
 ## Q180595: XFOR: Folder Unread Message Count Shows 4294967294

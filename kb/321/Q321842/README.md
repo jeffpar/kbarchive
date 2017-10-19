@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321842: ODBC Call Fail on SQL Query with Parameter Markers in Subquery"
-permalink: kb/321/Q321842/
+permalink: /kb/321/Q321842/
 ---
 
 ## Q321842: ODBC Call Fail on SQL Query with Parameter Markers in Subquery

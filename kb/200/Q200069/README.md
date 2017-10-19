@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200069: INFO: Russian and Portuguese MFC Resource Files Not Available"
-permalink: kb/200/Q200069/
+permalink: /kb/200/Q200069/
 ---
 
 ## Q200069: INFO: Russian and Portuguese MFC Resource Files Not Available

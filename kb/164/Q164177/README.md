@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164177: XFOR: Error 2410 When Starting the MSMI"
-permalink: kb/164/Q164177/
+permalink: /kb/164/Q164177/
 ---
 
 ## Q164177: XFOR: Error 2410 When Starting the MSMI

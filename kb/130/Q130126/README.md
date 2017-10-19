@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130126: FIX: Wrong Windows NT &amp; Windows 3.11 versions in System Info"
-permalink: kb/130/Q130126/
+permalink: /kb/130/Q130126/
 ---
 
 ## Q130126: FIX: Wrong Windows NT &amp; Windows 3.11 versions in System Info

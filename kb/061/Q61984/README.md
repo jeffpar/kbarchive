@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61984: LAN Manager 2.0 Network API Library Information"
-permalink: kb/061/Q61984/
+permalink: /kb/061/Q61984/
 ---
 
 ## Q61984: LAN Manager 2.0 Network API Library Information

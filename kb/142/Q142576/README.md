@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142576: Date Set to Year Later Than 2038 Can Cause Problems"
-permalink: kb/142/Q142576/
+permalink: /kb/142/Q142576/
 ---
 
 ## Q142576: Date Set to Year Later Than 2038 Can Cause Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111325: Can't Choose Paper Tray with Postscript Printer Driver"
-permalink: kb/111/Q111325/
+permalink: /kb/111/Q111325/
 ---
 
 ## Q111325: Can't Choose Paper Tray with Postscript Printer Driver

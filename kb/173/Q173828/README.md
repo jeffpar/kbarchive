@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173828: Access Step by Step: Page 11: Cannot Import 01Client.txt"
-permalink: kb/173/Q173828/
+permalink: /kb/173/Q173828/
 ---
 
 ## Q173828: Access Step by Step: Page 11: Cannot Import 01Client.txt

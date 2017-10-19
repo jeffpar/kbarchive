@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223035: Zone.com: How to Access Your Account Information"
-permalink: kb/223/Q223035/
+permalink: /kb/223/Q223035/
 ---
 
 ## Q223035: Zone.com: How to Access Your Account Information

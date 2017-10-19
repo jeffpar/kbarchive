@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250280: INFO: How to Determine if IMM is Enabled on Windows 2000"
-permalink: kb/250/Q250280/
+permalink: /kb/250/Q250280/
 ---
 
 ## Q250280: INFO: How to Determine if IMM is Enabled on Windows 2000

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q79067: FIX: A2029 Incorrectly Generated If Operand = [ebx][ebx]"
-permalink: kb/079/Q79067/
+title: "Q79067: FIX: A2029 Incorrectly Generated If Operand = &#91;ebx&#93;&#91;ebx&#93;"
+permalink: /kb/079/Q79067/
 ---
 
-## Q79067: FIX: A2029 Incorrectly Generated If Operand = [ebx][ebx]
+## Q79067: FIX: A2029 Incorrectly Generated If Operand = &#91;ebx&#93;&#91;ebx&#93;
 
 	Article: Q79067
 	Product(s): Microsoft Macro Assembler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138153: Error Message Overwriting Newer Files with Backup"
-permalink: kb/138/Q138153/
+permalink: /kb/138/Q138153/
 ---
 
 ## Q138153: Error Message Overwriting Newer Files with Backup

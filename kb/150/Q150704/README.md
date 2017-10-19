@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150704: FIX: Toolbar Button Count Is Wrong if Image Index is Invalid"
-permalink: kb/150/Q150704/
+permalink: /kb/150/Q150704/
 ---
 
 ## Q150704: FIX: Toolbar Button Count Is Wrong if Image Index is Invalid

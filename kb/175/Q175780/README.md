@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175780: XCON: Sending to Nested DLs Fails"
-permalink: kb/175/Q175780/
+permalink: /kb/175/Q175780/
 ---
 
 ## Q175780: XCON: Sending to Nested DLs Fails

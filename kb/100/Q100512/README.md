@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100512: SMTP: Err Msg: SMTP_recv:system error"
-permalink: kb/100/Q100512/
+permalink: /kb/100/Q100512/
 ---
 
 ## Q100512: SMTP: Err Msg: SMTP_recv:system error

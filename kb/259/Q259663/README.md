@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259663: HOWTO: Convert Currency or Numbers into English Words"
-permalink: kb/259/Q259663/
+permalink: /kb/259/Q259663/
 ---
 
 ## Q259663: HOWTO: Convert Currency or Numbers into English Words

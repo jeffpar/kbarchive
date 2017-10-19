@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197085: Heap Corruptions Cause Access Violations in SNA Server and SnaBa"
-permalink: kb/197/Q197085/
+permalink: /kb/197/Q197085/
 ---
 
 ## Q197085: Heap Corruptions Cause Access Violations in SNA Server and SnaBa

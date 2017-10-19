@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69968: Automating Network Pointing Devices via SETUP.INF"
-permalink: kb/069/Q69968/
+permalink: /kb/069/Q69968/
 ---
 
 ## Q69968: Automating Network Pointing Devices via SETUP.INF

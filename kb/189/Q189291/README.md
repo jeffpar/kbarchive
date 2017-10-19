@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189291: Hang in Winlogon on Workstation Locked Dialog Box"
-permalink: kb/189/Q189291/
+permalink: /kb/189/Q189291/
 ---
 
 ## Q189291: Hang in Winlogon on Workstation Locked Dialog Box

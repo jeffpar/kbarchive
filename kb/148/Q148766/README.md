@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148766: Return of Arcade Disk Contents (3.5 inch/1.44 MB DMF)"
-permalink: kb/148/Q148766/
+permalink: /kb/148/Q148766/
 ---
 
 ## Q148766: Return of Arcade Disk Contents (3.5 inch/1.44 MB DMF)

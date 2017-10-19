@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131677: PC NTMMTA: Err Msg: Could Not Create Directory..."
-permalink: kb/131/Q131677/
+permalink: /kb/131/Q131677/
 ---
 
 ## Q131677: PC NTMMTA: Err Msg: Could Not Create Directory...

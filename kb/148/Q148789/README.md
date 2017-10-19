@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148789: FIX: No Error Given for Non-static Callback Member Function"
-permalink: kb/148/Q148789/
+permalink: /kb/148/Q148789/
 ---
 
 ## Q148789: FIX: No Error Given for Non-static Callback Member Function

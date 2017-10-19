@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158776: SNA Server May Log Event 23, Qualifier 0x000A"
-permalink: kb/158/Q158776/
+permalink: /kb/158/Q158776/
 ---
 
 ## Q158776: SNA Server May Log Event 23, Qualifier 0x000A

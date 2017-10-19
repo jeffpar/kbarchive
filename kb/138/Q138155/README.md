@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138155: No NDIS Interrupt Activity Using Windows 95 and Pathworks"
-permalink: kb/138/Q138155/
+permalink: /kb/138/Q138155/
 ---
 
 ## Q138155: No NDIS Interrupt Activity Using Windows 95 and Pathworks

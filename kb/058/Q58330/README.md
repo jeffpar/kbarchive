@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58330: Location of Enhanced Mode Temporary Swap Files"
-permalink: kb/058/Q58330/
+permalink: /kb/058/Q58330/
 ---
 
 ## Q58330: Location of Enhanced Mode Temporary Swap Files

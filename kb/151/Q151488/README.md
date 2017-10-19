@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151488: PRB: DrawText Can Cause Stack Fault"
-permalink: kb/151/Q151488/
+permalink: /kb/151/Q151488/
 ---
 
 ## Q151488: PRB: DrawText Can Cause Stack Fault

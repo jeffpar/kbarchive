@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78657: Acer /M:1100 Switch Only for 1-MB Acer Machines"
-permalink: kb/078/Q78657/
+permalink: /kb/078/Q78657/
 ---
 
 ## Q78657: Acer /M:1100 Switch Only for 1-MB Acer Machines

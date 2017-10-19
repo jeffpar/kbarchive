@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102549: BUG: DDESPY GP Faults Upon Return of CBR_BLOCK"
-permalink: kb/102/Q102549/
+permalink: /kb/102/Q102549/
 ---
 
 ## Q102549: BUG: DDESPY GP Faults Upon Return of CBR_BLOCK

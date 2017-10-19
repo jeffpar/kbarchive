@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165706: MacFile Volume Icon Changes after Permissions Are Changed"
-permalink: kb/165/Q165706/
+permalink: /kb/165/Q165706/
 ---
 
 ## Q165706: MacFile Volume Icon Changes after Permissions Are Changed

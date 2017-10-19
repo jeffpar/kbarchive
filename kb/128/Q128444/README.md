@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128444: MHS: Err Msg: User Not Found: Postmaster"
-permalink: kb/128/Q128444/
+permalink: /kb/128/Q128444/
 ---
 
 ## Q128444: MHS: Err Msg: User Not Found: Postmaster

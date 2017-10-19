@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88295: PRB: Clicking Database Runs Run-Time, Not Development Version"
-permalink: kb/088/Q88295/
+permalink: /kb/088/Q88295/
 ---
 
 ## Q88295: PRB: Clicking Database Runs Run-Time, Not Development Version

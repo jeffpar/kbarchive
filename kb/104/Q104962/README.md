@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104962: BUG: PALETTEINDEX Not Working for Thin Lines on HP PaintJet"
-permalink: kb/104/Q104962/
+permalink: /kb/104/Q104962/
 ---
 
 ## Q104962: BUG: PALETTEINDEX Not Working for Thin Lines on HP PaintJet

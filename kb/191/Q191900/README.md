@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191900: XCLN: How to Use IExpress to Deploy Multiple Packages with ODK"
-permalink: kb/191/Q191900/
+permalink: /kb/191/Q191900/
 ---
 
 ## Q191900: XCLN: How to Use IExpress to Deploy Multiple Packages with ODK

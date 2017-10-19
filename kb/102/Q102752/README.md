@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102752: PC Win: GP Fault Converting Folders When Server Is Full"
-permalink: kb/102/Q102752/
+permalink: /kb/102/Q102752/
 ---
 
 ## Q102752: PC Win: GP Fault Converting Folders When Server Is Full

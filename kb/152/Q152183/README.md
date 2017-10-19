@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152183: Home Products Err Msg: Invalid Dynamic Link Call to a DLL"
-permalink: kb/152/Q152183/
+permalink: /kb/152/Q152183/
 ---
 
 ## Q152183: Home Products Err Msg: Invalid Dynamic Link Call to a DLL

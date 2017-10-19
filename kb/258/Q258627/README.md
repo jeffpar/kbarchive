@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258627: Baseball 2001: Parts of Outfield Are Not Displayed Correctly"
-permalink: kb/258/Q258627/
+permalink: /kb/258/Q258627/
 ---
 
 ## Q258627: Baseball 2001: Parts of Outfield Are Not Displayed Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57849: Mac AL GW: Creating Recipients on the AppleLink Gateway"
-permalink: kb/057/Q57849/
+permalink: /kb/057/Q57849/
 ---
 
 ## Q57849: Mac AL GW: Creating Recipients on the AppleLink Gateway

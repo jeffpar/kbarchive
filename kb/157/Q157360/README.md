@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157360: FIX: LIST STRUCTURE Ignores Index if Index Name != Field Name"
-permalink: kb/157/Q157360/
+permalink: /kb/157/Q157360/
 ---
 
 ## Q157360: FIX: LIST STRUCTURE Ignores Index if Index Name != Field Name

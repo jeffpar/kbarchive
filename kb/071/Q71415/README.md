@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor"
-permalink: kb/071/Q71415/
+permalink: /kb/071/Q71415/
 ---
 
 ## Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor

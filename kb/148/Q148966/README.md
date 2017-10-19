@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148966: The TN3270 Server Does Not Check for a Best LU to IP Match"
-permalink: kb/148/Q148966/
+permalink: /kb/148/Q148966/
 ---
 
 ## Q148966: The TN3270 Server Does Not Check for a Best LU to IP Match

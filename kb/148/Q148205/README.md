@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148205: Frequently Asked Questions About Using V-Chat"
-permalink: kb/148/Q148205/
+permalink: /kb/148/Q148205/
 ---
 
 ## Q148205: Frequently Asked Questions About Using V-Chat

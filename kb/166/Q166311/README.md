@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166311: Memory Leak Retrieving OLE Property Values with Service Pack 2"
-permalink: kb/166/Q166311/
+permalink: /kb/166/Q166311/
 ---
 
 ## Q166311: Memory Leak Retrieving OLE Property Values with Service Pack 2

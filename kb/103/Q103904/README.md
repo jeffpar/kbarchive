@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103904: PC WRmt: Resolving Mail to External Groups"
-permalink: kb/103/Q103904/
+permalink: /kb/103/Q103904/
 ---
 
 ## Q103904: PC WRmt: Resolving Mail to External Groups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109259: CONN: MACGATE.INI File Should Not Be Edited Manually"
-permalink: kb/109/Q109259/
+permalink: /kb/109/Q109259/
 ---
 
 ## Q109259: CONN: MACGATE.INI File Should Not Be Edited Manually

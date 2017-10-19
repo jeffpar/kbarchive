@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136573: Win32s Requires Virtual Memory"
-permalink: kb/136/Q136573/
+permalink: /kb/136/Q136573/
 ---
 
 ## Q136573: Win32s Requires Virtual Memory

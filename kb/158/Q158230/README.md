@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158230: BUG: Changes in an ISAM Table Not Seen by DAO"
-permalink: kb/158/Q158230/
+permalink: /kb/158/Q158230/
 ---
 
 ## Q158230: BUG: Changes in an ISAM Table Not Seen by DAO

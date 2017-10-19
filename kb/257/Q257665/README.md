@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257665: Cannot Disable &quot;Stretch Wallpaper&quot; Feature"
-permalink: kb/257/Q257665/
+permalink: /kb/257/Q257665/
 ---
 
 ## Q257665: Cannot Disable &quot;Stretch Wallpaper&quot; Feature

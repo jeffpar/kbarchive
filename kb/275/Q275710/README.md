@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275710: TN3270 Does Not Handle CD Field Properly During Error Recovery"
-permalink: kb/275/Q275710/
+permalink: /kb/275/Q275710/
 ---
 
 ## Q275710: TN3270 Does Not Handle CD Field Properly During Error Recovery

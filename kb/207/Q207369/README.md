@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207369: SMS: INVOS2 Does Not Report TCP/IP Information"
-permalink: kb/207/Q207369/
+permalink: /kb/207/Q207369/
 ---
 
 ## Q207369: SMS: INVOS2 Does Not Report TCP/IP Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131648: Description of Percent Complete Values in Disk Defragmenter"
-permalink: kb/131/Q131648/
+permalink: /kb/131/Q131648/
 ---
 
 ## Q131648: Description of Percent Complete Values in Disk Defragmenter

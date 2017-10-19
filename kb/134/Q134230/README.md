@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134230: Configuring NetBIOS Name Resolution With TN3270 Admin"
-permalink: kb/134/Q134230/
+permalink: /kb/134/Q134230/
 ---
 
 ## Q134230: Configuring NetBIOS Name Resolution With TN3270 Admin

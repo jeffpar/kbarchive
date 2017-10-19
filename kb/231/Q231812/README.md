@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231812: HOWTO: Programmatically Set Compatibility Level of SQL ODBC Drv."
-permalink: kb/231/Q231812/
+permalink: /kb/231/Q231812/
 ---
 
 ## Q231812: HOWTO: Programmatically Set Compatibility Level of SQL ODBC Drv.

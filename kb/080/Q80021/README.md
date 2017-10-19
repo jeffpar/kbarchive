@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80021: Mac Srv Wkst: &quot;Mail System Could Not Be Loaded&quot; Alert"
-permalink: kb/080/Q80021/
+permalink: /kb/080/Q80021/
 ---
 
 ## Q80021: Mac Srv Wkst: &quot;Mail System Could Not Be Loaded&quot; Alert

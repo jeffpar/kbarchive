@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239608: Err Msg: You Are Upgrading a Version of Internet Explorer 5..."
-permalink: kb/239/Q239608/
+permalink: /kb/239/Q239608/
 ---
 
 ## Q239608: Err Msg: You Are Upgrading a Version of Internet Explorer 5...

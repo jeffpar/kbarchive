@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192331: AbirNet SessionWall-3 with Windows NT 4.0 Displays Blue Screen"
-permalink: kb/192/Q192331/
+permalink: /kb/192/Q192331/
 ---
 
 ## Q192331: AbirNet SessionWall-3 with Windows NT 4.0 Displays Blue Screen

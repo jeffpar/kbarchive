@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323146: SMS: Status Messages Are Not Processed"
-permalink: kb/323/Q323146/
+permalink: /kb/323/Q323146/
 ---
 
 ## Q323146: SMS: Status Messages Are Not Processed

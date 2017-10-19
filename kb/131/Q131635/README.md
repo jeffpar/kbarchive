@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131635: Error Message: Your EFAXPUMP.INI File Has Become Too Large"
-permalink: kb/131/Q131635/
+permalink: /kb/131/Q131635/
 ---
 
 ## Q131635: Error Message: Your EFAXPUMP.INI File Has Become Too Large

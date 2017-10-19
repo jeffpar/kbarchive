@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104292: How to Identify 128-Bit Windows 95 Dial-Up Networking Client"
-permalink: kb/104/Q104292/
+permalink: /kb/104/Q104292/
 ---
 
 ## Q104292: How to Identify 128-Bit Windows 95 Dial-Up Networking Client

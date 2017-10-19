@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117430: Cannot Install HP DeskJet Printer Driver Version 3.10"
-permalink: kb/117/Q117430/
+permalink: /kb/117/Q117430/
 ---
 
 ## Q117430: Cannot Install HP DeskJet Printer Driver Version 3.10

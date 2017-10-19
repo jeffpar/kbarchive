@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47206: FltSim: Ridge and Thermal Soaring with the Sailplane"
-permalink: kb/047/Q47206/
+permalink: /kb/047/Q47206/
 ---
 
 ## Q47206: FltSim: Ridge and Thermal Soaring with the Sailplane

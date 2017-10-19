@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165654: SNA Server 3.0 Service Pack 1 Contains Updated Eicon Drivers"
-permalink: kb/165/Q165654/
+permalink: /kb/165/Q165654/
 ---
 
 ## Q165654: SNA Server 3.0 Service Pack 1 Contains Updated Eicon Drivers

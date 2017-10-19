@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141253: Picture Gallery Wallpaper Is Not Centered on Screen"
-permalink: kb/141/Q141253/
+permalink: /kb/141/Q141253/
 ---
 
 ## Q141253: Picture Gallery Wallpaper Is Not Centered on Screen

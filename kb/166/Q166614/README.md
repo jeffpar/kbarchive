@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166614: XFOR: Attachments Migrated from ccMail Are Not Viewable"
-permalink: kb/166/Q166614/
+permalink: /kb/166/Q166614/
 ---
 
 ## Q166614: XFOR: Attachments Migrated from ccMail Are Not Viewable

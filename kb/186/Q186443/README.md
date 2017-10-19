@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186443: XWEB: Large Out of Office Message Causes Client to Stop Respondi"
-permalink: kb/186/Q186443/
+permalink: /kb/186/Q186443/
 ---
 
 ## Q186443: XWEB: Large Out of Office Message Causes Client to Stop Respondi

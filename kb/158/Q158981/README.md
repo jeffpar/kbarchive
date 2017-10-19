@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158981: IBM Thinkpads 760ED and 760ELD May Hang During Shutdown"
-permalink: kb/158/Q158981/
+permalink: /kb/158/Q158981/
 ---
 
 ## Q158981: IBM Thinkpads 760ED and 760ELD May Hang During Shutdown

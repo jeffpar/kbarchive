@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235753: SMS: Specifying &#92;&#92;servername Send Address May Cause Failure"
-permalink: kb/235/Q235753/
+permalink: /kb/235/Q235753/
 ---
 
 ## Q235753: SMS: Specifying &#92;&#92;servername Send Address May Cause Failure

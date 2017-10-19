@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137538: HOWTO: Disable the Resizing of an OLE Control"
-permalink: kb/137/Q137538/
+permalink: /kb/137/Q137538/
 ---
 
 ## Q137538: HOWTO: Disable the Resizing of an OLE Control

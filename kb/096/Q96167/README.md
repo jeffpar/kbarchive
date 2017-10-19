@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96167: DoubleSpace Identifies Windows 3.1 in Standard Mode as Shell"
-permalink: kb/096/Q96167/
+permalink: /kb/096/Q96167/
 ---
 
 ## Q96167: DoubleSpace Identifies Windows 3.1 in Standard Mode as Shell

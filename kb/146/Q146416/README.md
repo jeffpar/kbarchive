@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146416: PRB: Page Fault When Using Bounds Checker STD or PRO"
-permalink: kb/146/Q146416/
+permalink: /kb/146/Q146416/
 ---
 
 ## Q146416: PRB: Page Fault When Using Bounds Checker STD or PRO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137274: 25-Character Maximum for Preferred NetWare File Server"
-permalink: kb/137/Q137274/
+permalink: /kb/137/Q137274/
 ---
 
 ## Q137274: 25-Character Maximum for Preferred NetWare File Server

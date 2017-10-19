@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132248: SMS Fails To Create Jobs On Non-US SQL Server 4.21a"
-permalink: kb/132/Q132248/
+permalink: /kb/132/Q132248/
 ---
 
 ## Q132248: SMS Fails To Create Jobs On Non-US SQL Server 4.21a

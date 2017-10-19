@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193269: SMS: Remote Control to Win9x Clients Fails w/Winsock2, Using IP"
-permalink: kb/193/Q193269/
+permalink: /kb/193/Q193269/
 ---
 
 ## Q193269: SMS: Remote Control to Win9x Clients Fails w/Winsock2, Using IP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103845: PC WSPlus: Completed Tasks Are Deleted in Schedule+ Calendar"
-permalink: kb/103/Q103845/
+permalink: /kb/103/Q103845/
 ---
 
 ## Q103845: PC WSPlus: Completed Tasks Are Deleted in Schedule+ Calendar

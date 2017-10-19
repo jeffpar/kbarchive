@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305109: XADM: Exchange Server 5.5 Mailbox Manager Overview"
-permalink: kb/305/Q305109/
+permalink: /kb/305/Q305109/
 ---
 
 ## Q305109: XADM: Exchange Server 5.5 Mailbox Manager Overview

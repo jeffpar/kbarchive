@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130352: How to Remove Table from Persistent Relation with Program"
-permalink: kb/130/Q130352/
+permalink: /kb/130/Q130352/
 ---
 
 ## Q130352: How to Remove Table from Persistent Relation with Program

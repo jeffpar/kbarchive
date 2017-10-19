@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157256: DOCERR:  DEBUG and SET DEBUG Incorrect in Help"
-permalink: kb/157/Q157256/
+permalink: /kb/157/Q157256/
 ---
 
 ## Q157256: DOCERR:  DEBUG and SET DEBUG Incorrect in Help

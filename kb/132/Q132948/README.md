@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132948: HOWTO: Integrate Custom DDX /DDV in 32-bit ClassWizard Interface"
-permalink: kb/132/Q132948/
+permalink: /kb/132/Q132948/
 ---
 
 ## Q132948: HOWTO: Integrate Custom DDX /DDV in 32-bit ClassWizard Interface

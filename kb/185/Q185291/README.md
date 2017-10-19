@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185291: WD97: How Wrd97cnv.exe Determines Where to Place Files"
-permalink: kb/185/Q185291/
+permalink: /kb/185/Q185291/
 ---
 
 ## Q185291: WD97: How Wrd97cnv.exe Determines Where to Place Files

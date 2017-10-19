@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115315: Comprehensive List of WSS 2.0 User's Guide Doc Errors"
-permalink: kb/115/Q115315/
+permalink: /kb/115/Q115315/
 ---
 
 ## Q115315: Comprehensive List of WSS 2.0 User's Guide Doc Errors

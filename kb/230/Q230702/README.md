@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230702: FIX: Errors When Renaming or Deleting a Project in VSS"
-permalink: kb/230/Q230702/
+permalink: /kb/230/Q230702/
 ---
 
 ## Q230702: FIX: Errors When Renaming or Deleting a Project in VSS

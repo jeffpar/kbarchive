@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113478: README.TXT: Workgroup Add-On for MS-DOS 3.11"
-permalink: kb/113/Q113478/
+permalink: /kb/113/Q113478/
 ---
 
 ## Q113478: README.TXT: Workgroup Add-On for MS-DOS 3.11

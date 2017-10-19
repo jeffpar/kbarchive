@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218439: XADM: PerfMon Counters for Monitoring Exchange DB Sessions"
-permalink: kb/218/Q218439/
+permalink: /kb/218/Q218439/
 ---
 
 ## Q218439: XADM: PerfMon Counters for Monitoring Exchange DB Sessions

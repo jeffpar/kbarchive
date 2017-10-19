@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81537: Control Panel Shows Only 24-Point in True Type &amp; Plotter"
-permalink: kb/081/Q81537/
+permalink: /kb/081/Q81537/
 ---
 
 ## Q81537: Control Panel Shows Only 24-Point in True Type &amp; Plotter

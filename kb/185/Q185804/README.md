@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185804: SMSINST: Adding to the System Path Using SMS Installer"
-permalink: kb/185/Q185804/
+permalink: /kb/185/Q185804/
 ---
 
 ## Q185804: SMSINST: Adding to the System Path Using SMS Installer

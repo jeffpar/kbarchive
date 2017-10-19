@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259773: Incorrect Response to Local Procedure Call Causes &quot;Stop&quot; Error"
-permalink: kb/259/Q259773/
+permalink: /kb/259/Q259773/
 ---
 
 ## Q259773: Incorrect Response to Local Procedure Call Causes &quot;Stop&quot; Error

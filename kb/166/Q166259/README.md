@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166259: INFO: Visual Interdev/Visual SourceSafe Integration Discussion"
-permalink: kb/166/Q166259/
+permalink: /kb/166/Q166259/
 ---
 
 ## Q166259: INFO: Visual Interdev/Visual SourceSafe Integration Discussion

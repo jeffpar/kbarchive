@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175307: SRVINFO Causes Dr. Watson Application Error"
-permalink: kb/175/Q175307/
+permalink: /kb/175/Q175307/
 ---
 
 ## Q175307: SRVINFO Causes Dr. Watson Application Error

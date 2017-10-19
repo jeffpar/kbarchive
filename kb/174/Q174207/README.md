@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174207: XFOR: Notes Proxy Domain Name Over 31 Characters Stripped"
-permalink: kb/174/Q174207/
+permalink: /kb/174/Q174207/
 ---
 
 ## Q174207: XFOR: Notes Proxy Domain Name Over 31 Characters Stripped

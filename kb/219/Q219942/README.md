@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219942: Error Message When Attempting to Install or Run Encarta Africana"
-permalink: kb/219/Q219942/
+permalink: /kb/219/Q219942/
 ---
 
 ## Q219942: Error Message When Attempting to Install or Run Encarta Africana

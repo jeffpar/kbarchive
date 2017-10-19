@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231275: XCON: MTA in Uncontrollable State; MTA Service Can't Be Stopped"
-permalink: kb/231/Q231275/
+permalink: /kb/231/Q231275/
 ---
 
 ## Q231275: XCON: MTA in Uncontrollable State; MTA Service Can't Be Stopped

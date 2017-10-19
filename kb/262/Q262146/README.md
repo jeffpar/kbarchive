@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262146: XCON: Messages to Custom Recipients Are Undeliverable with SP1"
-permalink: kb/262/Q262146/
+permalink: /kb/262/Q262146/
 ---
 
 ## Q262146: XCON: Messages to Custom Recipients Are Undeliverable with SP1

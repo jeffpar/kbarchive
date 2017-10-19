@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171050: XADM: Err Msg: Event ID 1005; Name Service Is Unavailable"
-permalink: kb/171/Q171050/
+permalink: /kb/171/Q171050/
 ---
 
 ## Q171050: XADM: Err Msg: Event ID 1005; Name Service Is Unavailable

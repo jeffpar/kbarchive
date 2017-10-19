@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163483: SMS: OS/2 Client Trap 000d in CLI_OS2"
-permalink: kb/163/Q163483/
+permalink: /kb/163/Q163483/
 ---
 
 ## Q163483: SMS: OS/2 Client Trap 000d in CLI_OS2

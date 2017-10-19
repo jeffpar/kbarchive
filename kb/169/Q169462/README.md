@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169462: XFOR: Configuring POP3 Client for Remote Mail Configuration"
-permalink: kb/169/Q169462/
+permalink: /kb/169/Q169462/
 ---
 
 ## Q169462: XFOR: Configuring POP3 Client for Remote Mail Configuration

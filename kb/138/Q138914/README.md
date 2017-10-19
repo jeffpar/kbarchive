@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138914: FoxPro Advisor Magazine Articles July 1995"
-permalink: kb/138/Q138914/
+permalink: /kb/138/Q138914/
 ---
 
 ## Q138914: FoxPro Advisor Magazine Articles July 1995

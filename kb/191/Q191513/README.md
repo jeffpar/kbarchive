@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191513: BUG: T-SQL Debugger Not Invoked Calling Second Stored Procedure"
-permalink: kb/191/Q191513/
+permalink: /kb/191/Q191513/
 ---
 
 ## Q191513: BUG: T-SQL Debugger Not Invoked Calling Second Stored Procedure

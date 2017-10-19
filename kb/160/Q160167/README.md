@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160167: NBA Full Court: Incorrect 256 Color Error Message During Setup"
-permalink: kb/160/Q160167/
+permalink: /kb/160/Q160167/
 ---
 
 ## Q160167: NBA Full Court: Incorrect 256 Color Error Message During Setup

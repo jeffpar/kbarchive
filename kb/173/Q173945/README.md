@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173945: How To Install The Windows NT Server 4.0 Evaluation Edition"
-permalink: kb/173/Q173945/
+permalink: /kb/173/Q173945/
 ---
 
 ## Q173945: How To Install The Windows NT Server 4.0 Evaluation Edition

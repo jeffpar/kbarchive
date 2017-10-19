@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109874: FIX: Constants Out of Range Not Found by /4Yb"
-permalink: kb/109/Q109874/
+permalink: /kb/109/Q109874/
 ---
 
 ## Q109874: FIX: Constants Out of Range Not Found by /4Yb

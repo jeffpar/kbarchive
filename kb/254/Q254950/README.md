@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254950: Shortcuts and .lnk Files Do Not Work in Windows NT Workstation"
-permalink: kb/254/Q254950/
+permalink: /kb/254/Q254950/
 ---
 
 ## Q254950: Shortcuts and .lnk Files Do Not Work in Windows NT Workstation

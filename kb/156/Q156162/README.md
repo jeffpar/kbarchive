@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156162: PPT: Error Opening Unpacked Presentation In Windows 3.1"
-permalink: kb/156/Q156162/
+permalink: /kb/156/Q156162/
 ---
 
 ## Q156162: PPT: Error Opening Unpacked Presentation In Windows 3.1

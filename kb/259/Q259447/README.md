@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259447: SMS 2.0 SP2 Has Limited MUI Support for Windows 2000 Client"
-permalink: kb/259/Q259447/
+permalink: /kb/259/Q259447/
 ---
 
 ## Q259447: SMS 2.0 SP2 Has Limited MUI Support for Windows 2000 Client

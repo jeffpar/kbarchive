@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85356: FAX: Special Formats for Profile Parameters"
-permalink: kb/085/Q85356/
+permalink: /kb/085/Q85356/
 ---
 
 ## Q85356: FAX: Special Formats for Profile Parameters

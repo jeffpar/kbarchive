@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221693: FIX:C0000005 Fatal Error With This.Caption=This.Text In GotFocus"
-permalink: kb/221/Q221693/
+permalink: /kb/221/Q221693/
 ---
 
 ## Q221693: FIX:C0000005 Fatal Error With This.Caption=This.Text In GotFocus

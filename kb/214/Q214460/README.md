@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214460: DSMN - Access Violation in Swsvc.exe When Comparing Two Strings"
-permalink: kb/214/Q214460/
+permalink: /kb/214/Q214460/
 ---
 
 ## Q214460: DSMN - Access Violation in Swsvc.exe When Comparing Two Strings

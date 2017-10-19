@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85253: Radius Video Driver May Cause Incorrect Line Wrapping"
-permalink: kb/085/Q85253/
+permalink: /kb/085/Q85253/
 ---
 
 ## Q85253: Radius Video Driver May Cause Incorrect Line Wrapping

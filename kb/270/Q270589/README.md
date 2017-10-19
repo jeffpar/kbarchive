@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270589: BUG: Run-Time ErrMsg When Passing Array of Dictionary Objects"
-permalink: kb/270/Q270589/
+permalink: /kb/270/Q270589/
 ---
 
 ## Q270589: BUG: Run-Time ErrMsg When Passing Array of Dictionary Objects

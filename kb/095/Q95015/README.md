@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95015: PROFS: Err Msg: Error Downloading the File..."
-permalink: kb/095/Q95015/
+permalink: /kb/095/Q95015/
 ---
 
 ## Q95015: PROFS: Err Msg: Error Downloading the File...

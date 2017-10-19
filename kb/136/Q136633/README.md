@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136633: Reconnecting a RAS Line Without a User Logged On"
-permalink: kb/136/Q136633/
+permalink: /kb/136/Q136633/
 ---
 
 ## Q136633: Reconnecting a RAS Line Without a User Logged On

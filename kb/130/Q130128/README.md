@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130128: PRB: MOD Function w/ Negative Number May Give Different Answer"
-permalink: kb/130/Q130128/
+permalink: /kb/130/Q130128/
 ---
 
 ## Q130128: PRB: MOD Function w/ Negative Number May Give Different Answer

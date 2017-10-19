@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191924: INFO: Application Wizard Basic Architecture"
-permalink: kb/191/Q191924/
+permalink: /kb/191/Q191924/
 ---
 
 ## Q191924: INFO: Application Wizard Basic Architecture

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199237: SMS: SMS 1.2 Clients Visiting SMS 2.0 Sites"
-permalink: kb/199/Q199237/
+permalink: /kb/199/Q199237/
 ---
 
 ## Q199237: SMS: SMS 1.2 Clients Visiting SMS 2.0 Sites

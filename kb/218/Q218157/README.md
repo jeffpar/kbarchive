@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218157: Drwtsn32.exe May Fail to Handle an Abnormal Termination Event"
-permalink: kb/218/Q218157/
+permalink: /kb/218/Q218157/
 ---
 
 ## Q218157: Drwtsn32.exe May Fail to Handle an Abnormal Termination Event

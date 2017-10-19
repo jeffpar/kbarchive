@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170078: ErrMsg: The Security Information for &lt;path&gt; Is Not Standard..."
-permalink: kb/170/Q170078/
+permalink: /kb/170/Q170078/
 ---
 
 ## Q170078: ErrMsg: The Security Information for &lt;path&gt; Is Not Standard...

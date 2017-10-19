@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166531: XCLN: Mac Attachments Are Unrecognizable After Crossing IMC"
-permalink: kb/166/Q166531/
+permalink: /kb/166/Q166531/
 ---
 
 ## Q166531: XCLN: Mac Attachments Are Unrecognizable After Crossing IMC

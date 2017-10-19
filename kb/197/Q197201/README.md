@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197201: WD97: Setting Automatic Hyphenation as the Default"
-permalink: kb/197/Q197201/
+permalink: /kb/197/Q197201/
 ---
 
 ## Q197201: WD97: Setting Automatic Hyphenation as the Default

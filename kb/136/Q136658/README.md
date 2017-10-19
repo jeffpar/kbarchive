@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136658: Err Msg: The Specified Network Server Is Not Running..."
-permalink: kb/136/Q136658/
+permalink: /kb/136/Q136658/
 ---
 
 ## Q136658: Err Msg: The Specified Network Server Is Not Running...

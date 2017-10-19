@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150172: FPNW Will Not Create File Larger Than 2.14GB"
-permalink: kb/150/Q150172/
+permalink: /kb/150/Q150172/
 ---
 
 ## Q150172: FPNW Will Not Create File Larger Than 2.14GB

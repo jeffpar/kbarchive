@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167738: WD97: General Information about Floating Objects"
-permalink: kb/167/Q167738/
+permalink: /kb/167/Q167738/
 ---
 
 ## Q167738: WD97: General Information about Floating Objects

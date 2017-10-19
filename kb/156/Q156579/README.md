@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156579: PRB: ACTIVATE WINDOW DEBUG Activates Debug Output Window"
-permalink: kb/156/Q156579/
+permalink: /kb/156/Q156579/
 ---
 
 ## Q156579: PRB: ACTIVATE WINDOW DEBUG Activates Debug Output Window

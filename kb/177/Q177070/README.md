@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177070: How to Display Current Access Numbers for The Microsoft Network"
-permalink: kb/177/Q177070/
+permalink: /kb/177/Q177070/
 ---
 
 ## Q177070: How to Display Current Access Numbers for The Microsoft Network

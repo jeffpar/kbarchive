@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192912: PRB: MSDev Doesn't Close When COM Reference Count Is Zero"
-permalink: kb/192/Q192912/
+permalink: /kb/192/Q192912/
 ---
 
 ## Q192912: PRB: MSDev Doesn't Close When COM Reference Count Is Zero

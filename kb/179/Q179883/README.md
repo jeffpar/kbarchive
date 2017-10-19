@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179883: WD97: Error Saving Document in Word 6.0/95 Format"
-permalink: kb/179/Q179883/
+permalink: /kb/179/Q179883/
 ---
 
 ## Q179883: WD97: Error Saving Document in Word 6.0/95 Format

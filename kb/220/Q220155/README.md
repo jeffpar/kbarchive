@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220155: Troubleshooting NTVDM and WOW Startup Errors"
-permalink: kb/220/Q220155/
+permalink: /kb/220/Q220155/
 ---
 
 ## Q220155: Troubleshooting NTVDM and WOW Startup Errors

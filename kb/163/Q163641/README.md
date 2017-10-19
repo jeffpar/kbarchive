@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163641: PPT: Cannot Create EPS File Using Windows NT PostScript Driver"
-permalink: kb/163/Q163641/
+permalink: /kb/163/Q163641/
 ---
 
 ## Q163641: PPT: Cannot Create EPS File Using Windows NT PostScript Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198309: WD97: Find Record in Database Loses Track of the Record Number"
-permalink: kb/198/Q198309/
+permalink: /kb/198/Q198309/
 ---
 
 ## Q198309: WD97: Find Record in Database Loses Track of the Record Number

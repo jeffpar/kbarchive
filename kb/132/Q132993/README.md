@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132993: Windows 95 File System Questions and Answers"
-permalink: kb/132/Q132993/
+permalink: /kb/132/Q132993/
 ---
 
 ## Q132993: Windows 95 File System Questions and Answers

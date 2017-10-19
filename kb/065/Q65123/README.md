@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65123: Font-File Format"
-permalink: kb/065/Q65123/
+permalink: /kb/065/Q65123/
 ---
 
 ## Q65123: Font-File Format

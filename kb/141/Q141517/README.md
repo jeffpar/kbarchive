@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141517: Obtaining Better Output with the Epson Stylus Driver"
-permalink: kb/141/Q141517/
+permalink: /kb/141/Q141517/
 ---
 
 ## Q141517: Obtaining Better Output with the Epson Stylus Driver

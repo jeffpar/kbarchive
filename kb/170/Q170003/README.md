@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170003: XADM: Incoming Message Size Limit Does Not Work"
-permalink: kb/170/Q170003/
+permalink: /kb/170/Q170003/
 ---
 
 ## Q170003: XADM: Incoming Message Size Limit Does Not Work

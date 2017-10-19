@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217905: Error Message When Creating Client Setup Floppy"
-permalink: kb/217/Q217905/
+permalink: /kb/217/Q217905/
 ---
 
 ## Q217905: Error Message When Creating Client Setup Floppy

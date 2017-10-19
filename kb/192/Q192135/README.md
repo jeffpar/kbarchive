@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192135: BUG: Opening Multiple Instances of Visual Basic Causes Error"
-permalink: kb/192/Q192135/
+permalink: /kb/192/Q192135/
 ---
 
 ## Q192135: BUG: Opening Multiple Instances of Visual Basic Causes Error

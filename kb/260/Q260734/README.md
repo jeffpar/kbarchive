@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260734: StarLancer: Graphics in the Game Are Very Dark"
-permalink: kb/260/Q260734/
+permalink: /kb/260/Q260734/
 ---
 
 ## Q260734: StarLancer: Graphics in the Game Are Very Dark

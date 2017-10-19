@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196401: XADM: Mbclean Does Not Run Against Outlook Folders"
-permalink: kb/196/Q196401/
+permalink: /kb/196/Q196401/
 ---
 
 ## Q196401: XADM: Mbclean Does Not Run Against Outlook Folders

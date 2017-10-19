@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222966: HOWTO: Call a Script Method from an ActiveX Script Host"
-permalink: kb/222/Q222966/
+permalink: /kb/222/Q222966/
 ---
 
 ## Q222966: HOWTO: Call a Script Method from an ActiveX Script Host

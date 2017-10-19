@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108709: Expected Expression Error: Dynamic Array Not OK in User-Type"
-permalink: kb/108/Q108709/
+permalink: /kb/108/Q108709/
 ---
 
 ## Q108709: Expected Expression Error: Dynamic Array Not OK in User-Type

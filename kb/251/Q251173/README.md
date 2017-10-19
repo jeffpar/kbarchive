@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251173: XADM: Move Server Wizard Does Not Check For Private IS"
-permalink: kb/251/Q251173/
+permalink: /kb/251/Q251173/
 ---
 
 ## Q251173: XADM: Move Server Wizard Does Not Check For Private IS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174238: XCON: Message Size Grows When Rerouting on Same Server"
-permalink: kb/174/Q174238/
+permalink: /kb/174/Q174238/
 ---
 
 ## Q174238: XCON: Message Size Grows When Rerouting on Same Server

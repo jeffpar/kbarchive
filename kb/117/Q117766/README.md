@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117766: Playing Compressed Audio on a Audio Plus Sound Card"
-permalink: kb/117/Q117766/
+permalink: /kb/117/Q117766/
 ---
 
 ## Q117766: Playing Compressed Audio on a Audio Plus Sound Card

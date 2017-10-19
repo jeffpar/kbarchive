@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111598: BUG: Opaque Rectangle Too Small on Rotated TrueType Fonts"
-permalink: kb/111/Q111598/
+permalink: /kb/111/Q111598/
 ---
 
 ## Q111598: BUG: Opaque Rectangle Too Small on Rotated TrueType Fonts

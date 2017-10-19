@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88474: Printing in Landscape Truncates Golf Score Card"
-permalink: kb/088/Q88474/
+permalink: /kb/088/Q88474/
 ---
 
 ## Q88474: Printing in Landscape Truncates Golf Score Card

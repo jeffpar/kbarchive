@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85993: PPT: Excel Charts Embed in Black and White"
-permalink: kb/085/Q85993/
+permalink: /kb/085/Q85993/
 ---
 
 ## Q85993: PPT: Excel Charts Embed in Black and White

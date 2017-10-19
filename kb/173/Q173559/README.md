@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173559: XADM: Active User Count doesn't Contain Anonymous User Count"
-permalink: kb/173/Q173559/
+permalink: /kb/173/Q173559/
 ---
 
 ## Q173559: XADM: Active User Count doesn't Contain Anonymous User Count

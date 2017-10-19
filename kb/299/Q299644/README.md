@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299644: Address Bar Has Long Query String Upon Return from Login Server"
-permalink: kb/299/Q299644/
+permalink: /kb/299/Q299644/
 ---
 
 ## Q299644: Address Bar Has Long Query String Upon Return from Login Server

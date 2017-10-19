@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199125: XCON: Connectors Included with Microsoft Exchange Server 5.5"
-permalink: kb/199/Q199125/
+permalink: /kb/199/Q199125/
 ---
 
 ## Q199125: XCON: Connectors Included with Microsoft Exchange Server 5.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165659: 3270 Applet for Windows NT Does Not Use Ctl3d32"
-permalink: kb/165/Q165659/
+permalink: /kb/165/Q165659/
 ---
 
 ## Q165659: 3270 Applet for Windows NT Does Not Use Ctl3d32

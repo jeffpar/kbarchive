@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77819: My Computer Hangs When Using MS-DOS Shell Task Swapper"
-permalink: kb/077/Q77819/
+permalink: /kb/077/Q77819/
 ---
 
 ## Q77819: My Computer Hangs When Using MS-DOS Shell Task Swapper

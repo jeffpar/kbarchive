@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247614: XADM: Exchange Administrator Stops When Moving Mailbox"
-permalink: kb/247/Q247614/
+permalink: /kb/247/Q247614/
 ---
 
 ## Q247614: XADM: Exchange Administrator Stops When Moving Mailbox

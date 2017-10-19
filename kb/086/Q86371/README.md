@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86371: PC DOS: New Features in 3.0 MS-DOS Client"
-permalink: kb/086/Q86371/
+permalink: /kb/086/Q86371/
 ---
 
 ## Q86371: PC DOS: New Features in 3.0 MS-DOS Client

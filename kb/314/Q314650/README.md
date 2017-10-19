@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314650: FIX: Error Updating Table with Empty Date Using VFP OLEDB Provid"
-permalink: kb/314/Q314650/
+permalink: /kb/314/Q314650/
 ---
 
 ## Q314650: FIX: Error Updating Table with Empty Date Using VFP OLEDB Provid

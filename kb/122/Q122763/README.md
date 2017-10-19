@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122763: PC Win: Structure of the Address Book"
-permalink: kb/122/Q122763/
+permalink: /kb/122/Q122763/
 ---
 
 ## Q122763: PC Win: Structure of the Address Book

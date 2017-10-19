@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184944: WD97: Send Command Sends Attachment as Word 97 Document"
-permalink: kb/184/Q184944/
+permalink: /kb/184/Q184944/
 ---
 
 ## Q184944: WD97: Send Command Sends Attachment as Word 97 Document

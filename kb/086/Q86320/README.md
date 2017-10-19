@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86320: PC Win: Message Finders Closing Automatically"
-permalink: kb/086/Q86320/
+permalink: /kb/086/Q86320/
 ---
 
 ## Q86320: PC Win: Message Finders Closing Automatically

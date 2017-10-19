@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165256: WD97: Numbering Gallery Retains Custom Scheme After Exiting"
-permalink: kb/165/Q165256/
+permalink: /kb/165/Q165256/
 ---
 
 ## Q165256: WD97: Numbering Gallery Retains Custom Scheme After Exiting

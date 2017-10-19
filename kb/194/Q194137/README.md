@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194137: XFOR: How to Access Public Folders Via URL"
-permalink: kb/194/Q194137/
+permalink: /kb/194/Q194137/
 ---
 
 ## Q194137: XFOR: How to Access Public Folders Via URL

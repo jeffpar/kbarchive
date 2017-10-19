@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85600: Scando Version 2.0 Requires Real Mode Windows"
-permalink: kb/085/Q85600/
+permalink: /kb/085/Q85600/
 ---
 
 ## Q85600: Scando Version 2.0 Requires Real Mode Windows

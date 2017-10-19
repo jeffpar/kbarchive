@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173570: Troubleshooting: How to Change to 640 x 480 x 256 Colors"
-permalink: kb/173/Q173570/
+permalink: /kb/173/Q173570/
 ---
 
 ## Q173570: Troubleshooting: How to Change to 640 x 480 x 256 Colors

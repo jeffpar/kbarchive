@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241961: Terminal Server RDP Client Window Hangs While You Are Logging On"
-permalink: kb/241/Q241961/
+permalink: /kb/241/Q241961/
 ---
 
 ## Q241961: Terminal Server RDP Client Window Hangs While You Are Logging On

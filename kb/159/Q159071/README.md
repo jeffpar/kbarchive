@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159071: NTFS Does Not Prevent a File Deletion During Rename"
-permalink: kb/159/Q159071/
+permalink: /kb/159/Q159071/
 ---
 
 ## Q159071: NTFS Does Not Prevent a File Deletion During Rename

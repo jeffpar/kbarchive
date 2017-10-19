@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161776: IBM MPA/A (MCA) SDLC Adapter Not Detected on Dual-Bus Servers"
-permalink: kb/161/Q161776/
+permalink: /kb/161/Q161776/
 ---
 
 ## Q161776: IBM MPA/A (MCA) SDLC Adapter Not Detected on Dual-Bus Servers

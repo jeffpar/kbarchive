@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83110: Audio CD Stops or Skips When Common Dialog Boxes Are Activated"
-permalink: kb/083/Q83110/
+permalink: /kb/083/Q83110/
 ---
 
 ## Q83110: Audio CD Stops or Skips When Common Dialog Boxes Are Activated

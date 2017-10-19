@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90489: WinLogin 1.0 File List with Expanded Filenames/Sizes"
-permalink: kb/090/Q90489/
+permalink: /kb/090/Q90489/
 ---
 
 ## Q90489: WinLogin 1.0 File List with Expanded Filenames/Sizes

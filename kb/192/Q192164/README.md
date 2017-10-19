@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192164: Home Directories Are Created with Incorrect Permissions"
-permalink: kb/192/Q192164/
+permalink: /kb/192/Q192164/
 ---
 
 ## Q192164: Home Directories Are Created with Incorrect Permissions

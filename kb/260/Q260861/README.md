@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260861: StarLancer: Hangs After You Accept End User License Agreement"
-permalink: kb/260/Q260861/
+permalink: /kb/260/Q260861/
 ---
 
 ## Q260861: StarLancer: Hangs After You Accept End User License Agreement

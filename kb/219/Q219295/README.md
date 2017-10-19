@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219295: WINS Replication May Overwrite or Merge Static 1C Records"
-permalink: kb/219/Q219295/
+permalink: /kb/219/Q219295/
 ---
 
 ## Q219295: WINS Replication May Overwrite or Merge Static 1C Records

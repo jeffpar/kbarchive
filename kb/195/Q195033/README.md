@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195033: BUG: Assertion Failed When Opening a Second ActiveX Document"
-permalink: kb/195/Q195033/
+permalink: /kb/195/Q195033/
 ---
 
 ## Q195033: BUG: Assertion Failed When Opening a Second ActiveX Document

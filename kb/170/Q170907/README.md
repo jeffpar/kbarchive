@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170907: Err Msg: Explorer.exe - Exception: Access Violation (0xC0000005)"
-permalink: kb/170/Q170907/
+permalink: /kb/170/Q170907/
 ---
 
 ## Q170907: Err Msg: Explorer.exe - Exception: Access Violation (0xC0000005)

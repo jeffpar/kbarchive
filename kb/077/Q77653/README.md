@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77653: PRB: Bitfield Breakpoint Halts Execution on Neighboring Fields"
-permalink: kb/077/Q77653/
+permalink: /kb/077/Q77653/
 ---
 
 ## Q77653: PRB: Bitfield Breakpoint Halts Execution on Neighboring Fields

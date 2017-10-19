@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175315: Err Msg: Connection Manager Requires Some Components That Are..."
-permalink: kb/175/Q175315/
+permalink: /kb/175/Q175315/
 ---
 
 ## Q175315: Err Msg: Connection Manager Requires Some Components That Are...

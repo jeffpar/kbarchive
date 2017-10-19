@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107820: WFWG: Can't Connect to Share That Has Multiple Passwords"
-permalink: kb/107/Q107820/
+permalink: /kb/107/Q107820/
 ---
 
 ## Q107820: WFWG: Can't Connect to Share That Has Multiple Passwords

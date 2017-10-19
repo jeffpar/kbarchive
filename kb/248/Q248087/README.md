@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248087: PRB: Visual Studio Error &quot;Attempting to use invalid help file&quot;"
-permalink: kb/248/Q248087/
+permalink: /kb/248/Q248087/
 ---
 
 ## Q248087: PRB: Visual Studio Error &quot;Attempting to use invalid help file&quot;

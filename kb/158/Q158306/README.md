@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158306: FIX: &quot;LDR: Dll &#42;.dll Base 10000000 Relocated...&quot; Error"
-permalink: kb/158/Q158306/
+permalink: /kb/158/Q158306/
 ---
 
 ## Q158306: FIX: &quot;LDR: Dll &#42;.dll Base 10000000 Relocated...&quot; Error

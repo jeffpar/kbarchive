@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196263: Browse List Does Not Display All NetWare Servers"
-permalink: kb/196/Q196263/
+permalink: /kb/196/Q196263/
 ---
 
 ## Q196263: Browse List Does Not Display All NetWare Servers

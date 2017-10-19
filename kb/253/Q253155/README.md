@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253155: HOWTO: Review Visual Basic WebClasses for CSSI Vulnerability"
-permalink: kb/253/Q253155/
+permalink: /kb/253/Q253155/
 ---
 
 ## Q253155: HOWTO: Review Visual Basic WebClasses for CSSI Vulnerability

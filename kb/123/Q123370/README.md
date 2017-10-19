@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123370: PRB: Debugging: Inter-Operability with Visual C++ 2.0"
-permalink: kb/123/Q123370/
+permalink: /kb/123/Q123370/
 ---
 
 ## Q123370: PRB: Debugging: Inter-Operability with Visual C++ 2.0

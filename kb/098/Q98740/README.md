@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98740: System Hangs at &quot;Starting MS-DOS&quot; Message with DoubleSpace"
-permalink: kb/098/Q98740/
+permalink: /kb/098/Q98740/
 ---
 
 ## Q98740: System Hangs at &quot;Starting MS-DOS&quot; Message with DoubleSpace

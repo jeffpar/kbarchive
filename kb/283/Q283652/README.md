@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283652: Games: Black Screen During Movies While Audio Plays Correctly"
-permalink: kb/283/Q283652/
+permalink: /kb/283/Q283652/
 ---
 
 ## Q283652: Games: Black Screen During Movies While Audio Plays Correctly

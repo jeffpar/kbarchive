@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72206: LAN Enhanced DOS Printer Message Not Displayed"
-permalink: kb/072/Q72206/
+permalink: /kb/072/Q72206/
 ---
 
 ## Q72206: LAN Enhanced DOS Printer Message Not Displayed

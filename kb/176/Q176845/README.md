@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176845: WD97: Some Style Formats Not Displayed with Reveal Formatting"
-permalink: kb/176/Q176845/
+permalink: /kb/176/Q176845/
 ---
 
 ## Q176845: WD97: Some Style Formats Not Displayed with Reveal Formatting

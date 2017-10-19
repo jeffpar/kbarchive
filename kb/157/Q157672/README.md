@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157672: STL Sample for the basic_string::find_first_of() Functions"
-permalink: kb/157/Q157672/
+permalink: /kb/157/Q157672/
 ---
 
 ## Q157672: STL Sample for the basic_string::find_first_of() Functions

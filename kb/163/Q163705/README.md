@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163705: ACC97: Error &quot;Invalid DOS 8.3 Name&quot; Adding DB to SourceSafe"
-permalink: kb/163/Q163705/
+permalink: /kb/163/Q163705/
 ---
 
 ## Q163705: ACC97: Error &quot;Invalid DOS 8.3 Name&quot; Adding DB to SourceSafe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127846: How to Use CANDIDATE Keys"
-permalink: kb/127/Q127846/
+permalink: /kb/127/Q127846/
 ---
 
 ## Q127846: How to Use CANDIDATE Keys

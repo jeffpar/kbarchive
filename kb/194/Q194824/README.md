@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194824: Combat Flight Simulator: Movie Unavailable for Training Mission"
-permalink: kb/194/Q194824/
+permalink: /kb/194/Q194824/
 ---
 
 ## Q194824: Combat Flight Simulator: Movie Unavailable for Training Mission

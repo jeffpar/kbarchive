@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190530: FIX: ActiveX Control Events Are Not Fired in ATL Dialog"
-permalink: kb/190/Q190530/
+permalink: /kb/190/Q190530/
 ---
 
 ## Q190530: FIX: ActiveX Control Events Are Not Fired in ATL Dialog

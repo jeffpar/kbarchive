@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110174: WD97: Preserving Text When Re-protecting a Form Without Macros"
-permalink: kb/110/Q110174/
+permalink: /kb/110/Q110174/
 ---
 
 ## Q110174: WD97: Preserving Text When Re-protecting a Form Without Macros

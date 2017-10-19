@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135751: PRB: &quot;Record is out of Range&quot; w/ Form from One-to-Many Wizard"
-permalink: kb/135/Q135751/
+permalink: /kb/135/Q135751/
 ---
 
 ## Q135751: PRB: &quot;Record is out of Range&quot; w/ Form from One-to-Many Wizard

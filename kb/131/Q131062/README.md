@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131062: Network Connections Made From Logon Script May Fail"
-permalink: kb/131/Q131062/
+permalink: /kb/131/Q131062/
 ---
 
 ## Q131062: Network Connections Made From Logon Script May Fail

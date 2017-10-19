@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139214: How to Store Numeric Values that Come from a Combo Box"
-permalink: kb/139/Q139214/
+permalink: /kb/139/Q139214/
 ---
 
 ## Q139214: How to Store Numeric Values that Come from a Combo Box

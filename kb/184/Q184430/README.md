@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184430: WD97: Displaying Modeless Dialog Box in Binder Activates Word"
-permalink: kb/184/Q184430/
+permalink: /kb/184/Q184430/
 ---
 
 ## Q184430: WD97: Displaying Modeless Dialog Box in Binder Activates Word

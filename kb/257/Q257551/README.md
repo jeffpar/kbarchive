@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257551: GSNW/CSNW NetWare Banner Page missing Username"
-permalink: kb/257/Q257551/
+permalink: /kb/257/Q257551/
 ---
 
 ## Q257551: GSNW/CSNW NetWare Banner Page missing Username

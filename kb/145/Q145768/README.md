@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145768: Cannot View Member Properties in a Newsgroup"
-permalink: kb/145/Q145768/
+permalink: /kb/145/Q145768/
 ---
 
 ## Q145768: Cannot View Member Properties in a Newsgroup

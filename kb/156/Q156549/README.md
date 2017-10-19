@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156549: FIX: Click Event of a List Box Fires Twice"
-permalink: kb/156/Q156549/
+permalink: /kb/156/Q156549/
 ---
 
 ## Q156549: FIX: Click Event of a List Box Fires Twice

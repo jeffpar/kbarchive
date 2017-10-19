@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113413: Windows 3.11 Upgrade Removes User Information"
-permalink: kb/113/Q113413/
+permalink: /kb/113/Q113413/
 ---
 
 ## Q113413: Windows 3.11 Upgrade Removes User Information

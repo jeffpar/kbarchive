@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162800: Genmenu5.exe Updated VFP 5.0 for Windows GENMENU Program"
-permalink: kb/162/Q162800/
+permalink: /kb/162/Q162800/
 ---
 
 ## Q162800: Genmenu5.exe Updated VFP 5.0 for Windows GENMENU Program

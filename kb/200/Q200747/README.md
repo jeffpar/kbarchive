@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200747: SMS: Wuser Causes Invalid Page Fault in Coexist.dll"
-permalink: kb/200/Q200747/
+permalink: /kb/200/Q200747/
 ---
 
 ## Q200747: SMS: Wuser Causes Invalid Page Fault in Coexist.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229707: Dynamic HTML in Action, 2nd Edition Comments and Corrections"
-permalink: kb/229/Q229707/
+permalink: /kb/229/Q229707/
 ---
 
 ## Q229707: Dynamic HTML in Action, 2nd Edition Comments and Corrections

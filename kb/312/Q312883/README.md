@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312883: You Cannot Change the &quot;Cache ISAPI Applications&quot; Property"
-permalink: kb/312/Q312883/
+permalink: /kb/312/Q312883/
 ---
 
 ## Q312883: You Cannot Change the &quot;Cache ISAPI Applications&quot; Property

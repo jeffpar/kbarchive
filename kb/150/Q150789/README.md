@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150789: FIX: DFX_Bool Calls Default() with AFX_RFX_LONGBINARY"
-permalink: kb/150/Q150789/
+permalink: /kb/150/Q150789/
 ---
 
 ## Q150789: FIX: DFX_Bool Calls Default() with AFX_RFX_LONGBINARY

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263563: XCON: Domain Defined Attributes Value Is Not Displayed in NDR"
-permalink: kb/263/Q263563/
+permalink: /kb/263/Q263563/
 ---
 
 ## Q263563: XCON: Domain Defined Attributes Value Is Not Displayed in NDR

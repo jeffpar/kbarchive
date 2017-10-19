@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125663: Setting Print Spooler Priority"
-permalink: kb/125/Q125663/
+permalink: /kb/125/Q125663/
 ---
 
 ## Q125663: Setting Print Spooler Priority

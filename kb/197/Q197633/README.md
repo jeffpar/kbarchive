@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197633: Encarta: How to Transfer or Restore Integrated Yearbook Files"
-permalink: kb/197/Q197633/
+permalink: /kb/197/Q197633/
 ---
 
 ## Q197633: Encarta: How to Transfer or Restore Integrated Yearbook Files

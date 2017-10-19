@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216760: IIS: FTP Users Will Still Be Prompted for Credentials Even From"
-permalink: kb/216/Q216760/
+permalink: /kb/216/Q216760/
 ---
 
 ## Q216760: IIS: FTP Users Will Still Be Prompted for Credentials Even From

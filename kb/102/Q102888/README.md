@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102888: Saving from Word or Excel Resets NTFS Security Permissions"
-permalink: kb/102/Q102888/
+permalink: /kb/102/Q102888/
 ---
 
 ## Q102888: Saving from Word or Excel Resets NTFS Security Permissions

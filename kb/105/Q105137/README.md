@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105137: Explanation of Exporting Functions in Windows"
-permalink: kb/105/Q105137/
+permalink: /kb/105/Q105137/
 ---
 
 ## Q105137: Explanation of Exporting Functions in Windows

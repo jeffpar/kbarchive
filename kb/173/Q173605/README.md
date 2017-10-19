@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173605: Multimedia Err Msg: Unable to Read Drive CD-ROM"
-permalink: kb/173/Q173605/
+permalink: /kb/173/Q173605/
 ---
 
 ## Q173605: Multimedia Err Msg: Unable to Read Drive CD-ROM

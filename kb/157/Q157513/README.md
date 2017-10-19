@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157513: Adaptec EZ-SCSI 4 Power Management Does Not Work"
-permalink: kb/157/Q157513/
+permalink: /kb/157/Q157513/
 ---
 
 ## Q157513: Adaptec EZ-SCSI 4 Power Management Does Not Work

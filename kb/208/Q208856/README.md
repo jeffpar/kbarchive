@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208856: BUG: BLOCKS32 Sample Fails to Show Cursors when Linked to MFC"
-permalink: kb/208/Q208856/
+permalink: /kb/208/Q208856/
 ---
 
 ## Q208856: BUG: BLOCKS32 Sample Fails to Show Cursors when Linked to MFC

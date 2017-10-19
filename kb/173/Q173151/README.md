@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173151: MDG: MS Mail to NGW Conversion Utility Written by Novell"
-permalink: kb/173/Q173151/
+permalink: /kb/173/Q173151/
 ---
 
 ## Q173151: MDG: MS Mail to NGW Conversion Utility Written by Novell

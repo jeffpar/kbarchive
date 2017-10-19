@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128960: Disk Defragmenter Err Msg: Error Defragmenting Drive C"
-permalink: kb/128/Q128960/
+permalink: /kb/128/Q128960/
 ---
 
 ## Q128960: Disk Defragmenter Err Msg: Error Defragmenting Drive C

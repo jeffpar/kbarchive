@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159500: Using DLC and IPX Protocols May Corrupt Incoming Packets"
-permalink: kb/159/Q159500/
+permalink: /kb/159/Q159500/
 ---
 
 ## Q159500: Using DLC and IPX Protocols May Corrupt Incoming Packets

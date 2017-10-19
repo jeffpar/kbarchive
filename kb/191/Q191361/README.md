@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191361: SrvFindMfcb Fails to Obtain Lock If the File Name Is NULL"
-permalink: kb/191/Q191361/
+permalink: /kb/191/Q191361/
 ---
 
 ## Q191361: SrvFindMfcb Fails to Obtain Lock If the File Name Is NULL

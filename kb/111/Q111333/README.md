@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111333: Errors on Token Ring Network with Banyan Vines 5.52 and WFWG"
-permalink: kb/111/Q111333/
+permalink: /kb/111/Q111333/
 ---
 
 ## Q111333: Errors on Token Ring Network with Banyan Vines 5.52 and WFWG

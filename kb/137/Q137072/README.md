@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137072: PC Win: Err Msg: Unable to Load Specified Library"
-permalink: kb/137/Q137072/
+permalink: /kb/137/Q137072/
 ---
 
 ## Q137072: PC Win: Err Msg: Unable to Load Specified Library

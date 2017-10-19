@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172220: Query Screen Fails to Redraw Field Names Correctly"
-permalink: kb/172/Q172220/
+permalink: /kb/172/Q172220/
 ---
 
 ## Q172220: Query Screen Fails to Redraw Field Names Correctly

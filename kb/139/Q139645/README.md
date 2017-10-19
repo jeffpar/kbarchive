@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139645: XCLN: Err Msg: Dial-Up Networking Connection not Found"
-permalink: kb/139/Q139645/
+permalink: /kb/139/Q139645/
 ---
 
 ## Q139645: XCLN: Err Msg: Dial-Up Networking Connection not Found

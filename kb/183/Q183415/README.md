@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183415: XFOR: NNTP JIS Message Converted to SJIS, Displayed Incorrectly"
-permalink: kb/183/Q183415/
+permalink: /kb/183/Q183415/
 ---
 
 ## Q183415: XFOR: NNTP JIS Message Converted to SJIS, Displayed Incorrectly

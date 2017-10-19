@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305786: Differences Between the LogoTag and LogoTag2 Methods"
-permalink: kb/305/Q305786/
+permalink: /kb/305/Q305786/
 ---
 
 ## Q305786: Differences Between the LogoTag and LogoTag2 Methods

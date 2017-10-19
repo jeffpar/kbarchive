@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136029: Err Msg: &quot;The Logon Server Could Not Be Found&quot; with RAS"
-permalink: kb/136/Q136029/
+permalink: /kb/136/Q136029/
 ---
 
 ## Q136029: Err Msg: &quot;The Logon Server Could Not Be Found&quot; with RAS

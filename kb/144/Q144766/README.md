@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q144766: WD97: Table Not Aligned in Text Column"
-permalink: kb/144/Q144766/
+permalink: /kb/144/Q144766/
 ---
 
 ## Q144766: WD97: Table Not Aligned in Text Column

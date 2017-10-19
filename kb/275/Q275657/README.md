@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275657: IIS 5.0 Fix for Cross-Site Scripting Issues"
-permalink: kb/275/Q275657/
+permalink: /kb/275/Q275657/
 ---
 
 ## Q275657: IIS 5.0 Fix for Cross-Site Scripting Issues

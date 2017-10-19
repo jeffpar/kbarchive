@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147820: Slow Performance Running VB 3.0 Applications on Windows NT"
-permalink: kb/147/Q147820/
+permalink: /kb/147/Q147820/
 ---
 
 ## Q147820: Slow Performance Running VB 3.0 Applications on Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194812: All Users See All Other Users' Auto-Created Printers"
-permalink: kb/194/Q194812/
+permalink: /kb/194/Q194812/
 ---
 
 ## Q194812: All Users See All Other Users' Auto-Created Printers

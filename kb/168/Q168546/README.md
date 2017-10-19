@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168546: Access Violation May Occur After Upgrading to 3.0 SP1"
-permalink: kb/168/Q168546/
+permalink: /kb/168/Q168546/
 ---
 
 ## Q168546: Access Violation May Occur After Upgrading to 3.0 SP1

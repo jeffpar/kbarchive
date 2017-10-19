@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125925: WFWG Client Cannot Connect to Windows 95 Server"
-permalink: kb/125/Q125925/
+permalink: /kb/125/Q125925/
 ---
 
 ## Q125925: WFWG Client Cannot Connect to Windows 95 Server

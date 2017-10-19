@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176280: TN3270 Name Resolution Requires Fully Qualified Domain Names"
-permalink: kb/176/Q176280/
+permalink: /kb/176/Q176280/
 ---
 
 ## Q176280: TN3270 Name Resolution Requires Fully Qualified Domain Names

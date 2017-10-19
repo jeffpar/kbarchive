@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120184: FIX: Error Message with SAVE SCREEN Command"
-permalink: kb/120/Q120184/
+permalink: /kb/120/Q120184/
 ---
 
 ## Q120184: FIX: Error Message with SAVE SCREEN Command

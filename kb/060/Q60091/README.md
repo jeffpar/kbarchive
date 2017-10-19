@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60091: Using 720K or 1.44 MB 3.5-Inch Disk Drive with MS-DOS"
-permalink: kb/060/Q60091/
+permalink: /kb/060/Q60091/
 ---
 
 ## Q60091: Using 720K or 1.44 MB 3.5-Inch Disk Drive with MS-DOS

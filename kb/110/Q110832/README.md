@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110832: Changes to Windows NT Driver Library: Display Drivers"
-permalink: kb/110/Q110832/
+permalink: /kb/110/Q110832/
 ---
 
 ## Q110832: Changes to Windows NT Driver Library: Display Drivers

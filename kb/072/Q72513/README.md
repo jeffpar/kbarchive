@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72513: Cursor Disappears in an MS-DOS Window"
-permalink: kb/072/Q72513/
+permalink: /kb/072/Q72513/
 ---
 
 ## Q72513: Cursor Disappears in an MS-DOS Window

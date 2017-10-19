@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124554: DriveSpace: DRVSPACX.VXD Is Removed, DRVSPACE.SYS /Move Is Not"
-permalink: kb/124/Q124554/
+permalink: /kb/124/Q124554/
 ---
 
 ## Q124554: DriveSpace: DRVSPACX.VXD Is Removed, DRVSPACE.SYS /Move Is Not

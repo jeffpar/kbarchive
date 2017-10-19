@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176561: PRB: Passing Timestamp Parameter Using User Connection Designer"
-permalink: kb/176/Q176561/
+permalink: /kb/176/Q176561/
 ---
 
 ## Q176561: PRB: Passing Timestamp Parameter Using User Connection Designer

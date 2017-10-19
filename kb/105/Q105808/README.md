@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105808: FIX: Overflow in VB version 3.0 ICONWRKS Sample Program"
-permalink: kb/105/Q105808/
+permalink: /kb/105/Q105808/
 ---
 
 ## Q105808: FIX: Overflow in VB version 3.0 ICONWRKS Sample Program

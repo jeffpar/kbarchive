@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143028: Encarta Notemarks: Err Msg or Problems Saving Notemark"
-permalink: kb/143/Q143028/
+permalink: /kb/143/Q143028/
 ---
 
 ## Q143028: Encarta Notemarks: Err Msg or Problems Saving Notemark

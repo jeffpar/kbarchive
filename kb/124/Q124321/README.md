@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124321: BUG: SQLGetData Returns SQL_SUCCESS on a Binary Column"
-permalink: kb/124/Q124321/
+permalink: /kb/124/Q124321/
 ---
 
 ## Q124321: BUG: SQLGetData Returns SQL_SUCCESS on a Binary Column

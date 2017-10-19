@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114414: Writer: ErrMsg: Invalid Print Data. Aborting Print Job"
-permalink: kb/114/Q114414/
+permalink: /kb/114/Q114414/
 ---
 
 ## Q114414: Writer: ErrMsg: Invalid Print Data. Aborting Print Job

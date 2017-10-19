@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146584: WD97: Deleted Text Reappears with Tracked Changes On"
-permalink: kb/146/Q146584/
+permalink: /kb/146/Q146584/
 ---
 
 ## Q146584: WD97: Deleted Text Reappears with Tracked Changes On

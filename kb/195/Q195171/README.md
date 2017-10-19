@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195171: XADM: Invalid Fetch Command Causes Information Store to Stop"
-permalink: kb/195/Q195171/
+permalink: /kb/195/Q195171/
 ---
 
 ## Q195171: XADM: Invalid Fetch Command Causes Information Store to Stop

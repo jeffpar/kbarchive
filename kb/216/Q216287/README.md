@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216287: XFOR: IMAP4 Extractor Does Not Migrate Filed Messages"
-permalink: kb/216/Q216287/
+permalink: /kb/216/Q216287/
 ---
 
 ## Q216287: XFOR: IMAP4 Extractor Does Not Migrate Filed Messages

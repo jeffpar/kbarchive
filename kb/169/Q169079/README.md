@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169079: FP97: Error Message Connecting to FrontPage Editor"
-permalink: kb/169/Q169079/
+permalink: /kb/169/Q169079/
 ---
 
 ## Q169079: FP97: Error Message Connecting to FrontPage Editor

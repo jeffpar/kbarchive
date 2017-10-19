@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174635: FIX: _variant_t::operator IUnknown&#42;() Fails to AddRef Interface"
-permalink: kb/174/Q174635/
+permalink: /kb/174/Q174635/
 ---
 
 ## Q174635: FIX: _variant_t::operator IUnknown&#42;() Fails to AddRef Interface

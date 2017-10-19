@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q83436: Windows 3.1 Resource Kit SYSTEM.INI [386ENH] Section M-Z"
-permalink: kb/083/Q83436/
+title: "Q83436: Windows 3.1 Resource Kit SYSTEM.INI &#91;386ENH&#93; Section M-Z"
+permalink: /kb/083/Q83436/
 ---
 
-## Q83436: Windows 3.1 Resource Kit SYSTEM.INI [386ENH] Section M-Z
+## Q83436: Windows 3.1 Resource Kit SYSTEM.INI &#91;386ENH&#93; Section M-Z
 
 	Article: Q83436
 	Product(s): Microsoft Windows 3.x Retail Product

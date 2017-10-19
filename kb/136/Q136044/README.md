@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136044: How to Make ImagEdit Create 16X16 Icons"
-permalink: kb/136/Q136044/
+permalink: /kb/136/Q136044/
 ---
 
 ## Q136044: How to Make ImagEdit Create 16X16 Icons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198370: WD97: Find/Replace with Wildcard Finds All Punctuation"
-permalink: kb/198/Q198370/
+permalink: /kb/198/Q198370/
 ---
 
 ## Q198370: WD97: Find/Replace with Wildcard Finds All Punctuation

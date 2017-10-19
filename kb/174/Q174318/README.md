@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174318: WD97: Wrong Characters Viewing Multilingual Web Page as UTF-8"
-permalink: kb/174/Q174318/
+permalink: /kb/174/Q174318/
 ---
 
 ## Q174318: WD97: Wrong Characters Viewing Multilingual Web Page as UTF-8

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98013: PC WRmt: Unsendable Messages Counted Incorrectly"
-permalink: kb/098/Q98013/
+permalink: /kb/098/Q98013/
 ---
 
 ## Q98013: PC WRmt: Unsendable Messages Counted Incorrectly

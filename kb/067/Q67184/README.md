@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67184: Square Root (sqrt) in Calculator's Scientific Mode"
-permalink: kb/067/Q67184/
+permalink: /kb/067/Q67184/
 ---
 
 ## Q67184: Square Root (sqrt) in Calculator's Scientific Mode

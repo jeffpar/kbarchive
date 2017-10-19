@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70916: Screen Garbage on Tandon Laptop 386, VGA, QBasic Mode 13"
-permalink: kb/070/Q70916/
+permalink: /kb/070/Q70916/
 ---
 
 ## Q70916: Screen Garbage on Tandon Laptop 386, VGA, QBasic Mode 13

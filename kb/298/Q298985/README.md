@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298985: AUTOMAP: &quot;Unable to Get Directions&quot; Err Msg Creating Route"
-permalink: kb/298/Q298985/
+permalink: /kb/298/Q298985/
 ---
 
 ## Q298985: AUTOMAP: &quot;Unable to Get Directions&quot; Err Msg Creating Route

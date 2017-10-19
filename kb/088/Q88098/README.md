@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88098: Windows Err Msg: &quot;Offending Command&quot; on Microtek Printer"
-permalink: kb/088/Q88098/
+permalink: /kb/088/Q88098/
 ---
 
 ## Q88098: Windows Err Msg: &quot;Offending Command&quot; on Microtek Printer

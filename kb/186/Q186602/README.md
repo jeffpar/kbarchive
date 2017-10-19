@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186602: Terminal Server's Three Levels of Security"
-permalink: kb/186/Q186602/
+permalink: /kb/186/Q186602/
 ---
 
 ## Q186602: Terminal Server's Three Levels of Security

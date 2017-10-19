@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179571: MS Internet Information Server Training Comments &amp; Corrections"
-permalink: kb/179/Q179571/
+permalink: /kb/179/Q179571/
 ---
 
 ## Q179571: MS Internet Information Server Training Comments &amp; Corrections

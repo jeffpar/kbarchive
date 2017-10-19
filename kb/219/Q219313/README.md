@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219313: Hyperterminal: Microsoft BBS profile still carries the 206 area"
-permalink: kb/219/Q219313/
+permalink: /kb/219/Q219313/
 ---
 
 ## Q219313: Hyperterminal: Microsoft BBS profile still carries the 206 area

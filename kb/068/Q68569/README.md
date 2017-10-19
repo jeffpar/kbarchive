@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68569: Sample Code Uses PatBlt to Drag a Frame Rectangle"
-permalink: kb/068/Q68569/
+permalink: /kb/068/Q68569/
 ---
 
 ## Q68569: Sample Code Uses PatBlt to Drag a Frame Rectangle

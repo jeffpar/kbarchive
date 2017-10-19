@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111946: X400: Slow Message Transfer"
-permalink: kb/111/Q111946/
+permalink: /kb/111/Q111946/
 ---
 
 ## Q111946: X400: Slow Message Transfer

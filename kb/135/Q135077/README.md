@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135077: WD97: How to Create a Document Shortcut on Desktop"
-permalink: kb/135/Q135077/
+permalink: /kb/135/Q135077/
 ---
 
 ## Q135077: WD97: How to Create a Document Shortcut on Desktop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238589: Domain Sizing and Capacity Planning White Paper Available"
-permalink: kb/238/Q238589/
+permalink: /kb/238/Q238589/
 ---
 
 ## Q238589: Domain Sizing and Capacity Planning White Paper Available

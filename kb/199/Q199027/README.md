@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199027: EVG99: Default Favorite Name Contains Unexpected Characters"
-permalink: kb/199/Q199027/
+permalink: /kb/199/Q199027/
 ---
 
 ## Q199027: EVG99: Default Favorite Name Contains Unexpected Characters

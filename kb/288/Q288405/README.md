@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288405: How to Debug Index Server"
-permalink: kb/288/Q288405/
+permalink: /kb/288/Q288405/
 ---
 
 ## Q288405: How to Debug Index Server

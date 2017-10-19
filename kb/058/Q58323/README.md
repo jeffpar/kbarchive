@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58323: PPT: Setting Default Attributes for Slide Objects"
-permalink: kb/058/Q58323/
+permalink: /kb/058/Q58323/
 ---
 
 ## Q58323: PPT: Setting Default Attributes for Slide Objects

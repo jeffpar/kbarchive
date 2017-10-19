@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86488: MIDI Sound Scrambled When Played Through Media Player"
-permalink: kb/086/Q86488/
+permalink: /kb/086/Q86488/
 ---
 
 ## Q86488: MIDI Sound Scrambled When Played Through Media Player

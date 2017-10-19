@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134246: How to Hide the Application Control Box"
-permalink: kb/134/Q134246/
+permalink: /kb/134/Q134246/
 ---
 
 ## Q134246: How to Hide the Application Control Box

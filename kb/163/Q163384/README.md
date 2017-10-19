@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163384: NBA: Patches with Updated Rosters Available on Web"
-permalink: kb/163/Q163384/
+permalink: /kb/163/Q163384/
 ---
 
 ## Q163384: NBA: Patches with Updated Rosters Available on Web

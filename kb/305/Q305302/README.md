@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305302: ENC2002: Changes to Dictionary, Thesaurus, and QuickShelf"
-permalink: kb/305/Q305302/
+permalink: /kb/305/Q305302/
 ---
 
 ## Q305302: ENC2002: Changes to Dictionary, Thesaurus, and QuickShelf

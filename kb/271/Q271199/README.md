@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271199: XADM: Netscape IMAP Clients Can't Deter. Attachment Content Type"
-permalink: kb/271/Q271199/
+permalink: /kb/271/Q271199/
 ---
 
 ## Q271199: XADM: Netscape IMAP Clients Can't Deter. Attachment Content Type

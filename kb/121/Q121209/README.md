@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121209: MIDIIO Sample Demonstrates MIDI Input and Output"
-permalink: kb/121/Q121209/
+permalink: /kb/121/Q121209/
 ---
 
 ## Q121209: MIDIIO Sample Demonstrates MIDI Input and Output

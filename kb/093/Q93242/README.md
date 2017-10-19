@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93242: PC Win: Backup MMF Allows Composing But Not Sending"
-permalink: kb/093/Q93242/
+permalink: /kb/093/Q93242/
 ---
 
 ## Q93242: PC Win: Backup MMF Allows Composing But Not Sending

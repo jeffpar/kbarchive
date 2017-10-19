@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75491: Performing a Transparent Sweep Within Paintbrush"
-permalink: kb/075/Q75491/
+permalink: /kb/075/Q75491/
 ---
 
 ## Q75491: Performing a Transparent Sweep Within Paintbrush

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100373: BootSafe Warning with DoubleSpace: Partition / Boot Sector..."
-permalink: kb/100/Q100373/
+permalink: /kb/100/Q100373/
 ---
 
 ## Q100373: BootSafe Warning with DoubleSpace: Partition / Boot Sector...

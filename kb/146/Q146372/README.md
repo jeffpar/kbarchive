@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146372: XCLN: Cannot Delete a Network Connection After Inserting File"
-permalink: kb/146/Q146372/
+permalink: /kb/146/Q146372/
 ---
 
 ## Q146372: XCLN: Cannot Delete a Network Connection After Inserting File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266130: SMS: Component Versions in Microsoft Systems Management Server 2"
-permalink: kb/266/Q266130/
+permalink: /kb/266/Q266130/
 ---
 
 ## Q266130: SMS: Component Versions in Microsoft Systems Management Server 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242044: PDC Cannot Validate Account on Member Server or Workstation"
-permalink: kb/242/Q242044/
+permalink: /kb/242/Q242044/
 ---
 
 ## Q242044: PDC Cannot Validate Account on Member Server or Workstation

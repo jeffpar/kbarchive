@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178250: FS95: Error Message: Invalid Page Fault in Module Msvcrt40.dll"
-permalink: kb/178/Q178250/
+permalink: /kb/178/Q178250/
 ---
 
 ## Q178250: FS95: Error Message: Invalid Page Fault in Module Msvcrt40.dll

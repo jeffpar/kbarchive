@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166767: PRB: GetControlUnknown() Returns NULL in COleControl"
-permalink: kb/166/Q166767/
+permalink: /kb/166/Q166767/
 ---
 
 ## Q166767: PRB: GetControlUnknown() Returns NULL in COleControl

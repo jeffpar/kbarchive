@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93286: Harvard Graphics GP Faults Above Standard VGA Resolutions"
-permalink: kb/093/Q93286/
+permalink: /kb/093/Q93286/
 ---
 
 ## Q93286: Harvard Graphics GP Faults Above Standard VGA Resolutions

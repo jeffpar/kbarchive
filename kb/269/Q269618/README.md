@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269618: BUG: GPF May Occur When ComboBox Control Set on Band of CoolBar"
-permalink: kb/269/Q269618/
+permalink: /kb/269/Q269618/
 ---
 
 ## Q269618: BUG: GPF May Occur When ComboBox Control Set on Band of CoolBar

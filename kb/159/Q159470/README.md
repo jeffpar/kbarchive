@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159470: FIX: SQLDescribeCol &amp; SQLColAttributes Give Wrong Nullability"
-permalink: kb/159/Q159470/
+permalink: /kb/159/Q159470/
 ---
 
 ## Q159470: FIX: SQLDescribeCol &amp; SQLColAttributes Give Wrong Nullability

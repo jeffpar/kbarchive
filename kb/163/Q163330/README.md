@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163330: XCLN: Using Open Transport 1.1.2 and MacPPP for the Mac Client"
-permalink: kb/163/Q163330/
+permalink: /kb/163/Q163330/
 ---
 
 ## Q163330: XCLN: Using Open Transport 1.1.2 and MacPPP for the Mac Client

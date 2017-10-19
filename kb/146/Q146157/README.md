@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146157: XFOR: Should Have Exclusive Access to Port 25"
-permalink: kb/146/Q146157/
+permalink: /kb/146/Q146157/
 ---
 
 ## Q146157: XFOR: Should Have Exclusive Access to Port 25

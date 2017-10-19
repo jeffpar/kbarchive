@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111382: Writer/Artist 1: No Sounds with Reveal Sound Card"
-permalink: kb/111/Q111382/
+permalink: /kb/111/Q111382/
 ---
 
 ## Q111382: Writer/Artist 1: No Sounds with Reveal Sound Card

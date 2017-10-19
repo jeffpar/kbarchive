@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149181: FIX: Removing Subproject Causes Page Fault"
-permalink: kb/149/Q149181/
+permalink: /kb/149/Q149181/
 ---
 
 ## Q149181: FIX: Removing Subproject Causes Page Fault

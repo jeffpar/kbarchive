@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225065: PRB: Cannot Manipulate Columns of MS DataGrid in Visual C++ at D"
-permalink: kb/225/Q225065/
+permalink: /kb/225/Q225065/
 ---
 
 ## Q225065: PRB: Cannot Manipulate Columns of MS DataGrid in Visual C++ at D

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247405: PRB: Incorrect SESSION_INFO_XX Pulled in when Compiling _MBCS"
-permalink: kb/247/Q247405/
+permalink: /kb/247/Q247405/
 ---
 
 ## Q247405: PRB: Incorrect SESSION_INFO_XX Pulled in when Compiling _MBCS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180756: PRB: Alignment Property of TextBox Always Aligns to the Left"
-permalink: kb/180/Q180756/
+permalink: /kb/180/Q180756/
 ---
 
 ## Q180756: PRB: Alignment Property of TextBox Always Aligns to the Left

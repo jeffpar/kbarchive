@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139602: System Agent Tasks Halted by ScanDisk Results Message"
-permalink: kb/139/Q139602/
+permalink: /kb/139/Q139602/
 ---
 
 ## Q139602: System Agent Tasks Halted by ScanDisk Results Message

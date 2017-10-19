@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185886: DOC: Unbndgrd Sample App Updates Wrong Row"
-permalink: kb/185/Q185886/
+permalink: /kb/185/Q185886/
 ---
 
 ## Q185886: DOC: Unbndgrd Sample App Updates Wrong Row

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256070: Deciding Whether to Upgrade from Windows 95/98 to Windows 2000"
-permalink: kb/256/Q256070/
+permalink: /kb/256/Q256070/
 ---
 
 ## Q256070: Deciding Whether to Upgrade from Windows 95/98 to Windows 2000

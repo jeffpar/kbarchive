@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95419: VFW: Information About TRUEVISION Bravado 16 Capture Board"
-permalink: kb/095/Q95419/
+permalink: /kb/095/Q95419/
 ---
 
 ## Q95419: VFW: Information About TRUEVISION Bravado 16 Capture Board

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249292: XML In Action Comments and Corrections"
-permalink: kb/249/Q249292/
+permalink: /kb/249/Q249292/
 ---
 
 ## Q249292: XML In Action Comments and Corrections

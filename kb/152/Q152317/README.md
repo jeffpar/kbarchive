@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152317: FIX: Setup Could Not Open &#92;MSDEV&#92;REDIST&#92; QFEUPD.EXE"
-permalink: kb/152/Q152317/
+permalink: /kb/152/Q152317/
 ---
 
 ## Q152317: FIX: Setup Could Not Open &#92;MSDEV&#92;REDIST&#92; QFEUPD.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107171: INFO: Nesting Scalable Metafiles"
-permalink: kb/107/Q107171/
+permalink: /kb/107/Q107171/
 ---
 
 ## Q107171: INFO: Nesting Scalable Metafiles

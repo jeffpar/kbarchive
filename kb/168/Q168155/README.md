@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168155: FIX: Crash When Resizing Column of Split DBGrid"
-permalink: kb/168/Q168155/
+permalink: /kb/168/Q168155/
 ---
 
 ## Q168155: FIX: Crash When Resizing Column of Split DBGrid

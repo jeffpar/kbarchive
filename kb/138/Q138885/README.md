@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138885: Magic School Bus: Slow Performance During Videos, Transitions"
-permalink: kb/138/Q138885/
+permalink: /kb/138/Q138885/
 ---
 
 ## Q138885: Magic School Bus: Slow Performance During Videos, Transitions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262223: Delprof Does Not Delete Profiles When Run by Schedule Service"
-permalink: kb/262/Q262223/
+permalink: /kb/262/Q262223/
 ---
 
 ## Q262223: Delprof Does Not Delete Profiles When Run by Schedule Service

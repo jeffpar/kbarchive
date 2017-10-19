@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162788: RDISK Error: &quot;One Or More Configuration Files Were Not Found&quot;"
-permalink: kb/162/Q162788/
+permalink: /kb/162/Q162788/
 ---
 
 ## Q162788: RDISK Error: &quot;One Or More Configuration Files Were Not Found&quot;

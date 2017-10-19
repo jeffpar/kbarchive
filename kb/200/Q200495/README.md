@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200495: FIX: Cannot Create bad_typeid Object with /MD"
-permalink: kb/200/Q200495/
+permalink: /kb/200/Q200495/
 ---
 
 ## Q200495: FIX: Cannot Create bad_typeid Object with /MD

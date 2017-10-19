@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102663: NCB and SESS Reversed in Installation/Configuaration Guides"
-permalink: kb/102/Q102663/
+permalink: /kb/102/Q102663/
 ---
 
 ## Q102663: NCB and SESS Reversed in Installation/Configuaration Guides

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150959: Preventing Repeated APPC Session Activation Failures Event 18"
-permalink: kb/150/Q150959/
+permalink: /kb/150/Q150959/
 ---
 
 ## Q150959: Preventing Repeated APPC Session Activation Failures Event 18

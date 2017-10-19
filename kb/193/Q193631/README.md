@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193631: FrontPage Stops Responding When Sending a File Greater Than 1 MB"
-permalink: kb/193/Q193631/
+permalink: /kb/193/Q193631/
 ---
 
 ## Q193631: FrontPage Stops Responding When Sending a File Greater Than 1 MB

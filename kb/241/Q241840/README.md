@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241840: Improper Shutdown Occurrence Is Reported in Event Viewer"
-permalink: kb/241/Q241840/
+permalink: /kb/241/Q241840/
 ---
 
 ## Q241840: Improper Shutdown Occurrence Is Reported in Event Viewer

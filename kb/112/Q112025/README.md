@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112025: Updated VSHARE.386 for Windows/Windows for Workgroups"
-permalink: kb/112/Q112025/
+permalink: /kb/112/Q112025/
 ---
 
 ## Q112025: Updated VSHARE.386 for Windows/Windows for Workgroups

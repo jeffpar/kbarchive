@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84566: Panasonic KX-P1624 Has Top and Bottom Margin Shift"
-permalink: kb/084/Q84566/
+permalink: /kb/084/Q84566/
 ---
 
 ## Q84566: Panasonic KX-P1624 Has Top and Bottom Margin Shift

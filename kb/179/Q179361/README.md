@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179361: WD97: Toolbar Button Color Lost Converting Word 95 Toolbar"
-permalink: kb/179/Q179361/
+permalink: /kb/179/Q179361/
 ---
 
 ## Q179361: WD97: Toolbar Button Color Lost Converting Word 95 Toolbar

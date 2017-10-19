@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146922: WD97: Selecting Multiple File Names Gives Run-time Error 5174"
-permalink: kb/146/Q146922/
+permalink: /kb/146/Q146922/
 ---
 
 ## Q146922: WD97: Selecting Multiple File Names Gives Run-time Error 5174

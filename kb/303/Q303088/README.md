@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303088: STREETS: How to Avoid Using the Run CD"
-permalink: kb/303/Q303088/
+permalink: /kb/303/Q303088/
 ---
 
 ## Q303088: STREETS: How to Avoid Using the Run CD

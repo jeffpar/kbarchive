@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173773: HOWTO: Move a Form that Has No Title Bar (32-Bit)"
-permalink: kb/173/Q173773/
+permalink: /kb/173/Q173773/
 ---
 
 ## Q173773: HOWTO: Move a Form that Has No Title Bar (32-Bit)

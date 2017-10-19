@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173343: XFOR: Slow Processing of Internet Messages with MIME Bodyparts"
-permalink: kb/173/Q173343/
+permalink: /kb/173/Q173343/
 ---
 
 ## Q173343: XFOR: Slow Processing of Internet Messages with MIME Bodyparts

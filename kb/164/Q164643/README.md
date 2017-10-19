@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164643: 3270 Print Session May Stop Responding in Spooling Status"
-permalink: kb/164/Q164643/
+permalink: /kb/164/Q164643/
 ---
 
 ## Q164643: 3270 Print Session May Stop Responding in Spooling Status

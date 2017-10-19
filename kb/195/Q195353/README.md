@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195353: FILE: VBUSC.EXE Provides Licensing for Discontinued Controls"
-permalink: kb/195/Q195353/
+permalink: /kb/195/Q195353/
 ---
 
 ## Q195353: FILE: VBUSC.EXE Provides Licensing for Discontinued Controls

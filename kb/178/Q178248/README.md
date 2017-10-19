@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178248: Access Violation in SNAPRINT.EXE When Link Outage Occurs"
-permalink: kb/178/Q178248/
+permalink: /kb/178/Q178248/
 ---
 
 ## Q178248: Access Violation in SNAPRINT.EXE When Link Outage Occurs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233429: Business Planner: Cannot Use IntelliMouse AutoScroll Feature"
-permalink: kb/233/Q233429/
+permalink: /kb/233/Q233429/
 ---
 
 ## Q233429: Business Planner: Cannot Use IntelliMouse AutoScroll Feature

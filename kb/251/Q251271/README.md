@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251271: XCLN: Cannot Bcc Recipients Using Inbox Assistant"
-permalink: kb/251/Q251271/
+permalink: /kb/251/Q251271/
 ---
 
 ## Q251271: XCLN: Cannot Bcc Recipients Using Inbox Assistant

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124543: Resource Conflict in Event Viewer with Diamond Viper Video Card"
-permalink: kb/124/Q124543/
+permalink: /kb/124/Q124543/
 ---
 
 ## Q124543: Resource Conflict in Event Viewer with Diamond Viper Video Card

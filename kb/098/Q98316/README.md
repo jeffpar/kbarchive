@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98316: Carmen San Diego Game Interrupted After Digitized Sound Played"
-permalink: kb/098/Q98316/
+permalink: /kb/098/Q98316/
 ---
 
 ## Q98316: Carmen San Diego Game Interrupted After Digitized Sound Played

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188806: &quot;::&#36;DATA&quot; Data Stream Name of a File May Return Source"
-permalink: kb/188/Q188806/
+permalink: /kb/188/Q188806/
 ---
 
 ## Q188806: &quot;::&#36;DATA&quot; Data Stream Name of a File May Return Source

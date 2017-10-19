@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156067: FIX: Setting Tooltip Text in OnToolHitTest Causes Assertion"
-permalink: kb/156/Q156067/
+permalink: /kb/156/Q156067/
 ---
 
 ## Q156067: FIX: Setting Tooltip Text in OnToolHitTest Causes Assertion

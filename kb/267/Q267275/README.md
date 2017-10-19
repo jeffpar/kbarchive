@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267275: SMS: Multiple-Line Comments in Collections Are Not Replicated"
-permalink: kb/267/Q267275/
+permalink: /kb/267/Q267275/
 ---
 
 ## Q267275: SMS: Multiple-Line Comments in Collections Are Not Replicated

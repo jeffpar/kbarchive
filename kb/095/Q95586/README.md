@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95586: PRB: Unable to Find Unknown &lt;Array&gt;"
-permalink: kb/095/Q95586/
+permalink: /kb/095/Q95586/
 ---
 
 ## Q95586: PRB: Unable to Find Unknown &lt;Array&gt;

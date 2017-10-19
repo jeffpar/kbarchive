@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83090: BUG: LIB Corrupts Import Library Extended Dictionary"
-permalink: kb/083/Q83090/
+permalink: /kb/083/Q83090/
 ---
 
 ## Q83090: BUG: LIB Corrupts Import Library Extended Dictionary

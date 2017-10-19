@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165091: Password Uniqueness May Not Account for Case Sensitivity"
-permalink: kb/165/Q165091/
+permalink: /kb/165/Q165091/
 ---
 
 ## Q165091: Password Uniqueness May Not Account for Case Sensitivity

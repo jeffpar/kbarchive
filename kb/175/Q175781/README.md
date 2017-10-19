@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175781: XCLN: How To Create A Personal Distribution List"
-permalink: kb/175/Q175781/
+permalink: /kb/175/Q175781/
 ---
 
 ## Q175781: XCLN: How To Create A Personal Distribution List

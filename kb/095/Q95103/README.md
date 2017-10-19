@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95103: QBasic Supports Only COM1 and COM2"
-permalink: kb/095/Q95103/
+permalink: /kb/095/Q95103/
 ---
 
 ## Q95103: QBasic Supports Only COM1 and COM2

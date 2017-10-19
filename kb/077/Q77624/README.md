@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77624: MS-DOS Shell Fails to Start"
-permalink: kb/077/Q77624/
+permalink: /kb/077/Q77624/
 ---
 
 ## Q77624: MS-DOS Shell Fails to Start

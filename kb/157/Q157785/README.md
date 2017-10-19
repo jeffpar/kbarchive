@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157785: Msbatch.inf Parameters: Installing MSNDS"
-permalink: kb/157/Q157785/
+permalink: /kb/157/Q157785/
 ---
 
 ## Q157785: Msbatch.inf Parameters: Installing MSNDS

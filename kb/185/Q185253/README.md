@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185253: Cryptographic Service Provider Not Working After Service Pack 3"
-permalink: kb/185/Q185253/
+permalink: /kb/185/Q185253/
 ---
 
 ## Q185253: Cryptographic Service Provider Not Working After Service Pack 3

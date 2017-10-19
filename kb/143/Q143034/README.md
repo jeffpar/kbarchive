@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143034: How To Use GetRows to Pass Recordset Data Back from OLE Server"
-permalink: kb/143/Q143034/
+permalink: /kb/143/Q143034/
 ---
 
 ## Q143034: How To Use GetRows to Pass Recordset Data Back from OLE Server

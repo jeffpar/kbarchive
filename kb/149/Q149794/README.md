@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149794: STOP Msg: &quot;0x0000001E&quot; Debugging a Visual C++ Application"
-permalink: kb/149/Q149794/
+permalink: /kb/149/Q149794/
 ---
 
 ## Q149794: STOP Msg: &quot;0x0000001E&quot; Debugging a Visual C++ Application

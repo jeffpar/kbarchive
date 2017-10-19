@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152192: Err Msg: Setup Error 258. Your Setup Files May Be Damaged..."
-permalink: kb/152/Q152192/
+permalink: /kb/152/Q152192/
 ---
 
 ## Q152192: Err Msg: Setup Error 258. Your Setup Files May Be Damaged...

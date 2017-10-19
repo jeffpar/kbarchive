@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147801: PPT7: Differences Between PowerPoint versions 7.0a and 7.0b"
-permalink: kb/147/Q147801/
+permalink: /kb/147/Q147801/
 ---
 
 ## Q147801: PPT7: Differences Between PowerPoint versions 7.0a and 7.0b

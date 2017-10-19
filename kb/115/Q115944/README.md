@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115944: Comprehensive List of Default Main FoxPro Directories"
-permalink: kb/115/Q115944/
+permalink: /kb/115/Q115944/
 ---
 
 ## Q115944: Comprehensive List of Default Main FoxPro Directories

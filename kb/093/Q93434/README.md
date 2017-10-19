@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93434: MemMaker Copies HIMEM.SYS and EMM386.EXE to C:&#92;DOS"
-permalink: kb/093/Q93434/
+permalink: /kb/093/Q93434/
 ---
 
 ## Q93434: MemMaker Copies HIMEM.SYS and EMM386.EXE to C:&#92;DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107375: WFWG 3.11: Hardware Compatibility List - Network Cards"
-permalink: kb/107/Q107375/
+permalink: /kb/107/Q107375/
 ---
 
 ## Q107375: WFWG 3.11: Hardware Compatibility List - Network Cards

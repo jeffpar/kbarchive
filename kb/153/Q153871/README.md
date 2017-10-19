@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153871: FIX: How to Install When Setup Fails on Novell"
-permalink: kb/153/Q153871/
+permalink: /kb/153/Q153871/
 ---
 
 ## Q153871: FIX: How to Install When Setup Fails on Novell

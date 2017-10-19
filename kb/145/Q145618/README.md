@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145618: FIX: Visual Basic 4.0 Setup on Compressed Drive Failure"
-permalink: kb/145/Q145618/
+permalink: /kb/145/Q145618/
 ---
 
 ## Q145618: FIX: Visual Basic 4.0 Setup on Compressed Drive Failure

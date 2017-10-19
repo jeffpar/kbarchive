@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152123: Using Iomega Parallel Port Zip Drives with Windows NT"
-permalink: kb/152/Q152123/
+permalink: /kb/152/Q152123/
 ---
 
 ## Q152123: Using Iomega Parallel Port Zip Drives with Windows NT

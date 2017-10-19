@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164356: Mac Encarta 97: Computer Does Not Wake Up From Sleep Mode"
-permalink: kb/164/Q164356/
+permalink: /kb/164/Q164356/
 ---
 
 ## Q164356: Mac Encarta 97: Computer Does Not Wake Up From Sleep Mode

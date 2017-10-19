@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306450: Can't Connect to FTP Site Anonymously When FTP Service Alone"
-permalink: kb/306/Q306450/
+permalink: /kb/306/Q306450/
 ---
 
 ## Q306450: Can't Connect to FTP Site Anonymously When FTP Service Alone

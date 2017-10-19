@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258251: Allegiance: Pointing Device Does Not Function Properly"
-permalink: kb/258/Q258251/
+permalink: /kb/258/Q258251/
 ---
 
 ## Q258251: Allegiance: Pointing Device Does Not Function Properly

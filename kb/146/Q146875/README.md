@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146875: PRB: Setup Wizard Fails on Files with no Name"
-permalink: kb/146/Q146875/
+permalink: /kb/146/Q146875/
 ---
 
 ## Q146875: PRB: Setup Wizard Fails on Files with no Name

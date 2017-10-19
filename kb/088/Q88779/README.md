@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88779: SMTP: Examples of Typical SMTP Addresses"
-permalink: kb/088/Q88779/
+permalink: /kb/088/Q88779/
 ---
 
 ## Q88779: SMTP: Examples of Typical SMTP Addresses

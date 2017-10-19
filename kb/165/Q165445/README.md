@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165445: XCON: How to Configure TP4 Protocol over Routers"
-permalink: kb/165/Q165445/
+permalink: /kb/165/Q165445/
 ---
 
 ## Q165445: XCON: How to Configure TP4 Protocol over Routers

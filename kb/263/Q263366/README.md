@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263366: SMS: Performing a Site Reset or Modification Displays Warning"
-permalink: kb/263/Q263366/
+permalink: /kb/263/Q263366/
 ---
 
 ## Q263366: SMS: Performing a Site Reset or Modification Displays Warning

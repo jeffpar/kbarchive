@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181714: Err Msg: The Initialization Values for MSDN Archive Edition..."
-permalink: kb/181/Q181714/
+permalink: /kb/181/Q181714/
 ---
 
 ## Q181714: Err Msg: The Initialization Values for MSDN Archive Edition...

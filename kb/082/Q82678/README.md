@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82678: Advanced Power Management (APM) Support"
-permalink: kb/082/Q82678/
+permalink: /kb/082/Q82678/
 ---
 
 ## Q82678: Advanced Power Management (APM) Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194362: Encarta 99: No Sound in Home Screen, Animations, Interactivities"
-permalink: kb/194/Q194362/
+permalink: /kb/194/Q194362/
 ---
 
 ## Q194362: Encarta 99: No Sound in Home Screen, Animations, Interactivities

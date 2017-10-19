@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81680: Windows 3.1 Setup Requires Spaces Between Parameters"
-permalink: kb/081/Q81680/
+permalink: /kb/081/Q81680/
 ---
 
 ## Q81680: Windows 3.1 Setup Requires Spaces Between Parameters

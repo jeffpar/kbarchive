@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192330: HOWTO: Using the ProjectHook Class to Create a Generic Project"
-permalink: kb/192/Q192330/
+permalink: /kb/192/Q192330/
 ---
 
 ## Q192330: HOWTO: Using the ProjectHook Class to Create a Generic Project

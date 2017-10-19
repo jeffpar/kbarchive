@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166334: OpenGL Access Violation on Windows NT Version 4.0"
-permalink: kb/166/Q166334/
+permalink: /kb/166/Q166334/
 ---
 
 ## Q166334: OpenGL Access Violation on Windows NT Version 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76205: MS-DOS Shell Does Not Have to Read Files at Startup"
-permalink: kb/076/Q76205/
+permalink: /kb/076/Q76205/
 ---
 
 ## Q76205: MS-DOS Shell Does Not Have to Read Files at Startup

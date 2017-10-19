@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106367: WinPopup Message Incorrectly States Message Was Sent"
-permalink: kb/106/Q106367/
+permalink: /kb/106/Q106367/
 ---
 
 ## Q106367: WinPopup Message Incorrectly States Message Was Sent

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155007: Active LUA LUs Counted as 3270 LUs in SNA Server"
-permalink: kb/155/Q155007/
+permalink: /kb/155/Q155007/
 ---
 
 ## Q155007: Active LUA LUs Counted as 3270 LUs in SNA Server

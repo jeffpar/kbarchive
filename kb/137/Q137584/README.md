@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137584: CalComp Digitizer Fails on Windows NT 3.51"
-permalink: kb/137/Q137584/
+permalink: /kb/137/Q137584/
 ---
 
 ## Q137584: CalComp Digitizer Fails on Windows NT 3.51

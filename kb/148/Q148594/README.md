@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148594: &quot;NameNumericTail=0&quot; Value Causes Problems for Some Programs"
-permalink: kb/148/Q148594/
+permalink: /kb/148/Q148594/
 ---
 
 ## Q148594: &quot;NameNumericTail=0&quot; Value Causes Problems for Some Programs

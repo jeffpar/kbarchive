@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243316: RAS with Multiple-Port Digi Adapter Does Not Answer Calls"
-permalink: kb/243/Q243316/
+permalink: /kb/243/Q243316/
 ---
 
 ## Q243316: RAS with Multiple-Port Digi Adapter Does Not Answer Calls

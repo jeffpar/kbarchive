@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152922: XGEN: SMTP Addresses Don't Extract from MAC Mail to Exchange PAB"
-permalink: kb/152/Q152922/
+permalink: /kb/152/Q152922/
 ---
 
 ## Q152922: XGEN: SMTP Addresses Don't Extract from MAC Mail to Exchange PAB

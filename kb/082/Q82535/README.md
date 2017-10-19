@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82535: Mismatch Between ATM and PostScript on Times"
-permalink: kb/082/Q82535/
+permalink: /kb/082/Q82535/
 ---
 
 ## Q82535: Mismatch Between ATM and PostScript on Times

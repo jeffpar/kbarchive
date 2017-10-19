@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186857: Encarta: Error Message When You Attempt to View Collage"
-permalink: kb/186/Q186857/
+permalink: /kb/186/Q186857/
 ---
 
 ## Q186857: Encarta: Error Message When You Attempt to View Collage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167900: Error Attempting to Save System Policy File"
-permalink: kb/167/Q167900/
+permalink: /kb/167/Q167900/
 ---
 
 ## Q167900: Error Attempting to Save System Policy File

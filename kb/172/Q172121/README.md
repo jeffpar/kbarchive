@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172121: BUG: Microsoft Grid Control Cannot Load a Metafile"
-permalink: kb/172/Q172121/
+permalink: /kb/172/Q172121/
 ---
 
 ## Q172121: BUG: Microsoft Grid Control Cannot Load a Metafile

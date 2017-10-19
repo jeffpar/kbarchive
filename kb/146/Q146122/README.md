@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146122: PC NTMMTA: Error 2140 When You Try to Start Instance"
-permalink: kb/146/Q146122/
+permalink: /kb/146/Q146122/
 ---
 
 ## Q146122: PC NTMMTA: Error 2140 When You Try to Start Instance

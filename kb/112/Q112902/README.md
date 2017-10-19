@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112902: PC Gen: Err Msg: Notice 34 Could Not Access Log...File"
-permalink: kb/112/Q112902/
+permalink: /kb/112/Q112902/
 ---
 
 ## Q112902: PC Gen: Err Msg: Notice 34 Could Not Access Log...File

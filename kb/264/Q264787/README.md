@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264787: WD97: Blank Line Is Not Suppressed in a Conditional Mail Merge"
-permalink: kb/264/Q264787/
+permalink: /kb/264/Q264787/
 ---
 
 ## Q264787: WD97: Blank Line Is Not Suppressed in a Conditional Mail Merge

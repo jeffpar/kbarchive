@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102367: BUG: CXX0030 Error Using Enumerated Type in Class"
-permalink: kb/102/Q102367/
+permalink: /kb/102/Q102367/
 ---
 
 ## Q102367: BUG: CXX0030 Error Using Enumerated Type in Class

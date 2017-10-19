@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129077: How to Use the NODATA and NOREQUERY Clauses of USE"
-permalink: kb/129/Q129077/
+permalink: /kb/129/Q129077/
 ---
 
 ## Q129077: How to Use the NODATA and NOREQUERY Clauses of USE

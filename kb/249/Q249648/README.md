@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249648: Asheron's Call Error Message: Windows Cannot Find Program.exe"
-permalink: kb/249/Q249648/
+permalink: /kb/249/Q249648/
 ---
 
 ## Q249648: Asheron's Call Error Message: Windows Cannot Find Program.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174461: SMS: Remote Control Permissions Window Is Not Displayed"
-permalink: kb/174/Q174461/
+permalink: /kb/174/Q174461/
 ---
 
 ## Q174461: SMS: Remote Control Permissions Window Is Not Displayed

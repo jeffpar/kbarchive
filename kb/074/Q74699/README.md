@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74699: PRB: &quot;Export Not Defined&quot; Linker Message"
-permalink: kb/074/Q74699/
+permalink: /kb/074/Q74699/
 ---
 
 ## Q74699: PRB: &quot;Export Not Defined&quot; Linker Message

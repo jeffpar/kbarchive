@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299743: TS Err Msg: &quot;Setup encountered a disk error while writing ...&quot;"
-permalink: kb/299/Q299743/
+permalink: /kb/299/Q299743/
 ---
 
 ## Q299743: TS Err Msg: &quot;Setup encountered a disk error while writing ...&quot;

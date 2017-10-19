@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187555: WINS Incorrect Version ID Assigned During Scavenging"
-permalink: kb/187/Q187555/
+permalink: /kb/187/Q187555/
 ---
 
 ## Q187555: WINS Incorrect Version ID Assigned During Scavenging

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242309: CreateFile() Does Not Function Correctly with Certain Flags"
-permalink: kb/242/Q242309/
+permalink: /kb/242/Q242309/
 ---
 
 ## Q242309: CreateFile() Does Not Function Correctly with Certain Flags

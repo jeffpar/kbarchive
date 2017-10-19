@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194844: Combat FS: Chirping or Clicking Sounds During Game Play"
-permalink: kb/194/Q194844/
+permalink: /kb/194/Q194844/
 ---
 
 ## Q194844: Combat FS: Chirping or Clicking Sounds During Game Play

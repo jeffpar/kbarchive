@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247660: Error When Saving Routing &amp; Remote Access Service Configuration"
-permalink: kb/247/Q247660/
+permalink: /kb/247/Q247660/
 ---
 
 ## Q247660: Error When Saving Routing &amp; Remote Access Service Configuration

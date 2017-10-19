@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237527: Encarta Dictionary 2000: Pointing Device Behaves Unexpectedly"
-permalink: kb/237/Q237527/
+permalink: /kb/237/Q237527/
 ---
 
 ## Q237527: Encarta Dictionary 2000: Pointing Device Behaves Unexpectedly

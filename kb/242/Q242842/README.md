@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242842: FS2000: Speed Brakes Remain in the Arm Position When You Land"
-permalink: kb/242/Q242842/
+permalink: /kb/242/Q242842/
 ---
 
 ## Q242842: FS2000: Speed Brakes Remain in the Arm Position When You Land

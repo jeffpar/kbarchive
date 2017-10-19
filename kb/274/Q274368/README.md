@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274368: After Parental Consent For Hotmail Child Account, Prompted Again"
-permalink: kb/274/Q274368/
+permalink: /kb/274/Q274368/
 ---
 
 ## Q274368: After Parental Consent For Hotmail Child Account, Prompted Again

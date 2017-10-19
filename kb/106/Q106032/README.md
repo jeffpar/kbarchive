@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106032: System Requirements for FoxPro Extensions"
-permalink: kb/106/Q106032/
+permalink: /kb/106/Q106032/
 ---
 
 ## Q106032: System Requirements for FoxPro Extensions

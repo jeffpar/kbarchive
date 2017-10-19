@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239063: XWEB: Information Store Logs 1219 Events When Browsing PFs"
-permalink: kb/239/Q239063/
+permalink: /kb/239/Q239063/
 ---
 
 ## Q239063: XWEB: Information Store Logs 1219 Events When Browsing PFs

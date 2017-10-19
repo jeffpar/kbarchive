@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173388: SMS: PCM Does Not Run Mandatory Jobs in Date/Time Order"
-permalink: kb/173/Q173388/
+permalink: /kb/173/Q173388/
 ---
 
 ## Q173388: SMS: PCM Does Not Run Mandatory Jobs in Date/Time Order

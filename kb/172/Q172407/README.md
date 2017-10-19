@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172407: Administrative Wizards Show Computer Accounts As Users"
-permalink: kb/172/Q172407/
+permalink: /kb/172/Q172407/
 ---
 
 ## Q172407: Administrative Wizards Show Computer Accounts As Users

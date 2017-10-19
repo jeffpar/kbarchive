@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250334: PRB: MSDN Library Unable to Display Help from Within VS"
-permalink: kb/250/Q250334/
+permalink: /kb/250/Q250334/
 ---
 
 ## Q250334: PRB: MSDN Library Unable to Display Help from Within VS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94666: Difficult to Use F5 &amp; F8 Keys on Data General Computers"
-permalink: kb/094/Q94666/
+permalink: /kb/094/Q94666/
 ---
 
 ## Q94666: Difficult to Use F5 &amp; F8 Keys on Data General Computers

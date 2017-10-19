@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85900: Attributes Step is Incorrect in Windows/MS-DOS 5.0 Guide"
-permalink: kb/085/Q85900/
+permalink: /kb/085/Q85900/
 ---
 
 ## Q85900: Attributes Step is Incorrect in Windows/MS-DOS 5.0 Guide

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178658: XADM: KCC Uses Increasingly Large Amounts of Memory"
-permalink: kb/178/Q178658/
+permalink: /kb/178/Q178658/
 ---
 
 ## Q178658: XADM: KCC Uses Increasingly Large Amounts of Memory

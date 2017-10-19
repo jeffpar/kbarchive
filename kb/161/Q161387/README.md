@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161387: Golf 3.0: Installing Links LS Courses"
-permalink: kb/161/Q161387/
+permalink: /kb/161/Q161387/
 ---
 
 ## Q161387: Golf 3.0: Installing Links LS Courses

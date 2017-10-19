@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214687: Official Microsoft NetMeeting Book Comments &amp; Corrections"
-permalink: kb/214/Q214687/
+permalink: /kb/214/Q214687/
 ---
 
 ## Q214687: Official Microsoft NetMeeting Book Comments &amp; Corrections

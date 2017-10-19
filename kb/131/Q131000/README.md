@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131000: FIX: Application Error If /Og &amp; Virtual Operator Call in Loop"
-permalink: kb/131/Q131000/
+permalink: /kb/131/Q131000/
 ---
 
 ## Q131000: FIX: Application Error If /Og &amp; Virtual Operator Call in Loop

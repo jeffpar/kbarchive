@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173187: XWEB: Outlook Web Access OOF Screen Varies from Outlook"
-permalink: kb/173/Q173187/
+permalink: /kb/173/Q173187/
 ---
 
 ## Q173187: XWEB: Outlook Web Access OOF Screen Varies from Outlook

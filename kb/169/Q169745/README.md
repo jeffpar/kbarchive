@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169745: Golf 2.0: PlayerNet Patch Available, Includes Modem Play"
-permalink: kb/169/Q169745/
+permalink: /kb/169/Q169745/
 ---
 
 ## Q169745: Golf 2.0: PlayerNet Patch Available, Includes Modem Play

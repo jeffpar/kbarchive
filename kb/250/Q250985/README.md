@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250985: PRB: Missing Product Key in the &quot;Unattend&quot; Answer File"
-permalink: kb/250/Q250985/
+permalink: /kb/250/Q250985/
 ---
 
 ## Q250985: PRB: Missing Product Key in the &quot;Unattend&quot; Answer File

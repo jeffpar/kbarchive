@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159721: XADM: How to Add Templates for Different Language Clients"
-permalink: kb/159/Q159721/
+permalink: /kb/159/Q159721/
 ---
 
 ## Q159721: XADM: How to Add Templates for Different Language Clients

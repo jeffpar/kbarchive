@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150225: BUG: Carriage Return Embedded in Text When MultiLine Toggled"
-permalink: kb/150/Q150225/
+permalink: /kb/150/Q150225/
 ---
 
 ## Q150225: BUG: Carriage Return Embedded in Text When MultiLine Toggled

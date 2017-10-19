@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265682: Appleshare Clients Have Maximum Viewable Volume Limit of 256"
-permalink: kb/265/Q265682/
+permalink: /kb/265/Q265682/
 ---
 
 ## Q265682: Appleshare Clients Have Maximum Viewable Volume Limit of 256

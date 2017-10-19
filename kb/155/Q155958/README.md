@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155958: PPT7: Saving Version 7.0 File in 4.0 Format Changes Slide Setup"
-permalink: kb/155/Q155958/
+permalink: /kb/155/Q155958/
 ---
 
 ## Q155958: PPT7: Saving Version 7.0 File in 4.0 Format Changes Slide Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275567: MS00-091: Multiple NetBT Sessions May Hang Local Host"
-permalink: kb/275/Q275567/
+permalink: /kb/275/Q275567/
 ---
 
 ## Q275567: MS00-091: Multiple NetBT Sessions May Hang Local Host

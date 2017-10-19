@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145865: FIX: Cannot Receive WM_HELP for a Subclassed Control"
-permalink: kb/145/Q145865/
+permalink: /kb/145/Q145865/
 ---
 
 ## Q145865: FIX: Cannot Receive WM_HELP for a Subclassed Control

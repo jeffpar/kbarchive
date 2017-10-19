@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165503: Description of the File System Troubleshooting Options"
-permalink: kb/165/Q165503/
+permalink: /kb/165/Q165503/
 ---
 
 ## Q165503: Description of the File System Troubleshooting Options

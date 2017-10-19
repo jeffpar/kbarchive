@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69659: Using PRINT SCREEN with Graphics and HP Printers"
-permalink: kb/069/Q69659/
+permalink: /kb/069/Q69659/
 ---
 
 ## Q69659: Using PRINT SCREEN with Graphics and HP Printers

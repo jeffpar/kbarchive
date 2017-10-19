@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247494: BUG: Transform() Results Formatted Incorrectly"
-permalink: kb/247/Q247494/
+permalink: /kb/247/Q247494/
 ---
 
 ## Q247494: BUG: Transform() Results Formatted Incorrectly

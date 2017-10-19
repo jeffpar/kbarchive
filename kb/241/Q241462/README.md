@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241462: XCON: Non-Delivery Report May Contain the Wrong User Information"
-permalink: kb/241/Q241462/
+permalink: /kb/241/Q241462/
 ---
 
 ## Q241462: XCON: Non-Delivery Report May Contain the Wrong User Information

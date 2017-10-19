@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94650: SoundBits: Media Browser Set Sounds Button Fails"
-permalink: kb/094/Q94650/
+permalink: /kb/094/Q94650/
 ---
 
 ## Q94650: SoundBits: Media Browser Set Sounds Button Fails

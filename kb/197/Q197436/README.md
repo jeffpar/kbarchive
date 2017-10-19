@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197436: Remote Link Service Does Not Answer Incoming Calls"
-permalink: kb/197/Q197436/
+permalink: /kb/197/Q197436/
 ---
 
 ## Q197436: Remote Link Service Does Not Answer Incoming Calls

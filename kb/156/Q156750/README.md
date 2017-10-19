@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156750: AddGroupNameResponse Frame from WinNT May Cause WFWG to Hang"
-permalink: kb/156/Q156750/
+permalink: /kb/156/Q156750/
 ---
 
 ## Q156750: AddGroupNameResponse Frame from WinNT May Cause WFWG to Hang

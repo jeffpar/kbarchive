@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166838: System Policies No Longer Applied Using 3rd-Party Client Service"
-permalink: kb/166/Q166838/
+permalink: /kb/166/Q166838/
 ---
 
 ## Q166838: System Policies No Longer Applied Using 3rd-Party Client Service

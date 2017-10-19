@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170943: WD97: Clicking a Suggestion in Spelling And Grammar Causes IPF"
-permalink: kb/170/Q170943/
+permalink: /kb/170/Q170943/
 ---
 
 ## Q170943: WD97: Clicking a Suggestion in Spelling And Grammar Causes IPF

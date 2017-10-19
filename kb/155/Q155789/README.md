@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155789: XADM: Removing Replication Connector Removes Replicated Info."
-permalink: kb/155/Q155789/
+permalink: /kb/155/Q155789/
 ---
 
 ## Q155789: XADM: Removing Replication Connector Removes Replicated Info.

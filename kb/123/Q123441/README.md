@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123441: Windows 95 DriveSpace Err Msg: Windows Cannot Perform..."
-permalink: kb/123/Q123441/
+permalink: /kb/123/Q123441/
 ---
 
 ## Q123441: Windows 95 DriveSpace Err Msg: Windows Cannot Perform...

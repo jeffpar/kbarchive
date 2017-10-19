@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151431: XFOR: MSMI Stops Without Error"
-permalink: kb/151/Q151431/
+permalink: /kb/151/Q151431/
 ---
 
 ## Q151431: XFOR: MSMI Stops Without Error

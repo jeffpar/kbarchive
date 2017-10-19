@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95790: WFWG Err Msg: &quot;Mail Could Not Connect to Your Mail Server&quot;"
-permalink: kb/095/Q95790/
+permalink: /kb/095/Q95790/
 ---
 
 ## Q95790: WFWG Err Msg: &quot;Mail Could Not Connect to Your Mail Server&quot;

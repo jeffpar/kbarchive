@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149912: Network Connection to Macintosh Alias Could Not Be Found"
-permalink: kb/149/Q149912/
+permalink: /kb/149/Q149912/
 ---
 
 ## Q149912: Network Connection to Macintosh Alias Could Not Be Found

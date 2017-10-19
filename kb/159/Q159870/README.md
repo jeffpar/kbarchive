@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159870: Questions and Answers About Setting Up MSN 2.0"
-permalink: kb/159/Q159870/
+permalink: /kb/159/Q159870/
 ---
 
 ## Q159870: Questions and Answers About Setting Up MSN 2.0

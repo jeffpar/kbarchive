@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258708: Allegiance: Cannot Connect to Server from Windows 98 SE Computer"
-permalink: kb/258/Q258708/
+permalink: /kb/258/Q258708/
 ---
 
 ## Q258708: Allegiance: Cannot Connect to Server from Windows 98 SE Computer

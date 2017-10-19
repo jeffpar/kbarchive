@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235958: Print Service May Cause Incomplete Printout with LU Type 3"
-permalink: kb/235/Q235958/
+permalink: /kb/235/Q235958/
 ---
 
 ## Q235958: Print Service May Cause Incomplete Printout with LU Type 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142420: DOC: Setdflag.c Sample for _CrtSetDbgFlag Missing Tilde (~)"
-permalink: kb/142/Q142420/
+permalink: /kb/142/Q142420/
 ---
 
 ## Q142420: DOC: Setdflag.c Sample for _CrtSetDbgFlag Missing Tilde (~)

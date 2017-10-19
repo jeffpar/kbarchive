@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151789: XADM: Error -1018 (JET_errReadVerifyFailure)"
-permalink: kb/151/Q151789/
+permalink: /kb/151/Q151789/
 ---
 
 ## Q151789: XADM: Error -1018 (JET_errReadVerifyFailure)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305465: Microsoft Excel Version 2002 Inside Out Comments and Corrections"
-permalink: kb/305/Q305465/
+permalink: /kb/305/Q305465/
 ---
 
 ## Q305465: Microsoft Excel Version 2002 Inside Out Comments and Corrections

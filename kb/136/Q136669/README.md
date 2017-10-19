@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136669: BUG: Grid Activation Causes Form to Move If Form Title Hidden"
-permalink: kb/136/Q136669/
+permalink: /kb/136/Q136669/
 ---
 
 ## Q136669: BUG: Grid Activation Causes Form to Move If Form Title Hidden

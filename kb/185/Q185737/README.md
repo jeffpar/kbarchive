@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185737: TN3270 Server May Cause Dr. Watson Error to Occur"
-permalink: kb/185/Q185737/
+permalink: /kb/185/Q185737/
 ---
 
 ## Q185737: TN3270 Server May Cause Dr. Watson Error to Occur

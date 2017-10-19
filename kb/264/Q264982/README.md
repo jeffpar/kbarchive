@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264982: Error Message When You View the Properties of a Metaverse Object"
-permalink: kb/264/Q264982/
+permalink: /kb/264/Q264982/
 ---
 
 ## Q264982: Error Message When You View the Properties of a Metaverse Object

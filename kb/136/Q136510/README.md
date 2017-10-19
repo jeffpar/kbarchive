@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136510: Unexpected Behavior with ALT+&lt;num&gt; Key Combinations in Notepad"
-permalink: kb/136/Q136510/
+permalink: /kb/136/Q136510/
 ---
 
 ## Q136510: Unexpected Behavior with ALT+&lt;num&gt; Key Combinations in Notepad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129223: Export to Timex Data Link Watch Overwrites Old Information"
-permalink: kb/129/Q129223/
+permalink: /kb/129/Q129223/
 ---
 
 ## Q129223: Export to Timex Data Link Watch Overwrites Old Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299749: Train Simulator May Not Start as Expected"
-permalink: kb/299/Q299749/
+permalink: /kb/299/Q299749/
 ---
 
 ## Q299749: Train Simulator May Not Start as Expected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171353: Computer with Ultra DMA IDE Controller May Hang"
-permalink: kb/171/Q171353/
+permalink: /kb/171/Q171353/
 ---
 
 ## Q171353: Computer with Ultra DMA IDE Controller May Hang

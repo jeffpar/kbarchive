@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193835: FP97: Infinite Loop Creates Thousands of Temp Files"
-permalink: kb/193/Q193835/
+permalink: /kb/193/Q193835/
 ---
 
 ## Q193835: FP97: Infinite Loop Creates Thousands of Temp Files

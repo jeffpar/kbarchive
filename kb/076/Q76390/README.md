@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76390: Full-Screen MS-DOS Apps Slow Timer Msgs in Enhanced Mode"
-permalink: kb/076/Q76390/
+permalink: /kb/076/Q76390/
 ---
 
 ## Q76390: Full-Screen MS-DOS Apps Slow Timer Msgs in Enhanced Mode

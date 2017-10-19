@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198941: Users Cannot Change Password When Logging On"
-permalink: kb/198/Q198941/
+permalink: /kb/198/Q198941/
 ---
 
 ## Q198941: Users Cannot Change Password When Logging On

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146456: XCLN: Err Msg: MAPI: 80040113 Reported by: Personal..."
-permalink: kb/146/Q146456/
+permalink: /kb/146/Q146456/
 ---
 
 ## Q146456: XCLN: Err Msg: MAPI: 80040113 Reported by: Personal...

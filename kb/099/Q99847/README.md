@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99847: HOWTO: Change Window Attributes in an MFC Application"
-permalink: kb/099/Q99847/
+permalink: /kb/099/Q99847/
 ---
 
 ## Q99847: HOWTO: Change Window Attributes in an MFC Application

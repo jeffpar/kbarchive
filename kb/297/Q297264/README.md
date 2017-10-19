@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297264: A+ Certification Training Kit, Third Edition Comments And Correc"
-permalink: kb/297/Q297264/
+permalink: /kb/297/Q297264/
 ---
 
 ## Q297264: A+ Certification Training Kit, Third Edition Comments And Correc

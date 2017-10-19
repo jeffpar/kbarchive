@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45877: How Windows Updates the LRU (Least Recently Used) List"
-permalink: kb/045/Q45877/
+permalink: /kb/045/Q45877/
 ---
 
 ## Q45877: How Windows Updates the LRU (Least Recently Used) List

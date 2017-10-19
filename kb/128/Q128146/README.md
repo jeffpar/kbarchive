@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128146: WFW Client Hangs Saving to Windows NT 3.5 Share"
-permalink: kb/128/Q128146/
+permalink: /kb/128/Q128146/
 ---
 
 ## Q128146: WFW Client Hangs Saving to Windows NT 3.5 Share

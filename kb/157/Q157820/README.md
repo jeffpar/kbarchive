@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157820: STOP 0x0000001A on a Vectra VL Series System"
-permalink: kb/157/Q157820/
+permalink: /kb/157/Q157820/
 ---
 
 ## Q157820: STOP 0x0000001A on a Vectra VL Series System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180941: APPC Printing Misinterprets ASCII Data"
-permalink: kb/180/Q180941/
+permalink: /kb/180/Q180941/
 ---
 
 ## Q180941: APPC Printing Misinterprets ASCII Data

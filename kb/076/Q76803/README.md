@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76803: Novell Causes &quot;Cannot Load COMMAND.COM&quot; After Upgrading MS-DOS"
-permalink: kb/076/Q76803/
+permalink: /kb/076/Q76803/
 ---
 
 ## Q76803: Novell Causes &quot;Cannot Load COMMAND.COM&quot; After Upgrading MS-DOS

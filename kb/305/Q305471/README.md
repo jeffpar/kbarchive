@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305471: HOWTO: Use IMPLEMENTS with Microsoft Agent and Visual FoxPro"
-permalink: kb/305/Q305471/
+permalink: /kb/305/Q305471/
 ---
 
 ## Q305471: HOWTO: Use IMPLEMENTS with Microsoft Agent and Visual FoxPro

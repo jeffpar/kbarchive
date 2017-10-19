@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303032: Games: Game Stops Responding or Quits Unexpectedly"
-permalink: kb/303/Q303032/
+permalink: /kb/303/Q303032/
 ---
 
 ## Q303032: Games: Game Stops Responding or Quits Unexpectedly

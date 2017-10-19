@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130455: PRB: Long Variable Names from 2.x Not Found in Visual FoxPro"
-permalink: kb/130/Q130455/
+permalink: /kb/130/Q130455/
 ---
 
 ## Q130455: PRB: Long Variable Names from 2.x Not Found in Visual FoxPro

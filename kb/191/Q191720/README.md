@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191720: BUG: Option Button Value Changes When Group is Disabled"
-permalink: kb/191/Q191720/
+permalink: /kb/191/Q191720/
 ---
 
 ## Q191720: BUG: Option Button Value Changes When Group is Disabled

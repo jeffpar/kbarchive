@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131068: SNA Server Does Not Resource Locate to Active APPC Connection"
-permalink: kb/131/Q131068/
+permalink: /kb/131/Q131068/
 ---
 
 ## Q131068: SNA Server Does Not Resource Locate to Active APPC Connection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173060: Performance Monitor Counters Cause Stop or Error Messages"
-permalink: kb/173/Q173060/
+permalink: /kb/173/Q173060/
 ---
 
 ## Q173060: Performance Monitor Counters Cause Stop or Error Messages

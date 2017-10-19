@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130008: Wine Guide: MMTASK Causes GP Fault with Dell S3 1.32"
-permalink: kb/130/Q130008/
+permalink: /kb/130/Q130008/
 ---
 
 ## Q130008: Wine Guide: MMTASK Causes GP Fault with Dell S3 1.32

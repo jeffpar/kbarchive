@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274691: MGS: Inventory Continues to Scroll After You Release Arrow Keys"
-permalink: kb/274/Q274691/
+permalink: /kb/274/Q274691/
 ---
 
 ## Q274691: MGS: Inventory Continues to Scroll After You Release Arrow Keys

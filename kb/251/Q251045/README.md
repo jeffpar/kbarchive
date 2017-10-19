@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251045: BUG:Memory in Shared Code Sections Not Shared Across TS Sessions"
-permalink: kb/251/Q251045/
+permalink: /kb/251/Q251045/
 ---
 
 ## Q251045: BUG:Memory in Shared Code Sections Not Shared Across TS Sessions

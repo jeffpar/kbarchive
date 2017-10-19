@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149275: FIX: MouseMove Button Is Incorrect with ListView MultiSelect"
-permalink: kb/149/Q149275/
+permalink: /kb/149/Q149275/
 ---
 
 ## Q149275: FIX: MouseMove Button Is Incorrect with ListView MultiSelect

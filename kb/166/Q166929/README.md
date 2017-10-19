@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166929: FIX: DBCombo Control Change Event Does Not Fire"
-permalink: kb/166/Q166929/
+permalink: /kb/166/Q166929/
 ---
 
 ## Q166929: FIX: DBCombo Control Change Event Does Not Fire

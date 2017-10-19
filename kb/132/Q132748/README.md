@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132748: Choosing a Workstation OS: Windows 95/Windows NT Workstation"
-permalink: kb/132/Q132748/
+permalink: /kb/132/Q132748/
 ---
 
 ## Q132748: Choosing a Workstation OS: Windows 95/Windows NT Workstation

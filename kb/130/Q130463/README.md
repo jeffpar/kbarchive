@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130463: HOWTO: How to Import Microsoft Access Data"
-permalink: kb/130/Q130463/
+permalink: /kb/130/Q130463/
 ---
 
 ## Q130463: HOWTO: How to Import Microsoft Access Data

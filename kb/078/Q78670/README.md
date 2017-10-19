@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78670: Startup Directory Option Ignored in MS-DOS Shell"
-permalink: kb/078/Q78670/
+permalink: /kb/078/Q78670/
 ---
 
 ## Q78670: Startup Directory Option Ignored in MS-DOS Shell

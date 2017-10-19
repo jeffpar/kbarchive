@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257946: XGEN: GUI Hotfix Utility Switches /x /m /s /z"
-permalink: kb/257/Q257946/
+permalink: /kb/257/Q257946/
 ---
 
 ## Q257946: XGEN: GUI Hotfix Utility Switches /x /m /s /z

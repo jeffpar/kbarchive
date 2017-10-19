@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258235: BUG: Memory Leak with ATL Containment"
-permalink: kb/258/Q258235/
+permalink: /kb/258/Q258235/
 ---
 
 ## Q258235: BUG: Memory Leak with ATL Containment

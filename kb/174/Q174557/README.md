@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174557: Time Sources Defined For The Windows NT Time Service"
-permalink: kb/174/Q174557/
+permalink: /kb/174/Q174557/
 ---
 
 ## Q174557: Time Sources Defined For The Windows NT Time Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176276: Frequently Asked Questions About Mail Migration For MSN Version"
-permalink: kb/176/Q176276/
+permalink: /kb/176/Q176276/
 ---
 
 ## Q176276: Frequently Asked Questions About Mail Migration For MSN Version

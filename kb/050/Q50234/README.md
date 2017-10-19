@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50234: Using Function Name Without &quot;()&quot; Produces No Code"
-permalink: kb/050/Q50234/
+permalink: /kb/050/Q50234/
 ---
 
 ## Q50234: Using Function Name Without &quot;()&quot; Produces No Code

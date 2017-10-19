@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196665: XCON: MTA Could Route Messages Through Higher Costing Routes"
-permalink: kb/196/Q196665/
+permalink: /kb/196/Q196665/
 ---
 
 ## Q196665: XCON: MTA Could Route Messages Through Higher Costing Routes

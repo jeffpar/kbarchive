@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169690: XCON: MTA Terminates with 2191, 2198, 2197, and 9405 Events"
-permalink: kb/169/Q169690/
+permalink: /kb/169/Q169690/
 ---
 
 ## Q169690: XCON: MTA Terminates with 2191, 2198, 2197, and 9405 Events

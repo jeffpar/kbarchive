@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160787: D-link DE-220 ISA Ethernet Adapter will Not Install"
-permalink: kb/160/Q160787/
+permalink: /kb/160/Q160787/
 ---
 
 ## Q160787: D-link DE-220 ISA Ethernet Adapter will Not Install

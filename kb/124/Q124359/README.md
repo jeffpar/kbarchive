@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124359: No Xircom Ethernet Adapter Choices Available During Setup"
-permalink: kb/124/Q124359/
+permalink: /kb/124/Q124359/
 ---
 
 ## Q124359: No Xircom Ethernet Adapter Choices Available During Setup

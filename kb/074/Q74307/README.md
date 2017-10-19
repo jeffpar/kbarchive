@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74307: MS-DOS Upgrade Detects DOS Path as D:&#92;DOS with Stacker"
-permalink: kb/074/Q74307/
+permalink: /kb/074/Q74307/
 ---
 
 ## Q74307: MS-DOS Upgrade Detects DOS Path as D:&#92;DOS with Stacker

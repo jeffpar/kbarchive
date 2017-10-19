@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259891: VFP 6.0 Sample: Using the DateTimePicker's CallBack Field"
-permalink: kb/259/Q259891/
+permalink: /kb/259/Q259891/
 ---
 
 ## Q259891: VFP 6.0 Sample: Using the DateTimePicker's CallBack Field

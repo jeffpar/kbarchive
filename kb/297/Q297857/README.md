@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297857: SMS: French SMS 2.0 SP3 Contains an Incorrect Ccm.dll File"
-permalink: kb/297/Q297857/
+permalink: /kb/297/Q297857/
 ---
 
 ## Q297857: SMS: French SMS 2.0 SP3 Contains an Incorrect Ccm.dll File

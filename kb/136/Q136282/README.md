@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136282: BUG: Spinner Does Not Increment Value as It Should"
-permalink: kb/136/Q136282/
+permalink: /kb/136/Q136282/
 ---
 
 ## Q136282: BUG: Spinner Does Not Increment Value as It Should

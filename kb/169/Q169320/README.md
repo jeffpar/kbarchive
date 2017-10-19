@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169320: Connect Using The Modem Option Unavailable in Internet Mail"
-permalink: kb/169/Q169320/
+permalink: /kb/169/Q169320/
 ---
 
 ## Q169320: Connect Using The Modem Option Unavailable in Internet Mail

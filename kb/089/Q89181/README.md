@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89181: Outer Join Syntax Example for SELECT-SQL Statement"
-permalink: kb/089/Q89181/
+permalink: /kb/089/Q89181/
 ---
 
 ## Q89181: Outer Join Syntax Example for SELECT-SQL Statement

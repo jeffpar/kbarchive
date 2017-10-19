@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309146: Academic Learning Series Microsoft SQL Server 2000 System Admini"
-permalink: kb/309/Q309146/
+permalink: /kb/309/Q309146/
 ---
 
 ## Q309146: Academic Learning Series Microsoft SQL Server 2000 System Admini

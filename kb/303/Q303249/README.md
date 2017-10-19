@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303249: XADM: Export of DLs or Custom Recipients May Fail"
-permalink: kb/303/Q303249/
+permalink: /kb/303/Q303249/
 ---
 
 ## Q303249: XADM: Export of DLs or Custom Recipients May Fail

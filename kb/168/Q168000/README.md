@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168000: WD97: Dialog Box Text Truncated"
-permalink: kb/168/Q168000/
+permalink: /kb/168/Q168000/
 ---
 
 ## Q168000: WD97: Dialog Box Text Truncated

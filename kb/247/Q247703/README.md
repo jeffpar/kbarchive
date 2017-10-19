@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247703: Fighter Ace II: Hangs When You Click &quot;Fly Now&quot;"
-permalink: kb/247/Q247703/
+permalink: /kb/247/Q247703/
 ---
 
 ## Q247703: Fighter Ace II: Hangs When You Click &quot;Fly Now&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88371: PC Win: Change Default Printer in Windows Not Changed in Mail"
-permalink: kb/088/Q88371/
+permalink: /kb/088/Q88371/
 ---
 
 ## Q88371: PC Win: Change Default Printer in Windows Not Changed in Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71346: PIF Optional Parameters and Different Modes in Windows"
-permalink: kb/071/Q71346/
+permalink: /kb/071/Q71346/
 ---
 
 ## Q71346: PIF Optional Parameters and Different Modes in Windows

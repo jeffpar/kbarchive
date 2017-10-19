@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236135: Password Change Lost if Password Change DLL Can't Contact SNAPMP"
-permalink: kb/236/Q236135/
+permalink: /kb/236/Q236135/
 ---
 
 ## Q236135: Password Change Lost if Password Change DLL Can't Contact SNAPMP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191905: Y2K: Key Dirsync Logs Display Incorrect Date after 1999"
-permalink: kb/191/Q191905/
+permalink: /kb/191/Q191905/
 ---
 
 ## Q191905: Y2K: Key Dirsync Logs Display Incorrect Date after 1999

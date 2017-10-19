@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105686: Deleting Windows 3.1 After Installing Windows NT"
-permalink: kb/105/Q105686/
+permalink: /kb/105/Q105686/
 ---
 
 ## Q105686: Deleting Windows 3.1 After Installing Windows NT

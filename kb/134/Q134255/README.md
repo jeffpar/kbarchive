@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134255: Cannot Select A Logon Hour in User Manager for Domains"
-permalink: kb/134/Q134255/
+permalink: /kb/134/Q134255/
 ---
 
 ## Q134255: Cannot Select A Logon Hour in User Manager for Domains

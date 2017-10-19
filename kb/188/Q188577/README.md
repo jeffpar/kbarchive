@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188577: HOWTO: What is the Licenses Collection Used For?"
-permalink: kb/188/Q188577/
+permalink: /kb/188/Q188577/
 ---
 
 ## Q188577: HOWTO: What is the Licenses Collection Used For?

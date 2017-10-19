@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310577: Winmgmt May Cause Access Violation During Hardware Inventory"
-permalink: kb/310/Q310577/
+permalink: /kb/310/Q310577/
 ---
 
 ## Q310577: Winmgmt May Cause Access Violation During Hardware Inventory

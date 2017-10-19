@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198814: XADM: Recovering a KM Server after a complete Exchange Rebuild"
-permalink: kb/198/Q198814/
+permalink: /kb/198/Q198814/
 ---
 
 ## Q198814: XADM: Recovering a KM Server after a complete Exchange Rebuild

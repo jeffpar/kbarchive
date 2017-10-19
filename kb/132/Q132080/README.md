@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132080: HOWTO: Change the Color of an MFC Child Control Class"
-permalink: kb/132/Q132080/
+permalink: /kb/132/Q132080/
 ---
 
 ## Q132080: HOWTO: Change the Color of an MFC Child Control Class

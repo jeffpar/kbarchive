@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137701: PC Win: Using the U.K. Version of the Spelling Dictionary"
-permalink: kb/137/Q137701/
+permalink: /kb/137/Q137701/
 ---
 
 ## Q137701: PC Win: Using the U.K. Version of the Spelling Dictionary

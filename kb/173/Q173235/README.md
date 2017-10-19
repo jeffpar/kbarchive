@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173235: Troubleshooting: Check Windows 95 System Performance"
-permalink: kb/173/Q173235/
+permalink: /kb/173/Q173235/
 ---
 
 ## Q173235: Troubleshooting: Check Windows 95 System Performance

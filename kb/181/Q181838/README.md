@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181838: XADM: Jet97 Database Header Does Not Contain Last Repaired Date"
-permalink: kb/181/Q181838/
+permalink: /kb/181/Q181838/
 ---
 
 ## Q181838: XADM: Jet97 Database Header Does Not Contain Last Repaired Date

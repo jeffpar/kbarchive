@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233214: STOP Error Occurs Even If CrashOnAuditFail Is Disabled"
-permalink: kb/233/Q233214/
+permalink: /kb/233/Q233214/
 ---
 
 ## Q233214: STOP Error Occurs Even If CrashOnAuditFail Is Disabled

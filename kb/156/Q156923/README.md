@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156923: PRB: IMPORT FROM Paradox Fails on Numeric Fields on Macintosh"
-permalink: kb/156/Q156923/
+permalink: /kb/156/Q156923/
 ---
 
 ## Q156923: PRB: IMPORT FROM Paradox Fails on Numeric Fields on Macintosh

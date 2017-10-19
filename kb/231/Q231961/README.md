@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231961: PRB:Set Breakpoint Menu Item in Modify Memo Shows Up at Run Time"
-permalink: kb/231/Q231961/
+permalink: /kb/231/Q231961/
 ---
 
 ## Q231961: PRB:Set Breakpoint Menu Item in Modify Memo Shows Up at Run Time

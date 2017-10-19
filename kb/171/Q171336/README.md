@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171336: WD97: Font Animation May Not Be Shown on Last Line of Text"
-permalink: kb/171/Q171336/
+permalink: /kb/171/Q171336/
 ---
 
 ## Q171336: WD97: Font Animation May Not Be Shown on Last Line of Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158901: XADM: MDB Event 2079: Unable to Submit, Send, or Transfer Msgs"
-permalink: kb/158/Q158901/
+permalink: /kb/158/Q158901/
 ---
 
 ## Q158901: XADM: MDB Event 2079: Unable to Submit, Send, or Transfer Msgs

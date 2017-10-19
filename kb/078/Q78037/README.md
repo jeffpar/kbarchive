@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78037: Setup Does Not Show a Sound Driver Option"
-permalink: kb/078/Q78037/
+permalink: /kb/078/Q78037/
 ---
 
 ## Q78037: Setup Does Not Show a Sound Driver Option

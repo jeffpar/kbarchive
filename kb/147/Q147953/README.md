@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147953: Last Software Scan Date Not Updated for Windows NT Clients"
-permalink: kb/147/Q147953/
+permalink: /kb/147/Q147953/
 ---
 
 ## Q147953: Last Software Scan Date Not Updated for Windows NT Clients

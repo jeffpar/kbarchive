@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129862: Project Manager Stores &amp; Activates Files from Other Apps"
-permalink: kb/129/Q129862/
+permalink: /kb/129/Q129862/
 ---
 
 ## Q129862: Project Manager Stores &amp; Activates Files from Other Apps

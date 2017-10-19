@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151448: Trap 0x50 and Trap 0xA Under Heavy Stress"
-permalink: kb/151/Q151448/
+permalink: /kb/151/Q151448/
 ---
 
 ## Q151448: Trap 0x50 and Trap 0xA Under Heavy Stress

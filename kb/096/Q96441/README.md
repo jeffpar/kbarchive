@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96441: MS-DOS 6 and later Require ASPI4DOS.SYS Version 3.1 or Later"
-permalink: kb/096/Q96441/
+permalink: /kb/096/Q96441/
 ---
 
 ## Q96441: MS-DOS 6 and later Require ASPI4DOS.SYS Version 3.1 or Later

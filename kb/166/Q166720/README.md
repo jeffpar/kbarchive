@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166720: FIX: ATL Object Wizard Dialog Box Comes Up Empty"
-permalink: kb/166/Q166720/
+permalink: /kb/166/Q166720/
 ---
 
 ## Q166720: FIX: ATL Object Wizard Dialog Box Comes Up Empty

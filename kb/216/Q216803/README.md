@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216803: IIS Hidden Static Files Return HTTP 404 or Access Denied Errors"
-permalink: kb/216/Q216803/
+permalink: /kb/216/Q216803/
 ---
 
 ## Q216803: IIS Hidden Static Files Return HTTP 404 or Access Denied Errors

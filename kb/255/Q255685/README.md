@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255685: Error Message Discovering &quot;Microsoft DMD&quot; and &quot;Configuration&quot;"
-permalink: kb/255/Q255685/
+permalink: /kb/255/Q255685/
 ---
 
 ## Q255685: Error Message Discovering &quot;Microsoft DMD&quot; and &quot;Configuration&quot;

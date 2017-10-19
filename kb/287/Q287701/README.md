@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287701: Flight Simulator 2000: Error: OE: 0028 : FFFF3DBD"
-permalink: kb/287/Q287701/
+permalink: /kb/287/Q287701/
 ---
 
 ## Q287701: Flight Simulator 2000: Error: OE: 0028 : FFFF3DBD

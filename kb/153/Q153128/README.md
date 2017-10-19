@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153128: Event IDs 9 and 11: SCSI Controller/Device Errors"
-permalink: kb/153/Q153128/
+permalink: /kb/153/Q153128/
 ---
 
 ## Q153128: Event IDs 9 and 11: SCSI Controller/Device Errors

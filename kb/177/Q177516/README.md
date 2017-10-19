@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177516: PRB: ODBCDirect Query Causes Error 3667"
-permalink: kb/177/Q177516/
+permalink: /kb/177/Q177516/
 ---
 
 ## Q177516: PRB: ODBCDirect Query Causes Error 3667

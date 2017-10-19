@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135646: Err Msg: Could Not Locate a Time-Server"
-permalink: kb/135/Q135646/
+permalink: /kb/135/Q135646/
 ---
 
 ## Q135646: Err Msg: Could Not Locate a Time-Server

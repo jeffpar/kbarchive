@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175577: Music Is Not Played on the MSN On Stage Web Page"
-permalink: kb/175/Q175577/
+permalink: /kb/175/Q175577/
 ---
 
 ## Q175577: Music Is Not Played on the MSN On Stage Web Page

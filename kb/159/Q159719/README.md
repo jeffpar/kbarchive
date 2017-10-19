@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159719: WD97: Error Merging with Outlook CSV, TSV File"
-permalink: kb/159/Q159719/
+permalink: /kb/159/Q159719/
 ---
 
 ## Q159719: WD97: Error Merging with Outlook CSV, TSV File

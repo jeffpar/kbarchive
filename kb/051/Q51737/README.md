@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51737: Expanded Memory under Windows 3.0"
-permalink: kb/051/Q51737/
+permalink: /kb/051/Q51737/
 ---
 
 ## Q51737: Expanded Memory under Windows 3.0

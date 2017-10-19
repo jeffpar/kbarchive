@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57968: Flt Sim: Mouse Click Does Not Always Change MAG Indicator"
-permalink: kb/057/Q57968/
+permalink: /kb/057/Q57968/
 ---
 
 ## Q57968: Flt Sim: Mouse Click Does Not Always Change MAG Indicator

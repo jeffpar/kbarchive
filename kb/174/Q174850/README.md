@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174850: Age of Empires: Minimum System Requirements"
-permalink: kb/174/Q174850/
+permalink: /kb/174/Q174850/
 ---
 
 ## Q174850: Age of Empires: Minimum System Requirements

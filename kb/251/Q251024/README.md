@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251024: BUG: Converting VFP3 Project with Form Activates the Debugger"
-permalink: kb/251/Q251024/
+permalink: /kb/251/Q251024/
 ---
 
 ## Q251024: BUG: Converting VFP3 Project with Form Activates the Debugger

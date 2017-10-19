@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106747: MS-DOS 6.2 Step-Up Err Msg: MakeSys Could Not...(DBLSPACE.BIN)"
-permalink: kb/106/Q106747/
+permalink: /kb/106/Q106747/
 ---
 
 ## Q106747: MS-DOS 6.2 Step-Up Err Msg: MakeSys Could Not...(DBLSPACE.BIN)

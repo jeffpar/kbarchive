@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86247: Future Trend's EZ FX May Require OPL3= Switch"
-permalink: kb/086/Q86247/
+permalink: /kb/086/Q86247/
 ---
 
 ## Q86247: Future Trend's EZ FX May Require OPL3= Switch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178399: Exchange Client Not Displaying Message Text Correctly"
-permalink: kb/178/Q178399/
+permalink: /kb/178/Q178399/
 ---
 
 ## Q178399: Exchange Client Not Displaying Message Text Correctly

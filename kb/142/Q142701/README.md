@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142701: SAM Does Not Replicate Members of the Administrators Alias"
-permalink: kb/142/Q142701/
+permalink: /kb/142/Q142701/
 ---
 
 ## Q142701: SAM Does Not Replicate Members of the Administrators Alias

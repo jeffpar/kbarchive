@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79068: PRB: L1083 Error Caused By Read-Only Destination .EXE File"
-permalink: kb/079/Q79068/
+permalink: /kb/079/Q79068/
 ---
 
 ## Q79068: PRB: L1083 Error Caused By Read-Only Destination .EXE File

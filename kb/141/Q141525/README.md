@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141525: PRB: DataSessionID Property Does Not Appear on Property Sheet"
-permalink: kb/141/Q141525/
+permalink: /kb/141/Q141525/
 ---
 
 ## Q141525: PRB: DataSessionID Property Does Not Appear on Property Sheet

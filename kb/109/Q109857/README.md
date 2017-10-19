@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109857: Flight Simulator: Splash When Taxiing Around Meigs Field"
-permalink: kb/109/Q109857/
+permalink: /kb/109/Q109857/
 ---
 
 ## Q109857: Flight Simulator: Splash When Taxiing Around Meigs Field

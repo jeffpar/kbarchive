@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130959: Windows NT Setup Cannot Install PCMCIA SCSI Controller"
-permalink: kb/130/Q130959/
+permalink: /kb/130/Q130959/
 ---
 
 ## Q130959: Windows NT Setup Cannot Install PCMCIA SCSI Controller

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129771: PC Win: Err Msg: A TPL File Is Missing from Your Server..."
-permalink: kb/129/Q129771/
+permalink: /kb/129/Q129771/
 ---
 
 ## Q129771: PC Win: Err Msg: A TPL File Is Missing from Your Server...

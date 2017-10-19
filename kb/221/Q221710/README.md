@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221710: FIX: Component Gallery Dynamic Folder for Web View Won't Refresh"
-permalink: kb/221/Q221710/
+permalink: /kb/221/Q221710/
 ---
 
 ## Q221710: FIX: Component Gallery Dynamic Folder for Web View Won't Refresh

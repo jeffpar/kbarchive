@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200566: XFOR: FPNW Required on WinNT 3.51 using MS Mail and NWLINK"
-permalink: kb/200/Q200566/
+permalink: /kb/200/Q200566/
 ---
 
 ## Q200566: XFOR: FPNW Required on WinNT 3.51 using MS Mail and NWLINK

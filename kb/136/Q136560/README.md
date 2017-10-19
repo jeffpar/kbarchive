@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136560: FIX: RI Fails with 'Trigger Failed' if dBASE Compatibility ON"
-permalink: kb/136/Q136560/
+permalink: /kb/136/Q136560/
 ---
 
 ## Q136560: FIX: RI Fails with 'Trigger Failed' if dBASE Compatibility ON

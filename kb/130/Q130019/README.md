@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130019: XCLN: No Separator Added When You Drag/Drop Names"
-permalink: kb/130/Q130019/
+permalink: /kb/130/Q130019/
 ---
 
 ## Q130019: XCLN: No Separator Added When You Drag/Drop Names

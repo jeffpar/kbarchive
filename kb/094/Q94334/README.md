@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94334: Using MS-DOS Upgrade Fdisk Program with EXTDISK.SYS"
-permalink: kb/094/Q94334/
+permalink: /kb/094/Q94334/
 ---
 
 ## Q94334: Using MS-DOS Upgrade Fdisk Program with EXTDISK.SYS

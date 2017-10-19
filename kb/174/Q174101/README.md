@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174101: XFOR: OV/VM Connector Installation Instruction(LinkAge)"
-permalink: kb/174/Q174101/
+permalink: /kb/174/Q174101/
 ---
 
 ## Q174101: XFOR: OV/VM Connector Installation Instruction(LinkAge)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96721: PC WRmt: Direct Export to Primary Message File Clears PAB"
-permalink: kb/096/Q96721/
+permalink: /kb/096/Q96721/
 ---
 
 ## Q96721: PC WRmt: Direct Export to Primary Message File Clears PAB

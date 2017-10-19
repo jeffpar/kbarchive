@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85870: FIX: L1035 Error, FUNCTIONS Statement First in .DEF File"
-permalink: kb/085/Q85870/
+permalink: /kb/085/Q85870/
 ---
 
 ## Q85870: FIX: L1035 Error, FUNCTIONS Statement First in .DEF File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99298: LMSFM Does Not Support Sharing Info on CD-ROM"
-permalink: kb/099/Q99298/
+permalink: /kb/099/Q99298/
 ---
 
 ## Q99298: LMSFM Does Not Support Sharing Info on CD-ROM

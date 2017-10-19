@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155385: PRB: DEBUGOUT and ASSERT Commands Do Not Function in .exe"
-permalink: kb/155/Q155385/
+permalink: /kb/155/Q155385/
 ---
 
 ## Q155385: PRB: DEBUGOUT and ASSERT Commands Do Not Function in .exe

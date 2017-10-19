@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236565: TCP Connections Not Released by IIS"
-permalink: kb/236/Q236565/
+permalink: /kb/236/Q236565/
 ---
 
 ## Q236565: TCP Connections Not Released by IIS

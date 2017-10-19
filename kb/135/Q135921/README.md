@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135921: Windows NT 3.51 Hangs On Dell 4XXDL, DM, or DMT Computer"
-permalink: kb/135/Q135921/
+permalink: /kb/135/Q135921/
 ---
 
 ## Q135921: Windows NT 3.51 Hangs On Dell 4XXDL, DM, or DMT Computer

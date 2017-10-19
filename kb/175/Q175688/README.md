@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175688: XADM: Exact Name Resolution Fails with First and Last Name"
-permalink: kb/175/Q175688/
+permalink: /kb/175/Q175688/
 ---
 
 ## Q175688: XADM: Exact Name Resolution Fails with First and Last Name

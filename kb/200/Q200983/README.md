@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200983: HOWTO: How to Install Visual C++ on Terminal Server"
-permalink: kb/200/Q200983/
+permalink: /kb/200/Q200983/
 ---
 
 ## Q200983: HOWTO: How to Install Visual C++ on Terminal Server

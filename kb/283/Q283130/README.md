@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283130: CCIM Verify Cycle Can Interrupt Software Distributions"
-permalink: kb/283/Q283130/
+permalink: /kb/283/Q283130/
 ---
 
 ## Q283130: CCIM Verify Cycle Can Interrupt Software Distributions

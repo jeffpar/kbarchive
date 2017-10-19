@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221945: SMS: Job Status Goes Complete Before Server Processing Completes"
-permalink: kb/221/Q221945/
+permalink: /kb/221/Q221945/
 ---
 
 ## Q221945: SMS: Job Status Goes Complete Before Server Processing Completes

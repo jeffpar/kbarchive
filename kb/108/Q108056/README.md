@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108056: Macintosh Finder Sometimes Does Not Display File"
-permalink: kb/108/Q108056/
+permalink: /kb/108/Q108056/
 ---
 
 ## Q108056: Macintosh Finder Sometimes Does Not Display File

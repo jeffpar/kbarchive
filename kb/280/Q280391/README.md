@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280391: HOWTO: Send Digitally Signed Messages By Using CDOSYS/CDOEX"
-permalink: kb/280/Q280391/
+permalink: /kb/280/Q280391/
 ---
 
 ## Q280391: HOWTO: Send Digitally Signed Messages By Using CDOSYS/CDOEX

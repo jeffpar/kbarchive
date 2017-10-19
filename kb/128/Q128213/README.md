@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128213: FIX: C1001 Internal Compiler Error in MAIN.C File Line 374"
-permalink: kb/128/Q128213/
+permalink: /kb/128/Q128213/
 ---
 
 ## Q128213: FIX: C1001 Internal Compiler Error in MAIN.C File Line 374

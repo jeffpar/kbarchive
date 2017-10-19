@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111908: DoubleSpace Err Msg: DBLSPACE.&lt;nnn&gt; Is Not a Valid CVF"
-permalink: kb/111/Q111908/
+permalink: /kb/111/Q111908/
 ---
 
 ## Q111908: DoubleSpace Err Msg: DBLSPACE.&lt;nnn&gt; Is Not a Valid CVF

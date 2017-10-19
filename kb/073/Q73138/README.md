@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73138: Loading Lotus 1-2-3 Files Using File Associate from Windows"
-permalink: kb/073/Q73138/
+permalink: /kb/073/Q73138/
 ---
 
 ## Q73138: Loading Lotus 1-2-3 Files Using File Associate from Windows

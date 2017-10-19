@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128320: Mac MSPlus: Viewing Other Users' Appointments"
-permalink: kb/128/Q128320/
+permalink: /kb/128/Q128320/
 ---
 
 ## Q128320: Mac MSPlus: Viewing Other Users' Appointments

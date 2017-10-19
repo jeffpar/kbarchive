@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97453: Backup for Windows Shows Incorrect Date on Directory Printout"
-permalink: kb/097/Q97453/
+permalink: /kb/097/Q97453/
 ---
 
 ## Q97453: Backup for Windows Shows Incorrect Date on Directory Printout

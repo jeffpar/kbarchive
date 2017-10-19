@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317720: FIX: GetFldState Indicates Record Is Appended After TRANSACTION"
-permalink: kb/317/Q317720/
+permalink: /kb/317/Q317720/
 ---
 
 ## Q317720: FIX: GetFldState Indicates Record Is Appended After TRANSACTION

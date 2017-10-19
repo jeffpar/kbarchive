@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306060: XADM: Mailbox Manager Can't Notify Users After Cleaning Mailbox"
-permalink: kb/306/Q306060/
+permalink: /kb/306/Q306060/
 ---
 
 ## Q306060: XADM: Mailbox Manager Can't Notify Users After Cleaning Mailbox

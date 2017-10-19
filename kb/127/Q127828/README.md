@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127828: Cannot Connect to Share With Single User Access"
-permalink: kb/127/Q127828/
+permalink: /kb/127/Q127828/
 ---
 
 ## Q127828: Cannot Connect to Share With Single User Access

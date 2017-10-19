@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158834: Duplicate Shortcut Keys Can Be Created"
-permalink: kb/158/Q158834/
+permalink: /kb/158/Q158834/
 ---
 
 ## Q158834: Duplicate Shortcut Keys Can Be Created

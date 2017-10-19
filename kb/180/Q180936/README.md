@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180936: HOWTO: Position a MsgBox Using a Windows Hook Procedure"
-permalink: kb/180/Q180936/
+permalink: /kb/180/Q180936/
 ---
 
 ## Q180936: HOWTO: Position a MsgBox Using a Windows Hook Procedure

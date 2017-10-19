@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235760: SMS:Queries Fail if Alias Specified &amp; Collection Limiting Used"
-permalink: kb/235/Q235760/
+permalink: /kb/235/Q235760/
 ---
 
 ## Q235760: SMS:Queries Fail if Alias Specified &amp; Collection Limiting Used

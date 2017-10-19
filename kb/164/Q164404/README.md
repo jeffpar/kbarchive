@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164404: Cannot Delete Individual Print Jobs in NetWare Print Queue"
-permalink: kb/164/Q164404/
+permalink: /kb/164/Q164404/
 ---
 
 ## Q164404: Cannot Delete Individual Print Jobs in NetWare Print Queue

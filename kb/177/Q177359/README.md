@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177359: PRB: Data Control Does Not Work on MDI Forms"
-permalink: kb/177/Q177359/
+permalink: /kb/177/Q177359/
 ---
 
 ## Q177359: PRB: Data Control Does Not Work on MDI Forms

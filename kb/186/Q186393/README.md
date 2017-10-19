@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186393: PRB: Problems Trying to Resize the MonthView Control"
-permalink: kb/186/Q186393/
+permalink: /kb/186/Q186393/
 ---
 
 ## Q186393: PRB: Problems Trying to Resize the MonthView Control

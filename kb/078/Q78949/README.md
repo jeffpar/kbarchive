@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78949: Toshiba HARDRAM Battery Back-Up RAM and Permanent Swap File"
-permalink: kb/078/Q78949/
+permalink: /kb/078/Q78949/
 ---
 
 ## Q78949: Toshiba HARDRAM Battery Back-Up RAM and Permanent Swap File

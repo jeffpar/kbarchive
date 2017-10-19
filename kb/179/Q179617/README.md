@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179617: Explorer Hangs with Multiple File Operations in a Single Folder"
-permalink: kb/179/Q179617/
+permalink: /kb/179/Q179617/
 ---
 
 ## Q179617: Explorer Hangs with Multiple File Operations in a Single Folder

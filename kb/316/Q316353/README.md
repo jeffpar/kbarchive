@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316353: HOW TO: Configure a User Account to Use a Roaming User Profile"
-permalink: kb/316/Q316353/
+permalink: /kb/316/Q316353/
 ---
 
 ## Q316353: HOW TO: Configure a User Account to Use a Roaming User Profile

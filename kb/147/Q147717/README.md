@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147717: How to Remotely Disable a RAS Port"
-permalink: kb/147/Q147717/
+permalink: /kb/147/Q147717/
 ---
 
 ## Q147717: How to Remotely Disable a RAS Port

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113282: WFWG RAS: Optional Modifiers and Dialing Strings"
-permalink: kb/113/Q113282/
+permalink: /kb/113/Q113282/
 ---
 
 ## Q113282: WFWG RAS: Optional Modifiers and Dialing Strings

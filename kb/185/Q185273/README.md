@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185273: Window Closes After Choosing End Task in Edit Alias Dialog Box"
-permalink: kb/185/Q185273/
+permalink: /kb/185/Q185273/
 ---
 
 ## Q185273: Window Closes After Choosing End Task in Edit Alias Dialog Box

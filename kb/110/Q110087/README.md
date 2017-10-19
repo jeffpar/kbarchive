@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110087: BUG: SAVEIMAGE May Cause Error DX1020 in SVGA Display Modes"
-permalink: kb/110/Q110087/
+permalink: /kb/110/Q110087/
 ---
 
 ## Q110087: BUG: SAVEIMAGE May Cause Error DX1020 in SVGA Display Modes

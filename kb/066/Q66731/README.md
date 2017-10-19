@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66731: Windows 3.0 Setup Hangs Disk #2 with Invalid Directory"
-permalink: kb/066/Q66731/
+permalink: /kb/066/Q66731/
 ---
 
 ## Q66731: Windows 3.0 Setup Hangs Disk #2 with Invalid Directory

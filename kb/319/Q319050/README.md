@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319050: How To Modify Member Settings In MSN Internet Access For Macinto"
-permalink: kb/319/Q319050/
+permalink: /kb/319/Q319050/
 ---
 
 ## Q319050: How To Modify Member Settings In MSN Internet Access For Macinto

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174224: Description of Domain Name System (DNS)"
-permalink: kb/174/Q174224/
+permalink: /kb/174/Q174224/
 ---
 
 ## Q174224: Description of Domain Name System (DNS)

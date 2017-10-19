@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240745: XCLN: Event Script Cancelled After Exceeding 900-second Limit"
-permalink: kb/240/Q240745/
+permalink: /kb/240/Q240745/
 ---
 
 ## Q240745: XCLN: Event Script Cancelled After Exceeding 900-second Limit

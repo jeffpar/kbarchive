@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222904: HOWTO: Create Macintosh Associations for Nondefault File Extensi"
-permalink: kb/222/Q222904/
+permalink: /kb/222/Q222904/
 ---
 
 ## Q222904: HOWTO: Create Macintosh Associations for Nondefault File Extensi

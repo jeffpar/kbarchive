@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125479: MONITOR2.INF Resolution Does Not Match Hardware Spec"
-permalink: kb/125/Q125479/
+permalink: /kb/125/Q125479/
 ---
 
 ## Q125479: MONITOR2.INF Resolution Does Not Match Hardware Spec

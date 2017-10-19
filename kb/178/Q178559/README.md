@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178559: IIS-Redirect to Secured Page Logs Successful Anonymous Access"
-permalink: kb/178/Q178559/
+permalink: /kb/178/Q178559/
 ---
 
 ## Q178559: IIS-Redirect to Secured Page Logs Successful Anonymous Access

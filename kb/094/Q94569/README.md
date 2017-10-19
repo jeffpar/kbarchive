@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94569: Compression Software Doesn't Load After Running MemMaker"
-permalink: kb/094/Q94569/
+permalink: /kb/094/Q94569/
 ---
 
 ## Q94569: Compression Software Doesn't Load After Running MemMaker

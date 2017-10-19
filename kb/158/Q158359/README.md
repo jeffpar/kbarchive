@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158359: License Wizard Displays Unreadable Enterprise Details"
-permalink: kb/158/Q158359/
+permalink: /kb/158/Q158359/
 ---
 
 ## Q158359: License Wizard Displays Unreadable Enterprise Details

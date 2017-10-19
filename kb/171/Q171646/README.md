@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171646: Access 97 Step by Step Corrections and Comments"
-permalink: kb/171/Q171646/
+permalink: /kb/171/Q171646/
 ---
 
 ## Q171646: Access 97 Step by Step Corrections and Comments

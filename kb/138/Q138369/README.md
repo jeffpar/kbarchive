@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138369: Start Menu Shortcut Removed When DriveSpace 3 Is Removed"
-permalink: kb/138/Q138369/
+permalink: /kb/138/Q138369/
 ---
 
 ## Q138369: Start Menu Shortcut Removed When DriveSpace 3 Is Removed

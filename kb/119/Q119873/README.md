@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119873: FIX: Incorrect Use of #pragma Pack Causes C1001 Errors"
-permalink: kb/119/Q119873/
+permalink: /kb/119/Q119873/
 ---
 
 ## Q119873: FIX: Incorrect Use of #pragma Pack Causes C1001 Errors

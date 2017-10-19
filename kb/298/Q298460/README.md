@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298460: Windows NT 4.0 Workstation Deployment Resources"
-permalink: kb/298/Q298460/
+permalink: /kb/298/Q298460/
 ---
 
 ## Q298460: Windows NT 4.0 Workstation Deployment Resources

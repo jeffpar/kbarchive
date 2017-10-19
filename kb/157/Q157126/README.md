@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157126: PRB: OpenEx() May Fail with &quot;ODBC;&quot; in Connection String"
-permalink: kb/157/Q157126/
+permalink: /kb/157/Q157126/
 ---
 
 ## Q157126: PRB: OpenEx() May Fail with &quot;ODBC;&quot; in Connection String

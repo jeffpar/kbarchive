@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131512: PC Adm: Admin Gains Rights to Shared Folder After Deletion"
-permalink: kb/131/Q131512/
+permalink: /kb/131/Q131512/
 ---
 
 ## Q131512: PC Adm: Admin Gains Rights to Shared Folder After Deletion

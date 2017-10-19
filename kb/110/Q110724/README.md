@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110724: DOCERR: Corrections to Viewer 2.0 Manuals"
-permalink: kb/110/Q110724/
+permalink: /kb/110/Q110724/
 ---
 
 ## Q110724: DOCERR: Corrections to Viewer 2.0 Manuals

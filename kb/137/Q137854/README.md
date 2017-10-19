@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137854: Contents of Visual FoxPro Standard Edition on CD-ROM"
-permalink: kb/137/Q137854/
+permalink: /kb/137/Q137854/
 ---
 
 ## Q137854: Contents of Visual FoxPro Standard Edition on CD-ROM

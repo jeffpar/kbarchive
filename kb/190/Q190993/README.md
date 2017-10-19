@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190993: XADM: Events Service Fails to Start with MAPI 0x80040107"
-permalink: kb/190/Q190993/
+permalink: /kb/190/Q190993/
 ---
 
 ## Q190993: XADM: Events Service Fails to Start with MAPI 0x80040107

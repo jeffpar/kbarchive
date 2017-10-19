@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157717: INFO: VSS 5.0 Readme: Sec. 2, General Notes and Tips"
-permalink: kb/157/Q157717/
+permalink: /kb/157/Q157717/
 ---
 
 ## Q157717: INFO: VSS 5.0 Readme: Sec. 2, General Notes and Tips

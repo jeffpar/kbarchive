@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187593: INFO: MSVBVM50.DLL Is Included in Windows 98"
-permalink: kb/187/Q187593/
+permalink: /kb/187/Q187593/
 ---
 
 ## Q187593: INFO: MSVBVM50.DLL Is Included in Windows 98

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133092: How to Test and View Fonts in Windows 95/98"
-permalink: kb/133/Q133092/
+permalink: /kb/133/Q133092/
 ---
 
 ## Q133092: How to Test and View Fonts in Windows 95/98

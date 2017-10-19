@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86369: Banyan Err Msg: File Volume &quot;&quot; Is Not Available"
-permalink: kb/086/Q86369/
+permalink: /kb/086/Q86369/
 ---
 
 ## Q86369: Banyan Err Msg: File Volume &quot;&quot; Is Not Available

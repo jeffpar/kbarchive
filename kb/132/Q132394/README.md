@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132394: Streaming Mode NPMCA.SYS NIC Sleeps on Transmit."
-permalink: kb/132/Q132394/
+permalink: /kb/132/Q132394/
 ---
 
 ## Q132394: Streaming Mode NPMCA.SYS NIC Sleeps on Transmit.

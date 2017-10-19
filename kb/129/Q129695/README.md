@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129695: FTP Fails with File Names Larger than 72 Characters"
-permalink: kb/129/Q129695/
+permalink: /kb/129/Q129695/
 ---
 
 ## Q129695: FTP Fails with File Names Larger than 72 Characters

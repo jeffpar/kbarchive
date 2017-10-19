@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312436: XADM: Exchange Services Do Not Start on a Recovery Server"
-permalink: kb/312/Q312436/
+permalink: /kb/312/Q312436/
 ---
 
 ## Q312436: XADM: Exchange Services Do Not Start on a Recovery Server

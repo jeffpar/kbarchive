@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77628: PC Ext: How External Sends Mail Between Postoffices"
-permalink: kb/077/Q77628/
+permalink: /kb/077/Q77628/
 ---
 
 ## Q77628: PC Ext: How External Sends Mail Between Postoffices

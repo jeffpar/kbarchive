@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142164: Admin UI Does Not Display Computers in Domains"
-permalink: kb/142/Q142164/
+permalink: /kb/142/Q142164/
 ---
 
 ## Q142164: Admin UI Does Not Display Computers in Domains

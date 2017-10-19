@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109580: Causes of Common SELECT - SQL Error Messages"
-permalink: kb/109/Q109580/
+permalink: /kb/109/Q109580/
 ---
 
 ## Q109580: Causes of Common SELECT - SQL Error Messages

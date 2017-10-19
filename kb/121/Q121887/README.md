@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121887: PRB: Debugger Can't Evaluate Cast of Enum to (long&#42;)"
-permalink: kb/121/Q121887/
+permalink: /kb/121/Q121887/
 ---
 
 ## Q121887: PRB: Debugger Can't Evaluate Cast of Enum to (long&#42;)

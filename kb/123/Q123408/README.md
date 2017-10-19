@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123408: History of Microsoft MS-DOS CD-ROM Extensions (MSCDEX)"
-permalink: kb/123/Q123408/
+permalink: /kb/123/Q123408/
 ---
 
 ## Q123408: History of Microsoft MS-DOS CD-ROM Extensions (MSCDEX)

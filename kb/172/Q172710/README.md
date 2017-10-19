@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172710: How to Use the OH Tool on the Windows NT 4.0 Resource Kit"
-permalink: kb/172/Q172710/
+permalink: /kb/172/Q172710/
 ---
 
 ## Q172710: How to Use the OH Tool on the Windows NT 4.0 Resource Kit

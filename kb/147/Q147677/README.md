@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147677: IBM PC Server 320/520 Hangs Using IBM Tidewater Adapter"
-permalink: kb/147/Q147677/
+permalink: /kb/147/Q147677/
 ---
 
 ## Q147677: IBM PC Server 320/520 Hangs Using IBM Tidewater Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158858: Cannot Rename Users and Groups in Personal Web Server"
-permalink: kb/158/Q158858/
+permalink: /kb/158/Q158858/
 ---
 
 ## Q158858: Cannot Rename Users and Groups in Personal Web Server

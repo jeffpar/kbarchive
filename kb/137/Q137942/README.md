@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137942: Troubleshooting Poor Performance in Microsoft Backup"
-permalink: kb/137/Q137942/
+permalink: /kb/137/Q137942/
 ---
 
 ## Q137942: Troubleshooting Poor Performance in Microsoft Backup

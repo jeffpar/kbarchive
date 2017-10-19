@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163531: PPT: Code to Count the Placeholders on the Current Slide"
-permalink: kb/163/Q163531/
+permalink: /kb/163/Q163531/
 ---
 
 ## Q163531: PPT: Code to Count the Placeholders on the Current Slide

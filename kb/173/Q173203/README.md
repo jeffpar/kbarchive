@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173203: MDG: Useful life exceeded sending to REMOTE"
-permalink: kb/173/Q173203/
+permalink: /kb/173/Q173203/
 ---
 
 ## Q173203: MDG: Useful life exceeded sending to REMOTE

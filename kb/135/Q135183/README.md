@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135183: &quot;Windows Protection Error&quot; on NEC Powermate 466"
-permalink: kb/135/Q135183/
+permalink: /kb/135/Q135183/
 ---
 
 ## Q135183: &quot;Windows Protection Error&quot; on NEC Powermate 466

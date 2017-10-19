@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98198: INFO: CDialogBar Button Enabled When Command Handler Present"
-permalink: kb/098/Q98198/
+permalink: /kb/098/Q98198/
 ---
 
 ## Q98198: INFO: CDialogBar Button Enabled When Command Handler Present

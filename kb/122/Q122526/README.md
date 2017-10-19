@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122526: IntelliPoint Mouse Software Not Supported Under Windows NT"
-permalink: kb/122/Q122526/
+permalink: /kb/122/Q122526/
 ---
 
 ## Q122526: IntelliPoint Mouse Software Not Supported Under Windows NT

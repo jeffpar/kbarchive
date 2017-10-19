@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235329: XFOR: How to Change an MSMail Custom Recipient to SMTP"
-permalink: kb/235/Q235329/
+permalink: /kb/235/Q235329/
 ---
 
 ## Q235329: XFOR: How to Change an MSMail Custom Recipient to SMTP

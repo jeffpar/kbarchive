@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86176: Black May Print as Blue or Magenta on Epson LQ-2550 Printer"
-permalink: kb/086/Q86176/
+permalink: /kb/086/Q86176/
 ---
 
 ## Q86176: Black May Print as Blue or Magenta on Epson LQ-2550 Printer

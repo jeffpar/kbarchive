@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288855: MS01-026: FTP Service Allows Login to Domain Guest Account"
-permalink: kb/288/Q288855/
+permalink: /kb/288/Q288855/
 ---
 
 ## Q288855: MS01-026: FTP Service Allows Login to Domain Guest Account

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187293: SMS: Raw File May Cause Inventory Processor to Stop Responding"
-permalink: kb/187/Q187293/
+permalink: /kb/187/Q187293/
 ---
 
 ## Q187293: SMS: Raw File May Cause Inventory Processor to Stop Responding

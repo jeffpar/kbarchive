@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304716: FIX: AV in RepODBC.dll When You Try to Connect to Repository"
-permalink: kb/304/Q304716/
+permalink: /kb/304/Q304716/
 ---
 
 ## Q304716: FIX: AV in RepODBC.dll When You Try to Connect to Repository

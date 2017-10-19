@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159790: WD97: Words Missing from Custom Dictionary After Undo"
-permalink: kb/159/Q159790/
+permalink: /kb/159/Q159790/
 ---
 
 ## Q159790: WD97: Words Missing from Custom Dictionary After Undo

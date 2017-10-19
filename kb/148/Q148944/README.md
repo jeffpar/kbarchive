@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148944: SMS: Login Script Without Extension Will Not Be Modified"
-permalink: kb/148/Q148944/
+permalink: /kb/148/Q148944/
 ---
 
 ## Q148944: SMS: Login Script Without Extension Will Not Be Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216765: TCP/IP Experiences STOP 0x7F Under Heavy Load"
-permalink: kb/216/Q216765/
+permalink: /kb/216/Q216765/
 ---
 
 ## Q216765: TCP/IP Experiences STOP 0x7F Under Heavy Load

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258692: Microsoft Word 2000 Step by Step Courseware Expert Skills Studen"
-permalink: kb/258/Q258692/
+permalink: /kb/258/Q258692/
 ---
 
 ## Q258692: Microsoft Word 2000 Step by Step Courseware Expert Skills Studen

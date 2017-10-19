@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239053: How to Enable Directory Browsing on Virtual Directories"
-permalink: kb/239/Q239053/
+permalink: /kb/239/Q239053/
 ---
 
 ## Q239053: How to Enable Directory Browsing on Virtual Directories

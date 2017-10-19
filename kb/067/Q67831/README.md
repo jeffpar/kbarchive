@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67831: Flt Sim: Outer Marker at Paine Field Not Working with ADF"
-permalink: kb/067/Q67831/
+permalink: /kb/067/Q67831/
 ---
 
 ## Q67831: Flt Sim: Outer Marker at Paine Field Not Working with ADF

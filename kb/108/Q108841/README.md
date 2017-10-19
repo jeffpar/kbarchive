@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108841: PC DB: Import Does Not Send Welcome Message to New Users"
-permalink: kb/108/Q108841/
+permalink: /kb/108/Q108841/
 ---
 
 ## Q108841: PC DB: Import Does Not Send Welcome Message to New Users

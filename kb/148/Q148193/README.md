@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148193: How to Change REAL&#42;4 Numbers to REAL&#42;8 Values in Debugger"
-permalink: kb/148/Q148193/
+permalink: /kb/148/Q148193/
 ---
 
 ## Q148193: How to Change REAL&#42;4 Numbers to REAL&#42;8 Values in Debugger

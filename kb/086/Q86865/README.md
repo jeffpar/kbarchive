@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86865: Print Manager DOS Timeout: System Call Level Incorrect"
-permalink: kb/086/Q86865/
+permalink: /kb/086/Q86865/
 ---
 
 ## Q86865: Print Manager DOS Timeout: System Call Level Incorrect

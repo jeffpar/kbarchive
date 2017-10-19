@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173999: MSN Password and Member ID Requirements"
-permalink: kb/173/Q173999/
+permalink: /kb/173/Q173999/
 ---
 
 ## Q173999: MSN Password and Member ID Requirements

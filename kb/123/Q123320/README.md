@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123320: PC Forms: Err Msg: Could Not Copy File.."
-permalink: kb/123/Q123320/
+permalink: /kb/123/Q123320/
 ---
 
 ## Q123320: PC Forms: Err Msg: Could Not Copy File..

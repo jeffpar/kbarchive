@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175276: Licensing Policy Implementation with MSCS"
-permalink: kb/175/Q175276/
+permalink: /kb/175/Q175276/
 ---
 
 ## Q175276: Licensing Policy Implementation with MSCS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103088: How to Determine If All Elements in an Array Are Empty"
-permalink: kb/103/Q103088/
+permalink: /kb/103/Q103088/
 ---
 
 ## Q103088: How to Determine If All Elements in an Array Are Empty

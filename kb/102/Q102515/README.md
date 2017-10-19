@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102515: Can't Remove Network Components and Reinstall Advanced Server"
-permalink: kb/102/Q102515/
+permalink: /kb/102/Q102515/
 ---
 
 ## Q102515: Can't Remove Network Components and Reinstall Advanced Server

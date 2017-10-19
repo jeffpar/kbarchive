@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158568: Installing Retired or Third-Party SCSI Drivers During Setup"
-permalink: kb/158/Q158568/
+permalink: /kb/158/Q158568/
 ---
 
 ## Q158568: Installing Retired or Third-Party SCSI Drivers During Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68250: VFINTD.exe Capturing Global Interrupts in Enhanced Mode"
-permalink: kb/068/Q68250/
+permalink: /kb/068/Q68250/
 ---
 
 ## Q68250: VFINTD.exe Capturing Global Interrupts in Enhanced Mode

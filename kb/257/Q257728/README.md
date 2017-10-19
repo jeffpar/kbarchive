@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257728: FIX: Client Winsock Control Doesn't Connect to Server Control"
-permalink: kb/257/Q257728/
+permalink: /kb/257/Q257728/
 ---
 
 ## Q257728: FIX: Client Winsock Control Doesn't Connect to Server Control

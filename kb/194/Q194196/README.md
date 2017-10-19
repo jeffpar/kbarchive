@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194196: FIX: No Help File With Distributed App"
-permalink: kb/194/Q194196/
+permalink: /kb/194/Q194196/
 ---
 
 ## Q194196: FIX: No Help File With Distributed App

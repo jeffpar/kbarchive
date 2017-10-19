@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315593: Flight Simulator 2002: You Don't Hear Marker Indicator Sounds"
-permalink: kb/315/Q315593/
+permalink: /kb/315/Q315593/
 ---
 
 ## Q315593: Flight Simulator 2002: You Don't Hear Marker Indicator Sounds

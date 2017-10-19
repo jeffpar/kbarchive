@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148472: SMC Ultra 8216 Is Supported by Selecting SMC EtherEZ (8416)"
-permalink: kb/148/Q148472/
+permalink: /kb/148/Q148472/
 ---
 
 ## Q148472: SMC Ultra 8216 Is Supported by Selecting SMC EtherEZ (8416)

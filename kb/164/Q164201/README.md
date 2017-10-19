@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164201: Access Violation Installing IIS"
-permalink: kb/164/Q164201/
+permalink: /kb/164/Q164201/
 ---
 
 ## Q164201: Access Violation Installing IIS

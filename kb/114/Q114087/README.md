@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114087: Installing NT on a Ultrastor 22CA ESDI Controller"
-permalink: kb/114/Q114087/
+permalink: /kb/114/Q114087/
 ---
 
 ## Q114087: Installing NT on a Ultrastor 22CA ESDI Controller

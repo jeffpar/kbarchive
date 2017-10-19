@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163594: SLI_OPEN Fails w/ LUA_CANCELLED After SLI_CLOSE Completes"
-permalink: kb/163/Q163594/
+permalink: /kb/163/Q163594/
 ---
 
 ## Q163594: SLI_OPEN Fails w/ LUA_CANCELLED After SLI_CLOSE Completes

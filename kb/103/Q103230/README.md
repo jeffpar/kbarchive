@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103230: SAMPLE: SoundCli.exe Demonstrates DDE Client Over a Network"
-permalink: kb/103/Q103230/
+permalink: /kb/103/Q103230/
 ---
 
 ## Q103230: SAMPLE: SoundCli.exe Demonstrates DDE Client Over a Network

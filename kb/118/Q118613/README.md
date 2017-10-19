@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118613: INFO: Accessing OLE 2.0 Embedded Object Dirties OLE 1.0 Client"
-permalink: kb/118/Q118613/
+permalink: /kb/118/Q118613/
 ---
 
 ## Q118613: INFO: Accessing OLE 2.0 Embedded Object Dirties OLE 1.0 Client

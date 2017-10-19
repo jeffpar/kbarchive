@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166593: XFOR: MSMail Migration Wizard Stops in Progress"
-permalink: kb/166/Q166593/
+permalink: /kb/166/Q166593/
 ---
 
 ## Q166593: XFOR: MSMail Migration Wizard Stops in Progress

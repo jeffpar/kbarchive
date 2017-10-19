@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50304: Score Does Not Reset in World War I Ace in Flight Simulator"
-permalink: kb/050/Q50304/
+permalink: /kb/050/Q50304/
 ---
 
 ## Q50304: Score Does Not Reset in World War I Ace in Flight Simulator

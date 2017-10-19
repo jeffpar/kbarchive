@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11623: How to Transparently Intercept Procedure Calls in Windows"
-permalink: kb/011/Q11623/
+permalink: /kb/011/Q11623/
 ---
 
 ## Q11623: How to Transparently Intercept Procedure Calls in Windows

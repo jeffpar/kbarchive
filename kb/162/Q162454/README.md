@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162454: Cannot Enable Operator Assisted or Manual Dial Option in DUN"
-permalink: kb/162/Q162454/
+permalink: /kb/162/Q162454/
 ---
 
 ## Q162454: Cannot Enable Operator Assisted or Manual Dial Option in DUN

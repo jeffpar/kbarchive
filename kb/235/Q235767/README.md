@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235767: SMS: Programs Fail to Run From a Package Subdirectory"
-permalink: kb/235/Q235767/
+permalink: /kb/235/Q235767/
 ---
 
 ## Q235767: SMS: Programs Fail to Run From a Package Subdirectory

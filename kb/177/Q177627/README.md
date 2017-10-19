@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177627: HOWTO: Use the OLE_OPTEXCLUSIVE Property Data Type"
-permalink: kb/177/Q177627/
+permalink: /kb/177/Q177627/
 ---
 
 ## Q177627: HOWTO: Use the OLE_OPTEXCLUSIVE Property Data Type

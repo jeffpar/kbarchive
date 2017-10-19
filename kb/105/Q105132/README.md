@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105132: Do Not Uninstall After Changing Your Partitioning"
-permalink: kb/105/Q105132/
+permalink: /kb/105/Q105132/
 ---
 
 ## Q105132: Do Not Uninstall After Changing Your Partitioning

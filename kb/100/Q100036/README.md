@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100036: Mac Wkst: Explanation of Give Up Dialog Box"
-permalink: kb/100/Q100036/
+permalink: /kb/100/Q100036/
 ---
 
 ## Q100036: Mac Wkst: Explanation of Give Up Dialog Box

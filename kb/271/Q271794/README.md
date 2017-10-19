@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271794: Access Violation in RPCSS with Endpoint Mapper RPC Requests"
-permalink: kb/271/Q271794/
+permalink: /kb/271/Q271794/
 ---
 
 ## Q271794: Access Violation in RPCSS with Endpoint Mapper RPC Requests

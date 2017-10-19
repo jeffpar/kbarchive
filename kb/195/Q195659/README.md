@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195659: WD97: How to Use Conditional Field to Specify Number of Digits"
-permalink: kb/195/Q195659/
+permalink: /kb/195/Q195659/
 ---
 
 ## Q195659: WD97: How to Use Conditional Field to Specify Number of Digits

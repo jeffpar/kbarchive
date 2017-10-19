@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236786: PRB: &quot;Numeric Value Out of Range&quot; Error Calling GetFieldValue"
-permalink: kb/236/Q236786/
+permalink: /kb/236/Q236786/
 ---
 
 ## Q236786: PRB: &quot;Numeric Value Out of Range&quot; Error Calling GetFieldValue

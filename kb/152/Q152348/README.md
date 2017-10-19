@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152348: Block Writes Across Net May Cause Performance Hit"
-permalink: kb/152/Q152348/
+permalink: /kb/152/Q152348/
 ---
 
 ## Q152348: Block Writes Across Net May Cause Performance Hit

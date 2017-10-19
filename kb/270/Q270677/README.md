@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270677: XADM: Event Service Does Not Start and Error 0x80040154 Appears"
-permalink: kb/270/Q270677/
+permalink: /kb/270/Q270677/
 ---
 
 ## Q270677: XADM: Event Service Does Not Start and Error 0x80040154 Appears

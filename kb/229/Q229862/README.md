@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229862: Microsoft Windows 95 Year 2000 Corporate Update"
-permalink: kb/229/Q229862/
+permalink: /kb/229/Q229862/
 ---
 
 ## Q229862: Microsoft Windows 95 Year 2000 Corporate Update

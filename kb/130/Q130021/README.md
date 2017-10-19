@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130021: XCLN: Copy from To: Field Doesn't Copy Trailing Semicolon"
-permalink: kb/130/Q130021/
+permalink: /kb/130/Q130021/
 ---
 
 ## Q130021: XCLN: Copy from To: Field Doesn't Copy Trailing Semicolon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263279: SMS: Advertisement Fails with Error 10003"
-permalink: kb/263/Q263279/
+permalink: /kb/263/Q263279/
 ---
 
 ## Q263279: SMS: Advertisement Fails with Error 10003

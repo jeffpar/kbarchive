@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179056: XADM: Store Stops While Processing Rule for Client"
-permalink: kb/179/Q179056/
+permalink: /kb/179/Q179056/
 ---
 
 ## Q179056: XADM: Store Stops While Processing Rule for Client

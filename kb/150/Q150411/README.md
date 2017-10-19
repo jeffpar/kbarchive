@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150411: Macintosh Bookshelf 1996-97: Manual Installation Instructions"
-permalink: kb/150/Q150411/
+permalink: /kb/150/Q150411/
 ---
 
 ## Q150411: Macintosh Bookshelf 1996-97: Manual Installation Instructions

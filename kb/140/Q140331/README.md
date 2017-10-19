@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140331: FAX: Send Fax Macro No Longer Works with 32-bit Office products"
-permalink: kb/140/Q140331/
+permalink: /kb/140/Q140331/
 ---
 
 ## Q140331: FAX: Send Fax Macro No Longer Works with 32-bit Office products

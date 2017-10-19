@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224337: Errors Noted in Event Viewer After Installing Wacom Tablet"
-permalink: kb/224/Q224337/
+permalink: /kb/224/Q224337/
 ---
 
 ## Q224337: Errors Noted in Event Viewer After Installing Wacom Tablet

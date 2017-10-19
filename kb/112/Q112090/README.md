@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112090: AWFAX: Err Msg or No Connection with PM14400FXSA Fax Modem"
-permalink: kb/112/Q112090/
+permalink: /kb/112/Q112090/
 ---
 
 ## Q112090: AWFAX: Err Msg or No Connection with PM14400FXSA Fax Modem

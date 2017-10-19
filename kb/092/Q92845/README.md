@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92845: SoundBits: How to Reset the Sound Scheme to Windows Default"
-permalink: kb/092/Q92845/
+permalink: /kb/092/Q92845/
 ---
 
 ## Q92845: SoundBits: How to Reset the Sound Scheme to Windows Default

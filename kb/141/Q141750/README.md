@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141750: Bookshelf: Unable to Paste Article into Lotus Ami Pro"
-permalink: kb/141/Q141750/
+permalink: /kb/141/Q141750/
 ---
 
 ## Q141750: Bookshelf: Unable to Paste Article into Lotus Ami Pro

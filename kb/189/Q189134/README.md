@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189134: HOWTO: Raise an Error in Visual Basic From Your C DLL"
-permalink: kb/189/Q189134/
+permalink: /kb/189/Q189134/
 ---
 
 ## Q189134: HOWTO: Raise an Error in Visual Basic From Your C DLL

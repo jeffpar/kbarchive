@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247975: Strong Passwords May Contain Parts of the Full Name"
-permalink: kb/247/Q247975/
+permalink: /kb/247/Q247975/
 ---
 
 ## Q247975: Strong Passwords May Contain Parts of the Full Name

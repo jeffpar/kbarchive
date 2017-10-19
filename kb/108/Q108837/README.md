@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q108837: PC Gen: PODIAG.INI Entries in [User Mail Check]"
-permalink: kb/108/Q108837/
+title: "Q108837: PC Gen: PODIAG.INI Entries in &#91;User Mail Check&#93;"
+permalink: /kb/108/Q108837/
 ---
 
-## Q108837: PC Gen: PODIAG.INI Entries in [User Mail Check]
+## Q108837: PC Gen: PODIAG.INI Entries in &#91;User Mail Check&#93;
 
 	Article: Q108837
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108283: FIX: F1001 in codegen.c with IMPLICIT COMPLEX"
-permalink: kb/108/Q108283/
+permalink: /kb/108/Q108283/
 ---
 
 ## Q108283: FIX: F1001 in codegen.c with IMPLICIT COMPLEX

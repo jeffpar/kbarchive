@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318188: HOW TO: Save The Contents Of Visual Basic Form To a DIB Section"
-permalink: kb/318/Q318188/
+permalink: /kb/318/Q318188/
 ---
 
 ## Q318188: HOW TO: Save The Contents Of Visual Basic Form To a DIB Section

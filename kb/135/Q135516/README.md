@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135516: DOC: DBSETPROP Example Contains Extra Zero"
-permalink: kb/135/Q135516/
+permalink: /kb/135/Q135516/
 ---
 
 ## Q135516: DOC: DBSETPROP Example Contains Extra Zero

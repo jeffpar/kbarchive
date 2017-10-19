@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93549: Pro Audio Spectrum 16 Settings and Features"
-permalink: kb/093/Q93549/
+permalink: /kb/093/Q93549/
 ---
 
 ## Q93549: Pro Audio Spectrum 16 Settings and Features

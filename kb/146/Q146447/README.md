@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146447: FIX: BreakPoints not hit for long file name DLL/EXE"
-permalink: kb/146/Q146447/
+permalink: /kb/146/Q146447/
 ---
 
 ## Q146447: FIX: BreakPoints not hit for long file name DLL/EXE

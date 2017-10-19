@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127955: NT LPD Fails to Remove Double Digit Job Numbers via LPRM"
-permalink: kb/127/Q127955/
+permalink: /kb/127/Q127955/
 ---
 
 ## Q127955: NT LPD Fails to Remove Double Digit Job Numbers via LPRM

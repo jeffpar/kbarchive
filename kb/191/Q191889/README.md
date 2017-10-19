@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191889: Y2K: Rebuild.exe Displays Incorrect Date after 1999"
-permalink: kb/191/Q191889/
+permalink: /kb/191/Q191889/
 ---
 
 ## Q191889: Y2K: Rebuild.exe Displays Incorrect Date after 1999

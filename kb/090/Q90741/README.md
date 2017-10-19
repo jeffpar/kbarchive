@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90741: System Hangs with Zenith Z-Note"
-permalink: kb/090/Q90741/
+permalink: /kb/090/Q90741/
 ---
 
 ## Q90741: System Hangs with Zenith Z-Note

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180574: Client Fails if WNAP Started Using /User: and /Pwd: Options"
-permalink: kb/180/Q180574/
+permalink: /kb/180/Q180574/
 ---
 
 ## Q180574: Client Fails if WNAP Started Using /User: and /Pwd: Options

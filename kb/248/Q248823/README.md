@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248823: &quot;Connection Failed&quot; Attempting to Use Remote SMS Admin Console"
-permalink: kb/248/Q248823/
+permalink: /kb/248/Q248823/
 ---
 
 ## Q248823: &quot;Connection Failed&quot; Attempting to Use Remote SMS Admin Console

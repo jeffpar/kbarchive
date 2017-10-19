@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191629: HOWTO: Create an MTS Component that Works with FoxIsapi"
-permalink: kb/191/Q191629/
+permalink: /kb/191/Q191629/
 ---
 
 ## Q191629: HOWTO: Create an MTS Component that Works with FoxIsapi

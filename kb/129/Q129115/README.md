@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129115: PRLNTSS.SYS Error After Applying Compaq SSD"
-permalink: kb/129/Q129115/
+permalink: /kb/129/Q129115/
 ---
 
 ## Q129115: PRLNTSS.SYS Error After Applying Compaq SSD

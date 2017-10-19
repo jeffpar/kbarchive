@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171308: Explorer File Properties Dialog Version Tab Missing"
-permalink: kb/171/Q171308/
+permalink: /kb/171/Q171308/
 ---
 
 ## Q171308: Explorer File Properties Dialog Version Tab Missing

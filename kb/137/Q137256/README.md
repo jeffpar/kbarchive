@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137256: Mac Multimedia &amp; Kids: Setup with Network and At Ease"
-permalink: kb/137/Q137256/
+permalink: /kb/137/Q137256/
 ---
 
 ## Q137256: Mac Multimedia &amp; Kids: Setup with Network and At Ease

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136952: Windows NT 3.51 FTP Server Displays Incorrect Version Number"
-permalink: kb/136/Q136952/
+permalink: /kb/136/Q136952/
 ---
 
 ## Q136952: Windows NT 3.51 FTP Server Displays Incorrect Version Number

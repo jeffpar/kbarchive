@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237443: MultinetGetConnectionPerformance() May Not Give Expected Results"
-permalink: kb/237/Q237443/
+permalink: /kb/237/Q237443/
 ---
 
 ## Q237443: MultinetGetConnectionPerformance() May Not Give Expected Results

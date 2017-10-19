@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154338: Documentation for TCP/IP Shows Incorrect Print Destination"
-permalink: kb/154/Q154338/
+permalink: /kb/154/Q154338/
 ---
 
 ## Q154338: Documentation for TCP/IP Shows Incorrect Print Destination

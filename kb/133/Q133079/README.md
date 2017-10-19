@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133079: Blank Page Previewing One-Page Document"
-permalink: kb/133/Q133079/
+permalink: /kb/133/Q133079/
 ---
 
 ## Q133079: Blank Page Previewing One-Page Document

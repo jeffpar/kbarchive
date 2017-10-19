@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142921: Streets 4.0: Some Street Numbers and Labels Do Not Print"
-permalink: kb/142/Q142921/
+permalink: /kb/142/Q142921/
 ---
 
 ## Q142921: Streets 4.0: Some Street Numbers and Labels Do Not Print

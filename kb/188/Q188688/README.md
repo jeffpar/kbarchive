@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188688: XCLN: Inbox Assistant Missing After Uninstalling Netscape"
-permalink: kb/188/Q188688/
+permalink: /kb/188/Q188688/
 ---
 
 ## Q188688: XCLN: Inbox Assistant Missing After Uninstalling Netscape

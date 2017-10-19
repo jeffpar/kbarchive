@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71890: FIX: Using TYPE Operator in Indirect Memory Operand Gives A2056"
-permalink: kb/071/Q71890/
+permalink: /kb/071/Q71890/
 ---
 
 ## Q71890: FIX: Using TYPE Operator in Indirect Memory Operand Gives A2056

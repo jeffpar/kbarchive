@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32832: DOCERR: New Command-Line Option for MASM 5.1: /LA"
-permalink: kb/032/Q32832/
+permalink: /kb/032/Q32832/
 ---
 
 ## Q32832: DOCERR: New Command-Line Option for MASM 5.1: /LA

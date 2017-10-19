@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165233: WD97: Word Loses Center Align When Saving to HTML"
-permalink: kb/165/Q165233/
+permalink: /kb/165/Q165233/
 ---
 
 ## Q165233: WD97: Word Loses Center Align When Saving to HTML

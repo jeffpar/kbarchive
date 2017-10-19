@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130909: NTBACKUP Fails to Restore All Files in a Directory"
-permalink: kb/130/Q130909/
+permalink: /kb/130/Q130909/
 ---
 
 ## Q130909: NTBACKUP Fails to Restore All Files in a Directory

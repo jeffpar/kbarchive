@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127064: Changing Spool Settings Does Not Restore Defaults"
-permalink: kb/127/Q127064/
+permalink: /kb/127/Q127064/
 ---
 
 ## Q127064: Changing Spool Settings Does Not Restore Defaults

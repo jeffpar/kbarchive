@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139361: INFO: Readme.wri: Section 3, Issues and Considerations"
-permalink: kb/139/Q139361/
+permalink: /kb/139/Q139361/
 ---
 
 ## Q139361: INFO: Readme.wri: Section 3, Issues and Considerations

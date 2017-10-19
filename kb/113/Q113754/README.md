@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113754: &quot;Syntax Error&quot; When Verifying UDF() in Report Writer"
-permalink: kb/113/Q113754/
+permalink: /kb/113/Q113754/
 ---
 
 ## Q113754: &quot;Syntax Error&quot; When Verifying UDF() in Report Writer

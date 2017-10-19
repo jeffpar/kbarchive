@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213173: SMS: Error When Using DISTINCT Keyword Inside Count Query in WQL"
-permalink: kb/213/Q213173/
+permalink: /kb/213/Q213173/
 ---
 
 ## Q213173: SMS: Error When Using DISTINCT Keyword Inside Count Query in WQL

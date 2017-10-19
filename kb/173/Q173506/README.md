@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173506: Remote Server Disconnect"
-permalink: kb/173/Q173506/
+permalink: /kb/173/Q173506/
 ---
 
 ## Q173506: Remote Server Disconnect

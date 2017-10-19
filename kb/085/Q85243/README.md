@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85243: Cardfile Err Msg: Sharing Violation on Drive x..."
-permalink: kb/085/Q85243/
+permalink: /kb/085/Q85243/
 ---
 
 ## Q85243: Cardfile Err Msg: Sharing Violation on Drive x...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125967: HOWTO: Printing Labels in FoxPro Windows to a Dot Matrix Printer"
-permalink: kb/125/Q125967/
+permalink: /kb/125/Q125967/
 ---
 
 ## Q125967: HOWTO: Printing Labels in FoxPro Windows to a Dot Matrix Printer

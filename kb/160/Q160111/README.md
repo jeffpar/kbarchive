@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160111: Cannot Read Hellbender CD from SideWinder 3D Pro Bundle"
-permalink: kb/160/Q160111/
+permalink: /kb/160/Q160111/
 ---
 
 ## Q160111: Cannot Read Hellbender CD from SideWinder 3D Pro Bundle

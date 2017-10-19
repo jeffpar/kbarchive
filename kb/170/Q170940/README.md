@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170940: WD97: Password Not Prompted with First Expansion of Sub-document"
-permalink: kb/170/Q170940/
+permalink: /kb/170/Q170940/
 ---
 
 ## Q170940: WD97: Password Not Prompted with First Expansion of Sub-document

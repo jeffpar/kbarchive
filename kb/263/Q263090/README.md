@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263090: How to Install Win2K Print Driver in NT4 for Point and Print"
-permalink: kb/263/Q263090/
+permalink: /kb/263/Q263090/
 ---
 
 ## Q263090: How to Install Win2K Print Driver in NT4 for Point and Print

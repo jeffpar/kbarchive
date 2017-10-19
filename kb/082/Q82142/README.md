@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82142: Microsoft Learning Windows Hangs when Running Help Demo"
-permalink: kb/082/Q82142/
+permalink: /kb/082/Q82142/
 ---
 
 ## Q82142: Microsoft Learning Windows Hangs when Running Help Demo

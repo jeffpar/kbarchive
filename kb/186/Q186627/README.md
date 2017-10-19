@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186627: How to Temporarily Disable Terminal Server Client Logons"
-permalink: kb/186/Q186627/
+permalink: /kb/186/Q186627/
 ---
 
 ## Q186627: How to Temporarily Disable Terminal Server Client Logons

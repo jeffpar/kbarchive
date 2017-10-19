@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149707: Version Numbers for The Microsoft Network 1.3"
-permalink: kb/149/Q149707/
+permalink: /kb/149/Q149707/
 ---
 
 ## Q149707: Version Numbers for The Microsoft Network 1.3

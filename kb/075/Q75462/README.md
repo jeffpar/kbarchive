@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75462: Always Technologies Controller and Syquest Removable Media"
-permalink: kb/075/Q75462/
+permalink: /kb/075/Q75462/
 ---
 
 ## Q75462: Always Technologies Controller and Syquest Removable Media

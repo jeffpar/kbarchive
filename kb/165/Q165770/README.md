@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165770: WD97: Double Strikethrough Lost When File Opened in Word 6.0/95"
-permalink: kb/165/Q165770/
+permalink: /kb/165/Q165770/
 ---
 
 ## Q165770: WD97: Double Strikethrough Lost When File Opened in Word 6.0/95

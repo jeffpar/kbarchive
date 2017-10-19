@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203043: Windows NT Diagnostics Does Not Locate a Client Computer"
-permalink: kb/203/Q203043/
+permalink: /kb/203/Q203043/
 ---
 
 ## Q203043: Windows NT Diagnostics Does Not Locate a Client Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66170: DOCERR: Repeat Prefix (REP) Documentation Error"
-permalink: kb/066/Q66170/
+permalink: /kb/066/Q66170/
 ---
 
 ## Q66170: DOCERR: Repeat Prefix (REP) Documentation Error

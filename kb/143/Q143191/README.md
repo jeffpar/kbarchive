@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143191: Real Audio Is Supported on Windows NT Internet Explorer"
-permalink: kb/143/Q143191/
+permalink: /kb/143/Q143191/
 ---
 
 ## Q143191: Real Audio Is Supported on Windows NT Internet Explorer

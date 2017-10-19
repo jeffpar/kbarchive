@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141018: Rearranging Icons While Renaming File Renames Wrong File"
-permalink: kb/141/Q141018/
+permalink: /kb/141/Q141018/
 ---
 
 ## Q141018: Rearranging Icons While Renaming File Renames Wrong File

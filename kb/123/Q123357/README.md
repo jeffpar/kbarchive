@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123357: PRO0008E Invalid Decimal Digit in PROTOCOL.INI File"
-permalink: kb/123/Q123357/
+permalink: /kb/123/Q123357/
 ---
 
 ## Q123357: PRO0008E Invalid Decimal Digit in PROTOCOL.INI File

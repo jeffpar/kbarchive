@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169787: WD97: Some Colors Missing from DIB Images w/ HP LaserJet Driver"
-permalink: kb/169/Q169787/
+permalink: /kb/169/Q169787/
 ---
 
 ## Q169787: WD97: Some Colors Missing from DIB Images w/ HP LaserJet Driver

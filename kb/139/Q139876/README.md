@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139876: Non-CompuServe Recipients Not Listed in CIS Mail Header"
-permalink: kb/139/Q139876/
+permalink: /kb/139/Q139876/
 ---
 
 ## Q139876: Non-CompuServe Recipients Not Listed in CIS Mail Header

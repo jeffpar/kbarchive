@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130975: Resource Conflict with Standard VGA Video Driver"
-permalink: kb/130/Q130975/
+permalink: /kb/130/Q130975/
 ---
 
 ## Q130975: Resource Conflict with Standard VGA Video Driver

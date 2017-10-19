@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117198: PC Adm: IMPORT .INF File Size Increases When IMPORT -A Is Used"
-permalink: kb/117/Q117198/
+permalink: /kb/117/Q117198/
 ---
 
 ## Q117198: PC Adm: IMPORT .INF File Size Increases When IMPORT -A Is Used

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296680: User Accounts Are Not Excluded from Password Synchronization"
-permalink: kb/296/Q296680/
+permalink: /kb/296/Q296680/
 ---
 
 ## Q296680: User Accounts Are Not Excluded from Password Synchronization

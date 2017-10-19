@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150513: Multiple SLI_OPEN()s Can Cause SESSION_ALREADY_OPEN"
-permalink: kb/150/Q150513/
+permalink: /kb/150/Q150513/
 ---
 
 ## Q150513: Multiple SLI_OPEN()s Can Cause SESSION_ALREADY_OPEN

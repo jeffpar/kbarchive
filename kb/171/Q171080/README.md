@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171080: SMSINST: No Error When Overwriting Files Without Rights"
-permalink: kb/171/Q171080/
+permalink: /kb/171/Q171080/
 ---
 
 ## Q171080: SMSINST: No Error When Overwriting Files Without Rights

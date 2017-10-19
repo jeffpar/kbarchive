@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160474: Fax Wizard Falsely Implies Completion of Faxing Process"
-permalink: kb/160/Q160474/
+permalink: /kb/160/Q160474/
 ---
 
 ## Q160474: Fax Wizard Falsely Implies Completion of Faxing Process

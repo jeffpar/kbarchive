@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188317: SuperTip Demonstrates Tool Tips in an MFC Application"
-permalink: kb/188/Q188317/
+permalink: /kb/188/Q188317/
 ---
 
 ## Q188317: SuperTip Demonstrates Tool Tips in an MFC Application

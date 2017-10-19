@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243681: Copy-Queue Causes &quot;Not Logged in&quot; Requests on NetWare Servers"
-permalink: kb/243/Q243681/
+permalink: /kb/243/Q243681/
 ---
 
 ## Q243681: Copy-Queue Causes &quot;Not Logged in&quot; Requests on NetWare Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165250: WD97: Errors Setting Border LineWidths Via Macro Commands"
-permalink: kb/165/Q165250/
+permalink: /kb/165/Q165250/
 ---
 
 ## Q165250: WD97: Errors Setting Border LineWidths Via Macro Commands

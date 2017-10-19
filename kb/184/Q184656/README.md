@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184656: Outwars: Strange Graphic Effects or Poor Graphic Performance"
-permalink: kb/184/Q184656/
+permalink: /kb/184/Q184656/
 ---
 
 ## Q184656: Outwars: Strange Graphic Effects or Poor Graphic Performance

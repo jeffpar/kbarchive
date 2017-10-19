@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148802: Microsoft Windows 95 Telnet Has Buffer Limitation of 2180"
-permalink: kb/148/Q148802/
+permalink: /kb/148/Q148802/
 ---
 
 ## Q148802: Microsoft Windows 95 Telnet Has Buffer Limitation of 2180

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163347: PRB: Project Created but No Objects If Add to VSS Is Canceled"
-permalink: kb/163/Q163347/
+permalink: /kb/163/Q163347/
 ---
 
 ## Q163347: PRB: Project Created but No Objects If Add to VSS Is Canceled

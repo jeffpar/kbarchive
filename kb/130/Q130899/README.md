@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130899: Cannot Print From SMSTRACE Utility"
-permalink: kb/130/Q130899/
+permalink: /kb/130/Q130899/
 ---
 
 ## Q130899: Cannot Print From SMSTRACE Utility

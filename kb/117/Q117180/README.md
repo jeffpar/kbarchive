@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117180: Mac Cinemania 94: System Stops If Installing Under System 6.0"
-permalink: kb/117/Q117180/
+permalink: /kb/117/Q117180/
 ---
 
 ## Q117180: Mac Cinemania 94: System Stops If Installing Under System 6.0

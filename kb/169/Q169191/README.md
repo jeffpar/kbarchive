@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169191: RAS Server Registry Settings for IP Header Compression"
-permalink: kb/169/Q169191/
+permalink: /kb/169/Q169191/
 ---
 
 ## Q169191: RAS Server Registry Settings for IP Header Compression

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214987: SMS: Chat Edit Window Cannot Display Euro Symbol"
-permalink: kb/214/Q214987/
+permalink: /kb/214/Q214987/
 ---
 
 ## Q214987: SMS: Chat Edit Window Cannot Display Euro Symbol

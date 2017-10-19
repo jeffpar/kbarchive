@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161848: FP: Custom Color Palette Reset After Editor Session"
-permalink: kb/161/Q161848/
+permalink: /kb/161/Q161848/
 ---
 
 ## Q161848: FP: Custom Color Palette Reset After Editor Session

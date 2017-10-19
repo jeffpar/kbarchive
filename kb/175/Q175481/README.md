@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175481: XADM: Store Does Not Grow When Moving Users to Another Server"
-permalink: kb/175/Q175481/
+permalink: /kb/175/Q175481/
 ---
 
 ## Q175481: XADM: Store Does Not Grow When Moving Users to Another Server

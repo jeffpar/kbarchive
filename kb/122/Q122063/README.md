@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122063: Explorer ErrMsg: Cannot Rename (or Find) the Specified File..."
-permalink: kb/122/Q122063/
+permalink: /kb/122/Q122063/
 ---
 
 ## Q122063: Explorer ErrMsg: Cannot Rename (or Find) the Specified File...

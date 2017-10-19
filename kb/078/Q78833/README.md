@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78833: PC Adm: Summary of Administration Program Error Messages"
-permalink: kb/078/Q78833/
+permalink: /kb/078/Q78833/
 ---
 
 ## Q78833: PC Adm: Summary of Administration Program Error Messages

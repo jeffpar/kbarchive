@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91127: Write Err Msg: '&lt;Filename&gt; Could Not Be Found' and WFWG Hangs"
-permalink: kb/091/Q91127/
+permalink: /kb/091/Q91127/
 ---
 
 ## Q91127: Write Err Msg: '&lt;Filename&gt; Could Not Be Found' and WFWG Hangs

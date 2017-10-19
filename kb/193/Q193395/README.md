@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193395: XFOR: Access Violation Occurs When Stopping Dirsync Service"
-permalink: kb/193/Q193395/
+permalink: /kb/193/Q193395/
 ---
 
 ## Q193395: XFOR: Access Violation Occurs When Stopping Dirsync Service

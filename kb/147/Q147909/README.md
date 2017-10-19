@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147909: Troubleshooting MacVolume Creation Errors"
-permalink: kb/147/Q147909/
+permalink: /kb/147/Q147909/
 ---
 
 ## Q147909: Troubleshooting MacVolume Creation Errors

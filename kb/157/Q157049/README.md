@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157049: HOWTO: Debug Remote Automation Servers in Visual FoxPro 5"
-permalink: kb/157/Q157049/
+permalink: /kb/157/Q157049/
 ---
 
 ## Q157049: HOWTO: Debug Remote Automation Servers in Visual FoxPro 5

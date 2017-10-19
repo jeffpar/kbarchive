@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123500: Administrators Permissions for a Printer Change to Read"
-permalink: kb/123/Q123500/
+permalink: /kb/123/Q123500/
 ---
 
 ## Q123500: Administrators Permissions for a Printer Change to Read

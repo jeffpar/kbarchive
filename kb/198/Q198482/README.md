@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198482: XWEB: Next/Previous Button Confused in Message with PF Link"
-permalink: kb/198/Q198482/
+permalink: /kb/198/Q198482/
 ---
 
 ## Q198482: XWEB: Next/Previous Button Confused in Message with PF Link

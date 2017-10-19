@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72700: FIX: MASM 6.0 May Parse a Comment as a Conditional Directive"
-permalink: kb/072/Q72700/
+permalink: /kb/072/Q72700/
 ---
 
 ## Q72700: FIX: MASM 6.0 May Parse a Comment as a Conditional Directive

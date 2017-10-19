@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185183: XADM: Administering Alpha-based Servers from Intel Workstations"
-permalink: kb/185/Q185183/
+permalink: /kb/185/Q185183/
 ---
 
 ## Q185183: XADM: Administering Alpha-based Servers from Intel Workstations

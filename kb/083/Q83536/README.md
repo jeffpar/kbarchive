@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83536: Mac Wkst Srv: Installing the MailMaker Software"
-permalink: kb/083/Q83536/
+permalink: /kb/083/Q83536/
 ---
 
 ## Q83536: Mac Wkst Srv: Installing the MailMaker Software

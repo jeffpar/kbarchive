@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255757: PRB: Circular Dependency Error When UDT Is Not In Base Class Mod"
-permalink: kb/255/Q255757/
+permalink: /kb/255/Q255757/
 ---
 
 ## Q255757: PRB: Circular Dependency Error When UDT Is Not In Base Class Mod

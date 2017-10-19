@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233389: SMS: Cannot Communicate with NetWare 5 Servers"
-permalink: kb/233/Q233389/
+permalink: /kb/233/Q233389/
 ---
 
 ## Q233389: SMS: Cannot Communicate with NetWare 5 Servers

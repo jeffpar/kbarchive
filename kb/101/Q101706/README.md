@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101706: MS-DOS-Based Multimedia Application Support in Windows NT"
-permalink: kb/101/Q101706/
+permalink: /kb/101/Q101706/
 ---
 
 ## Q101706: MS-DOS-Based Multimedia Application Support in Windows NT

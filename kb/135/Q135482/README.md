@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135482: Windows 95 CD-ROM Readme.txt File"
-permalink: kb/135/Q135482/
+permalink: /kb/135/Q135482/
 ---
 
 ## Q135482: Windows 95 CD-ROM Readme.txt File

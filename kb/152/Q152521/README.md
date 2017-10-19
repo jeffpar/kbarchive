@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152521: XCLN: Can Not Open MS Excel for Macintosh Four Attachments"
-permalink: kb/152/Q152521/
+permalink: /kb/152/Q152521/
 ---
 
 ## Q152521: XCLN: Can Not Open MS Excel for Macintosh Four Attachments

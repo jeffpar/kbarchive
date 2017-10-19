@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261281: XCCC: Unable to Authenticate When Changing Conference Resource"
-permalink: kb/261/Q261281/
+permalink: /kb/261/Q261281/
 ---
 
 ## Q261281: XCCC: Unable to Authenticate When Changing Conference Resource

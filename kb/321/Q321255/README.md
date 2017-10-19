@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321255: FIX: ODBC Driver for SQL Server Incorrectly Returns SQL_SUCCESS"
-permalink: kb/321/Q321255/
+permalink: /kb/321/Q321255/
 ---
 
 ## Q321255: FIX: ODBC Driver for SQL Server Incorrectly Returns SQL_SUCCESS

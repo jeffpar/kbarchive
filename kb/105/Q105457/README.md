@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105457: Windows NT CD Contents &#92;MIPS (511)"
-permalink: kb/105/Q105457/
+permalink: /kb/105/Q105457/
 ---
 
 ## Q105457: Windows NT CD Contents &#92;MIPS (511)

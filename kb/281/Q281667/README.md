@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281667: Links 2001: Distance from Aiming Marker to Pin Shown Incorrectly"
-permalink: kb/281/Q281667/
+permalink: /kb/281/Q281667/
 ---
 
 ## Q281667: Links 2001: Distance from Aiming Marker to Pin Shown Incorrectly

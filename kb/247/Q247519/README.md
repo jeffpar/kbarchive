@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247519: Asheron's Call: Game Does Not Start When You Click Play"
-permalink: kb/247/Q247519/
+permalink: /kb/247/Q247519/
 ---
 
 ## Q247519: Asheron's Call: Game Does Not Start When You Click Play

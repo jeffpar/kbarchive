@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122901: Datarace RediModem Modem Error from RAS"
-permalink: kb/122/Q122901/
+permalink: /kb/122/Q122901/
 ---
 
 ## Q122901: Datarace RediModem Modem Error from RAS

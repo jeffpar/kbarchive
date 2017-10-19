@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121696: No Sound in Space Simulator"
-permalink: kb/121/Q121696/
+permalink: /kb/121/Q121696/
 ---
 
 ## Q121696: No Sound in Space Simulator

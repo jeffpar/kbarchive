@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202332: SMS: How 'Assignments Not Mandatory Over Slow Links' Works"
-permalink: kb/202/Q202332/
+permalink: /kb/202/Q202332/
 ---
 
 ## Q202332: SMS: How 'Assignments Not Mandatory Over Slow Links' Works

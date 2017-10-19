@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131719: Audio CD Continues to Play After Restart"
-permalink: kb/131/Q131719/
+permalink: /kb/131/Q131719/
 ---
 
 ## Q131719: Audio CD Continues to Play After Restart

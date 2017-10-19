@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176520: XADM: Limiting Memory Usage of Exchange Server"
-permalink: kb/176/Q176520/
+permalink: /kb/176/Q176520/
 ---
 
 ## Q176520: XADM: Limiting Memory Usage of Exchange Server

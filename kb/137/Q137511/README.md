@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137511: Anniversaries and Birthdays Appear in Mixed Order"
-permalink: kb/137/Q137511/
+permalink: /kb/137/Q137511/
 ---
 
 ## Q137511: Anniversaries and Birthdays Appear in Mixed Order

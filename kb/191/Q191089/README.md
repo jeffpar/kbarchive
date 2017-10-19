@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191089: PRB: Multimedia API Calls May Fail with Long File Names"
-permalink: kb/191/Q191089/
+permalink: /kb/191/Q191089/
 ---
 
 ## Q191089: PRB: Multimedia API Calls May Fail with Long File Names

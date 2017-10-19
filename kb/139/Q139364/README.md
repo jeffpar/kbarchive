@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139364: RAS Error: &quot;The communications device attached to port...&quot;"
-permalink: kb/139/Q139364/
+permalink: /kb/139/Q139364/
 ---
 
 ## Q139364: RAS Error: &quot;The communications device attached to port...&quot;

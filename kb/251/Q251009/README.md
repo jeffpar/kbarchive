@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251009: INFO: Where to Find the MMC Snap-In Designer for Visual Basic"
-permalink: kb/251/Q251009/
+permalink: /kb/251/Q251009/
 ---
 
 ## Q251009: INFO: Where to Find the MMC Snap-In Designer for Visual Basic

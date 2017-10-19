@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242115: Computer Is Slow Locally But Is Normal Over Remote Connection"
-permalink: kb/242/Q242115/
+permalink: /kb/242/Q242115/
 ---
 
 ## Q242115: Computer Is Slow Locally But Is Normal Over Remote Connection

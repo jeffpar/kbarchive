@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140921: SMS Win95 Client w/ Office Shortcut Bar GPFs on Remote Control"
-permalink: kb/140/Q140921/
+permalink: /kb/140/Q140921/
 ---
 
 ## Q140921: SMS Win95 Client w/ Office Shortcut Bar GPFs on Remote Control

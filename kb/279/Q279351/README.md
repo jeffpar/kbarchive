@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279351: Connectivity: MSN Companion only uses dial-up modem"
-permalink: kb/279/Q279351/
+permalink: /kb/279/Q279351/
 ---
 
 ## Q279351: Connectivity: MSN Companion only uses dial-up modem

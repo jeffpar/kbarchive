@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66494: Help Compiler Internal Error Possible Causes"
-permalink: kb/066/Q66494/
+permalink: /kb/066/Q66494/
 ---
 
 ## Q66494: Help Compiler Internal Error Possible Causes

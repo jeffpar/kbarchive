@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174696: XGEN: How to Send Files to Microsoft Product Support Services"
-permalink: kb/174/Q174696/
+permalink: /kb/174/Q174696/
 ---
 
 ## Q174696: XGEN: How to Send Files to Microsoft Product Support Services

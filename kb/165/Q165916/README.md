@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165916: Incorrect Video Memory Amount is Detected for WD90C24a."
-permalink: kb/165/Q165916/
+permalink: /kb/165/Q165916/
 ---
 
 ## Q165916: Incorrect Video Memory Amount is Detected for WD90C24a.

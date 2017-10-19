@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170758: XADM: Delivery Restrictions for Custom Recipients Fail"
-permalink: kb/170/Q170758/
+permalink: /kb/170/Q170758/
 ---
 
 ## Q170758: XADM: Delivery Restrictions for Custom Recipients Fail

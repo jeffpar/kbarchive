@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130363: Stack Overflow Playing Movie Clips in THE ANIMALS!"
-permalink: kb/130/Q130363/
+permalink: /kb/130/Q130363/
 ---
 
 ## Q130363: Stack Overflow Playing Movie Clips in THE ANIMALS!

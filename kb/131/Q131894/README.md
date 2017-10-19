@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131894: Delta Knowledge Base Available as Help File (June 1995)"
-permalink: kb/131/Q131894/
+permalink: /kb/131/Q131894/
 ---
 
 ## Q131894: Delta Knowledge Base Available as Help File (June 1995)

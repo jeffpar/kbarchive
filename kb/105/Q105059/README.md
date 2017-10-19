@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105059: DIR Listings Do Not Support Commas in 40-Column Mode"
-permalink: kb/105/Q105059/
+permalink: /kb/105/Q105059/
 ---
 
 ## Q105059: DIR Listings Do Not Support Commas in 40-Column Mode

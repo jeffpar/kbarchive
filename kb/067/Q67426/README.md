@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67426: Conflict Between CTTY and Command-Line Editing Utilities"
-permalink: kb/067/Q67426/
+permalink: /kb/067/Q67426/
 ---
 
 ## Q67426: Conflict Between CTTY and Command-Line Editing Utilities

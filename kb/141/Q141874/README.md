@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141874: WD97: Some Contact List Fields Not Available to Word"
-permalink: kb/141/Q141874/
+permalink: /kb/141/Q141874/
 ---
 
 ## Q141874: WD97: Some Contact List Fields Not Available to Word

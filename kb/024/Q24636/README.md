@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24636: Pasting Formatted Text from Write to Paintbrush"
-permalink: kb/024/Q24636/
+permalink: /kb/024/Q24636/
 ---
 
 ## Q24636: Pasting Formatted Text from Write to Paintbrush

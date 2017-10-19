@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156589: STL Sample for deque::insert Function"
-permalink: kb/156/Q156589/
+permalink: /kb/156/Q156589/
 ---
 
 ## Q156589: STL Sample for deque::insert Function

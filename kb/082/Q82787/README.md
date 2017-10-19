@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82787: Meaning of LocalTSRs= in SYSTEM.INI"
-permalink: kb/082/Q82787/
+permalink: /kb/082/Q82787/
 ---
 
 ## Q82787: Meaning of LocalTSRs= in SYSTEM.INI

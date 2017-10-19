@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201711: SMS: Refresh of Collection Does Not Aways List New Machines"
-permalink: kb/201/Q201711/
+permalink: /kb/201/Q201711/
 ---
 
 ## Q201711: SMS: Refresh of Collection Does Not Aways List New Machines

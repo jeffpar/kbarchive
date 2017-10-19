@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110118: How to Tell if a Window Is Defined as Mac Desktop Style"
-permalink: kb/110/Q110118/
+permalink: /kb/110/Q110118/
 ---
 
 ## Q110118: How to Tell if a Window Is Defined as Mac Desktop Style

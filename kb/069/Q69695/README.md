@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69695: PC Setup: CONFIG.SYS Not Modified by Install Programs"
-permalink: kb/069/Q69695/
+permalink: /kb/069/Q69695/
 ---
 
 ## Q69695: PC Setup: CONFIG.SYS Not Modified by Install Programs

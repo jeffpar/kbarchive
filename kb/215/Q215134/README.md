@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215134: SMS: Unable to Edit Products Registered in Other Sites"
-permalink: kb/215/Q215134/
+permalink: /kb/215/Q215134/
 ---
 
 ## Q215134: SMS: Unable to Edit Products Registered in Other Sites

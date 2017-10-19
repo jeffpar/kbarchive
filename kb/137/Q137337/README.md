@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137337: Overwrite Older Files Only Option Enabled By Default"
-permalink: kb/137/Q137337/
+permalink: /kb/137/Q137337/
 ---
 
 ## Q137337: Overwrite Older Files Only Option Enabled By Default

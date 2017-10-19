@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244084: &quot;Stop 0xA&quot; Error Message in Wlbs.sys or Computer Hangs"
-permalink: kb/244/Q244084/
+permalink: /kb/244/Q244084/
 ---
 
 ## Q244084: &quot;Stop 0xA&quot; Error Message in Wlbs.sys or Computer Hangs

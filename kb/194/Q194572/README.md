@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194572: HOWTO: Run an Unattended Setup of a Visual FoxPro Application"
-permalink: kb/194/Q194572/
+permalink: /kb/194/Q194572/
 ---
 
 ## Q194572: HOWTO: Run an Unattended Setup of a Visual FoxPro Application

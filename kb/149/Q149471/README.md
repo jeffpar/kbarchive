@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149471: PRB: Conflicting Definitions of time_t Between Windows and Mac"
-permalink: kb/149/Q149471/
+permalink: /kb/149/Q149471/
 ---
 
 ## Q149471: PRB: Conflicting Definitions of time_t Between Windows and Mac

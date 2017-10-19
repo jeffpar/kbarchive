@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105290: SMTP: Err Msg: Insufficient Memory"
-permalink: kb/105/Q105290/
+permalink: /kb/105/Q105290/
 ---
 
 ## Q105290: SMTP: Err Msg: Insufficient Memory

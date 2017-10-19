@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141438: PRB: The Profiler Isn't Enabled"
-permalink: kb/141/Q141438/
+permalink: /kb/141/Q141438/
 ---
 
 ## Q141438: PRB: The Profiler Isn't Enabled

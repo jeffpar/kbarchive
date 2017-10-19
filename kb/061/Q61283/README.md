@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61283: Mac Wkst: Custom Chime Does Not Sound When New Mail Arrives"
-permalink: kb/061/Q61283/
+permalink: /kb/061/Q61283/
 ---
 
 ## Q61283: Mac Wkst: Custom Chime Does Not Sound When New Mail Arrives

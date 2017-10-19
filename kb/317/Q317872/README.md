@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317872: SMS: Troubleshooting SMS Administrator Console Connectivity"
-permalink: kb/317/Q317872/
+permalink: /kb/317/Q317872/
 ---
 
 ## Q317872: SMS: Troubleshooting SMS Administrator Console Connectivity

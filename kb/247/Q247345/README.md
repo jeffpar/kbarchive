@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247345: XADM: Setting the Number of Objects in a Replication Message"
-permalink: kb/247/Q247345/
+permalink: /kb/247/Q247345/
 ---
 
 ## Q247345: XADM: Setting the Number of Objects in a Replication Message

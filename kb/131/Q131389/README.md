@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131389: Net Session Command Does Not Interpret Redirected Input"
-permalink: kb/131/Q131389/
+permalink: /kb/131/Q131389/
 ---
 
 ## Q131389: Net Session Command Does Not Interpret Redirected Input

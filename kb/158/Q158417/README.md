@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158417: Some Drivers Do Not Read Long File Names on MSN CD-ROM"
-permalink: kb/158/Q158417/
+permalink: /kb/158/Q158417/
 ---
 
 ## Q158417: Some Drivers Do Not Read Long File Names on MSN CD-ROM

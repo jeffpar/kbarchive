@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263072: XCON: Err. Installing Internet Mail Service w. Terminal Services"
-permalink: kb/263/Q263072/
+permalink: /kb/263/Q263072/
 ---
 
 ## Q263072: XCON: Err. Installing Internet Mail Service w. Terminal Services

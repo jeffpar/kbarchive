@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192549: INFO: Overview of Debugging VBCE Applications"
-permalink: kb/192/Q192549/
+permalink: /kb/192/Q192549/
 ---
 
 ## Q192549: INFO: Overview of Debugging VBCE Applications

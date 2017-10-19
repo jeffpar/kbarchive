@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195631: PRB: Effects of Operating System Version On TextBox Alignment"
-permalink: kb/195/Q195631/
+permalink: /kb/195/Q195631/
 ---
 
 ## Q195631: PRB: Effects of Operating System Version On TextBox Alignment

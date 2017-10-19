@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159072: An Account That Still Has System Access May Be Deleted"
-permalink: kb/159/Q159072/
+permalink: /kb/159/Q159072/
 ---
 
 ## Q159072: An Account That Still Has System Access May Be Deleted

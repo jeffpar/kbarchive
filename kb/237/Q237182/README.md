@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237182: XFOR: MSMI Fails with Unknown Exception During Message Delivery"
-permalink: kb/237/Q237182/
+permalink: /kb/237/Q237182/
 ---
 
 ## Q237182: XFOR: MSMI Fails with Unknown Exception During Message Delivery

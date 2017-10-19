@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173942: WINS Replication Triggered Incorrectly"
-permalink: kb/173/Q173942/
+permalink: /kb/173/Q173942/
 ---
 
 ## Q173942: WINS Replication Triggered Incorrectly

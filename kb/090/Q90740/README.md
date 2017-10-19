@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90740: Color Values for MessageBackColor and MessageTextColor Setting"
-permalink: kb/090/Q90740/
+permalink: /kb/090/Q90740/
 ---
 
 ## Q90740: Color Values for MessageBackColor and MessageTextColor Setting

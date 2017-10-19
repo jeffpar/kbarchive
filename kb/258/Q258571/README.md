@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258571: Baseball 2001: Problems When You Play a Head-to-Head Game"
-permalink: kb/258/Q258571/
+permalink: /kb/258/Q258571/
 ---
 
 ## Q258571: Baseball 2001: Problems When You Play a Head-to-Head Game

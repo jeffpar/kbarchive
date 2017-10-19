@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124731: AST Plug and Play BIOS Is Not Registered as Plug and Play"
-permalink: kb/124/Q124731/
+permalink: /kb/124/Q124731/
 ---
 
 ## Q124731: AST Plug and Play BIOS Is Not Registered as Plug and Play

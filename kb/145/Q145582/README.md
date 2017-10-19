@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145582: SMS Only Reports 16mb RAM On MS-DOS and Windows Systems"
-permalink: kb/145/Q145582/
+permalink: /kb/145/Q145582/
 ---
 
 ## Q145582: SMS Only Reports 16mb RAM On MS-DOS and Windows Systems

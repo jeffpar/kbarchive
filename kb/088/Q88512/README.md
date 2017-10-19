@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88512: Stance in Advanced Shot Setup Doesn't Affect Ball's Flight"
-permalink: kb/088/Q88512/
+permalink: /kb/088/Q88512/
 ---
 
 ## Q88512: Stance in Advanced Shot Setup Doesn't Affect Ball's Flight

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102915: Scenes 1.0: Scenes Must Have Control of Palette"
-permalink: kb/102/Q102915/
+permalink: /kb/102/Q102915/
 ---
 
 ## Q102915: Scenes 1.0: Scenes Must Have Control of Palette

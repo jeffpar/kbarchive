@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131799: Writer: CD-ROM: Printing Landscape Mode Documents to Fax"
-permalink: kb/131/Q131799/
+permalink: /kb/131/Q131799/
 ---
 
 ## Q131799: Writer: CD-ROM: Printing Landscape Mode Documents to Fax

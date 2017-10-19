@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269595: Active Desktop Wallpaper Appears Scrambled"
-permalink: kb/269/Q269595/
+permalink: /kb/269/Q269595/
 ---
 
 ## Q269595: Active Desktop Wallpaper Appears Scrambled

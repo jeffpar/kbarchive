@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80124: Retrieving the Names of Simultaneous Tasks Under Windows"
-permalink: kb/080/Q80124/
+permalink: /kb/080/Q80124/
 ---
 
 ## Q80124: Retrieving the Names of Simultaneous Tasks Under Windows

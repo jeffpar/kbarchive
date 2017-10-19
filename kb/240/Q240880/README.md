@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240880: PRB: ActiveX Control Pack Unavailable for Download for VCCE 6.0"
-permalink: kb/240/Q240880/
+permalink: /kb/240/Q240880/
 ---
 
 ## Q240880: PRB: ActiveX Control Pack Unavailable for Download for VCCE 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134554: cc:Mobile Hangs After Editing Modem Information"
-permalink: kb/134/Q134554/
+permalink: /kb/134/Q134554/
 ---
 
 ## Q134554: cc:Mobile Hangs After Editing Modem Information

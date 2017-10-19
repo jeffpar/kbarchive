@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175403: CC: A Bridge Too Far: Contents of Readme.doc for Macintosh"
-permalink: kb/175/Q175403/
+permalink: /kb/175/Q175403/
 ---
 
 ## Q175403: CC: A Bridge Too Far: Contents of Readme.doc for Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185454: HOWTO: Shutdown an Instance of VFP with a Window Caption"
-permalink: kb/185/Q185454/
+permalink: /kb/185/Q185454/
 ---
 
 ## Q185454: HOWTO: Shutdown an Instance of VFP with a Window Caption

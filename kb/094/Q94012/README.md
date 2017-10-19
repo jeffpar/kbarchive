@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94012: Visual Basic MCI Control TimeFormat Property Information"
-permalink: kb/094/Q94012/
+permalink: /kb/094/Q94012/
 ---
 
 ## Q94012: Visual Basic MCI Control TimeFormat Property Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176027: Event ID 2026 Logged by FPNW Server"
-permalink: kb/176/Q176027/
+permalink: /kb/176/Q176027/
 ---
 
 ## Q176027: Event ID 2026 Logged by FPNW Server

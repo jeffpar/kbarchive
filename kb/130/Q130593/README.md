@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130593: Interpreting SNA Server API Traces: Byte Packing Considerations"
-permalink: kb/130/Q130593/
+permalink: /kb/130/Q130593/
 ---
 
 ## Q130593: Interpreting SNA Server API Traces: Byte Packing Considerations

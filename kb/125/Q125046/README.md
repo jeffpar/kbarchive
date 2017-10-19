@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125046: INFO: Macro Subst, Name Expr, and EVALUATE() RunTime Evaluation"
-permalink: kb/125/Q125046/
+permalink: /kb/125/Q125046/
 ---
 
 ## Q125046: INFO: Macro Subst, Name Expr, and EVALUATE() RunTime Evaluation

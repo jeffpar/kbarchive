@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262925: Err Msg: &lt;Game&gt; Does Not Support the Connected Device Type..."
-permalink: kb/262/Q262925/
+permalink: /kb/262/Q262925/
 ---
 
 ## Q262925: Err Msg: &lt;Game&gt; Does Not Support the Connected Device Type...

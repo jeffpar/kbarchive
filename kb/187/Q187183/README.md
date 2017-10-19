@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187183: RDP Client Hangs If the Network Is Unavailable"
-permalink: kb/187/Q187183/
+permalink: /kb/187/Q187183/
 ---
 
 ## Q187183: RDP Client Hangs If the Network Is Unavailable

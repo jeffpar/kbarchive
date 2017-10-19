@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191612: Installing Multiple Third-Party OEM Video Drivers"
-permalink: kb/191/Q191612/
+permalink: /kb/191/Q191612/
 ---
 
 ## Q191612: Installing Multiple Third-Party OEM Video Drivers

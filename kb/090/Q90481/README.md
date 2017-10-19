@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90481: File Manager Err Msg: An Error Occurred Reading Drive x:"
-permalink: kb/090/Q90481/
+permalink: /kb/090/Q90481/
 ---
 
 ## Q90481: File Manager Err Msg: An Error Occurred Reading Drive x:

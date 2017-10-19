@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243525: XCLN: Inbox Assistant Rule on Custom Field Does Not Start"
-permalink: kb/243/Q243525/
+permalink: /kb/243/Q243525/
 ---
 
 ## Q243525: XCLN: Inbox Assistant Rule on Custom Field Does Not Start

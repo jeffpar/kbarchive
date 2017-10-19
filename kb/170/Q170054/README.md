@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170054: XCON: Read Receipt May Not Be Returned From ISOCOR MTA"
-permalink: kb/170/Q170054/
+permalink: /kb/170/Q170054/
 ---
 
 ## Q170054: XCON: Read Receipt May Not Be Returned From ISOCOR MTA

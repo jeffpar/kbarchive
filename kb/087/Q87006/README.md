@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87006: BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message"
-permalink: kb/087/Q87006/
+permalink: /kb/087/Q87006/
 ---
 
 ## Q87006: BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message

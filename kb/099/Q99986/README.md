@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99986: Err Msg Running MSD: Error: You Have Attempted to Run..."
-permalink: kb/099/Q99986/
+permalink: /kb/099/Q99986/
 ---
 
 ## Q99986: Err Msg Running MSD: Error: You Have Attempted to Run...

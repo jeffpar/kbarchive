@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123146: BUG: GetOutlineTextMetrics() Returns Bad Data in Japanese Win"
-permalink: kb/123/Q123146/
+permalink: /kb/123/Q123146/
 ---
 
 ## Q123146: BUG: GetOutlineTextMetrics() Returns Bad Data in Japanese Win

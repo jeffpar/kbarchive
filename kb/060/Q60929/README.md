@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60929: Windows 3.0 SYSTEM.INI Settings for MS Network Software"
-permalink: kb/060/Q60929/
+permalink: /kb/060/Q60929/
 ---
 
 ## Q60929: Windows 3.0 SYSTEM.INI Settings for MS Network Software

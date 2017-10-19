@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187742: Methods of Setting DHCP Options"
-permalink: kb/187/Q187742/
+permalink: /kb/187/Q187742/
 ---
 
 ## Q187742: Methods of Setting DHCP Options

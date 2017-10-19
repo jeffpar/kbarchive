@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123730: BUG: R6000 After Many Calls to RunQQ If Linked with Defaults"
-permalink: kb/123/Q123730/
+permalink: /kb/123/Q123730/
 ---
 
 ## Q123730: BUG: R6000 After Many Calls to RunQQ If Linked with Defaults

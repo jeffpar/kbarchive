@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141970: XCON: Exchange Unresponsive If Message Subject Has 0xD"
-permalink: kb/141/Q141970/
+permalink: /kb/141/Q141970/
 ---
 
 ## Q141970: XCON: Exchange Unresponsive If Message Subject Has 0xD

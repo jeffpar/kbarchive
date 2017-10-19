@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256061: Cannot Log On Using SMTP Name After Running the Exchange MA"
-permalink: kb/256/Q256061/
+permalink: /kb/256/Q256061/
 ---
 
 ## Q256061: Cannot Log On Using SMTP Name After Running the Exchange MA

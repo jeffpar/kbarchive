@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84863: PIF Option: Allow Fast Paste Option Explained"
-permalink: kb/084/Q84863/
+permalink: /kb/084/Q84863/
 ---
 
 ## Q84863: PIF Option: Allow Fast Paste Option Explained

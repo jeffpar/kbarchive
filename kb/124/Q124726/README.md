@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124726: MODEM.INF Settings for US Robotics Modems"
-permalink: kb/124/Q124726/
+permalink: /kb/124/Q124726/
 ---
 
 ## Q124726: MODEM.INF Settings for US Robotics Modems

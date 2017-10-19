@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152694: How To Add BMPs to Picture Properties in OutLine Control"
-permalink: kb/152/Q152694/
+permalink: /kb/152/Q152694/
 ---
 
 ## Q152694: How To Add BMPs to Picture Properties in OutLine Control

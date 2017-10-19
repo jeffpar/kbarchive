@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187624: Installing Microsoft Network Monitor on Terminal Server"
-permalink: kb/187/Q187624/
+permalink: /kb/187/Q187624/
 ---
 
 ## Q187624: Installing Microsoft Network Monitor on Terminal Server

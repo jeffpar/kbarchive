@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143186: XADM: PerfMon Limited to 53 MTA Instances"
-permalink: kb/143/Q143186/
+permalink: /kb/143/Q143186/
 ---
 
 ## Q143186: XADM: PerfMon Limited to 53 MTA Instances

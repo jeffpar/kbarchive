@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206968: XIMS: &quot;Relay Not Allowed&quot; After Installing Exchange 5.5 SP1"
-permalink: kb/206/Q206968/
+permalink: /kb/206/Q206968/
 ---
 
 ## Q206968: XIMS: &quot;Relay Not Allowed&quot; After Installing Exchange 5.5 SP1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247593: Err Msg: 401.1 Error (Unauthorized: Logon Failed)"
-permalink: kb/247/Q247593/
+permalink: /kb/247/Q247593/
 ---
 
 ## Q247593: Err Msg: 401.1 Error (Unauthorized: Logon Failed)

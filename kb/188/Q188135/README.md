@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188135: Description of Windows Script Host (WSH)"
-permalink: kb/188/Q188135/
+permalink: /kb/188/Q188135/
 ---
 
 ## Q188135: Description of Windows Script Host (WSH)

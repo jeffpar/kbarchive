@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160974: HOWTO: Determine If Text in a Text Box Can Be Undone"
-permalink: kb/160/Q160974/
+permalink: /kb/160/Q160974/
 ---
 
 ## Q160974: HOWTO: Determine If Text in a Text Box Can Be Undone

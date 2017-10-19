@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106067: PC WRmt: Using Mail Remote with Postoffice in Another Language"
-permalink: kb/106/Q106067/
+permalink: /kb/106/Q106067/
 ---
 
 ## Q106067: PC WRmt: Using Mail Remote with Postoffice in Another Language

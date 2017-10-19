@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151226: FPNW Grace Logins Are Not Reset When Password Is Changed"
-permalink: kb/151/Q151226/
+permalink: /kb/151/Q151226/
 ---
 
 ## Q151226: FPNW Grace Logins Are Not Reset When Password Is Changed

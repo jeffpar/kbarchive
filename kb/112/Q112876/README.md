@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112876: Mac OOF: Err Msg: ...Application...Has Unexpectedly Quit"
-permalink: kb/112/Q112876/
+permalink: /kb/112/Q112876/
 ---
 
 ## Q112876: Mac OOF: Err Msg: ...Application...Has Unexpectedly Quit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150985: World Atlas: Summary of Printing Capabilities"
-permalink: kb/150/Q150985/
+permalink: /kb/150/Q150985/
 ---
 
 ## Q150985: World Atlas: Summary of Printing Capabilities

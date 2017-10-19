@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137950: BUG: Valid Event Doesn't Fire in Control Array of Text Boxes"
-permalink: kb/137/Q137950/
+permalink: /kb/137/Q137950/
 ---
 
 ## Q137950: BUG: Valid Event Doesn't Fire in Control Array of Text Boxes

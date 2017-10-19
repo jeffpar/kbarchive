@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96302: PRB: Line in Group Header/Footer Ignores Data Grouping"
-permalink: kb/096/Q96302/
+permalink: /kb/096/Q96302/
 ---
 
 ## Q96302: PRB: Line in Group Header/Footer Ignores Data Grouping

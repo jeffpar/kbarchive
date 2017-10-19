@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151876: Windows 95 Remote Boot Setup Crashes during Adapter"
-permalink: kb/151/Q151876/
+permalink: /kb/151/Q151876/
 ---
 
 ## Q151876: Windows 95 Remote Boot Setup Crashes during Adapter

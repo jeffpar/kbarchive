@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186969: WD97: ConfirmConversions Doesn't Work with OpenDataSource"
-permalink: kb/186/Q186969/
+permalink: /kb/186/Q186969/
 ---
 
 ## Q186969: WD97: ConfirmConversions Doesn't Work with OpenDataSource

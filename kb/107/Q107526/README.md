@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107526: Installing MS-DOS 6.2 over Stacker Version 3.11"
-permalink: kb/107/Q107526/
+permalink: /kb/107/Q107526/
 ---
 
 ## Q107526: Installing MS-DOS 6.2 over Stacker Version 3.11

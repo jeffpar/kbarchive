@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303245: XCLN: Item Count Incorrect for Messages with Modified Permission"
-permalink: kb/303/Q303245/
+permalink: /kb/303/Q303245/
 ---
 
 ## Q303245: XCLN: Item Count Incorrect for Messages with Modified Permission

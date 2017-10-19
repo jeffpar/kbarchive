@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104946: Commands that Don't Automatically Mount Removable Media Disks"
-permalink: kb/104/Q104946/
+permalink: /kb/104/Q104946/
 ---
 
 ## Q104946: Commands that Don't Automatically Mount Removable Media Disks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78290: Intel EMM.SYS Dated June 1990 or Later with MS-DOS"
-permalink: kb/078/Q78290/
+permalink: /kb/078/Q78290/
 ---
 
 ## Q78290: Intel EMM.SYS Dated June 1990 or Later with MS-DOS

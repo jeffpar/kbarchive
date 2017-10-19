@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161157: Error Message: Cannot Find the Plus!.hlp File"
-permalink: kb/161/Q161157/
+permalink: /kb/161/Q161157/
 ---
 
 ## Q161157: Error Message: Cannot Find the Plus!.hlp File

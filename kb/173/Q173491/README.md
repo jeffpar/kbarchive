@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173491: XFOR: Message to IMC via Telnet with Year 1900"
-permalink: kb/173/Q173491/
+permalink: /kb/173/Q173491/
 ---
 
 ## Q173491: XFOR: Message to IMC via Telnet with Year 1900

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156712: XCLN: CMD Key Does Not Work in the MAC Inbox Assistant"
-permalink: kb/156/Q156712/
+permalink: /kb/156/Q156712/
 ---
 
 ## Q156712: XCLN: CMD Key Does Not Work in the MAC Inbox Assistant

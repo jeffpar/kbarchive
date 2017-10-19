@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243303: Recycle Bin May Open Slowly If Security Is Set on Logical Disks"
-permalink: kb/243/Q243303/
+permalink: /kb/243/Q243303/
 ---
 
 ## Q243303: Recycle Bin May Open Slowly If Security Is Set on Logical Disks

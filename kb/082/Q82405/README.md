@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82405: Windows 3.1 and LAN Manager 2.1 NetBind Hangs"
-permalink: kb/082/Q82405/
+permalink: /kb/082/Q82405/
 ---
 
 ## Q82405: Windows 3.1 and LAN Manager 2.1 NetBind Hangs

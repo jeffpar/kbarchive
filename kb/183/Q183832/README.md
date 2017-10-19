@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183832: gethostname() Must Support Alternate Computer Names"
-permalink: kb/183/Q183832/
+permalink: /kb/183/Q183832/
 ---
 
 ## Q183832: gethostname() Must Support Alternate Computer Names

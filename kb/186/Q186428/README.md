@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186428: HOWTO: Implement the 'SnapTo' Feature in Visual Basic"
-permalink: kb/186/Q186428/
+permalink: /kb/186/Q186428/
 ---
 
 ## Q186428: HOWTO: Implement the 'SnapTo' Feature in Visual Basic

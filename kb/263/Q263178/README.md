@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263178: Err Msg: CAPI: The Install Failed. Rsabase.dll Doesn't Match"
-permalink: kb/263/Q263178/
+permalink: /kb/263/Q263178/
 ---
 
 ## Q263178: Err Msg: CAPI: The Install Failed. Rsabase.dll Doesn't Match

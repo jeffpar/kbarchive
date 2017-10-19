@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255169: XADM: Multiple Instances of Esefile.exe Causes Computer to Hang"
-permalink: kb/255/Q255169/
+permalink: /kb/255/Q255169/
 ---
 
 ## Q255169: XADM: Multiple Instances of Esefile.exe Causes Computer to Hang

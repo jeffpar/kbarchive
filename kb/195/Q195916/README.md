@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195916: XADM: Setting Network Connection Logging for Exchange Server"
-permalink: kb/195/Q195916/
+permalink: /kb/195/Q195916/
 ---
 
 ## Q195916: XADM: Setting Network Connection Logging for Exchange Server

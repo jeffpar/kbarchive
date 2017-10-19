@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157761: HOWTO: Use the ActiveX Control SS Tab Object Properties"
-permalink: kb/157/Q157761/
+permalink: /kb/157/Q157761/
 ---
 
 ## Q157761: HOWTO: Use the ActiveX Control SS Tab Object Properties

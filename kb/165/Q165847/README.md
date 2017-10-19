@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165847: Server/Domain Name Truncated in &quot;Open Subdomain&quot; Dialog Box"
-permalink: kb/165/Q165847/
+permalink: /kb/165/Q165847/
 ---
 
 ## Q165847: Server/Domain Name Truncated in &quot;Open Subdomain&quot; Dialog Box

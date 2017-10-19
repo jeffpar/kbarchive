@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129816: Error 4266: WINS Connection Limit Reached"
-permalink: kb/129/Q129816/
+permalink: /kb/129/Q129816/
 ---
 
 ## Q129816: Error 4266: WINS Connection Limit Reached

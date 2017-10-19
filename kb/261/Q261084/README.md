@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261084: MCM2: Cannot Join Multiplayer Game on Zone.com"
-permalink: kb/261/Q261084/
+permalink: /kb/261/Q261084/
 ---
 
 ## Q261084: MCM2: Cannot Join Multiplayer Game on Zone.com

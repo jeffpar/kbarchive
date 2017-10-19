@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94607: PRB: MULTIPAD Sample from Win 3.1 SDK Gives Printing Error"
-permalink: kb/094/Q94607/
+permalink: /kb/094/Q94607/
 ---
 
 ## Q94607: PRB: MULTIPAD Sample from Win 3.1 SDK Gives Printing Error

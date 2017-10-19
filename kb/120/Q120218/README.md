@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120218: FIX: Warning C4056 Generated When /Op Option is Used"
-permalink: kb/120/Q120218/
+permalink: /kb/120/Q120218/
 ---
 
 ## Q120218: FIX: Warning C4056 Generated When /Op Option is Used

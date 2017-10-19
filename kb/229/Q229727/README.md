@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229727: Display Problems Occur with NvRunCmd"
-permalink: kb/229/Q229727/
+permalink: /kb/229/Q229727/
 ---
 
 ## Q229727: Display Problems Occur with NvRunCmd

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248078: BUG: VSSVersion Collection Does Not Give Filenames"
-permalink: kb/248/Q248078/
+permalink: /kb/248/Q248078/
 ---
 
 ## Q248078: BUG: VSSVersion Collection Does Not Give Filenames

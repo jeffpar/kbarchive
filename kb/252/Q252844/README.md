@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252844: SMS: Remote Installation in NDS Environments Is Unsuccessful"
-permalink: kb/252/Q252844/
+permalink: /kb/252/Q252844/
 ---
 
 ## Q252844: SMS: Remote Installation in NDS Environments Is Unsuccessful

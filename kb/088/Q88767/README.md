@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88767: Using the IBM Personal PagePrinter 4216-31 with Windows"
-permalink: kb/088/Q88767/
+permalink: /kb/088/Q88767/
 ---
 
 ## Q88767: Using the IBM Personal PagePrinter 4216-31 with Windows

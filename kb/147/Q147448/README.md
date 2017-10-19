@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147448: Cannot Print to Epson Stylus Printer"
-permalink: kb/147/Q147448/
+permalink: /kb/147/Q147448/
 ---
 
 ## Q147448: Cannot Print to Epson Stylus Printer

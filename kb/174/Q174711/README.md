@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174711: XCLN: Item Retention Only Available in 32-bit Outlook 8.03"
-permalink: kb/174/Q174711/
+permalink: /kb/174/Q174711/
 ---
 
 ## Q174711: XCLN: Item Retention Only Available in 32-bit Outlook 8.03

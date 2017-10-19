@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135129: Removing FailedHardwareChecks Entry In SMS.INI"
-permalink: kb/135/Q135129/
+permalink: /kb/135/Q135129/
 ---
 
 ## Q135129: Removing FailedHardwareChecks Entry In SMS.INI

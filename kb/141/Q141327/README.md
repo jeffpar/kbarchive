@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141327: Multimedia: WinToon Causes Hang or Page Fault in Kernel32.dll"
-permalink: kb/141/Q141327/
+permalink: /kb/141/Q141327/
 ---
 
 ## Q141327: Multimedia: WinToon Causes Hang or Page Fault in Kernel32.dll

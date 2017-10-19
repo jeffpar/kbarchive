@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282292: Encarta Interactive World Atlas 2001: Home Screen Is Blank"
-permalink: kb/282/Q282292/
+permalink: /kb/282/Q282292/
 ---
 
 ## Q282292: Encarta Interactive World Atlas 2001: Home Screen Is Blank

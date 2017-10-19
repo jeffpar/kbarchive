@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148722: MS Backup Reports Incorrect Number of Kilobytes Selected"
-permalink: kb/148/Q148722/
+permalink: /kb/148/Q148722/
 ---
 
 ## Q148722: MS Backup Reports Incorrect Number of Kilobytes Selected

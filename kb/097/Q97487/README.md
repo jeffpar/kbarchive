@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97487: Can't Find &quot;drivername=PCNIC&#36;&quot; in PROTOCOL.INI"
-permalink: kb/097/Q97487/
+permalink: /kb/097/Q97487/
 ---
 
 ## Q97487: Can't Find &quot;drivername=PCNIC&#36;&quot; in PROTOCOL.INI

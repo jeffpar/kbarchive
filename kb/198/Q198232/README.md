@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198232: PRB: Delete All Columns in the List Control"
-permalink: kb/198/Q198232/
+permalink: /kb/198/Q198232/
 ---
 
 ## Q198232: PRB: Delete All Columns in the List Control

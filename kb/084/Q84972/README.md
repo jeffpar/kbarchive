@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84972: Windows Sound Events Not Occurring at Standard Points"
-permalink: kb/084/Q84972/
+permalink: /kb/084/Q84972/
 ---
 
 ## Q84972: Windows Sound Events Not Occurring at Standard Points

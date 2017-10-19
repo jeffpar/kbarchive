@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294306: Windows NT 4.0 May Hang During Process Shutdown"
-permalink: kb/294/Q294306/
+permalink: /kb/294/Q294306/
 ---
 
 ## Q294306: Windows NT 4.0 May Hang During Process Shutdown

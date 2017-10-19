@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59409: Trouble with Filenames With a Dollar Sign (&#36;) in Inline Files"
-permalink: kb/059/Q59409/
+permalink: /kb/059/Q59409/
 ---
 
 ## Q59409: Trouble with Filenames With a Dollar Sign (&#36;) in Inline Files

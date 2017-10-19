@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138376: BUG: NODEFAULT Is Ignored in Text Box KeyPress Event Code"
-permalink: kb/138/Q138376/
+permalink: /kb/138/Q138376/
 ---
 
 ## Q138376: BUG: NODEFAULT Is Ignored in Text Box KeyPress Event Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247859: FS: Description of the Real-World Weather Feature"
-permalink: kb/247/Q247859/
+permalink: /kb/247/Q247859/
 ---
 
 ## Q247859: FS: Description of the Real-World Weather Feature

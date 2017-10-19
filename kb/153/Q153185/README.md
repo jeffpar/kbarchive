@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153185: Paul Bunyan: List of Files on Compact Disc"
-permalink: kb/153/Q153185/
+permalink: /kb/153/Q153185/
 ---
 
 ## Q153185: Paul Bunyan: List of Files on Compact Disc

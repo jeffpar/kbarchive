@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134547: Arcada Backup Exec Error Message: Drive Not Responding"
-permalink: kb/134/Q134547/
+permalink: /kb/134/Q134547/
 ---
 
 ## Q134547: Arcada Backup Exec Error Message: Drive Not Responding

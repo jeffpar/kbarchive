@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121849: ATI Video Fails with Adaptec 174x SCSI Driver Present"
-permalink: kb/121/Q121849/
+permalink: /kb/121/Q121849/
 ---
 
 ## Q121849: ATI Video Fails with Adaptec 174x SCSI Driver Present

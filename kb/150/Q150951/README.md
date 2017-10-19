@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150951: PRB: Setup Wizard Fails on HELO_SRV.VBP OC30.DLL Reference"
-permalink: kb/150/Q150951/
+permalink: /kb/150/Q150951/
 ---
 
 ## Q150951: PRB: Setup Wizard Fails on HELO_SRV.VBP OC30.DLL Reference

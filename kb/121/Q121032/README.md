@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121032: MAC Bookshelf 1994: README Contents"
-permalink: kb/121/Q121032/
+permalink: /kb/121/Q121032/
 ---
 
 ## Q121032: MAC Bookshelf 1994: README Contents

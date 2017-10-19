@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77918: ALR Business Veisa and Erratic Mouse Behavior in Windows"
-permalink: kb/077/Q77918/
+permalink: /kb/077/Q77918/
 ---
 
 ## Q77918: ALR Business Veisa and Erratic Mouse Behavior in Windows

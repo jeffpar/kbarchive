@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145764: Windows Explorer Starts Each Time Windows 95 Is Started"
-permalink: kb/145/Q145764/
+permalink: /kb/145/Q145764/
 ---
 
 ## Q145764: Windows Explorer Starts Each Time Windows 95 Is Started

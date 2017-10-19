@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160507: Windows 95 OEM Service Release 2 CD-ROM Network.txt File"
-permalink: kb/160/Q160507/
+permalink: /kb/160/Q160507/
 ---
 
 ## Q160507: Windows 95 OEM Service Release 2 CD-ROM Network.txt File

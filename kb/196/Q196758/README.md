@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196758: WD97: Numbers Containing Hyphens Are Sorted Incorrectly"
-permalink: kb/196/Q196758/
+permalink: /kb/196/Q196758/
 ---
 
 ## Q196758: WD97: Numbers Containing Hyphens Are Sorted Incorrectly

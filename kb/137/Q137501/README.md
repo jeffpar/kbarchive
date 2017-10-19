@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137501: FPNW Server Fails to Replicate Files to NetWare Clients"
-permalink: kb/137/Q137501/
+permalink: /kb/137/Q137501/
 ---
 
 ## Q137501: FPNW Server Fails to Replicate Files to NetWare Clients

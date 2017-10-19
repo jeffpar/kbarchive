@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127732: SMTP: Configuring LAN Manager 2.2c MS-DOS Client w/ TCP/IP"
-permalink: kb/127/Q127732/
+permalink: /kb/127/Q127732/
 ---
 
 ## Q127732: SMTP: Configuring LAN Manager 2.2c MS-DOS Client w/ TCP/IP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101539: PC Forms: Using Visual Basic OLE 2.0 Control"
-permalink: kb/101/Q101539/
+permalink: /kb/101/Q101539/
 ---
 
 ## Q101539: PC Forms: Using Visual Basic OLE 2.0 Control

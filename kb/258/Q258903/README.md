@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258903: Allegiance: Weapon Sounds Stutter After Ship Reloads Ammunition"
-permalink: kb/258/Q258903/
+permalink: /kb/258/Q258903/
 ---
 
 ## Q258903: Allegiance: Weapon Sounds Stutter After Ship Reloads Ammunition

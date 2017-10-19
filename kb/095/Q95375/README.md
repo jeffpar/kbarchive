@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95375: DEFINE WINDOW STYLE 'O' Clause Does Not Work"
-permalink: kb/095/Q95375/
+permalink: /kb/095/Q95375/
 ---
 
 ## Q95375: DEFINE WINDOW STYLE 'O' Clause Does Not Work

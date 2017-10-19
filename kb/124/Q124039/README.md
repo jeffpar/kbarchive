@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124039: PC Win: Setup Err Msg: Could Not Create Directory F:&#92;TMP.INI"
-permalink: kb/124/Q124039/
+permalink: /kb/124/Q124039/
 ---
 
 ## Q124039: PC Win: Setup Err Msg: Could Not Create Directory F:&#92;TMP.INI

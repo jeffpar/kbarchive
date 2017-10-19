@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157088: WD97: Limitations Converting Documents from Word 97 to 6.x/7.0"
-permalink: kb/157/Q157088/
+permalink: /kb/157/Q157088/
 ---
 
 ## Q157088: WD97: Limitations Converting Documents from Word 97 to 6.x/7.0

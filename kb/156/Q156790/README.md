@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156790: INFO: STL Sample for the operator == and operato"
-permalink: kb/156/Q156790/
+permalink: /kb/156/Q156790/
 ---
 
 ## Q156790: INFO: STL Sample for the operator == and operato

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124741: BUG: WinG 1.0 Bug List"
-permalink: kb/124/Q124741/
+permalink: /kb/124/Q124741/
 ---
 
 ## Q124741: BUG: WinG 1.0 Bug List

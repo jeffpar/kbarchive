@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246750: XADM: OAB Doesn't Send to Custom Recipients in Rich Text Format"
-permalink: kb/246/Q246750/
+permalink: /kb/246/Q246750/
 ---
 
 ## Q246750: XADM: OAB Doesn't Send to Custom Recipients in Rich Text Format

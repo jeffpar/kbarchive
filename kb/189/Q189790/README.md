@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189790: XFOR: Linkage 3.2 Connectors or Exchange Connectors Crash"
-permalink: kb/189/Q189790/
+permalink: /kb/189/Q189790/
 ---
 
 ## Q189790: XFOR: Linkage 3.2 Connectors or Exchange Connectors Crash

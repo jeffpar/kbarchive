@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235488: XFOR: Vcards Not Received Correctly by the GroupWise Connector"
-permalink: kb/235/Q235488/
+permalink: /kb/235/Q235488/
 ---
 
 ## Q235488: XFOR: Vcards Not Received Correctly by the GroupWise Connector

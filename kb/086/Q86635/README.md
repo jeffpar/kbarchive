@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86635: Mouse Driver 8.2 Install Doesn't Update Setup Description"
-permalink: kb/086/Q86635/
+permalink: /kb/086/Q86635/
 ---
 
 ## Q86635: Mouse Driver 8.2 Install Doesn't Update Setup Description

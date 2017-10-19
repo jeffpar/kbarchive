@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124983: Mac Encarta: Images at 16 Shades of Gray Are Clearer in Finder"
-permalink: kb/124/Q124983/
+permalink: /kb/124/Q124983/
 ---
 
 ## Q124983: Mac Encarta: Images at 16 Shades of Gray Are Clearer in Finder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299714: HOW TO: Call a COM Object from Active Server Pages"
-permalink: kb/299/Q299714/
+permalink: /kb/299/Q299714/
 ---
 
 ## Q299714: HOW TO: Call a COM Object from Active Server Pages

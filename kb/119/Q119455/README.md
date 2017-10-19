@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119455: PRB: RoundRect() and Ellipse() Don't Match Same Shaped Regions"
-permalink: kb/119/Q119455/
+permalink: /kb/119/Q119455/
 ---
 
 ## Q119455: PRB: RoundRect() and Ellipse() Don't Match Same Shaped Regions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180818: BUG: Code Outside of Procedures Executes on Application Startup"
-permalink: kb/180/Q180818/
+permalink: /kb/180/Q180818/
 ---
 
 ## Q180818: BUG: Code Outside of Procedures Executes on Application Startup

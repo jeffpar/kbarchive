@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152339: Windows NT NTFS Time Stamps Mismatch CD-ROM After Upgrading"
-permalink: kb/152/Q152339/
+permalink: /kb/152/Q152339/
 ---
 
 ## Q152339: Windows NT NTFS Time Stamps Mismatch CD-ROM After Upgrading

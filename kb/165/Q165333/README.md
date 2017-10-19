@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165333: New Features Available in Windows NT 4.0 Service Pack 3"
-permalink: kb/165/Q165333/
+permalink: /kb/165/Q165333/
 ---
 
 ## Q165333: New Features Available in Windows NT 4.0 Service Pack 3

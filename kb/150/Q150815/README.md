@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150815: Windows NT May Fail to Boot on Toshiba Portable Computers"
-permalink: kb/150/Q150815/
+permalink: /kb/150/Q150815/
 ---
 
 ## Q150815: Windows NT May Fail to Boot on Toshiba Portable Computers

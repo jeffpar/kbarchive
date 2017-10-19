@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306749: ENC2002: ShockWave Script Error When You Double-Click Back"
-permalink: kb/306/Q306749/
+permalink: /kb/306/Q306749/
 ---
 
 ## Q306749: ENC2002: ShockWave Script Error When You Double-Click Back

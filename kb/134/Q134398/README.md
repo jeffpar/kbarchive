@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134398: Using the Keyboard in The Microsoft Network Explorer"
-permalink: kb/134/Q134398/
+permalink: /kb/134/Q134398/
 ---
 
 ## Q134398: Using the Keyboard in The Microsoft Network Explorer

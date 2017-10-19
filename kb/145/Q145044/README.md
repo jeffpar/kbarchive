@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145044: WD97: Document Corrupt After Editing Word 2.0 Document"
-permalink: kb/145/Q145044/
+permalink: /kb/145/Q145044/
 ---
 
 ## Q145044: WD97: Document Corrupt After Editing Word 2.0 Document

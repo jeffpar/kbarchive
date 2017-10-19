@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126096: Guest Account Deletes System Fonts"
-permalink: kb/126/Q126096/
+permalink: /kb/126/Q126096/
 ---
 
 ## Q126096: Guest Account Deletes System Fonts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172396: PRB: Access Violation When Accessing STL Object in DLL"
-permalink: kb/172/Q172396/
+permalink: /kb/172/Q172396/
 ---
 
 ## Q172396: PRB: Access Violation When Accessing STL Object in DLL

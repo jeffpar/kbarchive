@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176748: CART Precision Racing: Minimum System Requirements"
-permalink: kb/176/Q176748/
+permalink: /kb/176/Q176748/
 ---
 
 ## Q176748: CART Precision Racing: Minimum System Requirements

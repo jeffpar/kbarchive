@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74678: Changing Default Margins in Write"
-permalink: kb/074/Q74678/
+permalink: /kb/074/Q74678/
 ---
 
 ## Q74678: Changing Default Margins in Write

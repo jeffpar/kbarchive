@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139137: Invalid or Missing Cache or History Folder"
-permalink: kb/139/Q139137/
+permalink: /kb/139/Q139137/
 ---
 
 ## Q139137: Invalid or Missing Cache or History Folder

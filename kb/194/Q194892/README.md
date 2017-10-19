@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194892: Load-Balanced Application Does Not Work Properly Using WLBS"
-permalink: kb/194/Q194892/
+permalink: /kb/194/Q194892/
 ---
 
 ## Q194892: Load-Balanced Application Does Not Work Properly Using WLBS

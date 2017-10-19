@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140477: PRB: MFC 4.0 Applications Can't Be Run Under Windows NT 3.5"
-permalink: kb/140/Q140477/
+permalink: /kb/140/Q140477/
 ---
 
 ## Q140477: PRB: MFC 4.0 Applications Can't Be Run Under Windows NT 3.5

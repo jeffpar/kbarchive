@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193775: BUG: Labels Disabled in a Class Not Disabled at Run-Time"
-permalink: kb/193/Q193775/
+permalink: /kb/193/Q193775/
 ---
 
 ## Q193775: BUG: Labels Disabled in a Class Not Disabled at Run-Time

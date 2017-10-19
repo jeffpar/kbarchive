@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153308: HOWTO: Easily Set Up the Tab Sequence of a Form"
-permalink: kb/153/Q153308/
+permalink: /kb/153/Q153308/
 ---
 
 ## Q153308: HOWTO: Easily Set Up the Tab Sequence of a Form

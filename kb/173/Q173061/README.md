@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173061: Delay Opening Explorer, Control Panel, &amp; Other RPC-Aware Apps"
-permalink: kb/173/Q173061/
+permalink: /kb/173/Q173061/
 ---
 
 ## Q173061: Delay Opening Explorer, Control Panel, &amp; Other RPC-Aware Apps

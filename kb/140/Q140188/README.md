@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140188: FIX: C1001 or C2434: Using Templates in Default Arguments"
-permalink: kb/140/Q140188/
+permalink: /kb/140/Q140188/
 ---
 
 ## Q140188: FIX: C1001 or C2434: Using Templates in Default Arguments

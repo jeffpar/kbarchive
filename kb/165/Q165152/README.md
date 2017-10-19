@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165152: Error Message: User32.dll Was Relocated in Memory..."
-permalink: kb/165/Q165152/
+permalink: /kb/165/Q165152/
 ---
 
 ## Q165152: Error Message: User32.dll Was Relocated in Memory...

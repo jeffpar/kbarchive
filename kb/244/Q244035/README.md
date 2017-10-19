@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244035: XCON: Event 2125 Caused by mismatched Info?log.cfg Files"
-permalink: kb/244/Q244035/
+permalink: /kb/244/Q244035/
 ---
 
 ## Q244035: XCON: Event 2125 Caused by mismatched Info?log.cfg Files

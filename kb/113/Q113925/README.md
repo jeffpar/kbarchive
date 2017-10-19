@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113925: FIX: Visual Workbench Cannot Create Project"
-permalink: kb/113/Q113925/
+permalink: /kb/113/Q113925/
 ---
 
 ## Q113925: FIX: Visual Workbench Cannot Create Project

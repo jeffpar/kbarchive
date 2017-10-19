@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295573: Random Access Violation in RPC Client in Low-Memory Conditions"
-permalink: kb/295/Q295573/
+permalink: /kb/295/Q295573/
 ---
 
 ## Q295573: Random Access Violation in RPC Client in Low-Memory Conditions

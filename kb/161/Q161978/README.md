@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161978: WD97: RTF Format Given to File Saved in Word 6.0/95"
-permalink: kb/161/Q161978/
+permalink: /kb/161/Q161978/
 ---
 
 ## Q161978: WD97: RTF Format Given to File Saved in Word 6.0/95

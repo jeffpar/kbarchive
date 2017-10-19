@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245143: MapPoint: Dialog Box Without Text Appears on the Screen"
-permalink: kb/245/Q245143/
+permalink: /kb/245/Q245143/
 ---
 
 ## Q245143: MapPoint: Dialog Box Without Text Appears on the Screen

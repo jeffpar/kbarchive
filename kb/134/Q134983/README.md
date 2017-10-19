@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134983: Baseball 94: Video Clips Fail with ATI Mach 64"
-permalink: kb/134/Q134983/
+permalink: /kb/134/Q134983/
 ---
 
 ## Q134983: Baseball 94: Video Clips Fail with ATI Mach 64

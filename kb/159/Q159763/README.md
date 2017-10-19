@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159763: Starting an MS-DOS Prompt Restarts Computer in MS-DOS Mode"
-permalink: kb/159/Q159763/
+permalink: /kb/159/Q159763/
 ---
 
 ## Q159763: Starting an MS-DOS Prompt Restarts Computer in MS-DOS Mode

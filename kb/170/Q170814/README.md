@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170814: HOWTO: Determining the Amount of Physical RAM on a Mac from VFP"
-permalink: kb/170/Q170814/
+permalink: /kb/170/Q170814/
 ---
 
 ## Q170814: HOWTO: Determining the Amount of Physical RAM on a Mac from VFP

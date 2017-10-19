@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82599: Mouse Disappears During Hollywood's Install with Idlewild"
-permalink: kb/082/Q82599/
+permalink: /kb/082/Q82599/
 ---
 
 ## Q82599: Mouse Disappears During Hollywood's Install with Idlewild

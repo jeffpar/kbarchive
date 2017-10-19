@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260340: Visual FoxPro Sample: Use PictureClip Control to Animate in VFP"
-permalink: kb/260/Q260340/
+permalink: /kb/260/Q260340/
 ---
 
 ## Q260340: Visual FoxPro Sample: Use PictureClip Control to Animate in VFP

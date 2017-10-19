@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262295: SMS: CCIM Does Not  Restart Running Smsman on Installed Client"
-permalink: kb/262/Q262295/
+permalink: /kb/262/Q262295/
 ---
 
 ## Q262295: SMS: CCIM Does Not  Restart Running Smsman on Installed Client

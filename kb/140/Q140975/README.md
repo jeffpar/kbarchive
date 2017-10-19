@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140975: XFOR: Event ID 4037 An Exception Has Occurred"
-permalink: kb/140/Q140975/
+permalink: /kb/140/Q140975/
 ---
 
 ## Q140975: XFOR: Event ID 4037 An Exception Has Occurred

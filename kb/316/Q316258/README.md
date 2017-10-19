@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316258: Problems Connecting to SMS Provider Without Impersonation"
-permalink: kb/316/Q316258/
+permalink: /kb/316/Q316258/
 ---
 
 ## Q316258: Problems Connecting to SMS Provider Without Impersonation

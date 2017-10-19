@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266639: XCLI: Outlook Tasks Don't Send Updates upon Completion"
-permalink: kb/266/Q266639/
+permalink: /kb/266/Q266639/
 ---
 
 ## Q266639: XCLI: Outlook Tasks Don't Send Updates upon Completion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110596: Font Assistant: What Are .FIF Files?"
-permalink: kb/110/Q110596/
+permalink: /kb/110/Q110596/
 ---
 
 ## Q110596: Font Assistant: What Are .FIF Files?

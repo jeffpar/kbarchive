@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152835: Hayes Optima 14.4 PCMCIA Modem Not Recognized by Windows 95"
-permalink: kb/152/Q152835/
+permalink: /kb/152/Q152835/
 ---
 
 ## Q152835: Hayes Optima 14.4 PCMCIA Modem Not Recognized by Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24201: Flipping vs. Swapping Screens in CodeView"
-permalink: kb/024/Q24201/
+permalink: /kb/024/Q24201/
 ---
 
 ## Q24201: Flipping vs. Swapping Screens in CodeView

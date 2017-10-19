@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148245: Upgrading from Uni- to Multi-Processor Requires Service Pack"
-permalink: kb/148/Q148245/
+permalink: /kb/148/Q148245/
 ---
 
 ## Q148245: Upgrading from Uni- to Multi-Processor Requires Service Pack

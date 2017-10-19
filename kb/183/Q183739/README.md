@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183739: XADM: Identifying and Removing Large Numbers of Orphaned Objects"
-permalink: kb/183/Q183739/
+permalink: /kb/183/Q183739/
 ---
 
 ## Q183739: XADM: Identifying and Removing Large Numbers of Orphaned Objects

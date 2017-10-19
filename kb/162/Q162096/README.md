@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162096: Drivers Fail to Load When I/O Address Is Above 0xFFF"
-permalink: kb/162/Q162096/
+permalink: /kb/162/Q162096/
 ---
 
 ## Q162096: Drivers Fail to Load When I/O Address Is Above 0xFFF

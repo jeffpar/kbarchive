@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203260: Bookshelf 98: Using Keyboard to Copy Image Copies Entire Article"
-permalink: kb/203/Q203260/
+permalink: /kb/203/Q203260/
 ---
 
 ## Q203260: Bookshelf 98: Using Keyboard to Copy Image Copies Entire Article

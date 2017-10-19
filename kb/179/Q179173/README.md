@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179173: Listarr.exe: Using Arrays For List Box Row Sources"
-permalink: kb/179/Q179173/
+permalink: /kb/179/Q179173/
 ---
 
 ## Q179173: Listarr.exe: Using Arrays For List Box Row Sources

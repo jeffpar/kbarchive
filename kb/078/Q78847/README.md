@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78847: SHIFT+F9 Gives MS-DOS Prompt, &quot;Command Prompt&quot; Item Disabled"
-permalink: kb/078/Q78847/
+permalink: /kb/078/Q78847/
 ---
 
 ## Q78847: SHIFT+F9 Gives MS-DOS Prompt, &quot;Command Prompt&quot; Item Disabled

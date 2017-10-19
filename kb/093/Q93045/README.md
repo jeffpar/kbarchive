@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93045: DSWAP Increases by 16 Bytes Each Time an MS-DOS Program Is Run"
-permalink: kb/093/Q93045/
+permalink: /kb/093/Q93045/
 ---
 
 ## Q93045: DSWAP Increases by 16 Bytes Each Time an MS-DOS Program Is Run

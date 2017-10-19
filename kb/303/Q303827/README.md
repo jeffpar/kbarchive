@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303827: PRB: Norton AntiVirus Error When Running Setup from Vfpstart.hta"
-permalink: kb/303/Q303827/
+permalink: /kb/303/Q303827/
 ---
 
 ## Q303827: PRB: Norton AntiVirus Error When Running Setup from Vfpstart.hta

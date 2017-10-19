@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185496: Changing IP/Port on SSL Web May Require Key Manager Change"
-permalink: kb/185/Q185496/
+permalink: /kb/185/Q185496/
 ---
 
 ## Q185496: Changing IP/Port on SSL Web May Require Key Manager Change

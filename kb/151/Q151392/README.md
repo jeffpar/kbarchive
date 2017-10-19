@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151392: Cannot Connect to MSN After Installing Pipeline"
-permalink: kb/151/Q151392/
+permalink: /kb/151/Q151392/
 ---
 
 ## Q151392: Cannot Connect to MSN After Installing Pipeline

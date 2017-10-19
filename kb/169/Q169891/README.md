@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169891: XFOR: Internet Message Cannot Be Processed"
-permalink: kb/169/Q169891/
+permalink: /kb/169/Q169891/
 ---
 
 ## Q169891: XFOR: Internet Message Cannot Be Processed

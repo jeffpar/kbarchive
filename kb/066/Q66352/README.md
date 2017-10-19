@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66352: Description of Minesweeper in Windows Entertainment Pack"
-permalink: kb/066/Q66352/
+permalink: /kb/066/Q66352/
 ---
 
 ## Q66352: Description of Minesweeper in Windows Entertainment Pack

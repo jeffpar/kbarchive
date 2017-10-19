@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193209: Gethostbyname Not Working Correctly with Only DUN Installed"
-permalink: kb/193/Q193209/
+permalink: /kb/193/Q193209/
 ---
 
 ## Q193209: Gethostbyname Not Working Correctly with Only DUN Installed

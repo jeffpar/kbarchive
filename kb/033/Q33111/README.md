@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33111: Loading and Using COMMAND.COM from a RAMDrive"
-permalink: kb/033/Q33111/
+permalink: /kb/033/Q33111/
 ---
 
 ## Q33111: Loading and Using COMMAND.COM from a RAMDrive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237991: Front Page 2000 Not Included in SBS 4.5 VUP or Retail"
-permalink: kb/237/Q237991/
+permalink: /kb/237/Q237991/
 ---
 
 ## Q237991: Front Page 2000 Not Included in SBS 4.5 VUP or Retail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132991: Microsoft Fax for Windows 95 Questions and Answers"
-permalink: kb/132/Q132991/
+permalink: /kb/132/Q132991/
 ---
 
 ## Q132991: Microsoft Fax for Windows 95 Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169915: XFOR: How to Publish Exchange Public Folders as NNTP"
-permalink: kb/169/Q169915/
+permalink: /kb/169/Q169915/
 ---
 
 ## Q169915: XFOR: How to Publish Exchange Public Folders as NNTP

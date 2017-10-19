@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149212: XCLN: How to Configure Public Folder Favorites for Users"
-permalink: kb/149/Q149212/
+permalink: /kb/149/Q149212/
 ---
 
 ## Q149212: XCLN: How to Configure Public Folder Favorites for Users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207088: SAMPLE: Implement a Date/Time Generic ActiveX Property Page"
-permalink: kb/207/Q207088/
+permalink: /kb/207/Q207088/
 ---
 
 ## Q207088: SAMPLE: Implement a Date/Time Generic ActiveX Property Page

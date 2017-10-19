@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269287: MCSE Readiness Review 70-028: Administering SQL Server 7.0 Comme"
-permalink: kb/269/Q269287/
+permalink: /kb/269/Q269287/
 ---
 
 ## Q269287: MCSE Readiness Review 70-028: Administering SQL Server 7.0 Comme

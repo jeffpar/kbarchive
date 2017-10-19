@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140640: BUG: GP Fault Opening a File w/ Visual Basic 3.0 &amp; Windows NT"
-permalink: kb/140/Q140640/
+permalink: /kb/140/Q140640/
 ---
 
 ## Q140640: BUG: GP Fault Opening a File w/ Visual Basic 3.0 &amp; Windows NT

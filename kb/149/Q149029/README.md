@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149029: XFOR: IMC Re-Maps Return-Receipts-To Header to Delivery Receipt"
-permalink: kb/149/Q149029/
+permalink: /kb/149/Q149029/
 ---
 
 ## Q149029: XFOR: IMC Re-Maps Return-Receipts-To Header to Delivery Receipt

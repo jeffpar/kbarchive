@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150380: PRB: Sizeof Constant Character Returns Different Values"
-permalink: kb/150/Q150380/
+permalink: /kb/150/Q150380/
 ---
 
 ## Q150380: PRB: Sizeof Constant Character Returns Different Values

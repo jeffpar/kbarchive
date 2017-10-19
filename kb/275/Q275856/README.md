@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275856: Programming Outlook and Exchange Second Edition Comments and Cor"
-permalink: kb/275/Q275856/
+permalink: /kb/275/Q275856/
 ---
 
 ## Q275856: Programming Outlook and Exchange Second Edition Comments and Cor

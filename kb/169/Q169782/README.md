@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169782: XFOR: POP3 and IMAP4 Clients That Work with Exchange Server"
-permalink: kb/169/Q169782/
+permalink: /kb/169/Q169782/
 ---
 
 ## Q169782: XFOR: POP3 and IMAP4 Clients That Work with Exchange Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126650: PC Rmt: Using Null Modem Script at Higher Baud Rates Than 9600"
-permalink: kb/126/Q126650/
+permalink: /kb/126/Q126650/
 ---
 
 ## Q126650: PC Rmt: Using Null Modem Script at Higher Baud Rates Than 9600

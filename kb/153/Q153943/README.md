@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153943: Password Changed by Mac User not Synchronized with FPNW"
-permalink: kb/153/Q153943/
+permalink: /kb/153/Q153943/
 ---
 
 ## Q153943: Password Changed by Mac User not Synchronized with FPNW

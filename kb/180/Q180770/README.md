@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180770: BUG: Check Boxes Always Appear Three-Dimensional (3D)"
-permalink: kb/180/Q180770/
+permalink: /kb/180/Q180770/
 ---
 
 ## Q180770: BUG: Check Boxes Always Appear Three-Dimensional (3D)

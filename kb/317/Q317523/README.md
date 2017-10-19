@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317523: PRB: &quot;Only One Database Connection at a Time Is Supported&quot; Error"
-permalink: kb/317/Q317523/
+permalink: /kb/317/Q317523/
 ---
 
 ## Q317523: PRB: &quot;Only One Database Connection at a Time Is Supported&quot; Error

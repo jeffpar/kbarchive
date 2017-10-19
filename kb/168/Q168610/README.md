@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168610: PRB: Overflow Doesn't Occur Using Pentium Pro or Pentium II"
-permalink: kb/168/Q168610/
+permalink: /kb/168/Q168610/
 ---
 
 ## Q168610: PRB: Overflow Doesn't Occur Using Pentium Pro or Pentium II

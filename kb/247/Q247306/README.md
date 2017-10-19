@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247306: SMS: SMS 2.0 SP1 ICP1 Client Hotfix Bundle"
-permalink: kb/247/Q247306/
+permalink: /kb/247/Q247306/
 ---
 
 ## Q247306: SMS: SMS 2.0 SP1 ICP1 Client Hotfix Bundle

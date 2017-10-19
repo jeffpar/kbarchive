@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187848: XWEB: Comic Sans Font in Meeting Requests"
-permalink: kb/187/Q187848/
+permalink: /kb/187/Q187848/
 ---
 
 ## Q187848: XWEB: Comic Sans Font in Meeting Requests

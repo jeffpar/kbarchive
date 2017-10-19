@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120738: &quot;Routine Not Found&quot; Message Box While Viewing Help File"
-permalink: kb/120/Q120738/
+permalink: /kb/120/Q120738/
 ---
 
 ## Q120738: &quot;Routine Not Found&quot; Message Box While Viewing Help File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83939: HOWTO: Print the Image of a Dialog Box"
-permalink: kb/083/Q83939/
+permalink: /kb/083/Q83939/
 ---
 
 ## Q83939: HOWTO: Print the Image of a Dialog Box

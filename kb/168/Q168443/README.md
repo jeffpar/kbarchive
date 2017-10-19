@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168443: XADM: Exchange Server Download Logging Feature"
-permalink: kb/168/Q168443/
+permalink: /kb/168/Q168443/
 ---
 
 ## Q168443: XADM: Exchange Server Download Logging Feature

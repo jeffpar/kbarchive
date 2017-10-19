@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175648: Event ID 20120: Could Not Open IPX SAP Socket..."
-permalink: kb/175/Q175648/
+permalink: /kb/175/Q175648/
 ---
 
 ## Q175648: Event ID 20120: Could Not Open IPX SAP Socket...

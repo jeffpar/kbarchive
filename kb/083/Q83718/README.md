@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83718: Brother HL-8e Prints TrueType Incorrectly in Landscape"
-permalink: kb/083/Q83718/
+permalink: /kb/083/Q83718/
 ---
 
 ## Q83718: Brother HL-8e Prints TrueType Incorrectly in Landscape

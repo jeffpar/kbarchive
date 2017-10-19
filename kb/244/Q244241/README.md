@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244241: APM Message Never Received If Windows 95 Client Not Logged On"
-permalink: kb/244/Q244241/
+permalink: /kb/244/Q244241/
 ---
 
 ## Q244241: APM Message Never Received If Windows 95 Client Not Logged On

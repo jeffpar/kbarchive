@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130686: Visual FoxPro File Extensions and File Types"
-permalink: kb/130/Q130686/
+permalink: /kb/130/Q130686/
 ---
 
 ## Q130686: Visual FoxPro File Extensions and File Types

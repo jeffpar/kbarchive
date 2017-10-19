@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78154: AST Research ASTDSK.DRV with MS-DOS Upgrade"
-permalink: kb/078/Q78154/
+permalink: /kb/078/Q78154/
 ---
 
 ## Q78154: AST Research ASTDSK.DRV with MS-DOS Upgrade

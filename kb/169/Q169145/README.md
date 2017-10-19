@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169145: Event ID: 5511 - Mismatched SIDs"
-permalink: kb/169/Q169145/
+permalink: /kb/169/Q169145/
 ---
 
 ## Q169145: Event ID: 5511 - Mismatched SIDs

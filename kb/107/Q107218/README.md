@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107218: IBM SDLC and Token Ring Adapter Notes"
-permalink: kb/107/Q107218/
+permalink: /kb/107/Q107218/
 ---
 
 ## Q107218: IBM SDLC and Token Ring Adapter Notes

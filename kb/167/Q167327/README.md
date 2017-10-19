@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167327: WinNT Servers Can Join Workgroups or Domains without Reinstall"
-permalink: kb/167/Q167327/
+permalink: /kb/167/Q167327/
 ---
 
 ## Q167327: WinNT Servers Can Join Workgroups or Domains without Reinstall

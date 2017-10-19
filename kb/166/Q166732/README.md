@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166732: Cannot Read Parameters Help Screen for Route.exe"
-permalink: kb/166/Q166732/
+permalink: /kb/166/Q166732/
 ---
 
 ## Q166732: Cannot Read Parameters Help Screen for Route.exe

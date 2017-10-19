@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160911: FIX: &quot;Mouse Click Middle&quot; Command Produces Error Message"
-permalink: kb/160/Q160911/
+permalink: /kb/160/Q160911/
 ---
 
 ## Q160911: FIX: &quot;Mouse Click Middle&quot; Command Produces Error Message

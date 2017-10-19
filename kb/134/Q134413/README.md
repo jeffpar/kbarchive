@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134413: PRB: Mail Merge Wizard Causes Errors in Windows NT"
-permalink: kb/134/Q134413/
+permalink: /kb/134/Q134413/
 ---
 
 ## Q134413: PRB: Mail Merge Wizard Causes Errors in Windows NT

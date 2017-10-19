@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129095: INFO: Format of the Document Template String"
-permalink: kb/129/Q129095/
+permalink: /kb/129/Q129095/
 ---
 
 ## Q129095: INFO: Format of the Document Template String

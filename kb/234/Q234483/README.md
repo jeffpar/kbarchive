@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234483: WD97: wdDocumentsPath Constant Returns Current Folder"
-permalink: kb/234/Q234483/
+permalink: /kb/234/Q234483/
 ---
 
 ## Q234483: WD97: wdDocumentsPath Constant Returns Current Folder

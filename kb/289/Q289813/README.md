@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289813: Mapping Server Displays Incorrect Special Group Error Message"
-permalink: kb/289/Q289813/
+permalink: /kb/289/Q289813/
 ---
 
 ## Q289813: Mapping Server Displays Incorrect Special Group Error Message

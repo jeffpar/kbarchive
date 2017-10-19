@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83500: SMARTDRV.EXE Does Not Support Command Line Size Change"
-permalink: kb/083/Q83500/
+permalink: /kb/083/Q83500/
 ---
 
 ## Q83500: SMARTDRV.EXE Does Not Support Command Line Size Change

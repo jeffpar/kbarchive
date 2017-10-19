@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140721: Error Message: An Exception 00 Has Occurred..."
-permalink: kb/140/Q140721/
+permalink: /kb/140/Q140721/
 ---
 
 ## Q140721: Error Message: An Exception 00 Has Occurred...

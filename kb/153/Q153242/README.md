@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153242: Net Use /Home Fails with 13 Character Domain Controller"
-permalink: kb/153/Q153242/
+permalink: /kb/153/Q153242/
 ---
 
 ## Q153242: Net Use /Home Fails with 13 Character Domain Controller

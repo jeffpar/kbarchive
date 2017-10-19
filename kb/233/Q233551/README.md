@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233551: Runtime Error 1226 Occurs When Using Diagnostic Playback"
-permalink: kb/233/Q233551/
+permalink: /kb/233/Q233551/
 ---
 
 ## Q233551: Runtime Error 1226 Occurs When Using Diagnostic Playback

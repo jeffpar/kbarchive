@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187299: SAMPLE: PERSIST.EXE Persists Class Objects with VB6"
-permalink: kb/187/Q187299/
+permalink: /kb/187/Q187299/
 ---
 
 ## Q187299: SAMPLE: PERSIST.EXE Persists Class Objects with VB6

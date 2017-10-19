@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153406: SMS: Client Icons Do Not Deinstall"
-permalink: kb/153/Q153406/
+permalink: /kb/153/Q153406/
 ---
 
 ## Q153406: SMS: Client Icons Do Not Deinstall

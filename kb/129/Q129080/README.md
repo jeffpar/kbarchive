@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129080: HOWTO: Have Accelerator Keys Support Japanese and US Keyboards"
-permalink: kb/129/Q129080/
+permalink: /kb/129/Q129080/
 ---
 
 ## Q129080: HOWTO: Have Accelerator Keys Support Japanese and US Keyboards

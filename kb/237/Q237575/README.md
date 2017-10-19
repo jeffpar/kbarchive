@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237575: ACC2000:Reverting to Access 97 ODBC Driver After Installing MDAC"
-permalink: kb/237/Q237575/
+permalink: /kb/237/Q237575/
 ---
 
 ## Q237575: ACC2000:Reverting to Access 97 ODBC Driver After Installing MDAC

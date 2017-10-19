@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223391: XADM: OOF Messages Received Even When OOF Option is Disabled"
-permalink: kb/223/Q223391/
+permalink: /kb/223/Q223391/
 ---
 
 ## Q223391: XADM: OOF Messages Received Even When OOF Option is Disabled

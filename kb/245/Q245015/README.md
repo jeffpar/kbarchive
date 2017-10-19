@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245015: How to Use Xcacls.exe to Print Folder and File Permissions."
-permalink: kb/245/Q245015/
+permalink: /kb/245/Q245015/
 ---
 
 ## Q245015: How to Use Xcacls.exe to Print Folder and File Permissions.

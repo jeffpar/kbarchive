@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173797: Toshiba 300CT Laptop Computer Uses a Windows Modem"
-permalink: kb/173/Q173797/
+permalink: /kb/173/Q173797/
 ---
 
 ## Q173797: Toshiba 300CT Laptop Computer Uses a Windows Modem

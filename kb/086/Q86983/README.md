@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86983: X400: Differences Between, Advantages of Field &amp; Type"
-permalink: kb/086/Q86983/
+permalink: /kb/086/Q86983/
 ---
 
 ## Q86983: X400: Differences Between, Advantages of Field &amp; Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325943: FIX: Secondary HAC Service Cannot Copy Database File from MDB"
-permalink: kb/325/Q325943/
+permalink: /kb/325/Q325943/
 ---
 
 ## Q325943: FIX: Secondary HAC Service Cannot Copy Database File from MDB

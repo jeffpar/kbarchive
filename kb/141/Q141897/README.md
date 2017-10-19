@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141897: How to Add Columns to the DBGrid Control at Design Time"
-permalink: kb/141/Q141897/
+permalink: /kb/141/Q141897/
 ---
 
 ## Q141897: How to Add Columns to the DBGrid Control at Design Time

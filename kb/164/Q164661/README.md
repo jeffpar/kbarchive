@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164661: SNA Server 3.0 Config Tool Incorrectly Sets Client Transports"
-permalink: kb/164/Q164661/
+permalink: /kb/164/Q164661/
 ---
 
 ## Q164661: SNA Server 3.0 Config Tool Incorrectly Sets Client Transports

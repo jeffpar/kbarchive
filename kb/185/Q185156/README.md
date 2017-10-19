@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185156: WD97: Spelling Checker Deletes Tab/Spaces from Paragraph Start"
-permalink: kb/185/Q185156/
+permalink: /kb/185/Q185156/
 ---
 
 ## Q185156: WD97: Spelling Checker Deletes Tab/Spaces from Paragraph Start

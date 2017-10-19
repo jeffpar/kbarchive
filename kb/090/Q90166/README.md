@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90166: Configuration Manager Does Not Accept ENTER Key"
-permalink: kb/090/Q90166/
+permalink: /kb/090/Q90166/
 ---
 
 ## Q90166: Configuration Manager Does Not Accept ENTER Key

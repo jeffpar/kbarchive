@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183127: 5250 Applet Remains Minimized or Maximized"
-permalink: kb/183/Q183127/
+permalink: /kb/183/Q183127/
 ---
 
 ## Q183127: 5250 Applet Remains Minimized or Maximized

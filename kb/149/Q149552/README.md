@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149552: ISDN Terms and Definitions"
-permalink: kb/149/Q149552/
+permalink: /kb/149/Q149552/
 ---
 
 ## Q149552: ISDN Terms and Definitions

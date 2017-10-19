@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138094: How to Create Updatable Views by Using SQL Passthrough"
-permalink: kb/138/Q138094/
+permalink: /kb/138/Q138094/
 ---
 
 ## Q138094: How to Create Updatable Views by Using SQL Passthrough

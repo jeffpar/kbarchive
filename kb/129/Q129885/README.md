@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129885: FIX: OLE Server Terminate Not Fired If Client Uses 'End'"
-permalink: kb/129/Q129885/
+permalink: /kb/129/Q129885/
 ---
 
 ## Q129885: FIX: OLE Server Terminate Not Fired If Client Uses 'End'

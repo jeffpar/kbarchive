@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168923: WD97: Invalid Page Fault Using DOCVARIABLE Field"
-permalink: kb/168/Q168923/
+permalink: /kb/168/Q168923/
 ---
 
 ## Q168923: WD97: Invalid Page Fault Using DOCVARIABLE Field

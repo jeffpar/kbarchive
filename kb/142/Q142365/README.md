@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142365: Member Support Phone Numbers for MSN, The Microsoft Network"
-permalink: kb/142/Q142365/
+permalink: /kb/142/Q142365/
 ---
 
 ## Q142365: Member Support Phone Numbers for MSN, The Microsoft Network

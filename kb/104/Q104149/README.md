@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104149: Stravinsky: Pulling Down the Glossary List"
-permalink: kb/104/Q104149/
+permalink: /kb/104/Q104149/
 ---
 
 ## Q104149: Stravinsky: Pulling Down the Glossary List

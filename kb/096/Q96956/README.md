@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96956: MS-DOS 6 Err Msg: The MS-DOS Setup Was Not Completed..."
-permalink: kb/096/Q96956/
+permalink: /kb/096/Q96956/
 ---
 
 ## Q96956: MS-DOS 6 Err Msg: The MS-DOS Setup Was Not Completed...

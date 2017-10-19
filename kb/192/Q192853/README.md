@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192853: FIX: Wincore.cpp Line 879 Assert When Using MFC Classes"
-permalink: kb/192/Q192853/
+permalink: /kb/192/Q192853/
 ---
 
 ## Q192853: FIX: Wincore.cpp Line 879 Assert When Using MFC Classes

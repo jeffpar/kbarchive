@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304083: XADM: Can't Use CDO to Remove Attendees from Recurring Meeting"
-permalink: kb/304/Q304083/
+permalink: /kb/304/Q304083/
 ---
 
 ## Q304083: XADM: Can't Use CDO to Remove Attendees from Recurring Meeting

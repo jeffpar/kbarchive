@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153309: HOWTO: Retrieve the Registered User Under Windows"
-permalink: kb/153/Q153309/
+permalink: /kb/153/Q153309/
 ---
 
 ## Q153309: HOWTO: Retrieve the Registered User Under Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237857: Error 5aa When Using the Regrest Tool"
-permalink: kb/237/Q237857/
+permalink: /kb/237/Q237857/
 ---
 
 ## Q237857: Error 5aa When Using the Regrest Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121435: Err Msg: Secondary Interrupt Controller Detected..."
-permalink: kb/121/Q121435/
+permalink: /kb/121/Q121435/
 ---
 
 ## Q121435: Err Msg: Secondary Interrupt Controller Detected...

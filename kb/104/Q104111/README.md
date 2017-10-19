@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104111: FaxDrv: Err Msg: MAPI of MS Mail for Windows Is Not Installed"
-permalink: kb/104/Q104111/
+permalink: /kb/104/Q104111/
 ---
 
 ## Q104111: FaxDrv: Err Msg: MAPI of MS Mail for Windows Is Not Installed

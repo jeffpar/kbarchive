@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319056: How To Set MSN.com As The Default Home And Search Page In Macint"
-permalink: kb/319/Q319056/
+permalink: /kb/319/Q319056/
 ---
 
 ## Q319056: How To Set MSN.com As The Default Home And Search Page In Macint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216876: PRB: Moving Code Does Not Preserve Procedure Attributes"
-permalink: kb/216/Q216876/
+permalink: /kb/216/Q216876/
 ---
 
 ## Q216876: PRB: Moving Code Does Not Preserve Procedure Attributes

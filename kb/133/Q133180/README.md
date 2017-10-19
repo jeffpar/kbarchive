@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133180: Fax Solution Software for Windows NT"
-permalink: kb/133/Q133180/
+permalink: /kb/133/Q133180/
 ---
 
 ## Q133180: Fax Solution Software for Windows NT

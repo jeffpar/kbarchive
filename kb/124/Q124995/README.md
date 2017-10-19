@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124995: WINMIF Fails If XNF File Has Text Before Numeric Fields"
-permalink: kb/124/Q124995/
+permalink: /kb/124/Q124995/
 ---
 
 ## Q124995: WINMIF Fails If XNF File Has Text Before Numeric Fields

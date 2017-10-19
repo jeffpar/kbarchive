@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145795: XCLN: Auto-Word Select Fails to Select with Last Character"
-permalink: kb/145/Q145795/
+permalink: /kb/145/Q145795/
 ---
 
 ## Q145795: XCLN: Auto-Word Select Fails to Select with Last Character

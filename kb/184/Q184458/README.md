@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184458: Outwars: Where Does Outwars Store Saved Games?"
-permalink: kb/184/Q184458/
+permalink: /kb/184/Q184458/
 ---
 
 ## Q184458: Outwars: Where Does Outwars Store Saved Games?

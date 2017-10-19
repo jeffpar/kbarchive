@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171932: Help Author Kit: Windows 3.x Help File Information Is Inaccurate"
-permalink: kb/171/Q171932/
+permalink: /kb/171/Q171932/
 ---
 
 ## Q171932: Help Author Kit: Windows 3.x Help File Information Is Inaccurate

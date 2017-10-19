@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190309: BUG: Treeview Display Corrupted with DragMode=Automatic"
-permalink: kb/190/Q190309/
+permalink: /kb/190/Q190309/
 ---
 
 ## Q190309: BUG: Treeview Display Corrupted with DragMode=Automatic

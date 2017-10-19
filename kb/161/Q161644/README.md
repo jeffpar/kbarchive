@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161644: STOP 0x0000000A Sfmsrv.sys When Copying File to Mac Volume"
-permalink: kb/161/Q161644/
+permalink: /kb/161/Q161644/
 ---
 
 ## Q161644: STOP 0x0000000A Sfmsrv.sys When Copying File to Mac Volume

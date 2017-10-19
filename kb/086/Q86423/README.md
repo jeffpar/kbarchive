@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86423: Unable to Specify Working Directory When Modifying SETUP.INF"
-permalink: kb/086/Q86423/
+permalink: /kb/086/Q86423/
 ---
 
 ## Q86423: Unable to Specify Working Directory When Modifying SETUP.INF

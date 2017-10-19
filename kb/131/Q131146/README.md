@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131146: PRB: CLEAR ALL in Cleanup Code of FoxPro 2.6 Form Causes Error"
-permalink: kb/131/Q131146/
+permalink: /kb/131/Q131146/
 ---
 
 ## Q131146: PRB: CLEAR ALL in Cleanup Code of FoxPro 2.6 Form Causes Error

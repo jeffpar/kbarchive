@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174859: Cannot See Overview or Zoom Monitor"
-permalink: kb/174/Q174859/
+permalink: /kb/174/Q174859/
 ---
 
 ## Q174859: Cannot See Overview or Zoom Monitor

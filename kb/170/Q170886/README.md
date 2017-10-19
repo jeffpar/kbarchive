@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170886: WD97: Smart Quotes Incorrect When Language Is Set to French"
-permalink: kb/170/Q170886/
+permalink: /kb/170/Q170886/
 ---
 
 ## Q170886: WD97: Smart Quotes Incorrect When Language Is Set to French

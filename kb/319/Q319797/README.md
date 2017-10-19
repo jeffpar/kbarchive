@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319797: BUG: An Access Violation Occurs When You Use the /Og Switch for"
-permalink: kb/319/Q319797/
+permalink: /kb/319/Q319797/
 ---
 
 ## Q319797: BUG: An Access Violation Occurs When You Use the /Og Switch for

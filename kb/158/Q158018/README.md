@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158018: SMS: How to Deploy Microsoft Internet Explorer 3.0"
-permalink: kb/158/Q158018/
+permalink: /kb/158/Q158018/
 ---
 
 ## Q158018: SMS: How to Deploy Microsoft Internet Explorer 3.0

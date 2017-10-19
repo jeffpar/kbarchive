@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181665: Game Does Not Start or Black Screen When Game Starts"
-permalink: kb/181/Q181665/
+permalink: /kb/181/Q181665/
 ---
 
 ## Q181665: Game Does Not Start or Black Screen When Game Starts

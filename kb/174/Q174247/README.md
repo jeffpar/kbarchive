@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174247: FS98 Setup Err Msg: FS98 Requires 4XXXMB for Installation"
-permalink: kb/174/Q174247/
+permalink: /kb/174/Q174247/
 ---
 
 ## Q174247: FS98 Setup Err Msg: FS98 Requires 4XXXMB for Installation

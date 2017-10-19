@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267949: Programs Set to Run Only When a User Is Logged On May Not Run"
-permalink: kb/267/Q267949/
+permalink: /kb/267/Q267949/
 ---
 
 ## Q267949: Programs Set to Run Only When a User Is Logged On May Not Run

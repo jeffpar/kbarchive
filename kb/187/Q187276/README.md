@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187276: XFOR: How the Notes Proxy Generator Works"
-permalink: kb/187/Q187276/
+permalink: /kb/187/Q187276/
 ---
 
 ## Q187276: XFOR: How the Notes Proxy Generator Works

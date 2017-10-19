@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254419: MapPoint 2001: Address Matching Takes a Long Time"
-permalink: kb/254/Q254419/
+permalink: /kb/254/Q254419/
 ---
 
 ## Q254419: MapPoint 2001: Address Matching Takes a Long Time

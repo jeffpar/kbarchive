@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68733: Paradise Setup Copies OEM Version of SETUP.INF to Windows"
-permalink: kb/068/Q68733/
+permalink: /kb/068/Q68733/
 ---
 
 ## Q68733: Paradise Setup Copies OEM Version of SETUP.INF to Windows

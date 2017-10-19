@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131715: How to Set Up And Synchronize with Domain Time Source Servers"
-permalink: kb/131/Q131715/
+permalink: /kb/131/Q131715/
 ---
 
 ## Q131715: How to Set Up And Synchronize with Domain Time Source Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269966: BUG: MSDN Library - July 2000 DVD Edition Has a Corrupt MSDN020."
-permalink: kb/269/Q269966/
+permalink: /kb/269/Q269966/
 ---
 
 ## Q269966: BUG: MSDN Library - July 2000 DVD Edition Has a Corrupt MSDN020.

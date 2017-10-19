@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105649: ADK: ADK 1.1 Disk Contents (3.5 Inch, 1.44 MB)"
-permalink: kb/105/Q105649/
+permalink: /kb/105/Q105649/
 ---
 
 ## Q105649: ADK: ADK 1.1 Disk Contents (3.5 Inch, 1.44 MB)

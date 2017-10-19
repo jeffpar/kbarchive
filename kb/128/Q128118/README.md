@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128118: SNA Server Win3.x Client Setup Err Msg: No Windows network..."
-permalink: kb/128/Q128118/
+permalink: /kb/128/Q128118/
 ---
 
 ## Q128118: SNA Server Win3.x Client Setup Err Msg: No Windows network...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111094: RAS ErrMsg: NETBIOS Error 640: A Netbios Error Has Occurred..."
-permalink: kb/111/Q111094/
+permalink: /kb/111/Q111094/
 ---
 
 ## Q111094: RAS ErrMsg: NETBIOS Error 640: A Netbios Error Has Occurred...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100366: lstrcmpi, Accented Chars, and Sort Order in Windows"
-permalink: kb/100/Q100366/
+permalink: /kb/100/Q100366/
 ---
 
 ## Q100366: lstrcmpi, Accented Chars, and Sort Order in Windows

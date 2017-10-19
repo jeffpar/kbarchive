@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174202: Configuring SPX Watchdog Timers in Windows 95"
-permalink: kb/174/Q174202/
+permalink: /kb/174/Q174202/
 ---
 
 ## Q174202: Configuring SPX Watchdog Timers in Windows 95

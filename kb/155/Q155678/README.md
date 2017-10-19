@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155678: HOWTO: Share Files Under Source-Code Control in Visual C++"
-permalink: kb/155/Q155678/
+permalink: /kb/155/Q155678/
 ---
 
 ## Q155678: HOWTO: Share Files Under Source-Code Control in Visual C++

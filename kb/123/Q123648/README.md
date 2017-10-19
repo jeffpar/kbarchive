@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123648: Can't Print to HP JetDirect Printers Over DLC w/Intel Flash32"
-permalink: kb/123/Q123648/
+permalink: /kb/123/Q123648/
 ---
 
 ## Q123648: Can't Print to HP JetDirect Printers Over DLC w/Intel Flash32

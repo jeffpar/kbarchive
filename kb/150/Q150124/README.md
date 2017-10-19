@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150124: Cannot Access CD-ROM After Installing SP4"
-permalink: kb/150/Q150124/
+permalink: /kb/150/Q150124/
 ---
 
 ## Q150124: Cannot Access CD-ROM After Installing SP4

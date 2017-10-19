@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181368: BUG: UserControl Not Printing Labels Correctly"
-permalink: kb/181/Q181368/
+permalink: /kb/181/Q181368/
 ---
 
 ## Q181368: BUG: UserControl Not Printing Labels Correctly

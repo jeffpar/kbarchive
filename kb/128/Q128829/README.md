@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128829: Mac Wkst: Performance Problem When Use ...Recently Used Items"
-permalink: kb/128/Q128829/
+permalink: /kb/128/Q128829/
 ---
 
 ## Q128829: Mac Wkst: Performance Problem When Use ...Recently Used Items

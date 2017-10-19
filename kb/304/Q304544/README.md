@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304544: Cannot Install IIS 5.1 Printers Virtual Directory Subcomponent"
-permalink: kb/304/Q304544/
+permalink: /kb/304/Q304544/
 ---
 
 ## Q304544: Cannot Install IIS 5.1 Printers Virtual Directory Subcomponent

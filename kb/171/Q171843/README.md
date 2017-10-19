@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171843: BUG: Winsock Control Leaks Memory When Unloaded"
-permalink: kb/171/Q171843/
+permalink: /kb/171/Q171843/
 ---
 
 ## Q171843: BUG: Winsock Control Leaks Memory When Unloaded

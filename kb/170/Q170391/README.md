@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170391: MTG: System Time Advances One Day When You Run Mail's EXTERNAL"
-permalink: kb/170/Q170391/
+permalink: /kb/170/Q170391/
 ---
 
 ## Q170391: MTG: System Time Advances One Day When You Run Mail's EXTERNAL

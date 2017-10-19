@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115354: X400: -BR option and Non-zero Restart Interval Cause ERROR 0"
-permalink: kb/115/Q115354/
+permalink: /kb/115/Q115354/
 ---
 
 ## Q115354: X400: -BR option and Non-zero Restart Interval Cause ERROR 0

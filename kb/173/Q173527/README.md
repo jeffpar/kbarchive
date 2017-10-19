@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173527: Automating PPTP Connection Via ISP Connection"
-permalink: kb/173/Q173527/
+permalink: /kb/173/Q173527/
 ---
 
 ## Q173527: Automating PPTP Connection Via ISP Connection

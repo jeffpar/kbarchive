@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130939: Allowing Macintosh Connection to LAN Manager BDC as Guest"
-permalink: kb/130/Q130939/
+permalink: /kb/130/Q130939/
 ---
 
 ## Q130939: Allowing Macintosh Connection to LAN Manager BDC as Guest

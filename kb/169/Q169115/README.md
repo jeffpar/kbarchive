@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169115: Importing a Dial-up Networking Phonebook"
-permalink: kb/169/Q169115/
+permalink: /kb/169/Q169115/
 ---
 
 ## Q169115: Importing a Dial-up Networking Phonebook

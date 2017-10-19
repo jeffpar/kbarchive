@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119789: Word and Excel for Windows NT Require Windows NT Version 3.5"
-permalink: kb/119/Q119789/
+permalink: /kb/119/Q119789/
 ---
 
 ## Q119789: Word and Excel for Windows NT Require Windows NT Version 3.5

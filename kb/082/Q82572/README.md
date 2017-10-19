@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82572: Brief Should Be Run Full Screen or in a Full Window"
-permalink: kb/082/Q82572/
+permalink: /kb/082/Q82572/
 ---
 
 ## Q82572: Brief Should Be Run Full Screen or in a Full Window

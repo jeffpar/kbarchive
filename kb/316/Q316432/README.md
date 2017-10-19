@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316432: FIX: XMLToCursor Incorrectly Adds Row When You Use Inline Schema"
-permalink: kb/316/Q316432/
+permalink: /kb/316/Q316432/
 ---
 
 ## Q316432: FIX: XMLToCursor Incorrectly Adds Row When You Use Inline Schema

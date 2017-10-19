@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127805: Err Msg: &quot;Problem Loading or Executing the NetWare...&quot;"
-permalink: kb/127/Q127805/
+permalink: /kb/127/Q127805/
 ---
 
 ## Q127805: Err Msg: &quot;Problem Loading or Executing the NetWare...&quot;

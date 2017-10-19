@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182308: Postoffice Improperly Serialized When Disk 1 Not Serialized"
-permalink: kb/182/Q182308/
+permalink: /kb/182/Q182308/
 ---
 
 ## Q182308: Postoffice Improperly Serialized When Disk 1 Not Serialized

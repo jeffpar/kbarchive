@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74451: Plus Hardcard II Is Very Slow with EMM386"
-permalink: kb/074/Q74451/
+permalink: /kb/074/Q74451/
 ---
 
 ## Q74451: Plus Hardcard II Is Very Slow with EMM386

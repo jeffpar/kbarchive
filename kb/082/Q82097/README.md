@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82097: Pasting a Full Screen into Windows Paintbrush"
-permalink: kb/082/Q82097/
+permalink: /kb/082/Q82097/
 ---
 
 ## Q82097: Pasting a Full Screen into Windows Paintbrush

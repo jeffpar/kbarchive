@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181999: XADM: Err Msg Attempting to Uninstall &quot;Entry Point Not Found&quot;"
-permalink: kb/181/Q181999/
+permalink: /kb/181/Q181999/
 ---
 
 ## Q181999: XADM: Err Msg Attempting to Uninstall &quot;Entry Point Not Found&quot;

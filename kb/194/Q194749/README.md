@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194749: SP4 Periodic Disk Access Interferes with Power Management"
-permalink: kb/194/Q194749/
+permalink: /kb/194/Q194749/
 ---
 
 ## Q194749: SP4 Periodic Disk Access Interferes with Power Management

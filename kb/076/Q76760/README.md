@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q76760: Productivity Pack: [COLORS] DimmedText= Does Not Work"
-permalink: kb/076/Q76760/
+title: "Q76760: Productivity Pack: &#91;COLORS&#93; DimmedText= Does Not Work"
+permalink: /kb/076/Q76760/
 ---
 
-## Q76760: Productivity Pack: [COLORS] DimmedText= Does Not Work
+## Q76760: Productivity Pack: &#91;COLORS&#93; DimmedText= Does Not Work
 
 	Article: Q76760
 	Product(s): Microsoft Windows 95.x Retail Product

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190783: Zone: Cannot Enter Zone Game Rooms"
-permalink: kb/190/Q190783/
+permalink: /kb/190/Q190783/
 ---
 
 ## Q190783: Zone: Cannot Enter Zone Game Rooms

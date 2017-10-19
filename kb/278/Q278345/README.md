@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278345: Competing Changes to SMSCliToknAcct&amp; During Clisvc Startup"
-permalink: kb/278/Q278345/
+permalink: /kb/278/Q278345/
 ---
 
 ## Q278345: Competing Changes to SMSCliToknAcct&amp; During Clisvc Startup

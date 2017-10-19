@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158187: OFFICIAL MICROSOFT INTERNET EXPLORER BOOK Corrections and Comm"
-permalink: kb/158/Q158187/
+permalink: /kb/158/Q158187/
 ---
 
 ## Q158187: OFFICIAL MICROSOFT INTERNET EXPLORER BOOK Corrections and Comm

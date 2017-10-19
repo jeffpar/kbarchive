@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126411: Screen Saver Does Not Restore Full-Screen MS-DOS Window"
-permalink: kb/126/Q126411/
+permalink: /kb/126/Q126411/
 ---
 
 ## Q126411: Screen Saver Does Not Restore Full-Screen MS-DOS Window

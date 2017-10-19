@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247331: PRB: Error Spawning Compiler for Windows CE 2.12 Platforms"
-permalink: kb/247/Q247331/
+permalink: /kb/247/Q247331/
 ---
 
 ## Q247331: PRB: Error Spawning Compiler for Windows CE 2.12 Platforms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196672: WD97: Background Repagination Cannot Be Turned Off"
-permalink: kb/196/Q196672/
+permalink: /kb/196/Q196672/
 ---
 
 ## Q196672: WD97: Background Repagination Cannot Be Turned Off

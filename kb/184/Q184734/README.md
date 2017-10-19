@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184734: Outwars: Volume Is Set at Maximum Level When You Start Game"
-permalink: kb/184/Q184734/
+permalink: /kb/184/Q184734/
 ---
 
 ## Q184734: Outwars: Volume Is Set at Maximum Level When You Start Game

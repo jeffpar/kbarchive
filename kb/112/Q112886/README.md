@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112886: PC Adm: Err Msg: Notice 63 Error Creating Group in PO Address"
-permalink: kb/112/Q112886/
+permalink: /kb/112/Q112886/
 ---
 
 ## Q112886: PC Adm: Err Msg: Notice 63 Error Creating Group in PO Address

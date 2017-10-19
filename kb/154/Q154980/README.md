@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154980: PRB: Non-updateable View Generates Warnings in Form Wizard"
-permalink: kb/154/Q154980/
+permalink: /kb/154/Q154980/
 ---
 
 ## Q154980: PRB: Non-updateable View Generates Warnings in Form Wizard

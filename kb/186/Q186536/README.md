@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186536: Terminal Server Performance Monitor Objects and Counters"
-permalink: kb/186/Q186536/
+permalink: /kb/186/Q186536/
 ---
 
 ## Q186536: Terminal Server Performance Monitor Objects and Counters

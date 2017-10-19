@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152075: FIX: Control Container Support Only Works in Primary Thread"
-permalink: kb/152/Q152075/
+permalink: /kb/152/Q152075/
 ---
 
 ## Q152075: FIX: Control Container Support Only Works in Primary Thread

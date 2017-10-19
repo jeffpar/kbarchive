@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268847: PRB: Assign Method/Optimistic Buffering Makes GetFieldState = 2"
-permalink: kb/268/Q268847/
+permalink: /kb/268/Q268847/
 ---
 
 ## Q268847: PRB: Assign Method/Optimistic Buffering Makes GetFieldState = 2

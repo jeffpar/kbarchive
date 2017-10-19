@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134992: MODE Command: &quot;Printer Output Is Not Being Rerouted&quot;"
-permalink: kb/134/Q134992/
+permalink: /kb/134/Q134992/
 ---
 
 ## Q134992: MODE Command: &quot;Printer Output Is Not Being Rerouted&quot;

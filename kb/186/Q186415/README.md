@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186415: SMS: Status MIF Creator, Ismif32.exe Is Available"
-permalink: kb/186/Q186415/
+permalink: /kb/186/Q186415/
 ---
 
 ## Q186415: SMS: Status MIF Creator, Ismif32.exe Is Available

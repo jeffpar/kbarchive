@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210380: SMS: Unable to Join Array Columns When Creating Queries"
-permalink: kb/210/Q210380/
+permalink: /kb/210/Q210380/
 ---
 
 ## Q210380: SMS: Unable to Join Array Columns When Creating Queries

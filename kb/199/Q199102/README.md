@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199102: SMS: How to Define a Collection Using Direct Membership Rules"
-permalink: kb/199/Q199102/
+permalink: /kb/199/Q199102/
 ---
 
 ## Q199102: SMS: How to Define a Collection Using Direct Membership Rules

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195237: LABEL Doc Error in MS Excel 97 Developer's Kit"
-permalink: kb/195/Q195237/
+permalink: /kb/195/Q195237/
 ---
 
 ## Q195237: LABEL Doc Error in MS Excel 97 Developer's Kit

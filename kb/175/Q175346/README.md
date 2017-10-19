@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175346: A Bridge Too Far: Tips And Strategies Hint Line"
-permalink: kb/175/Q175346/
+permalink: /kb/175/Q175346/
 ---
 
 ## Q175346: A Bridge Too Far: Tips And Strategies Hint Line

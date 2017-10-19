@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168088: NTMMTA Leaves Os2.exe in Memory When Run as Service on NT 4.0"
-permalink: kb/168/Q168088/
+permalink: /kb/168/Q168088/
 ---
 
 ## Q168088: NTMMTA Leaves Os2.exe in Memory When Run as Service on NT 4.0

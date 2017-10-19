@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128796: Running After Dark: Unable to Access Serial and Parallel Ports"
-permalink: kb/128/Q128796/
+permalink: /kb/128/Q128796/
 ---
 
 ## Q128796: Running After Dark: Unable to Access Serial and Parallel Ports

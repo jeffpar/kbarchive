@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131037: How to Compile MediaView Example Player Using Visual C++"
-permalink: kb/131/Q131037/
+permalink: /kb/131/Q131037/
 ---
 
 ## Q131037: How to Compile MediaView Example Player Using Visual C++

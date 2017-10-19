@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83540: Mac Fax: FaxGate Rasterization Problems"
-permalink: kb/083/Q83540/
+permalink: /kb/083/Q83540/
 ---
 
 ## Q83540: Mac Fax: FaxGate Rasterization Problems

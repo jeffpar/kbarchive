@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198760: SMS: RC Causes Win95 Client in Suspend Mode to Stop Responding"
-permalink: kb/198/Q198760/
+permalink: /kb/198/Q198760/
 ---
 
 ## Q198760: SMS: RC Causes Win95 Client in Suspend Mode to Stop Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41090: INFO: Writing ROMable Code with Microsoft Languages"
-permalink: kb/041/Q41090/
+permalink: /kb/041/Q41090/
 ---
 
 ## Q41090: INFO: Writing ROMable Code with Microsoft Languages

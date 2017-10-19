@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304381: SMS: SMS Executive Service Hangs During Startup"
-permalink: kb/304/Q304381/
+permalink: /kb/304/Q304381/
 ---
 
 ## Q304381: SMS: SMS Executive Service Hangs During Startup

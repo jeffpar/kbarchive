@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235493: XFOR:Stopping Connectivity Controller Doesn't Stop GWRouter"
-permalink: kb/235/Q235493/
+permalink: /kb/235/Q235493/
 ---
 
 ## Q235493: XFOR:Stopping Connectivity Controller Doesn't Stop GWRouter

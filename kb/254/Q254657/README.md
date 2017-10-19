@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254657: Encarta World English Dictionary: Error in Online Help Topic"
-permalink: kb/254/Q254657/
+permalink: /kb/254/Q254657/
 ---
 
 ## Q254657: Encarta World English Dictionary: Error in Online Help Topic

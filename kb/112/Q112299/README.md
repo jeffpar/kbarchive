@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112299: DOC: MSVCRT10.DLL and MSFRT10.DLL Are Redistributable"
-permalink: kb/112/Q112299/
+permalink: /kb/112/Q112299/
 ---
 
 ## Q112299: DOC: MSVCRT10.DLL and MSFRT10.DLL Are Redistributable

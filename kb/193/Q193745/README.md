@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193745: XFOR: Dates Appear Incorrectly After cc:Mail Migration"
-permalink: kb/193/Q193745/
+permalink: /kb/193/Q193745/
 ---
 
 ## Q193745: XFOR: Dates Appear Incorrectly After cc:Mail Migration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158413: AutoCorrect Does Not Automatically Scroll Correction List"
-permalink: kb/158/Q158413/
+permalink: /kb/158/Q158413/
 ---
 
 ## Q158413: AutoCorrect Does Not Automatically Scroll Correction List

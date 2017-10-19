@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91635: ATM Version 2.02 Information"
-permalink: kb/091/Q91635/
+permalink: /kb/091/Q91635/
 ---
 
 ## Q91635: ATM Version 2.02 Information

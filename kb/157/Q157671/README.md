@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157671: INFO: STL Sample for the advance() Function"
-permalink: kb/157/Q157671/
+permalink: /kb/157/Q157671/
 ---
 
 ## Q157671: INFO: STL Sample for the advance() Function

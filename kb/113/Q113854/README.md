@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113854: PC WRmt: README.TXT: Microsoft Mail Remote for Windows 3.2"
-permalink: kb/113/Q113854/
+permalink: /kb/113/Q113854/
 ---
 
 ## Q113854: PC WRmt: README.TXT: Microsoft Mail Remote for Windows 3.2

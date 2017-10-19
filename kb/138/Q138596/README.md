@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138596: Microsoft Service for NetWare Directory Services Readme.txt"
-permalink: kb/138/Q138596/
+permalink: /kb/138/Q138596/
 ---
 
 ## Q138596: Microsoft Service for NetWare Directory Services Readme.txt

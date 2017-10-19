@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159785: DOCERR: Copying Classes with the Class Browser"
-permalink: kb/159/Q159785/
+permalink: /kb/159/Q159785/
 ---
 
 ## Q159785: DOCERR: Copying Classes with the Class Browser

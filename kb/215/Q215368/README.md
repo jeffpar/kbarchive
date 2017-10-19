@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215368: XCON: MTA Content Conversion Error 4101 with HP Openmail"
-permalink: kb/215/Q215368/
+permalink: /kb/215/Q215368/
 ---
 
 ## Q215368: XCON: MTA Content Conversion Error 4101 with HP Openmail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191206: PRB: Compiler Error Overriding VBA Conversion Functions"
-permalink: kb/191/Q191206/
+permalink: /kb/191/Q191206/
 ---
 
 ## Q191206: PRB: Compiler Error Overriding VBA Conversion Functions

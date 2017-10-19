@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129729: Duplicate Computer Names with Multiple Networks Not Supported"
-permalink: kb/129/Q129729/
+permalink: /kb/129/Q129729/
 ---
 
 ## Q129729: Duplicate Computer Names with Multiple Networks Not Supported

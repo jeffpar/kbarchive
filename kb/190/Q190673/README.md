@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190673: BUG: Flat Scroll Bars in ListView Do Not Work Correctly"
-permalink: kb/190/Q190673/
+permalink: /kb/190/Q190673/
 ---
 
 ## Q190673: BUG: Flat Scroll Bars in ListView Do Not Work Correctly

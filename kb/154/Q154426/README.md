@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154426: XCLN: EFD Cannot Display Initial Subject Text in Reply Item"
-permalink: kb/154/Q154426/
+permalink: /kb/154/Q154426/
 ---
 
 ## Q154426: XCLN: EFD Cannot Display Initial Subject Text in Reply Item

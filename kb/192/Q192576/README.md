@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192576: FIX: Fix From Debugger Does Not Show VFP Desktop if Visible=.F."
-permalink: kb/192/Q192576/
+permalink: /kb/192/Q192576/
 ---
 
 ## Q192576: FIX: Fix From Debugger Does Not Show VFP Desktop if Visible=.F.

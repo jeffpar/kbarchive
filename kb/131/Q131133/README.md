@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131133: How to Create and Access Protected Properties"
-permalink: kb/131/Q131133/
+permalink: /kb/131/Q131133/
 ---
 
 ## Q131133: How to Create and Access Protected Properties

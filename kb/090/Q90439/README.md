@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90439: Digitizing Technology for Pen-Based Systems"
-permalink: kb/090/Q90439/
+permalink: /kb/090/Q90439/
 ---
 
 ## Q90439: Digitizing Technology for Pen-Based Systems

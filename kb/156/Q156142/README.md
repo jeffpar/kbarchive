@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156142: PRB: Symbol &lt;default&gt; Always Shown in Input Parameters Dialog"
-permalink: kb/156/Q156142/
+permalink: /kb/156/Q156142/
 ---
 
 ## Q156142: PRB: Symbol &lt;default&gt; Always Shown in Input Parameters Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291581: MCSE Readiness Review Exam 70-210: Windows 2000 Professional Com"
-permalink: kb/291/Q291581/
+permalink: /kb/291/Q291581/
 ---
 
 ## Q291581: MCSE Readiness Review Exam 70-210: Windows 2000 Professional Com

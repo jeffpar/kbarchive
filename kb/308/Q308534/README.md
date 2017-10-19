@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308534: Streets and Trips 2002: Err Msg When Using Find Feature"
-permalink: kb/308/Q308534/
+permalink: /kb/308/Q308534/
 ---
 
 ## Q308534: Streets and Trips 2002: Err Msg When Using Find Feature

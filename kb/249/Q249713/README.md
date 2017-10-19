@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249713: Encarta 2000: How to Share Monthly Updates"
-permalink: kb/249/Q249713/
+permalink: /kb/249/Q249713/
 ---
 
 ## Q249713: Encarta 2000: How to Share Monthly Updates

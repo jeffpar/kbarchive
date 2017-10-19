@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153097: XFOR: Apple Talk MTA not Transferring Mail"
-permalink: kb/153/Q153097/
+permalink: /kb/153/Q153097/
 ---
 
 ## Q153097: XFOR: Apple Talk MTA not Transferring Mail

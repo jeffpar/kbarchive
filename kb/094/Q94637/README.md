@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94637: Can't Run DeskMate after Installing MS-DOS Upgrade"
-permalink: kb/094/Q94637/
+permalink: /kb/094/Q94637/
 ---
 
 ## Q94637: Can't Run DeskMate after Installing MS-DOS Upgrade

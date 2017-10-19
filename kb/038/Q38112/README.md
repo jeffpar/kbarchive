@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38112: Backing up to Floppy Disks in MS-DOS 4.0 and 5.0"
-permalink: kb/038/Q38112/
+permalink: /kb/038/Q38112/
 ---
 
 ## Q38112: Backing up to Floppy Disks in MS-DOS 4.0 and 5.0

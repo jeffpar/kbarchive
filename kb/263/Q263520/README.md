@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263520: HOWTO: Programmatically Create a Distribution List Using ADSI"
-permalink: kb/263/Q263520/
+permalink: /kb/263/Q263520/
 ---
 
 ## Q263520: HOWTO: Programmatically Create a Distribution List Using ADSI

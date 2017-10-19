@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106438: Windows for Workgroups 3.11: How to Disable Printer Alerts"
-permalink: kb/106/Q106438/
+permalink: /kb/106/Q106438/
 ---
 
 ## Q106438: Windows for Workgroups 3.11: How to Disable Printer Alerts

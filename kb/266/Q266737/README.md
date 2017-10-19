@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266737: XCLN: Problems Creating Notes Connector Using Lotus Notes Client"
-permalink: kb/266/Q266737/
+permalink: /kb/266/Q266737/
 ---
 
 ## Q266737: XCLN: Problems Creating Notes Connector Using Lotus Notes Client

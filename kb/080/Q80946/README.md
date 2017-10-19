@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80946: RoEdit.exe Implements Read-Only Edit Control in Windows"
-permalink: kb/080/Q80946/
+permalink: /kb/080/Q80946/
 ---
 
 ## Q80946: RoEdit.exe Implements Read-Only Edit Control in Windows

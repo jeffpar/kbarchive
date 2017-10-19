@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153480: XADM: Exchange Stops Responding; Event 7200 1711 1025"
-permalink: kb/153/Q153480/
+permalink: /kb/153/Q153480/
 ---
 
 ## Q153480: XADM: Exchange Stops Responding; Event 7200 1711 1025

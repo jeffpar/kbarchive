@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175287: XADM: Incorrectly Formatted Export File Contains Only Obj-Class"
-permalink: kb/175/Q175287/
+permalink: /kb/175/Q175287/
 ---
 
 ## Q175287: XADM: Incorrectly Formatted Export File Contains Only Obj-Class

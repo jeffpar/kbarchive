@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141035: Magic School Bus: Err Msg: CD Audio in Use by Another App"
-permalink: kb/141/Q141035/
+permalink: /kb/141/Q141035/
 ---
 
 ## Q141035: Magic School Bus: Err Msg: CD Audio in Use by Another App

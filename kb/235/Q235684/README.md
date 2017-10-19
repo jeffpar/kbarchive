@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235684: SMS: Systems Management Server Software Development Toolkit FAQ"
-permalink: kb/235/Q235684/
+permalink: /kb/235/Q235684/
 ---
 
 ## Q235684: SMS: Systems Management Server Software Development Toolkit FAQ

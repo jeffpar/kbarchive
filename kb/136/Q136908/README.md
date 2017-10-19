@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136908: FLTSIM 5.1: Problems Creating and Using a System Startup Disk"
-permalink: kb/136/Q136908/
+permalink: /kb/136/Q136908/
 ---
 
 ## Q136908: FLTSIM 5.1: Problems Creating and Using a System Startup Disk

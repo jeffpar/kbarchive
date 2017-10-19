@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155652: Monster Truck Madness: Joystick and Controller Issues"
-permalink: kb/155/Q155652/
+permalink: /kb/155/Q155652/
 ---
 
 ## Q155652: Monster Truck Madness: Joystick and Controller Issues

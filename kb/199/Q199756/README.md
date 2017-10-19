@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199756: XADM: Tips for Modifying an Exchange Server Registry Key on MSCS"
-permalink: kb/199/Q199756/
+permalink: /kb/199/Q199756/
 ---
 
 ## Q199756: XADM: Tips for Modifying an Exchange Server Registry Key on MSCS

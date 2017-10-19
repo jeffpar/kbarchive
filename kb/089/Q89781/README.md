@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89781: IPX Not Listed in Available Protocols in Control Panel"
-permalink: kb/089/Q89781/
+permalink: /kb/089/Q89781/
 ---
 
 ## Q89781: IPX Not Listed in Available Protocols in Control Panel

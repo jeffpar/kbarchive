@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146635: Recursive File Collection When SMS Performs Inventory"
-permalink: kb/146/Q146635/
+permalink: /kb/146/Q146635/
 ---
 
 ## Q146635: Recursive File Collection When SMS Performs Inventory

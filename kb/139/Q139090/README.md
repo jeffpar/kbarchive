@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139090: HOWTO: Highlight a Row in a Grid that Has Lost the Focus"
-permalink: kb/139/Q139090/
+permalink: /kb/139/Q139090/
 ---
 
 ## Q139090: HOWTO: Highlight a Row in a Grid that Has Lost the Focus

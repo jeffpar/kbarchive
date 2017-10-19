@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173450: XWEB: OWA Returns Error When Creating First Meeting Request"
-permalink: kb/173/Q173450/
+permalink: /kb/173/Q173450/
 ---
 
 ## Q173450: XWEB: OWA Returns Error When Creating First Meeting Request

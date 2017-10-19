@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162552: WD97: Error Attempting to Copy or Rename Project Module"
-permalink: kb/162/Q162552/
+permalink: /kb/162/Q162552/
 ---
 
 ## Q162552: WD97: Error Attempting to Copy or Rename Project Module

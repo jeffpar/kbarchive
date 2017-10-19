@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143401: PRB: Cannot Shorten Report Bands of Wizard-Generated Reports"
-permalink: kb/143/Q143401/
+permalink: /kb/143/Q143401/
 ---
 
 ## Q143401: PRB: Cannot Shorten Report Bands of Wizard-Generated Reports

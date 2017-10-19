@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146173: XCLN: Task Created in Appointment Book has no Created By Stamp"
-permalink: kb/146/Q146173/
+permalink: /kb/146/Q146173/
 ---
 
 ## Q146173: XCLN: Task Created in Appointment Book has no Created By Stamp

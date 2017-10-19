@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29197: INFO: Pointer Subtraction Yields Signed Value"
-permalink: kb/029/Q29197/
+permalink: /kb/029/Q29197/
 ---
 
 ## Q29197: INFO: Pointer Subtraction Yields Signed Value

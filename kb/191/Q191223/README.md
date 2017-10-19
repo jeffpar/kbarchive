@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191223: INFO: Files Required to View HTML Help"
-permalink: kb/191/Q191223/
+permalink: /kb/191/Q191223/
 ---
 
 ## Q191223: INFO: Files Required to View HTML Help

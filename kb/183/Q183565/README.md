@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183565: Underlyingvalue Property Incorrect for Certain Characters"
-permalink: kb/183/Q183565/
+permalink: /kb/183/Q183565/
 ---
 
 ## Q183565: Underlyingvalue Property Incorrect for Certain Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194066: Multimedia: Excessive Processor Usage When Programs Are Running"
-permalink: kb/194/Q194066/
+permalink: /kb/194/Q194066/
 ---
 
 ## Q194066: Multimedia: Excessive Processor Usage When Programs Are Running

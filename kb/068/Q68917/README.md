@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68917: ASD: Some Aircraft Features Cannot Be Modified"
-permalink: kb/068/Q68917/
+permalink: /kb/068/Q68917/
 ---
 
 ## Q68917: ASD: Some Aircraft Features Cannot Be Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142926: PRB: Handling Errors Caused by the MSRDC Update Method"
-permalink: kb/142/Q142926/
+permalink: /kb/142/Q142926/
 ---
 
 ## Q142926: PRB: Handling Errors Caused by the MSRDC Update Method

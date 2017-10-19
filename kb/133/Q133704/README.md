@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133704: ISDN Bandwidth Capabilities of Windows NT"
-permalink: kb/133/Q133704/
+permalink: /kb/133/Q133704/
 ---
 
 ## Q133704: ISDN Bandwidth Capabilities of Windows NT

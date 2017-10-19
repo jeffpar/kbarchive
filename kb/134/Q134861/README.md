@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134861: Description of and Troubleshooting the Marlett TrueType Font"
-permalink: kb/134/Q134861/
+permalink: /kb/134/Q134861/
 ---
 
 ## Q134861: Description of and Troubleshooting the Marlett TrueType Font

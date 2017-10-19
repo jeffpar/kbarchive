@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187884: CoCreateInstance on Multiple Threads Causes Hangs or Failures"
-permalink: kb/187/Q187884/
+permalink: /kb/187/Q187884/
 ---
 
 ## Q187884: CoCreateInstance on Multiple Threads Causes Hangs or Failures

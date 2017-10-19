@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198683: Err Msg: The Security Library Has Encountered an Improperly..."
-permalink: kb/198/Q198683/
+permalink: /kb/198/Q198683/
 ---
 
 ## Q198683: Err Msg: The Security Library Has Encountered an Improperly...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157562: XCLN: How To Merge Two .PST Files"
-permalink: kb/157/Q157562/
+permalink: /kb/157/Q157562/
 ---
 
 ## Q157562: XCLN: How To Merge Two .PST Files

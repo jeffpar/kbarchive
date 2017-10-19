@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182934: WD97: Not Enough Memory or Disk Space Saving File (Windows NT)"
-permalink: kb/182/Q182934/
+permalink: /kb/182/Q182934/
 ---
 
 ## Q182934: WD97: Not Enough Memory or Disk Space Saving File (Windows NT)

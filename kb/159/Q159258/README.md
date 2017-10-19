@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159258: Spike's World: How Do I Get My High Score Uploaded?"
-permalink: kb/159/Q159258/
+permalink: /kb/159/Q159258/
 ---
 
 ## Q159258: Spike's World: How Do I Get My High Score Uploaded?

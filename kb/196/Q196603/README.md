@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196603: Repair Windows NT After Installation of Service Pack 4 and Later"
-permalink: kb/196/Q196603/
+permalink: /kb/196/Q196603/
 ---
 
 ## Q196603: Repair Windows NT After Installation of Service Pack 4 and Later

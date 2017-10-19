@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156833: STOP 0X7B Inaccessible Boot Device When Starting Windows NT"
-permalink: kb/156/Q156833/
+permalink: /kb/156/Q156833/
 ---
 
 ## Q156833: STOP 0X7B Inaccessible Boot Device When Starting Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233220: STOP 0x1E in Win32k.sys with Many Programs Running"
-permalink: kb/233/Q233220/
+permalink: /kb/233/Q233220/
 ---
 
 ## Q233220: STOP 0x1E in Win32k.sys with Many Programs Running

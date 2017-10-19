@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263916: XFOR: MS Mail Connector Stops Unexpectedly While Viewing Queue"
-permalink: kb/263/Q263916/
+permalink: /kb/263/Q263916/
 ---
 
 ## Q263916: XFOR: MS Mail Connector Stops Unexpectedly While Viewing Queue

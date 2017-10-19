@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153090: HOWTO: Pass a Visual Basic Array to an Excel Worksheet"
-permalink: kb/153/Q153090/
+permalink: /kb/153/Q153090/
 ---
 
 ## Q153090: HOWTO: Pass a Visual Basic Array to an Excel Worksheet

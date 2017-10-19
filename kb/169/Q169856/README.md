@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169856: SNA Print Service Leak When All Print Sessions Are Stopped"
-permalink: kb/169/Q169856/
+permalink: /kb/169/Q169856/
 ---
 
 ## Q169856: SNA Print Service Leak When All Print Sessions Are Stopped

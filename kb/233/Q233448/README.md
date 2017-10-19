@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233448: Business Planner: Changing Link Color Does Not Affect Web Links"
-permalink: kb/233/Q233448/
+permalink: /kb/233/Q233448/
 ---
 
 ## Q233448: Business Planner: Changing Link Color Does Not Affect Web Links

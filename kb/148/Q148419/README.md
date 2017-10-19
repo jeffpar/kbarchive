@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148419: XCLN: Exchange GP Fault in Winsock.dll Using DEC Pathworks"
-permalink: kb/148/Q148419/
+permalink: /kb/148/Q148419/
 ---
 
 ## Q148419: XCLN: Exchange GP Fault in Winsock.dll Using DEC Pathworks

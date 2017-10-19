@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84717: Gerber Software Requires Upgrade for Windows 3.1"
-permalink: kb/084/Q84717/
+permalink: /kb/084/Q84717/
 ---
 
 ## Q84717: Gerber Software Requires Upgrade for Windows 3.1

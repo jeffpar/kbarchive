@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118298: PC DirSync: Template Information Sent with TEMPLATE=NO"
-permalink: kb/118/Q118298/
+permalink: /kb/118/Q118298/
 ---
 
 ## Q118298: PC DirSync: Template Information Sent with TEMPLATE=NO

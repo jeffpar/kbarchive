@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190024: How to Edit the Config.sys File in Microsoft Windows 98"
-permalink: kb/190/Q190024/
+permalink: /kb/190/Q190024/
 ---
 
 ## Q190024: How to Edit the Config.sys File in Microsoft Windows 98

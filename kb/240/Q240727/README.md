@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240727: How to Use the FTP Utility in a Typical Session"
-permalink: kb/240/Q240727/
+permalink: /kb/240/Q240727/
 ---
 
 ## Q240727: How to Use the FTP Utility in a Typical Session

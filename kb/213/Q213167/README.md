@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213167: SMS: Software Metering Clients Do Not Use Retry Setting Properly"
-permalink: kb/213/Q213167/
+permalink: /kb/213/Q213167/
 ---
 
 ## Q213167: SMS: Software Metering Clients Do Not Use Retry Setting Properly

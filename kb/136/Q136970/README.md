@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136970: PMTU Black Hole Detection Algorithm Change for Windows NT 3.51"
-permalink: kb/136/Q136970/
+permalink: /kb/136/Q136970/
 ---
 
 ## Q136970: PMTU Black Hole Detection Algorithm Change for Windows NT 3.51

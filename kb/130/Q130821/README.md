@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130821: Configuring IBM Token Ring Card to Handle Large Packets"
-permalink: kb/130/Q130821/
+permalink: /kb/130/Q130821/
 ---
 
 ## Q130821: Configuring IBM Token Ring Card to Handle Large Packets

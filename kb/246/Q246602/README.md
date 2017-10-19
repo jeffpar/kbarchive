@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246602: XADM: Pfadmin Won't Work with Err. Mssg.: OpenAddressBook Failed"
-permalink: kb/246/Q246602/
+permalink: /kb/246/Q246602/
 ---
 
 ## Q246602: XADM: Pfadmin Won't Work with Err. Mssg.: OpenAddressBook Failed

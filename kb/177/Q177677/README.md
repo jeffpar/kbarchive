@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177677: TSR Applications Hang While Login.exe Is Running"
-permalink: kb/177/Q177677/
+permalink: /kb/177/Q177677/
 ---
 
 ## Q177677: TSR Applications Hang While Login.exe Is Running

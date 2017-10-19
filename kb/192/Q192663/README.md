@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192663: SMSINST: ODBC Data Source May Fail to Be Installed"
-permalink: kb/192/Q192663/
+permalink: /kb/192/Q192663/
 ---
 
 ## Q192663: SMSINST: ODBC Data Source May Fail to Be Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269140: My Personal Tutor: How to Remove Names from the Sign-in List"
-permalink: kb/269/Q269140/
+permalink: /kb/269/Q269140/
 ---
 
 ## Q269140: My Personal Tutor: How to Remove Names from the Sign-in List

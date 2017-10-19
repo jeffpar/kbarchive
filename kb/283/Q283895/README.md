@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283895: Inside SQL Server 2000 Comment and Corrections"
-permalink: kb/283/Q283895/
+permalink: /kb/283/Q283895/
 ---
 
 ## Q283895: Inside SQL Server 2000 Comment and Corrections

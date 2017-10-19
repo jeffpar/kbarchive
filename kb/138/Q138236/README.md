@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138236: Deinstall of SMS Administrator Does Not Clean Registry"
-permalink: kb/138/Q138236/
+permalink: /kb/138/Q138236/
 ---
 
 ## Q138236: Deinstall of SMS Administrator Does Not Clean Registry

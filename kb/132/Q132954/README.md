@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132954: Mac Srv: How to Get Mail Version Information"
-permalink: kb/132/Q132954/
+permalink: /kb/132/Q132954/
 ---
 
 ## Q132954: Mac Srv: How to Get Mail Version Information

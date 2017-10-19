@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155988: Connecting to Remote WINS Shows Dimmed Menu Options"
-permalink: kb/155/Q155988/
+permalink: /kb/155/Q155988/
 ---
 
 ## Q155988: Connecting to Remote WINS Shows Dimmed Menu Options

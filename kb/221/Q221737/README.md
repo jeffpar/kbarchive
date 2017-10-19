@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221737: FIX: C0000005 Fatal Error With SET('RELATION') Function"
-permalink: kb/221/Q221737/
+permalink: /kb/221/Q221737/
 ---
 
 ## Q221737: FIX: C0000005 Fatal Error With SET('RELATION') Function

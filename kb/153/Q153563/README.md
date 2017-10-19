@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153563: SMS: Inventory of NetWare Servers Is Delayed"
-permalink: kb/153/Q153563/
+permalink: /kb/153/Q153563/
 ---
 
 ## Q153563: SMS: Inventory of NetWare Servers Is Delayed

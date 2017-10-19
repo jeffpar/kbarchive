@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132669: Canon Printers Printing Blue Objects as Purple Objects"
-permalink: kb/132/Q132669/
+permalink: /kb/132/Q132669/
 ---
 
 ## Q132669: Canon Printers Printing Blue Objects as Purple Objects

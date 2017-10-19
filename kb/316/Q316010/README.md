@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316010: FIX: Error Message When You Build Large Visual Basic Projects"
-permalink: kb/316/Q316010/
+permalink: /kb/316/Q316010/
 ---
 
 ## Q316010: FIX: Error Message When You Build Large Visual Basic Projects

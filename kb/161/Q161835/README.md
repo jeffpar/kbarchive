@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161835: BUG: Visible Property Malfunctions with ComboBox in Container"
-permalink: kb/161/Q161835/
+permalink: /kb/161/Q161835/
 ---
 
 ## Q161835: BUG: Visible Property Malfunctions with ComboBox in Container

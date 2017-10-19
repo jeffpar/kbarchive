@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152478: ErrMsg: Local Policy Does not Permit You to Logon..."
-permalink: kb/152/Q152478/
+permalink: /kb/152/Q152478/
 ---
 
 ## Q152478: ErrMsg: Local Policy Does not Permit You to Logon...

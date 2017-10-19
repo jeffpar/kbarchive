@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166265: Printing to a Postscript Printer May Cause a STOP 0x0000003b"
-permalink: kb/166/Q166265/
+permalink: /kb/166/Q166265/
 ---
 
 ## Q166265: Printing to a Postscript Printer May Cause a STOP 0x0000003b

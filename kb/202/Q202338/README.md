@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202338: SMS: Pre-Stage Clients to Avoid Bandwidth Contention in Install"
-permalink: kb/202/Q202338/
+permalink: /kb/202/Q202338/
 ---
 
 ## Q202338: SMS: Pre-Stage Clients to Avoid Bandwidth Contention in Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95347: Problems with Microsolutions Compaticard Controllers"
-permalink: kb/095/Q95347/
+permalink: /kb/095/Q95347/
 ---
 
 ## Q95347: Problems with Microsolutions Compaticard Controllers

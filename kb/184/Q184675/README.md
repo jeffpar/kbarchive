@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184675: BUG: PictureBox Prints Incorrectly with PrintForm"
-permalink: kb/184/Q184675/
+permalink: /kb/184/Q184675/
 ---
 
 ## Q184675: BUG: PictureBox Prints Incorrectly with PrintForm

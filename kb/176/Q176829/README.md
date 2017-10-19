@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176829: FIX: &quot;Index Internal Consistency Error&quot; Occurs with IDX Index"
-permalink: kb/176/Q176829/
+permalink: /kb/176/Q176829/
 ---
 
 ## Q176829: FIX: &quot;Index Internal Consistency Error&quot; Occurs with IDX Index

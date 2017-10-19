@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232097: DirectX: List of Files Installed by the DirectPlay 6.1a Update"
-permalink: kb/232/Q232097/
+permalink: /kb/232/Q232097/
 ---
 
 ## Q232097: DirectX: List of Files Installed by the DirectPlay 6.1a Update

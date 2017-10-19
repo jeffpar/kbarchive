@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186691: XCLN: Inbox Assistant Replies to Sender Not Alternate Recipient"
-permalink: kb/186/Q186691/
+permalink: /kb/186/Q186691/
 ---
 
 ## Q186691: XCLN: Inbox Assistant Replies to Sender Not Alternate Recipient

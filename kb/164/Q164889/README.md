@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164889: SMS: INVWIN32 Won't Check for Upgrade Until Next Inventory"
-permalink: kb/164/Q164889/
+permalink: /kb/164/Q164889/
 ---
 
 ## Q164889: SMS: INVWIN32 Won't Check for Upgrade Until Next Inventory

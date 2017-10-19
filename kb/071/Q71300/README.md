@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71300: LAN Manager Pop-up Messages While Running MS-DOS Applications"
-permalink: kb/071/Q71300/
+permalink: /kb/071/Q71300/
 ---
 
 ## Q71300: LAN Manager Pop-up Messages While Running MS-DOS Applications

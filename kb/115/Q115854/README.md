@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115854: FIX: Cannot Access Private Member from Friend Class"
-permalink: kb/115/Q115854/
+permalink: /kb/115/Q115854/
 ---
 
 ## Q115854: FIX: Cannot Access Private Member from Friend Class

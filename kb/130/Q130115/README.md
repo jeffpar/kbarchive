@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130115: PC Adm: Err Msg: Notice 163 Failed to Complete Deinstallation"
-permalink: kb/130/Q130115/
+permalink: /kb/130/Q130115/
 ---
 
 ## Q130115: PC Adm: Err Msg: Notice 163 Failed to Complete Deinstallation

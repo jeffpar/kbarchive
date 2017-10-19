@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152430: XCLN: Exchange NT Client will not Allow Terminal Window"
-permalink: kb/152/Q152430/
+permalink: /kb/152/Q152430/
 ---
 
 ## Q152430: XCLN: Exchange NT Client will not Allow Terminal Window

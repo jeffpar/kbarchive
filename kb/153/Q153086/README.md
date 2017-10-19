@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153086: XCLN: Custom Dictionary Is Not Used for Suggestions"
-permalink: kb/153/Q153086/
+permalink: /kb/153/Q153086/
 ---
 
 ## Q153086: XCLN: Custom Dictionary Is Not Used for Suggestions

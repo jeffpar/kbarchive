@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97576: Err Msg: &quot;DoubleSpace Cannot Copy the File DBLSPACE.INF&quot;"
-permalink: kb/097/Q97576/
+permalink: /kb/097/Q97576/
 ---
 
 ## Q97576: Err Msg: &quot;DoubleSpace Cannot Copy the File DBLSPACE.INF&quot;

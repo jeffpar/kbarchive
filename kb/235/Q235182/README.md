@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235182: SMS: Unable to Edit Inventory Names Tab for Child Sites"
-permalink: kb/235/Q235182/
+permalink: /kb/235/Q235182/
 ---
 
 ## Q235182: SMS: Unable to Edit Inventory Names Tab for Child Sites

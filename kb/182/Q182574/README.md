@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182574: SNA Server Stops Forwarding FMH-5 Attach Messages"
-permalink: kb/182/Q182574/
+permalink: /kb/182/Q182574/
 ---
 
 ## Q182574: SNA Server Stops Forwarding FMH-5 Attach Messages

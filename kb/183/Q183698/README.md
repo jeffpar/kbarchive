@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183698: SAMPLE: AXSH.EXE Demonstrates Implementing ActiveX Script Hosts"
-permalink: kb/183/Q183698/
+permalink: /kb/183/Q183698/
 ---
 
 ## Q183698: SAMPLE: AXSH.EXE Demonstrates Implementing ActiveX Script Hosts

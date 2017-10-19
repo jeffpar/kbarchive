@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152603: FIX: Masked Edit Tab Order Incorrect If Visible Property FALSE"
-permalink: kb/152/Q152603/
+permalink: /kb/152/Q152603/
 ---
 
 ## Q152603: FIX: Masked Edit Tab Order Incorrect If Visible Property FALSE

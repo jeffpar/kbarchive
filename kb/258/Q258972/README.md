@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258972: TN3270 Display Can be Opened with Associated Printer In Use"
-permalink: kb/258/Q258972/
+permalink: /kb/258/Q258972/
 ---
 
 ## Q258972: TN3270 Display Can be Opened with Associated Printer In Use

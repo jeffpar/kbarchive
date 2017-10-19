@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193423: XADM: Address Book Views Not Updated After Correct Interval"
-permalink: kb/193/Q193423/
+permalink: /kb/193/Q193423/
 ---
 
 ## Q193423: XADM: Address Book Views Not Updated After Correct Interval

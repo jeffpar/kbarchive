@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77382: Flight Simulator Version 4.0 Read Me Text"
-permalink: kb/077/Q77382/
+permalink: /kb/077/Q77382/
 ---
 
 ## Q77382: Flight Simulator Version 4.0 Read Me Text

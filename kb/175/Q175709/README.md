@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175709: Internet Explorer and Outlook Express Do Not Connect to Internet"
-permalink: kb/175/Q175709/
+permalink: /kb/175/Q175709/
 ---
 
 ## Q175709: Internet Explorer and Outlook Express Do Not Connect to Internet

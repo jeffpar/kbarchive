@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259241: Nbtstat and Nbt Performance Counters May Not Work"
-permalink: kb/259/Q259241/
+permalink: /kb/259/Q259241/
 ---
 
 ## Q259241: Nbtstat and Nbt Performance Counters May Not Work

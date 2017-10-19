@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260752: Terminal Server Hangs When Clients Access Dfs Shares"
-permalink: kb/260/Q260752/
+permalink: /kb/260/Q260752/
 ---
 
 ## Q260752: Terminal Server Hangs When Clients Access Dfs Shares

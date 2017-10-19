@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143288: Streets 4.0:Save Settings Prompt Doesn't Save New Zoom Setting"
-permalink: kb/143/Q143288/
+permalink: /kb/143/Q143288/
 ---
 
 ## Q143288: Streets 4.0:Save Settings Prompt Doesn't Save New Zoom Setting

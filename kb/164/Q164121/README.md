@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164121: Corel Fonts Unavailable Outside of English Locale"
-permalink: kb/164/Q164121/
+permalink: /kb/164/Q164121/
 ---
 
 ## Q164121: Corel Fonts Unavailable Outside of English Locale

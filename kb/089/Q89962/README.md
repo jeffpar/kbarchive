@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89962: Toshiba T3300SL Date and Time Do Not Change on Resume"
-permalink: kb/089/Q89962/
+permalink: /kb/089/Q89962/
 ---
 
 ## Q89962: Toshiba T3300SL Date and Time Do Not Change on Resume

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189840: XWEB: OWA Installation Fails with 0xC002041D Error"
-permalink: kb/189/Q189840/
+permalink: /kb/189/Q189840/
 ---
 
 ## Q189840: XWEB: OWA Installation Fails with 0xC002041D Error

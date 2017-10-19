@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198375: WD97: Registered Trademark Symbol Conversion Problems"
-permalink: kb/198/Q198375/
+permalink: /kb/198/Q198375/
 ---
 
 ## Q198375: WD97: Registered Trademark Symbol Conversion Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155892: Windows NT Boot Problem: Kernel File Is Missing From the Disk"
-permalink: kb/155/Q155892/
+permalink: /kb/155/Q155892/
 ---
 
 ## Q155892: Windows NT Boot Problem: Kernel File Is Missing From the Disk

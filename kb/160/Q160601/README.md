@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160601: Bad Parameters Sent to Win32k.sys May Cause Stop Message"
-permalink: kb/160/Q160601/
+permalink: /kb/160/Q160601/
 ---
 
 ## Q160601: Bad Parameters Sent to Win32k.sys May Cause Stop Message

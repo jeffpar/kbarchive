@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239811: NBA/NFL 2000: 3D Rendering Is Unavailable"
-permalink: kb/239/Q239811/
+permalink: /kb/239/Q239811/
 ---
 
 ## Q239811: NBA/NFL 2000: 3D Rendering Is Unavailable

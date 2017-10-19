@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138980: How to Update Datetime Field from Date &amp; Time Grid Cell Values"
-permalink: kb/138/Q138980/
+permalink: /kb/138/Q138980/
 ---
 
 ## Q138980: How to Update Datetime Field from Date &amp; Time Grid Cell Values

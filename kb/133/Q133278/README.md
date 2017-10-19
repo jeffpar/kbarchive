@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133278: MSB Human: Freezes on Opening Animation on Macintosh"
-permalink: kb/133/Q133278/
+permalink: /kb/133/Q133278/
 ---
 
 ## Q133278: MSB Human: Freezes on Opening Animation on Macintosh

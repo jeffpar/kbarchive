@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257264: XFOR: Internet Mail Service NDR &quot;Message Exceeded Size Limit&quot;"
-permalink: kb/257/Q257264/
+permalink: /kb/257/Q257264/
 ---
 
 ## Q257264: XFOR: Internet Mail Service NDR &quot;Message Exceeded Size Limit&quot;

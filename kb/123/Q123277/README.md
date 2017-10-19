@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123277: NEC 3X CD-ROM Drives Not Supported"
-permalink: kb/123/Q123277/
+permalink: /kb/123/Q123277/
 ---
 
 ## Q123277: NEC 3X CD-ROM Drives Not Supported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102967: REG: Server Service Entries, PART 1"
-permalink: kb/102/Q102967/
+permalink: /kb/102/Q102967/
 ---
 
 ## Q102967: REG: Server Service Entries, PART 1

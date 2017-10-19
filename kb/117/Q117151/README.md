@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117151: BUG: Conditional Breakpoints On Double Variables Fail"
-permalink: kb/117/Q117151/
+permalink: /kb/117/Q117151/
 ---
 
 ## Q117151: BUG: Conditional Breakpoints On Double Variables Fail

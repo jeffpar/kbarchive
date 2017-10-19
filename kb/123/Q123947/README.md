@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123947: PRB: Unable to Change Field Type in MODIFY STRUCTURE"
-permalink: kb/123/Q123947/
+permalink: /kb/123/Q123947/
 ---
 
 ## Q123947: PRB: Unable to Change Field Type in MODIFY STRUCTURE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227204: Baseball 2000: Graphics Are Distorted When You Switch to Game"
-permalink: kb/227/Q227204/
+permalink: /kb/227/Q227204/
 ---
 
 ## Q227204: Baseball 2000: Graphics Are Distorted When You Switch to Game

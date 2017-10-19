@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75180: Troubleshooting Print Screen Problems"
-permalink: kb/075/Q75180/
+permalink: /kb/075/Q75180/
 ---
 
 ## Q75180: Troubleshooting Print Screen Problems

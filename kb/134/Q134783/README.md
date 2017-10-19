@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134783: Text Entered in Second Column Not Reflected in Outline View"
-permalink: kb/134/Q134783/
+permalink: /kb/134/Q134783/
 ---
 
 ## Q134783: Text Entered in Second Column Not Reflected in Outline View

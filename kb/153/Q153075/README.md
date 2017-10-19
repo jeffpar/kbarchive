@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153075: RPL Clients Will Not Boot with a SMC 8432 Adapter"
-permalink: kb/153/Q153075/
+permalink: /kb/153/Q153075/
 ---
 
 ## Q153075: RPL Clients Will Not Boot with a SMC 8432 Adapter

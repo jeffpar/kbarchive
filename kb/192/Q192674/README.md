@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192674: Terminal Server Administrator retains Domain Controller Icon"
-permalink: kb/192/Q192674/
+permalink: /kb/192/Q192674/
 ---
 
 ## Q192674: Terminal Server Administrator retains Domain Controller Icon

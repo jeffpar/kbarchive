@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166055: WV: Margins Outside Printable Area Error in Word Viewer"
-permalink: kb/166/Q166055/
+permalink: /kb/166/Q166055/
 ---
 
 ## Q166055: WV: Margins Outside Printable Area Error in Word Viewer

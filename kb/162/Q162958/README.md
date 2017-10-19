@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162958: FIX: Format of the Password Parameter for CompactDatabase"
-permalink: kb/162/Q162958/
+permalink: /kb/162/Q162958/
 ---
 
 ## Q162958: FIX: Format of the Password Parameter for CompactDatabase

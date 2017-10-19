@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126922: PC Win: Err Msg: Mailbox Name or Password Is Incorrect"
-permalink: kb/126/Q126922/
+permalink: /kb/126/Q126922/
 ---
 
 ## Q126922: PC Win: Err Msg: Mailbox Name or Password Is Incorrect

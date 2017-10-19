@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298934: Automap: &quot;Find&quot; Operations Are Unavailable"
-permalink: kb/298/Q298934/
+permalink: /kb/298/Q298934/
 ---
 
 ## Q298934: Automap: &quot;Find&quot; Operations Are Unavailable

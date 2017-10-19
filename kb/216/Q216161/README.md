@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216161: XFOR: Automatic Replies to SMTP Reports Disallowed"
-permalink: kb/216/Q216161/
+permalink: /kb/216/Q216161/
 ---
 
 ## Q216161: XFOR: Automatic Replies to SMTP Reports Disallowed

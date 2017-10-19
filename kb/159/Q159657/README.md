@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159657: HOWTO: Capture the Parameters from an SQL Procedure with RDO"
-permalink: kb/159/Q159657/
+permalink: /kb/159/Q159657/
 ---
 
 ## Q159657: HOWTO: Capture the Parameters from an SQL Procedure with RDO

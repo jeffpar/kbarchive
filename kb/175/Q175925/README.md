@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175925: WD97: Print # Statement Separates Fields with Spaces, Not Tabs"
-permalink: kb/175/Q175925/
+permalink: /kb/175/Q175925/
 ---
 
 ## Q175925: WD97: Print # Statement Separates Fields with Spaces, Not Tabs

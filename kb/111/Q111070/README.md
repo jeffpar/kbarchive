@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111070: How to Change the Post Office Name After Setting Up"
-permalink: kb/111/Q111070/
+permalink: /kb/111/Q111070/
 ---
 
 ## Q111070: How to Change the Post Office Name After Setting Up

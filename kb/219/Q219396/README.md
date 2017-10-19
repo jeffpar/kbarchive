@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219396: Site Server 3.0 and Windows NT Service Pack 5 Interoperability"
-permalink: kb/219/Q219396/
+permalink: /kb/219/Q219396/
 ---
 
 ## Q219396: Site Server 3.0 and Windows NT Service Pack 5 Interoperability

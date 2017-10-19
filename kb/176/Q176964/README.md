@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176964: Rasusers.exe Only Searches About 5000 Users"
-permalink: kb/176/Q176964/
+permalink: /kb/176/Q176964/
 ---
 
 ## Q176964: Rasusers.exe Only Searches About 5000 Users

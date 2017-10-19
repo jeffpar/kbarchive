@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327041: Customer Cannot Access Hotmail's POP Mail Retrieval Feature"
-permalink: kb/327/Q327041/
+permalink: /kb/327/Q327041/
 ---
 
 ## Q327041: Customer Cannot Access Hotmail's POP Mail Retrieval Feature

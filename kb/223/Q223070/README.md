@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223070: FIX: DataGrid Column 1 Visible = False Does Not Work With ADC"
-permalink: kb/223/Q223070/
+permalink: /kb/223/Q223070/
 ---
 
 ## Q223070: FIX: DataGrid Column 1 Visible = False Does Not Work With ADC

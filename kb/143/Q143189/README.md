@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143189: Creating Separate FTP, Gopher, and WWW Text Log Files"
-permalink: kb/143/Q143189/
+permalink: /kb/143/Q143189/
 ---
 
 ## Q143189: Creating Separate FTP, Gopher, and WWW Text Log Files

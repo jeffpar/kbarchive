@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62170: PRB: Modifying TOOLS.INI May Have No Effect on PWB Environment"
-permalink: kb/062/Q62170/
+permalink: /kb/062/Q62170/
 ---
 
 ## Q62170: PRB: Modifying TOOLS.INI May Have No Effect on PWB Environment

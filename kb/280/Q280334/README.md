@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280334: Problems Creating New File or Folder While Using NoDrives Policy"
-permalink: kb/280/Q280334/
+permalink: /kb/280/Q280334/
 ---
 
 ## Q280334: Problems Creating New File or Folder While Using NoDrives Policy

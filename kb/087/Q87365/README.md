@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87365: Use Generic/Text Only Driver with HP ThinkJet 2225A"
-permalink: kb/087/Q87365/
+permalink: /kb/087/Q87365/
 ---
 
 ## Q87365: Use Generic/Text Only Driver with HP ThinkJet 2225A

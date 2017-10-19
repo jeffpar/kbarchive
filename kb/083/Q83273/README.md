@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83273: Err Msg: &quot;Specified COMMAND Directory Bad&quot;"
-permalink: kb/083/Q83273/
+permalink: /kb/083/Q83273/
 ---
 
 ## Q83273: Err Msg: &quot;Specified COMMAND Directory Bad&quot;

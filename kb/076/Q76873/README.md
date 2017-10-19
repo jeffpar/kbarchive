@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76873: Detailed Multimedia PC Specification"
-permalink: kb/076/Q76873/
+permalink: /kb/076/Q76873/
 ---
 
 ## Q76873: Detailed Multimedia PC Specification

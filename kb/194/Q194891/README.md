@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194891: Virtual Globe 99: Very Small Image of Photograph Is Displayed"
-permalink: kb/194/Q194891/
+permalink: /kb/194/Q194891/
 ---
 
 ## Q194891: Virtual Globe 99: Very Small Image of Photograph Is Displayed

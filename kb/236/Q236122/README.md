@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236122: SNA Server Doesn't Support AV/PV for APPC Conversation Security"
-permalink: kb/236/Q236122/
+permalink: /kb/236/Q236122/
 ---
 
 ## Q236122: SNA Server Doesn't Support AV/PV for APPC Conversation Security

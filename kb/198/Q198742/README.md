@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198742: XADM: After Running the MSW, Creating News Feeds Generates Error"
-permalink: kb/198/Q198742/
+permalink: /kb/198/Q198742/
 ---
 
 ## Q198742: XADM: After Running the MSW, Creating News Feeds Generates Error

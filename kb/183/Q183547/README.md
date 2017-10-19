@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183547: Friendship Tutorial: Runtime Error 1738 Using Playback"
-permalink: kb/183/Q183547/
+permalink: /kb/183/Q183547/
 ---
 
 ## Q183547: Friendship Tutorial: Runtime Error 1738 Using Playback

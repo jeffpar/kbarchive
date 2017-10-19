@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93570: PC DirSync: CTRL+C Displayed But Not Used in SRVMAIN.EXE"
-permalink: kb/093/Q93570/
+permalink: /kb/093/Q93570/
 ---
 
 ## Q93570: PC DirSync: CTRL+C Displayed But Not Used in SRVMAIN.EXE

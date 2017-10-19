@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194168: Dns.exe Dr. Watson When Changing the TTL of a Cached Record"
-permalink: kb/194/Q194168/
+permalink: /kb/194/Q194168/
 ---
 
 ## Q194168: Dns.exe Dr. Watson When Changing the TTL of a Cached Record

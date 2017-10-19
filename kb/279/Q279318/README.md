@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279318: Connectivity: MSN Companion can't authenticate over dialup, gets"
-permalink: kb/279/Q279318/
+permalink: /kb/279/Q279318/
 ---
 
 ## Q279318: Connectivity: MSN Companion can't authenticate over dialup, gets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128822: Fax/Modem Settings Ignored by Microsoft Fax"
-permalink: kb/128/Q128822/
+permalink: /kb/128/Q128822/
 ---
 
 ## Q128822: Fax/Modem Settings Ignored by Microsoft Fax

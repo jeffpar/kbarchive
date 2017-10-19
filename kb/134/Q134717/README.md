@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134717: SMS: Query Results Display Only First Data Record"
-permalink: kb/134/Q134717/
+permalink: /kb/134/Q134717/
 ---
 
 ## Q134717: SMS: Query Results Display Only First Data Record

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235472: All Host Security Services Must Run in Same Windows NT Account"
-permalink: kb/235/Q235472/
+permalink: /kb/235/Q235472/
 ---
 
 ## Q235472: All Host Security Services Must Run in Same Windows NT Account

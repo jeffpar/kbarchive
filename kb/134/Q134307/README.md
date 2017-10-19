@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134307: PRB: Invalid or Missing EXE Error When Starting Visual FoxPro"
-permalink: kb/134/Q134307/
+permalink: /kb/134/Q134307/
 ---
 
 ## Q134307: PRB: Invalid or Missing EXE Error When Starting Visual FoxPro

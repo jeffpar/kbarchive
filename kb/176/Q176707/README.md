@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176707: PRB: Error &quot;Not enough Diskspace&quot; When Closing a Table"
-permalink: kb/176/Q176707/
+permalink: /kb/176/Q176707/
 ---
 
 ## Q176707: PRB: Error &quot;Not enough Diskspace&quot; When Closing a Table

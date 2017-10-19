@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192118: HOWTO: Use HTML Help Text Popup Windows in VBasic Program"
-permalink: kb/192/Q192118/
+permalink: /kb/192/Q192118/
 ---
 
 ## Q192118: HOWTO: Use HTML Help Text Popup Windows in VBasic Program

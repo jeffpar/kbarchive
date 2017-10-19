@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181228: Download of File from IIS 4.0 Fails on IE 4.01 Client"
-permalink: kb/181/Q181228/
+permalink: /kb/181/Q181228/
 ---
 
 ## Q181228: Download of File from IIS 4.0 Fails on IE 4.01 Client

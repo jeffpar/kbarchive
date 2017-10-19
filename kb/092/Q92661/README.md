@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92661: MoreFonts May Cause GP Fault in Windows 3.1 Help"
-permalink: kb/092/Q92661/
+permalink: /kb/092/Q92661/
 ---
 
 ## Q92661: MoreFonts May Cause GP Fault in Windows 3.1 Help

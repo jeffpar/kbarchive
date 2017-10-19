@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108309: FIX: Posting WM_COMMNOTIFY Messages May Fail"
-permalink: kb/108/Q108309/
+permalink: /kb/108/Q108309/
 ---
 
 ## Q108309: FIX: Posting WM_COMMNOTIFY Messages May Fail

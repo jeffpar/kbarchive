@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234350: XFOR: Cannot Send Message with Brackets in Subject to cc:Mail"
-permalink: kb/234/Q234350/
+permalink: /kb/234/Q234350/
 ---
 
 ## Q234350: XFOR: Cannot Send Message with Brackets in Subject to cc:Mail

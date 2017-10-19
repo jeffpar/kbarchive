@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186842: BUG: OpenURL Method Bug in Internet Transfer Control"
-permalink: kb/186/Q186842/
+permalink: /kb/186/Q186842/
 ---
 
 ## Q186842: BUG: OpenURL Method Bug in Internet Transfer Control

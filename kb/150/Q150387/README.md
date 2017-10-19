@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150387: Only 5 Users Can Connect to Evaluation Copy of NT Server"
-permalink: kb/150/Q150387/
+permalink: /kb/150/Q150387/
 ---
 
 ## Q150387: Only 5 Users Can Connect to Evaluation Copy of NT Server

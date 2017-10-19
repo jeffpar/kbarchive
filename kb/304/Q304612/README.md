@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304612: PRB: IViewObject Interface Error Previewing RTF File In Report"
-permalink: kb/304/Q304612/
+permalink: /kb/304/Q304612/
 ---
 
 ## Q304612: PRB: IViewObject Interface Error Previewing RTF File In Report

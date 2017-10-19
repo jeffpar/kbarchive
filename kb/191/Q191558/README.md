@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191558: XADM: POP3 Secure Password Authentication"
-permalink: kb/191/Q191558/
+permalink: /kb/191/Q191558/
 ---
 
 ## Q191558: XADM: POP3 Secure Password Authentication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300075: Changes Not Saved When Users Edit Passport Core Profile Data"
-permalink: kb/300/Q300075/
+permalink: /kb/300/Q300075/
 ---
 
 ## Q300075: Changes Not Saved When Users Edit Passport Core Profile Data

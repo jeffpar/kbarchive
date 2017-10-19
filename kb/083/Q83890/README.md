@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83890: Where to Obtain Multimedia Information"
-permalink: kb/083/Q83890/
+permalink: /kb/083/Q83890/
 ---
 
 ## Q83890: Where to Obtain Multimedia Information

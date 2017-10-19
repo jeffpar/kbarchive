@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153425: FIX: IDE Crashes Undoing Sizing in Dialog Editor"
-permalink: kb/153/Q153425/
+permalink: /kb/153/Q153425/
 ---
 
 ## Q153425: FIX: IDE Crashes Undoing Sizing in Dialog Editor

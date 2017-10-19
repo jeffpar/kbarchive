@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111574: Server Problems After Extended Use w/EtherExpress &amp; EXP16ODI"
-permalink: kb/111/Q111574/
+permalink: /kb/111/Q111574/
 ---
 
 ## Q111574: Server Problems After Extended Use w/EtherExpress &amp; EXP16ODI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264390: Multimedia: Invalid Page Fault Error Message During Installation"
-permalink: kb/264/Q264390/
+permalink: /kb/264/Q264390/
 ---
 
 ## Q264390: Multimedia: Invalid Page Fault Error Message During Installation

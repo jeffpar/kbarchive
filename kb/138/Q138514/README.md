@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138514: Canceling Print Job Causes Next Job to Be Printed Incorrectly"
-permalink: kb/138/Q138514/
+permalink: /kb/138/Q138514/
 ---
 
 ## Q138514: Canceling Print Job Causes Next Job to Be Printed Incorrectly

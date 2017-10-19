@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195639: Nonexistent Virtual Directory Returns a 403 Error"
-permalink: kb/195/Q195639/
+permalink: /kb/195/Q195639/
 ---
 
 ## Q195639: Nonexistent Virtual Directory Returns a 403 Error

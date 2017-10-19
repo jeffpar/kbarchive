@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320013: Encarta Online Deluxe: &quot;Does Not Recognize Passport&quot; Err Msg"
-permalink: kb/320/Q320013/
+permalink: /kb/320/Q320013/
 ---
 
 ## Q320013: Encarta Online Deluxe: &quot;Does Not Recognize Passport&quot; Err Msg

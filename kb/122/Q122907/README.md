@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122907: Declaring Variables in FoxPro"
-permalink: kb/122/Q122907/
+permalink: /kb/122/Q122907/
 ---
 
 ## Q122907: Declaring Variables in FoxPro

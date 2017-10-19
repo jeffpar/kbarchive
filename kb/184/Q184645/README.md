@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184645: HOWTO: Create Lightweight Controls with Visual Basic 6.0"
-permalink: kb/184/Q184645/
+permalink: /kb/184/Q184645/
 ---
 
 ## Q184645: HOWTO: Create Lightweight Controls with Visual Basic 6.0

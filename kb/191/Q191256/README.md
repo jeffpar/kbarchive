@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191256: Time-taken Log Field Incorrect When KeepAlive Is Enabled"
-permalink: kb/191/Q191256/
+permalink: /kb/191/Q191256/
 ---
 
 ## Q191256: Time-taken Log Field Incorrect When KeepAlive Is Enabled

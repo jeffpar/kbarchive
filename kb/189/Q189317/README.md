@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189317: MTM2: &quot;Application Error&quot; Installing Game in Windows NT 4.0"
-permalink: kb/189/Q189317/
+permalink: /kb/189/Q189317/
 ---
 
 ## Q189317: MTM2: &quot;Application Error&quot; Installing Game in Windows NT 4.0

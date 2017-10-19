@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90330: WFWG May Momentarily Stop the Computer with Workgroup Mail"
-permalink: kb/090/Q90330/
+permalink: /kb/090/Q90330/
 ---
 
 ## Q90330: WFWG May Momentarily Stop the Computer with Workgroup Mail

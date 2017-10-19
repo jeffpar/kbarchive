@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83356: Unexpected DOS Errors 0 - 23 and Windows"
-permalink: kb/083/Q83356/
+permalink: /kb/083/Q83356/
 ---
 
 ## Q83356: Unexpected DOS Errors 0 - 23 and Windows

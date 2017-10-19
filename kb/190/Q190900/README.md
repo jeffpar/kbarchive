@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190900: DirectX: Description of the DirectX Diagnostic Tool"
-permalink: kb/190/Q190900/
+permalink: /kb/190/Q190900/
 ---
 
 ## Q190900: DirectX: Description of the DirectX Diagnostic Tool

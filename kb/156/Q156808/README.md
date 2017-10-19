@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156808: INFO: STL Sample for the new operator Function"
-permalink: kb/156/Q156808/
+permalink: /kb/156/Q156808/
 ---
 
 ## Q156808: INFO: STL Sample for the new operator Function

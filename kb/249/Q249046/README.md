@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249046: XADM: Exchange Setup Doesn't Work; Error 0xC002041D"
-permalink: kb/249/Q249046/
+permalink: /kb/249/Q249046/
 ---
 
 ## Q249046: XADM: Exchange Setup Doesn't Work; Error 0xC002041D

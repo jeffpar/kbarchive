@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152310: XADM: Event id 5007 - Check Free Disk Space"
-permalink: kb/152/Q152310/
+permalink: /kb/152/Q152310/
 ---
 
 ## Q152310: XADM: Event id 5007 - Check Free Disk Space

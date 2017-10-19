@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60340: Example Demonstrates Using Paths in NMAKE"
-permalink: kb/060/Q60340/
+permalink: /kb/060/Q60340/
 ---
 
 ## Q60340: Example Demonstrates Using Paths in NMAKE

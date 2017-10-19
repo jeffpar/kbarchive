@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171673: FP: How to Use Microsoft Forms 2.0 ActiveX Controls"
-permalink: kb/171/Q171673/
+permalink: /kb/171/Q171673/
 ---
 
 ## Q171673: FP: How to Use Microsoft Forms 2.0 ActiveX Controls

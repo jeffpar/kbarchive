@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246990: Low Free Hard Disk Space May Damage a Roaming User Profile"
-permalink: kb/246/Q246990/
+permalink: /kb/246/Q246990/
 ---
 
 ## Q246990: Low Free Hard Disk Space May Damage a Roaming User Profile

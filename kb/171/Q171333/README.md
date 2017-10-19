@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171333: WD97: Skip Numbering and Stop Numbering Not on Shortcut Menu"
-permalink: kb/171/Q171333/
+permalink: /kb/171/Q171333/
 ---
 
 ## Q171333: WD97: Skip Numbering and Stop Numbering Not on Shortcut Menu

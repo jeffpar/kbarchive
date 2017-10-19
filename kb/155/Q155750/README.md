@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155750: PRB: Combo Box Does Not Show Item After Selecting Item"
-permalink: kb/155/Q155750/
+permalink: /kb/155/Q155750/
 ---
 
 ## Q155750: PRB: Combo Box Does Not Show Item After Selecting Item

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160162: Installing Madge Smart 16/4 PCMCIA Ringnode Under WinNT 4.0"
-permalink: kb/160/Q160162/
+permalink: /kb/160/Q160162/
 ---
 
 ## Q160162: Installing Madge Smart 16/4 PCMCIA Ringnode Under WinNT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213340: SMS: Can't Open Membership Rules Tab at Child Site"
-permalink: kb/213/Q213340/
+permalink: /kb/213/Q213340/
 ---
 
 ## Q213340: SMS: Can't Open Membership Rules Tab at Child Site

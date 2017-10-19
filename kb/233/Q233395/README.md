@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233395: SNMP Access Violation After Installing Service Pack 4"
-permalink: kb/233/Q233395/
+permalink: /kb/233/Q233395/
 ---
 
 ## Q233395: SNMP Access Violation After Installing Service Pack 4

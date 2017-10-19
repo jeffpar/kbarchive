@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175422: Monster Truck Madness: Garbled or Missing Fonts"
-permalink: kb/175/Q175422/
+permalink: /kb/175/Q175422/
 ---
 
 ## Q175422: Monster Truck Madness: Garbled or Missing Fonts

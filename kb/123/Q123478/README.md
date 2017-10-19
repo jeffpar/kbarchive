@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123478: Multiple ISDN Adapters Cannot Be Installed"
-permalink: kb/123/Q123478/
+permalink: /kb/123/Q123478/
 ---
 
 ## Q123478: Multiple ISDN Adapters Cannot Be Installed

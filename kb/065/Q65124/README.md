@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65124: Writing International Applications for Windows"
-permalink: kb/065/Q65124/
+permalink: /kb/065/Q65124/
 ---
 
 ## Q65124: Writing International Applications for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87621: PC Win: Running Microsoft Mail Windows Client from the Network"
-permalink: kb/087/Q87621/
+permalink: /kb/087/Q87621/
 ---
 
 ## Q87621: PC Win: Running Microsoft Mail Windows Client from the Network

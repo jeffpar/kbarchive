@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169755: WD97: Troubleshooting Fax Problems from Word"
-permalink: kb/169/Q169755/
+permalink: /kb/169/Q169755/
 ---
 
 ## Q169755: WD97: Troubleshooting Fax Problems from Word

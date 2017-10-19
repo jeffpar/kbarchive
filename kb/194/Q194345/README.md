@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194345: Bookshelf 99: Shockwavectrl Is Displayed on the Home Page"
-permalink: kb/194/Q194345/
+permalink: /kb/194/Q194345/
 ---
 
 ## Q194345: Bookshelf 99: Shockwavectrl Is Displayed on the Home Page

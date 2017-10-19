@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131823: Error Message: Vines NDIS Interface Error 1021"
-permalink: kb/131/Q131823/
+permalink: /kb/131/Q131823/
 ---
 
 ## Q131823: Error Message: Vines NDIS Interface Error 1021

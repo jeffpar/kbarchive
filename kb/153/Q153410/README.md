@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153410: Some Mouse Actions Not Recorded with Capture Next Actions"
-permalink: kb/153/Q153410/
+permalink: /kb/153/Q153410/
 ---
 
 ## Q153410: Some Mouse Actions Not Recorded with Capture Next Actions

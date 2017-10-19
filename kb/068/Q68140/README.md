@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68140: Modeless Dialogs May Be Clipped by Small Application Workspace"
-permalink: kb/068/Q68140/
+permalink: /kb/068/Q68140/
 ---
 
 ## Q68140: Modeless Dialogs May Be Clipped by Small Application Workspace

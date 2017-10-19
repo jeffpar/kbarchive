@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184062: XCLN: Outlook Leaks Memory Using Visual Basic to Post to Folder"
-permalink: kb/184/Q184062/
+permalink: /kb/184/Q184062/
 ---
 
 ## Q184062: XCLN: Outlook Leaks Memory Using Visual Basic to Post to Folder

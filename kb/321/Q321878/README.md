@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321878: Host Account Cache Service May Not Start After System Restart"
-permalink: kb/321/Q321878/
+permalink: /kb/321/Q321878/
 ---
 
 ## Q321878: Host Account Cache Service May Not Start After System Restart

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176563: BUG: DBGrid Loses All Except One Row After Scrolling to Bottom"
-permalink: kb/176/Q176563/
+permalink: /kb/176/Q176563/
 ---
 
 ## Q176563: BUG: DBGrid Loses All Except One Row After Scrolling to Bottom

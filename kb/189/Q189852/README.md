@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189852: HOWTO: Change Databindings on the Fly"
-permalink: kb/189/Q189852/
+permalink: /kb/189/Q189852/
 ---
 
 ## Q189852: HOWTO: Change Databindings on the Fly

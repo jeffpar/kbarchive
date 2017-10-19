@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176467: XGEN: User32.dll Error When Trying to Start Exchange Component"
-permalink: kb/176/Q176467/
+permalink: /kb/176/Q176467/
 ---
 
 ## Q176467: XGEN: User32.dll Error When Trying to Start Exchange Component

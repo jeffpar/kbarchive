@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228506: Baseball 2000: 3Dfx Video Cards May Not Support Triple Buffering"
-permalink: kb/228/Q228506/
+permalink: /kb/228/Q228506/
 ---
 
 ## Q228506: Baseball 2000: 3Dfx Video Cards May Not Support Triple Buffering

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205681: FIX: Operator ++ In Return Statement May Cause Access Violation"
-permalink: kb/205/Q205681/
+permalink: /kb/205/Q205681/
 ---
 
 ## Q205681: FIX: Operator ++ In Return Statement May Cause Access Violation

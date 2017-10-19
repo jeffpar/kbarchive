@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108824: Programmatically Copying Text to/from Windows Clipboard"
-permalink: kb/108/Q108824/
+permalink: /kb/108/Q108824/
 ---
 
 ## Q108824: Programmatically Copying Text to/from Windows Clipboard

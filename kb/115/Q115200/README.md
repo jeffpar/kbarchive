@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115200: MS-DOS-Based Apps May Not Time-Slice Well Under WFWG 3.11"
-permalink: kb/115/Q115200/
+permalink: /kb/115/Q115200/
 ---
 
 ## Q115200: MS-DOS-Based Apps May Not Time-Slice Well Under WFWG 3.11

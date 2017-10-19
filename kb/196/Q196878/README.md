@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196878: WD97: AutoCorrect Doesn't Replace with Mixed Case"
-permalink: kb/196/Q196878/
+permalink: /kb/196/Q196878/
 ---
 
 ## Q196878: WD97: AutoCorrect Doesn't Replace with Mixed Case

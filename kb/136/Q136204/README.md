@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136204: XCLN: Sending Messages In Rich-Text Format"
-permalink: kb/136/Q136204/
+permalink: /kb/136/Q136204/
 ---
 
 ## Q136204: XCLN: Sending Messages In Rich-Text Format

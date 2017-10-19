@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165002: Corrupt Files Error After You Apply Service Pack 2"
-permalink: kb/165/Q165002/
+permalink: /kb/165/Q165002/
 ---
 
 ## Q165002: Corrupt Files Error After You Apply Service Pack 2

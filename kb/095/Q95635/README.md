@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95635: Using Unique Labels with Multi-Config"
-permalink: kb/095/Q95635/
+permalink: /kb/095/Q95635/
 ---
 
 ## Q95635: Using Unique Labels with Multi-Config

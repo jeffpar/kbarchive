@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136953: Cannot Print PostScript with NT Gateway Services for NetWare"
-permalink: kb/136/Q136953/
+permalink: /kb/136/Q136953/
 ---
 
 ## Q136953: Cannot Print PostScript with NT Gateway Services for NetWare

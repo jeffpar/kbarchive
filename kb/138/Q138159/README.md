@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138159: 16-Bit MS-DOS-Based Communications Program May Not Work"
-permalink: kb/138/Q138159/
+permalink: /kb/138/Q138159/
 ---
 
 ## Q138159: 16-Bit MS-DOS-Based Communications Program May Not Work

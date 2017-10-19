@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231862: INF: Configuring COMTI to use TCP/IP Link to CICS"
-permalink: kb/231/Q231862/
+permalink: /kb/231/Q231862/
 ---
 
 ## Q231862: INF: Configuring COMTI to use TCP/IP Link to CICS

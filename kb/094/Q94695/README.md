@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94695: Error: Executable code not allowed in module level of a form"
-permalink: kb/094/Q94695/
+permalink: /kb/094/Q94695/
 ---
 
 ## Q94695: Error: Executable code not allowed in module level of a form

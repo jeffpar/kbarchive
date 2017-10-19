@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198022: Using the Windows NT Option Pack SMTP Pickup Directory"
-permalink: kb/198/Q198022/
+permalink: /kb/198/Q198022/
 ---
 
 ## Q198022: Using the Windows NT Option Pack SMTP Pickup Directory

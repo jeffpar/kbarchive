@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201090: BUG: Multi-Byte Character Strings Cause ISAPI Wizard to Fail"
-permalink: kb/201/Q201090/
+permalink: /kb/201/Q201090/
 ---
 
 ## Q201090: BUG: Multi-Byte Character Strings Cause ISAPI Wizard to Fail

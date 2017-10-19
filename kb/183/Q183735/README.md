@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183735: PRB: Saving a File in FrontPage Does a Silent Check In"
-permalink: kb/183/Q183735/
+permalink: /kb/183/Q183735/
 ---
 
 ## Q183735: PRB: Saving a File in FrontPage Does a Silent Check In

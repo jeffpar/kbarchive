@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230242: SMS: PCM May Cause Account Lockouts in a High-Security Domain"
-permalink: kb/230/Q230242/
+permalink: /kb/230/Q230242/
 ---
 
 ## Q230242: SMS: PCM May Cause Account Lockouts in a High-Security Domain

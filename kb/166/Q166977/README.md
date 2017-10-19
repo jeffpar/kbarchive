@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166977: WD97: Erratic Scrolling Caused by Large Objects"
-permalink: kb/166/Q166977/
+permalink: /kb/166/Q166977/
 ---
 
 ## Q166977: WD97: Erratic Scrolling Caused by Large Objects

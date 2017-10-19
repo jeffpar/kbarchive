@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187787: PRB: Class Builder Does Not Save the Built Class"
-permalink: kb/187/Q187787/
+permalink: /kb/187/Q187787/
 ---
 
 ## Q187787: PRB: Class Builder Does Not Save the Built Class

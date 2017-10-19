@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76676: Differences Between Task Handles and Instance Handles"
-permalink: kb/076/Q76676/
+permalink: /kb/076/Q76676/
 ---
 
 ## Q76676: Differences Between Task Handles and Instance Handles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141371: STOP Msg: STOP 0x0000000A from DLC.SYS"
-permalink: kb/141/Q141371/
+permalink: /kb/141/Q141371/
 ---
 
 ## Q141371: STOP Msg: STOP 0x0000000A from DLC.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74467: INFO: Using GDI-Synthesized Italic Fonts"
-permalink: kb/074/Q74467/
+permalink: /kb/074/Q74467/
 ---
 
 ## Q74467: INFO: Using GDI-Synthesized Italic Fonts

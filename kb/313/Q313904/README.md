@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313904: SMS: Duplicate Query Names Possible When You Rename a Query"
-permalink: kb/313/Q313904/
+permalink: /kb/313/Q313904/
 ---
 
 ## Q313904: SMS: Duplicate Query Names Possible When You Rename a Query

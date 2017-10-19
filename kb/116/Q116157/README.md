@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116157: TRXNET.COM ODI Driver Needs Update with SMC ArcNet PC130"
-permalink: kb/116/Q116157/
+permalink: /kb/116/Q116157/
 ---
 
 ## Q116157: TRXNET.COM ODI Driver Needs Update with SMC ArcNet PC130

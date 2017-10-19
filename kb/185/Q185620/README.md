@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185620: XCLN: Exchange Setup Appears To Hang Indefinitely With SQL"
-permalink: kb/185/Q185620/
+permalink: /kb/185/Q185620/
 ---
 
 ## Q185620: XCLN: Exchange Setup Appears To Hang Indefinitely With SQL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180705: APPC DISPLAY Call May Return AP_COMM_SUBSYSTEM_ABENDED."
-permalink: kb/180/Q180705/
+permalink: /kb/180/Q180705/
 ---
 
 ## Q180705: APPC DISPLAY Call May Return AP_COMM_SUBSYSTEM_ABENDED.

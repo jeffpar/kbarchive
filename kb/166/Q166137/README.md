@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166137: PRB: SELECT-SQL COUNT() Field Function Ignores SET DELETED ON"
-permalink: kb/166/Q166137/
+permalink: /kb/166/Q166137/
 ---
 
 ## Q166137: PRB: SELECT-SQL COUNT() Field Function Ignores SET DELETED ON

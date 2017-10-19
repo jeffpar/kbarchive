@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135957: Incorrect Free Space Reported After Uncompressing Drive"
-permalink: kb/135/Q135957/
+permalink: /kb/135/Q135957/
 ---
 
 ## Q135957: Incorrect Free Space Reported After Uncompressing Drive

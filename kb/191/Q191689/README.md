@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191689: Incorrect Font Characteristics May Be Used on Imported Graphics"
-permalink: kb/191/Q191689/
+permalink: /kb/191/Q191689/
 ---
 
 ## Q191689: Incorrect Font Characteristics May Be Used on Imported Graphics

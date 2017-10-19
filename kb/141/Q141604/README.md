@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141604: PPT: How to Bring Harvard Graphics Slides into PowerPoint"
-permalink: kb/141/Q141604/
+permalink: /kb/141/Q141604/
 ---
 
 ## Q141604: PPT: How to Bring Harvard Graphics Slides into PowerPoint

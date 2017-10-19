@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267834: &quot;Terminal Service Client Disconnected&quot; Message Connecting to TS"
-permalink: kb/267/Q267834/
+permalink: /kb/267/Q267834/
 ---
 
 ## Q267834: &quot;Terminal Service Client Disconnected&quot; Message Connecting to TS

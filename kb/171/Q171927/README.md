@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171927: Missing WINS Directory Causes Missing/Corrupt Error"
-permalink: kb/171/Q171927/
+permalink: /kb/171/Q171927/
 ---
 
 ## Q171927: Missing WINS Directory Causes Missing/Corrupt Error

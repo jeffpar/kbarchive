@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99709: PC-CACHE Err Msg: Data Monitor, Has Already Been Loaded..."
-permalink: kb/099/Q99709/
+permalink: /kb/099/Q99709/
 ---
 
 ## Q99709: PC-CACHE Err Msg: Data Monitor, Has Already Been Loaded...

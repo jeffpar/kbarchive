@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175637: Poor Print Quality with Epson Stylus Pro XL ESC/P 2"
-permalink: kb/175/Q175637/
+permalink: /kb/175/Q175637/
 ---
 
 ## Q175637: Poor Print Quality with Epson Stylus Pro XL ESC/P 2

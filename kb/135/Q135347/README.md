@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135347: Able to Print Only Once from Digitalk Parts Workbench 2.0"
-permalink: kb/135/Q135347/
+permalink: /kb/135/Q135347/
 ---
 
 ## Q135347: Able to Print Only Once from Digitalk Parts Workbench 2.0

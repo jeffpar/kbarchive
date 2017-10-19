@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242131: How to: Display a List of Processes That Have Files Open"
-permalink: kb/242/Q242131/
+permalink: /kb/242/Q242131/
 ---
 
 ## Q242131: How to: Display a List of Processes That Have Files Open

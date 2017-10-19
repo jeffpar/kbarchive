@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132538: Bookshelf 95: Media Formats and Articles Totals for Books"
-permalink: kb/132/Q132538/
+permalink: /kb/132/Q132538/
 ---
 
 ## Q132538: Bookshelf 95: Media Formats and Articles Totals for Books

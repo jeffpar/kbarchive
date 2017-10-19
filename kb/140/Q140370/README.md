@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140370: Error Running NTBACKUP On DEC XL 590 Celebris"
-permalink: kb/140/Q140370/
+permalink: /kb/140/Q140370/
 ---
 
 ## Q140370: Error Running NTBACKUP On DEC XL 590 Celebris

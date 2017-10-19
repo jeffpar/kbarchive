@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99303: Mac Form: Adding Unavailable Choices to Custom Forms"
-permalink: kb/099/Q99303/
+permalink: /kb/099/Q99303/
 ---
 
 ## Q99303: Mac Form: Adding Unavailable Choices to Custom Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261092: XADM: Requirements to Set Security Permission Roles"
-permalink: kb/261/Q261092/
+permalink: /kb/261/Q261092/
 ---
 
 ## Q261092: XADM: Requirements to Set Security Permission Roles

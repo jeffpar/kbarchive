@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152935: XADM: Adding/Removing Recipient Containers to MSMail Dir-Sync"
-permalink: kb/152/Q152935/
+permalink: /kb/152/Q152935/
 ---
 
 ## Q152935: XADM: Adding/Removing Recipient Containers to MSMail Dir-Sync

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122847: FIX: Cannot Watch Local Variables of a &#95;&#95;finally Block"
-permalink: kb/122/Q122847/
+permalink: /kb/122/Q122847/
 ---
 
 ## Q122847: FIX: Cannot Watch Local Variables of a &#95;&#95;finally Block

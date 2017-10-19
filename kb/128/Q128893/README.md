@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128893: PRB: Editing Embedded OLE Object in Place Does Not Save Change"
-permalink: kb/128/Q128893/
+permalink: /kb/128/Q128893/
 ---
 
 ## Q128893: PRB: Editing Embedded OLE Object in Place Does Not Save Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103929: Cannot Install Driver From a Directory Name That Has a Space"
-permalink: kb/103/Q103929/
+permalink: /kb/103/Q103929/
 ---
 
 ## Q103929: Cannot Install Driver From a Directory Name That Has a Space

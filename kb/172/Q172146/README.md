@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172146: Character Strings For 3270 Logon Scripting Aren't Localized"
-permalink: kb/172/Q172146/
+permalink: /kb/172/Q172146/
 ---
 
 ## Q172146: Character Strings For 3270 Logon Scripting Aren't Localized

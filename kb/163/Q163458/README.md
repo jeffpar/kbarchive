@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163458: WD97: Err Msg: &quot;Unable to Open Selected TWAIN Source&quot; in Word 97"
-permalink: kb/163/Q163458/
+permalink: /kb/163/Q163458/
 ---
 
 ## Q163458: WD97: Err Msg: &quot;Unable to Open Selected TWAIN Source&quot; in Word 97

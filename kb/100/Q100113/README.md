@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100113: DoubleSpace Err Msg with CompatiCard: Your Computer Might..."
-permalink: kb/100/Q100113/
+permalink: /kb/100/Q100113/
 ---
 
 ## Q100113: DoubleSpace Err Msg with CompatiCard: Your Computer Might...

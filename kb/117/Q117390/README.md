@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117390: SUBST Fails on Removable Media"
-permalink: kb/117/Q117390/
+permalink: /kb/117/Q117390/
 ---
 
 ## Q117390: SUBST Fails on Removable Media

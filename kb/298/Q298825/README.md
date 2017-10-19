@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298825: PRB: Run-time Error '6' When You Use the TextWidth Method"
-permalink: kb/298/Q298825/
+permalink: /kb/298/Q298825/
 ---
 
 ## Q298825: PRB: Run-time Error '6' When You Use the TextWidth Method

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195057: PA: Display Settings Incorrect or Cannot Close Dialog Box"
-permalink: kb/195/Q195057/
+permalink: /kb/195/Q195057/
 ---
 
 ## Q195057: PA: Display Settings Incorrect or Cannot Close Dialog Box

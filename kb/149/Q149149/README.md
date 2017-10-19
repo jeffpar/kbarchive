@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149149: No Network Access with LAN Workplace and TCP/IP"
-permalink: kb/149/Q149149/
+permalink: /kb/149/Q149149/
 ---
 
 ## Q149149: No Network Access with LAN Workplace and TCP/IP

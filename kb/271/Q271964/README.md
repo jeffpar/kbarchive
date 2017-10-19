@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271964: Slow Response in Administrator Console Browsing for Collections"
-permalink: kb/271/Q271964/
+permalink: /kb/271/Q271964/
 ---
 
 ## Q271964: Slow Response in Administrator Console Browsing for Collections

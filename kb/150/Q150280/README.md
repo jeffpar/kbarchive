@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150280: Adding the Telephony Icon to Control Panel"
-permalink: kb/150/Q150280/
+permalink: /kb/150/Q150280/
 ---
 
 ## Q150280: Adding the Telephony Icon to Control Panel

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153605: Helpdesk Displays Incomplete Message On Remote Control"
-permalink: kb/153/Q153605/
+permalink: /kb/153/Q153605/
 ---
 
 ## Q153605: Helpdesk Displays Incomplete Message On Remote Control

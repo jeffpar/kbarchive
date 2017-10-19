@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64570: Windows 3.0 Enhanced Mode Virtual Machine and Fastopen, Share"
-permalink: kb/064/Q64570/
+permalink: /kb/064/Q64570/
 ---
 
 ## Q64570: Windows 3.0 Enhanced Mode Virtual Machine and Fastopen, Share

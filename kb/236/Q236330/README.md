@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236330: Event Not Reset in ScsiClassGetInquiryData in SCSI Class Driver"
-permalink: kb/236/Q236330/
+permalink: /kb/236/Q236330/
 ---
 
 ## Q236330: Event Not Reset in ScsiClassGetInquiryData in SCSI Class Driver

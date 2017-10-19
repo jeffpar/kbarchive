@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307615: FIX: Published Visual Component Manager Components Not Saved"
-permalink: kb/307/Q307615/
+permalink: /kb/307/Q307615/
 ---
 
 ## Q307615: FIX: Published Visual Component Manager Components Not Saved

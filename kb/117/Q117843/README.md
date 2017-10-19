@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117843: PC WRmt: Not Designed to Support Extended Information"
-permalink: kb/117/Q117843/
+permalink: /kb/117/Q117843/
 ---
 
 ## Q117843: PC WRmt: Not Designed to Support Extended Information

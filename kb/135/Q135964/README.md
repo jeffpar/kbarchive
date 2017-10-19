@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135964: General Protection Fault Error Message Running ScanDisk"
-permalink: kb/135/Q135964/
+permalink: /kb/135/Q135964/
 ---
 
 ## Q135964: General Protection Fault Error Message Running ScanDisk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154515: HOWTO: Print Text Sideways in a Picture Box Using Win32 API"
-permalink: kb/154/Q154515/
+permalink: /kb/154/Q154515/
 ---
 
 ## Q154515: HOWTO: Print Text Sideways in a Picture Box Using Win32 API

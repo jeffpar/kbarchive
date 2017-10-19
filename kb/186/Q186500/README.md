@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186500: Terminal Server Commands: APPSEC"
-permalink: kb/186/Q186500/
+permalink: /kb/186/Q186500/
 ---
 
 ## Q186500: Terminal Server Commands: APPSEC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97477: Windows Network Share Directory Files"
-permalink: kb/097/Q97477/
+permalink: /kb/097/Q97477/
 ---
 
 ## Q97477: Windows Network Share Directory Files

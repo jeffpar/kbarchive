@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303116: Links 2001: &quot;No 3D Acceleration&quot; Message When Starting Links"
-permalink: kb/303/Q303116/
+permalink: /kb/303/Q303116/
 ---
 
 ## Q303116: Links 2001: &quot;No 3D Acceleration&quot; Message When Starting Links

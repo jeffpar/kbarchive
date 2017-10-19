@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q38024: INFO: A Case Where BUFF[] and &#42;BUFF Are Different"
-permalink: kb/038/Q38024/
+title: "Q38024: INFO: A Case Where BUFF&#91;&#93; and &#42;BUFF Are Different"
+permalink: /kb/038/Q38024/
 ---
 
-## Q38024: INFO: A Case Where BUFF[] and &#42;BUFF Are Different
+## Q38024: INFO: A Case Where BUFF&#91;&#93; and &#42;BUFF Are Different
 
 	Article: Q38024
 	Product(s): Microsoft C Compiler

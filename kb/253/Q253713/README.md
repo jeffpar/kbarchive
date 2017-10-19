@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253713: HOWTO: Move Data from an XML Document into a FoxPro Table"
-permalink: kb/253/Q253713/
+permalink: /kb/253/Q253713/
 ---
 
 ## Q253713: HOWTO: Move Data from an XML Document into a FoxPro Table

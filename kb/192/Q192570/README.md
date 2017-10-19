@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192570: Message-Oriented TCP and Multithreaded Client/Server"
-permalink: kb/192/Q192570/
+permalink: /kb/192/Q192570/
 ---
 
 ## Q192570: Message-Oriented TCP and Multithreaded Client/Server

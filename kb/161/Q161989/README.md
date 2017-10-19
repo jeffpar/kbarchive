@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161989: PPT: Sample VB Code to Retrieve Summary Properties"
-permalink: kb/161/Q161989/
+permalink: /kb/161/Q161989/
 ---
 
 ## Q161989: PPT: Sample VB Code to Retrieve Summary Properties

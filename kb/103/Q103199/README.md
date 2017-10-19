@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103199: PC Mac: Cannot See Postoffice on Pathworks Server"
-permalink: kb/103/Q103199/
+permalink: /kb/103/Q103199/
 ---
 
 ## Q103199: PC Mac: Cannot See Postoffice on Pathworks Server

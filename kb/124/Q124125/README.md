@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124125: How to Create Your Own Base Class for Custom Default Form"
-permalink: kb/124/Q124125/
+permalink: /kb/124/Q124125/
 ---
 
 ## Q124125: How to Create Your Own Base Class for Custom Default Form

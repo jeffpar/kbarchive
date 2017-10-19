@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91197: How To: Troubleshooting a Network DDE Link with WFWG"
-permalink: kb/091/Q91197/
+permalink: /kb/091/Q91197/
 ---
 
 ## Q91197: How To: Troubleshooting a Network DDE Link with WFWG

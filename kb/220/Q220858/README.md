@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220858: Client Install Fails on NT 4.0: CLICORE.EXE Returns Exit Code=1"
-permalink: kb/220/Q220858/
+permalink: /kb/220/Q220858/
 ---
 
 ## Q220858: Client Install Fails on NT 4.0: CLICORE.EXE Returns Exit Code=1

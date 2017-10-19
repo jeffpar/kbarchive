@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113939: PRB: Setup Toolkit DoMsgBox Shows Wrong Buttons or Icons"
-permalink: kb/113/Q113939/
+permalink: /kb/113/Q113939/
 ---
 
 ## Q113939: PRB: Setup Toolkit DoMsgBox Shows Wrong Buttons or Icons

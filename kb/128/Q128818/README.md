@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128818: Windows NT 3.5 Fails to Upgrade AST Manhatten with MYLEX DAC"
-permalink: kb/128/Q128818/
+permalink: /kb/128/Q128818/
 ---
 
 ## Q128818: Windows NT 3.5 Fails to Upgrade AST Manhatten with MYLEX DAC

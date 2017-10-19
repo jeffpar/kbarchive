@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242502: Domain Logon List Is Not Properly Updated"
-permalink: kb/242/Q242502/
+permalink: /kb/242/Q242502/
 ---
 
 ## Q242502: Domain Logon List Is Not Properly Updated

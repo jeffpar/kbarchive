@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157621: Personal Groups Not Visible If %Systemroot% Is Read-Only"
-permalink: kb/157/Q157621/
+permalink: /kb/157/Q157621/
 ---
 
 ## Q157621: Personal Groups Not Visible If %Systemroot% Is Read-Only

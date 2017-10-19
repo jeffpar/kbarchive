@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152230: XFOR: Current Microsoft Internet Mail Products"
-permalink: kb/152/Q152230/
+permalink: /kb/152/Q152230/
 ---
 
 ## Q152230: XFOR: Current Microsoft Internet Mail Products

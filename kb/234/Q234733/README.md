@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234733: XFOR: Migration Wizard Reports Event ID 4088"
-permalink: kb/234/Q234733/
+permalink: /kb/234/Q234733/
 ---
 
 ## Q234733: XFOR: Migration Wizard Reports Event ID 4088

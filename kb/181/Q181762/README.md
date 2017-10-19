@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181762: SMS: INVMAC Appears to Stop Responding During Inventory Scan"
-permalink: kb/181/Q181762/
+permalink: /kb/181/Q181762/
 ---
 
 ## Q181762: SMS: INVMAC Appears to Stop Responding During Inventory Scan

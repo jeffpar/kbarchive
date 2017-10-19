@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186674: STOP: C0000143 or 0x0000001E Caused by Remotely Possible/32"
-permalink: kb/186/Q186674/
+permalink: /kb/186/Q186674/
 ---
 
 ## Q186674: STOP: C0000143 or 0x0000001E Caused by Remotely Possible/32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38027: INFO: Negative Values Use Two's Complement"
-permalink: kb/038/Q38027/
+permalink: /kb/038/Q38027/
 ---
 
 ## Q38027: INFO: Negative Values Use Two's Complement

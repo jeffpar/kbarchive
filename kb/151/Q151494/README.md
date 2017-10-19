@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151494: PCMCIA Token Ring Adapter Not Detected on Thinkpad 760"
-permalink: kb/151/Q151494/
+permalink: /kb/151/Q151494/
 ---
 
 ## Q151494: PCMCIA Token Ring Adapter Not Detected on Thinkpad 760

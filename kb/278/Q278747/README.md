@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278747: ELL Error Message: Invalid Page Fault in Module Kernel32.dll"
-permalink: kb/278/Q278747/
+permalink: /kb/278/Q278747/
 ---
 
 ## Q278747: ELL Error Message: Invalid Page Fault in Module Kernel32.dll

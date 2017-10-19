@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66354: Description of Taipei in the Windows Entertainment Pack"
-permalink: kb/066/Q66354/
+permalink: /kb/066/Q66354/
 ---
 
 ## Q66354: Description of Taipei in the Windows Entertainment Pack

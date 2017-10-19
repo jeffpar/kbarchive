@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164156: XCLN: Err Msg: Spell Check Operation could not be Completed"
-permalink: kb/164/Q164156/
+permalink: /kb/164/Q164156/
 ---
 
 ## Q164156: XCLN: Err Msg: Spell Check Operation could not be Completed

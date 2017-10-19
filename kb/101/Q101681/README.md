@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101681: MHS: Err Msg: Inpost: General File I/O Error with MHS Swap"
-permalink: kb/101/Q101681/
+permalink: /kb/101/Q101681/
 ---
 
 ## Q101681: MHS: Err Msg: Inpost: General File I/O Error with MHS Swap

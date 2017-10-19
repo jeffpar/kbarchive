@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237181: Some LPD Print Servers Reject an LPD Connection from Windows NT"
-permalink: kb/237/Q237181/
+permalink: /kb/237/Q237181/
 ---
 
 ## Q237181: Some LPD Print Servers Reject an LPD Connection from Windows NT

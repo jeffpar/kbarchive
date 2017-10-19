@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166060: WV: Cannot Copy and Paste Floating Objects in Word Viewer"
-permalink: kb/166/Q166060/
+permalink: /kb/166/Q166060/
 ---
 
 ## Q166060: WV: Cannot Copy and Paste Floating Objects in Word Viewer

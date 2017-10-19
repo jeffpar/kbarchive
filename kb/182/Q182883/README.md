@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182883: Using SNA Server 2.11, 3.0, and 4.0 in Same Network"
-permalink: kb/182/Q182883/
+permalink: /kb/182/Q182883/
 ---
 
 ## Q182883: Using SNA Server 2.11, 3.0, and 4.0 in Same Network

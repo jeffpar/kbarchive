@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171448: Some SNA Print Service Jobs Print Using Condensed Font"
-permalink: kb/171/Q171448/
+permalink: /kb/171/Q171448/
 ---
 
 ## Q171448: Some SNA Print Service Jobs Print Using Condensed Font

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130596: WFWG Mail Password Case Sensitive Only When Changing Password"
-permalink: kb/130/Q130596/
+permalink: /kb/130/Q130596/
 ---
 
 ## Q130596: WFWG Mail Password Case Sensitive Only When Changing Password

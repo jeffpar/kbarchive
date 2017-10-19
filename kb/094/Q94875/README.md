@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94875: Reinstalling Original Windows TrueType Fonts"
-permalink: kb/094/Q94875/
+permalink: /kb/094/Q94875/
 ---
 
 ## Q94875: Reinstalling Original Windows TrueType Fonts

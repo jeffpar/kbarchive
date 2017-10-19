@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188401: PRB: ACCESS Cannot Import/Link Table if Index Contains Function"
-permalink: kb/188/Q188401/
+permalink: /kb/188/Q188401/
 ---
 
 ## Q188401: PRB: ACCESS Cannot Import/Link Table if Index Contains Function

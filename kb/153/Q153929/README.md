@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153929: HOWTO: Use Color Dialog from COMDLG32.DLL in VB and Access"
-permalink: kb/153/Q153929/
+permalink: /kb/153/Q153929/
 ---
 
 ## Q153929: HOWTO: Use Color Dialog from COMDLG32.DLL in VB and Access

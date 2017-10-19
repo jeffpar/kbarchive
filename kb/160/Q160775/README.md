@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160775: SMS: Job Status Not Updated for NetWare Clients"
-permalink: kb/160/Q160775/
+permalink: /kb/160/Q160775/
 ---
 
 ## Q160775: SMS: Job Status Not Updated for NetWare Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130230: PC DirSync: Deleted Postoffice Not Removed from GAL"
-permalink: kb/130/Q130230/
+permalink: /kb/130/Q130230/
 ---
 
 ## Q130230: PC DirSync: Deleted Postoffice Not Removed from GAL

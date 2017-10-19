@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61827: Flt Sim: Differences Between 4.00 and 3.00 Additional Maps"
-permalink: kb/061/Q61827/
+permalink: /kb/061/Q61827/
 ---
 
 ## Q61827: Flt Sim: Differences Between 4.00 and 3.00 Additional Maps

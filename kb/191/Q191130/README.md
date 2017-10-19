@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191130: INFO: Fixlist for Visual Basic 6.0 for Windows as 8/7/98"
-permalink: kb/191/Q191130/
+permalink: /kb/191/Q191130/
 ---
 
 ## Q191130: INFO: Fixlist for Visual Basic 6.0 for Windows as 8/7/98

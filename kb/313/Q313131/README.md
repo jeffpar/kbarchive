@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313131: HOW TO: Use URLScan with Exchange Outlook Web Access in Exchange"
-permalink: kb/313/Q313131/
+permalink: /kb/313/Q313131/
 ---
 
 ## Q313131: HOW TO: Use URLScan with Exchange Outlook Web Access in Exchange

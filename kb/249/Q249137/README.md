@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249137: SMS: Invalid Results Are Received When Querying a Component"
-permalink: kb/249/Q249137/
+permalink: /kb/249/Q249137/
 ---
 
 ## Q249137: SMS: Invalid Results Are Received When Querying a Component

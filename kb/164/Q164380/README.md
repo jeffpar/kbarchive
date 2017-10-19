@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164380: FIX: Custom Build Rules are Lost with Multiple Selections"
-permalink: kb/164/Q164380/
+permalink: /kb/164/Q164380/
 ---
 
 ## Q164380: FIX: Custom Build Rules are Lost with Multiple Selections

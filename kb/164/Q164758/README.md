@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164758: Remote Procedure Call (RPC) Service Access Violation"
-permalink: kb/164/Q164758/
+permalink: /kb/164/Q164758/
 ---
 
 ## Q164758: Remote Procedure Call (RPC) Service Access Violation

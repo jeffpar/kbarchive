@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216515: BUG: DataMember of GetDataMember Empty If DataSource Is DataList"
-permalink: kb/216/Q216515/
+permalink: /kb/216/Q216515/
 ---
 
 ## Q216515: BUG: DataMember of GetDataMember Empty If DataSource Is DataList

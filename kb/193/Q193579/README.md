@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193579: FIX: SSAPI: Mssccprj.scc File Does Not Have SCC_Aux_Path Info"
-permalink: kb/193/Q193579/
+permalink: /kb/193/Q193579/
 ---
 
 ## Q193579: FIX: SSAPI: Mssccprj.scc File Does Not Have SCC_Aux_Path Info

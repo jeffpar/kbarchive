@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228780: Baseball 2000: How to Use the General Manager Tool"
-permalink: kb/228/Q228780/
+permalink: /kb/228/Q228780/
 ---
 
 ## Q228780: Baseball 2000: How to Use the General Manager Tool

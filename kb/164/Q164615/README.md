@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164615: FIX: New Record Not Inserted to End of Recordset"
-permalink: kb/164/Q164615/
+permalink: /kb/164/Q164615/
 ---
 
 ## Q164615: FIX: New Record Not Inserted to End of Recordset

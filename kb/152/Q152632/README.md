@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152632: Remote Control Using IPX over Routers Fails with NAK"
-permalink: kb/152/Q152632/
+permalink: /kb/152/Q152632/
 ---
 
 ## Q152632: Remote Control Using IPX over Routers Fails with NAK

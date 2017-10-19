@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73843: Files and Buffers Memory Usage"
-permalink: kb/073/Q73843/
+permalink: /kb/073/Q73843/
 ---
 
 ## Q73843: Files and Buffers Memory Usage

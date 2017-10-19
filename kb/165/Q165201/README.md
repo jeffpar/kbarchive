@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165201: TN5250 DEC Alpha Fails When Client Request Unsupported Options"
-permalink: kb/165/Q165201/
+permalink: /kb/165/Q165201/
 ---
 
 ## Q165201: TN5250 DEC Alpha Fails When Client Request Unsupported Options

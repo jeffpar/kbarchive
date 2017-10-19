@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158839: INFO: Updated Readme.txt file for VFP FoxIsapi Sample"
-permalink: kb/158/Q158839/
+permalink: /kb/158/Q158839/
 ---
 
 ## Q158839: INFO: Updated Readme.txt file for VFP FoxIsapi Sample

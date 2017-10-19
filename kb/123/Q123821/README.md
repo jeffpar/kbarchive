@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123821: PC Win: Template Information Lines Disappear When Scrolling"
-permalink: kb/123/Q123821/
+permalink: /kb/123/Q123821/
 ---
 
 ## Q123821: PC Win: Template Information Lines Disappear When Scrolling

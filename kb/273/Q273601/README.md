@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273601: MCSE Training Kit,  Microsoftr Windowsr 2000 Active DirectoryT S"
-permalink: kb/273/Q273601/
+permalink: /kb/273/Q273601/
 ---
 
 ## Q273601: MCSE Training Kit,  Microsoftr Windowsr 2000 Active DirectoryT S

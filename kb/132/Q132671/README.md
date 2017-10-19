@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132671: Printing MS-DOS Applications Causes Windows 95 To Hang"
-permalink: kb/132/Q132671/
+permalink: /kb/132/Q132671/
 ---
 
 ## Q132671: Printing MS-DOS Applications Causes Windows 95 To Hang

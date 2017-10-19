@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108591: Joystick Stops Working After Situation Reset"
-permalink: kb/108/Q108591/
+permalink: /kb/108/Q108591/
 ---
 
 ## Q108591: Joystick Stops Working After Situation Reset

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210641: How to Send Alert Messages to a Remote Computer"
-permalink: kb/210/Q210641/
+permalink: /kb/210/Q210641/
 ---
 
 ## Q210641: How to Send Alert Messages to a Remote Computer

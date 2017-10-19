@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11910: PRB: SIZE Operator Value"
-permalink: kb/011/Q11910/
+permalink: /kb/011/Q11910/
 ---
 
 ## Q11910: PRB: SIZE Operator Value

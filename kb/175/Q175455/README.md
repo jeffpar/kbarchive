@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175455: Bookshelf: QuickDefine Does Not Function in Web Page Frame"
-permalink: kb/175/Q175455/
+permalink: /kb/175/Q175455/
 ---
 
 ## Q175455: Bookshelf: QuickDefine Does Not Function in Web Page Frame

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140291: HOWTO: Call the Graph Wizard &amp; Create a Chart Programmatically"
-permalink: kb/140/Q140291/
+permalink: /kb/140/Q140291/
 ---
 
 ## Q140291: HOWTO: Call the Graph Wizard &amp; Create a Chart Programmatically

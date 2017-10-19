@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229005: How to Connect to a Web or FTP Site Using Non-Default Port"
-permalink: kb/229/Q229005/
+permalink: /kb/229/Q229005/
 ---
 
 ## Q229005: How to Connect to a Web or FTP Site Using Non-Default Port

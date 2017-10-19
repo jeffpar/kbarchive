@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302720: Primary Account Cannot Be Deleted When Child Accounts Are Presen"
-permalink: kb/302/Q302720/
+permalink: /kb/302/Q302720/
 ---
 
 ## Q302720: Primary Account Cannot Be Deleted When Child Accounts Are Presen

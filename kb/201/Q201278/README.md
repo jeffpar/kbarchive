@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201278: XFOR: 16-bit CCMARCH Does Not Support DBCS in Privdir.ini File"
-permalink: kb/201/Q201278/
+permalink: /kb/201/Q201278/
 ---
 
 ## Q201278: XFOR: 16-bit CCMARCH Does Not Support DBCS in Privdir.ini File

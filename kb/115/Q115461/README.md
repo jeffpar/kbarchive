@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115461: FAX: Kortex Software Has No Control of Board-Level Queue"
-permalink: kb/115/Q115461/
+permalink: /kb/115/Q115461/
 ---
 
 ## Q115461: FAX: Kortex Software Has No Control of Board-Level Queue

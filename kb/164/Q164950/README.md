@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164950: INFO: LIBMOTO for PowerPC May Improve Application Performance"
-permalink: kb/164/Q164950/
+permalink: /kb/164/Q164950/
 ---
 
 ## Q164950: INFO: LIBMOTO for PowerPC May Improve Application Performance

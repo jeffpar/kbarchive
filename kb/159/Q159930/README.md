@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159930: Event ID 534 In The Security Log"
-permalink: kb/159/Q159930/
+permalink: /kb/159/Q159930/
 ---
 
 ## Q159930: Event ID 534 In The Security Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94356: CMOS Access Causes Some Machines to Hang with EMM386.EXE"
-permalink: kb/094/Q94356/
+permalink: /kb/094/Q94356/
 ---
 
 ## Q94356: CMOS Access Causes Some Machines to Hang with EMM386.EXE

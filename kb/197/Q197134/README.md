@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197134: WD97: Caption Numbers Reset When Caption Includes Chapter Number"
-permalink: kb/197/Q197134/
+permalink: /kb/197/Q197134/
 ---
 
 ## Q197134: WD97: Caption Numbers Reset When Caption Includes Chapter Number

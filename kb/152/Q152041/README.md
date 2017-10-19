@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152041: FIX: C1001 Error in 'msc1.cpp' on Template Function Parameter"
-permalink: kb/152/Q152041/
+permalink: /kb/152/Q152041/
 ---
 
 ## Q152041: FIX: C1001 Error in 'msc1.cpp' on Template Function Parameter

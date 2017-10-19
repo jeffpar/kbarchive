@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174602: Computer Hangs Using Panasonic &quot;Big 5&quot; CD-ROM Drive"
-permalink: kb/174/Q174602/
+permalink: /kb/174/Q174602/
 ---
 
 ## Q174602: Computer Hangs Using Panasonic &quot;Big 5&quot; CD-ROM Drive

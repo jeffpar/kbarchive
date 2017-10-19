@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273459: XADM: Cannot Give &quot;Send on Behalf Of&quot; Permissions to a DL"
-permalink: kb/273/Q273459/
+permalink: /kb/273/Q273459/
 ---
 
 ## Q273459: XADM: Cannot Give &quot;Send on Behalf Of&quot; Permissions to a DL

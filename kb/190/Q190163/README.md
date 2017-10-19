@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190163: Using Hummingbird NFS products with Terminal Server"
-permalink: kb/190/Q190163/
+permalink: /kb/190/Q190163/
 ---
 
 ## Q190163: Using Hummingbird NFS products with Terminal Server

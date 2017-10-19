@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147227: HOWTO: Adding Legal Notice on Logon for Unattended Setup"
-permalink: kb/147/Q147227/
+permalink: /kb/147/Q147227/
 ---
 
 ## Q147227: HOWTO: Adding Legal Notice on Logon for Unattended Setup

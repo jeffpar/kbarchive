@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143124: Inventory Reports Non-IBM MCA System as IBM PS/2 Model 70/80"
-permalink: kb/143/Q143124/
+permalink: /kb/143/Q143124/
 ---
 
 ## Q143124: Inventory Reports Non-IBM MCA System as IBM PS/2 Model 70/80

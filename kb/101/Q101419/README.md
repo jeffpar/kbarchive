@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101419: The DCB Structure in Windows 3.1"
-permalink: kb/101/Q101419/
+permalink: /kb/101/Q101419/
 ---
 
 ## Q101419: The DCB Structure in Windows 3.1

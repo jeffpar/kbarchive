@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254047: Using SSL with Internet Information Server May Cause Browser Err"
-permalink: kb/254/Q254047/
+permalink: /kb/254/Q254047/
 ---
 
 ## Q254047: Using SSL with Internet Information Server May Cause Browser Err

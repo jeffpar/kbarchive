@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153288: SMSRUN16/32 Randomly Picks a Logon Server"
-permalink: kb/153/Q153288/
+permalink: /kb/153/Q153288/
 ---
 
 ## Q153288: SMSRUN16/32 Randomly Picks a Logon Server

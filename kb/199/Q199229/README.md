@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199229: SMS: Extending an Existing Architecture Using IDMIFs"
-permalink: kb/199/Q199229/
+permalink: /kb/199/Q199229/
 ---
 
 ## Q199229: SMS: Extending an Existing Architecture Using IDMIFs

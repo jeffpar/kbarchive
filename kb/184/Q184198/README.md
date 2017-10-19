@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184198: PRB: SelHangingIndent Property of RichTextBox Is Not Persistent"
-permalink: kb/184/Q184198/
+permalink: /kb/184/Q184198/
 ---
 
 ## Q184198: PRB: SelHangingIndent Property of RichTextBox Is Not Persistent

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157091: WD97: How to Open Documents into an Earlier Version of Word"
-permalink: kb/157/Q157091/
+permalink: /kb/157/Q157091/
 ---
 
 ## Q157091: WD97: How to Open Documents into an Earlier Version of Word

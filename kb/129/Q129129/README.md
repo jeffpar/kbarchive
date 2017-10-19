@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129129: Windows NT SNMP Agent Allows Only Read Access"
-permalink: kb/129/Q129129/
+permalink: /kb/129/Q129129/
 ---
 
 ## Q129129: Windows NT SNMP Agent Allows Only Read Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223398: Warning Error ID:101 Changes Text in the Japanese Version of IIS"
-permalink: kb/223/Q223398/
+permalink: /kb/223/Q223398/
 ---
 
 ## Q223398: Warning Error ID:101 Changes Text in the Japanese Version of IIS

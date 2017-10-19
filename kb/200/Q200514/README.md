@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200514: Err Msg: Server Failed to Load Application , 80004005"
-permalink: kb/200/Q200514/
+permalink: /kb/200/Q200514/
 ---
 
 ## Q200514: Err Msg: Server Failed to Load Application , 80004005

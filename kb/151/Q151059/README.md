@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151059: Using PlayerNet to Connect Two People via the Internet"
-permalink: kb/151/Q151059/
+permalink: /kb/151/Q151059/
 ---
 
 ## Q151059: Using PlayerNet to Connect Two People via the Internet

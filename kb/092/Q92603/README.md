@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92603: What is a Clean Boot for WFWG 3.1 with Novell Connectivity"
-permalink: kb/092/Q92603/
+permalink: /kb/092/Q92603/
 ---
 
 ## Q92603: What is a Clean Boot for WFWG 3.1 with Novell Connectivity

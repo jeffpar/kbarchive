@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142458: X.400: How to Test TP4 Connection Before X.400 Installation"
-permalink: kb/142/Q142458/
+permalink: /kb/142/Q142458/
 ---
 
 ## Q142458: X.400: How to Test TP4 Connection Before X.400 Installation

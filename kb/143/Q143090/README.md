@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143090: FP: Overview of WebBot Components"
-permalink: kb/143/Q143090/
+permalink: /kb/143/Q143090/
 ---
 
 ## Q143090: FP: Overview of WebBot Components

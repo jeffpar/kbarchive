@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28596: DOCERR: Correction for Shifting and Rotating Bits"
-permalink: kb/028/Q28596/
+permalink: /kb/028/Q28596/
 ---
 
 ## Q28596: DOCERR: Correction for Shifting and Rotating Bits

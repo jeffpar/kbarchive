@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132331: PRB: Null Values Disappear When Selected in a Grid or Browse"
-permalink: kb/132/Q132331/
+permalink: /kb/132/Q132331/
 ---
 
 ## Q132331: PRB: Null Values Disappear When Selected in a Grid or Browse

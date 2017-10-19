@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92438: PC Ext: External Mail Program's -Qx Option"
-permalink: kb/092/Q92438/
+permalink: /kb/092/Q92438/
 ---
 
 ## Q92438: PC Ext: External Mail Program's -Qx Option

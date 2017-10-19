@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138819: Differences Among Form's Initialize, Load, and Activate Events"
-permalink: kb/138/Q138819/
+permalink: /kb/138/Q138819/
 ---
 
 ## Q138819: Differences Among Form's Initialize, Load, and Activate Events

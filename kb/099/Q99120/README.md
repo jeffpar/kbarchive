@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99120: PC Win: Network List Doesn't Sort Alphabetically"
-permalink: kb/099/Q99120/
+permalink: /kb/099/Q99120/
 ---
 
 ## Q99120: PC Win: Network List Doesn't Sort Alphabetically

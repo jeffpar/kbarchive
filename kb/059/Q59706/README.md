@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59706: Terminal Won't Display VT100 Bold Characters on EGA"
-permalink: kb/059/Q59706/
+permalink: /kb/059/Q59706/
 ---
 
 ## Q59706: Terminal Won't Display VT100 Bold Characters on EGA

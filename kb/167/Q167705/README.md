@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167705: Talking Loudly into Microphone May Cause Disconnect"
-permalink: kb/167/Q167705/
+permalink: /kb/167/Q167705/
 ---
 
 ## Q167705: Talking Loudly into Microphone May Cause Disconnect

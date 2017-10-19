@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124823: ADK/ADT: How to Create Pop-up, Context-Sensitive Help"
-permalink: kb/124/Q124823/
+permalink: /kb/124/Q124823/
 ---
 
 ## Q124823: ADK/ADT: How to Create Pop-up, Context-Sensitive Help

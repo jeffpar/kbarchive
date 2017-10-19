@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199188: XADM: Special Characters in Mailbox Display Name"
-permalink: kb/199/Q199188/
+permalink: /kb/199/Q199188/
 ---
 
 ## Q199188: XADM: Special Characters in Mailbox Display Name

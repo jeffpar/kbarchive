@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132693: PC Gen: Disk Contents: Postoffice Upgrade for WFW"
-permalink: kb/132/Q132693/
+permalink: /kb/132/Q132693/
 ---
 
 ## Q132693: PC Gen: Disk Contents: Postoffice Upgrade for WFW

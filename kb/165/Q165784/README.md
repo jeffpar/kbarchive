@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165784: TN3270 Service Doesn't Read Configuration Changes"
-permalink: kb/165/Q165784/
+permalink: /kb/165/Q165784/
 ---
 
 ## Q165784: TN3270 Service Doesn't Read Configuration Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170070: SNA Client Allocate Requests May Hang After AS/400 IPL"
-permalink: kb/170/Q170070/
+permalink: /kb/170/Q170070/
 ---
 
 ## Q170070: SNA Client Allocate Requests May Hang After AS/400 IPL

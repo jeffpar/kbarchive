@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194600: PC Ext: Some &#42;SPECIAL Mssgs. Cause WinNT &amp; OS/2 MMTAs to Fail"
-permalink: kb/194/Q194600/
+permalink: /kb/194/Q194600/
 ---
 
 ## Q194600: PC Ext: Some &#42;SPECIAL Mssgs. Cause WinNT &amp; OS/2 MMTAs to Fail

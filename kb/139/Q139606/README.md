@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139606: How to Speed Up the Mastering Visual FoxPro Program"
-permalink: kb/139/Q139606/
+permalink: /kb/139/Q139606/
 ---
 
 ## Q139606: How to Speed Up the Mastering Visual FoxPro Program

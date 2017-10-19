@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163583: FP97: Troubleshooting Conversion Errors With ConverterDebug"
-permalink: kb/163/Q163583/
+permalink: /kb/163/Q163583/
 ---
 
 ## Q163583: FP97: Troubleshooting Conversion Errors With ConverterDebug

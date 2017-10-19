@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150325: Microsoft Home Products Curriculum Activities"
-permalink: kb/150/Q150325/
+permalink: /kb/150/Q150325/
 ---
 
 ## Q150325: Microsoft Home Products Curriculum Activities

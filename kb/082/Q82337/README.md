@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82337: Canon LBP Series Saves Cartridge Selections"
-permalink: kb/082/Q82337/
+permalink: /kb/082/Q82337/
 ---
 
 ## Q82337: Canon LBP Series Saves Cartridge Selections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215376: ControlService Fails with 1053 (ERROR_SERVICE_REQUEST_TIMEOUT)"
-permalink: kb/215/Q215376/
+permalink: /kb/215/Q215376/
 ---
 
 ## Q215376: ControlService Fails with 1053 (ERROR_SERVICE_REQUEST_TIMEOUT)

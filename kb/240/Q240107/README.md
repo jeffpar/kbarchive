@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240107: NBA 2000: Game Hangs When You Press the PAUSE/BREAK Key"
-permalink: kb/240/Q240107/
+permalink: /kb/240/Q240107/
 ---
 
 ## Q240107: NBA 2000: Game Hangs When You Press the PAUSE/BREAK Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119161: FIX: Dependencies May Not Be Detected"
-permalink: kb/119/Q119161/
+permalink: /kb/119/Q119161/
 ---
 
 ## Q119161: FIX: Dependencies May Not Be Detected

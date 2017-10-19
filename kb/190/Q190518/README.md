@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190518: FIX: MFC AppWizard Generates Incorrect Toolbars and Bitmaps"
-permalink: kb/190/Q190518/
+permalink: /kb/190/Q190518/
 ---
 
 ## Q190518: FIX: MFC AppWizard Generates Incorrect Toolbars and Bitmaps

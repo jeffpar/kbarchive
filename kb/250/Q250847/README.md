@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250847: BUG: ATL C4305 Error when VARIANT Used as a Parameter to Event"
-permalink: kb/250/Q250847/
+permalink: /kb/250/Q250847/
 ---
 
 ## Q250847: BUG: ATL C4305 Error when VARIANT Used as a Parameter to Event

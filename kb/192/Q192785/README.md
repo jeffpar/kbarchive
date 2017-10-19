@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192785: Must Be Administrator to Eject Removable Media"
-permalink: kb/192/Q192785/
+permalink: /kb/192/Q192785/
 ---
 
 ## Q192785: Must Be Administrator to Eject Removable Media

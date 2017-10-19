@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191922: Error 1605 When Jetpacking DHCP Database"
-permalink: kb/191/Q191922/
+permalink: /kb/191/Q191922/
 ---
 
 ## Q191922: Error 1605 When Jetpacking DHCP Database

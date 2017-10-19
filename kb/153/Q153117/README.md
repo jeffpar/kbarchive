@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153117: DOCERR: ListItemId Doesn't Return -1 as Stated in Online Help"
-permalink: kb/153/Q153117/
+permalink: /kb/153/Q153117/
 ---
 
 ## Q153117: DOCERR: ListItemId Doesn't Return -1 as Stated in Online Help

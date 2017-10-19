@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324477: Dungeon Siege 1.0: Dungeon Siege Update"
-permalink: kb/324/Q324477/
+permalink: /kb/324/Q324477/
 ---
 
 ## Q324477: Dungeon Siege 1.0: Dungeon Siege Update

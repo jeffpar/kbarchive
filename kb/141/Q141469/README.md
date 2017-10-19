@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141469: Cannot Use Windows NT 3.51 Service Pack UPDATE.EXE Over Network"
-permalink: kb/141/Q141469/
+permalink: /kb/141/Q141469/
 ---
 
 ## Q141469: Cannot Use Windows NT 3.51 Service Pack UPDATE.EXE Over Network

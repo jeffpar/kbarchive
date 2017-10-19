@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246120: How To Determine Audit Policies from the Registry"
-permalink: kb/246/Q246120/
+permalink: /kb/246/Q246120/
 ---
 
 ## Q246120: How To Determine Audit Policies from the Registry

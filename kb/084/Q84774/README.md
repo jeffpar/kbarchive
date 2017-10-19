@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84774: WaveEdit Version 1.0b Required Under Windows 3.1"
-permalink: kb/084/Q84774/
+permalink: /kb/084/Q84774/
 ---
 
 ## Q84774: WaveEdit Version 1.0b Required Under Windows 3.1

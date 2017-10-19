@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244048: XFOR: Manually Moving the Imcdata Folder"
-permalink: kb/244/Q244048/
+permalink: /kb/244/Q244048/
 ---
 
 ## Q244048: XFOR: Manually Moving the Imcdata Folder

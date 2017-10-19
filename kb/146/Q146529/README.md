@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146529: WD97: High Network Traffic When You Check Spelling (Novell)"
-permalink: kb/146/Q146529/
+permalink: /kb/146/Q146529/
 ---
 
 ## Q146529: WD97: High Network Traffic When You Check Spelling (Novell)

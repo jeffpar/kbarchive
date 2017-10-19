@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225508: Support Folder for BackOffice Server 4.5 Is Located on CD-ROM 3"
-permalink: kb/225/Q225508/
+permalink: /kb/225/Q225508/
 ---
 
 ## Q225508: Support Folder for BackOffice Server 4.5 Is Located on CD-ROM 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297433: ENC2001: &quot;ENC2001 Caused an Invalid Page Fault&quot; Error Message"
-permalink: kb/297/Q297433/
+permalink: /kb/297/Q297433/
 ---
 
 ## Q297433: ENC2001: &quot;ENC2001 Caused an Invalid Page Fault&quot; Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150861: XADM: Msvcr40d.dll Missing From the Exchange Resource Kit"
-permalink: kb/150/Q150861/
+permalink: /kb/150/Q150861/
 ---
 
 ## Q150861: XADM: Msvcr40d.dll Missing From the Exchange Resource Kit

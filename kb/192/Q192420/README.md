@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192420: Err Msg: Modem Not Responding (Error 650)"
-permalink: kb/192/Q192420/
+permalink: /kb/192/Q192420/
 ---
 
 ## Q192420: Err Msg: Modem Not Responding (Error 650)

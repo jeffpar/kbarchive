@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134705: DOC: DBGETPROP() Returns Unexpected Value"
-permalink: kb/134/Q134705/
+permalink: /kb/134/Q134705/
 ---
 
 ## Q134705: DOC: DBGETPROP() Returns Unexpected Value

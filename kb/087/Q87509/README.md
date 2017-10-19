@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87509: No Text When Using Stealth and Running MS-DOS in a Window"
-permalink: kb/087/Q87509/
+permalink: /kb/087/Q87509/
 ---
 
 ## Q87509: No Text When Using Stealth and Running MS-DOS in a Window

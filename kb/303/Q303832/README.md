@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303832: BUG: cPath Parameter Not Passed to DBC_Before/AfterDropOffline"
-permalink: kb/303/Q303832/
+permalink: /kb/303/Q303832/
 ---
 
 ## Q303832: BUG: cPath Parameter Not Passed to DBC_Before/AfterDropOffline

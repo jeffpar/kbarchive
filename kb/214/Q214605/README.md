@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214605: FP98: How to Uninstall and Reinstall Server Extensions on UNIX"
-permalink: kb/214/Q214605/
+permalink: /kb/214/Q214605/
 ---
 
 ## Q214605: FP98: How to Uninstall and Reinstall Server Extensions on UNIX

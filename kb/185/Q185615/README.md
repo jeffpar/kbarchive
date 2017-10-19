@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185615: Encarta 98 Err Msg: Enc98 Caused an Invalid Page Fault..."
-permalink: kb/185/Q185615/
+permalink: /kb/185/Q185615/
 ---
 
 ## Q185615: Encarta 98 Err Msg: Enc98 Caused an Invalid Page Fault...

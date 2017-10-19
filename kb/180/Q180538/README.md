@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180538: SNA Server SDLC Connection Fails to Reactivate After Host IPL"
-permalink: kb/180/Q180538/
+permalink: /kb/180/Q180538/
 ---
 
 ## Q180538: SNA Server SDLC Connection Fails to Reactivate After Host IPL

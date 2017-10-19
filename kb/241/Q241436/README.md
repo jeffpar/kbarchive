@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241436: XCLN: Outlook for Macintosh Cannot Access Web Services Using Sec"
-permalink: kb/241/Q241436/
+permalink: /kb/241/Q241436/
 ---
 
 ## Q241436: XCLN: Outlook for Macintosh Cannot Access Web Services Using Sec

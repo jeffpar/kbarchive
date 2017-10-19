@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129947: INFO: Win32 Replacement for the hmemcpy Function"
-permalink: kb/129/Q129947/
+permalink: /kb/129/Q129947/
 ---
 
 ## Q129947: INFO: Win32 Replacement for the hmemcpy Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248449: PRB: MSDN Library NetCopy.exe Warns Network Share Is FAT"
-permalink: kb/248/Q248449/
+permalink: /kb/248/Q248449/
 ---
 
 ## Q248449: PRB: MSDN Library NetCopy.exe Warns Network Share Is FAT

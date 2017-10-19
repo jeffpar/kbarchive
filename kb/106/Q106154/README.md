@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106154: Microsoft Delete Tracker Cannot Undelete Zero-Byte Files"
-permalink: kb/106/Q106154/
+permalink: /kb/106/Q106154/
 ---
 
 ## Q106154: Microsoft Delete Tracker Cannot Undelete Zero-Byte Files

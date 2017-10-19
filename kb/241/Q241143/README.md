@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241143: Err Msg: Limited Virtual Memory. Your System Is Running..."
-permalink: kb/241/Q241143/
+permalink: /kb/241/Q241143/
 ---
 
 ## Q241143: Err Msg: Limited Virtual Memory. Your System Is Running...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118947: PC Adm: Err Msg: Error 29 Alias Does Not Exist"
-permalink: kb/118/Q118947/
+permalink: /kb/118/Q118947/
 ---
 
 ## Q118947: PC Adm: Err Msg: Error 29 Alias Does Not Exist

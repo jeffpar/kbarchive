@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85924: Using UNC Redirections for File and Groups"
-permalink: kb/085/Q85924/
+permalink: /kb/085/Q85924/
 ---
 
 ## Q85924: Using UNC Redirections for File and Groups

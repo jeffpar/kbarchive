@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101565: DoubleSpace Err Msg: MS-DOS Fastopen Program...Detected!"
-permalink: kb/101/Q101565/
+permalink: /kb/101/Q101565/
 ---
 
 ## Q101565: DoubleSpace Err Msg: MS-DOS Fastopen Program...Detected!

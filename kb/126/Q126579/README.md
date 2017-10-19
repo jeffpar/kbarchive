@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126579: Files Active After Termination of Recursive Batch File"
-permalink: kb/126/Q126579/
+permalink: /kb/126/Q126579/
 ---
 
 ## Q126579: Files Active After Termination of Recursive Batch File

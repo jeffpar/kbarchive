@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82408: Changes Norton Desktop Makes to AUTOEXEC.BAT and SYSTEM.INI"
-permalink: kb/082/Q82408/
+permalink: /kb/082/Q82408/
 ---
 
 ## Q82408: Changes Norton Desktop Makes to AUTOEXEC.BAT and SYSTEM.INI

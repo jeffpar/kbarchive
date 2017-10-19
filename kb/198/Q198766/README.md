@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198766: SMS: How MIF Files Are Processed in Version 2.0"
-permalink: kb/198/Q198766/
+permalink: /kb/198/Q198766/
 ---
 
 ## Q198766: SMS: How MIF Files Are Processed in Version 2.0

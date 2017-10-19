@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176428: PRB: MSRDO20.OCX Not Registered When Running Application Setup"
-permalink: kb/176/Q176428/
+permalink: /kb/176/Q176428/
 ---
 
 ## Q176428: PRB: MSRDO20.OCX Not Registered When Running Application Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171647: Office 97 Books Incompatible with Office 95 Products"
-permalink: kb/171/Q171647/
+permalink: /kb/171/Q171647/
 ---
 
 ## Q171647: Office 97 Books Incompatible with Office 95 Products

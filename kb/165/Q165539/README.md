@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165539: Microsoft Pocket Automap Streets: Frequently Asked Questions"
-permalink: kb/165/Q165539/
+permalink: /kb/165/Q165539/
 ---
 
 ## Q165539: Microsoft Pocket Automap Streets: Frequently Asked Questions

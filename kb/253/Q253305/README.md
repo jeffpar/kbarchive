@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253305: XADM: Exchange Setup Stops w. &quot;Account Information Is Incorrect&quot;"
-permalink: kb/253/Q253305/
+permalink: /kb/253/Q253305/
 ---
 
 ## Q253305: XADM: Exchange Setup Stops w. &quot;Account Information Is Incorrect&quot;

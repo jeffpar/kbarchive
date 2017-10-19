@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32810: BSESUB.INC Contains Incorrect Declarations"
-permalink: kb/032/Q32810/
+permalink: /kb/032/Q32810/
 ---
 
 ## Q32810: BSESUB.INC Contains Incorrect Declarations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138883: Writer: Document Prints Landscape/Portrait Incorrectly with HP"
-permalink: kb/138/Q138883/
+permalink: /kb/138/Q138883/
 ---
 
 ## Q138883: Writer: Document Prints Landscape/Portrait Incorrectly with HP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115362: X400: X400ADM.EXE Crashes to MS-DOS, Database Is Corrupted"
-permalink: kb/115/Q115362/
+permalink: /kb/115/Q115362/
 ---
 
 ## Q115362: X400: X400ADM.EXE Crashes to MS-DOS, Database Is Corrupted

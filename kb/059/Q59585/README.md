@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59585: FIX: LOCAL Directive with a Structure"
-permalink: kb/059/Q59585/
+permalink: /kb/059/Q59585/
 ---
 
 ## Q59585: FIX: LOCAL Directive with a Structure

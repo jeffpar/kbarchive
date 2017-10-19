@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97873: LAN Man NetBEUI Cannot Accommodate More than 256 Sessions"
-permalink: kb/097/Q97873/
+permalink: /kb/097/Q97873/
 ---
 
 ## Q97873: LAN Man NetBEUI Cannot Accommodate More than 256 Sessions

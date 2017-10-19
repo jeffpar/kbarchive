@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256856: XIMS: &quot;550 Relaying Is Prohibited&quot; Error Returned for Messages"
-permalink: kb/256/Q256856/
+permalink: /kb/256/Q256856/
 ---
 
 ## Q256856: XIMS: &quot;550 Relaying Is Prohibited&quot; Error Returned for Messages

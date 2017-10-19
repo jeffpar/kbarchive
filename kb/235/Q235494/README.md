@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235494: XFOR: Certain Exchange Recipients Don't Display Properly in GW"
-permalink: kb/235/Q235494/
+permalink: /kb/235/Q235494/
 ---
 
 ## Q235494: XFOR: Certain Exchange Recipients Don't Display Properly in GW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192335: Err Msg: Information Is in an Invalid Format"
-permalink: kb/192/Q192335/
+permalink: /kb/192/Q192335/
 ---
 
 ## Q192335: Err Msg: Information Is in an Invalid Format

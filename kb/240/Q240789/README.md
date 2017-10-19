@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240789: XADM: Directory Service Does Not Start with Error -1911"
-permalink: kb/240/Q240789/
+permalink: /kb/240/Q240789/
 ---
 
 ## Q240789: XADM: Directory Service Does Not Start with Error -1911

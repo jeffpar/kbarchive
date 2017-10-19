@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139204: ECP Port with SMC Chip Set Does Not Transfer Data Properly"
-permalink: kb/139/Q139204/
+permalink: /kb/139/Q139204/
 ---
 
 ## Q139204: ECP Port with SMC Chip Set Does Not Transfer Data Properly

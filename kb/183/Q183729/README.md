@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183729: Valid User Needed for Remote Administration Using HTMLA"
-permalink: kb/183/Q183729/
+permalink: /kb/183/Q183729/
 ---
 
 ## Q183729: Valid User Needed for Remote Administration Using HTMLA

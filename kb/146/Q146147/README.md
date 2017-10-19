@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146147: XCLN: 8 MB RAM and No Swap File Prevents MAPI EMS Login"
-permalink: kb/146/Q146147/
+permalink: /kb/146/Q146147/
 ---
 
 ## Q146147: XCLN: 8 MB RAM and No Swap File Prevents MAPI EMS Login

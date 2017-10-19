@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253926: Changing SNA Trace File Directory May Not Have Any Effect"
-permalink: kb/253/Q253926/
+permalink: /kb/253/Q253926/
 ---
 
 ## Q253926: Changing SNA Trace File Directory May Not Have Any Effect

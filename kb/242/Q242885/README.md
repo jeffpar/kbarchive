@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242885: AoE II: Game Screen Distorted When Screen Size Is 1280 x 1024"
-permalink: kb/242/Q242885/
+permalink: /kb/242/Q242885/
 ---
 
 ## Q242885: AoE II: Game Screen Distorted When Screen Size Is 1280 x 1024

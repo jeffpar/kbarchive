@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158957: DirectX: Description of the DirectX Setup (Dxsetup.exe) Tool"
-permalink: kb/158/Q158957/
+permalink: /kb/158/Q158957/
 ---
 
 ## Q158957: DirectX: Description of the DirectX Setup (Dxsetup.exe) Tool

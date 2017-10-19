@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215404: BUG: Graphical Style Property of CheckBox Does Not Work"
-permalink: kb/215/Q215404/
+permalink: /kb/215/Q215404/
 ---
 
 ## Q215404: BUG: Graphical Style Property of CheckBox Does Not Work

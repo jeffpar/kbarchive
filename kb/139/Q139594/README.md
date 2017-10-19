@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139594: Meaning of &quot;DLCST UPSN&quot; in a SNA Server Data Link Control Trace"
-permalink: kb/139/Q139594/
+permalink: /kb/139/Q139594/
 ---
 
 ## Q139594: Meaning of &quot;DLCST UPSN&quot; in a SNA Server Data Link Control Trace

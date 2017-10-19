@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79208: FIX: Incorrect CV Info for Local Structure in MASM 6.0"
-permalink: kb/079/Q79208/
+permalink: /kb/079/Q79208/
 ---
 
 ## Q79208: FIX: Incorrect CV Info for Local Structure in MASM 6.0

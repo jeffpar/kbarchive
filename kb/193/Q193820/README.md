@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193820: How to Move a WINS Database to Another Server"
-permalink: kb/193/Q193820/
+permalink: /kb/193/Q193820/
 ---
 
 ## Q193820: How to Move a WINS Database to Another Server

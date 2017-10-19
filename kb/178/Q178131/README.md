@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178131: FS95: Replacement ATC Workshop .Wav Files Available"
-permalink: kb/178/Q178131/
+permalink: /kb/178/Q178131/
 ---
 
 ## Q178131: FS95: Replacement ATC Workshop .Wav Files Available

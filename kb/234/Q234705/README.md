@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234705: Microsoft Pocket Guide to Microsoft Word 2000 Comments and Corre"
-permalink: kb/234/Q234705/
+permalink: /kb/234/Q234705/
 ---
 
 ## Q234705: Microsoft Pocket Guide to Microsoft Word 2000 Comments and Corre

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101240: DBLSPACE Msg: Drive X Already Has an Estimated Compression..."
-permalink: kb/101/Q101240/
+permalink: /kb/101/Q101240/
 ---
 
 ## Q101240: DBLSPACE Msg: Drive X Already Has an Estimated Compression...

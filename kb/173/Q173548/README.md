@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173548: Bookshelf: How to Return to Previously Viewed Articles"
-permalink: kb/173/Q173548/
+permalink: /kb/173/Q173548/
 ---
 
 ## Q173548: Bookshelf: How to Return to Previously Viewed Articles

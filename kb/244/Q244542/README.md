@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244542: Doc Err: Host Account Manager Cannot Change Windows NT Password"
-permalink: kb/244/Q244542/
+permalink: /kb/244/Q244542/
 ---
 
 ## Q244542: Doc Err: Host Account Manager Cannot Change Windows NT Password

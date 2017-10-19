@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146562: XFOR: Some Connection Parameters Not Configurable Per Domain"
-permalink: kb/146/Q146562/
+permalink: /kb/146/Q146562/
 ---
 
 ## Q146562: XFOR: Some Connection Parameters Not Configurable Per Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195991: WD97: Text Box Resizes When Clipboard Contents Paste"
-permalink: kb/195/Q195991/
+permalink: /kb/195/Q195991/
 ---
 
 ## Q195991: WD97: Text Box Resizes When Clipboard Contents Paste

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315715: SMS: Cannot Reinstall Inventory Components on Windows XP"
-permalink: kb/315/Q315715/
+permalink: /kb/315/Q315715/
 ---
 
 ## Q315715: SMS: Cannot Reinstall Inventory Components on Windows XP

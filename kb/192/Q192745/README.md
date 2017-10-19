@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192745: HOWTO: Use CreateObject with Visual C++ COM Objects"
-permalink: kb/192/Q192745/
+permalink: /kb/192/Q192745/
 ---
 
 ## Q192745: HOWTO: Use CreateObject with Visual C++ COM Objects

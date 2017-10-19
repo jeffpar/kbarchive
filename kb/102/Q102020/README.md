@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102020: How to Monitor Disk Performance with Performance Monitor"
-permalink: kb/102/Q102020/
+permalink: /kb/102/Q102020/
 ---
 
 ## Q102020: How to Monitor Disk Performance with Performance Monitor

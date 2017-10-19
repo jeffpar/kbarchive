@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317939: PRB: Can't Convert to FrontPage Web Project After Unbinding"
-permalink: kb/317/Q317939/
+permalink: /kb/317/Q317939/
 ---
 
 ## Q317939: PRB: Can't Convert to FrontPage Web Project After Unbinding

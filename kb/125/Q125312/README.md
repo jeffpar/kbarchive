@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125312: Cinemania 1995: Wrong Listing for Steve Martin Filmography"
-permalink: kb/125/Q125312/
+permalink: /kb/125/Q125312/
 ---
 
 ## Q125312: Cinemania 1995: Wrong Listing for Steve Martin Filmography

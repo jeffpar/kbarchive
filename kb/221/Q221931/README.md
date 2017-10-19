@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221931: HOWTO: Return Record's Autonumber Value Inserted into Access DB"
-permalink: kb/221/Q221931/
+permalink: /kb/221/Q221931/
 ---
 
 ## Q221931: HOWTO: Return Record's Autonumber Value Inserted into Access DB

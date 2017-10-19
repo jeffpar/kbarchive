@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174860: No Sound in Windows After Installing Close Combat"
-permalink: kb/174/Q174860/
+permalink: /kb/174/Q174860/
 ---
 
 ## Q174860: No Sound in Windows After Installing Close Combat

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128758: MSB Solar: How to Play the Games"
-permalink: kb/128/Q128758/
+permalink: /kb/128/Q128758/
 ---
 
 ## Q128758: MSB Solar: How to Play the Games

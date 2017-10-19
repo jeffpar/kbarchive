@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143421: HOWTO: Synchronize Data on the Form with a dbCombo"
-permalink: kb/143/Q143421/
+permalink: /kb/143/Q143421/
 ---
 
 ## Q143421: HOWTO: Synchronize Data on the Form with a dbCombo

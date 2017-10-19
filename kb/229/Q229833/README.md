@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229833: DOC: Syntax Changes with Ad Rotator Component"
-permalink: kb/229/Q229833/
+permalink: /kb/229/Q229833/
 ---
 
 ## Q229833: DOC: Syntax Changes with Ad Rotator Component

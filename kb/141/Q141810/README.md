@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141810: BUG: pcbValue Shows 1022 Even if Size of Available Data &gt; 1022"
-permalink: kb/141/Q141810/
+permalink: /kb/141/Q141810/
 ---
 
 ## Q141810: BUG: pcbValue Shows 1022 Even if Size of Available Data &gt; 1022

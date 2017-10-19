@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115732: PRB: FoxPro for Macintosh Changes Database's Icon After PACK"
-permalink: kb/115/Q115732/
+permalink: /kb/115/Q115732/
 ---
 
 ## Q115732: PRB: FoxPro for Macintosh Changes Database's Icon After PACK

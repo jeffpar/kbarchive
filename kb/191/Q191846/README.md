@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191846: WINS Automatic Backup Does Not Run Every Three Hours"
-permalink: kb/191/Q191846/
+permalink: /kb/191/Q191846/
 ---
 
 ## Q191846: WINS Automatic Backup Does Not Run Every Three Hours

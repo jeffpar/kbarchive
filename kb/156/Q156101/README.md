@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156101: PRB: Caption Dithered If DisabledForeColor Equals ForeColor"
-permalink: kb/156/Q156101/
+permalink: /kb/156/Q156101/
 ---
 
 ## Q156101: PRB: Caption Dithered If DisabledForeColor Equals ForeColor

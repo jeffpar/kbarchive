@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324550: Inside C#, Second Edition Comments And Corrections"
-permalink: kb/324/Q324550/
+permalink: /kb/324/Q324550/
 ---
 
 ## Q324550: Inside C#, Second Edition Comments And Corrections

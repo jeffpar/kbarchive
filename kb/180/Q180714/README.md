@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180714: HOWTO: Pass a Picture Object Remotely Using COM"
-permalink: kb/180/Q180714/
+permalink: /kb/180/Q180714/
 ---
 
 ## Q180714: HOWTO: Pass a Picture Object Remotely Using COM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92647: WinFax Pro 2.0 and Windows 3.1: Troubleshooting Information"
-permalink: kb/092/Q92647/
+permalink: /kb/092/Q92647/
 ---
 
 ## Q92647: WinFax Pro 2.0 and Windows 3.1: Troubleshooting Information

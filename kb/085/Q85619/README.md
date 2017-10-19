@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85619: Installing an Application from a Network Drive"
-permalink: kb/085/Q85619/
+permalink: /kb/085/Q85619/
 ---
 
 ## Q85619: Installing an Application from a Network Drive

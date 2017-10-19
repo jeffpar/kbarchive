@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139052: &quot;Dirty&quot; and &quot;Deadly&quot; TSRs Detected by Windows 95"
-permalink: kb/139/Q139052/
+permalink: /kb/139/Q139052/
 ---
 
 ## Q139052: &quot;Dirty&quot; and &quot;Deadly&quot; TSRs Detected by Windows 95

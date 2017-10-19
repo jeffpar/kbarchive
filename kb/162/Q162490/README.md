@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162490: WD97: How to Access Sample Macros for Word 97"
-permalink: kb/162/Q162490/
+permalink: /kb/162/Q162490/
 ---
 
 ## Q162490: WD97: How to Access Sample Macros for Word 97

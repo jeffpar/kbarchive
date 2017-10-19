@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181024: DHCP Event ID 1002: DHCP Received an Unknown Option..."
-permalink: kb/181/Q181024/
+permalink: /kb/181/Q181024/
 ---
 
 ## Q181024: DHCP Event ID 1002: DHCP Received an Unknown Option...

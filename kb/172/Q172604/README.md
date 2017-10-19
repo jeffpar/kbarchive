@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172604: Error Message: The Set of Folders Could Not Be Opened"
-permalink: kb/172/Q172604/
+permalink: /kb/172/Q172604/
 ---
 
 ## Q172604: Error Message: The Set of Folders Could Not Be Opened

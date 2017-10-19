@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226890: SMS: Cannot Delete Files on a CD-ROM Drive"
-permalink: kb/226/Q226890/
+permalink: /kb/226/Q226890/
 ---
 
 ## Q226890: SMS: Cannot Delete Files on a CD-ROM Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162541: WD97: Can't Access Mail Merge Data Source on Banyan Network"
-permalink: kb/162/Q162541/
+permalink: /kb/162/Q162541/
 ---
 
 ## Q162541: WD97: Can't Access Mail Merge Data Source on Banyan Network

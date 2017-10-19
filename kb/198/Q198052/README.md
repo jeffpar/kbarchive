@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198052: FIX: &quot;Out-of-Date Dependency&quot; Warning in Setup Wizard and PDW"
-permalink: kb/198/Q198052/
+permalink: /kb/198/Q198052/
 ---
 
 ## Q198052: FIX: &quot;Out-of-Date Dependency&quot; Warning in Setup Wizard and PDW

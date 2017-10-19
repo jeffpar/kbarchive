@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51078: FILECOMPARE Does Not Count Blank Lines"
-permalink: kb/051/Q51078/
+permalink: /kb/051/Q51078/
 ---
 
 ## Q51078: FILECOMPARE Does Not Count Blank Lines

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235683: XWEB: OWA Uses Client RPC Binding Order to Set Up Communication"
-permalink: kb/235/Q235683/
+permalink: /kb/235/Q235683/
 ---
 
 ## Q235683: XWEB: OWA Uses Client RPC Binding Order to Set Up Communication

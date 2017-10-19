@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197138: WD97: Word Beeps Opening Shortcut Menu with Macro Recorder On"
-permalink: kb/197/Q197138/
+permalink: /kb/197/Q197138/
 ---
 
 ## Q197138: WD97: Word Beeps Opening Shortcut Menu with Macro Recorder On

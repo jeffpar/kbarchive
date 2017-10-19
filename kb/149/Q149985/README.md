@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149985: NEC READY Boot Disk Configuration for SB16 to Work in FS5."
-permalink: kb/149/Q149985/
+permalink: /kb/149/Q149985/
 ---
 
 ## Q149985: NEC READY Boot Disk Configuration for SB16 to Work in FS5.

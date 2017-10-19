@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131917: PC Win: Alternatives to CHKMMF"
-permalink: kb/131/Q131917/
+permalink: /kb/131/Q131917/
 ---
 
 ## Q131917: PC Win: Alternatives to CHKMMF

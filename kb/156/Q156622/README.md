@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156622: Replacing NBA Players on Team Removes Them from Database"
-permalink: kb/156/Q156622/
+permalink: /kb/156/Q156622/
 ---
 
 ## Q156622: Replacing NBA Players on Team Removes Them from Database

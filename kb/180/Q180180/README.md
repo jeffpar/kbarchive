@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180180: XFOR: Attachment May Be Lost Forwarding from MSMail to Exchange"
-permalink: kb/180/Q180180/
+permalink: /kb/180/Q180180/
 ---
 
 ## Q180180: XFOR: Attachment May Be Lost Forwarding from MSMail to Exchange

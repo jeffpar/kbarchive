@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124549: Unable to Disable Print Event Logging in Windows NT 3.5"
-permalink: kb/124/Q124549/
+permalink: /kb/124/Q124549/
 ---
 
 ## Q124549: Unable to Disable Print Event Logging in Windows NT 3.5

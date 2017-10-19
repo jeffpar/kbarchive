@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94557: Write Restores Subscripts to Incorrect Font Size"
-permalink: kb/094/Q94557/
+permalink: /kb/094/Q94557/
 ---
 
 ## Q94557: Write Restores Subscripts to Incorrect Font Size

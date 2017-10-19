@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268787: NFS Server Does Not Use Mapped Group for Access Token"
-permalink: kb/268/Q268787/
+permalink: /kb/268/Q268787/
 ---
 
 ## Q268787: NFS Server Does Not Use Mapped Group for Access Token

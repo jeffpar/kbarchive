@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100319: Err Msg: 530...Home Directory Inaccessible"
-permalink: kb/100/Q100319/
+permalink: /kb/100/Q100319/
 ---
 
 ## Q100319: Err Msg: 530...Home Directory Inaccessible

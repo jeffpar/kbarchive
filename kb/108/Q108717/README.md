@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108717: BUG: Resource Manager Error When Printing Lots of Fonts"
-permalink: kb/108/Q108717/
+permalink: /kb/108/Q108717/
 ---
 
 ## Q108717: BUG: Resource Manager Error When Printing Lots of Fonts

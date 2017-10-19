@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266492: Encarta 2001: Cannot Copy Images in Articles to Researcher"
-permalink: kb/266/Q266492/
+permalink: /kb/266/Q266492/
 ---
 
 ## Q266492: Encarta 2001: Cannot Copy Images in Articles to Researcher

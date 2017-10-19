@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194141: Cannot Connect to MSN After You Install Windows"
-permalink: kb/194/Q194141/
+permalink: /kb/194/Q194141/
 ---
 
 ## Q194141: Cannot Connect to MSN After You Install Windows

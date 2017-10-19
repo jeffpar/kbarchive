@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25025: Information Provided by Relocation Table"
-permalink: kb/025/Q25025/
+permalink: /kb/025/Q25025/
 ---
 
 ## Q25025: Information Provided by Relocation Table

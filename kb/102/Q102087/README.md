@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102087: Mac Bkup: Backup Status Message Could Not Be Sent"
-permalink: kb/102/Q102087/
+permalink: /kb/102/Q102087/
 ---
 
 ## Q102087: Mac Bkup: Backup Status Message Could Not Be Sent

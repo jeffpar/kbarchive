@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248486: XCCC: Mailbox Access Across Domains Is Denied Through OWA"
-permalink: kb/248/Q248486/
+permalink: /kb/248/Q248486/
 ---
 
 ## Q248486: XCCC: Mailbox Access Across Domains Is Denied Through OWA

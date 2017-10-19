@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230488: HOWTO: Print the Contents of the Wang (Kodak) ImageEdit Control"
-permalink: kb/230/Q230488/
+permalink: /kb/230/Q230488/
 ---
 
 ## Q230488: HOWTO: Print the Contents of the Wang (Kodak) ImageEdit Control

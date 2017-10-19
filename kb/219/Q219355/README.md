@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219355: Restarted Print Job Are Deleted When Spooler Service Restarted"
-permalink: kb/219/Q219355/
+permalink: /kb/219/Q219355/
 ---
 
 ## Q219355: Restarted Print Job Are Deleted When Spooler Service Restarted

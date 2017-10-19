@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83139: 'Enter Volume Label' when the Label Is Corrupt"
-permalink: kb/083/Q83139/
+permalink: /kb/083/Q83139/
 ---
 
 ## Q83139: 'Enter Volume Label' when the Label Is Corrupt

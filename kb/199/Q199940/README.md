@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199940: XADM: Server Monitor Services Not Unique Between Many Monitors"
-permalink: kb/199/Q199940/
+permalink: /kb/199/Q199940/
 ---
 
 ## Q199940: XADM: Server Monitor Services Not Unique Between Many Monitors

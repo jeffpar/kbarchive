@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262894: SCM Is Unable to Make Updates with Read Option"
-permalink: kb/262/Q262894/
+permalink: /kb/262/Q262894/
 ---
 
 ## Q262894: SCM Is Unable to Make Updates with Read Option

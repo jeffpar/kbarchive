@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159853: Display Toolbar Checkbox Not Functional on MSDOS Shortcut"
-permalink: kb/159/Q159853/
+permalink: /kb/159/Q159853/
 ---
 
 ## Q159853: Display Toolbar Checkbox Not Functional on MSDOS Shortcut

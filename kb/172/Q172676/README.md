@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172676: PRB: Autolist Feature Breaks When Project Cannot Compile"
-permalink: kb/172/Q172676/
+permalink: /kb/172/Q172676/
 ---
 
 ## Q172676: PRB: Autolist Feature Breaks When Project Cannot Compile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173781: How to Configure Friends Online on The Microsoft Network"
-permalink: kb/173/Q173781/
+permalink: /kb/173/Q173781/
 ---
 
 ## Q173781: How to Configure Friends Online on The Microsoft Network

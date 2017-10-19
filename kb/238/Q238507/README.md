@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238507: XCON: Exchange Server MTA MIXER Mapping Tables"
-permalink: kb/238/Q238507/
+permalink: /kb/238/Q238507/
 ---
 
 ## Q238507: XCON: Exchange Server MTA MIXER Mapping Tables

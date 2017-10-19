@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179996: XFOR: LDE Doesn't Send Delete Transactions for Hidden Recipients"
-permalink: kb/179/Q179996/
+permalink: /kb/179/Q179996/
 ---
 
 ## Q179996: XFOR: LDE Doesn't Send Delete Transactions for Hidden Recipients

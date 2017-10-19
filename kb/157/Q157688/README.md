@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157688: XCLN: Reminders not Processed When Default Store is PST"
-permalink: kb/157/Q157688/
+permalink: /kb/157/Q157688/
 ---
 
 ## Q157688: XCLN: Reminders not Processed When Default Store is PST

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233464: Business Planner: Keyboard Commands Do Not Function"
-permalink: kb/233/Q233464/
+permalink: /kb/233/Q233464/
 ---
 
 ## Q233464: Business Planner: Keyboard Commands Do Not Function

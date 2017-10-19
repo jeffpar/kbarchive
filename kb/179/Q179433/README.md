@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179433: Cache Manager May Cause Data Corruption on SMB Servers on FAT"
-permalink: kb/179/Q179433/
+permalink: /kb/179/Q179433/
 ---
 
 ## Q179433: Cache Manager May Cause Data Corruption on SMB Servers on FAT

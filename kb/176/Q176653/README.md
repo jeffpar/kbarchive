@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176653: FIX: Incorrect Decimal Data Sent to SQL Server with Remote View"
-permalink: kb/176/Q176653/
+permalink: /kb/176/Q176653/
 ---
 
 ## Q176653: FIX: Incorrect Decimal Data Sent to SQL Server with Remote View

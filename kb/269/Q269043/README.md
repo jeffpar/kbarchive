@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269043: Problems Saving or Opening Files with Extended Characters"
-permalink: kb/269/Q269043/
+permalink: /kb/269/Q269043/
 ---
 
 ## Q269043: Problems Saving or Opening Files with Extended Characters

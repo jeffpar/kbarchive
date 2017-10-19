@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322824: XADM: Directory Replication Fails with Event ID 1102"
-permalink: kb/322/Q322824/
+permalink: /kb/322/Q322824/
 ---
 
 ## Q322824: XADM: Directory Replication Fails with Event ID 1102

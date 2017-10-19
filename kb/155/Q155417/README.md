@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155417: XADM: LoadSim, Microsoft Exchange Server Load Simulation Tool"
-permalink: kb/155/Q155417/
+permalink: /kb/155/Q155417/
 ---
 
 ## Q155417: XADM: LoadSim, Microsoft Exchange Server Load Simulation Tool

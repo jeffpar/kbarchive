@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51176: Mac Srv: Logged In User Create But Not Send Mail If Removed"
-permalink: kb/051/Q51176/
+permalink: /kb/051/Q51176/
 ---
 
 ## Q51176: Mac Srv: Logged In User Create But Not Send Mail If Removed

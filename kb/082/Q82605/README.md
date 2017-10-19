@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82605: Display and Output Differences: Windows 3.0 and 3.1"
-permalink: kb/082/Q82605/
+permalink: /kb/082/Q82605/
 ---
 
 ## Q82605: Display and Output Differences: Windows 3.0 and 3.1

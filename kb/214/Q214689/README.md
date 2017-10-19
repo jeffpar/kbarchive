@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214689: XADM: Assert Failure Occurs When Information Store is Stopped"
-permalink: kb/214/Q214689/
+permalink: /kb/214/Q214689/
 ---
 
 ## Q214689: XADM: Assert Failure Occurs When Information Store is Stopped

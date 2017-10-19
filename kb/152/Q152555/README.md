@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152555: XADM: Permissions Given to Local Groups Don't Work"
-permalink: kb/152/Q152555/
+permalink: /kb/152/Q152555/
 ---
 
 ## Q152555: XADM: Permissions Given to Local Groups Don't Work

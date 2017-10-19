@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177313: Installing Multiple 3COM 3C509B PCMCIA Network Interface Cards"
-permalink: kb/177/Q177313/
+permalink: /kb/177/Q177313/
 ---
 
 ## Q177313: Installing Multiple 3COM 3C509B PCMCIA Network Interface Cards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192066: XADM: Event Service with Internet Explorer 4.01 Hangs NT Shell"
-permalink: kb/192/Q192066/
+permalink: /kb/192/Q192066/
 ---
 
 ## Q192066: XADM: Event Service with Internet Explorer 4.01 Hangs NT Shell

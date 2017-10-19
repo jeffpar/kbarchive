@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124645: Playing Compressed Audio on Western Digital DSP-16 Sound Card"
-permalink: kb/124/Q124645/
+permalink: /kb/124/Q124645/
 ---
 
 ## Q124645: Playing Compressed Audio on Western Digital DSP-16 Sound Card

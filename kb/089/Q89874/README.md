@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89874: MIDIMAP.CFG Is Replaced During Windows Sound System Setup"
-permalink: kb/089/Q89874/
+permalink: /kb/089/Q89874/
 ---
 
 ## Q89874: MIDIMAP.CFG Is Replaced During Windows Sound System Setup

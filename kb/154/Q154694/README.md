@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154694: New Policy Available to Hide Go To on Tools Menu"
-permalink: kb/154/Q154694/
+permalink: /kb/154/Q154694/
 ---
 
 ## Q154694: New Policy Available to Hide Go To on Tools Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196400: XADM: Move Server Wizard Error: An Error has Occurred Copying"
-permalink: kb/196/Q196400/
+permalink: /kb/196/Q196400/
 ---
 
 ## Q196400: XADM: Move Server Wizard Error: An Error has Occurred Copying

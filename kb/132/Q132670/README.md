@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132670: Creating a Shortcut to a Shared Printer"
-permalink: kb/132/Q132670/
+permalink: /kb/132/Q132670/
 ---
 
 ## Q132670: Creating a Shortcut to a Shared Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82553: Problems with SMARTDRV.EXE and Norton's Disk Protect"
-permalink: kb/082/Q82553/
+permalink: /kb/082/Q82553/
 ---
 
 ## Q82553: Problems with SMARTDRV.EXE and Norton's Disk Protect

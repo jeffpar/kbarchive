@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97575: WEP Err Msg: Can't Write File VBRUN100.DLL"
-permalink: kb/097/Q97575/
+permalink: /kb/097/Q97575/
 ---
 
 ## Q97575: WEP Err Msg: Can't Write File VBRUN100.DLL

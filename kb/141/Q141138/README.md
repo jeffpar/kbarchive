@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141138: Signing Up for The Microsoft Network with Older Software"
-permalink: kb/141/Q141138/
+permalink: /kb/141/Q141138/
 ---
 
 ## Q141138: Signing Up for The Microsoft Network with Older Software

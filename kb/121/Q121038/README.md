@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121038: MAC Art Gallery: README Contents"
-permalink: kb/121/Q121038/
+permalink: /kb/121/Q121038/
 ---
 
 ## Q121038: MAC Art Gallery: README Contents

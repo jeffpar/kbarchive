@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306388: PRB: CursorType Returns adOpenStatic from Server-Side Recordset"
-permalink: kb/306/Q306388/
+permalink: /kb/306/Q306388/
 ---
 
 ## Q306388: PRB: CursorType Returns adOpenStatic from Server-Side Recordset

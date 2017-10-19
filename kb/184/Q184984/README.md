@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184984: WD97: Password Not Saved Calling wdDialogFileSaveAs Dialog Box"
-permalink: kb/184/Q184984/
+permalink: /kb/184/Q184984/
 ---
 
 ## Q184984: WD97: Password Not Saved Calling wdDialogFileSaveAs Dialog Box

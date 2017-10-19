@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174697: XFOR: Correspondence Between Foreign.nsf and Lmd.&#42;"
-permalink: kb/174/Q174697/
+permalink: /kb/174/Q174697/
 ---
 
 ## Q174697: XFOR: Correspondence Between Foreign.nsf and Lmd.&#42;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127063: ADVANCED WINDOWS NT: Corrections and Comments"
-permalink: kb/127/Q127063/
+permalink: /kb/127/Q127063/
 ---
 
 ## Q127063: ADVANCED WINDOWS NT: Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317423: SMS: Software Inventory Agent Generates an Invalid Page Fault"
-permalink: kb/317/Q317423/
+permalink: /kb/317/Q317423/
 ---
 
 ## Q317423: SMS: Software Inventory Agent Generates an Invalid Page Fault

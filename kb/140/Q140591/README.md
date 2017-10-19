@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140591: HOWTO: Display an MFC Automation Document Automatically"
-permalink: kb/140/Q140591/
+permalink: /kb/140/Q140591/
 ---
 
 ## Q140591: HOWTO: Display an MFC Automation Document Automatically

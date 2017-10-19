@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106436: SmartVu Disabled on Dell Computers with VFAT"
-permalink: kb/106/Q106436/
+permalink: /kb/106/Q106436/
 ---
 
 ## Q106436: SmartVu Disabled on Dell Computers with VFAT

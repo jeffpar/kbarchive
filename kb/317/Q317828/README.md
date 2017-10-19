@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317828: FS2002: How to Import Aircraft from Combat Flight Simulator"
-permalink: kb/317/Q317828/
+permalink: /kb/317/Q317828/
 ---
 
 ## Q317828: FS2002: How to Import Aircraft from Combat Flight Simulator

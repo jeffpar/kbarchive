@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190634: PRB: Activate Event Is Not Triggered with Child Form of MDI Form"
-permalink: kb/190/Q190634/
+permalink: /kb/190/Q190634/
 ---
 
 ## Q190634: PRB: Activate Event Is Not Triggered with Child Form of MDI Form

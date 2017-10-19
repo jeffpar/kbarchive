@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104902: Print Processors and Data Types"
-permalink: kb/104/Q104902/
+permalink: /kb/104/Q104902/
 ---
 
 ## Q104902: Print Processors and Data Types

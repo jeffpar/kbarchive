@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151438: Control Panels/Extensions Installed by Visual FoxPro for Mac"
-permalink: kb/151/Q151438/
+permalink: /kb/151/Q151438/
 ---
 
 ## Q151438: Control Panels/Extensions Installed by Visual FoxPro for Mac

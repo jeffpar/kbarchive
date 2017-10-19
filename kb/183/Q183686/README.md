@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183686: XWEB: Cannot Identify Yourself When Posting Newsgroup Messages"
-permalink: kb/183/Q183686/
+permalink: /kb/183/Q183686/
 ---
 
 ## Q183686: XWEB: Cannot Identify Yourself When Posting Newsgroup Messages

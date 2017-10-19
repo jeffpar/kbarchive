@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101930: Methods and Reasons for Renaming a Bid for a Boot Drive"
-permalink: kb/101/Q101930/
+permalink: /kb/101/Q101930/
 ---
 
 ## Q101930: Methods and Reasons for Renaming a Bid for a Boot Drive

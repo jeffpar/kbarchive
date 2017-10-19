@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253349: XCON: Response Files from GroupWise Are Put in Badfiles Folder"
-permalink: kb/253/Q253349/
+permalink: /kb/253/Q253349/
 ---
 
 ## Q253349: XCON: Response Files from GroupWise Are Put in Badfiles Folder

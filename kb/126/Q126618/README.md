@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126618: Cannot See All NetWare Volumes from Windows NT"
-permalink: kb/126/Q126618/
+permalink: /kb/126/Q126618/
 ---
 
 ## Q126618: Cannot See All NetWare Volumes from Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72482: FIX: MASM 6.0 May Generate A2103 Error When Assembling with /Zi"
-permalink: kb/072/Q72482/
+permalink: /kb/072/Q72482/
 ---
 
 ## Q72482: FIX: MASM 6.0 May Generate A2103 Error When Assembling with /Zi

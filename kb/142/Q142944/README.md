@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142944: PPT7: How to Start a PowerPoint Presentation in Slide Show View"
-permalink: kb/142/Q142944/
+permalink: /kb/142/Q142944/
 ---
 
 ## Q142944: PPT7: How to Start a PowerPoint Presentation in Slide Show View

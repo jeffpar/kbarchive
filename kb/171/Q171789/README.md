@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171789: PTR Record for DNS Server Is Not Automatically Created"
-permalink: kb/171/Q171789/
+permalink: /kb/171/Q171789/
 ---
 
 ## Q171789: PTR Record for DNS Server Is Not Automatically Created

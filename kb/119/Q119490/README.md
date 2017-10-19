@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119490: Checking Crashdump File for Corruption"
-permalink: kb/119/Q119490/
+permalink: /kb/119/Q119490/
 ---
 
 ## Q119490: Checking Crashdump File for Corruption

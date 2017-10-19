@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223066: FIX: Placing MsgBox in SelChange Event of DataGrid Causes IPF"
-permalink: kb/223/Q223066/
+permalink: /kb/223/Q223066/
 ---
 
 ## Q223066: FIX: Placing MsgBox in SelChange Event of DataGrid Causes IPF

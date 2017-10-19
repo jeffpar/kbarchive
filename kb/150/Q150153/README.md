@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150153: RAS Error: &quot;Event 20077...The Account Is Disabled&quot;"
-permalink: kb/150/Q150153/
+permalink: /kb/150/Q150153/
 ---
 
 ## Q150153: RAS Error: &quot;Event 20077...The Account Is Disabled&quot;

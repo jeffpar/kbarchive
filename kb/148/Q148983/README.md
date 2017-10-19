@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148983: InvDos Reports Only 16 Environment Strings"
-permalink: kb/148/Q148983/
+permalink: /kb/148/Q148983/
 ---
 
 ## Q148983: InvDos Reports Only 16 Environment Strings

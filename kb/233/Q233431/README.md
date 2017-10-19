@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233431: Business Planner: Unexpected Text Is Displayed in ToolTip"
-permalink: kb/233/Q233431/
+permalink: /kb/233/Q233431/
 ---
 
 ## Q233431: Business Planner: Unexpected Text Is Displayed in ToolTip

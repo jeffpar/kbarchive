@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166466: Err Msg: Setup Found a Compressed Volume or a Disk-Cache Utility"
-permalink: kb/166/Q166466/
+permalink: /kb/166/Q166466/
 ---
 
 ## Q166466: Err Msg: Setup Found a Compressed Volume or a Disk-Cache Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96200: DoubleSpace Cannot Mount Compressed Write-Protected Disk"
-permalink: kb/096/Q96200/
+permalink: /kb/096/Q96200/
 ---
 
 ## Q96200: DoubleSpace Cannot Mount Compressed Write-Protected Disk

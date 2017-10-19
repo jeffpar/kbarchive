@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200915: WD97: ErrMsg: Do You Want to Revert to the Saved &lt;File Name&gt;?"
-permalink: kb/200/Q200915/
+permalink: /kb/200/Q200915/
 ---
 
 ## Q200915: WD97: ErrMsg: Do You Want to Revert to the Saved &lt;File Name&gt;?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129601: Connection Fails on SNA Server with Two Token Ring NICs"
-permalink: kb/129/Q129601/
+permalink: /kb/129/Q129601/
 ---
 
 ## Q129601: Connection Fails on SNA Server with Two Token Ring NICs

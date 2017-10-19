@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205053: PRB: &quot;Overflow&quot; with Integer Division and MOD Operator"
-permalink: kb/205/Q205053/
+permalink: /kb/205/Q205053/
 ---
 
 ## Q205053: PRB: &quot;Overflow&quot; with Integer Division and MOD Operator

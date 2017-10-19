@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156232: SMS: Clicking &quot;Identify Network Monitor Users&quot; Causes GP Fault"
-permalink: kb/156/Q156232/
+permalink: /kb/156/Q156232/
 ---
 
 ## Q156232: SMS: Clicking &quot;Identify Network Monitor Users&quot; Causes GP Fault

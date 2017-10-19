@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142433: BUG: Can't Open Performance Monitor Settings Files Read-Only"
-permalink: kb/142/Q142433/
+permalink: /kb/142/Q142433/
 ---
 
 ## Q142433: BUG: Can't Open Performance Monitor Settings Files Read-Only

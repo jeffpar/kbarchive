@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103451: PC Win: Missing Cc: Line in Sent Mail Folder"
-permalink: kb/103/Q103451/
+permalink: /kb/103/Q103451/
 ---
 
 ## Q103451: PC Win: Missing Cc: Line in Sent Mail Folder

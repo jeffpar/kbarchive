@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166045: XFOR: cc:Mail Connector Event ID 70"
-permalink: kb/166/Q166045/
+permalink: /kb/166/Q166045/
 ---
 
 ## Q166045: XFOR: cc:Mail Connector Event ID 70

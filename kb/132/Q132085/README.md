@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132085: Applications Hang When Opening Files when CSNW is Installed"
-permalink: kb/132/Q132085/
+permalink: /kb/132/Q132085/
 ---
 
 ## Q132085: Applications Hang When Opening Files when CSNW is Installed

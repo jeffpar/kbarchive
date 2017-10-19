@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75535: PRB: Network Drive Type Reported Incorrectly"
-permalink: kb/075/Q75535/
+permalink: /kb/075/Q75535/
 ---
 
 ## Q75535: PRB: Network Drive Type Reported Incorrectly

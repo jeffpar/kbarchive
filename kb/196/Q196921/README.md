@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196921: SNA Server Access Violation in Function S1PWLUSE()"
-permalink: kb/196/Q196921/
+permalink: /kb/196/Q196921/
 ---
 
 ## Q196921: SNA Server Access Violation in Function S1PWLUSE()

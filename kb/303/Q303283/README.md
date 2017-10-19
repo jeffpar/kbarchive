@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303283: Event 2086 Appears When You Run Multi-Protocol Services"
-permalink: kb/303/Q303283/
+permalink: /kb/303/Q303283/
 ---
 
 ## Q303283: Event 2086 Appears When You Run Multi-Protocol Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124428: NE2000 and Panasonic CD-ROM Fails when Used Simultaneously"
-permalink: kb/124/Q124428/
+permalink: /kb/124/Q124428/
 ---
 
 ## Q124428: NE2000 and Panasonic CD-ROM Fails when Used Simultaneously

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242900: XWEB: HTTP/1.0 Server Error Message When You Attach Files in OWA"
-permalink: kb/242/Q242900/
+permalink: /kb/242/Q242900/
 ---
 
 ## Q242900: XWEB: HTTP/1.0 Server Error Message When You Attach Files in OWA

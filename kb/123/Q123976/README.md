@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123976: Sequential File Reads of 4K Instead of 64K Blocks"
-permalink: kb/123/Q123976/
+permalink: /kb/123/Q123976/
 ---
 
 ## Q123976: Sequential File Reads of 4K Instead of 64K Blocks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150423: INFO: Visual Basic 4.0a Fixes for Windows as of April 23, 1996"
-permalink: kb/150/Q150423/
+permalink: /kb/150/Q150423/
 ---
 
 ## Q150423: INFO: Visual Basic 4.0a Fixes for Windows as of April 23, 1996

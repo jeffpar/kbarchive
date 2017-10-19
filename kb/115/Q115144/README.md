@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115144: Cannot Print Faxes from AWFAX Fax Viewer with the HP 1200C"
-permalink: kb/115/Q115144/
+permalink: /kb/115/Q115144/
 ---
 
 ## Q115144: Cannot Print Faxes from AWFAX Fax Viewer with the HP 1200C

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148606: BUG: FOR1138 Error INQUIRE(IOLENGTH) of Character Function"
-permalink: kb/148/Q148606/
+permalink: /kb/148/Q148606/
 ---
 
 ## Q148606: BUG: FOR1138 Error INQUIRE(IOLENGTH) of Character Function

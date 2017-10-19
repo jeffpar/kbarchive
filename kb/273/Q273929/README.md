@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273929: Crimson Skies: Game Does Not Start When You Play on Zone"
-permalink: kb/273/Q273929/
+permalink: /kb/273/Q273929/
 ---
 
 ## Q273929: Crimson Skies: Game Does Not Start When You Play on Zone

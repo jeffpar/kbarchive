@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166284: HOWTO: Use ODBC API SQLTables Function with Visual Basic and RDO"
-permalink: kb/166/Q166284/
+permalink: /kb/166/Q166284/
 ---
 
 ## Q166284: HOWTO: Use ODBC API SQLTables Function with Visual Basic and RDO

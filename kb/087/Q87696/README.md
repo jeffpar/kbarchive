@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87696: PRB: Application Unable to Edit Database Files"
-permalink: kb/087/Q87696/
+permalink: /kb/087/Q87696/
 ---
 
 ## Q87696: PRB: Application Unable to Edit Database Files

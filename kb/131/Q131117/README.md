@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131117: PC NTMMTA: Err Msg: Could Not Start the Mail External..."
-permalink: kb/131/Q131117/
+permalink: /kb/131/Q131117/
 ---
 
 ## Q131117: PC NTMMTA: Err Msg: Could Not Start the Mail External...

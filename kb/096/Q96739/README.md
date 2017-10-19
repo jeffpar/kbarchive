@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96739: Boot Drive Failure and Recovery with FTBOOT"
-permalink: kb/096/Q96739/
+permalink: /kb/096/Q96739/
 ---
 
 ## Q96739: Boot Drive Failure and Recovery with FTBOOT

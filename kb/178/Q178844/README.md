@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178844: XADM: How to Generate Reports on Mailbox Resources"
-permalink: kb/178/Q178844/
+permalink: /kb/178/Q178844/
 ---
 
 ## Q178844: XADM: How to Generate Reports on Mailbox Resources

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172968: Disk Subsystem Recovery Documentation Error"
-permalink: kb/172/Q172968/
+permalink: /kb/172/Q172968/
 ---
 
 ## Q172968: Disk Subsystem Recovery Documentation Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159270: INFO: How the Merge Process Works in Visual SourceSafe"
-permalink: kb/159/Q159270/
+permalink: /kb/159/Q159270/
 ---
 
 ## Q159270: INFO: How the Merge Process Works in Visual SourceSafe

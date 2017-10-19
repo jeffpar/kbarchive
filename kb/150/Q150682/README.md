@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150682: FP: Error Browsing Page, Using WebBot Component"
-permalink: kb/150/Q150682/
+permalink: /kb/150/Q150682/
 ---
 
 ## Q150682: FP: Error Browsing Page, Using WebBot Component

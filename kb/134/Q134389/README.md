@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134389: Setup Cannot Find Previous Version of Windows NT"
-permalink: kb/134/Q134389/
+permalink: /kb/134/Q134389/
 ---
 
 ## Q134389: Setup Cannot Find Previous Version of Windows NT

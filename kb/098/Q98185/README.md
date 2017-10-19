@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98185: Flight Simulator: Altimeter Jumps from 128,000 Feet to 0 Feet"
-permalink: kb/098/Q98185/
+permalink: /kb/098/Q98185/
 ---
 
 ## Q98185: Flight Simulator: Altimeter Jumps from 128,000 Feet to 0 Feet

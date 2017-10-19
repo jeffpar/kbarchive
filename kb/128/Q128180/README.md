@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128180: Upgrade Does Not Install Network Client Administrator"
-permalink: kb/128/Q128180/
+permalink: /kb/128/Q128180/
 ---
 
 ## Q128180: Upgrade Does Not Install Network Client Administrator

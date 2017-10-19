@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181124: XADM: Invalid Page Fault Opening Signed Message with Attachment"
-permalink: kb/181/Q181124/
+permalink: /kb/181/Q181124/
 ---
 
 ## Q181124: XADM: Invalid Page Fault Opening Signed Message with Attachment

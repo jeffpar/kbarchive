@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163523: AFTP Server Stops Accepting Connections Under Stress"
-permalink: kb/163/Q163523/
+permalink: /kb/163/Q163523/
 ---
 
 ## Q163523: AFTP Server Stops Accepting Connections Under Stress

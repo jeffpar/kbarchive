@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258875: BUG: Win2000 Multicast Groups Not Rejoined When Interface Enable"
-permalink: kb/258/Q258875/
+permalink: /kb/258/Q258875/
 ---
 
 ## Q258875: BUG: Win2000 Multicast Groups Not Rejoined When Interface Enable

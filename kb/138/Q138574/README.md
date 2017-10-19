@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138574: Nwconv Fails to Create Users with Error &quot;Error Saving User&quot;"
-permalink: kb/138/Q138574/
+permalink: /kb/138/Q138574/
 ---
 
 ## Q138574: Nwconv Fails to Create Users with Error &quot;Error Saving User&quot;

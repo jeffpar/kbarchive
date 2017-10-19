@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223107: FIX: Error Picking Deleted Object From Dropdown List"
-permalink: kb/223/Q223107/
+permalink: /kb/223/Q223107/
 ---
 
 ## Q223107: FIX: Error Picking Deleted Object From Dropdown List

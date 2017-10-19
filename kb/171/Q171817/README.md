@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171817: FIX: UserControl Cannot Read ContainedControls in Visual FoxPro"
-permalink: kb/171/Q171817/
+permalink: /kb/171/Q171817/
 ---
 
 ## Q171817: FIX: UserControl Cannot Read ContainedControls in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166583: XADM: Folders Are Sorted When Non-English Settings Are Used"
-permalink: kb/166/Q166583/
+permalink: /kb/166/Q166583/
 ---
 
 ## Q166583: XADM: Folders Are Sorted When Non-English Settings Are Used

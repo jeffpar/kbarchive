@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213202: XADM: Event 30 Appears When a Program Is Accessing the Log Files"
-permalink: kb/213/Q213202/
+permalink: /kb/213/Q213202/
 ---
 
 ## Q213202: XADM: Event 30 Appears When a Program Is Accessing the Log Files

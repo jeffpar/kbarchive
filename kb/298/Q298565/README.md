@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298565: XCON: Internet Mail Connector Does Not Start wit Event ID 4086"
-permalink: kb/298/Q298565/
+permalink: /kb/298/Q298565/
 ---
 
 ## Q298565: XCON: Internet Mail Connector Does Not Start wit Event ID 4086

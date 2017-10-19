@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172802: SNA Server Access Violation in s1pcrefm()"
-permalink: kb/172/Q172802/
+permalink: /kb/172/Q172802/
 ---
 
 ## Q172802: SNA Server Access Violation in s1pcrefm()

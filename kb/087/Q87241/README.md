@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87241: Crash or Inappropriate Sounds Occur with Sound Blaster and 486"
-permalink: kb/087/Q87241/
+permalink: /kb/087/Q87241/
 ---
 
 ## Q87241: Crash or Inappropriate Sounds Occur with Sound Blaster and 486

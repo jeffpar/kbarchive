@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261275: XADM: Forwarding Encrypted Mail"
-permalink: kb/261/Q261275/
+permalink: /kb/261/Q261275/
 ---
 
 ## Q261275: XADM: Forwarding Encrypted Mail

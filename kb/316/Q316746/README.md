@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316746: TN3270E Print Jobs Have &quot;Spooling&quot; Status and Do Not Print"
-permalink: kb/316/Q316746/
+permalink: /kb/316/Q316746/
 ---
 
 ## Q316746: TN3270E Print Jobs Have &quot;Spooling&quot; Status and Do Not Print

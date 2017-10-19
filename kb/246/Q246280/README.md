@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246280: XFOR: Chat Service Does Not Run with PowerChute Installed"
-permalink: kb/246/Q246280/
+permalink: /kb/246/Q246280/
 ---
 
 ## Q246280: XFOR: Chat Service Does Not Run with PowerChute Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192346: WD97: Address Book Icon Doesn't Default to Outlook Contacts"
-permalink: kb/192/Q192346/
+permalink: /kb/192/Q192346/
 ---
 
 ## Q192346: WD97: Address Book Icon Doesn't Default to Outlook Contacts

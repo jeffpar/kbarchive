@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151638: BUG: RECO Is Unrecognized Phrase on VALIDATE DATABASE Command"
-permalink: kb/151/Q151638/
+permalink: /kb/151/Q151638/
 ---
 
 ## Q151638: BUG: RECO Is Unrecognized Phrase on VALIDATE DATABASE Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246974: SMS: Mandatory Assignments May Not Run If CAP Cannot Be Reached"
-permalink: kb/246/Q246974/
+permalink: /kb/246/Q246974/
 ---
 
 ## Q246974: SMS: Mandatory Assignments May Not Run If CAP Cannot Be Reached

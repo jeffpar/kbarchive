@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103945: PC Mac: Macintosh Client Version 3.0.6 Update"
-permalink: kb/103/Q103945/
+permalink: /kb/103/Q103945/
 ---
 
 ## Q103945: PC Mac: Macintosh Client Version 3.0.6 Update

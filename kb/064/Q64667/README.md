@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64667: Erratic Serial Mice and ALR Powerflex Computers"
-permalink: kb/064/Q64667/
+permalink: /kb/064/Q64667/
 ---
 
 ## Q64667: Erratic Serial Mice and ALR Powerflex Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183730: HTML Administrator Doesn't Work Through Proxy with NTLM"
-permalink: kb/183/Q183730/
+permalink: /kb/183/Q183730/
 ---
 
 ## Q183730: HTML Administrator Doesn't Work Through Proxy with NTLM

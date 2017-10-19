@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253317: BUG: Using #import with ADO Causes C4146 Warning in Visual C++"
-permalink: kb/253/Q253317/
+permalink: /kb/253/Q253317/
 ---
 
 ## Q253317: BUG: Using #import with ADO Causes C4146 Warning in Visual C++

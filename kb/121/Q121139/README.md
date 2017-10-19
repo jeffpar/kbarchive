@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121139: Space: Planets Have No Color"
-permalink: kb/121/Q121139/
+permalink: /kb/121/Q121139/
 ---
 
 ## Q121139: Space: Planets Have No Color

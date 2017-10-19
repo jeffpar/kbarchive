@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161927: XCLN: Newprof.exe Causes GPF on Windows 3.x"
-permalink: kb/161/Q161927/
+permalink: /kb/161/Q161927/
 ---
 
 ## Q161927: XCLN: Newprof.exe Causes GPF on Windows 3.x

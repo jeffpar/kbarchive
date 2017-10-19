@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276222: XCON: MTA Terminates in OTPMRALT() Due to Bad ECBindex"
-permalink: kb/276/Q276222/
+permalink: /kb/276/Q276222/
 ---
 
 ## Q276222: XCON: MTA Terminates in OTPMRALT() Due to Bad ECBindex

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160771: PRB: Setup Unable to Register an .ocx File Error"
-permalink: kb/160/Q160771/
+permalink: /kb/160/Q160771/
 ---
 
 ## Q160771: PRB: Setup Unable to Register an .ocx File Error

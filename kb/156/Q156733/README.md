@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156733: PRB: Error Message with BROWSE and SET FILTER Commands in Form"
-permalink: kb/156/Q156733/
+permalink: /kb/156/Q156733/
 ---
 
 ## Q156733: PRB: Error Message with BROWSE and SET FILTER Commands in Form

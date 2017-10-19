@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174210: XWEB: Outlook Express Does Not Notify on Copy Failure"
-permalink: kb/174/Q174210/
+permalink: /kb/174/Q174210/
 ---
 
 ## Q174210: XWEB: Outlook Express Does Not Notify on Copy Failure

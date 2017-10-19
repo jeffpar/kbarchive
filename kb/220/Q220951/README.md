@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220951: Err: Invalid System Time with Real Time Clock and Windows NT"
-permalink: kb/220/Q220951/
+permalink: /kb/220/Q220951/
 ---
 
 ## Q220951: Err: Invalid System Time with Real Time Clock and Windows NT

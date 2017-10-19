@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140849: HOWTO: Make a PageFrame Work with the Wizard Txtbtns Class"
-permalink: kb/140/Q140849/
+permalink: /kb/140/Q140849/
 ---
 
 ## Q140849: HOWTO: Make a PageFrame Work with the Wizard Txtbtns Class

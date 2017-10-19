@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153176: SMS: Invos2.exe Incorrectly Identifies a Pentium Processor"
-permalink: kb/153/Q153176/
+permalink: /kb/153/Q153176/
 ---
 
 ## Q153176: SMS: Invos2.exe Incorrectly Identifies a Pentium Processor

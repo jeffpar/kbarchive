@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103802: MHS: How to Test Whether the Gateway Is Working"
-permalink: kb/103/Q103802/
+permalink: /kb/103/Q103802/
 ---
 
 ## Q103802: MHS: How to Test Whether the Gateway Is Working

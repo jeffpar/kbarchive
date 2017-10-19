@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314342: SMS: Advertisements May Not Run If the Screen Saver Runs"
-permalink: kb/314/Q314342/
+permalink: /kb/314/Q314342/
 ---
 
 ## Q314342: SMS: Advertisements May Not Run If the Screen Saver Runs

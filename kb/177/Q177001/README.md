@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177001: Cannot Reset Password When You Connect Through Third-Party ISP"
-permalink: kb/177/Q177001/
+permalink: /kb/177/Q177001/
 ---
 
 ## Q177001: Cannot Reset Password When You Connect Through Third-Party ISP

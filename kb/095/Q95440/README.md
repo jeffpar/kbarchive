@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95440: Short Menus in Microsoft Excel 3.0 Hide Proof Menu"
-permalink: kb/095/Q95440/
+permalink: /kb/095/Q95440/
 ---
 
 ## Q95440: Short Menus in Microsoft Excel 3.0 Hide Proof Menu

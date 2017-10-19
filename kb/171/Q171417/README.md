@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171417: SNA Server Setup Does Not Support Long Paths and Filenames"
-permalink: kb/171/Q171417/
+permalink: /kb/171/Q171417/
 ---
 
 ## Q171417: SNA Server Setup Does Not Support Long Paths and Filenames

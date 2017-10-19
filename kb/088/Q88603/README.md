@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88603: BUG: Calculated Currency Field Ignores Formatting"
-permalink: kb/088/Q88603/
+permalink: /kb/088/Q88603/
 ---
 
 ## Q88603: BUG: Calculated Currency Field Ignores Formatting

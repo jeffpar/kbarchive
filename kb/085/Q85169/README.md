@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85169: Color PRINT SCREEN from MS-DOS Application Is Black and White"
-permalink: kb/085/Q85169/
+permalink: /kb/085/Q85169/
 ---
 
 ## Q85169: Color PRINT SCREEN from MS-DOS Application Is Black and White

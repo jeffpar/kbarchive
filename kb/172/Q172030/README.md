@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172030: WinNT Err Msg: Stop 0xA in TCPIP.SYS"
-permalink: kb/172/Q172030/
+permalink: /kb/172/Q172030/
 ---
 
 ## Q172030: WinNT Err Msg: Stop 0xA in TCPIP.SYS

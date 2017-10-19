@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159565: SNMP Agent Does Not Respond After Returning from Suspend Mode"
-permalink: kb/159/Q159565/
+permalink: /kb/159/Q159565/
 ---
 
 ## Q159565: SNMP Agent Does Not Respond After Returning from Suspend Mode

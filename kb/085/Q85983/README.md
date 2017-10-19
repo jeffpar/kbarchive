@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85983: Cancelling Screen Saver May Start an Application"
-permalink: kb/085/Q85983/
+permalink: /kb/085/Q85983/
 ---
 
 ## Q85983: Cancelling Screen Saver May Start an Application

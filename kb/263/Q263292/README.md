@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263292: WD97: Known Issues w/Word After Applying Outlook Security Update"
-permalink: kb/263/Q263292/
+permalink: /kb/263/Q263292/
 ---
 
 ## Q263292: WD97: Known Issues w/Word After Applying Outlook Security Update

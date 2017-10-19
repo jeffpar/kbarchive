@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149941: Windows Clients Not Able to Browse Remote Workgroups"
-permalink: kb/149/Q149941/
+permalink: /kb/149/Q149941/
 ---
 
 ## Q149941: Windows Clients Not Able to Browse Remote Workgroups

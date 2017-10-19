@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270784: ELL: Speech Recognition Stops in Virtual Challenge"
-permalink: kb/270/Q270784/
+permalink: /kb/270/Q270784/
 ---
 
 ## Q270784: ELL: Speech Recognition Stops in Virtual Challenge

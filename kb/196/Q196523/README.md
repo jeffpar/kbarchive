@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196523: WD97: Text from Drop-Down Form Field Disappears When Converted"
-permalink: kb/196/Q196523/
+permalink: /kb/196/Q196523/
 ---
 
 ## Q196523: WD97: Text from Drop-Down Form Field Disappears When Converted

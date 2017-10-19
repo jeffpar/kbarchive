@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181777: Sockets Programs May Not Work After Suspend and Resume"
-permalink: kb/181/Q181777/
+permalink: /kb/181/Q181777/
 ---
 
 ## Q181777: Sockets Programs May Not Work After Suspend and Resume

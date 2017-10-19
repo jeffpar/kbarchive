@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137038: How to Add Menu Controls to a Form from an Add-In"
-permalink: kb/137/Q137038/
+permalink: /kb/137/Q137038/
 ---
 
 ## Q137038: How to Add Menu Controls to a Form from an Add-In

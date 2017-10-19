@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122423: Mac RSC: Remote Server Connection-ARA 2.0 Compatibility Patch"
-permalink: kb/122/Q122423/
+permalink: /kb/122/Q122423/
 ---
 
 ## Q122423: Mac RSC: Remote Server Connection-ARA 2.0 Compatibility Patch

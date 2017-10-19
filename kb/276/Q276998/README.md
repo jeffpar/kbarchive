@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276998: Cannot Populate Certain User Attributes in Connected Directory"
-permalink: kb/276/Q276998/
+permalink: /kb/276/Q276998/
 ---
 
 ## Q276998: Cannot Populate Certain User Attributes in Connected Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123060: PC Win: How to Send Read-Only Attachments"
-permalink: kb/123/Q123060/
+permalink: /kb/123/Q123060/
 ---
 
 ## Q123060: PC Win: How to Send Read-Only Attachments

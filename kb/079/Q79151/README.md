@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79151: FIX: MASM 6.0 May Incorrectly Insert Prologue with USES"
-permalink: kb/079/Q79151/
+permalink: /kb/079/Q79151/
 ---
 
 ## Q79151: FIX: MASM 6.0 May Incorrectly Insert Prologue with USES

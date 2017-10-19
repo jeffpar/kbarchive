@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148946: AT Gen: Who Provides Mail for AppleTalk Networks Support?"
-permalink: kb/148/Q148946/
+permalink: /kb/148/Q148946/
 ---
 
 ## Q148946: AT Gen: Who Provides Mail for AppleTalk Networks Support?

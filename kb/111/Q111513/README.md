@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111513: PRB: Application Tries to Locate Menu"
-permalink: kb/111/Q111513/
+permalink: /kb/111/Q111513/
 ---
 
 ## Q111513: PRB: Application Tries to Locate Menu

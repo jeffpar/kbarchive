@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168762: HOWTO: Fix Index Corruption at Run Time with Visual FoxPro"
-permalink: kb/168/Q168762/
+permalink: /kb/168/Q168762/
 ---
 
 ## Q168762: HOWTO: Fix Index Corruption at Run Time with Visual FoxPro

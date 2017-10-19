@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162820: PRB: SourceSafe/MS Access Does Not Allow Project Sharing"
-permalink: kb/162/Q162820/
+permalink: /kb/162/Q162820/
 ---
 
 ## Q162820: PRB: SourceSafe/MS Access Does Not Allow Project Sharing

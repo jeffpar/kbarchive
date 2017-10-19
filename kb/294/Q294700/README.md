@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294700: XCCC: Error Message: OWA Failed to Install Properly"
-permalink: kb/294/Q294700/
+permalink: /kb/294/Q294700/
 ---
 
 ## Q294700: XCCC: Error Message: OWA Failed to Install Properly

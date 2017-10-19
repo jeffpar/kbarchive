@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183169: Possible Resolutions to STOP 0x0A, 0x01E, and 0x50 Errors"
-permalink: kb/183/Q183169/
+permalink: /kb/183/Q183169/
 ---
 
 ## Q183169: Possible Resolutions to STOP 0x0A, 0x01E, and 0x50 Errors

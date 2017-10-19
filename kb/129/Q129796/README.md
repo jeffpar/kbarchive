@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129796: HOWTO: 32-Bit App Can Determine When a Shelled Process Ends"
-permalink: kb/129/Q129796/
+permalink: /kb/129/Q129796/
 ---
 
 ## Q129796: HOWTO: 32-Bit App Can Determine When a Shelled Process Ends

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289688: WINS Settings Are Missing on VPN Client"
-permalink: kb/289/Q289688/
+permalink: /kb/289/Q289688/
 ---
 
 ## Q289688: WINS Settings Are Missing on VPN Client

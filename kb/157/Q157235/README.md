@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157235: XCON: MTA Stops When Receiving Mail from HP X.400 MTA"
-permalink: kb/157/Q157235/
+permalink: /kb/157/Q157235/
 ---
 
 ## Q157235: XCON: MTA Stops When Receiving Mail from HP X.400 MTA

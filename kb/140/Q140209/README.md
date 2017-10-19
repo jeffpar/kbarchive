@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140209: Opening Sample Scripts with Batch.exe Causes Errors"
-permalink: kb/140/Q140209/
+permalink: /kb/140/Q140209/
 ---
 
 ## Q140209: Opening Sample Scripts with Batch.exe Causes Errors

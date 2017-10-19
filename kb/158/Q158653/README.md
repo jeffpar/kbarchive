@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158653: Mac Encarta 97: About Encarta Not Available From Some Screens"
-permalink: kb/158/Q158653/
+permalink: /kb/158/Q158653/
 ---
 
 ## Q158653: Mac Encarta 97: About Encarta Not Available From Some Screens

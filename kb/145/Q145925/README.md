@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145925: Japanese Windows 95 Doesn't Support Console Keisen Ruled Lines"
-permalink: kb/145/Q145925/
+permalink: /kb/145/Q145925/
 ---
 
 ## Q145925: Japanese Windows 95 Doesn't Support Console Keisen Ruled Lines

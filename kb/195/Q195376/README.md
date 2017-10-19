@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195376: FIX: Incorrect Code Generated with /Og and /Oa or /Ow"
-permalink: kb/195/Q195376/
+permalink: /kb/195/Q195376/
 ---
 
 ## Q195376: FIX: Incorrect Code Generated with /Og and /Oa or /Ow

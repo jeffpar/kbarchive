@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176677: Cinemania: Menus Do Not Fly Down When Running Windows NT 4.0"
-permalink: kb/176/Q176677/
+permalink: /kb/176/Q176677/
 ---
 
 ## Q176677: Cinemania: Menus Do Not Fly Down When Running Windows NT 4.0

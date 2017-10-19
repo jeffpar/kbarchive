@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324721: SMS: Clitravl.exe Returns Error Code 1 Even If Successful"
-permalink: kb/324/Q324721/
+permalink: /kb/324/Q324721/
 ---
 
 ## Q324721: SMS: Clitravl.exe Returns Error Code 1 Even If Successful

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235392: XADM: Slow Intra-Site Replication on Multi-Processor Server"
-permalink: kb/235/Q235392/
+permalink: /kb/235/Q235392/
 ---
 
 ## Q235392: XADM: Slow Intra-Site Replication on Multi-Processor Server

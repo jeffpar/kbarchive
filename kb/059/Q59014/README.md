@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59014: Mac Wkst: Portable Workstation Continually Disconnects"
-permalink: kb/059/Q59014/
+permalink: /kb/059/Q59014/
 ---
 
 ## Q59014: Mac Wkst: Portable Workstation Continually Disconnects

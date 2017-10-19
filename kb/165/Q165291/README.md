@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165291: WD97: WordBasic.MailMergeInsertFillin Fails to Prompt"
-permalink: kb/165/Q165291/
+permalink: /kb/165/Q165291/
 ---
 
 ## Q165291: WD97: WordBasic.MailMergeInsertFillin Fails to Prompt

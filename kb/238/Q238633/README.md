@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238633: SMS: Unable to Create Collection Based on Direct Rule Membership"
-permalink: kb/238/Q238633/
+permalink: /kb/238/Q238633/
 ---
 
 ## Q238633: SMS: Unable to Create Collection Based on Direct Rule Membership

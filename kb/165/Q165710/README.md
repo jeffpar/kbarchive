@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165710: Creating an Emergency Repair Disk Fails - Disk Unusable"
-permalink: kb/165/Q165710/
+permalink: /kb/165/Q165710/
 ---
 
 ## Q165710: Creating an Emergency Repair Disk Fails - Disk Unusable

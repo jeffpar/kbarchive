@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161198: FIX: Program Code Cannot Set Database Property to Null String"
-permalink: kb/161/Q161198/
+permalink: /kb/161/Q161198/
 ---
 
 ## Q161198: FIX: Program Code Cannot Set Database Property to Null String

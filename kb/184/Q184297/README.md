@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184297: HOWTO: Create a Form That Always Stays on Top"
-permalink: kb/184/Q184297/
+permalink: /kb/184/Q184297/
 ---
 
 ## Q184297: HOWTO: Create a Form That Always Stays on Top

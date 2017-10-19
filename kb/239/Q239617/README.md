@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239617: Encarta World Atlas 2000: Installation Is Very Slow"
-permalink: kb/239/Q239617/
+permalink: /kb/239/Q239617/
 ---
 
 ## Q239617: Encarta World Atlas 2000: Installation Is Very Slow

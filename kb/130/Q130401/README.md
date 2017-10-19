@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130401: WAN Browsing May Fail After Promoting New PDC"
-permalink: kb/130/Q130401/
+permalink: /kb/130/Q130401/
 ---
 
 ## Q130401: WAN Browsing May Fail After Promoting New PDC

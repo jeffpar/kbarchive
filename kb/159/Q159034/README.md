@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159034: Comic Sans Font Not Available in Windows Messaging"
-permalink: kb/159/Q159034/
+permalink: /kb/159/Q159034/
 ---
 
 ## Q159034: Comic Sans Font Not Available in Windows Messaging

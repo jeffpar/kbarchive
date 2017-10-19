@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226918: SMS: Status Message Numbers Not Consistent Btwn Child and Parent"
-permalink: kb/226/Q226918/
+permalink: /kb/226/Q226918/
 ---
 
 ## Q226918: SMS: Status Message Numbers Not Consistent Btwn Child and Parent

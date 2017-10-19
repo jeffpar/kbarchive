@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254347: Query Extract Tool in Resource Kit Unable to Return Data"
-permalink: kb/254/Q254347/
+permalink: /kb/254/Q254347/
 ---
 
 ## Q254347: Query Extract Tool in Resource Kit Unable to Return Data

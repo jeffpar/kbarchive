@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106138: Flight Simulator: Digitized Sounds Play Badly or Not at All"
-permalink: kb/106/Q106138/
+permalink: /kb/106/Q106138/
 ---
 
 ## Q106138: Flight Simulator: Digitized Sounds Play Badly or Not at All

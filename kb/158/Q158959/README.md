@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158959: Files Installed by DirectX 1.0"
-permalink: kb/158/Q158959/
+permalink: /kb/158/Q158959/
 ---
 
 ## Q158959: Files Installed by DirectX 1.0

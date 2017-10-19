@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82557: Quick Menus Don't Work Correctly with Windows 3.1"
-permalink: kb/082/Q82557/
+permalink: /kb/082/Q82557/
 ---
 
 ## Q82557: Quick Menus Don't Work Correctly with Windows 3.1

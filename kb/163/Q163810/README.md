@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163810: WD97: Returning Bookmarks Sorted by Location or Alphabetically"
-permalink: kb/163/Q163810/
+permalink: /kb/163/Q163810/
 ---
 
 ## Q163810: WD97: Returning Bookmarks Sorted by Location or Alphabetically

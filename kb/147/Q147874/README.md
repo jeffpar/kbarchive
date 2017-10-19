@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147874: Slow Performance Across Token Ring Source Routers with NetBEUI"
-permalink: kb/147/Q147874/
+permalink: /kb/147/Q147874/
 ---
 
 ## Q147874: Slow Performance Across Token Ring Source Routers with NetBEUI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259399: XFOR: Cannot Send E-Mail from Notes to Exchange Server"
-permalink: kb/259/Q259399/
+permalink: /kb/259/Q259399/
 ---
 
 ## Q259399: XFOR: Cannot Send E-Mail from Notes to Exchange Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179110: XCLN: Macintosh Client Flashes Splash Screen Without Starting"
-permalink: kb/179/Q179110/
+permalink: /kb/179/Q179110/
 ---
 
 ## Q179110: XCLN: Macintosh Client Flashes Splash Screen Without Starting

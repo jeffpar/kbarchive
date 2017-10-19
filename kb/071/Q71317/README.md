@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71317: Restoring Color Schemes in the Control Panel"
-permalink: kb/071/Q71317/
+permalink: /kb/071/Q71317/
 ---
 
 ## Q71317: Restoring Color Schemes in the Control Panel

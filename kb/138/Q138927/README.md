@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138927: Server Operators Unable to Format Server Hard Disk"
-permalink: kb/138/Q138927/
+permalink: /kb/138/Q138927/
 ---
 
 ## Q138927: Server Operators Unable to Format Server Hard Disk

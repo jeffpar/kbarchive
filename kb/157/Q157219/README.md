@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157219: INETINFO Access Violation When Using SNA Server APPC"
-permalink: kb/157/Q157219/
+permalink: /kb/157/Q157219/
 ---
 
 ## Q157219: INETINFO Access Violation When Using SNA Server APPC

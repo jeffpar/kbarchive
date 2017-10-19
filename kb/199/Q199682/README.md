@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199682: PRB: ATL Object Wizard Cannot Add ATL Object to Existing File"
-permalink: kb/199/Q199682/
+permalink: /kb/199/Q199682/
 ---
 
 ## Q199682: PRB: ATL Object Wizard Cannot Add ATL Object to Existing File

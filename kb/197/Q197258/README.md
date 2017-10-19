@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197258: XFOR: cc:Mail Dirsync Fails When PO Contain Extended Characters"
-permalink: kb/197/Q197258/
+permalink: /kb/197/Q197258/
 ---
 
 ## Q197258: XFOR: cc:Mail Dirsync Fails When PO Contain Extended Characters

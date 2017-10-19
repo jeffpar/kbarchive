@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223390: How to Use a Blank PDT with SNA Server and Host Print Transform"
-permalink: kb/223/Q223390/
+permalink: /kb/223/Q223390/
 ---
 
 ## Q223390: How to Use a Blank PDT with SNA Server and Host Print Transform

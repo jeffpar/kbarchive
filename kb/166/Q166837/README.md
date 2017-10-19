@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166837: SMS: Incorrect Remote Control Permissions Dialog Box"
-permalink: kb/166/Q166837/
+permalink: /kb/166/Q166837/
 ---
 
 ## Q166837: SMS: Incorrect Remote Control Permissions Dialog Box

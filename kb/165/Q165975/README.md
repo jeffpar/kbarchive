@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165975: PRB: Line Continuation Character (_) Causes Event Concatenation"
-permalink: kb/165/Q165975/
+permalink: /kb/165/Q165975/
 ---
 
 ## Q165975: PRB: Line Continuation Character (_) Causes Event Concatenation

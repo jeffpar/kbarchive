@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82394: Freelance Arrange Align Graphic Display Is Missing"
-permalink: kb/082/Q82394/
+permalink: /kb/082/Q82394/
 ---
 
 ## Q82394: Freelance Arrange Align Graphic Display Is Missing

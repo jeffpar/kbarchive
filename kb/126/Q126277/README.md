@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126277: 16-Bit Process Creation Can Result in Memory Loss"
-permalink: kb/126/Q126277/
+permalink: /kb/126/Q126277/
 ---
 
 ## Q126277: 16-Bit Process Creation Can Result in Memory Loss

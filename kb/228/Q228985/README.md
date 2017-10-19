@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228985: Games Err Msg: Please Insert the Correct CD-ROM..."
-permalink: kb/228/Q228985/
+permalink: /kb/228/Q228985/
 ---
 
 ## Q228985: Games Err Msg: Please Insert the Correct CD-ROM...

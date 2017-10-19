@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83543: DragDrop.exe - Implementing the Drag-Drop Protocol"
-permalink: kb/083/Q83543/
+permalink: /kb/083/Q83543/
 ---
 
 ## Q83543: DragDrop.exe - Implementing the Drag-Drop Protocol

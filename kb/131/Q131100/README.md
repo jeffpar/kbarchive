@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131100: INFO: DoDragDrop() Parameter Documented Incorrectly"
-permalink: kb/131/Q131100/
+permalink: /kb/131/Q131100/
 ---
 
 ## Q131100: INFO: DoDragDrop() Parameter Documented Incorrectly

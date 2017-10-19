@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94386: Insufficient Memory Error Message with DBLSPACE /RATIO"
-permalink: kb/094/Q94386/
+permalink: /kb/094/Q94386/
 ---
 
 ## Q94386: Insufficient Memory Error Message with DBLSPACE /RATIO

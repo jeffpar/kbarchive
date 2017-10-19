@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137577: The Control Point Name is Invalid"
-permalink: kb/137/Q137577/
+permalink: /kb/137/Q137577/
 ---
 
 ## Q137577: The Control Point Name is Invalid

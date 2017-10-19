@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269221: Alias Is Not Deleted When  Associated Metaverse Object Deleted"
-permalink: kb/269/Q269221/
+permalink: /kb/269/Q269221/
 ---
 
 ## Q269221: Alias Is Not Deleted When  Associated Metaverse Object Deleted

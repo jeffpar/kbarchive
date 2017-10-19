@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138243: Duplicate Lan_Sender Entry in Sender Site Properties"
-permalink: kb/138/Q138243/
+permalink: /kb/138/Q138243/
 ---
 
 ## Q138243: Duplicate Lan_Sender Entry in Sender Site Properties

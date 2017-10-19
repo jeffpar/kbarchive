@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165322: XCLN: ComboBox Value Is Not Saved Correctly"
-permalink: kb/165/Q165322/
+permalink: /kb/165/Q165322/
 ---
 
 ## Q165322: XCLN: ComboBox Value Is Not Saved Correctly

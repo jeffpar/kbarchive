@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197863: WLBS Cluster Servers Show Multiple Default Hosts"
-permalink: kb/197/Q197863/
+permalink: /kb/197/Q197863/
 ---
 
 ## Q197863: WLBS Cluster Servers Show Multiple Default Hosts

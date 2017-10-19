@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271696: SMS: Smsapm32 Creates Large &quot;Complete&quot; Job Files on Clients"
-permalink: kb/271/Q271696/
+permalink: /kb/271/Q271696/
 ---
 
 ## Q271696: SMS: Smsapm32 Creates Large &quot;Complete&quot; Job Files on Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131717: Network Address Requires Trailing Zeros in NETWORKS File"
-permalink: kb/131/Q131717/
+permalink: /kb/131/Q131717/
 ---
 
 ## Q131717: Network Address Requires Trailing Zeros in NETWORKS File

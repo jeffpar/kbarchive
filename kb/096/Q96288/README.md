@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96288: How FoxPro for Windows Uses the FOXPRO.INI File"
-permalink: kb/096/Q96288/
+permalink: /kb/096/Q96288/
 ---
 
 ## Q96288: How FoxPro for Windows Uses the FOXPRO.INI File

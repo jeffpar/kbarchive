@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266759: SMS: The Package Source Is Removed from Package Properties"
-permalink: kb/266/Q266759/
+permalink: /kb/266/Q266759/
 ---
 
 ## Q266759: SMS: The Package Source Is Removed from Package Properties

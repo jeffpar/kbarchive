@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163788: INFO: FoxISAPI and Personal Web Server from FrontPage"
-permalink: kb/163/Q163788/
+permalink: /kb/163/Q163788/
 ---
 
 ## Q163788: INFO: FoxISAPI and Personal Web Server from FrontPage

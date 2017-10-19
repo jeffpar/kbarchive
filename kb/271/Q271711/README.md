@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271711: XADM: Autoforward Rules May Be Disabled When Using Antivirus API"
-permalink: kb/271/Q271711/
+permalink: /kb/271/Q271711/
 ---
 
 ## Q271711: XADM: Autoforward Rules May Be Disabled When Using Antivirus API

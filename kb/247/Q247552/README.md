@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247552: Networking Essentials Plus, Third Edition Comments and Correctio"
-permalink: kb/247/Q247552/
+permalink: /kb/247/Q247552/
 ---
 
 ## Q247552: Networking Essentials Plus, Third Edition Comments and Correctio

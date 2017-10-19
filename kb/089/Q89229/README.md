@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89229: Programs to Create or Modify Icons for Windows"
-permalink: kb/089/Q89229/
+permalink: /kb/089/Q89229/
 ---
 
 ## Q89229: Programs to Create or Modify Icons for Windows

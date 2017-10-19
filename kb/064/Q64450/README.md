@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64450: Flight Simulator: Demo Recording in Multiplayer Mode"
-permalink: kb/064/Q64450/
+permalink: /kb/064/Q64450/
 ---
 
 ## Q64450: Flight Simulator: Demo Recording in Multiplayer Mode

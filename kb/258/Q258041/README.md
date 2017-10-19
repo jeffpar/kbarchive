@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258041: Access Violation in Routemon When You Run &quot;SHOW OSPF&quot;"
-permalink: kb/258/Q258041/
+permalink: /kb/258/Q258041/
 ---
 
 ## Q258041: Access Violation in Routemon When You Run &quot;SHOW OSPF&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195695: Access Violation Received in IntelliPoint Productivity Tips"
-permalink: kb/195/Q195695/
+permalink: /kb/195/Q195695/
 ---
 
 ## Q195695: Access Violation Received in IntelliPoint Productivity Tips

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117260: PC Adm: Err Msg: Alias Does Not Exist..."
-permalink: kb/117/Q117260/
+permalink: /kb/117/Q117260/
 ---
 
 ## Q117260: PC Adm: Err Msg: Alias Does Not Exist...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189620: PRB: Form Scrollbar Property Read-Only at Run-Time"
-permalink: kb/189/Q189620/
+permalink: /kb/189/Q189620/
 ---
 
 ## Q189620: PRB: Form Scrollbar Property Read-Only at Run-Time

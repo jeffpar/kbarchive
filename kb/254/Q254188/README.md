@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254188: XADM: How to Move the Directory Replication Connector"
-permalink: kb/254/Q254188/
+permalink: /kb/254/Q254188/
 ---
 
 ## Q254188: XADM: How to Move the Directory Replication Connector

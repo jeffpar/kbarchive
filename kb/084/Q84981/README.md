@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84981: Code Demonstrates Keeping an Icon Fixed in Place"
-permalink: kb/084/Q84981/
+permalink: /kb/084/Q84981/
 ---
 
 ## Q84981: Code Demonstrates Keeping an Icon Fixed in Place

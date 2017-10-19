@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161052: HOWTO: Create a Default Value for Custom Controls and Classes"
-permalink: kb/161/Q161052/
+permalink: /kb/161/Q161052/
 ---
 
 ## Q161052: HOWTO: Create a Default Value for Custom Controls and Classes

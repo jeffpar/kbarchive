@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185028: XGEN: WWW Location of Microsoft Exchange Server Resource Kit"
-permalink: kb/185/Q185028/
+permalink: /kb/185/Q185028/
 ---
 
 ## Q185028: XGEN: WWW Location of Microsoft Exchange Server Resource Kit

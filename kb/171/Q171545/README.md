@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171545: FIX: Error 438 Using CreateInterface's Optional Default Flag"
-permalink: kb/171/Q171545/
+permalink: /kb/171/Q171545/
 ---
 
 ## Q171545: FIX: Error 438 Using CreateInterface's Optional Default Flag

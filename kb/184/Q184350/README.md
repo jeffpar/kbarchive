@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184350: WordPerfect Suite 6.0 Setup Fails with Multiple CD-ROMs"
-permalink: kb/184/Q184350/
+permalink: /kb/184/Q184350/
 ---
 
 ## Q184350: WordPerfect Suite 6.0 Setup Fails with Multiple CD-ROMs

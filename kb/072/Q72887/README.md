@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72887: FIX: Using a Higher Processor Directive in a Macro Causes A2006"
-permalink: kb/072/Q72887/
+permalink: /kb/072/Q72887/
 ---
 
 ## Q72887: FIX: Using a Higher Processor Directive in a Macro Causes A2006

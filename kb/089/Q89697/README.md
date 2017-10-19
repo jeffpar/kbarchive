@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89697: MSD Reports XMS 2.0 When Running in MS-DOS Session"
-permalink: kb/089/Q89697/
+permalink: /kb/089/Q89697/
 ---
 
 ## Q89697: MSD Reports XMS 2.0 When Running in MS-DOS Session

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215859: Event ID 12288, 5705 on PDC Because Hard Disk Is Full"
-permalink: kb/215/Q215859/
+permalink: /kb/215/Q215859/
 ---
 
 ## Q215859: Event ID 12288, 5705 on PDC Because Hard Disk Is Full

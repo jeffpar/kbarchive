@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164663: Windows NT Client Config Tool Sets Incorrect Registry Entry"
-permalink: kb/164/Q164663/
+permalink: /kb/164/Q164663/
 ---
 
 ## Q164663: Windows NT Client Config Tool Sets Incorrect Registry Entry

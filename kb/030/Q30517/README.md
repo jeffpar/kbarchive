@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30517: OFFSET Operator Is Segment Relative"
-permalink: kb/030/Q30517/
+permalink: /kb/030/Q30517/
 ---
 
 ## Q30517: OFFSET Operator Is Segment Relative

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71270: Windows Setup Hangs if SYSTEM.INI Has EOF Character"
-permalink: kb/071/Q71270/
+permalink: /kb/071/Q71270/
 ---
 
 ## Q71270: Windows Setup Hangs if SYSTEM.INI Has EOF Character

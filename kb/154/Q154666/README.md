@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154666: HOWTO: Create a Private Data Collection for an MDI Child Form"
-permalink: kb/154/Q154666/
+permalink: /kb/154/Q154666/
 ---
 
 ## Q154666: HOWTO: Create a Private Data Collection for an MDI Child Form

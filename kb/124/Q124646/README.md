@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124646: Playing Compressed Audio on Reveal MM Pro 16"
-permalink: kb/124/Q124646/
+permalink: /kb/124/Q124646/
 ---
 
 ## Q124646: Playing Compressed Audio on Reveal MM Pro 16

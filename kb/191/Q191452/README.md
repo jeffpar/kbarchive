@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191452: INF: Key Not Found Accessing VSAM KSDS on IBM OS/390"
-permalink: kb/191/Q191452/
+permalink: /kb/191/Q191452/
 ---
 
 ## Q191452: INF: Key Not Found Accessing VSAM KSDS on IBM OS/390

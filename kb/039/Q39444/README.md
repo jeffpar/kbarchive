@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39444: DOCERR: The Stack Grows into Low Memory"
-permalink: kb/039/Q39444/
+permalink: /kb/039/Q39444/
 ---
 
 ## Q39444: DOCERR: The Stack Grows into Low Memory

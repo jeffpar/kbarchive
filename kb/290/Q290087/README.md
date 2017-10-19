@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290087: HOWTO: Administer SMTP and NNTP Services from Remote Workstation"
-permalink: kb/290/Q290087/
+permalink: /kb/290/Q290087/
 ---
 
 ## Q290087: HOWTO: Administer SMTP and NNTP Services from Remote Workstation

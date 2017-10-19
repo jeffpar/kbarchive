@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257524: FIX:Adding Items to ListView Control Results inIPF onWin95/98/Me"
-permalink: kb/257/Q257524/
+permalink: /kb/257/Q257524/
 ---
 
 ## Q257524: FIX:Adding Items to ListView Control Results inIPF onWin95/98/Me

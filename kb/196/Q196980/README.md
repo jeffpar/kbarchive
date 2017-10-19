@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196980: WD97: MS LineDraw and Wingdings Not Converted to WordPerfect 5.x"
-permalink: kb/196/Q196980/
+permalink: /kb/196/Q196980/
 ---
 
 ## Q196980: WD97: MS LineDraw and Wingdings Not Converted to WordPerfect 5.x

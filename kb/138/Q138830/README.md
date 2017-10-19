@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138830: FIX: Dismissing Splash Screen from Component Causes Assertion"
-permalink: kb/138/Q138830/
+permalink: /kb/138/Q138830/
 ---
 
 ## Q138830: FIX: Dismissing Splash Screen from Component Causes Assertion

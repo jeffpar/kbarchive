@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308034: Windows NT 4.0 Private Key Remains Stored in Memory"
-permalink: kb/308/Q308034/
+permalink: /kb/308/Q308034/
 ---
 
 ## Q308034: Windows NT 4.0 Private Key Remains Stored in Memory

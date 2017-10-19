@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261090: SNAHOSTPROCESS Is Required When You Use Host Security Domain Wiz"
-permalink: kb/261/Q261090/
+permalink: /kb/261/Q261090/
 ---
 
 ## Q261090: SNAHOSTPROCESS Is Required When You Use Host Security Domain Wiz

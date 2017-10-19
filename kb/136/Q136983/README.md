@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136983: No Sound, MMSystem or MCI Errors In Windows 95/98"
-permalink: kb/136/Q136983/
+permalink: /kb/136/Q136983/
 ---
 
 ## Q136983: No Sound, MMSystem or MCI Errors In Windows 95/98

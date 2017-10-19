@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189755: XADM: French Admin Reports Blank Password on Newly Created Windo"
-permalink: kb/189/Q189755/
+permalink: /kb/189/Q189755/
 ---
 
 ## Q189755: XADM: French Admin Reports Blank Password on Newly Created Windo

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255262: Changes to Site Control File Are Lost After the File Is 434KB"
-permalink: kb/255/Q255262/
+permalink: /kb/255/Q255262/
 ---
 
 ## Q255262: Changes to Site Control File Are Lost After the File Is 434KB

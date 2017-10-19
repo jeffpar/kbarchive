@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178089: Thorn_Icelandic_Capital cannot be Mapped to a Macro in a PDF"
-permalink: kb/178/Q178089/
+permalink: /kb/178/Q178089/
 ---
 
 ## Q178089: Thorn_Icelandic_Capital cannot be Mapped to a Macro in a PDF

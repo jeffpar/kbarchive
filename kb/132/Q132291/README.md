@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132291: DOC: AfxRegisterWndClass with WS_&#42; Styles Causes Exception"
-permalink: kb/132/Q132291/
+permalink: /kb/132/Q132291/
 ---
 
 ## Q132291: DOC: AfxRegisterWndClass with WS_&#42; Styles Causes Exception

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230293: ActiveX Data Objects 1.5 Release Notes"
-permalink: kb/230/Q230293/
+permalink: /kb/230/Q230293/
 ---
 
 ## Q230293: ActiveX Data Objects 1.5 Release Notes

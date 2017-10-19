@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170435: MDG: Using the ADMINSCH Account to Log in to the Admin Program"
-permalink: kb/170/Q170435/
+permalink: /kb/170/Q170435/
 ---
 
 ## Q170435: MDG: Using the ADMINSCH Account to Log in to the Admin Program

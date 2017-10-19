@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153937: XCLN: Creating an .SCD After Schedule+ Configured for no .SCD"
-permalink: kb/153/Q153937/
+permalink: /kb/153/Q153937/
 ---
 
 ## Q153937: XCLN: Creating an .SCD After Schedule+ Configured for no .SCD

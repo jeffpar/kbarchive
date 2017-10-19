@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159316: FPNW Event ID 2024 Generated When Using JetAdmin"
-permalink: kb/159/Q159316/
+permalink: /kb/159/Q159316/
 ---
 
 ## Q159316: FPNW Event ID 2024 Generated When Using JetAdmin

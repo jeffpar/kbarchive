@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28905: Format for Strings and Longs in RCDATA in RC"
-permalink: kb/028/Q28905/
+permalink: /kb/028/Q28905/
 ---
 
 ## Q28905: Format for Strings and Longs in RCDATA in RC

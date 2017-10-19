@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130897: Windows for Workgroups Hangs on Dell Pentium XPS100"
-permalink: kb/130/Q130897/
+permalink: /kb/130/Q130897/
 ---
 
 ## Q130897: Windows for Workgroups Hangs on Dell Pentium XPS100

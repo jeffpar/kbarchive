@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165658: Possible RPC Error When Performing a &quot;Remove All&quot; from Setup"
-permalink: kb/165/Q165658/
+permalink: /kb/165/Q165658/
 ---
 
 ## Q165658: Possible RPC Error When Performing a &quot;Remove All&quot; from Setup

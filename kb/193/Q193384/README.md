@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193384: XGEN: Internet Security &amp; Exchange: Top 5-10 Issues &amp; Solutions"
-permalink: kb/193/Q193384/
+permalink: /kb/193/Q193384/
 ---
 
 ## Q193384: XGEN: Internet Security &amp; Exchange: Top 5-10 Issues &amp; Solutions

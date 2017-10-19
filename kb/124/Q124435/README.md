@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124435: Windows 3.1 Resource Kit Files Available"
-permalink: kb/124/Q124435/
+permalink: /kb/124/Q124435/
 ---
 
 ## Q124435: Windows 3.1 Resource Kit Files Available

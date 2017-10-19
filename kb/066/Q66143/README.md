@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66143: Windows Entertainment Pack Err: Setup Needs Disk #1"
-permalink: kb/066/Q66143/
+permalink: /kb/066/Q66143/
 ---
 
 ## Q66143: Windows Entertainment Pack Err: Setup Needs Disk #1

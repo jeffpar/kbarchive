@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230198: SP4 or SP5 Re-Enables Daylight Savings Time Option"
-permalink: kb/230/Q230198/
+permalink: /kb/230/Q230198/
 ---
 
 ## Q230198: SP4 or SP5 Re-Enables Daylight Savings Time Option

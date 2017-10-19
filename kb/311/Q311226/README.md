@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311226: EU and Admin Client Traps If OU Name Longer than 64 Characters"
-permalink: kb/311/Q311226/
+permalink: /kb/311/Q311226/
 ---
 
 ## Q311226: EU and Admin Client Traps If OU Name Longer than 64 Characters

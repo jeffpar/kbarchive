@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174707: XWEB: Changing the Outlook Web Access Virtual Directory"
-permalink: kb/174/Q174707/
+permalink: /kb/174/Q174707/
 ---
 
 ## Q174707: XWEB: Changing the Outlook Web Access Virtual Directory

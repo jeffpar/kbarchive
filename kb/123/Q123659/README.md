@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123659: BUG: Divide by Zero Error Compiling an Empty Structure"
-permalink: kb/123/Q123659/
+permalink: /kb/123/Q123659/
 ---
 
 ## Q123659: BUG: Divide by Zero Error Compiling an Empty Structure

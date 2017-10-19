@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176871: XFOR:SNADS PROFS NOTES Proxy Generation Fails on 21 Like Aliases"
-permalink: kb/176/Q176871/
+permalink: /kb/176/Q176871/
 ---
 
 ## Q176871: XFOR:SNADS PROFS NOTES Proxy Generation Fails on 21 Like Aliases

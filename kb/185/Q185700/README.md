@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185700: HOWTO: Remote User-Defined Types"
-permalink: kb/185/Q185700/
+permalink: /kb/185/Q185700/
 ---
 
 ## Q185700: HOWTO: Remote User-Defined Types

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152847: Error 736 When Connecting to a Windows NT Server Via TCP/IP"
-permalink: kb/152/Q152847/
+permalink: /kb/152/Q152847/
 ---
 
 ## Q152847: Error 736 When Connecting to a Windows NT Server Via TCP/IP

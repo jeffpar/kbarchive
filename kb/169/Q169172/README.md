@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169172: Allowed Directions Option Available for Leased SDLC Connection"
-permalink: kb/169/Q169172/
+permalink: /kb/169/Q169172/
 ---
 
 ## Q169172: Allowed Directions Option Available for Leased SDLC Connection

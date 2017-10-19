@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186477: Terminal Server Commands: LOGOFF"
-permalink: kb/186/Q186477/
+permalink: /kb/186/Q186477/
 ---
 
 ## Q186477: Terminal Server Commands: LOGOFF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158982: TN3270E Server Sends SSCP Screens to Printer LUs"
-permalink: kb/158/Q158982/
+permalink: /kb/158/Q158982/
 ---
 
 ## Q158982: TN3270E Server Sends SSCP Screens to Printer LUs

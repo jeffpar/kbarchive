@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86044: DOC: SetRecogHook() Function Documented Incorrectly"
-permalink: kb/086/Q86044/
+permalink: /kb/086/Q86044/
 ---
 
 ## Q86044: DOC: SetRecogHook() Function Documented Incorrectly

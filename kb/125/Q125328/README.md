@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125328: PC Ext: Purpose of CommInOnly Option for External"
-permalink: kb/125/Q125328/
+permalink: /kb/125/Q125328/
 ---
 
 ## Q125328: PC Ext: Purpose of CommInOnly Option for External

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134979: PRB: Last Line in a Method Doesn't Update Variables in Debug"
-permalink: kb/134/Q134979/
+permalink: /kb/134/Q134979/
 ---
 
 ## Q134979: PRB: Last Line in a Method Doesn't Update Variables in Debug

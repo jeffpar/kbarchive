@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198147: Combat FS: How to Change the Coordinate Display Format"
-permalink: kb/198/Q198147/
+permalink: /kb/198/Q198147/
 ---
 
 ## Q198147: Combat FS: How to Change the Coordinate Display Format

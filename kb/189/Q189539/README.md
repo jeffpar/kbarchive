@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189539: INFO: VB 6.0 Readme Part 8: WebClass Designer Issues"
-permalink: kb/189/Q189539/
+permalink: /kb/189/Q189539/
 ---
 
 ## Q189539: INFO: VB 6.0 Readme Part 8: WebClass Designer Issues

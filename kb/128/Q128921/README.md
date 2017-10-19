@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128921: Err Msg: The Device Has Been Disabled in Hardware... (Code 29)"
-permalink: kb/128/Q128921/
+permalink: /kb/128/Q128921/
 ---
 
 ## Q128921: Err Msg: The Device Has Been Disabled in Hardware... (Code 29)

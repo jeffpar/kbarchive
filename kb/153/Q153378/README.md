@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153378: FIX: Syntax Error in MFC ODBC Recordset with SQL Server 6.5"
-permalink: kb/153/Q153378/
+permalink: /kb/153/Q153378/
 ---
 
 ## Q153378: FIX: Syntax Error in MFC ODBC Recordset with SQL Server 6.5

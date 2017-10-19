@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63769: No AppleTalk Support in Windows"
-permalink: kb/063/Q63769/
+permalink: /kb/063/Q63769/
 ---
 
 ## Q63769: No AppleTalk Support in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86733: Communications Unstable at 9600 BPS on DEC Pathworks"
-permalink: kb/086/Q86733/
+permalink: /kb/086/Q86733/
 ---
 
 ## Q86733: Communications Unstable at 9600 BPS on DEC Pathworks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130500: How to Change the Default Font of the Class Browser"
-permalink: kb/130/Q130500/
+permalink: /kb/130/Q130500/
 ---
 
 ## Q130500: How to Change the Default Font of the Class Browser

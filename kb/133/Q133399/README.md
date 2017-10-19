@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133399: How to Clear All Schedule+ Data"
-permalink: kb/133/Q133399/
+permalink: /kb/133/Q133399/
 ---
 
 ## Q133399: How to Clear All Schedule+ Data

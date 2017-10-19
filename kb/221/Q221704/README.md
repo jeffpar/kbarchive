@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221704: BUG: FFCs - _URLComboBox in _internet.vcx Has Trouble with URLs"
-permalink: kb/221/Q221704/
+permalink: /kb/221/Q221704/
 ---
 
 ## Q221704: BUG: FFCs - _URLComboBox in _internet.vcx Has Trouble with URLs

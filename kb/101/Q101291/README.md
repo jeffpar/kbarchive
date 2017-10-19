@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101291: &quot;Invalid Function&quot; with CallFn() from FoxTools"
-permalink: kb/101/Q101291/
+permalink: /kb/101/Q101291/
 ---
 
 ## Q101291: &quot;Invalid Function&quot; with CallFn() from FoxTools

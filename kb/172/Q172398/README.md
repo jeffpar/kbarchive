@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172398: FIX: Debug Assertion When Assigning to STL String"
-permalink: kb/172/Q172398/
+permalink: /kb/172/Q172398/
 ---
 
 ## Q172398: FIX: Debug Assertion When Assigning to STL String

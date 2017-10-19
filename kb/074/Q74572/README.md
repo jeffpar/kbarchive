@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74572: How Microsoft Windows Uses an MS-DOS Mouse Driver"
-permalink: kb/074/Q74572/
+permalink: /kb/074/Q74572/
 ---
 
 ## Q74572: How Microsoft Windows Uses an MS-DOS Mouse Driver

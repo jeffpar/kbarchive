@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215493: XFOR: Message Flow through the SNADS Connector"
-permalink: kb/215/Q215493/
+permalink: /kb/215/Q215493/
 ---
 
 ## Q215493: XFOR: Message Flow through the SNADS Connector

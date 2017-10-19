@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96826: Delete Sentry Automatically Purges Files When Necessary"
-permalink: kb/096/Q96826/
+permalink: /kb/096/Q96826/
 ---
 
 ## Q96826: Delete Sentry Automatically Purges Files When Necessary

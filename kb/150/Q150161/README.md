@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150161: XADM: Site Addressing Property Page Apply Button Inactive"
-permalink: kb/150/Q150161/
+permalink: /kb/150/Q150161/
 ---
 
 ## Q150161: XADM: Site Addressing Property Page Apply Button Inactive

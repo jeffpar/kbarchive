@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163554: INFO: Determining NIC Parameters for Setup Using Unattend.txt"
-permalink: kb/163/Q163554/
+permalink: /kb/163/Q163554/
 ---
 
 ## Q163554: INFO: Determining NIC Parameters for Setup Using Unattend.txt

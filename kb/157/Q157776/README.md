@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157776: WD97: Horizontal Lines Are Displayed with Different Widths"
-permalink: kb/157/Q157776/
+permalink: /kb/157/Q157776/
 ---
 
 ## Q157776: WD97: Horizontal Lines Are Displayed with Different Widths

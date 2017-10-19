@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189851: PRB: &quot;This Action was Cancelled by an Associated Object.(3426)&quot;"
-permalink: kb/189/Q189851/
+permalink: /kb/189/Q189851/
 ---
 
 ## Q189851: PRB: &quot;This Action was Cancelled by an Associated Object.(3426)&quot;

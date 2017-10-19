@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153655: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 2"
-permalink: kb/153/Q153655/
+permalink: /kb/153/Q153655/
 ---
 
 ## Q153655: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 2

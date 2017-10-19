@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163506: HP 4M Plus Printer Fails Printing Duplex When Set at 600 DPI"
-permalink: kb/163/Q163506/
+permalink: /kb/163/Q163506/
 ---
 
 ## Q163506: HP 4M Plus Printer Fails Printing Duplex When Set at 600 DPI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120428: PowerBuilder Preferences Dialog Box Has No Text"
-permalink: kb/120/Q120428/
+permalink: /kb/120/Q120428/
 ---
 
 ## Q120428: PowerBuilder Preferences Dialog Box Has No Text

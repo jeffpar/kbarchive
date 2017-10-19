@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153685: FP: FrontPage Appears to Hang When Using Dial-Up-Adapter"
-permalink: kb/153/Q153685/
+permalink: /kb/153/Q153685/
 ---
 
 ## Q153685: FP: FrontPage Appears to Hang When Using Dial-Up-Adapter

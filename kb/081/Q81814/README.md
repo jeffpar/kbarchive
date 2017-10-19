@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81814: ToolBox.exe Implements a &quot;Tool Box&quot; Window"
-permalink: kb/081/Q81814/
+permalink: /kb/081/Q81814/
 ---
 
 ## Q81814: ToolBox.exe Implements a &quot;Tool Box&quot; Window

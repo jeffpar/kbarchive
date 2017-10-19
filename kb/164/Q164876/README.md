@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164876: SMS: Service Pack Upgrade Doesn't Change the Version Bitmap"
-permalink: kb/164/Q164876/
+permalink: /kb/164/Q164876/
 ---
 
 ## Q164876: SMS: Service Pack Upgrade Doesn't Change the Version Bitmap

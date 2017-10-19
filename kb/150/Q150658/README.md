@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150658: Mastering Access Programming: Contents of README.WRI"
-permalink: kb/150/Q150658/
+permalink: /kb/150/Q150658/
 ---
 
 ## Q150658: Mastering Access Programming: Contents of README.WRI

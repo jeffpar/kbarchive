@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47972: FIX: F1001: srclist.c:1.59, Line 1153, Invalid COMMON in SAVE"
-permalink: kb/047/Q47972/
+permalink: /kb/047/Q47972/
 ---
 
 ## Q47972: FIX: F1001: srclist.c:1.59, Line 1153, Invalid COMMON in SAVE

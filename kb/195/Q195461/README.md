@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195461: How to Set Up a Logon Script Only for Terminal Server Users"
-permalink: kb/195/Q195461/
+permalink: /kb/195/Q195461/
 ---
 
 ## Q195461: How to Set Up a Logon Script Only for Terminal Server Users

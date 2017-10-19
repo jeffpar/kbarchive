@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26972: Change of Radix Does Not Change Array Index"
-permalink: kb/026/Q26972/
+permalink: /kb/026/Q26972/
 ---
 
 ## Q26972: Change of Radix Does Not Change Array Index

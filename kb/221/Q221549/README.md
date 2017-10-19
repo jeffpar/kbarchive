@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221549: Importing Client Authentication Certificates into IIS 4.0"
-permalink: kb/221/Q221549/
+permalink: /kb/221/Q221549/
 ---
 
 ## Q221549: Importing Client Authentication Certificates into IIS 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92787: All DEC Etherworks Cards Are Detected as Etherworks MC"
-permalink: kb/092/Q92787/
+permalink: /kb/092/Q92787/
 ---
 
 ## Q92787: All DEC Etherworks Cards Are Detected as Etherworks MC

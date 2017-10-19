@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139301: FIX: C2664 Error w/Property Sheet Component Added to CDocument"
-permalink: kb/139/Q139301/
+permalink: /kb/139/Q139301/
 ---
 
 ## Q139301: FIX: C2664 Error w/Property Sheet Component Added to CDocument

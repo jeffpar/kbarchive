@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200345: SMS 2.0 Searches the Entire Drive for Files Collected"
-permalink: kb/200/Q200345/
+permalink: /kb/200/Q200345/
 ---
 
 ## Q200345: SMS 2.0 Searches the Entire Drive for Files Collected

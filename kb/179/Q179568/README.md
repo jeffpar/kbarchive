@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179568: Understanding ActiveX and OLE Corrections and Comments"
-permalink: kb/179/Q179568/
+permalink: /kb/179/Q179568/
 ---
 
 ## Q179568: Understanding ActiveX and OLE Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72402: Copying Files from or to the Same Drive with File Manager"
-permalink: kb/072/Q72402/
+permalink: /kb/072/Q72402/
 ---
 
 ## Q72402: Copying Files from or to the Same Drive with File Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161310: SMS: PCM Is Unable to Connect to NetWare Distribution Server"
-permalink: kb/161/Q161310/
+permalink: /kb/161/Q161310/
 ---
 
 ## Q161310: SMS: PCM Is Unable to Connect to NetWare Distribution Server

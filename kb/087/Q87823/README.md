@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87823: Wired for Sound Pro May Cause System Hangs on Exit"
-permalink: kb/087/Q87823/
+permalink: /kb/087/Q87823/
 ---
 
 ## Q87823: Wired for Sound Pro May Cause System Hangs on Exit

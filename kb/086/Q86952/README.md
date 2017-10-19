@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86952: 3COM: Restarting the Gateway"
-permalink: kb/086/Q86952/
+permalink: /kb/086/Q86952/
 ---
 
 ## Q86952: 3COM: Restarting the Gateway

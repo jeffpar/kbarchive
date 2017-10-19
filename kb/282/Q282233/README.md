@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282233: BUG: Access Denied Recompiling VB Project with Public UDT"
-permalink: kb/282/Q282233/
+permalink: /kb/282/Q282233/
 ---
 
 ## Q282233: BUG: Access Denied Recompiling VB Project with Public UDT

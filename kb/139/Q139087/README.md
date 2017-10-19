@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139087: PPT7: Turning off Background Printing Increases Print Speed"
-permalink: kb/139/Q139087/
+permalink: /kb/139/Q139087/
 ---
 
 ## Q139087: PPT7: Turning off Background Printing Increases Print Speed

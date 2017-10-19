@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191307: SMS: Despooler Can't Create Temp Storage While Decompressing Pkg"
-permalink: kb/191/Q191307/
+permalink: /kb/191/Q191307/
 ---
 
 ## Q191307: SMS: Despooler Can't Create Temp Storage While Decompressing Pkg

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278492: BUG: List Window Pane in Project Explorer Highlights Wrong Item"
-permalink: kb/278/Q278492/
+permalink: /kb/278/Q278492/
 ---
 
 ## Q278492: BUG: List Window Pane in Project Explorer Highlights Wrong Item

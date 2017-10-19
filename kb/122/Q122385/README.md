@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122385: Err Msg: Mail Could Not Read the Entire Message..."
-permalink: kb/122/Q122385/
+permalink: /kb/122/Q122385/
 ---
 
 ## Q122385: Err Msg: Mail Could Not Read the Entire Message...

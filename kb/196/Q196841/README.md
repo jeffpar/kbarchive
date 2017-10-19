@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196841: WD97: Footnote Not Found When You Click &quot;Footnote Mark&quot; in Find"
-permalink: kb/196/Q196841/
+permalink: /kb/196/Q196841/
 ---
 
 ## Q196841: WD97: Footnote Not Found When You Click &quot;Footnote Mark&quot; in Find

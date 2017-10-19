@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160709: Length = 0 in BIND Causes SNA Server to Reject BIND"
-permalink: kb/160/Q160709/
+permalink: /kb/160/Q160709/
 ---
 
 ## Q160709: Length = 0 in BIND Causes SNA Server to Reject BIND

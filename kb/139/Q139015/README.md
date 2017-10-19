@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139015: Trap 0x0000000A in ExFreePool of NTOSKRNL.EXE"
-permalink: kb/139/Q139015/
+permalink: /kb/139/Q139015/
 ---
 
 ## Q139015: Trap 0x0000000A in ExFreePool of NTOSKRNL.EXE

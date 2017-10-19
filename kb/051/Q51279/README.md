@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51279: Mac Wkst: Notifier Will Not Appear Under Low Memory Conditions"
-permalink: kb/051/Q51279/
+permalink: /kb/051/Q51279/
 ---
 
 ## Q51279: Mac Wkst: Notifier Will Not Appear Under Low Memory Conditions

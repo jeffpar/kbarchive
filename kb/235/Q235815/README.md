@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235815: SMS: How To Resend Assigned Programs"
-permalink: kb/235/Q235815/
+permalink: /kb/235/Q235815/
 ---
 
 ## Q235815: SMS: How To Resend Assigned Programs

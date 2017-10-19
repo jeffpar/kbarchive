@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175118: XWEB: Attachment Size Displays Incorrectly in OWA"
-permalink: kb/175/Q175118/
+permalink: /kb/175/Q175118/
 ---
 
 ## Q175118: XWEB: Attachment Size Displays Incorrectly in OWA

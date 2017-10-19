@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237847: INFO: The Role of the PJM File in VSS and VFP Integration"
-permalink: kb/237/Q237847/
+permalink: /kb/237/Q237847/
 ---
 
 ## Q237847: INFO: The Role of the PJM File in VSS and VFP Integration

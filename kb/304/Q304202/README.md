@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304202: HTTP Compression Unavailable in Internet Information Services"
-permalink: kb/304/Q304202/
+permalink: /kb/304/Q304202/
 ---
 
 ## Q304202: HTTP Compression Unavailable in Internet Information Services

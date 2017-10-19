@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71551: Image Attributes Changes Don't Take Effect Immediately"
-permalink: kb/071/Q71551/
+permalink: /kb/071/Q71551/
 ---
 
 ## Q71551: Image Attributes Changes Don't Take Effect Immediately

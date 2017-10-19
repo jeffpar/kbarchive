@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129392: WordPad Does Not Collate Multiple Print Copies"
-permalink: kb/129/Q129392/
+permalink: /kb/129/Q129392/
 ---
 
 ## Q129392: WordPad Does Not Collate Multiple Print Copies

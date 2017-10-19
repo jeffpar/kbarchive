@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117131: Master Boot Record Not Written to Mirrored Shadow Partition"
-permalink: kb/117/Q117131/
+permalink: /kb/117/Q117131/
 ---
 
 ## Q117131: Master Boot Record Not Written to Mirrored Shadow Partition

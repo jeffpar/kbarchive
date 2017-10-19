@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311470: IIS Incorrectly Processes Escape Characters in URI"
-permalink: kb/311/Q311470/
+permalink: /kb/311/Q311470/
 ---
 
 ## Q311470: IIS Incorrectly Processes Escape Characters in URI

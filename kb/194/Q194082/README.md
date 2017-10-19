@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194082: TEST_RTS_AND_POST Does Not Work When Using WinAsyncAppc Call"
-permalink: kb/194/Q194082/
+permalink: /kb/194/Q194082/
 ---
 
 ## Q194082: TEST_RTS_AND_POST Does Not Work When Using WinAsyncAppc Call

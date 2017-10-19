@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170618: Virus Detected in the Suhdlog.dat File"
-permalink: kb/170/Q170618/
+permalink: /kb/170/Q170618/
 ---
 
 ## Q170618: Virus Detected in the Suhdlog.dat File

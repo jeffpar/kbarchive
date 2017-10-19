@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248226: BUG: ListIndex Value Not Updated Correctly In Loop with AddItem"
-permalink: kb/248/Q248226/
+permalink: /kb/248/Q248226/
 ---
 
 ## Q248226: BUG: ListIndex Value Not Updated Correctly In Loop with AddItem

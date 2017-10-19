@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230774: XADM: Changing Dedicated PF Server May Break AutoAccept Scripts"
-permalink: kb/230/Q230774/
+permalink: /kb/230/Q230774/
 ---
 
 ## Q230774: XADM: Changing Dedicated PF Server May Break AutoAccept Scripts

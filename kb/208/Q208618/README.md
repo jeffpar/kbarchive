@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208618: SMS: CAP Not Accessible During SMS 2.0 Client Installation"
-permalink: kb/208/Q208618/
+permalink: /kb/208/Q208618/
 ---
 
 ## Q208618: SMS: CAP Not Accessible During SMS 2.0 Client Installation

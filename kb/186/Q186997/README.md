@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186997: Freelance Graphics 4.0 Tutorial Does Not Work"
-permalink: kb/186/Q186997/
+permalink: /kb/186/Q186997/
 ---
 
 ## Q186997: Freelance Graphics 4.0 Tutorial Does Not Work

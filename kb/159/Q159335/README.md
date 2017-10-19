@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159335: XFOR: IMC Perfmon Counters Available Only When IMC is Running"
-permalink: kb/159/Q159335/
+permalink: /kb/159/Q159335/
 ---
 
 ## Q159335: XFOR: IMC Perfmon Counters Available Only When IMC is Running

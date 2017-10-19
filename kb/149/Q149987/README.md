@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149987: SPRY Mosaic Web Client Crash When Connected to IIS"
-permalink: kb/149/Q149987/
+permalink: /kb/149/Q149987/
 ---
 
 ## Q149987: SPRY Mosaic Web Client Crash When Connected to IIS

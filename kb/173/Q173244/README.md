@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173244: FIX: FindIndex Works Incorrectly When nIndex Is Negative"
-permalink: kb/173/Q173244/
+permalink: /kb/173/Q173244/
 ---
 
 ## Q173244: FIX: FindIndex Works Incorrectly When nIndex Is Negative

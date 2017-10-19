@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131678: PC NTMMTA: Err Msg: Unable to Open Specified INI File"
-permalink: kb/131/Q131678/
+permalink: /kb/131/Q131678/
 ---
 
 ## Q131678: PC NTMMTA: Err Msg: Unable to Open Specified INI File

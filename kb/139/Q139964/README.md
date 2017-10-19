@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139964: SAMPLE: How to List Directories on Entire Drive"
-permalink: kb/139/Q139964/
+permalink: /kb/139/Q139964/
 ---
 
 ## Q139964: SAMPLE: How to List Directories on Entire Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157725: PRB: Min and Max Buttons Disappear when ControlBox = .F."
-permalink: kb/157/Q157725/
+permalink: /kb/157/Q157725/
 ---
 
 ## Q157725: PRB: Min and Max Buttons Disappear when ControlBox = .F.

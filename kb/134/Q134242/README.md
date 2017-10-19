@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134242: FIX: Label Text Box Accepts Too Many Characters Without Error"
-permalink: kb/134/Q134242/
+permalink: /kb/134/Q134242/
 ---
 
 ## Q134242: FIX: Label Text Box Accepts Too Many Characters Without Error

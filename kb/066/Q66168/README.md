@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66168: No CGA Support in Windows Entertainment Pack"
-permalink: kb/066/Q66168/
+permalink: /kb/066/Q66168/
 ---
 
 ## Q66168: No CGA Support in Windows Entertainment Pack

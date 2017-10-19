@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185400: WD97: How to Set Up a Table as a Spreadsheet in Word"
-permalink: kb/185/Q185400/
+permalink: /kb/185/Q185400/
 ---
 
 ## Q185400: WD97: How to Set Up a Table as a Spreadsheet in Word

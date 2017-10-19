@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195126: WD97: Third-Party Conversion Solutions"
-permalink: kb/195/Q195126/
+permalink: /kb/195/Q195126/
 ---
 
 ## Q195126: WD97: Third-Party Conversion Solutions

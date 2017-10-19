@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174882: FIX: Cannot Install &quot;Learn VB Now&quot; Program"
-permalink: kb/174/Q174882/
+permalink: /kb/174/Q174882/
 ---
 
 ## Q174882: FIX: Cannot Install &quot;Learn VB Now&quot; Program

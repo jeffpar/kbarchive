@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166178: INFO: Visual FoxPro 5.0 Book and Video List"
-permalink: kb/166/Q166178/
+permalink: /kb/166/Q166178/
 ---
 
 ## Q166178: INFO: Visual FoxPro 5.0 Book and Video List

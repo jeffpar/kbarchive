@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278869: MSN Companion does not dial during set-up"
-permalink: kb/278/Q278869/
+permalink: /kb/278/Q278869/
 ---
 
 ## Q278869: MSN Companion does not dial during set-up

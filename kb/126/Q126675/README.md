@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126675: BUG: Menu Lost if Caption Changed on Menu with Only WindowList"
-permalink: kb/126/Q126675/
+permalink: /kb/126/Q126675/
 ---
 
 ## Q126675: BUG: Menu Lost if Caption Changed on Menu with Only WindowList

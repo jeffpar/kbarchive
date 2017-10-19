@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102619: FIX: Member Conversion Function Calling Convention Incorrect"
-permalink: kb/102/Q102619/
+permalink: /kb/102/Q102619/
 ---
 
 ## Q102619: FIX: Member Conversion Function Calling Convention Incorrect

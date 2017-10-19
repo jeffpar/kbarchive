@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86948: 3COM: What Retry Mechanism the Gateway Responds To"
-permalink: kb/086/Q86948/
+permalink: /kb/086/Q86948/
 ---
 
 ## Q86948: 3COM: What Retry Mechanism the Gateway Responds To

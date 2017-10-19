@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141274: PRB: COleControl::Serialize Not Called with VB as Container"
-permalink: kb/141/Q141274/
+permalink: /kb/141/Q141274/
 ---
 
 ## Q141274: PRB: COleControl::Serialize Not Called with VB as Container

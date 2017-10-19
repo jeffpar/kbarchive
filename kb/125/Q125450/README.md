@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125450: Error Running RASPHONE.EXE and RASADMIN.EXE in Windows NT"
-permalink: kb/125/Q125450/
+permalink: /kb/125/Q125450/
 ---
 
 ## Q125450: Error Running RASPHONE.EXE and RASADMIN.EXE in Windows NT

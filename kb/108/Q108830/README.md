@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108830: PC Win: StripGatewayHeaders Limited to 75 Recipients"
-permalink: kb/108/Q108830/
+permalink: /kb/108/Q108830/
 ---
 
 ## Q108830: PC Win: StripGatewayHeaders Limited to 75 Recipients

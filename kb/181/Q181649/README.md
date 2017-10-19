@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181649: XADM: MSMail Message Body Missing when Received Through the IMS"
-permalink: kb/181/Q181649/
+permalink: /kb/181/Q181649/
 ---
 
 ## Q181649: XADM: MSMail Message Body Missing when Received Through the IMS

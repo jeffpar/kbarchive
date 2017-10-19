@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77282: Bit2Mono.exe Changes Color Bitmaps to Monochrome"
-permalink: kb/077/Q77282/
+permalink: /kb/077/Q77282/
 ---
 
 ## Q77282: Bit2Mono.exe Changes Color Bitmaps to Monochrome

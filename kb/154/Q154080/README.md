@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154080: PRB: Visual SourceSafe Journal File Not Updated"
-permalink: kb/154/Q154080/
+permalink: /kb/154/Q154080/
 ---
 
 ## Q154080: PRB: Visual SourceSafe Journal File Not Updated

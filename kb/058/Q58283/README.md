@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58283: Setting Default Printer in Control Panel"
-permalink: kb/058/Q58283/
+permalink: /kb/058/Q58283/
 ---
 
 ## Q58283: Setting Default Printer in Control Panel

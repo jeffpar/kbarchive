@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82170: SAMPLE: DLLDlg.exe Demonstrates Creating Dialog Box in DLL"
-permalink: kb/082/Q82170/
+permalink: /kb/082/Q82170/
 ---
 
 ## Q82170: SAMPLE: DLLDlg.exe Demonstrates Creating Dialog Box in DLL

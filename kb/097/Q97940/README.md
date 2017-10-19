@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97940: SAMPLE: Global Heap Functions"
-permalink: kb/097/Q97940/
+permalink: /kb/097/Q97940/
 ---
 
 ## Q97940: SAMPLE: Global Heap Functions

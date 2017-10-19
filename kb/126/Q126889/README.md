@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126889: PC Win SNADS: 10 Character SNADS Gateway-Template Info Only"
-permalink: kb/126/Q126889/
+permalink: /kb/126/Q126889/
 ---
 
 ## Q126889: PC Win SNADS: 10 Character SNADS Gateway-Template Info Only

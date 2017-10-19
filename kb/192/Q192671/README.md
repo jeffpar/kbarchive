@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192671: SMS: Remote Control Blue Screens with Dell GX1 and ATI Rage 3D"
-permalink: kb/192/Q192671/
+permalink: /kb/192/Q192671/
 ---
 
 ## Q192671: SMS: Remote Control Blue Screens with Dell GX1 and ATI Rage 3D

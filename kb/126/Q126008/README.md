@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126008: Registry Value for Routing PPP Packets Incorrect"
-permalink: kb/126/Q126008/
+permalink: /kb/126/Q126008/
 ---
 
 ## Q126008: Registry Value for Routing PPP Packets Incorrect

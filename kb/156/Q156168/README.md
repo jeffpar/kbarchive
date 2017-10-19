@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156168: INFO: Platforms Supported by Visual FoxPro Version 5.0"
-permalink: kb/156/Q156168/
+permalink: /kb/156/Q156168/
 ---
 
 ## Q156168: INFO: Platforms Supported by Visual FoxPro Version 5.0

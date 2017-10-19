@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160744: Encarta 97: Summary of Features When Using Windows 3.x"
-permalink: kb/160/Q160744/
+permalink: /kb/160/Q160744/
 ---
 
 ## Q160744: Encarta 97: Summary of Features When Using Windows 3.x

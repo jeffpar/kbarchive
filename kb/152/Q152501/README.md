@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152501: XADM: Problem When Creating Multiple SMTP Proxy Addresses"
-permalink: kb/152/Q152501/
+permalink: /kb/152/Q152501/
 ---
 
 ## Q152501: XADM: Problem When Creating Multiple SMTP Proxy Addresses

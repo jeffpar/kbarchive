@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268442: SMS: Design Considerations When Integrating NetWare &amp; SMS 2.0"
-permalink: kb/268/Q268442/
+permalink: /kb/268/Q268442/
 ---
 
 ## Q268442: SMS: Design Considerations When Integrating NetWare &amp; SMS 2.0

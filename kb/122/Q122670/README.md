@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122670: MSB Human: How to Play the Games"
-permalink: kb/122/Q122670/
+permalink: /kb/122/Q122670/
 ---
 
 ## Q122670: MSB Human: How to Play the Games

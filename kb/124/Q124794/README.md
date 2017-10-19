@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124794: FFAPI: Corrupted From: Field with Large Gateway Put"
-permalink: kb/124/Q124794/
+permalink: /kb/124/Q124794/
 ---
 
 ## Q124794: FFAPI: Corrupted From: Field with Large Gateway Put

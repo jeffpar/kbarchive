@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26801: FIX: Byte Order Incorrect in Listing File For Doublewords"
-permalink: kb/026/Q26801/
+permalink: /kb/026/Q26801/
 ---
 
 ## Q26801: FIX: Byte Order Incorrect in Listing File For Doublewords

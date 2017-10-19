@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94103: Backing Up 3Servers Locally or Over the Network"
-permalink: kb/094/Q94103/
+permalink: /kb/094/Q94103/
 ---
 
 ## Q94103: Backing Up 3Servers Locally or Over the Network

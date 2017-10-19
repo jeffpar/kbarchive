@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132619: Windows 95 Hangs on Compaq Computer with SafeStart Enabled"
-permalink: kb/132/Q132619/
+permalink: /kb/132/Q132619/
 ---
 
 ## Q132619: Windows 95 Hangs on Compaq Computer with SafeStart Enabled

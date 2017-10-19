@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159107: Access Violation in AddAtom Inside Kernel32.dll"
-permalink: kb/159/Q159107/
+permalink: /kb/159/Q159107/
 ---
 
 ## Q159107: Access Violation in AddAtom Inside Kernel32.dll

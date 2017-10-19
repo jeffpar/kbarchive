@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136549: INFO: Microsoft Foundation Class Library Development Guidelines"
-permalink: kb/136/Q136549/
+permalink: /kb/136/Q136549/
 ---
 
 ## Q136549: INFO: Microsoft Foundation Class Library Development Guidelines

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184250: XCLN: Rerun Outlook 98 Setup Fails on Customized Install"
-permalink: kb/184/Q184250/
+permalink: /kb/184/Q184250/
 ---
 
 ## Q184250: XCLN: Rerun Outlook 98 Setup Fails on Customized Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276262: XCLN: Unread Messages Are Not Displayed in Other Mailboxes"
-permalink: kb/276/Q276262/
+permalink: /kb/276/Q276262/
 ---
 
 ## Q276262: XCLN: Unread Messages Are Not Displayed in Other Mailboxes

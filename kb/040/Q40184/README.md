@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40184: NMAKE Builds Only the First Target in Makefile"
-permalink: kb/040/Q40184/
+permalink: /kb/040/Q40184/
 ---
 
 ## Q40184: NMAKE Builds Only the First Target in Makefile

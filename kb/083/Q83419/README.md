@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83419: Windows Err Msg: Setup Did Not Add the Windows Directory..."
-permalink: kb/083/Q83419/
+permalink: /kb/083/Q83419/
 ---
 
 ## Q83419: Windows Err Msg: Setup Did Not Add the Windows Directory...

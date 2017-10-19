@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276489: Patch Available for Web Server Folder Traversal Vulnerability"
-permalink: kb/276/Q276489/
+permalink: /kb/276/Q276489/
 ---
 
 ## Q276489: Patch Available for Web Server Folder Traversal Vulnerability

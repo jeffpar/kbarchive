@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169299: XCON: HP Openmail Returns a Loop Detected NDR to Exchange"
-permalink: kb/169/Q169299/
+permalink: /kb/169/Q169299/
 ---
 
 ## Q169299: XCON: HP Openmail Returns a Loop Detected NDR to Exchange

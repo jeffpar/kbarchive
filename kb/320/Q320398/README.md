@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320398: Programming with Microsoft Visual C++ .NET, Sixth Edition (Core"
-permalink: kb/320/Q320398/
+permalink: /kb/320/Q320398/
 ---
 
 ## Q320398: Programming with Microsoft Visual C++ .NET, Sixth Edition (Core

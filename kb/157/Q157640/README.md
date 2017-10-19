@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157640: WD97: Insertion Point Disappears After Inserting Scrolling Text"
-permalink: kb/157/Q157640/
+permalink: /kb/157/Q157640/
 ---
 
 ## Q157640: WD97: Insertion Point Disappears After Inserting Scrolling Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223092: FIX: Using VB with Modal Form Fails in Internet Explorer"
-permalink: kb/223/Q223092/
+permalink: /kb/223/Q223092/
 ---
 
 ## Q223092: FIX: Using VB with Modal Form Fails in Internet Explorer

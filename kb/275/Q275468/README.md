@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275468: XCON: Events 9318 and 9322 Are Logged During RPC Communication"
-permalink: kb/275/Q275468/
+permalink: /kb/275/Q275468/
 ---
 
 ## Q275468: XCON: Events 9318 and 9322 Are Logged During RPC Communication

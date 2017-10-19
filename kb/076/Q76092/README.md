@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76092: CONN: MAPPINGS.TXT File Lists Incorrect Conversion File"
-permalink: kb/076/Q76092/
+permalink: /kb/076/Q76092/
 ---
 
 ## Q76092: CONN: MAPPINGS.TXT File Lists Incorrect Conversion File

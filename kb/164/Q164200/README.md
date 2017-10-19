@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164200: Writer 2: How to Mute All Sound In Creative Writer"
-permalink: kb/164/Q164200/
+permalink: /kb/164/Q164200/
 ---
 
 ## Q164200: Writer 2: How to Mute All Sound In Creative Writer

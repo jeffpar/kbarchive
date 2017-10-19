@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306295: Microsoft Visio Version 2002 Step by Step Comments and Correctio"
-permalink: kb/306/Q306295/
+permalink: /kb/306/Q306295/
 ---
 
 ## Q306295: Microsoft Visio Version 2002 Step by Step Comments and Correctio

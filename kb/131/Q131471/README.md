@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131471: Environment Variables Update Immediately"
-permalink: kb/131/Q131471/
+permalink: /kb/131/Q131471/
 ---
 
 ## Q131471: Environment Variables Update Immediately

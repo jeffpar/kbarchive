@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34921: INFO: jmp_buf Pointer Type is &quot;void &#42;&quot;"
-permalink: kb/034/Q34921/
+permalink: /kb/034/Q34921/
 ---
 
 ## Q34921: INFO: jmp_buf Pointer Type is &quot;void &#42;&quot;

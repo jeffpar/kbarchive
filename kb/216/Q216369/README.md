@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216369: Unable to Create a Large Number of DHCP Scopes"
-permalink: kb/216/Q216369/
+permalink: /kb/216/Q216369/
 ---
 
 ## Q216369: Unable to Create a Large Number of DHCP Scopes

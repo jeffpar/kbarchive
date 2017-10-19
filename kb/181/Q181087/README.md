@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181087: Computer Hangs When Using the DIR Command in DFS Shared Folders"
-permalink: kb/181/Q181087/
+permalink: /kb/181/Q181087/
 ---
 
 ## Q181087: Computer Hangs When Using the DIR Command in DFS Shared Folders

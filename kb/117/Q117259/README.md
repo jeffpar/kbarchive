@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117259: PC Adm: Err: Modifying Mailbox Name Causes Notice 34 &amp; 127"
-permalink: kb/117/Q117259/
+permalink: /kb/117/Q117259/
 ---
 
 ## Q117259: PC Adm: Err: Modifying Mailbox Name Causes Notice 34 &amp; 127

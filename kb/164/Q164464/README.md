@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164464: XFOR: Can't Mail to Exchange Account &quot;Admin&quot; from MSMail Client"
-permalink: kb/164/Q164464/
+permalink: /kb/164/Q164464/
 ---
 
 ## Q164464: XFOR: Can't Mail to Exchange Account &quot;Admin&quot; from MSMail Client

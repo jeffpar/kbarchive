@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200085: SMS: Client Upgrade May Remove SyncSends Value in Sms.ini"
-permalink: kb/200/Q200085/
+permalink: /kb/200/Q200085/
 ---
 
 ## Q200085: SMS: Client Upgrade May Remove SyncSends Value in Sms.ini

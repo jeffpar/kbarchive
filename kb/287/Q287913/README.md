@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287913: URL Parameter Contains &quot;%3A&quot; When Redirected to Change Password"
-permalink: kb/287/Q287913/
+permalink: /kb/287/Q287913/
 ---
 
 ## Q287913: URL Parameter Contains &quot;%3A&quot; When Redirected to Change Password

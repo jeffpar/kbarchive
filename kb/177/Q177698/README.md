@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177698: HOWTO: Call WNetConnectionDialog1 and WNetDisconnectDialog1"
-permalink: kb/177/Q177698/
+permalink: /kb/177/Q177698/
 ---
 
 ## Q177698: HOWTO: Call WNetConnectionDialog1 and WNetDisconnectDialog1

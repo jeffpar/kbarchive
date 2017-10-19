@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155689: Error Message: Mini.cab Is Missing or Corrupt"
-permalink: kb/155/Q155689/
+permalink: /kb/155/Q155689/
 ---
 
 ## Q155689: Error Message: Mini.cab Is Missing or Corrupt

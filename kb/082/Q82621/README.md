@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82621: CoolSwitch Window Loses Document Title Switching to Excel"
-permalink: kb/082/Q82621/
+permalink: /kb/082/Q82621/
 ---
 
 ## Q82621: CoolSwitch Window Loses Document Title Switching to Excel

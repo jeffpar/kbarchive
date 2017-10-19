@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217234: Games: Slow Direct3D Game Performance with AMD K6-2 Processor"
-permalink: kb/217/Q217234/
+permalink: /kb/217/Q217234/
 ---
 
 ## Q217234: Games: Slow Direct3D Game Performance with AMD K6-2 Processor

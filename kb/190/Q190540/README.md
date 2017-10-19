@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190540: FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP"
-permalink: kb/190/Q190540/
+permalink: /kb/190/Q190540/
 ---
 
 ## Q190540: FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP

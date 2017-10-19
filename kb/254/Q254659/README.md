@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254659: Starting Local COM Server Returns Error Code 0x80080005"
-permalink: kb/254/Q254659/
+permalink: /kb/254/Q254659/
 ---
 
 ## Q254659: Starting Local COM Server Returns Error Code 0x80080005

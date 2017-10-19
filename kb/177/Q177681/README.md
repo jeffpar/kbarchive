@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177681: Services Using UNC Names May Fail"
-permalink: kb/177/Q177681/
+permalink: /kb/177/Q177681/
 ---
 
 ## Q177681: Services Using UNC Names May Fail

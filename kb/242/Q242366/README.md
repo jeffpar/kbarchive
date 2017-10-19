@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242366: Denial of Service When Using Xenroll to Create Files"
-permalink: kb/242/Q242366/
+permalink: /kb/242/Q242366/
 ---
 
 ## Q242366: Denial of Service When Using Xenroll to Create Files

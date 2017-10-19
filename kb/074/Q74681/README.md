@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74681: Printer CPI Files Do Not Support CP 852"
-permalink: kb/074/Q74681/
+permalink: /kb/074/Q74681/
 ---
 
 ## Q74681: Printer CPI Files Do Not Support CP 852

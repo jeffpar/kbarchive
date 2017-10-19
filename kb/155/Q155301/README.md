@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155301: Screen Goes Blank During Online Game When Host Disconnects"
-permalink: kb/155/Q155301/
+permalink: /kb/155/Q155301/
 ---
 
 ## Q155301: Screen Goes Blank During Online Game When Host Disconnects

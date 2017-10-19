@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175443: FIX: Application Error When Binding Dynamically-Created Control"
-permalink: kb/175/Q175443/
+permalink: /kb/175/Q175443/
 ---
 
 ## Q175443: FIX: Application Error When Binding Dynamically-Created Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142295: Err Msg: The Microsoft Mail Post Office Could Not Be Found..."
-permalink: kb/142/Q142295/
+permalink: /kb/142/Q142295/
 ---
 
 ## Q142295: Err Msg: The Microsoft Mail Post Office Could Not Be Found...

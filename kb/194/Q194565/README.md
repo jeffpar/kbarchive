@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194565: WD97: Converting Documents Created in WordPerfect 7.0, 8.0"
-permalink: kb/194/Q194565/
+permalink: /kb/194/Q194565/
 ---
 
 ## Q194565: WD97: Converting Documents Created in WordPerfect 7.0, 8.0

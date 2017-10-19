@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239064: XADM: Cannot Communicate with Exchange Mailbox Manager Service"
-permalink: kb/239/Q239064/
+permalink: /kb/239/Q239064/
 ---
 
 ## Q239064: XADM: Cannot Communicate with Exchange Mailbox Manager Service

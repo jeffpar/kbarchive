@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135910: Flight Simulator: List of Sound Options"
-permalink: kb/135/Q135910/
+permalink: /kb/135/Q135910/
 ---
 
 ## Q135910: Flight Simulator: List of Sound Options

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162925: ADT/ODE: Setup Does Not Create Certain Shortcuts"
-permalink: kb/162/Q162925/
+permalink: /kb/162/Q162925/
 ---
 
 ## Q162925: ADT/ODE: Setup Does Not Create Certain Shortcuts

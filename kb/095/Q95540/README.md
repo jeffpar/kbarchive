@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95540: Install Button in Printer Setup Doesn't Work"
-permalink: kb/095/Q95540/
+permalink: /kb/095/Q95540/
 ---
 
 ## Q95540: Install Button in Printer Setup Doesn't Work

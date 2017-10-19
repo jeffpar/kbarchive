@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129782: FIX: MFCN30.DLL and MFCN30D.DLL Not Copied with Win32S Setup"
-permalink: kb/129/Q129782/
+permalink: /kb/129/Q129782/
 ---
 
 ## Q129782: FIX: MFCN30.DLL and MFCN30D.DLL Not Copied with Win32S Setup

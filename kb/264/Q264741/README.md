@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264741: Cannot Connect to Remote Computers by Using User Manager and Ser"
-permalink: kb/264/Q264741/
+permalink: /kb/264/Q264741/
 ---
 
 ## Q264741: Cannot Connect to Remote Computers by Using User Manager and Ser

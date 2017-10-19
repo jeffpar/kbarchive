@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250400: XADM: DXANOTES Writes Mail Server Data to the Personal Document"
-permalink: kb/250/Q250400/
+permalink: /kb/250/Q250400/
 ---
 
 ## Q250400: XADM: DXANOTES Writes Mail Server Data to the Personal Document

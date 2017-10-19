@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185282: PRB: CRichEditView, AppWizard View-Based Apps and Compound Files"
-permalink: kb/185/Q185282/
+permalink: /kb/185/Q185282/
 ---
 
 ## Q185282: PRB: CRichEditView, AppWizard View-Based Apps and Compound Files

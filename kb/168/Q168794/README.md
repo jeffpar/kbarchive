@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168794: Disk or File System Error Message Importing Registry File"
-permalink: kb/168/Q168794/
+permalink: /kb/168/Q168794/
 ---
 
 ## Q168794: Disk or File System Error Message Importing Registry File

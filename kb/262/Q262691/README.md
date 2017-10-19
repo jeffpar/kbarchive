@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262691: XCON: X.400 Address Received Over MIXER Gets SMTP Address Type"
-permalink: kb/262/Q262691/
+permalink: /kb/262/Q262691/
 ---
 
 ## Q262691: XCON: X.400 Address Received Over MIXER Gets SMTP Address Type

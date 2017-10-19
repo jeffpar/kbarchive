@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82342: Epson FX-286 Prints Page Shifted to the Right in Excel 3.0"
-permalink: kb/082/Q82342/
+permalink: /kb/082/Q82342/
 ---
 
 ## Q82342: Epson FX-286 Prints Page Shifted to the Right in Excel 3.0

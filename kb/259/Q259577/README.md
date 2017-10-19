@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259577: XADM: Exchange Admin Settings Are Windows NT Profile-Specific"
-permalink: kb/259/Q259577/
+permalink: /kb/259/Q259577/
 ---
 
 ## Q259577: XADM: Exchange Admin Settings Are Windows NT Profile-Specific

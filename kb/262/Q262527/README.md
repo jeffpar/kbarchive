@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262527: SMS Provider Does Not Always Use User Group Membership Cache"
-permalink: kb/262/Q262527/
+permalink: /kb/262/Q262527/
 ---
 
 ## Q262527: SMS Provider Does Not Always Use User Group Membership Cache

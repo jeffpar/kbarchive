@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57635: Windows DeskJet Soft Font Support"
-permalink: kb/057/Q57635/
+permalink: /kb/057/Q57635/
 ---
 
 ## Q57635: Windows DeskJet Soft Font Support

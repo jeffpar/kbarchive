@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92875: WFWG Err Msg: Parameter Format Not Correct"
-permalink: kb/092/Q92875/
+permalink: /kb/092/Q92875/
 ---
 
 ## Q92875: WFWG Err Msg: Parameter Format Not Correct

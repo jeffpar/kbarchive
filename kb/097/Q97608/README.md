@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97608: MS-DOS 6 Err Msg: Too Many Block Devices"
-permalink: kb/097/Q97608/
+permalink: /kb/097/Q97608/
 ---
 
 ## Q97608: MS-DOS 6 Err Msg: Too Many Block Devices

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168161: FIX: Distributed Transaction Fails on Subsequent Runs"
-permalink: kb/168/Q168161/
+permalink: /kb/168/Q168161/
 ---
 
 ## Q168161: FIX: Distributed Transaction Fails on Subsequent Runs

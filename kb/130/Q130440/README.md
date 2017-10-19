@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130440: INFO: Reserved Words in Visual FoxPro"
-permalink: kb/130/Q130440/
+permalink: /kb/130/Q130440/
 ---
 
 ## Q130440: INFO: Reserved Words in Visual FoxPro

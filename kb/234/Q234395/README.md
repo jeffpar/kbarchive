@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234395: XADM: Folder with Slash Mark (/) Cannot Be Seen By IMAP4 Clients"
-permalink: kb/234/Q234395/
+permalink: /kb/234/Q234395/
 ---
 
 ## Q234395: XADM: Folder with Slash Mark (/) Cannot Be Seen By IMAP4 Clients

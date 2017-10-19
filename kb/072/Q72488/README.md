@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72488: Compaq Laptops Cannot Switch to External Monitor"
-permalink: kb/072/Q72488/
+permalink: /kb/072/Q72488/
 ---
 
 ## Q72488: Compaq Laptops Cannot Switch to External Monitor

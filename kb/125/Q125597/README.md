@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125597: SMS Help File (SM32.HLP) Not Installed on Windows 95 Client"
-permalink: kb/125/Q125597/
+permalink: /kb/125/Q125597/
 ---
 
 ## Q125597: SMS Help File (SM32.HLP) Not Installed on Windows 95 Client

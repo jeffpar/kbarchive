@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106364: The IPX/SPX Compatible Protocol Supports Only One Network Card"
-permalink: kb/106/Q106364/
+permalink: /kb/106/Q106364/
 ---
 
 ## Q106364: The IPX/SPX Compatible Protocol Supports Only One Network Card

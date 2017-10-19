@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122440: Err Msg: Cannot Load Catalog From Tape"
-permalink: kb/122/Q122440/
+permalink: /kb/122/Q122440/
 ---
 
 ## Q122440: Err Msg: Cannot Load Catalog From Tape

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121921: Backup Reports Incorrect Time in Foreign Countries"
-permalink: kb/121/Q121921/
+permalink: /kb/121/Q121921/
 ---
 
 ## Q121921: Backup Reports Incorrect Time in Foreign Countries

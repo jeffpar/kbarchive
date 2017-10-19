@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262392: SMS: Network Discovery Returns FQDNs Instead of NetBIOS Names"
-permalink: kb/262/Q262392/
+permalink: /kb/262/Q262392/
 ---
 
 ## Q262392: SMS: Network Discovery Returns FQDNs Instead of NetBIOS Names

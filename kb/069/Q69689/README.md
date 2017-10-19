@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69689: SysEdit Err Msg: Cannot Create File &#92;windows&#92;system.ini"
-permalink: kb/069/Q69689/
+permalink: /kb/069/Q69689/
 ---
 
 ## Q69689: SysEdit Err Msg: Cannot Create File &#92;windows&#92;system.ini

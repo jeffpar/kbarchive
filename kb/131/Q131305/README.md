@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131305: How To Make a Network Software Component Setup Disk from CD-ROM"
-permalink: kb/131/Q131305/
+permalink: /kb/131/Q131305/
 ---
 
 ## Q131305: How To Make a Network Software Component Setup Disk from CD-ROM

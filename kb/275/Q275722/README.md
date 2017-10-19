@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275722: APPC Hot Backup Application Slow to Recover When Primary Fails"
-permalink: kb/275/Q275722/
+permalink: /kb/275/Q275722/
 ---
 
 ## Q275722: APPC Hot Backup Application Slow to Recover When Primary Fails

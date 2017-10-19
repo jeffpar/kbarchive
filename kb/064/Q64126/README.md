@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64126: Overview of How to Share Memory Between Applications"
-permalink: kb/064/Q64126/
+permalink: /kb/064/Q64126/
 ---
 
 ## Q64126: Overview of How to Share Memory Between Applications

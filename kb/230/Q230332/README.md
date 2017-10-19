@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230332: Cvtres.exe Program Error"
-permalink: kb/230/Q230332/
+permalink: /kb/230/Q230332/
 ---
 
 ## Q230332: Cvtres.exe Program Error

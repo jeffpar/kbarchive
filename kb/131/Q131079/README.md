@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131079: Mac MSPlus: Schedule Information Only Distributed for 3 Months"
-permalink: kb/131/Q131079/
+permalink: /kb/131/Q131079/
 ---
 
 ## Q131079: Mac MSPlus: Schedule Information Only Distributed for 3 Months

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149787: 3Com 3C59x Causes Windows NT Server to Stop Responding"
-permalink: kb/149/Q149787/
+permalink: /kb/149/Q149787/
 ---
 
 ## Q149787: 3Com 3C59x Causes Windows NT Server to Stop Responding

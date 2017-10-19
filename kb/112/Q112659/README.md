@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112659: BootExecute Incorrectly Documented in Resource Kit"
-permalink: kb/112/Q112659/
+permalink: /kb/112/Q112659/
 ---
 
 ## Q112659: BootExecute Incorrectly Documented in Resource Kit

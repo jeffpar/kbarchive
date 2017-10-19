@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168600: SMS: Simultaneous Attempts to Remote Control May Cause Errors"
-permalink: kb/168/Q168600/
+permalink: /kb/168/Q168600/
 ---
 
 ## Q168600: SMS: Simultaneous Attempts to Remote Control May Cause Errors

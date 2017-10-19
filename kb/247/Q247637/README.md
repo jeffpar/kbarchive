@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247637: FS2000: Distant Textures Seem to Shimmer or Flicker"
-permalink: kb/247/Q247637/
+permalink: /kb/247/Q247637/
 ---
 
 ## Q247637: FS2000: Distant Textures Seem to Shimmer or Flicker

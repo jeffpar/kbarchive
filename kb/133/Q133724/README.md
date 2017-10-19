@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133724: STOP Message 0x0000001E in NTOskrnl"
-permalink: kb/133/Q133724/
+permalink: /kb/133/Q133724/
 ---
 
 ## Q133724: STOP Message 0x0000001E in NTOskrnl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241939: XADM: Routing Calculation Stops with Administrator ID c1031651"
-permalink: kb/241/Q241939/
+permalink: /kb/241/Q241939/
 ---
 
 ## Q241939: XADM: Routing Calculation Stops with Administrator ID c1031651

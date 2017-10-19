@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75471: INFO: Basics of Banding Printing in Windows"
-permalink: kb/075/Q75471/
+permalink: /kb/075/Q75471/
 ---
 
 ## Q75471: INFO: Basics of Banding Printing in Windows

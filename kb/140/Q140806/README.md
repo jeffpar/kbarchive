@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140806: Dataloader Fails to Release Memory Allocation for Binary Dump"
-permalink: kb/140/Q140806/
+permalink: /kb/140/Q140806/
 ---
 
 ## Q140806: Dataloader Fails to Release Memory Allocation for Binary Dump

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65994: Testing If a Drive or Directory Exists from a Batch File"
-permalink: kb/065/Q65994/
+permalink: /kb/065/Q65994/
 ---
 
 ## Q65994: Testing If a Drive or Directory Exists from a Batch File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191864: PRB: Error 743 Adding ActiveX Controls to Control Collection"
-permalink: kb/191/Q191864/
+permalink: /kb/191/Q191864/
 ---
 
 ## Q191864: PRB: Error 743 Adding ActiveX Controls to Control Collection

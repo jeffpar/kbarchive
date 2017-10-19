@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119870: Redirector Uses Core Mode on Large File Transfers"
-permalink: kb/119/Q119870/
+permalink: /kb/119/Q119870/
 ---
 
 ## Q119870: Redirector Uses Core Mode on Large File Transfers

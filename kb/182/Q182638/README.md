@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182638: Admin: Snap-in Does Not Recognize the Local Machine Name"
-permalink: kb/182/Q182638/
+permalink: /kb/182/Q182638/
 ---
 
 ## Q182638: Admin: Snap-in Does Not Recognize the Local Machine Name

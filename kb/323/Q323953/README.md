@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323953: Dungeon Siege: &quot;Needs to Close&quot; Err Msg Connecting by ZoneMatch"
-permalink: kb/323/Q323953/
+permalink: /kb/323/Q323953/
 ---
 
 ## Q323953: Dungeon Siege: &quot;Needs to Close&quot; Err Msg Connecting by ZoneMatch

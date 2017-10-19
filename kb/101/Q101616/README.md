@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101616: A Program to Generate Documentation on LAN Manager Servers"
-permalink: kb/101/Q101616/
+permalink: /kb/101/Q101616/
 ---
 
 ## Q101616: A Program to Generate Documentation on LAN Manager Servers

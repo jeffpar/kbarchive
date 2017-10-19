@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142579: XCLN: Setup/Attempt to Restart Fails on Windows NT"
-permalink: kb/142/Q142579/
+permalink: /kb/142/Q142579/
 ---
 
 ## Q142579: XCLN: Setup/Attempt to Restart Fails on Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156898: STL Sample for deque::assign and deque::swap Functions"
-permalink: kb/156/Q156898/
+permalink: /kb/156/Q156898/
 ---
 
 ## Q156898: STL Sample for deque::assign and deque::swap Functions

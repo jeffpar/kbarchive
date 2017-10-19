@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162827: WD97: Problems Printing Document with Many Drawing Objects"
-permalink: kb/162/Q162827/
+permalink: /kb/162/Q162827/
 ---
 
 ## Q162827: WD97: Problems Printing Document with Many Drawing Objects

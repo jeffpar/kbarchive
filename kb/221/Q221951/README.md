@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221951: SMS: RAS Sender SNA Link: Error 53 During WNetAddDConnection2 ()"
-permalink: kb/221/Q221951/
+permalink: /kb/221/Q221951/
 ---
 
 ## Q221951: SMS: RAS Sender SNA Link: Error 53 During WNetAddDConnection2 ()

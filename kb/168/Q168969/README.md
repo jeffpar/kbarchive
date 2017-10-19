@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168969: Cannot Install WinNT Server Tools While File Manager Is Running"
-permalink: kb/168/Q168969/
+permalink: /kb/168/Q168969/
 ---
 
 ## Q168969: Cannot Install WinNT Server Tools While File Manager Is Running

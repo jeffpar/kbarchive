@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157476: WD97: Equation Editor Objects Not Visible In Converted Document"
-permalink: kb/157/Q157476/
+permalink: /kb/157/Q157476/
 ---
 
 ## Q157476: WD97: Equation Editor Objects Not Visible In Converted Document

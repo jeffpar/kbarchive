@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114363: Tools Group Contains Invalid Icon After Installing MS-DOS 6.21"
-permalink: kb/114/Q114363/
+permalink: /kb/114/Q114363/
 ---
 
 ## Q114363: Tools Group Contains Invalid Icon After Installing MS-DOS 6.21

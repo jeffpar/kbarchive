@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156635: Writer 2: Scrollbar Navigation Is Jumpy in Large Documents"
-permalink: kb/156/Q156635/
+permalink: /kb/156/Q156635/
 ---
 
 ## Q156635: Writer 2: Scrollbar Navigation Is Jumpy in Large Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248123: DNS CNAME Resolution May Not Work"
-permalink: kb/248/Q248123/
+permalink: /kb/248/Q248123/
 ---
 
 ## Q248123: DNS CNAME Resolution May Not Work

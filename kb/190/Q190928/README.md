@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190928: Poledit Spin Boxes Limit Max Value to 9999"
-permalink: kb/190/Q190928/
+permalink: /kb/190/Q190928/
 ---
 
 ## Q190928: Poledit Spin Boxes Limit Max Value to 9999

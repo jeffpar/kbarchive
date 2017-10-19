@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177319: How to Set the MSN Quick View Notification Delay"
-permalink: kb/177/Q177319/
+permalink: /kb/177/Q177319/
 ---
 
 ## Q177319: How to Set the MSN Quick View Notification Delay

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159835: XFOR: Exchange IMC Sends Unwanted Notifications"
-permalink: kb/159/Q159835/
+permalink: /kb/159/Q159835/
 ---
 
 ## Q159835: XFOR: Exchange IMC Sends Unwanted Notifications

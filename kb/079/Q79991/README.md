@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79991: Sound in Tetris Game"
-permalink: kb/079/Q79991/
+permalink: /kb/079/Q79991/
 ---
 
 ## Q79991: Sound in Tetris Game

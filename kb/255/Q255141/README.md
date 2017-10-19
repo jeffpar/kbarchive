@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255141: MP2001: Geographic Information Is Needed to Import or Link Data"
-permalink: kb/255/Q255141/
+permalink: /kb/255/Q255141/
 ---
 
 ## Q255141: MP2001: Geographic Information Is Needed to Import or Link Data

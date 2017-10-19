@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192050: BUG: Resource Leak with 256 Color Bitmap/UseZOrder PaletteMode"
-permalink: kb/192/Q192050/
+permalink: /kb/192/Q192050/
 ---
 
 ## Q192050: BUG: Resource Leak with 256 Color Bitmap/UseZOrder PaletteMode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86148: PROFS: How to Check Whether Mail Is Queued"
-permalink: kb/086/Q86148/
+permalink: /kb/086/Q86148/
 ---
 
 ## Q86148: PROFS: How to Check Whether Mail Is Queued

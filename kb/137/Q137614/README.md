@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137614: PC WRmt: Files That Contain User Detail Information"
-permalink: kb/137/Q137614/
+permalink: /kb/137/Q137614/
 ---
 
 ## Q137614: PC WRmt: Files That Contain User Detail Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174205: LSASS May Use a Large Amount of Memory on a Domain Controller"
-permalink: kb/174/Q174205/
+permalink: /kb/174/Q174205/
 ---
 
 ## Q174205: LSASS May Use a Large Amount of Memory on a Domain Controller

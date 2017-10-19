@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186790: XFOR: Performance Issues after Installing Chat Server Extension"
-permalink: kb/186/Q186790/
+permalink: /kb/186/Q186790/
 ---
 
 ## Q186790: XFOR: Performance Issues after Installing Chat Server Extension

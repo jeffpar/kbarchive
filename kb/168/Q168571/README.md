@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168571: Performance Monitor Logs are Limited to 2.1 GB of Data"
-permalink: kb/168/Q168571/
+permalink: /kb/168/Q168571/
 ---
 
 ## Q168571: Performance Monitor Logs are Limited to 2.1 GB of Data

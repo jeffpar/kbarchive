@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191301: SMS: Duplicate Datakeys in SMS Database After SQL Deadlock"
-permalink: kb/191/Q191301/
+permalink: /kb/191/Q191301/
 ---
 
 ## Q191301: SMS: Duplicate Datakeys in SMS Database After SQL Deadlock

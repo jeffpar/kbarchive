@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138696: MS Exchange Err Msg: The Set of Folders Could Not Be Opened"
-permalink: kb/138/Q138696/
+permalink: /kb/138/Q138696/
 ---
 
 ## Q138696: MS Exchange Err Msg: The Set of Folders Could Not Be Opened

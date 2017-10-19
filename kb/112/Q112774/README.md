@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112774: ERR: VSERVER File Server Encountered Critical Error"
-permalink: kb/112/Q112774/
+permalink: /kb/112/Q112774/
 ---
 
 ## Q112774: ERR: VSERVER File Server Encountered Critical Error

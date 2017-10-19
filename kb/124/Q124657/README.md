@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124657: INF: Text Driver Needs Directory Before Define Format Enabled"
-permalink: kb/124/Q124657/
+permalink: /kb/124/Q124657/
 ---
 
 ## Q124657: INF: Text Driver Needs Directory Before Define Format Enabled

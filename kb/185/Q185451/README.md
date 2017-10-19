@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185451: HOWTO: Display Descriptions of Menu Items When Highlighted"
-permalink: kb/185/Q185451/
+permalink: /kb/185/Q185451/
 ---
 
 ## Q185451: HOWTO: Display Descriptions of Menu Items When Highlighted

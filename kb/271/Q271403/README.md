@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271403: WD97: Word Document Opens Read-Only on FTP Server"
-permalink: kb/271/Q271403/
+permalink: /kb/271/Q271403/
 ---
 
 ## Q271403: WD97: Word Document Opens Read-Only on FTP Server

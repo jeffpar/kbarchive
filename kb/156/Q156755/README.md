@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156755: Unable to Use Standard Program I/O in PERL Script"
-permalink: kb/156/Q156755/
+permalink: /kb/156/Q156755/
 ---
 
 ## Q156755: Unable to Use Standard Program I/O in PERL Script

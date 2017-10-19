@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128578: PC WSPlus: Timex Data Link Error - Cannot Find VFORMS.DLL"
-permalink: kb/128/Q128578/
+permalink: /kb/128/Q128578/
 ---
 
 ## Q128578: PC WSPlus: Timex Data Link Error - Cannot Find VFORMS.DLL

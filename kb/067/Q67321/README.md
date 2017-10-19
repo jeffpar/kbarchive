@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67321: FAT Type and Cluster Size Depends on Logical Drive Size"
-permalink: kb/067/Q67321/
+permalink: /kb/067/Q67321/
 ---
 
 ## Q67321: FAT Type and Cluster Size Depends on Logical Drive Size

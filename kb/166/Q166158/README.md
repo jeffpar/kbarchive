@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166158: Access Violation Occurs in SPOOLSS.EXE"
-permalink: kb/166/Q166158/
+permalink: /kb/166/Q166158/
 ---
 
 ## Q166158: Access Violation Occurs in SPOOLSS.EXE

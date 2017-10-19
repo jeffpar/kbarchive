@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216212: How to Configure Printing to PPA Printers Through Jet Direct"
-permalink: kb/216/Q216212/
+permalink: /kb/216/Q216212/
 ---
 
 ## Q216212: How to Configure Printing to PPA Printers Through Jet Direct

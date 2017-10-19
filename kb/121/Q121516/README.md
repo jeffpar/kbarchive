@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121516: Err Msg: There is Not Enough Memory Available to Start Mail"
-permalink: kb/121/Q121516/
+permalink: /kb/121/Q121516/
 ---
 
 ## Q121516: Err Msg: There is Not Enough Memory Available to Start Mail

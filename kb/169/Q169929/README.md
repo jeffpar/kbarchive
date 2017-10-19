@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169929: WD97: Captions Update to Zero If Grouped with Objects"
-permalink: kb/169/Q169929/
+permalink: /kb/169/Q169929/
 ---
 
 ## Q169929: WD97: Captions Update to Zero If Grouped with Objects

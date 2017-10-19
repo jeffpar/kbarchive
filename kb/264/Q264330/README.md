@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264330: XFOR: Internet Mail Service Relays Messages Despite Restrictions"
-permalink: kb/264/Q264330/
+permalink: /kb/264/Q264330/
 ---
 
 ## Q264330: XFOR: Internet Mail Service Relays Messages Despite Restrictions

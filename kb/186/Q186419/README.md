@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186419: SMS Error: Insufficient Privileges to Edit Pending Jobs"
-permalink: kb/186/Q186419/
+permalink: /kb/186/Q186419/
 ---
 
 ## Q186419: SMS Error: Insufficient Privileges to Edit Pending Jobs

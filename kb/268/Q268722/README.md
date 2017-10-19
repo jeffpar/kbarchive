@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268722: Access Violation in Cmd.exe Calling CreateProcess()"
-permalink: kb/268/Q268722/
+permalink: /kb/268/Q268722/
 ---
 
 ## Q268722: Access Violation in Cmd.exe Calling CreateProcess()

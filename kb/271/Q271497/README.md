@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271497: Golf 2001: Multiplayer Options Are Unavailable"
-permalink: kb/271/Q271497/
+permalink: /kb/271/Q271497/
 ---
 
 ## Q271497: Golf 2001: Multiplayer Options Are Unavailable

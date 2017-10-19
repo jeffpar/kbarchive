@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174747: XWEB: OWA Calendar Displays Only 2 Months in Date Picker Field"
-permalink: kb/174/Q174747/
+permalink: /kb/174/Q174747/
 ---
 
 ## Q174747: XWEB: OWA Calendar Displays Only 2 Months in Date Picker Field

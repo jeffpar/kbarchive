@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196005: DirectX Home User Troubleshooter Available"
-permalink: kb/196/Q196005/
+permalink: /kb/196/Q196005/
 ---
 
 ## Q196005: DirectX Home User Troubleshooter Available

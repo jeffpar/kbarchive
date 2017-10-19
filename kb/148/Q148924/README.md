@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148924: Dial-Up Scripting Does Not Work After Reinstalling DUN"
-permalink: kb/148/Q148924/
+permalink: /kb/148/Q148924/
 ---
 
 ## Q148924: Dial-Up Scripting Does Not Work After Reinstalling DUN

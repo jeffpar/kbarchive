@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167623: WD97: &quot;Check Drive&quot; Error When File Name Has Extended Characters"
-permalink: kb/167/Q167623/
+permalink: /kb/167/Q167623/
 ---
 
 ## Q167623: WD97: &quot;Check Drive&quot; Error When File Name Has Extended Characters

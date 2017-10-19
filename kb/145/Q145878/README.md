@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145878: Partial Internet Information Server Components Installed"
-permalink: kb/145/Q145878/
+permalink: /kb/145/Q145878/
 ---
 
 ## Q145878: Partial Internet Information Server Components Installed

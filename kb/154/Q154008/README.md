@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154008: What Microsoft Products Does VSS Integrate with?"
-permalink: kb/154/Q154008/
+permalink: /kb/154/Q154008/
 ---
 
 ## Q154008: What Microsoft Products Does VSS Integrate with?

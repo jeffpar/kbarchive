@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98402: Using Computer Lab International 5250 with DoubleSpace"
-permalink: kb/098/Q98402/
+permalink: /kb/098/Q98402/
 ---
 
 ## Q98402: Using Computer Lab International 5250 with DoubleSpace

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94279: Windows Err Msg: EMM386 Exception Error #6"
-permalink: kb/094/Q94279/
+permalink: /kb/094/Q94279/
 ---
 
 ## Q94279: Windows Err Msg: EMM386 Exception Error #6

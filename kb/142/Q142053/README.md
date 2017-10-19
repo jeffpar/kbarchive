@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142053: How to Create Macintosh Volumes in Windows NT 4.0"
-permalink: kb/142/Q142053/
+permalink: /kb/142/Q142053/
 ---
 
 ## Q142053: How to Create Macintosh Volumes in Windows NT 4.0

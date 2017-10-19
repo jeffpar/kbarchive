@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177163: FIX: Focus Doesn't Return to MDI Form After Modal Form Is Closed"
-permalink: kb/177/Q177163/
+permalink: /kb/177/Q177163/
 ---
 
 ## Q177163: FIX: Focus Doesn't Return to MDI Form After Modal Form Is Closed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139373: INF: Sample ODBC.INF for ODBC Drivers Shipped in Access 7.0"
-permalink: kb/139/Q139373/
+permalink: /kb/139/Q139373/
 ---
 
 ## Q139373: INF: Sample ODBC.INF for ODBC Drivers Shipped in Access 7.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148439: IBM 4019 Prints Very Slowly Under Windows NT"
-permalink: kb/148/Q148439/
+permalink: /kb/148/Q148439/
 ---
 
 ## Q148439: IBM 4019 Prints Very Slowly Under Windows NT

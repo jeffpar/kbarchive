@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315118: Games: Audio Is Affected When You Change Cockpit View"
-permalink: kb/315/Q315118/
+permalink: /kb/315/Q315118/
 ---
 
 ## Q315118: Games: Audio Is Affected When You Change Cockpit View

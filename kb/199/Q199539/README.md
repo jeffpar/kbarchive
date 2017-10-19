@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199539: PRB: MF1012 Error, Copying PowerPC App w/AppleTalk Under NT 4.0"
-permalink: kb/199/Q199539/
+permalink: /kb/199/Q199539/
 ---
 
 ## Q199539: PRB: MF1012 Error, Copying PowerPC App w/AppleTalk Under NT 4.0

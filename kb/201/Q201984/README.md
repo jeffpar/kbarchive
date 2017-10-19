@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201984: Error:&quot;Procedure for service Content Filter in Qperf.dll Failed&quot;"
-permalink: kb/201/Q201984/
+permalink: /kb/201/Q201984/
 ---
 
 ## Q201984: Error:&quot;Procedure for service Content Filter in Qperf.dll Failed&quot;

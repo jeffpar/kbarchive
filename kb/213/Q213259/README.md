@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213259: SMS: Running Crystal Reports Affects Site Server Performance"
-permalink: kb/213/Q213259/
+permalink: /kb/213/Q213259/
 ---
 
 ## Q213259: SMS: Running Crystal Reports Affects Site Server Performance

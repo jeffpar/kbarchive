@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145619: FIX: Maximized Win95 MDI Child Form Disappears"
-permalink: kb/145/Q145619/
+permalink: /kb/145/Q145619/
 ---
 
 ## Q145619: FIX: Maximized Win95 MDI Child Form Disappears

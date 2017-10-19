@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47019: Mac Adm: Steps for Deleting a User"
-permalink: kb/047/Q47019/
+permalink: /kb/047/Q47019/
 ---
 
 ## Q47019: Mac Adm: Steps for Deleting a User

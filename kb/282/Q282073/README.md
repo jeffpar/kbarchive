@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282073: ASP Application Fails If No User Is Logged On to the Server"
-permalink: kb/282/Q282073/
+permalink: /kb/282/Q282073/
 ---
 
 ## Q282073: ASP Application Fails If No User Is Logged On to the Server

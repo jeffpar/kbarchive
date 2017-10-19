@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163326: XCON: How and Why to Run Mtacheck"
-permalink: kb/163/Q163326/
+permalink: /kb/163/Q163326/
 ---
 
 ## Q163326: XCON: How and Why to Run Mtacheck

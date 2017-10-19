@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133723: STOP Message: 0x0000001E in TCPIP.SYS During Shutdown"
-permalink: kb/133/Q133723/
+permalink: /kb/133/Q133723/
 ---
 
 ## Q133723: STOP Message: 0x0000001E in TCPIP.SYS During Shutdown

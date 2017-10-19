@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104376: Dinosaurs: No Visual Indication that Slide Show Is Running"
-permalink: kb/104/Q104376/
+permalink: /kb/104/Q104376/
 ---
 
 ## Q104376: Dinosaurs: No Visual Indication that Slide Show Is Running

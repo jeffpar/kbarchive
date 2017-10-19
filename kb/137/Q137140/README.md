@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137140: ErrMsg: Unable to Read from &lt;Path&gt;, It Is Open by Someone Else"
-permalink: kb/137/Q137140/
+permalink: /kb/137/Q137140/
 ---
 
 ## Q137140: ErrMsg: Unable to Read from &lt;Path&gt;, It Is Open by Someone Else

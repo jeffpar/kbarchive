@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135840: INF: Use of SQLBindParameter with VB and an ODBC driver"
-permalink: kb/135/Q135840/
+permalink: /kb/135/Q135840/
 ---
 
 ## Q135840: INF: Use of SQLBindParameter with VB and an ODBC driver

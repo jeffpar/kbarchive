@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196855: WD97: How to Extend Form Field Underlines to a Fixed Point"
-permalink: kb/196/Q196855/
+permalink: /kb/196/Q196855/
 ---
 
 ## Q196855: WD97: How to Extend Form Field Underlines to a Fixed Point

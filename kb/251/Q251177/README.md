@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251177: XADM: Error Message: You Must Be Logged Into an NT Domain to..."
-permalink: kb/251/Q251177/
+permalink: /kb/251/Q251177/
 ---
 
 ## Q251177: XADM: Error Message: You Must Be Logged Into an NT Domain to...

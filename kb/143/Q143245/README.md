@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143245: How to Strip Quotation Marks from an ASCII Delimited Text File"
-permalink: kb/143/Q143245/
+permalink: /kb/143/Q143245/
 ---
 
 ## Q143245: How to Strip Quotation Marks from an ASCII Delimited Text File

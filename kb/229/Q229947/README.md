@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229947: How to Silently Install the Windows 95 Year 2000 Update"
-permalink: kb/229/Q229947/
+permalink: /kb/229/Q229947/
 ---
 
 ## Q229947: How to Silently Install the Windows 95 Year 2000 Update

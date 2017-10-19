@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183571: Finding a File Keyed By a Timestamp Fails"
-permalink: kb/183/Q183571/
+permalink: /kb/183/Q183571/
 ---
 
 ## Q183571: Finding a File Keyed By a Timestamp Fails

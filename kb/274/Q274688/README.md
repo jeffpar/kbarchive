@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274688: Metal Gear Solid: How to Troubleshoot Game Controller Issues"
-permalink: kb/274/Q274688/
+permalink: /kb/274/Q274688/
 ---
 
 ## Q274688: Metal Gear Solid: How to Troubleshoot Game Controller Issues

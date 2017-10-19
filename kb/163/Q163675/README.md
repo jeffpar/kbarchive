@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163675: SMS: STOP 0x0000000A During Hardware Inventory"
-permalink: kb/163/Q163675/
+permalink: /kb/163/Q163675/
 ---
 
 ## Q163675: SMS: STOP 0x0000000A During Hardware Inventory

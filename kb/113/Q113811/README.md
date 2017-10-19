@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113811: PRB: TAB Key Does Not Trigger List Box's VALID Clause"
-permalink: kb/113/Q113811/
+permalink: /kb/113/Q113811/
 ---
 
 ## Q113811: PRB: TAB Key Does Not Trigger List Box's VALID Clause

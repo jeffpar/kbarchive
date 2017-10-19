@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240158: SMS: Logon Server Manager Performs Too Many Work Cycles"
-permalink: kb/240/Q240158/
+permalink: /kb/240/Q240158/
 ---
 
 ## Q240158: SMS: Logon Server Manager Performs Too Many Work Cycles

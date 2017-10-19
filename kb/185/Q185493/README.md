@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185493: WD97: How to Reset &quot;Always Perform Batch Conversions&quot;"
-permalink: kb/185/Q185493/
+permalink: /kb/185/Q185493/
 ---
 
 ## Q185493: WD97: How to Reset &quot;Always Perform Batch Conversions&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231627: XFOR: &quot;No Active Recipients&quot; Sending from GroupWise to Exchange"
-permalink: kb/231/Q231627/
+permalink: /kb/231/Q231627/
 ---
 
 ## Q231627: XFOR: &quot;No Active Recipients&quot; Sending from GroupWise to Exchange

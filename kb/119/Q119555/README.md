@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119555: PC Adm: Notice 56 Error Deleting User Address in POL"
-permalink: kb/119/Q119555/
+permalink: /kb/119/Q119555/
 ---
 
 ## Q119555: PC Adm: Notice 56 Error Deleting User Address in POL

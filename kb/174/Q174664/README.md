@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174664: Microsoft Exchange Does Not Start"
-permalink: kb/174/Q174664/
+permalink: /kb/174/Q174664/
 ---
 
 ## Q174664: Microsoft Exchange Does Not Start

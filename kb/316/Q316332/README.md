@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316332: PRB: OLE Err Msg: 0x80010105: The Server Threw an Exception"
-permalink: kb/316/Q316332/
+permalink: /kb/316/Q316332/
 ---
 
 ## Q316332: PRB: OLE Err Msg: 0x80010105: The Server Threw an Exception

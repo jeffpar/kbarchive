@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196976: INFO: Updated VB4dll.txt for Visual Basic 4.0"
-permalink: kb/196/Q196976/
+permalink: /kb/196/Q196976/
 ---
 
 ## Q196976: INFO: Updated VB4dll.txt for Visual Basic 4.0

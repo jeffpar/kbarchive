@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90529: NetWatcher Shows Same User Multiple Times"
-permalink: kb/090/Q90529/
+permalink: /kb/090/Q90529/
 ---
 
 ## Q90529: NetWatcher Shows Same User Multiple Times

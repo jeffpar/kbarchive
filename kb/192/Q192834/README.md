@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192834: My Personal Tutor 1st &amp; 2nd Grade: Minimum System Requirements"
-permalink: kb/192/Q192834/
+permalink: /kb/192/Q192834/
 ---
 
 ## Q192834: My Personal Tutor 1st &amp; 2nd Grade: Minimum System Requirements

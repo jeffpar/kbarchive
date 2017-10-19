@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299755: Train Simulator: Program Hangs When You Unlock Computer"
-permalink: kb/299/Q299755/
+permalink: /kb/299/Q299755/
 ---
 
 ## Q299755: Train Simulator: Program Hangs When You Unlock Computer

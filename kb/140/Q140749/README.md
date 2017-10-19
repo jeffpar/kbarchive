@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140749: Error Message: Error Starting Comctl32.dll"
-permalink: kb/140/Q140749/
+permalink: /kb/140/Q140749/
 ---
 
 ## Q140749: Error Message: Error Starting Comctl32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191589: BUG: Output Lines from TYPE Command Not Numbered"
-permalink: kb/191/Q191589/
+permalink: /kb/191/Q191589/
 ---
 
 ## Q191589: BUG: Output Lines from TYPE Command Not Numbered

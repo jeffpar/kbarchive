@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135291: Print Manager: Owner Appears as System Printing from Macintosh"
-permalink: kb/135/Q135291/
+permalink: /kb/135/Q135291/
 ---
 
 ## Q135291: Print Manager: Owner Appears as System Printing from Macintosh

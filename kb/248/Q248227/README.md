@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248227: SMS: Data Loader Drops Info When Processing an SMS 1.2 MIF"
-permalink: kb/248/Q248227/
+permalink: /kb/248/Q248227/
 ---
 
 ## Q248227: SMS: Data Loader Drops Info When Processing an SMS 1.2 MIF

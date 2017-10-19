@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126557: Error Message: A Device Is Not Functioning"
-permalink: kb/126/Q126557/
+permalink: /kb/126/Q126557/
 ---
 
 ## Q126557: Error Message: A Device Is Not Functioning

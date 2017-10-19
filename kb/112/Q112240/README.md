@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112240: Running Multiuser Screens Created w/ Screen Wizard"
-permalink: kb/112/Q112240/
+permalink: /kb/112/Q112240/
 ---
 
 ## Q112240: Running Multiuser Screens Created w/ Screen Wizard

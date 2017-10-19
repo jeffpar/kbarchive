@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244253: XFOR: No Mail Flow from GroupWise to Exchange - Event ID 6087"
-permalink: kb/244/Q244253/
+permalink: /kb/244/Q244253/
 ---
 
 ## Q244253: XFOR: No Mail Flow from GroupWise to Exchange - Event ID 6087

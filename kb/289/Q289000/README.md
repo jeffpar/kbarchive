@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289000: Client Agent Settings Do Not Propagate After Applying SP3 RC9"
-permalink: kb/289/Q289000/
+permalink: /kb/289/Q289000/
 ---
 
 ## Q289000: Client Agent Settings Do Not Propagate After Applying SP3 RC9

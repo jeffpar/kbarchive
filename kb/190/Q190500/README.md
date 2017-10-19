@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190500: XCON: Facilities Data Not Sent Out (by Exchange) with CALL ACC"
-permalink: kb/190/Q190500/
+permalink: /kb/190/Q190500/
 ---
 
 ## Q190500: XCON: Facilities Data Not Sent Out (by Exchange) with CALL ACC

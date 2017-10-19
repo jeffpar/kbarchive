@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193887: Replacing a Local WINS Database from a Replica Server"
-permalink: kb/193/Q193887/
+permalink: /kb/193/Q193887/
 ---
 
 ## Q193887: Replacing a Local WINS Database from a Replica Server

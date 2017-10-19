@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143388: 16-bit Windows Programs May Not Start"
-permalink: kb/143/Q143388/
+permalink: /kb/143/Q143388/
 ---
 
 ## Q143388: 16-bit Windows Programs May Not Start

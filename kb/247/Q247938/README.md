@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247938: SMS 2.0 and SMS Service Pack 1 Are Not Supported on Windows 2000"
-permalink: kb/247/Q247938/
+permalink: /kb/247/Q247938/
 ---
 
 ## Q247938: SMS 2.0 and SMS Service Pack 1 Are Not Supported on Windows 2000

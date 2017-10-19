@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26056: Beeping When Entering ANSI or IBM PC Extended Character Code"
-permalink: kb/026/Q26056/
+permalink: /kb/026/Q26056/
 ---
 
 ## Q26056: Beeping When Entering ANSI or IBM PC Extended Character Code

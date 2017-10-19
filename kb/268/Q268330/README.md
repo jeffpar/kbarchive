@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268330: Games: Screen Turns White and Game Hangs or Quits"
-permalink: kb/268/Q268330/
+permalink: /kb/268/Q268330/
 ---
 
 ## Q268330: Games: Screen Turns White and Game Hangs or Quits

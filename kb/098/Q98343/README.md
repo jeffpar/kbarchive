@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98343: Creating Colored Hot Spot with no Underline in MM Viewer"
-permalink: kb/098/Q98343/
+permalink: /kb/098/Q98343/
 ---
 
 ## Q98343: Creating Colored Hot Spot with no Underline in MM Viewer

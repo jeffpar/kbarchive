@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165843: 3270 Wizard Memory Error If Computer Name Is 15 Characters"
-permalink: kb/165/Q165843/
+permalink: /kb/165/Q165843/
 ---
 
 ## Q165843: 3270 Wizard Memory Error If Computer Name Is 15 Characters

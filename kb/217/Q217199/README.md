@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217199: Static WINS Entries Cause the Network Name to Go Offline"
-permalink: kb/217/Q217199/
+permalink: /kb/217/Q217199/
 ---
 
 ## Q217199: Static WINS Entries Cause the Network Name to Go Offline

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311116: URLScan AllowDotInPath Documentation Contains an Error"
-permalink: kb/311/Q311116/
+permalink: /kb/311/Q311116/
 ---
 
 ## Q311116: URLScan AllowDotInPath Documentation Contains an Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140480: PPT7: Run-Time Error 6 Using the Genigraphics Wizard"
-permalink: kb/140/Q140480/
+permalink: /kb/140/Q140480/
 ---
 
 ## Q140480: PPT7: Run-Time Error 6 Using the Genigraphics Wizard

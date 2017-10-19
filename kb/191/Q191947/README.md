@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191947: XCON: MTA Fails to Convert Message from 1984 X.400 System"
-permalink: kb/191/Q191947/
+permalink: /kb/191/Q191947/
 ---
 
 ## Q191947: XCON: MTA Fails to Convert Message from 1984 X.400 System

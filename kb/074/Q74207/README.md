@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74207: MS-DOS Backup Err Msg: Could Not Allocate Segment"
-permalink: kb/074/Q74207/
+permalink: /kb/074/Q74207/
 ---
 
 ## Q74207: MS-DOS Backup Err Msg: Could Not Allocate Segment

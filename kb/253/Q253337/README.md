@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253337: Allegiance: How to Update the Microsoft Allegiance Software"
-permalink: kb/253/Q253337/
+permalink: /kb/253/Q253337/
 ---
 
 ## Q253337: Allegiance: How to Update the Microsoft Allegiance Software

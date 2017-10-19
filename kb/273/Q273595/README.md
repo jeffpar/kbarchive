@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273595: ELL: Setup Hangs While Installing Speech Recognition Software"
-permalink: kb/273/Q273595/
+permalink: /kb/273/Q273595/
 ---
 
 ## Q273595: ELL: Setup Hangs While Installing Speech Recognition Software

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267313: MapPoint 2001: Minimum System Requirements"
-permalink: kb/267/Q267313/
+permalink: /kb/267/Q267313/
 ---
 
 ## Q267313: MapPoint 2001: Minimum System Requirements

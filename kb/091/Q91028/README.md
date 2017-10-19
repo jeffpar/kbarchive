@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91028: TBMI2.COM Removed from AUTOEXEC.BAT in WFWG"
-permalink: kb/091/Q91028/
+permalink: /kb/091/Q91028/
 ---
 
 ## Q91028: TBMI2.COM Removed from AUTOEXEC.BAT in WFWG

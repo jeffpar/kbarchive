@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158489: XFOR: Err Msg: The Selected Postoffice is Read Only..."
-permalink: kb/158/Q158489/
+permalink: /kb/158/Q158489/
 ---
 
 ## Q158489: XFOR: Err Msg: The Selected Postoffice is Read Only...

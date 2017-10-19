@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73691: Opening Editor with Selected File in Shell"
-permalink: kb/073/Q73691/
+permalink: /kb/073/Q73691/
 ---
 
 ## Q73691: Opening Editor with Selected File in Shell

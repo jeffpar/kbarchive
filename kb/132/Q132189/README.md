@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132189: PPT: How to Determine and/or Change the Bullet Style"
-permalink: kb/132/Q132189/
+permalink: /kb/132/Q132189/
 ---
 
 ## Q132189: PPT: How to Determine and/or Change the Bullet Style

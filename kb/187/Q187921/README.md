@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187921: XADM: Body Part Not Mapped in Multipart/Alternative Message"
-permalink: kb/187/Q187921/
+permalink: /kb/187/Q187921/
 ---
 
 ## Q187921: XADM: Body Part Not Mapped in Multipart/Alternative Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78167: Kraft Trackball Mouse and Windows 3.0"
-permalink: kb/078/Q78167/
+permalink: /kb/078/Q78167/
 ---
 
 ## Q78167: Kraft Trackball Mouse and Windows 3.0

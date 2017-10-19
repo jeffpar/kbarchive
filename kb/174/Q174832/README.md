@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174832: DOC: Incorrect Internet Transfer Control GetChunk Example"
-permalink: kb/174/Q174832/
+permalink: /kb/174/Q174832/
 ---
 
 ## Q174832: DOC: Incorrect Internet Transfer Control GetChunk Example

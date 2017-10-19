@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175103: XFOR: Migration Wizard Contains Inaccurate Help File Option"
-permalink: kb/175/Q175103/
+permalink: /kb/175/Q175103/
 ---
 
 ## Q175103: XFOR: Migration Wizard Contains Inaccurate Help File Option

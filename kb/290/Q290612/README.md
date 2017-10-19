@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290612: BUG: Event ID: 5 &quot;Error While Reading Default Settings&quot;"
-permalink: kb/290/Q290612/
+permalink: /kb/290/Q290612/
 ---
 
 ## Q290612: BUG: Event ID: 5 &quot;Error While Reading Default Settings&quot;

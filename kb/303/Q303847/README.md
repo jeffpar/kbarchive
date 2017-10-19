@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303847: User Group Discovery  Collection Is Not Populated to Child Sites"
-permalink: kb/303/Q303847/
+permalink: /kb/303/Q303847/
 ---
 
 ## Q303847: User Group Discovery  Collection Is Not Populated to Child Sites

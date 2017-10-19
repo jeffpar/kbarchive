@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87022: SMTP: Definition of SMTP"
-permalink: kb/087/Q87022/
+permalink: /kb/087/Q87022/
 ---
 
 ## Q87022: SMTP: Definition of SMTP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192296: Specially-Malformed GET Requests Can Create Denial of Service"
-permalink: kb/192/Q192296/
+permalink: /kb/192/Q192296/
 ---
 
 ## Q192296: Specially-Malformed GET Requests Can Create Denial of Service

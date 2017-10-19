@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158740: Cannot Use Date In &quot;AT&quot; Scheduler In Korean Windows NT Server"
-permalink: kb/158/Q158740/
+permalink: /kb/158/Q158740/
 ---
 
 ## Q158740: Cannot Use Date In &quot;AT&quot; Scheduler In Korean Windows NT Server

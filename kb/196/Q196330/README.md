@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196330: STOP 0x0000001E May Occur in Win32k.sys Under Stress"
-permalink: kb/196/Q196330/
+permalink: /kb/196/Q196330/
 ---
 
 ## Q196330: STOP 0x0000001E May Occur in Win32k.sys Under Stress

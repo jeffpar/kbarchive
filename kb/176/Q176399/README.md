@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176399: PRB: OLE Automation Error - 2147418107 (80010005)"
-permalink: kb/176/Q176399/
+permalink: /kb/176/Q176399/
 ---
 
 ## Q176399: PRB: OLE Automation Error - 2147418107 (80010005)

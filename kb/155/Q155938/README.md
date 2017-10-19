@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155938: PRB: SET PRINTER TO Does Not Create File in VFP for Macintosh"
-permalink: kb/155/Q155938/
+permalink: /kb/155/Q155938/
 ---
 
 ## Q155938: PRB: SET PRINTER TO Does Not Create File in VFP for Macintosh

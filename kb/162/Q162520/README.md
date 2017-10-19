@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162520: WD97: GetAllSettings Returns Type Mismatch"
-permalink: kb/162/Q162520/
+permalink: /kb/162/Q162520/
 ---
 
 ## Q162520: WD97: GetAllSettings Returns Type Mismatch

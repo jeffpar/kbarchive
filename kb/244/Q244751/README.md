@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244751: PRB: Winsock Control does not Fire Error Event in all Cases"
-permalink: kb/244/Q244751/
+permalink: /kb/244/Q244751/
 ---
 
 ## Q244751: PRB: Winsock Control does not Fire Error Event in all Cases

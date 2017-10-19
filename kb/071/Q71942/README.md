@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71942: Word Wrap in Notepad Causes UAE"
-permalink: kb/071/Q71942/
+permalink: /kb/071/Q71942/
 ---
 
 ## Q71942: Word Wrap in Notepad Causes UAE

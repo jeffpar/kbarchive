@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123213: Requirements of a SMS Network Monitor Agent"
-permalink: kb/123/Q123213/
+permalink: /kb/123/Q123213/
 ---
 
 ## Q123213: Requirements of a SMS Network Monitor Agent

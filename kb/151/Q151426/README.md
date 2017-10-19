@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151426: HOWTO: Create a DAO Setup that Installs Jet IISAM Files"
-permalink: kb/151/Q151426/
+permalink: /kb/151/Q151426/
 ---
 
 ## Q151426: HOWTO: Create a DAO Setup that Installs Jet IISAM Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141433: File Names and File Sizes of Online Product Updates"
-permalink: kb/141/Q141433/
+permalink: /kb/141/Q141433/
 ---
 
 ## Q141433: File Names and File Sizes of Online Product Updates

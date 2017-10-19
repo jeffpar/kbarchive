@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81422: No Expanded Memory in MS-DOS-Based Applications w/ Windows 3.0"
-permalink: kb/081/Q81422/
+permalink: /kb/081/Q81422/
 ---
 
 ## Q81422: No Expanded Memory in MS-DOS-Based Applications w/ Windows 3.0

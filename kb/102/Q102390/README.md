@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102390: INFO: Keeping #include Files Out of VWB Dependency List"
-permalink: kb/102/Q102390/
+permalink: /kb/102/Q102390/
 ---
 
 ## Q102390: INFO: Keeping #include Files Out of VWB Dependency List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193358: PRB: Books Online Causes an IPF at 00DE:00000003"
-permalink: kb/193/Q193358/
+permalink: /kb/193/Q193358/
 ---
 
 ## Q193358: PRB: Books Online Causes an IPF at 00DE:00000003

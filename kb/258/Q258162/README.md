@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258162: SMS: High Number of SMS 1.2 Child Sites May Create a Backlog"
-permalink: kb/258/Q258162/
+permalink: /kb/258/Q258162/
 ---
 
 ## Q258162: SMS: High Number of SMS 1.2 Child Sites May Create a Backlog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174710: XWEB: Can't Type Information in Outlook Web Access Mail Msg"
-permalink: kb/174/Q174710/
+permalink: /kb/174/Q174710/
 ---
 
 ## Q174710: XWEB: Can't Type Information in Outlook Web Access Mail Msg

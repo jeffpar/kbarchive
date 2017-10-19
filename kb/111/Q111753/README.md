@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111753: DOC: assert() Macro Does Not Display Pop-Up Window in Win32"
-permalink: kb/111/Q111753/
+permalink: /kb/111/Q111753/
 ---
 
 ## Q111753: DOC: assert() Macro Does Not Display Pop-Up Window in Win32

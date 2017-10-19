@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281544: Terminal Server Hangs with &quot;Stop 0x82&quot; Error Message"
-permalink: kb/281/Q281544/
+permalink: /kb/281/Q281544/
 ---
 
 ## Q281544: Terminal Server Hangs with &quot;Stop 0x82&quot; Error Message

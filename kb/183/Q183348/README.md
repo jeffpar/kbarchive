@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183348: SMS: Secondary Sites Are No Longer Active"
-permalink: kb/183/Q183348/
+permalink: /kb/183/Q183348/
 ---
 
 ## Q183348: SMS: Secondary Sites Are No Longer Active

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156647: Deadly Tide: Troubleshooting Display Problems"
-permalink: kb/156/Q156647/
+permalink: /kb/156/Q156647/
 ---
 
 ## Q156647: Deadly Tide: Troubleshooting Display Problems

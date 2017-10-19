@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126711: Quick Formatting Write-Protected Floppy Disks Allowed"
-permalink: kb/126/Q126711/
+permalink: /kb/126/Q126711/
 ---
 
 ## Q126711: Quick Formatting Write-Protected Floppy Disks Allowed

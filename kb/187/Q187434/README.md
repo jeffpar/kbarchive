@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187434: Admin Process List Does Not Remove Deleted Processes"
-permalink: kb/187/Q187434/
+permalink: /kb/187/Q187434/
 ---
 
 ## Q187434: Admin Process List Does Not Remove Deleted Processes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104846: MS-DOS Upgrade Does Not Include MS-DOS Shell"
-permalink: kb/104/Q104846/
+permalink: /kb/104/Q104846/
 ---
 
 ## Q104846: MS-DOS Upgrade Does Not Include MS-DOS Shell

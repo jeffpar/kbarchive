@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256610: Flashed BIOS Version Is Not Updated by Hardware Inventory"
-permalink: kb/256/Q256610/
+permalink: /kb/256/Q256610/
 ---
 
 ## Q256610: Flashed BIOS Version Is Not Updated by Hardware Inventory

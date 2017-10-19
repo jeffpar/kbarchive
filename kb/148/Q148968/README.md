@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148968: Compaq Proliant May Save Corrupted Memory.dmp When Crashing"
-permalink: kb/148/Q148968/
+permalink: /kb/148/Q148968/
 ---
 
 ## Q148968: Compaq Proliant May Save Corrupted Memory.dmp When Crashing

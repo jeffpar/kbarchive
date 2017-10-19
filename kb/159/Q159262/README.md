@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159262: Nick 3DMM: Compatability Between 3DMM and Nick 3DMM"
-permalink: kb/159/Q159262/
+permalink: /kb/159/Q159262/
 ---
 
 ## Q159262: Nick 3DMM: Compatability Between 3DMM and Nick 3DMM

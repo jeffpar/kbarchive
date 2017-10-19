@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151704: XCLN: Remove All and Remove None buttons are Reversed"
-permalink: kb/151/Q151704/
+permalink: /kb/151/Q151704/
 ---
 
 ## Q151704: XCLN: Remove All and Remove None buttons are Reversed

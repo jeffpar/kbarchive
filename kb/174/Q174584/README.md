@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174584: BUG: Scrolling in Grid May Be Slow with Filtered Cursor"
-permalink: kb/174/Q174584/
+permalink: /kb/174/Q174584/
 ---
 
 ## Q174584: BUG: Scrolling in Grid May Be Slow with Filtered Cursor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180406: Windows 95 DFS Client May Not Work with V-Shield"
-permalink: kb/180/Q180406/
+permalink: /kb/180/Q180406/
 ---
 
 ## Q180406: Windows 95 DFS Client May Not Work with V-Shield

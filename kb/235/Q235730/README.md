@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235730: SMS: Remote Control Fails on Win95 Client w/ Nitro 3D Video Card"
-permalink: kb/235/Q235730/
+permalink: /kb/235/Q235730/
 ---
 
 ## Q235730: SMS: Remote Control Fails on Win95 Client w/ Nitro 3D Video Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322034: How To Import E-mail From Netscape Mail To Outlook Express 5.0.4"
-permalink: kb/322/Q322034/
+permalink: /kb/322/Q322034/
 ---
 
 ## Q322034: How To Import E-mail From Netscape Mail To Outlook Express 5.0.4

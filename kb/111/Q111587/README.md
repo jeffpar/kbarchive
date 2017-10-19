@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111587: BUG: _lread() Functions Incorrectly When No Floppy in Drive"
-permalink: kb/111/Q111587/
+permalink: /kb/111/Q111587/
 ---
 
 ## Q111587: BUG: _lread() Functions Incorrectly When No Floppy in Drive

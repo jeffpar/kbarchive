@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134293: BBS Status Bar Sometimes Shows Inaccurate Number of Messages"
-permalink: kb/134/Q134293/
+permalink: /kb/134/Q134293/
 ---
 
 ## Q134293: BBS Status Bar Sometimes Shows Inaccurate Number of Messages

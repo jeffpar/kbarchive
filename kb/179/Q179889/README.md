@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179889: Close Combat II/III Err Msg: Cannot Open File for Streaming"
-permalink: kb/179/Q179889/
+permalink: /kb/179/Q179889/
 ---
 
 ## Q179889: Close Combat II/III Err Msg: Cannot Open File for Streaming

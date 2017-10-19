@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159728: DIR Command to NetWare Server Using GSNW Results in Error"
-permalink: kb/159/Q159728/
+permalink: /kb/159/Q159728/
 ---
 
 ## Q159728: DIR Command to NetWare Server Using GSNW Results in Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271987: XADM: Overview of Exchange Database Architecture and Engine"
-permalink: kb/271/Q271987/
+permalink: /kb/271/Q271987/
 ---
 
 ## Q271987: XADM: Overview of Exchange Database Architecture and Engine

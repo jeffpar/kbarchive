@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153944: RAS Server Fails to Autodisconnect Inactive RAS Clients With TCP"
-permalink: kb/153/Q153944/
+permalink: /kb/153/Q153944/
 ---
 
 ## Q153944: RAS Server Fails to Autodisconnect Inactive RAS Clients With TCP

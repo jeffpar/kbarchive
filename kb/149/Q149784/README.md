@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149784: FIX: LNK2001 Incorrectly Generated for Static Data Member"
-permalink: kb/149/Q149784/
+permalink: /kb/149/Q149784/
 ---
 
 ## Q149784: FIX: LNK2001 Incorrectly Generated for Static Data Member

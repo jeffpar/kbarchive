@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256507: RAS Client May Not Be Authenticated When You Reconnect"
-permalink: kb/256/Q256507/
+permalink: /kb/256/Q256507/
 ---
 
 ## Q256507: RAS Client May Not Be Authenticated When You Reconnect

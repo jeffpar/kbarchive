@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317574: PRB: &quot;Unspecified Error&quot; After Renaming a .NET Subproject in VSS"
-permalink: kb/317/Q317574/
+permalink: /kb/317/Q317574/
 ---
 
 ## Q317574: PRB: &quot;Unspecified Error&quot; After Renaming a .NET Subproject in VSS

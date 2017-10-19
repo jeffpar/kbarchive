@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142304: Problem with Windows NT DDK Ndis.h"
-permalink: kb/142/Q142304/
+permalink: /kb/142/Q142304/
 ---
 
 ## Q142304: Problem with Windows NT DDK Ndis.h

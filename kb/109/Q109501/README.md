@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109501: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 2 of 4)"
-permalink: kb/109/Q109501/
+permalink: /kb/109/Q109501/
 ---
 
 ## Q109501: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 2 of 4)

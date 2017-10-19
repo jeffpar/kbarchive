@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239882: NFL Fever 2000: Graphics in the Game Do Not Appear Smooth"
-permalink: kb/239/Q239882/
+permalink: /kb/239/Q239882/
 ---
 
 ## Q239882: NFL Fever 2000: Graphics in the Game Do Not Appear Smooth

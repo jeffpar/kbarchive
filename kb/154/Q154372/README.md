@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154372: Long File Names Lost with Ncopy.exe"
-permalink: kb/154/Q154372/
+permalink: /kb/154/Q154372/
 ---
 
 ## Q154372: Long File Names Lost with Ncopy.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243288: Required Steps Needed If Insert Option Used for HSD Creation"
-permalink: kb/243/Q243288/
+permalink: /kb/243/Q243288/
 ---
 
 ## Q243288: Required Steps Needed If Insert Option Used for HSD Creation

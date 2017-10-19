@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175110: How to Change the Subdomain Name in SNA Server"
-permalink: kb/175/Q175110/
+permalink: /kb/175/Q175110/
 ---
 
 ## Q175110: How to Change the Subdomain Name in SNA Server

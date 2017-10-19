@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170077: XFOR: IMC Hangs When VRFY is Enabled and VRFY Command."
-permalink: kb/170/Q170077/
+permalink: /kb/170/Q170077/
 ---
 
 ## Q170077: XFOR: IMC Hangs When VRFY is Enabled and VRFY Command.

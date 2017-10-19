@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115692: BUG: No Video Refresh When .PIF Runs When Logged Off"
-permalink: kb/115/Q115692/
+permalink: /kb/115/Q115692/
 ---
 
 ## Q115692: BUG: No Video Refresh When .PIF Runs When Logged Off

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129617: FIX: Destructor Called on Non Constructed Temporary"
-permalink: kb/129/Q129617/
+permalink: /kb/129/Q129617/
 ---
 
 ## Q129617: FIX: Destructor Called on Non Constructed Temporary

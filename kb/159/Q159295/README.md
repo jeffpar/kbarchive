@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159295: XFOR: Exchange Dir-Sync Failing with Event ID 134"
-permalink: kb/159/Q159295/
+permalink: /kb/159/Q159295/
 ---
 
 ## Q159295: XFOR: Exchange Dir-Sync Failing with Event ID 134

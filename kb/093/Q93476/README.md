@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93476: Xircom Network Simplicity Adapters Not Supported with WFWG"
-permalink: kb/093/Q93476/
+permalink: /kb/093/Q93476/
 ---
 
 ## Q93476: Xircom Network Simplicity Adapters Not Supported with WFWG

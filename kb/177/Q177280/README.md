@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177280: FS98: Global On Cockpit Instruments Not Always Visible"
-permalink: kb/177/Q177280/
+permalink: /kb/177/Q177280/
 ---
 
 ## Q177280: FS98: Global On Cockpit Instruments Not Always Visible

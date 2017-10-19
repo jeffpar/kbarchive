@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141534: Unconf.:Haunted :Call to Undefined Dynalink/QuickTime"
-permalink: kb/141/Q141534/
+permalink: /kb/141/Q141534/
 ---
 
 ## Q141534: Unconf.:Haunted :Call to Undefined Dynalink/QuickTime

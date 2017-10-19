@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164723: Blue Screen Stop 0x41 Error MUST_SUCCEED_POOL_EMPTY"
-permalink: kb/164/Q164723/
+permalink: /kb/164/Q164723/
 ---
 
 ## Q164723: Blue Screen Stop 0x41 Error MUST_SUCCEED_POOL_EMPTY

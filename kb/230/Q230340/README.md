@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230340: &quot;PATH Too Long&quot; Error Installing Windows 95/98 Client on WinNT"
-permalink: kb/230/Q230340/
+permalink: /kb/230/Q230340/
 ---
 
 ## Q230340: &quot;PATH Too Long&quot; Error Installing Windows 95/98 Client on WinNT

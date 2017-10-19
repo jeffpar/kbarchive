@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312492: Dutch and Polish Versions of the SRP Truncate the Country List"
-permalink: kb/312/Q312492/
+permalink: /kb/312/Q312492/
 ---
 
 ## Q312492: Dutch and Polish Versions of the SRP Truncate the Country List

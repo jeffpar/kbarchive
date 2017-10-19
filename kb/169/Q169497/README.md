@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169497: PRB: &quot;Another Application is Currently Using JET File...&quot;"
-permalink: kb/169/Q169497/
+permalink: /kb/169/Q169497/
 ---
 
 ## Q169497: PRB: &quot;Another Application is Currently Using JET File...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254935: PRB: Visual FoxPro Setup Wizard Does Not Include the Vbame.dll F"
-permalink: kb/254/Q254935/
+permalink: /kb/254/Q254935/
 ---
 
 ## Q254935: PRB: Visual FoxPro Setup Wizard Does Not Include the Vbame.dll F

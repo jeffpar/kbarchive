@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193414: BUG: SetAll Not Refreshing Text Boxes in Grid When Sparse =.F."
-permalink: kb/193/Q193414/
+permalink: /kb/193/Q193414/
 ---
 
 ## Q193414: BUG: SetAll Not Refreshing Text Boxes in Grid When Sparse =.F.

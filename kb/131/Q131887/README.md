@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131887: UNCONF: PRB: Problems If Change PCAnywhere Entry in SYSTEM.INI"
-permalink: kb/131/Q131887/
+permalink: /kb/131/Q131887/
 ---
 
 ## Q131887: UNCONF: PRB: Problems If Change PCAnywhere Entry in SYSTEM.INI

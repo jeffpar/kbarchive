@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103811: How Windows NT Constructs the supported Network Adapter List"
-permalink: kb/103/Q103811/
+permalink: /kb/103/Q103811/
 ---
 
 ## Q103811: How Windows NT Constructs the supported Network Adapter List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170205: Windows NT 4.0 RAS Support for 3Com Impact ISDN Modems"
-permalink: kb/170/Q170205/
+permalink: /kb/170/Q170205/
 ---
 
 ## Q170205: Windows NT 4.0 RAS Support for 3Com Impact ISDN Modems

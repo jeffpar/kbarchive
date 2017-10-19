@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262533: StarLancer: Game Sounds Are Played After Game Quits Unexpectedly"
-permalink: kb/262/Q262533/
+permalink: /kb/262/Q262533/
 ---
 
 ## Q262533: StarLancer: Game Sounds Are Played After Game Quits Unexpectedly

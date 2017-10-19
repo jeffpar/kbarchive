@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93240: PC Win: Accented Characters Lost in Insert from File"
-permalink: kb/093/Q93240/
+permalink: /kb/093/Q93240/
 ---
 
 ## Q93240: PC Win: Accented Characters Lost in Insert from File

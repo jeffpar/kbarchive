@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177933: How to Change Menu Font Size in MSN Program Viewer"
-permalink: kb/177/Q177933/
+permalink: /kb/177/Q177933/
 ---
 
 ## Q177933: How to Change Menu Font Size in MSN Program Viewer

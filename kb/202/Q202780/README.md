@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202780: Encarta 99 Err Msg: An Error Has Occurred in Your Program"
-permalink: kb/202/Q202780/
+permalink: /kb/202/Q202780/
 ---
 
 ## Q202780: Encarta 99 Err Msg: An Error Has Occurred in Your Program

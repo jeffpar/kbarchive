@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174780: Filtering Adobe Acrobat Files for Use with Index Server"
-permalink: kb/174/Q174780/
+permalink: /kb/174/Q174780/
 ---
 
 ## Q174780: Filtering Adobe Acrobat Files for Use with Index Server

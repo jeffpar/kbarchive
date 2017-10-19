@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128757: CODE COMPLETE: Corrections and Comments"
-permalink: kb/128/Q128757/
+permalink: /kb/128/Q128757/
 ---
 
 ## Q128757: CODE COMPLETE: Corrections and Comments

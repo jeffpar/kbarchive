@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135236: COM.CFG Does Not Shrink When Configuration Items are Removed"
-permalink: kb/135/Q135236/
+permalink: /kb/135/Q135236/
 ---
 
 ## Q135236: COM.CFG Does Not Shrink When Configuration Items are Removed

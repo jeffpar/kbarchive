@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159458: XADM: Unable to Locate Rpcdce4.dll"
-permalink: kb/159/Q159458/
+permalink: /kb/159/Q159458/
 ---
 
 ## Q159458: XADM: Unable to Locate Rpcdce4.dll

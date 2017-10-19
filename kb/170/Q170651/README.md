@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170651: PRB: ODBC Connectivity Errors with 68K Executables Only"
-permalink: kb/170/Q170651/
+permalink: /kb/170/Q170651/
 ---
 
 ## Q170651: PRB: ODBC Connectivity Errors with 68K Executables Only

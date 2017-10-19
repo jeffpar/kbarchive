@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260911: AoE II: Unable to Connect by Using Direct Cable Connection"
-permalink: kb/260/Q260911/
+permalink: /kb/260/Q260911/
 ---
 
 ## Q260911: AoE II: Unable to Connect by Using Direct Cable Connection

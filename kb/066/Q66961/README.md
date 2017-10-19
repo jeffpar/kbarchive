@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66961: Starting Windows Applications in Full Screen Mode"
-permalink: kb/066/Q66961/
+permalink: /kb/066/Q66961/
 ---
 
 ## Q66961: Starting Windows Applications in Full Screen Mode

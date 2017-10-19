@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240385: XADM: Directory Service Stops Responding with Event ID 1186"
-permalink: kb/240/Q240385/
+permalink: /kb/240/Q240385/
 ---
 
 ## Q240385: XADM: Directory Service Stops Responding with Event ID 1186

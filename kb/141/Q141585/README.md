@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141585: SMS 1.1 Does Not Detect IP Configuration Parameters"
-permalink: kb/141/Q141585/
+permalink: /kb/141/Q141585/
 ---
 
 ## Q141585: SMS 1.1 Does Not Detect IP Configuration Parameters

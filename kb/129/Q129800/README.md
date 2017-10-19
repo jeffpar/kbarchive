@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129800: PRB: VB/VB Apps Won't Run if Windows NT OLE Service Stopped"
-permalink: kb/129/Q129800/
+permalink: /kb/129/Q129800/
 ---
 
 ## Q129800: PRB: VB/VB Apps Won't Run if Windows NT OLE Service Stopped

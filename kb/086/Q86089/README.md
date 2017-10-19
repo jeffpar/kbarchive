@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86089: PC WSPlus: Add Gateway Brings Up All Gateways"
-permalink: kb/086/Q86089/
+permalink: /kb/086/Q86089/
 ---
 
 ## Q86089: PC WSPlus: Add Gateway Brings Up All Gateways

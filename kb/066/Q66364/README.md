@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66364: DOC: How Dialog Functions Return Values Indicate Failure"
-permalink: kb/066/Q66364/
+permalink: /kb/066/Q66364/
 ---
 
 ## Q66364: DOC: How Dialog Functions Return Values Indicate Failure

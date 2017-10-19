@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96760: PRB: Gray Box Appears Using SDK Custom Control in App Studio"
-permalink: kb/096/Q96760/
+permalink: /kb/096/Q96760/
 ---
 
 ## Q96760: PRB: Gray Box Appears Using SDK Custom Control in App Studio

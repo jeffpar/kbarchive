@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164180: Full App Event Log Prevents Virtual Root Enumeration &amp; Indexing"
-permalink: kb/164/Q164180/
+permalink: /kb/164/Q164180/
 ---
 
 ## Q164180: Full App Event Log Prevents Virtual Root Enumeration &amp; Indexing

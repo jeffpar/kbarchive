@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242364: XADM: Information Store Does Not Start After Offline Defrag"
-permalink: kb/242/Q242364/
+permalink: /kb/242/Q242364/
 ---
 
 ## Q242364: XADM: Information Store Does Not Start After Offline Defrag

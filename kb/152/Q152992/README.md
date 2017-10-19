@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152992: Netlogon Service Does Not Start After Applying SP4"
-permalink: kb/152/Q152992/
+permalink: /kb/152/Q152992/
 ---
 
 ## Q152992: Netlogon Service Does Not Start After Applying SP4

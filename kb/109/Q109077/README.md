@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109077: Event 624 Logs Improper File Name in Explanation Text"
-permalink: kb/109/Q109077/
+permalink: /kb/109/Q109077/
 ---
 
 ## Q109077: Event 624 Logs Improper File Name in Explanation Text

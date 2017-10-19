@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269215: Cannot Import or Export Null Attribute Value to or from Netscape"
-permalink: kb/269/Q269215/
+permalink: /kb/269/Q269215/
 ---
 
 ## Q269215: Cannot Import or Export Null Attribute Value to or from Netscape

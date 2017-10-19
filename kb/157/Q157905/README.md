@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157905: INSIDE OLE 2ND EDITION Corrections and Comments"
-permalink: kb/157/Q157905/
+permalink: /kb/157/Q157905/
 ---
 
 ## Q157905: INSIDE OLE 2ND EDITION Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123479: Password Change to NT Server Returns &quot;Password...too short..&quot;"
-permalink: kb/123/Q123479/
+permalink: /kb/123/Q123479/
 ---
 
 ## Q123479: Password Change to NT Server Returns &quot;Password...too short..&quot;

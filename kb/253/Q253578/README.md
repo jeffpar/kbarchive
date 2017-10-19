@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253578: SMS: Error When PCMMAC Runs Job on Multiple Clients at Same Time"
-permalink: kb/253/Q253578/
+permalink: /kb/253/Q253578/
 ---
 
 ## Q253578: SMS: Error When PCMMAC Runs Job on Multiple Clients at Same Time

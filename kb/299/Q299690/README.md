@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299690: Train Simulator: Known Video Issues"
-permalink: kb/299/Q299690/
+permalink: /kb/299/Q299690/
 ---
 
 ## Q299690: Train Simulator: Known Video Issues

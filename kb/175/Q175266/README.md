@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175266: Creating Many Partitions Causes Double Drive Letters"
-permalink: kb/175/Q175266/
+permalink: /kb/175/Q175266/
 ---
 
 ## Q175266: Creating Many Partitions Causes Double Drive Letters

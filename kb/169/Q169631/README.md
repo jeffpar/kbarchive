@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169631: XCON: MTA Runs Internal MTACHECK After Command-Line Version"
-permalink: kb/169/Q169631/
+permalink: /kb/169/Q169631/
 ---
 
 ## Q169631: XCON: MTA Runs Internal MTACHECK After Command-Line Version

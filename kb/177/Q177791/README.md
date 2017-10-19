@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177791: INFO: DBCS Enabled/Localized FoxPro Products in Far East Region"
-permalink: kb/177/Q177791/
+permalink: /kb/177/Q177791/
 ---
 
 ## Q177791: INFO: DBCS Enabled/Localized FoxPro Products in Far East Region

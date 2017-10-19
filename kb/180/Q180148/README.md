@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180148: French Support for Host Security"
-permalink: kb/180/Q180148/
+permalink: /kb/180/Q180148/
 ---
 
 ## Q180148: French Support for Host Security

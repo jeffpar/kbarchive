@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168638: PPT7: No Action or Interactive Settings for Grouped Shapes"
-permalink: kb/168/Q168638/
+permalink: /kb/168/Q168638/
 ---
 
 ## Q168638: PPT7: No Action or Interactive Settings for Grouped Shapes

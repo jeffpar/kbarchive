@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264137: MTM2: Cannot Change Weather on the Graveyard Track"
-permalink: kb/264/Q264137/
+permalink: /kb/264/Q264137/
 ---
 
 ## Q264137: MTM2: Cannot Change Weather on the Graveyard Track

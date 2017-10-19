@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140292: How to Create Blinking Text"
-permalink: kb/140/Q140292/
+permalink: /kb/140/Q140292/
 ---
 
 ## Q140292: How to Create Blinking Text

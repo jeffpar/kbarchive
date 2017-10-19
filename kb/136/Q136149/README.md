@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136149: Optical Disks and Save Configuration in Disk Administrator"
-permalink: kb/136/Q136149/
+permalink: /kb/136/Q136149/
 ---
 
 ## Q136149: Optical Disks and Save Configuration in Disk Administrator

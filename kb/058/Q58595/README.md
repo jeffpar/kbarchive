@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58595: Mac Hyp: GetDate Gets the Time and Date a Message Was Sent"
-permalink: kb/058/Q58595/
+permalink: /kb/058/Q58595/
 ---
 
 ## Q58595: Mac Hyp: GetDate Gets the Time and Date a Message Was Sent

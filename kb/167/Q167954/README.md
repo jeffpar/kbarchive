@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167954: FCP: ErrMsg: This Program Has Performed An Illegal Operation..."
-permalink: kb/167/Q167954/
+permalink: /kb/167/Q167954/
 ---
 
 ## Q167954: FCP: ErrMsg: This Program Has Performed An Illegal Operation...

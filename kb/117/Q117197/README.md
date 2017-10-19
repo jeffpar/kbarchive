@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117197: PC Adm: Deleting Users w/IMPORT Leaves Orphaned Folders, .IDXs"
-permalink: kb/117/Q117197/
+permalink: /kb/117/Q117197/
 ---
 
 ## Q117197: PC Adm: Deleting Users w/IMPORT Leaves Orphaned Folders, .IDXs

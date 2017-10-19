@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137581: Problems with Multiple Sessions over TCP/IP using NetSoft Elite"
-permalink: kb/137/Q137581/
+permalink: /kb/137/Q137581/
 ---
 
 ## Q137581: Problems with Multiple Sessions over TCP/IP using NetSoft Elite

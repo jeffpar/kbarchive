@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195009: Application Access Violation or Hang After Applying SP4"
-permalink: kb/195/Q195009/
+permalink: /kb/195/Q195009/
 ---
 
 ## Q195009: Application Access Violation or Hang After Applying SP4

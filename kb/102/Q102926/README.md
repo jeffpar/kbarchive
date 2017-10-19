@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102926: PC DirSync: Invalid Import Filename Does Not Create Log"
-permalink: kb/102/Q102926/
+permalink: /kb/102/Q102926/
 ---
 
 ## Q102926: PC DirSync: Invalid Import Filename Does Not Create Log

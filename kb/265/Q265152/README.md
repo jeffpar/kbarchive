@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265152: BUG: RasDial() Function Gets Slower with Large Number of Redials"
-permalink: kb/265/Q265152/
+permalink: /kb/265/Q265152/
 ---
 
 ## Q265152: BUG: RasDial() Function Gets Slower with Large Number of Redials

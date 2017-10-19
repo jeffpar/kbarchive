@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171838: FIX:Crash Compiling Native Code for Assignment of Variant Array"
-permalink: kb/171/Q171838/
+permalink: /kb/171/Q171838/
 ---
 
 ## Q171838: FIX:Crash Compiling Native Code for Assignment of Variant Array

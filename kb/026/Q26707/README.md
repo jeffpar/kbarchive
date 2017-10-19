@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26707: LOOP Can Use ECX in 16-bit Segment, CX in 32-bit Segment"
-permalink: kb/026/Q26707/
+permalink: /kb/026/Q26707/
 ---
 
 ## Q26707: LOOP Can Use ECX in 16-bit Segment, CX in 32-bit Segment

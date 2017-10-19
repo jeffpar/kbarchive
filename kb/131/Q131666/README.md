@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131666: Access Denied When Connecting From Pathworks 4.1 Client"
-permalink: kb/131/Q131666/
+permalink: /kb/131/Q131666/
 ---
 
 ## Q131666: Access Denied When Connecting From Pathworks 4.1 Client

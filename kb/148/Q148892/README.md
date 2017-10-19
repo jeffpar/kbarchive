@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148892: BUG: SourceSafe File Not Found Error When VB Deletes .FRX File"
-permalink: kb/148/Q148892/
+permalink: /kb/148/Q148892/
 ---
 
 ## Q148892: BUG: SourceSafe File Not Found Error When VB Deletes .FRX File

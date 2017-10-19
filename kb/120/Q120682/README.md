@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120682: How to Exclude CLSIDs from OLE's Insert Object Dialog"
-permalink: kb/120/Q120682/
+permalink: /kb/120/Q120682/
 ---
 
 ## Q120682: How to Exclude CLSIDs from OLE's Insert Object Dialog

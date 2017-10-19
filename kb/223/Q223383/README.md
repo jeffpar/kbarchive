@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223383: XCLN: Lotus cc:Mail Importer Asserts Migrating Archive Files"
-permalink: kb/223/Q223383/
+permalink: /kb/223/Q223383/
 ---
 
 ## Q223383: XCLN: Lotus cc:Mail Importer Asserts Migrating Archive Files

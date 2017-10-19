@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130871: Lucida Math Type 1 Fonts Do Not Print Correctly"
-permalink: kb/130/Q130871/
+permalink: /kb/130/Q130871/
 ---
 
 ## Q130871: Lucida Math Type 1 Fonts Do Not Print Correctly

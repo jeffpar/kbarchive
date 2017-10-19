@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259282: XADM: How to Remove Accounts with Invalid Characters"
-permalink: kb/259/Q259282/
+permalink: /kb/259/Q259282/
 ---
 
 ## Q259282: XADM: How to Remove Accounts with Invalid Characters

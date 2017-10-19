@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190448: HOWTO: Save Properties Added with AddProperty()"
-permalink: kb/190/Q190448/
+permalink: /kb/190/Q190448/
 ---
 
 ## Q190448: HOWTO: Save Properties Added with AddProperty()

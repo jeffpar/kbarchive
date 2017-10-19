@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195359: WD97: Footnote Text Displayed, Printed on Top of Footer"
-permalink: kb/195/Q195359/
+permalink: /kb/195/Q195359/
 ---
 
 ## Q195359: WD97: Footnote Text Displayed, Printed on Top of Footer

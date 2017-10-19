@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68279: Expanding the File Manager Directory Tree Using the SHIFT Key"
-permalink: kb/068/Q68279/
+permalink: /kb/068/Q68279/
 ---
 
 ## Q68279: Expanding the File Manager Directory Tree Using the SHIFT Key

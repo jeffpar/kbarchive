@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130793: Remote Control Causes The SMS Administrator to GP Fault"
-permalink: kb/130/Q130793/
+permalink: /kb/130/Q130793/
 ---
 
 ## Q130793: Remote Control Causes The SMS Administrator to GP Fault

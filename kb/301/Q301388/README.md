@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0"
-permalink: kb/301/Q301388/
+permalink: /kb/301/Q301388/
 ---
 
 ## Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82294: PC Win: Client Version Control Not Available"
-permalink: kb/082/Q82294/
+permalink: /kb/082/Q82294/
 ---
 
 ## Q82294: PC Win: Client Version Control Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190371: HOWTO: Use Bound Controls with an ADO Recordset"
-permalink: kb/190/Q190371/
+permalink: /kb/190/Q190371/
 ---
 
 ## Q190371: HOWTO: Use Bound Controls with an ADO Recordset

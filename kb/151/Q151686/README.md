@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151686: FIX: MFC ODBC Dynaset Cannot Update a SQL Server 6.0 View"
-permalink: kb/151/Q151686/
+permalink: /kb/151/Q151686/
 ---
 
 ## Q151686: FIX: MFC ODBC Dynaset Cannot Update a SQL Server 6.0 View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190716: WD97: Send To Mail Recipient Problem with Outlook Express/Win 95"
-permalink: kb/190/Q190716/
+permalink: /kb/190/Q190716/
 ---
 
 ## Q190716: WD97: Send To Mail Recipient Problem with Outlook Express/Win 95

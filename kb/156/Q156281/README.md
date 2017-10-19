@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156281: Stop 0x0000000A - Parity Error on Compaq Proliant 4000"
-permalink: kb/156/Q156281/
+permalink: /kb/156/Q156281/
 ---
 
 ## Q156281: Stop 0x0000000A - Parity Error on Compaq Proliant 4000

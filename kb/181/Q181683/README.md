@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181683: Project SBS Page xxii: Setup Directions Do Not Work"
-permalink: kb/181/Q181683/
+permalink: /kb/181/Q181683/
 ---
 
 ## Q181683: Project SBS Page xxii: Setup Directions Do Not Work

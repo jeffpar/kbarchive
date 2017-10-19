@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120597: Fp1023.exe Describes Using FoxPro for MS-DOS Wizards"
-permalink: kb/120/Q120597/
+permalink: /kb/120/Q120597/
 ---
 
 ## Q120597: Fp1023.exe Describes Using FoxPro for MS-DOS Wizards

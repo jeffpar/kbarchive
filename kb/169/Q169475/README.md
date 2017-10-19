@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169475: SMS: Command Line Parameters Are Not Passed with Long File Names"
-permalink: kb/169/Q169475/
+permalink: /kb/169/Q169475/
 ---
 
 ## Q169475: SMS: Command Line Parameters Are Not Passed with Long File Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136943: Multiple-Language Implications in Visual FoxPro"
-permalink: kb/136/Q136943/
+permalink: /kb/136/Q136943/
 ---
 
 ## Q136943: Multiple-Language Implications in Visual FoxPro

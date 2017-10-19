@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120590: DRVSPACE /MOUNT Err Msg: Cannot Find the File DRVSPACE.000"
-permalink: kb/120/Q120590/
+permalink: /kb/120/Q120590/
 ---
 
 ## Q120590: DRVSPACE /MOUNT Err Msg: Cannot Find the File DRVSPACE.000

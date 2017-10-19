@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319023: XCON: Cannot Forward Messages Received Through an SAP Connector"
-permalink: kb/319/Q319023/
+permalink: /kb/319/Q319023/
 ---
 
 ## Q319023: XCON: Cannot Forward Messages Received Through an SAP Connector

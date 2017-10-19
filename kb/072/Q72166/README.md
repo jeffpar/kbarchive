@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72166: Mouse Inactive in MS-DOS Apps After Exiting Windows 3.0"
-permalink: kb/072/Q72166/
+permalink: /kb/072/Q72166/
 ---
 
 ## Q72166: Mouse Inactive in MS-DOS Apps After Exiting Windows 3.0

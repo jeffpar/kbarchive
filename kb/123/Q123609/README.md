@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123609: Languages Supported by HP Plotters"
-permalink: kb/123/Q123609/
+permalink: /kb/123/Q123609/
 ---
 
 ## Q123609: Languages Supported by HP Plotters

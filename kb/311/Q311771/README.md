@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311771: Encarta Online Deluxe: Free Membership Included with Computer"
-permalink: kb/311/Q311771/
+permalink: /kb/311/Q311771/
 ---
 
 ## Q311771: Encarta Online Deluxe: Free Membership Included with Computer

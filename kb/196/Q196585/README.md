@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196585: XADM: Creating Secondary Proxy Addresses During Notes DirSync"
-permalink: kb/196/Q196585/
+permalink: /kb/196/Q196585/
 ---
 
 ## Q196585: XADM: Creating Secondary Proxy Addresses During Notes DirSync

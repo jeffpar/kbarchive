@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44740: INFO: General Information About Windows WM_TIMER Messages"
-permalink: kb/044/Q44740/
+permalink: /kb/044/Q44740/
 ---
 
 ## Q44740: INFO: General Information About Windows WM_TIMER Messages

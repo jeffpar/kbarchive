@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199295: PRB: VXD Containing Constant Data May Fail To Load in Windows 95"
-permalink: kb/199/Q199295/
+permalink: /kb/199/Q199295/
 ---
 
 ## Q199295: PRB: VXD Containing Constant Data May Fail To Load in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225242: MDAC Folder Is Not Included in Windows NT Service Pack 5"
-permalink: kb/225/Q225242/
+permalink: /kb/225/Q225242/
 ---
 
 ## Q225242: MDAC Folder Is Not Included in Windows NT Service Pack 5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124505: Writer/Artist: Fonts Not Visible in Font/DA Mover 4.0"
-permalink: kb/124/Q124505/
+permalink: /kb/124/Q124505/
 ---
 
 ## Q124505: Writer/Artist: Fonts Not Visible in Font/DA Mover 4.0

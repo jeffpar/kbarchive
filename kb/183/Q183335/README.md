@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183335: Calling Card and Area Code Not Dialed Using Both TAPI Options"
-permalink: kb/183/Q183335/
+permalink: /kb/183/Q183335/
 ---
 
 ## Q183335: Calling Card and Area Code Not Dialed Using Both TAPI Options

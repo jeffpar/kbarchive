@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69828: How to Set the Size of the Drawing Area in Paintbrush"
-permalink: kb/069/Q69828/
+permalink: /kb/069/Q69828/
 ---
 
 ## Q69828: How to Set the Size of the Drawing Area in Paintbrush

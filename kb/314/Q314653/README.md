@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314653: FIX: Index Created via ADOX/VFP OLEDB Provider Contain TRANSFORM"
-permalink: kb/314/Q314653/
+permalink: /kb/314/Q314653/
 ---
 
 ## Q314653: FIX: Index Created via ADOX/VFP OLEDB Provider Contain TRANSFORM

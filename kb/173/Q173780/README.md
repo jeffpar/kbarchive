@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173780: Err Msg: A Fatal Exception Error 06 Has Occurred"
-permalink: kb/173/Q173780/
+permalink: /kb/173/Q173780/
 ---
 
 ## Q173780: Err Msg: A Fatal Exception Error 06 Has Occurred

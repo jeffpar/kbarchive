@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242492: SMS: LSM Can Deinstall Domain If PDC Connectivity Lost"
-permalink: kb/242/Q242492/
+permalink: /kb/242/Q242492/
 ---
 
 ## Q242492: SMS: LSM Can Deinstall Domain If PDC Connectivity Lost

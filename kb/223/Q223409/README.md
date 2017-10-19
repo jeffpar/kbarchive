@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223409: Unable to Start CSNW Service"
-permalink: kb/223/Q223409/
+permalink: /kb/223/Q223409/
 ---
 
 ## Q223409: Unable to Start CSNW Service

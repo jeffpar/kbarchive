@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225334: PRB: Jet/VBA May Fail w/ Datetime Data"
-permalink: kb/225/Q225334/
+permalink: /kb/225/Q225334/
 ---
 
 ## Q225334: PRB: Jet/VBA May Fail w/ Datetime Data

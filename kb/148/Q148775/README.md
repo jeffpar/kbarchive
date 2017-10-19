@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148775: DragMode=Automatic Isn't Supported for the OLE Outline Control"
-permalink: kb/148/Q148775/
+permalink: /kb/148/Q148775/
 ---
 
 ## Q148775: DragMode=Automatic Isn't Supported for the OLE Outline Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234905: Improperly Formatted HTTP Request May Cause INETINFO to Fail"
-permalink: kb/234/Q234905/
+permalink: /kb/234/Q234905/
 ---
 
 ## Q234905: Improperly Formatted HTTP Request May Cause INETINFO to Fail

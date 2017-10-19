@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291845: Malformed WebDAV Request Can Cause IIS to Exhaust CPU Resources"
-permalink: kb/291/Q291845/
+permalink: /kb/291/Q291845/
 ---
 
 ## Q291845: Malformed WebDAV Request Can Cause IIS to Exhaust CPU Resources

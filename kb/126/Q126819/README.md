@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126819: MSD 2.11 Does Not Print the Report You Selected"
-permalink: kb/126/Q126819/
+permalink: /kb/126/Q126819/
 ---
 
 ## Q126819: MSD 2.11 Does Not Print the Report You Selected

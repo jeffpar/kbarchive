@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31985: Adjusting Mouse Acceleration Within a Driver"
-permalink: kb/031/Q31985/
+permalink: /kb/031/Q31985/
 ---
 
 ## Q31985: Adjusting Mouse Acceleration Within a Driver

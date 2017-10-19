@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149922: Error Message: Unable to Parse Setup Parameters"
-permalink: kb/149/Q149922/
+permalink: /kb/149/Q149922/
 ---
 
 ## Q149922: Error Message: Unable to Parse Setup Parameters

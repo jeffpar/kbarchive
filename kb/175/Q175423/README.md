@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175423: Monster Truck Madness Err Msg: Cannot Lock Back Buffer"
-permalink: kb/175/Q175423/
+permalink: /kb/175/Q175423/
 ---
 
 ## Q175423: Monster Truck Madness Err Msg: Cannot Lock Back Buffer

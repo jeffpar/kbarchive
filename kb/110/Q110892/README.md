@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110892: Scenes Err Msg: Please Report File &quot;Common&#92;List1.C&quot;,Line=&quot;1007&quot;"
-permalink: kb/110/Q110892/
+permalink: /kb/110/Q110892/
 ---
 
 ## Q110892: Scenes Err Msg: Please Report File &quot;Common&#92;List1.C&quot;,Line=&quot;1007&quot;

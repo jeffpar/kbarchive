@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128894: PRB: C2189 and C2857 Errors When AFXDB.H Used for UNICODE"
-permalink: kb/128/Q128894/
+permalink: /kb/128/Q128894/
 ---
 
 ## Q128894: PRB: C2189 and C2857 Errors When AFXDB.H Used for UNICODE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118474: Multimedia: Not Enough Memory to Play Some Videos"
-permalink: kb/118/Q118474/
+permalink: /kb/118/Q118474/
 ---
 
 ## Q118474: Multimedia: Not Enough Memory to Play Some Videos

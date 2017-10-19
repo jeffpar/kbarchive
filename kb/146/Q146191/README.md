@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146191: Access Denied Error Copying File Over RAS"
-permalink: kb/146/Q146191/
+permalink: /kb/146/Q146191/
 ---
 
 ## Q146191: Access Denied Error Copying File Over RAS

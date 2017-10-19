@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178766: XWEB: Error Message: Failed to Open this Message"
-permalink: kb/178/Q178766/
+permalink: /kb/178/Q178766/
 ---
 
 ## Q178766: XWEB: Error Message: Failed to Open this Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127740: Eicon WAN Services V3R2 Problems with SNA Server"
-permalink: kb/127/Q127740/
+permalink: /kb/127/Q127740/
 ---
 
 ## Q127740: Eicon WAN Services V3R2 Problems with SNA Server

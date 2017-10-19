@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102216: Err Msg: &quot;Error 50: This Request Is Not Supported by the...&quot;"
-permalink: kb/102/Q102216/
+permalink: /kb/102/Q102216/
 ---
 
 ## Q102216: Err Msg: &quot;Error 50: This Request Is Not Supported by the...&quot;

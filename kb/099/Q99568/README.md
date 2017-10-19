@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99568: PC Forms: Gauge Custom Control Causes GP Fault"
-permalink: kb/099/Q99568/
+permalink: /kb/099/Q99568/
 ---
 
 ## Q99568: PC Forms: Gauge Custom Control Causes GP Fault

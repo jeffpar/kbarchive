@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242888: XADM: How to Remove an E-mail Address from Site Addressing"
-permalink: kb/242/Q242888/
+permalink: /kb/242/Q242888/
 ---
 
 ## Q242888: XADM: How to Remove an E-mail Address from Site Addressing

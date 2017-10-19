@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148475: HOWTO: Obtain Macintosh System Software Updates"
-permalink: kb/148/Q148475/
+permalink: /kb/148/Q148475/
 ---
 
 ## Q148475: HOWTO: Obtain Macintosh System Software Updates

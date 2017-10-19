@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147951: Supported Platforms for SNA Server Clients"
-permalink: kb/147/Q147951/
+permalink: /kb/147/Q147951/
 ---
 
 ## Q147951: Supported Platforms for SNA Server Clients

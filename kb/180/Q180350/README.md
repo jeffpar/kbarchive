@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180350: XADM: Remote Monitoring Increases Open Handles on Server"
-permalink: kb/180/Q180350/
+permalink: /kb/180/Q180350/
 ---
 
 ## Q180350: XADM: Remote Monitoring Increases Open Handles on Server

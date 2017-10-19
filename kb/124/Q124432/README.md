@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124432: Canon BubbleJet BJC-800 Prints Slowly Under Windows NT 3.5"
-permalink: kb/124/Q124432/
+permalink: /kb/124/Q124432/
 ---
 
 ## Q124432: Canon BubbleJet BJC-800 Prints Slowly Under Windows NT 3.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86397: PC OS2: Trap 000D When Restarting After Lost Connection"
-permalink: kb/086/Q86397/
+permalink: /kb/086/Q86397/
 ---
 
 ## Q86397: PC OS2: Trap 000D When Restarting After Lost Connection

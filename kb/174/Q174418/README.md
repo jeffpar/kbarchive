@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174418: Internal Commands not Recognized by Schedule Service"
-permalink: kb/174/Q174418/
+permalink: /kb/174/Q174418/
 ---
 
 ## Q174418: Internal Commands not Recognized by Schedule Service

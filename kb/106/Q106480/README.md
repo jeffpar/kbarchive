@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106480: BUG: Access Driver Returns Incorrect pcbValue"
-permalink: kb/106/Q106480/
+permalink: /kb/106/Q106480/
 ---
 
 ## Q106480: BUG: Access Driver Returns Incorrect pcbValue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117408: Query Speed Is Slower with ORDER BY Clause"
-permalink: kb/117/Q117408/
+permalink: /kb/117/Q117408/
 ---
 
 ## Q117408: Query Speed Is Slower with ORDER BY Clause

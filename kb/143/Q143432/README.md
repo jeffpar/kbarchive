@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143432: HOWTO: Gain Access to an ActiveX Control from its Property Page"
-permalink: kb/143/Q143432/
+permalink: /kb/143/Q143432/
 ---
 
 ## Q143432: HOWTO: Gain Access to an ActiveX Control from its Property Page

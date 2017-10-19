@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152259: HOWTO: Sync the StatusBar Text with the ToolTip Text"
-permalink: kb/152/Q152259/
+permalink: /kb/152/Q152259/
 ---
 
 ## Q152259: HOWTO: Sync the StatusBar Text with the ToolTip Text

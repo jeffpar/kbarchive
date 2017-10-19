@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110259: Flight Simulator 5.0: Map View Is Black"
-permalink: kb/110/Q110259/
+permalink: /kb/110/Q110259/
 ---
 
 ## Q110259: Flight Simulator 5.0: Map View Is Black

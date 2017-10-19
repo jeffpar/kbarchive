@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130163: PRB: Remove Button Won't Delete Stored Procedure in Proj Mgr"
-permalink: kb/130/Q130163/
+permalink: /kb/130/Q130163/
 ---
 
 ## Q130163: PRB: Remove Button Won't Delete Stored Procedure in Proj Mgr

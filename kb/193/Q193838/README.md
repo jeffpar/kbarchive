@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193838: DNS Zone Transfer Fails from WinNT Server to UNIX DNS Server"
-permalink: kb/193/Q193838/
+permalink: /kb/193/Q193838/
 ---
 
 ## Q193838: DNS Zone Transfer Fails from WinNT Server to UNIX DNS Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148926: Mfc30.dll File Required to Submit E-forms on MSN"
-permalink: kb/148/Q148926/
+permalink: /kb/148/Q148926/
 ---
 
 ## Q148926: Mfc30.dll File Required to Submit E-forms on MSN

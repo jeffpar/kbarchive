@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258939: Recommendations for Connecting to Databases Through IIS"
-permalink: kb/258/Q258939/
+permalink: /kb/258/Q258939/
 ---
 
 ## Q258939: Recommendations for Connecting to Databases Through IIS

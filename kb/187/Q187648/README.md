@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187648: INFO: FrontPage and VID Local Files on a Source Controlled Web"
-permalink: kb/187/Q187648/
+permalink: /kb/187/Q187648/
 ---
 
 ## Q187648: INFO: FrontPage and VID Local Files on a Source Controlled Web

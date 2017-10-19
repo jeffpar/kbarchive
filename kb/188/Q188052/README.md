@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188052: SMS: Applications Manager Error: Package Disappeared from Source"
-permalink: kb/188/Q188052/
+permalink: /kb/188/Q188052/
 ---
 
 ## Q188052: SMS: Applications Manager Error: Package Disappeared from Source

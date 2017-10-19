@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186276: PRB: Invalid Parameter Number Error Calling RDO BatchUpdate"
-permalink: kb/186/Q186276/
+permalink: /kb/186/Q186276/
 ---
 
 ## Q186276: PRB: Invalid Parameter Number Error Calling RDO BatchUpdate

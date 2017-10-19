@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190135: SMS: Despooler Errors: Compilation Failed, Error Code = cb"
-permalink: kb/190/Q190135/
+permalink: /kb/190/Q190135/
 ---
 
 ## Q190135: SMS: Despooler Errors: Compilation Failed, Error Code = cb

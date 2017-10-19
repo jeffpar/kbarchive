@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137012: CD-ROM Drive Not Recognized with BusLogic 946C SCSI Controller"
-permalink: kb/137/Q137012/
+permalink: /kb/137/Q137012/
 ---
 
 ## Q137012: CD-ROM Drive Not Recognized with BusLogic 946C SCSI Controller

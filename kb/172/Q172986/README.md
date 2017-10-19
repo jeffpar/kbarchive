@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172986: INFO: Microsoft Visual Basic 5.0 Service Pack 2 Release Notes"
-permalink: kb/172/Q172986/
+permalink: /kb/172/Q172986/
 ---
 
 ## Q172986: INFO: Microsoft Visual Basic 5.0 Service Pack 2 Release Notes

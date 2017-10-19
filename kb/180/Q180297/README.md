@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180297: Reconfiguring Exchange As The Dirsync Server"
-permalink: kb/180/Q180297/
+permalink: /kb/180/Q180297/
 ---
 
 ## Q180297: Reconfiguring Exchange As The Dirsync Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308136: FP: How to Create Alternate Text for Different Hot Spots"
-permalink: kb/308/Q308136/
+permalink: /kb/308/Q308136/
 ---
 
 ## Q308136: FP: How to Create Alternate Text for Different Hot Spots

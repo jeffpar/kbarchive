@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267258: SMS Hotfixes Not Installed If &quot;Full Version&quot; Value Is Missing"
-permalink: kb/267/Q267258/
+permalink: /kb/267/Q267258/
 ---
 
 ## Q267258: SMS Hotfixes Not Installed If &quot;Full Version&quot; Value Is Missing

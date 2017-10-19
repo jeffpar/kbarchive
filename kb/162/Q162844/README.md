@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162844: DNS Resolvers Fail on NetBIOS Names When Using Domain Suffixes"
-permalink: kb/162/Q162844/
+permalink: /kb/162/Q162844/
 ---
 
 ## Q162844: DNS Resolvers Fail on NetBIOS Names When Using Domain Suffixes

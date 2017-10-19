@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162132: WD97: Run-time error '5880' Saving as HTML from VBA"
-permalink: kb/162/Q162132/
+permalink: /kb/162/Q162132/
 ---
 
 ## Q162132: WD97: Run-time error '5880' Saving as HTML from VBA

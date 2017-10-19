@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185265: Err Msg: Repair Disk Utility Could Not Save All Configuration..."
-permalink: kb/185/Q185265/
+permalink: /kb/185/Q185265/
 ---
 
 ## Q185265: Err Msg: Repair Disk Utility Could Not Save All Configuration...

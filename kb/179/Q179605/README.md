@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179605: PRB: Cannot Quit VFP When Previewing Report in a DESKTOP Window"
-permalink: kb/179/Q179605/
+permalink: /kb/179/Q179605/
 ---
 
 ## Q179605: PRB: Cannot Quit VFP When Previewing Report in a DESKTOP Window

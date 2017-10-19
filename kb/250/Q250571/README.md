@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250571: Date Changes in Date/Time Tool Take Effect Dynamically"
-permalink: kb/250/Q250571/
+permalink: /kb/250/Q250571/
 ---
 
 ## Q250571: Date Changes in Date/Time Tool Take Effect Dynamically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191548: Troubleshooting Guide for the Internet Mail Connector/Internet M"
-permalink: kb/191/Q191548/
+permalink: /kb/191/Q191548/
 ---
 
 ## Q191548: Troubleshooting Guide for the Internet Mail Connector/Internet M

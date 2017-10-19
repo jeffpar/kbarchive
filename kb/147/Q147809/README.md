@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147809: HOWTO: Create a Setup-Like Status Bar in Visual Basic"
-permalink: kb/147/Q147809/
+permalink: /kb/147/Q147809/
 ---
 
 ## Q147809: HOWTO: Create a Setup-Like Status Bar in Visual Basic

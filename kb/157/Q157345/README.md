@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157345: No Color Output with HP PaintJet XL300"
-permalink: kb/157/Q157345/
+permalink: /kb/157/Q157345/
 ---
 
 ## Q157345: No Color Output with HP PaintJet XL300

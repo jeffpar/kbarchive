@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327386: A &quot;Stop 0x0000001E&quot; Error May Occur in Win32k.sys with SAP"
-permalink: kb/327/Q327386/
+permalink: /kb/327/Q327386/
 ---
 
 ## Q327386: A &quot;Stop 0x0000001E&quot; Error May Occur in Win32k.sys with SAP

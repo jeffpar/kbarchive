@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183748: PRB: Error Message &quot;DllRegisterServer in &lt;File name&gt;.dll Failed&quot;"
-permalink: kb/183/Q183748/
+permalink: /kb/183/Q183748/
 ---
 
 ## Q183748: PRB: Error Message &quot;DllRegisterServer in &lt;File name&gt;.dll Failed&quot;

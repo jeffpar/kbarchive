@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263206: VTAM V4R2 PTF May Cause APPC Conversation to Stop Responding"
-permalink: kb/263/Q263206/
+permalink: /kb/263/Q263206/
 ---
 
 ## Q263206: VTAM V4R2 PTF May Cause APPC Conversation to Stop Responding

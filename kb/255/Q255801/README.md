@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255801: How to Determine if HTTP Compression Is in Use"
-permalink: kb/255/Q255801/
+permalink: /kb/255/Q255801/
 ---
 
 ## Q255801: How to Determine if HTTP Compression Is in Use

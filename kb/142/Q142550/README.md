@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142550: How to Easily Remark or Unremark Multiple Lines of Code"
-permalink: kb/142/Q142550/
+permalink: /kb/142/Q142550/
 ---
 
 ## Q142550: How to Easily Remark or Unremark Multiple Lines of Code

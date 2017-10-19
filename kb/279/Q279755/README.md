@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279755: INFO: Visual Basic and Arithmetic Precision"
-permalink: kb/279/Q279755/
+permalink: /kb/279/Q279755/
 ---
 
 ## Q279755: INFO: Visual Basic and Arithmetic Precision

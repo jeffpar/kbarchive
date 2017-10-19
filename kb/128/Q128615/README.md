@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128615: Detection Process Stops at 80 Percent Complete During Setup"
-permalink: kb/128/Q128615/
+permalink: /kb/128/Q128615/
 ---
 
 ## Q128615: Detection Process Stops at 80 Percent Complete During Setup

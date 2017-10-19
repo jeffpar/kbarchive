@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159770: Cannot Access Server Using NetBIOS Name or IP Address"
-permalink: kb/159/Q159770/
+permalink: /kb/159/Q159770/
 ---
 
 ## Q159770: Cannot Access Server Using NetBIOS Name or IP Address

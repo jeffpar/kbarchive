@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157777: WD97: Conversion Wizard Quits If Convert8.dll Is Missing"
-permalink: kb/157/Q157777/
+permalink: /kb/157/Q157777/
 ---
 
 ## Q157777: WD97: Conversion Wizard Quits If Convert8.dll Is Missing

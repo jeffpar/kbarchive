@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180351: XWEB: Error Message: Unable to Delete Message"
-permalink: kb/180/Q180351/
+permalink: /kb/180/Q180351/
 ---
 
 ## Q180351: XWEB: Error Message: Unable to Delete Message

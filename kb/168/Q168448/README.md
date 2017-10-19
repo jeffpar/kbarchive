@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168448: WD97: Batch Conversion Wizard Enters Endless Loop"
-permalink: kb/168/Q168448/
+permalink: /kb/168/Q168448/
 ---
 
 ## Q168448: WD97: Batch Conversion Wizard Enters Endless Loop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141705: How to Set Up Directory Annotation for Internet Server FTP"
-permalink: kb/141/Q141705/
+permalink: /kb/141/Q141705/
 ---
 
 ## Q141705: How to Set Up Directory Annotation for Internet Server FTP

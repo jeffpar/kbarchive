@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194546: X400: Incorrect Time on Message Sent through Gateway to X.400"
-permalink: kb/194/Q194546/
+permalink: /kb/194/Q194546/
 ---
 
 ## Q194546: X400: Incorrect Time on Message Sent through Gateway to X.400

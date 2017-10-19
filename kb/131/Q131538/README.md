@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131538: Macintosh Encarta 1995: Error Type 28 Occurs"
-permalink: kb/131/Q131538/
+permalink: /kb/131/Q131538/
 ---
 
 ## Q131538: Macintosh Encarta 1995: Error Type 28 Occurs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110548: No Full Screen External View for View 2"
-permalink: kb/110/Q110548/
+permalink: /kb/110/Q110548/
 ---
 
 ## Q110548: No Full Screen External View for View 2

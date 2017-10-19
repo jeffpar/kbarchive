@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173667: Cannot Use MSN E-mail Service with Pocket Inbox"
-permalink: kb/173/Q173667/
+permalink: /kb/173/Q173667/
 ---
 
 ## Q173667: Cannot Use MSN E-mail Service with Pocket Inbox

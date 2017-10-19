@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97783: Graphics in Musical Instruments Print Low Resolution"
-permalink: kb/097/Q97783/
+permalink: /kb/097/Q97783/
 ---
 
 ## Q97783: Graphics in Musical Instruments Print Low Resolution

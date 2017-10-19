@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107978: EMM Exception Error #6 Exiting Windows for Workgroups 3.11"
-permalink: kb/107/Q107978/
+permalink: /kb/107/Q107978/
 ---
 
 ## Q107978: EMM Exception Error #6 Exiting Windows for Workgroups 3.11

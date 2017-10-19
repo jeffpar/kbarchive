@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131473: How to Load the Class Browser into Memory on Startup"
-permalink: kb/131/Q131473/
+permalink: /kb/131/Q131473/
 ---
 
 ## Q131473: How to Load the Class Browser into Memory on Startup

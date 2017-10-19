@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158719: How to Use Inetsvcs.adm File with System Policy Editor"
-permalink: kb/158/Q158719/
+permalink: /kb/158/Q158719/
 ---
 
 ## Q158719: How to Use Inetsvcs.adm File with System Policy Editor

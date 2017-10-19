@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247702: Fighter Ace II: Gun Muzzle Flashes Appear Blocky"
-permalink: kb/247/Q247702/
+permalink: /kb/247/Q247702/
 ---
 
 ## Q247702: Fighter Ace II: Gun Muzzle Flashes Appear Blocky

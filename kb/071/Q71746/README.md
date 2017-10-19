@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71746: Getting the Correct Size MS-DOS Disks"
-permalink: kb/071/Q71746/
+permalink: /kb/071/Q71746/
 ---
 
 ## Q71746: Getting the Correct Size MS-DOS Disks

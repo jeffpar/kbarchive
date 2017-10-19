@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192518: PRB: SQL OLE DB Provider Fails When Selected in OLE DB Wizard"
-permalink: kb/192/Q192518/
+permalink: /kb/192/Q192518/
 ---
 
 ## Q192518: PRB: SQL OLE DB Provider Fails When Selected in OLE DB Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90373: ClipBook Viewer: Start Application on Connect"
-permalink: kb/090/Q90373/
+permalink: /kb/090/Q90373/
 ---
 
 ## Q90373: ClipBook Viewer: Start Application on Connect

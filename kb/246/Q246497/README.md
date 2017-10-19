@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246497: RAS Clients Cannot Resolve NetBIOS Names"
-permalink: kb/246/Q246497/
+permalink: /kb/246/Q246497/
 ---
 
 ## Q246497: RAS Clients Cannot Resolve NetBIOS Names

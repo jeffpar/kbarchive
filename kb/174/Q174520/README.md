@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174520: Error Numbers Associated with Inaccessible Roaming Profiles"
-permalink: kb/174/Q174520/
+permalink: /kb/174/Q174520/
 ---
 
 ## Q174520: Error Numbers Associated with Inaccessible Roaming Profiles

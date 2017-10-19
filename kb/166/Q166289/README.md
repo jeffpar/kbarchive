@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166289: Cannot Remove or Reinstall Windows Messaging"
-permalink: kb/166/Q166289/
+permalink: /kb/166/Q166289/
 ---
 
 ## Q166289: Cannot Remove or Reinstall Windows Messaging

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245148: After Installing SP6 Windows NT Appears to Hang When You Log Off"
-permalink: kb/245/Q245148/
+permalink: /kb/245/Q245148/
 ---
 
 ## Q245148: After Installing SP6 Windows NT Appears to Hang When You Log Off

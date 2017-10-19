@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198772: XFOR: Configuring Transport Selectors with Exchange 5.5 SP1"
-permalink: kb/198/Q198772/
+permalink: /kb/198/Q198772/
 ---
 
 ## Q198772: XFOR: Configuring Transport Selectors with Exchange 5.5 SP1

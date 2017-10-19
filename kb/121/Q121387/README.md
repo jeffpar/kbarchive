@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121387: Use of the %0&#92;..&#92; Syntax in the Smsls.bat File"
-permalink: kb/121/Q121387/
+permalink: /kb/121/Q121387/
 ---
 
 ## Q121387: Use of the %0&#92;..&#92; Syntax in the Smsls.bat File

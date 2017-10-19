@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76504: Static Variables Declared in MASM Routines Called from C"
-permalink: kb/076/Q76504/
+permalink: /kb/076/Q76504/
 ---
 
 ## Q76504: Static Variables Declared in MASM Routines Called from C

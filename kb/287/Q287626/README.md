@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287626: License Metering Client Tries to Log On to Server Multiple Times"
-permalink: kb/287/Q287626/
+permalink: /kb/287/Q287626/
 ---
 
 ## Q287626: License Metering Client Tries to Log On to Server Multiple Times

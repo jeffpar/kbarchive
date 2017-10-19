@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194323: PRB: Setting Printer.Font.Size with StdFont Gives Wrong Values"
-permalink: kb/194/Q194323/
+permalink: /kb/194/Q194323/
 ---
 
 ## Q194323: PRB: Setting Printer.Font.Size with StdFont Gives Wrong Values

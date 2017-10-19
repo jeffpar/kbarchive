@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318999: FIX: Fatal Exception Starting Object Browser with MSAA"
-permalink: kb/318/Q318999/
+permalink: /kb/318/Q318999/
 ---
 
 ## Q318999: FIX: Fatal Exception Starting Object Browser with MSAA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278661: Possible Set-Up Errors With Web Companion"
-permalink: kb/278/Q278661/
+permalink: /kb/278/Q278661/
 ---
 
 ## Q278661: Possible Set-Up Errors With Web Companion

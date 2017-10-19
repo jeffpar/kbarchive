@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119754: ADT/ODE: Compile Error When Running ADT or ODE Application"
-permalink: kb/119/Q119754/
+permalink: /kb/119/Q119754/
 ---
 
 ## Q119754: ADT/ODE: Compile Error When Running ADT or ODE Application

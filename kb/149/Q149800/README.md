@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149800: 3D Movie Maker: Disabling Resolution Switching in Windows 95"
-permalink: kb/149/Q149800/
+permalink: /kb/149/Q149800/
 ---
 
 ## Q149800: 3D Movie Maker: Disabling Resolution Switching in Windows 95

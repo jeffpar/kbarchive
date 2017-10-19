@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235251: Programming Microsoft Visual InterDev 6.0 Comments and Correctio"
-permalink: kb/235/Q235251/
+permalink: /kb/235/Q235251/
 ---
 
 ## Q235251: Programming Microsoft Visual InterDev 6.0 Comments and Correctio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237567: Encarta: Program Starts Slowly and Animations Are Played Slowly"
-permalink: kb/237/Q237567/
+permalink: /kb/237/Q237567/
 ---
 
 ## Q237567: Encarta: Program Starts Slowly and Animations Are Played Slowly

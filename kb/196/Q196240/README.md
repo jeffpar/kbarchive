@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196240: Characters Above 127 Were Incorrectly Mapped By NvRunCmd"
-permalink: kb/196/Q196240/
+permalink: /kb/196/Q196240/
 ---
 
 ## Q196240: Characters Above 127 Were Incorrectly Mapped By NvRunCmd

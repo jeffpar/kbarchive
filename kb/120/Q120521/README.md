@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120521: Setup Appears to Hang After You Remove Windows Components"
-permalink: kb/120/Q120521/
+permalink: /kb/120/Q120521/
 ---
 
 ## Q120521: Setup Appears to Hang After You Remove Windows Components

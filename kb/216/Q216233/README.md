@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216233: XFOR: Auditing Client Access to Exchange Using Internet Protocol"
-permalink: kb/216/Q216233/
+permalink: /kb/216/Q216233/
 ---
 
 ## Q216233: XFOR: Auditing Client Access to Exchange Using Internet Protocol

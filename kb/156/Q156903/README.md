@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156903: Boot Loader Screen Keeps Repeating During Setup"
-permalink: kb/156/Q156903/
+permalink: /kb/156/Q156903/
 ---
 
 ## Q156903: Boot Loader Screen Keeps Repeating During Setup

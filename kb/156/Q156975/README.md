@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156975: XCLN: Unread Messages Might not be Displayed in Bold"
-permalink: kb/156/Q156975/
+permalink: /kb/156/Q156975/
 ---
 
 ## Q156975: XCLN: Unread Messages Might not be Displayed in Bold

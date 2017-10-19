@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142647: Callback Field for RAS May Not Be Viewable From Rasadmin.exe"
-permalink: kb/142/Q142647/
+permalink: /kb/142/Q142647/
 ---
 
 ## Q142647: Callback Field for RAS May Not Be Viewable From Rasadmin.exe

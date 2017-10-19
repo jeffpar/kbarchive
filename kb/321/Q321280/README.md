@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321280: SMS: Installer &quot;Parse String&quot; Action Leaves Undeclared String"
-permalink: kb/321/Q321280/
+permalink: /kb/321/Q321280/
 ---
 
 ## Q321280: SMS: Installer &quot;Parse String&quot; Action Leaves Undeclared String

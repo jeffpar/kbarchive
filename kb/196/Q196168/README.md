@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196168: XADM: Error Configuring Message Service (MSEMS)"
-permalink: kb/196/Q196168/
+permalink: /kb/196/Q196168/
 ---
 
 ## Q196168: XADM: Error Configuring Message Service (MSEMS)

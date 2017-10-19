@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171667: Err Msg: Cannot Determine the Device from the Given File Name"
-permalink: kb/171/Q171667/
+permalink: /kb/171/Q171667/
 ---
 
 ## Q171667: Err Msg: Cannot Determine the Device from the Given File Name

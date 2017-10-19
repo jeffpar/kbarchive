@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261130: Cached Profile Deleted Even If Central Profile Is Not Updated"
-permalink: kb/261/Q261130/
+permalink: /kb/261/Q261130/
 ---
 
 ## Q261130: Cached Profile Deleted Even If Central Profile Is Not Updated

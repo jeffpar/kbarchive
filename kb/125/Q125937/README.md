@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125937: WD97: Creating a Table of Contents and Index with Field Codes"
-permalink: kb/125/Q125937/
+permalink: /kb/125/Q125937/
 ---
 
 ## Q125937: WD97: Creating a Table of Contents and Index with Field Codes

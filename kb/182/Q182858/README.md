@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182858: PRB: Cannot Register MSMAPI.OCX on Windows 95 or Windows NT 4.0"
-permalink: kb/182/Q182858/
+permalink: /kb/182/Q182858/
 ---
 
 ## Q182858: PRB: Cannot Register MSMAPI.OCX on Windows 95 or Windows NT 4.0

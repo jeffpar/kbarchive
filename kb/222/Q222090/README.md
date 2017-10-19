@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222090: How to Use Document Footers in IIS 5.0"
-permalink: kb/222/Q222090/
+permalink: /kb/222/Q222090/
 ---
 
 ## Q222090: How to Use Document Footers in IIS 5.0

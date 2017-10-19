@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143150: NetFlex-2 ENET-TR With Compaq SSD Not Routing to DECNet Node"
-permalink: kb/143/Q143150/
+permalink: /kb/143/Q143150/
 ---
 
 ## Q143150: NetFlex-2 ENET-TR With Compaq SSD Not Routing to DECNet Node

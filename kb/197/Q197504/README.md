@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197504: PRB: KeyPress Problem When Using MFC Control on MDI Child Form"
-permalink: kb/197/Q197504/
+permalink: /kb/197/Q197504/
 ---
 
 ## Q197504: PRB: KeyPress Problem When Using MFC Control on MDI Child Form

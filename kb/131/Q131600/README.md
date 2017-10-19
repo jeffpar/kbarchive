@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131600: How to Customize RightClick Behavior"
-permalink: kb/131/Q131600/
+permalink: /kb/131/Q131600/
 ---
 
 ## Q131600: How to Customize RightClick Behavior

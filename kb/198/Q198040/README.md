@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198040: WD97: How to Use Dates as Mail Merge Selection Criteria"
-permalink: kb/198/Q198040/
+permalink: /kb/198/Q198040/
 ---
 
 ## Q198040: WD97: How to Use Dates as Mail Merge Selection Criteria

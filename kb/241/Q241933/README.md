@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241933: PRB: Unsupported Automation Type Compile Error"
-permalink: kb/241/Q241933/
+permalink: /kb/241/Q241933/
 ---
 
 ## Q241933: PRB: Unsupported Automation Type Compile Error

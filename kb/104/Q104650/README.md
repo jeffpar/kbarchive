@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104650: INFO: Default Assignment Used, Not User-Defined operator=()"
-permalink: kb/104/Q104650/
+permalink: /kb/104/Q104650/
 ---
 
 ## Q104650: INFO: Default Assignment Used, Not User-Defined operator=()

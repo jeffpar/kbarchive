@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216196: PRB: Text Output Parameter Empty with Unicode Build"
-permalink: kb/216/Q216196/
+permalink: /kb/216/Q216196/
 ---
 
 ## Q216196: PRB: Text Output Parameter Empty with Unicode Build

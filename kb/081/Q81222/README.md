@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81222: Example of Sharing a Form Between Projects in VB for Windows"
-permalink: kb/081/Q81222/
+permalink: /kb/081/Q81222/
 ---
 
 ## Q81222: Example of Sharing a Form Between Projects in VB for Windows

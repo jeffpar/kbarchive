@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322610: Zone: Sign-in Page Reappears After You Submit Your Information"
-permalink: kb/322/Q322610/
+permalink: /kb/322/Q322610/
 ---
 
 ## Q322610: Zone: Sign-in Page Reappears After You Submit Your Information

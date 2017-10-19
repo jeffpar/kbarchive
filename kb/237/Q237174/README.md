@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237174: XIMS: IMAPISession::OpenMsgStore Leaks Approximately 40-60 Bytes"
-permalink: kb/237/Q237174/
+permalink: /kb/237/Q237174/
 ---
 
 ## Q237174: XIMS: IMAPISession::OpenMsgStore Leaks Approximately 40-60 Bytes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83140: How to Fix Cross-linked Files"
-permalink: kb/083/Q83140/
+permalink: /kb/083/Q83140/
 ---
 
 ## Q83140: How to Fix Cross-linked Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129205: How to Add Multiple Properties When You Add Objects"
-permalink: kb/129/Q129205/
+permalink: /kb/129/Q129205/
 ---
 
 ## Q129205: How to Add Multiple Properties When You Add Objects

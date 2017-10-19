@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149525: Poor Performance May Occur During FTP File Transfers"
-permalink: kb/149/Q149525/
+permalink: /kb/149/Q149525/
 ---
 
 ## Q149525: Poor Performance May Occur During FTP File Transfers

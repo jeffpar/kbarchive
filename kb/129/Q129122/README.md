@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129122: DHCP: Excluding an Address Before Lease Expires Gives Error"
-permalink: kb/129/Q129122/
+permalink: /kb/129/Q129122/
 ---
 
 ## Q129122: DHCP: Excluding an Address Before Lease Expires Gives Error

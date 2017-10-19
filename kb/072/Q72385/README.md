@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72385: Retrieving the Filename of an Application or DLL"
-permalink: kb/072/Q72385/
+permalink: /kb/072/Q72385/
 ---
 
 ## Q72385: Retrieving the Filename of an Application or DLL

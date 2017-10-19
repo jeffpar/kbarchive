@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166478: Logon Rights Are Not Audited"
-permalink: kb/166/Q166478/
+permalink: /kb/166/Q166478/
 ---
 
 ## Q166478: Logon Rights Are Not Audited

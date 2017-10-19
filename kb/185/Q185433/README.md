@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185433: ERROR: Unable to Open Msvcrt40.dll"
-permalink: kb/185/Q185433/
+permalink: /kb/185/Q185433/
 ---
 
 ## Q185433: ERROR: Unable to Open Msvcrt40.dll

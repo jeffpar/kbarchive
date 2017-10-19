@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107212: Encarta: Color Graphics Print Black &amp; White on PaintJet XL300"
-permalink: kb/107/Q107212/
+permalink: /kb/107/Q107212/
 ---
 
 ## Q107212: Encarta: Color Graphics Print Black &amp; White on PaintJet XL300

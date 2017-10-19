@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183915: CG: Clip Gallery Cannot Find Clip Art on a CD-ROM Drive"
-permalink: kb/183/Q183915/
+permalink: /kb/183/Q183915/
 ---
 
 ## Q183915: CG: Clip Gallery Cannot Find Clip Art on a CD-ROM Drive

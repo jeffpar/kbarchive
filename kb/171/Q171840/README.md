@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171840: FIX: Corrupt Project Error Opening One Project After Another"
-permalink: kb/171/Q171840/
+permalink: /kb/171/Q171840/
 ---
 
 ## Q171840: FIX: Corrupt Project Error Opening One Project After Another

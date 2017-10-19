@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170840: Installing TN3270 Breaks Performance Counters on Windows NT 4.0"
-permalink: kb/170/Q170840/
+permalink: /kb/170/Q170840/
 ---
 
 ## Q170840: Installing TN3270 Breaks Performance Counters on Windows NT 4.0

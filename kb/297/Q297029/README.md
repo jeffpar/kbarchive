@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297029: Games: Black Screen Displayed or Msg: &quot;mmsystem006...&quot;"
-permalink: kb/297/Q297029/
+permalink: /kb/297/Q297029/
 ---
 
 ## Q297029: Games: Black Screen Displayed or Msg: &quot;mmsystem006...&quot;

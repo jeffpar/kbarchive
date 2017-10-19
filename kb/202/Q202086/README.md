@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202086: SMS: Purchase Date in New Product Shows a &quot;&quot; instead of a &quot;2&quot;"
-permalink: kb/202/Q202086/
+permalink: /kb/202/Q202086/
 ---
 
 ## Q202086: SMS: Purchase Date in New Product Shows a &quot;&quot; instead of a &quot;2&quot;

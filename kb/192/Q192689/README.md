@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192689: HOWTO: Get UNC Path From a Mapped Network Share's Drive Letter"
-permalink: kb/192/Q192689/
+permalink: /kb/192/Q192689/
 ---
 
 ## Q192689: HOWTO: Get UNC Path From a Mapped Network Share's Drive Letter

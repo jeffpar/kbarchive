@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137440: PRB: Class Browser: Removing a Parent Class Causes Error"
-permalink: kb/137/Q137440/
+permalink: /kb/137/Q137440/
 ---
 
 ## Q137440: PRB: Class Browser: Removing a Parent Class Causes Error

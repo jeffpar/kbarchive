@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183243: SMS: Access Violation in Wuser32.exe"
-permalink: kb/183/Q183243/
+permalink: /kb/183/Q183243/
 ---
 
 ## Q183243: SMS: Access Violation in Wuser32.exe

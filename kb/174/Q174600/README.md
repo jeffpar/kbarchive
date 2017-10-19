@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174600: XCON: MTA Stops Unexpectedly or Stops Transferring Messages"
-permalink: kb/174/Q174600/
+permalink: /kb/174/Q174600/
 ---
 
 ## Q174600: XCON: MTA Stops Unexpectedly or Stops Transferring Messages

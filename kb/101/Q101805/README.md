@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101805: Using .DBF-Style Help in FoxPro for Windows"
-permalink: kb/101/Q101805/
+permalink: /kb/101/Q101805/
 ---
 
 ## Q101805: Using .DBF-Style Help in FoxPro for Windows

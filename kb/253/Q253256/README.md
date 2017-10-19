@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253256: PPT7: Horizontal or Vertical Guides May Become Unavailable"
-permalink: kb/253/Q253256/
+permalink: /kb/253/Q253256/
 ---
 
 ## Q253256: PPT7: Horizontal or Vertical Guides May Become Unavailable

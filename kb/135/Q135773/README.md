@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135773: Logon Scripts Are Not Changed When Site Properties Are Changed"
-permalink: kb/135/Q135773/
+permalink: /kb/135/Q135773/
 ---
 
 ## Q135773: Logon Scripts Are Not Changed When Site Properties Are Changed

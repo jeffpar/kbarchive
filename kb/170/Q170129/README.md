@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170129: PRB: Update Conflict When Updating Oracle Varchar Data Types"
-permalink: kb/170/Q170129/
+permalink: /kb/170/Q170129/
 ---
 
 ## Q170129: PRB: Update Conflict When Updating Oracle Varchar Data Types

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313329: Lsass Access Violation When You Audit Account Log Off Events"
-permalink: kb/313/Q313329/
+permalink: /kb/313/Q313329/
 ---
 
 ## Q313329: Lsass Access Violation When You Audit Account Log Off Events

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264731: XADM: MAPI Tasks Don't Work with Virus API Anti-Virus Software"
-permalink: kb/264/Q264731/
+permalink: /kb/264/Q264731/
 ---
 
 ## Q264731: XADM: MAPI Tasks Don't Work with Virus API Anti-Virus Software

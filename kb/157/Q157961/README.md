@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157961: XCLN: Out of Office Reply Sent Only Once"
-permalink: kb/157/Q157961/
+permalink: /kb/157/Q157961/
 ---
 
 ## Q157961: XCLN: Out of Office Reply Sent Only Once

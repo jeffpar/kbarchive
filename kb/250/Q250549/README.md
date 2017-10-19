@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250549: Sterling's Connect:Direct and SNA 4.0 Workstation"
-permalink: kb/250/Q250549/
+permalink: /kb/250/Q250549/
 ---
 
 ## Q250549: Sterling's Connect:Direct and SNA 4.0 Workstation

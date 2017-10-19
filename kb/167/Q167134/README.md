@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167134: HOWTO: Open Visual SourceSafe to a Specific Project"
-permalink: kb/167/Q167134/
+permalink: /kb/167/Q167134/
 ---
 
 ## Q167134: HOWTO: Open Visual SourceSafe to a Specific Project

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177434: PRB: Resolving '&lt;App-name&gt;' is not a Valid Windows CE App Error"
-permalink: kb/177/Q177434/
+permalink: /kb/177/Q177434/
 ---
 
 ## Q177434: PRB: Resolving '&lt;App-name&gt;' is not a Valid Windows CE App Error

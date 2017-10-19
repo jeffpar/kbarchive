@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129987: HPMON Stops Working After Upgrading Multiple-NIC Computers"
-permalink: kb/129/Q129987/
+permalink: /kb/129/Q129987/
 ---
 
 ## Q129987: HPMON Stops Working After Upgrading Multiple-NIC Computers

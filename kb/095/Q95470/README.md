@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95470: Disabling Peer-To-Peer Network Functionality with WFWG"
-permalink: kb/095/Q95470/
+permalink: /kb/095/Q95470/
 ---
 
 ## Q95470: Disabling Peer-To-Peer Network Functionality with WFWG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179514: Display May Not Fill Entire Screen on IBM ThinkPad Computer"
-permalink: kb/179/Q179514/
+permalink: /kb/179/Q179514/
 ---
 
 ## Q179514: Display May Not Fill Entire Screen on IBM ThinkPad Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137951: FIX: Can't Change the Title of the Validation Error Box"
-permalink: kb/137/Q137951/
+permalink: /kb/137/Q137951/
 ---
 
 ## Q137951: FIX: Can't Change the Title of the Validation Error Box

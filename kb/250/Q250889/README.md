@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250889: Multiprocessor System Hangs while running Norton Utilities 2.0"
-permalink: kb/250/Q250889/
+permalink: /kb/250/Q250889/
 ---
 
 ## Q250889: Multiprocessor System Hangs while running Norton Utilities 2.0

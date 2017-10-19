@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178622: PRB: Thai resource problem on VC++"
-permalink: kb/178/Q178622/
+permalink: /kb/178/Q178622/
 ---
 
 ## Q178622: PRB: Thai resource problem on VC++

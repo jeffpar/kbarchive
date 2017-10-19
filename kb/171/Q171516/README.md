@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171516: FIX: ActiveX Document DLL Causes GPF When Unloading Modal Form"
-permalink: kb/171/Q171516/
+permalink: /kb/171/Q171516/
 ---
 
 ## Q171516: FIX: ActiveX Document DLL Causes GPF When Unloading Modal Form

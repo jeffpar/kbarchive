@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143249: PRB: ORDER BY Field in Result Set Without Being in Field List"
-permalink: kb/143/Q143249/
+permalink: /kb/143/Q143249/
 ---
 
 ## Q143249: PRB: ORDER BY Field in Result Set Without Being in Field List

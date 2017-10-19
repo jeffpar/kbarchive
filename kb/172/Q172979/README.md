@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172979: Modem Status Icon Does Not Appear on Taskbar"
-permalink: kb/172/Q172979/
+permalink: /kb/172/Q172979/
 ---
 
 ## Q172979: Modem Status Icon Does Not Appear on Taskbar

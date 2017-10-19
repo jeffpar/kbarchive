@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294807: HOWTO: Disable &quot;Friendly&quot; Error Messages on the Server Side"
-permalink: kb/294/Q294807/
+permalink: /kb/294/Q294807/
 ---
 
 ## Q294807: HOWTO: Disable &quot;Friendly&quot; Error Messages on the Server Side

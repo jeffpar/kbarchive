@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180620: APPC or CPIC Performance Is Degraded When Using Host Security"
-permalink: kb/180/Q180620/
+permalink: /kb/180/Q180620/
 ---
 
 ## Q180620: APPC or CPIC Performance Is Degraded When Using Host Security

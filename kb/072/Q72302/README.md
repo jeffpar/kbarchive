@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72302: Specifying A20 Handlers with HIMEM.SYS /M in MS-DOS"
-permalink: kb/072/Q72302/
+permalink: /kb/072/Q72302/
 ---
 
 ## Q72302: Specifying A20 Handlers with HIMEM.SYS /M in MS-DOS

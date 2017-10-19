@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177071: OFF97: IPF Quitting with File Containing Long Property Strings"
-permalink: kb/177/Q177071/
+permalink: /kb/177/Q177071/
 ---
 
 ## Q177071: OFF97: IPF Quitting with File Containing Long Property Strings

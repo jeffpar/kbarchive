@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261266: XCLN: Outlook 97 Saves Unsent Messages to Inbox Folder"
-permalink: kb/261/Q261266/
+permalink: /kb/261/Q261266/
 ---
 
 ## Q261266: XCLN: Outlook 97 Saves Unsent Messages to Inbox Folder

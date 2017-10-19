@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142192: PRB: Abnormal Termination When Instantiate Object from VCX"
-permalink: kb/142/Q142192/
+permalink: /kb/142/Q142192/
 ---
 
 ## Q142192: PRB: Abnormal Termination When Instantiate Object from VCX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186273: BUG: AV Running VB-Built Component in Multithreaded Environment"
-permalink: kb/186/Q186273/
+permalink: /kb/186/Q186273/
 ---
 
 ## Q186273: BUG: AV Running VB-Built Component in Multithreaded Environment

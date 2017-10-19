@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66336: Installing Aircraft &amp; Scenery Designer"
-permalink: kb/066/Q66336/
+permalink: /kb/066/Q66336/
 ---
 
 ## Q66336: Installing Aircraft &amp; Scenery Designer

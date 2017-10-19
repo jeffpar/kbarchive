@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160285: STOP 0x0000000a in Ntoskrnl.exe with InocuLAN Virus Software"
-permalink: kb/160/Q160285/
+permalink: /kb/160/Q160285/
 ---
 
 ## Q160285: STOP 0x0000000a in Ntoskrnl.exe with InocuLAN Virus Software

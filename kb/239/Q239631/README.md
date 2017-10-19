@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239631: EWA: Web Page Is Not Opened When You Click Web Link"
-permalink: kb/239/Q239631/
+permalink: /kb/239/Q239631/
 ---
 
 ## Q239631: EWA: Web Page Is Not Opened When You Click Web Link

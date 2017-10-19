@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105632: Scenes 1.0: Will Not Activate With MS-DOS Prompt"
-permalink: kb/105/Q105632/
+permalink: /kb/105/Q105632/
 ---
 
 ## Q105632: Scenes 1.0: Will Not Activate With MS-DOS Prompt

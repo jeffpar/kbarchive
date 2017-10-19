@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149108: BUG: Command Group Class Button Movements Not Inherited"
-permalink: kb/149/Q149108/
+permalink: /kb/149/Q149108/
 ---
 
 ## Q149108: BUG: Command Group Class Button Movements Not Inherited

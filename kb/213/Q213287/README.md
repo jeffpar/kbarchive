@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213287: SMS: NetWare Logon Manager Creates Copies of Net&#36;log.dat File"
-permalink: kb/213/Q213287/
+permalink: /kb/213/Q213287/
 ---
 
 ## Q213287: SMS: NetWare Logon Manager Creates Copies of Net&#36;log.dat File

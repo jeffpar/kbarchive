@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218607: HOW TO: Create a File Defining the Constants for Use w/CDONTS"
-permalink: kb/218/Q218607/
+permalink: /kb/218/Q218607/
 ---
 
 ## Q218607: HOW TO: Create a File Defining the Constants for Use w/CDONTS

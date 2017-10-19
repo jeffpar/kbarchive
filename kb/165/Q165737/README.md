@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165737: CSNW/GSNW Unable to Connect to NetWare Server"
-permalink: kb/165/Q165737/
+permalink: /kb/165/Q165737/
 ---
 
 ## Q165737: CSNW/GSNW Unable to Connect to NetWare Server

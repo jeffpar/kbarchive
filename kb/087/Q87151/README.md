@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87151: Mac Wkst: Location of Folders During Creation"
-permalink: kb/087/Q87151/
+permalink: /kb/087/Q87151/
 ---
 
 ## Q87151: Mac Wkst: Location of Folders During Creation

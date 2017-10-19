@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141592: Event ID: 56 with Distributed Link Services to AS/400"
-permalink: kb/141/Q141592/
+permalink: /kb/141/Q141592/
 ---
 
 ## Q141592: Event ID: 56 with Distributed Link Services to AS/400

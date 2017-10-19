@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232687: XFOR: Cannot Send Messages to cc:Mail Recipients After Dirsync"
-permalink: kb/232/Q232687/
+permalink: /kb/232/Q232687/
 ---
 
 ## Q232687: XFOR: Cannot Send Messages to cc:Mail Recipients After Dirsync

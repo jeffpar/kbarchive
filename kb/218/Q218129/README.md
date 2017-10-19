@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218129: &quot;Snap in Failed to Initialize&quot; Error Opening Commerce Host Admin"
-permalink: kb/218/Q218129/
+permalink: /kb/218/Q218129/
 ---
 
 ## Q218129: &quot;Snap in Failed to Initialize&quot; Error Opening Commerce Host Admin

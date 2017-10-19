@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152291: Removing Windows NT with Winntp.exe/D: Option"
-permalink: kb/152/Q152291/
+permalink: /kb/152/Q152291/
 ---
 
 ## Q152291: Removing Windows NT with Winntp.exe/D: Option

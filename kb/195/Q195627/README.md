@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195627: FIX: Right-Clicking Item in Find Results View Fails in Gallery"
-permalink: kb/195/Q195627/
+permalink: /kb/195/Q195627/
 ---
 
 ## Q195627: FIX: Right-Clicking Item in Find Results View Fails in Gallery

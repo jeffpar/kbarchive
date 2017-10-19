@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164151: HOWTO: Comparing Binary Images of Same Project Builds"
-permalink: kb/164/Q164151/
+permalink: /kb/164/Q164151/
 ---
 
 ## Q164151: HOWTO: Comparing Binary Images of Same Project Builds

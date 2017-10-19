@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259586: SMS: SNMP Trap Filter Also Reports SQL Server Traps"
-permalink: kb/259/Q259586/
+permalink: /kb/259/Q259586/
 ---
 
 ## Q259586: SMS: SNMP Trap Filter Also Reports SQL Server Traps

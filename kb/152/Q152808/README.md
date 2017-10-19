@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152808: XADM: How To Change the Service Account"
-permalink: kb/152/Q152808/
+permalink: /kb/152/Q152808/
 ---
 
 ## Q152808: XADM: How To Change the Service Account

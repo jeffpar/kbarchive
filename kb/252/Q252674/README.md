@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252674: SMS: How to Set Up a Help Desk Administrator"
-permalink: kb/252/Q252674/
+permalink: /kb/252/Q252674/
 ---
 
 ## Q252674: SMS: How to Set Up a Help Desk Administrator

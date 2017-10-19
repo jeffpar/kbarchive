@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256509: RAS Client Authentication Causes &quot;Error 5: Access Is Denied&quot;"
-permalink: kb/256/Q256509/
+permalink: /kb/256/Q256509/
 ---
 
 ## Q256509: RAS Client Authentication Causes &quot;Error 5: Access Is Denied&quot;

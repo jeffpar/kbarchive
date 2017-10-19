@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137178: Microsoft Exchange Cannot Open Custom Dictionary"
-permalink: kb/137/Q137178/
+permalink: /kb/137/Q137178/
 ---
 
 ## Q137178: Microsoft Exchange Cannot Open Custom Dictionary

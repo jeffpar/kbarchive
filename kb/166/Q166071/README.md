@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166071: Error Message: Unexpected DOS Error 11"
-permalink: kb/166/Q166071/
+permalink: /kb/166/Q166071/
 ---
 
 ## Q166071: Error Message: Unexpected DOS Error 11

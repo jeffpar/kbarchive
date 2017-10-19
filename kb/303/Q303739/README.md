@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303739: Firewall Prevents Access from Receiving Updates to Network Map"
-permalink: kb/303/Q303739/
+permalink: /kb/303/Q303739/
 ---
 
 ## Q303739: Firewall Prevents Access from Receiving Updates to Network Map

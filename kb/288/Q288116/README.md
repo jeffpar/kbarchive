@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288116: FP98: Percent Sign in URL Returns HTTP 404 Error"
-permalink: kb/288/Q288116/
+permalink: /kb/288/Q288116/
 ---
 
 ## Q288116: FP98: Percent Sign in URL Returns HTTP 404 Error

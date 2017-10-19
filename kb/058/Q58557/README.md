@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58557: Mac Hyp: GetHandle Gets a Handle to a Resource from a Message"
-permalink: kb/058/Q58557/
+permalink: /kb/058/Q58557/
 ---
 
 ## Q58557: Mac Hyp: GetHandle Gets a Handle to a Resource from a Message

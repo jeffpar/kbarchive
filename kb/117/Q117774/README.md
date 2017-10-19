@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117774: How to Identify the Font Types Available on a Macintosh"
-permalink: kb/117/Q117774/
+permalink: /kb/117/Q117774/
 ---
 
 ## Q117774: How to Identify the Font Types Available on a Macintosh

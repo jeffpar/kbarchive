@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134286: Windows NT 3.51 LsarLookupSids errors from Big Endian Servers"
-permalink: kb/134/Q134286/
+permalink: /kb/134/Q134286/
 ---
 
 ## Q134286: Windows NT 3.51 LsarLookupSids errors from Big Endian Servers

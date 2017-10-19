@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114336: Missing MS At Work PC Fax Address Option in WFWG 3.11 Mail"
-permalink: kb/114/Q114336/
+permalink: /kb/114/Q114336/
 ---
 
 ## Q114336: Missing MS At Work PC Fax Address Option in WFWG 3.11 Mail

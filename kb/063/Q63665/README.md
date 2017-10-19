@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63665: Using HIMEM.SYS 2.60 with Dell 286-Based Machines"
-permalink: kb/063/Q63665/
+permalink: /kb/063/Q63665/
 ---
 
 ## Q63665: Using HIMEM.SYS 2.60 with Dell 286-Based Machines

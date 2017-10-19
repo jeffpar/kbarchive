@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147868: MSB Human: Launch MIDI Mapper Does Not Work"
-permalink: kb/147/Q147868/
+permalink: /kb/147/Q147868/
 ---
 
 ## Q147868: MSB Human: Launch MIDI Mapper Does Not Work

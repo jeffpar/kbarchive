@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157081: XCLN: Error Messages When Compiling or Loading Forms"
-permalink: kb/157/Q157081/
+permalink: /kb/157/Q157081/
 ---
 
 ## Q157081: XCLN: Error Messages When Compiling or Loading Forms

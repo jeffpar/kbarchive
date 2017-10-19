@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167759: SMS: IE 3.01 Security Patch Causes SMSRUN16 to Stop Responding"
-permalink: kb/167/Q167759/
+permalink: /kb/167/Q167759/
 ---
 
 ## Q167759: SMS: IE 3.01 Security Patch Causes SMSRUN16 to Stop Responding

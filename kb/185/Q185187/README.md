@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185187: BUG: Pageframe Subclass Invisible Until Clicked"
-permalink: kb/185/Q185187/
+permalink: /kb/185/Q185187/
 ---
 
 ## Q185187: BUG: Pageframe Subclass Invisible Until Clicked

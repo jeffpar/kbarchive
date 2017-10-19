@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143209: PRB: MeasureItem Not Called for Popup Item on Owner-Draw Menu"
-permalink: kb/143/Q143209/
+permalink: /kb/143/Q143209/
 ---
 
 ## Q143209: PRB: MeasureItem Not Called for Popup Item on Owner-Draw Menu

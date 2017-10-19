@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273948: XFOR: SSL Issues w/Internet Mail Service on Windows 2000"
-permalink: kb/273/Q273948/
+permalink: /kb/273/Q273948/
 ---
 
 ## Q273948: XFOR: SSL Issues w/Internet Mail Service on Windows 2000

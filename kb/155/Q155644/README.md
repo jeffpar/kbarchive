@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155644: Available Resources for Windows NT 4.0 Deployment"
-permalink: kb/155/Q155644/
+permalink: /kb/155/Q155644/
 ---
 
 ## Q155644: Available Resources for Windows NT 4.0 Deployment

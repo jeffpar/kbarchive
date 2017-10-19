@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103541: MS-DOS 6.2 Setup Err Msg: You Deleted Files from the..."
-permalink: kb/103/Q103541/
+permalink: /kb/103/Q103541/
 ---
 
 ## Q103541: MS-DOS 6.2 Setup Err Msg: You Deleted Files from the...

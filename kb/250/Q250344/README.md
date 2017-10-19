@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250344: SAMPLE: ARRAYCONVERT.EXE Variant Conversion Functions"
-permalink: kb/250/Q250344/
+permalink: /kb/250/Q250344/
 ---
 
 ## Q250344: SAMPLE: ARRAYCONVERT.EXE Variant Conversion Functions

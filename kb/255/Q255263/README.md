@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255263: Windows Client Hangs When You Use &quot;SMS Restarts Computer&quot;"
-permalink: kb/255/Q255263/
+permalink: /kb/255/Q255263/
 ---
 
 ## Q255263: Windows Client Hangs When You Use &quot;SMS Restarts Computer&quot;

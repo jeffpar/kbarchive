@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111261: Flight Simulator: Logbook Displays Hours Incorrectly"
-permalink: kb/111/Q111261/
+permalink: /kb/111/Q111261/
 ---
 
 ## Q111261: Flight Simulator: Logbook Displays Hours Incorrectly

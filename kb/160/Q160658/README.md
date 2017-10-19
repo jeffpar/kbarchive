@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160658: Stop C000021A Using MoveFileEx MOVEFILE_DELAY_UNTIL_REBOOT"
-permalink: kb/160/Q160658/
+permalink: /kb/160/Q160658/
 ---
 
 ## Q160658: Stop C000021A Using MoveFileEx MOVEFILE_DELAY_UNTIL_REBOOT

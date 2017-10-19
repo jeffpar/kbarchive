@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248365: SMS: Secondary Site Clients Receive Unintended Advertisements"
-permalink: kb/248/Q248365/
+permalink: /kb/248/Q248365/
 ---
 
 ## Q248365: SMS: Secondary Site Clients Receive Unintended Advertisements

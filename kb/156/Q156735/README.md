@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156735: WOW Applications Stack Fault When Launched by a Service"
-permalink: kb/156/Q156735/
+permalink: /kb/156/Q156735/
 ---
 
 ## Q156735: WOW Applications Stack Fault When Launched by a Service

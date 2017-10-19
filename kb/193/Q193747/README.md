@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193747: SMS: File Token Generator - Filetokn.exe"
-permalink: kb/193/Q193747/
+permalink: /kb/193/Q193747/
 ---
 
 ## Q193747: SMS: File Token Generator - Filetokn.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247548: Excel 97 Step by Step, Advanced Topics Comments and Corrections"
-permalink: kb/247/Q247548/
+permalink: /kb/247/Q247548/
 ---
 
 ## Q247548: Excel 97 Step by Step, Advanced Topics Comments and Corrections

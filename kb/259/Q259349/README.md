@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259349: IIS Binds To All Available IP Addresses When It Starts"
-permalink: kb/259/Q259349/
+permalink: /kb/259/Q259349/
 ---
 
 ## Q259349: IIS Binds To All Available IP Addresses When It Starts

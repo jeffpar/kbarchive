@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260299: SMS: PGC Wizard and Resource Kit Tools Are Not on the SP2 CD-ROM"
-permalink: kb/260/Q260299/
+permalink: /kb/260/Q260299/
 ---
 
 ## Q260299: SMS: PGC Wizard and Resource Kit Tools Are Not on the SP2 CD-ROM

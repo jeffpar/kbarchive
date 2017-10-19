@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216428: Configuring Microsoft ODBC Driver for DB2"
-permalink: kb/216/Q216428/
+permalink: /kb/216/Q216428/
 ---
 
 ## Q216428: Configuring Microsoft ODBC Driver for DB2

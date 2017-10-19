@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263401: SMS: Software Inventory Recalls all Remote Offline Storage"
-permalink: kb/263/Q263401/
+permalink: /kb/263/Q263401/
 ---
 
 ## Q263401: SMS: Software Inventory Recalls all Remote Offline Storage

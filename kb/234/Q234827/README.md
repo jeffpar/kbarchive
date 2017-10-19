@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234827: MOD2000:Unnecessary Error When You Cancel Adding Project to VSS"
-permalink: kb/234/Q234827/
+permalink: /kb/234/Q234827/
 ---
 
 ## Q234827: MOD2000:Unnecessary Error When You Cancel Adding Project to VSS

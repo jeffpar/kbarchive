@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235805: SMS: Package Job Status Not Reported From 1.2 Child to Parent"
-permalink: kb/235/Q235805/
+permalink: /kb/235/Q235805/
 ---
 
 ## Q235805: SMS: Package Job Status Not Reported From 1.2 Child to Parent

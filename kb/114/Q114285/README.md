@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114285: BUG: Summary List of ODBC 1.0 Bugs"
-permalink: kb/114/Q114285/
+permalink: /kb/114/Q114285/
 ---
 
 ## Q114285: BUG: Summary List of ODBC 1.0 Bugs

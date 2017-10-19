@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89210: Linotronic 530 Driver Truncates Page with User-Defined Sizes"
-permalink: kb/089/Q89210/
+permalink: /kb/089/Q89210/
 ---
 
 ## Q89210: Linotronic 530 Driver Truncates Page with User-Defined Sizes

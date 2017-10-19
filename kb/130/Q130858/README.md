@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130858: Windows NT Does Not Detect a Three-Button Mouse"
-permalink: kb/130/Q130858/
+permalink: /kb/130/Q130858/
 ---
 
 ## Q130858: Windows NT Does Not Detect a Three-Button Mouse

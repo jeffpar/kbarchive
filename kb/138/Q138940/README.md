@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138940: Windows 95 Hangs with Ibmtok.dos Network Adapter Driver"
-permalink: kb/138/Q138940/
+permalink: /kb/138/Q138940/
 ---
 
 ## Q138940: Windows 95 Hangs with Ibmtok.dos Network Adapter Driver

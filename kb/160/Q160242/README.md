@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160242: WD97: Can't Resize Text Box, Drawing Object in Header, Footer"
-permalink: kb/160/Q160242/
+permalink: /kb/160/Q160242/
 ---
 
 ## Q160242: WD97: Can't Resize Text Box, Drawing Object in Header, Footer

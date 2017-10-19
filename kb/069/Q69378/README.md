@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69378: Swapfile and COMPAQ 650 MB Drives"
-permalink: kb/069/Q69378/
+permalink: /kb/069/Q69378/
 ---
 
 ## Q69378: Swapfile and COMPAQ 650 MB Drives

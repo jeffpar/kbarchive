@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215475: Slow Performance with GSNW on Terminal Server"
-permalink: kb/215/Q215475/
+permalink: /kb/215/Q215475/
 ---
 
 ## Q215475: Slow Performance with GSNW on Terminal Server

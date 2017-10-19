@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166426: Internet Explorer in PCWNT Cannot View Chinese BIG5 Characters."
-permalink: kb/166/Q166426/
+permalink: /kb/166/Q166426/
 ---
 
 ## Q166426: Internet Explorer in PCWNT Cannot View Chinese BIG5 Characters.

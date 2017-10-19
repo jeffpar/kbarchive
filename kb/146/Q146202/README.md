@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146202: AT&amp;T Globalyst TPC Modems Not Detected Properly"
-permalink: kb/146/Q146202/
+permalink: /kb/146/Q146202/
 ---
 
 ## Q146202: AT&amp;T Globalyst TPC Modems Not Detected Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193272: FIX: MFC Doesn't Call CPrintDialog::OnInitDialog"
-permalink: kb/193/Q193272/
+permalink: /kb/193/Q193272/
 ---
 
 ## Q193272: FIX: MFC Doesn't Call CPrintDialog::OnInitDialog

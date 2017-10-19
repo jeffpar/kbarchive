@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132660: Invalid Characters Allowed When Creating File Association"
-permalink: kb/132/Q132660/
+permalink: /kb/132/Q132660/
 ---
 
 ## Q132660: Invalid Characters Allowed When Creating File Association

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130414: PRB: &quot;Member Column&lt;n&gt; is a class member&quot; Error Message"
-permalink: kb/130/Q130414/
+permalink: /kb/130/Q130414/
 ---
 
 ## Q130414: PRB: &quot;Member Column&lt;n&gt; is a class member&quot; Error Message

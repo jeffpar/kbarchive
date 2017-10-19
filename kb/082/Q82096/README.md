@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82096: Disabling Drafix CAD Fonts in Windows 3.0"
-permalink: kb/082/Q82096/
+permalink: /kb/082/Q82096/
 ---
 
 ## Q82096: Disabling Drafix CAD Fonts in Windows 3.0

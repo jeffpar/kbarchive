@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149608: BUG: Valid Method Does Not Fire in Combo Box"
-permalink: kb/149/Q149608/
+permalink: /kb/149/Q149608/
 ---
 
 ## Q149608: BUG: Valid Method Does Not Fire in Combo Box

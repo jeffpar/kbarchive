@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118294: How To Create a List of Duplicate Records"
-permalink: kb/118/Q118294/
+permalink: /kb/118/Q118294/
 ---
 
 ## Q118294: How To Create a List of Duplicate Records

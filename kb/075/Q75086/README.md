@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75086: DOSSHELL.VID Not Compatible with AT&amp;T BIOS 1.21 and Earlier"
-permalink: kb/075/Q75086/
+permalink: /kb/075/Q75086/
 ---
 
 ## Q75086: DOSSHELL.VID Not Compatible with AT&amp;T BIOS 1.21 and Earlier

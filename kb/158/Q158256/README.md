@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158256: BUG: AFIELDS() Array Causes Error in CREATE...FROM ARRAY"
-permalink: kb/158/Q158256/
+permalink: /kb/158/Q158256/
 ---
 
 ## Q158256: BUG: AFIELDS() Array Causes Error in CREATE...FROM ARRAY

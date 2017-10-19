@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307581: Games: Games Do Not Run As Expected on Virtual PC"
-permalink: kb/307/Q307581/
+permalink: /kb/307/Q307581/
 ---
 
 ## Q307581: Games: Games Do Not Run As Expected on Virtual PC

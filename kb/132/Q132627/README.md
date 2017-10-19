@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132627: ScanDisk Reports Invalid Date/Time for Many Files"
-permalink: kb/132/Q132627/
+permalink: /kb/132/Q132627/
 ---
 
 ## Q132627: ScanDisk Reports Invalid Date/Time for Many Files

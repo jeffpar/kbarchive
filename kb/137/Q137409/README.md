@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137409: FIX: Group Name w/ More Than 30 Characters Causes Setup Error"
-permalink: kb/137/Q137409/
+permalink: /kb/137/Q137409/
 ---
 
 ## Q137409: FIX: Group Name w/ More Than 30 Characters Causes Setup Error

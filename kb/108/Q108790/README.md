@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108790: Intel Indeo Technology Update -- V3.11.041"
-permalink: kb/108/Q108790/
+permalink: /kb/108/Q108790/
 ---
 
 ## Q108790: Intel Indeo Technology Update -- V3.11.041

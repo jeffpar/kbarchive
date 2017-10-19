@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310682: Combat Flight Simulator: Program Quits Unexpectedly"
-permalink: kb/310/Q310682/
+permalink: /kb/310/Q310682/
 ---
 
 ## Q310682: Combat Flight Simulator: Program Quits Unexpectedly

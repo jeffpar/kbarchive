@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169026: Virtual Motion RAS Manager in 4.0 Reskit May Cause Event 4001"
-permalink: kb/169/Q169026/
+permalink: /kb/169/Q169026/
 ---
 
 ## Q169026: Virtual Motion RAS Manager in 4.0 Reskit May Cause Event 4001

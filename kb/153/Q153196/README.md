@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153196: XCLN: Error: Next Print Band Could Not Be Retrieved"
-permalink: kb/153/Q153196/
+permalink: /kb/153/Q153196/
 ---
 
 ## Q153196: XCLN: Error: Next Print Band Could Not Be Retrieved

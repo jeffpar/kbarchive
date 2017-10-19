@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326245: PRB: Actv Dsktp in Win 98 Handles .NETAlerts Sign In Differently"
-permalink: kb/326/Q326245/
+permalink: /kb/326/Q326245/
 ---
 
 ## Q326245: PRB: Actv Dsktp in Win 98 Handles .NETAlerts Sign In Differently

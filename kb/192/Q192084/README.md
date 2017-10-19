@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192084: X400: Incorrect Date on Message Sent Through X.400 Gateway"
-permalink: kb/192/Q192084/
+permalink: /kb/192/Q192084/
 ---
 
 ## Q192084: X400: Incorrect Date on Message Sent Through X.400 Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303874: Primary Domain Controller May Leak Memory in Lsass.exe"
-permalink: kb/303/Q303874/
+permalink: /kb/303/Q303874/
 ---
 
 ## Q303874: Primary Domain Controller May Leak Memory in Lsass.exe

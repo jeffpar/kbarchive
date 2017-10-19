@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301290: FP: From Address Not Same as Reply-To in Results Sent to E-mail"
-permalink: kb/301/Q301290/
+permalink: /kb/301/Q301290/
 ---
 
 ## Q301290: FP: From Address Not Same as Reply-To in Results Sent to E-mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296885: Console Process May Hang During the Creation of a Child Console"
-permalink: kb/296/Q296885/
+permalink: /kb/296/Q296885/
 ---
 
 ## Q296885: Console Process May Hang During the Creation of a Child Console

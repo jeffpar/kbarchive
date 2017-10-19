@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168958: HOWTO: Exporting STL Components Inside &amp; Outside of a Class"
-permalink: kb/168/Q168958/
+permalink: /kb/168/Q168958/
 ---
 
 ## Q168958: HOWTO: Exporting STL Components Inside &amp; Outside of a Class

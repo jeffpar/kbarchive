@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186296: Err Msg: Could Not Find the MSN Phone Number"
-permalink: kb/186/Q186296/
+permalink: /kb/186/Q186296/
 ---
 
 ## Q186296: Err Msg: Could Not Find the MSN Phone Number

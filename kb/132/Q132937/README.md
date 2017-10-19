@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132937: Known Issues Concerning Upgrades to The Microsoft Network"
-permalink: kb/132/Q132937/
+permalink: /kb/132/Q132937/
 ---
 
 ## Q132937: Known Issues Concerning Upgrades to The Microsoft Network

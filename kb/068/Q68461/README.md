@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68461: Calera's WordScan Requires SJDRIVER.SYS 2.0"
-permalink: kb/068/Q68461/
+permalink: /kb/068/Q68461/
 ---
 
 ## Q68461: Calera's WordScan Requires SJDRIVER.SYS 2.0

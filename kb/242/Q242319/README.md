@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242319: PRB: A &quot;The Parameter Is Incorrect&quot; Error Message In VB SnapIn"
-permalink: kb/242/Q242319/
+permalink: /kb/242/Q242319/
 ---
 
 ## Q242319: PRB: A &quot;The Parameter Is Incorrect&quot; Error Message In VB SnapIn

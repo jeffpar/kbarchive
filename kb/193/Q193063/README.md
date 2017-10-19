@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193063: FP97: Sample JavaScript Code to Redirect Page Based on Browser"
-permalink: kb/193/Q193063/
+permalink: /kb/193/Q193063/
 ---
 
 ## Q193063: FP97: Sample JavaScript Code to Redirect Page Based on Browser

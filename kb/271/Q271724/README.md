@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271724: SMS May Time Out Attempting a PDC/BDC Resynchronization"
-permalink: kb/271/Q271724/
+permalink: /kb/271/Q271724/
 ---
 
 ## Q271724: SMS May Time Out Attempting a PDC/BDC Resynchronization

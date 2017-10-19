@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224261: Streets and Trips 2000: Label Disappears When You Find Address"
-permalink: kb/224/Q224261/
+permalink: /kb/224/Q224261/
 ---
 
 ## Q224261: Streets and Trips 2000: Label Disappears When You Find Address

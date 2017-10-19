@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306004: get_Option(&quot;iMode&quot;) Returns an Empty Variant"
-permalink: kb/306/Q306004/
+permalink: /kb/306/Q306004/
 ---
 
 ## Q306004: get_Option(&quot;iMode&quot;) Returns an Empty Variant

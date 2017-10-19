@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86978: X400: How to Specify an MTA Name"
-permalink: kb/086/Q86978/
+permalink: /kb/086/Q86978/
 ---
 
 ## Q86978: X400: How to Specify an MTA Name

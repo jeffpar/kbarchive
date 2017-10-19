@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141184: DHCP Server Shows Active Leases for Non-Existent RAS Servers"
-permalink: kb/141/Q141184/
+permalink: /kb/141/Q141184/
 ---
 
 ## Q141184: DHCP Server Shows Active Leases for Non-Existent RAS Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147105: XCLN: GAL Is Lost If the Exchange Server Is Shut Down"
-permalink: kb/147/Q147105/
+permalink: /kb/147/Q147105/
 ---
 
 ## Q147105: XCLN: GAL Is Lost If the Exchange Server Is Shut Down

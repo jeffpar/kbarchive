@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272334: Inside Microsoft Windows 2000, Third Edition Comments and Correc"
-permalink: kb/272/Q272334/
+permalink: /kb/272/Q272334/
 ---
 
 ## Q272334: Inside Microsoft Windows 2000, Third Edition Comments and Correc

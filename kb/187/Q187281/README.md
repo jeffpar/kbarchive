@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187281: PRB: Corporate Benefits Sample in German"
-permalink: kb/187/Q187281/
+permalink: /kb/187/Q187281/
 ---
 
 ## Q187281: PRB: Corporate Benefits Sample in German

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227181: How to Manage Windows Installer Local Policies"
-permalink: kb/227/Q227181/
+permalink: /kb/227/Q227181/
 ---
 
 ## Q227181: How to Manage Windows Installer Local Policies

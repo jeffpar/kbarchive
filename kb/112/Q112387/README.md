@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112387: INFO: How GDI Sends Data to the Printer"
-permalink: kb/112/Q112387/
+permalink: /kb/112/Q112387/
 ---
 
 ## Q112387: INFO: How GDI Sends Data to the Printer

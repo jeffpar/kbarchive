@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170456: Less Conventional Memory Available in European OSR2"
-permalink: kb/170/Q170456/
+permalink: /kb/170/Q170456/
 ---
 
 ## Q170456: Less Conventional Memory Available in European OSR2

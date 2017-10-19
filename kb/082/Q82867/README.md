@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82867: Simulated Italic Fonts Are Spaced Apart in Persuasion"
-permalink: kb/082/Q82867/
+permalink: /kb/082/Q82867/
 ---
 
 ## Q82867: Simulated Italic Fonts Are Spaced Apart in Persuasion

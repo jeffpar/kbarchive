@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172613: Errors Connecting Through RAS When Password Expires"
-permalink: kb/172/Q172613/
+permalink: /kb/172/Q172613/
 ---
 
 ## Q172613: Errors Connecting Through RAS When Password Expires

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24954: Producing .com Files With MASM"
-permalink: kb/024/Q24954/
+permalink: /kb/024/Q24954/
 ---
 
 ## Q24954: Producing .com Files With MASM

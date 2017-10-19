@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69837: Finding Track and Sector Size Using SMARTDRV.SYS from Windows"
-permalink: kb/069/Q69837/
+permalink: /kb/069/Q69837/
 ---
 
 ## Q69837: Finding Track and Sector Size Using SMARTDRV.SYS from Windows

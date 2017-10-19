@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131778: System-wide Pool Paged Bytes Allocated By Files Are Not Released"
-permalink: kb/131/Q131778/
+permalink: /kb/131/Q131778/
 ---
 
 ## Q131778: System-wide Pool Paged Bytes Allocated By Files Are Not Released

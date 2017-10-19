@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123220: Fatal Error on Drive 1 with the Exabyte EXB-8505"
-permalink: kb/123/Q123220/
+permalink: /kb/123/Q123220/
 ---
 
 ## Q123220: Fatal Error on Drive 1 with the Exabyte EXB-8505

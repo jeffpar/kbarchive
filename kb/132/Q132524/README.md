@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132524: Popup Message Queue Can Only Receive 6 Messages"
-permalink: kb/132/Q132524/
+permalink: /kb/132/Q132524/
 ---
 
 ## Q132524: Popup Message Queue Can Only Receive 6 Messages

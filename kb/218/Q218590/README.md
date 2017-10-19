@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218590: INF: Configuring Data Sources for the Microsoft OLE DB Provider"
-permalink: kb/218/Q218590/
+permalink: /kb/218/Q218590/
 ---
 
 ## Q218590: INF: Configuring Data Sources for the Microsoft OLE DB Provider

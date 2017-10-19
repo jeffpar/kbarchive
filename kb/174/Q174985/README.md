@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174985: WD97: Cannot Check for AutoUpdate After Installing IE 4.0"
-permalink: kb/174/Q174985/
+permalink: /kb/174/Q174985/
 ---
 
 ## Q174985: WD97: Cannot Check for AutoUpdate After Installing IE 4.0

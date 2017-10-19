@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43295: Executable Modules Must Be Processed by Resource Compiler"
-permalink: kb/043/Q43295/
+permalink: /kb/043/Q43295/
 ---
 
 ## Q43295: Executable Modules Must Be Processed by Resource Compiler

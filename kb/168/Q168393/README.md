@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168393: FIX: OLE Automation Server Creation Fails with Form and OCX"
-permalink: kb/168/Q168393/
+permalink: /kb/168/Q168393/
 ---
 
 ## Q168393: FIX: OLE Automation Server Creation Fails with Form and OCX

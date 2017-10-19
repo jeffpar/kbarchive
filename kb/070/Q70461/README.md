@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70461: Tetris for Windows Toggles NUM LOCK Key Off"
-permalink: kb/070/Q70461/
+permalink: /kb/070/Q70461/
 ---
 
 ## Q70461: Tetris for Windows Toggles NUM LOCK Key Off

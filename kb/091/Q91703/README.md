@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91703: PC Win: Mail/Schedule+ Auto-Demo Won't Work on Norton Desktop"
-permalink: kb/091/Q91703/
+permalink: /kb/091/Q91703/
 ---
 
 ## Q91703: PC Win: Mail/Schedule+ Auto-Demo Won't Work on Norton Desktop

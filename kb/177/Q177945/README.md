@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177945: JETERR35.HLP Is Missing for DAO 3.5 in Visual C++ 5.0"
-permalink: kb/177/Q177945/
+permalink: /kb/177/Q177945/
 ---
 
 ## Q177945: JETERR35.HLP Is Missing for DAO 3.5 in Visual C++ 5.0

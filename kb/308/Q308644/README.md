@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308644: BUG: Memory Leak When You Bind Recordset to VB Intrinsic Control"
-permalink: kb/308/Q308644/
+permalink: /kb/308/Q308644/
 ---
 
 ## Q308644: BUG: Memory Leak When You Bind Recordset to VB Intrinsic Control

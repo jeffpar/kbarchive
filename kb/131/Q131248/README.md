@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131248: In-Progress BBS Message Not Saved When Disconnect Occurs"
-permalink: kb/131/Q131248/
+permalink: /kb/131/Q131248/
 ---
 
 ## Q131248: In-Progress BBS Message Not Saved When Disconnect Occurs

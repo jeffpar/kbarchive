@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185723: Explorer File Copy from Windows 95 Share Fails"
-permalink: kb/185/Q185723/
+permalink: /kb/185/Q185723/
 ---
 
 ## Q185723: Explorer File Copy from Windows 95 Share Fails

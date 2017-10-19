@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169743: XCLN: Exchange Windows 3.x client Does Not Receive New Mail"
-permalink: kb/169/Q169743/
+permalink: /kb/169/Q169743/
 ---
 
 ## Q169743: XCLN: Exchange Windows 3.x client Does Not Receive New Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141479: FIX: Visual FoxPro Quits If You Click Ignore or Suspend/Resume"
-permalink: kb/141/Q141479/
+permalink: /kb/141/Q141479/
 ---
 
 ## Q141479: FIX: Visual FoxPro Quits If You Click Ignore or Suspend/Resume

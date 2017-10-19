@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119653: VTAM 3.4.2 PTF UY97878 Solves LU6.2 Problem"
-permalink: kb/119/Q119653/
+permalink: /kb/119/Q119653/
 ---
 
 ## Q119653: VTAM 3.4.2 PTF UY97878 Solves LU6.2 Problem

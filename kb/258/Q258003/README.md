@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258003: Re-creating Missing DSA Attributes After VIACompact"
-permalink: kb/258/Q258003/
+permalink: /kb/258/Q258003/
 ---
 
 ## Q258003: Re-creating Missing DSA Attributes After VIACompact

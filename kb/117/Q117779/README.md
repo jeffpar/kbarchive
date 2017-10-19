@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117779: INFO: Coordinated Universal Time on MS-DOS vs. Windows NT"
-permalink: kb/117/Q117779/
+permalink: /kb/117/Q117779/
 ---
 
 ## Q117779: INFO: Coordinated Universal Time on MS-DOS vs. Windows NT

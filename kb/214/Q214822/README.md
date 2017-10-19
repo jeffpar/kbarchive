@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214822: XFOR: Lotus cc:Mail Source Extractor Fails with Event 8030, 8124"
-permalink: kb/214/Q214822/
+permalink: /kb/214/Q214822/
 ---
 
 ## Q214822: XFOR: Lotus cc:Mail Source Extractor Fails with Event 8030, 8124

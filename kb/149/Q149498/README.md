@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149498: XCLN: Click Close Box Quits Microsoft Exchange Client"
-permalink: kb/149/Q149498/
+permalink: /kb/149/Q149498/
 ---
 
 ## Q149498: XCLN: Click Close Box Quits Microsoft Exchange Client

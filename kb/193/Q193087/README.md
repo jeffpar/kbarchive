@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193087: BUG: Cannot Run a Compiled ActiveX DLL From IE"
-permalink: kb/193/Q193087/
+permalink: /kb/193/Q193087/
 ---
 
 ## Q193087: BUG: Cannot Run a Compiled ActiveX DLL From IE

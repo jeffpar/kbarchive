@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157589: SMS: PGC Does Not Work in a Trusted Domain with Windows 95"
-permalink: kb/157/Q157589/
+permalink: /kb/157/Q157589/
 ---
 
 ## Q157589: SMS: PGC Does Not Work in a Trusted Domain with Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283472: SMS: Event ID 7031 Occurs When Installing Secondary Site Server"
-permalink: kb/283/Q283472/
+permalink: /kb/283/Q283472/
 ---
 
 ## Q283472: SMS: Event ID 7031 Occurs When Installing Secondary Site Server

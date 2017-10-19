@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99671: Chaining NotifyRegister Callbacks Issuing Notifications"
-permalink: kb/099/Q99671/
+permalink: /kb/099/Q99671/
 ---
 
 ## Q99671: Chaining NotifyRegister Callbacks Issuing Notifications

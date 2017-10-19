@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175313: BUG: S1000 Error When Sharing Connection in Multiple Threads"
-permalink: kb/175/Q175313/
+permalink: /kb/175/Q175313/
 ---
 
 ## Q175313: BUG: S1000 Error When Sharing Connection in Multiple Threads

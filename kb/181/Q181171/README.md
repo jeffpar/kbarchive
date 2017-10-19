@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181171: Secure Channel Manipulation with TCP/IP"
-permalink: kb/181/Q181171/
+permalink: /kb/181/Q181171/
 ---
 
 ## Q181171: Secure Channel Manipulation with TCP/IP

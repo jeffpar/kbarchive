@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58592: Mac Hyp: AddEnclosure Adds an Enclosure to a Message"
-permalink: kb/058/Q58592/
+permalink: /kb/058/Q58592/
 ---
 
 ## Q58592: Mac Hyp: AddEnclosure Adds an Enclosure to a Message

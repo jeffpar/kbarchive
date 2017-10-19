@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261969: StarLancer Err Msg: Invalid Page Fault in Module Kernel32.dll"
-permalink: kb/261/Q261969/
+permalink: /kb/261/Q261969/
 ---
 
 ## Q261969: StarLancer Err Msg: Invalid Page Fault in Module Kernel32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184101: Small Single and Double-Precision Values Are Rounded to Zero"
-permalink: kb/184/Q184101/
+permalink: /kb/184/Q184101/
 ---
 
 ## Q184101: Small Single and Double-Precision Values Are Rounded to Zero

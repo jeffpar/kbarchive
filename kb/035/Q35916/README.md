@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35916: Second ATIS Frequency for Oakland International Airport"
-permalink: kb/035/Q35916/
+permalink: /kb/035/Q35916/
 ---
 
 ## Q35916: Second ATIS Frequency for Oakland International Airport

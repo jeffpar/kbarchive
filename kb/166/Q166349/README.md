@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166349: XGEN: Exchange Server, Client, and Outlook Version Numbers"
-permalink: kb/166/Q166349/
+permalink: /kb/166/Q166349/
 ---
 
 ## Q166349: XGEN: Exchange Server, Client, and Outlook Version Numbers

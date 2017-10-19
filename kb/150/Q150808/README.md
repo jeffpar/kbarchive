@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150808: Disabling Support for Unimodem Modems in Remote Access"
-permalink: kb/150/Q150808/
+permalink: /kb/150/Q150808/
 ---
 
 ## Q150808: Disabling Support for Unimodem Modems in Remote Access

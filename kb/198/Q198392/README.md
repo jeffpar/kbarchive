@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198392: XCON: NDR Shows Exchange DN of User Instead of X.400 Address"
-permalink: kb/198/Q198392/
+permalink: /kb/198/Q198392/
 ---
 
 ## Q198392: XCON: NDR Shows Exchange DN of User Instead of X.400 Address

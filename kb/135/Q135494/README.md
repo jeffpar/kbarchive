@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135494: Failure of One SDLC Multidrop Connection Reactivates All Others"
-permalink: kb/135/Q135494/
+permalink: /kb/135/Q135494/
 ---
 
 ## Q135494: Failure of One SDLC Multidrop Connection Reactivates All Others

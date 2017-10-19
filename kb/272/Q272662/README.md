@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272662: How to Create a Directory Viewer By Using ASP"
-permalink: kb/272/Q272662/
+permalink: /kb/272/Q272662/
 ---
 
 ## Q272662: How to Create a Directory Viewer By Using ASP

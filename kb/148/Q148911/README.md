@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148911: Cinemania 96/Music ErrMsg: Cinemania Could Not Find the Files"
-permalink: kb/148/Q148911/
+permalink: /kb/148/Q148911/
 ---
 
 ## Q148911: Cinemania 96/Music ErrMsg: Cinemania Could Not Find the Files

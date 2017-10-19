@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163381: SMS: Setup Limits SQL Database and Device Names to 21 Characters"
-permalink: kb/163/Q163381/
+permalink: /kb/163/Q163381/
 ---
 
 ## Q163381: SMS: Setup Limits SQL Database and Device Names to 21 Characters

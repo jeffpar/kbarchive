@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79538: 360K Floppies Used in 1.2 MB Drive May Be Unreadable"
-permalink: kb/079/Q79538/
+permalink: /kb/079/Q79538/
 ---
 
 ## Q79538: 360K Floppies Used in 1.2 MB Drive May Be Unreadable

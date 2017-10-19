@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102492: PC Ext: Debug Message Displayed Twice When Using -Q1 Option"
-permalink: kb/102/Q102492/
+permalink: /kb/102/Q102492/
 ---
 
 ## Q102492: PC Ext: Debug Message Displayed Twice When Using -Q1 Option

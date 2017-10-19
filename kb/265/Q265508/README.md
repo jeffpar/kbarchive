@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265508: XCON: MTA Instance Is Not Displayed in Performance Monitor"
-permalink: kb/265/Q265508/
+permalink: /kb/265/Q265508/
 ---
 
 ## Q265508: XCON: MTA Instance Is Not Displayed in Performance Monitor

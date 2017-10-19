@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171929: Internet Explorer 3.0 SBS: Web Address Returns Error Message"
-permalink: kb/171/Q171929/
+permalink: /kb/171/Q171929/
 ---
 
 ## Q171929: Internet Explorer 3.0 SBS: Web Address Returns Error Message

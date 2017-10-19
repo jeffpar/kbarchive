@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177203: ATI 3D RAGE PRO Chipset Requires Windows NT SP3"
-permalink: kb/177/Q177203/
+permalink: /kb/177/Q177203/
 ---
 
 ## Q177203: ATI 3D RAGE PRO Chipset Requires Windows NT SP3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257267: Unable to Serve ASP or HTML Pages"
-permalink: kb/257/Q257267/
+permalink: /kb/257/Q257267/
 ---
 
 ## Q257267: Unable to Serve ASP or HTML Pages

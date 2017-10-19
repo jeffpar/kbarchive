@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242767: INFO: Deploying WebClasses with PDW"
-permalink: kb/242/Q242767/
+permalink: /kb/242/Q242767/
 ---
 
 ## Q242767: INFO: Deploying WebClasses with PDW

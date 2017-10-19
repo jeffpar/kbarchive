@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189713: WD97: Visio Unexpected Quits Clicking Open on View Menu"
-permalink: kb/189/Q189713/
+permalink: /kb/189/Q189713/
 ---
 
 ## Q189713: WD97: Visio Unexpected Quits Clicking Open on View Menu

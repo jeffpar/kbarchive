@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160926: XADM: Modifying Usage Quotas for All Users"
-permalink: kb/160/Q160926/
+permalink: /kb/160/Q160926/
 ---
 
 ## Q160926: XADM: Modifying Usage Quotas for All Users

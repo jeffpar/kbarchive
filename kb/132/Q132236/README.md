@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132236: BUG: SQLStatistics Always Reports Indexes as Ascending"
-permalink: kb/132/Q132236/
+permalink: /kb/132/Q132236/
 ---
 
 ## Q132236: BUG: SQLStatistics Always Reports Indexes as Ascending

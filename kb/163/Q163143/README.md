@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163143: STOP: 0x0000001E with Status C000009A"
-permalink: kb/163/Q163143/
+permalink: /kb/163/Q163143/
 ---
 
 ## Q163143: STOP: 0x0000001E with Status C000009A

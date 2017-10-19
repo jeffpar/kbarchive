@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309298: Random Blue Screens Appear or SNA Print Service &quot;Hangs&quot;"
-permalink: kb/309/Q309298/
+permalink: /kb/309/Q309298/
 ---
 
 ## Q309298: Random Blue Screens Appear or SNA Print Service &quot;Hangs&quot;

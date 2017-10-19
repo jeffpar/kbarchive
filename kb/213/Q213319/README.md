@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213319: SMS: Sender Address Properties Box Displays Server As Unknown"
-permalink: kb/213/Q213319/
+permalink: /kb/213/Q213319/
 ---
 
 ## Q213319: SMS: Sender Address Properties Box Displays Server As Unknown

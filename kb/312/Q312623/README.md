@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312623: Adding New Secondary User: After Choosing User Name, MSN Explore"
-permalink: kb/312/Q312623/
+permalink: /kb/312/Q312623/
 ---
 
 ## Q312623: Adding New Secondary User: After Choosing User Name, MSN Explore

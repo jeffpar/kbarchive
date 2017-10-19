@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153092: SAMPLE: How to Add New Menu Items to the System Menu"
-permalink: kb/153/Q153092/
+permalink: /kb/153/Q153092/
 ---
 
 ## Q153092: SAMPLE: How to Add New Menu Items to the System Menu

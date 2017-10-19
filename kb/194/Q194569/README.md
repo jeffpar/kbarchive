@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194569: Installing Windows NT 4.0 Service Pack 4 from the Internet"
-permalink: kb/194/Q194569/
+permalink: /kb/194/Q194569/
 ---
 
 ## Q194569: Installing Windows NT 4.0 Service Pack 4 from the Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140147: Windows NT Server 3.51 is inventoried as Windows NT Server 3.5"
-permalink: kb/140/Q140147/
+permalink: /kb/140/Q140147/
 ---
 
 ## Q140147: Windows NT Server 3.51 is inventoried as Windows NT Server 3.5

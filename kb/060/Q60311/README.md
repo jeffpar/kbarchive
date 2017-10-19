@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60311: Notepad Does Not Save Word Wrap As Default"
-permalink: kb/060/Q60311/
+permalink: /kb/060/Q60311/
 ---
 
 ## Q60311: Notepad Does Not Save Word Wrap As Default

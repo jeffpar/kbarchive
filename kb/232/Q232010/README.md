@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232010: 3D Text Screen Saver Does Not Display Custom Text"
-permalink: kb/232/Q232010/
+permalink: /kb/232/Q232010/
 ---
 
 ## Q232010: 3D Text Screen Saver Does Not Display Custom Text

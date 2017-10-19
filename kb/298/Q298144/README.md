@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298144: HOWTO: Associate a Graphic with a Menu Item"
-permalink: kb/298/Q298144/
+permalink: /kb/298/Q298144/
 ---
 
 ## Q298144: HOWTO: Associate a Graphic with a Menu Item

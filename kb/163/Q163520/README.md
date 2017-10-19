@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163520: Real-Mode Windows 95 Error Connecting to Windows NT"
-permalink: kb/163/Q163520/
+permalink: /kb/163/Q163520/
 ---
 
 ## Q163520: Real-Mode Windows 95 Error Connecting to Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170458: Flashing Area Appears on the Desktop on a ZAK Workstation"
-permalink: kb/170/Q170458/
+permalink: /kb/170/Q170458/
 ---
 
 ## Q170458: Flashing Area Appears on the Desktop on a ZAK Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178273: Error in Cluster Server Administration Guide"
-permalink: kb/178/Q178273/
+permalink: /kb/178/Q178273/
 ---
 
 ## Q178273: Error in Cluster Server Administration Guide

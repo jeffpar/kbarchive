@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195409: HOWTO: Get Full Path of Item Selected in List Box"
-permalink: kb/195/Q195409/
+permalink: /kb/195/Q195409/
 ---
 
 ## Q195409: HOWTO: Get Full Path of Item Selected in List Box

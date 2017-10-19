@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238989: PRB: RichEdit Control in Applications That Call OleInitialize()"
-permalink: kb/238/Q238989/
+permalink: /kb/238/Q238989/
 ---
 
 ## Q238989: PRB: RichEdit Control in Applications That Call OleInitialize()

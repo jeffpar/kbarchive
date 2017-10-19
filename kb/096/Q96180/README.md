@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96180: VSafe Err Msg: Program Is Trying to Write to Hard Disk"
-permalink: kb/096/Q96180/
+permalink: /kb/096/Q96180/
 ---
 
 ## Q96180: VSafe Err Msg: Program Is Trying to Write to Hard Disk

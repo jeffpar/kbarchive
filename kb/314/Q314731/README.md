@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314731: Access Violation in SNMP Running GETNEXT Query Against RIP"
-permalink: kb/314/Q314731/
+permalink: /kb/314/Q314731/
 ---
 
 ## Q314731: Access Violation in SNMP Running GETNEXT Query Against RIP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216097: HOWTO: Clear the Windows NT Event Log in Visual Basic"
-permalink: kb/216/Q216097/
+permalink: /kb/216/Q216097/
 ---
 
 ## Q216097: HOWTO: Clear the Windows NT Event Log in Visual Basic

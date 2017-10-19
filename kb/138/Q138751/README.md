@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138751: Netware Login Script Fails to Capture Printer"
-permalink: kb/138/Q138751/
+permalink: /kb/138/Q138751/
 ---
 
 ## Q138751: Netware Login Script Fails to Capture Printer

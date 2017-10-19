@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134680: Mapped NetWare Drives Missing in My Computer"
-permalink: kb/134/Q134680/
+permalink: /kb/134/Q134680/
 ---
 
 ## Q134680: Mapped NetWare Drives Missing in My Computer

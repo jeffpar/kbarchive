@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104637: HOWTO: Trap Arrow Keys in an Edit Control of a Dialog Box"
-permalink: kb/104/Q104637/
+permalink: /kb/104/Q104637/
 ---
 
 ## Q104637: HOWTO: Trap Arrow Keys in an Edit Control of a Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99859: Windows for Workgroups: Avoiding Hardware Conflicts"
-permalink: kb/099/Q99859/
+permalink: /kb/099/Q99859/
 ---
 
 ## Q99859: Windows for Workgroups: Avoiding Hardware Conflicts

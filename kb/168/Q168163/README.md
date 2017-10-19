@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168163: FIX: Memory Leak When Calling UserConnection Query Event"
-permalink: kb/168/Q168163/
+permalink: /kb/168/Q168163/
 ---
 
 ## Q168163: FIX: Memory Leak When Calling UserConnection Query Event

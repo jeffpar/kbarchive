@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191869: BUG: RELEASE MENUS _MSYSMENU Releases System Menu"
-permalink: kb/191/Q191869/
+permalink: /kb/191/Q191869/
 ---
 
 ## Q191869: BUG: RELEASE MENUS _MSYSMENU Releases System Menu

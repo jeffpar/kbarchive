@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86577: Word for MS-DOS Err Msg: There Is No Text in the Clipboard"
-permalink: kb/086/Q86577/
+permalink: /kb/086/Q86577/
 ---
 
 ## Q86577: Word for MS-DOS Err Msg: There Is No Text in the Clipboard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120014: WFW 3.11 RAS: X.25 Script for Sita Group Network Services"
-permalink: kb/120/Q120014/
+permalink: /kb/120/Q120014/
 ---
 
 ## Q120014: WFW 3.11 RAS: X.25 Script for Sita Group Network Services

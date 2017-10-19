@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141630: PRB: Visual Foxpro Must Quit After Error When Set PageCount"
-permalink: kb/141/Q141630/
+permalink: /kb/141/Q141630/
 ---
 
 ## Q141630: PRB: Visual Foxpro Must Quit After Error When Set PageCount

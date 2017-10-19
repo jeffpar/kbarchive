@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59922: Mac Hyp: Setting the Flag for an Urgent Message"
-permalink: kb/059/Q59922/
+permalink: /kb/059/Q59922/
 ---
 
 ## Q59922: Mac Hyp: Setting the Flag for an Urgent Message

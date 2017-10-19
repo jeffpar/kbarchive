@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127029: PRB: Type Mismatch with Default Prop of VB4 Data Access Object"
-permalink: kb/127/Q127029/
+permalink: /kb/127/Q127029/
 ---
 
 ## Q127029: PRB: Type Mismatch with Default Prop of VB4 Data Access Object

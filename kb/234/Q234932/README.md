@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234932: TN3270 Access Violation When Using Unique Ports for Sessions"
-permalink: kb/234/Q234932/
+permalink: /kb/234/Q234932/
 ---
 
 ## Q234932: TN3270 Access Violation When Using Unique Ports for Sessions

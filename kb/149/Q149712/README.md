@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149712: How to Install Windows 95: Helpful Tips and Suggestions"
-permalink: kb/149/Q149712/
+permalink: /kb/149/Q149712/
 ---
 
 ## Q149712: How to Install Windows 95: Helpful Tips and Suggestions

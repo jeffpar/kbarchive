@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100117: Expert Developer CD Disk Information"
-permalink: kb/100/Q100117/
+permalink: /kb/100/Q100117/
 ---
 
 ## Q100117: Expert Developer CD Disk Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216745: How to Improve Performance of a FrontPage 98 Discussion Web"
-permalink: kb/216/Q216745/
+permalink: /kb/216/Q216745/
 ---
 
 ## Q216745: How to Improve Performance of a FrontPage 98 Discussion Web

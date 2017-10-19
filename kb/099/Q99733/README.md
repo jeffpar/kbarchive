@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99733: Mac Multimedia: Program Can Run Two Instances Simultaneously"
-permalink: kb/099/Q99733/
+permalink: /kb/099/Q99733/
 ---
 
 ## Q99733: Mac Multimedia: Program Can Run Two Instances Simultaneously

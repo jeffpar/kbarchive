@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131325: Viewing with Single Window Does Not Save Sort Order"
-permalink: kb/131/Q131325/
+permalink: /kb/131/Q131325/
 ---
 
 ## Q131325: Viewing with Single Window Does Not Save Sort Order

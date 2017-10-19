@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95798: Standard AdLib Card Cannot Play .WAV Files"
-permalink: kb/095/Q95798/
+permalink: /kb/095/Q95798/
 ---
 
 ## Q95798: Standard AdLib Card Cannot Play .WAV Files

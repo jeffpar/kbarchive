@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191494: Dial-Up Networking 1.3 Upgrade Available"
-permalink: kb/191/Q191494/
+permalink: /kb/191/Q191494/
 ---
 
 ## Q191494: Dial-Up Networking 1.3 Upgrade Available

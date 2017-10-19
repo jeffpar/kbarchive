@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132650: Cannot Remove Deeply Rooted Folder"
-permalink: kb/132/Q132650/
+permalink: /kb/132/Q132650/
 ---
 
 ## Q132650: Cannot Remove Deeply Rooted Folder

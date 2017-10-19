@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140156: No Floppy Access on Presario 140/774/972/982/992 with MS Plus!"
-permalink: kb/140/Q140156/
+permalink: /kb/140/Q140156/
 ---
 
 ## Q140156: No Floppy Access on Presario 140/774/972/982/992 with MS Plus!

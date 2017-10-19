@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157665: WD97: Print to PostScript File Cuts Off Top of Picture"
-permalink: kb/157/Q157665/
+permalink: /kb/157/Q157665/
 ---
 
 ## Q157665: WD97: Print to PostScript File Cuts Off Top of Picture

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130594: 2139 - Could Not Create Mail Slot w/ SNA Server Client"
-permalink: kb/130/Q130594/
+permalink: /kb/130/Q130594/
 ---
 
 ## Q130594: 2139 - Could Not Create Mail Slot w/ SNA Server Client

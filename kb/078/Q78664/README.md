@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78664: Generating an Updated IPX.COM File for Novell Network"
-permalink: kb/078/Q78664/
+permalink: /kb/078/Q78664/
 ---
 
 ## Q78664: Generating an Updated IPX.COM File for Novell Network

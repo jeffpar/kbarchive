@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158295: XCLN: Remote Mail: The Mail Headers Could Not Be Displayed"
-permalink: kb/158/Q158295/
+permalink: /kb/158/Q158295/
 ---
 
 ## Q158295: XCLN: Remote Mail: The Mail Headers Could Not Be Displayed

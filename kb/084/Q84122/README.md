@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84122: Setting Allowing Each User to Have Personal Default Directory"
-permalink: kb/084/Q84122/
+permalink: /kb/084/Q84122/
 ---
 
 ## Q84122: Setting Allowing Each User to Have Personal Default Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67019: Fontware Installation Kit Doesn't Ask for Disk 2"
-permalink: kb/067/Q67019/
+permalink: /kb/067/Q67019/
 ---
 
 ## Q67019: Fontware Installation Kit Doesn't Ask for Disk 2

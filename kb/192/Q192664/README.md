@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192664: SMS: How to Disable the PCM Welcome Screen"
-permalink: kb/192/Q192664/
+permalink: /kb/192/Q192664/
 ---
 
 ## Q192664: SMS: How to Disable the PCM Welcome Screen

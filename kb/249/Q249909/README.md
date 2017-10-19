@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249909: Error 5719 During Logon After Restarting a Cluster Server"
-permalink: kb/249/Q249909/
+permalink: /kb/249/Q249909/
 ---
 
 ## Q249909: Error 5719 During Logon After Restarting a Cluster Server

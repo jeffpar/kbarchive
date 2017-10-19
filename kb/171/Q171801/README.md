@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171801: FIX: Bound Controls Built in VB5 Do Not Work in VB4 IDE"
-permalink: kb/171/Q171801/
+permalink: /kb/171/Q171801/
 ---
 
 ## Q171801: FIX: Bound Controls Built in VB5 Do Not Work in VB4 IDE

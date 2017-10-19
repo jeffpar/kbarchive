@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132952: PC Adm: ADMIN.EXE Started from MS-DOS w/o Prompt for Password"
-permalink: kb/132/Q132952/
+permalink: /kb/132/Q132952/
 ---
 
 ## Q132952: PC Adm: ADMIN.EXE Started from MS-DOS w/o Prompt for Password

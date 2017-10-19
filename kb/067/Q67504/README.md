@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67504: Windows and Epson MX-80, FX-80, RX-80, MX-100"
-permalink: kb/067/Q67504/
+permalink: /kb/067/Q67504/
 ---
 
 ## Q67504: Windows and Epson MX-80, FX-80, RX-80, MX-100

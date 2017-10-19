@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164480: WD97: Menu and Toolbar Initialization Response Slow"
-permalink: kb/164/Q164480/
+permalink: /kb/164/Q164480/
 ---
 
 ## Q164480: WD97: Menu and Toolbar Initialization Response Slow

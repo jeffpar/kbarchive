@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153066: IPC&#36; Connections Do Not Disconnect"
-permalink: kb/153/Q153066/
+permalink: /kb/153/Q153066/
 ---
 
 ## Q153066: IPC&#36; Connections Do Not Disconnect

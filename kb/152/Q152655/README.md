@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152655: Wrong Cancellation Form Sent for Recurring Meeting"
-permalink: kb/152/Q152655/
+permalink: /kb/152/Q152655/
 ---
 
 ## Q152655: Wrong Cancellation Form Sent for Recurring Meeting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163486: XCCC: Error Starting Schedule+ Free/Busy Connector"
-permalink: kb/163/Q163486/
+permalink: /kb/163/Q163486/
 ---
 
 ## Q163486: XCCC: Error Starting Schedule+ Free/Busy Connector

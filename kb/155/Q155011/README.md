@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155011: INFO: Error Codes in Windows NT Part 1 of 2 (article I)"
-permalink: kb/155/Q155011/
+permalink: /kb/155/Q155011/
 ---
 
 ## Q155011: INFO: Error Codes in Windows NT Part 1 of 2 (article I)

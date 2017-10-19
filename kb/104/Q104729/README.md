@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104729: MemMaker Removes XLOAD Device Drivers from CONFIG.SYS"
-permalink: kb/104/Q104729/
+permalink: /kb/104/Q104729/
 ---
 
 ## Q104729: MemMaker Removes XLOAD Device Drivers from CONFIG.SYS

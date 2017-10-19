@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239119: BUG: FDISK Reports Incorrect Disk Capacity for PCMCIA ATA Drives"
-permalink: kb/239/Q239119/
+permalink: /kb/239/Q239119/
 ---
 
 ## Q239119: BUG: FDISK Reports Incorrect Disk Capacity for PCMCIA ATA Drives

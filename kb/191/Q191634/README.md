@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191634: Group Policies Cause Excessive &#92;PIPE&#92;samr Connections on PDC"
-permalink: kb/191/Q191634/
+permalink: /kb/191/Q191634/
 ---
 
 ## Q191634: Group Policies Cause Excessive &#92;PIPE&#92;samr Connections on PDC

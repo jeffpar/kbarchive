@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162841: XFOR: MSMI NDRs Dir-Sync Messages Under Certain Circumstances"
-permalink: kb/162/Q162841/
+permalink: /kb/162/Q162841/
 ---
 
 ## Q162841: XFOR: MSMI NDRs Dir-Sync Messages Under Certain Circumstances

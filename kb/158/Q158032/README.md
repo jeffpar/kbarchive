@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158032: GEX: Troubleshooting Display Issues"
-permalink: kb/158/Q158032/
+permalink: /kb/158/Q158032/
 ---
 
 ## Q158032: GEX: Troubleshooting Display Issues

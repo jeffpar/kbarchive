@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85082: Less Free Memory After Running Slide Show in PowerPoint Viewer"
-permalink: kb/085/Q85082/
+permalink: /kb/085/Q85082/
 ---
 
 ## Q85082: Less Free Memory After Running Slide Show in PowerPoint Viewer

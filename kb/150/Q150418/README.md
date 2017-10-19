@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150418: How To Create an Access Database Through Visual Basic 4.0"
-permalink: kb/150/Q150418/
+permalink: /kb/150/Q150418/
 ---
 
 ## Q150418: How To Create an Access Database Through Visual Basic 4.0

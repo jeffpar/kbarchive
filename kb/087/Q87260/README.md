@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87260: Mac Tool: Rebuild Data File on Floppy Disk"
-permalink: kb/087/Q87260/
+permalink: /kb/087/Q87260/
 ---
 
 ## Q87260: Mac Tool: Rebuild Data File on Floppy Disk

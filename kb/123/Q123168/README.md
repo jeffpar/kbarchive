@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123168: RAS Error 652 with US-Robotics 14400 Sportster"
-permalink: kb/123/Q123168/
+permalink: /kb/123/Q123168/
 ---
 
 ## Q123168: RAS Error 652 with US-Robotics 14400 Sportster

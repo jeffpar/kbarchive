@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138564: PRB: Windows 95 Common Controls Not Supported by Ctl3d32.dll"
-permalink: kb/138/Q138564/
+permalink: /kb/138/Q138564/
 ---
 
 ## Q138564: PRB: Windows 95 Common Controls Not Supported by Ctl3d32.dll

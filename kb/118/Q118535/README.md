@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118535: X400: Details on Disclose Recipient Option"
-permalink: kb/118/Q118535/
+permalink: /kb/118/Q118535/
 ---
 
 ## Q118535: X400: Details on Disclose Recipient Option

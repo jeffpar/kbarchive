@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149368: PC Rmt: Err Msg: ProcessRecvMail, fp_read Fails. Out of Memory"
-permalink: kb/149/Q149368/
+permalink: /kb/149/Q149368/
 ---
 
 ## Q149368: PC Rmt: Err Msg: ProcessRecvMail, fp_read Fails. Out of Memory

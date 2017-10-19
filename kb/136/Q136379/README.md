@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q136379: FFAPI: Err Msg: [021] Message Was Not Delivered Due to..."
-permalink: kb/136/Q136379/
+title: "Q136379: FFAPI: Err Msg: &#91;021&#93; Message Was Not Delivered Due to..."
+permalink: /kb/136/Q136379/
 ---
 
-## Q136379: FFAPI: Err Msg: [021] Message Was Not Delivered Due to...
+## Q136379: FFAPI: Err Msg: &#91;021&#93; Message Was Not Delivered Due to...
 
 	Article: Q136379
 	Product(s): Microsoft Mail For PC Networks

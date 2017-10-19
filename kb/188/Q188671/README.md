@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188671: XADM: How to Determine When Permissions Have Been Altered"
-permalink: kb/188/Q188671/
+permalink: /kb/188/Q188671/
 ---
 
 ## Q188671: XADM: How to Determine When Permissions Have Been Altered

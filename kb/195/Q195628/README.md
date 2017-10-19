@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195628: FIX: VFP Will Not Shutdown With Multiple Component Galleries"
-permalink: kb/195/Q195628/
+permalink: /kb/195/Q195628/
 ---
 
 ## Q195628: FIX: VFP Will Not Shutdown With Multiple Component Galleries

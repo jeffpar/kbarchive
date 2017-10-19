@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298511: SNA/HIS Print Server May Hang Using Generic Text Print Driver"
-permalink: kb/298/Q298511/
+permalink: /kb/298/Q298511/
 ---
 
 ## Q298511: SNA/HIS Print Server May Hang Using Generic Text Print Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252479: MapPoint/Streets &amp; Trips 2001: How to View a High Contrast Map"
-permalink: kb/252/Q252479/
+permalink: /kb/252/Q252479/
 ---
 
 ## Q252479: MapPoint/Streets &amp; Trips 2001: How to View a High Contrast Map

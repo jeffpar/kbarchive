@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67260: Write Asks to Save Changes When Exiting After Printing"
-permalink: kb/067/Q67260/
+permalink: /kb/067/Q67260/
 ---
 
 ## Q67260: Write Asks to Save Changes When Exiting After Printing

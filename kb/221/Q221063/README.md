@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221063: Network Drives Created with Substitute Command Cannot Copy"
-permalink: kb/221/Q221063/
+permalink: /kb/221/Q221063/
 ---
 
 ## Q221063: Network Drives Created with Substitute Command Cannot Copy

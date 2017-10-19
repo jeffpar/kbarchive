@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318995: FIX: When You Mix TEXT TO and SET TEXTMERGE Commnds Error Occurs"
-permalink: kb/318/Q318995/
+permalink: /kb/318/Q318995/
 ---
 
 ## Q318995: FIX: When You Mix TEXT TO and SET TEXTMERGE Commnds Error Occurs

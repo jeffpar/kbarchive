@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260395: SMS: Variables May Not Work Properly in a Program Command Line"
-permalink: kb/260/Q260395/
+permalink: /kb/260/Q260395/
 ---
 
 ## Q260395: SMS: Variables May Not Work Properly in a Program Command Line

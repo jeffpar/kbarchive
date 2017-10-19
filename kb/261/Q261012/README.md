@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261012: How to Change MdbDomains Value for SNAPMP Service in HIS2000"
-permalink: kb/261/Q261012/
+permalink: /kb/261/Q261012/
 ---
 
 ## Q261012: How to Change MdbDomains Value for SNAPMP Service in HIS2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130439: Code Comparison: Visual FoxPro Grid &amp; Clipper/DOS Tbrowse"
-permalink: kb/130/Q130439/
+permalink: /kb/130/Q130439/
 ---
 
 ## Q130439: Code Comparison: Visual FoxPro Grid &amp; Clipper/DOS Tbrowse

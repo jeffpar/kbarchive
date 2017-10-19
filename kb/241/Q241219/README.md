@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241219: MS99-036: Unattended Installation File Not Deleted After Setup"
-permalink: kb/241/Q241219/
+permalink: /kb/241/Q241219/
 ---
 
 ## Q241219: MS99-036: Unattended Installation File Not Deleted After Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177959: XADM: Information Store Does Not Start, Error -1022"
-permalink: kb/177/Q177959/
+permalink: /kb/177/Q177959/
 ---
 
 ## Q177959: XADM: Information Store Does Not Start, Error -1022

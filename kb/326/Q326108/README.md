@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326108: PCL Codes are Ignored After You Install Host Integration Server"
-permalink: kb/326/Q326108/
+permalink: /kb/326/Q326108/
 ---
 
 ## Q326108: PCL Codes are Ignored After You Install Host Integration Server

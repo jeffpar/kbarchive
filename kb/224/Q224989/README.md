@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224989: FIX:&quot;Not Enough Memory&quot; Error with SQLCOLUMNS() and SQL Server"
-permalink: kb/224/Q224989/
+permalink: /kb/224/Q224989/
 ---
 
 ## Q224989: FIX:&quot;Not Enough Memory&quot; Error with SQLCOLUMNS() and SQL Server

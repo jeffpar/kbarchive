@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118794: SFM: Problem Capturing Windows NT Printer"
-permalink: kb/118/Q118794/
+permalink: /kb/118/Q118794/
 ---
 
 ## Q118794: SFM: Problem Capturing Windows NT Printer

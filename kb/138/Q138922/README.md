@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138922: Disk Activity Light Stops on Compaq DeskPro XLS"
-permalink: kb/138/Q138922/
+permalink: /kb/138/Q138922/
 ---
 
 ## Q138922: Disk Activity Light Stops on Compaq DeskPro XLS

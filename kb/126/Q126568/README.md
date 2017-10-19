@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126568: Automap Road Atlas: GP Fault in Module HP500C.DRV"
-permalink: kb/126/Q126568/
+permalink: /kb/126/Q126568/
 ---
 
 ## Q126568: Automap Road Atlas: GP Fault in Module HP500C.DRV

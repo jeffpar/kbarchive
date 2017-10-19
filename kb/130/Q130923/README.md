@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130923: How To Identify a PCI Boot Controller"
-permalink: kb/130/Q130923/
+permalink: /kb/130/Q130923/
 ---
 
 ## Q130923: How To Identify a PCI Boot Controller

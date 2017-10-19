@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164634: SNA Client Fails on SNA Server 3.0 on French WinNT 3.51"
-permalink: kb/164/Q164634/
+permalink: /kb/164/Q164634/
 ---
 
 ## Q164634: SNA Client Fails on SNA Server 3.0 on French WinNT 3.51

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242386: Cluster Does Not Log Event on Resource Monitor Failure"
-permalink: kb/242/Q242386/
+permalink: /kb/242/Q242386/
 ---
 
 ## Q242386: Cluster Does Not Log Event on Resource Monitor Failure

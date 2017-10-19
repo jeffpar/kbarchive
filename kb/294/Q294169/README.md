@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294169: DOC: Explanation of Length Arguments for Unicode ODBC Functions"
-permalink: kb/294/Q294169/
+permalink: /kb/294/Q294169/
 ---
 
 ## Q294169: DOC: Explanation of Length Arguments for Unicode ODBC Functions

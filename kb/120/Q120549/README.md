@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120549: How to Start FoxPro from the Apple Menu"
-permalink: kb/120/Q120549/
+permalink: /kb/120/Q120549/
 ---
 
 ## Q120549: How to Start FoxPro from the Apple Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134869: PPT7: Header or Footer Text Runs into Date or Slide Number"
-permalink: kb/134/Q134869/
+permalink: /kb/134/Q134869/
 ---
 
 ## Q134869: PPT7: Header or Footer Text Runs into Date or Slide Number

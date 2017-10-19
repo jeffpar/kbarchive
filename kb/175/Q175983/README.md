@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175983: PRB: Extra Menu Pad Added if Modal Screen Called 31 Times"
-permalink: kb/175/Q175983/
+permalink: /kb/175/Q175983/
 ---
 
 ## Q175983: PRB: Extra Menu Pad Added if Modal Screen Called 31 Times

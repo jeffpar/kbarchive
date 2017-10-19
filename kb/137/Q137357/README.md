@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137357: HOWTO: Insert Objects Without Using Insert Object Dialog Box"
-permalink: kb/137/Q137357/
+permalink: /kb/137/Q137357/
 ---
 
 ## Q137357: HOWTO: Insert Objects Without Using Insert Object Dialog Box

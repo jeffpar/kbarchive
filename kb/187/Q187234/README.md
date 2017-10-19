@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187234: HOWTO: Use the Dictionary Object with Visual Basic"
-permalink: kb/187/Q187234/
+permalink: /kb/187/Q187234/
 ---
 
 ## Q187234: HOWTO: Use the Dictionary Object with Visual Basic

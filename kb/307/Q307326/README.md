@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307326: Startweb.vbs and Stopweb.vbs Fail on NT4.0 with Error 800401E4"
-permalink: kb/307/Q307326/
+permalink: /kb/307/Q307326/
 ---
 
 ## Q307326: Startweb.vbs and Stopweb.vbs Fail on NT4.0 with Error 800401E4

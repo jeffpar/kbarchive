@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140928: WINST Files Corrupted, Contain Previously Canceled Job Requests"
-permalink: kb/140/Q140928/
+permalink: /kb/140/Q140928/
 ---
 
 ## Q140928: WINST Files Corrupted, Contain Previously Canceled Job Requests

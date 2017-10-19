@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104395: BUG: StretchDIBits Faults on 24-BPP PM-Style DIBs"
-permalink: kb/104/Q104395/
+permalink: /kb/104/Q104395/
 ---
 
 ## Q104395: BUG: StretchDIBits Faults on 24-BPP PM-Style DIBs

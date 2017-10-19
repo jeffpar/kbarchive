@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150821: INFO: SNA Distinction Between XID Format 0 and Format 3"
-permalink: kb/150/Q150821/
+permalink: /kb/150/Q150821/
 ---
 
 ## Q150821: INFO: SNA Distinction Between XID Format 0 and Format 3

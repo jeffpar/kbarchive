@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170405: WD97: Changes to Compatibility Options Not Saved in Normal.dot"
-permalink: kb/170/Q170405/
+permalink: /kb/170/Q170405/
 ---
 
 ## Q170405: WD97: Changes to Compatibility Options Not Saved in Normal.dot

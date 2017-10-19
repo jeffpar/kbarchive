@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106055: Multimedia PC Level 1 and Level 2 Specifications"
-permalink: kb/106/Q106055/
+permalink: /kb/106/Q106055/
 ---
 
 ## Q106055: Multimedia PC Level 1 and Level 2 Specifications

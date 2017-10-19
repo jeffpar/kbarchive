@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150233: FIX: TopMost Window Does Not Stay on Top in Design Environment"
-permalink: kb/150/Q150233/
+permalink: /kb/150/Q150233/
 ---
 
 ## Q150233: FIX: TopMost Window Does Not Stay on Top in Design Environment

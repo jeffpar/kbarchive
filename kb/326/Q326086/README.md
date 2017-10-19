@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326086: HOW TO: Isolate Web Applications into Their Own Process"
-permalink: kb/326/Q326086/
+permalink: /kb/326/Q326086/
 ---
 
 ## Q326086: HOW TO: Isolate Web Applications into Their Own Process

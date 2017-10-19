@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111050: ScanDisk Does Not Correct Clusters Marked as Bad"
-permalink: kb/111/Q111050/
+permalink: /kb/111/Q111050/
 ---
 
 ## Q111050: ScanDisk Does Not Correct Clusters Marked as Bad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316807: FIX: Fatal Error When You Select Properties from the Table Menu"
-permalink: kb/316/Q316807/
+permalink: /kb/316/Q316807/
 ---
 
 ## Q316807: FIX: Fatal Error When You Select Properties from the Table Menu

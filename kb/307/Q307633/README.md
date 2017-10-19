@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307633: IIS Does Not Return HTTP 304 Not Modified for Compressed Content"
-permalink: kb/307/Q307633/
+permalink: /kb/307/Q307633/
 ---
 
 ## Q307633: IIS Does Not Return HTTP 304 Not Modified for Compressed Content

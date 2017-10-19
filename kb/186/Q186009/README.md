@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186009: PRB: Errors Starting the Coverage Profiler"
-permalink: kb/186/Q186009/
+permalink: /kb/186/Q186009/
 ---
 
 ## Q186009: PRB: Errors Starting the Coverage Profiler

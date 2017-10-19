@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141749: MMSYSTEM326. No wave device that can..."
-permalink: kb/141/Q141749/
+permalink: /kb/141/Q141749/
 ---
 
 ## Q141749: MMSYSTEM326. No wave device that can...

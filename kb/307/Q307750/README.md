@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307750: End-User Client Does Not Connect After Configuration Change"
-permalink: kb/307/Q307750/
+permalink: /kb/307/Q307750/
 ---
 
 ## Q307750: End-User Client Does Not Connect After Configuration Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192742: XADM: PerfMon Counters Unavailable After Applying 5.5 SP1"
-permalink: kb/192/Q192742/
+permalink: /kb/192/Q192742/
 ---
 
 ## Q192742: XADM: PerfMon Counters Unavailable After Applying 5.5 SP1

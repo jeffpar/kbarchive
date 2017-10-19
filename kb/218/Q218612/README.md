@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218612: FIX: Remote Debugging on Alpha Does Not Work"
-permalink: kb/218/Q218612/
+permalink: /kb/218/Q218612/
 ---
 
 ## Q218612: FIX: Remote Debugging on Alpha Does Not Work

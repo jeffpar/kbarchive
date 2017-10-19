@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295416: XCON: How to Use the PortPing Utility"
-permalink: kb/295/Q295416/
+permalink: /kb/295/Q295416/
 ---
 
 ## Q295416: XCON: How to Use the PortPing Utility

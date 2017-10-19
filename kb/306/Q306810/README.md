@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306810: XCLN: Japanese ODK Language Tool Fails During Package Creation"
-permalink: kb/306/Q306810/
+permalink: /kb/306/Q306810/
 ---
 
 ## Q306810: XCLN: Japanese ODK Language Tool Fails During Package Creation

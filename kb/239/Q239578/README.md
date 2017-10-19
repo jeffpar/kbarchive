@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239578: S&amp;T 2000 Err Msg: Setup Could Not Write to Line in the INI File"
-permalink: kb/239/Q239578/
+permalink: /kb/239/Q239578/
 ---
 
 ## Q239578: S&amp;T 2000 Err Msg: Setup Could Not Write to Line in the INI File

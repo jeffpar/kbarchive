@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269589: XADM: MTA May Stop When Parsing an Address and MIXER Is Enabled"
-permalink: kb/269/Q269589/
+permalink: /kb/269/Q269589/
 ---
 
 ## Q269589: XADM: MTA May Stop When Parsing an Address and MIXER Is Enabled

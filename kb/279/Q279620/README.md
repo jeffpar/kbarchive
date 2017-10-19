@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279620: MechWarrior 4 Err Msg: Invalid to Call ApplyFilters..."
-permalink: kb/279/Q279620/
+permalink: /kb/279/Q279620/
 ---
 
 ## Q279620: MechWarrior 4 Err Msg: Invalid to Call ApplyFilters...

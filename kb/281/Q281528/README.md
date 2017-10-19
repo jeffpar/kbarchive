@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281528: Audio - Listening to the Radio Online"
-permalink: kb/281/Q281528/
+permalink: /kb/281/Q281528/
 ---
 
 ## Q281528: Audio - Listening to the Radio Online

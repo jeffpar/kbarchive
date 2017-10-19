@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172402: Auditing Logon Failures Does Not Log Remote Failures"
-permalink: kb/172/Q172402/
+permalink: /kb/172/Q172402/
 ---
 
 ## Q172402: Auditing Logon Failures Does Not Log Remote Failures

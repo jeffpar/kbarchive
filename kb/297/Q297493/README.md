@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297493: HOWTO: Modify Exchange Folder Permissions w/IExchangeModifyTable"
-permalink: kb/297/Q297493/
+permalink: /kb/297/Q297493/
 ---
 
 ## Q297493: HOWTO: Modify Exchange Folder Permissions w/IExchangeModifyTable

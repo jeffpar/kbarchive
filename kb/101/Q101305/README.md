@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101305: SETUP /E Err Msg: Setup Cannot Find Your MS-DOS Directory..."
-permalink: kb/101/Q101305/
+permalink: /kb/101/Q101305/
 ---
 
 ## Q101305: SETUP /E Err Msg: Setup Cannot Find Your MS-DOS Directory...

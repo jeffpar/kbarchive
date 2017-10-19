@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230677: Malformed Phonebook Entry Security Vulnerability in RAS Client"
-permalink: kb/230/Q230677/
+permalink: /kb/230/Q230677/
 ---
 
 ## Q230677: Malformed Phonebook Entry Security Vulnerability in RAS Client

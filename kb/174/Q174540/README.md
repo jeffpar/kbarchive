@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174540: Extra Page Printed on Epson Stylus Color Printers"
-permalink: kb/174/Q174540/
+permalink: /kb/174/Q174540/
 ---
 
 ## Q174540: Extra Page Printed on Epson Stylus Color Printers

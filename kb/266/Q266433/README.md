@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266433: MS00-070: Patch for Numerous Vulnerabilities in the LPC Port Sys"
-permalink: kb/266/Q266433/
+permalink: /kb/266/Q266433/
 ---
 
 ## Q266433: MS00-070: Patch for Numerous Vulnerabilities in the LPC Port Sys

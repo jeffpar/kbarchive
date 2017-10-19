@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293293: PRB: Cannot Update SCC Status From ProjectHook.Init()"
-permalink: kb/293/Q293293/
+permalink: /kb/293/Q293293/
 ---
 
 ## Q293293: PRB: Cannot Update SCC Status From ProjectHook.Init()

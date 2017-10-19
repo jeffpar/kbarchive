@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102718: MS-DOS Err Msg: ERROR D601US - System Failed"
-permalink: kb/102/Q102718/
+permalink: /kb/102/Q102718/
 ---
 
 ## Q102718: MS-DOS Err Msg: ERROR D601US - System Failed

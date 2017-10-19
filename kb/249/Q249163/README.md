@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249163: XADM: LDAP Commands Seen in a Network Trace"
-permalink: kb/249/Q249163/
+permalink: /kb/249/Q249163/
 ---
 
 ## Q249163: XADM: LDAP Commands Seen in a Network Trace

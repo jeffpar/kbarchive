@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156719: XCLN: Mac Client Doesn't Handle MacBinary Type I Attachments"
-permalink: kb/156/Q156719/
+permalink: /kb/156/Q156719/
 ---
 
 ## Q156719: XCLN: Mac Client Doesn't Handle MacBinary Type I Attachments

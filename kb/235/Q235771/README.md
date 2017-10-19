@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235771: BUG: Rchelp.Sys Can Cause CHKDSK to Run Continuously"
-permalink: kb/235/Q235771/
+permalink: /kb/235/Q235771/
 ---
 
 ## Q235771: BUG: Rchelp.Sys Can Cause CHKDSK to Run Continuously

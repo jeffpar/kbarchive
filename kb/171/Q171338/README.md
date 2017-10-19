@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171338: SMS: Preparing for a Systems Management Server Upgrade"
-permalink: kb/171/Q171338/
+permalink: /kb/171/Q171338/
 ---
 
 ## Q171338: SMS: Preparing for a Systems Management Server Upgrade

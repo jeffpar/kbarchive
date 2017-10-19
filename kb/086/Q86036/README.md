@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86036: Not Enough Memory or System Hangs with Lantastic Version 4.1"
-permalink: kb/086/Q86036/
+permalink: /kb/086/Q86036/
 ---
 
 ## Q86036: Not Enough Memory or System Hangs with Lantastic Version 4.1

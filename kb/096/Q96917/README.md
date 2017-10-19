@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96917: PC WRmt: Version 3.2 Does Not Support Shared Folders"
-permalink: kb/096/Q96917/
+permalink: /kb/096/Q96917/
 ---
 
 ## Q96917: PC WRmt: Version 3.2 Does Not Support Shared Folders

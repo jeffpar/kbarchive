@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87382: PC DB: No Limit to the Size of an Attachment File"
-permalink: kb/087/Q87382/
+permalink: /kb/087/Q87382/
 ---
 
 ## Q87382: PC DB: No Limit to the Size of an Attachment File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171543: FIX: _getmbp CRT Function Does Not Return Correct Value"
-permalink: kb/171/Q171543/
+permalink: /kb/171/Q171543/
 ---
 
 ## Q171543: FIX: _getmbp CRT Function Does Not Return Correct Value

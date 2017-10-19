@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235899: ScardGetStatusChange() API Causes Deadlock in Smart Card RM"
-permalink: kb/235/Q235899/
+permalink: /kb/235/Q235899/
 ---
 
 ## Q235899: ScardGetStatusChange() API Causes Deadlock in Smart Card RM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191328: SMS: Service Account Does Not Have Rights on Member Server"
-permalink: kb/191/Q191328/
+permalink: /kb/191/Q191328/
 ---
 
 ## Q191328: SMS: Service Account Does Not Have Rights on Member Server

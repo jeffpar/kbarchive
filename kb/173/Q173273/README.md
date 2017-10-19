@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173273: XADM: Dr Watson Access Violation in Admin.exe"
-permalink: kb/173/Q173273/
+permalink: /kb/173/Q173273/
 ---
 
 ## Q173273: XADM: Dr Watson Access Violation in Admin.exe

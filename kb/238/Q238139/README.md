@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238139: FP98: Importing Files from Unix Server Will Not Import All Files"
-permalink: kb/238/Q238139/
+permalink: /kb/238/Q238139/
 ---
 
 ## Q238139: FP98: Importing Files from Unix Server Will Not Import All Files

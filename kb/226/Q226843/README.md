@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226843: SMS: Setup Doesn't Fail As Expected in Unsupported Installation"
-permalink: kb/226/Q226843/
+permalink: /kb/226/Q226843/
 ---
 
 ## Q226843: SMS: Setup Doesn't Fail As Expected in Unsupported Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320128: FIX: The XMLToCursor() Function Causes a Fatal Exception"
-permalink: kb/320/Q320128/
+permalink: /kb/320/Q320128/
 ---
 
 ## Q320128: FIX: The XMLToCursor() Function Causes a Fatal Exception

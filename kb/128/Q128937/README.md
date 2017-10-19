@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128937: Printing Seems Slow on LANtastic-Shared Printer"
-permalink: kb/128/Q128937/
+permalink: /kb/128/Q128937/
 ---
 
 ## Q128937: Printing Seems Slow on LANtastic-Shared Printer

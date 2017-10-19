@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186088: BUG: Report Variable Not Released After Report Runs"
-permalink: kb/186/Q186088/
+permalink: /kb/186/Q186088/
 ---
 
 ## Q186088: BUG: Report Variable Not Released After Report Runs

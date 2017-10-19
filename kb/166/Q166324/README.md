@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166324: FCP: Err Msg: Cannot Initialize Sound System"
-permalink: kb/166/Q166324/
+permalink: /kb/166/Q166324/
 ---
 
 ## Q166324: FCP: Err Msg: Cannot Initialize Sound System

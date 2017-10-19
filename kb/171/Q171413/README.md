@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171413: Changing and Saving Config File Results in Memory Leak"
-permalink: kb/171/Q171413/
+permalink: /kb/171/Q171413/
 ---
 
 ## Q171413: Changing and Saving Config File Results in Memory Leak

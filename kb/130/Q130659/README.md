@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130659: PRB: &quot;The database must be opened exclusively&quot; Multiuser Error"
-permalink: kb/130/Q130659/
+permalink: /kb/130/Q130659/
 ---
 
 ## Q130659: PRB: &quot;The database must be opened exclusively&quot; Multiuser Error

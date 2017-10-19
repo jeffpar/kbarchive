@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167010: Access Violation in Cmd.exe When Processing Batch File Script"
-permalink: kb/167/Q167010/
+permalink: /kb/167/Q167010/
 ---
 
 ## Q167010: Access Violation in Cmd.exe When Processing Batch File Script

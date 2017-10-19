@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152204: DBCLEAN Fix for MIF Backup to Add Date Related Field"
-permalink: kb/152/Q152204/
+permalink: /kb/152/Q152204/
 ---
 
 ## Q152204: DBCLEAN Fix for MIF Backup to Add Date Related Field

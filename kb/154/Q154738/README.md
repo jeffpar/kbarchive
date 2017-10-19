@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154738: &quot;Connect Network Drive&quot; Caches First Credentials Supplied"
-permalink: kb/154/Q154738/
+permalink: /kb/154/Q154738/
 ---
 
 ## Q154738: &quot;Connect Network Drive&quot; Caches First Credentials Supplied

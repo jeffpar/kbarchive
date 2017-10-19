@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124563: Canceling Tape Change Request Prevents Restore Operation"
-permalink: kb/124/Q124563/
+permalink: /kb/124/Q124563/
 ---
 
 ## Q124563: Canceling Tape Change Request Prevents Restore Operation

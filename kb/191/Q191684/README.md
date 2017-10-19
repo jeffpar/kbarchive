@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191684: PRB: Setup Wizard Leaves 200KB of Disk Space on 1.44 Floppies"
-permalink: kb/191/Q191684/
+permalink: /kb/191/Q191684/
 ---
 
 ## Q191684: PRB: Setup Wizard Leaves 200KB of Disk Space on 1.44 Floppies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103714: PRB: LNK4016: Unresolved External Symbol &quot;&#95;&#95;doserrno&quot;"
-permalink: kb/103/Q103714/
+permalink: /kb/103/Q103714/
 ---
 
 ## Q103714: PRB: LNK4016: Unresolved External Symbol &quot;&#95;&#95;doserrno&quot;

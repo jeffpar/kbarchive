@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157132: Microsoft Exchange Toolbar Buttons Availability"
-permalink: kb/157/Q157132/
+permalink: /kb/157/Q157132/
 ---
 
 ## Q157132: Microsoft Exchange Toolbar Buttons Availability

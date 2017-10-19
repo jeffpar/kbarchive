@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309009: Academic Learning Series Designing a Microsoft Windows 2000 Netw"
-permalink: kb/309/Q309009/
+permalink: /kb/309/Q309009/
 ---
 
 ## Q309009: Academic Learning Series Designing a Microsoft Windows 2000 Netw

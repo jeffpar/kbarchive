@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188272: SBS IMC 4106 Event: The Parameter is Incorrect"
-permalink: kb/188/Q188272/
+permalink: /kb/188/Q188272/
 ---
 
 ## Q188272: SBS IMC 4106 Event: The Parameter is Incorrect

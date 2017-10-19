@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171599: WD97: Some AutoComplete Tips Do Not Show"
-permalink: kb/171/Q171599/
+permalink: /kb/171/Q171599/
 ---
 
 ## Q171599: WD97: Some AutoComplete Tips Do Not Show

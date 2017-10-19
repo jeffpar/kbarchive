@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114892: Err Msg: &quot;Out of Memory&quot; Browsing NetWare Svr as Administrator"
-permalink: kb/114/Q114892/
+permalink: /kb/114/Q114892/
 ---
 
 ## Q114892: Err Msg: &quot;Out of Memory&quot; Browsing NetWare Svr as Administrator

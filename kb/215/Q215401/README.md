@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215401: BUG: Cannot Use a Constant to Define the Size of Array in VBCE"
-permalink: kb/215/Q215401/
+permalink: /kb/215/Q215401/
 ---
 
 ## Q215401: BUG: Cannot Use a Constant to Define the Size of Array in VBCE

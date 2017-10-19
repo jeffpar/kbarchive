@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66135: Zoom-In Is Only as Large as Image Attribute in Paintbrush"
-permalink: kb/066/Q66135/
+permalink: /kb/066/Q66135/
 ---
 
 ## Q66135: Zoom-In Is Only as Large as Image Attribute in Paintbrush

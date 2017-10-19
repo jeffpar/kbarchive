@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200785: SMS: Site System Connection Accounts"
-permalink: kb/200/Q200785/
+permalink: /kb/200/Q200785/
 ---
 
 ## Q200785: SMS: Site System Connection Accounts

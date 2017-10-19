@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61986: Sample Communications Server Program Using TRANSFER_MS_DATA"
-permalink: kb/061/Q61986/
+permalink: /kb/061/Q61986/
 ---
 
 ## Q61986: Sample Communications Server Program Using TRANSFER_MS_DATA

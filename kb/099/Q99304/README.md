@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99304: Mac Srv: Server May Stop Operating When Run with Tape Backup"
-permalink: kb/099/Q99304/
+permalink: /kb/099/Q99304/
 ---
 
 ## Q99304: Mac Srv: Server May Stop Operating When Run with Tape Backup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224999: How to Use the Cluster TMP file to Replace a Damaged Clusdb File"
-permalink: kb/224/Q224999/
+permalink: /kb/224/Q224999/
 ---
 
 ## Q224999: How to Use the Cluster TMP file to Replace a Damaged Clusdb File

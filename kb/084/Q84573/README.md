@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84573: Epson ESC/P2 Incorrectly Advances User Defined Paper Size"
-permalink: kb/084/Q84573/
+permalink: /kb/084/Q84573/
 ---
 
 ## Q84573: Epson ESC/P2 Incorrectly Advances User Defined Paper Size

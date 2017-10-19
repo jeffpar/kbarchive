@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197503: PRB: Focus Problem Using MFC Control on MDI Child Form"
-permalink: kb/197/Q197503/
+permalink: /kb/197/Q197503/
 ---
 
 ## Q197503: PRB: Focus Problem Using MFC Control on MDI Child Form

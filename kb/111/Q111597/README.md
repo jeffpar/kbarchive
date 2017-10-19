@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111597: BUG: Debug Kernel Ignores Fatal Exits When OutputTo="
-permalink: kb/111/Q111597/
+permalink: /kb/111/Q111597/
 ---
 
 ## Q111597: BUG: Debug Kernel Ignores Fatal Exits When OutputTo=

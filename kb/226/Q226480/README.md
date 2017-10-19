@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226480: Terminal Server Profile Path Changes to Windows NT Profile"
-permalink: kb/226/Q226480/
+permalink: /kb/226/Q226480/
 ---
 
 ## Q226480: Terminal Server Profile Path Changes to Windows NT Profile

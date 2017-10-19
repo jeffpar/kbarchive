@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152745: XADM: Cannot Delete Public Folders Using Administrator Program"
-permalink: kb/152/Q152745/
+permalink: /kb/152/Q152745/
 ---
 
 ## Q152745: XADM: Cannot Delete Public Folders Using Administrator Program

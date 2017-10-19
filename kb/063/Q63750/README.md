@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63750: Screen Garbled with Toshiba T-5100 and Windows 3.0"
-permalink: kb/063/Q63750/
+permalink: /kb/063/Q63750/
 ---
 
 ## Q63750: Screen Garbled with Toshiba T-5100 and Windows 3.0

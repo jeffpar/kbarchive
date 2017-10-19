@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123695: Cirrus Logic Card w/ 5402 Chip Set Does Not Work w/ 256 Colors"
-permalink: kb/123/Q123695/
+permalink: /kb/123/Q123695/
 ---
 
 ## Q123695: Cirrus Logic Card w/ 5402 Chip Set Does Not Work w/ 256 Colors

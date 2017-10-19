@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166579: XCLN: Remote Connection Interval Not Constant"
-permalink: kb/166/Q166579/
+permalink: /kb/166/Q166579/
 ---
 
 ## Q166579: XCLN: Remote Connection Interval Not Constant

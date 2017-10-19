@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72221: Windows Resource Kit Setup Target Directory"
-permalink: kb/072/Q72221/
+permalink: /kb/072/Q72221/
 ---
 
 ## Q72221: Windows Resource Kit Setup Target Directory

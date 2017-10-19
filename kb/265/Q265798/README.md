@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265798: HOW TO: Change the Cursor in an eMbedded Visual Basic Applicatio"
-permalink: kb/265/Q265798/
+permalink: /kb/265/Q265798/
 ---
 
 ## Q265798: HOW TO: Change the Cursor in an eMbedded Visual Basic Applicatio

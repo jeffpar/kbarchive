@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157148: WD97: Newsletter Wizard Address Printed in Wrong Location"
-permalink: kb/157/Q157148/
+permalink: /kb/157/Q157148/
 ---
 
 ## Q157148: WD97: Newsletter Wizard Address Printed in Wrong Location

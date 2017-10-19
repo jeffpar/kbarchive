@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262956: &quot;Stop 0x50&quot; in Win32k.sys with Windows NT Terminal Server"
-permalink: kb/262/Q262956/
+permalink: /kb/262/Q262956/
 ---
 
 ## Q262956: &quot;Stop 0x50&quot; in Win32k.sys with Windows NT Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303235: Offline E-mail Feature Does Not Appear When Existing MSNIA User"
-permalink: kb/303/Q303235/
+permalink: /kb/303/Q303235/
 ---
 
 ## Q303235: Offline E-mail Feature Does Not Appear When Existing MSNIA User

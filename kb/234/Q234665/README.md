@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234665: XFOR: Event 238 During Lotus cc:Mail Migration"
-permalink: kb/234/Q234665/
+permalink: /kb/234/Q234665/
 ---
 
 ## Q234665: XFOR: Event 238 During Lotus cc:Mail Migration

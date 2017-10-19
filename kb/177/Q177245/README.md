@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177245: Multiprocessor Computer May Hang Because of Tcpip.sys"
-permalink: kb/177/Q177245/
+permalink: /kb/177/Q177245/
 ---
 
 ## Q177245: Multiprocessor Computer May Hang Because of Tcpip.sys

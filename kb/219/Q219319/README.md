@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219319: STOP in Winlogon.exe When Printing and Running Screen Saver"
-permalink: kb/219/Q219319/
+permalink: /kb/219/Q219319/
 ---
 
 ## Q219319: STOP in Winlogon.exe When Printing and Running Screen Saver

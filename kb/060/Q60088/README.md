@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60088: Instruction: VOR Tracking with Glideslope On"
-permalink: kb/060/Q60088/
+permalink: /kb/060/Q60088/
 ---
 
 ## Q60088: Instruction: VOR Tracking with Glideslope On

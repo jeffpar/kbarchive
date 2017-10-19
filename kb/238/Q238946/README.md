@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238946: XWEB: Can't View Graphic Inserted into HTML Message in OWA"
-permalink: kb/238/Q238946/
+permalink: /kb/238/Q238946/
 ---
 
 ## Q238946: XWEB: Can't View Graphic Inserted into HTML Message in OWA

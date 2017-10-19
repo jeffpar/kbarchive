@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150170: Telecommander Audio Driver Fails When You Open MS-DOS Prompt"
-permalink: kb/150/Q150170/
+permalink: /kb/150/Q150170/
 ---
 
 ## Q150170: Telecommander Audio Driver Fails When You Open MS-DOS Prompt

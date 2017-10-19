@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63319: PRB: Unknown Function psrch with Brief Emulation in PWB"
-permalink: kb/063/Q63319/
+permalink: /kb/063/Q63319/
 ---
 
 ## Q63319: PRB: Unknown Function psrch with Brief Emulation in PWB

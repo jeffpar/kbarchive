@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124317: INF: SQLColAttributes(SQL_COLUMN_LABEL) and Field Description"
-permalink: kb/124/Q124317/
+permalink: /kb/124/Q124317/
 ---
 
 ## Q124317: INF: SQLColAttributes(SQL_COLUMN_LABEL) and Field Description

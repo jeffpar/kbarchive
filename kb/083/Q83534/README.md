@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83534: Mac Fax: Sealing Wax and Fax Gateway 3.00a-ms"
-permalink: kb/083/Q83534/
+permalink: /kb/083/Q83534/
 ---
 
 ## Q83534: Mac Fax: Sealing Wax and Fax Gateway 3.00a-ms

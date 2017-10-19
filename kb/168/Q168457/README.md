@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168457: Configuring Individual Printers to Passthrough LPR Print Jobs"
-permalink: kb/168/Q168457/
+permalink: /kb/168/Q168457/
 ---
 
 ## Q168457: Configuring Individual Printers to Passthrough LPR Print Jobs

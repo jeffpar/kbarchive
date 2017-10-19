@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302541: In-Box Protector For E-mail"
-permalink: kb/302/Q302541/
+permalink: /kb/302/Q302541/
 ---
 
 ## Q302541: In-Box Protector For E-mail

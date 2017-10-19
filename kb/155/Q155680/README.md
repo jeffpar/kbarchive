@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155680: SMS: Windows NT Remote Control Registry Parameters Not Updated"
-permalink: kb/155/Q155680/
+permalink: /kb/155/Q155680/
 ---
 
 ## Q155680: SMS: Windows NT Remote Control Registry Parameters Not Updated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224546: STOP 0xA in Ndis.sys or Netbt.sys on Compaq Proliant"
-permalink: kb/224/Q224546/
+permalink: /kb/224/Q224546/
 ---
 
 ## Q224546: STOP 0xA in Ndis.sys or Netbt.sys on Compaq Proliant

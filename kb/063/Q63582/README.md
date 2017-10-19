@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63582: NWPOPUP.EXE Does Not Initialize Properly in Windows 3.0"
-permalink: kb/063/Q63582/
+permalink: /kb/063/Q63582/
 ---
 
 ## Q63582: NWPOPUP.EXE Does Not Initialize Properly in Windows 3.0

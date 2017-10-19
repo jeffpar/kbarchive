@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98989: FIX: Constructor C4705 Warning from Aggregate Class Member"
-permalink: kb/098/Q98989/
+permalink: /kb/098/Q98989/
 ---
 
 ## Q98989: FIX: Constructor C4705 Warning from Aggregate Class Member

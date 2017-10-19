@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112654: Using the BocaModem M1440IW with WFWG RAS Client"
-permalink: kb/112/Q112654/
+permalink: /kb/112/Q112654/
 ---
 
 ## Q112654: Using the BocaModem M1440IW with WFWG RAS Client

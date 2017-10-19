@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323729: XADM: You Cannot View or Add Organizational Forms Library"
-permalink: kb/323/Q323729/
+permalink: /kb/323/Q323729/
 ---
 
 ## Q323729: XADM: You Cannot View or Add Organizational Forms Library

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307778: SMS: Site Component Manager May Not Be Started After Upgrade"
-permalink: kb/307/Q307778/
+permalink: /kb/307/Q307778/
 ---
 
 ## Q307778: SMS: Site Component Manager May Not Be Started After Upgrade

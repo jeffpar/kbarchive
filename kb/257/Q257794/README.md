@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257794: HOWTO: Use Binary File Access with Visual Basic"
-permalink: kb/257/Q257794/
+permalink: /kb/257/Q257794/
 ---
 
 ## Q257794: HOWTO: Use Binary File Access with Visual Basic

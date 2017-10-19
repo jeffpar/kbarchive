@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300712: Label Promotion After Share Pin and Branch Operation Fails"
-permalink: kb/300/Q300712/
+permalink: /kb/300/Q300712/
 ---
 
 ## Q300712: Label Promotion After Share Pin and Branch Operation Fails

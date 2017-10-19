@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290621: XADM: Public Folder Rules Are Disabled w. Antivirus API Solution"
-permalink: kb/290/Q290621/
+permalink: /kb/290/Q290621/
 ---
 
 ## Q290621: XADM: Public Folder Rules Are Disabled w. Antivirus API Solution

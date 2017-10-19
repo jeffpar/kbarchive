@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199057: BUG: Expansion of &#95;&#95;LINE&#95;&#95; Macro Is Incorrect When Using /ZI"
-permalink: kb/199/Q199057/
+permalink: /kb/199/Q199057/
 ---
 
 ## Q199057: BUG: Expansion of &#95;&#95;LINE&#95;&#95; Macro Is Incorrect When Using /ZI

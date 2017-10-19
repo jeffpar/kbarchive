@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201718: SMS: Insufficient Access Permissions Produce Generic Error Msg"
-permalink: kb/201/Q201718/
+permalink: /kb/201/Q201718/
 ---
 
 ## Q201718: SMS: Insufficient Access Permissions Produce Generic Error Msg

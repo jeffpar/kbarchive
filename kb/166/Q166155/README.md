@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166155: XCLN: Client Doesn't Print Attachments in Embedded Msgs"
-permalink: kb/166/Q166155/
+permalink: /kb/166/Q166155/
 ---
 
 ## Q166155: XCLN: Client Doesn't Print Attachments in Embedded Msgs

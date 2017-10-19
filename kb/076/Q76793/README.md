@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76793: MS-DOS 5 Setup Screen Instructions are Unreadable"
-permalink: kb/076/Q76793/
+permalink: /kb/076/Q76793/
 ---
 
 ## Q76793: MS-DOS 5 Setup Screen Instructions are Unreadable

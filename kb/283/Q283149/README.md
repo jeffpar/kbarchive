@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283149: XADM: -1011 Error Message Reported After Running ISINTEG -PATCH"
-permalink: kb/283/Q283149/
+permalink: /kb/283/Q283149/
 ---
 
 ## Q283149: XADM: -1011 Error Message Reported After Running ISINTEG -PATCH

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74509: DlgIcons.exe Dynamically Changes Icons in Modal Dialog"
-permalink: kb/074/Q74509/
+permalink: /kb/074/Q74509/
 ---
 
 ## Q74509: DlgIcons.exe Dynamically Changes Icons in Modal Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177612: HP 350C and 750C Plotter Output Contains a Blue Background"
-permalink: kb/177/Q177612/
+permalink: /kb/177/Q177612/
 ---
 
 ## Q177612: HP 350C and 750C Plotter Output Contains a Blue Background

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122988: SMS Installation Incomplete with Missing Admin Drive Share"
-permalink: kb/122/Q122988/
+permalink: /kb/122/Q122988/
 ---
 
 ## Q122988: SMS Installation Incomplete with Missing Admin Drive Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142514: MSB Ocean: ErrMsg: Internal Error XXX Skip Type XXX"
-permalink: kb/142/Q142514/
+permalink: /kb/142/Q142514/
 ---
 
 ## Q142514: MSB Ocean: ErrMsg: Internal Error XXX Skip Type XXX

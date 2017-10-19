@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94701: Understanding Pen Driver Functionality Under Windows"
-permalink: kb/094/Q94701/
+permalink: /kb/094/Q94701/
 ---
 
 ## Q94701: Understanding Pen Driver Functionality Under Windows

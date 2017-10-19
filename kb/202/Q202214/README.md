@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202214: Err Msg: &quot;HAL: No MPS Table Found&quot; During Restart"
-permalink: kb/202/Q202214/
+permalink: /kb/202/Q202214/
 ---
 
 ## Q202214: Err Msg: &quot;HAL: No MPS Table Found&quot; During Restart

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71470: Large Partitions Not Recognized by Norton Utilities Ver 1-4.0"
-permalink: kb/071/Q71470/
+permalink: /kb/071/Q71470/
 ---
 
 ## Q71470: Large Partitions Not Recognized by Norton Utilities Ver 1-4.0

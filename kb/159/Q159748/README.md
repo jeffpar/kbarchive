@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159748: WD97: How to Protect VBA Code from Unauthorized Access"
-permalink: kb/159/Q159748/
+permalink: /kb/159/Q159748/
 ---
 
 ## Q159748: WD97: How to Protect VBA Code from Unauthorized Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125763: Writer/Artist: How to Transfer Documents b/t Mac and Windows"
-permalink: kb/125/Q125763/
+permalink: /kb/125/Q125763/
 ---
 
 ## Q125763: Writer/Artist: How to Transfer Documents b/t Mac and Windows

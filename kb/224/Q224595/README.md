@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224595: DCOM Client Cannot Establish CIS Session Using TCP/IP Address"
-permalink: kb/224/Q224595/
+permalink: /kb/224/Q224595/
 ---
 
 ## Q224595: DCOM Client Cannot Establish CIS Session Using TCP/IP Address

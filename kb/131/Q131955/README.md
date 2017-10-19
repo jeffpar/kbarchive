@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131955: BUG: Cannot Set Project Level Rights with SourceSafe's SSADMIN"
-permalink: kb/131/Q131955/
+permalink: /kb/131/Q131955/
 ---
 
 ## Q131955: BUG: Cannot Set Project Level Rights with SourceSafe's SSADMIN

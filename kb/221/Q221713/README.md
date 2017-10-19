@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221713: FIX: Possible Run-time Error with _EvalText in _html.vcx"
-permalink: kb/221/Q221713/
+permalink: /kb/221/Q221713/
 ---
 
 ## Q221713: FIX: Possible Run-time Error with _EvalText in _html.vcx

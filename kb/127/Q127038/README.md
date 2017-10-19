@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127038: FIX: CString::Format Gives Assertion Failed, Access Violation"
-permalink: kb/127/Q127038/
+permalink: /kb/127/Q127038/
 ---
 
 ## Q127038: FIX: CString::Format Gives Assertion Failed, Access Violation

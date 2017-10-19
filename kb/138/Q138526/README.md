@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138526: PRB: Loading Controls from Array Gives Several Error Messages"
-permalink: kb/138/Q138526/
+permalink: /kb/138/Q138526/
 ---
 
 ## Q138526: PRB: Loading Controls from Array Gives Several Error Messages

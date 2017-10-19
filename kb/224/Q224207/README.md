@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224207: S&amp;T 2000: Circles Around Direction Arrows Are Transparent"
-permalink: kb/224/Q224207/
+permalink: /kb/224/Q224207/
 ---
 
 ## Q224207: S&amp;T 2000: Circles Around Direction Arrows Are Transparent

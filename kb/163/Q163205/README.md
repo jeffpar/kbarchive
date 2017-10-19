@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163205: XCLN: Inserting a File into a Folder"
-permalink: kb/163/Q163205/
+permalink: /kb/163/Q163205/
 ---
 
 ## Q163205: XCLN: Inserting a File into a Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242308: HOWTO: Find a Window Handle from an Instance Handle"
-permalink: kb/242/Q242308/
+permalink: /kb/242/Q242308/
 ---
 
 ## Q242308: HOWTO: Find a Window Handle from an Instance Handle

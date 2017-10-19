@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235441: XFOR: Dirsync with Verimation Memo 6.3 Fails Doesn't Work"
-permalink: kb/235/Q235441/
+permalink: /kb/235/Q235441/
 ---
 
 ## Q235441: XFOR: Dirsync with Verimation Memo 6.3 Fails Doesn't Work

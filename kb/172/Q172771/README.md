@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172771: Error Message: Moscudll.dll Is Missing"
-permalink: kb/172/Q172771/
+permalink: /kb/172/Q172771/
 ---
 
 ## Q172771: Error Message: Moscudll.dll Is Missing

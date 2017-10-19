@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120065: BUG: Help Files Not Available After Installing Samples Only"
-permalink: kb/120/Q120065/
+permalink: /kb/120/Q120065/
 ---
 
 ## Q120065: BUG: Help Files Not Available After Installing Samples Only

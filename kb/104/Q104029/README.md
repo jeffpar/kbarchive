@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104029: PC Win: Extended Characters Not Supported in .MMF Filename"
-permalink: kb/104/Q104029/
+permalink: /kb/104/Q104029/
 ---
 
 ## Q104029: PC Win: Extended Characters Not Supported in .MMF Filename

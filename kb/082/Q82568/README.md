@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82568: Desktop Can't Print from Directory with an Extension"
-permalink: kb/082/Q82568/
+permalink: /kb/082/Q82568/
 ---
 
 ## Q82568: Desktop Can't Print from Directory with an Extension

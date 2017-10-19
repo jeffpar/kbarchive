@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126231: Printer Configuration Options Unavailable"
-permalink: kb/126/Q126231/
+permalink: /kb/126/Q126231/
 ---
 
 ## Q126231: Printer Configuration Options Unavailable

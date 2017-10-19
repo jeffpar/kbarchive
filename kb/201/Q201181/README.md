@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201181: BUG: CoolBar: Large FixedWidth/MinWidth Setting Locks Computer"
-permalink: kb/201/Q201181/
+permalink: /kb/201/Q201181/
 ---
 
 ## Q201181: BUG: CoolBar: Large FixedWidth/MinWidth Setting Locks Computer

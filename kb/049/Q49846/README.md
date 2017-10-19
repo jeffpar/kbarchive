@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49846: Inappropriate Options Available with Sailplane"
-permalink: kb/049/Q49846/
+permalink: /kb/049/Q49846/
 ---
 
 ## Q49846: Inappropriate Options Available with Sailplane

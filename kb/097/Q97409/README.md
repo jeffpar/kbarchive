@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97409: DDESERV Demonstrates a Basic DDE Server"
-permalink: kb/097/Q97409/
+permalink: /kb/097/Q97409/
 ---
 
 ## Q97409: DDESERV Demonstrates a Basic DDE Server

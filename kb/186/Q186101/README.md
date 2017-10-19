@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186101: FTP Client Does Not Show the Correct Transfer Size for Files"
-permalink: kb/186/Q186101/
+permalink: /kb/186/Q186101/
 ---
 
 ## Q186101: FTP Client Does Not Show the Correct Transfer Size for Files

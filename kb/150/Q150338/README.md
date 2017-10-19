@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150338: Microsoft Voice Does Not Extract WordPad Commands"
-permalink: kb/150/Q150338/
+permalink: /kb/150/Q150338/
 ---
 
 ## Q150338: Microsoft Voice Does Not Extract WordPad Commands

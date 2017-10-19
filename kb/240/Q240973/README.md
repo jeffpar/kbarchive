@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240973: Pandora's Box: Taskbar Remains on Screen After You Use ALT+TAB"
-permalink: kb/240/Q240973/
+permalink: /kb/240/Q240973/
 ---
 
 ## Q240973: Pandora's Box: Taskbar Remains on Screen After You Use ALT+TAB

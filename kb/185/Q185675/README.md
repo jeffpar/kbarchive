@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185675: FIX: DelayRenderFileData() Does Not Call OnRenderFileData()"
-permalink: kb/185/Q185675/
+permalink: /kb/185/Q185675/
 ---
 
 ## Q185675: FIX: DelayRenderFileData() Does Not Call OnRenderFileData()

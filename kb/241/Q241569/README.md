@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241569: BUG: C2258 and C2252 on in Place Initialization of Static Const"
-permalink: kb/241/Q241569/
+permalink: /kb/241/Q241569/
 ---
 
 ## Q241569: BUG: C2258 and C2252 on in Place Initialization of Static Const

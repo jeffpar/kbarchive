@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197623: FP: How to Identify Your Web Server and IP Address"
-permalink: kb/197/Q197623/
+permalink: /kb/197/Q197623/
 ---
 
 ## Q197623: FP: How to Identify Your Web Server and IP Address

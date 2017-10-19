@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276196: NMVT Power Off Now Supported in SNA Server"
-permalink: kb/276/Q276196/
+permalink: /kb/276/Q276196/
 ---
 
 ## Q276196: NMVT Power Off Now Supported in SNA Server

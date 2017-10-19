@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115426: Indexing on a Character and Numeric Field Together"
-permalink: kb/115/Q115426/
+permalink: /kb/115/Q115426/
 ---
 
 ## Q115426: Indexing on a Character and Numeric Field Together

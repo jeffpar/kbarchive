@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156061: HOWTO: Use the FoxPro SQLPrepare() Function"
-permalink: kb/156/Q156061/
+permalink: /kb/156/Q156061/
 ---
 
 ## Q156061: HOWTO: Use the FoxPro SQLPrepare() Function

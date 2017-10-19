@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200918: SMSINST: The Application or DLL OLE2.DLL is Not a Valid NT Image"
-permalink: kb/200/Q200918/
+permalink: /kb/200/Q200918/
 ---
 
 ## Q200918: SMSINST: The Application or DLL OLE2.DLL is Not a Valid NT Image

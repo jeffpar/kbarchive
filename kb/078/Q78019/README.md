@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78019: Bookshelf Setup: Fatal Error Copying FONTFILE.EXT"
-permalink: kb/078/Q78019/
+permalink: /kb/078/Q78019/
 ---
 
 ## Q78019: Bookshelf Setup: Fatal Error Copying FONTFILE.EXT

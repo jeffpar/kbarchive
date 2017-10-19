@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240725: TPU: &quot;Unable to Load Profile Information&quot; Error Message"
-permalink: kb/240/Q240725/
+permalink: /kb/240/Q240725/
 ---
 
 ## Q240725: TPU: &quot;Unable to Load Profile Information&quot; Error Message

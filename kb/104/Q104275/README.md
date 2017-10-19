@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104275: Mac Srv Wkst: What Is Corrected and Added for Version 3.1c"
-permalink: kb/104/Q104275/
+permalink: /kb/104/Q104275/
 ---
 
 ## Q104275: Mac Srv Wkst: What Is Corrected and Added for Version 3.1c

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164100: Cannot Insert File w/ Link Attachment To Original File Option"
-permalink: kb/164/Q164100/
+permalink: /kb/164/Q164100/
 ---
 
 ## Q164100: Cannot Insert File w/ Link Attachment To Original File Option

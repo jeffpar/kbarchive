@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291805: 3270 SSO Fails If 3270SSOUserTag, 3270SSOPwdTag Use Same Value"
-permalink: kb/291/Q291805/
+permalink: /kb/291/Q291805/
 ---
 
 ## Q291805: 3270 SSO Fails If 3270SSOUserTag, 3270SSOPwdTag Use Same Value

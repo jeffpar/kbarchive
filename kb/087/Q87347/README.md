@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87347: BUG: OpenFile() API Fails on Novell Temp Drive"
-permalink: kb/087/Q87347/
+permalink: /kb/087/Q87347/
 ---
 
 ## Q87347: BUG: OpenFile() API Fails on Novell Temp Drive

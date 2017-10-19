@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215023: Datdupck.exe Finds Duplicates That Datdupcl.exe Does Not Clean"
-permalink: kb/215/Q215023/
+permalink: /kb/215/Q215023/
 ---
 
 ## Q215023: Datdupck.exe Finds Duplicates That Datdupcl.exe Does Not Clean

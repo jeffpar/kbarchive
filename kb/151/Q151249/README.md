@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151249: XFOR: Contents of Attachments Swapped via MS Mail Connector"
-permalink: kb/151/Q151249/
+permalink: /kb/151/Q151249/
 ---
 
 ## Q151249: XFOR: Contents of Attachments Swapped via MS Mail Connector

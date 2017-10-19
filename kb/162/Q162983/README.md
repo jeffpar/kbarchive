@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162983: WD97: Background Sound Continues to Play"
-permalink: kb/162/Q162983/
+permalink: /kb/162/Q162983/
 ---
 
 ## Q162983: WD97: Background Sound Continues to Play

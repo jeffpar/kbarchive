@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154577: SMS: Site Properties Cannot Be Changed"
-permalink: kb/154/Q154577/
+permalink: /kb/154/Q154577/
 ---
 
 ## Q154577: SMS: Site Properties Cannot Be Changed

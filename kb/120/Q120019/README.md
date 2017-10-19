@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120019: Windows NT Remote Printer Administration Limitations"
-permalink: kb/120/Q120019/
+permalink: /kb/120/Q120019/
 ---
 
 ## Q120019: Windows NT Remote Printer Administration Limitations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195203: XFOR: cc:Mail 8.01 Clients See Attachment Name Changed to Date"
-permalink: kb/195/Q195203/
+permalink: /kb/195/Q195203/
 ---
 
 ## Q195203: XFOR: cc:Mail 8.01 Clients See Attachment Name Changed to Date

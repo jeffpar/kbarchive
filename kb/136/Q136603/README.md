@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136603: PPT7: Patch to Correct PowerPoint 7.0a Screen Redraw Problem"
-permalink: kb/136/Q136603/
+permalink: /kb/136/Q136603/
 ---
 
 ## Q136603: PPT7: Patch to Correct PowerPoint 7.0a Screen Redraw Problem

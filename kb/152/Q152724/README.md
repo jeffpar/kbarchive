@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152724: XFOR: MS Mail Connector Failed Parsing the Message"
-permalink: kb/152/Q152724/
+permalink: /kb/152/Q152724/
 ---
 
 ## Q152724: XFOR: MS Mail Connector Failed Parsing the Message

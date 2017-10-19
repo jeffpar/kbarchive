@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105605: Using DISKCOPY to Make Single-Pass Copies"
-permalink: kb/105/Q105605/
+permalink: /kb/105/Q105605/
 ---
 
 ## Q105605: Using DISKCOPY to Make Single-Pass Copies

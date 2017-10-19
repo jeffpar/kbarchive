@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165990: Windows 95 Policies Do Not Work Without User Profiles"
-permalink: kb/165/Q165990/
+permalink: /kb/165/Q165990/
 ---
 
 ## Q165990: Windows 95 Policies Do Not Work Without User Profiles

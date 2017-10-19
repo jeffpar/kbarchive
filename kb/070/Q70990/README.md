@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70990: WD97: Formula in Table Produces Error in Word"
-permalink: kb/070/Q70990/
+permalink: /kb/070/Q70990/
 ---
 
 ## Q70990: WD97: Formula in Table Produces Error in Word

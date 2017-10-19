@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168831: PRB: Older MFC OCX Controls Incompatible with Visual Basic 4.0"
-permalink: kb/168/Q168831/
+permalink: /kb/168/Q168831/
 ---
 
 ## Q168831: PRB: Older MFC OCX Controls Incompatible with Visual Basic 4.0

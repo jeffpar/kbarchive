@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274655: CFS2: Aircraft Fly Past Target and Continue with Mission"
-permalink: kb/274/Q274655/
+permalink: /kb/274/Q274655/
 ---
 
 ## Q274655: CFS2: Aircraft Fly Past Target and Continue with Mission

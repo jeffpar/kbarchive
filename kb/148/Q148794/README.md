@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148794: Gardening: Unable to Enlarge Pictures Using Keyboard Keys"
-permalink: kb/148/Q148794/
+permalink: /kb/148/Q148794/
 ---
 
 ## Q148794: Gardening: Unable to Enlarge Pictures Using Keyboard Keys

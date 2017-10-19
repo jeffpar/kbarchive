@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314821: FIX: Exception Error With For...Each Reference to Outlook Folder"
-permalink: kb/314/Q314821/
+permalink: /kb/314/Q314821/
 ---
 
 ## Q314821: FIX: Exception Error With For...Each Reference to Outlook Folder

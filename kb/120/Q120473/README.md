@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120473: Setup Hangs with Buslogic BT-946C on Powerstation/Powerserver"
-permalink: kb/120/Q120473/
+permalink: /kb/120/Q120473/
 ---
 
 ## Q120473: Setup Hangs with Buslogic BT-946C on Powerstation/Powerserver

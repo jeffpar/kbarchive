@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51724: DOC: Clarification of the /H Identifier Length Option"
-permalink: kb/051/Q51724/
+permalink: /kb/051/Q51724/
 ---
 
 ## Q51724: DOC: Clarification of the /H Identifier Length Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136792: Cancelling RECEIVE_AND_WAIT Using DEALLOCATE(ABEND) Hangs"
-permalink: kb/136/Q136792/
+permalink: /kb/136/Q136792/
 ---
 
 ## Q136792: Cancelling RECEIVE_AND_WAIT Using DEALLOCATE(ABEND) Hangs

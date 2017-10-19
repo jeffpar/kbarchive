@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111027: File Write to Network Share Using MS-DOS 21h Function Fails"
-permalink: kb/111/Q111027/
+permalink: /kb/111/Q111027/
 ---
 
 ## Q111027: File Write to Network Share Using MS-DOS 21h Function Fails

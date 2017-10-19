@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272483: SMS: Access Violation Error Message with Datdupcl.exe or Datdupc"
-permalink: kb/272/Q272483/
+permalink: /kb/272/Q272483/
 ---
 
 ## Q272483: SMS: Access Violation Error Message with Datdupcl.exe or Datdupc

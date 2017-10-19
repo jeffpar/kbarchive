@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258395: Baseball 2001: Textures for the Players and Crowd Appear White"
-permalink: kb/258/Q258395/
+permalink: /kb/258/Q258395/
 ---
 
 ## Q258395: Baseball 2001: Textures for the Players and Crowd Appear White

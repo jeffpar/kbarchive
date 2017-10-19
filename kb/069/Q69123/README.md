@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69123: FIX: Long Command Line Generates Protection Violation"
-permalink: kb/069/Q69123/
+permalink: /kb/069/Q69123/
 ---
 
 ## Q69123: FIX: Long Command Line Generates Protection Violation

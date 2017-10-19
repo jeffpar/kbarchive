@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173785: SMS: RService Does Not Stop a Service Before an Uninstall"
-permalink: kb/173/Q173785/
+permalink: /kb/173/Q173785/
 ---
 
 ## Q173785: SMS: RService Does Not Stop a Service Before an Uninstall

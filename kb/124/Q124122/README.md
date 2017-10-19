@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124122: File Manager: Association Fails if Path to Command Has Spaces"
-permalink: kb/124/Q124122/
+permalink: /kb/124/Q124122/
 ---
 
 ## Q124122: File Manager: Association Fails if Path to Command Has Spaces

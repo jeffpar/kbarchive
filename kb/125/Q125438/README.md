@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125438: Network Icon in Control Panel Does Not Work"
-permalink: kb/125/Q125438/
+permalink: /kb/125/Q125438/
 ---
 
 ## Q125438: Network Icon in Control Panel Does Not Work

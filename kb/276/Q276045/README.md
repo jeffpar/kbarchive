@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276045: Telnet IP+DM Is Ignored If TN3270 Server Is Already Queuing Data"
-permalink: kb/276/Q276045/
+permalink: /kb/276/Q276045/
 ---
 
 ## Q276045: Telnet IP+DM Is Ignored If TN3270 Server Is Already Queuing Data

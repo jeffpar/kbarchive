@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245789: XADM: Move Server Wizard Stops with c1010aae"
-permalink: kb/245/Q245789/
+permalink: /kb/245/Q245789/
 ---
 
 ## Q245789: XADM: Move Server Wizard Stops with c1010aae

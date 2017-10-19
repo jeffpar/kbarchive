@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93206: PostScript EPS Files Are Device Independent"
-permalink: kb/093/Q93206/
+permalink: /kb/093/Q93206/
 ---
 
 ## Q93206: PostScript EPS Files Are Device Independent

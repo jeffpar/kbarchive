@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234508: SMS: How to Determine SMS Thread Responsible for High CPU Use"
-permalink: kb/234/Q234508/
+permalink: /kb/234/Q234508/
 ---
 
 ## Q234508: SMS: How to Determine SMS Thread Responsible for High CPU Use

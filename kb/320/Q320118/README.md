@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320118: FIX: Error Occurs Using the Open Parenthesis Calling VSS Method"
-permalink: kb/320/Q320118/
+permalink: /kb/320/Q320118/
 ---
 
 ## Q320118: FIX: Error Occurs Using the Open Parenthesis Calling VSS Method

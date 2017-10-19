@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155833: Wine Guide 2.0: Unable to Use ENTER Key in Notes Feature"
-permalink: kb/155/Q155833/
+permalink: /kb/155/Q155833/
 ---
 
 ## Q155833: Wine Guide 2.0: Unable to Use ENTER Key in Notes Feature

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130796: Cannot Set Up Internal Modem"
-permalink: kb/130/Q130796/
+permalink: /kb/130/Q130796/
 ---
 
 ## Q130796: Cannot Set Up Internal Modem

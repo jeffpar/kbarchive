@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123418: STOP 0x0000008B During Installation on DEC Alpha 2100"
-permalink: kb/123/Q123418/
+permalink: /kb/123/Q123418/
 ---
 
 ## Q123418: STOP 0x0000008B During Installation on DEC Alpha 2100

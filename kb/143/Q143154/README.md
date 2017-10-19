@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143154: Indicate Expandable Branches In File Manager Causes Delay"
-permalink: kb/143/Q143154/
+permalink: /kb/143/Q143154/
 ---
 
 ## Q143154: Indicate Expandable Branches In File Manager Causes Delay

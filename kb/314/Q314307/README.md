@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314307: HTTP Compression Does Not Work if Extension Has Uppercase Chars"
-permalink: kb/314/Q314307/
+permalink: /kb/314/Q314307/
 ---
 
 ## Q314307: HTTP Compression Does Not Work if Extension Has Uppercase Chars

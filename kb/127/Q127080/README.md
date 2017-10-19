@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127080: PC Win DOS: How to Remove Personal Address List (PAL)"
-permalink: kb/127/Q127080/
+permalink: /kb/127/Q127080/
 ---
 
 ## Q127080: PC Win DOS: How to Remove Personal Address List (PAL)

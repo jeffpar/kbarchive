@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66728: Windows Err Msg: System Error Network Error Reading Drive &lt;x&gt;"
-permalink: kb/066/Q66728/
+permalink: /kb/066/Q66728/
 ---
 
 ## Q66728: Windows Err Msg: System Error Network Error Reading Drive &lt;x&gt;

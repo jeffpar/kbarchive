@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186277: PRB: User Connection Designer: Zero-Length Input Parameter"
-permalink: kb/186/Q186277/
+permalink: /kb/186/Q186277/
 ---
 
 ## Q186277: PRB: User Connection Designer: Zero-Length Input Parameter

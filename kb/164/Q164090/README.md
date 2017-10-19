@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164090: Index Server Evaluation Version File List"
-permalink: kb/164/Q164090/
+permalink: /kb/164/Q164090/
 ---
 
 ## Q164090: Index Server Evaluation Version File List

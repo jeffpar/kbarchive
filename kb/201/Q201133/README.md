@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201133: Scripting Change Occurs When Upgrading from IIS 3.0"
-permalink: kb/201/Q201133/
+permalink: /kb/201/Q201133/
 ---
 
 ## Q201133: Scripting Change Occurs When Upgrading from IIS 3.0

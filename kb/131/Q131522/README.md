@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131522: PC WSPLUS: Schedule+ Dynamic Connections Not Work w/Novell NDS"
-permalink: kb/131/Q131522/
+permalink: /kb/131/Q131522/
 ---
 
 ## Q131522: PC WSPLUS: Schedule+ Dynamic Connections Not Work w/Novell NDS

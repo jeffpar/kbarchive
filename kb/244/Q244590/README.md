@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244590: WD97: ErrMsg: &quot;Word Has Insufficient Memory&quot; Updating TOC"
-permalink: kb/244/Q244590/
+permalink: /kb/244/Q244590/
 ---
 
 ## Q244590: WD97: ErrMsg: &quot;Word Has Insufficient Memory&quot; Updating TOC

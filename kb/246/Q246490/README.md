@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246490: PRB: Unspecified Error When You Add an HTML Template to WebClass"
-permalink: kb/246/Q246490/
+permalink: /kb/246/Q246490/
 ---
 
 ## Q246490: PRB: Unspecified Error When You Add an HTML Template to WebClass

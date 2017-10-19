@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268238: SMS: Err Msg: Fatal Error. Setup Cannot Upgrade the SQL Database"
-permalink: kb/268/Q268238/
+permalink: /kb/268/Q268238/
 ---
 
 ## Q268238: SMS: Err Msg: Fatal Error. Setup Cannot Upgrade the SQL Database

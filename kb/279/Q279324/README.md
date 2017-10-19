@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279324: XFOR: How to Prevent  Domains from Receiving an SMTP Message"
-permalink: kb/279/Q279324/
+permalink: /kb/279/Q279324/
 ---
 
 ## Q279324: XFOR: How to Prevent  Domains from Receiving an SMTP Message

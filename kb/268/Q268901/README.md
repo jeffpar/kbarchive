@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268901: HOWTO: Save a File from Visual C++ in UNIX Format"
-permalink: kb/268/Q268901/
+permalink: /kb/268/Q268901/
 ---
 
 ## Q268901: HOWTO: Save a File from Visual C++ in UNIX Format

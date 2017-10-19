@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166543: XFOR: Migration Wizard Hangs with Invalid Entry in SEC File"
-permalink: kb/166/Q166543/
+permalink: /kb/166/Q166543/
 ---
 
 ## Q166543: XFOR: Migration Wizard Hangs with Invalid Entry in SEC File

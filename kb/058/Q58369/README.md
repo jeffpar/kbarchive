@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58369: Networks That Use the XMS High Memory Area (HMA)"
-permalink: kb/058/Q58369/
+permalink: /kb/058/Q58369/
 ---
 
 ## Q58369: Networks That Use the XMS High Memory Area (HMA)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62233: Mac Wkst: Saving an Enclosure to a Sun File Server"
-permalink: kb/062/Q62233/
+permalink: /kb/062/Q62233/
 ---
 
 ## Q62233: Mac Wkst: Saving an Enclosure to a Sun File Server

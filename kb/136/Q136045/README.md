@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136045: PC Gen: Template Utility Ignores Record with a Space"
-permalink: kb/136/Q136045/
+permalink: /kb/136/Q136045/
 ---
 
 ## Q136045: PC Gen: Template Utility Ignores Record with a Space

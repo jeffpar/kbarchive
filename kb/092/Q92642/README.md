@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92642: Commonly Asked Schedule+ Questions &amp; Answers"
-permalink: kb/092/Q92642/
+permalink: /kb/092/Q92642/
 ---
 
 ## Q92642: Commonly Asked Schedule+ Questions &amp; Answers

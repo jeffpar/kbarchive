@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94309: Unable to Share Printer when SUBST Is Used for TEMP Directory"
-permalink: kb/094/Q94309/
+permalink: /kb/094/Q94309/
 ---
 
 ## Q94309: Unable to Share Printer when SUBST Is Used for TEMP Directory

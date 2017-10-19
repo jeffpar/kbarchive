@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124600: Creating MS-DOS Style Full-Screens in FoxPro for Windows"
-permalink: kb/124/Q124600/
+permalink: /kb/124/Q124600/
 ---
 
 ## Q124600: Creating MS-DOS Style Full-Screens in FoxPro for Windows

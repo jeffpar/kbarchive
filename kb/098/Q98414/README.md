@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98414: Using IBM M-Audio Sound Card to Play MIDI Sounds"
-permalink: kb/098/Q98414/
+permalink: /kb/098/Q98414/
 ---
 
 ## Q98414: Using IBM M-Audio Sound Card to Play MIDI Sounds

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239049: HTTP Compression Maximum Size Setting Not Checked Using HTMLA"
-permalink: kb/239/Q239049/
+permalink: /kb/239/Q239049/
 ---
 
 ## Q239049: HTTP Compression Maximum Size Setting Not Checked Using HTMLA

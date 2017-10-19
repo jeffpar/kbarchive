@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272197: XCCC: How to Restrict  OWA Address View Searches"
-permalink: kb/272/Q272197/
+permalink: /kb/272/Q272197/
 ---
 
 ## Q272197: XCCC: How to Restrict  OWA Address View Searches

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198384: WD97: Mail Merge Produces Full Page of Labels"
-permalink: kb/198/Q198384/
+permalink: /kb/198/Q198384/
 ---
 
 ## Q198384: WD97: Mail Merge Produces Full Page of Labels

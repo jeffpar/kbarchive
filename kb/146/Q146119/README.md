@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146119: Macintosh Bookshelf '95 ErrMsg: Please Insert the Microsoft..."
-permalink: kb/146/Q146119/
+permalink: /kb/146/Q146119/
 ---
 
 ## Q146119: Macintosh Bookshelf '95 ErrMsg: Please Insert the Microsoft...

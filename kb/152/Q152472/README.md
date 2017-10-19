@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152472: XADM: How to Specify a Tab or Space as Separator in .csv File"
-permalink: kb/152/Q152472/
+permalink: /kb/152/Q152472/
 ---
 
 ## Q152472: XADM: How to Specify a Tab or Space as Separator in .csv File

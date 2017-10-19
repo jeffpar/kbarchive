@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108027: PC DB: Finding MAI File Name from MBG File"
-permalink: kb/108/Q108027/
+permalink: /kb/108/Q108027/
 ---
 
 ## Q108027: PC DB: Finding MAI File Name from MBG File

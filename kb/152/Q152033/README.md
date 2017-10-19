@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152033: PPT: How to Rotate Clip Images"
-permalink: kb/152/Q152033/
+permalink: /kb/152/Q152033/
 ---
 
 ## Q152033: PPT: How to Rotate Clip Images

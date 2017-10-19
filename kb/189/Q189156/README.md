@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189156: BUG: Crash When Closing Application That Uses ActiveX DLL"
-permalink: kb/189/Q189156/
+permalink: /kb/189/Q189156/
 ---
 
 ## Q189156: BUG: Crash When Closing Application That Uses ActiveX DLL

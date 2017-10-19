@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297350: Upgraded Free-To-Paid Hotmail Accounts Unable To Connect Through"
-permalink: kb/297/Q297350/
+permalink: /kb/297/Q297350/
 ---
 
 ## Q297350: Upgraded Free-To-Paid Hotmail Accounts Unable To Connect Through

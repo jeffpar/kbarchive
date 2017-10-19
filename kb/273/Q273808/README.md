@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273808: Midtown Madness 2: List of Controllers Is Incorrect"
-permalink: kb/273/Q273808/
+permalink: /kb/273/Q273808/
 ---
 
 ## Q273808: Midtown Madness 2: List of Controllers Is Incorrect

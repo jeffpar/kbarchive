@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99336: PRB: Combined Windows 3.0 and 3.1 Applications"
-permalink: kb/099/Q99336/
+permalink: /kb/099/Q99336/
 ---
 
 ## Q99336: PRB: Combined Windows 3.0 and 3.1 Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153057: DOCFIX: Error in Code Sample for RowContaining Method"
-permalink: kb/153/Q153057/
+permalink: /kb/153/Q153057/
 ---
 
 ## Q153057: DOCFIX: Error in Code Sample for RowContaining Method

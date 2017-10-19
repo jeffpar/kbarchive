@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124161: Space Required Value Based on Cluster Size"
-permalink: kb/124/Q124161/
+permalink: /kb/124/Q124161/
 ---
 
 ## Q124161: Space Required Value Based on Cluster Size

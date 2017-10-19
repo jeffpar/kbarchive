@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113228: Windows 3.1 Disk 2 Directory Listing (3.5 Inch 1.44 MB)"
-permalink: kb/113/Q113228/
+permalink: /kb/113/Q113228/
 ---
 
 ## Q113228: Windows 3.1 Disk 2 Directory Listing (3.5 Inch 1.44 MB)

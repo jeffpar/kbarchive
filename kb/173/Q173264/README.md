@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173264: HOWTO: Internet Transfer Control Using Username and Password"
-permalink: kb/173/Q173264/
+permalink: /kb/173/Q173264/
 ---
 
 ## Q173264: HOWTO: Internet Transfer Control Using Username and Password

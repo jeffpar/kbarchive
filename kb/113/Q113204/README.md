@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113204: Scenes 1.0: Unrecognized Error. Please Reinstall Scenes"
-permalink: kb/113/Q113204/
+permalink: /kb/113/Q113204/
 ---
 
 ## Q113204: Scenes 1.0: Unrecognized Error. Please Reinstall Scenes

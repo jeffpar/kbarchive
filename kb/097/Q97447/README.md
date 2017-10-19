@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97447: NETLOGON Fails with Valid Directory, Correct Permissions"
-permalink: kb/097/Q97447/
+permalink: /kb/097/Q97447/
 ---
 
 ## Q97447: NETLOGON Fails with Valid Directory, Correct Permissions

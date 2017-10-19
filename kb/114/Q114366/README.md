@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114366: Device Errors Occur When Using Windows Sound System Apps"
-permalink: kb/114/Q114366/
+permalink: /kb/114/Q114366/
 ---
 
 ## Q114366: Device Errors Occur When Using Windows Sound System Apps

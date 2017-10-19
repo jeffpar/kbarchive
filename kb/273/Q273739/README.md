@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273739: Midtown Madness 2: How to Improve Game Performance"
-permalink: kb/273/Q273739/
+permalink: /kb/273/Q273739/
 ---
 
 ## Q273739: Midtown Madness 2: How to Improve Game Performance

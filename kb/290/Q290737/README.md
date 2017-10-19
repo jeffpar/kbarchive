@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290737: Delay Connecting to a Printer Added in a Terminal Server Session"
-permalink: kb/290/Q290737/
+permalink: /kb/290/Q290737/
 ---
 
 ## Q290737: Delay Connecting to a Printer Added in a Terminal Server Session

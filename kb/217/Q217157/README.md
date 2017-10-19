@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217157: Event ID 1057 or 1000 When the Cluster Service Attempts to Start"
-permalink: kb/217/Q217157/
+permalink: /kb/217/Q217157/
 ---
 
 ## Q217157: Event ID 1057 or 1000 When the Cluster Service Attempts to Start

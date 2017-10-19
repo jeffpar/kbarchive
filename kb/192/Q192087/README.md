@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192087: Error Code 0xc9ef18 or 0x120ef18 When Installing SBS"
-permalink: kb/192/Q192087/
+permalink: /kb/192/Q192087/
 ---
 
 ## Q192087: Error Code 0xc9ef18 or 0x120ef18 When Installing SBS

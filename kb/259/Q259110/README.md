@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259110: Unusable Link If Attachment Uses UNC Name"
-permalink: kb/259/Q259110/
+permalink: /kb/259/Q259110/
 ---
 
 ## Q259110: Unusable Link If Attachment Uses UNC Name

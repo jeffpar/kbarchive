@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161962: Dr. Watson Error When Imaging for Windows NT Is Opened"
-permalink: kb/161/Q161962/
+permalink: /kb/161/Q161962/
 ---
 
 ## Q161962: Dr. Watson Error When Imaging for Windows NT Is Opened

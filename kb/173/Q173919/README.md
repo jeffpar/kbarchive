@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173919: How to Access Internet Sites with MSN Program Viewer"
-permalink: kb/173/Q173919/
+permalink: /kb/173/Q173919/
 ---
 
 ## Q173919: How to Access Internet Sites with MSN Program Viewer

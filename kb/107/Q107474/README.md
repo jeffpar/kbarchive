@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107474: Setting Up a Shared Copy of WFWG on LAN Manager-Based Servers"
-permalink: kb/107/Q107474/
+permalink: /kb/107/Q107474/
 ---
 
 ## Q107474: Setting Up a Shared Copy of WFWG on LAN Manager-Based Servers

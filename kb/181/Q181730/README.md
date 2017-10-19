@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category"
-permalink: kb/181/Q181730/
+permalink: /kb/181/Q181730/
 ---
 
 ## Q181730: WD97: How to Use Mail Merge to Create a List Sorted by Category

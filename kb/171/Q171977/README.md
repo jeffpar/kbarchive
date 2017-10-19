@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171977: WD97: When You Quit Word, It Hangs or Stops Responding"
-permalink: kb/171/Q171977/
+permalink: /kb/171/Q171977/
 ---
 
 ## Q171977: WD97: When You Quit Word, It Hangs or Stops Responding

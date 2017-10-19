@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102873: BOOT.INI and ARC Path Naming Conventions and Usage"
-permalink: kb/102/Q102873/
+permalink: /kb/102/Q102873/
 ---
 
 ## Q102873: BOOT.INI and ARC Path Naming Conventions and Usage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168156: FIX: DBGrid Bound to RDC Displays Small Resultsets Incorrectly"
-permalink: kb/168/Q168156/
+permalink: /kb/168/Q168156/
 ---
 
 ## Q168156: FIX: DBGrid Bound to RDC Displays Small Resultsets Incorrectly

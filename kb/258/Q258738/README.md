@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258738: XADM: Moving Distribution List to Different Recipients Container"
-permalink: kb/258/Q258738/
+permalink: /kb/258/Q258738/
 ---
 
 ## Q258738: XADM: Moving Distribution List to Different Recipients Container

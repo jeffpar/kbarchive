@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159301: XCON: Messages Sent Over X.400 Connector Should NDR First"
-permalink: kb/159/Q159301/
+permalink: /kb/159/Q159301/
 ---
 
 ## Q159301: XCON: Messages Sent Over X.400 Connector Should NDR First

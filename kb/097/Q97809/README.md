@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97809: FIX: C1024 or C1083 Error When INCLUDE Set to Root Directory"
-permalink: kb/097/Q97809/
+permalink: /kb/097/Q97809/
 ---
 
 ## Q97809: FIX: C1024 or C1083 Error When INCLUDE Set to Root Directory

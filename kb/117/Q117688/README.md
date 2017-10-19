@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117688: Control Panel Does Not Accept Microsoft Driver Disk"
-permalink: kb/117/Q117688/
+permalink: /kb/117/Q117688/
 ---
 
 ## Q117688: Control Panel Does Not Accept Microsoft Driver Disk

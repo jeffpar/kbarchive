@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136450: Programs Must Support 32-Bit Windows Sockets to Use AutoDial"
-permalink: kb/136/Q136450/
+permalink: /kb/136/Q136450/
 ---
 
 ## Q136450: Programs Must Support 32-Bit Windows Sockets to Use AutoDial

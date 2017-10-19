@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165904: PPT7: Frames Print on Handouts and Notes Pages"
-permalink: kb/165/Q165904/
+permalink: /kb/165/Q165904/
 ---
 
 ## Q165904: PPT7: Frames Print on Handouts and Notes Pages

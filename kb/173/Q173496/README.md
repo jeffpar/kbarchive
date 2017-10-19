@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173496: XFOR: Error 2140 When Starting the Internet Mail Service"
-permalink: kb/173/Q173496/
+permalink: /kb/173/Q173496/
 ---
 
 ## Q173496: XFOR: Error 2140 When Starting the Internet Mail Service

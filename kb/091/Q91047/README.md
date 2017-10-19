@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91047: QEMM LASTDRIVE Program Is Incompatible with WFWG"
-permalink: kb/091/Q91047/
+permalink: /kb/091/Q91047/
 ---
 
 ## Q91047: QEMM LASTDRIVE Program Is Incompatible with WFWG

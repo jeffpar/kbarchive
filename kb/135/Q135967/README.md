@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135967: Matrox Display Drivers Can Cause General Protection Fault"
-permalink: kb/135/Q135967/
+permalink: /kb/135/Q135967/
 ---
 
 ## Q135967: Matrox Display Drivers Can Cause General Protection Fault

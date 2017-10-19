@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253308: BUG: MFT_RIGHTORDER Doesn't Work for Nonresource Menu"
-permalink: kb/253/Q253308/
+permalink: /kb/253/Q253308/
 ---
 
 ## Q253308: BUG: MFT_RIGHTORDER Doesn't Work for Nonresource Menu

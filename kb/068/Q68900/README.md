@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68900: Converting Paintbrush PCX Pictures to WordPerfect WPG Format"
-permalink: kb/068/Q68900/
+permalink: /kb/068/Q68900/
 ---
 
 ## Q68900: Converting Paintbrush PCX Pictures to WordPerfect WPG Format

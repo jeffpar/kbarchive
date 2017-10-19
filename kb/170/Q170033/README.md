@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170033: XADM: Individual Public Folder Age Limits Overridden"
-permalink: kb/170/Q170033/
+permalink: /kb/170/Q170033/
 ---
 
 ## Q170033: XADM: Individual Public Folder Age Limits Overridden

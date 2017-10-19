@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130000: Application Events 2000 &amp; 3001 Appear While Monitoring SFM"
-permalink: kb/130/Q130000/
+permalink: /kb/130/Q130000/
 ---
 
 ## Q130000: Application Events 2000 &amp; 3001 Appear While Monitoring SFM

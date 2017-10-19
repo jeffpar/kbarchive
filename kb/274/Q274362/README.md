@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274362: MSN Explorer Performance Problem With Cheyenne AntiVirus For Win"
-permalink: kb/274/Q274362/
+permalink: /kb/274/Q274362/
 ---
 
 ## Q274362: MSN Explorer Performance Problem With Cheyenne AntiVirus For Win

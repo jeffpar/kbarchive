@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309290: Package Creation Errors Cause SQL Errors"
-permalink: kb/309/Q309290/
+permalink: /kb/309/Q309290/
 ---
 
 ## Q309290: Package Creation Errors Cause SQL Errors

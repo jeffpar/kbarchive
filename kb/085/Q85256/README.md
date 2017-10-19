@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85256: Windows 3.1 Expand Utility -R Switch"
-permalink: kb/085/Q85256/
+permalink: /kb/085/Q85256/
 ---
 
 ## Q85256: Windows 3.1 Expand Utility -R Switch

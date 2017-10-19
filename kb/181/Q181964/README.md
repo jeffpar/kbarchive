@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181964: XCLN: Unable to Forward Meeting Requests in MS Mail 3.x"
-permalink: kb/181/Q181964/
+permalink: /kb/181/Q181964/
 ---
 
 ## Q181964: XCLN: Unable to Forward Meeting Requests in MS Mail 3.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178120: PPT7: Cannot Change Color of Embossed Text in PowerPoint 4.0 Fil"
-permalink: kb/178/Q178120/
+permalink: /kb/178/Q178120/
 ---
 
 ## Q178120: PPT7: Cannot Change Color of Embossed Text in PowerPoint 4.0 Fil

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105256: DoubleSpace Mounts Bernoulli Disk as Non-Removable"
-permalink: kb/105/Q105256/
+permalink: /kb/105/Q105256/
 ---
 
 ## Q105256: DoubleSpace Mounts Bernoulli Disk as Non-Removable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138722: FIX: LoadBarState and SaveBarState Increase .Ini File Size"
-permalink: kb/138/Q138722/
+permalink: /kb/138/Q138722/
 ---
 
 ## Q138722: FIX: LoadBarState and SaveBarState Increase .Ini File Size

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75244: FIX: Avoid externdef or proto when Initializing Data"
-permalink: kb/075/Q75244/
+permalink: /kb/075/Q75244/
 ---
 
 ## Q75244: FIX: Avoid externdef or proto when Initializing Data

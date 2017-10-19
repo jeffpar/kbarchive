@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172224: PDLSVC: Application Terminates Attaching To Many Servers"
-permalink: kb/172/Q172224/
+permalink: /kb/172/Q172224/
 ---
 
 ## Q172224: PDLSVC: Application Terminates Attaching To Many Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207510: Err Msg: An Error Occurred Reading or Setting a Configuration..."
-permalink: kb/207/Q207510/
+permalink: /kb/207/Q207510/
 ---
 
 ## Q207510: Err Msg: An Error Occurred Reading or Setting a Configuration...

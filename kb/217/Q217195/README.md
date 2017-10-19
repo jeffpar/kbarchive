@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217195: XFOR: Admin Notification Is Being Incorrectly Executed"
-permalink: kb/217/Q217195/
+permalink: /kb/217/Q217195/
 ---
 
 ## Q217195: XFOR: Admin Notification Is Being Incorrectly Executed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130499: How to Copy Visual Classes to Other Libraries"
-permalink: kb/130/Q130499/
+permalink: /kb/130/Q130499/
 ---
 
 ## Q130499: How to Copy Visual Classes to Other Libraries

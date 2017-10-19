@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198887: BUG: Incorrect Error Assigning Read-Only Property of UserControl"
-permalink: kb/198/Q198887/
+permalink: /kb/198/Q198887/
 ---
 
 ## Q198887: BUG: Incorrect Error Assigning Read-Only Property of UserControl

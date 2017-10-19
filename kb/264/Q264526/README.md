@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264526: Snaoledb.dll Init Fails with CoInitializeEx Multithreaded"
-permalink: kb/264/Q264526/
+permalink: /kb/264/Q264526/
 ---
 
 ## Q264526: Snaoledb.dll Init Fails with CoInitializeEx Multithreaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169608: Occasional File Corruption When Using Unbuffered I/O"
-permalink: kb/169/Q169608/
+permalink: /kb/169/Q169608/
 ---
 
 ## Q169608: Occasional File Corruption When Using Unbuffered I/O

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170250: Msmask32.ocx Control Displays Text Right Aligned"
-permalink: kb/170/Q170250/
+permalink: /kb/170/Q170250/
 ---
 
 ## Q170250: Msmask32.ocx Control Displays Text Right Aligned

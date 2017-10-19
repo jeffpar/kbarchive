@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244833: XCLN: Synchronization Interval Displayed As Large Number"
-permalink: kb/244/Q244833/
+permalink: /kb/244/Q244833/
 ---
 
 ## Q244833: XCLN: Synchronization Interval Displayed As Large Number

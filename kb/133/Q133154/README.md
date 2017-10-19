@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133154: ChessMaster 4000 Turbo Screen Becomes Distorted"
-permalink: kb/133/Q133154/
+permalink: /kb/133/Q133154/
 ---
 
 ## Q133154: ChessMaster 4000 Turbo Screen Becomes Distorted

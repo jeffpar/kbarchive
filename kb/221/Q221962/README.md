@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221962: Err Msg: Win98setup Executed an Illegal Instruction in Module..."
-permalink: kb/221/Q221962/
+permalink: /kb/221/Q221962/
 ---
 
 ## Q221962: Err Msg: Win98setup Executed an Illegal Instruction in Module...

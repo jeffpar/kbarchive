@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139877: &quot;Missing Shared DLLs&quot; When Starting WordPerfect 6.0"
-permalink: kb/139/Q139877/
+permalink: /kb/139/Q139877/
 ---
 
 ## Q139877: &quot;Missing Shared DLLs&quot; When Starting WordPerfect 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172952: How to Rebuild Corrupted or Missing SYSTEM Partition"
-permalink: kb/172/Q172952/
+permalink: /kb/172/Q172952/
 ---
 
 ## Q172952: How to Rebuild Corrupted or Missing SYSTEM Partition

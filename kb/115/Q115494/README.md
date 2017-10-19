@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115494: SMTP: Troubleshooting the SMTP Gateway"
-permalink: kb/115/Q115494/
+permalink: /kb/115/Q115494/
 ---
 
 ## Q115494: SMTP: Troubleshooting the SMTP Gateway

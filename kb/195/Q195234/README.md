@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195234: The Operating System Was Unable to Load Your Profile"
-permalink: kb/195/Q195234/
+permalink: /kb/195/Q195234/
 ---
 
 ## Q195234: The Operating System Was Unable to Load Your Profile

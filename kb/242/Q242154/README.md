@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242154: Server Does Not Start with Stop c0000221 Error Message"
-permalink: kb/242/Q242154/
+permalink: /kb/242/Q242154/
 ---
 
 ## Q242154: Server Does Not Start with Stop c0000221 Error Message

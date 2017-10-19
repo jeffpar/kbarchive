@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99483: Identical Cards on Server Cause SYS0052 Duplicate Name"
-permalink: kb/099/Q99483/
+permalink: /kb/099/Q99483/
 ---
 
 ## Q99483: Identical Cards on Server Cause SYS0052 Duplicate Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81531: PC Win: Color OLE Object from Excel Displays as Black &amp; White"
-permalink: kb/081/Q81531/
+permalink: /kb/081/Q81531/
 ---
 
 ## Q81531: PC Win: Color OLE Object from Excel Displays as Black &amp; White

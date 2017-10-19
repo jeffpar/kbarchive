@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92423: Works for Windows Cannot Be Used to Author Help Files"
-permalink: kb/092/Q92423/
+permalink: /kb/092/Q92423/
 ---
 
 ## Q92423: Works for Windows Cannot Be Used to Author Help Files

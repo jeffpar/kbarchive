@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155571: Can Install Incompatible Program Using the .inf File"
-permalink: kb/155/Q155571/
+permalink: /kb/155/Q155571/
 ---
 
 ## Q155571: Can Install Incompatible Program Using the .inf File

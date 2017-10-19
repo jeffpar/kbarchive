@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122381: Err Msg: Hard Drive Partition... w/Quantum 540 MB IDE Drive"
-permalink: kb/122/Q122381/
+permalink: /kb/122/Q122381/
 ---
 
 ## Q122381: Err Msg: Hard Drive Partition... w/Quantum 540 MB IDE Drive

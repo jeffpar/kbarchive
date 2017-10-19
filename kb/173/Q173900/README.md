@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173900: XWEB: Automatically Accepted Meetings Do Not Show in OWA"
-permalink: kb/173/Q173900/
+permalink: /kb/173/Q173900/
 ---
 
 ## Q173900: XWEB: Automatically Accepted Meetings Do Not Show in OWA

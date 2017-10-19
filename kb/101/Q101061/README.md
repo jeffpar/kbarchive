@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101061: CHKDSK Reports &quot;Probable Non-DOS Disk&quot;"
-permalink: kb/101/Q101061/
+permalink: /kb/101/Q101061/
 ---
 
 ## Q101061: CHKDSK Reports &quot;Probable Non-DOS Disk&quot;

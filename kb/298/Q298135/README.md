@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298135: PRB: Print Method Does Not Appear in Object Browser or ALM"
-permalink: kb/298/Q298135/
+permalink: /kb/298/Q298135/
 ---
 
 ## Q298135: PRB: Print Method Does Not Appear in Object Browser or ALM

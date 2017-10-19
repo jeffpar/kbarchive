@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137678: SMS Service Pack Does Not Upgrade Administrator Tools"
-permalink: kb/137/Q137678/
+permalink: /kb/137/Q137678/
 ---
 
 ## Q137678: SMS Service Pack Does Not Upgrade Administrator Tools

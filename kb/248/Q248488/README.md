@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248488: XCON: Event ID 9318 Occurs Within Site Operating Over a WAN"
-permalink: kb/248/Q248488/
+permalink: /kb/248/Q248488/
 ---
 
 ## Q248488: XCON: Event ID 9318 Occurs Within Site Operating Over a WAN

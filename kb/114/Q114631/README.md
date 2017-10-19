@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114631: What to Do When You Have a Damaged FoxPro Disk"
-permalink: kb/114/Q114631/
+permalink: /kb/114/Q114631/
 ---
 
 ## Q114631: What to Do When You Have a Damaged FoxPro Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120926: Visual C++ Vers 2.0 README.WRI, Part 10 Miscellaneous Notes"
-permalink: kb/120/Q120926/
+permalink: /kb/120/Q120926/
 ---
 
 ## Q120926: Visual C++ Vers 2.0 README.WRI, Part 10 Miscellaneous Notes

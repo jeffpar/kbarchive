@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242974: PRB: Unable to Create/Modify REMOTE View with RIGHT JOIN"
-permalink: kb/242/Q242974/
+permalink: /kb/242/Q242974/
 ---
 
 ## Q242974: PRB: Unable to Create/Modify REMOTE View with RIGHT JOIN

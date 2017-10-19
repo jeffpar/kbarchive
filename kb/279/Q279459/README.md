@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279459: BUG: Component Category Registry Entries Remain in ATL Comp."
-permalink: kb/279/Q279459/
+permalink: /kb/279/Q279459/
 ---
 
 ## Q279459: BUG: Component Category Registry Entries Remain in ATL Comp.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262739: Can't Administer IIS on Window NT 4.0 from IIS 5.0 and ViceVersa"
-permalink: kb/262/Q262739/
+permalink: /kb/262/Q262739/
 ---
 
 ## Q262739: Can't Administer IIS on Window NT 4.0 from IIS 5.0 and ViceVersa

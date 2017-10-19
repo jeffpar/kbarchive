@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109515: Repeating Window Displays with Microsoft 256-Color SVGA Driver"
-permalink: kb/109/Q109515/
+permalink: /kb/109/Q109515/
 ---
 
 ## Q109515: Repeating Window Displays with Microsoft 256-Color SVGA Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90242: The NET START Memory Loader and Its Memory Usage"
-permalink: kb/090/Q90242/
+permalink: /kb/090/Q90242/
 ---
 
 ## Q90242: The NET START Memory Loader and Its Memory Usage

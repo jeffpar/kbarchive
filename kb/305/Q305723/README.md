@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305723: PRB: COM Application Hangs When CoCreateInstance Is Called from"
-permalink: kb/305/Q305723/
+permalink: /kb/305/Q305723/
 ---
 
 ## Q305723: PRB: COM Application Hangs When CoCreateInstance Is Called from

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136832: Editing Address Book in MS Word 7.0 Renders File Unusable"
-permalink: kb/136/Q136832/
+permalink: /kb/136/Q136832/
 ---
 
 ## Q136832: Editing Address Book in MS Word 7.0 Renders File Unusable

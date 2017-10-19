@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136537: How the Leopard Got His Spots: Minimum System Requirements"
-permalink: kb/136/Q136537/
+permalink: /kb/136/Q136537/
 ---
 
 ## Q136537: How the Leopard Got His Spots: Minimum System Requirements

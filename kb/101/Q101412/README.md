@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101412: Scenes 1.0: How to Uninstall Scenes"
-permalink: kb/101/Q101412/
+permalink: /kb/101/Q101412/
 ---
 
 ## Q101412: Scenes 1.0: How to Uninstall Scenes

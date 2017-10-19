@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90029: FoxBASE+ 2.01 Disk Directory (5.25 Inch Low Density)"
-permalink: kb/090/Q90029/
+permalink: /kb/090/Q90029/
 ---
 
 ## Q90029: FoxBASE+ 2.01 Disk Directory (5.25 Inch Low Density)

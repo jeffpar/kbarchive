@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74777: Top Producer Hangs in MS-DOS"
-permalink: kb/074/Q74777/
+permalink: /kb/074/Q74777/
 ---
 
 ## Q74777: Top Producer Hangs in MS-DOS

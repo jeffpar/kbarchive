@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304291: Intermittent Blue-Screen Error Messages in Terminal Server"
-permalink: kb/304/Q304291/
+permalink: /kb/304/Q304291/
 ---
 
 ## Q304291: Intermittent Blue-Screen Error Messages in Terminal Server

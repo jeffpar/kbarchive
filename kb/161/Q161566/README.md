@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161566: GDI Heap Corruption Causes Stop 0x0000000A"
-permalink: kb/161/Q161566/
+permalink: /kb/161/Q161566/
 ---
 
 ## Q161566: GDI Heap Corruption Causes Stop 0x0000000A

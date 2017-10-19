@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238660: Err Msg: No Documents Matched the Query"
-permalink: kb/238/Q238660/
+permalink: /kb/238/Q238660/
 ---
 
 ## Q238660: Err Msg: No Documents Matched the Query

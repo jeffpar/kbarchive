@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286154: Newsgroup Changes Do Not Take Effect Until Restart NNTP Service"
-permalink: kb/286/Q286154/
+permalink: /kb/286/Q286154/
 ---
 
 ## Q286154: Newsgroup Changes Do Not Take Effect Until Restart NNTP Service

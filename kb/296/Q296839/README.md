@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296839: Administrator Client Fails to Open Subdomain in SNA Manager"
-permalink: kb/296/Q296839/
+permalink: /kb/296/Q296839/
 ---
 
 ## Q296839: Administrator Client Fails to Open Subdomain in SNA Manager

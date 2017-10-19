@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197099: Determining Which Service Pack Is Installed in Windows NT 4.0"
-permalink: kb/197/Q197099/
+permalink: /kb/197/Q197099/
 ---
 
 ## Q197099: Determining Which Service Pack Is Installed in Windows NT 4.0

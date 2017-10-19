@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q148811: PC NTMMTA: Err Msg: Fatal [ 7] Error Renaming File..."
-permalink: kb/148/Q148811/
+title: "Q148811: PC NTMMTA: Err Msg: Fatal &#91; 7&#93; Error Renaming File..."
+permalink: /kb/148/Q148811/
 ---
 
-## Q148811: PC NTMMTA: Err Msg: Fatal [ 7] Error Renaming File...
+## Q148811: PC NTMMTA: Err Msg: Fatal &#91; 7&#93; Error Renaming File...
 
 	Article: Q148811
 	Product(s): Microsoft Mail For PC Networks

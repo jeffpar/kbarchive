@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102878: Information on Browser Operation"
-permalink: kb/102/Q102878/
+permalink: /kb/102/Q102878/
 ---
 
 ## Q102878: Information on Browser Operation

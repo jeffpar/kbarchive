@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165326: Application Exception in Snaprint.exe When Stopping Printer"
-permalink: kb/165/Q165326/
+permalink: /kb/165/Q165326/
 ---
 
 ## Q165326: Application Exception in Snaprint.exe When Stopping Printer

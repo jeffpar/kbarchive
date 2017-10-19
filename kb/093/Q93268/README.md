@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93268: &quot;Not Enough Global Memory&quot; Using Crosstalk for Windows 1.2.2"
-permalink: kb/093/Q93268/
+permalink: /kb/093/Q93268/
 ---
 
 ## Q93268: &quot;Not Enough Global Memory&quot; Using Crosstalk for Windows 1.2.2

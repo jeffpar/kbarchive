@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190655: WD97: Error Creating New Image in Photo Editor"
-permalink: kb/190/Q190655/
+permalink: /kb/190/Q190655/
 ---
 
 ## Q190655: WD97: Error Creating New Image in Photo Editor

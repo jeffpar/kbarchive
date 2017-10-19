@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94229: HPFS.386 Returns Wrong Error for File Creation"
-permalink: kb/094/Q94229/
+permalink: /kb/094/Q94229/
 ---
 
 ## Q94229: HPFS.386 Returns Wrong Error for File Creation

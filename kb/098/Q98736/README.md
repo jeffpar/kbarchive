@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98736: Cannot Access Hard Drive After Installing DoubleSpace on PS/1"
-permalink: kb/098/Q98736/
+permalink: /kb/098/Q98736/
 ---
 
 ## Q98736: Cannot Access Hard Drive After Installing DoubleSpace on PS/1

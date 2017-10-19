@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256306: Windows NT Backup Does Not Work with Seagate Scorpion 40 DAT"
-permalink: kb/256/Q256306/
+permalink: /kb/256/Q256306/
 ---
 
 ## Q256306: Windows NT Backup Does Not Work with Seagate Scorpion 40 DAT

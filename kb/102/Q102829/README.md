@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102829: How to Replace a View in a CMDIChildWnd Window"
-permalink: kb/102/Q102829/
+permalink: /kb/102/Q102829/
 ---
 
 ## Q102829: How to Replace a View in a CMDIChildWnd Window

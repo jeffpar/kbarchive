@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151865: PRB: Brush Permanent Handle Map Doesn't Work on Windows 95"
-permalink: kb/151/Q151865/
+permalink: /kb/151/Q151865/
 ---
 
 ## Q151865: PRB: Brush Permanent Handle Map Doesn't Work on Windows 95

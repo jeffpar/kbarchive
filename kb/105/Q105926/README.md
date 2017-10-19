@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105926: MSD Version 2.1 Does Not Detect Gateway2000 ColorBook"
-permalink: kb/105/Q105926/
+permalink: /kb/105/Q105926/
 ---
 
 ## Q105926: MSD Version 2.1 Does Not Detect Gateway2000 ColorBook

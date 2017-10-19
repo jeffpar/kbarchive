@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149021: XFOR: Delivery Receipt Request Removed by MS Mail Connector"
-permalink: kb/149/Q149021/
+permalink: /kb/149/Q149021/
 ---
 
 ## Q149021: XFOR: Delivery Receipt Request Removed by MS Mail Connector

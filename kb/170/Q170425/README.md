@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170425: SNA 3.0 NT Client Setup Sets LanmanServer Dependency in Error"
-permalink: kb/170/Q170425/
+permalink: /kb/170/Q170425/
 ---
 
 ## Q170425: SNA 3.0 NT Client Setup Sets LanmanServer Dependency in Error

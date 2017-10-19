@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130668: Mapping Netware Drives with the AT Scheduler"
-permalink: kb/130/Q130668/
+permalink: /kb/130/Q130668/
 ---
 
 ## Q130668: Mapping Netware Drives with the AT Scheduler

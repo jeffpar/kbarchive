@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57518: Flight Simulator: Blank Screen on NEC ProSpeed 386"
-permalink: kb/057/Q57518/
+permalink: /kb/057/Q57518/
 ---
 
 ## Q57518: Flight Simulator: Blank Screen on NEC ProSpeed 386

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160800: &quot;Fatal Exception Error&quot; with Iomega IDE Zip Drives"
-permalink: kb/160/Q160800/
+permalink: /kb/160/Q160800/
 ---
 
 ## Q160800: &quot;Fatal Exception Error&quot; with Iomega IDE Zip Drives

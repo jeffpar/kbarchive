@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173040: Event 1003, 1008, 1017, 7023 After DHCP Service Installation"
-permalink: kb/173/Q173040/
+permalink: /kb/173/Q173040/
 ---
 
 ## Q173040: Event 1003, 1008, 1017, 7023 After DHCP Service Installation

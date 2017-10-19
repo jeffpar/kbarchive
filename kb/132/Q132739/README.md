@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132739: Setup Disks Created With WINNT /O Fail To Find Hard Disk"
-permalink: kb/132/Q132739/
+permalink: /kb/132/Q132739/
 ---
 
 ## Q132739: Setup Disks Created With WINNT /O Fail To Find Hard Disk

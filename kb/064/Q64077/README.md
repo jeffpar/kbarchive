@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64077: QsrtWin.exe Contains QuickSort Sample Code for Windows"
-permalink: kb/064/Q64077/
+permalink: /kb/064/Q64077/
 ---
 
 ## Q64077: QsrtWin.exe Contains QuickSort Sample Code for Windows

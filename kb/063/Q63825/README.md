@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63825: Application Cannot Start in Window, Yet Can Run in Window"
-permalink: kb/063/Q63825/
+permalink: /kb/063/Q63825/
 ---
 
 ## Q63825: Application Cannot Start in Window, Yet Can Run in Window

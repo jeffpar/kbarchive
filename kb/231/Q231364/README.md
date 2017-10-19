@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231364: HOWTO: Install VFP6 Application for All Users on NT 4 Server"
-permalink: kb/231/Q231364/
+permalink: /kb/231/Q231364/
 ---
 
 ## Q231364: HOWTO: Install VFP6 Application for All Users on NT 4 Server

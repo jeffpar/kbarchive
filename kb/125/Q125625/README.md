@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125625: Software Compression Compatibility in Windows NT 3.5 RAS"
-permalink: kb/125/Q125625/
+permalink: /kb/125/Q125625/
 ---
 
 ## Q125625: Software Compression Compatibility in Windows NT 3.5 RAS

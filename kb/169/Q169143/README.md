@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169143: XCON: MTA Event 9221 A Sockets Err 10054 on a WSARecvEx() Call"
-permalink: kb/169/Q169143/
+permalink: /kb/169/Q169143/
 ---
 
 ## Q169143: XCON: MTA Event 9221 A Sockets Err 10054 on a WSARecvEx() Call

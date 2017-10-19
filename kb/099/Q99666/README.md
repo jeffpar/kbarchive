@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99666: Mac Gty: Explanation of Gateway Naming Utility (GNU)"
-permalink: kb/099/Q99666/
+permalink: /kb/099/Q99666/
 ---
 
 ## Q99666: Mac Gty: Explanation of Gateway Naming Utility (GNU)

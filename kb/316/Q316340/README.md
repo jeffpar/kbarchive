@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316340: HOW TO: Back Up Files and Folders on a  Computer in Windows NT"
-permalink: kb/316/Q316340/
+permalink: /kb/316/Q316340/
 ---
 
 ## Q316340: HOW TO: Back Up Files and Folders on a  Computer in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158453: How to Enable Remoteboot on a Client's Hard Disk"
-permalink: kb/158/Q158453/
+permalink: /kb/158/Q158453/
 ---
 
 ## Q158453: How to Enable Remoteboot on a Client's Hard Disk

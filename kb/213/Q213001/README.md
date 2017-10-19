@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213001: SMS: Remote Control Session Fails if Command Contains Quotes"
-permalink: kb/213/Q213001/
+permalink: /kb/213/Q213001/
 ---
 
 ## Q213001: SMS: Remote Control Session Fails if Command Contains Quotes

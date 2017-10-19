@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165052: Err Msg: The Computer You're Dialing into Does Not Respond..."
-permalink: kb/165/Q165052/
+permalink: /kb/165/Q165052/
 ---
 
 ## Q165052: Err Msg: The Computer You're Dialing into Does Not Respond...

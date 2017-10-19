@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71491: Close and Next Options in Child Window Control Box Cause UAEs"
-permalink: kb/071/Q71491/
+permalink: /kb/071/Q71491/
 ---
 
 ## Q71491: Close and Next Options in Child Window Control Box Cause UAEs

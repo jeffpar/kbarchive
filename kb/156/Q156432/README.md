@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156432: Windows NT 4.0 Policy Restriction Error at Logon"
-permalink: kb/156/Q156432/
+permalink: /kb/156/Q156432/
 ---
 
 ## Q156432: Windows NT 4.0 Policy Restriction Error at Logon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322031: How To Import Contacts From Netscape Address Book To Microsoft E"
-permalink: kb/322/Q322031/
+permalink: /kb/322/Q322031/
 ---
 
 ## Q322031: How To Import Contacts From Netscape Address Book To Microsoft E

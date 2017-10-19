@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243222: Spooler Does Not Start Immediately After Being Stopped"
-permalink: kb/243/Q243222/
+permalink: /kb/243/Q243222/
 ---
 
 ## Q243222: Spooler Does Not Start Immediately After Being Stopped

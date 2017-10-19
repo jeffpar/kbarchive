@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126745: Explorapedia: ErrMsg: Error 8## (or 4##) When Starting"
-permalink: kb/126/Q126745/
+permalink: /kb/126/Q126745/
 ---
 
 ## Q126745: Explorapedia: ErrMsg: Error 8## (or 4##) When Starting

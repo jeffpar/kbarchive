@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153649: Dataloader Aborts Insertion of MIF After SQL Error"
-permalink: kb/153/Q153649/
+permalink: /kb/153/Q153649/
 ---
 
 ## Q153649: Dataloader Aborts Insertion of MIF After SQL Error

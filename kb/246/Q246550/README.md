@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246550: BUG: Local Static Variables Not Reinitialized after an Exception"
-permalink: kb/246/Q246550/
+permalink: /kb/246/Q246550/
 ---
 
 ## Q246550: BUG: Local Static Variables Not Reinitialized after an Exception

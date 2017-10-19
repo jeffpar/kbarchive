@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160850: XADM: DS_E_BUSY After Directory Service Restore"
-permalink: kb/160/Q160850/
+permalink: /kb/160/Q160850/
 ---
 
 ## Q160850: XADM: DS_E_BUSY After Directory Service Restore

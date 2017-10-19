@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89018: Using Windows with the NEC LC-890 Printer"
-permalink: kb/089/Q89018/
+permalink: /kb/089/Q89018/
 ---
 
 ## Q89018: Using Windows with the NEC LC-890 Printer

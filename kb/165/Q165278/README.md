@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165278: 3270/5250 Print Jobs Generate an Extra Form Feed"
-permalink: kb/165/Q165278/
+permalink: /kb/165/Q165278/
 ---
 
 ## Q165278: 3270/5250 Print Jobs Generate an Extra Form Feed

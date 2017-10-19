@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147672: HOWTO: How to specify 32x32 and 16x16 Icons for Win95 Logo Compl"
-permalink: kb/147/Q147672/
+permalink: /kb/147/Q147672/
 ---
 
 ## Q147672: HOWTO: How to specify 32x32 and 16x16 Icons for Win95 Logo Compl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83466: &quot;H&quot; Section of Hardware Compatibility List Is Missing"
-permalink: kb/083/Q83466/
+permalink: /kb/083/Q83466/
 ---
 
 ## Q83466: &quot;H&quot; Section of Hardware Compatibility List Is Missing

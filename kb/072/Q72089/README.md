@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72089: HP LaserJet IIISi Printing from Lower Output Bin"
-permalink: kb/072/Q72089/
+permalink: /kb/072/Q72089/
 ---
 
 ## Q72089: HP LaserJet IIISi Printing from Lower Output Bin

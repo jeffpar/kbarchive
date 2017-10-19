@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97534: Unwanted String Begins Messages Redirected by XPAD"
-permalink: kb/097/Q97534/
+permalink: /kb/097/Q97534/
 ---
 
 ## Q97534: Unwanted String Begins Messages Redirected by XPAD

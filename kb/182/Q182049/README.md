@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182049: SMS: Remote Control Is Slow Using NetBT on SMP Clients"
-permalink: kb/182/Q182049/
+permalink: /kb/182/Q182049/
 ---
 
 ## Q182049: SMS: Remote Control Is Slow Using NetBT on SMP Clients

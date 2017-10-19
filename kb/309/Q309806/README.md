@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309806: MS Reader v.2.0: Title Bar Buttons Move or Are Missing"
-permalink: kb/309/Q309806/
+permalink: /kb/309/Q309806/
 ---
 
 ## Q309806: MS Reader v.2.0: Title Bar Buttons Move or Are Missing

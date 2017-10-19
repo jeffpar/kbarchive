@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91182: Differences Between Windows 3.1 Setup and WFWG Setup"
-permalink: kb/091/Q91182/
+permalink: /kb/091/Q91182/
 ---
 
 ## Q91182: Differences Between Windows 3.1 Setup and WFWG Setup

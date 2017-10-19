@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274363: MSN Explorer Setup: File Being Copied Is Older Than Files Curren"
-permalink: kb/274/Q274363/
+permalink: /kb/274/Q274363/
 ---
 
 ## Q274363: MSN Explorer Setup: File Being Copied Is Older Than Files Curren

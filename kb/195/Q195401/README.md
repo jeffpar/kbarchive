@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195401: ACTPU(ERP)/ACTLU(ERP) Requests Not Sent To Downstream Systems"
-permalink: kb/195/Q195401/
+permalink: /kb/195/Q195401/
 ---
 
 ## Q195401: ACTPU(ERP)/ACTLU(ERP) Requests Not Sent To Downstream Systems

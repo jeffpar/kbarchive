@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225157: XCON: MTA Stops Unexpectedly with Cirel Winsock X.400 Connection"
-permalink: kb/225/Q225157/
+permalink: /kb/225/Q225157/
 ---
 
 ## Q225157: XCON: MTA Stops Unexpectedly with Cirel Winsock X.400 Connection

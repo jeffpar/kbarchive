@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140424: ErrMsg: &quot;Invalid port command&quot; AS400 Client FTP to NT 3.51 SP2"
-permalink: kb/140/Q140424/
+permalink: /kb/140/Q140424/
 ---
 
 ## Q140424: ErrMsg: &quot;Invalid port command&quot; AS400 Client FTP to NT 3.51 SP2

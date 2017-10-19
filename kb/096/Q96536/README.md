@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96536: PC WRmt: Exclusive During Active Modem Session"
-permalink: kb/096/Q96536/
+permalink: /kb/096/Q96536/
 ---
 
 ## Q96536: PC WRmt: Exclusive During Active Modem Session

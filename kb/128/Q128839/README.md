@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128839: How to Disable AST Desktop as the Windows Shell"
-permalink: kb/128/Q128839/
+permalink: /kb/128/Q128839/
 ---
 
 ## Q128839: How to Disable AST Desktop as the Windows Shell

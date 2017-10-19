@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182227: DNS Server Does Not Check for Delegations Before Forwarding"
-permalink: kb/182/Q182227/
+permalink: /kb/182/Q182227/
 ---
 
 ## Q182227: DNS Server Does Not Check for Delegations Before Forwarding

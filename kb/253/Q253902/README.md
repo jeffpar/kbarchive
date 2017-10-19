@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253902: XCLN: Windows and Macintosh Exchange Clients Interoperability"
-permalink: kb/253/Q253902/
+permalink: /kb/253/Q253902/
 ---
 
 ## Q253902: XCLN: Windows and Macintosh Exchange Clients Interoperability

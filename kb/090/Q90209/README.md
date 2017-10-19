@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90209: After Dark 2.0 Causes System Halts"
-permalink: kb/090/Q90209/
+permalink: /kb/090/Q90209/
 ---
 
 ## Q90209: After Dark 2.0 Causes System Halts

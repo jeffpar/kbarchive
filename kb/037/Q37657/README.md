@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37657: RCData.exe Uses User-Defined Resources in Windows Apps"
-permalink: kb/037/Q37657/
+permalink: /kb/037/Q37657/
 ---
 
 ## Q37657: RCData.exe Uses User-Defined Resources in Windows Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118767: PRB: Custom Control or Library Not Working with VB 4.0"
-permalink: kb/118/Q118767/
+permalink: /kb/118/Q118767/
 ---
 
 ## Q118767: PRB: Custom Control or Library Not Working with VB 4.0

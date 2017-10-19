@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120070: Using Immediate and Memory Operands"
-permalink: kb/120/Q120070/
+permalink: /kb/120/Q120070/
 ---
 
 ## Q120070: Using Immediate and Memory Operands

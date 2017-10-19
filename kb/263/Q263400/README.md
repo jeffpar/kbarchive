@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263400: Status Message Viewer Shows Application Error Deleting Messages"
-permalink: kb/263/Q263400/
+permalink: /kb/263/Q263400/
 ---
 
 ## Q263400: Status Message Viewer Shows Application Error Deleting Messages

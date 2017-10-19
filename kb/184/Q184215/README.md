@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184215: FS98: Multiple Chat Windows Displayed During Multiplayer Play"
-permalink: kb/184/Q184215/
+permalink: /kb/184/Q184215/
 ---
 
 ## Q184215: FS98: Multiple Chat Windows Displayed During Multiplayer Play

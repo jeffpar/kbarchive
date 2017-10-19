@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190015: Setting LogonMethod to Batch Causes &quot;Parameter is Incorrect&quot;"
-permalink: kb/190/Q190015/
+permalink: /kb/190/Q190015/
 ---
 
 ## Q190015: Setting LogonMethod to Batch Causes &quot;Parameter is Incorrect&quot;

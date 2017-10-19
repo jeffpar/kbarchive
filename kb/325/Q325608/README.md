@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325608: PRB: Authentication Delegation Through Kerberos Does Not Work"
-permalink: kb/325/Q325608/
+permalink: /kb/325/Q325608/
 ---
 
 ## Q325608: PRB: Authentication Delegation Through Kerberos Does Not Work

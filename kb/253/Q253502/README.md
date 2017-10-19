@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253502: Error When Resolving NetBIOS Name Longer than 16 Characters"
-permalink: kb/253/Q253502/
+permalink: /kb/253/Q253502/
 ---
 
 ## Q253502: Error When Resolving NetBIOS Name Longer than 16 Characters

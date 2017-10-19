@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123409: MSCDEX Does Not Set &quot;Name&quot; of EMS Allocation"
-permalink: kb/123/Q123409/
+permalink: /kb/123/Q123409/
 ---
 
 ## Q123409: MSCDEX Does Not Set &quot;Name&quot; of EMS Allocation

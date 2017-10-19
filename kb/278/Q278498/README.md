@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278498: HOWTO: Configure NNTP Service to Use Secure Sockets Layer"
-permalink: kb/278/Q278498/
+permalink: /kb/278/Q278498/
 ---
 
 ## Q278498: HOWTO: Configure NNTP Service to Use Secure Sockets Layer

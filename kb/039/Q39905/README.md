@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39905: Windows Bitmaps Do Not Incorporate into Draw"
-permalink: kb/039/Q39905/
+permalink: /kb/039/Q39905/
 ---
 
 ## Q39905: Windows Bitmaps Do Not Incorporate into Draw

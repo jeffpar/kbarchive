@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157707: XFOR: The IMC Does Not Dial on Weekends"
-permalink: kb/157/Q157707/
+permalink: /kb/157/Q157707/
 ---
 
 ## Q157707: XFOR: The IMC Does Not Dial on Weekends

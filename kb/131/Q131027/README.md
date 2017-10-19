@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131027: HOWTO: Encapsulate Data in the Form Builder"
-permalink: kb/131/Q131027/
+permalink: /kb/131/Q131027/
 ---
 
 ## Q131027: HOWTO: Encapsulate Data in the Form Builder

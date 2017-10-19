@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175130: XADM: Initialization of DLL Fails Starting Exchange Server"
-permalink: kb/175/Q175130/
+permalink: /kb/175/Q175130/
 ---
 
 ## Q175130: XADM: Initialization of DLL Fails Starting Exchange Server

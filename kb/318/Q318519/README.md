@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318519: PRB: Error -2147467259 When VB Client Calls Method on COM Object"
-permalink: kb/318/Q318519/
+permalink: /kb/318/Q318519/
 ---
 
 ## Q318519: PRB: Error -2147467259 When VB Client Calls Method on COM Object

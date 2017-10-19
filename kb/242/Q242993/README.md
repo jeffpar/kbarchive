@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242993: BUG: Retrieved Data May Display as Nonalphanumeric Using ODBC"
-permalink: kb/242/Q242993/
+permalink: /kb/242/Q242993/
 ---
 
 ## Q242993: BUG: Retrieved Data May Display as Nonalphanumeric Using ODBC

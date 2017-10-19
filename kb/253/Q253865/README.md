@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253865: Java Log Is Not Created on Terminal Server"
-permalink: kb/253/Q253865/
+permalink: /kb/253/Q253865/
 ---
 
 ## Q253865: Java Log Is Not Created on Terminal Server

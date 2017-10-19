@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163367: WD97: &quot;Network or File Permission Error&quot; Saving Document"
-permalink: kb/163/Q163367/
+permalink: /kb/163/Q163367/
 ---
 
 ## Q163367: WD97: &quot;Network or File Permission Error&quot; Saving Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161042: XCLN: Schedule+ Error: &quot;The Schedule File Could Not Be Opened&quot;"
-permalink: kb/161/Q161042/
+permalink: /kb/161/Q161042/
 ---
 
 ## Q161042: XCLN: Schedule+ Error: &quot;The Schedule File Could Not Be Opened&quot;

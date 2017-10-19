@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268610: WD97: Word Crashes When Starting Word with Hyperlink from IE"
-permalink: kb/268/Q268610/
+permalink: /kb/268/Q268610/
 ---
 
 ## Q268610: WD97: Word Crashes When Starting Word with Hyperlink from IE

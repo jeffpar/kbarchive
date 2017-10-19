@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94178: PC WFW: Differences Between Win for Workgroups Mail &amp; PC Mail"
-permalink: kb/094/Q94178/
+permalink: /kb/094/Q94178/
 ---
 
 ## Q94178: PC WFW: Differences Between Win for Workgroups Mail &amp; PC Mail

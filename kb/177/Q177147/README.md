@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177147: Default for Use Locally Cached Profile Dialog"
-permalink: kb/177/Q177147/
+permalink: /kb/177/Q177147/
 ---
 
 ## Q177147: Default for Use Locally Cached Profile Dialog

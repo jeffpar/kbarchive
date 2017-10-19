@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139411: Maximum WINS Owners Under Windows NT 3.5 and 3.51"
-permalink: kb/139/Q139411/
+permalink: /kb/139/Q139411/
 ---
 
 ## Q139411: Maximum WINS Owners Under Windows NT 3.5 and 3.51

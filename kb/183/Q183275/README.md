@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183275: Changing the Display Name of Notes Users in Exchange GAL"
-permalink: kb/183/Q183275/
+permalink: /kb/183/Q183275/
 ---
 
 ## Q183275: Changing the Display Name of Notes Users in Exchange GAL

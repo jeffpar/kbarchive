@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251297: How to Customize the Account Joiner Utility for a Specific MA"
-permalink: kb/251/Q251297/
+permalink: /kb/251/Q251297/
 ---
 
 ## Q251297: How to Customize the Account Joiner Utility for a Specific MA

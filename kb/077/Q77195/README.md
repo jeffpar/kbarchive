@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77195: Modified Hardware Description Text in Windows Setup"
-permalink: kb/077/Q77195/
+permalink: /kb/077/Q77195/
 ---
 
 ## Q77195: Modified Hardware Description Text in Windows Setup

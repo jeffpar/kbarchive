@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181527: WD97: Macro to Find Automatic (Soft) Page Breaks"
-permalink: kb/181/Q181527/
+permalink: /kb/181/Q181527/
 ---
 
 ## Q181527: WD97: Macro to Find Automatic (Soft) Page Breaks

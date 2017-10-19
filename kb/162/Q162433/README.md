@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162433: MSB Dinosaurs: Media Control Device Not Installed Message"
-permalink: kb/162/Q162433/
+permalink: /kb/162/Q162433/
 ---
 
 ## Q162433: MSB Dinosaurs: Media Control Device Not Installed Message

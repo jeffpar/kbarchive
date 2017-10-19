@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170823: PRB: CDBException Thrown Opening Recordset on Stored Procedure"
-permalink: kb/170/Q170823/
+permalink: /kb/170/Q170823/
 ---
 
 ## Q170823: PRB: CDBException Thrown Opening Recordset on Stored Procedure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222160: Security Configuration Editor Has Several UI-Related Problems"
-permalink: kb/222/Q222160/
+permalink: /kb/222/Q222160/
 ---
 
 ## Q222160: Security Configuration Editor Has Several UI-Related Problems

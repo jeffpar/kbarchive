@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135040: FIX: Pack Closes Index File But Does Not Update It"
-permalink: kb/135/Q135040/
+permalink: /kb/135/Q135040/
 ---
 
 ## Q135040: FIX: Pack Closes Index File But Does Not Update It

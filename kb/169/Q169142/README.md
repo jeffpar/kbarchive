@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169142: Unable To Change 3270 Printer LU Name"
-permalink: kb/169/Q169142/
+permalink: /kb/169/Q169142/
 ---
 
 ## Q169142: Unable To Change 3270 Printer LU Name

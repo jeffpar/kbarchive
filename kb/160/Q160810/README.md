@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160810: FP: IDC Wizard Creates IDC File on Non-IDC Server"
-permalink: kb/160/Q160810/
+permalink: /kb/160/Q160810/
 ---
 
 ## Q160810: FP: IDC Wizard Creates IDC File on Non-IDC Server

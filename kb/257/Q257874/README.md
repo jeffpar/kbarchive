@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257874: XADM: Hard Coded Organization Name When Installing DMS"
-permalink: kb/257/Q257874/
+permalink: /kb/257/Q257874/
 ---
 
 ## Q257874: XADM: Hard Coded Organization Name When Installing DMS

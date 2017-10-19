@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76089: Pyro! Causes MS-DOS Shell to Blink"
-permalink: kb/076/Q76089/
+permalink: /kb/076/Q76089/
 ---
 
 ## Q76089: Pyro! Causes MS-DOS Shell to Blink

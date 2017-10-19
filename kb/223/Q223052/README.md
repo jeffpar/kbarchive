@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223052: Cannot Set Custom Form As Default Paper Size"
-permalink: kb/223/Q223052/
+permalink: /kb/223/Q223052/
 ---
 
 ## Q223052: Cannot Set Custom Form As Default Paper Size

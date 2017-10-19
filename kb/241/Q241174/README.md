@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241174: NBA Inside Drive 2000: Game Quits Unexpectedly"
-permalink: kb/241/Q241174/
+permalink: /kb/241/Q241174/
 ---
 
 ## Q241174: NBA Inside Drive 2000: Game Quits Unexpectedly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309132: Minimal installation fails for Swedish Retail version of Microso"
-permalink: kb/309/Q309132/
+permalink: /kb/309/Q309132/
 ---
 
 ## Q309132: Minimal installation fails for Swedish Retail version of Microso

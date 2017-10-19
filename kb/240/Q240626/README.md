@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240626: BUG: Extra Lines are Generated in Assembly when Using #line"
-permalink: kb/240/Q240626/
+permalink: /kb/240/Q240626/
 ---
 
 ## Q240626: BUG: Extra Lines are Generated in Assembly when Using #line

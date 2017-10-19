@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64566: &quot;Cannot Open File current.&#36;&quot; May Mean INIT Incorrect"
-permalink: kb/064/Q64566/
+permalink: /kb/064/Q64566/
 ---
 
 ## Q64566: &quot;Cannot Open File current.&#36;&quot; May Mean INIT Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163480: MSB: Err Msg: &quot;Wave Error&quot; When Starting Program"
-permalink: kb/163/Q163480/
+permalink: /kb/163/Q163480/
 ---
 
 ## Q163480: MSB: Err Msg: &quot;Wave Error&quot; When Starting Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143002: Csexamp.exe - Client-Server Data Entry Screen for SQL"
-permalink: kb/143/Q143002/
+permalink: /kb/143/Q143002/
 ---
 
 ## Q143002: Csexamp.exe - Client-Server Data Entry Screen for SQL

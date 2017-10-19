@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88752: Err Msg: Full API Support Was Not Loaded... IBM OS/2 LAN"
-permalink: kb/088/Q88752/
+permalink: /kb/088/Q88752/
 ---
 
 ## Q88752: Err Msg: Full API Support Was Not Loaded... IBM OS/2 LAN

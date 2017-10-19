@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166582: XCLN: Delegates Stop Receiving Schedule+ Meeting Requests"
-permalink: kb/166/Q166582/
+permalink: /kb/166/Q166582/
 ---
 
 ## Q166582: XCLN: Delegates Stop Receiving Schedule+ Meeting Requests

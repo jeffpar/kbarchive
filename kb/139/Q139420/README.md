@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139420: HP DesignJet 600 Not Recognized by JetDirect Card"
-permalink: kb/139/Q139420/
+permalink: /kb/139/Q139420/
 ---
 
 ## Q139420: HP DesignJet 600 Not Recognized by JetDirect Card

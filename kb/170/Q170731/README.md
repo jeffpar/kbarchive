@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170731: WD97: Macro to Test for the Last Cell in a Table"
-permalink: kb/170/Q170731/
+permalink: /kb/170/Q170731/
 ---
 
 ## Q170731: WD97: Macro to Test for the Last Cell in a Table

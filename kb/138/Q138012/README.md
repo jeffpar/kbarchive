@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138012: Incorrect Settings for File System Performance Profiles"
-permalink: kb/138/Q138012/
+permalink: /kb/138/Q138012/
 ---
 
 ## Q138012: Incorrect Settings for File System Performance Profiles

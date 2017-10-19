@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278334: SMS: Component Status Reports &quot;Stopped&quot; for Remote Site Systems"
-permalink: kb/278/Q278334/
+permalink: /kb/278/Q278334/
 ---
 
 ## Q278334: SMS: Component Status Reports &quot;Stopped&quot; for Remote Site Systems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154709: BUG: Setup Wizard Grid Hangs VFP When KEYCOMP Not Macintosh"
-permalink: kb/154/Q154709/
+permalink: /kb/154/Q154709/
 ---
 
 ## Q154709: BUG: Setup Wizard Grid Hangs VFP When KEYCOMP Not Macintosh

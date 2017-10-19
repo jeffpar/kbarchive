@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182797: XADM: Directory Replication Stops in Low Memory Condition"
-permalink: kb/182/Q182797/
+permalink: /kb/182/Q182797/
 ---
 
 ## Q182797: XADM: Directory Replication Stops in Low Memory Condition

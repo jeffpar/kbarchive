@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140766: MSB Ocean: Video Distortion in Games When Using S3 Card"
-permalink: kb/140/Q140766/
+permalink: /kb/140/Q140766/
 ---
 
 ## Q140766: MSB Ocean: Video Distortion in Games When Using S3 Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153629: FP: No Prompt for User Name and Password on IIS Web"
-permalink: kb/153/Q153629/
+permalink: /kb/153/Q153629/
 ---
 
 ## Q153629: FP: No Prompt for User Name and Password on IIS Web

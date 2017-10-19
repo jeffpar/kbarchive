@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201057: XADM: Event ID 5002"
-permalink: kb/201/Q201057/
+permalink: /kb/201/Q201057/
 ---
 
 ## Q201057: XADM: Event ID 5002

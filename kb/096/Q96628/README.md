@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96628: Screen Does Not Pause With MEM /C /P OR DIR /P"
-permalink: kb/096/Q96628/
+permalink: /kb/096/Q96628/
 ---
 
 ## Q96628: Screen Does Not Pause With MEM /C /P OR DIR /P

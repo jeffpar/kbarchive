@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152488: Event 7000: File Not Found with SMS"
-permalink: kb/152/Q152488/
+permalink: /kb/152/Q152488/
 ---
 
 ## Q152488: Event 7000: File Not Found with SMS

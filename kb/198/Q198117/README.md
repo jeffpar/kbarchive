@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198117: Combat Flight Simulator: Slow Frame Rate During Game Play"
-permalink: kb/198/Q198117/
+permalink: /kb/198/Q198117/
 ---
 
 ## Q198117: Combat Flight Simulator: Slow Frame Rate During Game Play

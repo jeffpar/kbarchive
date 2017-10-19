@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254417: MapPoint 2001: CD-ROM Drive Access Features Perform Slowly"
-permalink: kb/254/Q254417/
+permalink: /kb/254/Q254417/
 ---
 
 ## Q254417: MapPoint 2001: CD-ROM Drive Access Features Perform Slowly

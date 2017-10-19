@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85603: FAX: Retry Mechanism the Gateway Responds To"
-permalink: kb/085/Q85603/
+permalink: /kb/085/Q85603/
 ---
 
 ## Q85603: FAX: Retry Mechanism the Gateway Responds To

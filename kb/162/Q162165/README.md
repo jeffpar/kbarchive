@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162165: SMS: Client Inventory Data Entered Under a New SMSID"
-permalink: kb/162/Q162165/
+permalink: /kb/162/Q162165/
 ---
 
 ## Q162165: SMS: Client Inventory Data Entered Under a New SMSID

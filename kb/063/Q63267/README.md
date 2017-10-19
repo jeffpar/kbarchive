@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63267: FIX: PWB 1.0 menukey Switch Resets to ALT Shelling Out to MS-DOS"
-permalink: kb/063/Q63267/
+permalink: /kb/063/Q63267/
 ---
 
 ## Q63267: FIX: PWB 1.0 menukey Switch Resets to ALT Shelling Out to MS-DOS

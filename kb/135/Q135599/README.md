@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135599: How To Reposition a Centered Wallpaper Bitmap on The Desktop"
-permalink: kb/135/Q135599/
+permalink: /kb/135/Q135599/
 ---
 
 ## Q135599: How To Reposition a Centered Wallpaper Bitmap on The Desktop

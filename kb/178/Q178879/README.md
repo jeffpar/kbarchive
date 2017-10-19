@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178879: WD97: Run-Time Error '4599' Using DDE to Internet Explorer 4.x"
-permalink: kb/178/Q178879/
+permalink: /kb/178/Q178879/
 ---
 
 ## Q178879: WD97: Run-Time Error '4599' Using DDE to Internet Explorer 4.x

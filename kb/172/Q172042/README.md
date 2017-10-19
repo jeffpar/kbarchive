@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172042: WD97: Document Text Extends into Margin, Overlaps, or Gaps"
-permalink: kb/172/Q172042/
+permalink: /kb/172/Q172042/
 ---
 
 ## Q172042: WD97: Document Text Extends into Margin, Overlaps, or Gaps

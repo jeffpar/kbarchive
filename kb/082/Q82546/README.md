@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82546: ABC Flowcharter 1.2 Doesn't Display All TrueType Font Sizes"
-permalink: kb/082/Q82546/
+permalink: /kb/082/Q82546/
 ---
 
 ## Q82546: ABC Flowcharter 1.2 Doesn't Display All TrueType Font Sizes

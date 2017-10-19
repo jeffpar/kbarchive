@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170903: NUMLOCK Causes Logon Problems with Portable Computers"
-permalink: kb/170/Q170903/
+permalink: /kb/170/Q170903/
 ---
 
 ## Q170903: NUMLOCK Causes Logon Problems with Portable Computers

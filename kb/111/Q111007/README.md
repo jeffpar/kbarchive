@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111007: BUG: MoveTo/LineTo Causes Divide by 0 Error"
-permalink: kb/111/Q111007/
+permalink: /kb/111/Q111007/
 ---
 
 ## Q111007: BUG: MoveTo/LineTo Causes Divide by 0 Error

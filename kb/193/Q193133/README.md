@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193133: HOWTO: Compile VB Programs with Debug Symbols Embedded"
-permalink: kb/193/Q193133/
+permalink: /kb/193/Q193133/
 ---
 
 ## Q193133: HOWTO: Compile VB Programs with Debug Symbols Embedded

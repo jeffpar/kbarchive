@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71127: Windows: Masterpiece Requires SYSTEM.INI Modification"
-permalink: kb/071/Q71127/
+permalink: /kb/071/Q71127/
 ---
 
 ## Q71127: Windows: Masterpiece Requires SYSTEM.INI Modification

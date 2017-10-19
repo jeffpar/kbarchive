@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106546: Resouce Kit Doc Error: London Appears in the From Box..."
-permalink: kb/106/Q106546/
+permalink: /kb/106/Q106546/
 ---
 
 ## Q106546: Resouce Kit Doc Error: London Appears in the From Box...

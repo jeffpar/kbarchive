@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323301: The YPCAT Command May Produce Unexpected Results"
-permalink: kb/323/Q323301/
+permalink: /kb/323/Q323301/
 ---
 
 ## Q323301: The YPCAT Command May Produce Unexpected Results

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93372: DOCERR: DDEDATA Documentation Error"
-permalink: kb/093/Q93372/
+permalink: /kb/093/Q93372/
 ---
 
 ## Q93372: DOCERR: DDEDATA Documentation Error

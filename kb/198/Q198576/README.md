@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198576: Combat FS: Polygons Are Visible When You Fly Through Fog"
-permalink: kb/198/Q198576/
+permalink: /kb/198/Q198576/
 ---
 
 ## Q198576: Combat FS: Polygons Are Visible When You Fly Through Fog

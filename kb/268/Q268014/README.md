@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268014: SMS: Error Message on a Blue Screen After You Upgrade to SMS 2.0"
-permalink: kb/268/Q268014/
+permalink: /kb/268/Q268014/
 ---
 
 ## Q268014: SMS: Error Message on a Blue Screen After You Upgrade to SMS 2.0

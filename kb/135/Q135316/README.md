@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135316: Support for Sending User ID on Attach when AP_SAME Specified"
-permalink: kb/135/Q135316/
+permalink: /kb/135/Q135316/
 ---
 
 ## Q135316: Support for Sending User ID on Attach when AP_SAME Specified

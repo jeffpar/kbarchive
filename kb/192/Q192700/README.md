@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192700: XFOR: cc:Mail Connector Does Not Parse Attachment Name Correctly"
-permalink: kb/192/Q192700/
+permalink: /kb/192/Q192700/
 ---
 
 ## Q192700: XFOR: cc:Mail Connector Does Not Parse Attachment Name Correctly

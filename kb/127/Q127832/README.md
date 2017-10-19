@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127832: Unable to Set Permissions on LAN Manager Shared Directory"
-permalink: kb/127/Q127832/
+permalink: /kb/127/Q127832/
 ---
 
 ## Q127832: Unable to Set Permissions on LAN Manager Shared Directory

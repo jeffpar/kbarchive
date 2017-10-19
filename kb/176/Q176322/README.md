@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176322: The Far East GetTextExtent API Fails with Null LPNFit"
-permalink: kb/176/Q176322/
+permalink: /kb/176/Q176322/
 ---
 
 ## Q176322: The Far East GetTextExtent API Fails with Null LPNFit

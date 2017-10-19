@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62789: Changing or Adjusting Program Groups in Windows"
-permalink: kb/062/Q62789/
+permalink: /kb/062/Q62789/
 ---
 
 ## Q62789: Changing or Adjusting Program Groups in Windows

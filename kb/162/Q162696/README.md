@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162696: PowerPC WINS Server Shows the Domain"
-permalink: kb/162/Q162696/
+permalink: /kb/162/Q162696/
 ---
 
 ## Q162696: PowerPC WINS Server Shows the Domain

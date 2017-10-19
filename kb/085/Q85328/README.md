@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85328: DOCERR: OpenFile Function Documented Incorrectly"
-permalink: kb/085/Q85328/
+permalink: /kb/085/Q85328/
 ---
 
 ## Q85328: DOCERR: OpenFile Function Documented Incorrectly

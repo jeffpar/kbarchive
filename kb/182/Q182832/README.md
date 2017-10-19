@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182832: Error in COBOL Export After Moving Type Library"
-permalink: kb/182/Q182832/
+permalink: /kb/182/Q182832/
 ---
 
 ## Q182832: Error in COBOL Export After Moving Type Library

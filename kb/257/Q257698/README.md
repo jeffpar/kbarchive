@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257698: XFOR: Migration Wizard Crashes Migrating Calendar Data fr. Notes"
-permalink: kb/257/Q257698/
+permalink: /kb/257/Q257698/
 ---
 
 ## Q257698: XFOR: Migration Wizard Crashes Migrating Calendar Data fr. Notes

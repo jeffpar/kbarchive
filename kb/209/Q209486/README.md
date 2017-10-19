@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209486: PC DB: Changing the Serial Number on an MS Mail Postoffice"
-permalink: kb/209/Q209486/
+permalink: /kb/209/Q209486/
 ---
 
 ## Q209486: PC DB: Changing the Serial Number on an MS Mail Postoffice

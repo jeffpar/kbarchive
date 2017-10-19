@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98547: Cannot Print More Than 99 Copies with Some Printer Drivers"
-permalink: kb/098/Q98547/
+permalink: /kb/098/Q98547/
 ---
 
 ## Q98547: Cannot Print More Than 99 Copies with Some Printer Drivers

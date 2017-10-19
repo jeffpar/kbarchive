@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192305: PRB: Separate Instance of HTML Help Used With Certain Objects"
-permalink: kb/192/Q192305/
+permalink: /kb/192/Q192305/
 ---
 
 ## Q192305: PRB: Separate Instance of HTML Help Used With Certain Objects

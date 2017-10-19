@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263096: ACTIVATE_SESSION Event Not Signaled When the Session Ends"
-permalink: kb/263/Q263096/
+permalink: /kb/263/Q263096/
 ---
 
 ## Q263096: ACTIVATE_SESSION Event Not Signaled When the Session Ends

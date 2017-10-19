@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147707: INVProc Does Not Remove Packages Group when It Is Empty"
-permalink: kb/147/Q147707/
+permalink: /kb/147/Q147707/
 ---
 
 ## Q147707: INVProc Does Not Remove Packages Group when It Is Empty

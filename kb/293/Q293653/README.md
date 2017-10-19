@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293653: BUG: Access ODBC Driver Incorrectly Maps Unicode Datatypes"
-permalink: kb/293/Q293653/
+permalink: /kb/293/Q293653/
 ---
 
 ## Q293653: BUG: Access ODBC Driver Incorrectly Maps Unicode Datatypes

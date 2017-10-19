@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265884: BUG: Optional Parameter with Default Value Null Causes Error 458"
-permalink: kb/265/Q265884/
+permalink: /kb/265/Q265884/
 ---
 
 ## Q265884: BUG: Optional Parameter with Default Value Null Causes Error 458

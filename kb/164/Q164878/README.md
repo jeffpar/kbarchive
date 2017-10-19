@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164878: E21xx Cabletron Network Cards Do Not Work Properly in MPS"
-permalink: kb/164/Q164878/
+permalink: /kb/164/Q164878/
 ---
 
 ## Q164878: E21xx Cabletron Network Cards Do Not Work Properly in MPS

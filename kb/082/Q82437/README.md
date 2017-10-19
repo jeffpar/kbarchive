@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82437: Using Norton Desktop as Windows Shell"
-permalink: kb/082/Q82437/
+permalink: /kb/082/Q82437/
 ---
 
 ## Q82437: Using Norton Desktop as Windows Shell

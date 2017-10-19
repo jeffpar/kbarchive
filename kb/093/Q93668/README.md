@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93668: Missing Separator Corrupts Digital Clock Display"
-permalink: kb/093/Q93668/
+permalink: /kb/093/Q93668/
 ---
 
 ## Q93668: Missing Separator Corrupts Digital Clock Display

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103472: No Network Option Doesn't Stop Mail and Schedule+ Installation"
-permalink: kb/103/Q103472/
+permalink: /kb/103/Q103472/
 ---
 
 ## Q103472: No Network Option Doesn't Stop Mail and Schedule+ Installation

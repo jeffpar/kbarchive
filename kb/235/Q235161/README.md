@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235161: SMS: Control Panel Tool Shows Previous Version After Upgrade"
-permalink: kb/235/Q235161/
+permalink: /kb/235/Q235161/
 ---
 
 ## Q235161: SMS: Control Panel Tool Shows Previous Version After Upgrade

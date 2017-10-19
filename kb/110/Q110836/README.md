@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110836: Fast Throttle Option Slows Throttle Response"
-permalink: kb/110/Q110836/
+permalink: /kb/110/Q110836/
 ---
 
 ## Q110836: Fast Throttle Option Slows Throttle Response

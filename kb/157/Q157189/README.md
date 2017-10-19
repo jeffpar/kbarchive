@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157189: FIX: MLINE() with Select-SQL Group By Clause Causes Error"
-permalink: kb/157/Q157189/
+permalink: /kb/157/Q157189/
 ---
 
 ## Q157189: FIX: MLINE() with Select-SQL Group By Clause Causes Error

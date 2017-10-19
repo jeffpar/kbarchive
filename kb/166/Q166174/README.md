@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166174: WD97: Styles Not Automatically Updated Attaching to Normal.dot"
-permalink: kb/166/Q166174/
+permalink: /kb/166/Q166174/
 ---
 
 ## Q166174: WD97: Styles Not Automatically Updated Attaching to Normal.dot

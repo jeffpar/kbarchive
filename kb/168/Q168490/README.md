@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168490: XADM: Unattended Exchange Server Setup"
-permalink: kb/168/Q168490/
+permalink: /kb/168/Q168490/
 ---
 
 ## Q168490: XADM: Unattended Exchange Server Setup

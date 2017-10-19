@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168100: WD97: Fields Inserted in AutoText Entry Updated Automatically"
-permalink: kb/168/Q168100/
+permalink: /kb/168/Q168100/
 ---
 
 ## Q168100: WD97: Fields Inserted in AutoText Entry Updated Automatically

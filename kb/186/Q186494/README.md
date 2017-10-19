@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186494: Event ID 517 Not Created When Security Log Is Cleared"
-permalink: kb/186/Q186494/
+permalink: /kb/186/Q186494/
 ---
 
 ## Q186494: Event ID 517 Not Created When Security Log Is Cleared

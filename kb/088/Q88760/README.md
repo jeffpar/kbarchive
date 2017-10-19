@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88760: Caere OmniPage with Windows"
-permalink: kb/088/Q88760/
+permalink: /kb/088/Q88760/
 ---
 
 ## Q88760: Caere OmniPage with Windows

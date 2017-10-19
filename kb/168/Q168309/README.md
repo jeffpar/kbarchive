@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168309: XADM: Error -1605 Jet_errKey Duplicate"
-permalink: kb/168/Q168309/
+permalink: /kb/168/Q168309/
 ---
 
 ## Q168309: XADM: Error -1605 Jet_errKey Duplicate

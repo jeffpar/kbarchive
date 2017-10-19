@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93383: Windows Err Msg: File Manager Cannot Label the Disk"
-permalink: kb/093/Q93383/
+permalink: /kb/093/Q93383/
 ---
 
 ## Q93383: Windows Err Msg: File Manager Cannot Label the Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175547: FIX: Toolbar Performance Degrades with Dynamic Modification"
-permalink: kb/175/Q175547/
+permalink: /kb/175/Q175547/
 ---
 
 ## Q175547: FIX: Toolbar Performance Degrades with Dynamic Modification

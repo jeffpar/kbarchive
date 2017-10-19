@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142638: Can't Create New Microsoft Mail Postoffice"
-permalink: kb/142/Q142638/
+permalink: /kb/142/Q142638/
 ---
 
 ## Q142638: Can't Create New Microsoft Mail Postoffice

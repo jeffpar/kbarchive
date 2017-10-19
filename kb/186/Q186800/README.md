@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186800: How Bandwidth Throttling Works in IIS 4.0"
-permalink: kb/186/Q186800/
+permalink: /kb/186/Q186800/
 ---
 
 ## Q186800: How Bandwidth Throttling Works in IIS 4.0

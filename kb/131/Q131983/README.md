@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131983: Server Halts On Invalid LPR Transaction"
-permalink: kb/131/Q131983/
+permalink: /kb/131/Q131983/
 ---
 
 ## Q131983: Server Halts On Invalid LPR Transaction

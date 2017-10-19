@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132336: Mac Ancient Lands: Volume Is Very Quiet for Some Sounds Only"
-permalink: kb/132/Q132336/
+permalink: /kb/132/Q132336/
 ---
 
 ## Q132336: Mac Ancient Lands: Volume Is Very Quiet for Some Sounds Only

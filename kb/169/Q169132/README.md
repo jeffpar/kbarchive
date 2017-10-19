@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169132: Print Server Application Exception in S3POHPOP"
-permalink: kb/169/Q169132/
+permalink: /kb/169/Q169132/
 ---
 
 ## Q169132: Print Server Application Exception in S3POHPOP

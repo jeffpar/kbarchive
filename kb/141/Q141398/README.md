@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141398: FIX: &quot;Source Control&quot; Does Not Appear in Tools Menu w/ MIPS"
-permalink: kb/141/Q141398/
+permalink: /kb/141/Q141398/
 ---
 
 ## Q141398: FIX: &quot;Source Control&quot; Does Not Appear in Tools Menu w/ MIPS

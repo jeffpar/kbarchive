@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137444: How to Use AppSearch to Search for a Specific Application"
-permalink: kb/137/Q137444/
+permalink: /kb/137/Q137444/
 ---
 
 ## Q137444: How to Use AppSearch to Search for a Specific Application

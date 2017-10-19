@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68896: Setting a Startup Directory in WordPerfect 5.1"
-permalink: kb/068/Q68896/
+permalink: /kb/068/Q68896/
 ---
 
 ## Q68896: Setting a Startup Directory in WordPerfect 5.1

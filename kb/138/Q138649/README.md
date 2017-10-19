@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138649: How to Use OLE to Edit General Fields in Visual FoxPro"
-permalink: kb/138/Q138649/
+permalink: /kb/138/Q138649/
 ---
 
 ## Q138649: How to Use OLE to Edit General Fields in Visual FoxPro

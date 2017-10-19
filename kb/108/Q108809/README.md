@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108809: PC MMTA: External Instances Using Dynamic Drives Can't Overlap"
-permalink: kb/108/Q108809/
+permalink: /kb/108/Q108809/
 ---
 
 ## Q108809: PC MMTA: External Instances Using Dynamic Drives Can't Overlap

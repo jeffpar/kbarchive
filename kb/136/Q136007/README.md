@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136007: Error Message: Host Disconnected Due to Idle Timeout"
-permalink: kb/136/Q136007/
+permalink: /kb/136/Q136007/
 ---
 
 ## Q136007: Error Message: Host Disconnected Due to Idle Timeout

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165621: FIX: Error 231 After Opening a Server Side Cursor"
-permalink: kb/165/Q165621/
+permalink: /kb/165/Q165621/
 ---
 
 ## Q165621: FIX: Error 231 After Opening a Server Side Cursor

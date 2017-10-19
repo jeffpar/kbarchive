@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196191: SNABASE Unable to Update the BackupSponsor Registry Key"
-permalink: kb/196/Q196191/
+permalink: /kb/196/Q196191/
 ---
 
 ## Q196191: SNABASE Unable to Update the BackupSponsor Registry Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182664: XCON: Notes Connector Sends Incorrect Header"
-permalink: kb/182/Q182664/
+permalink: /kb/182/Q182664/
 ---
 
 ## Q182664: XCON: Notes Connector Sends Incorrect Header

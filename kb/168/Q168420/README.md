@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168420: FIX: NMAKE Build Fails When Intermediate Dir Starts with ..&#92;"
-permalink: kb/168/Q168420/
+permalink: /kb/168/Q168420/
 ---
 
 ## Q168420: FIX: NMAKE Build Fails When Intermediate Dir Starts with ..&#92;

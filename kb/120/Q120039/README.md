@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120039: NET VIEW Command Does Not List Novell NetWare Print Queues"
-permalink: kb/120/Q120039/
+permalink: /kb/120/Q120039/
 ---
 
 ## Q120039: NET VIEW Command Does Not List Novell NetWare Print Queues

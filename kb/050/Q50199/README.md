@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50199: Black Scenery with Everex EGA in Flight Simulator"
-permalink: kb/050/Q50199/
+permalink: /kb/050/Q50199/
 ---
 
 ## Q50199: Black Scenery with Everex EGA in Flight Simulator

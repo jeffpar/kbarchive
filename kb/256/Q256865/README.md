@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256865: XFOR: Entire GroupWise Distribution List Listed in the To Box"
-permalink: kb/256/Q256865/
+permalink: /kb/256/Q256865/
 ---
 
 ## Q256865: XFOR: Entire GroupWise Distribution List Listed in the To Box

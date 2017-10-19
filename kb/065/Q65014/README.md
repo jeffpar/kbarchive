@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65014: Mail Slots Must Be Active to Support DOS LAN Manager APIs"
-permalink: kb/065/Q65014/
+permalink: /kb/065/Q65014/
 ---
 
 ## Q65014: Mail Slots Must Be Active to Support DOS LAN Manager APIs

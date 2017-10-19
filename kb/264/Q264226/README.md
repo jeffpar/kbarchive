@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264226: XCLN: No Entries in Directory Service Match LDAP Query Search"
-permalink: kb/264/Q264226/
+permalink: /kb/264/Q264226/
 ---
 
 ## Q264226: XCLN: No Entries in Directory Service Match LDAP Query Search

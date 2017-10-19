@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136253: Clipbook Viewer Does Not Connect to a Long (13+) Computer Name"
-permalink: kb/136/Q136253/
+permalink: /kb/136/Q136253/
 ---
 
 ## Q136253: Clipbook Viewer Does Not Connect to a Long (13+) Computer Name

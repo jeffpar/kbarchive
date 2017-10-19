@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138162: How to Resize a Form When the Application Window Is Resized"
-permalink: kb/138/Q138162/
+permalink: /kb/138/Q138162/
 ---
 
 ## Q138162: How to Resize a Form When the Application Window Is Resized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148182: Scenes 1.0: Sierra Club Disk 2 Contents"
-permalink: kb/148/Q148182/
+permalink: /kb/148/Q148182/
 ---
 
 ## Q148182: Scenes 1.0: Sierra Club Disk 2 Contents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173925: WD97: Graphic on Select Browse Object Button Does Not Resize"
-permalink: kb/173/Q173925/
+permalink: /kb/173/Q173925/
 ---
 
 ## Q173925: WD97: Graphic on Select Browse Object Button Does Not Resize

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111865: BUG: StretchBlt()/StretchDIBits() Fail with Very Large Stretch"
-permalink: kb/111/Q111865/
+permalink: /kb/111/Q111865/
 ---
 
 ## Q111865: BUG: StretchBlt()/StretchDIBits() Fail with Very Large Stretch

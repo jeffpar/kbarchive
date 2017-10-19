@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307465: Windows NT 4.0 Cluster Deletes Symbolic Link for Reserved Disks"
-permalink: kb/307/Q307465/
+permalink: /kb/307/Q307465/
 ---
 
 ## Q307465: Windows NT 4.0 Cluster Deletes Symbolic Link for Reserved Disks

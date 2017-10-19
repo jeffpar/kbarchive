@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110473: INF: Error Flushing by Driver Manager"
-permalink: kb/110/Q110473/
+permalink: /kb/110/Q110473/
 ---
 
 ## Q110473: INF: Error Flushing by Driver Manager

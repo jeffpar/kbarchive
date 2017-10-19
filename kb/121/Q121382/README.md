@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121382: Troubleshooting NET USE Across a Router Using TCP/IP-32"
-permalink: kb/121/Q121382/
+permalink: /kb/121/Q121382/
 ---
 
 ## Q121382: Troubleshooting NET USE Across a Router Using TCP/IP-32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107486: Writer/Artist: Error Message During Network Setup"
-permalink: kb/107/Q107486/
+permalink: /kb/107/Q107486/
 ---
 
 ## Q107486: Writer/Artist: Error Message During Network Setup

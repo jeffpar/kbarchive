@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82549: GP Faults with Microsoft FORTRAN 5.1 Programs"
-permalink: kb/082/Q82549/
+permalink: /kb/082/Q82549/
 ---
 
 ## Q82549: GP Faults with Microsoft FORTRAN 5.1 Programs

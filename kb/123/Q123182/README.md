@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123182: Setup Accepts Invalid Computer Name that Begins with Braces"
-permalink: kb/123/Q123182/
+permalink: /kb/123/Q123182/
 ---
 
 ## Q123182: Setup Accepts Invalid Computer Name that Begins with Braces

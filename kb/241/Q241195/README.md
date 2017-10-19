@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241195: XADM: How to Add Only Mailboxes to a Distribution List"
-permalink: kb/241/Q241195/
+permalink: /kb/241/Q241195/
 ---
 
 ## Q241195: XADM: How to Add Only Mailboxes to a Distribution List

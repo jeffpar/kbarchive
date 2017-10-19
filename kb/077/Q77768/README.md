@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77768: Leading Edge Memory Test Diagnostic May Cause System Hangs"
-permalink: kb/077/Q77768/
+permalink: /kb/077/Q77768/
 ---
 
 ## Q77768: Leading Edge Memory Test Diagnostic May Cause System Hangs

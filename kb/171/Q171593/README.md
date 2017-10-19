@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171593: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Packs"
-permalink: kb/171/Q171593/
+permalink: /kb/171/Q171593/
 ---
 
 ## Q171593: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Packs

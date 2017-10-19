@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164819: FIX: Problems Using Database Classes with Jet 3.0 under NT 4.0"
-permalink: kb/164/Q164819/
+permalink: /kb/164/Q164819/
 ---
 
 ## Q164819: FIX: Problems Using Database Classes with Jet 3.0 under NT 4.0

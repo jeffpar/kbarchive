@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181564: Encarta Virtual Globe Requires Internet Explorer 3.02 or Later"
-permalink: kb/181/Q181564/
+permalink: /kb/181/Q181564/
 ---
 
 ## Q181564: Encarta Virtual Globe Requires Internet Explorer 3.02 or Later

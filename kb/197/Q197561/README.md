@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197561: Pinball Arcade: Tables Included in Pinball Arcade"
-permalink: kb/197/Q197561/
+permalink: /kb/197/Q197561/
 ---
 
 ## Q197561: Pinball Arcade: Tables Included in Pinball Arcade

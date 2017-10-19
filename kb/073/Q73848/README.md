@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73848: Time/Date Stamp Workaround for Notepad"
-permalink: kb/073/Q73848/
+permalink: /kb/073/Q73848/
 ---
 
 ## Q73848: Time/Date Stamp Workaround for Notepad

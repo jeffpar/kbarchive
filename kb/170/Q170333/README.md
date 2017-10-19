@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170333: The Last Logged-On User Is Not Displayed"
-permalink: kb/170/Q170333/
+permalink: /kb/170/Q170333/
 ---
 
 ## Q170333: The Last Logged-On User Is Not Displayed

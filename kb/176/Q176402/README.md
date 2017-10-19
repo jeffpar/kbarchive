@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176402: Introducing Microsoft Windows 98 Comments and Corrections"
-permalink: kb/176/Q176402/
+permalink: /kb/176/Q176402/
 ---
 
 ## Q176402: Introducing Microsoft Windows 98 Comments and Corrections

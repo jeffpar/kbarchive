@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263700: SMS: APM Can't Start Dep Program If 1st Prog Returns Non-Zero"
-permalink: kb/263/Q263700/
+permalink: /kb/263/Q263700/
 ---
 
 ## Q263700: SMS: APM Can't Start Dep Program If 1st Prog Returns Non-Zero

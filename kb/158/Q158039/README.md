@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158039: STL Sample for the stack::size Function"
-permalink: kb/158/Q158039/
+permalink: /kb/158/Q158039/
 ---
 
 ## Q158039: STL Sample for the stack::size Function

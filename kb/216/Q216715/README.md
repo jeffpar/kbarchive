@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216715: FIX: Bad Code Generated in ?: Operator Converting Class Types"
-permalink: kb/216/Q216715/
+permalink: /kb/216/Q216715/
 ---
 
 ## Q216715: FIX: Bad Code Generated in ?: Operator Converting Class Types

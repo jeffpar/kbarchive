@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134354: Mustek TwainScan CG-8400 Hand Scanner Does Not Work"
-permalink: kb/134/Q134354/
+permalink: /kb/134/Q134354/
 ---
 
 ## Q134354: Mustek TwainScan CG-8400 Hand Scanner Does Not Work

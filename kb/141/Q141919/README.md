@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141919: Printing Problems with ECP Port"
-permalink: kb/141/Q141919/
+permalink: /kb/141/Q141919/
 ---
 
 ## Q141919: Printing Problems with ECP Port

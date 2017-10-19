@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241497: BackOffice Server Intranet Publishing Kit Does Not Install Corre"
-permalink: kb/241/Q241497/
+permalink: /kb/241/Q241497/
 ---
 
 ## Q241497: BackOffice Server Intranet Publishing Kit Does Not Install Corre

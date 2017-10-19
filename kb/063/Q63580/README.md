@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63580: File Manager Search Command Hangs Windows 3.0"
-permalink: kb/063/Q63580/
+permalink: /kb/063/Q63580/
 ---
 
 ## Q63580: File Manager Search Command Hangs Windows 3.0

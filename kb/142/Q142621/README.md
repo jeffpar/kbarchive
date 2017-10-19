@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142621: OS/2 Application Does Not Return DosReadQueue Properly"
-permalink: kb/142/Q142621/
+permalink: /kb/142/Q142621/
 ---
 
 ## Q142621: OS/2 Application Does Not Return DosReadQueue Properly

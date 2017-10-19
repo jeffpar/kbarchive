@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43993: How to Flush the Keyboard Typeahead Buffer"
-permalink: kb/043/Q43993/
+permalink: /kb/043/Q43993/
 ---
 
 ## Q43993: How to Flush the Keyboard Typeahead Buffer

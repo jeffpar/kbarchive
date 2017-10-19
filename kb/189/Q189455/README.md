@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189455: PRB: &quot;Cannot Find Title Data&quot; Error in Mastering Series Programs"
-permalink: kb/189/Q189455/
+permalink: /kb/189/Q189455/
 ---
 
 ## Q189455: PRB: &quot;Cannot Find Title Data&quot; Error in Mastering Series Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135398: HOWTO: Write to the Windows Registry Using API Calls"
-permalink: kb/135/Q135398/
+permalink: /kb/135/Q135398/
 ---
 
 ## Q135398: HOWTO: Write to the Windows Registry Using API Calls

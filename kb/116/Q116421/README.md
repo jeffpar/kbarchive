@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116421: BUG: Evaluating _pascal Functions Can Give Erroneous CXX0039"
-permalink: kb/116/Q116421/
+permalink: /kb/116/Q116421/
 ---
 
 ## Q116421: BUG: Evaluating _pascal Functions Can Give Erroneous CXX0039

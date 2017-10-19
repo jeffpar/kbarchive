@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135613: FIX: Exiting Wizard-Generated Form Causes Several Errors"
-permalink: kb/135/Q135613/
+permalink: /kb/135/Q135613/
 ---
 
 ## Q135613: FIX: Exiting Wizard-Generated Form Causes Several Errors

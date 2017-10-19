@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69975: Network Server Allows Only One User to Access Windows"
-permalink: kb/069/Q69975/
+permalink: /kb/069/Q69975/
 ---
 
 ## Q69975: Network Server Allows Only One User to Access Windows

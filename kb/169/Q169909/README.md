@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169909: Tabs Are Not Processed Correctly by Pdfcomp.exe"
-permalink: kb/169/Q169909/
+permalink: /kb/169/Q169909/
 ---
 
 ## Q169909: Tabs Are Not Processed Correctly by Pdfcomp.exe

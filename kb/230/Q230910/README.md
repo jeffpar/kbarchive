@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230910: Choosing Backup Help Topic Displays Untitled Options"
-permalink: kb/230/Q230910/
+permalink: /kb/230/Q230910/
 ---
 
 ## Q230910: Choosing Backup Help Topic Displays Untitled Options

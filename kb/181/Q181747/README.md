@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181747: SMSINST: Configuration Registry List Box Displays Only 1024 Keys"
-permalink: kb/181/Q181747/
+permalink: /kb/181/Q181747/
 ---
 
 ## Q181747: SMSINST: Configuration Registry List Box Displays Only 1024 Keys

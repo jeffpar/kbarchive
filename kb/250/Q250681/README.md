@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250681: Access Violation in Mprouter.exe with OSPF Hardcoded Breakpoint"
-permalink: kb/250/Q250681/
+permalink: /kb/250/Q250681/
 ---
 
 ## Q250681: Access Violation in Mprouter.exe with OSPF Hardcoded Breakpoint

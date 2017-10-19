@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175644: Dr. Watson Fails to Appear Because of Long File Names in Path"
-permalink: kb/175/Q175644/
+permalink: /kb/175/Q175644/
 ---
 
 ## Q175644: Dr. Watson Fails to Appear Because of Long File Names in Path

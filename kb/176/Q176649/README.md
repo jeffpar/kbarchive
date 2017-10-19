@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176649: XADM: Domain Name Shows Incorrectly as BUILTIN in Exported CSV"
-permalink: kb/176/Q176649/
+permalink: /kb/176/Q176649/
 ---
 
 ## Q176649: XADM: Domain Name Shows Incorrectly as BUILTIN in Exported CSV

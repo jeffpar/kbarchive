@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160478: Encarta 97: Copying Climate Charts Cuts Off Decimal Amounts"
-permalink: kb/160/Q160478/
+permalink: /kb/160/Q160478/
 ---
 
 ## Q160478: Encarta 97: Copying Climate Charts Cuts Off Decimal Amounts

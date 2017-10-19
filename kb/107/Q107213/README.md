@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107213: Encarta: Table Text Garbled with ATI Mach 32 Video Driver"
-permalink: kb/107/Q107213/
+permalink: /kb/107/Q107213/
 ---
 
 ## Q107213: Encarta: Table Text Garbled with ATI Mach 32 Video Driver

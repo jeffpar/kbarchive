@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80745: Saving GW-Basic/BASICA ASCII File to Use with QBasic"
-permalink: kb/080/Q80745/
+permalink: /kb/080/Q80745/
 ---
 
 ## Q80745: Saving GW-Basic/BASICA ASCII File to Use with QBasic

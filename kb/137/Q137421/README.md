@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137421: PING to Broadcast Address May Get Response"
-permalink: kb/137/Q137421/
+permalink: /kb/137/Q137421/
 ---
 
 ## Q137421: PING to Broadcast Address May Get Response

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266792: XCON: Post-SP3 MTA May Stop After Reporting Event ID 4283"
-permalink: kb/266/Q266792/
+permalink: /kb/266/Q266792/
 ---
 
 ## Q266792: XCON: Post-SP3 MTA May Stop After Reporting Event ID 4283

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167405: INFO: Visual FoxPro ODBC Driver Connect String Attributes"
-permalink: kb/167/Q167405/
+permalink: /kb/167/Q167405/
 ---
 
 ## Q167405: INFO: Visual FoxPro ODBC Driver Connect String Attributes

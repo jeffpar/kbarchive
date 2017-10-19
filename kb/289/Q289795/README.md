@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289795: XFOR: Notes Calendar Conn. Crashes on Multiprocessor Computers"
-permalink: kb/289/Q289795/
+permalink: /kb/289/Q289795/
 ---
 
 ## Q289795: XFOR: Notes Calendar Conn. Crashes on Multiprocessor Computers

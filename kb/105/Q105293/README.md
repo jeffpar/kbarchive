@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105293: Calendar: Starting Time Not Displayed in Upper-Left Corner"
-permalink: kb/105/Q105293/
+permalink: /kb/105/Q105293/
 ---
 
 ## Q105293: Calendar: Starting Time Not Displayed in Upper-Left Corner

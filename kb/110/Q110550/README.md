@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110550: Flight Simulator: Air Temperature May Exceed 100 Degrees"
-permalink: kb/110/Q110550/
+permalink: /kb/110/Q110550/
 ---
 
 ## Q110550: Flight Simulator: Air Temperature May Exceed 100 Degrees

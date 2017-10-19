@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93923: Error Using LOADHIGH (LH) With Third-Party Shell"
-permalink: kb/093/Q93923/
+permalink: /kb/093/Q93923/
 ---
 
 ## Q93923: Error Using LOADHIGH (LH) With Third-Party Shell

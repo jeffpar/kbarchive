@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286509: Error Message: No GPS Device Found on This Machine..."
-permalink: kb/286/Q286509/
+permalink: /kb/286/Q286509/
 ---
 
 ## Q286509: Error Message: No GPS Device Found on This Machine...

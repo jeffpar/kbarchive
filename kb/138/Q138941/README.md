@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138941: Microsoft Plus! Incorrectly Allows Setup to Network Drive"
-permalink: kb/138/Q138941/
+permalink: /kb/138/Q138941/
 ---
 
 ## Q138941: Microsoft Plus! Incorrectly Allows Setup to Network Drive

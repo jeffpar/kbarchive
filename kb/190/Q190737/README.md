@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190737: XADM: Message Size Limits Do Not Affect Public Folder Replicatio"
-permalink: kb/190/Q190737/
+permalink: /kb/190/Q190737/
 ---
 
 ## Q190737: XADM: Message Size Limits Do Not Affect Public Folder Replicatio

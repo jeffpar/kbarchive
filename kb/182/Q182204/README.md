@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182204: XADM: Offline Address Book Generated on Global Address List Fail"
-permalink: kb/182/Q182204/
+permalink: /kb/182/Q182204/
 ---
 
 ## Q182204: XADM: Offline Address Book Generated on Global Address List Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135089: Program Group Control Causes GP Fault on Windows 95 Clients"
-permalink: kb/135/Q135089/
+permalink: /kb/135/Q135089/
 ---
 
 ## Q135089: Program Group Control Causes GP Fault on Windows 95 Clients

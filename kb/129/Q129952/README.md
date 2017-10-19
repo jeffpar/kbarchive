@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129952: PC NTMMTA: No Limitations on Memory Management"
-permalink: kb/129/Q129952/
+permalink: /kb/129/Q129952/
 ---
 
 ## Q129952: PC NTMMTA: No Limitations on Memory Management

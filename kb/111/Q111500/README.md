@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111500: BUG: Trailing Commas May Cause Incorrect Error Messages"
-permalink: kb/111/Q111500/
+permalink: /kb/111/Q111500/
 ---
 
 ## Q111500: BUG: Trailing Commas May Cause Incorrect Error Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153368: SMS: Deleting Computers Fails with &quot;Out Of Locks&quot; Errors"
-permalink: kb/153/Q153368/
+permalink: /kb/153/Q153368/
 ---
 
 ## Q153368: SMS: Deleting Computers Fails with &quot;Out Of Locks&quot; Errors

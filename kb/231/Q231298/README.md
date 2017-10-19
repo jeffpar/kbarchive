@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231298: HOWTO: Use SetWaitableTimer With Visual Basic"
-permalink: kb/231/Q231298/
+permalink: /kb/231/Q231298/
 ---
 
 ## Q231298: HOWTO: Use SetWaitableTimer With Visual Basic

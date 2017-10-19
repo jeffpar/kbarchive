@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135948: System Agent Reports Error After Running ScanDisk"
-permalink: kb/135/Q135948/
+permalink: /kb/135/Q135948/
 ---
 
 ## Q135948: System Agent Reports Error After Running ScanDisk

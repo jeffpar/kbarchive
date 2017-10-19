@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172797: Windows NT Printing is Slower than OS/2"
-permalink: kb/172/Q172797/
+permalink: /kb/172/Q172797/
 ---
 
 ## Q172797: Windows NT Printing is Slower than OS/2

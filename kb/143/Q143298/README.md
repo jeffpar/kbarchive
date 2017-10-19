@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143298: How to Use Indirect Referencing of Objects Creatively"
-permalink: kb/143/Q143298/
+permalink: /kb/143/Q143298/
 ---
 
 ## Q143298: How to Use Indirect Referencing of Objects Creatively

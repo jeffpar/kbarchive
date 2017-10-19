@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148642: How to Perform In-Place Activation on an OLE Control"
-permalink: kb/148/Q148642/
+permalink: /kb/148/Q148642/
 ---
 
 ## Q148642: How to Perform In-Place Activation on an OLE Control

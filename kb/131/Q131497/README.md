@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131497: BUG: Error in ELSEIF References Line Number for Matching IF"
-permalink: kb/131/Q131497/
+permalink: /kb/131/Q131497/
 ---
 
 ## Q131497: BUG: Error in ELSEIF References Line Number for Matching IF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114608: PRB: Setup Toolkit Cancel Button Not Working On Disk Changes"
-permalink: kb/114/Q114608/
+permalink: /kb/114/Q114608/
 ---
 
 ## Q114608: PRB: Setup Toolkit Cancel Button Not Working On Disk Changes

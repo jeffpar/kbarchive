@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182042: FIX: time() Function Overcompensates for Daylight Savings Time"
-permalink: kb/182/Q182042/
+permalink: /kb/182/Q182042/
 ---
 
 ## Q182042: FIX: time() Function Overcompensates for Daylight Savings Time

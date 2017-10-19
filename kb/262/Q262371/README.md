@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262371: XADM: 2140 and 1002 w. Err. -1008 Starting Directory Service"
-permalink: kb/262/Q262371/
+permalink: /kb/262/Q262371/
 ---
 
 ## Q262371: XADM: 2140 and 1002 w. Err. -1008 Starting Directory Service

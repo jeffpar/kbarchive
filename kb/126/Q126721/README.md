@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126721: WTBackup Fails to Create Complete System Backup"
-permalink: kb/126/Q126721/
+permalink: /kb/126/Q126721/
 ---
 
 ## Q126721: WTBackup Fails to Create Complete System Backup

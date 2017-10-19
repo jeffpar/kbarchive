@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217213: HOWTO: Open a Password-Protected Paradox Table Using DAO"
-permalink: kb/217/Q217213/
+permalink: /kb/217/Q217213/
 ---
 
 ## Q217213: HOWTO: Open a Password-Protected Paradox Table Using DAO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140329: Trust Relationships Fail with Large Number of Trusted Domains"
-permalink: kb/140/Q140329/
+permalink: /kb/140/Q140329/
 ---
 
 ## Q140329: Trust Relationships Fail with Large Number of Trusted Domains

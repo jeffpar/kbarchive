@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128448: RAS Event ID 20013: The User Connected to Port..."
-permalink: kb/128/Q128448/
+permalink: /kb/128/Q128448/
 ---
 
 ## Q128448: RAS Event ID 20013: The User Connected to Port...

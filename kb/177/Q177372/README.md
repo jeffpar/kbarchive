@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177372: HOWTO: Obtain Physical &amp; Virtual Memory with API Function Call"
-permalink: kb/177/Q177372/
+permalink: /kb/177/Q177372/
 ---
 
 ## Q177372: HOWTO: Obtain Physical &amp; Virtual Memory with API Function Call

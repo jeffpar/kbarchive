@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125577: PC WSPlus: Schedule Access Library GP Faults"
-permalink: kb/125/Q125577/
+permalink: /kb/125/Q125577/
 ---
 
 ## Q125577: PC WSPlus: Schedule Access Library GP Faults

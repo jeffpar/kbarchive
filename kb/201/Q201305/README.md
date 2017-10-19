@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201305: INFO: Debugging VC++ 6.0 Application in VC++ 5.0 Debugger"
-permalink: kb/201/Q201305/
+permalink: /kb/201/Q201305/
 ---
 
 ## Q201305: INFO: Debugging VC++ 6.0 Application in VC++ 5.0 Debugger

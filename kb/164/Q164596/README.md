@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164596: Event ID 3216 System Error 67"
-permalink: kb/164/Q164596/
+permalink: /kb/164/Q164596/
 ---
 
 ## Q164596: Event ID 3216 System Error 67

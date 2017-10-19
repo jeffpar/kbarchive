@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111610: Suppressing &quot;Cannot Find MYDLL.DLL&quot; Error Box"
-permalink: kb/111/Q111610/
+permalink: /kb/111/Q111610/
 ---
 
 ## Q111610: Suppressing &quot;Cannot Find MYDLL.DLL&quot; Error Box

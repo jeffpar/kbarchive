@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85377: Windows Err Msg: Error Reading from Drive X"
-permalink: kb/085/Q85377/
+permalink: /kb/085/Q85377/
 ---
 
 ## Q85377: Windows Err Msg: Error Reading from Drive X

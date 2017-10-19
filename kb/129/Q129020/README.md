@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129020: Microsoft 500 Nations OPTHELP.TXT"
-permalink: kb/129/Q129020/
+permalink: /kb/129/Q129020/
 ---
 
 ## Q129020: Microsoft 500 Nations OPTHELP.TXT

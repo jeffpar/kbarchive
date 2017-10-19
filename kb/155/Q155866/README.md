@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155866: Wine Guide 2.0: Unnecessary CD Key Label affixed to CD Case"
-permalink: kb/155/Q155866/
+permalink: /kb/155/Q155866/
 ---
 
 ## Q155866: Wine Guide 2.0: Unnecessary CD Key Label affixed to CD Case

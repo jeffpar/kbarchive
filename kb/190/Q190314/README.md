@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190314: Phone Book Entries Blank in the Spanish Version of CMAK"
-permalink: kb/190/Q190314/
+permalink: /kb/190/Q190314/
 ---
 
 ## Q190314: Phone Book Entries Blank in the Spanish Version of CMAK

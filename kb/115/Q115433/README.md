@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115433: Mace Utilities Sector Editor Can Corrupt DriveSpace Drive"
-permalink: kb/115/Q115433/
+permalink: /kb/115/Q115433/
 ---
 
 ## Q115433: Mace Utilities Sector Editor Can Corrupt DriveSpace Drive

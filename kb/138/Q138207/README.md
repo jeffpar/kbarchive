@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138207: Encarta 1996: Downloadable Readme File for MSN and WWW"
-permalink: kb/138/Q138207/
+permalink: /kb/138/Q138207/
 ---
 
 ## Q138207: Encarta 1996: Downloadable Readme File for MSN and WWW

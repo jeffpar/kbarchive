@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173434: FP: Indent Formatting in Word HTML File Converted to Bullets"
-permalink: kb/173/Q173434/
+permalink: /kb/173/Q173434/
 ---
 
 ## Q173434: FP: Indent Formatting in Word HTML File Converted to Bullets

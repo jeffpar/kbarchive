@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319241: Streets and Trips 2002: Route Does Not Appear on the Pocket PC"
-permalink: kb/319/Q319241/
+permalink: /kb/319/Q319241/
 ---
 
 ## Q319241: Streets and Trips 2002: Route Does Not Appear on the Pocket PC

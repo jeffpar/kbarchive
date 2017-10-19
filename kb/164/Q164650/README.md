@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164650: SNA Server Fails to Activate DDDLU Pooled LU"
-permalink: kb/164/Q164650/
+permalink: /kb/164/Q164650/
 ---
 
 ## Q164650: SNA Server Fails to Activate DDDLU Pooled LU

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134504: Zeos Pantera CMOS Settings Corrupted During Windows 95 Setup"
-permalink: kb/134/Q134504/
+permalink: /kb/134/Q134504/
 ---
 
 ## Q134504: Zeos Pantera CMOS Settings Corrupted During Windows 95 Setup

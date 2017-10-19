@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244850: XWEB: OWA Does Not Start When Server Is Removed from Site"
-permalink: kb/244/Q244850/
+permalink: /kb/244/Q244850/
 ---
 
 ## Q244850: XWEB: OWA Does Not Start When Server Is Removed from Site

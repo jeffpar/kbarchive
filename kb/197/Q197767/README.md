@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197767: WD97: Inserting Caption into Paragraph Applies Caption Style"
-permalink: kb/197/Q197767/
+permalink: /kb/197/Q197767/
 ---
 
 ## Q197767: WD97: Inserting Caption into Paragraph Applies Caption Style

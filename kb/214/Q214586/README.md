@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214586: Close Combat III: How to Install the Matrox G-100 Video Driver"
-permalink: kb/214/Q214586/
+permalink: /kb/214/Q214586/
 ---
 
 ## Q214586: Close Combat III: How to Install the Matrox G-100 Video Driver

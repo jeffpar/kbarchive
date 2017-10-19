@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237366: SMS: Microsoft SMS and Clustered Server Environments"
-permalink: kb/237/Q237366/
+permalink: /kb/237/Q237366/
 ---
 
 ## Q237366: SMS: Microsoft SMS and Clustered Server Environments

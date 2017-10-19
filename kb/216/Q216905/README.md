@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216905: Downlevel Clients Can Cause Excessive Spooler CPU Usage"
-permalink: kb/216/Q216905/
+permalink: /kb/216/Q216905/
 ---
 
 ## Q216905: Downlevel Clients Can Cause Excessive Spooler CPU Usage

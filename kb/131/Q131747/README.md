@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131747: Windows Sound System 2.0 Modified for WaveJammer Sound Card"
-permalink: kb/131/Q131747/
+permalink: /kb/131/Q131747/
 ---
 
 ## Q131747: Windows Sound System 2.0 Modified for WaveJammer Sound Card

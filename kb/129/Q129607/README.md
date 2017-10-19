@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129607: Printer Connected to Redirected Parallel Port Appears as Local"
-permalink: kb/129/Q129607/
+permalink: /kb/129/Q129607/
 ---
 
 ## Q129607: Printer Connected to Redirected Parallel Port Appears as Local

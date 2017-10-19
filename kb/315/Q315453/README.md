@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315453: FP: Error 0177: 800401f3 When You Attempt to Connect to Database"
-permalink: kb/315/Q315453/
+permalink: /kb/315/Q315453/
 ---
 
 ## Q315453: FP: Error 0177: 800401f3 When You Attempt to Connect to Database

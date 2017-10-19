@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305661: Retried COM Function Calls Using IMessageFilter May Cause a Leak"
-permalink: kb/305/Q305661/
+permalink: /kb/305/Q305661/
 ---
 
 ## Q305661: Retried COM Function Calls Using IMessageFilter May Cause a Leak

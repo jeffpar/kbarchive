@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262247: Asheron's Call: How to Restore Accidentally Deleted Characters"
-permalink: kb/262/Q262247/
+permalink: /kb/262/Q262247/
 ---
 
 ## Q262247: Asheron's Call: How to Restore Accidentally Deleted Characters

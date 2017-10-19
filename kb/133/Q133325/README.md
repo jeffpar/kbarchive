@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133325: Upgrading from SNA Server 2.0 or 2.1 to 2.11"
-permalink: kb/133/Q133325/
+permalink: /kb/133/Q133325/
 ---
 
 ## Q133325: Upgrading from SNA Server 2.0 or 2.1 to 2.11

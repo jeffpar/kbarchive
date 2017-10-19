@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221790: IIS Runs Out of Work Items and Causes RPC Failures"
-permalink: kb/221/Q221790/
+permalink: /kb/221/Q221790/
 ---
 
 ## Q221790: IIS Runs Out of Work Items and Causes RPC Failures

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199326: XCON: Configuring X.400 Connectors to Communicate via a Firewall"
-permalink: kb/199/Q199326/
+permalink: /kb/199/Q199326/
 ---
 
 ## Q199326: XCON: Configuring X.400 Connectors to Communicate via a Firewall

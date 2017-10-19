@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169928: HOWTO: Open a SourceSafe Database with OLE Automation in C++"
-permalink: kb/169/Q169928/
+permalink: /kb/169/Q169928/
 ---
 
 ## Q169928: HOWTO: Open a SourceSafe Database with OLE Automation in C++

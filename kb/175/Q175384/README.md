@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175384: TN3270 Client Hangs with Keyboard Locked on Some Host Screens"
-permalink: kb/175/Q175384/
+permalink: /kb/175/Q175384/
 ---
 
 ## Q175384: TN3270 Client Hangs with Keyboard Locked on Some Host Screens

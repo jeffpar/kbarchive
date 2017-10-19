@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186743: International Characters Print Incorrectly in Schedule Plus"
-permalink: kb/186/Q186743/
+permalink: /kb/186/Q186743/
 ---
 
 ## Q186743: International Characters Print Incorrectly in Schedule Plus

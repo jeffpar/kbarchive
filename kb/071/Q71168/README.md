@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71168: Printing a File from MS-DOS Shell"
-permalink: kb/071/Q71168/
+permalink: /kb/071/Q71168/
 ---
 
 ## Q71168: Printing a File from MS-DOS Shell

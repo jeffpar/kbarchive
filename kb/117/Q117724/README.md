@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q117724: Err Msg: Disk Full [-34] w/Quark Xpress for Macintosh"
-permalink: kb/117/Q117724/
+title: "Q117724: Err Msg: Disk Full &#91;-34&#93; w/Quark Xpress for Macintosh"
+permalink: /kb/117/Q117724/
 ---
 
-## Q117724: Err Msg: Disk Full [-34] w/Quark Xpress for Macintosh
+## Q117724: Err Msg: Disk Full &#91;-34&#93; w/Quark Xpress for Macintosh
 
 	Article: Q117724
 	Product(s): Microsoft Windows NT

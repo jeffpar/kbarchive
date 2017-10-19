@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132608: Large Delete or Move in Find File Box Seems to Hang"
-permalink: kb/132/Q132608/
+permalink: /kb/132/Q132608/
 ---
 
 ## Q132608: Large Delete or Move in Find File Box Seems to Hang

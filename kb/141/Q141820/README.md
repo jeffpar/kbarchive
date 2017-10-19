@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141820: 3D Movie Maker: Error Messages When Trying to Save a Movie"
-permalink: kb/141/Q141820/
+permalink: /kb/141/Q141820/
 ---
 
 ## Q141820: 3D Movie Maker: Error Messages When Trying to Save a Movie

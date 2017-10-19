@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150615: Return of Arcade: Disk Label Mentions Windows NT File Menu"
-permalink: kb/150/Q150615/
+permalink: /kb/150/Q150615/
 ---
 
 ## Q150615: Return of Arcade: Disk Label Mentions Windows NT File Menu

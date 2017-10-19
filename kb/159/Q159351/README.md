@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159351: SecureSponsor Disables SNA 3.0 Win 3.x Password Change Feature"
-permalink: kb/159/Q159351/
+permalink: /kb/159/Q159351/
 ---
 
 ## Q159351: SecureSponsor Disables SNA 3.0 Win 3.x Password Change Feature

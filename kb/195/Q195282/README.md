@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195282: Windows 98 Step by Step Comments and Corrections"
-permalink: kb/195/Q195282/
+permalink: /kb/195/Q195282/
 ---
 
 ## Q195282: Windows 98 Step by Step Comments and Corrections

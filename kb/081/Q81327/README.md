@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81327: Positioning External Declarations in Assembly"
-permalink: kb/081/Q81327/
+permalink: /kb/081/Q81327/
 ---
 
 ## Q81327: Positioning External Declarations in Assembly

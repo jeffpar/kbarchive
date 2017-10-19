@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168078: FIX: C2784 Instantiating STL Objects with a UDT Parameter"
-permalink: kb/168/Q168078/
+permalink: /kb/168/Q168078/
 ---
 
 ## Q168078: FIX: C2784 Instantiating STL Objects with a UDT Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258567: Baseball 2001: Problems When You Change Windows Settings"
-permalink: kb/258/Q258567/
+permalink: /kb/258/Q258567/
 ---
 
 ## Q258567: Baseball 2001: Problems When You Change Windows Settings

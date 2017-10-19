@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165897: PPT: Versions of Internet Assistant"
-permalink: kb/165/Q165897/
+permalink: /kb/165/Q165897/
 ---
 
 ## Q165897: PPT: Versions of Internet Assistant

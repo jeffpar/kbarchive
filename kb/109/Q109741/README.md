@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109741: HOWTO: Scroll a Form When VB Forms are Limited to Screen Size"
-permalink: kb/109/Q109741/
+permalink: /kb/109/Q109741/
 ---
 
 ## Q109741: HOWTO: Scroll a Form When VB Forms are Limited to Screen Size

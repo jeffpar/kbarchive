@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255687: INFO: Support Guidelines for the System Stress Utility"
-permalink: kb/255/Q255687/
+permalink: /kb/255/Q255687/
 ---
 
 ## Q255687: INFO: Support Guidelines for the System Stress Utility

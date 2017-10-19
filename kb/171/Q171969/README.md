@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171969: Mac Bookshelf 98: Line Art Drawings May Not Print"
-permalink: kb/171/Q171969/
+permalink: /kb/171/Q171969/
 ---
 
 ## Q171969: Mac Bookshelf 98: Line Art Drawings May Not Print

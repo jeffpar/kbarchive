@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133221: How to Install a Server-Based Windows 95 Setup"
-permalink: kb/133/Q133221/
+permalink: /kb/133/Q133221/
 ---
 
 ## Q133221: How to Install a Server-Based Windows 95 Setup

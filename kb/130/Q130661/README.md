@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130661: Windows NT 3.5: STOP 0x0000000a in NETBT.SYS When Memory is Low"
-permalink: kb/130/Q130661/
+permalink: /kb/130/Q130661/
 ---
 
 ## Q130661: Windows NT 3.5: STOP 0x0000000a in NETBT.SYS When Memory is Low

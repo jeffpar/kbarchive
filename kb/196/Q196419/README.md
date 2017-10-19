@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196419: XADM: Move Server Dialog Box is Misleading"
-permalink: kb/196/Q196419/
+permalink: /kb/196/Q196419/
 ---
 
 ## Q196419: XADM: Move Server Dialog Box is Misleading

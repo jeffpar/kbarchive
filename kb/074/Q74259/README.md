@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74259: Windows Err Msgs: Compressed Windows Utilities"
-permalink: kb/074/Q74259/
+permalink: /kb/074/Q74259/
 ---
 
 ## Q74259: Windows Err Msgs: Compressed Windows Utilities

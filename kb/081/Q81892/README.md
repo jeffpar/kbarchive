@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81892: FIX: FNENI, FNCLEX Assembled Wrong After PROC USES"
-permalink: kb/081/Q81892/
+permalink: /kb/081/Q81892/
 ---
 
 ## Q81892: FIX: FNENI, FNCLEX Assembled Wrong After PROC USES

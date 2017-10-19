@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241482: XADM: Invalid TNEF from Internet Mail Service Makes Store Crash"
-permalink: kb/241/Q241482/
+permalink: /kb/241/Q241482/
 ---
 
 ## Q241482: XADM: Invalid TNEF from Internet Mail Service Makes Store Crash

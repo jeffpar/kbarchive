@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163445: XADM: NDR When Forwarding Message from Dec All-In-One"
-permalink: kb/163/Q163445/
+permalink: /kb/163/Q163445/
 ---
 
 ## Q163445: XADM: NDR When Forwarding Message from Dec All-In-One

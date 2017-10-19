@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82449: FujiGolf GP Faults When Icon Is Dropped on Application Window"
-permalink: kb/082/Q82449/
+permalink: /kb/082/Q82449/
 ---
 
 ## Q82449: FujiGolf GP Faults When Icon Is Dropped on Application Window

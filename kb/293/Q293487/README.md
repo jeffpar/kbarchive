@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293487: SMS: Advertisements That Should Run at Next Logon May Not Run"
-permalink: kb/293/Q293487/
+permalink: /kb/293/Q293487/
 ---
 
 ## Q293487: SMS: Advertisements That Should Run at Next Logon May Not Run

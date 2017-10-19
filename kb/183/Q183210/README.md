@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183210: PRB: Flicker in ATL Controls When Resized"
-permalink: kb/183/Q183210/
+permalink: /kb/183/Q183210/
 ---
 
 ## Q183210: PRB: Flicker in ATL Controls When Resized

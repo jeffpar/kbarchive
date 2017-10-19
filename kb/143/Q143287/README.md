@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143287: FIX: Visual Class Library's Registration Lost"
-permalink: kb/143/Q143287/
+permalink: /kb/143/Q143287/
 ---
 
 ## Q143287: FIX: Visual Class Library's Registration Lost

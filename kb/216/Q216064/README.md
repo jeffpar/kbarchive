@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216064: Cluster Server Has Clusdb Corruption After Power Outage"
-permalink: kb/216/Q216064/
+permalink: /kb/216/Q216064/
 ---
 
 ## Q216064: Cluster Server Has Clusdb Corruption After Power Outage

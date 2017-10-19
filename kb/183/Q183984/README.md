@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183984: How to Obtain Information About Your MSN Classic Account"
-permalink: kb/183/Q183984/
+permalink: /kb/183/Q183984/
 ---
 
 ## Q183984: How to Obtain Information About Your MSN Classic Account

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172644: SNA Manager User Name Column Does Not Sort Alphabetically"
-permalink: kb/172/Q172644/
+permalink: /kb/172/Q172644/
 ---
 
 ## Q172644: SNA Manager User Name Column Does Not Sort Alphabetically

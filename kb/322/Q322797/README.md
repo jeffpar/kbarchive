@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322797: Interix Subsystem Process Limitations in SFU 3.0"
-permalink: kb/322/Q322797/
+permalink: /kb/322/Q322797/
 ---
 
 ## Q322797: Interix Subsystem Process Limitations in SFU 3.0

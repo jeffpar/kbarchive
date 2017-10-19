@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165039: ODE97: MSDN Sampler Prompts to Create Shortcut on WIN NT 3.51"
-permalink: kb/165/Q165039/
+permalink: /kb/165/Q165039/
 ---
 
 ## Q165039: ODE97: MSDN Sampler Prompts to Create Shortcut on WIN NT 3.51

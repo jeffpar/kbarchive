@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135598: Forcibly Disconnect Remote Users Option May Not Work Correctly"
-permalink: kb/135/Q135598/
+permalink: /kb/135/Q135598/
 ---
 
 ## Q135598: Forcibly Disconnect Remote Users Option May Not Work Correctly

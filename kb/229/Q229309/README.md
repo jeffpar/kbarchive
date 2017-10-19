@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229309: Query May Fail for Meta Tags with Values Containing Digits"
-permalink: kb/229/Q229309/
+permalink: /kb/229/Q229309/
 ---
 
 ## Q229309: Query May Fail for Meta Tags with Values Containing Digits

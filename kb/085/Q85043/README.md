@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85043: FFAPI: Errors Caused by an Incorrect FFAPI File"
-permalink: kb/085/Q85043/
+permalink: /kb/085/Q85043/
 ---
 
 ## Q85043: FFAPI: Errors Caused by an Incorrect FFAPI File

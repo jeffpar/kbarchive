@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90457: WinLogin Doc Err: Group Settings Not Selected"
-permalink: kb/090/Q90457/
+permalink: /kb/090/Q90457/
 ---
 
 ## Q90457: WinLogin Doc Err: Group Settings Not Selected

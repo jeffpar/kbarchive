@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110525: FoxPro for Mac Doesn't Support Command-Line Switches"
-permalink: kb/110/Q110525/
+permalink: /kb/110/Q110525/
 ---
 
 ## Q110525: FoxPro for Mac Doesn't Support Command-Line Switches

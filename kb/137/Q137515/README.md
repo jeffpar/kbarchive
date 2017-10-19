@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137515: HOWTo: Using .pch Files Across Projects in the Visual Workbench"
-permalink: kb/137/Q137515/
+permalink: /kb/137/Q137515/
 ---
 
 ## Q137515: HOWTo: Using .pch Files Across Projects in the Visual Workbench

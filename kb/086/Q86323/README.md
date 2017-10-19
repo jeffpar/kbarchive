@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86323: PC Win: How to Move Folder to Top Level"
-permalink: kb/086/Q86323/
+permalink: /kb/086/Q86323/
 ---
 
 ## Q86323: PC Win: How to Move Folder to Top Level

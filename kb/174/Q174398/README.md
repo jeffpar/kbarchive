@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174398: How to Force Time Synchronization Between Cluster Nodes"
-permalink: kb/174/Q174398/
+permalink: /kb/174/Q174398/
 ---
 
 ## Q174398: How to Force Time Synchronization Between Cluster Nodes

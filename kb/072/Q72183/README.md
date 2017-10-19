@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72183: Loading MS-DOS 5.0 TSRs and Device Drivers into UMBs"
-permalink: kb/072/Q72183/
+permalink: /kb/072/Q72183/
 ---
 
 ## Q72183: Loading MS-DOS 5.0 TSRs and Device Drivers into UMBs

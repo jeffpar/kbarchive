@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74204: MS-DOS CHKDSK Does Not Show Disk Label As a Hidden File"
-permalink: kb/074/Q74204/
+permalink: /kb/074/Q74204/
 ---
 
 ## Q74204: MS-DOS CHKDSK Does Not Show Disk Label As a Hidden File

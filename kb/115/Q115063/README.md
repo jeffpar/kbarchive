@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115063: Dinosaurs May Have Poor Printed Output"
-permalink: kb/115/Q115063/
+permalink: /kb/115/Q115063/
 ---
 
 ## Q115063: Dinosaurs May Have Poor Printed Output

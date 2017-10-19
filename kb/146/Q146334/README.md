@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146334: Editing a Deleted Appointment Can Generate Error"
-permalink: kb/146/Q146334/
+permalink: /kb/146/Q146334/
 ---
 
 ## Q146334: Editing a Deleted Appointment Can Generate Error

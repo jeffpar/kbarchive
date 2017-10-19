@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103309: MWAV.EXE Err Msg: Drive Was Not Logged"
-permalink: kb/103/Q103309/
+permalink: /kb/103/Q103309/
 ---
 
 ## Q103309: MWAV.EXE Err Msg: Drive Was Not Logged

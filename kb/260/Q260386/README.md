@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260386: Allegiance Err Msg: CRC for &lt;Filename&gt; Does Not Match CRC..."
-permalink: kb/260/Q260386/
+permalink: /kb/260/Q260386/
 ---
 
 ## Q260386: Allegiance Err Msg: CRC for &lt;Filename&gt; Does Not Match CRC...

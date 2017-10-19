@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87925: PRB: Executing CV Results in &quot;Error Executing CV.EXE&quot;"
-permalink: kb/087/Q87925/
+permalink: /kb/087/Q87925/
 ---
 
 ## Q87925: PRB: Executing CV Results in &quot;Error Executing CV.EXE&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120520: Server Manager Disconnects Multiple Users"
-permalink: kb/120/Q120520/
+permalink: /kb/120/Q120520/
 ---
 
 ## Q120520: Server Manager Disconnects Multiple Users

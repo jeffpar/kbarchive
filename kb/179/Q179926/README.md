@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179926: DirectX: No Sound After You Install DirectX"
-permalink: kb/179/Q179926/
+permalink: /kb/179/Q179926/
 ---
 
 ## Q179926: DirectX: No Sound After You Install DirectX

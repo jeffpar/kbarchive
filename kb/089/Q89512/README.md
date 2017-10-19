@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89512: IBM Quietwriter III: Enhanced Printing Mode Not Supported"
-permalink: kb/089/Q89512/
+permalink: /kb/089/Q89512/
 ---
 
 ## Q89512: IBM Quietwriter III: Enhanced Printing Mode Not Supported

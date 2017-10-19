@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161231: Automap: Known Communication Settings for Some GPS Receivers"
-permalink: kb/161/Q161231/
+permalink: /kb/161/Q161231/
 ---
 
 ## Q161231: Automap: Known Communication Settings for Some GPS Receivers

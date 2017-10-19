@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258232: Cannot Run Delprof.exe Against Remote Computers on the Network"
-permalink: kb/258/Q258232/
+permalink: /kb/258/Q258232/
 ---
 
 ## Q258232: Cannot Run Delprof.exe Against Remote Computers on the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162710: WD97: Drawing Objects Incorrect (WD 97 File Opened in 6.x /7.x)"
-permalink: kb/162/Q162710/
+permalink: /kb/162/Q162710/
 ---
 
 ## Q162710: WD97: Drawing Objects Incorrect (WD 97 File Opened in 6.x /7.x)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166282: FIX: C2440 Caused by Template Function with Const Pointer"
-permalink: kb/166/Q166282/
+permalink: /kb/166/Q166282/
 ---
 
 ## Q166282: FIX: C2440 Caused by Template Function with Const Pointer

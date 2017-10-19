@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196228: SMS: Getdisk.exe Does Not Detect CD-ROM on Windows 95 Clients"
-permalink: kb/196/Q196228/
+permalink: /kb/196/Q196228/
 ---
 
 ## Q196228: SMS: Getdisk.exe Does Not Detect CD-ROM on Windows 95 Clients

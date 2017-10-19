@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169135: SMSINST: &quot;The File Does Not Contain a Valid Header&quot; Error"
-permalink: kb/169/Q169135/
+permalink: /kb/169/Q169135/
 ---
 
 ## Q169135: SMSINST: &quot;The File Does Not Contain a Valid Header&quot; Error

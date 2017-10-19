@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137992: Readme.txt File from Drivers Folder on Windows 95 CD-ROM"
-permalink: kb/137/Q137992/
+permalink: /kb/137/Q137992/
 ---
 
 ## Q137992: Readme.txt File from Drivers Folder on Windows 95 CD-ROM

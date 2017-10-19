@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242111: Windows NT does not recognize a new CD-ROM drive."
-permalink: kb/242/Q242111/
+permalink: /kb/242/Q242111/
 ---
 
 ## Q242111: Windows NT does not recognize a new CD-ROM drive.

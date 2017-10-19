@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131841: Glyph Problems With Automatic Type 1 To TrueType Font Converte"
-permalink: kb/131/Q131841/
+permalink: /kb/131/Q131841/
 ---
 
 ## Q131841: Glyph Problems With Automatic Type 1 To TrueType Font Converte

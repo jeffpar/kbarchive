@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189709: FIX: Class Browser Code Does Not Show Correct Visibility"
-permalink: kb/189/Q189709/
+permalink: /kb/189/Q189709/
 ---
 
 ## Q189709: FIX: Class Browser Code Does Not Show Correct Visibility

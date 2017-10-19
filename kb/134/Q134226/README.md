@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134226: PC DirSync: Purpose and Results of Choosing Global-List Option"
-permalink: kb/134/Q134226/
+permalink: /kb/134/Q134226/
 ---
 
 ## Q134226: PC DirSync: Purpose and Results of Choosing Global-List Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38367: Elevation of Boeing Field (North and South End)"
-permalink: kb/038/Q38367/
+permalink: /kb/038/Q38367/
 ---
 
 ## Q38367: Elevation of Boeing Field (North and South End)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190164: Using Terminal Server as a User Workstation"
-permalink: kb/190/Q190164/
+permalink: /kb/190/Q190164/
 ---
 
 ## Q190164: Using Terminal Server as a User Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293117: SMS: Client Install Fails Due to Pending Client Deinstallation"
-permalink: kb/293/Q293117/
+permalink: /kb/293/Q293117/
 ---
 
 ## Q293117: SMS: Client Install Fails Due to Pending Client Deinstallation

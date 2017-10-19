@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75327: Macros Do Not Become Part of the Environment"
-permalink: kb/075/Q75327/
+permalink: /kb/075/Q75327/
 ---
 
 ## Q75327: Macros Do Not Become Part of the Environment

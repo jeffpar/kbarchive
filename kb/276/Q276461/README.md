@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276461: Idle time settings in MSN 5.3, how to change or remove"
-permalink: kb/276/Q276461/
+permalink: /kb/276/Q276461/
 ---
 
 ## Q276461: Idle time settings in MSN 5.3, how to change or remove

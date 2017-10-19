@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262632: Run IIS 5.0/5.1 Instead of PWS on Windows 2000 Professional"
-permalink: kb/262/Q262632/
+permalink: /kb/262/Q262632/
 ---
 
 ## Q262632: Run IIS 5.0/5.1 Instead of PWS on Windows 2000 Professional

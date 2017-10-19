@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279752: SMS: Sms.ini File Is Missing Site Code and Domain Information"
-permalink: kb/279/Q279752/
+permalink: /kb/279/Q279752/
 ---
 
 ## Q279752: SMS: Sms.ini File Is Missing Site Code and Domain Information

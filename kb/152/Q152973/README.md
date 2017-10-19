@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152973: Setprop.exe Show How to Add Properties at Run Time"
-permalink: kb/152/Q152973/
+permalink: /kb/152/Q152973/
 ---
 
 ## Q152973: Setprop.exe Show How to Add Properties at Run Time

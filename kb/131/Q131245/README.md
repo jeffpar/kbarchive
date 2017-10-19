@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131245: Setting Up The Microsoft Network on a Second Computer"
-permalink: kb/131/Q131245/
+permalink: /kb/131/Q131245/
 ---
 
 ## Q131245: Setting Up The Microsoft Network on a Second Computer

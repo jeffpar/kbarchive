@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275565: Multiple-Threaded 3270/LUA App May Hang When Opening LU"
-permalink: kb/275/Q275565/
+permalink: /kb/275/Q275565/
 ---
 
 ## Q275565: Multiple-Threaded 3270/LUA App May Hang When Opening LU

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128585: PC Ext: External May Fail to Answer Incoming Calls"
-permalink: kb/128/Q128585/
+permalink: /kb/128/Q128585/
 ---
 
 ## Q128585: PC Ext: External May Fail to Answer Incoming Calls

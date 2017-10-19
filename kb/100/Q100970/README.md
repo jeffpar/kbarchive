@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100970: ADT: How to Give Users the Ability to Change Passwords (2.0)"
-permalink: kb/100/Q100970/
+permalink: /kb/100/Q100970/
 ---
 
 ## Q100970: ADT: How to Give Users the Ability to Change Passwords (2.0)

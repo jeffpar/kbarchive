@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199869: SMS: Assigning Class and Instance Security Rights"
-permalink: kb/199/Q199869/
+permalink: /kb/199/Q199869/
 ---
 
 ## Q199869: SMS: Assigning Class and Instance Security Rights

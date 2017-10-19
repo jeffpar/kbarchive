@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63086: How MS-DOS PRINT.COM Can Take 80K of Memory"
-permalink: kb/063/Q63086/
+permalink: /kb/063/Q63086/
 ---
 
 ## Q63086: How MS-DOS PRINT.COM Can Take 80K of Memory

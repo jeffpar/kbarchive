@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194615: FIX: Project Deletes Precompiled Header Created by Other Project"
-permalink: kb/194/Q194615/
+permalink: /kb/194/Q194615/
 ---
 
 ## Q194615: FIX: Project Deletes Precompiled Header Created by Other Project

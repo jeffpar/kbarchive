@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237987: FTP GET Does Not Work Correctly on UNC Virtual Directories"
-permalink: kb/237/Q237987/
+permalink: /kb/237/Q237987/
 ---
 
 ## Q237987: FTP GET Does Not Work Correctly on UNC Virtual Directories

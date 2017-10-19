@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182564: Maintenance Mode Windows Client Installs to Wrong Directory"
-permalink: kb/182/Q182564/
+permalink: /kb/182/Q182564/
 ---
 
 ## Q182564: Maintenance Mode Windows Client Installs to Wrong Directory

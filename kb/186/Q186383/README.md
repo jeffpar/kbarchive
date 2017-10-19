@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186383: HOWTO: Use CDao for Connections to a Secure Attached Table"
-permalink: kb/186/Q186383/
+permalink: /kb/186/Q186383/
 ---
 
 ## Q186383: HOWTO: Use CDao for Connections to a Secure Attached Table

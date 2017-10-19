@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150847: File Manager Truncates Long File Names Containing Spaces"
-permalink: kb/150/Q150847/
+permalink: /kb/150/Q150847/
 ---
 
 ## Q150847: File Manager Truncates Long File Names Containing Spaces

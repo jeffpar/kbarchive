@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94377: MemMaker Cannot Process Files with More Than 511 Lines"
-permalink: kb/094/Q94377/
+permalink: /kb/094/Q94377/
 ---
 
 ## Q94377: MemMaker Cannot Process Files with More Than 511 Lines

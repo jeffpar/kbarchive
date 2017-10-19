@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168064: PPTP Protocol Not Available on MCA Computers"
-permalink: kb/168/Q168064/
+permalink: /kb/168/Q168064/
 ---
 
 ## Q168064: PPTP Protocol Not Available on MCA Computers

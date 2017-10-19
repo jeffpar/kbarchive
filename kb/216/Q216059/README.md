@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216059: SMS: SQL Server Requirements Incorrect in Administrator's Guide"
-permalink: kb/216/Q216059/
+permalink: /kb/216/Q216059/
 ---
 
 ## Q216059: SMS: SQL Server Requirements Incorrect in Administrator's Guide

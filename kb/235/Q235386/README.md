@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235386: HOWTO: Trigger a Beep in VBCE Applications"
-permalink: kb/235/Q235386/
+permalink: /kb/235/Q235386/
 ---
 
 ## Q235386: HOWTO: Trigger a Beep in VBCE Applications

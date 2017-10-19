@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119356: Multi-Language Clients Append Extended Headers"
-permalink: kb/119/Q119356/
+permalink: /kb/119/Q119356/
 ---
 
 ## Q119356: Multi-Language Clients Append Extended Headers

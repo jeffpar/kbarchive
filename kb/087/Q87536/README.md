@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87536: PRB: Crash Double-Clicking File in Open or Save Common Dialog"
-permalink: kb/087/Q87536/
+permalink: /kb/087/Q87536/
 ---
 
 ## Q87536: PRB: Crash Double-Clicking File in Open or Save Common Dialog

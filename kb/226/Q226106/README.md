@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226106: MS Commerce Solutions: Some Figures Printed Incorrectly"
-permalink: kb/226/Q226106/
+permalink: /kb/226/Q226106/
 ---
 
 ## Q226106: MS Commerce Solutions: Some Figures Printed Incorrectly

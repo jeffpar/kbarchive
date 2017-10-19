@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119263: File Listings for the Downloadable (BBS) MS-DOS 6.22 Step-Up"
-permalink: kb/119/Q119263/
+permalink: /kb/119/Q119263/
 ---
 
 ## Q119263: File Listings for the Downloadable (BBS) MS-DOS 6.22 Step-Up

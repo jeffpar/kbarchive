@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156749: WSAAsyncGetHostByName() Returns IP Address in Reverse Order"
-permalink: kb/156/Q156749/
+permalink: /kb/156/Q156749/
 ---
 
 ## Q156749: WSAAsyncGetHostByName() Returns IP Address in Reverse Order

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176950: Age of Empires: Setup Stops Responding"
-permalink: kb/176/Q176950/
+permalink: /kb/176/Q176950/
 ---
 
 ## Q176950: Age of Empires: Setup Stops Responding

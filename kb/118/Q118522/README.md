@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118522: Numerical Recipes Disk Included with PowerStation"
-permalink: kb/118/Q118522/
+permalink: /kb/118/Q118522/
 ---
 
 ## Q118522: Numerical Recipes Disk Included with PowerStation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221750: FIX: Upsizing to SQL 7.0 with Currency Type Fails"
-permalink: kb/221/Q221750/
+permalink: /kb/221/Q221750/
 ---
 
 ## Q221750: FIX: Upsizing to SQL 7.0 with Currency Type Fails

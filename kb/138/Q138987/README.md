@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138987: Novell Clients are Denied Access Logging on to FPNW Servers"
-permalink: kb/138/Q138987/
+permalink: /kb/138/Q138987/
 ---
 
 ## Q138987: Novell Clients are Denied Access Logging on to FPNW Servers

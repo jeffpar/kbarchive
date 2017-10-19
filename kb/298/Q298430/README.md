@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298430: WD97: Nothing Happens When You Click a Hyperlink in a WordMail M"
-permalink: kb/298/Q298430/
+permalink: /kb/298/Q298430/
 ---
 
 ## Q298430: WD97: Nothing Happens When You Click a Hyperlink in a WordMail M

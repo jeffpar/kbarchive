@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123437: PC Adm: Err Msg: Could Not Access Requestor's Configuration..."
-permalink: kb/123/Q123437/
+permalink: /kb/123/Q123437/
 ---
 
 ## Q123437: PC Adm: Err Msg: Could Not Access Requestor's Configuration...

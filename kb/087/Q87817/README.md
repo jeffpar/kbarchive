@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87817: INFO: TrueType Font Converters and Editors"
-permalink: kb/087/Q87817/
+permalink: /kb/087/Q87817/
 ---
 
 ## Q87817: INFO: TrueType Font Converters and Editors

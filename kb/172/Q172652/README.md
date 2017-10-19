@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172652: Computer with USB Devices Hangs"
-permalink: kb/172/Q172652/
+permalink: /kb/172/Q172652/
 ---
 
 ## Q172652: Computer with USB Devices Hangs

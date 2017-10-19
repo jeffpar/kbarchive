@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168120: User Policy May Be Used When Group Policies Are Enabled"
-permalink: kb/168/Q168120/
+permalink: /kb/168/Q168120/
 ---
 
 ## Q168120: User Policy May Be Used When Group Policies Are Enabled

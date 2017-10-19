@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161240: HOWTO: Select All Text in a Field When It Gets the Focus"
-permalink: kb/161/Q161240/
+permalink: /kb/161/Q161240/
 ---
 
 ## Q161240: HOWTO: Select All Text in a Field When It Gets the Focus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238302: SMS: Logon Points Are Not Removed Correctly"
-permalink: kb/238/Q238302/
+permalink: /kb/238/Q238302/
 ---
 
 ## Q238302: SMS: Logon Points Are Not Removed Correctly

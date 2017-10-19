@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97397: FONTUTIL.RTF - Technical Article"
-permalink: kb/097/Q97397/
+permalink: /kb/097/Q97397/
 ---
 
 ## Q97397: FONTUTIL.RTF - Technical Article

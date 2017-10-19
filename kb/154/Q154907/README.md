@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154907: How to Enable or Disable Quick View"
-permalink: kb/154/Q154907/
+permalink: /kb/154/Q154907/
 ---
 
 ## Q154907: How to Enable or Disable Quick View

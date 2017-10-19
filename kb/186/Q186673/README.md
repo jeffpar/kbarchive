@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186673: XWEB: Error Msg: Unable to Delete Message Using OWA"
-permalink: kb/186/Q186673/
+permalink: /kb/186/Q186673/
 ---
 
 ## Q186673: XWEB: Error Msg: Unable to Delete Message Using OWA

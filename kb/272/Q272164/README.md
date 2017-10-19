@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272164: MSCEP.DLL Add-on No Longer Functions After One Successful Enroll"
-permalink: kb/272/Q272164/
+permalink: /kb/272/Q272164/
 ---
 
 ## Q272164: MSCEP.DLL Add-on No Longer Functions After One Successful Enroll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145735: BUG: SQL Counters Not Available Under Integrated Security"
-permalink: kb/145/Q145735/
+permalink: /kb/145/Q145735/
 ---
 
 ## Q145735: BUG: SQL Counters Not Available Under Integrated Security

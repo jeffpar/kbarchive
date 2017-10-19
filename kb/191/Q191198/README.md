@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191198: SAMPLE: SFOLDER.EXE Gets the Path of a Special Folder"
-permalink: kb/191/Q191198/
+permalink: /kb/191/Q191198/
 ---
 
 ## Q191198: SAMPLE: SFOLDER.EXE Gets the Path of a Special Folder

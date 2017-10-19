@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177988: XADM: BCC Line Is Viewable from Recipient's Mailbox"
-permalink: kb/177/Q177988/
+permalink: /kb/177/Q177988/
 ---
 
 ## Q177988: XADM: BCC Line Is Viewable from Recipient's Mailbox

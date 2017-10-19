@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125418: UNCONF: PRB: Error in SCX: Objtype=1 not found"
-permalink: kb/125/Q125418/
+permalink: /kb/125/Q125418/
 ---
 
 ## Q125418: UNCONF: PRB: Error in SCX: Objtype=1 not found

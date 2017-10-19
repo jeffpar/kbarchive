@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131425: Windows NT Recognizes Only One Processor On HP XU 5/90C"
-permalink: kb/131/Q131425/
+permalink: /kb/131/Q131425/
 ---
 
 ## Q131425: Windows NT Recognizes Only One Processor On HP XU 5/90C

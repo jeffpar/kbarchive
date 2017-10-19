@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99734: System Apple Loses Colors When Musical Instruments Is Running"
-permalink: kb/099/Q99734/
+permalink: /kb/099/Q99734/
 ---
 
 ## Q99734: System Apple Loses Colors When Musical Instruments Is Running

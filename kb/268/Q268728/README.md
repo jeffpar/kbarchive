@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268728: XADM: Active Directory Connector Setup Fails with Error C10361ca"
-permalink: kb/268/Q268728/
+permalink: /kb/268/Q268728/
 ---
 
 ## Q268728: XADM: Active Directory Connector Setup Fails with Error C10361ca

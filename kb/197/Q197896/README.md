@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197896: Uptomp.exe Requires Access to the Txtsetup.sif File"
-permalink: kb/197/Q197896/
+permalink: /kb/197/Q197896/
 ---
 
 ## Q197896: Uptomp.exe Requires Access to the Txtsetup.sif File

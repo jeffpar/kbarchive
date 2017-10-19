@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97595: MS-DOS 6.0 and 6.2: PATH Not Limited to 128 Characters"
-permalink: kb/097/Q97595/
+permalink: /kb/097/Q97595/
 ---
 
 ## Q97595: MS-DOS 6.0 and 6.2: PATH Not Limited to 128 Characters

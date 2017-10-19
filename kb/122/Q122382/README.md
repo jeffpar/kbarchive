@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122382: Scheduler Overwrites Package Property Information"
-permalink: kb/122/Q122382/
+permalink: /kb/122/Q122382/
 ---
 
 ## Q122382: Scheduler Overwrites Package Property Information

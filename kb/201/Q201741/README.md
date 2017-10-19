@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201741: INFO: Differences of Behavior in Debug Mode and Compile Mode"
-permalink: kb/201/Q201741/
+permalink: /kb/201/Q201741/
 ---
 
 ## Q201741: INFO: Differences of Behavior in Debug Mode and Compile Mode

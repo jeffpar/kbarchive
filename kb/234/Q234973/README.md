@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234973: PRB: Error 80042114 Web Server Doesn't Support Selected Provider"
-permalink: kb/234/Q234973/
+permalink: /kb/234/Q234973/
 ---
 
 ## Q234973: PRB: Error 80042114 Web Server Doesn't Support Selected Provider

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67792: FIX: PWB Extensions in MS-DOS Cannot Shell to MS-DOS"
-permalink: kb/067/Q67792/
+permalink: /kb/067/Q67792/
 ---
 
 ## Q67792: FIX: PWB Extensions in MS-DOS Cannot Shell to MS-DOS

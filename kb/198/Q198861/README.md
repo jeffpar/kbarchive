@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198861: XFOR:JPN cc:Mail DB8 PO w/Problem Characters Can Crash the NTVDM"
-permalink: kb/198/Q198861/
+permalink: /kb/198/Q198861/
 ---
 
 ## Q198861: XFOR:JPN cc:Mail DB8 PO w/Problem Characters Can Crash the NTVDM

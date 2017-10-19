@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152099: MFC Dialog Font Substitution Under DBCS System"
-permalink: kb/152/Q152099/
+permalink: /kb/152/Q152099/
 ---
 
 ## Q152099: MFC Dialog Font Substitution Under DBCS System

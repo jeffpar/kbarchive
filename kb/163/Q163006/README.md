@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163006: Section Heading of 32 or More Characters Truncated"
-permalink: kb/163/Q163006/
+permalink: /kb/163/Q163006/
 ---
 
 ## Q163006: Section Heading of 32 or More Characters Truncated

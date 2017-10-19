@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165462: XCLN: Unable to Access Exchange Forms in the ORG Forms Library"
-permalink: kb/165/Q165462/
+permalink: /kb/165/Q165462/
 ---
 
 ## Q165462: XCLN: Unable to Access Exchange Forms in the ORG Forms Library

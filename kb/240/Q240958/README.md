@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240958: Command Failed Error Occurs When Using SNACFG"
-permalink: kb/240/Q240958/
+permalink: /kb/240/Q240958/
 ---
 
 ## Q240958: Command Failed Error Occurs When Using SNACFG

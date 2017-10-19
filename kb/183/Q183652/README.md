@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183652: Access Violation When More Than 200 Adapters Are Installed"
-permalink: kb/183/Q183652/
+permalink: /kb/183/Q183652/
 ---
 
 ## Q183652: Access Violation When More Than 200 Adapters Are Installed

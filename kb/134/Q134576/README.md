@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134576: PostScript Errors Printing with Bitstream Facelift 2.0"
-permalink: kb/134/Q134576/
+permalink: /kb/134/Q134576/
 ---
 
 ## Q134576: PostScript Errors Printing with Bitstream Facelift 2.0

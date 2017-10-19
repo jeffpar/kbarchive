@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114126: PC DOS: Mail Does Not Release Memory After Notice 0"
-permalink: kb/114/Q114126/
+permalink: /kb/114/Q114126/
 ---
 
 ## Q114126: PC DOS: Mail Does Not Release Memory After Notice 0

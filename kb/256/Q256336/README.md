@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256336: Encarta Virtual Globe: You Must Log On with Administrator Rights"
-permalink: kb/256/Q256336/
+permalink: /kb/256/Q256336/
 ---
 
 ## Q256336: Encarta Virtual Globe: You Must Log On with Administrator Rights

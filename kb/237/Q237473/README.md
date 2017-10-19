@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237473: XCLN: 64 Attachment Limit with Exchange Client"
-permalink: kb/237/Q237473/
+permalink: /kb/237/Q237473/
 ---
 
 ## Q237473: XCLN: 64 Attachment Limit with Exchange Client

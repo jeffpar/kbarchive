@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149263: XCLN: Close and Return from Word Freedoc Has No Cancel"
-permalink: kb/149/Q149263/
+permalink: /kb/149/Q149263/
 ---
 
 ## Q149263: XCLN: Close and Return from Word Freedoc Has No Cancel

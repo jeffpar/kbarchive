@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198926: PRB: Visual C++ Not Tested for Windows NT Checked Build"
-permalink: kb/198/Q198926/
+permalink: /kb/198/Q198926/
 ---
 
 ## Q198926: PRB: Visual C++ Not Tested for Windows NT Checked Build

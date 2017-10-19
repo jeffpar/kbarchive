@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195485: WD97: How to Create Ruling Lines or Blank Underlines in Word"
-permalink: kb/195/Q195485/
+permalink: /kb/195/Q195485/
 ---
 
 ## Q195485: WD97: How to Create Ruling Lines or Blank Underlines in Word

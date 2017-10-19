@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152554: XADM: Viewing Event Viewer Files On Other Computers"
-permalink: kb/152/Q152554/
+permalink: /kb/152/Q152554/
 ---
 
 ## Q152554: XADM: Viewing Event Viewer Files On Other Computers

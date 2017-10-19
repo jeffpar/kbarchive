@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58556: Mac GW: How Gateway Servers Work"
-permalink: kb/058/Q58556/
+permalink: /kb/058/Q58556/
 ---
 
 ## Q58556: Mac GW: How Gateway Servers Work

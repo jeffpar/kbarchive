@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118965: Wall Data Rumba for the AS/400 GP Faults in 5250 Session"
-permalink: kb/118/Q118965/
+permalink: /kb/118/Q118965/
 ---
 
 ## Q118965: Wall Data Rumba for the AS/400 GP Faults in 5250 Session

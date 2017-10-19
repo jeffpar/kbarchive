@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159541: SMS: HelpDesk Chat Fails on Administrator on First Attempt"
-permalink: kb/159/Q159541/
+permalink: /kb/159/Q159541/
 ---
 
 ## Q159541: SMS: HelpDesk Chat Fails on Administrator on First Attempt

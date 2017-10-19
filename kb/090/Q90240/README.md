@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90240: No Pop-Up Dialog Box in Windows for Workgroups TSR"
-permalink: kb/090/Q90240/
+permalink: /kb/090/Q90240/
 ---
 
 ## Q90240: No Pop-Up Dialog Box in Windows for Workgroups TSR

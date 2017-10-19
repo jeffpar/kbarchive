@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94837: PWB Extension Converts Selected Text to Uppercase Letters"
-permalink: kb/094/Q94837/
+permalink: /kb/094/Q94837/
 ---
 
 ## Q94837: PWB Extension Converts Selected Text to Uppercase Letters

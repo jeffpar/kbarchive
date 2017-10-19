@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253298: PRB: HTML Template Items' Names Changed in WebClass Designer"
-permalink: kb/253/Q253298/
+permalink: /kb/253/Q253298/
 ---
 
 ## Q253298: PRB: HTML Template Items' Names Changed in WebClass Designer

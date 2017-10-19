@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303231: Running MSN Explorer In &quot;Compatibility Mode&quot; In Windows XP May C"
-permalink: kb/303/Q303231/
+permalink: /kb/303/Q303231/
 ---
 
 ## Q303231: Running MSN Explorer In &quot;Compatibility Mode&quot; In Windows XP May C

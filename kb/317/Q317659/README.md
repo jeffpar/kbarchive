@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317659: PRB: If You Rebind Only the Solution File, Change Can't Check In"
-permalink: kb/317/Q317659/
+permalink: /kb/317/Q317659/
 ---
 
 ## Q317659: PRB: If You Rebind Only the Solution File, Change Can't Check In

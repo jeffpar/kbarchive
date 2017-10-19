@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86828: BUG: CodeView Breakpoints with Nested Quotes Unrecognized"
-permalink: kb/086/Q86828/
+permalink: /kb/086/Q86828/
 ---
 
 ## Q86828: BUG: CodeView Breakpoints with Nested Quotes Unrecognized

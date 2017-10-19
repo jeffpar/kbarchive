@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216339: Using SSL, Root Certifying Authority Certificates, and Iisca.exe"
-permalink: kb/216/Q216339/
+permalink: /kb/216/Q216339/
 ---
 
 ## Q216339: Using SSL, Root Certifying Authority Certificates, and Iisca.exe

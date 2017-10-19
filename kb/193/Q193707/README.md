@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193707: XADM: Error Message: Could not open the file named Mdbmsg.dll"
-permalink: kb/193/Q193707/
+permalink: /kb/193/Q193707/
 ---
 
 ## Q193707: XADM: Error Message: Could not open the file named Mdbmsg.dll

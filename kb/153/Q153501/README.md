@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153501: PRB: &quot;Error reading from file&quot; When Logging into SourceSafe"
-permalink: kb/153/Q153501/
+permalink: /kb/153/Q153501/
 ---
 
 ## Q153501: PRB: &quot;Error reading from file&quot; When Logging into SourceSafe

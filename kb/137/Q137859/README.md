@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137859: Security Options Not Functional in Server Tools for Windows 95"
-permalink: kb/137/Q137859/
+permalink: /kb/137/Q137859/
 ---
 
 ## Q137859: Security Options Not Functional in Server Tools for Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95250: How to Recycle Deleted Records in a Multiuser Environment"
-permalink: kb/095/Q95250/
+permalink: /kb/095/Q95250/
 ---
 
 ## Q95250: How to Recycle Deleted Records in a Multiuser Environment

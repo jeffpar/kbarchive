@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257788: FIX: DataGrid Row Selector Does Not Update"
-permalink: kb/257/Q257788/
+permalink: /kb/257/Q257788/
 ---
 
 ## Q257788: FIX: DataGrid Row Selector Does Not Update

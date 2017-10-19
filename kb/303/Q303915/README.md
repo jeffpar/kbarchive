@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303915: MechCommander 2.0: Image Extends Beyond Monitor Borders"
-permalink: kb/303/Q303915/
+permalink: /kb/303/Q303915/
 ---
 
 ## Q303915: MechCommander 2.0: Image Extends Beyond Monitor Borders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153569: HOWTO: Get a Typelib (.TLB) File for a Visual Basic OLE Server"
-permalink: kb/153/Q153569/
+permalink: /kb/153/Q153569/
 ---
 
 ## Q153569: HOWTO: Get a Typelib (.TLB) File for a Visual Basic OLE Server

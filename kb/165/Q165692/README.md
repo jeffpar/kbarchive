@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165692: INFO: Visual C++ 5.0 Readme, OLE DB SDK Issues"
-permalink: kb/165/Q165692/
+permalink: /kb/165/Q165692/
 ---
 
 ## Q165692: INFO: Visual C++ 5.0 Readme, OLE DB SDK Issues

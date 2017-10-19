@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173881: STOP 0x0000000A in Netbt.sys on a Multiprocessor Computer"
-permalink: kb/173/Q173881/
+permalink: /kb/173/Q173881/
 ---
 
 ## Q173881: STOP 0x0000000A in Netbt.sys on a Multiprocessor Computer

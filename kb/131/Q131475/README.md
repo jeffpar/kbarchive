@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131475: Use #INCLUDE to Add Header Files to a Visual FoxPro Proj"
-permalink: kb/131/Q131475/
+permalink: /kb/131/Q131475/
 ---
 
 ## Q131475: Use #INCLUDE to Add Header Files to a Visual FoxPro Proj

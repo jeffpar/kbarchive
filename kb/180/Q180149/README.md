@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180149: LU3 Print Jobs May Fail to Print After Initial Job Completes"
-permalink: kb/180/Q180149/
+permalink: /kb/180/Q180149/
 ---
 
 ## Q180149: LU3 Print Jobs May Fail to Print After Initial Job Completes

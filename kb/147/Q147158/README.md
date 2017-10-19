@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147158: PC DirSync: Imports with Template Information Take Long Time"
-permalink: kb/147/Q147158/
+permalink: /kb/147/Q147158/
 ---
 
 ## Q147158: PC DirSync: Imports with Template Information Take Long Time

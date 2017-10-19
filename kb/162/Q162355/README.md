@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162355: Internet Tab Missing or Duplicated in Message Properties"
-permalink: kb/162/Q162355/
+permalink: /kb/162/Q162355/
 ---
 
 ## Q162355: Internet Tab Missing or Duplicated in Message Properties

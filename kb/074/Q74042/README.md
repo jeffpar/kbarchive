@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74042: HOWTO: How to Use PeekMessage() Correctly in Windows"
-permalink: kb/074/Q74042/
+permalink: /kb/074/Q74042/
 ---
 
 ## Q74042: HOWTO: How to Use PeekMessage() Correctly in Windows

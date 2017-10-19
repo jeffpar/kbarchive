@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132580: Cannot Start Windows 95 After Installing Close-Up"
-permalink: kb/132/Q132580/
+permalink: /kb/132/Q132580/
 ---
 
 ## Q132580: Cannot Start Windows 95 After Installing Close-Up

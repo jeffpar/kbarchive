@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199072: CIFS or Public SMB Information on Common Internet File System"
-permalink: kb/199/Q199072/
+permalink: /kb/199/Q199072/
 ---
 
 ## Q199072: CIFS or Public SMB Information on Common Internet File System

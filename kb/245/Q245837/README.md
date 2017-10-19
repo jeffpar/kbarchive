@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245837: XFOR: Incomplete Dirsync from Lotus Notes to Exchange Server"
-permalink: kb/245/Q245837/
+permalink: /kb/245/Q245837/
 ---
 
 ## Q245837: XFOR: Incomplete Dirsync from Lotus Notes to Exchange Server

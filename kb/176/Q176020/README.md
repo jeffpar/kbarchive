@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176020: SNA Server Starts Slowly When Configured with 15000 3270 LUs"
-permalink: kb/176/Q176020/
+permalink: /kb/176/Q176020/
 ---
 
 ## Q176020: SNA Server Starts Slowly When Configured with 15000 3270 LUs

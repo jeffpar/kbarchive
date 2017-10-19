@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159044: Error Message: Schedule Plus DLL Unable to Initialize"
-permalink: kb/159/Q159044/
+permalink: /kb/159/Q159044/
 ---
 
 ## Q159044: Error Message: Schedule Plus DLL Unable to Initialize

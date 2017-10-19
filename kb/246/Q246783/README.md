@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246783: Server Running NetShield NT and QuotaAdvisor Stops Responding"
-permalink: kb/246/Q246783/
+permalink: /kb/246/Q246783/
 ---
 
 ## Q246783: Server Running NetShield NT and QuotaAdvisor Stops Responding

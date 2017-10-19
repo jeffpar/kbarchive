@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115162: PC WFW: Microsoft At Work PC Fax with Mail 3.2 Windows Client"
-permalink: kb/115/Q115162/
+permalink: /kb/115/Q115162/
 ---
 
 ## Q115162: PC WFW: Microsoft At Work PC Fax with Mail 3.2 Windows Client

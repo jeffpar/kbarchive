@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72177: IdleWild Does Not Work with MS-DOS Applications"
-permalink: kb/072/Q72177/
+permalink: /kb/072/Q72177/
 ---
 
 ## Q72177: IdleWild Does Not Work with MS-DOS Applications

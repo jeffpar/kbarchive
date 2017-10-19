@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143306: BUG: COLOR on @...GET Push Button Does Not Work as Expected"
-permalink: kb/143/Q143306/
+permalink: /kb/143/Q143306/
 ---
 
 ## Q143306: BUG: COLOR on @...GET Push Button Does Not Work as Expected

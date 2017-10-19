@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32846: Switch Settings for AT&amp;T StarLAN Network Adapter"
-permalink: kb/032/Q32846/
+permalink: /kb/032/Q32846/
 ---
 
 ## Q32846: Switch Settings for AT&amp;T StarLAN Network Adapter

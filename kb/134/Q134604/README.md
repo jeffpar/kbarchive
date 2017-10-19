@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134604: Sound Problems in the &quot;_Are_You_Afraid_Of_The_Dark?_&quot; Game"
-permalink: kb/134/Q134604/
+permalink: /kb/134/Q134604/
 ---
 
 ## Q134604: Sound Problems in the &quot;_Are_You_Afraid_Of_The_Dark?_&quot; Game

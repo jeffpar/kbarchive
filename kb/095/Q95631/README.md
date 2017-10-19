@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95631: Changing or Reinstalling MS-DOS Shell Video Files"
-permalink: kb/095/Q95631/
+permalink: /kb/095/Q95631/
 ---
 
 ## Q95631: Changing or Reinstalling MS-DOS Shell Video Files

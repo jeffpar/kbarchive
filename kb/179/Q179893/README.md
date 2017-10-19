@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179893: XWEB: Forwarding Message Sends Message to All on BCC: Line"
-permalink: kb/179/Q179893/
+permalink: /kb/179/Q179893/
 ---
 
 ## Q179893: XWEB: Forwarding Message Sends Message to All on BCC: Line

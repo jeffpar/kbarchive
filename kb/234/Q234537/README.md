@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234537: Heap Corruption May Occur When Changing the Properties of SMB"
-permalink: kb/234/Q234537/
+permalink: /kb/234/Q234537/
 ---
 
 ## Q234537: Heap Corruption May Occur When Changing the Properties of SMB

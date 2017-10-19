@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198425: PRB: GetLineFromChar Method Does Not Function in VFP 5.0"
-permalink: kb/198/Q198425/
+permalink: /kb/198/Q198425/
 ---
 
 ## Q198425: PRB: GetLineFromChar Method Does Not Function in VFP 5.0

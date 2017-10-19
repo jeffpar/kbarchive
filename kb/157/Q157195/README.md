@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157195: WD97: How to Add or Remove a Command from a Shortcut Menu"
-permalink: kb/157/Q157195/
+permalink: /kb/157/Q157195/
 ---
 
 ## Q157195: WD97: How to Add or Remove a Command from a Shortcut Menu

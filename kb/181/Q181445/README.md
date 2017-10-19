@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181445: XADM: Files Needed to Perform Exchange NT Backup on Workstation"
-permalink: kb/181/Q181445/
+permalink: /kb/181/Q181445/
 ---
 
 ## Q181445: XADM: Files Needed to Perform Exchange NT Backup on Workstation

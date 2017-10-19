@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167325: FIX: Env Vars Not Used in Exported Makefile Dependencies"
-permalink: kb/167/Q167325/
+permalink: /kb/167/Q167325/
 ---
 
 ## Q167325: FIX: Env Vars Not Used in Exported Makefile Dependencies

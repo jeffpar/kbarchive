@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190465: PRB: &quot;Edit Redo&quot; Not Available for Text Box"
-permalink: kb/190/Q190465/
+permalink: /kb/190/Q190465/
 ---
 
 ## Q190465: PRB: &quot;Edit Redo&quot; Not Available for Text Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148627: BUG: NMAKE Fails If File Names Contain Special Characters"
-permalink: kb/148/Q148627/
+permalink: /kb/148/Q148627/
 ---
 
 ## Q148627: BUG: NMAKE Fails If File Names Contain Special Characters

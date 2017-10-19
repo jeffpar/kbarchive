@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170961: HOWTO: Change an Access Database Password"
-permalink: kb/170/Q170961/
+permalink: /kb/170/Q170961/
 ---
 
 ## Q170961: HOWTO: Change an Access Database Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190221: BUG: Queries or Views Do Not Appear in Data Form Wizard"
-permalink: kb/190/Q190221/
+permalink: /kb/190/Q190221/
 ---
 
 ## Q190221: BUG: Queries or Views Do Not Appear in Data Form Wizard

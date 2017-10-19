@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84980: SAMPLE: XpandDlg.exe Demonstrates Changing Dialog Box Size"
-permalink: kb/084/Q84980/
+permalink: /kb/084/Q84980/
 ---
 
 ## Q84980: SAMPLE: XpandDlg.exe Demonstrates Changing Dialog Box Size

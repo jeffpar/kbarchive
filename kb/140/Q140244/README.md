@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140244: How to Dock/Undock Project Manager or Toolbar Programmatically"
-permalink: kb/140/Q140244/
+permalink: /kb/140/Q140244/
 ---
 
 ## Q140244: How to Dock/Undock Project Manager or Toolbar Programmatically

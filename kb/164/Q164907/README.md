@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164907: Backup Host Account Cache Service Hangs on Startup on WinNT BDC"
-permalink: kb/164/Q164907/
+permalink: /kb/164/Q164907/
 ---
 
 ## Q164907: Backup Host Account Cache Service Hangs on Startup on WinNT BDC

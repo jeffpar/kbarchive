@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59973: Mac Hyp: Getting a List of Messages"
-permalink: kb/059/Q59973/
+permalink: /kb/059/Q59973/
 ---
 
 ## Q59973: Mac Hyp: Getting a List of Messages

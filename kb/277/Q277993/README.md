@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277993: FIX: ActualSize Property of the ADODB Recordset Returns -1"
-permalink: kb/277/Q277993/
+permalink: /kb/277/Q277993/
 ---
 
 ## Q277993: FIX: ActualSize Property of the ADODB Recordset Returns -1

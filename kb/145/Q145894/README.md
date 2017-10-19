@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145894: How to Protect Properties and Methods in a Class"
-permalink: kb/145/Q145894/
+permalink: /kb/145/Q145894/
 ---
 
 ## Q145894: How to Protect Properties and Methods in a Class

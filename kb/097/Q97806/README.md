@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97806: DoubleSpace Maintenance Program Fails to Modify DBLSPACE.INI"
-permalink: kb/097/Q97806/
+permalink: /kb/097/Q97806/
 ---
 
 ## Q97806: DoubleSpace Maintenance Program Fails to Modify DBLSPACE.INI

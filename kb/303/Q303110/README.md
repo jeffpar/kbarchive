@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303110: Game Error: &quot;Fatal Exception OE&quot; Err Msg Displayed"
-permalink: kb/303/Q303110/
+permalink: /kb/303/Q303110/
 ---
 
 ## Q303110: Game Error: &quot;Fatal Exception OE&quot; Err Msg Displayed

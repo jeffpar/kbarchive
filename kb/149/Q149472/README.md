@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q149472: PRB: FOR3852 Error Function RESULT and [] Attribute Specifier"
-permalink: kb/149/Q149472/
+title: "Q149472: PRB: FOR3852 Error Function RESULT and &#91;&#93; Attribute Specifier"
+permalink: /kb/149/Q149472/
 ---
 
-## Q149472: PRB: FOR3852 Error Function RESULT and [] Attribute Specifier
+## Q149472: PRB: FOR3852 Error Function RESULT and &#91;&#93; Attribute Specifier
 
 	Article: Q149472
 	Product(s): Microsoft Fortran Compiler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179984: Bookshelf 98 Err Msg: Install Aborted! Internal Error"
-permalink: kb/179/Q179984/
+permalink: /kb/179/Q179984/
 ---
 
 ## Q179984: Bookshelf 98 Err Msg: Install Aborted! Internal Error

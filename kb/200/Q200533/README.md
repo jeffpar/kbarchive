@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200533: Enc99 Err Msg: Director Player 6.0: This program requires..."
-permalink: kb/200/Q200533/
+permalink: /kb/200/Q200533/
 ---
 
 ## Q200533: Enc99 Err Msg: Director Player 6.0: This program requires...

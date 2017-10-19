@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200676: HOWTO: Use the AsyncRead Method to Download Files"
-permalink: kb/200/Q200676/
+permalink: /kb/200/Q200676/
 ---
 
 ## Q200676: HOWTO: Use the AsyncRead Method to Download Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75257: Passing File Handles from TSR to Windows-Based App"
-permalink: kb/075/Q75257/
+permalink: /kb/075/Q75257/
 ---
 
 ## Q75257: Passing File Handles from TSR to Windows-Based App

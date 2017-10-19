@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108054: SMTP: Err Msg: Error &lt;Address&gt; Is an Invalid Courier Mailbox"
-permalink: kb/108/Q108054/
+permalink: /kb/108/Q108054/
 ---
 
 ## Q108054: SMTP: Err Msg: Error &lt;Address&gt; Is an Invalid Courier Mailbox

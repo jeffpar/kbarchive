@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174923: HOWTO: Use the PostData Parameter in WebBrowser Control"
-permalink: kb/174/Q174923/
+permalink: /kb/174/Q174923/
 ---
 
 ## Q174923: HOWTO: Use the PostData Parameter in WebBrowser Control

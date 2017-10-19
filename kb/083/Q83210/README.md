@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83210: Windows 3.1 Hardware Compatibility List"
-permalink: kb/083/Q83210/
+permalink: /kb/083/Q83210/
 ---
 
 ## Q83210: Windows 3.1 Hardware Compatibility List

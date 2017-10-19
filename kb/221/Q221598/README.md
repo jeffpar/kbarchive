@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221598: XADM: Search Permissions Deny Access to the Offline Address Book"
-permalink: kb/221/Q221598/
+permalink: /kb/221/Q221598/
 ---
 
 ## Q221598: XADM: Search Permissions Deny Access to the Offline Address Book

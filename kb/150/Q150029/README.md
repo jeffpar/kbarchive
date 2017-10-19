@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150029: INFO: OLE Control Containers Must Call AfxEnableControlContainer"
-permalink: kb/150/Q150029/
+permalink: /kb/150/Q150029/
 ---
 
 ## Q150029: INFO: OLE Control Containers Must Call AfxEnableControlContainer

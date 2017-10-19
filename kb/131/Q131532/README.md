@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131532: How to Modify the System.ini File in Windows 95/98"
-permalink: kb/131/Q131532/
+permalink: /kb/131/Q131532/
 ---
 
 ## Q131532: How to Modify the System.ini File in Windows 95/98

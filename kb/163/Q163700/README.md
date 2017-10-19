@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163700: IIS Access Violation for Polygon with More Than 100 Vertices"
-permalink: kb/163/Q163700/
+permalink: /kb/163/Q163700/
 ---
 
 ## Q163700: IIS Access Violation for Polygon with More Than 100 Vertices

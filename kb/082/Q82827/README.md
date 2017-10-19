@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82827: What Is a Linked Object?"
-permalink: kb/082/Q82827/
+permalink: /kb/082/Q82827/
 ---
 
 ## Q82827: What Is a Linked Object?

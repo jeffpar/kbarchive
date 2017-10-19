@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123399: ADT2: Uninstalling ADT Does Not Unregister Custom Controls"
-permalink: kb/123/Q123399/
+permalink: /kb/123/Q123399/
 ---
 
 ## Q123399: ADT2: Uninstalling ADT Does Not Unregister Custom Controls

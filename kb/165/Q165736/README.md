@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165736: German Schedule+ 7.5 Win 3.x Help File Can't Be Viewed"
-permalink: kb/165/Q165736/
+permalink: /kb/165/Q165736/
 ---
 
 ## Q165736: German Schedule+ 7.5 Win 3.x Help File Can't Be Viewed

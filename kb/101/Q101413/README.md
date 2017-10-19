@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101413: HOWTO: Diagnosing Printing Problems in Your Application"
-permalink: kb/101/Q101413/
+permalink: /kb/101/Q101413/
 ---
 
 ## Q101413: HOWTO: Diagnosing Printing Problems in Your Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300055: FIX: Init Event Shows Twice In Event Tracking on Objects"
-permalink: kb/300/Q300055/
+permalink: /kb/300/Q300055/
 ---
 
 ## Q300055: FIX: Init Event Shows Twice In Event Tracking on Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149593: PowerPoint Could Not Locate Character Map"
-permalink: kb/149/Q149593/
+permalink: /kb/149/Q149593/
 ---
 
 ## Q149593: PowerPoint Could Not Locate Character Map

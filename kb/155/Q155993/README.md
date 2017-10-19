@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155993: Hellbender: Minimum System Requirements"
-permalink: kb/155/Q155993/
+permalink: /kb/155/Q155993/
 ---
 
 ## Q155993: Hellbender: Minimum System Requirements

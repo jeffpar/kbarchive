@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130869: HOWTO: Avoid Error LNK2001 Unresolved External Using DEFINE_GUID"
-permalink: kb/130/Q130869/
+permalink: /kb/130/Q130869/
 ---
 
 ## Q130869: HOWTO: Avoid Error LNK2001 Unresolved External Using DEFINE_GUID

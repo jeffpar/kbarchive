@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194818: XADM: SBS: Event ID 1234 When Starting Exchange Server Services"
-permalink: kb/194/Q194818/
+permalink: /kb/194/Q194818/
 ---
 
 ## Q194818: XADM: SBS: Event ID 1234 When Starting Exchange Server Services

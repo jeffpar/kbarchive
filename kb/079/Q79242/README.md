@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79242: BUG: Some Property Values May Be Incorrect in Maximized Form"
-permalink: kb/079/Q79242/
+permalink: /kb/079/Q79242/
 ---
 
 ## Q79242: BUG: Some Property Values May Be Incorrect in Maximized Form

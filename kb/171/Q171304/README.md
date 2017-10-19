@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171304: Learn Java Now: VJ++ Setup: No CD-Key Included with Book"
-permalink: kb/171/Q171304/
+permalink: /kb/171/Q171304/
 ---
 
 ## Q171304: Learn Java Now: VJ++ Setup: No CD-Key Included with Book

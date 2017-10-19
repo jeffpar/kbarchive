@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186626: Terminal Server and User Accounts/SAM Use"
-permalink: kb/186/Q186626/
+permalink: /kb/186/Q186626/
 ---
 
 ## Q186626: Terminal Server and User Accounts/SAM Use

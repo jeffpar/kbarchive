@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283255: XIMS: Event ID 3010  and 3011 Report the Wrong Destination Name"
-permalink: kb/283/Q283255/
+permalink: /kb/283/Q283255/
 ---
 
 ## Q283255: XIMS: Event ID 3010  and 3011 Report the Wrong Destination Name

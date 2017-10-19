@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260069: Malformed HTR Request Returns Source Code for ASP Scripting File"
-permalink: kb/260/Q260069/
+permalink: /kb/260/Q260069/
 ---
 
 ## Q260069: Malformed HTR Request Returns Source Code for ASP Scripting File

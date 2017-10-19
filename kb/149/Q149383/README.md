@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149383: HOWTO: Check for Changed Record in Grid &amp; Prompt User to Save"
-permalink: kb/149/Q149383/
+permalink: /kb/149/Q149383/
 ---
 
 ## Q149383: HOWTO: Check for Changed Record in Grid &amp; Prompt User to Save

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103620: Changes to Windows NT Driver Library: Printers"
-permalink: kb/103/Q103620/
+permalink: /kb/103/Q103620/
 ---
 
 ## Q103620: Changes to Windows NT Driver Library: Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82719: Windows 3.1 and NDW Do Not Agree on Free File Space"
-permalink: kb/082/Q82719/
+permalink: /kb/082/Q82719/
 ---
 
 ## Q82719: Windows 3.1 and NDW Do Not Agree on Free File Space

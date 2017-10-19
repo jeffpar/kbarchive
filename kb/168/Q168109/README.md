@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168109: XFOR: POP3 Clients and Mail Conversion Failures"
-permalink: kb/168/Q168109/
+permalink: /kb/168/Q168109/
 ---
 
 ## Q168109: XFOR: POP3 Clients and Mail Conversion Failures

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101421: Sharing Files with Windows for Workgroups Clients"
-permalink: kb/101/Q101421/
+permalink: /kb/101/Q101421/
 ---
 
 ## Q101421: Sharing Files with Windows for Workgroups Clients

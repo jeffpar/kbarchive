@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171813: FIX: IPF in MSO97RT.DLL When Starting Visual Basic"
-permalink: kb/171/Q171813/
+permalink: /kb/171/Q171813/
 ---
 
 ## Q171813: FIX: IPF in MSO97RT.DLL When Starting Visual Basic

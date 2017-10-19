@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111593: BUG: DPMI Function 0203h Does Not Report Error"
-permalink: kb/111/Q111593/
+permalink: /kb/111/Q111593/
 ---
 
 ## Q111593: BUG: DPMI Function 0203h Does Not Report Error

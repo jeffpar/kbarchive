@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98904: Power and Advanced Power Management May Suspend Defrag Process"
-permalink: kb/098/Q98904/
+permalink: /kb/098/Q98904/
 ---
 
 ## Q98904: Power and Advanced Power Management May Suspend Defrag Process

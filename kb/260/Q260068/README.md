@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260068: XADM: Error 800ff330 Running Exchange Performance Optimizer"
-permalink: kb/260/Q260068/
+permalink: /kb/260/Q260068/
 ---
 
 ## Q260068: XADM: Error 800ff330 Running Exchange Performance Optimizer

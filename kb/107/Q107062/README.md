@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107062: PC WRmt: Microsoft Mail and SHARE.EXE"
-permalink: kb/107/Q107062/
+permalink: /kb/107/Q107062/
 ---
 
 ## Q107062: PC WRmt: Microsoft Mail and SHARE.EXE

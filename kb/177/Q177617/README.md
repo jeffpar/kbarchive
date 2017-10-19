@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177617: WD: Manage Fields Dialog Box Returns Incorrect Values"
-permalink: kb/177/Q177617/
+permalink: /kb/177/Q177617/
 ---
 
 ## Q177617: WD: Manage Fields Dialog Box Returns Incorrect Values

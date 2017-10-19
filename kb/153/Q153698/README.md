@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153698: Microsoft Word Grid Outline May Cause Slow Printer Spooling"
-permalink: kb/153/Q153698/
+permalink: /kb/153/Q153698/
 ---
 
 ## Q153698: Microsoft Word Grid Outline May Cause Slow Printer Spooling

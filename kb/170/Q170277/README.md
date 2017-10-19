@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170277: XCLN: Setup Repeatedly Prompts for the Same Diskette"
-permalink: kb/170/Q170277/
+permalink: /kb/170/Q170277/
 ---
 
 ## Q170277: XCLN: Setup Repeatedly Prompts for the Same Diskette

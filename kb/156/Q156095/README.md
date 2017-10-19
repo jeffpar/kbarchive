@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156095: Replace Command with Space Character in the Path Does Not Work"
-permalink: kb/156/Q156095/
+permalink: /kb/156/Q156095/
 ---
 
 ## Q156095: Replace Command with Space Character in the Path Does Not Work

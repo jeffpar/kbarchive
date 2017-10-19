@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98341: PROFS: How to Check VM Host ROUTE Statements"
-permalink: kb/098/Q98341/
+permalink: /kb/098/Q98341/
 ---
 
 ## Q98341: PROFS: How to Check VM Host ROUTE Statements

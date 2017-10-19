@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168918: Alternative Solution to Obtain a MAP ROOT Share"
-permalink: kb/168/Q168918/
+permalink: /kb/168/Q168918/
 ---
 
 ## Q168918: Alternative Solution to Obtain a MAP ROOT Share

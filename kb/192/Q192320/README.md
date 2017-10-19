@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192320: WD97: Disable System Menu Button and Keyboard Close Command"
-permalink: kb/192/Q192320/
+permalink: /kb/192/Q192320/
 ---
 
 ## Q192320: WD97: Disable System Menu Button and Keyboard Close Command

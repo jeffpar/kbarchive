@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86389: PC Win: Err Msg: The Folder Conversion Program..."
-permalink: kb/086/Q86389/
+permalink: /kb/086/Q86389/
 ---
 
 ## Q86389: PC Win: Err Msg: The Folder Conversion Program...

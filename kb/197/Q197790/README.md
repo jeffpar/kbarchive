@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197790: Bookshelf 99: Error Message When You Resize Program Window"
-permalink: kb/197/Q197790/
+permalink: /kb/197/Q197790/
 ---
 
 ## Q197790: Bookshelf 99: Error Message When You Resize Program Window

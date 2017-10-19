@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260335: SMS: SQL Provider May Fail to Install on Remote SQL Server"
-permalink: kb/260/Q260335/
+permalink: /kb/260/Q260335/
 ---
 
 ## Q260335: SMS: SQL Provider May Fail to Install on Remote SQL Server

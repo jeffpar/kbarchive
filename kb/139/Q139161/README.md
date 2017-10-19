@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139161: Encarta World Atlas 1996 Edition: No Help Button Available"
-permalink: kb/139/Q139161/
+permalink: /kb/139/Q139161/
 ---
 
 ## Q139161: Encarta World Atlas 1996 Edition: No Help Button Available

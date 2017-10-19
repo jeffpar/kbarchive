@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77986: How to Use _export Keyword or DEF File EXPORTS Statement"
-permalink: kb/077/Q77986/
+permalink: /kb/077/Q77986/
 ---
 
 ## Q77986: How to Use _export Keyword or DEF File EXPORTS Statement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182084: XGEN: CDO's GetNext with Custom Property Fails at 17th Time"
-permalink: kb/182/Q182084/
+permalink: /kb/182/Q182084/
 ---
 
 ## Q182084: XGEN: CDO's GetNext with Custom Property Fails at 17th Time

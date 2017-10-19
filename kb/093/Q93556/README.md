@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93556: Calendar Does Not Display New Date"
-permalink: kb/093/Q93556/
+permalink: /kb/093/Q93556/
 ---
 
 ## Q93556: Calendar Does Not Display New Date

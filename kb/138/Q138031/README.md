@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138031: Bookshelf 1995: Some Long Addresses Not Recognized"
-permalink: kb/138/Q138031/
+permalink: /kb/138/Q138031/
 ---
 
 ## Q138031: Bookshelf 1995: Some Long Addresses Not Recognized

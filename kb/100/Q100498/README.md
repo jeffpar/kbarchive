@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100498: PC Win: Duplicate PAB Entries--Part 2"
-permalink: kb/100/Q100498/
+permalink: /kb/100/Q100498/
 ---
 
 ## Q100498: PC Win: Duplicate PAB Entries--Part 2

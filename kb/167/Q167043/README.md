@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167043: XCLN: NextExists and PreviousExists Properties Always True"
-permalink: kb/167/Q167043/
+permalink: /kb/167/Q167043/
 ---
 
 ## Q167043: XCLN: NextExists and PreviousExists Properties Always True

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184050: WD97: Assigned Selected Adjacent Text Variable Doubles"
-permalink: kb/184/Q184050/
+permalink: /kb/184/Q184050/
 ---
 
 ## Q184050: WD97: Assigned Selected Adjacent Text Variable Doubles

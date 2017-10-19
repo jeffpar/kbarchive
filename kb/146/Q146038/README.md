@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146038: Modifying Text of Meeting Response Message"
-permalink: kb/146/Q146038/
+permalink: /kb/146/Q146038/
 ---
 
 ## Q146038: Modifying Text of Meeting Response Message

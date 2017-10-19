@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141671: Searching for Computer Industry Sites on the Internet"
-permalink: kb/141/Q141671/
+permalink: /kb/141/Q141671/
 ---
 
 ## Q141671: Searching for Computer Industry Sites on the Internet

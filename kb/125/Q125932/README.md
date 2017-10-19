@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125932: Windows NT Help Shows Incorrect Permission Switch for CACLS"
-permalink: kb/125/Q125932/
+permalink: /kb/125/Q125932/
 ---
 
 ## Q125932: Windows NT Help Shows Incorrect Permission Switch for CACLS

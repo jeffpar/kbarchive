@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185340: SMS: Using SMS in an International Environment"
-permalink: kb/185/Q185340/
+permalink: /kb/185/Q185340/
 ---
 
 ## Q185340: SMS: Using SMS in an International Environment

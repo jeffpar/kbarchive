@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121068: When Removing Read-Only Directory, No Warning Message Appears"
-permalink: kb/121/Q121068/
+permalink: /kb/121/Q121068/
 ---
 
 ## Q121068: When Removing Read-Only Directory, No Warning Message Appears

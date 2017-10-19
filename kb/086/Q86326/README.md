@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86326: PC Cillin Anti-Virus Software May Hang Windows Applications"
-permalink: kb/086/Q86326/
+permalink: /kb/086/Q86326/
 ---
 
 ## Q86326: PC Cillin Anti-Virus Software May Hang Windows Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161678: Regedit.exe Cannot Search for DWORD or Binary Data"
-permalink: kb/161/Q161678/
+permalink: /kb/161/Q161678/
 ---
 
 ## Q161678: Regedit.exe Cannot Search for DWORD or Binary Data

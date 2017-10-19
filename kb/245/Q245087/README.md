@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245087: Err Msg: STOP C0000221 - Bad Image Checksum in Ntvdm.exe"
-permalink: kb/245/Q245087/
+permalink: /kb/245/Q245087/
 ---
 
 ## Q245087: Err Msg: STOP C0000221 - Bad Image Checksum in Ntvdm.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129907: PRB: Clicking a Tab Does Not Activate Page in a Tabbed Dialog"
-permalink: kb/129/Q129907/
+permalink: /kb/129/Q129907/
 ---
 
 ## Q129907: PRB: Clicking a Tab Does Not Activate Page in a Tabbed Dialog

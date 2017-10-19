@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129968: RAS: 20066 Error: General named pipe failure occurred in..."
-permalink: kb/129/Q129968/
+permalink: /kb/129/Q129968/
 ---
 
 ## Q129968: RAS: 20066 Error: General named pipe failure occurred in...

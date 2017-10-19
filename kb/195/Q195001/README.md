@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195001: Pinball Arcade: Computer Hangs When You Return to Startup Screen"
-permalink: kb/195/Q195001/
+permalink: /kb/195/Q195001/
 ---
 
 ## Q195001: Pinball Arcade: Computer Hangs When You Return to Startup Screen

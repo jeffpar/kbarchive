@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73853: INFO: Sorting Structures with the C qsort() Function"
-permalink: kb/073/Q73853/
+permalink: /kb/073/Q73853/
 ---
 
 ## Q73853: INFO: Sorting Structures with the C qsort() Function

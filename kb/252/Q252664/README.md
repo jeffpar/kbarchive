@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252664: Stop 0x0000000A Error in Tcpip.sys on FTP Server"
-permalink: kb/252/Q252664/
+permalink: /kb/252/Q252664/
 ---
 
 ## Q252664: Stop 0x0000000A Error in Tcpip.sys on FTP Server

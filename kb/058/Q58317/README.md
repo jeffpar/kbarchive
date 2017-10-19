@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58317: Windows 3.0 Modes and Memory Requirements"
-permalink: kb/058/Q58317/
+permalink: /kb/058/Q58317/
 ---
 
 ## Q58317: Windows 3.0 Modes and Memory Requirements

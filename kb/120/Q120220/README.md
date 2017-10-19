@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120220: PC Adm: Message Stuck in Queue--Sent Multiple Times"
-permalink: kb/120/Q120220/
+permalink: /kb/120/Q120220/
 ---
 
 ## Q120220: PC Adm: Message Stuck in Queue--Sent Multiple Times

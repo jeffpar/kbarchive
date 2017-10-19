@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142272: Olicom 16/4 TR Drivers Cause Checksum Errors"
-permalink: kb/142/Q142272/
+permalink: /kb/142/Q142272/
 ---
 
 ## Q142272: Olicom 16/4 TR Drivers Cause Checksum Errors

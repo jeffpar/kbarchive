@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83587: Error when Installing Fastback for Windows on Windows 3.1"
-permalink: kb/083/Q83587/
+permalink: /kb/083/Q83587/
 ---
 
 ## Q83587: Error when Installing Fastback for Windows on Windows 3.1

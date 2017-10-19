@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q148798: Windows 3.1 [MCI] CD Audio Driver Available"
-permalink: kb/148/Q148798/
+title: "Q148798: Windows 3.1 &#91;MCI&#93; CD Audio Driver Available"
+permalink: /kb/148/Q148798/
 ---
 
-## Q148798: Windows 3.1 [MCI] CD Audio Driver Available
+## Q148798: Windows 3.1 &#91;MCI&#93; CD Audio Driver Available
 
 	Article: Q148798
 	Product(s): Microsoft Home Kids Products

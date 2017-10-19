@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98403: DoubleSpace Err Msg: There Was a Problem Reading..."
-permalink: kb/098/Q98403/
+permalink: /kb/098/Q98403/
 ---
 
 ## Q98403: DoubleSpace Err Msg: There Was a Problem Reading...

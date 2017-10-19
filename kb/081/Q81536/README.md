@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81536: Display of Multiple Instances of MS-DOS Programs in Task List"
-permalink: kb/081/Q81536/
+permalink: /kb/081/Q81536/
 ---
 
 ## Q81536: Display of Multiple Instances of MS-DOS Programs in Task List

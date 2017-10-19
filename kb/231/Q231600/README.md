@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231600: How to Use the Check Free Disk Space Script Action Successfully"
-permalink: kb/231/Q231600/
+permalink: /kb/231/Q231600/
 ---
 
 ## Q231600: How to Use the Check Free Disk Space Script Action Successfully

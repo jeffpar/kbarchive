@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158708: XCLN: Newprof Fails to Create a Profile"
-permalink: kb/158/Q158708/
+permalink: /kb/158/Q158708/
 ---
 
 ## Q158708: XCLN: Newprof Fails to Create a Profile

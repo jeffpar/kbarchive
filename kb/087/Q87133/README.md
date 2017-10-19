@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87133: LAN Manager 2.1 Upgrade Instructions Incorrect"
-permalink: kb/087/Q87133/
+permalink: /kb/087/Q87133/
 ---
 
 ## Q87133: LAN Manager 2.1 Upgrade Instructions Incorrect

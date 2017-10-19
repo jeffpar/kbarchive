@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257268: SMS: Group Members Cannot Advertise to New Collections"
-permalink: kb/257/Q257268/
+permalink: /kb/257/Q257268/
 ---
 
 ## Q257268: SMS: Group Members Cannot Advertise to New Collections

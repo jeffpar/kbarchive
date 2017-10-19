@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237735: NFL Fever 2000: Quits Unexpectedly When Play Clock Expires"
-permalink: kb/237/Q237735/
+permalink: /kb/237/Q237735/
 ---
 
 ## Q237735: NFL Fever 2000: Quits Unexpectedly When Play Clock Expires

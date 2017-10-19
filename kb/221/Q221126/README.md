@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221126: SMS: Instance and Class Permissions: Which Has Precedence?"
-permalink: kb/221/Q221126/
+permalink: /kb/221/Q221126/
 ---
 
 ## Q221126: SMS: Instance and Class Permissions: Which Has Precedence?

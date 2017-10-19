@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91198: Device Error Upgrading WFWG Over Windows with CO/Session"
-permalink: kb/091/Q91198/
+permalink: /kb/091/Q91198/
 ---
 
 ## Q91198: Device Error Upgrading WFWG Over Windows with CO/Session

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271575: XCON: Internet Mail Service Uses the IMCEA  Encapsulation Prefix"
-permalink: kb/271/Q271575/
+permalink: /kb/271/Q271575/
 ---
 
 ## Q271575: XCON: Internet Mail Service Uses the IMCEA  Encapsulation Prefix

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64520: INFO: Printing Monochrome and Color Bitmaps from Windows"
-permalink: kb/064/Q64520/
+permalink: /kb/064/Q64520/
 ---
 
 ## Q64520: INFO: Printing Monochrome and Color Bitmaps from Windows

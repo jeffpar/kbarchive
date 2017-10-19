@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173594: SMS: Remote Control Agent Stops Responding on Startup &amp; Shutdown"
-permalink: kb/173/Q173594/
+permalink: /kb/173/Q173594/
 ---
 
 ## Q173594: SMS: Remote Control Agent Stops Responding on Startup &amp; Shutdown

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85289: VESA Video Standard Description"
-permalink: kb/085/Q85289/
+permalink: /kb/085/Q85289/
 ---
 
 ## Q85289: VESA Video Standard Description

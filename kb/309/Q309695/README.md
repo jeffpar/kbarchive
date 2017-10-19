@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309695: Zoo Tycoon: Known Video Issues"
-permalink: kb/309/Q309695/
+permalink: /kb/309/Q309695/
 ---
 
 ## Q309695: Zoo Tycoon: Known Video Issues

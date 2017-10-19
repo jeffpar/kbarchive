@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254359: Streets and Trips 2001: How to Install and Remove Pocket Streets"
-permalink: kb/254/Q254359/
+permalink: /kb/254/Q254359/
 ---
 
 ## Q254359: Streets and Trips 2001: How to Install and Remove Pocket Streets

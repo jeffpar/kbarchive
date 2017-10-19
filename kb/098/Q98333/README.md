@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98333: PC MAPI: 3.0 MAPI Tools Disk [3.5, 1.44 MB; 5.25, 1.2 MB]"
-permalink: kb/098/Q98333/
+title: "Q98333: PC MAPI: 3.0 MAPI Tools Disk &#91;3.5, 1.44 MB; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98333/
 ---
 
-## Q98333: PC MAPI: 3.0 MAPI Tools Disk [3.5, 1.44 MB; 5.25, 1.2 MB]
+## Q98333: PC MAPI: 3.0 MAPI Tools Disk &#91;3.5, 1.44 MB; 5.25, 1.2 MB&#93;
 
 	Article: Q98333
 	Product(s): Microsoft Mail For PC Networks

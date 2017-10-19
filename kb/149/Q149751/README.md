@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149751: BUG: FOR3294 Error Using Module Inside Module Procedure"
-permalink: kb/149/Q149751/
+permalink: /kb/149/Q149751/
 ---
 
 ## Q149751: BUG: FOR3294 Error Using Module Inside Module Procedure

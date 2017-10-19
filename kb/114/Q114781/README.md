@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114781: Rushmore Requires Open Indexes in Order to Operate"
-permalink: kb/114/Q114781/
+permalink: /kb/114/Q114781/
 ---
 
 ## Q114781: Rushmore Requires Open Indexes in Order to Operate

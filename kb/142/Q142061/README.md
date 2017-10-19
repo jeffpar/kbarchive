@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142061: Preloaded LMHOSTS Entries Overwrite Previous Entries"
-permalink: kb/142/Q142061/
+permalink: /kb/142/Q142061/
 ---
 
 ## Q142061: Preloaded LMHOSTS Entries Overwrite Previous Entries

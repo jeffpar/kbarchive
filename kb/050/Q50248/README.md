@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50248: Mac Form: Differences Between Image Field and Graphic Overlay"
-permalink: kb/050/Q50248/
+permalink: /kb/050/Q50248/
 ---
 
 ## Q50248: Mac Form: Differences Between Image Field and Graphic Overlay

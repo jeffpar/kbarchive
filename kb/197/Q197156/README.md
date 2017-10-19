@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197156: Cannot Add New Modem or View Existing Modem Properties"
-permalink: kb/197/Q197156/
+permalink: /kb/197/Q197156/
 ---
 
 ## Q197156: Cannot Add New Modem or View Existing Modem Properties

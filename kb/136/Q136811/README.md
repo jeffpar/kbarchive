@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136811: Word Setup Text is Garbled Under Windows 95 Remote Control"
-permalink: kb/136/Q136811/
+permalink: /kb/136/Q136811/
 ---
 
 ## Q136811: Word Setup Text is Garbled Under Windows 95 Remote Control

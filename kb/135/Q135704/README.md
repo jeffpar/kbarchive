@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135704: PC MAPI: Suppressing the Default Logon Dialog Box"
-permalink: kb/135/Q135704/
+permalink: /kb/135/Q135704/
 ---
 
 ## Q135704: PC MAPI: Suppressing the Default Logon Dialog Box

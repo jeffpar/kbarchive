@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139934: XCLN: The Microsoft Exchange Client and Mobile Users"
-permalink: kb/139/Q139934/
+permalink: /kb/139/Q139934/
 ---
 
 ## Q139934: XCLN: The Microsoft Exchange Client and Mobile Users

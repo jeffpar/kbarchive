@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316910: HOWTO: Create an Auto-ID Field in a FoxPro DBF via ADO and ASP"
-permalink: kb/316/Q316910/
+permalink: /kb/316/Q316910/
 ---
 
 ## Q316910: HOWTO: Create an Auto-ID Field in a FoxPro DBF via ADO and ASP

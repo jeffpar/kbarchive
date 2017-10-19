@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171325: Incorrect Icons Displayed for .ico Files"
-permalink: kb/171/Q171325/
+permalink: /kb/171/Q171325/
 ---
 
 ## Q171325: Incorrect Icons Displayed for .ico Files

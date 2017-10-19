@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248478: Fighter Ace II: How to Enable or Disable 3D Acceleration"
-permalink: kb/248/Q248478/
+permalink: /kb/248/Q248478/
 ---
 
 ## Q248478: Fighter Ace II: How to Enable or Disable 3D Acceleration

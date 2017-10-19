@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang"
-permalink: kb/145/Q145986/
+permalink: /kb/145/Q145986/
 ---
 
 ## Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang

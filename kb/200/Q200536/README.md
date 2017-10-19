@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200536: SMS: Remote Control Does Not Have Inactivity Time-Out"
-permalink: kb/200/Q200536/
+permalink: /kb/200/Q200536/
 ---
 
 ## Q200536: SMS: Remote Control Does Not Have Inactivity Time-Out

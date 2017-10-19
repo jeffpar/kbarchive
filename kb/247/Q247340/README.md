@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247340: SymDestName Incorrect in SDK Documentation for CPI-C Samples"
-permalink: kb/247/Q247340/
+permalink: /kb/247/Q247340/
 ---
 
 ## Q247340: SymDestName Incorrect in SDK Documentation for CPI-C Samples

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229064: Load Balanced Service May Not Work Properly"
-permalink: kb/229/Q229064/
+permalink: /kb/229/Q229064/
 ---
 
 ## Q229064: Load Balanced Service May Not Work Properly

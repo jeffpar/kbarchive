@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153028: XADM: How to Export Multiple (Secondary) E-mail Addresses"
-permalink: kb/153/Q153028/
+permalink: /kb/153/Q153028/
 ---
 
 ## Q153028: XADM: How to Export Multiple (Secondary) E-mail Addresses

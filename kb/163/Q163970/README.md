@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163970: DNS Sample File Place.dns Contains an Error"
-permalink: kb/163/Q163970/
+permalink: /kb/163/Q163970/
 ---
 
 ## Q163970: DNS Sample File Place.dns Contains an Error

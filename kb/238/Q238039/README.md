@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238039: Encarta Dictionary 2000: Define Button Missing from Word Toolbar"
-permalink: kb/238/Q238039/
+permalink: /kb/238/Q238039/
 ---
 
 ## Q238039: Encarta Dictionary 2000: Define Button Missing from Word Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32730: Use Logical AND to Determine Which Bits Are Set in an Integer"
-permalink: kb/032/Q32730/
+permalink: /kb/032/Q32730/
 ---
 
 ## Q32730: Use Logical AND to Determine Which Bits Are Set in an Integer

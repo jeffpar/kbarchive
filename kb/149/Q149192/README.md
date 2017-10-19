@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149192: XFOR: Dir-Sync Agent Submits Custom Recipient Proxy Address"
-permalink: kb/149/Q149192/
+permalink: /kb/149/Q149192/
 ---
 
 ## Q149192: XFOR: Dir-Sync Agent Submits Custom Recipient Proxy Address

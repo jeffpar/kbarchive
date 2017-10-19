@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q134670: PC Gen: 3.5 Mail for PC Networks Disks 5-7 [3.5]"
-permalink: kb/134/Q134670/
+title: "Q134670: PC Gen: 3.5 Mail for PC Networks Disks 5-7 &#91;3.5&#93;"
+permalink: /kb/134/Q134670/
 ---
 
-## Q134670: PC Gen: 3.5 Mail for PC Networks Disks 5-7 [3.5]
+## Q134670: PC Gen: 3.5 Mail for PC Networks Disks 5-7 &#91;3.5&#93;
 
 	Article: Q134670
 	Product(s): Microsoft Mail For PC Networks

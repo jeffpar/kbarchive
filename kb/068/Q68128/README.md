@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68128: Troubleshooting the CONFIG.SYS and AUTOEXEC.BAT Files"
-permalink: kb/068/Q68128/
+permalink: /kb/068/Q68128/
 ---
 
 ## Q68128: Troubleshooting the CONFIG.SYS and AUTOEXEC.BAT Files

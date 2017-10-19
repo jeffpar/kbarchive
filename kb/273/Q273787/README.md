@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273787: Err Msg: YIKES! Midtown Madness 2 Was Not Properly Shut Down..."
-permalink: kb/273/Q273787/
+permalink: /kb/273/Q273787/
 ---
 
 ## Q273787: Err Msg: YIKES! Midtown Madness 2 Was Not Properly Shut Down...

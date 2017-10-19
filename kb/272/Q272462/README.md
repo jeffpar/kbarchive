@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272462: Runtime Error in MapPoint or Streets and Trips"
-permalink: kb/272/Q272462/
+permalink: /kb/272/Q272462/
 ---
 
 ## Q272462: Runtime Error in MapPoint or Streets and Trips

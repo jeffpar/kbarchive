@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166325: INFO: Visual Basic 4.0 Does Not Include a Win32 API Help File"
-permalink: kb/166/Q166325/
+permalink: /kb/166/Q166325/
 ---
 
 ## Q166325: INFO: Visual Basic 4.0 Does Not Include a Win32 API Help File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118862: X400: How MS-DOS and Windows Priorities Convert to X.400"
-permalink: kb/118/Q118862/
+permalink: /kb/118/Q118862/
 ---
 
 ## Q118862: X400: How MS-DOS and Windows Priorities Convert to X.400

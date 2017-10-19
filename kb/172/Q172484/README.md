@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172484: 5250 Printing Causes High CPU Utilization"
-permalink: kb/172/Q172484/
+permalink: /kb/172/Q172484/
 ---
 
 ## Q172484: 5250 Printing Causes High CPU Utilization

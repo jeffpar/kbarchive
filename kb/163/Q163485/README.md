@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163485: Active Server Pages Script Appears in Browser"
-permalink: kb/163/Q163485/
+permalink: /kb/163/Q163485/
 ---
 
 ## Q163485: Active Server Pages Script Appears in Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100380: Pictures with More than 16 Colors Look Bad in JigSawed"
-permalink: kb/100/Q100380/
+permalink: /kb/100/Q100380/
 ---
 
 ## Q100380: Pictures with More than 16 Colors Look Bad in JigSawed

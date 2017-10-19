@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130276: FIX: C2065 Error on Functions Returns Template Class By Value"
-permalink: kb/130/Q130276/
+permalink: /kb/130/Q130276/
 ---
 
 ## Q130276: FIX: C2065 Error on Functions Returns Template Class By Value

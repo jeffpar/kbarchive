@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150326: Distorted Video With Avance Logic Drivers"
-permalink: kb/150/Q150326/
+permalink: /kb/150/Q150326/
 ---
 
 ## Q150326: Distorted Video With Avance Logic Drivers

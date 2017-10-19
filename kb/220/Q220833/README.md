@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220833: XFOR:How to Capture &amp; Replay Messages Through PROFS Connector"
-permalink: kb/220/Q220833/
+permalink: /kb/220/Q220833/
 ---
 
 ## Q220833: XFOR:How to Capture &amp; Replay Messages Through PROFS Connector

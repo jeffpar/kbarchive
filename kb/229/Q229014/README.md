@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229014: &quot;Connected Users&quot; Values When Using Anonymous Access on FTP Site"
-permalink: kb/229/Q229014/
+permalink: /kb/229/Q229014/
 ---
 
 ## Q229014: &quot;Connected Users&quot; Values When Using Anonymous Access on FTP Site

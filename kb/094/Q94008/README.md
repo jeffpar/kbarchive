@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94008: Troubleshooting Erratic Keyboard Behavior in MS-DOS"
-permalink: kb/094/Q94008/
+permalink: /kb/094/Q94008/
 ---
 
 ## Q94008: Troubleshooting Erratic Keyboard Behavior in MS-DOS

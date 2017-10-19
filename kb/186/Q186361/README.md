@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186361: INFO: ERR &quot;...Some links may not be restored&quot;"
-permalink: kb/186/Q186361/
+permalink: /kb/186/Q186361/
 ---
 
 ## Q186361: INFO: ERR &quot;...Some links may not be restored&quot;

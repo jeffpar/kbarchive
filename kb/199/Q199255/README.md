@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199255: Exchange Server Training Comments and Corrections"
-permalink: kb/199/Q199255/
+permalink: /kb/199/Q199255/
 ---
 
 ## Q199255: Exchange Server Training Comments and Corrections

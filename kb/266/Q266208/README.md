@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266208: RPC, Protected Storage Services May Not Start on Workstation wit"
-permalink: kb/266/Q266208/
+permalink: /kb/266/Q266208/
 ---
 
 ## Q266208: RPC, Protected Storage Services May Not Start on Workstation wit

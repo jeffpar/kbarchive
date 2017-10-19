@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130400: How to Change The Default Protocol in Windows NT"
-permalink: kb/130/Q130400/
+permalink: /kb/130/Q130400/
 ---
 
 ## Q130400: How to Change The Default Protocol in Windows NT

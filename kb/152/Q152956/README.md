@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152956: XCLN: Details Corrupt When Using Spanish Client"
-permalink: kb/152/Q152956/
+permalink: /kb/152/Q152956/
 ---
 
 ## Q152956: XCLN: Details Corrupt When Using Spanish Client

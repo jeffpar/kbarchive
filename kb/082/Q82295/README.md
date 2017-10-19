@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82295: PC Win: Search Results for GAL has a Maximum of 500 Names"
-permalink: kb/082/Q82295/
+permalink: /kb/082/Q82295/
 ---
 
 ## Q82295: PC Win: Search Results for GAL has a Maximum of 500 Names

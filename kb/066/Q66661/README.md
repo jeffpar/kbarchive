@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66661: Flight Sim: Lists Only Six Converted Sublogic Scenery Disks"
-permalink: kb/066/Q66661/
+permalink: /kb/066/Q66661/
 ---
 
 ## Q66661: Flight Sim: Lists Only Six Converted Sublogic Scenery Disks

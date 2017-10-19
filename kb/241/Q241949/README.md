@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241949: BUG: C2059 Error on Out-Of-Class Definition of Member Templates"
-permalink: kb/241/Q241949/
+permalink: /kb/241/Q241949/
 ---
 
 ## Q241949: BUG: C2059 Error on Out-Of-Class Definition of Member Templates

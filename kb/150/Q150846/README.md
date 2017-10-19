@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150846: Event 1955 Does Not Report LU Name for RUI_INIT Failure"
-permalink: kb/150/Q150846/
+permalink: /kb/150/Q150846/
 ---
 
 ## Q150846: Event 1955 Does Not Report LU Name for RUI_INIT Failure

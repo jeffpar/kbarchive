@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260863: StarLancer: Heads-Up Display and Radar Screen Appear Blurred"
-permalink: kb/260/Q260863/
+permalink: /kb/260/Q260863/
 ---
 
 ## Q260863: StarLancer: Heads-Up Display and Radar Screen Appear Blurred

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q86102: PC Win: MSMAIL.INI Entries in [Providers]"
-permalink: kb/086/Q86102/
+title: "Q86102: PC Win: MSMAIL.INI Entries in &#91;Providers&#93;"
+permalink: /kb/086/Q86102/
 ---
 
-## Q86102: PC Win: MSMAIL.INI Entries in [Providers]
+## Q86102: PC Win: MSMAIL.INI Entries in &#91;Providers&#93;
 
 	Article: Q86102
 	Product(s): Microsoft Mail For PC Networks

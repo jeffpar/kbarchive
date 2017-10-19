@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198048: WD97: How to Use Settings for Viewing and Printing Objects"
-permalink: kb/198/Q198048/
+permalink: /kb/198/Q198048/
 ---
 
 ## Q198048: WD97: How to Use Settings for Viewing and Printing Objects

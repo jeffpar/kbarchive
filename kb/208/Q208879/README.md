@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208879: Urban Assault: Graphic Elements Are Not Displayed Correctly"
-permalink: kb/208/Q208879/
+permalink: /kb/208/Q208879/
 ---
 
 ## Q208879: Urban Assault: Graphic Elements Are Not Displayed Correctly

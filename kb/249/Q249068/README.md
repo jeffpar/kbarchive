@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249068: IO Threading Model Used by SNA Server Services"
-permalink: kb/249/Q249068/
+permalink: /kb/249/Q249068/
 ---
 
 ## Q249068: IO Threading Model Used by SNA Server Services

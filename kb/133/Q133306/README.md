@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133306: Maximum Disk Space of 1.99 GB Displayed for NetWare Volume"
-permalink: kb/133/Q133306/
+permalink: /kb/133/Q133306/
 ---
 
 ## Q133306: Maximum Disk Space of 1.99 GB Displayed for NetWare Volume

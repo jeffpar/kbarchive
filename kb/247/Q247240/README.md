@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247240: Attempting to Destroy an Object Twice Causes &quot;Stop 0x1e&quot;"
-permalink: kb/247/Q247240/
+permalink: /kb/247/Q247240/
 ---
 
 ## Q247240: Attempting to Destroy an Object Twice Causes &quot;Stop 0x1e&quot;

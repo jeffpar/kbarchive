@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310730: Err Msg: Zone Support Files Could Not Be Downloaded or Installed"
-permalink: kb/310/Q310730/
+permalink: /kb/310/Q310730/
 ---
 
 ## Q310730: Err Msg: Zone Support Files Could Not Be Downloaded or Installed

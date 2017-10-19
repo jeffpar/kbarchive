@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314656: FIX: OLE DB Provider Can Fail After Updating 512 Records"
-permalink: kb/314/Q314656/
+permalink: /kb/314/Q314656/
 ---
 
 ## Q314656: FIX: OLE DB Provider Can Fail After Updating 512 Records

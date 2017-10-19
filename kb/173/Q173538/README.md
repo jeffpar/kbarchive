@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173538: SMS: NetBIOS Reset Causes Windows 95 Remote Control To Fail"
-permalink: kb/173/Q173538/
+permalink: /kb/173/Q173538/
 ---
 
 ## Q173538: SMS: NetBIOS Reset Causes Windows 95 Remote Control To Fail

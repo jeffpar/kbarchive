@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135203: Not Enough Disk Space to Restore Backed Up Files"
-permalink: kb/135/Q135203/
+permalink: /kb/135/Q135203/
 ---
 
 ## Q135203: Not Enough Disk Space to Restore Backed Up Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76553: FIX: Can't Have Menu with No Caption Bar/Buttons/Control Box"
-permalink: kb/076/Q76553/
+permalink: /kb/076/Q76553/
 ---
 
 ## Q76553: FIX: Can't Have Menu with No Caption Bar/Buttons/Control Box

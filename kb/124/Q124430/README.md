@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124430: Information on the SMSLOG.TXT File"
-permalink: kb/124/Q124430/
+permalink: /kb/124/Q124430/
 ---
 
 ## Q124430: Information on the SMSLOG.TXT File

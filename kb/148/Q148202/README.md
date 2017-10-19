@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148202: BUG: Changes to Double-Precision Values in Debugger Fail"
-permalink: kb/148/Q148202/
+permalink: /kb/148/Q148202/
 ---
 
 ## Q148202: BUG: Changes to Double-Precision Values in Debugger Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163366: WD97: Can't Type Text Across Entire Label Using DeskJet 500"
-permalink: kb/163/Q163366/
+permalink: /kb/163/Q163366/
 ---
 
 ## Q163366: WD97: Can't Type Text Across Entire Label Using DeskJet 500

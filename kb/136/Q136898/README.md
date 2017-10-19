@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136898: Desktop Icons Do Not Change When Different Users Log on"
-permalink: kb/136/Q136898/
+permalink: /kb/136/Q136898/
 ---
 
 ## Q136898: Desktop Icons Do Not Change When Different Users Log on

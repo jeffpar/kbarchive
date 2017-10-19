@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87217: PROFS: Necessary Command-Line Options for HostDisp (or VMGATE)"
-permalink: kb/087/Q87217/
+permalink: /kb/087/Q87217/
 ---
 
 ## Q87217: PROFS: Necessary Command-Line Options for HostDisp (or VMGATE)

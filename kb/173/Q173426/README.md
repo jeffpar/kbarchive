@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173426: Err Msg: MSNVIEWR Caused an Invalid Page Fault in Module..."
-permalink: kb/173/Q173426/
+permalink: /kb/173/Q173426/
 ---
 
 ## Q173426: Err Msg: MSNVIEWR Caused an Invalid Page Fault in Module...

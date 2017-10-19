@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186756: XCON: MTA Associations Fail On MSCS Installation"
-permalink: kb/186/Q186756/
+permalink: /kb/186/Q186756/
 ---
 
 ## Q186756: XCON: MTA Associations Fail On MSCS Installation

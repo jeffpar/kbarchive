@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158475: HOWTO: Find Missing Versions in the Project History Dialog Box"
-permalink: kb/158/Q158475/
+permalink: /kb/158/Q158475/
 ---
 
 ## Q158475: HOWTO: Find Missing Versions in the Project History Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158160: PRB: Cloaked Projects are Deployed"
-permalink: kb/158/Q158160/
+permalink: /kb/158/Q158160/
 ---
 
 ## Q158160: PRB: Cloaked Projects are Deployed

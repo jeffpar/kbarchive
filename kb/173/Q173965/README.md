@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173965: Max Number of SQL Statements Reached in IDC"
-permalink: kb/173/Q173965/
+permalink: /kb/173/Q173965/
 ---
 
 ## Q173965: Max Number of SQL Statements Reached in IDC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194566: WD97: WordPerfect 5.x File Appears Corrupt When Opened in Word"
-permalink: kb/194/Q194566/
+permalink: /kb/194/Q194566/
 ---
 
 ## Q194566: WD97: WordPerfect 5.x File Appears Corrupt When Opened in Word

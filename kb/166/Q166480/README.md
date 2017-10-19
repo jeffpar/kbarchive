@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166480: INFO: Active Template Library (ATL) Frequently Asked Questions"
-permalink: kb/166/Q166480/
+permalink: /kb/166/Q166480/
 ---
 
 ## Q166480: INFO: Active Template Library (ATL) Frequently Asked Questions

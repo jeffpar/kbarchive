@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88755: Windows 3.1 Screen Savers May Be Disabled by AutoSave"
-permalink: kb/088/Q88755/
+permalink: /kb/088/Q88755/
 ---
 
 ## Q88755: Windows 3.1 Screen Savers May Be Disabled by AutoSave

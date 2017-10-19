@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121077: WFW Print Manager Limitations with Windows NT Shared"
-permalink: kb/121/Q121077/
+permalink: /kb/121/Q121077/
 ---
 
 ## Q121077: WFW Print Manager Limitations with Windows NT Shared

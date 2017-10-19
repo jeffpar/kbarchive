@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155761: Database Path Must Exist Before Moving with Administrator"
-permalink: kb/155/Q155761/
+permalink: /kb/155/Q155761/
 ---
 
 ## Q155761: Database Path Must Exist Before Moving with Administrator

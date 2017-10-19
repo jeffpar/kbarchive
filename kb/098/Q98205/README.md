@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98205: PC WFW: 3.0 Supplementary Modem Scripts [5.25, 1.2 MB]"
-permalink: kb/098/Q98205/
+title: "Q98205: PC WFW: 3.0 Supplementary Modem Scripts &#91;5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98205/
 ---
 
-## Q98205: PC WFW: 3.0 Supplementary Modem Scripts [5.25, 1.2 MB]
+## Q98205: PC WFW: 3.0 Supplementary Modem Scripts &#91;5.25, 1.2 MB&#93;
 
 	Article: Q98205
 	Product(s): Microsoft Mail For PC Networks

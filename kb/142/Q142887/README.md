@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142887: FIX: SQL Select Inconsistency with SET ANSI OFF and ALLTRIM()"
-permalink: kb/142/Q142887/
+permalink: /kb/142/Q142887/
 ---
 
 ## Q142887: FIX: SQL Select Inconsistency with SET ANSI OFF and ALLTRIM()

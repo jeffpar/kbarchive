@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57848: Mac AL GW: Creating AppleLink Gateway Accounts"
-permalink: kb/057/Q57848/
+permalink: /kb/057/Q57848/
 ---
 
 ## Q57848: Mac AL GW: Creating AppleLink Gateway Accounts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192911: XFOR: Dirsync Between Notes and OV/VM over Exchange Fails"
-permalink: kb/192/Q192911/
+permalink: /kb/192/Q192911/
 ---
 
 ## Q192911: XFOR: Dirsync Between Notes and OV/VM over Exchange Fails

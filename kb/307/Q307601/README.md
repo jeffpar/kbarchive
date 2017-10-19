@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307601: Unable to Allocate LU 6.2 Sessions Using Dependent APPC LUs"
-permalink: kb/307/Q307601/
+permalink: /kb/307/Q307601/
 ---
 
 ## Q307601: Unable to Allocate LU 6.2 Sessions Using Dependent APPC LUs

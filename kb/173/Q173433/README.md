@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173433: Is MSN Supported on Macintosh Computers?"
-permalink: kb/173/Q173433/
+permalink: /kb/173/Q173433/
 ---
 
 ## Q173433: Is MSN Supported on Macintosh Computers?

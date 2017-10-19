@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162054: RouterMTU Registry Value Is No Longer Supported"
-permalink: kb/162/Q162054/
+permalink: /kb/162/Q162054/
 ---
 
 ## Q162054: RouterMTU Registry Value Is No Longer Supported

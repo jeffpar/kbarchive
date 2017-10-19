@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149257: How to Replace a View in a Splitter Window"
-permalink: kb/149/Q149257/
+permalink: /kb/149/Q149257/
 ---
 
 ## Q149257: How to Replace a View in a Splitter Window

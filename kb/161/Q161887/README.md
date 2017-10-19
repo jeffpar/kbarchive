@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161887: XFOR: Starting Internet Mail Service, Store Causes Stack Fault"
-permalink: kb/161/Q161887/
+permalink: /kb/161/Q161887/
 ---
 
 ## Q161887: XFOR: Starting Internet Mail Service, Store Causes Stack Fault

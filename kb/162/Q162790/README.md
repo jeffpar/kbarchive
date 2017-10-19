@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162790: Auto Arrange Activates Itself in Copied User Profiles"
-permalink: kb/162/Q162790/
+permalink: /kb/162/Q162790/
 ---
 
 ## Q162790: Auto Arrange Activates Itself in Copied User Profiles

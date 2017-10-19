@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100635: INFO: Dynamically Loading Dynamic-Link Libraries in Windows NT"
-permalink: kb/100/Q100635/
+permalink: /kb/100/Q100635/
 ---
 
 ## Q100635: INFO: Dynamically Loading Dynamic-Link Libraries in Windows NT

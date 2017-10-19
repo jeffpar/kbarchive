@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118658: PRB: Problem Entering Footnotes in Word 6.0"
-permalink: kb/118/Q118658/
+permalink: /kb/118/Q118658/
 ---
 
 ## Q118658: PRB: Problem Entering Footnotes in Word 6.0

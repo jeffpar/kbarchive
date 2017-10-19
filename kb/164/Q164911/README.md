@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164911: Improve SNA Manager Handling of Host Security Domain Deletion"
-permalink: kb/164/Q164911/
+permalink: /kb/164/Q164911/
 ---
 
 ## Q164911: Improve SNA Manager Handling of Host Security Domain Deletion

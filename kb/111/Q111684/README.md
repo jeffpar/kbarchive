@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111684: After WFWG Install, Can't Access NetWare Servers Using IPXODI"
-permalink: kb/111/Q111684/
+permalink: /kb/111/Q111684/
 ---
 
 ## Q111684: After WFWG Install, Can't Access NetWare Servers Using IPXODI

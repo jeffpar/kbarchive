@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104251: Dinosaurs: No Audio When After Dark Is Running"
-permalink: kb/104/Q104251/
+permalink: /kb/104/Q104251/
 ---
 
 ## Q104251: Dinosaurs: No Audio When After Dark Is Running

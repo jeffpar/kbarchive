@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90452: WFWG Err Msg: The Network Software Currently...LAN Manager 2.0"
-permalink: kb/090/Q90452/
+permalink: /kb/090/Q90452/
 ---
 
 ## Q90452: WFWG Err Msg: The Network Software Currently...LAN Manager 2.0

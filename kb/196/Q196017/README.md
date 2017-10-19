@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196017: XWEB: Opening Attachments with Media Player Gives Error"
-permalink: kb/196/Q196017/
+permalink: /kb/196/Q196017/
 ---
 
 ## Q196017: XWEB: Opening Attachments with Media Player Gives Error

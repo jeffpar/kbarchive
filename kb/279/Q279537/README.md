@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279537: XCON: Post-Service Pack 3 MTA Bindback String Changes"
-permalink: kb/279/Q279537/
+permalink: /kb/279/Q279537/
 ---
 
 ## Q279537: XCON: Post-Service Pack 3 MTA Bindback String Changes

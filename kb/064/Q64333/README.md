@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64333: Marker Beacon Does Not Emit Tones Related to Marker"
-permalink: kb/064/Q64333/
+permalink: /kb/064/Q64333/
 ---
 
 ## Q64333: Marker Beacon Does Not Emit Tones Related to Marker

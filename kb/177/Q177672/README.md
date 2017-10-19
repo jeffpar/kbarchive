@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177672: &quot;Fatal Exception 0E&quot; Error Message When Running McAfee VirusScan"
-permalink: kb/177/Q177672/
+permalink: /kb/177/Q177672/
 ---
 
 ## Q177672: &quot;Fatal Exception 0E&quot; Error Message When Running McAfee VirusScan

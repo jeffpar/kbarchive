@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182976: Remote Access Server Service Does Not Start Automatically"
-permalink: kb/182/Q182976/
+permalink: /kb/182/Q182976/
 ---
 
 ## Q182976: Remote Access Server Service Does Not Start Automatically

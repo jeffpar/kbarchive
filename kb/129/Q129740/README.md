@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129740: BUG: Grid FixedAlignment Prop Accepts Value for Non-Fixed Cell"
-permalink: kb/129/Q129740/
+permalink: /kb/129/Q129740/
 ---
 
 ## Q129740: BUG: Grid FixedAlignment Prop Accepts Value for Non-Fixed Cell

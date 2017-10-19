@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186904: MPROUTER Access Violation on Invalid RADIUS Response"
-permalink: kb/186/Q186904/
+permalink: /kb/186/Q186904/
 ---
 
 ## Q186904: MPROUTER Access Violation on Invalid RADIUS Response

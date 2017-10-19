@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276271: SMS: Using the SMS Extract Utility for SMS Reporting"
-permalink: kb/276/Q276271/
+permalink: /kb/276/Q276271/
 ---
 
 ## Q276271: SMS: Using the SMS Extract Utility for SMS Reporting

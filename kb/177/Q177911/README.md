@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177911: OLE2BIN Sample - Storing COleClientItems in a Database"
-permalink: kb/177/Q177911/
+permalink: /kb/177/Q177911/
 ---
 
 ## Q177911: OLE2BIN Sample - Storing COleClientItems in a Database

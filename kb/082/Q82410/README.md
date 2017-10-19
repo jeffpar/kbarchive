@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82410: Write Files on Left Side of Screen with HP 500C Printer"
-permalink: kb/082/Q82410/
+permalink: /kb/082/Q82410/
 ---
 
 ## Q82410: Write Files on Left Side of Screen with HP 500C Printer

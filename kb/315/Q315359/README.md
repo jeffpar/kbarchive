@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315359: PRB: Properties Truncated When OLE DB Provider for SQL Svr Used"
-permalink: kb/315/Q315359/
+permalink: /kb/315/Q315359/
 ---
 
 ## Q315359: PRB: Properties Truncated When OLE DB Provider for SQL Svr Used

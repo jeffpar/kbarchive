@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319127: Services Do Not Start and Event ID 7022 Is Logged"
-permalink: kb/319/Q319127/
+permalink: /kb/319/Q319127/
 ---
 
 ## Q319127: Services Do Not Start and Event ID 7022 Is Logged

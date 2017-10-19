@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169773: PRB: Setup Wizard Displays &quot;Invalid command-line parameters&quot;"
-permalink: kb/169/Q169773/
+permalink: /kb/169/Q169773/
 ---
 
 ## Q169773: PRB: Setup Wizard Displays &quot;Invalid command-line parameters&quot;

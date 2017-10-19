@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110364: PRB: &quot;End of File Encountered&quot; with APPEND GENERAL"
-permalink: kb/110/Q110364/
+permalink: /kb/110/Q110364/
 ---
 
 ## Q110364: PRB: &quot;End of File Encountered&quot; with APPEND GENERAL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76749: Enabling Internal Modem on Zenith Laptop"
-permalink: kb/076/Q76749/
+permalink: /kb/076/Q76749/
 ---
 
 ## Q76749: Enabling Internal Modem on Zenith Laptop

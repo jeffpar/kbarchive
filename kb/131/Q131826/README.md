@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131826: PC NTMMTA: Err Msg 1069: Service Did Not Start Due to Logon..."
-permalink: kb/131/Q131826/
+permalink: /kb/131/Q131826/
 ---
 
 ## Q131826: PC NTMMTA: Err Msg 1069: Service Did Not Start Due to Logon...

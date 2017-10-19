@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192887: XFOR: MS Mail Connector Doesn't Support Turkish Characters"
-permalink: kb/192/Q192887/
+permalink: /kb/192/Q192887/
 ---
 
 ## Q192887: XFOR: MS Mail Connector Doesn't Support Turkish Characters

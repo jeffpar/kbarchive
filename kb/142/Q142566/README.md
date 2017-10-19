@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142566: How to Create a Check Box that Shows a Check Mark"
-permalink: kb/142/Q142566/
+permalink: /kb/142/Q142566/
 ---
 
 ## Q142566: How to Create a Check Box that Shows a Check Mark

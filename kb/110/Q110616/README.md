@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110616: Flight Simulator: Diamond Video Card Settings"
-permalink: kb/110/Q110616/
+permalink: /kb/110/Q110616/
 ---
 
 ## Q110616: Flight Simulator: Diamond Video Card Settings

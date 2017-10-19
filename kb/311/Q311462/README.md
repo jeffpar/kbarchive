@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311462: SMS: User or User Group Advertisements Do Not Run Immediately"
-permalink: kb/311/Q311462/
+permalink: /kb/311/Q311462/
 ---
 
 ## Q311462: SMS: User or User Group Advertisements Do Not Run Immediately

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161804: VB 4.0 32-bit Custom Controls Reset After Applying WinNT 4.0 SP2"
-permalink: kb/161/Q161804/
+permalink: /kb/161/Q161804/
 ---
 
 ## Q161804: VB 4.0 32-bit Custom Controls Reset After Applying WinNT 4.0 SP2

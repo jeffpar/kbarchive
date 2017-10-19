@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193866: HOWTO: Use the VB 6.0 DataEnvironment with Parameterized Queries"
-permalink: kb/193/Q193866/
+permalink: /kb/193/Q193866/
 ---
 
 ## Q193866: HOWTO: Use the VB 6.0 DataEnvironment with Parameterized Queries

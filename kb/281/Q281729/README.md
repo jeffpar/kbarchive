@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281729: &quot;CoCreateInstance Failed&quot; Error in SNA Server/HIS 2000 Manager"
-permalink: kb/281/Q281729/
+permalink: /kb/281/Q281729/
 ---
 
 ## Q281729: &quot;CoCreateInstance Failed&quot; Error in SNA Server/HIS 2000 Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146641: HOWTO: Use OLE Messaging to Send Mail in Visual FoxPro App"
-permalink: kb/146/Q146641/
+permalink: /kb/146/Q146641/
 ---
 
 ## Q146641: HOWTO: Use OLE Messaging to Send Mail in Visual FoxPro App

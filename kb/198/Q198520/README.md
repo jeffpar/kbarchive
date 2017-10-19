@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198520: BUG: ATL OLE DB Provider Fails When Called from SQL 7.0 Query"
-permalink: kb/198/Q198520/
+permalink: /kb/198/Q198520/
 ---
 
 ## Q198520: BUG: ATL OLE DB Provider Fails When Called from SQL 7.0 Query

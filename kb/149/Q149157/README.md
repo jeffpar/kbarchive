@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149157: BUG: Some Compiler and Debugger REAL Arithmetic Results Differ"
-permalink: kb/149/Q149157/
+permalink: /kb/149/Q149157/
 ---
 
 ## Q149157: BUG: Some Compiler and Debugger REAL Arithmetic Results Differ

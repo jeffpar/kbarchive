@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89481: Serial Network Connections Not Supported in WFWG"
-permalink: kb/089/Q89481/
+permalink: /kb/089/Q89481/
 ---
 
 ## Q89481: Serial Network Connections Not Supported in WFWG

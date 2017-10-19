@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173577: WD97: Some View Options Change Between Views"
-permalink: kb/173/Q173577/
+permalink: /kb/173/Q173577/
 ---
 
 ## Q173577: WD97: Some View Options Change Between Views

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151719: Event ID 7024: Remoteboot Service Terminates with Error 2613"
-permalink: kb/151/Q151719/
+permalink: /kb/151/Q151719/
 ---
 
 ## Q151719: Event ID 7024: Remoteboot Service Terminates with Error 2613

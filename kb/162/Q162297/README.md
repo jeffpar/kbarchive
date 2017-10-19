@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162297: How to Disable SAP 64E"
-permalink: kb/162/Q162297/
+permalink: /kb/162/Q162297/
 ---
 
 ## Q162297: How to Disable SAP 64E

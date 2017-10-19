@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100353: True Type Fonts Supported by Windows NT"
-permalink: kb/100/Q100353/
+permalink: /kb/100/Q100353/
 ---
 
 ## Q100353: True Type Fonts Supported by Windows NT

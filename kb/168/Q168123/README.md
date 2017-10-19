@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168123: FIX: CWindow::GetTopLevelWindow() Returns NULL"
-permalink: kb/168/Q168123/
+permalink: /kb/168/Q168123/
 ---
 
 ## Q168123: FIX: CWindow::GetTopLevelWindow() Returns NULL

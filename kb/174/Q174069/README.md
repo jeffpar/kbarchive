@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174069: WD97: Invalid Links from Link to Remote File Transfer Protocol"
-permalink: kb/174/Q174069/
+permalink: /kb/174/Q174069/
 ---
 
 ## Q174069: WD97: Invalid Links from Link to Remote File Transfer Protocol

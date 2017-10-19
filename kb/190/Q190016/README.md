@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190016: Store.exe Causes Stack Fault When Starting IMC"
-permalink: kb/190/Q190016/
+permalink: /kb/190/Q190016/
 ---
 
 ## Q190016: Store.exe Causes Stack Fault When Starting IMC

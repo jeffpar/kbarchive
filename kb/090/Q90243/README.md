@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90243: Workgroup Connection SYSTEM.INI Settings"
-permalink: kb/090/Q90243/
+permalink: /kb/090/Q90243/
 ---
 
 ## Q90243: Workgroup Connection SYSTEM.INI Settings

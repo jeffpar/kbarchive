@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79731: Windows Err Msg: Your Program Cannot Be Swapped Out to Disk"
-permalink: kb/079/Q79731/
+permalink: /kb/079/Q79731/
 ---
 
 ## Q79731: Windows Err Msg: Your Program Cannot Be Swapped Out to Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170995: How to Install Third-Party Network Adapter Drivers"
-permalink: kb/170/Q170995/
+permalink: /kb/170/Q170995/
 ---
 
 ## Q170995: How to Install Third-Party Network Adapter Drivers

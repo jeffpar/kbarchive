@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149463: FIX: RichTextBox Appears Even If Visible Property Is False"
-permalink: kb/149/Q149463/
+permalink: /kb/149/Q149463/
 ---
 
 ## Q149463: FIX: RichTextBox Appears Even If Visible Property Is False

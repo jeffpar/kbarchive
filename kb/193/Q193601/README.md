@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193601: Registry Parameters for Windows NT Load Balancing Service"
-permalink: kb/193/Q193601/
+permalink: /kb/193/Q193601/
 ---
 
 ## Q193601: Registry Parameters for Windows NT Load Balancing Service

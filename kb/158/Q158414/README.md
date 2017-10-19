@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158414: &quot;&quot;Program Files&#92;Personal Web Server&quot;&quot; Folder Not Removed"
-permalink: kb/158/Q158414/
+permalink: /kb/158/Q158414/
 ---
 
 ## Q158414: &quot;&quot;Program Files&#92;Personal Web Server&quot;&quot; Folder Not Removed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279888: BUG: Error When Using Client Cursor to Add Record to SQL Table"
-permalink: kb/279/Q279888/
+permalink: /kb/279/Q279888/
 ---
 
 ## Q279888: BUG: Error When Using Client Cursor to Add Record to SQL Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137037: BUG: Cell Data Disappears in DBGrid with NumberFormat Set"
-permalink: kb/137/Q137037/
+permalink: /kb/137/Q137037/
 ---
 
 ## Q137037: BUG: Cell Data Disappears in DBGrid with NumberFormat Set

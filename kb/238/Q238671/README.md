@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238671: SP4 and SP5 Enable Automatic Adjustment for Daylight Saving Time"
-permalink: kb/238/Q238671/
+permalink: /kb/238/Q238671/
 ---
 
 ## Q238671: SP4 and SP5 Enable Automatic Adjustment for Daylight Saving Time

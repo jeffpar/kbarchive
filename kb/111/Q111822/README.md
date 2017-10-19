@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111822: PPT: How to Scale Bitmaps and Movies for Better Slide Shows"
-permalink: kb/111/Q111822/
+permalink: /kb/111/Q111822/
 ---
 
 ## Q111822: PPT: How to Scale Bitmaps and Movies for Better Slide Shows

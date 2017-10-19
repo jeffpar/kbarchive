@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153985: QuickShelf: Shut Down Windows Dialog Box Disappears"
-permalink: kb/153/Q153985/
+permalink: /kb/153/Q153985/
 ---
 
 ## Q153985: QuickShelf: Shut Down Windows Dialog Box Disappears

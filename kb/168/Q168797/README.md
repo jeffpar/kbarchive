@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168797: FIX: ImageList Control Does Not Accept Small Icons"
-permalink: kb/168/Q168797/
+permalink: /kb/168/Q168797/
 ---
 
 ## Q168797: FIX: ImageList Control Does Not Accept Small Icons

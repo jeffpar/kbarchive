@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244157: Preferred Server Selection Does Not Work as Expected with NDS"
-permalink: kb/244/Q244157/
+permalink: /kb/244/Q244157/
 ---
 
 ## Q244157: Preferred Server Selection Does Not Work as Expected with NDS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83338: Downloading TrueType Fonts &amp; LaserJets Before the Series IIs"
-permalink: kb/083/Q83338/
+permalink: /kb/083/Q83338/
 ---
 
 ## Q83338: Downloading TrueType Fonts &amp; LaserJets Before the Series IIs

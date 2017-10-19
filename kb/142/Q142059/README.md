@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142059: Err Msg: &quot;Could Not Set Printer&quot; if Port Name Includes Comma"
-permalink: kb/142/Q142059/
+permalink: /kb/142/Q142059/
 ---
 
 ## Q142059: Err Msg: &quot;Could Not Set Printer&quot; if Port Name Includes Comma

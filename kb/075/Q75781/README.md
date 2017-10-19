@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75781: Dithered Colored Text Can be Drawn in Paintbrush"
-permalink: kb/075/Q75781/
+permalink: /kb/075/Q75781/
 ---
 
 ## Q75781: Dithered Colored Text Can be Drawn in Paintbrush

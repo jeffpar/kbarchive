@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262433: XADM: Error Message: Event ID 1043 Source MSExchangeDS"
-permalink: kb/262/Q262433/
+permalink: /kb/262/Q262433/
 ---
 
 ## Q262433: XADM: Error Message: Event ID 1043 Source MSExchangeDS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145734: Err Msg: RASDDUI.DLL is Not a Valid Windows NT Image"
-permalink: kb/145/Q145734/
+permalink: /kb/145/Q145734/
 ---
 
 ## Q145734: Err Msg: RASDDUI.DLL is Not a Valid Windows NT Image

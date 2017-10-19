@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140713: COPYEMBED From AutoCAD LT Works Incorrectly"
-permalink: kb/140/Q140713/
+permalink: /kb/140/Q140713/
 ---
 
 ## Q140713: COPYEMBED From AutoCAD LT Works Incorrectly

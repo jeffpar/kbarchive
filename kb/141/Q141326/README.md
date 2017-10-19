@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141326: Multimedia Programs: Screen Turns Black or Colors are Mottled"
-permalink: kb/141/Q141326/
+permalink: /kb/141/Q141326/
 ---
 
 ## Q141326: Multimedia Programs: Screen Turns Black or Colors are Mottled

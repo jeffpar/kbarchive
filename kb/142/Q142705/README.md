@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142705: BUG: No Option in Windows NT to Limit Number of User Logons"
-permalink: kb/142/Q142705/
+permalink: /kb/142/Q142705/
 ---
 
 ## Q142705: BUG: No Option in Windows NT to Limit Number of User Logons

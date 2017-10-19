@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140708: Error Message: Cannot Display This Help File. Try Opening..."
-permalink: kb/140/Q140708/
+permalink: /kb/140/Q140708/
 ---
 
 ## Q140708: Error Message: Cannot Display This Help File. Try Opening...

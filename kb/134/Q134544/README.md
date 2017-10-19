@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134544: GP Fault Pressing CTRL+ESC in 3 Balloons Program"
-permalink: kb/134/Q134544/
+permalink: /kb/134/Q134544/
 ---
 
 ## Q134544: GP Fault Pressing CTRL+ESC in 3 Balloons Program

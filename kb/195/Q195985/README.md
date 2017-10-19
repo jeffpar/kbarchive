@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195985: XADM: Move Mailbox Fails with Client Operation Failed Error"
-permalink: kb/195/Q195985/
+permalink: /kb/195/Q195985/
 ---
 
 ## Q195985: XADM: Move Mailbox Fails with Client Operation Failed Error

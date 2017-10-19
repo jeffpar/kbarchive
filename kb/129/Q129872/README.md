@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129872: PRB: Wrong Number of Arguments Error When Call Math Functions"
-permalink: kb/129/Q129872/
+permalink: /kb/129/Q129872/
 ---
 
 ## Q129872: PRB: Wrong Number of Arguments Error When Call Math Functions

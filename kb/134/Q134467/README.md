@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134467: El Fish Game Appears to Stop Responding at Startup"
-permalink: kb/134/Q134467/
+permalink: /kb/134/Q134467/
 ---
 
 ## Q134467: El Fish Game Appears to Stop Responding at Startup

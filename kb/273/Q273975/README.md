@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273975: Opening Multiple SLI Sessions May Cause Some to Stop Responding"
-permalink: kb/273/Q273975/
+permalink: /kb/273/Q273975/
 ---
 
 ## Q273975: Opening Multiple SLI Sessions May Cause Some to Stop Responding

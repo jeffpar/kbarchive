@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106018: BUG: SetPixel() Doesn't Work Properly on a PS Printer"
-permalink: kb/106/Q106018/
+permalink: /kb/106/Q106018/
 ---
 
 ## Q106018: BUG: SetPixel() Doesn't Work Properly on a PS Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234146: BUG: ATL Consumer Wizard truncates SQL Server Field to TCHAR"
-permalink: kb/234/Q234146/
+permalink: /kb/234/Q234146/
 ---
 
 ## Q234146: BUG: ATL Consumer Wizard truncates SQL Server Field to TCHAR

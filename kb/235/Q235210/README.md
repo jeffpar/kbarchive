@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235210: SMS: Site Unable to Remove CAP"
-permalink: kb/235/Q235210/
+permalink: /kb/235/Q235210/
 ---
 
 ## Q235210: SMS: Site Unable to Remove CAP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87758: XGAAIDOX.SYS May Cause Windows 3.1 to Stop"
-permalink: kb/087/Q87758/
+permalink: /kb/087/Q87758/
 ---
 
 ## Q87758: XGAAIDOX.SYS May Cause Windows 3.1 to Stop

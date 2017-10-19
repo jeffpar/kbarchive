@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89288: Windows 3.0 Does Not Support Persistent Connections"
-permalink: kb/089/Q89288/
+permalink: /kb/089/Q89288/
 ---
 
 ## Q89288: Windows 3.0 Does Not Support Persistent Connections

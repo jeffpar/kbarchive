@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172478: LU Assigned to a Workstation Disappears After Restart"
-permalink: kb/172/Q172478/
+permalink: /kb/172/Q172478/
 ---
 
 ## Q172478: LU Assigned to a Workstation Disappears After Restart

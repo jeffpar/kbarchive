@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174528: DOC ERR: Creating a New Debugging Information File"
-permalink: kb/174/Q174528/
+permalink: /kb/174/Q174528/
 ---
 
 ## Q174528: DOC ERR: Creating a New Debugging Information File

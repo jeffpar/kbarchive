@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189580: BUG: Print Preview Scroll Bar Disappears After Zoom In, Zoom Out"
-permalink: kb/189/Q189580/
+permalink: /kb/189/Q189580/
 ---
 
 ## Q189580: BUG: Print Preview Scroll Bar Disappears After Zoom In, Zoom Out

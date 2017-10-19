@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106051: Errors Printing from Windows for Workgroups"
-permalink: kb/106/Q106051/
+permalink: /kb/106/Q106051/
 ---
 
 ## Q106051: Errors Printing from Windows for Workgroups

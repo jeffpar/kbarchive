@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271307: XWEB: Invalid Calendar Recurrence Causes Looping in Cdo.dll"
-permalink: kb/271/Q271307/
+permalink: /kb/271/Q271307/
 ---
 
 ## Q271307: XWEB: Invalid Calendar Recurrence Causes Looping in Cdo.dll

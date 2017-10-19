@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86404: PC MAPI: Bad lpszDateRecieved Value Doesn't Return Error"
-permalink: kb/086/Q86404/
+permalink: /kb/086/Q86404/
 ---
 
 ## Q86404: PC MAPI: Bad lpszDateRecieved Value Doesn't Return Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298932: &quot;Connection Test Failed&quot; Error with SMS Web Reports Installation"
-permalink: kb/298/Q298932/
+permalink: /kb/298/Q298932/
 ---
 
 ## Q298932: &quot;Connection Test Failed&quot; Error with SMS Web Reports Installation

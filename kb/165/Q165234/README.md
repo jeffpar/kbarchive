@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165234: PRB: CREATEOFFLINE Opens Parent Table Exclusively"
-permalink: kb/165/Q165234/
+permalink: /kb/165/Q165234/
 ---
 
 ## Q165234: PRB: CREATEOFFLINE Opens Parent Table Exclusively

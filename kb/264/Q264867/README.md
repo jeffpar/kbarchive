@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264867: INFO: Possible Causes of Data Corruption in Visual FoxPro"
-permalink: kb/264/Q264867/
+permalink: /kb/264/Q264867/
 ---
 
 ## Q264867: INFO: Possible Causes of Data Corruption in Visual FoxPro

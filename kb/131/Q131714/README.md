@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131714: Custom PCL Separator File Example"
-permalink: kb/131/Q131714/
+permalink: /kb/131/Q131714/
 ---
 
 ## Q131714: Custom PCL Separator File Example

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138655: How to Highlight a Single Grid Field"
-permalink: kb/138/Q138655/
+permalink: /kb/138/Q138655/
 ---
 
 ## Q138655: How to Highlight a Single Grid Field

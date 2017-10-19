@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248075: Error: HTTP 403.12 - Access Forbidden: Mapper Denied Access"
-permalink: kb/248/Q248075/
+permalink: /kb/248/Q248075/
 ---
 
 ## Q248075: Error: HTTP 403.12 - Access Forbidden: Mapper Denied Access

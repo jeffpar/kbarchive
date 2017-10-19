@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260986: WD97: Setting Ruby in a Certain Formed Table Makes Word Stop"
-permalink: kb/260/Q260986/
+permalink: /kb/260/Q260986/
 ---
 
 ## Q260986: WD97: Setting Ruby in a Certain Formed Table Makes Word Stop

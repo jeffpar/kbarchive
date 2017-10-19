@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148474: Ole_samp.exe to Microsoft Excel, Word, &amp; PowerPoint"
-permalink: kb/148/Q148474/
+permalink: /kb/148/Q148474/
 ---
 
 ## Q148474: Ole_samp.exe to Microsoft Excel, Word, &amp; PowerPoint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300150: SMS: Remote Control Console Problems with High Compression"
-permalink: kb/300/Q300150/
+permalink: /kb/300/Q300150/
 ---
 
 ## Q300150: SMS: Remote Control Console Problems with High Compression

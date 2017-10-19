@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154466: FIX: Unable to Locate URLMON.DLL on Windows NT 3.51"
-permalink: kb/154/Q154466/
+permalink: /kb/154/Q154466/
 ---
 
 ## Q154466: FIX: Unable to Locate URLMON.DLL on Windows NT 3.51

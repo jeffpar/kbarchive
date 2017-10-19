@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90036: Small Text Under Picture in Quick Recorder Explained"
-permalink: kb/090/Q90036/
+permalink: /kb/090/Q90036/
 ---
 
 ## Q90036: Small Text Under Picture in Quick Recorder Explained

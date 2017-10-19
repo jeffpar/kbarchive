@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196015: WD97: Dates in Table Sort Incorrectly as Date Type"
-permalink: kb/196/Q196015/
+permalink: /kb/196/Q196015/
 ---
 
 ## Q196015: WD97: Dates in Table Sort Incorrectly as Date Type

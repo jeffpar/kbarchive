@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177665: Path Too Long Error Message When Exceeding MAX_PATH"
-permalink: kb/177/Q177665/
+permalink: /kb/177/Q177665/
 ---
 
 ## Q177665: Path Too Long Error Message When Exceeding MAX_PATH

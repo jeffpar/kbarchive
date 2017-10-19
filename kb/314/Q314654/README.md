@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314654: FIX: &quot;Cannot update the Cursor&quot; Error When Indexing a Table"
-permalink: kb/314/Q314654/
+permalink: /kb/314/Q314654/
 ---
 
 ## Q314654: FIX: &quot;Cannot update the Cursor&quot; Error When Indexing a Table

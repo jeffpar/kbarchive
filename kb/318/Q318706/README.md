@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318706: FIX: Cannot Implement Office Add-in IDTExtensibility2 Interface"
-permalink: kb/318/Q318706/
+permalink: /kb/318/Q318706/
 ---
 
 ## Q318706: FIX: Cannot Implement Office Add-in IDTExtensibility2 Interface

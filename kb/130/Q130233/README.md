@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130233: How to Install or Remove a Font in Windows 95/98"
-permalink: kb/130/Q130233/
+permalink: /kb/130/Q130233/
 ---
 
 ## Q130233: How to Install or Remove a Font in Windows 95/98

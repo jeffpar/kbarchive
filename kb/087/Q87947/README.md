@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87947: DSKLAYT2 Does Not Preserve Tree Structure of Source Files"
-permalink: kb/087/Q87947/
+permalink: /kb/087/Q87947/
 ---
 
 ## Q87947: DSKLAYT2 Does Not Preserve Tree Structure of Source Files

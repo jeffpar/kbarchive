@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263630: BUG: C2143 Referencing Class Template from Another Namespace"
-permalink: kb/263/Q263630/
+permalink: /kb/263/Q263630/
 ---
 
 ## Q263630: BUG: C2143 Referencing Class Template from Another Namespace

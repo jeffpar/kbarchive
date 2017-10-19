@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192696: Grace Logins Are Not Reset on FPNW"
-permalink: kb/192/Q192696/
+permalink: /kb/192/Q192696/
 ---
 
 ## Q192696: Grace Logins Are Not Reset on FPNW

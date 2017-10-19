@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291259: Running Windows 2000 Professional Comments and Corrections"
-permalink: kb/291/Q291259/
+permalink: /kb/291/Q291259/
 ---
 
 ## Q291259: Running Windows 2000 Professional Comments and Corrections

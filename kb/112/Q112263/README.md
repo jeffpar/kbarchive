@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112263: PC Gen: Slow Performance with Version 3.22 of Novell NETX"
-permalink: kb/112/Q112263/
+permalink: /kb/112/Q112263/
 ---
 
 ## Q112263: PC Gen: Slow Performance with Version 3.22 of Novell NETX

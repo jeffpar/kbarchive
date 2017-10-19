@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321408: Dungeon Siege: Error Msg: Unable to Access Required Directory"
-permalink: kb/321/Q321408/
+permalink: /kb/321/Q321408/
 ---
 
 ## Q321408: Dungeon Siege: Error Msg: Unable to Access Required Directory

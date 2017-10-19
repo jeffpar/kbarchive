@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108733: X400: Setting Up the Gateway as a EiconCard Server"
-permalink: kb/108/Q108733/
+permalink: /kb/108/Q108733/
 ---
 
 ## Q108733: X400: Setting Up the Gateway as a EiconCard Server

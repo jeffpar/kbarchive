@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91048: Transmission Retry Field Displays 100 Instead of 1000"
-permalink: kb/091/Q91048/
+permalink: /kb/091/Q91048/
 ---
 
 ## Q91048: Transmission Retry Field Displays 100 Instead of 1000

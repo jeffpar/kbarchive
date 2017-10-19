@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123216: Keyboard Interface Not Available for MS-DOS Based Applications"
-permalink: kb/123/Q123216/
+permalink: /kb/123/Q123216/
 ---
 
 ## Q123216: Keyboard Interface Not Available for MS-DOS Based Applications

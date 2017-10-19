@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96616: AutoCad Overlay Files Must be Local to Work with LAN Man"
-permalink: kb/096/Q96616/
+permalink: /kb/096/Q96616/
 ---
 
 ## Q96616: AutoCad Overlay Files Must be Local to Work with LAN Man

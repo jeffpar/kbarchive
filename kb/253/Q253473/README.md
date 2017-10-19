@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253473: How to Use the Arrow (ALT+TAB) Button in Remote Control Window"
-permalink: kb/253/Q253473/
+permalink: /kb/253/Q253473/
 ---
 
 ## Q253473: How to Use the Arrow (ALT+TAB) Button in Remote Control Window

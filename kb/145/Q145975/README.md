@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145975: XADM: Knowledge of Other Servers in Site Not Instantaneous"
-permalink: kb/145/Q145975/
+permalink: /kb/145/Q145975/
 ---
 
 ## Q145975: XADM: Knowledge of Other Servers in Site Not Instantaneous

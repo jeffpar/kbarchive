@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225272: Client Programs Are Not Installed on Windows 95 Client"
-permalink: kb/225/Q225272/
+permalink: /kb/225/Q225272/
 ---
 
 ## Q225272: Client Programs Are Not Installed on Windows 95 Client

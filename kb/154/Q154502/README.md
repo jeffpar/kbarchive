@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154502: Replication Increased by ANNOUNCE_IMMEDIATE Events"
-permalink: kb/154/Q154502/
+permalink: /kb/154/Q154502/
 ---
 
 ## Q154502: Replication Increased by ANNOUNCE_IMMEDIATE Events

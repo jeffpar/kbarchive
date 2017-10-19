@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135740: PPT7: Format Painter Doesn't Copy Custom Background in Sorter"
-permalink: kb/135/Q135740/
+permalink: /kb/135/Q135740/
 ---
 
 ## Q135740: PPT7: Format Painter Doesn't Copy Custom Background in Sorter

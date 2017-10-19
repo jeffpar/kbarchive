@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182605: XCLN: Multinational Client Cannot View User's Properties"
-permalink: kb/182/Q182605/
+permalink: /kb/182/Q182605/
 ---
 
 ## Q182605: XCLN: Multinational Client Cannot View User's Properties

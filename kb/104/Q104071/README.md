@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104071: Scenes 1.0: Dissolve Transition Fails on First Picture"
-permalink: kb/104/Q104071/
+permalink: /kb/104/Q104071/
 ---
 
 ## Q104071: Scenes 1.0: Dissolve Transition Fails on First Picture

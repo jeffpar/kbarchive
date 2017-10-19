@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135513: FltSim 5.1: Cannot Change View 1 When Map View Is Active"
-permalink: kb/135/Q135513/
+permalink: /kb/135/Q135513/
 ---
 
 ## Q135513: FltSim 5.1: Cannot Change View 1 When Map View Is Active

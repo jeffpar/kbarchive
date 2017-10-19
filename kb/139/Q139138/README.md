@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139138: Cannot Search Using Kanji and Other DBCS Languages"
-permalink: kb/139/Q139138/
+permalink: /kb/139/Q139138/
 ---
 
 ## Q139138: Cannot Search Using Kanji and Other DBCS Languages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112595: Service Control Manager Event 7024 (2550)"
-permalink: kb/112/Q112595/
+permalink: /kb/112/Q112595/
 ---
 
 ## Q112595: Service Control Manager Event 7024 (2550)

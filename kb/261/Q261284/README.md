@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261284: WD97: Word Stops When Printing or Returns Error in Hpbla2.dll"
-permalink: kb/261/Q261284/
+permalink: /kb/261/Q261284/
 ---
 
 ## Q261284: WD97: Word Stops When Printing or Returns Error in Hpbla2.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203733: Quarterdeck Cleansweep Registry Wizard Stops Working"
-permalink: kb/203/Q203733/
+permalink: /kb/203/Q203733/
 ---
 
 ## Q203733: Quarterdeck Cleansweep Registry Wizard Stops Working

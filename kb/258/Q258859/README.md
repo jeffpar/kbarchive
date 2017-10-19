@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258859: Description of Special SFUUSER Account Created by SFU 2.0"
-permalink: kb/258/Q258859/
+permalink: /kb/258/Q258859/
 ---
 
 ## Q258859: Description of Special SFUUSER Account Created by SFU 2.0

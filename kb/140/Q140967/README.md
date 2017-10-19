@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140967: Changing Password in User Manager Does Not Permit Logon"
-permalink: kb/140/Q140967/
+permalink: /kb/140/Q140967/
 ---
 
 ## Q140967: Changing Password in User Manager Does Not Permit Logon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190146: XCLN: Creating a MAPI Profile for Lotus Notes"
-permalink: kb/190/Q190146/
+permalink: /kb/190/Q190146/
 ---
 
 ## Q190146: XCLN: Creating a MAPI Profile for Lotus Notes

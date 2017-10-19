@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160650: Blue Screen When Closing Kernel Mode Handles from User Mode"
-permalink: kb/160/Q160650/
+permalink: /kb/160/Q160650/
 ---
 
 ## Q160650: Blue Screen When Closing Kernel Mode Handles from User Mode

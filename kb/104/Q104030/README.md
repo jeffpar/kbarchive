@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104030: PC WSPlus: Schedule+ Prints Incomplete Message, Header Info"
-permalink: kb/104/Q104030/
+permalink: /kb/104/Q104030/
 ---
 
 ## Q104030: PC WSPlus: Schedule+ Prints Incomplete Message, Header Info

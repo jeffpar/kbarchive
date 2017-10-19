@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168330: WD97: Alpha: Cannot Use Word 97 Converter with Alpha Word 6.0"
-permalink: kb/168/Q168330/
+permalink: /kb/168/Q168330/
 ---
 
 ## Q168330: WD97: Alpha: Cannot Use Word 97 Converter with Alpha Word 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169147: Briefcase Error &quot;DLLCanUnloadNow&quot;"
-permalink: kb/169/Q169147/
+permalink: /kb/169/Q169147/
 ---
 
 ## Q169147: Briefcase Error &quot;DLLCanUnloadNow&quot;

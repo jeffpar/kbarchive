@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89410: PC Win: Mailing to an Address Not Found in the Address List"
-permalink: kb/089/Q89410/
+permalink: /kb/089/Q89410/
 ---
 
 ## Q89410: PC Win: Mailing to an Address Not Found in the Address List

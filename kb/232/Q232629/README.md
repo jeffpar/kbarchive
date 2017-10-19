@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232629: Errors Occur When the MTS Identity Is Not Set to Default User"
-permalink: kb/232/Q232629/
+permalink: /kb/232/Q232629/
 ---
 
 ## Q232629: Errors Occur When the MTS Identity Is Not Set to Default User

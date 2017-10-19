@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149237: BUG: 4 Class Wizard Problems w/ International System Settings"
-permalink: kb/149/Q149237/
+permalink: /kb/149/Q149237/
 ---
 
 ## Q149237: BUG: 4 Class Wizard Problems w/ International System Settings

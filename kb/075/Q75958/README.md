@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75958: Mac Hyp: Adding Multiple Enclosures to a Message"
-permalink: kb/075/Q75958/
+permalink: /kb/075/Q75958/
 ---
 
 ## Q75958: Mac Hyp: Adding Multiple Enclosures to a Message

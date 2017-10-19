@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170526: User Settings and Profiles Missing After Full Reinstallation"
-permalink: kb/170/Q170526/
+permalink: /kb/170/Q170526/
 ---
 
 ## Q170526: User Settings and Profiles Missing After Full Reinstallation

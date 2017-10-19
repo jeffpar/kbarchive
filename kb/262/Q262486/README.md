@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262486: 100% CPU Utilization or AV When You Use Basic Authentication"
-permalink: kb/262/Q262486/
+permalink: /kb/262/Q262486/
 ---
 
 ## Q262486: 100% CPU Utilization or AV When You Use Basic Authentication

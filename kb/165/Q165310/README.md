@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165310: 5250 Print Sessions Don't Reconnect After Connection Outage"
-permalink: kb/165/Q165310/
+permalink: /kb/165/Q165310/
 ---
 
 ## Q165310: 5250 Print Sessions Don't Reconnect After Connection Outage

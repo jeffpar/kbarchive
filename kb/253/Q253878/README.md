@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253878: WD97: Labels Print Higher After First Page"
-permalink: kb/253/Q253878/
+permalink: /kb/253/Q253878/
 ---
 
 ## Q253878: WD97: Labels Print Higher After First Page

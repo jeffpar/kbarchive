@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89879: Differences Between PCM/ADPCM Wave Files Explained"
-permalink: kb/089/Q89879/
+permalink: /kb/089/Q89879/
 ---
 
 ## Q89879: Differences Between PCM/ADPCM Wave Files Explained

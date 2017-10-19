@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168732: WD97: Clicking UNC Hyperlink to HTML File Starts Web Browser"
-permalink: kb/168/Q168732/
+permalink: /kb/168/Q168732/
 ---
 
 ## Q168732: WD97: Clicking UNC Hyperlink to HTML File Starts Web Browser

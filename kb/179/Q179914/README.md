@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179914: BUG: Terminal Font at 6 Point Size in List Box Grows in Size"
-permalink: kb/179/Q179914/
+permalink: /kb/179/Q179914/
 ---
 
 ## Q179914: BUG: Terminal Font at 6 Point Size in List Box Grows in Size

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158060: WD97: VBA Code Lost After Converting to Another Document Format"
-permalink: kb/158/Q158060/
+permalink: /kb/158/Q158060/
 ---
 
 ## Q158060: WD97: VBA Code Lost After Converting to Another Document Format

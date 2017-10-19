@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172914: CPIC App Traps on SNA Windows 95 Client Running on Windows NT"
-permalink: kb/172/Q172914/
+permalink: /kb/172/Q172914/
 ---
 
 ## Q172914: CPIC App Traps on SNA Windows 95 Client Running on Windows NT

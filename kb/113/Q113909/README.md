@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113909: NTBACKUP Creates Additional Backup Set Description File"
-permalink: kb/113/Q113909/
+permalink: /kb/113/Q113909/
 ---
 
 ## Q113909: NTBACKUP Creates Additional Backup Set Description File

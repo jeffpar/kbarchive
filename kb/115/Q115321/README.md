@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115321: File Manager Err Msg: The Destination Drive Is Full"
-permalink: kb/115/Q115321/
+permalink: /kb/115/Q115321/
 ---
 
 ## Q115321: File Manager Err Msg: The Destination Drive Is Full

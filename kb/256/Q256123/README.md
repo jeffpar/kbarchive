@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256123: SMSLogonSvc account cannot reliably remain unlocked if password"
-permalink: kb/256/Q256123/
+permalink: /kb/256/Q256123/
 ---
 
 ## Q256123: SMSLogonSvc account cannot reliably remain unlocked if password

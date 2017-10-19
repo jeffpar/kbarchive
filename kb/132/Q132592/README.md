@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132592: XTreeNet 3.0 Blocks Use of ALT and CTRL Keys"
-permalink: kb/132/Q132592/
+permalink: /kb/132/Q132592/
 ---
 
 ## Q132592: XTreeNet 3.0 Blocks Use of ALT and CTRL Keys

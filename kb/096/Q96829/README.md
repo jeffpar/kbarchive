@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96829: Explanation of the WINA20.386 File"
-permalink: kb/096/Q96829/
+permalink: /kb/096/Q96829/
 ---
 
 ## Q96829: Explanation of the WINA20.386 File

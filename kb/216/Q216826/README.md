@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216826: SMSINST: How to Create a Silent Uninstall for SMS Installer Prog"
-permalink: kb/216/Q216826/
+permalink: /kb/216/Q216826/
 ---
 
 ## Q216826: SMSINST: How to Create a Silent Uninstall for SMS Installer Prog

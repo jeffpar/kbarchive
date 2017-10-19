@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171732: WD97: Control Code for Finding/Replacing with Unicode Value"
-permalink: kb/171/Q171732/
+permalink: /kb/171/Q171732/
 ---
 
 ## Q171732: WD97: Control Code for Finding/Replacing with Unicode Value

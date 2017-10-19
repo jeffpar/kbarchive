@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258253: XADM: How to Set Up Auto-Naming Guidelines for Administrators"
-permalink: kb/258/Q258253/
+permalink: /kb/258/Q258253/
 ---
 
 ## Q258253: XADM: How to Set Up Auto-Naming Guidelines for Administrators

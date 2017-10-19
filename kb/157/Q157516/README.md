@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157516: 3D GRAPHICS PROGRAMMING FOR WIN 95 Corrections and Comments"
-permalink: kb/157/Q157516/
+permalink: /kb/157/Q157516/
 ---
 
 ## Q157516: 3D GRAPHICS PROGRAMMING FOR WIN 95 Corrections and Comments

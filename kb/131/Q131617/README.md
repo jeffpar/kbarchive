@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131617: Tape Device Times Out on a Northwest Micro Pentium Computer"
-permalink: kb/131/Q131617/
+permalink: /kb/131/Q131617/
 ---
 
 ## Q131617: Tape Device Times Out on a Northwest Micro Pentium Computer

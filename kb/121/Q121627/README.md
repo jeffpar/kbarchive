@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121627: Using NCR C810 PCI SCSI Adapter on Systems with Phoenix BIOS"
-permalink: kb/121/Q121627/
+permalink: /kb/121/Q121627/
 ---
 
 ## Q121627: Using NCR C810 PCI SCSI Adapter on Systems with Phoenix BIOS

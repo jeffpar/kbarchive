@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240946: BUG: ListView Fails to Raise Mouse Events if MultiSelect = True"
-permalink: kb/240/Q240946/
+permalink: /kb/240/Q240946/
 ---
 
 ## Q240946: BUG: ListView Fails to Raise Mouse Events if MultiSelect = True

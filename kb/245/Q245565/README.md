@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245565: XCON: Msg Delivery Fails Using Internet Mail Service w/NTLM"
-permalink: kb/245/Q245565/
+permalink: /kb/245/Q245565/
 ---
 
 ## Q245565: XCON: Msg Delivery Fails Using Internet Mail Service w/NTLM

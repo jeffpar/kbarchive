@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168560: WD97: Invalid Page Fault When You Edit a Picture"
-permalink: kb/168/Q168560/
+permalink: /kb/168/Q168560/
 ---
 
 ## Q168560: WD97: Invalid Page Fault When You Edit a Picture

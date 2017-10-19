@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115087: HOWTO: Change the Background Color of a Common Dialog"
-permalink: kb/115/Q115087/
+permalink: /kb/115/Q115087/
 ---
 
 ## Q115087: HOWTO: Change the Background Color of a Common Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148845: Access Violation in RASMAN.EXE Under Windows NT 3.51"
-permalink: kb/148/Q148845/
+permalink: /kb/148/Q148845/
 ---
 
 ## Q148845: Access Violation in RASMAN.EXE Under Windows NT 3.51

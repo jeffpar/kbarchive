@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226842: SMS: Importing New License MIF File Overwrites License Info"
-permalink: kb/226/Q226842/
+permalink: /kb/226/Q226842/
 ---
 
 ## Q226842: SMS: Importing New License MIF File Overwrites License Info

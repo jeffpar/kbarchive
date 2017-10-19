@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139728: Err Msg: EMM386 Has Detected Error #06 in...Address 00B8:0B53"
-permalink: kb/139/Q139728/
+permalink: /kb/139/Q139728/
 ---
 
 ## Q139728: Err Msg: EMM386 Has Detected Error #06 in...Address 00B8:0B53

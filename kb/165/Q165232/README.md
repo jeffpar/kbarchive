@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165232: WD97: Table of Contents Page Number Tip Incorrect"
-permalink: kb/165/Q165232/
+permalink: /kb/165/Q165232/
 ---
 
 ## Q165232: WD97: Table of Contents Page Number Tip Incorrect

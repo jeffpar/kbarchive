@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142512: Artist: Epson Stylus Prints with Gray Overlay"
-permalink: kb/142/Q142512/
+permalink: /kb/142/Q142512/
 ---
 
 ## Q142512: Artist: Epson Stylus Prints with Gray Overlay

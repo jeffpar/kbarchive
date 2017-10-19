@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115449: X400: Default Bodypart Parameter Applies to Message Body Only"
-permalink: kb/115/Q115449/
+permalink: /kb/115/Q115449/
 ---
 
 ## Q115449: X400: Default Bodypart Parameter Applies to Message Body Only

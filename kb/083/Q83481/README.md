@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83481: Error When Running Setup from MS-DOS SHELL"
-permalink: kb/083/Q83481/
+permalink: /kb/083/Q83481/
 ---
 
 ## Q83481: Error When Running Setup from MS-DOS SHELL

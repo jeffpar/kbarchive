@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215367: GetEffectiveRightsFromAcl() Returns Incorrect Access Mask Value"
-permalink: kb/215/Q215367/
+permalink: /kb/215/Q215367/
 ---
 
 ## Q215367: GetEffectiveRightsFromAcl() Returns Incorrect Access Mask Value

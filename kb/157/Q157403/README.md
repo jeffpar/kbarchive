@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157403: WD97: Unexpected Results with &quot;Next Text Box&quot; in Headers/Footers"
-permalink: kb/157/Q157403/
+permalink: /kb/157/Q157403/
 ---
 
 ## Q157403: WD97: Unexpected Results with &quot;Next Text Box&quot; in Headers/Footers

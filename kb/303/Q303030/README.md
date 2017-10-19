@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303030: Flight Simulator 2000: Force Feedback 2 Throttle Doesn't Work"
-permalink: kb/303/Q303030/
+permalink: /kb/303/Q303030/
 ---
 
 ## Q303030: Flight Simulator 2000: Force Feedback 2 Throttle Doesn't Work

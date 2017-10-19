@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107384: RUI Interface Enhancement to Avoid Duplicate Signon Screens"
-permalink: kb/107/Q107384/
+permalink: /kb/107/Q107384/
 ---
 
 ## Q107384: RUI Interface Enhancement to Avoid Duplicate Signon Screens

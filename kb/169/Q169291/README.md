@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169291: Using Scopes with Different Subnet Masks in a Superscope"
-permalink: kb/169/Q169291/
+permalink: /kb/169/Q169291/
 ---
 
 ## Q169291: Using Scopes with Different Subnet Masks in a Superscope

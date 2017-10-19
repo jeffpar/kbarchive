@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146623: PRB: IsClipListChanged Will Always Return TRUE"
-permalink: kb/146/Q146623/
+permalink: /kb/146/Q146623/
 ---
 
 ## Q146623: PRB: IsClipListChanged Will Always Return TRUE

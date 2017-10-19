@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174751: XADM: RPC Fails After Installation of GSNW"
-permalink: kb/174/Q174751/
+permalink: /kb/174/Q174751/
 ---
 
 ## Q174751: XADM: RPC Fails After Installation of GSNW

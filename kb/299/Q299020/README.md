@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299020: FIX: Index Corruption Updating Same Record from FoxPro"
-permalink: kb/299/Q299020/
+permalink: /kb/299/Q299020/
 ---
 
 ## Q299020: FIX: Index Corruption Updating Same Record from FoxPro

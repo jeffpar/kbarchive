@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74227: Updating to Windows 3.0a on a Network"
-permalink: kb/074/Q74227/
+permalink: /kb/074/Q74227/
 ---
 
 ## Q74227: Updating to Windows 3.0a on a Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259634: XADM: How to Obtain Correct Size of the Exchange Server Database"
-permalink: kb/259/Q259634/
+permalink: /kb/259/Q259634/
 ---
 
 ## Q259634: XADM: How to Obtain Correct Size of the Exchange Server Database

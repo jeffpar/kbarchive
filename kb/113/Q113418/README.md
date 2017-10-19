@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113418: HOW TO: Determine Whether a Drive Is a RAM Drive"
-permalink: kb/113/Q113418/
+permalink: /kb/113/Q113418/
 ---
 
 ## Q113418: HOW TO: Determine Whether a Drive Is a RAM Drive

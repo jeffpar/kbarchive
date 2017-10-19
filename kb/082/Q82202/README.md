@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82202: The Right ALT Key and the US-International Keyboard Layout"
-permalink: kb/082/Q82202/
+permalink: /kb/082/Q82202/
 ---
 
 ## Q82202: The Right ALT Key and the US-International Keyboard Layout

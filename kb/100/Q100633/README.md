@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100633: PACKING.LST for Professional Edition of VB 3.0 for Windows"
-permalink: kb/100/Q100633/
+permalink: /kb/100/Q100633/
 ---
 
 ## Q100633: PACKING.LST for Professional Edition of VB 3.0 for Windows

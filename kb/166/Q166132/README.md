@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166132: PRB: Dialog With RichEdit May Fail During Creation"
-permalink: kb/166/Q166132/
+permalink: /kb/166/Q166132/
 ---
 
 ## Q166132: PRB: Dialog With RichEdit May Fail During Creation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79155: L2022, L2029 Errors Linking Application with a .DEF File"
-permalink: kb/079/Q79155/
+permalink: /kb/079/Q79155/
 ---
 
 ## Q79155: L2022, L2029 Errors Linking Application with a .DEF File

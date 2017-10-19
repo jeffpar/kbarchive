@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169627: Use of Keyboard or Mouse During First Boot May Cause Hang"
-permalink: kb/169/Q169627/
+permalink: /kb/169/Q169627/
 ---
 
 ## Q169627: Use of Keyboard or Mouse During First Boot May Cause Hang

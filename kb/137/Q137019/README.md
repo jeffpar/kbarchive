@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137019: User Account Gets Locked Out When It Should not Get Locked Out"
-permalink: kb/137/Q137019/
+permalink: /kb/137/Q137019/
 ---
 
 ## Q137019: User Account Gets Locked Out When It Should not Get Locked Out

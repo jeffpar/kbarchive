@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182902: XADM: How To Set Up Container Level Search Control"
-permalink: kb/182/Q182902/
+permalink: /kb/182/Q182902/
 ---
 
 ## Q182902: XADM: How To Set Up Container Level Search Control

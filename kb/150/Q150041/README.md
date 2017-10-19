@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150041: Environment Variables Returned by IIS via CGI"
-permalink: kb/150/Q150041/
+permalink: /kb/150/Q150041/
 ---
 
 ## Q150041: Environment Variables Returned by IIS via CGI

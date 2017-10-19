@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81349: Floppy Drives with WordPerfect 5.1 and Windows"
-permalink: kb/081/Q81349/
+permalink: /kb/081/Q81349/
 ---
 
 ## Q81349: Floppy Drives with WordPerfect 5.1 and Windows

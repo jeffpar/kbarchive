@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157089: WD97: Limitations of Converting from WordPerfect 6.x to Word 97"
-permalink: kb/157/Q157089/
+permalink: /kb/157/Q157089/
 ---
 
 ## Q157089: WD97: Limitations of Converting from WordPerfect 6.x to Word 97

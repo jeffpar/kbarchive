@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263140: Anonymous and Basic Authentication Fail When Connecting to IIS 5"
-permalink: kb/263/Q263140/
+permalink: /kb/263/Q263140/
 ---
 
 ## Q263140: Anonymous and Basic Authentication Fail When Connecting to IIS 5

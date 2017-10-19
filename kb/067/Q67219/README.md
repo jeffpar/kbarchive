@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67219: GTCO Digitizer Tablets and Windows 3.0"
-permalink: kb/067/Q67219/
+permalink: /kb/067/Q67219/
 ---
 
 ## Q67219: GTCO Digitizer Tablets and Windows 3.0

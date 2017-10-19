@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135358: WfWG 3.11 Computer Hangs Trying to Access Network Using RAS"
-permalink: kb/135/Q135358/
+permalink: /kb/135/Q135358/
 ---
 
 ## Q135358: WfWG 3.11 Computer Hangs Trying to Access Network Using RAS

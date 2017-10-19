@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132466: Problems Printing From DCA IRMA Workstation for NT 1.1"
-permalink: kb/132/Q132466/
+permalink: /kb/132/Q132466/
 ---
 
 ## Q132466: Problems Printing From DCA IRMA Workstation for NT 1.1

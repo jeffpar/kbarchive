@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115940: Running Windows 3.1 Under Workgroup Add-On for MS-DOS"
-permalink: kb/115/Q115940/
+permalink: /kb/115/Q115940/
 ---
 
 ## Q115940: Running Windows 3.1 Under Workgroup Add-On for MS-DOS

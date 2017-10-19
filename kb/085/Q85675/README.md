@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85675: DOCERR: Windows Help Macros Limited to 512 Characters"
-permalink: kb/085/Q85675/
+permalink: /kb/085/Q85675/
 ---
 
 ## Q85675: DOCERR: Windows Help Macros Limited to 512 Characters

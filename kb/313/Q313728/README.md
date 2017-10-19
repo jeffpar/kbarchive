@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313728: HIS 2000 Clients Using Active Directory Fail to Get Host Session"
-permalink: kb/313/Q313728/
+permalink: /kb/313/Q313728/
 ---
 
 ## Q313728: HIS 2000 Clients Using Active Directory Fail to Get Host Session

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240917: XIMS: Relocating the Directories Used by SMTP Service"
-permalink: kb/240/Q240917/
+permalink: /kb/240/Q240917/
 ---
 
 ## Q240917: XIMS: Relocating the Directories Used by SMTP Service

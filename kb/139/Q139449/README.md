@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139449: How to Create Individual Home Directories"
-permalink: kb/139/Q139449/
+permalink: /kb/139/Q139449/
 ---
 
 ## Q139449: How to Create Individual Home Directories

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85582: Group Icon Location Not Saved with Read-Only Attribute Set"
-permalink: kb/085/Q85582/
+permalink: /kb/085/Q85582/
 ---
 
 ## Q85582: Group Icon Location Not Saved with Read-Only Attribute Set

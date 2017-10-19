@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155677: XADM: Input Fields for Storage Limits Display Only Five Digits"
-permalink: kb/155/Q155677/
+permalink: /kb/155/Q155677/
 ---
 
 ## Q155677: XADM: Input Fields for Storage Limits Display Only Five Digits

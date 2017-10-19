@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37932: Mac DOS: System Requirements for Microsoft Mail (MS-DOS Client)"
-permalink: kb/037/Q37932/
+permalink: /kb/037/Q37932/
 ---
 
 ## Q37932: Mac DOS: System Requirements for Microsoft Mail (MS-DOS Client)

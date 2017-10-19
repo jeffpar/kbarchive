@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149359: XADM: Configuring Mailboxes to Reject Distribution List Messages"
-permalink: kb/149/Q149359/
+permalink: /kb/149/Q149359/
 ---
 
 ## Q149359: XADM: Configuring Mailboxes to Reject Distribution List Messages

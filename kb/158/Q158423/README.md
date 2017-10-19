@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158423: WinNT 4.0 ERD Won't Allow Repair w/out Compact Disc Installed"
-permalink: kb/158/Q158423/
+permalink: /kb/158/Q158423/
 ---
 
 ## Q158423: WinNT 4.0 ERD Won't Allow Repair w/out Compact Disc Installed

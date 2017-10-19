@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170271: Description of Zero Admin Kit for Windows NT Workstation 4.0"
-permalink: kb/170/Q170271/
+permalink: /kb/170/Q170271/
 ---
 
 ## Q170271: Description of Zero Admin Kit for Windows NT Workstation 4.0

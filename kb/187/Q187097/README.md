@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187097: Chat and Clipbook Viewer Produce NetDDE Errors"
-permalink: kb/187/Q187097/
+permalink: /kb/187/Q187097/
 ---
 
 ## Q187097: Chat and Clipbook Viewer Produce NetDDE Errors

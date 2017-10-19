@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311387: XADM: Search Permission Prevents Viewing Membership of DL"
-permalink: kb/311/Q311387/
+permalink: /kb/311/Q311387/
 ---
 
 ## Q311387: XADM: Search Permission Prevents Viewing Membership of DL

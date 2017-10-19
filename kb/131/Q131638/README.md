@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131638: PC WFW: Client Files for Windows for Workgroups Mail"
-permalink: kb/131/Q131638/
+permalink: /kb/131/Q131638/
 ---
 
 ## Q131638: PC WFW: Client Files for Windows for Workgroups Mail

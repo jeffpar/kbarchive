@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97473: RESTORE Err Msg: 'Incorrect DOS Version'"
-permalink: kb/097/Q97473/
+permalink: /kb/097/Q97473/
 ---
 
 ## Q97473: RESTORE Err Msg: 'Incorrect DOS Version'

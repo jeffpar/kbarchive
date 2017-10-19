@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197006: New User Accounts May Not Be Permitted to Use User Profiles"
-permalink: kb/197/Q197006/
+permalink: /kb/197/Q197006/
 ---
 
 ## Q197006: New User Accounts May Not Be Permitted to Use User Profiles

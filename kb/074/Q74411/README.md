@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74411: PRB: RC Error RW1031: Segment Too Large for Load Optimization"
-permalink: kb/074/Q74411/
+permalink: /kb/074/Q74411/
 ---
 
 ## Q74411: PRB: RC Error RW1031: Segment Too Large for Load Optimization

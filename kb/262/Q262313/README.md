@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262313: StarLancer: Officer States That Enriquez Is on the Warpath"
-permalink: kb/262/Q262313/
+permalink: /kb/262/Q262313/
 ---
 
 ## Q262313: StarLancer: Officer States That Enriquez Is on the Warpath

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162775: Access Violation in SPOOLSS when Printing to a Serial Printer"
-permalink: kb/162/Q162775/
+permalink: /kb/162/Q162775/
 ---
 
 ## Q162775: Access Violation in SPOOLSS when Printing to a Serial Printer

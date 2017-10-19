@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235450: XGEN: Exchange 5.5 SP3 InterOrg Replication Release Notes Update"
-permalink: kb/235/Q235450/
+permalink: /kb/235/Q235450/
 ---
 
 ## Q235450: XGEN: Exchange 5.5 SP3 InterOrg Replication Release Notes Update

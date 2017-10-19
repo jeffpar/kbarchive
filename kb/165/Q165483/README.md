@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165483: RasEnumEntries() API Leaks Memory"
-permalink: kb/165/Q165483/
+permalink: /kb/165/Q165483/
 ---
 
 ## Q165483: RasEnumEntries() API Leaks Memory

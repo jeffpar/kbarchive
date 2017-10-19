@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191132: CG4: Clip Gallery Hangs When Importing Multiple CGM Files"
-permalink: kb/191/Q191132/
+permalink: /kb/191/Q191132/
 ---
 
 ## Q191132: CG4: Clip Gallery Hangs When Importing Multiple CGM Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221714: BUG: FFCs - _Hyperlink Classes Builder Doesn't Allow Long URL"
-permalink: kb/221/Q221714/
+permalink: /kb/221/Q221714/
 ---
 
 ## Q221714: BUG: FFCs - _Hyperlink Classes Builder Doesn't Allow Long URL

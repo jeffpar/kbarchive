@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217011: HOWTO: Copy a DAO TableDef Including User-Defined Properties"
-permalink: kb/217/Q217011/
+permalink: /kb/217/Q217011/
 ---
 
 ## Q217011: HOWTO: Copy a DAO TableDef Including User-Defined Properties

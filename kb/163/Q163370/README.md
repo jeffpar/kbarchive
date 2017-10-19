@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163370: PRB: #File Error# During Dump of Heap Objects"
-permalink: kb/163/Q163370/
+permalink: /kb/163/Q163370/
 ---
 
 ## Q163370: PRB: #File Error# During Dump of Heap Objects

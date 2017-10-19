@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263023: SMS: Information on Scaling Software Metering"
-permalink: kb/263/Q263023/
+permalink: /kb/263/Q263023/
 ---
 
 ## Q263023: SMS: Information on Scaling Software Metering

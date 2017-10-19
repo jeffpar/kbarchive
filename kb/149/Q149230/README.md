@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149230: XCLN: Setup Error: &quot;Exchange Setup Was Interrupted...&quot;"
-permalink: kb/149/Q149230/
+permalink: /kb/149/Q149230/
 ---
 
 ## Q149230: XCLN: Setup Error: &quot;Exchange Setup Was Interrupted...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85560: Creating a New SYSTEM.INI Without Third-Party Drivers"
-permalink: kb/085/Q85560/
+permalink: /kb/085/Q85560/
 ---
 
 ## Q85560: Creating a New SYSTEM.INI Without Third-Party Drivers

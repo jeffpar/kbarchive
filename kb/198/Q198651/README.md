@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198651: SMS: How to Create a New SMS Console Window in the MMC"
-permalink: kb/198/Q198651/
+permalink: /kb/198/Q198651/
 ---
 
 ## Q198651: SMS: How to Create a New SMS Console Window in the MMC

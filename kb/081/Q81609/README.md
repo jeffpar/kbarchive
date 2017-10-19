@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81609: Err Msg: 'Incorrect System Version' When Starting MS-DOS App"
-permalink: kb/081/Q81609/
+permalink: /kb/081/Q81609/
 ---
 
 ## Q81609: Err Msg: 'Incorrect System Version' When Starting MS-DOS App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186138: HOWTO: Wrap Remote Views into One SQL Transaction"
-permalink: kb/186/Q186138/
+permalink: /kb/186/Q186138/
 ---
 
 ## Q186138: HOWTO: Wrap Remote Views into One SQL Transaction

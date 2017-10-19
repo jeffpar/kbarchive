@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171126: WD97: Macro to Test for an Existing Macro Name"
-permalink: kb/171/Q171126/
+permalink: /kb/171/Q171126/
 ---
 
 ## Q171126: WD97: Macro to Test for an Existing Macro Name

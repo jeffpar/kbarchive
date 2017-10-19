@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76774: README.TXT: Using Windows 2.x Drivers with Windows 3.0"
-permalink: kb/076/Q76774/
+permalink: /kb/076/Q76774/
 ---
 
 ## Q76774: README.TXT: Using Windows 2.x Drivers with Windows 3.0

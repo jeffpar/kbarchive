@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193426: Virtual Globe: Statistics Are Not Listed in Alphabetical Order"
-permalink: kb/193/Q193426/
+permalink: /kb/193/Q193426/
 ---
 
 ## Q193426: Virtual Globe: Statistics Are Not Listed in Alphabetical Order

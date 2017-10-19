@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155595: Server Manager Error: A Machine Account Already Exists"
-permalink: kb/155/Q155595/
+permalink: /kb/155/Q155595/
 ---
 
 ## Q155595: Server Manager Error: A Machine Account Already Exists

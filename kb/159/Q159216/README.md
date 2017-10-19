@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159216: XCLN: How to Create One-off Address in Korean Exchange Client"
-permalink: kb/159/Q159216/
+permalink: /kb/159/Q159216/
 ---
 
 ## Q159216: XCLN: How to Create One-off Address in Korean Exchange Client

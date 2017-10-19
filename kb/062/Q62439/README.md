@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62439: During Reconfiguration, Setup Won't Accept Correct Disk"
-permalink: kb/062/Q62439/
+permalink: /kb/062/Q62439/
 ---
 
 ## Q62439: During Reconfiguration, Setup Won't Accept Correct Disk

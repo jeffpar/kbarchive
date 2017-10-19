@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118293: MAC Encarta: Hang in MindMaze or Dictionary with CacheOut"
-permalink: kb/118/Q118293/
+permalink: /kb/118/Q118293/
 ---
 
 ## Q118293: MAC Encarta: Hang in MindMaze or Dictionary with CacheOut

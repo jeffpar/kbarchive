@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151751: BUG:About Tasmanian Traders Dialog Disabled System Info Button"
-permalink: kb/151/Q151751/
+permalink: /kb/151/Q151751/
 ---
 
 ## Q151751: BUG:About Tasmanian Traders Dialog Disabled System Info Button

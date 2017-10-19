@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199994: SMS: Removing a Server as a Distribution Server Leaves Reg Value"
-permalink: kb/199/Q199994/
+permalink: /kb/199/Q199994/
 ---
 
 ## Q199994: SMS: Removing a Server as a Distribution Server Leaves Reg Value

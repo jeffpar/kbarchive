@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146819: Diamond Stealth 64 2001 Series Video Card Support"
-permalink: kb/146/Q146819/
+permalink: /kb/146/Q146819/
 ---
 
 ## Q146819: Diamond Stealth 64 2001 Series Video Card Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64823: Windows 3.0 and Award BIOS for 286/386 Computers"
-permalink: kb/064/Q64823/
+permalink: /kb/064/Q64823/
 ---
 
 ## Q64823: Windows 3.0 and Award BIOS for 286/386 Computers

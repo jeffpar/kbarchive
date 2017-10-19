@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107810: Err Msg in MS-DOS Session: Cannot Write to Drive C:/Cancel...?"
-permalink: kb/107/Q107810/
+permalink: /kb/107/Q107810/
 ---
 
 ## Q107810: Err Msg in MS-DOS Session: Cannot Write to Drive C:/Cancel...?

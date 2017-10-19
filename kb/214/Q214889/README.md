@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214889: SMS: Remote Chat May Not Work on Slow Link"
-permalink: kb/214/Q214889/
+permalink: /kb/214/Q214889/
 ---
 
 ## Q214889: SMS: Remote Chat May Not Work on Slow Link

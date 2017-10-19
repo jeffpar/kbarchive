@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76550: FIX: Undocumented Separator Property of a VB Menu Item"
-permalink: kb/076/Q76550/
+permalink: /kb/076/Q76550/
 ---
 
 ## Q76550: FIX: Undocumented Separator Property of a VB Menu Item

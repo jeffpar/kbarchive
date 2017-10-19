@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194923: HOWTO: Trap Control Characters Using the MSComm Control"
-permalink: kb/194/Q194923/
+permalink: /kb/194/Q194923/
 ---
 
 ## Q194923: HOWTO: Trap Control Characters Using the MSComm Control

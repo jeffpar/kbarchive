@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240930: Err Msg: Content Advisor Will Not Allow You to See This Web Site"
-permalink: kb/240/Q240930/
+permalink: /kb/240/Q240930/
 ---
 
 ## Q240930: Err Msg: Content Advisor Will Not Allow You to See This Web Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316830: Offline E-mail Features in MSN Explorer--For MSN Internet Access"
-permalink: kb/316/Q316830/
+permalink: /kb/316/Q316830/
 ---
 
 ## Q316830: Offline E-mail Features in MSN Explorer--For MSN Internet Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87015: INFO: C2466 Error When Allocating an Array of Length 0"
-permalink: kb/087/Q87015/
+permalink: /kb/087/Q87015/
 ---
 
 ## Q87015: INFO: C2466 Error When Allocating an Array of Length 0

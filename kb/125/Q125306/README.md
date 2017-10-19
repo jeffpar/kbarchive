@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125306: BUG: Cannot Insert BLOB Data Sized Between 64K and 128K"
-permalink: kb/125/Q125306/
+permalink: /kb/125/Q125306/
 ---
 
 ## Q125306: BUG: Cannot Insert BLOB Data Sized Between 64K and 128K

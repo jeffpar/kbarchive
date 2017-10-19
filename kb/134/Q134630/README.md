@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134630: Numbers Incorrect if Disconnected During Phone Book Transfer"
-permalink: kb/134/Q134630/
+permalink: /kb/134/Q134630/
 ---
 
 ## Q134630: Numbers Incorrect if Disconnected During Phone Book Transfer

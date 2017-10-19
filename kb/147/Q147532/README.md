@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147532: Access Denied and Login Failed on Internet Information Server"
-permalink: kb/147/Q147532/
+permalink: /kb/147/Q147532/
 ---
 
 ## Q147532: Access Denied and Login Failed on Internet Information Server

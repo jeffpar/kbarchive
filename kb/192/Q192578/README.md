@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192578: HOWTO: Creating and Customizing a ProjectHook Class"
-permalink: kb/192/Q192578/
+permalink: /kb/192/Q192578/
 ---
 
 ## Q192578: HOWTO: Creating and Customizing a ProjectHook Class

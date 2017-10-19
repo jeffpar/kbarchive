@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157044: Some Applications Appear to Consume 100% of CPU Time"
-permalink: kb/157/Q157044/
+permalink: /kb/157/Q157044/
 ---
 
 ## Q157044: Some Applications Appear to Consume 100% of CPU Time

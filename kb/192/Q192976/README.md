@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192976: PRB: VFP 6.0 Application Requires FoxFont In Fonts Directory"
-permalink: kb/192/Q192976/
+permalink: /kb/192/Q192976/
 ---
 
 ## Q192976: PRB: VFP 6.0 Application Requires FoxFont In Fonts Directory

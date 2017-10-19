@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198125: WD97: Hyperlink Is Lost When Link Dragged from Word to Excel"
-permalink: kb/198/Q198125/
+permalink: /kb/198/Q198125/
 ---
 
 ## Q198125: WD97: Hyperlink Is Lost When Link Dragged from Word to Excel

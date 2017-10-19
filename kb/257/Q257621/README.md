@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257621: FIX: Resources Lost When Loading Modal Form from ActiveX Server"
-permalink: kb/257/Q257621/
+permalink: /kb/257/Q257621/
 ---
 
 ## Q257621: FIX: Resources Lost When Loading Modal Form from ActiveX Server

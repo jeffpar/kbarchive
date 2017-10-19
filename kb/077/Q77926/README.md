@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77926: PC DB: Description of Mail Database Subdirectories"
-permalink: kb/077/Q77926/
+permalink: /kb/077/Q77926/
 ---
 
 ## Q77926: PC DB: Description of Mail Database Subdirectories

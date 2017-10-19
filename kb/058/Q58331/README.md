@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58331: Contents of Windows 3.0 WININI.TXT"
-permalink: kb/058/Q58331/
+permalink: /kb/058/Q58331/
 ---
 
 ## Q58331: Contents of Windows 3.0 WININI.TXT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135895: Windows 95 CD-ROM Faq.txt File (2 of 2)"
-permalink: kb/135/Q135895/
+permalink: /kb/135/Q135895/
 ---
 
 ## Q135895: Windows 95 CD-ROM Faq.txt File (2 of 2)

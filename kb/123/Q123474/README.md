@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123474: HOWTO: Logon With a Name Other than the System Logon"
-permalink: kb/123/Q123474/
+permalink: /kb/123/Q123474/
 ---
 
 ## Q123474: HOWTO: Logon With a Name Other than the System Logon

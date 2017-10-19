@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115926: Network Driver Error 7212 Sharing a Drive in File Manager"
-permalink: kb/115/Q115926/
+permalink: /kb/115/Q115926/
 ---
 
 ## Q115926: Network Driver Error 7212 Sharing a Drive in File Manager

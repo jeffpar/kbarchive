@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71511: Programs to Turn CAPS LOCK Key Off or On"
-permalink: kb/071/Q71511/
+permalink: /kb/071/Q71511/
 ---
 
 ## Q71511: Programs to Turn CAPS LOCK Key Off or On

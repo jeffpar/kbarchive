@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153980: Madge Smart Ringnode 16/4 Does Not Work on Shared Installation"
-permalink: kb/153/Q153980/
+permalink: /kb/153/Q153980/
 ---
 
 ## Q153980: Madge Smart Ringnode 16/4 Does Not Work on Shared Installation

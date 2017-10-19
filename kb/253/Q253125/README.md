@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253125: RTF Control Can Be Used for Multilanguage Support in FoxPro"
-permalink: kb/253/Q253125/
+permalink: /kb/253/Q253125/
 ---
 
 ## Q253125: RTF Control Can Be Used for Multilanguage Support in FoxPro

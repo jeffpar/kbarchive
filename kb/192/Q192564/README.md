@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192564: INFO: Set Winsock Control RemoteHost and RemotePort for UDP"
-permalink: kb/192/Q192564/
+permalink: /kb/192/Q192564/
 ---
 
 ## Q192564: INFO: Set Winsock Control RemoteHost and RemotePort for UDP

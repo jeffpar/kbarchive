@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132823: Borland C++ Version 4.5 Hangs During Installation"
-permalink: kb/132/Q132823/
+permalink: /kb/132/Q132823/
 ---
 
 ## Q132823: Borland C++ Version 4.5 Hangs During Installation

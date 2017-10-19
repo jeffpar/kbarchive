@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132356: How to Use a Container Object Instead of a Custom Object"
-permalink: kb/132/Q132356/
+permalink: /kb/132/Q132356/
 ---
 
 ## Q132356: How to Use a Container Object Instead of a Custom Object

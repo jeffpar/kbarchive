@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180867: SNA Server Fails to Map Host User ID/Password"
-permalink: kb/180/Q180867/
+permalink: /kb/180/Q180867/
 ---
 
 ## Q180867: SNA Server Fails to Map Host User ID/Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280438: MechWarrior 4: Blue Screen Error When You Remove CD-ROM"
-permalink: kb/280/Q280438/
+permalink: /kb/280/Q280438/
 ---
 
 ## Q280438: MechWarrior 4: Blue Screen Error When You Remove CD-ROM

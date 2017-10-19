@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125604: ADT2: Cannot Edit Fields in Form with Calendar Control"
-permalink: kb/125/Q125604/
+permalink: /kb/125/Q125604/
 ---
 
 ## Q125604: ADT2: Cannot Edit Fields in Form with Calendar Control

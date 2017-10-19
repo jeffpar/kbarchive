@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189741: BUG: Form Falls to Background When MsgBox Appears"
-permalink: kb/189/Q189741/
+permalink: /kb/189/Q189741/
 ---
 
 ## Q189741: BUG: Form Falls to Background When MsgBox Appears

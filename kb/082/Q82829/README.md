@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82829: Using Windows Entertainment Pack Version 1 with Windows 3.1"
-permalink: kb/082/Q82829/
+permalink: /kb/082/Q82829/
 ---
 
 ## Q82829: Using Windows Entertainment Pack Version 1 with Windows 3.1

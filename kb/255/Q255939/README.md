@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255939: MMS DB5cfg File Displays Incorrect Build Number"
-permalink: kb/255/Q255939/
+permalink: /kb/255/Q255939/
 ---
 
 ## Q255939: MMS DB5cfg File Displays Incorrect Build Number

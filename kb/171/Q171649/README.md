@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171649: DNS Err Msg: The Handle is Invalid"
-permalink: kb/171/Q171649/
+permalink: /kb/171/Q171649/
 ---
 
 ## Q171649: DNS Err Msg: The Handle is Invalid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132741: Sun Exabyte 8500 Tape Device Requires Firmware Upgrade"
-permalink: kb/132/Q132741/
+permalink: /kb/132/Q132741/
 ---
 
 ## Q132741: Sun Exabyte 8500 Tape Device Requires Firmware Upgrade

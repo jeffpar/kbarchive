@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131300: PRB: Clicking a Disabled Item in a List Box Selects It"
-permalink: kb/131/Q131300/
+permalink: /kb/131/Q131300/
 ---
 
 ## Q131300: PRB: Clicking a Disabled Item in a List Box Selects It

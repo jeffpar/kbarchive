@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167882: WD97: Pleading Wizard Stops If Visual Basic Editor Window Open"
-permalink: kb/167/Q167882/
+permalink: /kb/167/Q167882/
 ---
 
 ## Q167882: WD97: Pleading Wizard Stops If Visual Basic Editor Window Open

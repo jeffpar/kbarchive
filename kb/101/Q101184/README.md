@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101184: INFO: Retrieving the CMDIChildWnd Parent Window"
-permalink: kb/101/Q101184/
+permalink: /kb/101/Q101184/
 ---
 
 ## Q101184: INFO: Retrieving the CMDIChildWnd Parent Window

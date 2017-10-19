@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263639: BUG: Class Access Specifier Ignored for Fully Qual. Stat Members"
-permalink: kb/263/Q263639/
+permalink: /kb/263/Q263639/
 ---
 
 ## Q263639: BUG: Class Access Specifier Ignored for Fully Qual. Stat Members

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250392: Using the Viabackup Tool in Microsoft Metadirectory Services"
-permalink: kb/250/Q250392/
+permalink: /kb/250/Q250392/
 ---
 
 ## Q250392: Using the Viabackup Tool in Microsoft Metadirectory Services

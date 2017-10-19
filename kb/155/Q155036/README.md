@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155036: XFOR: IMC: Inbound Messages Queued but Not Processed"
-permalink: kb/155/Q155036/
+permalink: /kb/155/Q155036/
 ---
 
 ## Q155036: XFOR: IMC: Inbound Messages Queued but Not Processed

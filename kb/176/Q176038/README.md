@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176038: XCLN: Attachments Show {EMBED Unknown} Instead of Icon"
-permalink: kb/176/Q176038/
+permalink: /kb/176/Q176038/
 ---
 
 ## Q176038: XCLN: Attachments Show {EMBED Unknown} Instead of Icon

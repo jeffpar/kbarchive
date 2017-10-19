@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176899: FS98/2000: How To Find Detailed Preflight Briefing Information"
-permalink: kb/176/Q176899/
+permalink: /kb/176/Q176899/
 ---
 
 ## Q176899: FS98/2000: How To Find Detailed Preflight Briefing Information

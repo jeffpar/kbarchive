@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272545: Contacting Member Support for MSN Companion"
-permalink: kb/272/Q272545/
+permalink: /kb/272/Q272545/
 ---
 
 ## Q272545: Contacting Member Support for MSN Companion

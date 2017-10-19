@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92798: Windows Err Msg: There is a Problem with Your Media Device"
-permalink: kb/092/Q92798/
+permalink: /kb/092/Q92798/
 ---
 
 ## Q92798: Windows Err Msg: There is a Problem with Your Media Device

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124123: File Open (16-Bit) Displays File List Very Slowly"
-permalink: kb/124/Q124123/
+permalink: /kb/124/Q124123/
 ---
 
 ## Q124123: File Open (16-Bit) Displays File List Very Slowly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74648: PRB: Insufficient Disk Space Error When Setup Copies Files"
-permalink: kb/074/Q74648/
+permalink: /kb/074/Q74648/
 ---
 
 ## Q74648: PRB: Insufficient Disk Space Error When Setup Copies Files

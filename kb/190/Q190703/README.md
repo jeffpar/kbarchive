@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190703: XADM: Local Objects Will Backsync From Other Sites"
-permalink: kb/190/Q190703/
+permalink: /kb/190/Q190703/
 ---
 
 ## Q190703: XADM: Local Objects Will Backsync From Other Sites

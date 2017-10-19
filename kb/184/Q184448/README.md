@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184448: HTML In Action Back Cover Lists Incorrect Contents for CD-ROM"
-permalink: kb/184/Q184448/
+permalink: /kb/184/Q184448/
 ---
 
 ## Q184448: HTML In Action Back Cover Lists Incorrect Contents for CD-ROM

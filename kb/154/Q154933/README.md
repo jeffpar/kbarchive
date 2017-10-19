@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154933: Err Msg: The LsaCreateSecret Call Failed"
-permalink: kb/154/Q154933/
+permalink: /kb/154/Q154933/
 ---
 
 ## Q154933: Err Msg: The LsaCreateSecret Call Failed

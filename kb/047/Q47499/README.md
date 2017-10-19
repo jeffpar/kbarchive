@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47499: Talk.exe Shares Global Memory Between Applications"
-permalink: kb/047/Q47499/
+permalink: /kb/047/Q47499/
 ---
 
 ## Q47499: Talk.exe Shares Global Memory Between Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152719: WAN and Trust: Traffic on the Wire"
-permalink: kb/152/Q152719/
+permalink: /kb/152/Q152719/
 ---
 
 ## Q152719: WAN and Trust: Traffic on the Wire

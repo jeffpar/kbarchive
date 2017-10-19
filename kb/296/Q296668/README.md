@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296668: FP: Authentication Error When You Log On"
-permalink: kb/296/Q296668/
+permalink: /kb/296/Q296668/
 ---
 
 ## Q296668: FP: Authentication Error When You Log On

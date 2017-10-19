@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171928: Learn VC++ Now: Some Files Can't Be Opened or Copied"
-permalink: kb/171/Q171928/
+permalink: /kb/171/Q171928/
 ---
 
 ## Q171928: Learn VC++ Now: Some Files Can't Be Opened or Copied

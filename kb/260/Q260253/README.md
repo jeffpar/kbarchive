@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260253: PC NTMMTA: NTMMTA Setup on Windows 2000 May Not Work"
-permalink: kb/260/Q260253/
+permalink: /kb/260/Q260253/
 ---
 
 ## Q260253: PC NTMMTA: NTMMTA Setup on Windows 2000 May Not Work

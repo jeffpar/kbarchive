@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263670: WD97: Index Entries Appear in Reverse Order"
-permalink: kb/263/Q263670/
+permalink: /kb/263/Q263670/
 ---
 
 ## Q263670: WD97: Index Entries Appear in Reverse Order

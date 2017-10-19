@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184453: IE 4 Technical Support Training Comments and Corrections"
-permalink: kb/184/Q184453/
+permalink: /kb/184/Q184453/
 ---
 
 ## Q184453: IE 4 Technical Support Training Comments and Corrections

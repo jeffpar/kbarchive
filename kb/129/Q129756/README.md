@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129756: PRB: REPLACE Causes &quot;Field Rule Has Been Violated&quot; Error"
-permalink: kb/129/Q129756/
+permalink: /kb/129/Q129756/
 ---
 
 ## Q129756: PRB: REPLACE Causes &quot;Field Rule Has Been Violated&quot; Error

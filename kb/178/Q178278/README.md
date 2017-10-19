@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178278: Boot Partition Using CPQArray has Limits if Using scsi() Syntax"
-permalink: kb/178/Q178278/
+permalink: /kb/178/Q178278/
 ---
 
 ## Q178278: Boot Partition Using CPQArray has Limits if Using scsi() Syntax

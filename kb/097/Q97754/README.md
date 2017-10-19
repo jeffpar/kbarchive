@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97754: RAS 1.1/VCOMMIOD.EXE Internal Modem Fix"
-permalink: kb/097/Q97754/
+permalink: /kb/097/Q97754/
 ---
 
 ## Q97754: RAS 1.1/VCOMMIOD.EXE Internal Modem Fix

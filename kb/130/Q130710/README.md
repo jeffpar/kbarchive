@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130710: Cannot Access Files on Novell 3.11 Server"
-permalink: kb/130/Q130710/
+permalink: /kb/130/Q130710/
 ---
 
 ## Q130710: Cannot Access Files on Novell 3.11 Server

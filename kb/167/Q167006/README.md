@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167006: INFO: Removing Recycle Bin Option During Unattended Setup"
-permalink: kb/167/Q167006/
+permalink: /kb/167/Q167006/
 ---
 
 ## Q167006: INFO: Removing Recycle Bin Option During Unattended Setup

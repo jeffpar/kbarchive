@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302441: E-mail Message Opens In New Window Behind Main Window In MSN Exp"
-permalink: kb/302/Q302441/
+permalink: /kb/302/Q302441/
 ---
 
 ## Q302441: E-mail Message Opens In New Window Behind Main Window In MSN Exp

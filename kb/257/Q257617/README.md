@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257617: Terminal Server Service Stops Responding if Other Service Hangs"
-permalink: kb/257/Q257617/
+permalink: /kb/257/Q257617/
 ---
 
 ## Q257617: Terminal Server Service Stops Responding if Other Service Hangs

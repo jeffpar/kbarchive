@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75093: Cannot Load DOS High on Wyse 286 Machines with Daughter Boards"
-permalink: kb/075/Q75093/
+permalink: /kb/075/Q75093/
 ---
 
 ## Q75093: Cannot Load DOS High on Wyse 286 Machines with Daughter Boards

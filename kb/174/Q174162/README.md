@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174162: WD97: Windows NT 4.0: Saving the AutoRecovery File Is Postponed"
-permalink: kb/174/Q174162/
+permalink: /kb/174/Q174162/
 ---
 
 ## Q174162: WD97: Windows NT 4.0: Saving the AutoRecovery File Is Postponed

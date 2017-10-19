@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142639: Windows NT 4.0 Readme.wri File (Part 1 of 5)"
-permalink: kb/142/Q142639/
+permalink: /kb/142/Q142639/
 ---
 
 ## Q142639: Windows NT 4.0 Readme.wri File (Part 1 of 5)

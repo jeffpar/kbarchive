@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139753: Fonts Do Not Appear in Corel Draw 4.0 or 5.0"
-permalink: kb/139/Q139753/
+permalink: /kb/139/Q139753/
 ---
 
 ## Q139753: Fonts Do Not Appear in Corel Draw 4.0 or 5.0

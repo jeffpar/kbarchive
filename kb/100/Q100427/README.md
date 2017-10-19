@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100427: BUG: R6003 Error Possible From TOOLS.INI Filetab, SHIFT+F4"
-permalink: kb/100/Q100427/
+permalink: /kb/100/Q100427/
 ---
 
 ## Q100427: BUG: R6003 Error Possible From TOOLS.INI Filetab, SHIFT+F4

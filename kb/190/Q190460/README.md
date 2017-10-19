@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190460: PRB: Type Mismatch Error in Client After Modifying Server DLL"
-permalink: kb/190/Q190460/
+permalink: /kb/190/Q190460/
 ---
 
 ## Q190460: PRB: Type Mismatch Error in Client After Modifying Server DLL

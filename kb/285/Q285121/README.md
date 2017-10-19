@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285121: Events 15 and 21 Are Logged When You Use HIS2000 Print Server"
-permalink: kb/285/Q285121/
+permalink: /kb/285/Q285121/
 ---
 
 ## Q285121: Events 15 and 21 Are Logged When You Use HIS2000 Print Server

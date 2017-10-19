@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197574: Motocross Madness: New High Score Is Not Saved"
-permalink: kb/197/Q197574/
+permalink: /kb/197/Q197574/
 ---
 
 ## Q197574: Motocross Madness: New High Score Is Not Saved

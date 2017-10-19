@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162330: Err Msg: Windows NT Could Not Start..."
-permalink: kb/162/Q162330/
+permalink: /kb/162/Q162330/
 ---
 
 ## Q162330: Err Msg: Windows NT Could Not Start...

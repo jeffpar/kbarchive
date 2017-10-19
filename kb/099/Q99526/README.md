@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99526: MS-BACKUP Err Msg: Cannot Read Volume From Virtual Memory..."
-permalink: kb/099/Q99526/
+permalink: /kb/099/Q99526/
 ---
 
 ## Q99526: MS-BACKUP Err Msg: Cannot Read Volume From Virtual Memory...

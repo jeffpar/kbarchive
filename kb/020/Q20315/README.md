@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q20315: File: Differences Among Versions"
-permalink: kb/020/Q20315/
+permalink: /kb/020/Q20315/
 ---
 
 ## Q20315: File: Differences Among Versions

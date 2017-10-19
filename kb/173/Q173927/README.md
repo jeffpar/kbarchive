@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173927: WD97: Word Hangs on Open with Graphics Blaster Display Drivers"
-permalink: kb/173/Q173927/
+permalink: /kb/173/Q173927/
 ---
 
 ## Q173927: WD97: Word Hangs on Open with Graphics Blaster Display Drivers

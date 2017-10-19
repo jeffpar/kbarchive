@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320170: Cannot Type In Body Of MSN Explorer E-mail"
-permalink: kb/320/Q320170/
+permalink: /kb/320/Q320170/
 ---
 
 ## Q320170: Cannot Type In Body Of MSN Explorer E-mail

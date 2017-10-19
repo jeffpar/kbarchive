@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130748: No Error Message Associating Incompatible File Type with Paint"
-permalink: kb/130/Q130748/
+permalink: /kb/130/Q130748/
 ---
 
 ## Q130748: No Error Message Associating Incompatible File Type with Paint

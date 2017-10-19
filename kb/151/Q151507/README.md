@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151507: MSB Ocean: How to Play the Games"
-permalink: kb/151/Q151507/
+permalink: /kb/151/Q151507/
 ---
 
 ## Q151507: MSB Ocean: How to Play the Games

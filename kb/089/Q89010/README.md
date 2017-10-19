@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89010: Print Command Unavailable When Using Windows 3.1 with Novell"
-permalink: kb/089/Q89010/
+permalink: /kb/089/Q89010/
 ---
 
 ## Q89010: Print Command Unavailable When Using Windows 3.1 with Novell

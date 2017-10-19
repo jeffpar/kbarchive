@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267833: Cannot Set NTFS Permissions on Clustered File Share Resource"
-permalink: kb/267/Q267833/
+permalink: /kb/267/Q267833/
 ---
 
 ## Q267833: Cannot Set NTFS Permissions on Clustered File Share Resource

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137958: Bookshelf '95 editions: Daily Dialog Settings are Saved on ESC"
-permalink: kb/137/Q137958/
+permalink: /kb/137/Q137958/
 ---
 
 ## Q137958: Bookshelf '95 editions: Daily Dialog Settings are Saved on ESC

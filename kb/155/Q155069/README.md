@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155069: ClickArt Manual Has Incorrect Support Phone Number"
-permalink: kb/155/Q155069/
+permalink: /kb/155/Q155069/
 ---
 
 ## Q155069: ClickArt Manual Has Incorrect Support Phone Number

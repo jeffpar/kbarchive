@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158831: PRB: &quot;Cannot Open File - Error Setting RESOURCE&quot; in VFP Mac"
-permalink: kb/158/Q158831/
+permalink: /kb/158/Q158831/
 ---
 
 ## Q158831: PRB: &quot;Cannot Open File - Error Setting RESOURCE&quot; in VFP Mac

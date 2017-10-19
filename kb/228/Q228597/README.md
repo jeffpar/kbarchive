@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228597: DHCP Server with Deactivated Scope Sends a DHCPNAK to Clients"
-permalink: kb/228/Q228597/
+permalink: /kb/228/Q228597/
 ---
 
 ## Q228597: DHCP Server with Deactivated Scope Sends a DHCPNAK to Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97442: Undelete for Windows Allows a &quot;?&quot; in a Directory Name"
-permalink: kb/097/Q97442/
+permalink: /kb/097/Q97442/
 ---
 
 ## Q97442: Undelete for Windows Allows a &quot;?&quot; in a Directory Name

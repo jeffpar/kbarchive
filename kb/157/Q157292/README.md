@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157292: WD97: Hangs When Printing Multiple Open Documents"
-permalink: kb/157/Q157292/
+permalink: /kb/157/Q157292/
 ---
 
 ## Q157292: WD97: Hangs When Printing Multiple Open Documents

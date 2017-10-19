@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131976: How to Disable Detection of Devices on Serial Ports"
-permalink: kb/131/Q131976/
+permalink: /kb/131/Q131976/
 ---
 
 ## Q131976: How to Disable Detection of Devices on Serial Ports

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183292: Print Preview Frequently Causes Access Violation in Spooler"
-permalink: kb/183/Q183292/
+permalink: /kb/183/Q183292/
 ---
 
 ## Q183292: Print Preview Frequently Causes Access Violation in Spooler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157038: STL Sample for the Predicate Version of min_element Function"
-permalink: kb/157/Q157038/
+permalink: /kb/157/Q157038/
 ---
 
 ## Q157038: STL Sample for the Predicate Version of min_element Function

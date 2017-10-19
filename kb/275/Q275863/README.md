@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275863: PRB: View Designer Sets Decimal Places to 3 for Double Data Type"
-permalink: kb/275/Q275863/
+permalink: /kb/275/Q275863/
 ---
 
 ## Q275863: PRB: View Designer Sets Decimal Places to 3 for Double Data Type

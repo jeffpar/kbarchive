@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240924: BUG: TreeView Node Tooltips Flash if Displayed from Modal Window"
-permalink: kb/240/Q240924/
+permalink: /kb/240/Q240924/
 ---
 
 ## Q240924: BUG: TreeView Node Tooltips Flash if Displayed from Modal Window

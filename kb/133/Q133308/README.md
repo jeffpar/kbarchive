@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133308: PRB: WM_HELP Message Not Received When F1 Pressed on Menu"
-permalink: kb/133/Q133308/
+permalink: /kb/133/Q133308/
 ---
 
 ## Q133308: PRB: WM_HELP Message Not Received When F1 Pressed on Menu

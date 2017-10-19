@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147164: Problems with NEC CDR-C251 CD-ROM Changer in Windows 95"
-permalink: kb/147/Q147164/
+permalink: /kb/147/Q147164/
 ---
 
 ## Q147164: Problems with NEC CDR-C251 CD-ROM Changer in Windows 95

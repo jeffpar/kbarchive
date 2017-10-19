@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320797: SMS: Windows 98 Client Hangs When the Wuser32.exe Agent Starts"
-permalink: kb/320/Q320797/
+permalink: /kb/320/Q320797/
 ---
 
 ## Q320797: SMS: Windows 98 Client Hangs When the Wuser32.exe Agent Starts

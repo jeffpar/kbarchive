@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66083: WIN.COM Ignores Command Line Parameters After File Name"
-permalink: kb/066/Q66083/
+permalink: /kb/066/Q66083/
 ---
 
 ## Q66083: WIN.COM Ignores Command Line Parameters After File Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174344: XCLN: Private Messages Can Be Viewed by Delegates Using Exchange"
-permalink: kb/174/Q174344/
+permalink: /kb/174/Q174344/
 ---
 
 ## Q174344: XCLN: Private Messages Can Be Viewed by Delegates Using Exchange

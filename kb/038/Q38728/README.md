@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38728: HOW TO: Initilize Large Character Arrays"
-permalink: kb/038/Q38728/
+permalink: /kb/038/Q38728/
 ---
 
 ## Q38728: HOW TO: Initilize Large Character Arrays

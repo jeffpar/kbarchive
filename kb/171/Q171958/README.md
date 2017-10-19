@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171958: ODE97: Tips for Creating and Compiling Your Windows Help File"
-permalink: kb/171/Q171958/
+permalink: /kb/171/Q171958/
 ---
 
 ## Q171958: ODE97: Tips for Creating and Compiling Your Windows Help File

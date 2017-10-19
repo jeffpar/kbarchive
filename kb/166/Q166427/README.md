@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166427: How to Set System Locale in Multiple User Profile Environments"
-permalink: kb/166/Q166427/
+permalink: /kb/166/Q166427/
 ---
 
 ## Q166427: How to Set System Locale in Multiple User Profile Environments

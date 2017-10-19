@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118493: Long Filenames Cause Problems with Earlier Versions of MS-DOS"
-permalink: kb/118/Q118493/
+permalink: /kb/118/Q118493/
 ---
 
 ## Q118493: Long Filenames Cause Problems with Earlier Versions of MS-DOS

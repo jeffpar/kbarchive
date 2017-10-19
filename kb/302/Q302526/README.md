@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302526: Removing A User"
-permalink: kb/302/Q302526/
+permalink: /kb/302/Q302526/
 ---
 
 ## Q302526: Removing A User

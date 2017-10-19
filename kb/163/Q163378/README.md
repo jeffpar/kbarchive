@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163378: Microsoft Exchange Hangs Sending Message Using SPX"
-permalink: kb/163/Q163378/
+permalink: /kb/163/Q163378/
 ---
 
 ## Q163378: Microsoft Exchange Hangs Sending Message Using SPX

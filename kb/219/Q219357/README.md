@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219357: 1500 MS Delay in Secondary WINS Query After Primary WINS Query"
-permalink: kb/219/Q219357/
+permalink: /kb/219/Q219357/
 ---
 
 ## Q219357: 1500 MS Delay in Secondary WINS Query After Primary WINS Query

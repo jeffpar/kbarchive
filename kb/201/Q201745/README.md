@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201745: Third-Party BOOTP Server May Respond to DHCP Client Broadcasts"
-permalink: kb/201/Q201745/
+permalink: /kb/201/Q201745/
 ---
 
 ## Q201745: Third-Party BOOTP Server May Respond to DHCP Client Broadcasts

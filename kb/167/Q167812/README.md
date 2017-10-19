@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167812: WINS and DHCP Dynamic Database Compaction in Windows NT 4.0"
-permalink: kb/167/Q167812/
+permalink: /kb/167/Q167812/
 ---
 
 ## Q167812: WINS and DHCP Dynamic Database Compaction in Windows NT 4.0

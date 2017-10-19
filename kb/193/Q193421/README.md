@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193421: SMS: Audit16 Fails on Long User Names"
-permalink: kb/193/Q193421/
+permalink: /kb/193/Q193421/
 ---
 
 ## Q193421: SMS: Audit16 Fails on Long User Names

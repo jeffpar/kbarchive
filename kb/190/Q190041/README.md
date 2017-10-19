@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190041: XCON: SMTP Message ID May Be Incorrectly Truncated"
-permalink: kb/190/Q190041/
+permalink: /kb/190/Q190041/
 ---
 
 ## Q190041: XCON: SMTP Message ID May Be Incorrectly Truncated

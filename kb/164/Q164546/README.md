@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164546: SCSI Driver Description Truncated in Control Panel"
-permalink: kb/164/Q164546/
+permalink: /kb/164/Q164546/
 ---
 
 ## Q164546: SCSI Driver Description Truncated in Control Panel

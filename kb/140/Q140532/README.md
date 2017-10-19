@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140532: INF: How to Use SQLSetPos in Updatable Joins w/ SQL Server"
-permalink: kb/140/Q140532/
+permalink: /kb/140/Q140532/
 ---
 
 ## Q140532: INF: How to Use SQLSetPos in Updatable Joins w/ SQL Server

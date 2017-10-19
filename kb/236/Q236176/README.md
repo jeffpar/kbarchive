@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236176: XFOR: Event ID 12010: Failed to Initialize the Notes Migration S"
-permalink: kb/236/Q236176/
+permalink: /kb/236/Q236176/
 ---
 
 ## Q236176: XFOR: Event ID 12010: Failed to Initialize the Notes Migration S

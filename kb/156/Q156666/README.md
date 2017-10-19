@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156666: HOWTO: Obtain User Permissions from Oracle Server"
-permalink: kb/156/Q156666/
+permalink: /kb/156/Q156666/
 ---
 
 ## Q156666: HOWTO: Obtain User Permissions from Oracle Server

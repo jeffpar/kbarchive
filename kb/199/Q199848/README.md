@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199848: BUG: Fatal Error When Releasing a Converted FoxPro 2.x Form"
-permalink: kb/199/Q199848/
+permalink: /kb/199/Q199848/
 ---
 
 ## Q199848: BUG: Fatal Error When Releasing a Converted FoxPro 2.x Form

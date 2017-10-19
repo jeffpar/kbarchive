@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191418: Arcs Print Incorrectly with EMF on PCL Printers"
-permalink: kb/191/Q191418/
+permalink: /kb/191/Q191418/
 ---
 
 ## Q191418: Arcs Print Incorrectly with EMF on PCL Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90079: Setting Up Vi-Spy with Windows 3.1"
-permalink: kb/090/Q90079/
+permalink: /kb/090/Q90079/
 ---
 
 ## Q90079: Setting Up Vi-Spy with Windows 3.1

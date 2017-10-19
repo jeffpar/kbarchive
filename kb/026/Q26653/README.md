@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26653: BUG: Inconsistent Case Conventions in Equate @Filename"
-permalink: kb/026/Q26653/
+permalink: /kb/026/Q26653/
 ---
 
 ## Q26653: BUG: Inconsistent Case Conventions in Equate @Filename

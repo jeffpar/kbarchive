@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142885: How to Add the Data Environment to a Form Programmatically"
-permalink: kb/142/Q142885/
+permalink: /kb/142/Q142885/
 ---
 
 ## Q142885: How to Add the Data Environment to a Form Programmatically

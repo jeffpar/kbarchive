@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131745: VidEdit &amp; VidCap Version 1.1 Are Incompatible with Windows 95"
-permalink: kb/131/Q131745/
+permalink: /kb/131/Q131745/
 ---
 
 ## Q131745: VidEdit &amp; VidCap Version 1.1 Are Incompatible with Windows 95

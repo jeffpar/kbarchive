@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289490: SMS: Contents of the SMS Site Backup Utility"
-permalink: kb/289/Q289490/
+permalink: /kb/289/Q289490/
 ---
 
 ## Q289490: SMS: Contents of the SMS Site Backup Utility

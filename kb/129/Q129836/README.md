@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129836: PRB: Object Variable Not Set Error If Object Not Instantiated"
-permalink: kb/129/Q129836/
+permalink: /kb/129/Q129836/
 ---
 
 ## Q129836: PRB: Object Variable Not Set Error If Object Not Instantiated

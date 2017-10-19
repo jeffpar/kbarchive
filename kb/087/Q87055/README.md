@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87055: MCI: Reference Material Available for Installation"
-permalink: kb/087/Q87055/
+permalink: /kb/087/Q87055/
 ---
 
 ## Q87055: MCI: Reference Material Available for Installation

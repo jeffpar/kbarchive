@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128443: MHS: Mail Stops Moving Between Microsoft Mail and MHS"
-permalink: kb/128/Q128443/
+permalink: /kb/128/Q128443/
 ---
 
 ## Q128443: MHS: Mail Stops Moving Between Microsoft Mail and MHS

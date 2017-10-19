@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148929: Security Event ID 642 Logged Incorrectly for Audits"
-permalink: kb/148/Q148929/
+permalink: /kb/148/Q148929/
 ---
 
 ## Q148929: Security Event ID 642 Logged Incorrectly for Audits

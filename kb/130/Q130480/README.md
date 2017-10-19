@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130480: GSNW Share Names Displayed as DELETED with RAS Server Running"
-permalink: kb/130/Q130480/
+permalink: /kb/130/Q130480/
 ---
 
 ## Q130480: GSNW Share Names Displayed as DELETED with RAS Server Running

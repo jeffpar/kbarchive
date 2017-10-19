@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235376: Disabling Autochk Causes Incorrect Volume Set Size"
-permalink: kb/235/Q235376/
+permalink: /kb/235/Q235376/
 ---
 
 ## Q235376: Disabling Autochk Causes Incorrect Volume Set Size

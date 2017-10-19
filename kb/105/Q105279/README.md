@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105279: How to Remove Carriage Returns/Linefeeds from @ ... EDIT"
-permalink: kb/105/Q105279/
+permalink: /kb/105/Q105279/
 ---
 
 ## Q105279: How to Remove Carriage Returns/Linefeeds from @ ... EDIT

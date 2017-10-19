@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219047: Black Window or Error Message When You Play Video Clip"
-permalink: kb/219/Q219047/
+permalink: /kb/219/Q219047/
 ---
 
 ## Q219047: Black Window or Error Message When You Play Video Clip

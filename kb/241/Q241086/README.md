@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241086: XFOR: GroupWise Dirsync Update Does Not Create Objects"
-permalink: kb/241/Q241086/
+permalink: /kb/241/Q241086/
 ---
 
 ## Q241086: XFOR: GroupWise Dirsync Update Does Not Create Objects

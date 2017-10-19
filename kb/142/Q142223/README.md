@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142223: INFO: Variant Handling in an MFC Server w/ VB 4.0 as Its Client"
-permalink: kb/142/Q142223/
+permalink: /kb/142/Q142223/
 ---
 
 ## Q142223: INFO: Variant Handling in an MFC Server w/ VB 4.0 as Its Client

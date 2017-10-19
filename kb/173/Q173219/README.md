@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173219: Error Message Installing Adobe PhotoShop 4.0.1 in Windows 95"
-permalink: kb/173/Q173219/
+permalink: /kb/173/Q173219/
 ---
 
 ## Q173219: Error Message Installing Adobe PhotoShop 4.0.1 in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168670: XFOR: Err Msg: cc:Mail Connector Event ID 59"
-permalink: kb/168/Q168670/
+permalink: /kb/168/Q168670/
 ---
 
 ## Q168670: XFOR: Err Msg: cc:Mail Connector Event ID 59

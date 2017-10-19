@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140779: WinLogon &quot;Shutdown and Power Off&quot; Menu Option"
-permalink: kb/140/Q140779/
+permalink: /kb/140/Q140779/
 ---
 
 ## Q140779: WinLogon &quot;Shutdown and Power Off&quot; Menu Option

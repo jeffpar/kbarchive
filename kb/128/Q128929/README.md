@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128929: LAN Manager Logon Script Window Placement in WFW"
-permalink: kb/128/Q128929/
+permalink: /kb/128/Q128929/
 ---
 
 ## Q128929: LAN Manager Logon Script Window Placement in WFW

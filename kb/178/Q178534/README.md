@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178534: XCON: Delivery Restriction May Not Work After Moving a User"
-permalink: kb/178/Q178534/
+permalink: /kb/178/Q178534/
 ---
 
 ## Q178534: XCON: Delivery Restriction May Not Work After Moving a User

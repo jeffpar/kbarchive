@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193626: HOWTO: Overriding Default Right-Click Behavior in Editor Window"
-permalink: kb/193/Q193626/
+permalink: /kb/193/Q193626/
 ---
 
 ## Q193626: HOWTO: Overriding Default Right-Click Behavior in Editor Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82311: Problems Using Borland's Turbo Debugger with Windows"
-permalink: kb/082/Q82311/
+permalink: /kb/082/Q82311/
 ---
 
 ## Q82311: Problems Using Borland's Turbo Debugger with Windows

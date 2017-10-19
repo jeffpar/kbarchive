@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254319: Index Server Fails When it Is Installed on Cluster Server"
-permalink: kb/254/Q254319/
+permalink: /kb/254/Q254319/
 ---
 
 ## Q254319: Index Server Fails When it Is Installed on Cluster Server

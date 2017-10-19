@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254976: XCON: MIXER Does Not Map SMTP Subdomains to Organizational Units"
-permalink: kb/254/Q254976/
+permalink: /kb/254/Q254976/
 ---
 
 ## Q254976: XCON: MIXER Does Not Map SMTP Subdomains to Organizational Units

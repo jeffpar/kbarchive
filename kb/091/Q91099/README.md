@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91099: Upgrading LAN Manager 2.1 to WFWG 3.1 with EtherExpress Card"
-permalink: kb/091/Q91099/
+permalink: /kb/091/Q91099/
 ---
 
 ## Q91099: Upgrading LAN Manager 2.1 to WFWG 3.1 with EtherExpress Card

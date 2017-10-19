@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116302: BUG: LINK Generates Incorrect Unresolved External for Pointer"
-permalink: kb/116/Q116302/
+permalink: /kb/116/Q116302/
 ---
 
 ## Q116302: BUG: LINK Generates Incorrect Unresolved External for Pointer

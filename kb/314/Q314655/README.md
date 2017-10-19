@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314655: FIX: &quot;Cannot update the cursor&quot; Error Indexing a View"
-permalink: kb/314/Q314655/
+permalink: /kb/314/Q314655/
 ---
 
 ## Q314655: FIX: &quot;Cannot update the cursor&quot; Error Indexing a View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148325: LocalLU Not Registered on Windows Client If Queued = Operator"
-permalink: kb/148/Q148325/
+permalink: /kb/148/Q148325/
 ---
 
 ## Q148325: LocalLU Not Registered on Windows Client If Queued = Operator

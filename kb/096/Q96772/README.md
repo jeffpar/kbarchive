@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96772: HOWTO: Use WNetGetUser() in Windows for Workgroups"
-permalink: kb/096/Q96772/
+permalink: /kb/096/Q96772/
 ---
 
 ## Q96772: HOWTO: Use WNetGetUser() in Windows for Workgroups

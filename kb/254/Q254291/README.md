@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254291: XWEB: Exchange Discussion Wizard Runtime Error 800A01A8"
-permalink: kb/254/Q254291/
+permalink: /kb/254/Q254291/
 ---
 
 ## Q254291: XWEB: Exchange Discussion Wizard Runtime Error 800A01A8

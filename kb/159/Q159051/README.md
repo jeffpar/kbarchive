@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159051: AlphaServer Hangs on Installation of Windows NT 4.0"
-permalink: kb/159/Q159051/
+permalink: /kb/159/Q159051/
 ---
 
 ## Q159051: AlphaServer Hangs on Installation of Windows NT 4.0

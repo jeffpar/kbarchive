@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276348: Casino: Game Stops Responding or Quits When You Press ALT+TAB"
-permalink: kb/276/Q276348/
+permalink: /kb/276/Q276348/
 ---
 
 ## Q276348: Casino: Game Stops Responding or Quits When You Press ALT+TAB

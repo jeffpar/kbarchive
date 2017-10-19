@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50078: Flt Sim: Plane Accelerates While Taxiing"
-permalink: kb/050/Q50078/
+permalink: /kb/050/Q50078/
 ---
 
 ## Q50078: Flt Sim: Plane Accelerates While Taxiing

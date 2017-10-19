@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136401: PRB: Data Path Errors Starting SourceSafe"
-permalink: kb/136/Q136401/
+permalink: /kb/136/Q136401/
 ---
 
 ## Q136401: PRB: Data Path Errors Starting SourceSafe

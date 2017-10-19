@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124399: Beyond Mail Clients Unable to Log On to NetWare Post Office"
-permalink: kb/124/Q124399/
+permalink: /kb/124/Q124399/
 ---
 
 ## Q124399: Beyond Mail Clients Unable to Log On to NetWare Post Office

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103147: Err Msg: An Application Error Has Occurred... in SPOOLSS.EXE"
-permalink: kb/103/Q103147/
+permalink: /kb/103/Q103147/
 ---
 
 ## Q103147: Err Msg: An Application Error Has Occurred... in SPOOLSS.EXE

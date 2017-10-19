@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60746: PRB: NMAKE Invokes MASM Instead of the C Compiler"
-permalink: kb/060/Q60746/
+permalink: /kb/060/Q60746/
 ---
 
 ## Q60746: PRB: NMAKE Invokes MASM Instead of the C Compiler

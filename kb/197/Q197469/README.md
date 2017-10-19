@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197469: WD97: Word Lists Unused Table of Contents and Index Styles"
-permalink: kb/197/Q197469/
+permalink: /kb/197/Q197469/
 ---
 
 ## Q197469: WD97: Word Lists Unused Table of Contents and Index Styles

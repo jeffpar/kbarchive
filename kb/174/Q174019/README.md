@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174019: Integrated Services Digital Network Adapters Supported by MSN"
-permalink: kb/174/Q174019/
+permalink: /kb/174/Q174019/
 ---
 
 ## Q174019: Integrated Services Digital Network Adapters Supported by MSN

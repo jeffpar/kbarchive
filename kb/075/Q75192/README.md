@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75192: Zenith Multiboot Option and MS-DOS 5.0"
-permalink: kb/075/Q75192/
+permalink: /kb/075/Q75192/
 ---
 
 ## Q75192: Zenith Multiboot Option and MS-DOS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135172: CableTron T2015 Token Ring Adapter Fails on 4 Mbps Ring Speed"
-permalink: kb/135/Q135172/
+permalink: /kb/135/Q135172/
 ---
 
 ## Q135172: CableTron T2015 Token Ring Adapter Fails on 4 Mbps Ring Speed

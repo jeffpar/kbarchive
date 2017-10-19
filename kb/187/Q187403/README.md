@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187403: Reinstalling the Client Chooses the Incorrect Path"
-permalink: kb/187/Q187403/
+permalink: /kb/187/Q187403/
 ---
 
 ## Q187403: Reinstalling the Client Chooses the Incorrect Path

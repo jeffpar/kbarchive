@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153947: Problem Accessing Hard Drive After Running Optimizer"
-permalink: kb/153/Q153947/
+permalink: /kb/153/Q153947/
 ---
 
 ## Q153947: Problem Accessing Hard Drive After Running Optimizer

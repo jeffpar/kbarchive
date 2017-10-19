@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214619: FIX: Type Definition Is Not Inherited in Derived Template Class"
-permalink: kb/214/Q214619/
+permalink: /kb/214/Q214619/
 ---
 
 ## Q214619: FIX: Type Definition Is Not Inherited in Derived Template Class

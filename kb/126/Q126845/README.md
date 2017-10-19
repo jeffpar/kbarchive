@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126845: INFO: C++ Name Decoration--Why Used, Getting Decorated Names"
-permalink: kb/126/Q126845/
+permalink: /kb/126/Q126845/
 ---
 
 ## Q126845: INFO: C++ Name Decoration--Why Used, Getting Decorated Names

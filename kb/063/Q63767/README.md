@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63767: Screen Fonts Mapping Incorrectly in Windows 3.0"
-permalink: kb/063/Q63767/
+permalink: /kb/063/Q63767/
 ---
 
 ## Q63767: Screen Fonts Mapping Incorrectly in Windows 3.0

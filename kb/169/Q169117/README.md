@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169117: XFOR: MS Mail Users Send SMTP, NDR, 2375, 2113 Inconsistently"
-permalink: kb/169/Q169117/
+permalink: /kb/169/Q169117/
 ---
 
 ## Q169117: XFOR: MS Mail Users Send SMTP, NDR, 2375, 2113 Inconsistently

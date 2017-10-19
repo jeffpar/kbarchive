@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221662: FIX: Error Calling FPOLE With Single Quote (') in Caption"
-permalink: kb/221/Q221662/
+permalink: /kb/221/Q221662/
 ---
 
 ## Q221662: FIX: Error Calling FPOLE With Single Quote (') in Caption

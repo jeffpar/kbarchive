@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198379: BUG: Decimal Points Truncated Using RDO Client Batch Cursors"
-permalink: kb/198/Q198379/
+permalink: /kb/198/Q198379/
 ---
 
 ## Q198379: BUG: Decimal Points Truncated Using RDO Client Batch Cursors

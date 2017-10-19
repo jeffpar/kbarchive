@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162400: WD97: IntelliMouse Changes Not Reflected in Current Session"
-permalink: kb/162/Q162400/
+permalink: /kb/162/Q162400/
 ---
 
 ## Q162400: WD97: IntelliMouse Changes Not Reflected in Current Session

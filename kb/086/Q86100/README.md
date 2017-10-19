@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q86100: PC Win: MSMAIL.INI Entries in [Microsoft Mail]"
-permalink: kb/086/Q86100/
+title: "Q86100: PC Win: MSMAIL.INI Entries in &#91;Microsoft Mail&#93;"
+permalink: /kb/086/Q86100/
 ---
 
-## Q86100: PC Win: MSMAIL.INI Entries in [Microsoft Mail]
+## Q86100: PC Win: MSMAIL.INI Entries in &#91;Microsoft Mail&#93;
 
 	Article: Q86100
 	Product(s): Microsoft Mail For PC Networks

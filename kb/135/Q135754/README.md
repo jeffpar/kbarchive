@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135754: BUG: ListBox Does Not Refresh Properly with SET FILTER Command"
-permalink: kb/135/Q135754/
+permalink: /kb/135/Q135754/
 ---
 
 ## Q135754: BUG: ListBox Does Not Refresh Properly with SET FILTER Command

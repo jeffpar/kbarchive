@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160807: Cannot Connect to Windows NT Server with Many Shares"
-permalink: kb/160/Q160807/
+permalink: /kb/160/Q160807/
 ---
 
 ## Q160807: Cannot Connect to Windows NT Server with Many Shares

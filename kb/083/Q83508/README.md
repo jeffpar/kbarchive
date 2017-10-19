@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83508: Productivity Pack 3.1 Allows Task Switching"
-permalink: kb/083/Q83508/
+permalink: /kb/083/Q83508/
 ---
 
 ## Q83508: Productivity Pack 3.1 Allows Task Switching

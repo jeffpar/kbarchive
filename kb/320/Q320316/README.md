@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320316: MSN Explorer Sign In Screen Activates Unexpectedly"
-permalink: kb/320/Q320316/
+permalink: /kb/320/Q320316/
 ---
 
 ## Q320316: MSN Explorer Sign In Screen Activates Unexpectedly

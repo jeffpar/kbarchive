@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233219: XFOR: Self-Registration of Inetcomm.dll Fails"
-permalink: kb/233/Q233219/
+permalink: /kb/233/Q233219/
 ---
 
 ## Q233219: XFOR: Self-Registration of Inetcomm.dll Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95533: Largest Possible DoubleSpace Drive Is 512 MB"
-permalink: kb/095/Q95533/
+permalink: /kb/095/Q95533/
 ---
 
 ## Q95533: Largest Possible DoubleSpace Drive Is 512 MB

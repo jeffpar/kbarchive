@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188054: SMS: Description and Usage of Smgenie.exe (Event Generator)"
-permalink: kb/188/Q188054/
+permalink: /kb/188/Q188054/
 ---
 
 ## Q188054: SMS: Description and Usage of Smgenie.exe (Event Generator)

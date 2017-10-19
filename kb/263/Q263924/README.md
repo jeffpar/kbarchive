@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263924: Message Transfer Agent Slows Down and CPU Usage Increases"
-permalink: kb/263/Q263924/
+permalink: /kb/263/Q263924/
 ---
 
 ## Q263924: Message Transfer Agent Slows Down and CPU Usage Increases

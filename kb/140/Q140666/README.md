@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140666: Macintosh Music Central: Manual Installation Instructions"
-permalink: kb/140/Q140666/
+permalink: /kb/140/Q140666/
 ---
 
 ## Q140666: Macintosh Music Central: Manual Installation Instructions

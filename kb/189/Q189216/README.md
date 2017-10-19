@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189216: MS Office 97 Visual Basic Step by Step Comments &amp; Corrections"
-permalink: kb/189/Q189216/
+permalink: /kb/189/Q189216/
 ---
 
 ## Q189216: MS Office 97 Visual Basic Step by Step Comments &amp; Corrections

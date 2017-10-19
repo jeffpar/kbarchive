@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131838: How OptionGroup Buttons Behave"
-permalink: kb/131/Q131838/
+permalink: /kb/131/Q131838/
 ---
 
 ## Q131838: How OptionGroup Buttons Behave

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249029: XFOR: Using a Verisign Certificate with Exchange Server SSL"
-permalink: kb/249/Q249029/
+permalink: /kb/249/Q249029/
 ---
 
 ## Q249029: XFOR: Using a Verisign Certificate with Exchange Server SSL

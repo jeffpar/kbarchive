@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180397: XFOR: ICS Kill Notifications Not Sent to Administrator"
-permalink: kb/180/Q180397/
+permalink: /kb/180/Q180397/
 ---
 
 ## Q180397: XFOR: ICS Kill Notifications Not Sent to Administrator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146263: XFOR: IMC Packages Failed Messages in ATT, DAT, or TXT"
-permalink: kb/146/Q146263/
+permalink: /kb/146/Q146263/
 ---
 
 ## Q146263: XFOR: IMC Packages Failed Messages in ATT, DAT, or TXT

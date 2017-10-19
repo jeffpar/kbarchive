@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130350: TYPE() Returns &quot;N&quot; for Double, Float, and Integer"
-permalink: kb/130/Q130350/
+permalink: /kb/130/Q130350/
 ---
 
 ## Q130350: TYPE() Returns &quot;N&quot; for Double, Float, and Integer

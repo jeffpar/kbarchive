@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169359: PPT7: Error Editing PowerPoint 4.0 Object in Word 6.0 Document"
-permalink: kb/169/Q169359/
+permalink: /kb/169/Q169359/
 ---
 
 ## Q169359: PPT7: Error Editing PowerPoint 4.0 Object in Word 6.0 Document

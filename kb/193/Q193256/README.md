@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193256: XADM: Euro Displayed Incorrectly After MIME Conversion"
-permalink: kb/193/Q193256/
+permalink: /kb/193/Q193256/
 ---
 
 ## Q193256: XADM: Euro Displayed Incorrectly After MIME Conversion

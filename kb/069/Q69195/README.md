@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69195: Using Microsoft Serial Mice with Leading Edge Computers"
-permalink: kb/069/Q69195/
+permalink: /kb/069/Q69195/
 ---
 
 ## Q69195: Using Microsoft Serial Mice with Leading Edge Computers

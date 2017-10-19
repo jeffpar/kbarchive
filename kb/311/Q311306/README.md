@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311306: HOWTO: Use Visual FoxPro to Download a Web Page"
-permalink: kb/311/Q311306/
+permalink: /kb/311/Q311306/
 ---
 
 ## Q311306: HOWTO: Use Visual FoxPro to Download a Web Page

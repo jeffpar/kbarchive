@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190455: Zone Err Msg: Invalid Page Fault in Module Kernel32.dll"
-permalink: kb/190/Q190455/
+permalink: /kb/190/Q190455/
 ---
 
 ## Q190455: Zone Err Msg: Invalid Page Fault in Module Kernel32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106057: Windows Err Msg: Driver Error: Cannot Load &lt;Driver Name&gt;..."
-permalink: kb/106/Q106057/
+permalink: /kb/106/Q106057/
 ---
 
 ## Q106057: Windows Err Msg: Driver Error: Cannot Load &lt;Driver Name&gt;...

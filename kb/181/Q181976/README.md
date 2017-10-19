@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181976: Windows 95 Client Fails to Connect After Forced Password Change"
-permalink: kb/181/Q181976/
+permalink: /kb/181/Q181976/
 ---
 
 ## Q181976: Windows 95 Client Fails to Connect After Forced Password Change

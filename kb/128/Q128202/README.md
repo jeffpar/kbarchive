@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128202: How to Set the Display Size of Design Screen"
-permalink: kb/128/Q128202/
+permalink: /kb/128/Q128202/
 ---
 
 ## Q128202: How to Set the Display Size of Design Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150335: NEC VERSA/P Hangs with Diamond Speedstar 64 Video Adapter"
-permalink: kb/150/Q150335/
+permalink: /kb/150/Q150335/
 ---
 
 ## Q150335: NEC VERSA/P Hangs with Diamond Speedstar 64 Video Adapter

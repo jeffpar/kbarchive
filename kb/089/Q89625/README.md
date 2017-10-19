@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89625: Justification for Some TrueType Fonts Doesn't Display"
-permalink: kb/089/Q89625/
+permalink: /kb/089/Q89625/
 ---
 
 ## Q89625: Justification for Some TrueType Fonts Doesn't Display

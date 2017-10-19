@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165282: Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s..."
-permalink: kb/165/Q165282/
+permalink: /kb/165/Q165282/
 ---
 
 ## Q165282: Err Msg: This Version of Msvcrt40.dll Is Intended for Win32s...

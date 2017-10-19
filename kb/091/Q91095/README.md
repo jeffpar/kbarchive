@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91095: NET START from MS-DOS Prompt Can Hang Computer"
-permalink: kb/091/Q91095/
+permalink: /kb/091/Q91095/
 ---
 
 ## Q91095: NET START from MS-DOS Prompt Can Hang Computer

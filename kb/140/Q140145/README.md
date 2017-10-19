@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140145: SMS.INI Only Contains Eight Logon Servers"
-permalink: kb/140/Q140145/
+permalink: /kb/140/Q140145/
 ---
 
 ## Q140145: SMS.INI Only Contains Eight Logon Servers

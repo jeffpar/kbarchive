@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235284: MPPE Keys Not Handled Correctly for a 128-Bit MS-CHAP Request"
-permalink: kb/235/Q235284/
+permalink: /kb/235/Q235284/
 ---
 
 ## Q235284: MPPE Keys Not Handled Correctly for a 128-Bit MS-CHAP Request

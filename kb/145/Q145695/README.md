@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145695: PRB: Error Converting String to Numeric Value e When Using &quot;%&quot;"
-permalink: kb/145/Q145695/
+permalink: /kb/145/Q145695/
 ---
 
 ## Q145695: PRB: Error Converting String to Numeric Value e When Using &quot;%&quot;

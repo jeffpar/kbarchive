@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98633: Ping Utility Does Not Work with Windows for Workgroups"
-permalink: kb/098/Q98633/
+permalink: /kb/098/Q98633/
 ---
 
 ## Q98633: Ping Utility Does Not Work with Windows for Workgroups

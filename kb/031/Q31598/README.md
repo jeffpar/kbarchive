@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31598: Sign-Extended Register and Immediate Form of AND/OR/XOR"
-permalink: kb/031/Q31598/
+permalink: /kb/031/Q31598/
 ---
 
 ## Q31598: Sign-Extended Register and Immediate Form of AND/OR/XOR

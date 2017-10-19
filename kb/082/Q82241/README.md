@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82241: README.WRI Section 11.4 No Longer Valid (Everex, EMM386.EXE)"
-permalink: kb/082/Q82241/
+permalink: /kb/082/Q82241/
 ---
 
 ## Q82241: README.WRI Section 11.4 No Longer Valid (Everex, EMM386.EXE)

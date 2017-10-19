@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174585: SMS: Remote Control Using IPX Fails After Exiting Windows"
-permalink: kb/174/Q174585/
+permalink: /kb/174/Q174585/
 ---
 
 ## Q174585: SMS: Remote Control Using IPX Fails After Exiting Windows

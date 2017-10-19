@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163215: System Policies May Not Work with Third-Party GINA DLLs"
-permalink: kb/163/Q163215/
+permalink: /kb/163/Q163215/
 ---
 
 ## Q163215: System Policies May Not Work with Third-Party GINA DLLs

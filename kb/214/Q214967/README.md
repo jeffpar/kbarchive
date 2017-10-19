@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214967: SMS: Error Message from Selecting and Then Clearing Option"
-permalink: kb/214/Q214967/
+permalink: /kb/214/Q214967/
 ---
 
 ## Q214967: SMS: Error Message from Selecting and Then Clearing Option

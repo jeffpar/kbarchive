@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168305: MSN Does Not Recognize the Creatix ISDN Card"
-permalink: kb/168/Q168305/
+permalink: /kb/168/Q168305/
 ---
 
 ## Q168305: MSN Does Not Recognize the Creatix ISDN Card

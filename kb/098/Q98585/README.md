@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98585: Spooling Print Jobs from MS-DOS-Based Applications in Windows"
-permalink: kb/098/Q98585/
+permalink: /kb/098/Q98585/
 ---
 
 ## Q98585: Spooling Print Jobs from MS-DOS-Based Applications in Windows

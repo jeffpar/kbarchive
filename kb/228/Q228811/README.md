@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228811: Socket Programs May Not Connect to Server"
-permalink: kb/228/Q228811/
+permalink: /kb/228/Q228811/
 ---
 
 ## Q228811: Socket Programs May Not Connect to Server

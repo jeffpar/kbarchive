@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142541: Updated Modem .inf Files for VoiceView-Compatible Modems"
-permalink: kb/142/Q142541/
+permalink: /kb/142/Q142541/
 ---
 
 ## Q142541: Updated Modem .inf Files for VoiceView-Compatible Modems

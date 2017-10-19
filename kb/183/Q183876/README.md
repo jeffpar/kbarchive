@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183876: Exchange Server 5.0 SP2 TechNet CD-ROM Labeled Incorrectly"
-permalink: kb/183/Q183876/
+permalink: /kb/183/Q183876/
 ---
 
 ## Q183876: Exchange Server 5.0 SP2 TechNet CD-ROM Labeled Incorrectly

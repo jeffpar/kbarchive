@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158478: WD97: Subdocuments Not Saved to Remote Server Location"
-permalink: kb/158/Q158478/
+permalink: /kb/158/Q158478/
 ---
 
 ## Q158478: WD97: Subdocuments Not Saved to Remote Server Location

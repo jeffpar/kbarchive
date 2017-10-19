@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192187: PRB: TabStrip MultiRow Only True When Placement Not Top"
-permalink: kb/192/Q192187/
+permalink: /kb/192/Q192187/
 ---
 
 ## Q192187: PRB: TabStrip MultiRow Only True When Placement Not Top

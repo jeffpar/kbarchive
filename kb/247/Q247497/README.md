@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247497: &quot;System Registry&quot; Error Message When Running Setup Program"
-permalink: kb/247/Q247497/
+permalink: /kb/247/Q247497/
 ---
 
 ## Q247497: &quot;System Registry&quot; Error Message When Running Setup Program

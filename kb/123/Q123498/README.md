@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123498: NumLock Key State Not Saved When Logging Off"
-permalink: kb/123/Q123498/
+permalink: /kb/123/Q123498/
 ---
 
 ## Q123498: NumLock Key State Not Saved When Logging Off

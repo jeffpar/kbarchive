@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214553: Close Combat III: Game Screen Is Too Large to Fit on Monitor"
-permalink: kb/214/Q214553/
+permalink: /kb/214/Q214553/
 ---
 
 ## Q214553: Close Combat III: Game Screen Is Too Large to Fit on Monitor

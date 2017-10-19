@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76780: README.TXT: General Notes About Applications"
-permalink: kb/076/Q76780/
+permalink: /kb/076/Q76780/
 ---
 
 ## Q76780: README.TXT: General Notes About Applications

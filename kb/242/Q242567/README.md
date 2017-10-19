@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242567: AoE II &amp; Pandora: Choppy, Scratchy, or Distorted Sound Playback"
-permalink: kb/242/Q242567/
+permalink: /kb/242/Q242567/
 ---
 
 ## Q242567: AoE II &amp; Pandora: Choppy, Scratchy, or Distorted Sound Playback

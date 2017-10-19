@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159776: FIX: VC++ Crash When Adding Test Case Under Source-Code Control"
-permalink: kb/159/Q159776/
+permalink: /kb/159/Q159776/
 ---
 
 ## Q159776: FIX: VC++ Crash When Adding Test Case Under Source-Code Control

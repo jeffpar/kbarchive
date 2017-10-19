@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119383: AVI Files Available for Testing Video for Windows Runtime"
-permalink: kb/119/Q119383/
+permalink: /kb/119/Q119383/
 ---
 
 ## Q119383: AVI Files Available for Testing Video for Windows Runtime

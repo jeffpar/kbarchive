@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251918: XCLN: Outlook 2000 Supports Multiple Folders as Destination"
-permalink: kb/251/Q251918/
+permalink: /kb/251/Q251918/
 ---
 
 ## Q251918: XCLN: Outlook 2000 Supports Multiple Folders as Destination

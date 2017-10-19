@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116159: Baseball: GPF if CD Is Removed after Starting Baseball"
-permalink: kb/116/Q116159/
+permalink: /kb/116/Q116159/
 ---
 
 ## Q116159: Baseball: GPF if CD Is Removed after Starting Baseball

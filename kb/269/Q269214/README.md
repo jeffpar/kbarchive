@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269214: ICA Browser Hangs with Windows NT 4.0 Terminal Server SP6"
-permalink: kb/269/Q269214/
+permalink: /kb/269/Q269214/
 ---
 
 ## Q269214: ICA Browser Hangs with Windows NT 4.0 Terminal Server SP6

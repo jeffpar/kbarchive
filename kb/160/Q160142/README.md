@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160142: Printer Operators Cannot Create DLC Ports"
-permalink: kb/160/Q160142/
+permalink: /kb/160/Q160142/
 ---
 
 ## Q160142: Printer Operators Cannot Create DLC Ports

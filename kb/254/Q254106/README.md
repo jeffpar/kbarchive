@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254106: Access to NetWare Server Stops Working After Applying SP4 or SP5"
-permalink: kb/254/Q254106/
+permalink: /kb/254/Q254106/
 ---
 
 ## Q254106: Access to NetWare Server Stops Working After Applying SP4 or SP5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113812: HOWTO: Create a Menu with a Variable Pad"
-permalink: kb/113/Q113812/
+permalink: /kb/113/Q113812/
 ---
 
 ## Q113812: HOWTO: Create a Menu with a Variable Pad

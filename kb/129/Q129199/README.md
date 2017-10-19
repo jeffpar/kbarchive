@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129199: File Sharing Problem with Open Lotus Approach File"
-permalink: kb/129/Q129199/
+permalink: /kb/129/Q129199/
 ---
 
 ## Q129199: File Sharing Problem with Open Lotus Approach File

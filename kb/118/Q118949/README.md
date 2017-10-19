@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118949: PC WRmt: Files Placed on the Hard Drive During Installation"
-permalink: kb/118/Q118949/
+permalink: /kb/118/Q118949/
 ---
 
 ## Q118949: PC WRmt: Files Placed on the Hard Drive During Installation

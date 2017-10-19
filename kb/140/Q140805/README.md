@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140805: Dataloader Logs &quot;inventory sent&quot; after Failure of Cycle"
-permalink: kb/140/Q140805/
+permalink: /kb/140/Q140805/
 ---
 
 ## Q140805: Dataloader Logs &quot;inventory sent&quot; after Failure of Cycle

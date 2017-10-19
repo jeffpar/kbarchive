@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238386: XADM: High Network Use When Generating Address Book View"
-permalink: kb/238/Q238386/
+permalink: /kb/238/Q238386/
 ---
 
 ## Q238386: XADM: High Network Use When Generating Address Book View

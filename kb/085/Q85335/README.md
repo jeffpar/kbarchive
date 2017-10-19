@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85335: FAX: Description of Fax Gateway Component"
-permalink: kb/085/Q85335/
+permalink: /kb/085/Q85335/
 ---
 
 ## Q85335: FAX: Description of Fax Gateway Component

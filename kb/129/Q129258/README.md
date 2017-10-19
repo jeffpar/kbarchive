@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129258: Err Msg: The Selected Security Provider Could Not Be Found"
-permalink: kb/129/Q129258/
+permalink: /kb/129/Q129258/
 ---
 
 ## Q129258: Err Msg: The Selected Security Provider Could Not Be Found

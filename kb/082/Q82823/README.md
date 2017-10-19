@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82823: How Does Cardfile Verify Writes?"
-permalink: kb/082/Q82823/
+permalink: /kb/082/Q82823/
 ---
 
 ## Q82823: How Does Cardfile Verify Writes?

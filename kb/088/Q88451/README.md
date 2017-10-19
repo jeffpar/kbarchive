@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88451: In the Main View the Aiming Marker Pole Movement Hangs Up"
-permalink: kb/088/Q88451/
+permalink: /kb/088/Q88451/
 ---
 
 ## Q88451: In the Main View the Aiming Marker Pole Movement Hangs Up

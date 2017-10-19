@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307531: SMS: SMS 2.0 English-Language Client Support on Non-English OS"
-permalink: kb/307/Q307531/
+permalink: /kb/307/Q307531/
 ---
 
 ## Q307531: SMS: SMS 2.0 English-Language Client Support on Non-English OS

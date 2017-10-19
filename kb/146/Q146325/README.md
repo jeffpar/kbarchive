@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146325: XADM: Field Alignment Ignored if Entry Type is not Text"
-permalink: kb/146/Q146325/
+permalink: /kb/146/Q146325/
 ---
 
 ## Q146325: XADM: Field Alignment Ignored if Entry Type is not Text

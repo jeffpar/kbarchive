@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87465: PC DB: How to Tell if an ACCESS File Is Corrupt"
-permalink: kb/087/Q87465/
+permalink: /kb/087/Q87465/
 ---
 
 ## Q87465: PC DB: How to Tell if an ACCESS File Is Corrupt

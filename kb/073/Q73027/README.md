@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73027: Reading MBF Files from QBasic"
-permalink: kb/073/Q73027/
+permalink: /kb/073/Q73027/
 ---
 
 ## Q73027: Reading MBF Files from QBasic

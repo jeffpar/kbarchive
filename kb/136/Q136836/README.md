@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136836: Disk Defragmenter May Seem to Stop Responding"
-permalink: kb/136/Q136836/
+permalink: /kb/136/Q136836/
 ---
 
 ## Q136836: Disk Defragmenter May Seem to Stop Responding

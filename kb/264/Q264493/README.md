@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264493: Cannot Create Secondary Site from Source Files on Local Drive"
-permalink: kb/264/Q264493/
+permalink: /kb/264/Q264493/
 ---
 
 ## Q264493: Cannot Create Secondary Site from Source Files on Local Drive

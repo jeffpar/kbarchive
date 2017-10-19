@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110320: PC Forms: Summary List of E-Forms Designer 1.0 Bugs"
-permalink: kb/110/Q110320/
+permalink: /kb/110/Q110320/
 ---
 
 ## Q110320: PC Forms: Summary List of E-Forms Designer 1.0 Bugs

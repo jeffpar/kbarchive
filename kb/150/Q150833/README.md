@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150833: Memory Deallocation Failure in SRV.SYS Directory Notification"
-permalink: kb/150/Q150833/
+permalink: /kb/150/Q150833/
 ---
 
 ## Q150833: Memory Deallocation Failure in SRV.SYS Directory Notification

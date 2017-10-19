@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320702: XCON: MTA Journaling Does Not Work to an SMTP Custom Recipient"
-permalink: kb/320/Q320702/
+permalink: /kb/320/Q320702/
 ---
 
 ## Q320702: XCON: MTA Journaling Does Not Work to an SMTP Custom Recipient

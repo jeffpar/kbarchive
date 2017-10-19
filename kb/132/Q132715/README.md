@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132715: HOWTO: How to Enable the Help Button on a Modal Property Sheet"
-permalink: kb/132/Q132715/
+permalink: /kb/132/Q132715/
 ---
 
 ## Q132715: HOWTO: How to Enable the Help Button on a Modal Property Sheet

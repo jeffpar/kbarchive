@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140298: How to Print All Detail Records in Field Order"
-permalink: kb/140/Q140298/
+permalink: /kb/140/Q140298/
 ---
 
 ## Q140298: How to Print All Detail Records in Field Order

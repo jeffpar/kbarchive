@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153214: Close Combat: Minimum System Requirements for Macintosh"
-permalink: kb/153/Q153214/
+permalink: /kb/153/Q153214/
 ---
 
 ## Q153214: Close Combat: Minimum System Requirements for Macintosh

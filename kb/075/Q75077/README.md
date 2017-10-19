@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75077: EGA.SYS from MS-DOS 5 Upgrade Corrupts Paintbrush"
-permalink: kb/075/Q75077/
+permalink: /kb/075/Q75077/
 ---
 
 ## Q75077: EGA.SYS from MS-DOS 5 Upgrade Corrupts Paintbrush

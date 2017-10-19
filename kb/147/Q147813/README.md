@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147813: Message with Attachments Sent Over Internet Not Received"
-permalink: kb/147/Q147813/
+permalink: /kb/147/Q147813/
 ---
 
 ## Q147813: Message with Attachments Sent Over Internet Not Received

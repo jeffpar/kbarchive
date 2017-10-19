@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197488: Access Denied When Synchronizing or Promoting a BDC"
-permalink: kb/197/Q197488/
+permalink: /kb/197/Q197488/
 ---
 
 ## Q197488: Access Denied When Synchronizing or Promoting a BDC

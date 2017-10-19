@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141333: VSWAP Demos Multiple-View Switching in SDI"
-permalink: kb/141/Q141333/
+permalink: /kb/141/Q141333/
 ---
 
 ## Q141333: VSWAP Demos Multiple-View Switching in SDI

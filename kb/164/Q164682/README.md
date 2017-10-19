@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164682: Dial-Up Networking Prompt Trying to Connect to MSN"
-permalink: kb/164/Q164682/
+permalink: /kb/164/Q164682/
 ---
 
 ## Q164682: Dial-Up Networking Prompt Trying to Connect to MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50825: Terminal Uses Only 24 Lines"
-permalink: kb/050/Q50825/
+permalink: /kb/050/Q50825/
 ---
 
 ## Q50825: Terminal Uses Only 24 Lines

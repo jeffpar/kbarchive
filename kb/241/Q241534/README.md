@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241534: Internet Service Manager Connects to Wrong Web Site"
-permalink: kb/241/Q241534/
+permalink: /kb/241/Q241534/
 ---
 
 ## Q241534: Internet Service Manager Connects to Wrong Web Site

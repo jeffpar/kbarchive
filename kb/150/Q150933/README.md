@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150933: Acmsetup Caused an Exception 03H in Module Msvfw32.dll"
-permalink: kb/150/Q150933/
+permalink: /kb/150/Q150933/
 ---
 
 ## Q150933: Acmsetup Caused an Exception 03H in Module Msvfw32.dll

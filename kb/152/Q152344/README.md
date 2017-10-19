@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152344: XCLN: Winsock Application Starts When Exchange Client Starts"
-permalink: kb/152/Q152344/
+permalink: /kb/152/Q152344/
 ---
 
 ## Q152344: XCLN: Winsock Application Starts When Exchange Client Starts

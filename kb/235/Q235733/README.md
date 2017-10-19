@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235733: SMS: DOS and Windows 3.1 Clients Fail Site Assignment"
-permalink: kb/235/Q235733/
+permalink: /kb/235/Q235733/
 ---
 
 ## Q235733: SMS: DOS and Windows 3.1 Clients Fail Site Assignment

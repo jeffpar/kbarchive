@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151916: MS Client 3.0:Browse List Incomplete from NET.EXE Menu"
-permalink: kb/151/Q151916/
+permalink: /kb/151/Q151916/
 ---
 
 ## Q151916: MS Client 3.0:Browse List Incomplete from NET.EXE Menu

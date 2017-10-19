@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314302: Stop Error Message When You Run Optus FACSys Version 4.1 Program"
-permalink: kb/314/Q314302/
+permalink: /kb/314/Q314302/
 ---
 
 ## Q314302: Stop Error Message When You Run Optus FACSys Version 4.1 Program

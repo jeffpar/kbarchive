@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176195: XADM: Address Book Views Do Not Replicate Between Sites"
-permalink: kb/176/Q176195/
+permalink: /kb/176/Q176195/
 ---
 
 ## Q176195: XADM: Address Book Views Do Not Replicate Between Sites

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195483: WD97: CAPI and WLL Support Policy"
-permalink: kb/195/Q195483/
+permalink: /kb/195/Q195483/
 ---
 
 ## Q195483: WD97: CAPI and WLL Support Policy

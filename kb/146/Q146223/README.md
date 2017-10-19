@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146223: FIX: Position Error: Outline Control on Classed Pageframe"
-permalink: kb/146/Q146223/
+permalink: /kb/146/Q146223/
 ---
 
 ## Q146223: FIX: Position Error: Outline Control on Classed Pageframe

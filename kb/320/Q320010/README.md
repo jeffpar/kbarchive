@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320010: 100 % CPU Utilization and Event ID 8 Warnings After MC_ALLOCATE"
-permalink: kb/320/Q320010/
+permalink: /kb/320/Q320010/
 ---
 
 ## Q320010: 100 % CPU Utilization and Event ID 8 Warnings After MC_ALLOCATE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99065: Using REXX System and Miscellaneous Commands"
-permalink: kb/099/Q99065/
+permalink: /kb/099/Q99065/
 ---
 
 ## Q99065: Using REXX System and Miscellaneous Commands

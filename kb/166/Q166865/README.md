@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166865: WD97: &quot;Invalid Document ID&quot; Opening/Saving Document"
-permalink: kb/166/Q166865/
+permalink: /kb/166/Q166865/
 ---
 
 ## Q166865: WD97: &quot;Invalid Document ID&quot; Opening/Saving Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153073: M-Node TCP/IP Clients Fail to Register All Names"
-permalink: kb/153/Q153073/
+permalink: /kb/153/Q153073/
 ---
 
 ## Q153073: M-Node TCP/IP Clients Fail to Register All Names

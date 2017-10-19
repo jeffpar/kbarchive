@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216202: PRB: Application Hangs; IBM CICS/VSE Terminal Unavailable"
-permalink: kb/216/Q216202/
+permalink: /kb/216/Q216202/
 ---
 
 ## Q216202: PRB: Application Hangs; IBM CICS/VSE Terminal Unavailable

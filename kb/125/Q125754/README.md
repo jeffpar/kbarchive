@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125754: Cannot Use Multiple Instances of Some Adaptec Controllers"
-permalink: kb/125/Q125754/
+permalink: /kb/125/Q125754/
 ---
 
 ## Q125754: Cannot Use Multiple Instances of Some Adaptec Controllers

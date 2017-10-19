@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131427: Windows NT 3.51 TCP/IP System Network Interface Hang"
-permalink: kb/131/Q131427/
+permalink: /kb/131/Q131427/
 ---
 
 ## Q131427: Windows NT 3.51 TCP/IP System Network Interface Hang

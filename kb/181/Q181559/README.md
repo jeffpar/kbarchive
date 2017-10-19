@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181559: XADM: Error -1201 Occurs When Starting the Information Store"
-permalink: kb/181/Q181559/
+permalink: /kb/181/Q181559/
 ---
 
 ## Q181559: XADM: Error -1201 Occurs When Starting the Information Store

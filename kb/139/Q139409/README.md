@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139409: SFM Causes STOP 0xA on Multi-Processor DEC Alpha Computers"
-permalink: kb/139/Q139409/
+permalink: /kb/139/Q139409/
 ---
 
 ## Q139409: SFM Causes STOP 0xA on Multi-Processor DEC Alpha Computers

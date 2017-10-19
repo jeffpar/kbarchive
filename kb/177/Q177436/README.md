@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177436: PRB: Developer Studio Hangs When Debug Breakpoint Is Set"
-permalink: kb/177/Q177436/
+permalink: /kb/177/Q177436/
 ---
 
 ## Q177436: PRB: Developer Studio Hangs When Debug Breakpoint Is Set

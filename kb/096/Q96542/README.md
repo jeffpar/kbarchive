@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96542: BUG: PostScript Handles lfItalic Field Incorrectly"
-permalink: kb/096/Q96542/
+permalink: /kb/096/Q96542/
 ---
 
 ## Q96542: BUG: PostScript Handles lfItalic Field Incorrectly

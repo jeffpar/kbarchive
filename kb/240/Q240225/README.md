@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240225: Description of Adsutil and MetaEdit Used to Modify the Metabase"
-permalink: kb/240/Q240225/
+permalink: /kb/240/Q240225/
 ---
 
 ## Q240225: Description of Adsutil and MetaEdit Used to Modify the Metabase

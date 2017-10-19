@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140592: HOWTO: Implement Per-Property Browsing for a Custom Property"
-permalink: kb/140/Q140592/
+permalink: /kb/140/Q140592/
 ---
 
 ## Q140592: HOWTO: Implement Per-Property Browsing for a Custom Property

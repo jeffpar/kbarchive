@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132585: Wallpaper You Select on Network May Not Appear After Reboot"
-permalink: kb/132/Q132585/
+permalink: /kb/132/Q132585/
 ---
 
 ## Q132585: Wallpaper You Select on Network May Not Appear After Reboot

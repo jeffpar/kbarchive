@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139956: RPC from a Big Endian Computer Causes GP Fault"
-permalink: kb/139/Q139956/
+permalink: /kb/139/Q139956/
 ---
 
 ## Q139956: RPC from a Big Endian Computer Causes GP Fault

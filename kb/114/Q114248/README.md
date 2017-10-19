@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114248: How to Print Specific Number of Records in Detail Band"
-permalink: kb/114/Q114248/
+permalink: /kb/114/Q114248/
 ---
 
 ## Q114248: How to Print Specific Number of Records in Detail Band

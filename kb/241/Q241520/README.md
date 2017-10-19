@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241520: How to Disable WebDAV for IIS 5.0"
-permalink: kb/241/Q241520/
+permalink: /kb/241/Q241520/
 ---
 
 ## Q241520: How to Disable WebDAV for IIS 5.0

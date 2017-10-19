@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156270: SMS: Cannot Use Run Command Packages with NetWare Servers"
-permalink: kb/156/Q156270/
+permalink: /kb/156/Q156270/
 ---
 
 ## Q156270: SMS: Cannot Use Run Command Packages with NetWare Servers

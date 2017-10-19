@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF"
-permalink: kb/166/Q166957/
+permalink: /kb/166/Q166957/
 ---
 
 ## Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF

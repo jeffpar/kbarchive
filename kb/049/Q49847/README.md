@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49847: Using TREE and XCOPY on Subdirectories in MS-DOS"
-permalink: kb/049/Q49847/
+permalink: /kb/049/Q49847/
 ---
 
 ## Q49847: Using TREE and XCOPY on Subdirectories in MS-DOS

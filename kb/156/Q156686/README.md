@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156686: Unavailable Connections to NetWare Volumes with InocuLAN 1.01"
-permalink: kb/156/Q156686/
+permalink: /kb/156/Q156686/
 ---
 
 ## Q156686: Unavailable Connections to NetWare Volumes with InocuLAN 1.01

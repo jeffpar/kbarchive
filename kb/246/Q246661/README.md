@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246661: Cannot Reserve IP Addresses Using Swedish Dhcpadmn.exe"
-permalink: kb/246/Q246661/
+permalink: /kb/246/Q246661/
 ---
 
 ## Q246661: Cannot Reserve IP Addresses Using Swedish Dhcpadmn.exe

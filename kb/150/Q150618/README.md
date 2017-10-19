@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150618: Pregnancy: Program Window Does Not Reopen To Previous Size"
-permalink: kb/150/Q150618/
+permalink: /kb/150/Q150618/
 ---
 
 ## Q150618: Pregnancy: Program Window Does Not Reopen To Previous Size

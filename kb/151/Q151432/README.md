@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151432: Invalid File Handle with SP4 Nwrdr.sys"
-permalink: kb/151/Q151432/
+permalink: /kb/151/Q151432/
 ---
 
 ## Q151432: Invalid File Handle with SP4 Nwrdr.sys

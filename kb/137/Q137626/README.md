@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137626: How to Use DBC Field Captions on Visual FoxPro Forms &amp; Reports"
-permalink: kb/137/Q137626/
+permalink: /kb/137/Q137626/
 ---
 
 ## Q137626: How to Use DBC Field Captions on Visual FoxPro Forms &amp; Reports

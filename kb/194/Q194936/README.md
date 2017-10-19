@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194936: ATAPI CD-ROM Changer Miniport Driver Is Not Properly Supported"
-permalink: kb/194/Q194936/
+permalink: /kb/194/Q194936/
 ---
 
 ## Q194936: ATAPI CD-ROM Changer Miniport Driver Is Not Properly Supported

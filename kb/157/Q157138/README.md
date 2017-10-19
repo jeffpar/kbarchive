@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157138: WD97: Outline Numbering Is Not Reapplied"
-permalink: kb/157/Q157138/
+permalink: /kb/157/Q157138/
 ---
 
 ## Q157138: WD97: Outline Numbering Is Not Reapplied

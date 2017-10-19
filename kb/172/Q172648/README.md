@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172648: Find File Command Still Available When NoFind Policy Is Used"
-permalink: kb/172/Q172648/
+permalink: /kb/172/Q172648/
 ---
 
 ## Q172648: Find File Command Still Available When NoFind Policy Is Used

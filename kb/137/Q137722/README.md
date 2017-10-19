@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137722: Err Msg: &quot;The Program Below Needs More Memory&quot; w/ Cabletron 22xx"
-permalink: kb/137/Q137722/
+permalink: /kb/137/Q137722/
 ---
 
 ## Q137722: Err Msg: &quot;The Program Below Needs More Memory&quot; w/ Cabletron 22xx

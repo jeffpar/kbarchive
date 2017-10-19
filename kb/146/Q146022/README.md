@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146022: HOWTO: Set Up the RichTextBox Control for WYSIWYG Printing"
-permalink: kb/146/Q146022/
+permalink: /kb/146/Q146022/
 ---
 
 ## Q146022: HOWTO: Set Up the RichTextBox Control for WYSIWYG Printing

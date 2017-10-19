@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192859: SMS: SMS 1.2 SP4 Includes SMSIDDUP, DATDUPC, and DATDUPCL"
-permalink: kb/192/Q192859/
+permalink: /kb/192/Q192859/
 ---
 
 ## Q192859: SMS: SMS 1.2 SP4 Includes SMSIDDUP, DATDUPC, and DATDUPCL

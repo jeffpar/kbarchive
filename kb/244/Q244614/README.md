@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244614: Fix for Q163852 May Cause &quot;Stop 0x50&quot; on Windows NT 3.51"
-permalink: kb/244/Q244614/
+permalink: /kb/244/Q244614/
 ---
 
 ## Q244614: Fix for Q163852 May Cause &quot;Stop 0x50&quot; on Windows NT 3.51

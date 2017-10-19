@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105107: PC Win: Missing _MSSETUP.EXE Causes Setup to Abort"
-permalink: kb/105/Q105107/
+permalink: /kb/105/Q105107/
 ---
 
 ## Q105107: PC Win: Missing _MSSETUP.EXE Causes Setup to Abort

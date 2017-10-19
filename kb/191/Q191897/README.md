@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191897: BUG: Shape on Transparent UserControl May Not Redraw Properly"
-permalink: kb/191/Q191897/
+permalink: /kb/191/Q191897/
 ---
 
 ## Q191897: BUG: Shape on Transparent UserControl May Not Redraw Properly

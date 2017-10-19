@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170756: Available Switch Options for Windows NT Boot.ini File"
-permalink: kb/170/Q170756/
+permalink: /kb/170/Q170756/
 ---
 
 ## Q170756: Available Switch Options for Windows NT Boot.ini File

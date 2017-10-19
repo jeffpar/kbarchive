@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182598: HOWTO: Implement IObjectSafety in Visual Basic Controls"
-permalink: kb/182/Q182598/
+permalink: /kb/182/Q182598/
 ---
 
 ## Q182598: HOWTO: Implement IObjectSafety in Visual Basic Controls

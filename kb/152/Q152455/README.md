@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152455: File Manager Can Only See 32 Volumes of NetWare/FPNW"
-permalink: kb/152/Q152455/
+permalink: /kb/152/Q152455/
 ---
 
 ## Q152455: File Manager Can Only See 32 Volumes of NetWare/FPNW

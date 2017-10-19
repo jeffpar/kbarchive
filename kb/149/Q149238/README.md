@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149238: XADM: Information Store Fails To Start With 1011 Error"
-permalink: kb/149/Q149238/
+permalink: /kb/149/Q149238/
 ---
 
 ## Q149238: XADM: Information Store Fails To Start With 1011 Error

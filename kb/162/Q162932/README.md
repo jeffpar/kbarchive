@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162932: PRB: VSS Integration Dialog Box Does Not Respond to Keyboard"
-permalink: kb/162/Q162932/
+permalink: /kb/162/Q162932/
 ---
 
 ## Q162932: PRB: VSS Integration Dialog Box Does Not Respond to Keyboard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292288: Terminal Server Users Lose Drive Mappings"
-permalink: kb/292/Q292288/
+permalink: /kb/292/Q292288/
 ---
 
 ## Q292288: Terminal Server Users Lose Drive Mappings

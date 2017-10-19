@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128624: How to Create and Assign User Profiles for Users in a Domain"
-permalink: kb/128/Q128624/
+permalink: /kb/128/Q128624/
 ---
 
 ## Q128624: How to Create and Assign User Profiles for Users in a Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74810: Calling Windows Functions from a Device Driver"
-permalink: kb/074/Q74810/
+permalink: /kb/074/Q74810/
 ---
 
 ## Q74810: Calling Windows Functions from a Device Driver

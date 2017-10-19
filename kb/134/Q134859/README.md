@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134859: DriveSpace VxD and Real-Mode Driver Are Mismatched"
-permalink: kb/134/Q134859/
+permalink: /kb/134/Q134859/
 ---
 
 ## Q134859: DriveSpace VxD and Real-Mode Driver Are Mismatched

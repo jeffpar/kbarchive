@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292548: Terminal Services-Specific Programs Stop Responding"
-permalink: kb/292/Q292548/
+permalink: /kb/292/Q292548/
 ---
 
 ## Q292548: Terminal Services-Specific Programs Stop Responding

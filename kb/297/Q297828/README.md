@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297828: XADM: ESEPERF!CollectPerformanceData Causes Winlogon to Crash"
-permalink: kb/297/Q297828/
+permalink: /kb/297/Q297828/
 ---
 
 ## Q297828: XADM: ESEPERF!CollectPerformanceData Causes Winlogon to Crash

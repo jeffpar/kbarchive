@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101834: Mac Srv Wkst: FPU Not Used by Server or Workstation"
-permalink: kb/101/Q101834/
+permalink: /kb/101/Q101834/
 ---
 
 ## Q101834: Mac Srv Wkst: FPU Not Used by Server or Workstation

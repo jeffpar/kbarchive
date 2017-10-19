@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117521: MS-DOS 6.22 Upgrade Directory Listings for 5.25-Inch 360K Set"
-permalink: kb/117/Q117521/
+permalink: /kb/117/Q117521/
 ---
 
 ## Q117521: MS-DOS 6.22 Upgrade Directory Listings for 5.25-Inch 360K Set

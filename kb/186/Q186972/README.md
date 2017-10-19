@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186972: XCLN: Forms Converter Fails to Convert When Form Is In Use"
-permalink: kb/186/Q186972/
+permalink: /kb/186/Q186972/
 ---
 
 ## Q186972: XCLN: Forms Converter Fails to Convert When Form Is In Use

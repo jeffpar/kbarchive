@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73681: DDE.exe Demonstrates Dynamic-Data Exchange (DDE)"
-permalink: kb/073/Q73681/
+permalink: /kb/073/Q73681/
 ---
 
 ## Q73681: DDE.exe Demonstrates Dynamic-Data Exchange (DDE)

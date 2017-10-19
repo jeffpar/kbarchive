@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221741: FIX: C0000005 Fatal Error with Unknown Var in Include File"
-permalink: kb/221/Q221741/
+permalink: /kb/221/Q221741/
 ---
 
 ## Q221741: FIX: C0000005 Fatal Error with Unknown Var in Include File

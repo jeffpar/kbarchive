@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153140: How to Reset License Manager Information"
-permalink: kb/153/Q153140/
+permalink: /kb/153/Q153140/
 ---
 
 ## Q153140: How to Reset License Manager Information

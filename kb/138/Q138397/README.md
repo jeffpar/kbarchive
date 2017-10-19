@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138397: Disk Space Requirements for Visual FoxPro Workstation Installs"
-permalink: kb/138/Q138397/
+permalink: /kb/138/Q138397/
 ---
 
 ## Q138397: Disk Space Requirements for Visual FoxPro Workstation Installs

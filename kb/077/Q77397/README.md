@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77397: KEYB.COM, German 83/84 Key Keyboard, and Phoenix BIOS"
-permalink: kb/077/Q77397/
+permalink: /kb/077/Q77397/
 ---
 
 ## Q77397: KEYB.COM, German 83/84 Key Keyboard, and Phoenix BIOS

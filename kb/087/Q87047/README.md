@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87047: SMTP: How the SMTP World Communicates with the Gateway"
-permalink: kb/087/Q87047/
+permalink: /kb/087/Q87047/
 ---
 
 ## Q87047: SMTP: How the SMTP World Communicates with the Gateway

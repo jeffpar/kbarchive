@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189219: Internet Explorer Resource Kit Comments &amp; Corrections"
-permalink: kb/189/Q189219/
+permalink: /kb/189/Q189219/
 ---
 
 ## Q189219: Internet Explorer Resource Kit Comments &amp; Corrections

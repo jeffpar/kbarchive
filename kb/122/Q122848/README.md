@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122848: PRB: #pragma code_seg() Affects Compiler-Generated Functions"
-permalink: kb/122/Q122848/
+permalink: /kb/122/Q122848/
 ---
 
 ## Q122848: PRB: #pragma code_seg() Affects Compiler-Generated Functions

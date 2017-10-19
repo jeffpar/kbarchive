@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167541: Encarta 97/Bookshelf 98: Invalid Page Fault Starting Program"
-permalink: kb/167/Q167541/
+permalink: /kb/167/Q167541/
 ---
 
 ## Q167541: Encarta 97/Bookshelf 98: Invalid Page Fault Starting Program

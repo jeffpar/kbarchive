@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160074: SetFieldNull Asserts or Crashes When Called for Parameter"
-permalink: kb/160/Q160074/
+permalink: /kb/160/Q160074/
 ---
 
 ## Q160074: SetFieldNull Asserts or Crashes When Called for Parameter

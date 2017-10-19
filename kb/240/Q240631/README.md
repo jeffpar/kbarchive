@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240631: World Atlas Err Msg: You Must Have NT SUR 4.0 GOLD to Install..."
-permalink: kb/240/Q240631/
+permalink: /kb/240/Q240631/
 ---
 
 ## Q240631: World Atlas Err Msg: You Must Have NT SUR 4.0 GOLD to Install...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162964: ODE97: Cannot Add/Remove in ODE Tools Sampler Setup Maintenance"
-permalink: kb/162/Q162964/
+permalink: /kb/162/Q162964/
 ---
 
 ## Q162964: ODE97: Cannot Add/Remove in ODE Tools Sampler Setup Maintenance

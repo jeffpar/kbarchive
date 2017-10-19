@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135609: WINS Fails on RAS Server with Multiport Adapter Installed"
-permalink: kb/135/Q135609/
+permalink: /kb/135/Q135609/
 ---
 
 ## Q135609: WINS Fails on RAS Server with Multiport Adapter Installed

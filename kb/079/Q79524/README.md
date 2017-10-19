@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79524: Bookshelf for Windows 1991 AUTOEXEC.BAT and WIN.INI Changes"
-permalink: kb/079/Q79524/
+permalink: /kb/079/Q79524/
 ---
 
 ## Q79524: Bookshelf for Windows 1991 AUTOEXEC.BAT and WIN.INI Changes

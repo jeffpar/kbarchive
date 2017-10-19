@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132854: Mac Srv: Group Propagation Problem with Nested Groups"
-permalink: kb/132/Q132854/
+permalink: /kb/132/Q132854/
 ---
 
 ## Q132854: Mac Srv: Group Propagation Problem with Nested Groups

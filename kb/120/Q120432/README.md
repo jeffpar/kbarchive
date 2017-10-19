@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120432: No Menu Cursor in Lotus for MS-DOS version 2.4 and 3.4"
-permalink: kb/120/Q120432/
+permalink: /kb/120/Q120432/
 ---
 
 ## Q120432: No Menu Cursor in Lotus for MS-DOS version 2.4 and 3.4

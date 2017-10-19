@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221667: FIX: Component Gallery Classes Not Automatically Added to Proj"
-permalink: kb/221/Q221667/
+permalink: /kb/221/Q221667/
 ---
 
 ## Q221667: FIX: Component Gallery Classes Not Automatically Added to Proj

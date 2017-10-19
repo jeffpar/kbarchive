@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169625: Availability of Windows 95 OEM Service Release 2"
-permalink: kb/169/Q169625/
+permalink: /kb/169/Q169625/
 ---
 
 ## Q169625: Availability of Windows 95 OEM Service Release 2

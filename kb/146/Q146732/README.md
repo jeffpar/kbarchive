@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146732: XCLN: Message Header Information Misaligned"
-permalink: kb/146/Q146732/
+permalink: /kb/146/Q146732/
 ---
 
 ## Q146732: XCLN: Message Header Information Misaligned

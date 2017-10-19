@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128400: Windows 95 Setup Switches"
-permalink: kb/128/Q128400/
+permalink: /kb/128/Q128400/
 ---
 
 ## Q128400: Windows 95 Setup Switches

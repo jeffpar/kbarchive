@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169717: Properties Menu Option Missing in DHCP Manager"
-permalink: kb/169/Q169717/
+permalink: /kb/169/Q169717/
 ---
 
 ## Q169717: Properties Menu Option Missing in DHCP Manager

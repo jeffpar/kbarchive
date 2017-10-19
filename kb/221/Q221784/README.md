@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221784: Screen Saver Grace Period Bypasses Password Protection"
-permalink: kb/221/Q221784/
+permalink: /kb/221/Q221784/
 ---
 
 ## Q221784: Screen Saver Grace Period Bypasses Password Protection

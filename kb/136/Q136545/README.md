@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136545: BUG: Macro with Line Continuation Interprets &quot;;&quot; Incorrectly"
-permalink: kb/136/Q136545/
+permalink: /kb/136/Q136545/
 ---
 
 ## Q136545: BUG: Macro with Line Continuation Interprets &quot;;&quot; Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120746: Default Disk Letters Incorrectly Listed During Installation"
-permalink: kb/120/Q120746/
+permalink: /kb/120/Q120746/
 ---
 
 ## Q120746: Default Disk Letters Incorrectly Listed During Installation

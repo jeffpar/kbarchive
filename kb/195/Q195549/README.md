@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195549: PRB: Exception When Calling RegisterDevice"
-permalink: kb/195/Q195549/
+permalink: /kb/195/Q195549/
 ---
 
 ## Q195549: PRB: Exception When Calling RegisterDevice

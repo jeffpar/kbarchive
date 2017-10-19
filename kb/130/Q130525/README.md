@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130525: PRB: SetFocus Doesn't Work When Called in the Valid Event"
-permalink: kb/130/Q130525/
+permalink: /kb/130/Q130525/
 ---
 
 ## Q130525: PRB: SetFocus Doesn't Work When Called in the Valid Event

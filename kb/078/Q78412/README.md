@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78412: System Hangs with DCA E78 (IRMA) and EMM386.EXE"
-permalink: kb/078/Q78412/
+permalink: /kb/078/Q78412/
 ---
 
 ## Q78412: System Hangs with DCA E78 (IRMA) and EMM386.EXE

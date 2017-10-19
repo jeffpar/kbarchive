@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266083: How to Migrate Objects from One Domain to Another Domain"
-permalink: kb/266/Q266083/
+permalink: /kb/266/Q266083/
 ---
 
 ## Q266083: How to Migrate Objects from One Domain to Another Domain

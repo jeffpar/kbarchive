@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177605: MSB Dinos: Sound Distorted or Fuzzy when Ms. Frizzle Is Talking"
-permalink: kb/177/Q177605/
+permalink: /kb/177/Q177605/
 ---
 
 ## Q177605: MSB Dinos: Sound Distorted or Fuzzy when Ms. Frizzle Is Talking

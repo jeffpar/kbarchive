@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124297: SMS Doc Err: Package Rule Filename Incorrect"
-permalink: kb/124/Q124297/
+permalink: /kb/124/Q124297/
 ---
 
 ## Q124297: SMS Doc Err: Package Rule Filename Incorrect

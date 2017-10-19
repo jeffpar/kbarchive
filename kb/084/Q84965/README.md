@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84965: LANtastic Err Msg: Program Requires Newer Version of Windows"
-permalink: kb/084/Q84965/
+permalink: /kb/084/Q84965/
 ---
 
 ## Q84965: LANtastic Err Msg: Program Requires Newer Version of Windows

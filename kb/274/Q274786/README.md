@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274786: XFOR: Notes Addresses Are Deleted If a Mapping Rule Won't Work"
-permalink: kb/274/Q274786/
+permalink: /kb/274/Q274786/
 ---
 
 ## Q274786: XFOR: Notes Addresses Are Deleted If a Mapping Rule Won't Work

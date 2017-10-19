@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90238: WFWG System Hangs After Running Central Point Backup"
-permalink: kb/090/Q90238/
+permalink: /kb/090/Q90238/
 ---
 
 ## Q90238: WFWG System Hangs After Running Central Point Backup

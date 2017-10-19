@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153126: AcmeWkSt.exe Does Not Use Existing Installed Directory"
-permalink: kb/153/Q153126/
+permalink: /kb/153/Q153126/
 ---
 
 ## Q153126: AcmeWkSt.exe Does Not Use Existing Installed Directory

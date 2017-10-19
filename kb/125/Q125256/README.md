@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125256: PC Win: Saving Changes in Large Mail Message Truncates Message"
-permalink: kb/125/Q125256/
+permalink: /kb/125/Q125256/
 ---
 
 ## Q125256: PC Win: Saving Changes in Large Mail Message Truncates Message

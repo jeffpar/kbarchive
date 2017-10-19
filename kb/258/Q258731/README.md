@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258731: XFOR: IMAP Migration Extractor Doesn't Work with Event ID 14002"
-permalink: kb/258/Q258731/
+permalink: /kb/258/Q258731/
 ---
 
 ## Q258731: XFOR: IMAP Migration Extractor Doesn't Work with Event ID 14002

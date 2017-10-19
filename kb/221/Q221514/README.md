@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221514: HSE_REQ_GET_CERT_INFO_EX Not Exposed in ServerSupportFunction"
-permalink: kb/221/Q221514/
+permalink: /kb/221/Q221514/
 ---
 
 ## Q221514: HSE_REQ_GET_CERT_INFO_EX Not Exposed in ServerSupportFunction

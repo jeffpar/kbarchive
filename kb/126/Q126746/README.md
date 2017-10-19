@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126746: Windows for Workgroups Version History"
-permalink: kb/126/Q126746/
+permalink: /kb/126/Q126746/
 ---
 
 ## Q126746: Windows for Workgroups Version History

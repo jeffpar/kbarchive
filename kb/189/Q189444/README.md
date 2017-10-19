@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189444: FP97: Font Size Increase Not Reflected in Web Browser"
-permalink: kb/189/Q189444/
+permalink: /kb/189/Q189444/
 ---
 
 ## Q189444: FP97: Font Size Increase Not Reflected in Web Browser

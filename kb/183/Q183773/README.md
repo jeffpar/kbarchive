@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183773: Err Msg: Can Not Find the File Explorer.exe..."
-permalink: kb/183/Q183773/
+permalink: /kb/183/Q183773/
 ---
 
 ## Q183773: Err Msg: Can Not Find the File Explorer.exe...

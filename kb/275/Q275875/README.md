@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275875: Combat Flight Simulator 2: Unable to Drop Bombs or Fire Rockets"
-permalink: kb/275/Q275875/
+permalink: /kb/275/Q275875/
 ---
 
 ## Q275875: Combat Flight Simulator 2: Unable to Drop Bombs or Fire Rockets

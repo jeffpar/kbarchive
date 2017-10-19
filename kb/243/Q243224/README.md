@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243224: Asheron's Call: Keyboard Commands Don't Work After Using ALT+TAB"
-permalink: kb/243/Q243224/
+permalink: /kb/243/Q243224/
 ---
 
 ## Q243224: Asheron's Call: Keyboard Commands Don't Work After Using ALT+TAB

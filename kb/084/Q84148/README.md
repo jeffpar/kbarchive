@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84148: USER.EXE in System Directory Has Date of Installation"
-permalink: kb/084/Q84148/
+permalink: /kb/084/Q84148/
 ---
 
 ## Q84148: USER.EXE in System Directory Has Date of Installation

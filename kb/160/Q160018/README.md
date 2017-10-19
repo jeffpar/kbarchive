@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160018: PRB: Can't Register Controls from &quot;MSDEV&#92;REDIST&#92;OCX&quot; Directory"
-permalink: kb/160/Q160018/
+permalink: /kb/160/Q160018/
 ---
 
 ## Q160018: PRB: Can't Register Controls from &quot;MSDEV&#92;REDIST&#92;OCX&quot; Directory

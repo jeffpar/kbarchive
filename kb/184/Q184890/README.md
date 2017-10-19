@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184890: Golf 98/99: How to Improve Game Performance"
-permalink: kb/184/Q184890/
+permalink: /kb/184/Q184890/
 ---
 
 ## Q184890: Golf 98/99: How to Improve Game Performance

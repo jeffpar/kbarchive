@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186014: WV: Setting Up Quick View to Preview Word Files with Word Viewer"
-permalink: kb/186/Q186014/
+permalink: /kb/186/Q186014/
 ---
 
 ## Q186014: WV: Setting Up Quick View to Preview Word Files with Word Viewer

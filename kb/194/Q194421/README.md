@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194421: ASP Registry Key QueueWaitTimeOutInSeconds Not Working"
-permalink: kb/194/Q194421/
+permalink: /kb/194/Q194421/
 ---
 
 ## Q194421: ASP Registry Key QueueWaitTimeOutInSeconds Not Working

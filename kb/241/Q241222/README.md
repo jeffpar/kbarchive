@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241222: PRB: Debugging WebClass Returns &quot;Page Cannot Be Found&quot; Error"
-permalink: kb/241/Q241222/
+permalink: /kb/241/Q241222/
 ---
 
 ## Q241222: PRB: Debugging WebClass Returns &quot;Page Cannot Be Found&quot; Error

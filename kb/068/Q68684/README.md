@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68684: Flt Sim: Enemy Aircraft Fly Very Fast on 386 Computer"
-permalink: kb/068/Q68684/
+permalink: /kb/068/Q68684/
 ---
 
 ## Q68684: Flt Sim: Enemy Aircraft Fly Very Fast on 386 Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87636: PRB: C2660"
-permalink: kb/087/Q87636/
+permalink: /kb/087/Q87636/
 ---
 
 ## Q87636: PRB: C2660

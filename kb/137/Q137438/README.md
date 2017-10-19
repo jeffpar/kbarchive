@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137438: SNA Server CPIC cmscsp Call Rejects Zero Length Password"
-permalink: kb/137/Q137438/
+permalink: /kb/137/Q137438/
 ---
 
 ## Q137438: SNA Server CPIC cmscsp Call Rejects Zero Length Password

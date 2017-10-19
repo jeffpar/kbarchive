@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78672: Computers That Do Not Maintain Date/Time with MS-DOS 5 or 6"
-permalink: kb/078/Q78672/
+permalink: /kb/078/Q78672/
 ---
 
 ## Q78672: Computers That Do Not Maintain Date/Time with MS-DOS 5 or 6

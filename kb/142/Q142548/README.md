@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142548: PRB: SelectOnEntry Property Is Ignored When KEYCOMP = DOS"
-permalink: kb/142/Q142548/
+permalink: /kb/142/Q142548/
 ---
 
 ## Q142548: PRB: SelectOnEntry Property Is Ignored When KEYCOMP = DOS

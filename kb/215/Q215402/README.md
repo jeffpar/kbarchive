@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215402: BUG: Pressing F1 for Windows CE Controls Does Not Display Help"
-permalink: kb/215/Q215402/
+permalink: /kb/215/Q215402/
 ---
 
 ## Q215402: BUG: Pressing F1 for Windows CE Controls Does Not Display Help

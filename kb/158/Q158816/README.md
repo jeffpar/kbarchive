@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158816: FP: Invalid Target Frame Reference Causes New Browser to Load"
-permalink: kb/158/Q158816/
+permalink: /kb/158/Q158816/
 ---
 
 ## Q158816: FP: Invalid Target Frame Reference Causes New Browser to Load

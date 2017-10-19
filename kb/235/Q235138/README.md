@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235138: SMS: Unable to Delete Site System from Administrator UI"
-permalink: kb/235/Q235138/
+permalink: /kb/235/Q235138/
 ---
 
 ## Q235138: SMS: Unable to Delete Site System from Administrator UI

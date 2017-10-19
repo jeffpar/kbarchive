@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159284: XADM: Client Operation Failed Accessing Categorized PF View"
-permalink: kb/159/Q159284/
+permalink: /kb/159/Q159284/
 ---
 
 ## Q159284: XADM: Client Operation Failed Accessing Categorized PF View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94710: VidEdit: Combining .AVI Files with Different Frame Rates"
-permalink: kb/094/Q94710/
+permalink: /kb/094/Q94710/
 ---
 
 ## Q94710: VidEdit: Combining .AVI Files with Different Frame Rates

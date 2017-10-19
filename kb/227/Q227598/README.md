@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227598: Input Devices Do Not Work After Installing Windows Using SMS 1.2"
-permalink: kb/227/Q227598/
+permalink: /kb/227/Q227598/
 ---
 
 ## Q227598: Input Devices Do Not Work After Installing Windows Using SMS 1.2

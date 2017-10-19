@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252209: XADM: Troubleshooting Link Monitor When Red Arrow Is Displayed"
-permalink: kb/252/Q252209/
+permalink: /kb/252/Q252209/
 ---
 
 ## Q252209: XADM: Troubleshooting Link Monitor When Red Arrow Is Displayed

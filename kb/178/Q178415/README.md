@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178415: FS98: Installation Under Microsoft Windows NT Workstation 4.0"
-permalink: kb/178/Q178415/
+permalink: /kb/178/Q178415/
 ---
 
 ## Q178415: FS98: Installation Under Microsoft Windows NT Workstation 4.0

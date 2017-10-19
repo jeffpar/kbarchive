@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76939: Multimedia Windows: Problems with SCRNSVR.EXE and IDLEWILD.EXE"
-permalink: kb/076/Q76939/
+permalink: /kb/076/Q76939/
 ---
 
 ## Q76939: Multimedia Windows: Problems with SCRNSVR.EXE and IDLEWILD.EXE

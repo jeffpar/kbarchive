@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307578: Metal Gear Solid: Game Quits Unexpectedly When Character Dies"
-permalink: kb/307/Q307578/
+permalink: /kb/307/Q307578/
 ---
 
 ## Q307578: Metal Gear Solid: Game Quits Unexpectedly When Character Dies

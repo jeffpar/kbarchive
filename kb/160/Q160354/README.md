@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160354: Mouse and Keyboard Can Disappear when Replacing Drivers"
-permalink: kb/160/Q160354/
+permalink: /kb/160/Q160354/
 ---
 
 ## Q160354: Mouse and Keyboard Can Disappear when Replacing Drivers

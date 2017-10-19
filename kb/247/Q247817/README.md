@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247817: WLBS Display Command Produces Inaccurate Event Logs"
-permalink: kb/247/Q247817/
+permalink: /kb/247/Q247817/
 ---
 
 ## Q247817: WLBS Display Command Produces Inaccurate Event Logs

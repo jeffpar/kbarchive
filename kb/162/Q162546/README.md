@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162546: FIX: ComboBox and ListBox Data Moves when Using Slide Control"
-permalink: kb/162/Q162546/
+permalink: /kb/162/Q162546/
 ---
 
 ## Q162546: FIX: ComboBox and ListBox Data Moves when Using Slide Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171718: FP: Editing HTML on Page w/Included Image Map Returns Error"
-permalink: kb/171/Q171718/
+permalink: /kb/171/Q171718/
 ---
 
 ## Q171718: FP: Editing HTML on Page w/Included Image Map Returns Error

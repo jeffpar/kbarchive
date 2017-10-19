@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184995: XCON: Lotus SoftSwitch X.4 Rejects MAPI Attachments"
-permalink: kb/184/Q184995/
+permalink: /kb/184/Q184995/
 ---
 
 ## Q184995: XCON: Lotus SoftSwitch X.4 Rejects MAPI Attachments

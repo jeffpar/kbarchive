@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140645: WD97: Grammar Checker Runs Continuously (Screen Flickers)"
-permalink: kb/140/Q140645/
+permalink: /kb/140/Q140645/
 ---
 
 ## Q140645: WD97: Grammar Checker Runs Continuously (Screen Flickers)

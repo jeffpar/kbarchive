@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125756: Cannot Reconnect With Same IP Address to SLIP Server"
-permalink: kb/125/Q125756/
+permalink: /kb/125/Q125756/
 ---
 
 ## Q125756: Cannot Reconnect With Same IP Address to SLIP Server

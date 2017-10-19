@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162732: FIX: No WizardBar When Editing the Object: theApp"
-permalink: kb/162/Q162732/
+permalink: /kb/162/Q162732/
 ---
 
 ## Q162732: FIX: No WizardBar When Editing the Object: theApp

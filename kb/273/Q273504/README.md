@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273504: SNMP Trap Is Not Sent Over a RAS Client Connection"
-permalink: kb/273/Q273504/
+permalink: /kb/273/Q273504/
 ---
 
 ## Q273504: SNMP Trap Is Not Sent Over a RAS Client Connection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63577: Terminal: Sending Escape Sequences Assigned to Function Keys"
-permalink: kb/063/Q63577/
+permalink: /kb/063/Q63577/
 ---
 
 ## Q63577: Terminal: Sending Escape Sequences Assigned to Function Keys

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77698: How to Determine if Multimedia Windows Is Running"
-permalink: kb/077/Q77698/
+permalink: /kb/077/Q77698/
 ---
 
 ## Q77698: How to Determine if Multimedia Windows Is Running

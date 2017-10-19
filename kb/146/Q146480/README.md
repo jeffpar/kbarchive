@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146480: XCLN: Additional Addresses Not Included with Resent Message"
-permalink: kb/146/Q146480/
+permalink: /kb/146/Q146480/
 ---
 
 ## Q146480: XCLN: Additional Addresses Not Included with Resent Message

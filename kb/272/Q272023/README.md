@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272023: MMS 2.2 Release Notes: Known Issues Section"
-permalink: kb/272/Q272023/
+permalink: /kb/272/Q272023/
 ---
 
 ## Q272023: MMS 2.2 Release Notes: Known Issues Section

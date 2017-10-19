@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306013: FP: How to Import and Publish Web Site Created in Publisher"
-permalink: kb/306/Q306013/
+permalink: /kb/306/Q306013/
 ---
 
 ## Q306013: FP: How to Import and Publish Web Site Created in Publisher

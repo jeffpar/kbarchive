@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140993: PPT7: Invalid Data Error Clicking &quot;Send to Genigraphics&quot;"
-permalink: kb/140/Q140993/
+permalink: /kb/140/Q140993/
 ---
 
 ## Q140993: PPT7: Invalid Data Error Clicking &quot;Send to Genigraphics&quot;

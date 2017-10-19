@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170573: MDG: Remote Mail is BlackListed"
-permalink: kb/170/Q170573/
+permalink: /kb/170/Q170573/
 ---
 
 ## Q170573: MDG: Remote Mail is BlackListed

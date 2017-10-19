@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97493: Minimum LAN Manager MS-DOS Files and RAM Consumption"
-permalink: kb/097/Q97493/
+permalink: /kb/097/Q97493/
 ---
 
 ## Q97493: Minimum LAN Manager MS-DOS Files and RAM Consumption

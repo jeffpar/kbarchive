@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232618: XADM: Importing Custom Recipient Logs Event ID 236"
-permalink: kb/232/Q232618/
+permalink: /kb/232/Q232618/
 ---
 
 ## Q232618: XADM: Importing Custom Recipient Logs Event ID 236

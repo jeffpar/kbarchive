@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154327: MSB Solar: Err Msg: This Program Requires a Newer Version..."
-permalink: kb/154/Q154327/
+permalink: /kb/154/Q154327/
 ---
 
 ## Q154327: MSB Solar: Err Msg: This Program Requires a Newer Version...

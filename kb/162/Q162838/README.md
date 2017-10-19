@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162838: Stop 0xA IRQL_NOT_LESS_OR_EQUAL Digifep5.sys During Shutdown"
-permalink: kb/162/Q162838/
+permalink: /kb/162/Q162838/
 ---
 
 ## Q162838: Stop 0xA IRQL_NOT_LESS_OR_EQUAL Digifep5.sys During Shutdown

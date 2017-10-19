@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147803: HOWTO: Dynamically Create Excel 5.0 Charts in OLE 2.0 Control"
-permalink: kb/147/Q147803/
+permalink: /kb/147/Q147803/
 ---
 
 ## Q147803: HOWTO: Dynamically Create Excel 5.0 Charts in OLE 2.0 Control

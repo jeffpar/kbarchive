@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191923: PRB: COPY TO ARRAY Causes Insufficient Memory Error"
-permalink: kb/191/Q191923/
+permalink: /kb/191/Q191923/
 ---
 
 ## Q191923: PRB: COPY TO ARRAY Causes Insufficient Memory Error

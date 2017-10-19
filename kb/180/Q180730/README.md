@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180730: XCON: Erroneous Deletion of SMTP &amp; SNADS Routes During Routing"
-permalink: kb/180/Q180730/
+permalink: /kb/180/Q180730/
 ---
 
 ## Q180730: XCON: Erroneous Deletion of SMTP &amp; SNADS Routes During Routing

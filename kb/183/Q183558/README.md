@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183558: Conformance to ADO 2.0 and OLE DB 2.0"
-permalink: kb/183/Q183558/
+permalink: /kb/183/Q183558/
 ---
 
 ## Q183558: Conformance to ADO 2.0 and OLE DB 2.0

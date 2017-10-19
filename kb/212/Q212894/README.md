@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212894: SMS: Windows Clients Cannot Connect to Software Metering Server"
-permalink: kb/212/Q212894/
+permalink: /kb/212/Q212894/
 ---
 
 ## Q212894: SMS: Windows Clients Cannot Connect to Software Metering Server

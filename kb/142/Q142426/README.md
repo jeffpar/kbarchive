@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142426: MSN Icon Not Removed from Desktop When MSN Is Removed"
-permalink: kb/142/Q142426/
+permalink: /kb/142/Q142426/
 ---
 
 ## Q142426: MSN Icon Not Removed from Desktop When MSN Is Removed

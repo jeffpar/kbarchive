@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171471: FIX: VB-Created Controls Fail to Print w/UserControl_Paint"
-permalink: kb/171/Q171471/
+permalink: /kb/171/Q171471/
 ---
 
 ## Q171471: FIX: VB-Created Controls Fail to Print w/UserControl_Paint

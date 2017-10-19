@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210327: Manually Populating Network Neighborhood with Static Entries"
-permalink: kb/210/Q210327/
+permalink: /kb/210/Q210327/
 ---
 
 ## Q210327: Manually Populating Network Neighborhood with Static Entries

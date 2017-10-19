@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226911: SMS: NetDisc: Cannot Access DHCP Servers in Different Domains"
-permalink: kb/226/Q226911/
+permalink: /kb/226/Q226911/
 ---
 
 ## Q226911: SMS: NetDisc: Cannot Access DHCP Servers in Different Domains

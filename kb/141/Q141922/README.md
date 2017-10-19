@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141922: WD97: How to Start a Mail Merge"
-permalink: kb/141/Q141922/
+permalink: /kb/141/Q141922/
 ---
 
 ## Q141922: WD97: How to Start a Mail Merge

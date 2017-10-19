@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134777: Microsoft Plus! Uninstall Interruption Causes Errors Booting"
-permalink: kb/134/Q134777/
+permalink: /kb/134/Q134777/
 ---
 
 ## Q134777: Microsoft Plus! Uninstall Interruption Causes Errors Booting

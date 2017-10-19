@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190968: BUG: IntelliSense Limitations with C++ Classes"
-permalink: kb/190/Q190968/
+permalink: /kb/190/Q190968/
 ---
 
 ## Q190968: BUG: IntelliSense Limitations with C++ Classes

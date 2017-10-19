@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176785: PRB: SET MARK TO Does Not Work with &quot;#&quot; and &quot;A&quot;"
-permalink: kb/176/Q176785/
+permalink: /kb/176/Q176785/
 ---
 
 ## Q176785: PRB: SET MARK TO Does Not Work with &quot;#&quot; and &quot;A&quot;

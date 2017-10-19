@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123371: Mac OOF: Forwarding Mail to a Gateway Recipient"
-permalink: kb/123/Q123371/
+permalink: /kb/123/Q123371/
 ---
 
 ## Q123371: Mac OOF: Forwarding Mail to a Gateway Recipient

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187327: Full Synchronization Fails When Using Long Service Names"
-permalink: kb/187/Q187327/
+permalink: /kb/187/Q187327/
 ---
 
 ## Q187327: Full Synchronization Fails When Using Long Service Names

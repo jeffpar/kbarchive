@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117898: Drag &amp; Drop of Word 6.0 Icon Fails to Open Document on Desktop"
-permalink: kb/117/Q117898/
+permalink: /kb/117/Q117898/
 ---
 
 ## Q117898: Drag &amp; Drop of Word 6.0 Icon Fails to Open Document on Desktop

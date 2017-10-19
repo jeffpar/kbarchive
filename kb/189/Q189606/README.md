@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189606: Browser Service Fails to Start or Stop Button Is Unavailable"
-permalink: kb/189/Q189606/
+permalink: /kb/189/Q189606/
 ---
 
 ## Q189606: Browser Service Fails to Start or Stop Button Is Unavailable

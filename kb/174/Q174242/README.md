@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174242: Frequently Asked Integrated Services Digital Network Questions"
-permalink: kb/174/Q174242/
+permalink: /kb/174/Q174242/
 ---
 
 ## Q174242: Frequently Asked Integrated Services Digital Network Questions

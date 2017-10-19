@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206076: MARSHAL.EXE: How To Marshal Interfaces Across Apartments"
-permalink: kb/206/Q206076/
+permalink: /kb/206/Q206076/
 ---
 
 ## Q206076: MARSHAL.EXE: How To Marshal Interfaces Across Apartments

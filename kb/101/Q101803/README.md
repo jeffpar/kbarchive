@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101803: PRB: .CPP Extension w/ Library Construction Kit Causes Errors"
-permalink: kb/101/Q101803/
+permalink: /kb/101/Q101803/
 ---
 
 ## Q101803: PRB: .CPP Extension w/ Library Construction Kit Causes Errors

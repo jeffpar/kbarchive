@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174464: Windows 95 RAS Client Cannot Ping Remote Network"
-permalink: kb/174/Q174464/
+permalink: /kb/174/Q174464/
 ---
 
 ## Q174464: Windows 95 RAS Client Cannot Ping Remote Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121732: PC Ext: Failure Delivering User Mail Due to Mailbag Contention"
-permalink: kb/121/Q121732/
+permalink: /kb/121/Q121732/
 ---
 
 ## Q121732: PC Ext: Failure Delivering User Mail Due to Mailbag Contention

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268440: INFO: MAPI Is Not Suitable for HTML Messages"
-permalink: kb/268/Q268440/
+permalink: /kb/268/Q268440/
 ---
 
 ## Q268440: INFO: MAPI Is Not Suitable for HTML Messages

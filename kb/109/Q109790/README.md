@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109790: PRB: CTimeSpan::GetDays() Reports 29 Days in April"
-permalink: kb/109/Q109790/
+permalink: /kb/109/Q109790/
 ---
 
 ## Q109790: PRB: CTimeSpan::GetDays() Reports 29 Days in April

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163241: LPR Printers Show Status Unknown"
-permalink: kb/163/Q163241/
+permalink: /kb/163/Q163241/
 ---
 
 ## Q163241: LPR Printers Show Status Unknown

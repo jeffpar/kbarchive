@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248145: XCLN: Team Folder Shows Inbox Instead of Current Folder"
-permalink: kb/248/Q248145/
+permalink: /kb/248/Q248145/
 ---
 
 ## Q248145: XCLN: Team Folder Shows Inbox Instead of Current Folder

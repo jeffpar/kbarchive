@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146492: Setting a New Contact to Private Requires Data to Be Entered"
-permalink: kb/146/Q146492/
+permalink: /kb/146/Q146492/
 ---
 
 ## Q146492: Setting a New Contact to Private Requires Data to Be Entered

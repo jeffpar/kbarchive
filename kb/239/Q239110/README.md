@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239110: Service Pack 4 for Terminal Server Does Not Copy Dhcpssvc.dll"
-permalink: kb/239/Q239110/
+permalink: /kb/239/Q239110/
 ---
 
 ## Q239110: Service Pack 4 for Terminal Server Does Not Copy Dhcpssvc.dll

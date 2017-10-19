@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186583: HOWTO: Use OLE Drag and Drop to Exchange Data Between Apps"
-permalink: kb/186/Q186583/
+permalink: /kb/186/Q186583/
 ---
 
 ## Q186583: HOWTO: Use OLE Drag and Drop to Exchange Data Between Apps

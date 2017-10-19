@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109152: How to Create a Data Grouping on Every Nth Record"
-permalink: kb/109/Q109152/
+permalink: /kb/109/Q109152/
 ---
 
 ## Q109152: How to Create a Data Grouping on Every Nth Record

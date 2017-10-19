@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192744: HOWTO: Implement &quot;What's This?&quot; Help in ActiveX Control"
-permalink: kb/192/Q192744/
+permalink: /kb/192/Q192744/
 ---
 
 ## Q192744: HOWTO: Implement &quot;What's This?&quot; Help in ActiveX Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184021: FP: List of WebBot Components that Require Server Extensions"
-permalink: kb/184/Q184021/
+permalink: /kb/184/Q184021/
 ---
 
 ## Q184021: FP: List of WebBot Components that Require Server Extensions

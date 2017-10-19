@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131891: SNA: How to Install Remote Admin and Focus On Remote Domains"
-permalink: kb/131/Q131891/
+permalink: /kb/131/Q131891/
 ---
 
 ## Q131891: SNA: How to Install Remote Admin and Focus On Remote Domains

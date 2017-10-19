@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321906: FIX: OLE DB Provider Does Not Return Result Sets for Stored Proc"
-permalink: kb/321/Q321906/
+permalink: /kb/321/Q321906/
 ---
 
 ## Q321906: FIX: OLE DB Provider Does Not Return Result Sets for Stored Proc

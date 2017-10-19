@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11958: Tab.exe Demonstrates Modal and Modeless Dialog Boxes"
-permalink: kb/011/Q11958/
+permalink: /kb/011/Q11958/
 ---
 
 ## Q11958: Tab.exe Demonstrates Modal and Modeless Dialog Boxes

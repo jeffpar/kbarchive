@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115167: PC Win: Exporting Folders from Windows Doesn't Check for Space"
-permalink: kb/115/Q115167/
+permalink: /kb/115/Q115167/
 ---
 
 ## Q115167: PC Win: Exporting Folders from Windows Doesn't Check for Space

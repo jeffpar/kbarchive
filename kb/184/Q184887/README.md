@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184887: Golf 1998 Edition: Minimum System Requirements"
-permalink: kb/184/Q184887/
+permalink: /kb/184/Q184887/
 ---
 
 ## Q184887: Golf 1998 Edition: Minimum System Requirements

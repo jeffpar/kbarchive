@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173459: XADM: Search Permission Role not Displayed Correctly in Admin"
-permalink: kb/173/Q173459/
+permalink: /kb/173/Q173459/
 ---
 
 ## Q173459: XADM: Search Permission Role not Displayed Correctly in Admin

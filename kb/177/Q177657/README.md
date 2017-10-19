@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177657: Explanation of NTBackup /Nopoll Parameter Is Incorrect"
-permalink: kb/177/Q177657/
+permalink: /kb/177/Q177657/
 ---
 
 ## Q177657: Explanation of NTBackup /Nopoll Parameter Is Incorrect

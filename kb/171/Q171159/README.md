@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171159: WD97: List of Fixed Problems in Word 97 for Windows, SR-1"
-permalink: kb/171/Q171159/
+permalink: /kb/171/Q171159/
 ---
 
 ## Q171159: WD97: List of Fixed Problems in Word 97 for Windows, SR-1

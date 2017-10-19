@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161364: SMS: Description of Remote Control Event Log Codes"
-permalink: kb/161/Q161364/
+permalink: /kb/161/Q161364/
 ---
 
 ## Q161364: SMS: Description of Remote Control Event Log Codes

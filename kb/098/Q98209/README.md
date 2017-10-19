@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98209: FFAPI: Message Body Begins with a Blank Line (CRLF)"
-permalink: kb/098/Q98209/
+permalink: /kb/098/Q98209/
 ---
 
 ## Q98209: FFAPI: Message Body Begins with a Blank Line (CRLF)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96445: SYSTEM.INI and WIN.INI Entries Made by WSS 1.0x Setup"
-permalink: kb/096/Q96445/
+permalink: /kb/096/Q96445/
 ---
 
 ## Q96445: SYSTEM.INI and WIN.INI Entries Made by WSS 1.0x Setup

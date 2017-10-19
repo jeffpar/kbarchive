@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258633: Baseball 2001: Screen Turns Black or Text Is Not Displayed"
-permalink: kb/258/Q258633/
+permalink: /kb/258/Q258633/
 ---
 
 ## Q258633: Baseball 2001: Screen Turns Black or Text Is Not Displayed

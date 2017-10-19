@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232333: Error Message When Using a Colon in File or Folder Name in SFU"
-permalink: kb/232/Q232333/
+permalink: /kb/232/Q232333/
 ---
 
 ## Q232333: Error Message When Using a Colon in File or Folder Name in SFU

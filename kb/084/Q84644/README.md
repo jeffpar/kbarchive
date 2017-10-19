@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84644: Font Changes in the Clipboard Under Windows 3.1"
-permalink: kb/084/Q84644/
+permalink: /kb/084/Q84644/
 ---
 
 ## Q84644: Font Changes in the Clipboard Under Windows 3.1

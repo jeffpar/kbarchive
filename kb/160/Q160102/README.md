@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160102: NBA Full Court Press Err Msg: Cannot Initialize Sound System"
-permalink: kb/160/Q160102/
+permalink: /kb/160/Q160102/
 ---
 
 ## Q160102: NBA Full Court Press Err Msg: Cannot Initialize Sound System

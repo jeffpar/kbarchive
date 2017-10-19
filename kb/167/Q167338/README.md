@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167338: BUG: Format(&quot;%D&quot;) Fails for COleDateTime and COleDateTimeSpan"
-permalink: kb/167/Q167338/
+permalink: /kb/167/Q167338/
 ---
 
 ## Q167338: BUG: Format(&quot;%D&quot;) Fails for COleDateTime and COleDateTimeSpan

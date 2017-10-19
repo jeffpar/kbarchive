@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129065: PRB: Getsockname() Returns IP Address 0.0.0.0 for UDP"
-permalink: kb/129/Q129065/
+permalink: /kb/129/Q129065/
 ---
 
 ## Q129065: PRB: Getsockname() Returns IP Address 0.0.0.0 for UDP

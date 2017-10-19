@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264509: Management Agent Does Not Update Object Attribute in Metaverse"
-permalink: kb/264/Q264509/
+permalink: /kb/264/Q264509/
 ---
 
 ## Q264509: Management Agent Does Not Update Object Attribute in Metaverse

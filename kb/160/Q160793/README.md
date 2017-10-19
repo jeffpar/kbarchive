@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160793: Additional Desktop Restrictions Available Through Registry"
-permalink: kb/160/Q160793/
+permalink: /kb/160/Q160793/
 ---
 
 ## Q160793: Additional Desktop Restrictions Available Through Registry

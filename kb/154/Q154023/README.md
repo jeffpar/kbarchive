@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154023: FIX: Error: &quot;Cannot Nest Aggregate Functions&quot;"
-permalink: kb/154/Q154023/
+permalink: /kb/154/Q154023/
 ---
 
 ## Q154023: FIX: Error: &quot;Cannot Nest Aggregate Functions&quot;

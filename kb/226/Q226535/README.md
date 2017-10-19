@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226535: Access Denied if Roaming Profile Is Saved to a NetWare Server"
-permalink: kb/226/Q226535/
+permalink: /kb/226/Q226535/
 ---
 
 ## Q226535: Access Denied if Roaming Profile Is Saved to a NetWare Server

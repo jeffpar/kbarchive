@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267548: Cluster IP Resource Fails After Network Change"
-permalink: kb/267/Q267548/
+permalink: /kb/267/Q267548/
 ---
 
 ## Q267548: Cluster IP Resource Fails After Network Change

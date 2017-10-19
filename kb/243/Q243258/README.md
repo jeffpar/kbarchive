@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243258: End User License Agreement (EULA) Policy on Backup CD-ROMs"
-permalink: kb/243/Q243258/
+permalink: /kb/243/Q243258/
 ---
 
 ## Q243258: End User License Agreement (EULA) Policy on Backup CD-ROMs

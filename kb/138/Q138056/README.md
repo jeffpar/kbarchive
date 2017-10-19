@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138056: FIX: CurrentControl Property of Grid Column Reverts to Default"
-permalink: kb/138/Q138056/
+permalink: /kb/138/Q138056/
 ---
 
 ## Q138056: FIX: CurrentControl Property of Grid Column Reverts to Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108110: Corrupted 8-Bit .AVI File After Step Frame Capture"
-permalink: kb/108/Q108110/
+permalink: /kb/108/Q108110/
 ---
 
 ## Q108110: Corrupted 8-Bit .AVI File After Step Frame Capture

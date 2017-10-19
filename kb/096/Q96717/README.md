@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96717: PC WRmt: Message Header Listing Incorrect"
-permalink: kb/096/Q96717/
+permalink: /kb/096/Q96717/
 ---
 
 ## Q96717: PC WRmt: Message Header Listing Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181227: FP: Invalid Page URL Error Saving Page in FrontPage Editor"
-permalink: kb/181/Q181227/
+permalink: /kb/181/Q181227/
 ---
 
 ## Q181227: FP: Invalid Page URL Error Saving Page in FrontPage Editor

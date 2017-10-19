@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189217: Running Office 97 Updated Ed. Intl. Version: Incorrect Setup"
-permalink: kb/189/Q189217/
+permalink: /kb/189/Q189217/
 ---
 
 ## Q189217: Running Office 97 Updated Ed. Intl. Version: Incorrect Setup

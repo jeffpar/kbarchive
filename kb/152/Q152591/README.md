@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152591: XCON: Cannot Create RAS Connector With More Than 10 entries"
-permalink: kb/152/Q152591/
+permalink: /kb/152/Q152591/
 ---
 
 ## Q152591: XCON: Cannot Create RAS Connector With More Than 10 entries

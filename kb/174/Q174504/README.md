@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174504: Detection of IntelliPoint Mouse on Serial Adapter Fails"
-permalink: kb/174/Q174504/
+permalink: /kb/174/Q174504/
 ---
 
 ## Q174504: Detection of IntelliPoint Mouse on Serial Adapter Fails

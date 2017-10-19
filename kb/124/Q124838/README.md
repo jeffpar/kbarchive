@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124838: NICs That Work with Network Monitor"
-permalink: kb/124/Q124838/
+permalink: /kb/124/Q124838/
 ---
 
 ## Q124838: NICs That Work with Network Monitor

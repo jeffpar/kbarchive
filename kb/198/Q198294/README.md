@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198294: WD97: Tabs in Tables Lost When Saving As Text with Layout"
-permalink: kb/198/Q198294/
+permalink: /kb/198/Q198294/
 ---
 
 ## Q198294: WD97: Tabs in Tables Lost When Saving As Text with Layout

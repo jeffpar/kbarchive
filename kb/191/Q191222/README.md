@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191222: INFO: ActiveX Controls Supported by Visual FoxPro 6.0"
-permalink: kb/191/Q191222/
+permalink: /kb/191/Q191222/
 ---
 
 ## Q191222: INFO: ActiveX Controls Supported by Visual FoxPro 6.0

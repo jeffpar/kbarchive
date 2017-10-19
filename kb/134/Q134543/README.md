@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134543: Unable to Set Up New PCMCIA Card on Single-Socket System"
-permalink: kb/134/Q134543/
+permalink: /kb/134/Q134543/
 ---
 
 ## Q134543: Unable to Set Up New PCMCIA Card on Single-Socket System

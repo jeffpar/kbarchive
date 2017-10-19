@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175696: MDG: Mac Mail Security Violation Error"
-permalink: kb/175/Q175696/
+permalink: /kb/175/Q175696/
 ---
 
 ## Q175696: MDG: Mac Mail Security Violation Error

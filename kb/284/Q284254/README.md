@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284254: XCON: Address Space Not in GWART w/Multiple X.400 Connectors"
-permalink: kb/284/Q284254/
+permalink: /kb/284/Q284254/
 ---
 
 ## Q284254: XCON: Address Space Not in GWART w/Multiple X.400 Connectors

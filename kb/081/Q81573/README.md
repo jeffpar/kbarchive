@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81573: Converting Apple Sound Files to Wave Format"
-permalink: kb/081/Q81573/
+permalink: /kb/081/Q81573/
 ---
 
 ## Q81573: Converting Apple Sound Files to Wave Format

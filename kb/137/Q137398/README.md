@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137398: Edit Login Script Option for FPNW Not Available"
-permalink: kb/137/Q137398/
+permalink: /kb/137/Q137398/
 ---
 
 ## Q137398: Edit Login Script Option for FPNW Not Available

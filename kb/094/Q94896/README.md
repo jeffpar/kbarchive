@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94896: WFWG Err Msg: &quot;Failure: Hardware Not Found...&quot; with Intel EE16"
-permalink: kb/094/Q94896/
+permalink: /kb/094/Q94896/
 ---
 
 ## Q94896: WFWG Err Msg: &quot;Failure: Hardware Not Found...&quot; with Intel EE16

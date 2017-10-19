@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131710: FIX: TYPE() Returns &quot;&quot; Instead of &quot;U&quot; For OleBoundControl"
-permalink: kb/131/Q131710/
+permalink: /kb/131/Q131710/
 ---
 
 ## Q131710: FIX: TYPE() Returns &quot;&quot; Instead of &quot;U&quot; For OleBoundControl

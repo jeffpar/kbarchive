@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85307: Outdated or Incorrect Sound Driver May Cause System to Hang"
-permalink: kb/085/Q85307/
+permalink: /kb/085/Q85307/
 ---
 
 ## Q85307: Outdated or Incorrect Sound Driver May Cause System to Hang

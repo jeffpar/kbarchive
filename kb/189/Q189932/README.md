@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189932: WD97: Merge To Electronic Fax Option Missing"
-permalink: kb/189/Q189932/
+permalink: /kb/189/Q189932/
 ---
 
 ## Q189932: WD97: Merge To Electronic Fax Option Missing

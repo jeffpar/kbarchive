@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155330: FPNW Utility to Set Up Subauthentication on Domain Controller"
-permalink: kb/155/Q155330/
+permalink: /kb/155/Q155330/
 ---
 
 ## Q155330: FPNW Utility to Set Up Subauthentication on Domain Controller

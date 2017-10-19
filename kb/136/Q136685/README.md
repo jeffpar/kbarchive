@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136685: Golf 2.0a Registry Entries made by Setup"
-permalink: kb/136/Q136685/
+permalink: /kb/136/Q136685/
 ---
 
 ## Q136685: Golf 2.0a Registry Entries made by Setup

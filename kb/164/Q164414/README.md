@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164414: FIX: MSDEV Error: &quot;The Requested Topic Does Not Exist&quot;"
-permalink: kb/164/Q164414/
+permalink: /kb/164/Q164414/
 ---
 
 ## Q164414: FIX: MSDEV Error: &quot;The Requested Topic Does Not Exist&quot;

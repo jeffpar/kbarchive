@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182519: XADM: cc:Mail Addresses Not Created for 4.0 Site Recipients"
-permalink: kb/182/Q182519/
+permalink: /kb/182/Q182519/
 ---
 
 ## Q182519: XADM: cc:Mail Addresses Not Created for 4.0 Site Recipients

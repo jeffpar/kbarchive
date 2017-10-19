@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191420: How to Configure IP RIP Route Filters with Service Pack 4"
-permalink: kb/191/Q191420/
+permalink: /kb/191/Q191420/
 ---
 
 ## Q191420: How to Configure IP RIP Route Filters with Service Pack 4

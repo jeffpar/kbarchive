@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146104: XFOR: How to Display Per Postoffice Users in the Address Book"
-permalink: kb/146/Q146104/
+permalink: /kb/146/Q146104/
 ---
 
 ## Q146104: XFOR: How to Display Per Postoffice Users in the Address Book

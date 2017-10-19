@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94893: DOSSHELL.INI Archive Attribute Is Not Set"
-permalink: kb/094/Q94893/
+permalink: /kb/094/Q94893/
 ---
 
 ## Q94893: DOSSHELL.INI Archive Attribute Is Not Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284199: PRB: Exchange 5.5 Mailbox Resources Orphaned with ADSI/LDAP"
-permalink: kb/284/Q284199/
+permalink: /kb/284/Q284199/
 ---
 
 ## Q284199: PRB: Exchange 5.5 Mailbox Resources Orphaned with ADSI/LDAP

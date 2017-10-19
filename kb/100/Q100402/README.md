@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100402: Musical Instruments: Annotation Disturbs Line Spacing"
-permalink: kb/100/Q100402/
+permalink: /kb/100/Q100402/
 ---
 
 ## Q100402: Musical Instruments: Annotation Disturbs Line Spacing

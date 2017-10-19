@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271959: Cannot Resolve SID Because Global Group Name Same As Domain Name"
-permalink: kb/271/Q271959/
+permalink: /kb/271/Q271959/
 ---
 
 ## Q271959: Cannot Resolve SID Because Global Group Name Same As Domain Name

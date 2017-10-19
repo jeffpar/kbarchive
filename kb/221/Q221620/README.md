@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221620: FIX: FFCs - _GraphByRecord in _utility.vcx_Should Show Name"
-permalink: kb/221/Q221620/
+permalink: /kb/221/Q221620/
 ---
 
 ## Q221620: FIX: FFCs - _GraphByRecord in _utility.vcx_Should Show Name

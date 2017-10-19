@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137913: Problems Printing to PCPI Laser Image 1030 Printer"
-permalink: kb/137/Q137913/
+permalink: /kb/137/Q137913/
 ---
 
 ## Q137913: Problems Printing to PCPI Laser Image 1030 Printer

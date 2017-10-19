@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159108: SMP Full Duplex Adapter Configuration May Cause a Blue Screen"
-permalink: kb/159/Q159108/
+permalink: /kb/159/Q159108/
 ---
 
 ## Q159108: SMP Full Duplex Adapter Configuration May Cause a Blue Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240401: BUG:Repeatedly Opening &amp; Closing Recordset Increase Connections"
-permalink: kb/240/Q240401/
+permalink: /kb/240/Q240401/
 ---
 
 ## Q240401: BUG:Repeatedly Opening &amp; Closing Recordset Increase Connections

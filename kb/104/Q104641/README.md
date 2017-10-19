@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104641: INFO: Using C Run-Time Functions and CreateThread()"
-permalink: kb/104/Q104641/
+permalink: /kb/104/Q104641/
 ---
 
 ## Q104641: INFO: Using C Run-Time Functions and CreateThread()

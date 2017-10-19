@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132334: Mac Bookshelf '95: White Lines Appear in Movie Clips"
-permalink: kb/132/Q132334/
+permalink: /kb/132/Q132334/
 ---
 
 ## Q132334: Mac Bookshelf '95: White Lines Appear in Movie Clips

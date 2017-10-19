@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155157: Error Changing Password at Logon with Dial-Up Networking"
-permalink: kb/155/Q155157/
+permalink: /kb/155/Q155157/
 ---
 
 ## Q155157: Error Changing Password at Logon with Dial-Up Networking

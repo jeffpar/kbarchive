@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72021: INFO: Font Rotation Under Microsoft Windows"
-permalink: kb/072/Q72021/
+permalink: /kb/072/Q72021/
 ---
 
 ## Q72021: INFO: Font Rotation Under Microsoft Windows

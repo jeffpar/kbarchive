@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108398: Art Gallery: Animations Play Incorrectly on Second Screen"
-permalink: kb/108/Q108398/
+permalink: /kb/108/Q108398/
 ---
 
 ## Q108398: Art Gallery: Animations Play Incorrectly on Second Screen

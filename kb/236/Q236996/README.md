@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236996: ICA NetBEUI Workstation May Not Connect"
-permalink: kb/236/Q236996/
+permalink: /kb/236/Q236996/
 ---
 
 ## Q236996: ICA NetBEUI Workstation May Not Connect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82800: TrueType Character Spacing Incorrect in AmiPro"
-permalink: kb/082/Q82800/
+permalink: /kb/082/Q82800/
 ---
 
 ## Q82800: TrueType Character Spacing Incorrect in AmiPro

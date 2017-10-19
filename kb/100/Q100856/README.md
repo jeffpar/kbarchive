@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100856: Compressed Waveform Files Don't Rewind or Repeat"
-permalink: kb/100/Q100856/
+permalink: /kb/100/Q100856/
 ---
 
 ## Q100856: Compressed Waveform Files Don't Rewind or Repeat

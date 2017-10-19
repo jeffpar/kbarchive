@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253270: Locally Created Collections Become Locked"
-permalink: kb/253/Q253270/
+permalink: /kb/253/Q253270/
 ---
 
 ## Q253270: Locally Created Collections Become Locked

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105273: System Hangs When Booting with IBM Token Ring RPL"
-permalink: kb/105/Q105273/
+permalink: /kb/105/Q105273/
 ---
 
 ## Q105273: System Hangs When Booting with IBM Token Ring RPL

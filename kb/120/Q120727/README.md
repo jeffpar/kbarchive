@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120727: Err Msg: DRVSPACE.SYS Is Not the Same Internal Revision as..."
-permalink: kb/120/Q120727/
+permalink: /kb/120/Q120727/
 ---
 
 ## Q120727: Err Msg: DRVSPACE.SYS Is Not the Same Internal Revision as...

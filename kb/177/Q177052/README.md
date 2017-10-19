@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177052: WD97: Application Error Printing from Shortcut Menu in Explorer"
-permalink: kb/177/Q177052/
+permalink: /kb/177/Q177052/
 ---
 
 ## Q177052: WD97: Application Error Printing from Shortcut Menu in Explorer

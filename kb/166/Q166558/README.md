@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166558: XFOR: Inbound Internet Message May Cause Access Violation"
-permalink: kb/166/Q166558/
+permalink: /kb/166/Q166558/
 ---
 
 ## Q166558: XFOR: Inbound Internet Message May Cause Access Violation

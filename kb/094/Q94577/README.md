@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94577: Creating 32-Bit Flat Memory Model MASM Code for OS/2 2.0"
-permalink: kb/094/Q94577/
+permalink: /kb/094/Q94577/
 ---
 
 ## Q94577: Creating 32-Bit Flat Memory Model MASM Code for OS/2 2.0

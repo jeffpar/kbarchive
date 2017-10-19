@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113252: BUG: Viewer Setup Causes Error in SYMTAB11.C"
-permalink: kb/113/Q113252/
+permalink: /kb/113/Q113252/
 ---
 
 ## Q113252: BUG: Viewer Setup Causes Error in SYMTAB11.C

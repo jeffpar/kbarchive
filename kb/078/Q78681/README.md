@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78681: VTI Turbo 55 80286 Requires BIOS Version 3.22 or Later"
-permalink: kb/078/Q78681/
+permalink: /kb/078/Q78681/
 ---
 
 ## Q78681: VTI Turbo 55 80286 Requires BIOS Version 3.22 or Later

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148690: SMS: Windows NT 3.51 Service Pack 4 PDF Availability"
-permalink: kb/148/Q148690/
+permalink: /kb/148/Q148690/
 ---
 
 ## Q148690: SMS: Windows NT 3.51 Service Pack 4 PDF Availability

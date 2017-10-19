@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195267: Access 97 Developer's Handbook Comments and Corrections"
-permalink: kb/195/Q195267/
+permalink: /kb/195/Q195267/
 ---
 
 ## Q195267: Access 97 Developer's Handbook Comments and Corrections

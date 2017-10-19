@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87844: Creating a Bitmap to Be Tiled on the Windows Desktop"
-permalink: kb/087/Q87844/
+permalink: /kb/087/Q87844/
 ---
 
 ## Q87844: Creating a Bitmap to Be Tiled on the Windows Desktop

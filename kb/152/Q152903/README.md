@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152903: XFOR: Mail Connector Dispatch Fails Against Postoffice on Unix"
-permalink: kb/152/Q152903/
+permalink: /kb/152/Q152903/
 ---
 
 ## Q152903: XFOR: Mail Connector Dispatch Fails Against Postoffice on Unix

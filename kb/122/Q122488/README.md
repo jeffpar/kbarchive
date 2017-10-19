@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122488: PRB: How to Use Automation Error Code &amp; Help from Visual Basic"
-permalink: kb/122/Q122488/
+permalink: /kb/122/Q122488/
 ---
 
 ## Q122488: PRB: How to Use Automation Error Code &amp; Help from Visual Basic

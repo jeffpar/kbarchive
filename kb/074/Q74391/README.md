@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74391: HDRSTORE May Restore Previous DOS Files into the DOS Directory"
-permalink: kb/074/Q74391/
+permalink: /kb/074/Q74391/
 ---
 
 ## Q74391: HDRSTORE May Restore Previous DOS Files into the DOS Directory

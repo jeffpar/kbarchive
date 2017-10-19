@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239943: FIX: UserControls with Menus Cause Resource Leak"
-permalink: kb/239/Q239943/
+permalink: /kb/239/Q239943/
 ---
 
 ## Q239943: FIX: UserControls with Menus Cause Resource Leak

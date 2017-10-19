@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243190: XFOR: Notes Dirsync Error Message: Event IDs 94086 and 94096"
-permalink: kb/243/Q243190/
+permalink: /kb/243/Q243190/
 ---
 
 ## Q243190: XFOR: Notes Dirsync Error Message: Event IDs 94086 and 94096

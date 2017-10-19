@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65894: Metheus Video Cards and Windows Video Drivers"
-permalink: kb/065/Q65894/
+permalink: /kb/065/Q65894/
 ---
 
 ## Q65894: Metheus Video Cards and Windows Video Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162085: FIX: Using SET COLOR TO &amp; Printing a Report Prints Blank Page"
-permalink: kb/162/Q162085/
+permalink: /kb/162/Q162085/
 ---
 
 ## Q162085: FIX: Using SET COLOR TO &amp; Printing a Report Prints Blank Page

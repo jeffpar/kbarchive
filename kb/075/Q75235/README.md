@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75235: F-15 Strike Eagle II Requires LOADFIX to Run"
-permalink: kb/075/Q75235/
+permalink: /kb/075/Q75235/
 ---
 
 ## Q75235: F-15 Strike Eagle II Requires LOADFIX to Run

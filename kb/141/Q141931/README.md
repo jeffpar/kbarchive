@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141931: INFO: Limitations of the Visual Basic 4.0 Add-In Object Model"
-permalink: kb/141/Q141931/
+permalink: /kb/141/Q141931/
 ---
 
 ## Q141931: INFO: Limitations of the Visual Basic 4.0 Add-In Object Model

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268155: NetBIOS Name Resolution May Be Slow or Stop Working"
-permalink: kb/268/Q268155/
+permalink: /kb/268/Q268155/
 ---
 
 ## Q268155: NetBIOS Name Resolution May Be Slow or Stop Working

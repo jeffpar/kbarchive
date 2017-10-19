@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128605: Managing Profiles of USRMGR.HLP States Invalid Network Path"
-permalink: kb/128/Q128605/
+permalink: /kb/128/Q128605/
 ---
 
 ## Q128605: Managing Profiles of USRMGR.HLP States Invalid Network Path

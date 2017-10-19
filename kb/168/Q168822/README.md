@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168822: INFO: List of Visual Basic 5.0 Books and Training Material"
-permalink: kb/168/Q168822/
+permalink: /kb/168/Q168822/
 ---
 
 ## Q168822: INFO: List of Visual Basic 5.0 Books and Training Material

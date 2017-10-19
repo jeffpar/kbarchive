@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185167: WD97: How to Pass a Parameter to a Macro Using Automation"
-permalink: kb/185/Q185167/
+permalink: /kb/185/Q185167/
 ---
 
 ## Q185167: WD97: How to Pass a Parameter to a Macro Using Automation

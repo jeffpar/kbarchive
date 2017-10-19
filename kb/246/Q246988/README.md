@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246988: Default Gateway Is Ignored When IRDP Is Enabled"
-permalink: kb/246/Q246988/
+permalink: /kb/246/Q246988/
 ---
 
 ## Q246988: Default Gateway Is Ignored When IRDP Is Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173497: XADM: Session Timeout Settings for Outlook Web Access"
-permalink: kb/173/Q173497/
+permalink: /kb/173/Q173497/
 ---
 
 ## Q173497: XADM: Session Timeout Settings for Outlook Web Access

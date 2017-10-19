@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161837: HOWTO: Create a DCOM Client/Server Application"
-permalink: kb/161/Q161837/
+permalink: /kb/161/Q161837/
 ---
 
 ## Q161837: HOWTO: Create a DCOM Client/Server Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151495: XADM: Priv.edb not Smaller After Running Edbutil /D"
-permalink: kb/151/Q151495/
+permalink: /kb/151/Q151495/
 ---
 
 ## Q151495: XADM: Priv.edb not Smaller After Running Edbutil /D

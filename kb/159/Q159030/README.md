@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159030: Close Combat: Troubleshooting Head to Head Connection Problems"
-permalink: kb/159/Q159030/
+permalink: /kb/159/Q159030/
 ---
 
 ## Q159030: Close Combat: Troubleshooting Head to Head Connection Problems

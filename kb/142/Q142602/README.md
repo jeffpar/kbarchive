@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142602: NBIPX: FPNW server &quot;NPRINT&quot; Returns Error If Not Logged On"
-permalink: kb/142/Q142602/
+permalink: /kb/142/Q142602/
 ---
 
 ## Q142602: NBIPX: FPNW server &quot;NPRINT&quot; Returns Error If Not Logged On

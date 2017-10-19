@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312819: SNA Server Fails Unexpectedly With Access Violation in S1PUC62"
-permalink: kb/312/Q312819/
+permalink: /kb/312/Q312819/
 ---
 
 ## Q312819: SNA Server Fails Unexpectedly With Access Violation in S1PUC62

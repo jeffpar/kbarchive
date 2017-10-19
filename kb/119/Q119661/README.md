@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119661: Ancient Lands: Manual Installation Instructions"
-permalink: kb/119/Q119661/
+permalink: /kb/119/Q119661/
 ---
 
 ## Q119661: Ancient Lands: Manual Installation Instructions

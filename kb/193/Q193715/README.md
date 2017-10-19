@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193715: WD97: Unable to Open Data Source Using MS Query"
-permalink: kb/193/Q193715/
+permalink: /kb/193/Q193715/
 ---
 
 ## Q193715: WD97: Unable to Open Data Source Using MS Query

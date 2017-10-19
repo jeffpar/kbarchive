@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133219: Connecting to the Internet Using a Service Provider"
-permalink: kb/133/Q133219/
+permalink: /kb/133/Q133219/
 ---
 
 ## Q133219: Connecting to the Internet Using a Service Provider

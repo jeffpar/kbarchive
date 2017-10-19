@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74602: PRB: Private Profile (INI) Files Not Designed as Database"
-permalink: kb/074/Q74602/
+permalink: /kb/074/Q74602/
 ---
 
 ## Q74602: PRB: Private Profile (INI) Files Not Designed as Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171329: SMS: &lt;Unknown&gt; NetcardID When a Different OS Is Detected"
-permalink: kb/171/Q171329/
+permalink: /kb/171/Q171329/
 ---
 
 ## Q171329: SMS: &lt;Unknown&gt; NetcardID When a Different OS Is Detected

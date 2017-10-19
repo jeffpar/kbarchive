@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86981: X400: Effect of Dir-Sync on Gateway Address Lists"
-permalink: kb/086/Q86981/
+permalink: /kb/086/Q86981/
 ---
 
 ## Q86981: X400: Effect of Dir-Sync on Gateway Address Lists

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241241: INF: Using DTS With Custom ATL OLE-DB Providers"
-permalink: kb/241/Q241241/
+permalink: /kb/241/Q241241/
 ---
 
 ## Q241241: INF: Using DTS With Custom ATL OLE-DB Providers

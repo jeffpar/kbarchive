@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163310: SNA Server Application Exception If Invalid Handle"
-permalink: kb/163/Q163310/
+permalink: /kb/163/Q163310/
 ---
 
 ## Q163310: SNA Server Application Exception If Invalid Handle

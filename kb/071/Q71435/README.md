@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71435: ALR 386 Microchannel (MPS) and Seagate IDE Drives"
-permalink: kb/071/Q71435/
+permalink: /kb/071/Q71435/
 ---
 
 ## Q71435: ALR 386 Microchannel (MPS) and Seagate IDE Drives

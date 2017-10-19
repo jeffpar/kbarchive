@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79845: INFO: Old Style (K&amp;R) Declarations Are Not Supported in C++"
-permalink: kb/079/Q79845/
+permalink: /kb/079/Q79845/
 ---
 
 ## Q79845: INFO: Old Style (K&amp;R) Declarations Are Not Supported in C++

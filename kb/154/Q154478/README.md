@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154478: XCLN: Attaching Digitally Signed Messages to an Eform"
-permalink: kb/154/Q154478/
+permalink: /kb/154/Q154478/
 ---
 
 ## Q154478: XCLN: Attaching Digitally Signed Messages to an Eform

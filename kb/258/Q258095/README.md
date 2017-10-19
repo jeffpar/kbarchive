@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258095: XFOR: Configuring the 5.5 Cal. Conn. to Use Exchange 2000 Router"
-permalink: kb/258/Q258095/
+permalink: /kb/258/Q258095/
 ---
 
 ## Q258095: XFOR: Configuring the 5.5 Cal. Conn. to Use Exchange 2000 Router

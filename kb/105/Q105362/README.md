@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105362: PROFS: Setup For Cross Calendaring in XA Systems and RSCS"
-permalink: kb/105/Q105362/
+permalink: /kb/105/Q105362/
 ---
 
 ## Q105362: PROFS: Setup For Cross Calendaring in XA Systems and RSCS

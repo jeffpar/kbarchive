@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184205: XADM: Information Store Fails to Start with Error 2186"
-permalink: kb/184/Q184205/
+permalink: /kb/184/Q184205/
 ---
 
 ## Q184205: XADM: Information Store Fails to Start with Error 2186

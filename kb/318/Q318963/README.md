@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318963: How To Access The Apple System Profiler"
-permalink: kb/318/Q318963/
+permalink: /kb/318/Q318963/
 ---
 
 ## Q318963: How To Access The Apple System Profiler

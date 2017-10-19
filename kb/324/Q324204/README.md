@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324204: SMS: Collections That Are Based on Complex Queries Do Not Update"
-permalink: kb/324/Q324204/
+permalink: /kb/324/Q324204/
 ---
 
 ## Q324204: SMS: Collections That Are Based on Complex Queries Do Not Update

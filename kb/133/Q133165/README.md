@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133165: DOCERR: Developer's Guide Gives Incorrect DataSession Default"
-permalink: kb/133/Q133165/
+permalink: /kb/133/Q133165/
 ---
 
 ## Q133165: DOCERR: Developer's Guide Gives Incorrect DataSession Default

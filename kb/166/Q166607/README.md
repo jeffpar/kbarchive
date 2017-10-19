@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166607: XFOR:  JPN: Outbound MIME Message Has Incorrect Label"
-permalink: kb/166/Q166607/
+permalink: /kb/166/Q166607/
 ---
 
 ## Q166607: XFOR:  JPN: Outbound MIME Message Has Incorrect Label

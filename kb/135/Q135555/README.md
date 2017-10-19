@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135555: Novell NetWare 4.x Reports Incorrect Maximum Connections"
-permalink: kb/135/Q135555/
+permalink: /kb/135/Q135555/
 ---
 
 ## Q135555: Novell NetWare 4.x Reports Incorrect Maximum Connections

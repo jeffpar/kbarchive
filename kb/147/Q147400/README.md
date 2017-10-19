@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147400: XCLN: How the Check Names Command Works"
-permalink: kb/147/Q147400/
+permalink: /kb/147/Q147400/
 ---
 
 ## Q147400: XCLN: How the Check Names Command Works

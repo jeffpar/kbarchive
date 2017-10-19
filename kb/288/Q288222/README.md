@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288222: HOWTO: Create a Transparent Framer Control"
-permalink: kb/288/Q288222/
+permalink: /kb/288/Q288222/
 ---
 
 ## Q288222: HOWTO: Create a Transparent Framer Control

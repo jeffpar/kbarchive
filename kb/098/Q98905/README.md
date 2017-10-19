@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98905: Anti-Virus for Windows Err Msg: Cannot Find CPAVDLG.DLL"
-permalink: kb/098/Q98905/
+permalink: /kb/098/Q98905/
 ---
 
 ## Q98905: Anti-Virus for Windows Err Msg: Cannot Find CPAVDLG.DLL

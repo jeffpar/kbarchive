@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135557: Desktop Themes Icons Are Different"
-permalink: kb/135/Q135557/
+permalink: /kb/135/Q135557/
 ---
 
 ## Q135557: Desktop Themes Icons Are Different

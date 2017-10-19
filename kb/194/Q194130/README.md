@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194130: SNMP Edit Box Drops a Character When Writing to the Registry"
-permalink: kb/194/Q194130/
+permalink: /kb/194/Q194130/
 ---
 
 ## Q194130: SNMP Edit Box Drops a Character When Writing to the Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108504: SFM: Some Files Get Wrong Icon in Finder"
-permalink: kb/108/Q108504/
+permalink: /kb/108/Q108504/
 ---
 
 ## Q108504: SFM: Some Files Get Wrong Icon in Finder

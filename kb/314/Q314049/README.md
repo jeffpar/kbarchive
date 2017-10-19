@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314049: ALS Microsoft Windows XP Professional Comments and Corrections"
-permalink: kb/314/Q314049/
+permalink: /kb/314/Q314049/
 ---
 
 ## Q314049: ALS Microsoft Windows XP Professional Comments and Corrections

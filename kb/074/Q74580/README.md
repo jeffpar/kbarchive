@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74580: German Keyboard Configuration with Typewriter Mode"
-permalink: kb/074/Q74580/
+permalink: /kb/074/Q74580/
 ---
 
 ## Q74580: German Keyboard Configuration with Typewriter Mode

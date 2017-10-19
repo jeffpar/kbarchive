@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282796: XADM: Store.exe Causes Access Violation with an SMTP Message"
-permalink: kb/282/Q282796/
+permalink: /kb/282/Q282796/
 ---
 
 ## Q282796: XADM: Store.exe Causes Access Violation with an SMTP Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153850: BUG: Access Driver DBQ=, DefaultDir= Incorrect with Large mdb"
-permalink: kb/153/Q153850/
+permalink: /kb/153/Q153850/
 ---
 
 ## Q153850: BUG: Access Driver DBQ=, DefaultDir= Incorrect with Large mdb

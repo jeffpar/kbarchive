@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241852: PRB: ERR C2535 When Compiling ATL Project with VC++ 6.0"
-permalink: kb/241/Q241852/
+permalink: /kb/241/Q241852/
 ---
 
 ## Q241852: PRB: ERR C2535 When Compiling ATL Project with VC++ 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83561: Using Setup /C During Setup of Windows 3.1"
-permalink: kb/083/Q83561/
+permalink: /kb/083/Q83561/
 ---
 
 ## Q83561: Using Setup /C During Setup of Windows 3.1

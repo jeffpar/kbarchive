@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299760: Train Simulator: How to Use the Troubleshooter"
-permalink: kb/299/Q299760/
+permalink: /kb/299/Q299760/
 ---
 
 ## Q299760: Train Simulator: How to Use the Troubleshooter

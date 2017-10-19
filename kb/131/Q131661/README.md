@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131661: Microsoft Office Manager Stays On Top of Screen Saver"
-permalink: kb/131/Q131661/
+permalink: /kb/131/Q131661/
 ---
 
 ## Q131661: Microsoft Office Manager Stays On Top of Screen Saver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75796: UAE When Running X-Vision 4.0"
-permalink: kb/075/Q75796/
+permalink: /kb/075/Q75796/
 ---
 
 ## Q75796: UAE When Running X-Vision 4.0

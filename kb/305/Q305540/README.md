@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305540: XCON: Accented Characters in Subject Field Are Modified"
-permalink: kb/305/Q305540/
+permalink: /kb/305/Q305540/
 ---
 
 ## Q305540: XCON: Accented Characters in Subject Field Are Modified

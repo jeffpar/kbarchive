@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186134: XCLN: Authentication Credentials Error 554 in Outlook/OE"
-permalink: kb/186/Q186134/
+permalink: /kb/186/Q186134/
 ---
 
 ## Q186134: XCLN: Authentication Credentials Error 554 in Outlook/OE

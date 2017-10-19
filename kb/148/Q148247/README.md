@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148247: V-Chat Environment Installation Cannot Find File Specified"
-permalink: kb/148/Q148247/
+permalink: /kb/148/Q148247/
 ---
 
 ## Q148247: V-Chat Environment Installation Cannot Find File Specified

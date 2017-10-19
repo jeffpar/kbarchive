@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48437: View Panning in Flight Simulator Version 4.00"
-permalink: kb/048/Q48437/
+permalink: /kb/048/Q48437/
 ---
 
 ## Q48437: View Panning in Flight Simulator Version 4.00

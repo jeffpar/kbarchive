@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117389: x86 Protected Mode Exceptions"
-permalink: kb/117/Q117389/
+permalink: /kb/117/Q117389/
 ---
 
 ## Q117389: x86 Protected Mode Exceptions

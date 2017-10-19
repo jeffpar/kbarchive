@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85283: Application Shows Microsoft Foundation Classes"
-permalink: kb/085/Q85283/
+permalink: /kb/085/Q85283/
 ---
 
 ## Q85283: Application Shows Microsoft Foundation Classes

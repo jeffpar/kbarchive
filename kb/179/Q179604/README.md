@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179604: How to Manually Install MSN Components from the MSN 2.51 CD-ROM"
-permalink: kb/179/Q179604/
+permalink: /kb/179/Q179604/
 ---
 
 ## Q179604: How to Manually Install MSN Components from the MSN 2.51 CD-ROM

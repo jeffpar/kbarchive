@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234351: Memory Leak When Performance Counters Are Not Available"
-permalink: kb/234/Q234351/
+permalink: /kb/234/Q234351/
 ---
 
 ## Q234351: Memory Leak When Performance Counters Are Not Available

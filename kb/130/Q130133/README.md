@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130133: Bookshelf 1995: Picture Caption Not Copied with Picture"
-permalink: kb/130/Q130133/
+permalink: /kb/130/Q130133/
 ---
 
 ## Q130133: Bookshelf 1995: Picture Caption Not Copied with Picture

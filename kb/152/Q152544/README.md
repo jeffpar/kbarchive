@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152544: XADM: GWART Shows Site Has Routing to Itself"
-permalink: kb/152/Q152544/
+permalink: /kb/152/Q152544/
 ---
 
 ## Q152544: XADM: GWART Shows Site Has Routing to Itself

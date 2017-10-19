@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138027: PPT: Movies Do Not Play When Moved Cross-Platform"
-permalink: kb/138/Q138027/
+permalink: /kb/138/Q138027/
 ---
 
 ## Q138027: PPT: Movies Do Not Play When Moved Cross-Platform

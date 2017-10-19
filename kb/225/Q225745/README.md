@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225745: Administrators Can Remove Themselves from the Permissions for a"
-permalink: kb/225/Q225745/
+permalink: /kb/225/Q225745/
 ---
 
 ## Q225745: Administrators Can Remove Themselves from the Permissions for a

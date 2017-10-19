@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166111: Asynchronous MFC ODBC Database Processing Using Threads"
-permalink: kb/166/Q166111/
+permalink: /kb/166/Q166111/
 ---
 
 ## Q166111: Asynchronous MFC ODBC Database Processing Using Threads

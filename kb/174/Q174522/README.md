@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174522: BUG: Visual Studio SP2 Setup Updates Two Instances of VFP"
-permalink: kb/174/Q174522/
+permalink: /kb/174/Q174522/
 ---
 
 ## Q174522: BUG: Visual Studio SP2 Setup Updates Two Instances of VFP

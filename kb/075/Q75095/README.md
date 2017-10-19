@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75095: CLS Does Not Clear Screen on AT&amp;T 6300"
-permalink: kb/075/Q75095/
+permalink: /kb/075/Q75095/
 ---
 
 ## Q75095: CLS Does Not Clear Screen on AT&amp;T 6300

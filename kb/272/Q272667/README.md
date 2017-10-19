@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272667: MSN Companion controls: radio buttons, checkboxes, selection box"
-permalink: kb/272/Q272667/
+permalink: /kb/272/Q272667/
 ---
 
 ## Q272667: MSN Companion controls: radio buttons, checkboxes, selection box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243457: BUG: MFC-WinCE Property Page Disappears when Selected"
-permalink: kb/243/Q243457/
+permalink: /kb/243/Q243457/
 ---
 
 ## Q243457: BUG: MFC-WinCE Property Page Disappears when Selected

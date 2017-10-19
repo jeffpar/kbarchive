@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140988: BUG: Negative File Size Replacing File Over 2 Gigabytes"
-permalink: kb/140/Q140988/
+permalink: /kb/140/Q140988/
 ---
 
 ## Q140988: BUG: Negative File Size Replacing File Over 2 Gigabytes

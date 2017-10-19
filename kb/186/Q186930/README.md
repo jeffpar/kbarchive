@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186930: XFOR: Cannot Log On After Upgrading to Microsoft Chat 2.1"
-permalink: kb/186/Q186930/
+permalink: /kb/186/Q186930/
 ---
 
 ## Q186930: XFOR: Cannot Log On After Upgrading to Microsoft Chat 2.1

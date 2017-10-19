@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134980: PRB: C4251 &amp; C4275 Compiler Warnings While Compiling an AFXDLL"
-permalink: kb/134/Q134980/
+permalink: /kb/134/Q134980/
 ---
 
 ## Q134980: PRB: C4251 &amp; C4275 Compiler Warnings While Compiling an AFXDLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192841: Difficulties Using AMD K6-2 or Athlon Central Processing Unit"
-permalink: kb/192/Q192841/
+permalink: /kb/192/Q192841/
 ---
 
 ## Q192841: Difficulties Using AMD K6-2 or Athlon Central Processing Unit

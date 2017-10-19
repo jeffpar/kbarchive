@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140558: Deleting Files on Samba Servers May Delete Local Files Instead"
-permalink: kb/140/Q140558/
+permalink: /kb/140/Q140558/
 ---
 
 ## Q140558: Deleting Files on Samba Servers May Delete Local Files Instead

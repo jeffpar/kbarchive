@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254562: XCLN: Schedule+ Two-Digit Date Is Not Interpreted Correctly"
-permalink: kb/254/Q254562/
+permalink: /kb/254/Q254562/
 ---
 
 ## Q254562: XCLN: Schedule+ Two-Digit Date Is Not Interpreted Correctly

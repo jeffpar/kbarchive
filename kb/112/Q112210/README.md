@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112210: PC Win: Check MMF Utility Repeatedly Asks to Check MMF"
-permalink: kb/112/Q112210/
+permalink: /kb/112/Q112210/
 ---
 
 ## Q112210: PC Win: Check MMF Utility Repeatedly Asks to Check MMF

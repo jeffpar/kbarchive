@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177257: STOP 0x0000000A or Difficulty Recognizing IDE CD-ROM Drives"
-permalink: kb/177/Q177257/
+permalink: /kb/177/Q177257/
 ---
 
 ## Q177257: STOP 0x0000000A or Difficulty Recognizing IDE CD-ROM Drives

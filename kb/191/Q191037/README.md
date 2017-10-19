@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191037: INFO: VB6 Learning, Professional, and Enterprise Features"
-permalink: kb/191/Q191037/
+permalink: /kb/191/Q191037/
 ---
 
 ## Q191037: INFO: VB6 Learning, Professional, and Enterprise Features

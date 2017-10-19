@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321485: How to Verify VSS User Name and Password from a Command Prompt"
-permalink: kb/321/Q321485/
+permalink: /kb/321/Q321485/
 ---
 
 ## Q321485: How to Verify VSS User Name and Password from a Command Prompt

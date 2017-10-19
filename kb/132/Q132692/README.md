@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132692: PC WSPlus: How to Retrieve Archived Schedules"
-permalink: kb/132/Q132692/
+permalink: /kb/132/Q132692/
 ---
 
 ## Q132692: PC WSPlus: How to Retrieve Archived Schedules

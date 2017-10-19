@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117844: PC Win: Missing Message Text When Sending to a Large Group"
-permalink: kb/117/Q117844/
+permalink: /kb/117/Q117844/
 ---
 
 ## Q117844: PC Win: Missing Message Text When Sending to a Large Group

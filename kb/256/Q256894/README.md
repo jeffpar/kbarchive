@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256894: Windows 95 Clients Hang at Startup Randomly"
-permalink: kb/256/Q256894/
+permalink: /kb/256/Q256894/
 ---
 
 ## Q256894: Windows 95 Clients Hang at Startup Randomly

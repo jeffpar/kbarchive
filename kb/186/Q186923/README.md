@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186923: XWEB: &quot;Failed to Send Message&quot; Using OWA Client"
-permalink: kb/186/Q186923/
+permalink: /kb/186/Q186923/
 ---
 
 ## Q186923: XWEB: &quot;Failed to Send Message&quot; Using OWA Client

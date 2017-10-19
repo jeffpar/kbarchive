@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187704: Server Lockup Receiving Pop-up Messages with Backup Exec"
-permalink: kb/187/Q187704/
+permalink: /kb/187/Q187704/
 ---
 
 ## Q187704: Server Lockup Receiving Pop-up Messages with Backup Exec

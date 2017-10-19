@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246782: STOP C000021a When Upgrading Compaq Computer to Windows NT 4.0"
-permalink: kb/246/Q246782/
+permalink: /kb/246/Q246782/
 ---
 
 ## Q246782: STOP C000021a When Upgrading Compaq Computer to Windows NT 4.0

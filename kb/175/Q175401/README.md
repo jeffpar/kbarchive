@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175401: Age Of Empires: Game Hangs with Sound Blaster AWE 64"
-permalink: kb/175/Q175401/
+permalink: /kb/175/Q175401/
 ---
 
 ## Q175401: Age Of Empires: Game Hangs with Sound Blaster AWE 64

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76535: MyFont.exe - Creating a Custom Raster Font"
-permalink: kb/076/Q76535/
+permalink: /kb/076/Q76535/
 ---
 
 ## Q76535: MyFont.exe - Creating a Custom Raster Font

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249921: Terminal Server Programs Do Not Run, Files32.vxd Cannot Be Found"
-permalink: kb/249/Q249921/
+permalink: /kb/249/Q249921/
 ---
 
 ## Q249921: Terminal Server Programs Do Not Run, Files32.vxd Cannot Be Found

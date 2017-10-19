@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132475: Determining If a Service Pack Has Been Installed"
-permalink: kb/132/Q132475/
+permalink: /kb/132/Q132475/
 ---
 
 ## Q132475: Determining If a Service Pack Has Been Installed

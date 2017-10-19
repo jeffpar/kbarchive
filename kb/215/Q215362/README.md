@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215362: HOWTO: Detect DCOM Installation Under VFP 6.0"
-permalink: kb/215/Q215362/
+permalink: /kb/215/Q215362/
 ---
 
 ## Q215362: HOWTO: Detect DCOM Installation Under VFP 6.0

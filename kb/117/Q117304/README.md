@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117304: RAS Event ID (Error Code) Information"
-permalink: kb/117/Q117304/
+permalink: /kb/117/Q117304/
 ---
 
 ## Q117304: RAS Event ID (Error Code) Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242765: Age of Empires II: Computer Hangs When You Quit the Game"
-permalink: kb/242/Q242765/
+permalink: /kb/242/Q242765/
 ---
 
 ## Q242765: Age of Empires II: Computer Hangs When You Quit the Game

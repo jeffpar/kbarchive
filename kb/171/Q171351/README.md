@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171351: Loopback Send/Receive Over IPX/SPX May Not Work Under Stress"
-permalink: kb/171/Q171351/
+permalink: /kb/171/Q171351/
 ---
 
 ## Q171351: Loopback Send/Receive Over IPX/SPX May Not Work Under Stress

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63913: SMARTDrive, RAMDrive, and IBM PCS EMS Drivers"
-permalink: kb/063/Q63913/
+permalink: /kb/063/Q63913/
 ---
 
 ## Q63913: SMARTDrive, RAMDrive, and IBM PCS EMS Drivers

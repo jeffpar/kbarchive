@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104994: DBLSPACE /UNCOMPRESS Points to Zero-Byte DBLSPACE.LOG File"
-permalink: kb/104/Q104994/
+permalink: /kb/104/Q104994/
 ---
 
 ## Q104994: DBLSPACE /UNCOMPRESS Points to Zero-Byte DBLSPACE.LOG File

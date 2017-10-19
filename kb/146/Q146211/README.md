@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146211: XCLN: Duplicate Err Msg: The Action Could Not Be Completed"
-permalink: kb/146/Q146211/
+permalink: /kb/146/Q146211/
 ---
 
 ## Q146211: XCLN: Duplicate Err Msg: The Action Could Not Be Completed

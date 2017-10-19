@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178082: XFOR: BCC Recipient Appears in To: Field When Sending to PROFS"
-permalink: kb/178/Q178082/
+permalink: /kb/178/Q178082/
 ---
 
 ## Q178082: XFOR: BCC Recipient Appears in To: Field When Sending to PROFS

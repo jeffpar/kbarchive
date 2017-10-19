@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135519: BUG: Creating 500 Instances of a Form Class Causes IC Error"
-permalink: kb/135/Q135519/
+permalink: /kb/135/Q135519/
 ---
 
 ## Q135519: BUG: Creating 500 Instances of a Form Class Causes IC Error

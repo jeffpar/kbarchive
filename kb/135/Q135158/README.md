@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135158: Titanium Seal Menu Program Does Not Run Properly"
-permalink: kb/135/Q135158/
+permalink: /kb/135/Q135158/
 ---
 
 ## Q135158: Titanium Seal Menu Program Does Not Run Properly

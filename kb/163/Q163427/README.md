@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163427: Magic School Bus: Installing to a Removable Drive"
-permalink: kb/163/Q163427/
+permalink: /kb/163/Q163427/
 ---
 
 ## Q163427: Magic School Bus: Installing to a Removable Drive

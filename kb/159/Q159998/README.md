@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159998: Error Message: Error Access Is Denied"
-permalink: kb/159/Q159998/
+permalink: /kb/159/Q159998/
 ---
 
 ## Q159998: Error Message: Error Access Is Denied

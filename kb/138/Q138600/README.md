@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138600: Cannot Print Complex Graphical Images on HP LaserJet Printer"
-permalink: kb/138/Q138600/
+permalink: /kb/138/Q138600/
 ---
 
 ## Q138600: Cannot Print Complex Graphical Images on HP LaserJet Printer

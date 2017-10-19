@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159426: XCLN: How to Write Listbox Items to an E-form Package"
-permalink: kb/159/Q159426/
+permalink: /kb/159/Q159426/
 ---
 
 ## Q159426: XCLN: How to Write Listbox Items to an E-form Package

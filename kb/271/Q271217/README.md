@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271217: Password Synchronization Doesn't Work Using Syntax Given in Help"
-permalink: kb/271/Q271217/
+permalink: /kb/271/Q271217/
 ---
 
 ## Q271217: Password Synchronization Doesn't Work Using Syntax Given in Help

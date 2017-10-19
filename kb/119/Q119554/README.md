@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119554: PC Adm: Err Msg: Notice 101 Error File Not Accessible"
-permalink: kb/119/Q119554/
+permalink: /kb/119/Q119554/
 ---
 
 ## Q119554: PC Adm: Err Msg: Notice 101 Error File Not Accessible

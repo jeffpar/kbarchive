@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218144: Cannot Apply Licenses or Windows NT Upgrade"
-permalink: kb/218/Q218144/
+permalink: /kb/218/Q218144/
 ---
 
 ## Q218144: Cannot Apply Licenses or Windows NT Upgrade

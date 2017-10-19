@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179570: SQL Server Books Online Does Not Display Properly"
-permalink: kb/179/Q179570/
+permalink: /kb/179/Q179570/
 ---
 
 ## Q179570: SQL Server Books Online Does Not Display Properly

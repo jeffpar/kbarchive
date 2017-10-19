@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132165: FIX: Non-const Conversion Operators Allowed on const Object"
-permalink: kb/132/Q132165/
+permalink: /kb/132/Q132165/
 ---
 
 ## Q132165: FIX: Non-const Conversion Operators Allowed on const Object

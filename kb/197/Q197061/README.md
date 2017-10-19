@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197061: Map Information Based on the WGS-84 Map Datum"
-permalink: kb/197/Q197061/
+permalink: /kb/197/Q197061/
 ---
 
 ## Q197061: Map Information Based on the WGS-84 Map Datum

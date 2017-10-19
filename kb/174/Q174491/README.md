@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174491: User Profile Scenario Summaries"
-permalink: kb/174/Q174491/
+permalink: /kb/174/Q174491/
 ---
 
 ## Q174491: User Profile Scenario Summaries

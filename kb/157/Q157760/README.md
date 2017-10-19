@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157760: PRB: Grid Column Widths Change at Run Time"
-permalink: kb/157/Q157760/
+permalink: /kb/157/Q157760/
 ---
 
 ## Q157760: PRB: Grid Column Widths Change at Run Time

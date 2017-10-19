@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140940: XFOR: IMC: 821 Routing Email Addresses Cause NDRs"
-permalink: kb/140/Q140940/
+permalink: /kb/140/Q140940/
 ---
 
 ## Q140940: XFOR: IMC: 821 Routing Email Addresses Cause NDRs

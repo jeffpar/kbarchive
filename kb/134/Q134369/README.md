@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134369: Microsoft SourceSafe Frequently Asked Questions (FAQ)"
-permalink: kb/134/Q134369/
+permalink: /kb/134/Q134369/
 ---
 
 ## Q134369: Microsoft SourceSafe Frequently Asked Questions (FAQ)

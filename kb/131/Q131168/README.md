@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131168: PRB: Length Not Updating Properly in Table Structure Dialog"
-permalink: kb/131/Q131168/
+permalink: /kb/131/Q131168/
 ---
 
 ## Q131168: PRB: Length Not Updating Properly in Table Structure Dialog

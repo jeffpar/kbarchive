@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87446: 471 Quickwriter 5204 Omits Printing in Fanfold Size"
-permalink: kb/087/Q87446/
+permalink: /kb/087/Q87446/
 ---
 
 ## Q87446: 471 Quickwriter 5204 Omits Printing in Fanfold Size

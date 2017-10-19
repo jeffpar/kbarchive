@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118779: Calling Microsoft Excel Macro from FoxPro for Macintosh"
-permalink: kb/118/Q118779/
+permalink: /kb/118/Q118779/
 ---
 
 ## Q118779: Calling Microsoft Excel Macro from FoxPro for Macintosh

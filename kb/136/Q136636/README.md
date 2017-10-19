@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136636: Automating NTFS Conversion"
-permalink: kb/136/Q136636/
+permalink: /kb/136/Q136636/
 ---
 
 ## Q136636: Automating NTFS Conversion

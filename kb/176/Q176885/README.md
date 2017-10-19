@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176885: Age of Empires: Multiple Images of Startup Menu"
-permalink: kb/176/Q176885/
+permalink: /kb/176/Q176885/
 ---
 
 ## Q176885: Age of Empires: Multiple Images of Startup Menu

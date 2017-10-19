@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197761: WD97: View Merged Data Doesn't Suppress Blank Lines"
-permalink: kb/197/Q197761/
+permalink: /kb/197/Q197761/
 ---
 
 ## Q197761: WD97: View Merged Data Doesn't Suppress Blank Lines

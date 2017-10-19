@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99632: PRB: &quot;String too long to fit&quot; or &quot;Feature is not available&quot;"
-permalink: kb/099/Q99632/
+permalink: /kb/099/Q99632/
 ---
 
 ## Q99632: PRB: &quot;String too long to fit&quot; or &quot;Feature is not available&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296086: XCON: Error Message: The Service Did Not Respond to the Start..."
-permalink: kb/296/Q296086/
+permalink: /kb/296/Q296086/
 ---
 
 ## Q296086: XCON: Error Message: The Service Did Not Respond to the Start...

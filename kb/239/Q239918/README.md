@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239918: NDIS_STATUS_RESET_END Message May Not Be Processed Correctly"
-permalink: kb/239/Q239918/
+permalink: /kb/239/Q239918/
 ---
 
 ## Q239918: NDIS_STATUS_RESET_END Message May Not Be Processed Correctly

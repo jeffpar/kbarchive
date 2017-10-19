@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248433: Fighter Ace II Err Msg: Expected Voodoo Graphics, None Detected"
-permalink: kb/248/Q248433/
+permalink: /kb/248/Q248433/
 ---
 
 ## Q248433: Fighter Ace II Err Msg: Expected Voodoo Graphics, None Detected

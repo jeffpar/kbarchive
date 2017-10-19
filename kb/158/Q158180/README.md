@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158180: GEX: System Hangs"
-permalink: kb/158/Q158180/
+permalink: /kb/158/Q158180/
 ---
 
 ## Q158180: GEX: System Hangs

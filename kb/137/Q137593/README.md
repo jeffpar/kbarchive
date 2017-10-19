@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137593: Cannot Insert Object as Icon in Fax Cover Page Editor"
-permalink: kb/137/Q137593/
+permalink: /kb/137/Q137593/
 ---
 
 ## Q137593: Cannot Insert Object as Icon in Fax Cover Page Editor

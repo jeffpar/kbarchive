@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147022: XCON: MTA Strips Message Body Using X400 Connector With ISO 6937"
-permalink: kb/147/Q147022/
+permalink: /kb/147/Q147022/
 ---
 
 ## Q147022: XCON: MTA Strips Message Body Using X400 Connector With ISO 6937

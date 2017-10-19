@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146672: XCLN: Unable to Open Forms Because Files are Missing"
-permalink: kb/146/Q146672/
+permalink: /kb/146/Q146672/
 ---
 
 ## Q146672: XCLN: Unable to Open Forms Because Files are Missing

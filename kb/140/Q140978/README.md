@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140978: WINS Does Not Replicate &lt;1c&gt; Names Properly"
-permalink: kb/140/Q140978/
+permalink: /kb/140/Q140978/
 ---
 
 ## Q140978: WINS Does Not Replicate &lt;1c&gt; Names Properly

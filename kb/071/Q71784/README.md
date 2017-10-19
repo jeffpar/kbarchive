@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71784: Installing Stacker Deletes Empty Directories"
-permalink: kb/071/Q71784/
+permalink: /kb/071/Q71784/
 ---
 
 ## Q71784: Installing Stacker Deletes Empty Directories

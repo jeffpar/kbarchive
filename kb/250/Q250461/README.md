@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250461: BUG: WSALookupServiceNext Returns Incomplete Data"
-permalink: kb/250/Q250461/
+permalink: /kb/250/Q250461/
 ---
 
 ## Q250461: BUG: WSALookupServiceNext Returns Incomplete Data

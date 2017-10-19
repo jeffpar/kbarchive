@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195855: Application Exception in Spoolss When Printing"
-permalink: kb/195/Q195855/
+permalink: /kb/195/Q195855/
 ---
 
 ## Q195855: Application Exception in Spoolss When Printing

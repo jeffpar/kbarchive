@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173675: WD97: Word Hangs Opening Print or Page Setup Dialog Boxes"
-permalink: kb/173/Q173675/
+permalink: /kb/173/Q173675/
 ---
 
 ## Q173675: WD97: Word Hangs Opening Print or Page Setup Dialog Boxes

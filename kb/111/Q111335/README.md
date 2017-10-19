@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111335: BUG: SetWindowPos() on an Iconic Window and its Caption"
-permalink: kb/111/Q111335/
+permalink: /kb/111/Q111335/
 ---
 
 ## Q111335: BUG: SetWindowPos() on an Iconic Window and its Caption

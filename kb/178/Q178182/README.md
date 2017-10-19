@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178182: Encarta 97 Err Msg: The Registration Wizard Cannot Run..."
-permalink: kb/178/Q178182/
+permalink: /kb/178/Q178182/
 ---
 
 ## Q178182: Encarta 97 Err Msg: The Registration Wizard Cannot Run...

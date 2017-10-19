@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129631: Understanding Code Pages in Visual FoxPro"
-permalink: kb/129/Q129631/
+permalink: /kb/129/Q129631/
 ---
 
 ## Q129631: Understanding Code Pages in Visual FoxPro

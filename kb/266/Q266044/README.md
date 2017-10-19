@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266044: XADM: Optimization for Directory &amp; Public Folder Replication WP"
-permalink: kb/266/Q266044/
+permalink: /kb/266/Q266044/
 ---
 
 ## Q266044: XADM: Optimization for Directory &amp; Public Folder Replication WP

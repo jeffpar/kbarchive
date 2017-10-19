@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135673: PRB: Need Clause on Double Field to Enter Scientific Notation"
-permalink: kb/135/Q135673/
+permalink: /kb/135/Q135673/
 ---
 
 ## Q135673: PRB: Need Clause on Double Field to Enter Scientific Notation

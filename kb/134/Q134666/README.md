@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134666: MSN: Changing Swapfile Size May Cause Page Fault Error"
-permalink: kb/134/Q134666/
+permalink: /kb/134/Q134666/
 ---
 
 ## Q134666: MSN: Changing Swapfile Size May Cause Page Fault Error

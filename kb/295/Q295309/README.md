@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295309: SMS: Data Loader Hangs While Trying to Process MIF Files"
-permalink: kb/295/Q295309/
+permalink: /kb/295/Q295309/
 ---
 
 ## Q295309: SMS: Data Loader Hangs While Trying to Process MIF Files

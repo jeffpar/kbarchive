@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155088: BUG: ListBox Control Scrolls Slowly"
-permalink: kb/155/Q155088/
+permalink: /kb/155/Q155088/
 ---
 
 ## Q155088: BUG: ListBox Control Scrolls Slowly

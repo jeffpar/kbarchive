@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129413: Explanation &amp; Usage of the LOCKSCREEN Property"
-permalink: kb/129/Q129413/
+permalink: /kb/129/Q129413/
 ---
 
 ## Q129413: Explanation &amp; Usage of the LOCKSCREEN Property

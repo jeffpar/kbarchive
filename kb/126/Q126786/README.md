@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126786: HOWTO: Remove or Change a Label"
-permalink: kb/126/Q126786/
+permalink: /kb/126/Q126786/
 ---
 
 ## Q126786: HOWTO: Remove or Change a Label

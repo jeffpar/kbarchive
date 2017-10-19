@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172991: INFO: CAB Files Distributed with Visual Basic 5.0"
-permalink: kb/172/Q172991/
+permalink: /kb/172/Q172991/
 ---
 
 ## Q172991: INFO: CAB Files Distributed with Visual Basic 5.0

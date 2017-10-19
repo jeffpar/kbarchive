@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82417: Error Message When Installing Roland MIDI Devices"
-permalink: kb/082/Q82417/
+permalink: /kb/082/Q82417/
 ---
 
 ## Q82417: Error Message When Installing Roland MIDI Devices

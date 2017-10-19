@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133713: PRB: Problems Using the PivotTable Wizard"
-permalink: kb/133/Q133713/
+permalink: /kb/133/Q133713/
 ---
 
 ## Q133713: PRB: Problems Using the PivotTable Wizard

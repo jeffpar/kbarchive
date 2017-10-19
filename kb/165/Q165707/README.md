@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165707: Virus Scanning for Outgoing Files Can Cause Setups to Run Slow"
-permalink: kb/165/Q165707/
+permalink: /kb/165/Q165707/
 ---
 
 ## Q165707: Virus Scanning for Outgoing Files Can Cause Setups to Run Slow

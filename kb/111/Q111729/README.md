@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111729: BUG: StretchBlt() Does Not Perform Palette Translations"
-permalink: kb/111/Q111729/
+permalink: /kb/111/Q111729/
 ---
 
 ## Q111729: BUG: StretchBlt() Does Not Perform Palette Translations

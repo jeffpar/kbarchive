@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214571: Duplicate Remote APPC LUs Can Be Created On A Connection"
-permalink: kb/214/Q214571/
+permalink: /kb/214/Q214571/
 ---
 
 ## Q214571: Duplicate Remote APPC LUs Can Be Created On A Connection

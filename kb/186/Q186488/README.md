@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186488: Terminal Server Error Messages: 1800 to 1999"
-permalink: kb/186/Q186488/
+permalink: /kb/186/Q186488/
 ---
 
 ## Q186488: Terminal Server Error Messages: 1800 to 1999

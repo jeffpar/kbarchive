@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216990: XADM: Exchange Fails to Install on Second Cluster Partition"
-permalink: kb/216/Q216990/
+permalink: /kb/216/Q216990/
 ---
 
 ## Q216990: XADM: Exchange Fails to Install on Second Cluster Partition

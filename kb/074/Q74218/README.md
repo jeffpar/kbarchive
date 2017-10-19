@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74218: Installing HP PostScript Drivers (Windows 3.0)"
-permalink: kb/074/Q74218/
+permalink: /kb/074/Q74218/
 ---
 
 ## Q74218: Installing HP PostScript Drivers (Windows 3.0)

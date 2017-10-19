@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258855: Windows Services for UNIX Version 2.0 Readme.txt File"
-permalink: kb/258/Q258855/
+permalink: /kb/258/Q258855/
 ---
 
 ## Q258855: Windows Services for UNIX Version 2.0 Readme.txt File

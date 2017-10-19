@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132413: PC Ext: Err Msg: Error Code=1005, Device Error=000c"
-permalink: kb/132/Q132413/
+permalink: /kb/132/Q132413/
 ---
 
 ## Q132413: PC Ext: Err Msg: Error Code=1005, Device Error=000c

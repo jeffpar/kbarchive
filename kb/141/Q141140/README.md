@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141140: HOWTO: Create a SQL Server Stored Procedure"
-permalink: kb/141/Q141140/
+permalink: /kb/141/Q141140/
 ---
 
 ## Q141140: HOWTO: Create a SQL Server Stored Procedure

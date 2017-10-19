@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151450: MSB Earth: ErrMsg: The System Is Unable to Play CD Audio"
-permalink: kb/151/Q151450/
+permalink: /kb/151/Q151450/
 ---
 
 ## Q151450: MSB Earth: ErrMsg: The System Is Unable to Play CD Audio

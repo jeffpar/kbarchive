@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271300: Microsoft Reader Err Msg: Unhandled Exception 0xC0000005: AV"
-permalink: kb/271/Q271300/
+permalink: /kb/271/Q271300/
 ---
 
 ## Q271300: Microsoft Reader Err Msg: Unhandled Exception 0xC0000005: AV

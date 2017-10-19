@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108445: Writer/Artist 1: Can't Find Files Saved in Control Room"
-permalink: kb/108/Q108445/
+permalink: /kb/108/Q108445/
 ---
 
 ## Q108445: Writer/Artist 1: Can't Find Files Saved in Control Room

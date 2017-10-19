@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255187: Migrating a Print Server Between Windows NT 4.0 Server Computers"
-permalink: kb/255/Q255187/
+permalink: /kb/255/Q255187/
 ---
 
 ## Q255187: Migrating a Print Server Between Windows NT 4.0 Server Computers

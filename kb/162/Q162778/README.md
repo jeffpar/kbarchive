@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162778: WINS May Report Database Corruption w/ More Than 100 Owners"
-permalink: kb/162/Q162778/
+permalink: /kb/162/Q162778/
 ---
 
 ## Q162778: WINS May Report Database Corruption w/ More Than 100 Owners

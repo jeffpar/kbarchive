@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140107: PC Win: Message Templates Not Supported in Shared Folder"
-permalink: kb/140/Q140107/
+permalink: /kb/140/Q140107/
 ---
 
 ## Q140107: PC Win: Message Templates Not Supported in Shared Folder

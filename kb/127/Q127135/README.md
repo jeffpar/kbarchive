@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127135: Setup Error 402 with Ositech PCMCIA Network Card"
-permalink: kb/127/Q127135/
+permalink: /kb/127/Q127135/
 ---
 
 ## Q127135: Setup Error 402 with Ositech PCMCIA Network Card

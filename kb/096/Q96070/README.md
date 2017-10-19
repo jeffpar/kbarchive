@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96070: Golf Err Msg: &quot;Requires 1.43 MB Available Memory&quot;"
-permalink: kb/096/Q96070/
+permalink: /kb/096/Q96070/
 ---
 
 ## Q96070: Golf Err Msg: &quot;Requires 1.43 MB Available Memory&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142060: BackupExec 6.0 Not Backing Up WFW in Windows NT 3.51 SP3"
-permalink: kb/142/Q142060/
+permalink: /kb/142/Q142060/
 ---
 
 ## Q142060: BackupExec 6.0 Not Backing Up WFW in Windows NT 3.51 SP3

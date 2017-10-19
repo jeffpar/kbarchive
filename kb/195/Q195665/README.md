@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195665: Error Message: Filename Is Linked to Missing Export Filename.dll"
-permalink: kb/195/Q195665/
+permalink: /kb/195/Q195665/
 ---
 
 ## Q195665: Error Message: Filename Is Linked to Missing Export Filename.dll

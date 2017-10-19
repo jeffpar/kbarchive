@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103888: OSI Model Data Transfer Services and LAN Manager Requirements"
-permalink: kb/103/Q103888/
+permalink: /kb/103/Q103888/
 ---
 
 ## Q103888: OSI Model Data Transfer Services and LAN Manager Requirements

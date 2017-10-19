@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161651: SMS: SNMP Event Log Extension Registers Beta Version"
-permalink: kb/161/Q161651/
+permalink: /kb/161/Q161651/
 ---
 
 ## Q161651: SMS: SNMP Event Log Extension Registers Beta Version

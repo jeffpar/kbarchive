@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172295: Win3x Configuration Utility Parses &quot;Servers&quot; List Incorrectly"
-permalink: kb/172/Q172295/
+permalink: /kb/172/Q172295/
 ---
 
 ## Q172295: Win3x Configuration Utility Parses &quot;Servers&quot; List Incorrectly

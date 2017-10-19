@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118667: Ancient Lands: Narration for Guided Tour Skips a Screen"
-permalink: kb/118/Q118667/
+permalink: /kb/118/Q118667/
 ---
 
 ## Q118667: Ancient Lands: Narration for Guided Tour Skips a Screen

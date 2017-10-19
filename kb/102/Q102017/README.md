@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102017: PC DirSync: Running REBUILD.EXE Enables the GAL"
-permalink: kb/102/Q102017/
+permalink: /kb/102/Q102017/
 ---
 
 ## Q102017: PC DirSync: Running REBUILD.EXE Enables the GAL

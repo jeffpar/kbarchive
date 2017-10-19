@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94330: DoubleSpace Setup Runs in Mono on Some Older 8514/a Cards"
-permalink: kb/094/Q94330/
+permalink: /kb/094/Q94330/
 ---
 
 ## Q94330: DoubleSpace Setup Runs in Mono on Some Older 8514/a Cards

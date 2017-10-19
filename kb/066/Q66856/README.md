@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66856: File Date Equals Date of Entertainment Pack Installation"
-permalink: kb/066/Q66856/
+permalink: /kb/066/Q66856/
 ---
 
 ## Q66856: File Date Equals Date of Entertainment Pack Installation

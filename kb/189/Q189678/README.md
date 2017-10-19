@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189678: FIX: Error 3315 or 3426 When Updating a Bound DBCombo Box"
-permalink: kb/189/Q189678/
+permalink: /kb/189/Q189678/
 ---
 
 ## Q189678: FIX: Error 3315 or 3426 When Updating a Bound DBCombo Box

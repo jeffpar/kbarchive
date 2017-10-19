@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149949: Some Browsers May Fail to Connect When IIS Uses SSL"
-permalink: kb/149/Q149949/
+permalink: /kb/149/Q149949/
 ---
 
 ## Q149949: Some Browsers May Fail to Connect When IIS Uses SSL

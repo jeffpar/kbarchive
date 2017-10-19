@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185681: WD97: Error Msg. Selecting Button on Inactive Style Box"
-permalink: kb/185/Q185681/
+permalink: /kb/185/Q185681/
 ---
 
 ## Q185681: WD97: Error Msg. Selecting Button on Inactive Style Box

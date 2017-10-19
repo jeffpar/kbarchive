@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65664: Replace Novell 3.01 or Later Capture With 2.12 Capture"
-permalink: kb/065/Q65664/
+permalink: /kb/065/Q65664/
 ---
 
 ## Q65664: Replace Novell 3.01 or Later Capture With 2.12 Capture

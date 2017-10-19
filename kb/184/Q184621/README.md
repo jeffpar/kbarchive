@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184621: XGEN: GWRESET Utility"
-permalink: kb/184/Q184621/
+permalink: /kb/184/Q184621/
 ---
 
 ## Q184621: XGEN: GWRESET Utility

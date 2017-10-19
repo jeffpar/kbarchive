@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159309: Windows NT 4.0 RAS Not Releasing Static IP Addresses"
-permalink: kb/159/Q159309/
+permalink: /kb/159/Q159309/
 ---
 
 ## Q159309: Windows NT 4.0 RAS Not Releasing Static IP Addresses

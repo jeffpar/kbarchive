@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114091: Telnet Using UNIX Vi Editor May Scroll Improperly"
-permalink: kb/114/Q114091/
+permalink: /kb/114/Q114091/
 ---
 
 ## Q114091: Telnet Using UNIX Vi Editor May Scroll Improperly

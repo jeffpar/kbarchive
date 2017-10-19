@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130286: PC Gen: External Postoffice Message Volume Using TRAFFIC.EXE"
-permalink: kb/130/Q130286/
+permalink: /kb/130/Q130286/
 ---
 
 ## Q130286: PC Gen: External Postoffice Message Volume Using TRAFFIC.EXE

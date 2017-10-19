@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82409: AGFA Compugraphics Genics Resets During Printing"
-permalink: kb/082/Q82409/
+permalink: /kb/082/Q82409/
 ---
 
 ## Q82409: AGFA Compugraphics Genics Resets During Printing

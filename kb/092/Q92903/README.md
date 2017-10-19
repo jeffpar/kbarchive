@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92903: AutoCAD 386 Version 12 PIF Cannot Run with Windows"
-permalink: kb/092/Q92903/
+permalink: /kb/092/Q92903/
 ---
 
 ## Q92903: AutoCAD 386 Version 12 PIF Cannot Run with Windows

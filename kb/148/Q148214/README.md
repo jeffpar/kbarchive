@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148214: Deleting Roles Causes Duplicate Button Faces"
-permalink: kb/148/Q148214/
+permalink: /kb/148/Q148214/
 ---
 
 ## Q148214: Deleting Roles Causes Duplicate Button Faces

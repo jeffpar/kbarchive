@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135182: No Volume Control in Voyetra AudioStation"
-permalink: kb/135/Q135182/
+permalink: /kb/135/Q135182/
 ---
 
 ## Q135182: No Volume Control in Voyetra AudioStation

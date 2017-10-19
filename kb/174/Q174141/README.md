@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174141: HOWTO: Display Outlook Folder Names"
-permalink: kb/174/Q174141/
+permalink: /kb/174/Q174141/
 ---
 
 ## Q174141: HOWTO: Display Outlook Folder Names

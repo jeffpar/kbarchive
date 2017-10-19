@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177263: FS98: Contents of the Intel Indeo4 Readme32.txt File"
-permalink: kb/177/Q177263/
+permalink: /kb/177/Q177263/
 ---
 
 ## Q177263: FS98: Contents of the Intel Indeo4 Readme32.txt File

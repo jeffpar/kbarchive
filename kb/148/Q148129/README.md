@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148129: NetDDE Trusted Shares Disappear After The User Logs Off"
-permalink: kb/148/Q148129/
+permalink: /kb/148/Q148129/
 ---
 
 ## Q148129: NetDDE Trusted Shares Disappear After The User Logs Off

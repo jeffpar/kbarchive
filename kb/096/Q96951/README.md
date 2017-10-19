@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96951: Short Tear-Off Feature Doesn't Work on Epson 9-Pin Printers"
-permalink: kb/096/Q96951/
+permalink: /kb/096/Q96951/
 ---
 
 ## Q96951: Short Tear-Off Feature Doesn't Work on Epson 9-Pin Printers

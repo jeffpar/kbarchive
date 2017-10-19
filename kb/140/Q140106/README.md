@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140106: PC MAPI: Sample VB Code to Read a Microsoft Mail Message"
-permalink: kb/140/Q140106/
+permalink: /kb/140/Q140106/
 ---
 
 ## Q140106: PC MAPI: Sample VB Code to Read a Microsoft Mail Message

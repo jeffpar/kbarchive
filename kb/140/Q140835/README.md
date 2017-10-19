@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140835: SNA Server Admin Lists Wrong Dependent APPC LU as &quot;In Session&quot;"
-permalink: kb/140/Q140835/
+permalink: /kb/140/Q140835/
 ---
 
 ## Q140835: SNA Server Admin Lists Wrong Dependent APPC LU as &quot;In Session&quot;

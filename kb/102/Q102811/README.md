@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102811: WFWG Err Msg: Network Name Was Deleted"
-permalink: kb/102/Q102811/
+permalink: /kb/102/Q102811/
 ---
 
 ## Q102811: WFWG Err Msg: Network Name Was Deleted

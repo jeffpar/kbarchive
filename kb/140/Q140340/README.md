@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140340: PC WSPlus: Using SPLUSGetFreeBusy Causes a GPF in VB 4.0"
-permalink: kb/140/Q140340/
+permalink: /kb/140/Q140340/
 ---
 
 ## Q140340: PC WSPlus: Using SPLUSGetFreeBusy Causes a GPF in VB 4.0

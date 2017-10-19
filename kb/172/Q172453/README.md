@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172453: PRB: Czech Characters Display Incorrectly in Label Caption"
-permalink: kb/172/Q172453/
+permalink: /kb/172/Q172453/
 ---
 
 ## Q172453: PRB: Czech Characters Display Incorrectly in Label Caption

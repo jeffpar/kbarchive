@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310614: SMS: The SMS Client Is Not Supported on 64-Bit Windows XP"
-permalink: kb/310/Q310614/
+permalink: /kb/310/Q310614/
 ---
 
 ## Q310614: SMS: The SMS Client Is Not Supported on 64-Bit Windows XP

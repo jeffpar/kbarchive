@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157284: STL Sample for the upper_bound Function"
-permalink: kb/157/Q157284/
+permalink: /kb/157/Q157284/
 ---
 
 ## Q157284: STL Sample for the upper_bound Function

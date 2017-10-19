@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198038: INFO: Useful Tools for Package and Deployment Issues"
-permalink: kb/198/Q198038/
+permalink: /kb/198/Q198038/
 ---
 
 ## Q198038: INFO: Useful Tools for Package and Deployment Issues

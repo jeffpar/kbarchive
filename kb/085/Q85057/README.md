@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85057: FFAPI: Summary of Changes"
-permalink: kb/085/Q85057/
+permalink: /kb/085/Q85057/
 ---
 
 ## Q85057: FFAPI: Summary of Changes

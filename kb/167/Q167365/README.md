@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167365: The Order That WINS Returns 1Ch Entries"
-permalink: kb/167/Q167365/
+permalink: /kb/167/Q167365/
 ---
 
 ## Q167365: The Order That WINS Returns 1Ch Entries

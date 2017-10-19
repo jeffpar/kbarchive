@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171052: Software FT Sets Are Not Supported in Microsoft Cluster Server"
-permalink: kb/171/Q171052/
+permalink: /kb/171/Q171052/
 ---
 
 ## Q171052: Software FT Sets Are Not Supported in Microsoft Cluster Server

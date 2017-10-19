@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175427: Full Court Press: DirectX: Conflict With ThinkPad Video Driver"
-permalink: kb/175/Q175427/
+permalink: /kb/175/Q175427/
 ---
 
 ## Q175427: Full Court Press: DirectX: Conflict With ThinkPad Video Driver

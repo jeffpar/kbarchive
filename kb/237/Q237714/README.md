@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237714: NFL Fever 2000: Quits Unexpectedly When You Select a Play"
-permalink: kb/237/Q237714/
+permalink: /kb/237/Q237714/
 ---
 
 ## Q237714: NFL Fever 2000: Quits Unexpectedly When You Select a Play

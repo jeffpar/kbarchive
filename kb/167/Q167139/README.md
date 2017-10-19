@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167139: XFOR: MSMI Reports Errors 2563 and 2450"
-permalink: kb/167/Q167139/
+permalink: /kb/167/Q167139/
 ---
 
 ## Q167139: XFOR: MSMI Reports Errors 2563 and 2450

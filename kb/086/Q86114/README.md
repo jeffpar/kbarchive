@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86114: PROFS: How to Prevent the Gateway VM ID from &quot;Going to Sleep&quot;"
-permalink: kb/086/Q86114/
+permalink: /kb/086/Q86114/
 ---
 
 ## Q86114: PROFS: How to Prevent the Gateway VM ID from &quot;Going to Sleep&quot;

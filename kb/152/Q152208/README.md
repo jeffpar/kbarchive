@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152208: Julia Child Err Msg: Insufficient Memory to Function"
-permalink: kb/152/Q152208/
+permalink: /kb/152/Q152208/
 ---
 
 ## Q152208: Julia Child Err Msg: Insufficient Memory to Function

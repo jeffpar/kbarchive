@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127055: How to Cause ScanDisk for Windows to Retest Bad Clusters"
-permalink: kb/127/Q127055/
+permalink: /kb/127/Q127055/
 ---
 
 ## Q127055: How to Cause ScanDisk for Windows to Retest Bad Clusters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143044: INFO: How Visual Basic 4.0 Handles Files Marked Read-Only"
-permalink: kb/143/Q143044/
+permalink: /kb/143/Q143044/
 ---
 
 ## Q143044: INFO: How Visual Basic 4.0 Handles Files Marked Read-Only

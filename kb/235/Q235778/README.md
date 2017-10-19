@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235778: SMS: CCM Fails to Install SMS Client on WinNT Version 3.51"
-permalink: kb/235/Q235778/
+permalink: /kb/235/Q235778/
 ---
 
 ## Q235778: SMS: CCM Fails to Install SMS Client on WinNT Version 3.51

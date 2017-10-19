@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223063: FIX: ADO AddNew After Trap for EOF Not Correct w/Data Binding"
-permalink: kb/223/Q223063/
+permalink: /kb/223/Q223063/
 ---
 
 ## Q223063: FIX: ADO AddNew After Trap for EOF Not Correct w/Data Binding

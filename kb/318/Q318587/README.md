@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318587: Windows NT Server 4.0, Terminal Server Edition SRP Release Notes"
-permalink: kb/318/Q318587/
+permalink: /kb/318/Q318587/
 ---
 
 ## Q318587: Windows NT Server 4.0, Terminal Server Edition SRP Release Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236864: WD97: Word Crashes When Embedding TrueType &quot;Characters in Use&quot;"
-permalink: kb/236/Q236864/
+permalink: /kb/236/Q236864/
 ---
 
 ## Q236864: WD97: Word Crashes When Embedding TrueType &quot;Characters in Use&quot;

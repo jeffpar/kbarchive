@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83841: Novell Search Paths to Windows 3.0 Can Cause Problems for 3.1"
-permalink: kb/083/Q83841/
+permalink: /kb/083/Q83841/
 ---
 
 ## Q83841: Novell Search Paths to Windows 3.0 Can Cause Problems for 3.1

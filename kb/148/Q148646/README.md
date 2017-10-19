@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148646: Stop 0x0000000A When Referencing Empty Sent Queue"
-permalink: kb/148/Q148646/
+permalink: /kb/148/Q148646/
 ---
 
 ## Q148646: Stop 0x0000000A When Referencing Empty Sent Queue

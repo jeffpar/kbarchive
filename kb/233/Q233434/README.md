@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233434: MSBP: Blank Publication Displayed When You Click Publisher Link"
-permalink: kb/233/Q233434/
+permalink: /kb/233/Q233434/
 ---
 
 ## Q233434: MSBP: Blank Publication Displayed When You Click Publisher Link

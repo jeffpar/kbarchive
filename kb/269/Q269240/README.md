@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269240: XCCC: Using Outlook 2000 to Change Conference Resource"
-permalink: kb/269/Q269240/
+permalink: /kb/269/Q269240/
 ---
 
 ## Q269240: XCCC: Using Outlook 2000 to Change Conference Resource

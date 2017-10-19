@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147878: Difference of WorkSpace in VB4 and SetDefaultWorkSpace in VB3"
-permalink: kb/147/Q147878/
+permalink: /kb/147/Q147878/
 ---
 
 ## Q147878: Difference of WorkSpace in VB4 and SetDefaultWorkSpace in VB3

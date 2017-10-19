@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180076: Manager Should Only Allow QPCSUPP Mode For TN5250"
-permalink: kb/180/Q180076/
+permalink: /kb/180/Q180076/
 ---
 
 ## Q180076: Manager Should Only Allow QPCSUPP Mode For TN5250

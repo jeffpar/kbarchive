@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155690: Regaut.exe Registers an Automation Object as Active"
-permalink: kb/155/Q155690/
+permalink: /kb/155/Q155690/
 ---
 
 ## Q155690: Regaut.exe Registers an Automation Object as Active

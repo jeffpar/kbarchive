@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198850: Uninstalled Modem Remains in Fax Server Registry Settings"
-permalink: kb/198/Q198850/
+permalink: /kb/198/Q198850/
 ---
 
 ## Q198850: Uninstalled Modem Remains in Fax Server Registry Settings

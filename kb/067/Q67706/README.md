@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67706: Using MS-DOS Edlin Utility to Edit Text Files"
-permalink: kb/067/Q67706/
+permalink: /kb/067/Q67706/
 ---
 
 ## Q67706: Using MS-DOS Edlin Utility to Edit Text Files

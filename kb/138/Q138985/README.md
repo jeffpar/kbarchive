@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138985: FIX: 'Syntax error in query' with Parameterized LIKE Queries"
-permalink: kb/138/Q138985/
+permalink: /kb/138/Q138985/
 ---
 
 ## Q138985: FIX: 'Syntax error in query' with Parameterized LIKE Queries

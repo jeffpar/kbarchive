@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221617: FIX: C0000005 Fatal Error After Frequent Use of CHRTRAN()"
-permalink: kb/221/Q221617/
+permalink: /kb/221/Q221617/
 ---
 
 ## Q221617: FIX: C0000005 Fatal Error After Frequent Use of CHRTRAN()

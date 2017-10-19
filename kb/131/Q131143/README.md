@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131143: Event ID 5012 When Using S3 864 Video Adapter"
-permalink: kb/131/Q131143/
+permalink: /kb/131/Q131143/
 ---
 
 ## Q131143: Event ID 5012 When Using S3 864 Video Adapter

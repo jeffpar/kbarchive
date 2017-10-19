@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260369: PRB: Err Msg &quot;Can't Load DLL '?????L?' &quot; Running Deployed App"
-permalink: kb/260/Q260369/
+permalink: /kb/260/Q260369/
 ---
 
 ## Q260369: PRB: Err Msg &quot;Can't Load DLL '?????L?' &quot; Running Deployed App

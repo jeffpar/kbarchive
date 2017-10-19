@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258570: Baseball 2001: Program Does Not Start When You Insert CD-ROM"
-permalink: kb/258/Q258570/
+permalink: /kb/258/Q258570/
 ---
 
 ## Q258570: Baseball 2001: Program Does Not Start When You Insert CD-ROM

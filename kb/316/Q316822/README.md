@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316822: FIX: Exception Error When You Use Wildcards in Find Dialog Box"
-permalink: kb/316/Q316822/
+permalink: /kb/316/Q316822/
 ---
 
 ## Q316822: FIX: Exception Error When You Use Wildcards in Find Dialog Box

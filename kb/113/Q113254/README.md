@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113254: INFO: Calculating MM_HIMETRIC Units for the METAFILEPICT"
-permalink: kb/113/Q113254/
+permalink: /kb/113/Q113254/
 ---
 
 ## Q113254: INFO: Calculating MM_HIMETRIC Units for the METAFILEPICT

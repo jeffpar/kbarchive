@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146186: XCLN: Delayed Action Message Rules Don't Work With Remote"
-permalink: kb/146/Q146186/
+permalink: /kb/146/Q146186/
 ---
 
 ## Q146186: XCLN: Delayed Action Message Rules Don't Work With Remote

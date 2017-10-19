@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237284: WD97: Error Message: &quot;Cannot Find Installable ISAM&quot;"
-permalink: kb/237/Q237284/
+permalink: /kb/237/Q237284/
 ---
 
 ## Q237284: WD97: Error Message: &quot;Cannot Find Installable ISAM&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242109: Slow Logging On and Browsing the Network Using IPX/SPX"
-permalink: kb/242/Q242109/
+permalink: /kb/242/Q242109/
 ---
 
 ## Q242109: Slow Logging On and Browsing the Network Using IPX/SPX

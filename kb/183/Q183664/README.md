@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183664: NDS Logon Scripts Do Not Execute Correctly"
-permalink: kb/183/Q183664/
+permalink: /kb/183/Q183664/
 ---
 
 ## Q183664: NDS Logon Scripts Do Not Execute Correctly

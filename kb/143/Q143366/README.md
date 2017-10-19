@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143366: MSB Solar: ErrMsg: Solar System Needs More Memory to Run"
-permalink: kb/143/Q143366/
+permalink: /kb/143/Q143366/
 ---
 
 ## Q143366: MSB Solar: ErrMsg: Solar System Needs More Memory to Run

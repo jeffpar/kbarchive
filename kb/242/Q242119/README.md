@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242119: Unable to Lock for Exclusive Use Message in Disk Administrator"
-permalink: kb/242/Q242119/
+permalink: /kb/242/Q242119/
 ---
 
 ## Q242119: Unable to Lock for Exclusive Use Message in Disk Administrator

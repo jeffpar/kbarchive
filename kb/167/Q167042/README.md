@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167042: Legal Notice Dialog Box Interferes with Remote Shutdowns"
-permalink: kb/167/Q167042/
+permalink: /kb/167/Q167042/
 ---
 
 ## Q167042: Legal Notice Dialog Box Interferes with Remote Shutdowns

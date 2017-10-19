@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178914: CSNW: Cannot Use Wildcards Connecting to Printers in NDS Tree"
-permalink: kb/178/Q178914/
+permalink: /kb/178/Q178914/
 ---
 
 ## Q178914: CSNW: Cannot Use Wildcards Connecting to Printers in NDS Tree

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191764: PRB: Closing a Project Does Not Make Other Open Project Active"
-permalink: kb/191/Q191764/
+permalink: /kb/191/Q191764/
 ---
 
 ## Q191764: PRB: Closing a Project Does Not Make Other Open Project Active

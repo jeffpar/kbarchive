@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196892: XFOR: Dirsync Service Stops Unexpectedly-Event 181 in Event Log"
-permalink: kb/196/Q196892/
+permalink: /kb/196/Q196892/
 ---
 
 ## Q196892: XFOR: Dirsync Service Stops Unexpectedly-Event 181 in Event Log

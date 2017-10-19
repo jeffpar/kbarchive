@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138618: ErrMsg: &quot;No Configuration Info ...&quot; with PCMCIA"
-permalink: kb/138/Q138618/
+permalink: /kb/138/Q138618/
 ---
 
 ## Q138618: ErrMsg: &quot;No Configuration Info ...&quot; with PCMCIA

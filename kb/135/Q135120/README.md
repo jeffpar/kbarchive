@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135120: Configuration Backup Tool for Backing Up the Registry"
-permalink: kb/135/Q135120/
+permalink: /kb/135/Q135120/
 ---
 
 ## Q135120: Configuration Backup Tool for Backing Up the Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236339: Removing Custom DHCP Scope Option Sets Lease Duration to Zero"
-permalink: kb/236/Q236339/
+permalink: /kb/236/Q236339/
 ---
 
 ## Q236339: Removing Custom DHCP Scope Option Sets Lease Duration to Zero

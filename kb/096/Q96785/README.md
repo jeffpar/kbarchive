@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96785: Quitting Uninstall Causes Computer to Reboot"
-permalink: kb/096/Q96785/
+permalink: /kb/096/Q96785/
 ---
 
 ## Q96785: Quitting Uninstall Causes Computer to Reboot

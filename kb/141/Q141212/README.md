@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141212: How to Open the Find Tool by Double-Clicking a Folder"
-permalink: kb/141/Q141212/
+permalink: /kb/141/Q141212/
 ---
 
 ## Q141212: How to Open the Find Tool by Double-Clicking a Folder

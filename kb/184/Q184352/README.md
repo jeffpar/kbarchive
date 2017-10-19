@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184352: HOWTO: Upload Files to the Internet Information Server"
-permalink: kb/184/Q184352/
+permalink: /kb/184/Q184352/
 ---
 
 ## Q184352: HOWTO: Upload Files to the Internet Information Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250237: Using ScriptIt.exe to Automate Setup of Partitions and Printers"
-permalink: kb/250/Q250237/
+permalink: /kb/250/Q250237/
 ---
 
 ## Q250237: Using ScriptIt.exe to Automate Setup of Partitions and Printers

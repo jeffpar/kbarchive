@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122668: Writer/Artist: Patterned Objects Appear Blurry on Printouts"
-permalink: kb/122/Q122668/
+permalink: /kb/122/Q122668/
 ---
 
 ## Q122668: Writer/Artist: Patterned Objects Appear Blurry on Printouts

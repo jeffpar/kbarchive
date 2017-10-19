@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43397: Using OpenFile() with Sharing and Inheritance Bits"
-permalink: kb/043/Q43397/
+permalink: /kb/043/Q43397/
 ---
 
 ## Q43397: Using OpenFile() with Sharing and Inheritance Bits

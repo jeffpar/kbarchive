@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162249: HOWTO: Create a Toolbar Containing a ComboBox"
-permalink: kb/162/Q162249/
+permalink: /kb/162/Q162249/
 ---
 
 ## Q162249: HOWTO: Create a Toolbar Containing a ComboBox

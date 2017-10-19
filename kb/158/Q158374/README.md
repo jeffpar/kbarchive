@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158374: Hellbender: Viewing Options Available in Different Pilot Views"
-permalink: kb/158/Q158374/
+permalink: /kb/158/Q158374/
 ---
 
 ## Q158374: Hellbender: Viewing Options Available in Different Pilot Views

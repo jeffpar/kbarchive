@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227203: Baseball 2000: Setup Hangs Before Installation Is Complete"
-permalink: kb/227/Q227203/
+permalink: /kb/227/Q227203/
 ---
 
 ## Q227203: Baseball 2000: Setup Hangs Before Installation Is Complete

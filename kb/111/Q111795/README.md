@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111795: Mac Srv: New Features in Microsoft Mail Version 3.1d"
-permalink: kb/111/Q111795/
+permalink: /kb/111/Q111795/
 ---
 
 ## Q111795: Mac Srv: New Features in Microsoft Mail Version 3.1d

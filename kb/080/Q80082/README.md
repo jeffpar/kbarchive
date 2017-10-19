@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80082: DOCERR: Description of the DDEML Error Codes"
-permalink: kb/080/Q80082/
+permalink: /kb/080/Q80082/
 ---
 
 ## Q80082: DOCERR: Description of the DDEML Error Codes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186535: Information Regarding Peoplesoft Cache Files"
-permalink: kb/186/Q186535/
+permalink: /kb/186/Q186535/
 ---
 
 ## Q186535: Information Regarding Peoplesoft Cache Files

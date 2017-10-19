@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104526: Unable to Print After Installing Phone Net PC"
-permalink: kb/104/Q104526/
+permalink: /kb/104/Q104526/
 ---
 
 ## Q104526: Unable to Print After Installing Phone Net PC

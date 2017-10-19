@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226806: SMS: Windows 3.11 Client Shows Incorrect Remote Control Status"
-permalink: kb/226/Q226806/
+permalink: /kb/226/Q226806/
 ---
 
 ## Q226806: SMS: Windows 3.11 Client Shows Incorrect Remote Control Status

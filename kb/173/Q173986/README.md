@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173986: Flight Simulator 98/2000: Product Identification (PID) Location"
-permalink: kb/173/Q173986/
+permalink: /kb/173/Q173986/
 ---
 
 ## Q173986: Flight Simulator 98/2000: Product Identification (PID) Location

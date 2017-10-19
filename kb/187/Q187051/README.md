@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187051: Cannot Drag and Drop UNC Path When in Add/Remove Programs"
-permalink: kb/187/Q187051/
+permalink: /kb/187/Q187051/
 ---
 
 ## Q187051: Cannot Drag and Drop UNC Path When in Add/Remove Programs

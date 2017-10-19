@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271200: XADM: Event ID 1171 Message Occurs with  Exception E0010006"
-permalink: kb/271/Q271200/
+permalink: /kb/271/Q271200/
 ---
 
 ## Q271200: XADM: Event ID 1171 Message Occurs with  Exception E0010006

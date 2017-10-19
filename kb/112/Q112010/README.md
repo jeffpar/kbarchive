@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112010: FIX: Access Violation on READ of Exported COMMON Array"
-permalink: kb/112/Q112010/
+permalink: /kb/112/Q112010/
 ---
 
 ## Q112010: FIX: Access Violation on READ of Exported COMMON Array

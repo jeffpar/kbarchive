@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94883: PC WSPlus: Importing/Exporting Information to the Sharp Wizard"
-permalink: kb/094/Q94883/
+permalink: /kb/094/Q94883/
 ---
 
 ## Q94883: PC WSPlus: Importing/Exporting Information to the Sharp Wizard

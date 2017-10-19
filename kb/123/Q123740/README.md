@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123740: Unexpected Error Accessing MS Mail Postoffice Through GSNW"
-permalink: kb/123/Q123740/
+permalink: /kb/123/Q123740/
 ---
 
 ## Q123740: Unexpected Error Accessing MS Mail Postoffice Through GSNW

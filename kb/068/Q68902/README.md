@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68902: How to Set the KX-P1124 Printer Emulation Modes"
-permalink: kb/068/Q68902/
+permalink: /kb/068/Q68902/
 ---
 
 ## Q68902: How to Set the KX-P1124 Printer Emulation Modes

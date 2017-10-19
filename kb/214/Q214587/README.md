@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214587: Close Combat III: Game Quits When You Move Pointer Over Unit"
-permalink: kb/214/Q214587/
+permalink: /kb/214/Q214587/
 ---
 
 ## Q214587: Close Combat III: Game Quits When You Move Pointer Over Unit

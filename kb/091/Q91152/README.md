@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91152: WFWG Err Msg: One or More Files Could Not Be Found that..."
-permalink: kb/091/Q91152/
+permalink: /kb/091/Q91152/
 ---
 
 ## Q91152: WFWG Err Msg: One or More Files Could Not Be Found that...

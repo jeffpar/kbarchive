@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288406: Red Stop Sign in IIS MMC When Connecting to Virtual Directory"
-permalink: kb/288/Q288406/
+permalink: /kb/288/Q288406/
 ---
 
 ## Q288406: Red Stop Sign in IIS MMC When Connecting to Virtual Directory

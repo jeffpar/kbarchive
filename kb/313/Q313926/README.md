@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313926: Designing Microsoft ASP.NET Applications Comments And Correction"
-permalink: kb/313/Q313926/
+permalink: /kb/313/Q313926/
 ---
 
 ## Q313926: Designing Microsoft ASP.NET Applications Comments And Correction

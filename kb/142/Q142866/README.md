@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142866: Alpha w/ Proteon P139x-Plus Rev E and Above NIC Doesn't Work"
-permalink: kb/142/Q142866/
+permalink: /kb/142/Q142866/
 ---
 
 ## Q142866: Alpha w/ Proteon P139x-Plus Rev E and Above NIC Doesn't Work

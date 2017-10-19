@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157001: XCLN: PRC Exchange Win 95 Client cannot Display DBCS Characters"
-permalink: kb/157/Q157001/
+permalink: /kb/157/Q157001/
 ---
 
 ## Q157001: XCLN: PRC Exchange Win 95 Client cannot Display DBCS Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155621: Comparison of Windows 95 and Windows NT Workstation 4.0"
-permalink: kb/155/Q155621/
+permalink: /kb/155/Q155621/
 ---
 
 ## Q155621: Comparison of Windows 95 and Windows NT Workstation 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151733: Mastering Access Programming: Minimum System Requirements"
-permalink: kb/151/Q151733/
+permalink: /kb/151/Q151733/
 ---
 
 ## Q151733: Mastering Access Programming: Minimum System Requirements

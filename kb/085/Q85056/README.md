@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85056: FFAPI: Floppy Disk Layouts"
-permalink: kb/085/Q85056/
+permalink: /kb/085/Q85056/
 ---
 
 ## Q85056: FFAPI: Floppy Disk Layouts

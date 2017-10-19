@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74283: WIN.INI Settings for Windows Help Hypertext Colors"
-permalink: kb/074/Q74283/
+permalink: /kb/074/Q74283/
 ---
 
 ## Q74283: WIN.INI Settings for Windows Help Hypertext Colors

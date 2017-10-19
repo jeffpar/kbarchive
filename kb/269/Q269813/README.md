@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269813: MSB: No Sound When You Run the Program on Terminal Server"
-permalink: kb/269/Q269813/
+permalink: /kb/269/Q269813/
 ---
 
 ## Q269813: MSB: No Sound When You Run the Program on Terminal Server

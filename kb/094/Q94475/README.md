@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94475: Error When Playing Sample .AVI Files on CD-ROM"
-permalink: kb/094/Q94475/
+permalink: /kb/094/Q94475/
 ---
 
 ## Q94475: Error When Playing Sample .AVI Files on CD-ROM

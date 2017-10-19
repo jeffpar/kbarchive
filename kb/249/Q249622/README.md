@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249622: PRB: WhatsThisHelp Does Not Work on Objects in a Grid"
-permalink: kb/249/Q249622/
+permalink: /kb/249/Q249622/
 ---
 
 ## Q249622: PRB: WhatsThisHelp Does Not Work on Objects in a Grid

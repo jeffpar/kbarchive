@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124803: QIC Tape with Multiple Backups Sets, Only First Set Displayed"
-permalink: kb/124/Q124803/
+permalink: /kb/124/Q124803/
 ---
 
 ## Q124803: QIC Tape with Multiple Backups Sets, Only First Set Displayed

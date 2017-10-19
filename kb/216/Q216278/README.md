@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216278: BUG: Unspecified Error When Running VB Program Hosting ATL Ctrl"
-permalink: kb/216/Q216278/
+permalink: /kb/216/Q216278/
 ---
 
 ## Q216278: BUG: Unspecified Error When Running VB Program Hosting ATL Ctrl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71891: Dictionary Hashing Algorithm Used by the LIB Utility"
-permalink: kb/071/Q71891/
+permalink: /kb/071/Q71891/
 ---
 
 ## Q71891: Dictionary Hashing Algorithm Used by the LIB Utility

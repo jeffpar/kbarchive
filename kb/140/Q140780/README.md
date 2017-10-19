@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140780: DocErr: WINS Help Lists Incorrect Max Value for Verify Interval"
-permalink: kb/140/Q140780/
+permalink: /kb/140/Q140780/
 ---
 
 ## Q140780: DocErr: WINS Help Lists Incorrect Max Value for Verify Interval

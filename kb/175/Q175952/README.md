@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175952: NETSTAT Displays a LISTENING Port with IP Address 0.0.0.0"
-permalink: kb/175/Q175952/
+permalink: /kb/175/Q175952/
 ---
 
 ## Q175952: NETSTAT Displays a LISTENING Port with IP Address 0.0.0.0

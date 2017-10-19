@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268577: XADM: Directory Service Does Not Start with Event ID 1002"
-permalink: kb/268/Q268577/
+permalink: /kb/268/Q268577/
 ---
 
 ## Q268577: XADM: Directory Service Does Not Start with Event ID 1002

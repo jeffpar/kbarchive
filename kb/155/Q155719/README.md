@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155719: Windows NT 3.51 File Manager Does Not Work in Windows NT 4.0"
-permalink: kb/155/Q155719/
+permalink: /kb/155/Q155719/
 ---
 
 ## Q155719: Windows NT 3.51 File Manager Does Not Work in Windows NT 4.0

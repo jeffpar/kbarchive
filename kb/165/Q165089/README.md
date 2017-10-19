@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165089: SLI API Can Now Acquire a 3270 LU"
-permalink: kb/165/Q165089/
+permalink: /kb/165/Q165089/
 ---
 
 ## Q165089: SLI API Can Now Acquire a 3270 LU

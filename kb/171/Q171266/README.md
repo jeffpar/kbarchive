@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171266: PRB: Report to File Command Launches WinFax Application"
-permalink: kb/171/Q171266/
+permalink: /kb/171/Q171266/
 ---
 
 ## Q171266: PRB: Report to File Command Launches WinFax Application

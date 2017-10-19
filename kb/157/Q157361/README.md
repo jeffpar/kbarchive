@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157361: INFO: How to Automatically Log On After an Unattended Setup"
-permalink: kb/157/Q157361/
+permalink: /kb/157/Q157361/
 ---
 
 ## Q157361: INFO: How to Automatically Log On After an Unattended Setup

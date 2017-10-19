@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108595: Flight Simulator: Calculating Cloud Deviation Zone Thickness"
-permalink: kb/108/Q108595/
+permalink: /kb/108/Q108595/
 ---
 
 ## Q108595: Flight Simulator: Calculating Cloud Deviation Zone Thickness

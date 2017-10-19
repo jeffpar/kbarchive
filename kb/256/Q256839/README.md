@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256839: Long URL Requests/Parameters Aren't Logged Using ODBC Logging"
-permalink: kb/256/Q256839/
+permalink: /kb/256/Q256839/
 ---
 
 ## Q256839: Long URL Requests/Parameters Aren't Logged Using ODBC Logging

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187294: Emergency Recovery Utility Does Not Require System Disk"
-permalink: kb/187/Q187294/
+permalink: /kb/187/Q187294/
 ---
 
 ## Q187294: Emergency Recovery Utility Does Not Require System Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128351: Online Documentation on Managing Domains is Incorrect"
-permalink: kb/128/Q128351/
+permalink: /kb/128/Q128351/
 ---
 
 ## Q128351: Online Documentation on Managing Domains is Incorrect

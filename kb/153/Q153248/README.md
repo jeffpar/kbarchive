@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153248: WinWord 2.0c GPF When Opening File Using Remote Control"
-permalink: kb/153/Q153248/
+permalink: /kb/153/Q153248/
 ---
 
 ## Q153248: WinWord 2.0c GPF When Opening File Using Remote Control

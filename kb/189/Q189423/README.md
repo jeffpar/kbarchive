@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189423: Memory Leak: Recordsets with OCCURS DEPENDING ON Clause"
-permalink: kb/189/Q189423/
+permalink: /kb/189/Q189423/
 ---
 
 ## Q189423: Memory Leak: Recordsets with OCCURS DEPENDING ON Clause

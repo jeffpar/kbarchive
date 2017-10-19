@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158822: PRB: ADDOBJECT Gives &quot;A member object...already exists&quot; Error"
-permalink: kb/158/Q158822/
+permalink: /kb/158/Q158822/
 ---
 
 ## Q158822: PRB: ADDOBJECT Gives &quot;A member object...already exists&quot; Error

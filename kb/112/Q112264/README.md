@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112264: PC Win: Global Address List Not Stored in RAM"
-permalink: kb/112/Q112264/
+permalink: /kb/112/Q112264/
 ---
 
 ## Q112264: PC Win: Global Address List Not Stored in RAM

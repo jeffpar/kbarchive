@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168556: XFOR: Dr. Watson When Starting Lotus cc:Mail Connector Service"
-permalink: kb/168/Q168556/
+permalink: /kb/168/Q168556/
 ---
 
 ## Q168556: XFOR: Dr. Watson When Starting Lotus cc:Mail Connector Service

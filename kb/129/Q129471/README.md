@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129471: HOWTO: SubClass the MDIClient by Using MFC"
-permalink: kb/129/Q129471/
+permalink: /kb/129/Q129471/
 ---
 
 ## Q129471: HOWTO: SubClass the MDIClient by Using MFC

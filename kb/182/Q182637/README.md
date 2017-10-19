@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182637: SNA Server Notifies Windows NT Clients of All Invokable TPs"
-permalink: kb/182/Q182637/
+permalink: /kb/182/Q182637/
 ---
 
 ## Q182637: SNA Server Notifies Windows NT Clients of All Invokable TPs

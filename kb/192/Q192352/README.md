@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192352: HOWTO: Invoke the &quot;Open With...&quot; Dialog Box Using _shellexecute"
-permalink: kb/192/Q192352/
+permalink: /kb/192/Q192352/
 ---
 
 ## Q192352: HOWTO: Invoke the &quot;Open With...&quot; Dialog Box Using _shellexecute

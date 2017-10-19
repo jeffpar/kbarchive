@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255852: Administrator Console May Not Connect After Changing SQL Account"
-permalink: kb/255/Q255852/
+permalink: /kb/255/Q255852/
 ---
 
 ## Q255852: Administrator Console May Not Connect After Changing SQL Account

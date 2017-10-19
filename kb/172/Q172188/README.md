@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172188: WD97: Semitransparent Inline Graphics Display Incorrectly"
-permalink: kb/172/Q172188/
+permalink: /kb/172/Q172188/
 ---
 
 ## Q172188: WD97: Semitransparent Inline Graphics Display Incorrectly

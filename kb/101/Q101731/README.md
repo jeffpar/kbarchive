@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101731: File/Folder Attribute Mapping from NT AS to Macintosh"
-permalink: kb/101/Q101731/
+permalink: /kb/101/Q101731/
 ---
 
 ## Q101731: File/Folder Attribute Mapping from NT AS to Macintosh

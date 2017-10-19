@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65892: Using 101-Keyboard with COMPAQ SLT/286 Under Windows"
-permalink: kb/065/Q65892/
+permalink: /kb/065/Q65892/
 ---
 
 ## Q65892: Using 101-Keyboard with COMPAQ SLT/286 Under Windows

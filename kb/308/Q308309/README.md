@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308309: Using the Get Response Time Utility GETRT.exe"
-permalink: kb/308/Q308309/
+permalink: /kb/308/Q308309/
 ---
 
 ## Q308309: Using the Get Response Time Utility GETRT.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104649: FIX: Compiler Issues C1001 or Hangs with Missing Closing Brace"
-permalink: kb/104/Q104649/
+permalink: /kb/104/Q104649/
 ---
 
 ## Q104649: FIX: Compiler Issues C1001 or Hangs with Missing Closing Brace

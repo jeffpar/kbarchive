@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241359: Err Msg: STOP 0x0000001E in RDR.SYS on Terminal Server"
-permalink: kb/241/Q241359/
+permalink: /kb/241/Q241359/
 ---
 
 ## Q241359: Err Msg: STOP 0x0000001E in RDR.SYS on Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112214: Trusting Domain Shows Trust Failure or &quot;Account Unknown&quot;"
-permalink: kb/112/Q112214/
+permalink: /kb/112/Q112214/
 ---
 
 ## Q112214: Trusting Domain Shows Trust Failure or &quot;Account Unknown&quot;

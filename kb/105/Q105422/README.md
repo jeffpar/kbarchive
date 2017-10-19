@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105422: ERR: &quot;Sorry Can't Do That Because OUT OF MEMORY&quot; w/ FoxPackage"
-permalink: kb/105/Q105422/
+permalink: /kb/105/Q105422/
 ---
 
 ## Q105422: ERR: &quot;Sorry Can't Do That Because OUT OF MEMORY&quot; w/ FoxPackage

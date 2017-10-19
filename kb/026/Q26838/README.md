@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26838: FIX: COMM Directive"
-permalink: kb/026/Q26838/
+permalink: /kb/026/Q26838/
 ---
 
 ## Q26838: FIX: COMM Directive

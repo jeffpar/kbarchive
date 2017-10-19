@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172424: Security Certificate Doesn't Match Internet Address"
-permalink: kb/172/Q172424/
+permalink: /kb/172/Q172424/
 ---
 
 ## Q172424: Security Certificate Doesn't Match Internet Address

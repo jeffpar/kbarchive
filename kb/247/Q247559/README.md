@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247559: Information About Primary and Secondary WINS Server Switch"
-permalink: kb/247/Q247559/
+permalink: /kb/247/Q247559/
 ---
 
 ## Q247559: Information About Primary and Secondary WINS Server Switch

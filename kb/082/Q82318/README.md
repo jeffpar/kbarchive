@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82318: Stack Overflow Can Cause Windows to Hang"
-permalink: kb/082/Q82318/
+permalink: /kb/082/Q82318/
 ---
 
 ## Q82318: Stack Overflow Can Cause Windows to Hang

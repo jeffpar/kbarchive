@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153911: MSN Icon Does Not Function After MSN 1.2 Upgrade"
-permalink: kb/153/Q153911/
+permalink: /kb/153/Q153911/
 ---
 
 ## Q153911: MSN Icon Does Not Function After MSN 1.2 Upgrade

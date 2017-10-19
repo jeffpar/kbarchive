@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161450: Not All Bytes Returned Using Adobe Acrobat w/ IIS 2.0"
-permalink: kb/161/Q161450/
+permalink: /kb/161/Q161450/
 ---
 
 ## Q161450: Not All Bytes Returned Using Adobe Acrobat w/ IIS 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136785: Can't See Attachment Sent w/ Sched+ 7.0 Meeting Requests in 1.0"
-permalink: kb/136/Q136785/
+permalink: /kb/136/Q136785/
 ---
 
 ## Q136785: Can't See Attachment Sent w/ Sched+ 7.0 Meeting Requests in 1.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217130: Err Msg: &quot;STOP 0x0000000a&quot; on Multiprocessor Computer"
-permalink: kb/217/Q217130/
+permalink: /kb/217/Q217130/
 ---
 
 ## Q217130: Err Msg: &quot;STOP 0x0000000a&quot; on Multiprocessor Computer

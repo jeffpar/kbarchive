@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83734: HP Vectra QS/20 Wrong HIMEM.SYS Slows Machine"
-permalink: kb/083/Q83734/
+permalink: /kb/083/Q83734/
 ---
 
 ## Q83734: HP Vectra QS/20 Wrong HIMEM.SYS Slows Machine

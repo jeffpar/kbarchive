@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276525: Your Computer May Stop Responding When You Monitor Open Handles"
-permalink: kb/276/Q276525/
+permalink: /kb/276/Q276525/
 ---
 
 ## Q276525: Your Computer May Stop Responding When You Monitor Open Handles

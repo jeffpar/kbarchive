@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154755: PCAnywhere 32 7.0 May Delete Files on NTFS Partition"
-permalink: kb/154/Q154755/
+permalink: /kb/154/Q154755/
 ---
 
 ## Q154755: PCAnywhere 32 7.0 May Delete Files on NTFS Partition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88191: Using the Microsoft Windows Help Compiler"
-permalink: kb/088/Q88191/
+permalink: /kb/088/Q88191/
 ---
 
 ## Q88191: Using the Microsoft Windows Help Compiler

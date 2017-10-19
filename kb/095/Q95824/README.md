@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95824: Constant or Random Beeping in Windows with Anti-Virus"
-permalink: kb/095/Q95824/
+permalink: /kb/095/Q95824/
 ---
 
 ## Q95824: Constant or Random Beeping in Windows with Anti-Virus

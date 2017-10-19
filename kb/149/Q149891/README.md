@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149891: Programmatic System Shutdown Fails"
-permalink: kb/149/Q149891/
+permalink: /kb/149/Q149891/
 ---
 
 ## Q149891: Programmatic System Shutdown Fails

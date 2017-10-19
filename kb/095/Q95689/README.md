@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95689: Unable to Run TrueType Font Pack 2 Font Assistant (FAST.EXE)"
-permalink: kb/095/Q95689/
+permalink: /kb/095/Q95689/
 ---
 
 ## Q95689: Unable to Run TrueType Font Pack 2 Font Assistant (FAST.EXE)

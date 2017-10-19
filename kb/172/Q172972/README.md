@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172972: XCLN: No Roving or Roaming User Support For Macintosh"
-permalink: kb/172/Q172972/
+permalink: /kb/172/Q172972/
 ---
 
 ## Q172972: XCLN: No Roving or Roaming User Support For Macintosh

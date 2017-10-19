@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167731: FIX: Access Violation When Connecting in MFC ODBC Application"
-permalink: kb/167/Q167731/
+permalink: /kb/167/Q167731/
 ---
 
 ## Q167731: FIX: Access Violation When Connecting in MFC ODBC Application

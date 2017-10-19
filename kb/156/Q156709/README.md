@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156709: XCLN: Errors When Trying to Start EFD"
-permalink: kb/156/Q156709/
+permalink: /kb/156/Q156709/
 ---
 
 ## Q156709: XCLN: Errors When Trying to Start EFD

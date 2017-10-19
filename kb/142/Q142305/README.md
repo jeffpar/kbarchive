@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142305: Min. and Max. Interval Values for WINS Configuration"
-permalink: kb/142/Q142305/
+permalink: /kb/142/Q142305/
 ---
 
 ## Q142305: Min. and Max. Interval Values for WINS Configuration

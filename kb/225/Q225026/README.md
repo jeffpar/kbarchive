@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225026: Unable to Share Root Folder Using Share a Folder Wizard"
-permalink: kb/225/Q225026/
+permalink: /kb/225/Q225026/
 ---
 
 ## Q225026: Unable to Share Root Folder Using Share a Folder Wizard

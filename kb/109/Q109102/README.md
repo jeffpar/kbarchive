@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109102: LM NETWKSTA.EXE Doesn't Load in UMA for MS-DOS 6.2 Client"
-permalink: kb/109/Q109102/
+permalink: /kb/109/Q109102/
 ---
 
 ## Q109102: LM NETWKSTA.EXE Doesn't Load in UMA for MS-DOS 6.2 Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257269: CCM Uses Multiple Domain Prefixes When Installing the Client"
-permalink: kb/257/Q257269/
+permalink: /kb/257/Q257269/
 ---
 
 ## Q257269: CCM Uses Multiple Domain Prefixes When Installing the Client

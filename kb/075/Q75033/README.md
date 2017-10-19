@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75033: Microsoft MS-DOS Upgrade Minimum Installation"
-permalink: kb/075/Q75033/
+permalink: /kb/075/Q75033/
 ---
 
 ## Q75033: Microsoft MS-DOS Upgrade Minimum Installation

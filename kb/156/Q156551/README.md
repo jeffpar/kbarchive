@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156551: HOWTO: Use SYS(3054) to Optimize a Query"
-permalink: kb/156/Q156551/
+permalink: /kb/156/Q156551/
 ---
 
 ## Q156551: HOWTO: Use SYS(3054) to Optimize a Query

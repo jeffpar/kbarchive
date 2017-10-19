@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74870: How EMM386.EXE Rounds Segment Addresses"
-permalink: kb/074/Q74870/
+permalink: /kb/074/Q74870/
 ---
 
 ## Q74870: How EMM386.EXE Rounds Segment Addresses

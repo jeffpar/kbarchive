@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93565: PC Adm: Err Msg: Error Creating Mailbox"
-permalink: kb/093/Q93565/
+permalink: /kb/093/Q93565/
 ---
 
 ## Q93565: PC Adm: Err Msg: Error Creating Mailbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32465: Switching from Header or Footer Dialog Box and Text in Write"
-permalink: kb/032/Q32465/
+permalink: /kb/032/Q32465/
 ---
 
 ## Q32465: Switching from Header or Footer Dialog Box and Text in Write

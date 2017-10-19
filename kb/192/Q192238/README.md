@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192238: PC WRmt: Remote Client May Display Date Incorrectly After 2000"
-permalink: kb/192/Q192238/
+permalink: /kb/192/Q192238/
 ---
 
 ## Q192238: PC WRmt: Remote Client May Display Date Incorrectly After 2000

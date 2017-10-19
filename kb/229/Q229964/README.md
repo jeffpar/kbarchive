@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229964: FIX: AfxMessageBox Help Fails to Bring Up Proper Topic"
-permalink: kb/229/Q229964/
+permalink: /kb/229/Q229964/
 ---
 
 ## Q229964: FIX: AfxMessageBox Help Fails to Bring Up Proper Topic

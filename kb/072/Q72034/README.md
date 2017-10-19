@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72034: LAN Manager 2.0 Enhanced DOS Netpopup"
-permalink: kb/072/Q72034/
+permalink: /kb/072/Q72034/
 ---
 
 ## Q72034: LAN Manager 2.0 Enhanced DOS Netpopup

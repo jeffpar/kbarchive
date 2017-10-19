@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81315: PC Ext: Auto Answer Must Be Off for Modem Communications"
-permalink: kb/081/Q81315/
+permalink: /kb/081/Q81315/
 ---
 
 ## Q81315: PC Ext: Auto Answer Must Be Off for Modem Communications

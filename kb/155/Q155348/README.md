@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155348: Some Programs Do Not Notify When Setup Is Finished"
-permalink: kb/155/Q155348/
+permalink: /kb/155/Q155348/
 ---
 
 ## Q155348: Some Programs Do Not Notify When Setup Is Finished

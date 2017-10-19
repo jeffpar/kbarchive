@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246518: Cannot Remotely Add or Delete Printer Ports in Windows NT Server"
-permalink: kb/246/Q246518/
+permalink: /kb/246/Q246518/
 ---
 
 ## Q246518: Cannot Remotely Add or Delete Printer Ports in Windows NT Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289854: XIMS: NDRs Not Generated Even Though Mail Fails to Get Forwarded"
-permalink: kb/289/Q289854/
+permalink: /kb/289/Q289854/
 ---
 
 ## Q289854: XIMS: NDRs Not Generated Even Though Mail Fails to Get Forwarded

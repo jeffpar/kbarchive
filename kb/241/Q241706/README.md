@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241706: BUG: Compiler Error C2143 on Function-Try-Block Syntax"
-permalink: kb/241/Q241706/
+permalink: /kb/241/Q241706/
 ---
 
 ## Q241706: BUG: Compiler Error C2143 on Function-Try-Block Syntax

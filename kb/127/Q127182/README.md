@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127182: Copy Option Not Available in Ancient Lands"
-permalink: kb/127/Q127182/
+permalink: /kb/127/Q127182/
 ---
 
 ## Q127182: Copy Option Not Available in Ancient Lands

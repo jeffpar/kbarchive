@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257964: Cannot Change Input Locale to Australia or NZ on WTS Client"
-permalink: kb/257/Q257964/
+permalink: /kb/257/Q257964/
 ---
 
 ## Q257964: Cannot Change Input Locale to Australia or NZ on WTS Client

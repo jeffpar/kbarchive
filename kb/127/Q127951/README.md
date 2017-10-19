@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127951: Mac Adm: CNU Names on Gateway Recipients Screen"
-permalink: kb/127/Q127951/
+permalink: /kb/127/Q127951/
 ---
 
 ## Q127951: Mac Adm: CNU Names on Gateway Recipients Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100725: PRB: SQL Server Driver GP-Faults with More Than 50 Datatypes"
-permalink: kb/100/Q100725/
+permalink: /kb/100/Q100725/
 ---
 
 ## Q100725: PRB: SQL Server Driver GP-Faults with More Than 50 Datatypes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102155: DOC: BN_DISABLE and BN_DOUBLECLICKED Documented Incorrectly"
-permalink: kb/102/Q102155/
+permalink: /kb/102/Q102155/
 ---
 
 ## Q102155: DOC: BN_DISABLE and BN_DOUBLECLICKED Documented Incorrectly

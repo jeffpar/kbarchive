@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271506: XFOR: Prompted to Add  Address Space When Changing Restrictions"
-permalink: kb/271/Q271506/
+permalink: /kb/271/Q271506/
 ---
 
 ## Q271506: XFOR: Prompted to Add  Address Space When Changing Restrictions

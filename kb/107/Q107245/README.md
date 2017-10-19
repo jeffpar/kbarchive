@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107245: Microsoft Systems Management Server README.TXT (Part 2 of 2)"
-permalink: kb/107/Q107245/
+permalink: /kb/107/Q107245/
 ---
 
 ## Q107245: Microsoft Systems Management Server README.TXT (Part 2 of 2)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314700: Encarta Reference Library: Err Msg Joining Club Encarta"
-permalink: kb/314/Q314700/
+permalink: /kb/314/Q314700/
 ---
 
 ## Q314700: Encarta Reference Library: Err Msg Joining Club Encarta

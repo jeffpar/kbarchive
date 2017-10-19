@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87515: FIX: Implied INCLUDE Macro Does Not Force Expansion"
-permalink: kb/087/Q87515/
+permalink: /kb/087/Q87515/
 ---
 
 ## Q87515: FIX: Implied INCLUDE Macro Does Not Force Expansion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198444: XWEB: Can't Log On to OWA because of Ambiguous Mailbox Names"
-permalink: kb/198/Q198444/
+permalink: /kb/198/Q198444/
 ---
 
 ## Q198444: XWEB: Can't Log On to OWA because of Ambiguous Mailbox Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240746: FIX: Error Due to Class Member Function's Missing Argument List"
-permalink: kb/240/Q240746/
+permalink: /kb/240/Q240746/
 ---
 
 ## Q240746: FIX: Error Due to Class Member Function's Missing Argument List

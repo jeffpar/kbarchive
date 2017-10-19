@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216906: IIS 5.0 and Native Windows 2000 Active Directory Mapping"
-permalink: kb/216/Q216906/
+permalink: /kb/216/Q216906/
 ---
 
 ## Q216906: IIS 5.0 and Native Windows 2000 Active Directory Mapping

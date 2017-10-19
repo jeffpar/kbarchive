@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130188: XCLN: Message Forwarded from Outbox Is Not Sent"
-permalink: kb/130/Q130188/
+permalink: /kb/130/Q130188/
 ---
 
 ## Q130188: XCLN: Message Forwarded from Outbox Is Not Sent

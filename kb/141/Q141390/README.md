@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141390: FIX: NOCONSOLE in Report Form Command Causes Erratic Behavior"
-permalink: kb/141/Q141390/
+permalink: /kb/141/Q141390/
 ---
 
 ## Q141390: FIX: NOCONSOLE in Report Form Command Causes Erratic Behavior

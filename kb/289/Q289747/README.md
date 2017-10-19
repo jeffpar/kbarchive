@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289747: Installing SFU 2.0 NIS in a Peer Domain Generates Error 26065"
-permalink: kb/289/Q289747/
+permalink: /kb/289/Q289747/
 ---
 
 ## Q289747: Installing SFU 2.0 NIS in a Peer Domain Generates Error 26065

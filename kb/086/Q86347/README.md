@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86347: Thomas Conrad Network Cards May Need BUFFER.COM"
-permalink: kb/086/Q86347/
+permalink: /kb/086/Q86347/
 ---
 
 ## Q86347: Thomas Conrad Network Cards May Need BUFFER.COM

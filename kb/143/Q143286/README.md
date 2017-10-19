@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143286: Nwgendbc.exe with Updated GENDBC"
-permalink: kb/143/Q143286/
+permalink: /kb/143/Q143286/
 ---
 
 ## Q143286: Nwgendbc.exe with Updated GENDBC

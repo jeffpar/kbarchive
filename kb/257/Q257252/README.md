@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257252: XADM: Default Registry Entries for Exchange Server Info Store"
-permalink: kb/257/Q257252/
+permalink: /kb/257/Q257252/
 ---
 
 ## Q257252: XADM: Default Registry Entries for Exchange Server Info Store

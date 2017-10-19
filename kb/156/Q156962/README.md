@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156962: XFOR: Problem with BCC Line in Messages from AppleTalk Mail"
-permalink: kb/156/Q156962/
+permalink: /kb/156/Q156962/
 ---
 
 ## Q156962: XFOR: Problem with BCC Line in Messages from AppleTalk Mail

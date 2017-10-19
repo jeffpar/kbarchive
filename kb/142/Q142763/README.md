@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142763: PRB: Path Problems on Client Installation of SourceSafe"
-permalink: kb/142/Q142763/
+permalink: /kb/142/Q142763/
 ---
 
 ## Q142763: PRB: Path Problems on Client Installation of SourceSafe

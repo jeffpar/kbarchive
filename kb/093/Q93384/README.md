@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93384: Device Error Upgrading WFWG Over Windows with Intel Faxability"
-permalink: kb/093/Q93384/
+permalink: /kb/093/Q93384/
 ---
 
 ## Q93384: Device Error Upgrading WFWG Over Windows with Intel Faxability

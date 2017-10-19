@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154939: CreateQueueJobAndFile Fails w/ Queues Other Than Print Queue"
-permalink: kb/154/Q154939/
+permalink: /kb/154/Q154939/
 ---
 
 ## Q154939: CreateQueueJobAndFile Fails w/ Queues Other Than Print Queue

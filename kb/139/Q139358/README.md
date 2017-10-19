@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139358: INFO: Readme.wri: Section 1, Software Installation Information"
-permalink: kb/139/Q139358/
+permalink: /kb/139/Q139358/
 ---
 
 ## Q139358: INFO: Readme.wri: Section 1, Software Installation Information

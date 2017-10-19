@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191702: SNA Server Manager Traps When Deleting LUA Pool"
-permalink: kb/191/Q191702/
+permalink: /kb/191/Q191702/
 ---
 
 ## Q191702: SNA Server Manager Traps When Deleting LUA Pool

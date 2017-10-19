@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194952: XADM: Statically Mapped Port Limitations for Exchange Server"
-permalink: kb/194/Q194952/
+permalink: /kb/194/Q194952/
 ---
 
 ## Q194952: XADM: Statically Mapped Port Limitations for Exchange Server

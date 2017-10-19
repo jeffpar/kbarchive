@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69924: MS-DOS 3.3x Extended Partitions Keep Windows from Formatting"
-permalink: kb/069/Q69924/
+permalink: /kb/069/Q69924/
 ---
 
 ## Q69924: MS-DOS 3.3x Extended Partitions Keep Windows from Formatting

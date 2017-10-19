@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156532: INFO: STL Sample for the remove_if Function"
-permalink: kb/156/Q156532/
+permalink: /kb/156/Q156532/
 ---
 
 ## Q156532: INFO: STL Sample for the remove_if Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221422: XFOR: Incomplete Warning Event During LDAP Migration"
-permalink: kb/221/Q221422/
+permalink: /kb/221/Q221422/
 ---
 
 ## Q221422: XFOR: Incomplete Warning Event During LDAP Migration

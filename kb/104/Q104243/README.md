@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104243: PRB: Unexpected C2440 Error in C++ Typecast"
-permalink: kb/104/Q104243/
+permalink: /kb/104/Q104243/
 ---
 
 ## Q104243: PRB: Unexpected C2440 Error in C++ Typecast

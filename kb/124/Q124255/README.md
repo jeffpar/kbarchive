@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124255: README.NYC for New York Scenery Add-on"
-permalink: kb/124/Q124255/
+permalink: /kb/124/Q124255/
 ---
 
 ## Q124255: README.NYC for New York Scenery Add-on

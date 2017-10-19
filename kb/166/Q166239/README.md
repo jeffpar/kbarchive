@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166239: XCLN: Err Msg: HTTP/1.0 404 Object Not Found"
-permalink: kb/166/Q166239/
+permalink: /kb/166/Q166239/
 ---
 
 ## Q166239: XCLN: Err Msg: HTTP/1.0 404 Object Not Found

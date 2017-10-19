@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239627: Encarta Interactive World Atlas Is Unable to Continue Running..."
-permalink: kb/239/Q239627/
+permalink: /kb/239/Q239627/
 ---
 
 ## Q239627: Encarta Interactive World Atlas Is Unable to Continue Running...

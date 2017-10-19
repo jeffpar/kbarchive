@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155994: NBA Full Court Press: Minimum System Requirements"
-permalink: kb/155/Q155994/
+permalink: /kb/155/Q155994/
 ---
 
 ## Q155994: NBA Full Court Press: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299052: Automap: Some Data Is Not Displayed After Import into Pushpins"
-permalink: kb/299/Q299052/
+permalink: /kb/299/Q299052/
 ---
 
 ## Q299052: Automap: Some Data Is Not Displayed After Import into Pushpins

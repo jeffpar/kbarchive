@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119872: PRB: Error A2032 Using Indexed Addressing"
-permalink: kb/119/Q119872/
+permalink: /kb/119/Q119872/
 ---
 
 ## Q119872: PRB: Error A2032 Using Indexed Addressing

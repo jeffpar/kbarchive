@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155217: How to Enable or Disable Automatically Running CD-ROMs"
-permalink: kb/155/Q155217/
+permalink: /kb/155/Q155217/
 ---
 
 ## Q155217: How to Enable or Disable Automatically Running CD-ROMs

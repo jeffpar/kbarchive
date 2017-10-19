@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61803: INFO: Calculating Free System Resources in Microsoft Windows"
-permalink: kb/061/Q61803/
+permalink: /kb/061/Q61803/
 ---
 
 ## Q61803: INFO: Calculating Free System Resources in Microsoft Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254812: XADM: MTA Backlogs to Private and Public Information Store"
-permalink: kb/254/Q254812/
+permalink: /kb/254/Q254812/
 ---
 
 ## Q254812: XADM: MTA Backlogs to Private and Public Information Store

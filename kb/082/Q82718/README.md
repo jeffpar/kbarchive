@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82718: Norton Desktop for Windows Has a Repaint Problem"
-permalink: kb/082/Q82718/
+permalink: /kb/082/Q82718/
 ---
 
 ## Q82718: Norton Desktop for Windows Has a Repaint Problem

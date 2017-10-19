@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119932: Space: Stop Velocity Command Is Relative to Closest Object"
-permalink: kb/119/Q119932/
+permalink: /kb/119/Q119932/
 ---
 
 ## Q119932: Space: Stop Velocity Command Is Relative to Closest Object

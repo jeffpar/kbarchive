@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153161: WinNT Systems Running RAS May Exhaust Available DHCP Leases"
-permalink: kb/153/Q153161/
+permalink: /kb/153/Q153161/
 ---
 
 ## Q153161: WinNT Systems Running RAS May Exhaust Available DHCP Leases

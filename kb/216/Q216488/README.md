@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216488: XFOR: Notes Migration Takes a Long Time on Notes 3.x Server"
-permalink: kb/216/Q216488/
+permalink: /kb/216/Q216488/
 ---
 
 ## Q216488: XFOR: Notes Migration Takes a Long Time on Notes 3.x Server

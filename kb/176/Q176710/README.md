@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176710: XFOR: Japanese Characters in Subject Line Are Corrupted"
-permalink: kb/176/Q176710/
+permalink: /kb/176/Q176710/
 ---
 
 ## Q176710: XFOR: Japanese Characters in Subject Line Are Corrupted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326087: Exporting Multiple Certificates to .p7b Imports Bad Certificates"
-permalink: kb/326/Q326087/
+permalink: /kb/326/Q326087/
 ---
 
 ## Q326087: Exporting Multiple Certificates to .p7b Imports Bad Certificates

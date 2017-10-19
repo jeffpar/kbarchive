@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128203: FIX: No Generic/Text Only Printer Driver in Windows NT"
-permalink: kb/128/Q128203/
+permalink: /kb/128/Q128203/
 ---
 
 ## Q128203: FIX: No Generic/Text Only Printer Driver in Windows NT

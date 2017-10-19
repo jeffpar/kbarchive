@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116133: PRB: /INFO or /VERBOSE Option May Delay Stopping a Build"
-permalink: kb/116/Q116133/
+permalink: /kb/116/Q116133/
 ---
 
 ## Q116133: PRB: /INFO or /VERBOSE Option May Delay Stopping a Build

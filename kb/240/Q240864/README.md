@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240864: &quot;STOP 0x00000050&quot; Error Message with Services for Macintosh"
-permalink: kb/240/Q240864/
+permalink: /kb/240/Q240864/
 ---
 
 ## Q240864: &quot;STOP 0x00000050&quot; Error Message with Services for Macintosh

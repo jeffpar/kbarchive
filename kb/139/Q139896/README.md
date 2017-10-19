@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139896: IPX Type 0x14 Packets Propagated Even if Disabled"
-permalink: kb/139/Q139896/
+permalink: /kb/139/Q139896/
 ---
 
 ## Q139896: IPX Type 0x14 Packets Propagated Even if Disabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94070: Creating Bound Applications with LAN Man PTK/SDK"
-permalink: kb/094/Q94070/
+permalink: /kb/094/Q94070/
 ---
 
 ## Q94070: Creating Bound Applications with LAN Man PTK/SDK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129976: INFO: Differences Between FoxPro and Visual FoxPro"
-permalink: kb/129/Q129976/
+permalink: /kb/129/Q129976/
 ---
 
 ## Q129976: INFO: Differences Between FoxPro and Visual FoxPro

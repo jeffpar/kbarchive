@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111489: Pipe Dream: Tile Prevents Further Play"
-permalink: kb/111/Q111489/
+permalink: /kb/111/Q111489/
 ---
 
 ## Q111489: Pipe Dream: Tile Prevents Further Play

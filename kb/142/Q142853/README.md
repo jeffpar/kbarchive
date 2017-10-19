@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142853: Virtual Directories Not Visible on FTP Clients"
-permalink: kb/142/Q142853/
+permalink: /kb/142/Q142853/
 ---
 
 ## Q142853: Virtual Directories Not Visible on FTP Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149008: Pregnancy: Unable to Print or Copy Help Contents"
-permalink: kb/149/Q149008/
+permalink: /kb/149/Q149008/
 ---
 
 ## Q149008: Pregnancy: Unable to Print or Copy Help Contents

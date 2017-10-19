@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148618: No Load Balancing When You Invoke Many APPC Conversations"
-permalink: kb/148/Q148618/
+permalink: /kb/148/Q148618/
 ---
 
 ## Q148618: No Load Balancing When You Invoke Many APPC Conversations

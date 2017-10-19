@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310569: PRB: Using Object.Value in UPDATE - SQL Fails"
-permalink: kb/310/Q310569/
+permalink: /kb/310/Q310569/
 ---
 
 ## Q310569: PRB: Using Object.Value in UPDATE - SQL Fails

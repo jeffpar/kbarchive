@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151637: PRB: Visual FoxPro Mac Cannot Understand Apple Object Types"
-permalink: kb/151/Q151637/
+permalink: /kb/151/Q151637/
 ---
 
 ## Q151637: PRB: Visual FoxPro Mac Cannot Understand Apple Object Types

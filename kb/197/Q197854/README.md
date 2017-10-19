@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197854: WD97: Numeric Switch for Thousand Separator and Dollar Sign"
-permalink: kb/197/Q197854/
+permalink: /kb/197/Q197854/
 ---
 
 ## Q197854: WD97: Numeric Switch for Thousand Separator and Dollar Sign

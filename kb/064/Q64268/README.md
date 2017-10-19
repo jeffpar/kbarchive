@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64268: Description of Options for Using NETWARE.INI"
-permalink: kb/064/Q64268/
+permalink: /kb/064/Q64268/
 ---
 
 ## Q64268: Description of Options for Using NETWARE.INI

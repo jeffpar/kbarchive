@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142697: Unlocked Workstation Not Returned to Full Screen Application"
-permalink: kb/142/Q142697/
+permalink: /kb/142/Q142697/
 ---
 
 ## Q142697: Unlocked Workstation Not Returned to Full Screen Application

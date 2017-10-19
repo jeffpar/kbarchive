@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240139: Stop 0x0000000A with HP Netserver and HP 10/100 Ethernet Adapter"
-permalink: kb/240/Q240139/
+permalink: /kb/240/Q240139/
 ---
 
 ## Q240139: Stop 0x0000000A with HP Netserver and HP 10/100 Ethernet Adapter

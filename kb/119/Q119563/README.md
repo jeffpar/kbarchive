@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119563: PC DOS: Err Msg: Notice 62 Address No Longer Valid"
-permalink: kb/119/Q119563/
+permalink: /kb/119/Q119563/
 ---
 
 ## Q119563: PC DOS: Err Msg: Notice 62 Address No Longer Valid

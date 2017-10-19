@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192089: BUG: Setting OptionButton Value to True Sets TabStop to True"
-permalink: kb/192/Q192089/
+permalink: /kb/192/Q192089/
 ---
 
 ## Q192089: BUG: Setting OptionButton Value to True Sets TabStop to True

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159583: Flight Simulator 95 and the SideWinder 3D Pro Joystick"
-permalink: kb/159/Q159583/
+permalink: /kb/159/Q159583/
 ---
 
 ## Q159583: Flight Simulator 95 and the SideWinder 3D Pro Joystick

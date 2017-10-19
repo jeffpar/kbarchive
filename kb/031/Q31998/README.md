@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31998: How the Linker Searches the Libraries"
-permalink: kb/031/Q31998/
+permalink: /kb/031/Q31998/
 ---
 
 ## Q31998: How the Linker Searches the Libraries

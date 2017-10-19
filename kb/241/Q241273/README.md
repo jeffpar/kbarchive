@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241273: XCLN: Copy Folder Design Loses Properties"
-permalink: kb/241/Q241273/
+permalink: /kb/241/Q241273/
 ---
 
 ## Q241273: XCLN: Copy Folder Design Loses Properties

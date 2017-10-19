@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196524: How to Generate a List of Keyboard Commands for Word"
-permalink: kb/196/Q196524/
+permalink: /kb/196/Q196524/
 ---
 
 ## Q196524: How to Generate a List of Keyboard Commands for Word

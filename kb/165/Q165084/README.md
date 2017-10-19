@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165084: SNA Server Manager Issues with Workstations"
-permalink: kb/165/Q165084/
+permalink: /kb/165/Q165084/
 ---
 
 ## Q165084: SNA Server Manager Issues with Workstations

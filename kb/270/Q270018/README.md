@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270018: XCON: Subject Line in OOF Messages Is Not in English"
-permalink: kb/270/Q270018/
+permalink: /kb/270/Q270018/
 ---
 
 ## Q270018: XCON: Subject Line in OOF Messages Is Not in English

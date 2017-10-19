@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323733: XCON: Two Servers in the Same Site Cannot Exchange E-Mail"
-permalink: kb/323/Q323733/
+permalink: /kb/323/Q323733/
 ---
 
 ## Q323733: XCON: Two Servers in the Same Site Cannot Exchange E-Mail

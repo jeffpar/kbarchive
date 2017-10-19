@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132803: Difficulty Installing System Shock"
-permalink: kb/132/Q132803/
+permalink: /kb/132/Q132803/
 ---
 
 ## Q132803: Difficulty Installing System Shock

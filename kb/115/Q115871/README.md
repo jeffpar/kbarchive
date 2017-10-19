@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115871: Quitting a PM Application with End Task Generates Dialog Box"
-permalink: kb/115/Q115871/
+permalink: /kb/115/Q115871/
 ---
 
 ## Q115871: Quitting a PM Application with End Task Generates Dialog Box

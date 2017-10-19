@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192126: Add Workstation Fails with RestrictAnonymous"
-permalink: kb/192/Q192126/
+permalink: /kb/192/Q192126/
 ---
 
 ## Q192126: Add Workstation Fails with RestrictAnonymous

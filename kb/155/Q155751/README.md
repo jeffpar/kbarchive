@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155751: HOWTO: Create Form Letter Programmatically in Word with OLE"
-permalink: kb/155/Q155751/
+permalink: /kb/155/Q155751/
 ---
 
 ## Q155751: HOWTO: Create Form Letter Programmatically in Word with OLE

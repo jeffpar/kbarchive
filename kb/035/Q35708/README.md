@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35708: Raw.exe Sends Binary Data to Printer w/Device Driver"
-permalink: kb/035/Q35708/
+permalink: /kb/035/Q35708/
 ---
 
 ## Q35708: Raw.exe Sends Binary Data to Printer w/Device Driver

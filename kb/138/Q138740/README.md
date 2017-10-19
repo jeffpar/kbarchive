@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138740: SHUTGUI Window May Not Be Visible In Large Fonts"
-permalink: kb/138/Q138740/
+permalink: /kb/138/Q138740/
 ---
 
 ## Q138740: SHUTGUI Window May Not Be Visible In Large Fonts

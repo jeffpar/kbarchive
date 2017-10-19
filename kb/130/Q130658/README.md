@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130658: PRB: &quot;This operation not supported for Class Member Object&quot;"
-permalink: kb/130/Q130658/
+permalink: /kb/130/Q130658/
 ---
 
 ## Q130658: PRB: &quot;This operation not supported for Class Member Object&quot;

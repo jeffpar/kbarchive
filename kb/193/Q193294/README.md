@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193294: PRB: PRTINFO() Function Causes Fatal Error on Windows 98"
-permalink: kb/193/Q193294/
+permalink: /kb/193/Q193294/
 ---
 
 ## Q193294: PRB: PRTINFO() Function Causes Fatal Error on Windows 98

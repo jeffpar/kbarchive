@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245473: XADM: DMS: Installing Hotfixes or SPs on DMS Exchange Server"
-permalink: kb/245/Q245473/
+permalink: /kb/245/Q245473/
 ---
 
 ## Q245473: XADM: DMS: Installing Hotfixes or SPs on DMS Exchange Server

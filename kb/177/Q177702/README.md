@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177702: Software Project Survival Guide Comments and Corrections"
-permalink: kb/177/Q177702/
+permalink: /kb/177/Q177702/
 ---
 
 ## Q177702: Software Project Survival Guide Comments and Corrections

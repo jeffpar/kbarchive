@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129238: XCLN: Err Msg: Could Not Log On to Exchange Address..."
-permalink: kb/129/Q129238/
+permalink: /kb/129/Q129238/
 ---
 
 ## Q129238: XCLN: Err Msg: Could Not Log On to Exchange Address...

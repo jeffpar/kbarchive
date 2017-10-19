@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136728: PRB: Setup Failure with EZ-Drive Utility"
-permalink: kb/136/Q136728/
+permalink: /kb/136/Q136728/
 ---
 
 ## Q136728: PRB: Setup Failure with EZ-Drive Utility

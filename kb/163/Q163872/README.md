@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163872: PRB: Sysdiff Cannot Delete Files"
-permalink: kb/163/Q163872/
+permalink: /kb/163/Q163872/
 ---
 
 ## Q163872: PRB: Sysdiff Cannot Delete Files

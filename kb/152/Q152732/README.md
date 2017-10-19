@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152732: XADM: How to Modify Fields in the Exchange Mailbox Template"
-permalink: kb/152/Q152732/
+permalink: /kb/152/Q152732/
 ---
 
 ## Q152732: XADM: How to Modify Fields in the Exchange Mailbox Template

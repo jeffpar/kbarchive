@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255880: Event ID 1540 When Attempting to Add Reverse Lookup Zones"
-permalink: kb/255/Q255880/
+permalink: /kb/255/Q255880/
 ---
 
 ## Q255880: Event ID 1540 When Attempting to Add Reverse Lookup Zones

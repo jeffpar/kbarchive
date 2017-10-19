@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236130: Slow Network Performance May Occur When Using Tsadmin.exe"
-permalink: kb/236/Q236130/
+permalink: /kb/236/Q236130/
 ---
 
 ## Q236130: Slow Network Performance May Occur When Using Tsadmin.exe

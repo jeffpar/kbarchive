@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284277: Casino: Game Quits Unexpectedly"
-permalink: kb/284/Q284277/
+permalink: /kb/284/Q284277/
 ---
 
 ## Q284277: Casino: Game Quits Unexpectedly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172063: PRB: Visual Basic UserDocuments Are Displayed as Garbage Text"
-permalink: kb/172/Q172063/
+permalink: /kb/172/Q172063/
 ---
 
 ## Q172063: PRB: Visual Basic UserDocuments Are Displayed as Garbage Text

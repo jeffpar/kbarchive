@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96669: How to Re-Create a Default FAST.INI for Font Assistant"
-permalink: kb/096/Q96669/
+permalink: /kb/096/Q96669/
 ---
 
 ## Q96669: How to Re-Create a Default FAST.INI for Font Assistant

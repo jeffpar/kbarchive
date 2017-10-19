@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295646: HOWTO: Transfer Data from ADO Data Source to Excel with ADO"
-permalink: kb/295/Q295646/
+permalink: /kb/295/Q295646/
 ---
 
 ## Q295646: HOWTO: Transfer Data from ADO Data Source to Excel with ADO

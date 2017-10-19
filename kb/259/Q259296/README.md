@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259296: HOWTO: Display a Progress Bar in a Status Bar"
-permalink: kb/259/Q259296/
+permalink: /kb/259/Q259296/
 ---
 
 ## Q259296: HOWTO: Display a Progress Bar in a Status Bar

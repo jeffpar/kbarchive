@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87549: FIX: ESP Not Updated Correctly After PUSHFD, POPFD"
-permalink: kb/087/Q87549/
+permalink: /kb/087/Q87549/
 ---
 
 ## Q87549: FIX: ESP Not Updated Correctly After PUSHFD, POPFD

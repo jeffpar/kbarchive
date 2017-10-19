@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143064: DOCERR: ControlBox Property Not Available at Run Time Per Help"
-permalink: kb/143/Q143064/
+permalink: /kb/143/Q143064/
 ---
 
 ## Q143064: DOCERR: ControlBox Property Not Available at Run Time Per Help

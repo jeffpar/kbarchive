@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193031: SMS: INVDOS Reports 2 GB Space on FAT32 Drives Larger Than 2 GB"
-permalink: kb/193/Q193031/
+permalink: /kb/193/Q193031/
 ---
 
 ## Q193031: SMS: INVDOS Reports 2 GB Space on FAT32 Drives Larger Than 2 GB

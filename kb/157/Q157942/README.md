@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157942: INFO: STL Sample for the sqrt and pow Functions"
-permalink: kb/157/Q157942/
+permalink: /kb/157/Q157942/
 ---
 
 ## Q157942: INFO: STL Sample for the sqrt and pow Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163323: XCON: Mtacheck.log"
-permalink: kb/163/Q163323/
+permalink: /kb/163/Q163323/
 ---
 
 ## Q163323: XCON: Mtacheck.log

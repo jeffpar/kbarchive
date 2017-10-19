@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182152: FIX: StillExecuting Property Returns Incorrect Value"
-permalink: kb/182/Q182152/
+permalink: /kb/182/Q182152/
 ---
 
 ## Q182152: FIX: StillExecuting Property Returns Incorrect Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191138: How to Install the NTOP on Cluster Server"
-permalink: kb/191/Q191138/
+permalink: /kb/191/Q191138/
 ---
 
 ## Q191138: How to Install the NTOP on Cluster Server

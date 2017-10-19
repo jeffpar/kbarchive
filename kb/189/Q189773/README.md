@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189773: FIX: Compile Fails in WITH/ENDWITH and IF Using Dot Operator"
-permalink: kb/189/Q189773/
+permalink: /kb/189/Q189773/
 ---
 
 ## Q189773: FIX: Compile Fails in WITH/ENDWITH and IF Using Dot Operator

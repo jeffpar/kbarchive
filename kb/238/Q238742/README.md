@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238742: Query Modifications Display at Top of Results Page"
-permalink: kb/238/Q238742/
+permalink: /kb/238/Q238742/
 ---
 
 ## Q238742: Query Modifications Display at Top of Results Page

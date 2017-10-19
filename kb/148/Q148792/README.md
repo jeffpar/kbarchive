@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148792: PC Ext: Not Dial the Modem at the Regular Interval Variable"
-permalink: kb/148/Q148792/
+permalink: /kb/148/Q148792/
 ---
 
 ## Q148792: PC Ext: Not Dial the Modem at the Regular Interval Variable

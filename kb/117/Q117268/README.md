@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117268: File Manager Shows Wrong File Size for Files Larger than 4 GB"
-permalink: kb/117/Q117268/
+permalink: /kb/117/Q117268/
 ---
 
 ## Q117268: File Manager Shows Wrong File Size for Files Larger than 4 GB

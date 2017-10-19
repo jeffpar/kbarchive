@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119556: Err Msg: PP4 Caused an Exception in the Win16 Subsystem"
-permalink: kb/119/Q119556/
+permalink: /kb/119/Q119556/
 ---
 
 ## Q119556: Err Msg: PP4 Caused an Exception in the Win16 Subsystem

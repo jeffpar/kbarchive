@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115319: CONN: Proxy list Contains Local Postoffice Addresses"
-permalink: kb/115/Q115319/
+permalink: /kb/115/Q115319/
 ---
 
 ## Q115319: CONN: Proxy list Contains Local Postoffice Addresses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94349: Using FoxPro Text Merge Feature with Multiple Databases"
-permalink: kb/094/Q94349/
+permalink: /kb/094/Q94349/
 ---
 
 ## Q94349: Using FoxPro Text Merge Feature with Multiple Databases

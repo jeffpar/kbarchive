@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282461: DEACTIVATE_SESSION Returns Parameter_Check If No Sessions Active"
-permalink: kb/282/Q282461/
+permalink: /kb/282/Q282461/
 ---
 
 ## Q282461: DEACTIVATE_SESSION Returns Parameter_Check If No Sessions Active

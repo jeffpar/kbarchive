@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123158: Adding Control Bars to Foundation Classes Dialogs"
-permalink: kb/123/Q123158/
+permalink: /kb/123/Q123158/
 ---
 
 ## Q123158: Adding Control Bars to Foundation Classes Dialogs

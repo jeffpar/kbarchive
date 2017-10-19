@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136529: BUG: MDI Child Form Is Drawn Without Title in Certain Cases"
-permalink: kb/136/Q136529/
+permalink: /kb/136/Q136529/
 ---
 
 ## Q136529: BUG: MDI Child Form Is Drawn Without Title in Certain Cases

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182303: Twinax Connections Should Be Restricted To Secondary DLC Role"
-permalink: kb/182/Q182303/
+permalink: /kb/182/Q182303/
 ---
 
 ## Q182303: Twinax Connections Should Be Restricted To Secondary DLC Role

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184757: Programs on Pan-Chinese Windows NT May Use Fixed Font for Menus"
-permalink: kb/184/Q184757/
+permalink: /kb/184/Q184757/
 ---
 
 ## Q184757: Programs on Pan-Chinese Windows NT May Use Fixed Font for Menus

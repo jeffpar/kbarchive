@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199985: SMS: Event ID 320 Occurs and Jobs Remain Pending"
-permalink: kb/199/Q199985/
+permalink: /kb/199/Q199985/
 ---
 
 ## Q199985: SMS: Event ID 320 Occurs and Jobs Remain Pending

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154742: Codewiz.exe the Xbase Code Import Wizard for VFP"
-permalink: kb/154/Q154742/
+permalink: /kb/154/Q154742/
 ---
 
 ## Q154742: Codewiz.exe the Xbase Code Import Wizard for VFP

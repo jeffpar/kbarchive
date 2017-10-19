@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90820: Permanently Converting Text Files to Write Format"
-permalink: kb/090/Q90820/
+permalink: /kb/090/Q90820/
 ---
 
 ## Q90820: Permanently Converting Text Files to Write Format

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281927: FP2002: Prompted to Save File in ASP Format, Then HTML Format"
-permalink: kb/281/Q281927/
+permalink: /kb/281/Q281927/
 ---
 
 ## Q281927: FP2002: Prompted to Save File in ASP Format, Then HTML Format

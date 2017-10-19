@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196601: PRB: DCOMCNFG Displays One Class Name For Each ActiveX Server"
-permalink: kb/196/Q196601/
+permalink: /kb/196/Q196601/
 ---
 
 ## Q196601: PRB: DCOMCNFG Displays One Class Name For Each ActiveX Server

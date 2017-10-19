@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142328: Windows 95 - How to Change International Dialing Access Codes"
-permalink: kb/142/Q142328/
+permalink: /kb/142/Q142328/
 ---
 
 ## Q142328: Windows 95 - How to Change International Dialing Access Codes

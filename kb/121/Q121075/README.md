@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121075: DOCERR: Video for Windows Dev Kit ver. 1.1 &amp; JPEG Compression"
-permalink: kb/121/Q121075/
+permalink: /kb/121/Q121075/
 ---
 
 ## Q121075: DOCERR: Video for Windows Dev Kit ver. 1.1 &amp; JPEG Compression

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272409: MSN Password and Member ID Requirements for MSN Companion"
-permalink: kb/272/Q272409/
+permalink: /kb/272/Q272409/
 ---
 
 ## Q272409: MSN Password and Member ID Requirements for MSN Companion

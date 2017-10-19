@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151748: Contents of Windows 95 Support Assistant Readme.txt File"
-permalink: kb/151/Q151748/
+permalink: /kb/151/Q151748/
 ---
 
 ## Q151748: Contents of Windows 95 Support Assistant Readme.txt File

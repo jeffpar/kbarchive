@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131656: MAC ANCIENT LANDS: Installs QuickTime Musical Instruments"
-permalink: kb/131/Q131656/
+permalink: /kb/131/Q131656/
 ---
 
 ## Q131656: MAC ANCIENT LANDS: Installs QuickTime Musical Instruments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141807: BUG: RPC NetBIOS Calls Fail over RAS"
-permalink: kb/141/Q141807/
+permalink: /kb/141/Q141807/
 ---
 
 ## Q141807: BUG: RPC NetBIOS Calls Fail over RAS

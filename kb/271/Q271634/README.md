@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271634: XADM: How to Apply Exchange Server 5.5 Fixes to Cluster"
-permalink: kb/271/Q271634/
+permalink: /kb/271/Q271634/
 ---
 
 ## Q271634: XADM: How to Apply Exchange Server 5.5 Fixes to Cluster

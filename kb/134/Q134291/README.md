@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134291: Show All Messages in BBS Is Disabled"
-permalink: kb/134/Q134291/
+permalink: /kb/134/Q134291/
 ---
 
 ## Q134291: Show All Messages in BBS Is Disabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139709: XCLN: Err Msg: Connection will be closed"
-permalink: kb/139/Q139709/
+permalink: /kb/139/Q139709/
 ---
 
 ## Q139709: XCLN: Err Msg: Connection will be closed

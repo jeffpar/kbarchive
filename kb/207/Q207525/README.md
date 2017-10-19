@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207525: PRB: IIS4: ASP/ADO Do Not Work Across UNC Path"
-permalink: kb/207/Q207525/
+permalink: /kb/207/Q207525/
 ---
 
 ## Q207525: PRB: IIS4: ASP/ADO Do Not Work Across UNC Path

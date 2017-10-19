@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123857: PC DirSync: DirSync Request Limitations of SRVMAIN.EXE"
-permalink: kb/123/Q123857/
+permalink: /kb/123/Q123857/
 ---
 
 ## Q123857: PC DirSync: DirSync Request Limitations of SRVMAIN.EXE

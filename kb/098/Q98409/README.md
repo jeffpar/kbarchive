@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98409: INFO: Using a Structure with an Empty Array Member"
-permalink: kb/098/Q98409/
+permalink: /kb/098/Q98409/
 ---
 
 ## Q98409: INFO: Using a Structure with an Empty Array Member

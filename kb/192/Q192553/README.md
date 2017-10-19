@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192553: WD97: Using Keyboard to Move Between Newspaper-Style Columns"
-permalink: kb/192/Q192553/
+permalink: /kb/192/Q192553/
 ---
 
 ## Q192553: WD97: Using Keyboard to Move Between Newspaper-Style Columns

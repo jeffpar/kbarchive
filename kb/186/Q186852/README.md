@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186852: WD97:Heading Styles Reset After Applying Heading Level Numbering"
-permalink: kb/186/Q186852/
+permalink: /kb/186/Q186852/
 ---
 
 ## Q186852: WD97:Heading Styles Reset After Applying Heading Level Numbering

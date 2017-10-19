@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230157: Margins Not Correct with HP 4si Printer in Windows NT SP4"
-permalink: kb/230/Q230157/
+permalink: /kb/230/Q230157/
 ---
 
 ## Q230157: Margins Not Correct with HP 4si Printer in Windows NT SP4

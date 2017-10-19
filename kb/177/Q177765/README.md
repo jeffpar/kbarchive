@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177765: XADM: Version of Store Incompatible with Version of Admin Pgm"
-permalink: kb/177/Q177765/
+permalink: /kb/177/Q177765/
 ---
 
 ## Q177765: XADM: Version of Store Incompatible with Version of Admin Pgm

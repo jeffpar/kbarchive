@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246914: HOWTO: Manually Promote a Label in Visual SourceSafe"
-permalink: kb/246/Q246914/
+permalink: /kb/246/Q246914/
 ---
 
 ## Q246914: HOWTO: Manually Promote a Label in Visual SourceSafe

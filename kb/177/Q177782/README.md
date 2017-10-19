@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177782: XADM: Home Server Not Updated After a Move Mailbox"
-permalink: kb/177/Q177782/
+permalink: /kb/177/Q177782/
 ---
 
 ## Q177782: XADM: Home Server Not Updated After a Move Mailbox

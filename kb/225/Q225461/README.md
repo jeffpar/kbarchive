@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225461: Outlook Contacts Are Not Accessible from Fax Send Utility on SBS"
-permalink: kb/225/Q225461/
+permalink: /kb/225/Q225461/
 ---
 
 ## Q225461: Outlook Contacts Are Not Accessible from Fax Send Utility on SBS

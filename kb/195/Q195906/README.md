@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195906: XADM: How To Move A Public Folder To A Server In The Same Site"
-permalink: kb/195/Q195906/
+permalink: /kb/195/Q195906/
 ---
 
 ## Q195906: XADM: How To Move A Public Folder To A Server In The Same Site

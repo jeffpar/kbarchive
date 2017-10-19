@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302426: MSN Explorer May Stop Responding When Deleting Text From A Forwa"
-permalink: kb/302/Q302426/
+permalink: /kb/302/Q302426/
 ---
 
 ## Q302426: MSN Explorer May Stop Responding When Deleting Text From A Forwa

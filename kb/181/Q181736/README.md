@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181736: LUA or EIS Application Must Enforce 3270 Bracket Protocol"
-permalink: kb/181/Q181736/
+permalink: /kb/181/Q181736/
 ---
 
 ## Q181736: LUA or EIS Application Must Enforce 3270 Bracket Protocol

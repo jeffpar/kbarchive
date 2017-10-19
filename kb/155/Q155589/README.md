@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155589: XADM: Import Format for Generic SMTP Custom Recipient"
-permalink: kb/155/Q155589/
+permalink: /kb/155/Q155589/
 ---
 
 ## Q155589: XADM: Import Format for Generic SMTP Custom Recipient

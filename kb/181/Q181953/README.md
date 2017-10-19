@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181953: Sending RTF with Attachment as MIME Loses Attachment"
-permalink: kb/181/Q181953/
+permalink: /kb/181/Q181953/
 ---
 
 ## Q181953: Sending RTF with Attachment as MIME Loses Attachment

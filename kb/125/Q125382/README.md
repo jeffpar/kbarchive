@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125382: Print Manager Displays Error Status with HP LaserJet 4+"
-permalink: kb/125/Q125382/
+permalink: /kb/125/Q125382/
 ---
 
 ## Q125382: Print Manager Displays Error Status with HP LaserJet 4+

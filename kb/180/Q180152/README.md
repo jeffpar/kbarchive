@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180152: HOWTO: Print from an Active Document Server"
-permalink: kb/180/Q180152/
+permalink: /kb/180/Q180152/
 ---
 
 ## Q180152: HOWTO: Print from an Active Document Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98318: Tandy DAC or PSSJ Windows Sound Driver"
-permalink: kb/098/Q98318/
+permalink: /kb/098/Q98318/
 ---
 
 ## Q98318: Tandy DAC or PSSJ Windows Sound Driver

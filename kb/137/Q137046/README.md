@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137046: SMTP: Where to find Microsoft TCP/IP for the SMTP Gateway"
-permalink: kb/137/Q137046/
+permalink: /kb/137/Q137046/
 ---
 
 ## Q137046: SMTP: Where to find Microsoft TCP/IP for the SMTP Gateway

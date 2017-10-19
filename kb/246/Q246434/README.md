@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246434: XFOR: Internet Msgs from Notes to Exchange Need SMTP Address"
-permalink: kb/246/Q246434/
+permalink: /kb/246/Q246434/
 ---
 
 ## Q246434: XFOR: Internet Msgs from Notes to Exchange Need SMTP Address

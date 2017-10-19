@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132893: PRB: Exceptions Thrown During Construction Can Orphan Memory"
-permalink: kb/132/Q132893/
+permalink: /kb/132/Q132893/
 ---
 
 ## Q132893: PRB: Exceptions Thrown During Construction Can Orphan Memory

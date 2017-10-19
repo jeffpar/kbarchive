@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82073: Norton Desktop for Windows DiskCopy Slow"
-permalink: kb/082/Q82073/
+permalink: /kb/082/Q82073/
 ---
 
 ## Q82073: Norton Desktop for Windows DiskCopy Slow

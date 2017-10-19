@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236434: XCLN: You Do Not Have a Valid Microsoft Exchange Offline Store"
-permalink: kb/236/Q236434/
+permalink: /kb/236/Q236434/
 ---
 
 ## Q236434: XCLN: You Do Not Have a Valid Microsoft Exchange Offline Store

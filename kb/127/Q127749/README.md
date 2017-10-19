@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127749: MSB Solar: Sounds Echo with Mitsumi CD in Windows NT 3.5"
-permalink: kb/127/Q127749/
+permalink: /kb/127/Q127749/
 ---
 
 ## Q127749: MSB Solar: Sounds Echo with Mitsumi CD in Windows NT 3.5

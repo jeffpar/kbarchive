@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166828: Upgrade Installation of Windows NT 4.0 Results In STOP Errors"
-permalink: kb/166/Q166828/
+permalink: /kb/166/Q166828/
 ---
 
 ## Q166828: Upgrade Installation of Windows NT 4.0 Results In STOP Errors

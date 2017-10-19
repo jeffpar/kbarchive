@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179974: FS98: Reduced Frame Rate When Flying LearJet 45"
-permalink: kb/179/Q179974/
+permalink: /kb/179/Q179974/
 ---
 
 ## Q179974: FS98: Reduced Frame Rate When Flying LearJet 45

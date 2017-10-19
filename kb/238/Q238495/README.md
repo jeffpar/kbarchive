@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238495: STOP 0xC000021A in Winlogon.exe on a Terminal Server"
-permalink: kb/238/Q238495/
+permalink: /kb/238/Q238495/
 ---
 
 ## Q238495: STOP 0xC000021A in Winlogon.exe on a Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134600: RPL Setup Err Msg: Missing Batch File"
-permalink: kb/134/Q134600/
+permalink: /kb/134/Q134600/
 ---
 
 ## Q134600: RPL Setup Err Msg: Missing Batch File

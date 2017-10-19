@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180533: HTMLA: Host Header Name Information Not Kept in New Web Site"
-permalink: kb/180/Q180533/
+permalink: /kb/180/Q180533/
 ---
 
 ## Q180533: HTMLA: Host Header Name Information Not Kept in New Web Site

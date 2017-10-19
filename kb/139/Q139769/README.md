@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139769: How to Add a New Value to a List of Values in a Combo Box"
-permalink: kb/139/Q139769/
+permalink: /kb/139/Q139769/
 ---
 
 ## Q139769: How to Add a New Value to a List of Values in a Combo Box

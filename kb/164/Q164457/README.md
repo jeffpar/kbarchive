@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164457: XFOR: IMC Returns NDR When Sending to &quot;Specify by E-mail Domain&quot;"
-permalink: kb/164/Q164457/
+permalink: /kb/164/Q164457/
 ---
 
 ## Q164457: XFOR: IMC Returns NDR When Sending to &quot;Specify by E-mail Domain&quot;

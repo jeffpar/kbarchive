@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129140: SMTP: Gateway Hangs While Processing Message"
-permalink: kb/129/Q129140/
+permalink: /kb/129/Q129140/
 ---
 
 ## Q129140: SMTP: Gateway Hangs While Processing Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88385: Word Cannot Use the Tools-Path Specified in WIN.INI"
-permalink: kb/088/Q88385/
+permalink: /kb/088/Q88385/
 ---
 
 ## Q88385: Word Cannot Use the Tools-Path Specified in WIN.INI

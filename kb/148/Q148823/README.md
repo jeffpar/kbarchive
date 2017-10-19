@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148823: Cannot Play .wav and .avi Files on Toshiba 2155CDS Laptop"
-permalink: kb/148/Q148823/
+permalink: /kb/148/Q148823/
 ---
 
 ## Q148823: Cannot Play .wav and .avi Files on Toshiba 2155CDS Laptop

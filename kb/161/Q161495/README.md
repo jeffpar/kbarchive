@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161495: XADM: Setting Up Exchange View-Only Administrators"
-permalink: kb/161/Q161495/
+permalink: /kb/161/Q161495/
 ---
 
 ## Q161495: XADM: Setting Up Exchange View-Only Administrators

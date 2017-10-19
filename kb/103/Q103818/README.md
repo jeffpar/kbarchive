@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103818: DoubleSpace Leaves &#92;WINDOWS&#92;SPART.PAR on Host Drive"
-permalink: kb/103/Q103818/
+permalink: /kb/103/Q103818/
 ---
 
 ## Q103818: DoubleSpace Leaves &#92;WINDOWS&#92;SPART.PAR on Host Drive

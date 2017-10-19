@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139068: PC WSPlus: Issues When Multiple Users Have the Same Assistant"
-permalink: kb/139/Q139068/
+permalink: /kb/139/Q139068/
 ---
 
 ## Q139068: PC WSPlus: Issues When Multiple Users Have the Same Assistant

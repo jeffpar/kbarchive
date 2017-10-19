@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198662: DOC: Undocumented SynonymType Property Value for Oracle Synonyms"
-permalink: kb/198/Q198662/
+permalink: /kb/198/Q198662/
 ---
 
 ## Q198662: DOC: Undocumented SynonymType Property Value for Oracle Synonyms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319002: FIX: Toolbar May Cause Incorrect Control Focus with MSAA"
-permalink: kb/319/Q319002/
+permalink: /kb/319/Q319002/
 ---
 
 ## Q319002: FIX: Toolbar May Cause Incorrect Control Focus with MSAA

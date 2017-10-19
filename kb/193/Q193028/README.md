@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193028: Wine Guide: Error Message When Starting in 640 x 480 Resolution"
-permalink: kb/193/Q193028/
+permalink: /kb/193/Q193028/
 ---
 
 ## Q193028: Wine Guide: Error Message When Starting in 640 x 480 Resolution

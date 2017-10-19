@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196089: PRB: ALT Key Activates a Menu Defined Programmatically"
-permalink: kb/196/Q196089/
+permalink: /kb/196/Q196089/
 ---
 
 ## Q196089: PRB: ALT Key Activates a Menu Defined Programmatically

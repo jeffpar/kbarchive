@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188255: ArrayCom.exe Passing Array To COM DLL by Reference"
-permalink: kb/188/Q188255/
+permalink: /kb/188/Q188255/
 ---
 
 ## Q188255: ArrayCom.exe Passing Array To COM DLL by Reference

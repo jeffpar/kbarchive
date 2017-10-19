@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139759: FIX: CDatabase::ExecuteSQL() Fails with UNICODE Build"
-permalink: kb/139/Q139759/
+permalink: /kb/139/Q139759/
 ---
 
 ## Q139759: FIX: CDatabase::ExecuteSQL() Fails with UNICODE Build

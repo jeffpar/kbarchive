@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145996: FIX: _setmaxstdio Causes Access Violation"
-permalink: kb/145/Q145996/
+permalink: /kb/145/Q145996/
 ---
 
 ## Q145996: FIX: _setmaxstdio Causes Access Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281734: XFOR: Message Sent Time Stamp Off by One Hour After Migrating"
-permalink: kb/281/Q281734/
+permalink: /kb/281/Q281734/
 ---
 
 ## Q281734: XFOR: Message Sent Time Stamp Off by One Hour After Migrating

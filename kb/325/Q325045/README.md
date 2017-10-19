@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325045: A &quot;STOP 0x50&quot; Occurs in Rdr.sys with the SRP Installed"
-permalink: kb/325/Q325045/
+permalink: /kb/325/Q325045/
 ---
 
 ## Q325045: A &quot;STOP 0x50&quot; Occurs in Rdr.sys with the SRP Installed

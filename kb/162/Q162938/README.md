@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162938: WD97: Macro Returns to View Used Before Opening Header"
-permalink: kb/162/Q162938/
+permalink: /kb/162/Q162938/
 ---
 
 ## Q162938: WD97: Macro Returns to View Used Before Opening Header

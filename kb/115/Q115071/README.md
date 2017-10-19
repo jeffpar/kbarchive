@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115071: Creative Writer 1: Difficulty Printing Card to HP DeskJet"
-permalink: kb/115/Q115071/
+permalink: /kb/115/Q115071/
 ---
 
 ## Q115071: Creative Writer 1: Difficulty Printing Card to HP DeskJet

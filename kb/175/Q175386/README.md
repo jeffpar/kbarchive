@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175386: How to Move the Event Logs to Another Location"
-permalink: kb/175/Q175386/
+permalink: /kb/175/Q175386/
 ---
 
 ## Q175386: How to Move the Event Logs to Another Location

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136894: First Contact Form for AppleTalk Mail Client &amp; Server"
-permalink: kb/136/Q136894/
+permalink: /kb/136/Q136894/
 ---
 
 ## Q136894: First Contact Form for AppleTalk Mail Client &amp; Server

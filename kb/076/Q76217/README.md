@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76217: FIX: Nested Structures May Hang Macro Assembler 6.0"
-permalink: kb/076/Q76217/
+permalink: /kb/076/Q76217/
 ---
 
 ## Q76217: FIX: Nested Structures May Hang Macro Assembler 6.0

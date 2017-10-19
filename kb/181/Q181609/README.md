@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181609: NoClick.exe Illustrates Click Method of StatusBar OCX"
-permalink: kb/181/Q181609/
+permalink: /kb/181/Q181609/
 ---
 
 ## Q181609: NoClick.exe Illustrates Click Method of StatusBar OCX

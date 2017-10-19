@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223152: PRB: Error 0x80004005 Using Comctl32-Based MFC ActiveX Control"
-permalink: kb/223/Q223152/
+permalink: /kb/223/Q223152/
 ---
 
 ## Q223152: PRB: Error 0x80004005 Using Comctl32-Based MFC ActiveX Control

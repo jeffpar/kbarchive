@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157106: WD97: ErrMsg: Word Could Not Open &lt;File Name.doc&gt; as a Data ..."
-permalink: kb/157/Q157106/
+permalink: /kb/157/Q157106/
 ---
 
 ## Q157106: WD97: ErrMsg: Word Could Not Open &lt;File Name.doc&gt; as a Data ...

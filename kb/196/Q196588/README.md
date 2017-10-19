@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196588: BUG: Picture Field Dropped as Text Box on Data Report"
-permalink: kb/196/Q196588/
+permalink: /kb/196/Q196588/
 ---
 
 ## Q196588: BUG: Picture Field Dropped as Text Box on Data Report

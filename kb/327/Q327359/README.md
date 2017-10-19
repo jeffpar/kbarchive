@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327359: FIX: Event 25 Logged If Printer Configured for Upper Paper Tray"
-permalink: kb/327/Q327359/
+permalink: /kb/327/Q327359/
 ---
 
 ## Q327359: FIX: Event 25 Logged If Printer Configured for Upper Paper Tray

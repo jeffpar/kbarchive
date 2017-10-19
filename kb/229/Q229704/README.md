@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229704: IIS 4.0 Supports HTTP 1.1 File Download Resume Capability"
-permalink: kb/229/Q229704/
+permalink: /kb/229/Q229704/
 ---
 
 ## Q229704: IIS 4.0 Supports HTTP 1.1 File Download Resume Capability

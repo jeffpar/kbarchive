@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201121: XFOR: MSExchangeIMC Profile Registry Key Is Missing"
-permalink: kb/201/Q201121/
+permalink: /kb/201/Q201121/
 ---
 
 ## Q201121: XFOR: MSExchangeIMC Profile Registry Key Is Missing

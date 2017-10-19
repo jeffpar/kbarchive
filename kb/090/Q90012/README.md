@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90012: BUG: Friction and Factor PWB Switches do not work"
-permalink: kb/090/Q90012/
+permalink: /kb/090/Q90012/
 ---
 
 ## Q90012: BUG: Friction and Factor PWB Switches do not work

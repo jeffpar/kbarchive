@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314752: FIX: adLockBatchOptimistic Slows Down VFP OLE DB Provider"
-permalink: kb/314/Q314752/
+permalink: /kb/314/Q314752/
 ---
 
 ## Q314752: FIX: adLockBatchOptimistic Slows Down VFP OLE DB Provider

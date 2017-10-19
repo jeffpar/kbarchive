@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154274: Error Message: The Item(s) Could Not Be Saved"
-permalink: kb/154/Q154274/
+permalink: /kb/154/Q154274/
 ---
 
 ## Q154274: Error Message: The Item(s) Could Not Be Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86166: Using SMARTDrive 4.0 with Peachtree Accounting Software"
-permalink: kb/086/Q86166/
+permalink: /kb/086/Q86166/
 ---
 
 ## Q86166: Using SMARTDrive 4.0 with Peachtree Accounting Software

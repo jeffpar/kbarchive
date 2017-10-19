@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104535: DoubleSpace Maintenance Program Does Not Display All Drives"
-permalink: kb/104/Q104535/
+permalink: /kb/104/Q104535/
 ---
 
 ## Q104535: DoubleSpace Maintenance Program Does Not Display All Drives

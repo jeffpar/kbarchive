@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163507: Trap 0x00000024 Occurs During the Autochk Sequence at Boot"
-permalink: kb/163/Q163507/
+permalink: /kb/163/Q163507/
 ---
 
 ## Q163507: Trap 0x00000024 Occurs During the Autochk Sequence at Boot

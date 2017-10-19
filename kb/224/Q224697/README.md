@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224697: WD97: Word Mail Merge Starts Second Instance of Access"
-permalink: kb/224/Q224697/
+permalink: /kb/224/Q224697/
 ---
 
 ## Q224697: WD97: Word Mail Merge Starts Second Instance of Access

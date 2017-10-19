@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108070: Application Log Full Dialog Box Appears Instead of Overwriting"
-permalink: kb/108/Q108070/
+permalink: /kb/108/Q108070/
 ---
 
 ## Q108070: Application Log Full Dialog Box Appears Instead of Overwriting

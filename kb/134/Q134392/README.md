@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134392: FIX: Shape Control's Mouseup Incorrectly Fired by Form Click"
-permalink: kb/134/Q134392/
+permalink: /kb/134/Q134392/
 ---
 
 ## Q134392: FIX: Shape Control's Mouseup Incorrectly Fired by Form Click

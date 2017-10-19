@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244039: 3270 Applet Does Not Support Multiple Connected Sessions"
-permalink: kb/244/Q244039/
+permalink: /kb/244/Q244039/
 ---
 
 ## Q244039: 3270 Applet Does Not Support Multiple Connected Sessions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305317: PRB: SQL Builder Improperly Refreshes upon Editing Query"
-permalink: kb/305/Q305317/
+permalink: /kb/305/Q305317/
 ---
 
 ## Q305317: PRB: SQL Builder Improperly Refreshes upon Editing Query

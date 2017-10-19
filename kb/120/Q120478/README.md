@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120478: Schubert: Manual Installation Instructions"
-permalink: kb/120/Q120478/
+permalink: /kb/120/Q120478/
 ---
 
 ## Q120478: Schubert: Manual Installation Instructions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129647: Using ROLLBACK and END TRANSACTION in Nested Transactions"
-permalink: kb/129/Q129647/
+permalink: /kb/129/Q129647/
 ---
 
 ## Q129647: Using ROLLBACK and END TRANSACTION in Nested Transactions

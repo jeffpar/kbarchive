@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177422: BUG: Invalid Directory Path Encountered During Install"
-permalink: kb/177/Q177422/
+permalink: /kb/177/Q177422/
 ---
 
 ## Q177422: BUG: Invalid Directory Path Encountered During Install

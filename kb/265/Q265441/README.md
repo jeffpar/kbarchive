@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265441: XADM: Some Questions and Answers About the Exmerge Utility"
-permalink: kb/265/Q265441/
+permalink: /kb/265/Q265441/
 ---
 
 ## Q265441: XADM: Some Questions and Answers About the Exmerge Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152886: XADM: Message Tracking Time Stamps are Incorrect"
-permalink: kb/152/Q152886/
+permalink: /kb/152/Q152886/
 ---
 
 ## Q152886: XADM: Message Tracking Time Stamps are Incorrect

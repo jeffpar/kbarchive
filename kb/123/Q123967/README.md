@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123967: Code Example Shows How to Manage Navigation Buttons"
-permalink: kb/123/Q123967/
+permalink: /kb/123/Q123967/
 ---
 
 ## Q123967: Code Example Shows How to Manage Navigation Buttons

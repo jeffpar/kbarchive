@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78596: Why MS-DOS Shell May Require Updated Mouse Driver"
-permalink: kb/078/Q78596/
+permalink: /kb/078/Q78596/
 ---
 
 ## Q78596: Why MS-DOS Shell May Require Updated Mouse Driver

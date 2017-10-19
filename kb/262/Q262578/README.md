@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262578: XADM: Add Move User Event Logging"
-permalink: kb/262/Q262578/
+permalink: /kb/262/Q262578/
 ---
 
 ## Q262578: XADM: Add Move User Event Logging

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299505: How to Deploy Passport Across Several Computers in a Cluster"
-permalink: kb/299/Q299505/
+permalink: /kb/299/Q299505/
 ---
 
 ## Q299505: How to Deploy Passport Across Several Computers in a Cluster

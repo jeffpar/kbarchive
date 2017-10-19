@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165345: SCS Codes Ignored When Bypassing GDI"
-permalink: kb/165/Q165345/
+permalink: /kb/165/Q165345/
 ---
 
 ## Q165345: SCS Codes Ignored When Bypassing GDI

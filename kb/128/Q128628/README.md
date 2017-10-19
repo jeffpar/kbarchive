@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128628: PC Ext: External Reports Incorrect Version"
-permalink: kb/128/Q128628/
+permalink: /kb/128/Q128628/
 ---
 
 ## Q128628: PC Ext: External Reports Incorrect Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93571: PC DirSync: CTRL+C Displayed But Not Used in REQMAIN.EXE"
-permalink: kb/093/Q93571/
+permalink: /kb/093/Q93571/
 ---
 
 ## Q93571: PC DirSync: CTRL+C Displayed But Not Used in REQMAIN.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108928: Setting Baud Rates in Windows 3.1"
-permalink: kb/108/Q108928/
+permalink: /kb/108/Q108928/
 ---
 
 ## Q108928: Setting Baud Rates in Windows 3.1

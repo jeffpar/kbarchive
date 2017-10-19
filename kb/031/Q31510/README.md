@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31510: INFO: Bitwise Complement Operator Appears to Fail on Comparison"
-permalink: kb/031/Q31510/
+permalink: /kb/031/Q31510/
 ---
 
 ## Q31510: INFO: Bitwise Complement Operator Appears to Fail on Comparison

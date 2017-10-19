@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90921: WFWG Err Msg: The Specified Drive Letter or Device Is Invalid"
-permalink: kb/090/Q90921/
+permalink: /kb/090/Q90921/
 ---
 
 ## Q90921: WFWG Err Msg: The Specified Drive Letter or Device Is Invalid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271891: AoE II Expansion: The Conquerors: List of New Features"
-permalink: kb/271/Q271891/
+permalink: /kb/271/Q271891/
 ---
 
 ## Q271891: AoE II Expansion: The Conquerors: List of New Features

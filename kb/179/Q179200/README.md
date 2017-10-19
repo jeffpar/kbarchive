@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179200: XADM: Removed AB View Containers Are Re-created Automatically"
-permalink: kb/179/Q179200/
+permalink: /kb/179/Q179200/
 ---
 
 ## Q179200: XADM: Removed AB View Containers Are Re-created Automatically

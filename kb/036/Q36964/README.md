@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36964: Meaning of the /PATH:ON Option of the MS-DOS APPEND Command"
-permalink: kb/036/Q36964/
+permalink: /kb/036/Q36964/
 ---
 
 ## Q36964: Meaning of the /PATH:ON Option of the MS-DOS APPEND Command

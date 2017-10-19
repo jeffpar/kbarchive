@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198720: SMSINST: Script Item Text Must be Defined for Every Language"
-permalink: kb/198/Q198720/
+permalink: /kb/198/Q198720/
 ---
 
 ## Q198720: SMSINST: Script Item Text Must be Defined for Every Language

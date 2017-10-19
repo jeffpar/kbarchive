@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180516: WD97: Subdocuments Not Saved with Master Document on FTP Server"
-permalink: kb/180/Q180516/
+permalink: /kb/180/Q180516/
 ---
 
 ## Q180516: WD97: Subdocuments Not Saved with Master Document on FTP Server

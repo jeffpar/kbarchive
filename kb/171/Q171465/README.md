@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171465: CardBus PC Card Socket Unsupported in Windows NT 4.0"
-permalink: kb/171/Q171465/
+permalink: /kb/171/Q171465/
 ---
 
 ## Q171465: CardBus PC Card Socket Unsupported in Windows NT 4.0

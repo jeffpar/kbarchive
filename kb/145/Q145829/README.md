@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145829: Print Time Is Different From Printer Available Time"
-permalink: kb/145/Q145829/
+permalink: /kb/145/Q145829/
 ---
 
 ## Q145829: Print Time Is Different From Printer Available Time

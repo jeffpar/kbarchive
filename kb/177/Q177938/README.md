@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177938: XADM: Using AT Command for Command-Line Import/Export"
-permalink: kb/177/Q177938/
+permalink: /kb/177/Q177938/
 ---
 
 ## Q177938: XADM: Using AT Command for Command-Line Import/Export

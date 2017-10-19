@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137239: More Disk Space Required to Copy or Move Compressed Files"
-permalink: kb/137/Q137239/
+permalink: /kb/137/Q137239/
 ---
 
 ## Q137239: More Disk Space Required to Copy or Move Compressed Files

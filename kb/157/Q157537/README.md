@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157537: Windows NT Backup Does Not Recognize Multiple Tape Partitions"
-permalink: kb/157/Q157537/
+permalink: /kb/157/Q157537/
 ---
 
 ## Q157537: Windows NT Backup Does Not Recognize Multiple Tape Partitions

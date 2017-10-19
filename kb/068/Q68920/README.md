@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68920: ASD: Can't Place Aircraft Numbers on Experimental Plane"
-permalink: kb/068/Q68920/
+permalink: /kb/068/Q68920/
 ---
 
 ## Q68920: ASD: Can't Place Aircraft Numbers on Experimental Plane

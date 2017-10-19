@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132155: Sybase SQLServer Services Fail to Start"
-permalink: kb/132/Q132155/
+permalink: /kb/132/Q132155/
 ---
 
 ## Q132155: Sybase SQLServer Services Fail to Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130247: How to Set Up and Use Oracle7 Data Sources with ODBC"
-permalink: kb/130/Q130247/
+permalink: /kb/130/Q130247/
 ---
 
 ## Q130247: How to Set Up and Use Oracle7 Data Sources with ODBC

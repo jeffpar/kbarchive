@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159349: Resume On Ring Not Implemented for PC Card Modems"
-permalink: kb/159/Q159349/
+permalink: /kb/159/Q159349/
 ---
 
 ## Q159349: Resume On Ring Not Implemented for PC Card Modems

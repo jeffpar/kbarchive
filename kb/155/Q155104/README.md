@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155104: XCON: Event ID 178 Results if Mailbox Has No X.400 Address"
-permalink: kb/155/Q155104/
+permalink: /kb/155/Q155104/
 ---
 
 ## Q155104: XCON: Event ID 178 Results if Mailbox Has No X.400 Address

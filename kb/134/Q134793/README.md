@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134793: PRB: Text Labels Do Not Float with Memo Fields in a Report"
-permalink: kb/134/Q134793/
+permalink: /kb/134/Q134793/
 ---
 
 ## Q134793: PRB: Text Labels Do Not Float with Memo Fields in a Report

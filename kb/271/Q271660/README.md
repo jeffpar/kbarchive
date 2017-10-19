@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271660: Pocket Streets: Map Does Not Scroll When You Use Cursor Control"
-permalink: kb/271/Q271660/
+permalink: /kb/271/Q271660/
 ---
 
 ## Q271660: Pocket Streets: Map Does Not Scroll When You Use Cursor Control

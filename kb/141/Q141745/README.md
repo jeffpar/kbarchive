@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141745: Macintosh Wine Guide 1.0a: Files Installed During Installation"
-permalink: kb/141/Q141745/
+permalink: /kb/141/Q141745/
 ---
 
 ## Q141745: Macintosh Wine Guide 1.0a: Files Installed During Installation

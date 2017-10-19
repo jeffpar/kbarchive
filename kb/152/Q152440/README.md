@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152440: XADM: Import Error Message: One Warning Event Was Encountered"
-permalink: kb/152/Q152440/
+permalink: /kb/152/Q152440/
 ---
 
 ## Q152440: XADM: Import Error Message: One Warning Event Was Encountered

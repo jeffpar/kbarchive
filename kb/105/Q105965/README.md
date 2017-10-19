@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105965: PC DirSync: Err Msg: GAL Not Active on this PO"
-permalink: kb/105/Q105965/
+permalink: /kb/105/Q105965/
 ---
 
 ## Q105965: PC DirSync: Err Msg: GAL Not Active on this PO

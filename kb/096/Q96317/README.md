@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96317: Description of Microsoft TrueType Master Set Fonts"
-permalink: kb/096/Q96317/
+permalink: /kb/096/Q96317/
 ---
 
 ## Q96317: Description of Microsoft TrueType Master Set Fonts

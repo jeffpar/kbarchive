@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158903: Garbled Output from Macintosh to Shared PostScript Printer"
-permalink: kb/158/Q158903/
+permalink: /kb/158/Q158903/
 ---
 
 ## Q158903: Garbled Output from Macintosh to Shared PostScript Printer

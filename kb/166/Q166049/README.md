@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166049: WV: Relative Links Don't Work in Word Viewer"
-permalink: kb/166/Q166049/
+permalink: /kb/166/Q166049/
 ---
 
 ## Q166049: WV: Relative Links Don't Work in Word Viewer

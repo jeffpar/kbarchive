@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192932: XFOR: PROFS Does Not Retain File Extension of Attachment"
-permalink: kb/192/Q192932/
+permalink: /kb/192/Q192932/
 ---
 
 ## Q192932: XFOR: PROFS Does Not Retain File Extension of Attachment

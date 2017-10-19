@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0"
-permalink: kb/224/Q224831/
+permalink: /kb/224/Q224831/
 ---
 
 ## Q224831: Tips on Upgrading from IIS 3.0 to IIS 4.0

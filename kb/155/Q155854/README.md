@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155854: CG3: Sound Recorder Needed to Add .wav Files to Clip Gallery"
-permalink: kb/155/Q155854/
+permalink: /kb/155/Q155854/
 ---
 
 ## Q155854: CG3: Sound Recorder Needed to Add .wav Files to Clip Gallery

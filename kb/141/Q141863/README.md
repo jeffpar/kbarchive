@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141863: SAMPLE: Bdlg32.exe Draws a Bitmap in an MFC Dialog Box"
-permalink: kb/141/Q141863/
+permalink: /kb/141/Q141863/
 ---
 
 ## Q141863: SAMPLE: Bdlg32.exe Draws a Bitmap in an MFC Dialog Box

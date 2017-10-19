@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126059: Automap Err Msg: Cannot Find VER.DLL"
-permalink: kb/126/Q126059/
+permalink: /kb/126/Q126059/
 ---
 
 ## Q126059: Automap Err Msg: Cannot Find VER.DLL

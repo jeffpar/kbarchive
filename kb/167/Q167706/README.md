@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167706: FIX: Internet Transfer Control 5.0 &quot;POST&quot; Request Doesn't Work"
-permalink: kb/167/Q167706/
+permalink: /kb/167/Q167706/
 ---
 
 ## Q167706: FIX: Internet Transfer Control 5.0 &quot;POST&quot; Request Doesn't Work

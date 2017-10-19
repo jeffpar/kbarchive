@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265714: SNMP Registry Entries Are Saved in Plain Text Format"
-permalink: kb/265/Q265714/
+permalink: /kb/265/Q265714/
 ---
 
 ## Q265714: SNMP Registry Entries Are Saved in Plain Text Format

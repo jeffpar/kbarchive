@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60867: Looking for Files in Different Directories"
-permalink: kb/060/Q60867/
+permalink: /kb/060/Q60867/
 ---
 
 ## Q60867: Looking for Files in Different Directories

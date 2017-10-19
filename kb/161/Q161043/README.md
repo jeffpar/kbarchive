@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161043: SMS: Despooler Error: 'WIN32 ERROR = 32'"
-permalink: kb/161/Q161043/
+permalink: /kb/161/Q161043/
 ---
 
 ## Q161043: SMS: Despooler Error: 'WIN32 ERROR = 32'

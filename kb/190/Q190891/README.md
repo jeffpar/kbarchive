@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190891: SMS Doc Err: RSERVICE Is Unable to Install Rcmdsvc.exe"
-permalink: kb/190/Q190891/
+permalink: /kb/190/Q190891/
 ---
 
 ## Q190891: SMS Doc Err: RSERVICE Is Unable to Install Rcmdsvc.exe

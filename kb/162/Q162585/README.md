@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162585: File: DNS_DOC.EXE replaces corrupt DNS.DOC in IIS Training Kit"
-permalink: kb/162/Q162585/
+permalink: /kb/162/Q162585/
 ---
 
 ## Q162585: File: DNS_DOC.EXE replaces corrupt DNS.DOC in IIS Training Kit

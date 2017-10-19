@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140946: XADM: Microsoft Mail Interchange Hang During DirSync"
-permalink: kb/140/Q140946/
+permalink: /kb/140/Q140946/
 ---
 
 ## Q140946: XADM: Microsoft Mail Interchange Hang During DirSync

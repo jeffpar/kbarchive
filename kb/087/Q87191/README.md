@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87191: PROFS: Maximum Allowable Size of Mail Sent Through Gateway"
-permalink: kb/087/Q87191/
+permalink: /kb/087/Q87191/
 ---
 
 ## Q87191: PROFS: Maximum Allowable Size of Mail Sent Through Gateway

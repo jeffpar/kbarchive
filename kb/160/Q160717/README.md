@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160717: Restricting Access to Custom Recipients/Foreign Mail Addresses"
-permalink: kb/160/Q160717/
+permalink: /kb/160/Q160717/
 ---
 
 ## Q160717: Restricting Access to Custom Recipients/Foreign Mail Addresses

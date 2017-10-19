@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194492: WD97: Hidden Text Appearing in File Saved as Text Only"
-permalink: kb/194/Q194492/
+permalink: /kb/194/Q194492/
 ---
 
 ## Q194492: WD97: Hidden Text Appearing in File Saved as Text Only

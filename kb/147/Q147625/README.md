@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147625: Configuring Connections Using Eicon SDLC Link Services"
-permalink: kb/147/Q147625/
+permalink: /kb/147/Q147625/
 ---
 
 ## Q147625: Configuring Connections Using Eicon SDLC Link Services

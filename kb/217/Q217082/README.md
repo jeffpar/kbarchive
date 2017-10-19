@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217082: PRB: Connection Busy Message w/Remote Views of SQL Server Tables"
-permalink: kb/217/Q217082/
+permalink: /kb/217/Q217082/
 ---
 
 ## Q217082: PRB: Connection Busy Message w/Remote Views of SQL Server Tables

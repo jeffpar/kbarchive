@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240806: Internet Explorer May Not Negotiate SGC 128-Bit Connection"
-permalink: kb/240/Q240806/
+permalink: /kb/240/Q240806/
 ---
 
 ## Q240806: Internet Explorer May Not Negotiate SGC 128-Bit Connection

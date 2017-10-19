@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128913: PC Ext: Explanation of .PBB and .0LK Files"
-permalink: kb/128/Q128913/
+permalink: /kb/128/Q128913/
 ---
 
 ## Q128913: PC Ext: Explanation of .PBB and .0LK Files

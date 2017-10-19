@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149385: Downloaded Mail Does Not Appear in the Inbox"
-permalink: kb/149/Q149385/
+permalink: /kb/149/Q149385/
 ---
 
 ## Q149385: Downloaded Mail Does Not Appear in the Inbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93074: PC Win: Setup Does Not Change Language for Speller"
-permalink: kb/093/Q93074/
+permalink: /kb/093/Q93074/
 ---
 
 ## Q93074: PC Win: Setup Does Not Change Language for Speller

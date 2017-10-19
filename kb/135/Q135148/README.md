@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135148: Phone Dialer Prompts to Pick Up Handset Before Dialing Is Done"
-permalink: kb/135/Q135148/
+permalink: /kb/135/Q135148/
 ---
 
 ## Q135148: Phone Dialer Prompts to Pick Up Handset Before Dialing Is Done

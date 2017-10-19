@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250855: MSB Bugs: How to Obtain the Product Identification Number"
-permalink: kb/250/Q250855/
+permalink: /kb/250/Q250855/
 ---
 
 ## Q250855: MSB Bugs: How to Obtain the Product Identification Number

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302659: MSN Companion Start Page: Changing Local Information"
-permalink: kb/302/Q302659/
+permalink: /kb/302/Q302659/
 ---
 
 ## Q302659: MSN Companion Start Page: Changing Local Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308702: BUG: Jet VB Expression Service Changes FPU Precision to 64 Bits"
-permalink: kb/308/Q308702/
+permalink: /kb/308/Q308702/
 ---
 
 ## Q308702: BUG: Jet VB Expression Service Changes FPU Precision to 64 Bits

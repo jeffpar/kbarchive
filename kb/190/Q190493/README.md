@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190493: FIX: &quot;Locate File&quot; Message When Running a PDW Setup App"
-permalink: kb/190/Q190493/
+permalink: /kb/190/Q190493/
 ---
 
 ## Q190493: FIX: &quot;Locate File&quot; Message When Running a PDW Setup App

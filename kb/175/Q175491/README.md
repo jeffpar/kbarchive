@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175491: ODE97: Step-by-Step Example of Creating/Compiling a Help File"
-permalink: kb/175/Q175491/
+permalink: /kb/175/Q175491/
 ---
 
 ## Q175491: ODE97: Step-by-Step Example of Creating/Compiling a Help File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177667: Unable to Transfer Large Files with NICs Using DEC-chipset"
-permalink: kb/177/Q177667/
+permalink: /kb/177/Q177667/
 ---
 
 ## Q177667: Unable to Transfer Large Files with NICs Using DEC-chipset

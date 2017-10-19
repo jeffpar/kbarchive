@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259726: FIX: Debugger Encounters Invisible Breakpoints in Assembly Code"
-permalink: kb/259/Q259726/
+permalink: /kb/259/Q259726/
 ---
 
 ## Q259726: FIX: Debugger Encounters Invisible Breakpoints in Assembly Code

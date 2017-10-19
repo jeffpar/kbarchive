@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162201: MSB Solar: ErrMsg: Magic School Bus Needs More Memory"
-permalink: kb/162/Q162201/
+permalink: /kb/162/Q162201/
 ---
 
 ## Q162201: MSB Solar: ErrMsg: Magic School Bus Needs More Memory

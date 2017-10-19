@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186335: WinNT 4.0 Remote Troubleshooting and Diagnostics White Paper"
-permalink: kb/186/Q186335/
+permalink: /kb/186/Q186335/
 ---
 
 ## Q186335: WinNT 4.0 Remote Troubleshooting and Diagnostics White Paper

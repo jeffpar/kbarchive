@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137437: How SNA Server Manages Send and Receive Window Sizes on SDLC"
-permalink: kb/137/Q137437/
+permalink: /kb/137/Q137437/
 ---
 
 ## Q137437: How SNA Server Manages Send and Receive Window Sizes on SDLC

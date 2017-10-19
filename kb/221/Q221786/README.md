@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221786: Looping Menu Function Call Causes Automatic Reboot"
-permalink: kb/221/Q221786/
+permalink: /kb/221/Q221786/
 ---
 
 ## Q221786: Looping Menu Function Call Causes Automatic Reboot

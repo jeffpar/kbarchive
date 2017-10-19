@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189917: PRB: VisualFoxPro.Application Object Does Not Release"
-permalink: kb/189/Q189917/
+permalink: /kb/189/Q189917/
 ---
 
 ## Q189917: PRB: VisualFoxPro.Application Object Does Not Release

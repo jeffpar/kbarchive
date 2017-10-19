@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131688: Mac Bookshelf '95: Manual Installation Instructions"
-permalink: kb/131/Q131688/
+permalink: /kb/131/Q131688/
 ---
 
 ## Q131688: Mac Bookshelf '95: Manual Installation Instructions

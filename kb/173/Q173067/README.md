@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173067: Print Session Stops Responding When Printing to File"
-permalink: kb/173/Q173067/
+permalink: /kb/173/Q173067/
 ---
 
 ## Q173067: Print Session Stops Responding When Printing to File

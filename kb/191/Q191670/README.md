@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191670: HOWTO: Suppress Default Pop-up Menu When You Use Custom Menu"
-permalink: kb/191/Q191670/
+permalink: /kb/191/Q191670/
 ---
 
 ## Q191670: HOWTO: Suppress Default Pop-up Menu When You Use Custom Menu

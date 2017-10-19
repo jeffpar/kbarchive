@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119086: Windows for Workgroups Hangs w/ ArcNet Cards &amp; Novell NetWare"
-permalink: kb/119/Q119086/
+permalink: /kb/119/Q119086/
 ---
 
 ## Q119086: Windows for Workgroups Hangs w/ ArcNet Cards &amp; Novell NetWare

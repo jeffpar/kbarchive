@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84579: Invalid VxD Dynamic Link Call to Device Number 000A"
-permalink: kb/084/Q84579/
+permalink: /kb/084/Q84579/
 ---
 
 ## Q84579: Invalid VxD Dynamic Link Call to Device Number 000A

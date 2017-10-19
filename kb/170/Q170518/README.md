@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170518: DNS Admin Fails When Managing Large Number of Zones"
-permalink: kb/170/Q170518/
+permalink: /kb/170/Q170518/
 ---
 
 ## Q170518: DNS Admin Fails When Managing Large Number of Zones

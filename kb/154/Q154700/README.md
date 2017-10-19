@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154700: HALMCA Does Not Check got PCI"
-permalink: kb/154/Q154700/
+permalink: /kb/154/Q154700/
 ---
 
 ## Q154700: HALMCA Does Not Check got PCI

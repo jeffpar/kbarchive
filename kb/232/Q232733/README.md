@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232733: Process Working Set Trimmed Below Minimum Unnecessarily"
-permalink: kb/232/Q232733/
+permalink: /kb/232/Q232733/
 ---
 
 ## Q232733: Process Working Set Trimmed Below Minimum Unnecessarily

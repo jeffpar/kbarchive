@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295098: No Automatic Virus Scanning In MSN Explorer E-mail"
-permalink: kb/295/Q295098/
+permalink: /kb/295/Q295098/
 ---
 
 ## Q295098: No Automatic Virus Scanning In MSN Explorer E-mail

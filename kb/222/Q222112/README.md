@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222112: FIX: Class Not Selected Opening Class Browser From Form Designer"
-permalink: kb/222/Q222112/
+permalink: /kb/222/Q222112/
 ---
 
 ## Q222112: FIX: Class Not Selected Opening Class Browser From Form Designer

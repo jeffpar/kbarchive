@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244641: Documentation Error in the Windows NT Server Networking Guide"
-permalink: kb/244/Q244641/
+permalink: /kb/244/Q244641/
 ---
 
 ## Q244641: Documentation Error in the Windows NT Server Networking Guide

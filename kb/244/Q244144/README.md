@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244144: XCON: Exchange MTA Stops When Restarting After Abnormal Shutdown"
-permalink: kb/244/Q244144/
+permalink: /kb/244/Q244144/
 ---
 
 ## Q244144: XCON: Exchange MTA Stops When Restarting After Abnormal Shutdown

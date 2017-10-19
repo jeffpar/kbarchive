@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235863: RPC Locator Returns Duplicate or Missing Entries to RpcNsBinding"
-permalink: kb/235/Q235863/
+permalink: /kb/235/Q235863/
 ---
 
 ## Q235863: RPC Locator Returns Duplicate or Missing Entries to RpcNsBinding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168069: Cannot Change Time Style Setting"
-permalink: kb/168/Q168069/
+permalink: /kb/168/Q168069/
 ---
 
 ## Q168069: Cannot Change Time Style Setting

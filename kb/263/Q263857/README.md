@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263857: Items in the ISM Are Missing or Appear Dimmed on Windows"
-permalink: kb/263/Q263857/
+permalink: /kb/263/Q263857/
 ---
 
 ## Q263857: Items in the ISM Are Missing or Appear Dimmed on Windows

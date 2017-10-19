@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39446: Division Operators &quot;/&quot; with .186, .286, and .386"
-permalink: kb/039/Q39446/
+permalink: /kb/039/Q39446/
 ---
 
 ## Q39446: Division Operators &quot;/&quot; with .186, .286, and .386

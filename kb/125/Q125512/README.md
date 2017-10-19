@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125512: PC Adm: Changing Administrator Name Changes Keep Updates Field"
-permalink: kb/125/Q125512/
+permalink: /kb/125/Q125512/
 ---
 
 ## Q125512: PC Adm: Changing Administrator Name Changes Keep Updates Field

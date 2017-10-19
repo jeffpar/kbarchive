@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184945: WD97: File &quot;Edited by Another Word Session&quot; Err Msg Truncated"
-permalink: kb/184/Q184945/
+permalink: /kb/184/Q184945/
 ---
 
 ## Q184945: WD97: File &quot;Edited by Another Word Session&quot; Err Msg Truncated

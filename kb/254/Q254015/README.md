@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254015: SNA Server Access Violation During Single Sign-On Processing"
-permalink: kb/254/Q254015/
+permalink: /kb/254/Q254015/
 ---
 
 ## Q254015: SNA Server Access Violation During Single Sign-On Processing

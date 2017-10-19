@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185859: INFO: OLE Servers Return Date Calculation Results as Seconds"
-permalink: kb/185/Q185859/
+permalink: /kb/185/Q185859/
 ---
 
 ## Q185859: INFO: OLE Servers Return Date Calculation Results as Seconds

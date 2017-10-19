@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138216: World of Flight: Peeled Sections Overlap"
-permalink: kb/138/Q138216/
+permalink: /kb/138/Q138216/
 ---
 
 ## Q138216: World of Flight: Peeled Sections Overlap

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192851: PRB: Ten or More Parameters in an Oracle Procedure Call Fails"
-permalink: kb/192/Q192851/
+permalink: /kb/192/Q192851/
 ---
 
 ## Q192851: PRB: Ten or More Parameters in an Oracle Procedure Call Fails

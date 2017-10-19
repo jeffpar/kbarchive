@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125916: NetBIOS CALL to a Group Name Fails with TCP/IP-32"
-permalink: kb/125/Q125916/
+permalink: /kb/125/Q125916/
 ---
 
 ## Q125916: NetBIOS CALL to a Group Name Fails with TCP/IP-32

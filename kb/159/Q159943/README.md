@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159943: WD97: General Information About Bullets and Numbering"
-permalink: kb/159/Q159943/
+permalink: /kb/159/Q159943/
 ---
 
 ## Q159943: WD97: General Information About Bullets and Numbering

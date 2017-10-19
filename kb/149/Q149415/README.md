@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149415: Group Policies Are Not Recognized with MSNDS"
-permalink: kb/149/Q149415/
+permalink: /kb/149/Q149415/
 ---
 
 ## Q149415: Group Policies Are Not Recognized with MSNDS

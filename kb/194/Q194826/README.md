@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194826: HOWTO: Designate a Visual SourceSafe Project as a Web Project"
-permalink: kb/194/Q194826/
+permalink: /kb/194/Q194826/
 ---
 
 ## Q194826: HOWTO: Designate a Visual SourceSafe Project as a Web Project

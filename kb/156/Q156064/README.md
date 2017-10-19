@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156064: WD97: Saved File Name Does Not Appear on Document Title Bar"
-permalink: kb/156/Q156064/
+permalink: /kb/156/Q156064/
 ---
 
 ## Q156064: WD97: Saved File Name Does Not Appear on Document Title Bar

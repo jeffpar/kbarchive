@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237951: XCLN: Non-Delivery Reports Received by Clients May Be Confusing"
-permalink: kb/237/Q237951/
+permalink: /kb/237/Q237951/
 ---
 
 ## Q237951: XCLN: Non-Delivery Reports Received by Clients May Be Confusing

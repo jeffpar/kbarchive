@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111532: PC Forms: E-Forms SETUP.EXE Version 1.01 Update"
-permalink: kb/111/Q111532/
+permalink: /kb/111/Q111532/
 ---
 
 ## Q111532: PC Forms: E-Forms SETUP.EXE Version 1.01 Update

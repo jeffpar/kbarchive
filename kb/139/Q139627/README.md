@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139627: How to Manually Remove Systems Management Server"
-permalink: kb/139/Q139627/
+permalink: /kb/139/Q139627/
 ---
 
 ## Q139627: How to Manually Remove Systems Management Server

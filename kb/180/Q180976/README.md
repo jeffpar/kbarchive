@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180976: WD97: How to Create a Watermark in Word"
-permalink: kb/180/Q180976/
+permalink: /kb/180/Q180976/
 ---
 
 ## Q180976: WD97: How to Create a Watermark in Word

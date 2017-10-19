@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158403: PRB: &quot;No Records Found&quot; Error While Converting a Report in VFP"
-permalink: kb/158/Q158403/
+permalink: /kb/158/Q158403/
 ---
 
 ## Q158403: PRB: &quot;No Records Found&quot; Error While Converting a Report in VFP

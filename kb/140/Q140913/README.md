@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140913: Communicating over TCP/IP May Fail Due to 802.3 Frame Type"
-permalink: kb/140/Q140913/
+permalink: /kb/140/Q140913/
 ---
 
 ## Q140913: Communicating over TCP/IP May Fail Due to 802.3 Frame Type

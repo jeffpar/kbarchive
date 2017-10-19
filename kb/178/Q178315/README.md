@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178315: APPC or CPIC Programs Stop Working"
-permalink: kb/178/Q178315/
+permalink: /kb/178/Q178315/
 ---
 
 ## Q178315: APPC or CPIC Programs Stop Working

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201603: SMS: Systems Management Server 2.0 Site Recovery"
-permalink: kb/201/Q201603/
+permalink: /kb/201/Q201603/
 ---
 
 ## Q201603: SMS: Systems Management Server 2.0 Site Recovery

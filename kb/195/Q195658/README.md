@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195658: WD97: How to Create and Save Custom Labels in Word"
-permalink: kb/195/Q195658/
+permalink: /kb/195/Q195658/
 ---
 
 ## Q195658: WD97: How to Create and Save Custom Labels in Word

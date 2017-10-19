@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142535: MSN Icon Missing from Desktop"
-permalink: kb/142/Q142535/
+permalink: /kb/142/Q142535/
 ---
 
 ## Q142535: MSN Icon Missing from Desktop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252797: XCLN: Extend Right-click Shortcut Menu for an Embedded Document"
-permalink: kb/252/Q252797/
+permalink: /kb/252/Q252797/
 ---
 
 ## Q252797: XCLN: Extend Right-click Shortcut Menu for an Embedded Document

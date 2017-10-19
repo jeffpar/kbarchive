@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130148: ODE97: Using the Data Outline ActiveX Control Version 1.2"
-permalink: kb/130/Q130148/
+permalink: /kb/130/Q130148/
 ---
 
 ## Q130148: ODE97: Using the Data Outline ActiveX Control Version 1.2

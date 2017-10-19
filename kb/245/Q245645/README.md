@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245645: XWEB: Exchange Server 5.5 SP 2 OWA Deletes Folder Permanently"
-permalink: kb/245/Q245645/
+permalink: /kb/245/Q245645/
 ---
 
 ## Q245645: XWEB: Exchange Server 5.5 SP 2 OWA Deletes Folder Permanently

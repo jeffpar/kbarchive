@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129823: Windows NT Server 3.5 Cannot Browse A LAN Manager Domain"
-permalink: kb/129/Q129823/
+permalink: /kb/129/Q129823/
 ---
 
 ## Q129823: Windows NT Server 3.5 Cannot Browse A LAN Manager Domain

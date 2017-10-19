@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246090: Excessive LSASS CPU Usage with Multiple SMS Sites in Same Domain"
-permalink: kb/246/Q246090/
+permalink: /kb/246/Q246090/
 ---
 
 ## Q246090: Excessive LSASS CPU Usage with Multiple SMS Sites in Same Domain

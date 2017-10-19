@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156572: How to Install the FTP Server Service in Windows NT 4.0"
-permalink: kb/156/Q156572/
+permalink: /kb/156/Q156572/
 ---
 
 ## Q156572: How to Install the FTP Server Service in Windows NT 4.0

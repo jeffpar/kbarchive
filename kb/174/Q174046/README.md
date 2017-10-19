@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174046: XCLN: Problems Using Print Button with Lexmark Optra E Printers"
-permalink: kb/174/Q174046/
+permalink: /kb/174/Q174046/
 ---
 
 ## Q174046: XCLN: Problems Using Print Button with Lexmark Optra E Printers

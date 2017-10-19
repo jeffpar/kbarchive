@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98267: ProofReader Fails with Extended Workbook Filenames"
-permalink: kb/098/Q98267/
+permalink: /kb/098/Q98267/
 ---
 
 ## Q98267: ProofReader Fails with Extended Workbook Filenames

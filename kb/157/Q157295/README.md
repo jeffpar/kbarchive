@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157295: WD97: Can't Redefine Normal Style from Style Box"
-permalink: kb/157/Q157295/
+permalink: /kb/157/Q157295/
 ---
 
 ## Q157295: WD97: Can't Redefine Normal Style from Style Box

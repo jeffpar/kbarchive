@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197322: PRB: &quot;Invalid File Format&quot; from ImgEdit Reading Sony Mavica JPG"
-permalink: kb/197/Q197322/
+permalink: /kb/197/Q197322/
 ---
 
 ## Q197322: PRB: &quot;Invalid File Format&quot; from ImgEdit Reading Sony Mavica JPG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172646: Pdfcomp.exe Does Not Check for Valid Output File Creation"
-permalink: kb/172/Q172646/
+permalink: /kb/172/Q172646/
 ---
 
 ## Q172646: Pdfcomp.exe Does Not Check for Valid Output File Creation

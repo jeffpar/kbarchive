@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231967: XADM: Isinteg Has Been Modified to Dump the Mailbox Table"
-permalink: kb/231/Q231967/
+permalink: /kb/231/Q231967/
 ---
 
 ## Q231967: XADM: Isinteg Has Been Modified to Dump the Mailbox Table

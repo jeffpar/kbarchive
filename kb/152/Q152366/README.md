@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152366: How To Add Calculator, Calendar, Puzzle, Filer to System Menu"
-permalink: kb/152/Q152366/
+permalink: /kb/152/Q152366/
 ---
 
 ## Q152366: How To Add Calculator, Calendar, Puzzle, Filer to System Menu

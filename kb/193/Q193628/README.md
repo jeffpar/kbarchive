@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193628: FIX: APPEND FROM with Certain File Types Crashes VFP"
-permalink: kb/193/Q193628/
+permalink: /kb/193/Q193628/
 ---
 
 ## Q193628: FIX: APPEND FROM with Certain File Types Crashes VFP

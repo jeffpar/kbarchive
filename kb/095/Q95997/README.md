@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95997: DELTREE: No Error Message If Directory Does Not Exist"
-permalink: kb/095/Q95997/
+permalink: /kb/095/Q95997/
 ---
 
 ## Q95997: DELTREE: No Error Message If Directory Does Not Exist

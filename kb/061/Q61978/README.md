@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61978: FIX: U1001 w/ Corrupted MAKEDIR Macro in Real Mode NMAKE 1.11"
-permalink: kb/061/Q61978/
+permalink: /kb/061/Q61978/
 ---
 
 ## Q61978: FIX: U1001 w/ Corrupted MAKEDIR Macro in Real Mode NMAKE 1.11

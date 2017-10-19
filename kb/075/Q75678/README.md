@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75678: Alphabetic Listing of MS-DOS 5 Upgrade Files with Disks"
-permalink: kb/075/Q75678/
+permalink: /kb/075/Q75678/
 ---
 
 ## Q75678: Alphabetic Listing of MS-DOS 5 Upgrade Files with Disks

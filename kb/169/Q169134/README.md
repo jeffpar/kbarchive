@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169134: SMSINST: &quot;Please Enter a Positive Integer&quot; Error"
-permalink: kb/169/Q169134/
+permalink: /kb/169/Q169134/
 ---
 
 ## Q169134: SMSINST: &quot;Please Enter a Positive Integer&quot; Error

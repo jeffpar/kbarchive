@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169857: Print Service Ignores Bytes in LU3 Datastream"
-permalink: kb/169/Q169857/
+permalink: /kb/169/Q169857/
 ---
 
 ## Q169857: Print Service Ignores Bytes in LU3 Datastream

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72835: Bitmap Files Not Tiling or Centering as Wallpaper in Windows"
-permalink: kb/072/Q72835/
+permalink: /kb/072/Q72835/
 ---
 
 ## Q72835: Bitmap Files Not Tiling or Centering as Wallpaper in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171497: FIX: ListView in PictureBox on Tabbed Dialog Disappears"
-permalink: kb/171/Q171497/
+permalink: /kb/171/Q171497/
 ---
 
 ## Q171497: FIX: ListView in PictureBox on Tabbed Dialog Disappears

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278444: XCON: MTA Queue Building Up with No Association Opening"
-permalink: kb/278/Q278444/
+permalink: /kb/278/Q278444/
 ---
 
 ## Q278444: XCON: MTA Queue Building Up with No Association Opening

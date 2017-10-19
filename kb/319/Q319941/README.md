@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319941: Inside Microsoft .NET IL Assembler Comments And Corrections"
-permalink: kb/319/Q319941/
+permalink: /kb/319/Q319941/
 ---
 
 ## Q319941: Inside Microsoft .NET IL Assembler Comments And Corrections

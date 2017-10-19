@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159824: WD97: How to Automatically Update Fields"
-permalink: kb/159/Q159824/
+permalink: /kb/159/Q159824/
 ---
 
 ## Q159824: WD97: How to Automatically Update Fields

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115813: INF: Checking for an ODBC Driver's Transaction Support"
-permalink: kb/115/Q115813/
+permalink: /kb/115/Q115813/
 ---
 
 ## Q115813: INF: Checking for an ODBC Driver's Transaction Support

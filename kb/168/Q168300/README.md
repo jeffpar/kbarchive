@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168300: XCLN: Err Msg: Cannot Open Attachment - Format is not Consistent"
-permalink: kb/168/Q168300/
+permalink: /kb/168/Q168300/
 ---
 
 ## Q168300: XCLN: Err Msg: Cannot Open Attachment - Format is not Consistent

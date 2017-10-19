@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142039: Restrictions on Making SQL Server Changes for a Child Site"
-permalink: kb/142/Q142039/
+permalink: /kb/142/Q142039/
 ---
 
 ## Q142039: Restrictions on Making SQL Server Changes for a Child Site

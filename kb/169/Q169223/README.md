@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169223: XADM: Bad Message Causes Dr. Watson in Store.exe"
-permalink: kb/169/Q169223/
+permalink: /kb/169/Q169223/
 ---
 
 ## Q169223: XADM: Bad Message Causes Dr. Watson in Store.exe

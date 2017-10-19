@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261244: XIMS: How to Hide the Default Network News Transfer Protocol Con"
-permalink: kb/261/Q261244/
+permalink: /kb/261/Q261244/
 ---
 
 ## Q261244: XIMS: How to Hide the Default Network News Transfer Protocol Con

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126564: PGC Does Not Remove Shared Program Groups When Un-installed"
-permalink: kb/126/Q126564/
+permalink: /kb/126/Q126564/
 ---
 
 ## Q126564: PGC Does Not Remove Shared Program Groups When Un-installed

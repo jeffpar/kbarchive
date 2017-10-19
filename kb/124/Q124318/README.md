@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124318: BUG: Invalid Connection String Error with Certain Passwords"
-permalink: kb/124/Q124318/
+permalink: /kb/124/Q124318/
 ---
 
 ## Q124318: BUG: Invalid Connection String Error with Certain Passwords

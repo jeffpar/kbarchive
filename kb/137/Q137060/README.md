@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137060: FIX: FontSize=1 Causes Visual FoxPro to Terminate w/Windows 95"
-permalink: kb/137/Q137060/
+permalink: /kb/137/Q137060/
 ---
 
 ## Q137060: FIX: FontSize=1 Causes Visual FoxPro to Terminate w/Windows 95

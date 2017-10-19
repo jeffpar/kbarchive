@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136391: FIX: MessageBox with NULL Owner and MB_TASKMODAL"
-permalink: kb/136/Q136391/
+permalink: /kb/136/Q136391/
 ---
 
 ## Q136391: FIX: MessageBox with NULL Owner and MB_TASKMODAL

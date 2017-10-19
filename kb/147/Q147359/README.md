@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147359: XCLN: How to Activate URLs by Default"
-permalink: kb/147/Q147359/
+permalink: /kb/147/Q147359/
 ---
 
 ## Q147359: XCLN: How to Activate URLs by Default

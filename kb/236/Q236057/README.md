@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236057: PRB: User BIOS Reset Causes Problems with SourceSafe"
-permalink: kb/236/Q236057/
+permalink: /kb/236/Q236057/
 ---
 
 ## Q236057: PRB: User BIOS Reset Causes Problems with SourceSafe

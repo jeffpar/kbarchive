@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153971: Golf Err Msg: Setup Does Not Support Your Type of Computer"
-permalink: kb/153/Q153971/
+permalink: /kb/153/Q153971/
 ---
 
 ## Q153971: Golf Err Msg: Setup Does Not Support Your Type of Computer

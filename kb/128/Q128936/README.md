@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128936: Dell Omniplex Hard Disk Activity Light Remains On"
-permalink: kb/128/Q128936/
+permalink: /kb/128/Q128936/
 ---
 
 ## Q128936: Dell Omniplex Hard Disk Activity Light Remains On

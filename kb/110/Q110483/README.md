@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110483: Directories Listed Many Times or Not at All on Mac. Volume"
-permalink: kb/110/Q110483/
+permalink: /kb/110/Q110483/
 ---
 
 ## Q110483: Directories Listed Many Times or Not at All on Mac. Volume

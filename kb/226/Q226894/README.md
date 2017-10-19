@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226894: SMS: SMS_LOCAL_DIR Must Not Exceed the Maximum of 8 Characters"
-permalink: kb/226/Q226894/
+permalink: /kb/226/Q226894/
 ---
 
 ## Q226894: SMS: SMS_LOCAL_DIR Must Not Exceed the Maximum of 8 Characters

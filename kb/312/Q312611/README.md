@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312611: MSB Dinosaurs: Err Msg:Setup32 Caused an Error in Msvfw32.dll"
-permalink: kb/312/Q312611/
+permalink: /kb/312/Q312611/
 ---
 
 ## Q312611: MSB Dinosaurs: Err Msg:Setup32 Caused an Error in Msvfw32.dll

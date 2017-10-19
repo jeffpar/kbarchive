@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95553: Applications That Require SETVER.EXE to Run with MS-DOS 5.0"
-permalink: kb/095/Q95553/
+permalink: /kb/095/Q95553/
 ---
 
 ## Q95553: Applications That Require SETVER.EXE to Run with MS-DOS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104887: DBLSPACE /DEFRAG and DEFRAG May Exit Without Error Message"
-permalink: kb/104/Q104887/
+permalink: /kb/104/Q104887/
 ---
 
 ## Q104887: DBLSPACE /DEFRAG and DEFRAG May Exit Without Error Message

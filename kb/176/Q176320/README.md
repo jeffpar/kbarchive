@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176320: Impact of Network Adapter Failure in a Cluster"
-permalink: kb/176/Q176320/
+permalink: /kb/176/Q176320/
 ---
 
 ## Q176320: Impact of Network Adapter Failure in a Cluster

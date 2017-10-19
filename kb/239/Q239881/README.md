@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239881: FIX: RResourceView Displays Resource IDs by their Values"
-permalink: kb/239/Q239881/
+permalink: /kb/239/Q239881/
 ---
 
 ## Q239881: FIX: RResourceView Displays Resource IDs by their Values

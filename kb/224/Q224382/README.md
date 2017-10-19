@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224382: BUG: Profiler Enabled Only Under Administrator Account in WinNT"
-permalink: kb/224/Q224382/
+permalink: /kb/224/Q224382/
 ---
 
 ## Q224382: BUG: Profiler Enabled Only Under Administrator Account in WinNT

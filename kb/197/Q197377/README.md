@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197377: Memory Leak if Large File Upload Is Cancelled Prematurely"
-permalink: kb/197/Q197377/
+permalink: /kb/197/Q197377/
 ---
 
 ## Q197377: Memory Leak if Large File Upload Is Cancelled Prematurely

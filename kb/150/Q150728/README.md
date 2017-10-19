@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150728: Err Msg: This Version of SMS Administrator (Build xxx) Is Not"
-permalink: kb/150/Q150728/
+permalink: /kb/150/Q150728/
 ---
 
 ## Q150728: Err Msg: This Version of SMS Administrator (Build xxx) Is Not

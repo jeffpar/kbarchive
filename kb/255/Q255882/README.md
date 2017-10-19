@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255882: XFOR: Migrating Double-Byte Character Set Messages from cc:Mail"
-permalink: kb/255/Q255882/
+permalink: /kb/255/Q255882/
 ---
 
 ## Q255882: XFOR: Migrating Double-Byte Character Set Messages from cc:Mail

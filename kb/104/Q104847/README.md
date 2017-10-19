@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104847: MemMaker Appears to Hang for One Minute or Longer"
-permalink: kb/104/Q104847/
+permalink: /kb/104/Q104847/
 ---
 
 ## Q104847: MemMaker Appears to Hang for One Minute or Longer

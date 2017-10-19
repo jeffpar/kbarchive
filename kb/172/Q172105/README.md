@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172105: FIX: NewPage Method Followed by EndDoc Method Prints Blank Page"
-permalink: kb/172/Q172105/
+permalink: /kb/172/Q172105/
 ---
 
 ## Q172105: FIX: NewPage Method Followed by EndDoc Method Prints Blank Page

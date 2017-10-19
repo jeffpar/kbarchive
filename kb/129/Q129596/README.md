@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129596: PRB: C2517, C2653, or C2600 If Local Struct Contains Class."
-permalink: kb/129/Q129596/
+permalink: /kb/129/Q129596/
 ---
 
 ## Q129596: PRB: C2517, C2653, or C2600 If Local Struct Contains Class.

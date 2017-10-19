@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72163: Use of Help in Windows File Manager"
-permalink: kb/072/Q72163/
+permalink: /kb/072/Q72163/
 ---
 
 ## Q72163: Use of Help in Windows File Manager

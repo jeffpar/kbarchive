@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173200: MTG: Novell Discontinues Support for All MHS Products"
-permalink: kb/173/Q173200/
+permalink: /kb/173/Q173200/
 ---
 
 ## Q173200: MTG: Novell Discontinues Support for All MHS Products

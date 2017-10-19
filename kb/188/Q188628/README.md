@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188628: XADM: Exporting and Importing Permissions on Objects"
-permalink: kb/188/Q188628/
+permalink: /kb/188/Q188628/
 ---
 
 ## Q188628: XADM: Exporting and Importing Permissions on Objects

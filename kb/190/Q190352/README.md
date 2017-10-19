@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190352: PRB: Cannot Load EM.dll on Win98 with WinCE Toolkit for VC5.0"
-permalink: kb/190/Q190352/
+permalink: /kb/190/Q190352/
 ---
 
 ## Q190352: PRB: Cannot Load EM.dll on Win98 with WinCE Toolkit for VC5.0

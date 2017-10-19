@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270160: XADM: Unable to View Free/Busy Information Across Exchange Sites"
-permalink: kb/270/Q270160/
+permalink: /kb/270/Q270160/
 ---
 
 ## Q270160: XADM: Unable to View Free/Busy Information Across Exchange Sites

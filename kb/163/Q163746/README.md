@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163746: XCLN: Chinese Chars in Attachment File Name Wrong in Outlook"
-permalink: kb/163/Q163746/
+permalink: /kb/163/Q163746/
 ---
 
 ## Q163746: XCLN: Chinese Chars in Attachment File Name Wrong in Outlook

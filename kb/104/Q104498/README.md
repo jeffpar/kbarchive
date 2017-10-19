@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104498: How OF_SHARE Modes Affect Opening Files"
-permalink: kb/104/Q104498/
+permalink: /kb/104/Q104498/
 ---
 
 ## Q104498: How OF_SHARE Modes Affect Opening Files

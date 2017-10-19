@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274602: CFS2: Cannot Upgrade from Combat Flight Simulator"
-permalink: kb/274/Q274602/
+permalink: /kb/274/Q274602/
 ---
 
 ## Q274602: CFS2: Cannot Upgrade from Combat Flight Simulator

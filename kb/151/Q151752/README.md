@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151752: ADIR() Works Differently in 3.0 than in 2.6"
-permalink: kb/151/Q151752/
+permalink: /kb/151/Q151752/
 ---
 
 ## Q151752: ADIR() Works Differently in 3.0 than in 2.6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305583: MechCommander 2: You Cannot Start a Multiplayer Game"
-permalink: kb/305/Q305583/
+permalink: /kb/305/Q305583/
 ---
 
 ## Q305583: MechCommander 2: You Cannot Start a Multiplayer Game

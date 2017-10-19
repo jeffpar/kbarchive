@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182108: Availability of Windows Sockets 2.0 for Windows 95"
-permalink: kb/182/Q182108/
+permalink: /kb/182/Q182108/
 ---
 
 ## Q182108: Availability of Windows Sockets 2.0 for Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269850: TN5250 Service Stops Responding and Logs Event 9 Error Messages"
-permalink: kb/269/Q269850/
+permalink: /kb/269/Q269850/
 ---
 
 ## Q269850: TN5250 Service Stops Responding and Logs Event 9 Error Messages

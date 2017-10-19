@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99276: LAN Manager API NetUserSetInfo - Changeable Flag Options"
-permalink: kb/099/Q99276/
+permalink: /kb/099/Q99276/
 ---
 
 ## Q99276: LAN Manager API NetUserSetInfo - Changeable Flag Options

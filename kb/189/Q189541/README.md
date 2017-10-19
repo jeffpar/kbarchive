@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189541: Using the Checked Netlogon.dll to Track Account Lockouts"
-permalink: kb/189/Q189541/
+permalink: /kb/189/Q189541/
 ---
 
 ## Q189541: Using the Checked Netlogon.dll to Track Account Lockouts

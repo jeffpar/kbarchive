@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274652: MGS: Game Commands Do Not Function as Expected"
-permalink: kb/274/Q274652/
+permalink: /kb/274/Q274652/
 ---
 
 ## Q274652: MGS: Game Commands Do Not Function as Expected

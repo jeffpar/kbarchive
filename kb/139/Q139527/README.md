@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139527: How to Create a Table that Has Many Fields of Identical Size"
-permalink: kb/139/Q139527/
+permalink: /kb/139/Q139527/
 ---
 
 ## Q139527: How to Create a Table that Has Many Fields of Identical Size

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134232: PC WSPlus: Frequently Asked Questions for Schedule+"
-permalink: kb/134/Q134232/
+permalink: /kb/134/Q134232/
 ---
 
 ## Q134232: PC WSPlus: Frequently Asked Questions for Schedule+

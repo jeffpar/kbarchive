@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291789: HOWTO: Use WTSEnumerateSessions Terminal Server Function from VB"
-permalink: kb/291/Q291789/
+permalink: /kb/291/Q291789/
 ---
 
 ## Q291789: HOWTO: Use WTSEnumerateSessions Terminal Server Function from VB

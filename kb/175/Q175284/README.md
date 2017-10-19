@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175284: XADM: Remove All Does Not Remove JET Performance Counters"
-permalink: kb/175/Q175284/
+permalink: /kb/175/Q175284/
 ---
 
 ## Q175284: XADM: Remove All Does Not Remove JET Performance Counters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175447: XFOR: Looping Message from Microsoft Mail to Inet List Server"
-permalink: kb/175/Q175447/
+permalink: /kb/175/Q175447/
 ---
 
 ## Q175447: XFOR: Looping Message from Microsoft Mail to Inet List Server

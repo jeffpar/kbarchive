@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247429: Unable to Open the Primary SNA Server Configuration File"
-permalink: kb/247/Q247429/
+permalink: /kb/247/Q247429/
 ---
 
 ## Q247429: Unable to Open the Primary SNA Server Configuration File

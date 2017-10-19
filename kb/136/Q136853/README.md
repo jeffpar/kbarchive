@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136853: Where to Find Info on SQL pass-through Versus Remote Views"
-permalink: kb/136/Q136853/
+permalink: /kb/136/Q136853/
 ---
 
 ## Q136853: Where to Find Info on SQL pass-through Versus Remote Views

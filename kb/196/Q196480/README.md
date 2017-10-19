@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196480: Problems After You Install Winzip Version 6.3 or 7.0"
-permalink: kb/196/Q196480/
+permalink: /kb/196/Q196480/
 ---
 
 ## Q196480: Problems After You Install Winzip Version 6.3 or 7.0

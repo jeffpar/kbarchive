@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158389: Games: Redraw Problems with ATI Video Cards"
-permalink: kb/158/Q158389/
+permalink: /kb/158/Q158389/
 ---
 
 ## Q158389: Games: Redraw Problems with ATI Video Cards

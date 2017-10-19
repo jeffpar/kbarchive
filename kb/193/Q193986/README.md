@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193986: Enable OtherServers Function In The Firewall Environment"
-permalink: kb/193/Q193986/
+permalink: /kb/193/Q193986/
 ---
 
 ## Q193986: Enable OtherServers Function In The Firewall Environment

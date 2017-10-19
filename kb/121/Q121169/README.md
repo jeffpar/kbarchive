@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121169: Lotus ScreenCam for Windows Causes Blank Screen"
-permalink: kb/121/Q121169/
+permalink: /kb/121/Q121169/
 ---
 
 ## Q121169: Lotus ScreenCam for Windows Causes Blank Screen

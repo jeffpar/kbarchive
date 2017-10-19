@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192461: FILE: VBRun60.exe Installs Visual Basic 6.0 Run-Time Files"
-permalink: kb/192/Q192461/
+permalink: /kb/192/Q192461/
 ---
 
 ## Q192461: FILE: VBRun60.exe Installs Visual Basic 6.0 Run-Time Files

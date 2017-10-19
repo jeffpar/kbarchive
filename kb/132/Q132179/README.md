@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132179: PRB: Controls in a Page Frame Are Not Refreshed"
-permalink: kb/132/Q132179/
+permalink: /kb/132/Q132179/
 ---
 
 ## Q132179: PRB: Controls in a Page Frame Are Not Refreshed

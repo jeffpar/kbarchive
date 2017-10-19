@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158008: HOWTO: Use MSCOMM32.OCX to Transfer Data on DBCS Windows"
-permalink: kb/158/Q158008/
+permalink: /kb/158/Q158008/
 ---
 
 ## Q158008: HOWTO: Use MSCOMM32.OCX to Transfer Data on DBCS Windows

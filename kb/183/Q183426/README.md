@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183426: WD97: How to Merge a Single Data Source to Multiple Documents"
-permalink: kb/183/Q183426/
+permalink: /kb/183/Q183426/
 ---
 
 ## Q183426: WD97: How to Merge a Single Data Source to Multiple Documents

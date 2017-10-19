@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142397: BUG: REPLACE with UDF May Cause &quot;Record Is Not Locked&quot; Error"
-permalink: kb/142/Q142397/
+permalink: /kb/142/Q142397/
 ---
 
 ## Q142397: BUG: REPLACE with UDF May Cause &quot;Record Is Not Locked&quot; Error

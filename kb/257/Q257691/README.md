@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257691: FIX: Dynamically Loaded UserControl Does Not Send Changes"
-permalink: kb/257/Q257691/
+permalink: /kb/257/Q257691/
 ---
 
 ## Q257691: FIX: Dynamically Loaded UserControl Does Not Send Changes

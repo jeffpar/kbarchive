@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140816: EHNAPPC Data Stream Header Data Being Passed to TP"
-permalink: kb/140/Q140816/
+permalink: /kb/140/Q140816/
 ---
 
 ## Q140816: EHNAPPC Data Stream Header Data Being Passed to TP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86776: How to Use a Linked Paintbrush Object with OLECLIEN.VBX"
-permalink: kb/086/Q86776/
+permalink: /kb/086/Q86776/
 ---
 
 ## Q86776: How to Use a Linked Paintbrush Object with OLECLIEN.VBX

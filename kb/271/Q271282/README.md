@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271282: Microsoft Reader: Text Is Displayed on a Faint Blue Background"
-permalink: kb/271/Q271282/
+permalink: /kb/271/Q271282/
 ---
 
 ## Q271282: Microsoft Reader: Text Is Displayed on a Faint Blue Background

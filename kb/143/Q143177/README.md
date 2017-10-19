@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143177: FTP Server MIB Definitions"
-permalink: kb/143/Q143177/
+permalink: /kb/143/Q143177/
 ---
 
 ## Q143177: FTP Server MIB Definitions

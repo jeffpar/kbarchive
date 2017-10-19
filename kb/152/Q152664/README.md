@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152664: TcpipClientSupport Fails w/ NetWareClientSupport Specified"
-permalink: kb/152/Q152664/
+permalink: /kb/152/Q152664/
 ---
 
 ## Q152664: TcpipClientSupport Fails w/ NetWareClientSupport Specified

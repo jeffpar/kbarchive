@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255227: Partial Domain Synchronization From Server Manager Does Not Work"
-permalink: kb/255/Q255227/
+permalink: /kb/255/Q255227/
 ---
 
 ## Q255227: Partial Domain Synchronization From Server Manager Does Not Work

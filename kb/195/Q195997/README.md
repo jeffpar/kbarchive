@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195997: Strict &quot;No Response&quot; Protocol Check Causes TN3270 Session Hang"
-permalink: kb/195/Q195997/
+permalink: /kb/195/Q195997/
 ---
 
 ## Q195997: Strict &quot;No Response&quot; Protocol Check Causes TN3270 Session Hang

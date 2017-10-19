@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196038: Date Subvector of NVAlert Major Vector Incorrectly Set in Yr 2K"
-permalink: kb/196/Q196038/
+permalink: /kb/196/Q196038/
 ---
 
 ## Q196038: Date Subvector of NVAlert Major Vector Incorrectly Set in Yr 2K

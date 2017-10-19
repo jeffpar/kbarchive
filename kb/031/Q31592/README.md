@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31592: Flight Simulator: Adjusting the Radios"
-permalink: kb/031/Q31592/
+permalink: /kb/031/Q31592/
 ---
 
 ## Q31592: Flight Simulator: Adjusting the Radios

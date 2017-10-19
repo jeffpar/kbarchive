@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150430: Batch.exe 2.0 from Service Pack 1 May Add Extra Commas"
-permalink: kb/150/Q150430/
+permalink: /kb/150/Q150430/
 ---
 
 ## Q150430: Batch.exe 2.0 from Service Pack 1 May Add Extra Commas

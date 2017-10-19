@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72527: DOCERR: TOOLS.INI Tags for Video Not Recognized by PWB"
-permalink: kb/072/Q72527/
+permalink: /kb/072/Q72527/
 ---
 
 ## Q72527: DOCERR: TOOLS.INI Tags for Video Not Recognized by PWB

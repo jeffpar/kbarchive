@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306372: Microsoft Excel 2002 Visual Basic for Applications Step by Step"
-permalink: kb/306/Q306372/
+permalink: /kb/306/Q306372/
 ---
 
 ## Q306372: Microsoft Excel 2002 Visual Basic for Applications Step by Step

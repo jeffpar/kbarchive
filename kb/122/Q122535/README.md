@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122535: Arcade for Macintosh: No Sound Playback or Playback Distorted"
-permalink: kb/122/Q122535/
+permalink: /kb/122/Q122535/
 ---
 
 ## Q122535: Arcade for Macintosh: No Sound Playback or Playback Distorted

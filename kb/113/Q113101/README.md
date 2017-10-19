@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113101: Bookshelf: QuickShelf Toolbar Overlaps Last Setup Screen"
-permalink: kb/113/Q113101/
+permalink: /kb/113/Q113101/
 ---
 
 ## Q113101: Bookshelf: QuickShelf Toolbar Overlaps Last Setup Screen

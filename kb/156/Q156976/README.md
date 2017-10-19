@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156976: PRB: A Required .DLL file, MSVCRT.DLL, Was Not Found"
-permalink: kb/156/Q156976/
+permalink: /kb/156/Q156976/
 ---
 
 ## Q156976: PRB: A Required .DLL file, MSVCRT.DLL, Was Not Found

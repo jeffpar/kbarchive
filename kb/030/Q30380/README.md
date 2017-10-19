@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30380: FIX: Text Macros Cannot Serve as Data-Definition Replacements"
-permalink: kb/030/Q30380/
+permalink: /kb/030/Q30380/
 ---
 
 ## Q30380: FIX: Text Macros Cannot Serve as Data-Definition Replacements

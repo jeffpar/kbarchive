@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221688: FIX:_VFP.Eval() Only Accepts Strings of 255 Characters or Less"
-permalink: kb/221/Q221688/
+permalink: /kb/221/Q221688/
 ---
 
 ## Q221688: FIX:_VFP.Eval() Only Accepts Strings of 255 Characters or Less

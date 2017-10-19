@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62126: Mac Hyp: Printing a Message"
-permalink: kb/062/Q62126/
+permalink: /kb/062/Q62126/
 ---
 
 ## Q62126: Mac Hyp: Printing a Message

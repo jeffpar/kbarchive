@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186545: Terminal Server Error Messages: 3200 to 3299"
-permalink: kb/186/Q186545/
+permalink: /kb/186/Q186545/
 ---
 
 ## Q186545: Terminal Server Error Messages: 3200 to 3299

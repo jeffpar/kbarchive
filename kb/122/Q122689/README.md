@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122689: PC DirSync: IMPORT.EXE Hangs When Processing Corrupt RESYNC.GLB"
-permalink: kb/122/Q122689/
+permalink: /kb/122/Q122689/
 ---
 
 ## Q122689: PC DirSync: IMPORT.EXE Hangs When Processing Corrupt RESYNC.GLB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163665: FP: General File Transfer Error -3 Installing FrontPage"
-permalink: kb/163/Q163665/
+permalink: /kb/163/Q163665/
 ---
 
 ## Q163665: FP: General File Transfer Error -3 Installing FrontPage

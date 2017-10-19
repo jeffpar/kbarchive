@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82440: Windows 3.1 HIMEM.SYS and Windows 3.0"
-permalink: kb/082/Q82440/
+permalink: /kb/082/Q82440/
 ---
 
 ## Q82440: Windows 3.1 HIMEM.SYS and Windows 3.0

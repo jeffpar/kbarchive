@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264684: MS00-040: Patch for &quot;Remote Registry Access Authentication&quot; Vuln"
-permalink: kb/264/Q264684/
+permalink: /kb/264/Q264684/
 ---
 
 ## Q264684: MS00-040: Patch for &quot;Remote Registry Access Authentication&quot; Vuln

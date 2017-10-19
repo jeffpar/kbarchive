@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149485: FIX: Scale Method Causes Error When Scale Is a Large Value"
-permalink: kb/149/Q149485/
+permalink: /kb/149/Q149485/
 ---
 
 ## Q149485: FIX: Scale Method Causes Error When Scale Is a Large Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164362: Removing a Printer in Print Manager Does Not Remove All Entries"
-permalink: kb/164/Q164362/
+permalink: /kb/164/Q164362/
 ---
 
 ## Q164362: Removing a Printer in Print Manager Does Not Remove All Entries

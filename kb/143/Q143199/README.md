@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143199: DHCP Manager May Incorrectly Report Lease Expirations"
-permalink: kb/143/Q143199/
+permalink: /kb/143/Q143199/
 ---
 
 ## Q143199: DHCP Manager May Incorrectly Report Lease Expirations

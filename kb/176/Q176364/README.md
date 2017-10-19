@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176364: FS2000: Hangs When &quot;Building Database for New Scenery&quot; Displayed"
-permalink: kb/176/Q176364/
+permalink: /kb/176/Q176364/
 ---
 
 ## Q176364: FS2000: Hangs When &quot;Building Database for New Scenery&quot; Displayed

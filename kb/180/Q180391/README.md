@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180391: PRB: ScrollBars Appear Incorrectly in Run-Mode"
-permalink: kb/180/Q180391/
+permalink: /kb/180/Q180391/
 ---
 
 ## Q180391: PRB: ScrollBars Appear Incorrectly in Run-Mode

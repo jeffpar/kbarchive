@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164528: XADM: MTA Conversion Error and NDR"
-permalink: kb/164/Q164528/
+permalink: /kb/164/Q164528/
 ---
 
 ## Q164528: XADM: MTA Conversion Error and NDR

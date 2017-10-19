@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115927: MS-DOS 6.22 Upgrade Directory Listing 5.25-Inch 1.2 MB Set"
-permalink: kb/115/Q115927/
+permalink: /kb/115/Q115927/
 ---
 
 ## Q115927: MS-DOS 6.22 Upgrade Directory Listing 5.25-Inch 1.2 MB Set

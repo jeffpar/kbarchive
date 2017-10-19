@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193131: XCLN: Using Alias Name in Find Fails to Find Items"
-permalink: kb/193/Q193131/
+permalink: /kb/193/Q193131/
 ---
 
 ## Q193131: XCLN: Using Alias Name in Find Fails to Find Items

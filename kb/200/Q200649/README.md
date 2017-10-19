@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200649: HOWTO: Use LZCopy to Copy Files"
-permalink: kb/200/Q200649/
+permalink: /kb/200/Q200649/
 ---
 
 ## Q200649: HOWTO: Use LZCopy to Copy Files

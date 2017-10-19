@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134964: Rcmd.exe Err Msg: Error 3 Failed to Connect to Server"
-permalink: kb/134/Q134964/
+permalink: /kb/134/Q134964/
 ---
 
 ## Q134964: Rcmd.exe Err Msg: Error 3 Failed to Connect to Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252809: Streets and Trips 2001: Unable to Configure Your GPS Receiver"
-permalink: kb/252/Q252809/
+permalink: /kb/252/Q252809/
 ---
 
 ## Q252809: Streets and Trips 2001: Unable to Configure Your GPS Receiver

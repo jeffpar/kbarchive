@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113583: SYSDIFF Does Not Remove Folders That Are Not Empty"
-permalink: kb/113/Q113583/
+permalink: /kb/113/Q113583/
 ---
 
 ## Q113583: SYSDIFF Does Not Remove Folders That Are Not Empty

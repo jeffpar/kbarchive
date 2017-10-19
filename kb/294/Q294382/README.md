@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294382: Error 401.3 If &quot;Host Header&quot; Differs from Server's NetBIOS Name"
-permalink: kb/294/Q294382/
+permalink: /kb/294/Q294382/
 ---
 
 ## Q294382: Error 401.3 If &quot;Host Header&quot; Differs from Server's NetBIOS Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86161: .VOC Sound Files Not Supported by Windows"
-permalink: kb/086/Q86161/
+permalink: /kb/086/Q86161/
 ---
 
 ## Q86161: .VOC Sound Files Not Supported by Windows

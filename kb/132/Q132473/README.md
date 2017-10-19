@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132473: PCMCIA.SYS Driver Fails to Load During Boot on NEC Versa P-75"
-permalink: kb/132/Q132473/
+permalink: /kb/132/Q132473/
 ---
 
 ## Q132473: PCMCIA.SYS Driver Fails to Load During Boot on NEC Versa P-75

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178124: XCLN: Microsoft Outlook for Windows 3.1x"
-permalink: kb/178/Q178124/
+permalink: /kb/178/Q178124/
 ---
 
 ## Q178124: XCLN: Microsoft Outlook for Windows 3.1x

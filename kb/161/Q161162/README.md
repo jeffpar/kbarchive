@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161162: Application Error When Opening a File in Office 95"
-permalink: kb/161/Q161162/
+permalink: /kb/161/Q161162/
 ---
 
 ## Q161162: Application Error When Opening a File in Office 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246523: Err Msg: 'RPC Service Unavailable' After Windows NT Upgrade"
-permalink: kb/246/Q246523/
+permalink: /kb/246/Q246523/
 ---
 
 ## Q246523: Err Msg: 'RPC Service Unavailable' After Windows NT Upgrade

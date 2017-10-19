@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59099: Mac Form: Err Msg: ...Sent Using a Custom Form Not Installed"
-permalink: kb/059/Q59099/
+permalink: /kb/059/Q59099/
 ---
 
 ## Q59099: Mac Form: Err Msg: ...Sent Using a Custom Form Not Installed

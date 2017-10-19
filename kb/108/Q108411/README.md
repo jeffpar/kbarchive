@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108411: Configuring IRQ of Future Domain 8xx SCSI Controller"
-permalink: kb/108/Q108411/
+permalink: /kb/108/Q108411/
 ---
 
 ## Q108411: Configuring IRQ of Future Domain 8xx SCSI Controller

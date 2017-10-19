@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60082: Using IBM PC-DOS 4.0 with MS-DOS Hard Disk Partition"
-permalink: kb/060/Q60082/
+permalink: /kb/060/Q60082/
 ---
 
 ## Q60082: Using IBM PC-DOS 4.0 with MS-DOS Hard Disk Partition

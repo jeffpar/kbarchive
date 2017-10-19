@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200890: SNMP Security Extended by Service Pack 4"
-permalink: kb/200/Q200890/
+permalink: /kb/200/Q200890/
 ---
 
 ## Q200890: SNMP Security Extended by Service Pack 4

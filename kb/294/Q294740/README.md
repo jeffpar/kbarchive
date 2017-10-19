@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294740: MM2: Game Stops Responding (Hangs) w/SideWinder Force Feedback 2"
-permalink: kb/294/Q294740/
+permalink: /kb/294/Q294740/
 ---
 
 ## Q294740: MM2: Game Stops Responding (Hangs) w/SideWinder Force Feedback 2

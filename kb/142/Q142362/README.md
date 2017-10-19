@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142362: NetWare FLAG and FLAGDIR Commands Do Not Work"
-permalink: kb/142/Q142362/
+permalink: /kb/142/Q142362/
 ---
 
 ## Q142362: NetWare FLAG and FLAGDIR Commands Do Not Work

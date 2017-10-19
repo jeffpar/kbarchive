@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100941: How Setup Determines Where to Place SETVER.EXE in CONFIG.SYS"
-permalink: kb/100/Q100941/
+permalink: /kb/100/Q100941/
 ---
 
 ## Q100941: How Setup Determines Where to Place SETVER.EXE in CONFIG.SYS

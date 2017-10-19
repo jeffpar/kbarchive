@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159334: WD97: Document Repaginated When You Switch to Header/Footer"
-permalink: kb/159/Q159334/
+permalink: /kb/159/Q159334/
 ---
 
 ## Q159334: WD97: Document Repaginated When You Switch to Header/Footer

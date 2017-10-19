@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216672: BUG:Wrong Error/Incorrect Data Returned w/ TCP/IP &amp; CICS Link"
-permalink: kb/216/Q216672/
+permalink: /kb/216/Q216672/
 ---
 
 ## Q216672: BUG:Wrong Error/Incorrect Data Returned w/ TCP/IP &amp; CICS Link

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309644: The Mandatory Countdown Timer Maximum Value Has Been Increased"
-permalink: kb/309/Q309644/
+permalink: /kb/309/Q309644/
 ---
 
 ## Q309644: The Mandatory Countdown Timer Maximum Value Has Been Increased

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63674: ENTER Key Does Not Work in CorelDRAW! Under Windows 3.0"
-permalink: kb/063/Q63674/
+permalink: /kb/063/Q63674/
 ---
 
 ## Q63674: ENTER Key Does Not Work in CorelDRAW! Under Windows 3.0

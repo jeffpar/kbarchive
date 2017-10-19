@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242192: BUG: uncaught_exception() Always Returns False"
-permalink: kb/242/Q242192/
+permalink: /kb/242/Q242192/
 ---
 
 ## Q242192: BUG: uncaught_exception() Always Returns False

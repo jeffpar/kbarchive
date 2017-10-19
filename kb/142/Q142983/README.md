@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142983: &quot;Error Loading SETUPX.DLL&quot; Error Msg Running Netsetup.exe"
-permalink: kb/142/Q142983/
+permalink: /kb/142/Q142983/
 ---
 
 ## Q142983: &quot;Error Loading SETUPX.DLL&quot; Error Msg Running Netsetup.exe

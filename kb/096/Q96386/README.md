@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96386: Cannot Lower Estimated Compression Ratio with DoubleSpace"
-permalink: kb/096/Q96386/
+permalink: /kb/096/Q96386/
 ---
 
 ## Q96386: Cannot Lower Estimated Compression Ratio with DoubleSpace

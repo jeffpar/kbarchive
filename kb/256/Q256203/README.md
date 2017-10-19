@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256203: SMS: Status Messages Are Not Displayed in SQL Server Database"
-permalink: kb/256/Q256203/
+permalink: /kb/256/Q256203/
 ---
 
 ## Q256203: SMS: Status Messages Are Not Displayed in SQL Server Database

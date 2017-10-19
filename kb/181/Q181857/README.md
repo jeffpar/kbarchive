@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181857: PRB: RDO Run-time Error '40060': Incorrect Type for Parameter"
-permalink: kb/181/Q181857/
+permalink: /kb/181/Q181857/
 ---
 
 ## Q181857: PRB: RDO Run-time Error '40060': Incorrect Type for Parameter

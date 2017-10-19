@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71843: MS-DOS Reserved Words in File Manager's File Search Command"
-permalink: kb/071/Q71843/
+permalink: /kb/071/Q71843/
 ---
 
 ## Q71843: MS-DOS Reserved Words in File Manager's File Search Command

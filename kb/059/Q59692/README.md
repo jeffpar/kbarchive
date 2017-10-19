@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59692: Macro Recorder Won't Record CTRL as First Key Press"
-permalink: kb/059/Q59692/
+permalink: /kb/059/Q59692/
 ---
 
 ## Q59692: Macro Recorder Won't Record CTRL as First Key Press

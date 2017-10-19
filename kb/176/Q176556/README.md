@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176556: ODE97: MSRDO20.DLL Can't Register Itself in the System Registry"
-permalink: kb/176/Q176556/
+permalink: /kb/176/Q176556/
 ---
 
 ## Q176556: ODE97: MSRDO20.DLL Can't Register Itself in the System Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268357: XADM: Exchange Clients Seem to Hang When Store Queries Directory"
-permalink: kb/268/Q268357/
+permalink: /kb/268/Q268357/
 ---
 
 ## Q268357: XADM: Exchange Clients Seem to Hang When Store Queries Directory

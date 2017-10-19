@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159201: SMS: Infinite Loop in Scheduler with Corrupt SRQ File"
-permalink: kb/159/Q159201/
+permalink: /kb/159/Q159201/
 ---
 
 ## Q159201: SMS: Infinite Loop in Scheduler with Corrupt SRQ File

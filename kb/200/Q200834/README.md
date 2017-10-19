@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200834: How to Use OSPF with RRAS Demand-Dial and VPN Connections"
-permalink: kb/200/Q200834/
+permalink: /kb/200/Q200834/
 ---
 
 ## Q200834: How to Use OSPF with RRAS Demand-Dial and VPN Connections

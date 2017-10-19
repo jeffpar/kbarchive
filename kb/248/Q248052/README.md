@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248052: XGEN: Installing Encryption on Exchange Server w. French Setting"
-permalink: kb/248/Q248052/
+permalink: /kb/248/Q248052/
 ---
 
 ## Q248052: XGEN: Installing Encryption on Exchange Server w. French Setting

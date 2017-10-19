@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192097: INFO: MFC and ATL Are Not Supported on Windows CE Palm-size PC"
-permalink: kb/192/Q192097/
+permalink: /kb/192/Q192097/
 ---
 
 ## Q192097: INFO: MFC and ATL Are Not Supported on Windows CE Palm-size PC

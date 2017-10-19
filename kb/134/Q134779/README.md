@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134779: Print Jobs to Windows NT Servers Named &quot;Remote Downlevel Doc.&quot;"
-permalink: kb/134/Q134779/
+permalink: /kb/134/Q134779/
 ---
 
 ## Q134779: Print Jobs to Windows NT Servers Named &quot;Remote Downlevel Doc.&quot;

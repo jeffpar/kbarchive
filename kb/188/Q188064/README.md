@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188064: PRB: ISRLOCKED() and ISFLOCKED() Return Incorrect Values"
-permalink: kb/188/Q188064/
+permalink: /kb/188/Q188064/
 ---
 
 ## Q188064: PRB: ISRLOCKED() and ISFLOCKED() Return Incorrect Values

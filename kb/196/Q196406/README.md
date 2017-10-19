@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196406: XADM: Replication Fails After Disaster Recovery"
-permalink: kb/196/Q196406/
+permalink: /kb/196/Q196406/
 ---
 
 ## Q196406: XADM: Replication Fails After Disaster Recovery

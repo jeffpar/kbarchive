@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154624: XCON: Configuring the Site Connector Between Untrusted Domains"
-permalink: kb/154/Q154624/
+permalink: /kb/154/Q154624/
 ---
 
 ## Q154624: XCON: Configuring the Site Connector Between Untrusted Domains

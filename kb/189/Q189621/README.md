@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189621: Print Server Overrides Paper Source Parameters When Using HPT"
-permalink: kb/189/Q189621/
+permalink: /kb/189/Q189621/
 ---
 
 ## Q189621: Print Server Overrides Paper Source Parameters When Using HPT

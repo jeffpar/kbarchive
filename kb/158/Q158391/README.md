@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158391: Games: Unable to Hear Sounds in Game"
-permalink: kb/158/Q158391/
+permalink: /kb/158/Q158391/
 ---
 
 ## Q158391: Games: Unable to Hear Sounds in Game

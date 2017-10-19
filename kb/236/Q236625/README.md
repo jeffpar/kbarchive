@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236625: PRB: TABLEREVERT Fails with Row Buffering and List Box RowSource"
-permalink: kb/236/Q236625/
+permalink: /kb/236/Q236625/
 ---
 
 ## Q236625: PRB: TABLEREVERT Fails with Row Buffering and List Box RowSource

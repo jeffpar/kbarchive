@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111235: BUG: D2030 or DX1020 Error on Assumed-Size Array Expressions"
-permalink: kb/111/Q111235/
+permalink: /kb/111/Q111235/
 ---
 
 ## Q111235: BUG: D2030 or DX1020 Error on Assumed-Size Array Expressions

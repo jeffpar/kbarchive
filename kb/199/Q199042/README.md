@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199042: XFOR: Calendar Connector Fails with MAPI Error 80004005"
-permalink: kb/199/Q199042/
+permalink: /kb/199/Q199042/
 ---
 
 ## Q199042: XFOR: Calendar Connector Fails with MAPI Error 80004005

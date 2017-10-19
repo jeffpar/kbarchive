@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176470: WD97: Next Page Section Break Changes to Odd"
-permalink: kb/176/Q176470/
+permalink: /kb/176/Q176470/
 ---
 
 ## Q176470: WD97: Next Page Section Break Changes to Odd

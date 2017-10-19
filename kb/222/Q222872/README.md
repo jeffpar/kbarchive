@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222872: RAS Counters Missing in Performance Monitor"
-permalink: kb/222/Q222872/
+permalink: /kb/222/Q222872/
 ---
 
 ## Q222872: RAS Counters Missing in Performance Monitor

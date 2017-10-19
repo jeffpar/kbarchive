@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294345: Registry Hive Fragmentation Behavior Is Not Configurable"
-permalink: kb/294/Q294345/
+permalink: /kb/294/Q294345/
 ---
 
 ## Q294345: Registry Hive Fragmentation Behavior Is Not Configurable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85194: Top Questions and Answers for Windows 3.1"
-permalink: kb/085/Q85194/
+permalink: /kb/085/Q85194/
 ---
 
 ## Q85194: Top Questions and Answers for Windows 3.1

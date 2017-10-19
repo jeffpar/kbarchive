@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182250: Can't Start Multiple Nodes Simultaneously in MMC Snap-in"
-permalink: kb/182/Q182250/
+permalink: /kb/182/Q182250/
 ---
 
 ## Q182250: Can't Start Multiple Nodes Simultaneously in MMC Snap-in

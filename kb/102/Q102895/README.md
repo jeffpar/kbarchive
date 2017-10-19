@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102895: How Increase &amp; Decrease Size of Compound Structural Index"
-permalink: kb/102/Q102895/
+permalink: /kb/102/Q102895/
 ---
 
 ## Q102895: How Increase &amp; Decrease Size of Compound Structural Index

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81883: Addressing the L1084 and L1085 Errors"
-permalink: kb/081/Q81883/
+permalink: /kb/081/Q81883/
 ---
 
 ## Q81883: Addressing the L1084 and L1085 Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86874: BUG: PrintForm() Does Not Print Ink from Control"
-permalink: kb/086/Q86874/
+permalink: /kb/086/Q86874/
 ---
 
 ## Q86874: BUG: PrintForm() Does Not Print Ink from Control

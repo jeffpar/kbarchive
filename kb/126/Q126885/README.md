@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126885: PC Win: Message Finder Does Not Search Shared or Group Folders"
-permalink: kb/126/Q126885/
+permalink: /kb/126/Q126885/
 ---
 
 ## Q126885: PC Win: Message Finder Does Not Search Shared or Group Folders

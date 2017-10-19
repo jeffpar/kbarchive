@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90933: Windows for Workgroups 3.1 Disk List (5.25)"
-permalink: kb/090/Q90933/
+permalink: /kb/090/Q90933/
 ---
 
 ## Q90933: Windows for Workgroups 3.1 Disk List (5.25)

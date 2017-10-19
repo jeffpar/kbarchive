@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q195583: XADM: Rules Are Not Applied to SMTP Messages Received as [cc]"
-permalink: kb/195/Q195583/
+title: "Q195583: XADM: Rules Are Not Applied to SMTP Messages Received as &#91;cc&#93;"
+permalink: /kb/195/Q195583/
 ---
 
-## Q195583: XADM: Rules Are Not Applied to SMTP Messages Received as [cc]
+## Q195583: XADM: Rules Are Not Applied to SMTP Messages Received as &#91;cc&#93;
 
 	Article: Q195583
 	Product(s): Microsoft Exchange

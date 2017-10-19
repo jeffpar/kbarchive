@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121003: WINS Behavior on a Multihomed System"
-permalink: kb/121/Q121003/
+permalink: /kb/121/Q121003/
 ---
 
 ## Q121003: WINS Behavior on a Multihomed System

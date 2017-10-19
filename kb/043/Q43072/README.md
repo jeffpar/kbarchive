@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43072: INFO: Switching from Reading to Writing Files Can Garble Data"
-permalink: kb/043/Q43072/
+permalink: /kb/043/Q43072/
 ---
 
 ## Q43072: INFO: Switching from Reading to Writing Files Can Garble Data

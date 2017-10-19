@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310505: SMS: SMS SP3 ICP Upgrade May Damage Secondary Site Installation"
-permalink: kb/310/Q310505/
+permalink: /kb/310/Q310505/
 ---
 
 ## Q310505: SMS: SMS SP3 ICP Upgrade May Damage Secondary Site Installation

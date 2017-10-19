@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183470: PRB: Unattended Setup Does Not Install Windows Messaging"
-permalink: kb/183/Q183470/
+permalink: /kb/183/Q183470/
 ---
 
 ## Q183470: PRB: Unattended Setup Does Not Install Windows Messaging

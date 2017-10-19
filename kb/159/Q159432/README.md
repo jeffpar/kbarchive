@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159432: FP97: Replaced Text Inherits Previous Font Characteristics"
-permalink: kb/159/Q159432/
+permalink: /kb/159/Q159432/
 ---
 
 ## Q159432: FP97: Replaced Text Inherits Previous Font Characteristics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111410: Scenes 1.0: Screen Changes Color with Scenes Installed"
-permalink: kb/111/Q111410/
+permalink: /kb/111/Q111410/
 ---
 
 ## Q111410: Scenes 1.0: Screen Changes Color with Scenes Installed

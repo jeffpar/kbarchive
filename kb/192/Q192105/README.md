@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192105: HOWTO: Programmatically Creating and Building a Project"
-permalink: kb/192/Q192105/
+permalink: /kb/192/Q192105/
 ---
 
 ## Q192105: HOWTO: Programmatically Creating and Building a Project

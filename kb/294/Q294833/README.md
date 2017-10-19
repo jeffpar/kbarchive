@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294833: ASP Script Cannot Use Type Libraries with UTF8 Codepage"
-permalink: kb/294/Q294833/
+permalink: /kb/294/Q294833/
 ---
 
 ## Q294833: ASP Script Cannot Use Type Libraries with UTF8 Codepage

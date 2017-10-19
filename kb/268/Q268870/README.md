@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268870: Internet Explorer Exhausts System/User Resources w/ Some Pages"
-permalink: kb/268/Q268870/
+permalink: /kb/268/Q268870/
 ---
 
 ## Q268870: Internet Explorer Exhausts System/User Resources w/ Some Pages

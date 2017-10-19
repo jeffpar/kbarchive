@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279834: XCCC: VBScript Error 800A01A8 When Using OWA"
-permalink: kb/279/Q279834/
+permalink: /kb/279/Q279834/
 ---
 
 ## Q279834: XCCC: VBScript Error 800A01A8 When Using OWA

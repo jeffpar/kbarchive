@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146993: XFOR: Quoted-Printable Encoded Messages Stay in IMC"
-permalink: kb/146/Q146993/
+permalink: /kb/146/Q146993/
 ---
 
 ## Q146993: XFOR: Quoted-Printable Encoded Messages Stay in IMC

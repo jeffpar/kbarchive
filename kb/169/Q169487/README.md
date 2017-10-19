@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169487: Access Violation in Mngcli.exe When You Close Server Manager"
-permalink: kb/169/Q169487/
+permalink: /kb/169/Q169487/
 ---
 
 ## Q169487: Access Violation in Mngcli.exe When You Close Server Manager

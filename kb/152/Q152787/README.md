@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152787: Telephone Dialing In Colombia, France, and Finland"
-permalink: kb/152/Q152787/
+permalink: /kb/152/Q152787/
 ---
 
 ## Q152787: Telephone Dialing In Colombia, France, and Finland

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185264: WD97: Crop Button on Picture Toolbar Unavailable in a Template"
-permalink: kb/185/Q185264/
+permalink: /kb/185/Q185264/
 ---
 
 ## Q185264: WD97: Crop Button on Picture Toolbar Unavailable in a Template

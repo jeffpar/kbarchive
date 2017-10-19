@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169491: SMSINST: How Status MIFs Work with the SMS Installer"
-permalink: kb/169/Q169491/
+permalink: /kb/169/Q169491/
 ---
 
 ## Q169491: SMSINST: How Status MIFs Work with the SMS Installer

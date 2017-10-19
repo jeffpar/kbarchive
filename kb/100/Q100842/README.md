@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100842: File Limit for DIR Command Sort Options"
-permalink: kb/100/Q100842/
+permalink: /kb/100/Q100842/
 ---
 
 ## Q100842: File Limit for DIR Command Sort Options

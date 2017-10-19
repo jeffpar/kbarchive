@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95835: What VSafe Manager (MWAVTSR.EXE) Does and How It Works"
-permalink: kb/095/Q95835/
+permalink: /kb/095/Q95835/
 ---
 
 ## Q95835: What VSafe Manager (MWAVTSR.EXE) Does and How It Works

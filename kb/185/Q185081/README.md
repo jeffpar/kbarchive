@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185081: No Domain Controllers Found When Logging on Using RAS"
-permalink: kb/185/Q185081/
+permalink: /kb/185/Q185081/
 ---
 
 ## Q185081: No Domain Controllers Found When Logging on Using RAS

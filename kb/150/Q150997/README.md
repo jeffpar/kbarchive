@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150997: Opening Multiple Online Viewer Titles May Cause Hang"
-permalink: kb/150/Q150997/
+permalink: /kb/150/Q150997/
 ---
 
 ## Q150997: Opening Multiple Online Viewer Titles May Cause Hang

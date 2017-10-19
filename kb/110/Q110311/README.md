@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110311: Reserving 0.0 MB on a RAM Drive with DoubleSpace"
-permalink: kb/110/Q110311/
+permalink: /kb/110/Q110311/
 ---
 
 ## Q110311: Reserving 0.0 MB on a RAM Drive with DoubleSpace

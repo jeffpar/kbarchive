@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63793: Communication Port Data Loss in Enhanced-Mode Windows 3.0"
-permalink: kb/063/Q63793/
+permalink: /kb/063/Q63793/
 ---
 
 ## Q63793: Communication Port Data Loss in Enhanced-Mode Windows 3.0

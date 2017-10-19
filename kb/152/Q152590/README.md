@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152590: XCLN: Err Msg: Lz32.dll Cannot Start, Check the File..."
-permalink: kb/152/Q152590/
+permalink: /kb/152/Q152590/
 ---
 
 ## Q152590: XCLN: Err Msg: Lz32.dll Cannot Start, Check the File...

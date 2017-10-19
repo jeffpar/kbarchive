@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137796: Custom Toolbar Buttons are Not Displaying if Toolbar is Full"
-permalink: kb/137/Q137796/
+permalink: /kb/137/Q137796/
 ---
 
 ## Q137796: Custom Toolbar Buttons are Not Displaying if Toolbar is Full

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313353: SMS 2.0 SP3 Is Required to Support Windows XP Clients"
-permalink: kb/313/Q313353/
+permalink: /kb/313/Q313353/
 ---
 
 ## Q313353: SMS 2.0 SP3 Is Required to Support Windows XP Clients

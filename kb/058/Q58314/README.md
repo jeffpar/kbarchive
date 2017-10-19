@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58314: Older MS-DOS Mouse Drivers Incompatible with Windows"
-permalink: kb/058/Q58314/
+permalink: /kb/058/Q58314/
 ---
 
 ## Q58314: Older MS-DOS Mouse Drivers Incompatible with Windows

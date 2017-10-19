@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155357: PERL Scripts Fail to Execute &amp; Not Load the Advapi32.dll File"
-permalink: kb/155/Q155357/
+permalink: /kb/155/Q155357/
 ---
 
 ## Q155357: PERL Scripts Fail to Execute &amp; Not Load the Advapi32.dll File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196974: How to Dial Phone Access Codes with Dial Up Networking"
-permalink: kb/196/Q196974/
+permalink: /kb/196/Q196974/
 ---
 
 ## Q196974: How to Dial Phone Access Codes with Dial Up Networking

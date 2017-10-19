@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195597: WD97: Column Selection Lost After Formatting Characters"
-permalink: kb/195/Q195597/
+permalink: /kb/195/Q195597/
 ---
 
 ## Q195597: WD97: Column Selection Lost After Formatting Characters

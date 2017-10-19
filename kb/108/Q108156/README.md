@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108156: WinPopup Cannot Run... Error with VREDIR.386"
-permalink: kb/108/Q108156/
+permalink: /kb/108/Q108156/
 ---
 
 ## Q108156: WinPopup Cannot Run... Error with VREDIR.386

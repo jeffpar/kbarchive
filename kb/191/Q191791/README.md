@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191791: INFO: VB 6.0 Readme Part 14: Visual Component Manager"
-permalink: kb/191/Q191791/
+permalink: /kb/191/Q191791/
 ---
 
 ## Q191791: INFO: VB 6.0 Readme Part 14: Visual Component Manager

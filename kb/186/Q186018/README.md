@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186018: WD97: Table Borders Lost When Table Pasted or Linked"
-permalink: kb/186/Q186018/
+permalink: /kb/186/Q186018/
 ---
 
 ## Q186018: WD97: Table Borders Lost When Table Pasted or Linked

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195697: XFOR: Upgrade to 5.5 SP1 Overwrites Notes Mapping Tables"
-permalink: kb/195/Q195697/
+permalink: /kb/195/Q195697/
 ---
 
 ## Q195697: XFOR: Upgrade to 5.5 SP1 Overwrites Notes Mapping Tables

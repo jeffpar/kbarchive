@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235766: SMS: Admin Console Installation Causes Dr. Watson"
-permalink: kb/235/Q235766/
+permalink: /kb/235/Q235766/
 ---
 
 ## Q235766: SMS: Admin Console Installation Causes Dr. Watson

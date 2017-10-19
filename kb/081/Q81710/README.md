@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81710: 1 MB COMPAQ and AT&amp;T Machines Can't Run HIMEM.SYS"
-permalink: kb/081/Q81710/
+permalink: /kb/081/Q81710/
 ---
 
 ## Q81710: 1 MB COMPAQ and AT&amp;T Machines Can't Run HIMEM.SYS

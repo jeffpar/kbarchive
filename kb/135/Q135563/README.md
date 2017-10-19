@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135563: FIX: One-to-Many Report Based on Two Views Causes Errors"
-permalink: kb/135/Q135563/
+permalink: /kb/135/Q135563/
 ---
 
 ## Q135563: FIX: One-to-Many Report Based on Two Views Causes Errors

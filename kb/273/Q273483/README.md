@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273483: PRB: Form.Show() Within WITH Block Prevents Releasing Modal Form"
-permalink: kb/273/Q273483/
+permalink: /kb/273/Q273483/
 ---
 
 ## Q273483: PRB: Form.Show() Within WITH Block Prevents Releasing Modal Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184234: PRB: printf() and _fcvt() Might Produce Incorrect Rounding"
-permalink: kb/184/Q184234/
+permalink: /kb/184/Q184234/
 ---
 
 ## Q184234: PRB: printf() and _fcvt() Might Produce Incorrect Rounding

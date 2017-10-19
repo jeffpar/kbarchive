@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265792: DB2OLEDB Leaks Memory When Stored Proc Returns adLongVarChar"
-permalink: kb/265/Q265792/
+permalink: /kb/265/Q265792/
 ---
 
 ## Q265792: DB2OLEDB Leaks Memory When Stored Proc Returns adLongVarChar

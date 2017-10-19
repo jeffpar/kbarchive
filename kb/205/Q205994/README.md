@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205994: Renewing IP Lease From DHCP Server Logs Off Novell Server"
-permalink: kb/205/Q205994/
+permalink: /kb/205/Q205994/
 ---
 
 ## Q205994: Renewing IP Lease From DHCP Server Logs Off Novell Server

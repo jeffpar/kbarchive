@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134844: Windows 95 Cannot Detect EtherExpress 16/16TP on Pentium PC"
-permalink: kb/134/Q134844/
+permalink: /kb/134/Q134844/
 ---
 
 ## Q134844: Windows 95 Cannot Detect EtherExpress 16/16TP on Pentium PC

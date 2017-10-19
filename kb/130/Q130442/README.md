@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130442: PRB: RELEASE LIBRARY Results in &quot;API library not found&quot; Error"
-permalink: kb/130/Q130442/
+permalink: /kb/130/Q130442/
 ---
 
 ## Q130442: PRB: RELEASE LIBRARY Results in &quot;API library not found&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253140: HOWTO: Use WTSEnumerateProcesses from Visual Basic"
-permalink: kb/253/Q253140/
+permalink: /kb/253/Q253140/
 ---
 
 ## Q253140: HOWTO: Use WTSEnumerateProcesses from Visual Basic

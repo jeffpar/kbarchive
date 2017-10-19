@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41246: How to Use Environment Variable Substitution in Batch Files"
-permalink: kb/041/Q41246/
+permalink: /kb/041/Q41246/
 ---
 
 ## Q41246: How to Use Environment Variable Substitution in Batch Files

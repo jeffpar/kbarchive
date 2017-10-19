@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198788: XADM: Using a Batch File for Isinteg with Alltests"
-permalink: kb/198/Q198788/
+permalink: /kb/198/Q198788/
 ---
 
 ## Q198788: XADM: Using a Batch File for Isinteg with Alltests

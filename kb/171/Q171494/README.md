@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171494: FIX: MouseUp Event Not Triggered in DblClick w/Comctl32"
-permalink: kb/171/Q171494/
+permalink: /kb/171/Q171494/
 ---
 
 ## Q171494: FIX: MouseUp Event Not Triggered in DblClick w/Comctl32

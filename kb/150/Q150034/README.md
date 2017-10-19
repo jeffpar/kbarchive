@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150034: PRB: LPPICTUREDISP Cannot Be Passed Across Process Boundaries"
-permalink: kb/150/Q150034/
+permalink: /kb/150/Q150034/
 ---
 
 ## Q150034: PRB: LPPICTUREDISP Cannot Be Passed Across Process Boundaries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140040: Installing Windows NT 3.51 Service Pack 2 on Compaq Computers"
-permalink: kb/140/Q140040/
+permalink: /kb/140/Q140040/
 ---
 
 ## Q140040: Installing Windows NT 3.51 Service Pack 2 on Compaq Computers

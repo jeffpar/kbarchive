@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130225: PRB: Setting the ReadOnly Property of a Control Does Not Work"
-permalink: kb/130/Q130225/
+permalink: /kb/130/Q130225/
 ---
 
 ## Q130225: PRB: Setting the ReadOnly Property of a Control Does Not Work

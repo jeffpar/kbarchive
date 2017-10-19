@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131958: Access Denied for Account Operators in User Manager for Domains"
-permalink: kb/131/Q131958/
+permalink: /kb/131/Q131958/
 ---
 
 ## Q131958: Access Denied for Account Operators in User Manager for Domains

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87041: SMTP: How to Start Up the SMTP Gateway"
-permalink: kb/087/Q87041/
+permalink: /kb/087/Q87041/
 ---
 
 ## Q87041: SMTP: How to Start Up the SMTP Gateway

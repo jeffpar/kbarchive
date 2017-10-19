@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73820: Microsoft PS/2-Style Mouse Incompatibility on Citizen 286"
-permalink: kb/073/Q73820/
+permalink: /kb/073/Q73820/
 ---
 
 ## Q73820: Microsoft PS/2-Style Mouse Incompatibility on Citizen 286

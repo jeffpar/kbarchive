@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130853: Distributable Files in Visual FoxPro Distribution Kit"
-permalink: kb/130/Q130853/
+permalink: /kb/130/Q130853/
 ---
 
 ## Q130853: Distributable Files in Visual FoxPro Distribution Kit

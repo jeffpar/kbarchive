@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279152: Microsoft Systems Management Server 2.0 Administrator's Companio"
-permalink: kb/279/Q279152/
+permalink: /kb/279/Q279152/
 ---
 
 ## Q279152: Microsoft Systems Management Server 2.0 Administrator's Companio

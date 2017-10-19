@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131074: Printing Over LocalTalk Bridge Produces IOError"
-permalink: kb/131/Q131074/
+permalink: /kb/131/Q131074/
 ---
 
 ## Q131074: Printing Over LocalTalk Bridge Produces IOError

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187939: IPX May Not Work When Packet Size Is Larger Than Receive Buffer"
-permalink: kb/187/Q187939/
+permalink: /kb/187/Q187939/
 ---
 
 ## Q187939: IPX May Not Work When Packet Size Is Larger Than Receive Buffer

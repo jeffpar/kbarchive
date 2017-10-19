@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182723: Problems Adding New Hardware in Windows 95"
-permalink: kb/182/Q182723/
+permalink: /kb/182/Q182723/
 ---
 
 ## Q182723: Problems Adding New Hardware in Windows 95

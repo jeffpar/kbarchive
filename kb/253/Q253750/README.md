@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253750: Asheron's Call Error Msg: Correct Version Is Not Installed"
-permalink: kb/253/Q253750/
+permalink: /kb/253/Q253750/
 ---
 
 ## Q253750: Asheron's Call Error Msg: Correct Version Is Not Installed

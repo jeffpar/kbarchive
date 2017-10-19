@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179068: FS95: Scenery Areas Not Listed in Airports Directory"
-permalink: kb/179/Q179068/
+permalink: /kb/179/Q179068/
 ---
 
 ## Q179068: FS95: Scenery Areas Not Listed in Airports Directory

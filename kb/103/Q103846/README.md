@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103846: PC WSPlus: Appending Archive Information to an Existing File"
-permalink: kb/103/Q103846/
+permalink: /kb/103/Q103846/
 ---
 
 ## Q103846: PC WSPlus: Appending Archive Information to an Existing File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150541: Restoring the UPS Tool and Icon in Control Panel"
-permalink: kb/150/Q150541/
+permalink: /kb/150/Q150541/
 ---
 
 ## Q150541: Restoring the UPS Tool and Icon in Control Panel

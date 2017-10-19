@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175719: Registry Keys Added by Routing and Remote Access Service Update"
-permalink: kb/175/Q175719/
+permalink: /kb/175/Q175719/
 ---
 
 ## Q175719: Registry Keys Added by Routing and Remote Access Service Update

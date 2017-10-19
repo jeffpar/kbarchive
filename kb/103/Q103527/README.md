@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103527: Setup Reports Less Free Space than MS-DOS (DoubleSpace Drive)"
-permalink: kb/103/Q103527/
+permalink: /kb/103/Q103527/
 ---
 
 ## Q103527: Setup Reports Less Free Space than MS-DOS (DoubleSpace Drive)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193024: BUG: KEYBOARD Multiple Tabs Do Not Work in Browse Window"
-permalink: kb/193/Q193024/
+permalink: /kb/193/Q193024/
 ---
 
 ## Q193024: BUG: KEYBOARD Multiple Tabs Do Not Work in Browse Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132391: Mac Art Gallery ErrMsg: Sorry, There Was a Problem Playing..."
-permalink: kb/132/Q132391/
+permalink: /kb/132/Q132391/
 ---
 
 ## Q132391: Mac Art Gallery ErrMsg: Sorry, There Was a Problem Playing...

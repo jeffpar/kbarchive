@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162581: Printer Session Font Override Option"
-permalink: kb/162/Q162581/
+permalink: /kb/162/Q162581/
 ---
 
 ## Q162581: Printer Session Font Override Option

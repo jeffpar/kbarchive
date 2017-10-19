@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263850: XCLN: Problem Forwarding Mail with Attachments"
-permalink: kb/263/Q263850/
+permalink: /kb/263/Q263850/
 ---
 
 ## Q263850: XCLN: Problem Forwarding Mail with Attachments

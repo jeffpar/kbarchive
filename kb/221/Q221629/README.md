@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221629: FIX: &quot;Unknown COM status code&quot; With ActiveX Conferencing Control"
-permalink: kb/221/Q221629/
+permalink: /kb/221/Q221629/
 ---
 
 ## Q221629: FIX: &quot;Unknown COM status code&quot; With ActiveX Conferencing Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39372: DOCERR: MOV mem,accum and MOV accum,mem Formats Documented Wrong"
-permalink: kb/039/Q39372/
+permalink: /kb/039/Q39372/
 ---
 
 ## Q39372: DOCERR: MOV mem,accum and MOV accum,mem Formats Documented Wrong

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202937: SMS: SMS Does Not Support Spaces in SQL Server Database Names"
-permalink: kb/202/Q202937/
+permalink: /kb/202/Q202937/
 ---
 
 ## Q202937: SMS: SMS Does Not Support Spaces in SQL Server Database Names

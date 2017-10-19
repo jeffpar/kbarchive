@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172481: Invalid SAP Entries Allowed in AS/400 and 3270 Wizard"
-permalink: kb/172/Q172481/
+permalink: /kb/172/Q172481/
 ---
 
 ## Q172481: Invalid SAP Entries Allowed in AS/400 and 3270 Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162532: WD97: Numbering Continues in Pasted/Linked Table"
-permalink: kb/162/Q162532/
+permalink: /kb/162/Q162532/
 ---
 
 ## Q162532: WD97: Numbering Continues in Pasted/Linked Table

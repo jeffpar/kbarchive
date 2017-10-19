@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303219: Incorrect Buddy Name Exposed When Using Inspect With MSN Explore"
-permalink: kb/303/Q303219/
+permalink: /kb/303/Q303219/
 ---
 
 ## Q303219: Incorrect Buddy Name Exposed When Using Inspect With MSN Explore

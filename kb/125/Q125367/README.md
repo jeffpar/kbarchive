@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125367: HOWTO: Connecting a CRecordset to a CDialog"
-permalink: kb/125/Q125367/
+permalink: /kb/125/Q125367/
 ---
 
 ## Q125367: HOWTO: Connecting a CRecordset to a CDialog

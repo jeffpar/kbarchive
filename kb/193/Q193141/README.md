@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193141: MCM: Reduced Frame Rate During First Stunt Quarry Event"
-permalink: kb/193/Q193141/
+permalink: /kb/193/Q193141/
 ---
 
 ## Q193141: MCM: Reduced Frame Rate During First Stunt Quarry Event

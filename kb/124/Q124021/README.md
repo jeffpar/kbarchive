@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124021: CD-ROM File System Does Not De-allocate Non-paged Pool Memory"
-permalink: kb/124/Q124021/
+permalink: /kb/124/Q124021/
 ---
 
 ## Q124021: CD-ROM File System Does Not De-allocate Non-paged Pool Memory

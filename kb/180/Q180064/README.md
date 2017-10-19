@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180064: Physical Drive Access Unavailable When Using DskProbe"
-permalink: kb/180/Q180064/
+permalink: /kb/180/Q180064/
 ---
 
 ## Q180064: Physical Drive Access Unavailable When Using DskProbe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64036: Unrecoverable Application Error in Windows Program Manager"
-permalink: kb/064/Q64036/
+permalink: /kb/064/Q64036/
 ---
 
 ## Q64036: Unrecoverable Application Error in Windows Program Manager

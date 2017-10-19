@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32845: Switch Settings For Non-PS/2 Token-Ring Adapters"
-permalink: kb/032/Q32845/
+permalink: /kb/032/Q32845/
 ---
 
 ## Q32845: Switch Settings For Non-PS/2 Token-Ring Adapters

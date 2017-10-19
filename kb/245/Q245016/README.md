@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245016: XCLN: Outlook 2000 Attachments Keep Created/Modified Date"
-permalink: kb/245/Q245016/
+permalink: /kb/245/Q245016/
 ---
 
 ## Q245016: XCLN: Outlook 2000 Attachments Keep Created/Modified Date

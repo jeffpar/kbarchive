@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174042: XADM: Standard Edition should not be Installed on Cluster System"
-permalink: kb/174/Q174042/
+permalink: /kb/174/Q174042/
 ---
 
 ## Q174042: XADM: Standard Edition should not be Installed on Cluster System

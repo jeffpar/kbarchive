@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140941: XCLN: Identifying Exportable Client Versions"
-permalink: kb/140/Q140941/
+permalink: /kb/140/Q140941/
 ---
 
 ## Q140941: XCLN: Identifying Exportable Client Versions

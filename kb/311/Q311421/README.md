@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311421: Disassociating Free Accounts From A Paid Account In MSN Explorer"
-permalink: kb/311/Q311421/
+permalink: /kb/311/Q311421/
 ---
 
 ## Q311421: Disassociating Free Accounts From A Paid Account In MSN Explorer

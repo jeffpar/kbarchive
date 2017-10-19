@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241862: BUG: ClassWizard Omits Methods with BYTE or BYTE&#42; As Parameters"
-permalink: kb/241/Q241862/
+permalink: /kb/241/Q241862/
 ---
 
 ## Q241862: BUG: ClassWizard Omits Methods with BYTE or BYTE&#42; As Parameters

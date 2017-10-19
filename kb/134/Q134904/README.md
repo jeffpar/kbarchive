@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134904: STOP Msg: 0x0000001e on Server with Services for Macintosh"
-permalink: kb/134/Q134904/
+permalink: /kb/134/Q134904/
 ---
 
 ## Q134904: STOP Msg: 0x0000001e on Server with Services for Macintosh

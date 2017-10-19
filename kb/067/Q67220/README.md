@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67220: Screen Problems on the Compuadd 386 SL Using Windows"
-permalink: kb/067/Q67220/
+permalink: /kb/067/Q67220/
 ---
 
 ## Q67220: Screen Problems on the Compuadd 386 SL Using Windows

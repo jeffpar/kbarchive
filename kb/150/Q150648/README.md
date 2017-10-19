@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150648: HOWTO: Resolve Files Checked Out by an Unavailable User"
-permalink: kb/150/Q150648/
+permalink: /kb/150/Q150648/
 ---
 
 ## Q150648: HOWTO: Resolve Files Checked Out by an Unavailable User

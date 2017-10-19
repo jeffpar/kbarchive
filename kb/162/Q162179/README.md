@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162179: TCP Fast Retransmit and Recovery Added in WinNT 4.0 SP2"
-permalink: kb/162/Q162179/
+permalink: /kb/162/Q162179/
 ---
 
 ## Q162179: TCP Fast Retransmit and Recovery Added in WinNT 4.0 SP2

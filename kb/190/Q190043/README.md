@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190043: PRB: Controls Collection vs. Standard Collection in For Each"
-permalink: kb/190/Q190043/
+permalink: /kb/190/Q190043/
 ---
 
 ## Q190043: PRB: Controls Collection vs. Standard Collection in For Each

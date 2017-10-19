@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183192: Mac Bookshelf 98: Minimum System Requirements"
-permalink: kb/183/Q183192/
+permalink: /kb/183/Q183192/
 ---
 
 ## Q183192: Mac Bookshelf 98: Minimum System Requirements

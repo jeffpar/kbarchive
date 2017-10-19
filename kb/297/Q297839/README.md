@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297839: FIX: TYPE() of Combo/List Box Value May Crash VFP"
-permalink: kb/297/Q297839/
+permalink: /kb/297/Q297839/
 ---
 
 ## Q297839: FIX: TYPE() of Combo/List Box Value May Crash VFP

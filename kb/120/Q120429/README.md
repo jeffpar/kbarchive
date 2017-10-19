@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120429: Brushes Do Not Display Correctly in Photoshop 2.5"
-permalink: kb/120/Q120429/
+permalink: /kb/120/Q120429/
 ---
 
 ## Q120429: Brushes Do Not Display Correctly in Photoshop 2.5

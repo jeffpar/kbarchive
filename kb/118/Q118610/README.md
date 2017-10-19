@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118610: Using CWnd::GetParent in a Dialog Box"
-permalink: kb/118/Q118610/
+permalink: /kb/118/Q118610/
 ---
 
 ## Q118610: Using CWnd::GetParent in a Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159594: Missing Eastern Europe FontSubstitutes in Registry"
-permalink: kb/159/Q159594/
+permalink: /kb/159/Q159594/
 ---
 
 ## Q159594: Missing Eastern Europe FontSubstitutes in Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263890: XWEB: OWA Hangs During Log On If One Server Is Unavailable"
-permalink: kb/263/Q263890/
+permalink: /kb/263/Q263890/
 ---
 
 ## Q263890: XWEB: OWA Hangs During Log On If One Server Is Unavailable

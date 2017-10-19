@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237718: NFL Fever 2000: Weather Remains Clear When You Play the Game"
-permalink: kb/237/Q237718/
+permalink: /kb/237/Q237718/
 ---
 
 ## Q237718: NFL Fever 2000: Weather Remains Clear When You Play the Game

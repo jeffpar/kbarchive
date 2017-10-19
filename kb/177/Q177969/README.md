@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177969: XADM: Self Registration of Scripto.dll Failed"
-permalink: kb/177/Q177969/
+permalink: /kb/177/Q177969/
 ---
 
 ## Q177969: XADM: Self Registration of Scripto.dll Failed

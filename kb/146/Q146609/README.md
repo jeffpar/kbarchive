@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146609: Sound Card Beeps During Hardware Detection"
-permalink: kb/146/Q146609/
+permalink: /kb/146/Q146609/
 ---
 
 ## Q146609: Sound Card Beeps During Hardware Detection

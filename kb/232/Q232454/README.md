@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232454: How to Manually Configure Cluster MAC Addresses in WLBS"
-permalink: kb/232/Q232454/
+permalink: /kb/232/Q232454/
 ---
 
 ## Q232454: How to Manually Configure Cluster MAC Addresses in WLBS

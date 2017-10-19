@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47332: Proper Dip-Switch Settings for an IBM Proprinter II"
-permalink: kb/047/Q47332/
+permalink: /kb/047/Q47332/
 ---
 
 ## Q47332: Proper Dip-Switch Settings for an IBM Proprinter II

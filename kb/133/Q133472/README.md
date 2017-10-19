@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133472: Screen Saver Locks Out Account After You Enter Invalid Password"
-permalink: kb/133/Q133472/
+permalink: /kb/133/Q133472/
 ---
 
 ## Q133472: Screen Saver Locks Out Account After You Enter Invalid Password

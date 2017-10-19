@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84941: Abnormal FORMAT Termination Yields Invalid Media"
-permalink: kb/084/Q84941/
+permalink: /kb/084/Q84941/
 ---
 
 ## Q84941: Abnormal FORMAT Termination Yields Invalid Media

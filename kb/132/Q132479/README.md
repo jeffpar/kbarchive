@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132479: PRB: 'Variable 'TYPE' is not found' err msg using Export"
-permalink: kb/132/Q132479/
+permalink: /kb/132/Q132479/
 ---
 
 ## Q132479: PRB: 'Variable 'TYPE' is not found' err msg using Export

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99696: PC Forms: Sending E-Forms Via SMTP Gateway"
-permalink: kb/099/Q99696/
+permalink: /kb/099/Q99696/
 ---
 
 ## Q99696: PC Forms: Sending E-Forms Via SMTP Gateway

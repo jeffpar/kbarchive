@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135801: BUG: Print Preview Toolbar May Be Off Screen"
-permalink: kb/135/Q135801/
+permalink: /kb/135/Q135801/
 ---
 
 ## Q135801: BUG: Print Preview Toolbar May Be Off Screen

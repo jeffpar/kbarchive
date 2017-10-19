@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225826: Incorrect Numbers in Performance Tuning Slider"
-permalink: kb/225/Q225826/
+permalink: /kb/225/Q225826/
 ---
 
 ## Q225826: Incorrect Numbers in Performance Tuning Slider

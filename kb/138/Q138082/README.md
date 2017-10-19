@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138082: Game Port Not Detected with Sound Card Already Installed"
-permalink: kb/138/Q138082/
+permalink: /kb/138/Q138082/
 ---
 
 ## Q138082: Game Port Not Detected with Sound Card Already Installed

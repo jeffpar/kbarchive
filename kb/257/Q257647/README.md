@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257647: Memory Leak in the Rasapi32 API"
-permalink: kb/257/Q257647/
+permalink: /kb/257/Q257647/
 ---
 
 ## Q257647: Memory Leak in the Rasapi32 API

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140024: FIX: Tools Won't Run If There's a Space in the Path"
-permalink: kb/140/Q140024/
+permalink: /kb/140/Q140024/
 ---
 
 ## Q140024: FIX: Tools Won't Run If There's a Space in the Path

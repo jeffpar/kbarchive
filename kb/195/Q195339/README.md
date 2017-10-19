@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195339: Stop 0xa Using NetSupport PC-Duo"
-permalink: kb/195/Q195339/
+permalink: /kb/195/Q195339/
 ---
 
 ## Q195339: Stop 0xa Using NetSupport PC-Duo

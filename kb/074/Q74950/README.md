@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74950: Troubleshooting Applications on Networks"
-permalink: kb/074/Q74950/
+permalink: /kb/074/Q74950/
 ---
 
 ## Q74950: Troubleshooting Applications on Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128171: PC MAPI: MAPI Messages w/ Space in Message Type Fail to Print"
-permalink: kb/128/Q128171/
+permalink: /kb/128/Q128171/
 ---
 
 ## Q128171: PC MAPI: MAPI Messages w/ Space in Message Type Fail to Print

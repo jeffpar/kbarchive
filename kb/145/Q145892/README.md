@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145892: PRB: OCX Visible on All Pageframe Pages After Modal Form Runs"
-permalink: kb/145/Q145892/
+permalink: /kb/145/Q145892/
 ---
 
 ## Q145892: PRB: OCX Visible on All Pageframe Pages After Modal Form Runs

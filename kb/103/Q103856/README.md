@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103856: SubVBX.exe - Subclassing VBX Controls with MFC 2.0"
-permalink: kb/103/Q103856/
+permalink: /kb/103/Q103856/
 ---
 
 ## Q103856: SubVBX.exe - Subclassing VBX Controls with MFC 2.0

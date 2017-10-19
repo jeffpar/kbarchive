@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130627: Quick Format Results in No ID Address Mark Found"
-permalink: kb/130/Q130627/
+permalink: /kb/130/Q130627/
 ---
 
 ## Q130627: Quick Format Results in No ID Address Mark Found

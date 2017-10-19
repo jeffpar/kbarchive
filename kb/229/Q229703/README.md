@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229703: User Mode Programs May Cause a Bugcheck in Windows NT"
-permalink: kb/229/Q229703/
+permalink: /kb/229/Q229703/
 ---
 
 ## Q229703: User Mode Programs May Cause a Bugcheck in Windows NT

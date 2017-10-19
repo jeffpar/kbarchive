@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309085: InetInfo AV When Using OLE DB Provider and Linked Server"
-permalink: kb/309/Q309085/
+permalink: /kb/309/Q309085/
 ---
 
 ## Q309085: InetInfo AV When Using OLE DB Provider and Linked Server

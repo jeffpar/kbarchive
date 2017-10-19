@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138599: Identical Resources Open for Two Accounts in Server Manager"
-permalink: kb/138/Q138599/
+permalink: /kb/138/Q138599/
 ---
 
 ## Q138599: Identical Resources Open for Two Accounts in Server Manager

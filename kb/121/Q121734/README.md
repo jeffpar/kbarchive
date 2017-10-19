@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121734: PC Ext: SYS3175 MMTA Error in ASYNC.OVL"
-permalink: kb/121/Q121734/
+permalink: /kb/121/Q121734/
 ---
 
 ## Q121734: PC Ext: SYS3175 MMTA Error in ASYNC.OVL

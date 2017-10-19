@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133468: Julia Child: Find Dialog Box Remains in Foreground"
-permalink: kb/133/Q133468/
+permalink: /kb/133/Q133468/
 ---
 
 ## Q133468: Julia Child: Find Dialog Box Remains in Foreground

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147944: FIX: Edit Control's Number Style Check Box Won't Stay Selected"
-permalink: kb/147/Q147944/
+permalink: /kb/147/Q147944/
 ---
 
 ## Q147944: FIX: Edit Control's Number Style Check Box Won't Stay Selected

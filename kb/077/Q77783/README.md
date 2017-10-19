@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77783: Modal Dialog Child of Modeless Dialog Box Sample Code"
-permalink: kb/077/Q77783/
+permalink: /kb/077/Q77783/
 ---
 
 ## Q77783: Modal Dialog Child of Modeless Dialog Box Sample Code

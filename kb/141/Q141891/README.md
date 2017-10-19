@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141891: PPT7: Printing Error: This Is Not a Valid Page Range"
-permalink: kb/141/Q141891/
+permalink: /kb/141/Q141891/
 ---
 
 ## Q141891: PPT7: Printing Error: This Is Not a Valid Page Range

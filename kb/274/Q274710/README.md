@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274710: XGEN: How to Remove Attachments with ExClean"
-permalink: kb/274/Q274710/
+permalink: /kb/274/Q274710/
 ---
 
 ## Q274710: XGEN: How to Remove Attachments with ExClean

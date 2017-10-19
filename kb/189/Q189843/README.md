@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189843: XCLN: Err Msg: ActiveEx Unable to Register Itself In System Regi"
-permalink: kb/189/Q189843/
+permalink: /kb/189/Q189843/
 ---
 
 ## Q189843: XCLN: Err Msg: ActiveEx Unable to Register Itself In System Regi

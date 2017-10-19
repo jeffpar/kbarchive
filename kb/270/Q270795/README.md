@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270795: ELL French: Virtual Challenge Does Not Cross Out Dates"
-permalink: kb/270/Q270795/
+permalink: /kb/270/Q270795/
 ---
 
 ## Q270795: ELL French: Virtual Challenge Does Not Cross Out Dates

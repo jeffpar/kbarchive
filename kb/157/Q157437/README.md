@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157437: Fireev.exe Fires Events from a Second Thread"
-permalink: kb/157/Q157437/
+permalink: /kb/157/Q157437/
 ---
 
 ## Q157437: Fireev.exe Fires Events from a Second Thread

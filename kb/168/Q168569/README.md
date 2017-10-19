@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168569: SMS: Remove Package from Server Leaves Registry Key"
-permalink: kb/168/Q168569/
+permalink: /kb/168/Q168569/
 ---
 
 ## Q168569: SMS: Remove Package from Server Leaves Registry Key

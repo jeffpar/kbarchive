@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230060: Doc Err: The Main Directory is C:&#92;Inetpub&#92;Nntproot by Default"
-permalink: kb/230/Q230060/
+permalink: /kb/230/Q230060/
 ---
 
 ## Q230060: Doc Err: The Main Directory is C:&#92;Inetpub&#92;Nntproot by Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182663: XADM: NDR After Information Store Stops Unexpectedly"
-permalink: kb/182/Q182663/
+permalink: /kb/182/Q182663/
 ---
 
 ## Q182663: XADM: NDR After Information Store Stops Unexpectedly

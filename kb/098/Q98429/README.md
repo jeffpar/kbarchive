@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98429: Logshow Reports &quot;Failed to Generate Interrupt&quot; Error"
-permalink: kb/098/Q98429/
+permalink: /kb/098/Q98429/
 ---
 
 ## Q98429: Logshow Reports &quot;Failed to Generate Interrupt&quot; Error

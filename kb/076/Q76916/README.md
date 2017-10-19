@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76916: Size of Expanded Memory Pool Adjusted"
-permalink: kb/076/Q76916/
+permalink: /kb/076/Q76916/
 ---
 
 ## Q76916: Size of Expanded Memory Pool Adjusted

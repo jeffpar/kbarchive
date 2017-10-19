@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63360: FIX: INTEGER&#42;2 Multiply by Power of 2 Produces Wrong Results"
-permalink: kb/063/Q63360/
+permalink: /kb/063/Q63360/
 ---
 
 ## Q63360: FIX: INTEGER&#42;2 Multiply by Power of 2 Produces Wrong Results

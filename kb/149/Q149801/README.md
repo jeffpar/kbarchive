@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149801: UNBIND RSP Is Not Passed from SNA Server to a Downstream PU"
-permalink: kb/149/Q149801/
+permalink: /kb/149/Q149801/
 ---
 
 ## Q149801: UNBIND RSP Is Not Passed from SNA Server to a Downstream PU

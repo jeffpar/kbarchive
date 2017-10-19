@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271744: XADM: Intersite Directory Replication Stops with Event ID 1091"
-permalink: kb/271/Q271744/
+permalink: /kb/271/Q271744/
 ---
 
 ## Q271744: XADM: Intersite Directory Replication Stops with Event ID 1091

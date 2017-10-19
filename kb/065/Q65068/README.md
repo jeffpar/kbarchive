@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65068: Mac Hyp: Error in Documentation for getMessageList"
-permalink: kb/065/Q65068/
+permalink: /kb/065/Q65068/
 ---
 
 ## Q65068: Mac Hyp: Error in Documentation for getMessageList

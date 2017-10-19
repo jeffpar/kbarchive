@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135619: How to Define a Class Property Based on Property of Same Class"
-permalink: kb/135/Q135619/
+permalink: /kb/135/Q135619/
 ---
 
 ## Q135619: How to Define a Class Property Based on Property of Same Class

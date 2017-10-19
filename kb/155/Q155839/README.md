@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155839: XFOR: IMC has Problems with Mail Sent from Eudora"
-permalink: kb/155/Q155839/
+permalink: /kb/155/Q155839/
 ---
 
 ## Q155839: XFOR: IMC has Problems with Mail Sent from Eudora

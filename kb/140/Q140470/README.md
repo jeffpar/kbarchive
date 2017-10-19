@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140470: WD97: Saving Document as HTML Causes Table Formatting Changes"
-permalink: kb/140/Q140470/
+permalink: /kb/140/Q140470/
 ---
 
 ## Q140470: WD97: Saving Document as HTML Causes Table Formatting Changes

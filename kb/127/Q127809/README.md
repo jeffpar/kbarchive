@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127809: Practical Peripherals Modems Need Firmware Update for MS Fax"
-permalink: kb/127/Q127809/
+permalink: /kb/127/Q127809/
 ---
 
 ## Q127809: Practical Peripherals Modems Need Firmware Update for MS Fax

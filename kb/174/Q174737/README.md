@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174737: How to Start an Internet-Based Program Using MSN"
-permalink: kb/174/Q174737/
+permalink: /kb/174/Q174737/
 ---
 
 ## Q174737: How to Start an Internet-Based Program Using MSN

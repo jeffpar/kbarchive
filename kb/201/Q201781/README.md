@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201781: SMS: Clients with Static IP Addresses Not Network Discovered"
-permalink: kb/201/Q201781/
+permalink: /kb/201/Q201781/
 ---
 
 ## Q201781: SMS: Clients with Static IP Addresses Not Network Discovered

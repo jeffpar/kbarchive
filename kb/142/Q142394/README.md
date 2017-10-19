@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142394: PRB: CLEAR ALL Removes Back-Links from Data Environment Object"
-permalink: kb/142/Q142394/
+permalink: /kb/142/Q142394/
 ---
 
 ## Q142394: PRB: CLEAR ALL Removes Back-Links from Data Environment Object

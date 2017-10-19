@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200840: BUG: RasGetConnectStatus Does Not Report the Correct State"
-permalink: kb/200/Q200840/
+permalink: /kb/200/Q200840/
 ---
 
 ## Q200840: BUG: RasGetConnectStatus Does Not Report the Correct State

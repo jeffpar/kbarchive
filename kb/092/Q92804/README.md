@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92804: PC WSPlus: Changes and Enhancements Made in Schedule+ 1.0a"
-permalink: kb/092/Q92804/
+permalink: /kb/092/Q92804/
 ---
 
 ## Q92804: PC WSPlus: Changes and Enhancements Made in Schedule+ 1.0a

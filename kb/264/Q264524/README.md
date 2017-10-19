@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264524: SMS: DDR Backlog Because DDM Does Not Delete Read-Only DDRs"
-permalink: kb/264/Q264524/
+permalink: /kb/264/Q264524/
 ---
 
 ## Q264524: SMS: DDR Backlog Because DDM Does Not Delete Read-Only DDRs

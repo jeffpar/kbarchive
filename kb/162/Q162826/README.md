@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162826: Microsoft Programs Can't Open AOL 3.0 Web Browser"
-permalink: kb/162/Q162826/
+permalink: /kb/162/Q162826/
 ---
 
 ## Q162826: Microsoft Programs Can't Open AOL 3.0 Web Browser

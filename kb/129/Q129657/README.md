@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129657: Windows 95 Cannot Create 360K Floppy System Disk"
-permalink: kb/129/Q129657/
+permalink: /kb/129/Q129657/
 ---
 
 ## Q129657: Windows 95 Cannot Create 360K Floppy System Disk

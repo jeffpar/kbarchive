@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112585: Arcade: Game Hangs after Five Minutes to Two Hours of Play"
-permalink: kb/112/Q112585/
+permalink: /kb/112/Q112585/
 ---
 
 ## Q112585: Arcade: Game Hangs after Five Minutes to Two Hours of Play

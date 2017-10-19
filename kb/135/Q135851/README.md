@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135851: Remote Diagnostics Shows Incorrect Number Of Cylinders"
-permalink: kb/135/Q135851/
+permalink: /kb/135/Q135851/
 ---
 
 ## Q135851: Remote Diagnostics Shows Incorrect Number Of Cylinders

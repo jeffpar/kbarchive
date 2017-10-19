@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175792: &quot;Connect To&quot; Dialog Box Appears When You Connect to the Internet"
-permalink: kb/175/Q175792/
+permalink: /kb/175/Q175792/
 ---
 
 ## Q175792: &quot;Connect To&quot; Dialog Box Appears When You Connect to the Internet

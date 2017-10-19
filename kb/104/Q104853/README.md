@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104853: FlightSim: Gravis Mouse Stick Responds Slowly or Sticks"
-permalink: kb/104/Q104853/
+permalink: /kb/104/Q104853/
 ---
 
 ## Q104853: FlightSim: Gravis Mouse Stick Responds Slowly or Sticks

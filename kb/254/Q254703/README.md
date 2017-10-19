@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254703: PRB: Maximized MDI Child Form with Control Loses Focus"
-permalink: kb/254/Q254703/
+permalink: /kb/254/Q254703/
 ---
 
 ## Q254703: PRB: Maximized MDI Child Form with Control Loses Focus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197765: WD97: List of Search Criteria for Next Citation"
-permalink: kb/197/Q197765/
+permalink: /kb/197/Q197765/
 ---
 
 ## Q197765: WD97: List of Search Criteria for Next Citation

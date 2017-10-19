@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25330: Changing Format When Pasting Between Write Documents"
-permalink: kb/025/Q25330/
+permalink: /kb/025/Q25330/
 ---
 
 ## Q25330: Changing Format When Pasting Between Write Documents

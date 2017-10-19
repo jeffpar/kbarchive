@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252408: Unable to Shut Down the W3SVC Service Properly"
-permalink: kb/252/Q252408/
+permalink: /kb/252/Q252408/
 ---
 
 ## Q252408: Unable to Shut Down the W3SVC Service Properly

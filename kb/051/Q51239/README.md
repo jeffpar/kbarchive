@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51239: Flt Sim: Nose Pitches Up When Executing a Turn with Joystick"
-permalink: kb/051/Q51239/
+permalink: /kb/051/Q51239/
 ---
 
 ## Q51239: Flt Sim: Nose Pitches Up When Executing a Turn with Joystick

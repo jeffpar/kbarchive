@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214598: WD97: Merge to Printer Causes &quot;Fields Nested Too Deeply&quot; Error"
-permalink: kb/214/Q214598/
+permalink: /kb/214/Q214598/
 ---
 
 ## Q214598: WD97: Merge to Printer Causes &quot;Fields Nested Too Deeply&quot; Error

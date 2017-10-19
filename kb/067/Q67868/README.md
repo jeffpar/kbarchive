@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67868: SVAR: Program that Creates System Variables from Network Info"
-permalink: kb/067/Q67868/
+permalink: /kb/067/Q67868/
 ---
 
 ## Q67868: SVAR: Program that Creates System Variables from Network Info

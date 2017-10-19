@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122220: FIX: Return Value Not Ignored with NMAKE's Dash (-) Command"
-permalink: kb/122/Q122220/
+permalink: /kb/122/Q122220/
 ---
 
 ## Q122220: FIX: Return Value Not Ignored with NMAKE's Dash (-) Command

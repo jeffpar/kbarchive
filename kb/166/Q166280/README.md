@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166280: DOC: T-SQL Debugger Server Setup Provides Incorrect Location"
-permalink: kb/166/Q166280/
+permalink: /kb/166/Q166280/
 ---
 
 ## Q166280: DOC: T-SQL Debugger Server Setup Provides Incorrect Location

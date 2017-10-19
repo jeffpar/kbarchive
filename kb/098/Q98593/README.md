@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98593: Streams Development Environment"
-permalink: kb/098/Q98593/
+permalink: /kb/098/Q98593/
 ---
 
 ## Q98593: Streams Development Environment

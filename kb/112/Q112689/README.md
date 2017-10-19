@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112689: BUG: Use of Certain Scalar Functions May Cause SQLFetch Errors"
-permalink: kb/112/Q112689/
+permalink: /kb/112/Q112689/
 ---
 
 ## Q112689: BUG: Use of Certain Scalar Functions May Cause SQLFetch Errors

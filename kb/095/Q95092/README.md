@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95092: EMM386 Err Msg: Unable to Create Page Frame"
-permalink: kb/095/Q95092/
+permalink: /kb/095/Q95092/
 ---
 
 ## Q95092: EMM386 Err Msg: Unable to Create Page Frame

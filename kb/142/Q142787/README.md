@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142787: FIX: C1001 on Template Class of Type Pointer to Function"
-permalink: kb/142/Q142787/
+permalink: /kb/142/Q142787/
 ---
 
 ## Q142787: FIX: C1001 on Template Class of Type Pointer to Function

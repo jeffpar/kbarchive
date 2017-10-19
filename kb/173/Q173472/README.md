@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173472: Expedia Trip Planner 98: Contents of the Readme.wri File"
-permalink: kb/173/Q173472/
+permalink: /kb/173/Q173472/
 ---
 
 ## Q173472: Expedia Trip Planner 98: Contents of the Readme.wri File

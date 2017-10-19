@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277744: SMS: Status Is Displayed Incorrectly When Using Advertview"
-permalink: kb/277/Q277744/
+permalink: /kb/277/Q277744/
 ---
 
 ## Q277744: SMS: Status Is Displayed Incorrectly When Using Advertview

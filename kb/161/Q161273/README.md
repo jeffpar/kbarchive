@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161273: HOWTO: Create Data Bound Controls"
-permalink: kb/161/Q161273/
+permalink: /kb/161/Q161273/
 ---
 
 ## Q161273: HOWTO: Create Data Bound Controls

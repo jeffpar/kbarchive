@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115857: PRB: Using #define to Specify Include File Fails with C2006"
-permalink: kb/115/Q115857/
+permalink: /kb/115/Q115857/
 ---
 
 ## Q115857: PRB: Using #define to Specify Include File Fails with C2006

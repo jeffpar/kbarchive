@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199392: XCLN: Schedule+ View (Username.vue) Settings Overwritten after U"
-permalink: kb/199/Q199392/
+permalink: /kb/199/Q199392/
 ---
 
 ## Q199392: XCLN: Schedule+ View (Username.vue) Settings Overwritten after U

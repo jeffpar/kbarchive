@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142630: NTFS with Full Logfile Condition May Cause Trap"
-permalink: kb/142/Q142630/
+permalink: /kb/142/Q142630/
 ---
 
 ## Q142630: NTFS with Full Logfile Condition May Cause Trap

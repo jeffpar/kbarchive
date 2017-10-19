@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142605: Unicode Code Page Not Supported in Internet Information Server"
-permalink: kb/142/Q142605/
+permalink: /kb/142/Q142605/
 ---
 
 ## Q142605: Unicode Code Page Not Supported in Internet Information Server

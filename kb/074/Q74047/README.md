@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74047: How to Boot a PS/1 from a Floppy or Fixed Disk"
-permalink: kb/074/Q74047/
+permalink: /kb/074/Q74047/
 ---
 
 ## Q74047: How to Boot a PS/1 from a Floppy or Fixed Disk

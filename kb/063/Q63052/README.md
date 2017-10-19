@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63052: FIX: PWB 1.0 Extensions Will Only Return True Under MS-DOS"
-permalink: kb/063/Q63052/
+permalink: /kb/063/Q63052/
 ---
 
 ## Q63052: FIX: PWB 1.0 Extensions Will Only Return True Under MS-DOS

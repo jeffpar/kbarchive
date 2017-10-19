@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260226: PRB: Attempting to Print to Remote Printer Via a TCP/IP in SNA"
-permalink: kb/260/Q260226/
+permalink: /kb/260/Q260226/
 ---
 
 ## Q260226: PRB: Attempting to Print to Remote Printer Via a TCP/IP in SNA

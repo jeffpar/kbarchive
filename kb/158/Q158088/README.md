@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158088: Mac Encarta 97: Cannot Install Fonts Through Custom Install"
-permalink: kb/158/Q158088/
+permalink: /kb/158/Q158088/
 ---
 
 ## Q158088: Mac Encarta 97: Cannot Install Fonts Through Custom Install

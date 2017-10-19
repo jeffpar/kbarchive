@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216355: DirectX: List of Files Installed by the DirectX 6.1 Update"
-permalink: kb/216/Q216355/
+permalink: /kb/216/Q216355/
 ---
 
 ## Q216355: DirectX: List of Files Installed by the DirectX 6.1 Update

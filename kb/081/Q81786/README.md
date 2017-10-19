@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81786: Windows 3.1 Startup Group Order"
-permalink: kb/081/Q81786/
+permalink: /kb/081/Q81786/
 ---
 
 ## Q81786: Windows 3.1 Startup Group Order

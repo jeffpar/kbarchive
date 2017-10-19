@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255849: XCLN: How to Set Up Public Journaling for Public Folder Contacts"
-permalink: kb/255/Q255849/
+permalink: /kb/255/Q255849/
 ---
 
 ## Q255849: XCLN: How to Set Up Public Journaling for Public Folder Contacts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107425: Bookshelf: No Sound with Narrated Animation"
-permalink: kb/107/Q107425/
+permalink: /kb/107/Q107425/
 ---
 
 ## Q107425: Bookshelf: No Sound with Narrated Animation

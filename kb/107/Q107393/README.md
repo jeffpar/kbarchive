@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107393: Fax Modem Class Required for Binary File Transfers"
-permalink: kb/107/Q107393/
+permalink: /kb/107/Q107393/
 ---
 
 ## Q107393: Fax Modem Class Required for Binary File Transfers

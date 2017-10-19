@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172019: Index Server Cannot Filter Office 97 Documents"
-permalink: kb/172/Q172019/
+permalink: /kb/172/Q172019/
 ---
 
 ## Q172019: Index Server Cannot Filter Office 97 Documents

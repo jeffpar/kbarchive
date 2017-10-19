@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172120: BUG: Pressing TAB Key Does Not Move Focus on SSTab Control"
-permalink: kb/172/Q172120/
+permalink: /kb/172/Q172120/
 ---
 
 ## Q172120: BUG: Pressing TAB Key Does Not Move Focus on SSTab Control

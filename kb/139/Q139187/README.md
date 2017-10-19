@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139187: FIX:Open Dialog Box Appears After Clicking Next in Wizard Form"
-permalink: kb/139/Q139187/
+permalink: /kb/139/Q139187/
 ---
 
 ## Q139187: FIX:Open Dialog Box Appears After Clicking Next in Wizard Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171668: FIX: Shared Table in DBC Remains Locked After Table Update"
-permalink: kb/171/Q171668/
+permalink: /kb/171/Q171668/
 ---
 
 ## Q171668: FIX: Shared Table in DBC Remains Locked After Table Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223029: Compaq Prosignia Server Hangs With Windows NT 4.0 Service Pack 4"
-permalink: kb/223/Q223029/
+permalink: /kb/223/Q223029/
 ---
 
 ## Q223029: Compaq Prosignia Server Hangs With Windows NT 4.0 Service Pack 4

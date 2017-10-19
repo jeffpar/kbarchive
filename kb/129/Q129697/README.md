@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129697: Unattended Upgrade Using SETUPMGR and TCP/IP Protocol Stops"
-permalink: kb/129/Q129697/
+permalink: /kb/129/Q129697/
 ---
 
 ## Q129697: Unattended Upgrade Using SETUPMGR and TCP/IP Protocol Stops

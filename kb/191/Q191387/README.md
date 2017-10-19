@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191387: Unable to Run 16-bit Apps If FILES= Is Greater Than 255"
-permalink: kb/191/Q191387/
+permalink: /kb/191/Q191387/
 ---
 
 ## Q191387: Unable to Run 16-bit Apps If FILES= Is Greater Than 255

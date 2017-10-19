@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38630: Mac DOS: Microsoft Mail, TOPS FlashCard, and Windows/386"
-permalink: kb/038/Q38630/
+permalink: /kb/038/Q38630/
 ---
 
 ## Q38630: Mac DOS: Microsoft Mail, TOPS FlashCard, and Windows/386

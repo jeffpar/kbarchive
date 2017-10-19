@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183777: FP: Server Extensions Do Not Support Nested Virtual Roots"
-permalink: kb/183/Q183777/
+permalink: /kb/183/Q183777/
 ---
 
 ## Q183777: FP: Server Extensions Do Not Support Nested Virtual Roots

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182794: Files Included in the Microsoft Exchange Inbox Update"
-permalink: kb/182/Q182794/
+permalink: /kb/182/Q182794/
 ---
 
 ## Q182794: Files Included in the Microsoft Exchange Inbox Update

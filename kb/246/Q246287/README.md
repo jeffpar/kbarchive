@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246287: XADM: Write a Batch File to Shut Down Exchange Server Quickly"
-permalink: kb/246/Q246287/
+permalink: /kb/246/Q246287/
 ---
 
 ## Q246287: XADM: Write a Batch File to Shut Down Exchange Server Quickly

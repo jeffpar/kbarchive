@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273600: You Receive a &quot;Stop 0x44&quot; Error Message in Mouclass.sys"
-permalink: kb/273/Q273600/
+permalink: /kb/273/Q273600/
 ---
 
 ## Q273600: You Receive a &quot;Stop 0x44&quot; Error Message in Mouclass.sys

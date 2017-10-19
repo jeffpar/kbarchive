@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171156: Admin Wizard Creates Home Directories with Incorrect Permissions"
-permalink: kb/171/Q171156/
+permalink: /kb/171/Q171156/
 ---
 
 ## Q171156: Admin Wizard Creates Home Directories with Incorrect Permissions

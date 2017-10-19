@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104355: SMARTDrive Reports Incorrect Version"
-permalink: kb/104/Q104355/
+permalink: /kb/104/Q104355/
 ---
 
 ## Q104355: SMARTDrive Reports Incorrect Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125904: Client Data is Corrupted When Written to an NTFS Server"
-permalink: kb/125/Q125904/
+permalink: /kb/125/Q125904/
 ---
 
 ## Q125904: Client Data is Corrupted When Written to an NTFS Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151286: Top Articles on Setting Up Windows 95"
-permalink: kb/151/Q151286/
+permalink: /kb/151/Q151286/
 ---
 
 ## Q151286: Top Articles on Setting Up Windows 95

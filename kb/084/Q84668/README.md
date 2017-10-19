@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84668: PIF's Optional Parameters Not Used with Association"
-permalink: kb/084/Q84668/
+permalink: /kb/084/Q84668/
 ---
 
 ## Q84668: PIF's Optional Parameters Not Used with Association

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162719: HOWTO: Use the WebBrowser Control from Visual Basic 5.0"
-permalink: kb/162/Q162719/
+permalink: /kb/162/Q162719/
 ---
 
 ## Q162719: HOWTO: Use the WebBrowser Control from Visual Basic 5.0

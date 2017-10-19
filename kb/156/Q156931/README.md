@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156931: STOP 0x0000001E in Nwrdr.sys"
-permalink: kb/156/Q156931/
+permalink: /kb/156/Q156931/
 ---
 
 ## Q156931: STOP 0x0000001E in Nwrdr.sys

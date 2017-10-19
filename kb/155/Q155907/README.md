@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155907: XCLN: Exchange 16-bit Client on SFS Creates Drive Mapping"
-permalink: kb/155/Q155907/
+permalink: /kb/155/Q155907/
 ---
 
 ## Q155907: XCLN: Exchange 16-bit Client on SFS Creates Drive Mapping

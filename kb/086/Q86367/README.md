@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86367: Novell Removal Leaves OVERLAPPEDIO Setting"
-permalink: kb/086/Q86367/
+permalink: /kb/086/Q86367/
 ---
 
 ## Q86367: Novell Removal Leaves OVERLAPPEDIO Setting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317491: FIX: Project.Files.Count Property Not Incremented Properly"
-permalink: kb/317/Q317491/
+permalink: /kb/317/Q317491/
 ---
 
 ## Q317491: FIX: Project.Files.Count Property Not Incremented Properly

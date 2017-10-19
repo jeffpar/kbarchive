@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260361: TCP/IP Protocol Is Missing from Network Tool in Control Panel"
-permalink: kb/260/Q260361/
+permalink: /kb/260/Q260361/
 ---
 
 ## Q260361: TCP/IP Protocol Is Missing from Network Tool in Control Panel

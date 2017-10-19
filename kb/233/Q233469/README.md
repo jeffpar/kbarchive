@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233469: Business Planner: Stops Responding When You Click Help Topic"
-permalink: kb/233/Q233469/
+permalink: /kb/233/Q233469/
 ---
 
 ## Q233469: Business Planner: Stops Responding When You Click Help Topic

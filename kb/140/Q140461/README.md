@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140461: PC NTMMTA: Err Msg: Service Instance Not Found"
-permalink: kb/140/Q140461/
+permalink: /kb/140/Q140461/
 ---
 
 ## Q140461: PC NTMMTA: Err Msg: Service Instance Not Found

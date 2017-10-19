@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193925: XWEB: OWA: Cannot Log On without Using NT Credentials"
-permalink: kb/193/Q193925/
+permalink: /kb/193/Q193925/
 ---
 
 ## Q193925: XWEB: OWA: Cannot Log On without Using NT Credentials

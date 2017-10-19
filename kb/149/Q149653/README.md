@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149653: TN3270 Admin Command Line Options"
-permalink: kb/149/Q149653/
+permalink: /kb/149/Q149653/
 ---
 
 ## Q149653: TN3270 Admin Command Line Options

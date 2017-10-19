@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156347: INFO: STL Sample for the generate_n Function"
-permalink: kb/156/Q156347/
+permalink: /kb/156/Q156347/
 ---
 
 ## Q156347: INFO: STL Sample for the generate_n Function

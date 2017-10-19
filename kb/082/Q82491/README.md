@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82491: Setup Does Not Delete Windows 3.0 SMARTDRV or EMM386"
-permalink: kb/082/Q82491/
+permalink: /kb/082/Q82491/
 ---
 
 ## Q82491: Setup Does Not Delete Windows 3.0 SMARTDRV or EMM386

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177650: Remote Shutdown Fails If User Is Logged On Without Rights"
-permalink: kb/177/Q177650/
+permalink: /kb/177/Q177650/
 ---
 
 ## Q177650: Remote Shutdown Fails If User Is Logged On Without Rights

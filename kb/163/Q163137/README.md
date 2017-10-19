@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163137: Kids Plus: Themes are Located in Different Directories"
-permalink: kb/163/Q163137/
+permalink: /kb/163/Q163137/
 ---
 
 ## Q163137: Kids Plus: Themes are Located in Different Directories

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102650: Reestablishing a Lost Trust Relationship"
-permalink: kb/102/Q102650/
+permalink: /kb/102/Q102650/
 ---
 
 ## Q102650: Reestablishing a Lost Trust Relationship

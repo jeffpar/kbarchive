@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84128: Windows SDK 3.1 Includes Run-time Libraries for MS C 6.0"
-permalink: kb/084/Q84128/
+permalink: /kb/084/Q84128/
 ---
 
 ## Q84128: Windows SDK 3.1 Includes Run-time Libraries for MS C 6.0

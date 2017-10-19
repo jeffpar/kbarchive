@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258140: XFOR: Error Message Occurs When You Enable a User to Relay"
-permalink: kb/258/Q258140/
+permalink: /kb/258/Q258140/
 ---
 
 ## Q258140: XFOR: Error Message Occurs When You Enable a User to Relay

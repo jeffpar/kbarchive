@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159828: Iomega Jaz Tools Software May Not Work Properly on FAT32 Media"
-permalink: kb/159/Q159828/
+permalink: /kb/159/Q159828/
 ---
 
 ## Q159828: Iomega Jaz Tools Software May Not Work Properly on FAT32 Media

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242595: English Locale Appears when Japanese Language Pack Installed"
-permalink: kb/242/Q242595/
+permalink: /kb/242/Q242595/
 ---
 
 ## Q242595: English Locale Appears when Japanese Language Pack Installed

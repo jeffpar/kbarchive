@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200830: SMS: Regularly Verifies Directory Structures and Shares"
-permalink: kb/200/Q200830/
+permalink: /kb/200/Q200830/
 ---
 
 ## Q200830: SMS: Regularly Verifies Directory Structures and Shares

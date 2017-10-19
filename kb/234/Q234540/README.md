@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234540: SP5 Includes Fixes for Stress-Induced Issues"
-permalink: kb/234/Q234540/
+permalink: /kb/234/Q234540/
 ---
 
 ## Q234540: SP5 Includes Fixes for Stress-Induced Issues

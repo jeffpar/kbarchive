@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q134674: PC Gen: 3.5 Mail for PC Networks MMTA for Windows NT [3.5]"
-permalink: kb/134/Q134674/
+title: "Q134674: PC Gen: 3.5 Mail for PC Networks MMTA for Windows NT &#91;3.5&#93;"
+permalink: /kb/134/Q134674/
 ---
 
-## Q134674: PC Gen: 3.5 Mail for PC Networks MMTA for Windows NT [3.5]
+## Q134674: PC Gen: 3.5 Mail for PC Networks MMTA for Windows NT &#91;3.5&#93;
 
 	Article: Q134674
 	Product(s): Microsoft Mail For PC Networks

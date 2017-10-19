@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164155: SMS: Doset32.exe Produces a Bad Image Error"
-permalink: kb/164/Q164155/
+permalink: /kb/164/Q164155/
 ---
 
 ## Q164155: SMS: Doset32.exe Produces a Bad Image Error

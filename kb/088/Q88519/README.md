@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88519: Running Golf with a 256-Color Video Driver Is Faster"
-permalink: kb/088/Q88519/
+permalink: /kb/088/Q88519/
 ---
 
 ## Q88519: Running Golf with a 256-Color Video Driver Is Faster

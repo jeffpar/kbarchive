@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108340: HOWTO: Determine Visual Basic 3.0 Trappable Errors"
-permalink: kb/108/Q108340/
+permalink: /kb/108/Q108340/
 ---
 
 ## Q108340: HOWTO: Determine Visual Basic 3.0 Trappable Errors

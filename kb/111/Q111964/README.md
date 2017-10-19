@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111964: WinPopup Sends Global Message to Entire Workgroup in WFWG 3.11"
-permalink: kb/111/Q111964/
+permalink: /kb/111/Q111964/
 ---
 
 ## Q111964: WinPopup Sends Global Message to Entire Workgroup in WFWG 3.11

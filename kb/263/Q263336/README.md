@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263336: &quot;NOT&quot; Operator May Cause Software Distribution to All Computers"
-permalink: kb/263/Q263336/
+permalink: /kb/263/Q263336/
 ---
 
 ## Q263336: &quot;NOT&quot; Operator May Cause Software Distribution to All Computers

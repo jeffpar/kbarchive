@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218611: FIX: Incorrect Code Generated With /Og and /Ob1"
-permalink: kb/218/Q218611/
+permalink: /kb/218/Q218611/
 ---
 
 ## Q218611: FIX: Incorrect Code Generated With /Og and /Ob1

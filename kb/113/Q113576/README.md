@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113576: Winsock App's Reject Connection Requests with Reset Frames"
-permalink: kb/113/Q113576/
+permalink: /kb/113/Q113576/
 ---
 
 ## Q113576: Winsock App's Reject Connection Requests with Reset Frames

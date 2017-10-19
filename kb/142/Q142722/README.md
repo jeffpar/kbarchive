@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142722: NDS Mapped Drives Inaccessible After Using Dial-Up Connection"
-permalink: kb/142/Q142722/
+permalink: /kb/142/Q142722/
 ---
 
 ## Q142722: NDS Mapped Drives Inaccessible After Using Dial-Up Connection

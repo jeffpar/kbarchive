@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214495: UNIX Primary Domain Name Server Zone Transfer Does Not Complete"
-permalink: kb/214/Q214495/
+permalink: /kb/214/Q214495/
 ---
 
 ## Q214495: UNIX Primary Domain Name Server Zone Transfer Does Not Complete

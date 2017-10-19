@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153940: XFOR: Microsoft Mail Recipients Do Not Receive NDRs If CRs Exist"
-permalink: kb/153/Q153940/
+permalink: /kb/153/Q153940/
 ---
 
 ## Q153940: XFOR: Microsoft Mail Recipients Do Not Receive NDRs If CRs Exist

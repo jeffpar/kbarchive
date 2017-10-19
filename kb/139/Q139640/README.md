@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139640: Do Not Mix Operating System and CRT File Handles"
-permalink: kb/139/Q139640/
+permalink: /kb/139/Q139640/
 ---
 
 ## Q139640: Do Not Mix Operating System and CRT File Handles

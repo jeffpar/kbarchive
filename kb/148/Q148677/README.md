@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148677: Error Attempting to Access IIS Using Netscape Navigator 2.0"
-permalink: kb/148/Q148677/
+permalink: /kb/148/Q148677/
 ---
 
 ## Q148677: Error Attempting to Access IIS Using Netscape Navigator 2.0

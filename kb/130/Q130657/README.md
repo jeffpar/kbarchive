@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130657: HOWTO: Change the Font of Menu Items"
-permalink: kb/130/Q130657/
+permalink: /kb/130/Q130657/
 ---
 
 ## Q130657: HOWTO: Change the Font of Menu Items

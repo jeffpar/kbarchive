@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304062: XGEN: Exchange Server 5.5 Post-SP4 RPC Fixes"
-permalink: kb/304/Q304062/
+permalink: /kb/304/Q304062/
 ---
 
 ## Q304062: XGEN: Exchange Server 5.5 Post-SP4 RPC Fixes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136200: Slow Behavior In Plus! Pack Screen Savers When Fury3 Started"
-permalink: kb/136/Q136200/
+permalink: /kb/136/Q136200/
 ---
 
 ## Q136200: Slow Behavior In Plus! Pack Screen Savers When Fury3 Started

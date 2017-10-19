@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173222: WD97: Line Between Columns Fails to Appear and Is Not Printed"
-permalink: kb/173/Q173222/
+permalink: /kb/173/Q173222/
 ---
 
 ## Q173222: WD97: Line Between Columns Fails to Appear and Is Not Printed

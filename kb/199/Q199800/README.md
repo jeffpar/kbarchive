@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199800: PC Ext: How External Picks Up Mail"
-permalink: kb/199/Q199800/
+permalink: /kb/199/Q199800/
 ---
 
 ## Q199800: PC Ext: How External Picks Up Mail

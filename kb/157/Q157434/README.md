@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157434: PPT: &quot;There are Too Many Windows Open&quot; Error Message"
-permalink: kb/157/Q157434/
+permalink: /kb/157/Q157434/
 ---
 
 ## Q157434: PPT: &quot;There are Too Many Windows Open&quot; Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159471: WD97: How to Install the Far East Support Files"
-permalink: kb/159/Q159471/
+permalink: /kb/159/Q159471/
 ---
 
 ## Q159471: WD97: How to Install the Far East Support Files

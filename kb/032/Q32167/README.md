@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32167: SuperCls.exe Demonstrates Superclassing"
-permalink: kb/032/Q32167/
+permalink: /kb/032/Q32167/
 ---
 
 ## Q32167: SuperCls.exe Demonstrates Superclassing

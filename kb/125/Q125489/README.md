@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125489: PC Win: Err Msg: MMFCLEAN.EXE Has Stopped Responding..."
-permalink: kb/125/Q125489/
+permalink: /kb/125/Q125489/
 ---
 
 ## Q125489: PC Win: Err Msg: MMFCLEAN.EXE Has Stopped Responding...

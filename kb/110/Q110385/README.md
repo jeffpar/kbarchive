@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110385: Changes Made to CONFIG.SYS by WSSCNFG.EXE"
-permalink: kb/110/Q110385/
+permalink: /kb/110/Q110385/
 ---
 
 ## Q110385: Changes Made to CONFIG.SYS by WSSCNFG.EXE

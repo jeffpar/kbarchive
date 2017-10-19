@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260372: SMS: Calculating SQL User Connections for SMS 2.0"
-permalink: kb/260/Q260372/
+permalink: /kb/260/Q260372/
 ---
 
 ## Q260372: SMS: Calculating SQL User Connections for SMS 2.0

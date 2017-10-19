@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275602: XADM: Microsoft Exchange Server Information Store May Stop After"
-permalink: kb/275/Q275602/
+permalink: /kb/275/Q275602/
 ---
 
 ## Q275602: XADM: Microsoft Exchange Server Information Store May Stop After

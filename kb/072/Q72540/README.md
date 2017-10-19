@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72540: Calculator Does Not Reliably Subtract Two Numbers in Windows"
-permalink: kb/072/Q72540/
+permalink: /kb/072/Q72540/
 ---
 
 ## Q72540: Calculator Does Not Reliably Subtract Two Numbers in Windows

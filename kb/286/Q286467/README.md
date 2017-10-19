@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286467: MechWarrior 4 Err Msg: STOP: Cannot Create Options.ini"
-permalink: kb/286/Q286467/
+permalink: /kb/286/Q286467/
 ---
 
 ## Q286467: MechWarrior 4 Err Msg: STOP: Cannot Create Options.ini

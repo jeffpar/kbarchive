@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243425: XGEN: Rules May No Longer Work After MIMEsweeper Is Installed"
-permalink: kb/243/Q243425/
+permalink: /kb/243/Q243425/
 ---
 
 ## Q243425: XGEN: Rules May No Longer Work After MIMEsweeper Is Installed

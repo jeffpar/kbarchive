@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39090: Shapes.exe Aligns Logical/Physical Coordinate Systems"
-permalink: kb/039/Q39090/
+permalink: /kb/039/Q39090/
 ---
 
 ## Q39090: Shapes.exe Aligns Logical/Physical Coordinate Systems

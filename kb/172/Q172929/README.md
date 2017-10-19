@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172929: Windows 95 Print Jobs Disappear from Windows NT Print Queue"
-permalink: kb/172/Q172929/
+permalink: /kb/172/Q172929/
 ---
 
 ## Q172929: Windows 95 Print Jobs Disappear from Windows NT Print Queue

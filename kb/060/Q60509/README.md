@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60509: Number of Named Pipes Used Between MS-DOS Client and Server"
-permalink: kb/060/Q60509/
+permalink: /kb/060/Q60509/
 ---
 
 ## Q60509: Number of Named Pipes Used Between MS-DOS Client and Server

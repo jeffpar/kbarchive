@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87140: HP NewWave Err Msg: Cannot Run a Non-Windows Application"
-permalink: kb/087/Q87140/
+permalink: /kb/087/Q87140/
 ---
 
 ## Q87140: HP NewWave Err Msg: Cannot Run a Non-Windows Application

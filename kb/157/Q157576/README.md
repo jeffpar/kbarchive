@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157576: INFO: How to Troubleshoot the Sysdiff Tool in Windows NT"
-permalink: kb/157/Q157576/
+permalink: /kb/157/Q157576/
 ---
 
 ## Q157576: INFO: How to Troubleshoot the Sysdiff Tool in Windows NT

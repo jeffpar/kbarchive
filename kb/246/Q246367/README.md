@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246367: Interix Does Not Support the Crypt Command"
-permalink: kb/246/Q246367/
+permalink: /kb/246/Q246367/
 ---
 
 ## Q246367: Interix Does Not Support the Crypt Command

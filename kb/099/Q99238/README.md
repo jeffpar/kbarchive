@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99238: Encarta: Atlas Map Prints Incorrectly to a HP DeskJet 550C"
-permalink: kb/099/Q99238/
+permalink: /kb/099/Q99238/
 ---
 
 ## Q99238: Encarta: Atlas Map Prints Incorrectly to a HP DeskJet 550C

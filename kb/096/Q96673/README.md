@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96673: Error Messages When Saving Changes to REGEDIT.EXE"
-permalink: kb/096/Q96673/
+permalink: /kb/096/Q96673/
 ---
 
 ## Q96673: Error Messages When Saving Changes to REGEDIT.EXE

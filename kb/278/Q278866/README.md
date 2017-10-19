@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278866: MSN Companion dials but does not connect during set-up."
-permalink: kb/278/Q278866/
+permalink: /kb/278/Q278866/
 ---
 
 ## Q278866: MSN Companion dials but does not connect during set-up.

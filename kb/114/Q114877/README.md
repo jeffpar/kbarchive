@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114877: ADT2: ADT Upgrade Rebate Coupon Lists Incorrect Requirements"
-permalink: kb/114/Q114877/
+permalink: /kb/114/Q114877/
 ---
 
 ## Q114877: ADT2: ADT Upgrade Rebate Coupon Lists Incorrect Requirements

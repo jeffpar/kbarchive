@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254486: Sample Visual FoxPro Form to View XML Data"
-permalink: kb/254/Q254486/
+permalink: /kb/254/Q254486/
 ---
 
 ## Q254486: Sample Visual FoxPro Form to View XML Data

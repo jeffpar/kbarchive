@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165746: DOC: Incomplete Documentation on CListCtrl::SetColumnWidth"
-permalink: kb/165/Q165746/
+permalink: /kb/165/Q165746/
 ---
 
 ## Q165746: DOC: Incomplete Documentation on CListCtrl::SetColumnWidth

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123323: WINS Database May Default to USERS&#92;DEFAULT"
-permalink: kb/123/Q123323/
+permalink: /kb/123/Q123323/
 ---
 
 ## Q123323: WINS Database May Default to USERS&#92;DEFAULT

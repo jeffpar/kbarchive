@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146121: Emulation Modes for Raven Printers"
-permalink: kb/146/Q146121/
+permalink: /kb/146/Q146121/
 ---
 
 ## Q146121: Emulation Modes for Raven Printers

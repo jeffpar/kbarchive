@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101903: PC WRmt: Reducing Long Time-Outs with AT&amp;T Driver"
-permalink: kb/101/Q101903/
+permalink: /kb/101/Q101903/
 ---
 
 ## Q101903: PC WRmt: Reducing Long Time-Outs with AT&amp;T Driver

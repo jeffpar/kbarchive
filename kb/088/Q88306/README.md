@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88306: File Manager Err Msg: System Error, Divide by Zero..."
-permalink: kb/088/Q88306/
+permalink: /kb/088/Q88306/
 ---
 
 ## Q88306: File Manager Err Msg: System Error, Divide by Zero...

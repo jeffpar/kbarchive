@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141547: FIX: Visual SourceSafe Help System Searches for Wrong HLP File"
-permalink: kb/141/Q141547/
+permalink: /kb/141/Q141547/
 ---
 
 ## Q141547: FIX: Visual SourceSafe Help System Searches for Wrong HLP File

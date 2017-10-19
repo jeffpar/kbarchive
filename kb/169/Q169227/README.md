@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169227: Windows 95 Logon Script does not Process Correctly"
-permalink: kb/169/Q169227/
+permalink: /kb/169/Q169227/
 ---
 
 ## Q169227: Windows 95 Logon Script does not Process Correctly

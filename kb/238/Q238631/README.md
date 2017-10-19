@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238631: NTLM Password Change Fails When Password Contains an Ampersand"
-permalink: kb/238/Q238631/
+permalink: /kb/238/Q238631/
 ---
 
 ## Q238631: NTLM Password Change Fails When Password Contains an Ampersand

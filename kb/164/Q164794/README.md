@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164794: SNA Server Issues with DBCS Printing to an AS/400"
-permalink: kb/164/Q164794/
+permalink: /kb/164/Q164794/
 ---
 
 ## Q164794: SNA Server Issues with DBCS Printing to an AS/400

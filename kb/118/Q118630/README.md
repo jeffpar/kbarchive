@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118630: Key Caps Desk Accessory Displays Special Characters"
-permalink: kb/118/Q118630/
+permalink: /kb/118/Q118630/
 ---
 
 ## Q118630: Key Caps Desk Accessory Displays Special Characters

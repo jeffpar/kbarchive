@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171765: SMS: Win95 Clients Are Put in the Wrong SMS Site with Smsls.ini"
-permalink: kb/171/Q171765/
+permalink: /kb/171/Q171765/
 ---
 
 ## Q171765: SMS: Win95 Clients Are Put in the Wrong SMS Site with Smsls.ini

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94350: FoxPro FONTMETRIC() Function Returns Font Attributes"
-permalink: kb/094/Q94350/
+permalink: /kb/094/Q94350/
 ---
 
 ## Q94350: FoxPro FONTMETRIC() Function Returns Font Attributes

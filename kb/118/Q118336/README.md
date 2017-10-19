@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118336: Mac Encarta 94: Flag Flashes Momentarily When Being Copied"
-permalink: kb/118/Q118336/
+permalink: /kb/118/Q118336/
 ---
 
 ## Q118336: Mac Encarta 94: Flag Flashes Momentarily When Being Copied

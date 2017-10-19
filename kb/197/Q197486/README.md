@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197486: PRB: Open Fails w/ Error #75 on Windows95 Read-Only Shared File"
-permalink: kb/197/Q197486/
+permalink: /kb/197/Q197486/
 ---
 
 ## Q197486: PRB: Open Fails w/ Error #75 on Windows95 Read-Only Shared File

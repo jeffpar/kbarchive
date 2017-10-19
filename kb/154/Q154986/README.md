@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154986: How To Configure PowerChute for WinNT to Communicate with UPS"
-permalink: kb/154/Q154986/
+permalink: /kb/154/Q154986/
 ---
 
 ## Q154986: How To Configure PowerChute for WinNT to Communicate with UPS

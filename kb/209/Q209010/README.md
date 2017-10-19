@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209010: BUG: IDE: File/Make Retains Last VBCE Project Name"
-permalink: kb/209/Q209010/
+permalink: /kb/209/Q209010/
 ---
 
 ## Q209010: BUG: IDE: File/Make Retains Last VBCE Project Name

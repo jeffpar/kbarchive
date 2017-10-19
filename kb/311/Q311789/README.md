@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311789: Microsoft Windows XP Step By Step Comments And Corrections"
-permalink: kb/311/Q311789/
+permalink: /kb/311/Q311789/
 ---
 
 ## Q311789: Microsoft Windows XP Step By Step Comments And Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241278: XADM: Insufficient Memory when CDO/MAPI App. Accesses Message"
-permalink: kb/241/Q241278/
+permalink: /kb/241/Q241278/
 ---
 
 ## Q241278: XADM: Insufficient Memory when CDO/MAPI App. Accesses Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263683: StarLancer: Computer Stops Responding When You Start Game"
-permalink: kb/263/Q263683/
+permalink: /kb/263/Q263683/
 ---
 
 ## Q263683: StarLancer: Computer Stops Responding When You Start Game

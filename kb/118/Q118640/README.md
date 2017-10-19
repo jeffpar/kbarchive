@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118640: Bookshelf 1994: Atlas Gallery List Is Blank"
-permalink: kb/118/Q118640/
+permalink: /kb/118/Q118640/
 ---
 
 ## Q118640: Bookshelf 1994: Atlas Gallery List Is Blank

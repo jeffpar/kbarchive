@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131015: MS Exchange Users Cannot Create Own Post Office Accounts"
-permalink: kb/131/Q131015/
+permalink: /kb/131/Q131015/
 ---
 
 ## Q131015: MS Exchange Users Cannot Create Own Post Office Accounts

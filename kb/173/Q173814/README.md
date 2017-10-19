@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173814: WD97: Find and Replace Won't Use Buttons on Formatting Toolbar"
-permalink: kb/173/Q173814/
+permalink: /kb/173/Q173814/
 ---
 
 ## Q173814: WD97: Find and Replace Won't Use Buttons on Formatting Toolbar

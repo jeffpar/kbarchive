@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65447: NetWare/286 (and Earlier) Trustee Rights with Windows"
-permalink: kb/065/Q65447/
+permalink: /kb/065/Q65447/
 ---
 
 ## Q65447: NetWare/286 (and Earlier) Trustee Rights with Windows

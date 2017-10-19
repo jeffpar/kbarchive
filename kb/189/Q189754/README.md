@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189754: XCON: Remote X.400 MTA May Abort the Connection to Exchange"
-permalink: kb/189/Q189754/
+permalink: /kb/189/Q189754/
 ---
 
 ## Q189754: XCON: Remote X.400 MTA May Abort the Connection to Exchange

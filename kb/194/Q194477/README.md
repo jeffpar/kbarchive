@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194477: File List for Dial-Up Networking 1.3 Upgrade"
-permalink: kb/194/Q194477/
+permalink: /kb/194/Q194477/
 ---
 
 ## Q194477: File List for Dial-Up Networking 1.3 Upgrade

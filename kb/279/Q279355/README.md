@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279355: Removing MSDE Does Not Remove Registry Key MS_HI_Server_DB"
-permalink: kb/279/Q279355/
+permalink: /kb/279/Q279355/
 ---
 
 ## Q279355: Removing MSDE Does Not Remove Registry Key MS_HI_Server_DB

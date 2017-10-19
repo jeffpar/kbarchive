@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259980: Nwrdr.sys Mishandles an Exception That Can Cause a &quot;Stop&quot; Error"
-permalink: kb/259/Q259980/
+permalink: /kb/259/Q259980/
 ---
 
 ## Q259980: Nwrdr.sys Mishandles an Exception That Can Cause a &quot;Stop&quot; Error

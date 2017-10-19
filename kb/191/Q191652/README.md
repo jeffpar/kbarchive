@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191652: MCM: Text Missing from Default Button and Random Button"
-permalink: kb/191/Q191652/
+permalink: /kb/191/Q191652/
 ---
 
 ## Q191652: MCM: Text Missing from Default Button and Random Button

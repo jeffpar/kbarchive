@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194567: WD97: What Happens to Fields When You Save As Text Only"
-permalink: kb/194/Q194567/
+permalink: /kb/194/Q194567/
 ---
 
 ## Q194567: WD97: What Happens to Fields When You Save As Text Only

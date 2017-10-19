@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149639: PRB: Network DDE Requests Fail from Visual FoxPro"
-permalink: kb/149/Q149639/
+permalink: /kb/149/Q149639/
 ---
 
 ## Q149639: PRB: Network DDE Requests Fail from Visual FoxPro

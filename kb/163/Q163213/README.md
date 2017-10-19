@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163213: WebSTONE Benchmark of IIS May Show Poor Results for MP Systems"
-permalink: kb/163/Q163213/
+permalink: /kb/163/Q163213/
 ---
 
 ## Q163213: WebSTONE Benchmark of IIS May Show Poor Results for MP Systems

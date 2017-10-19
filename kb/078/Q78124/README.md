@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78124: Emerson Promouse Driver and MS-DOS Shell"
-permalink: kb/078/Q78124/
+permalink: /kb/078/Q78124/
 ---
 
 ## Q78124: Emerson Promouse Driver and MS-DOS Shell

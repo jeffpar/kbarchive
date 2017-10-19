@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153369: Pcmdump.exe Shows Wrong Expiration Month"
-permalink: kb/153/Q153369/
+permalink: /kb/153/Q153369/
 ---
 
 ## Q153369: Pcmdump.exe Shows Wrong Expiration Month

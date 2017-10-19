@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314225: FS2002: How to Optimize Game Performance"
-permalink: kb/314/Q314225/
+permalink: /kb/314/Q314225/
 ---
 
 ## Q314225: FS2002: How to Optimize Game Performance

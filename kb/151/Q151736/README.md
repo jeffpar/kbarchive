@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151736: No Message Displayed If Mailbox Temporarily Unavailable"
-permalink: kb/151/Q151736/
+permalink: /kb/151/Q151736/
 ---
 
 ## Q151736: No Message Displayed If Mailbox Temporarily Unavailable

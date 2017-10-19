@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81796: DOSPAC.SYS Is Not Compatible with SMARTDRV.EXE Version 4.0"
-permalink: kb/081/Q81796/
+permalink: /kb/081/Q81796/
 ---
 
 ## Q81796: DOSPAC.SYS Is Not Compatible with SMARTDRV.EXE Version 4.0

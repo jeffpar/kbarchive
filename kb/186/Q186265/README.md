@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186265: HOWTO: Use the SQL Server DATEPART Function to Get Milliseconds"
-permalink: kb/186/Q186265/
+permalink: /kb/186/Q186265/
 ---
 
 ## Q186265: HOWTO: Use the SQL Server DATEPART Function to Get Milliseconds

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123877: How to Set Up Banyan VINES in Windows 95"
-permalink: kb/123/Q123877/
+permalink: /kb/123/Q123877/
 ---
 
 ## Q123877: How to Set Up Banyan VINES in Windows 95

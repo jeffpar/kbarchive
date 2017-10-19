@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109615: SMTP: Return-Receipt-To Field Is Nonstandard"
-permalink: kb/109/Q109615/
+permalink: /kb/109/Q109615/
 ---
 
 ## Q109615: SMTP: Return-Receipt-To Field Is Nonstandard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253343: Slow Performance Running WINS Server"
-permalink: kb/253/Q253343/
+permalink: /kb/253/Q253343/
 ---
 
 ## Q253343: Slow Performance Running WINS Server

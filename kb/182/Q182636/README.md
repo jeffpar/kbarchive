@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182636: COMTI Reserved Words Erroneously Allowed for Method Name"
-permalink: kb/182/Q182636/
+permalink: /kb/182/Q182636/
 ---
 
 ## Q182636: COMTI Reserved Words Erroneously Allowed for Method Name

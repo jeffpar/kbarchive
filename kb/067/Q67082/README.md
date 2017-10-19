@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67082: INFO: String Constants May Be Interpreted as Trigraphs in C"
-permalink: kb/067/Q67082/
+permalink: /kb/067/Q67082/
 ---
 
 ## Q67082: INFO: String Constants May Be Interpreted as Trigraphs in C

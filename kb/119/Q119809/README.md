@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119809: Only One Half of Mercury Has Bitmap Surface"
-permalink: kb/119/Q119809/
+permalink: /kb/119/Q119809/
 ---
 
 ## Q119809: Only One Half of Mercury Has Bitmap Surface

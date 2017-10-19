@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132243: HOWTO: How to Create Controls w/ a 3D Border at Run Time Using M"
-permalink: kb/132/Q132243/
+permalink: /kb/132/Q132243/
 ---
 
 ## Q132243: HOWTO: How to Create Controls w/ a 3D Border at Run Time Using M

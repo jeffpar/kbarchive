@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139097: HOWTO: How to Clean Up DirectDraw Using Release()"
-permalink: kb/139/Q139097/
+permalink: /kb/139/Q139097/
 ---
 
 ## Q139097: HOWTO: How to Clean Up DirectDraw Using Release()

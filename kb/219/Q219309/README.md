@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219309: SP5ss:Clussvc: SetErrorMode is not set and we sit behind pop-ups"
-permalink: kb/219/Q219309/
+permalink: /kb/219/Q219309/
 ---
 
 ## Q219309: SP5ss:Clussvc: SetErrorMode is not set and we sit behind pop-ups

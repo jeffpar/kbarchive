@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191694: HOWTO: Add a User and Set User Privileges to SQL Server"
-permalink: kb/191/Q191694/
+permalink: /kb/191/Q191694/
 ---
 
 ## Q191694: HOWTO: Add a User and Set User Privileges to SQL Server

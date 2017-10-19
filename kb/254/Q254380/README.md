@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254380: XFOR: Exchange.Box Compaction w. Notes Maintenance Disabled"
-permalink: kb/254/Q254380/
+permalink: /kb/254/Q254380/
 ---
 
 ## Q254380: XFOR: Exchange.Box Compaction w. Notes Maintenance Disabled

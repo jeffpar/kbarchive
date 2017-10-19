@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154021: INFO: ColorSource Property Has Different Values for Each Object"
-permalink: kb/154/Q154021/
+permalink: /kb/154/Q154021/
 ---
 
 ## Q154021: INFO: ColorSource Property Has Different Values for Each Object

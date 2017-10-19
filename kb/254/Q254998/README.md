@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254998: XCON: MIXER Maps X.400 Address to SMTP Address"
-permalink: kb/254/Q254998/
+permalink: /kb/254/Q254998/
 ---
 
 ## Q254998: XCON: MIXER Maps X.400 Address to SMTP Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288970: SMS: RM Can't Process Transactions if Trans. ID Isn't in Sync"
-permalink: kb/288/Q288970/
+permalink: /kb/288/Q288970/
 ---
 
 ## Q288970: SMS: RM Can't Process Transactions if Trans. ID Isn't in Sync

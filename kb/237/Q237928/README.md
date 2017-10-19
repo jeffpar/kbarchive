@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237928: XCLN: ErrMsg. w/Microsoft Mail Service: File Is Current in Use"
-permalink: kb/237/Q237928/
+permalink: /kb/237/Q237928/
 ---
 
 ## Q237928: XCLN: ErrMsg. w/Microsoft Mail Service: File Is Current in Use

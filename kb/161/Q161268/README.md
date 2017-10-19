@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161268: Encarta 97 Err Msg: Enc97 Failed to Load Encres97.dll"
-permalink: kb/161/Q161268/
+permalink: /kb/161/Q161268/
 ---
 
 ## Q161268: Encarta 97 Err Msg: Enc97 Failed to Load Encres97.dll

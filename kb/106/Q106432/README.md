@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106432: MEM Reports Incorrect Value for Used Extended (XMS) Memory"
-permalink: kb/106/Q106432/
+permalink: /kb/106/Q106432/
 ---
 
 ## Q106432: MEM Reports Incorrect Value for Used Extended (XMS) Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126890: PC WSPlus: Schedule+ Does Not Remember Print Margin Units"
-permalink: kb/126/Q126890/
+permalink: /kb/126/Q126890/
 ---
 
 ## Q126890: PC WSPlus: Schedule+ Does Not Remember Print Margin Units

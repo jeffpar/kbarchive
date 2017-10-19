@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117501: Replacing RAS in Network Setup After PTP Has Been Installed"
-permalink: kb/117/Q117501/
+permalink: /kb/117/Q117501/
 ---
 
 ## Q117501: Replacing RAS in Network Setup After PTP Has Been Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70146: NMAKE Macros Cannot Expand to Multiple Command Lines"
-permalink: kb/070/Q70146/
+permalink: /kb/070/Q70146/
 ---
 
 ## Q70146: NMAKE Macros Cannot Expand to Multiple Command Lines

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197371: MCM: Quantum3D Obsidian2 X-24 3D Accelerator Card Not Listed"
-permalink: kb/197/Q197371/
+permalink: /kb/197/Q197371/
 ---
 
 ## Q197371: MCM: Quantum3D Obsidian2 X-24 3D Accelerator Card Not Listed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96203: SMTP: Break Absolute Option (-BT) Stops Gateway Immediately"
-permalink: kb/096/Q96203/
+permalink: /kb/096/Q96203/
 ---
 
 ## Q96203: SMTP: Break Absolute Option (-BT) Stops Gateway Immediately

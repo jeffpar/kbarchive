@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274512: The Default Temporary Variable for the Inuse.exe Utility"
-permalink: kb/274/Q274512/
+permalink: /kb/274/Q274512/
 ---
 
 ## Q274512: The Default Temporary Variable for the Inuse.exe Utility

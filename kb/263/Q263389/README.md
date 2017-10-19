@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263389: Upgrading Multiple-User SMS 1.2 Clients Running Windows NT 3.51"
-permalink: kb/263/Q263389/
+permalink: /kb/263/Q263389/
 ---
 
 ## Q263389: Upgrading Multiple-User SMS 1.2 Clients Running Windows NT 3.51

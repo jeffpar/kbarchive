@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156238: PRB: Form Not Released from Menu Pad or ON KEY LABEL"
-permalink: kb/156/Q156238/
+permalink: /kb/156/Q156238/
 ---
 
 ## Q156238: PRB: Form Not Released from Menu Pad or ON KEY LABEL

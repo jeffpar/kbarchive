@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181367: WinNT Error Message: Could Not Locate Ws2_32.dll"
-permalink: kb/181/Q181367/
+permalink: /kb/181/Q181367/
 ---
 
 ## Q181367: WinNT Error Message: Could Not Locate Ws2_32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81343: Mac Fax: Err Msg: Unable to Connect to Modem"
-permalink: kb/081/Q81343/
+permalink: /kb/081/Q81343/
 ---
 
 ## Q81343: Mac Fax: Err Msg: Unable to Connect to Modem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118395: BUG: Watch Expression Evaluation Gives Unexpected Value"
-permalink: kb/118/Q118395/
+permalink: /kb/118/Q118395/
 ---
 
 ## Q118395: BUG: Watch Expression Evaluation Gives Unexpected Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240984: Pandora's Box: Graphics Not Displayed Properly with STB Velocity"
-permalink: kb/240/Q240984/
+permalink: /kb/240/Q240984/
 ---
 
 ## Q240984: Pandora's Box: Graphics Not Displayed Properly with STB Velocity

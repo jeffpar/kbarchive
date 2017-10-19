@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156490: Close Combat: Head-to-Head Play Alert Message"
-permalink: kb/156/Q156490/
+permalink: /kb/156/Q156490/
 ---
 
 ## Q156490: Close Combat: Head-to-Head Play Alert Message

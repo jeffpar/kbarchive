@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274836: Crimson Skies: Game Sounds Are Not Played Correctly"
-permalink: kb/274/Q274836/
+permalink: /kb/274/Q274836/
 ---
 
 ## Q274836: Crimson Skies: Game Sounds Are Not Played Correctly

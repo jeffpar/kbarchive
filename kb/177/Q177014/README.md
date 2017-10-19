@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177014: A Bridge Too Far: Error Message: Cannot Create Any More DC's"
-permalink: kb/177/Q177014/
+permalink: /kb/177/Q177014/
 ---
 
 ## Q177014: A Bridge Too Far: Error Message: Cannot Create Any More DC's

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140401: NET DIAG /STATUS Reports 0 Packets Transmitted and Received"
-permalink: kb/140/Q140401/
+permalink: /kb/140/Q140401/
 ---
 
 ## Q140401: NET DIAG /STATUS Reports 0 Packets Transmitted and Received

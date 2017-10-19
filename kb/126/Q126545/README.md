@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126545: Cannot Find Second NetWare Server with Two Net Cards Installed"
-permalink: kb/126/Q126545/
+permalink: /kb/126/Q126545/
 ---
 
 ## Q126545: Cannot Find Second NetWare Server with Two Net Cards Installed

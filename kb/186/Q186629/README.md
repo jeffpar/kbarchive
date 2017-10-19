@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186629: INFO: Terminal Server Unattended Installation"
-permalink: kb/186/Q186629/
+permalink: /kb/186/Q186629/
 ---
 
 ## Q186629: INFO: Terminal Server Unattended Installation

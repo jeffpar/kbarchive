@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97562: Setup Error Using Stacker versions 2.x, 3.x and Swapped Drives"
-permalink: kb/097/Q97562/
+permalink: /kb/097/Q97562/
 ---
 
 ## Q97562: Setup Error Using Stacker versions 2.x, 3.x and Swapped Drives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233456: Business Planner: Menus and Buttons Disappear from Toolbar"
-permalink: kb/233/Q233456/
+permalink: /kb/233/Q233456/
 ---
 
 ## Q233456: Business Planner: Menus and Buttons Disappear from Toolbar

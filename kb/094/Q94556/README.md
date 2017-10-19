@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94556: Using COMxIrq=-1 for COM4 Problems"
-permalink: kb/094/Q94556/
+permalink: /kb/094/Q94556/
 ---
 
 ## Q94556: Using COMxIrq=-1 for COM4 Problems

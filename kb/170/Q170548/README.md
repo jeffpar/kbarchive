@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170548: PRB: DAO Transactions to ODBC Database Can Hang Application"
-permalink: kb/170/Q170548/
+permalink: /kb/170/Q170548/
 ---
 
 ## Q170548: PRB: DAO Transactions to ODBC Database Can Hang Application

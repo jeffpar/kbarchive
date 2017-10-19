@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171797: FIX: VB5 DBCombo May Display Wrong Column for RDC 1.0"
-permalink: kb/171/Q171797/
+permalink: /kb/171/Q171797/
 ---
 
 ## Q171797: FIX: VB5 DBCombo May Display Wrong Column for RDC 1.0

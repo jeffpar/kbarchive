@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137721: XTree Gold for DOS Slows Down Windows NT Performance"
-permalink: kb/137/Q137721/
+permalink: /kb/137/Q137721/
 ---
 
 ## Q137721: XTree Gold for DOS Slows Down Windows NT Performance

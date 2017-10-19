@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263562: Extra Files That Can Be Manually Installed from the SP4 CD"
-permalink: kb/263/Q263562/
+permalink: /kb/263/Q263562/
 ---
 
 ## Q263562: Extra Files That Can Be Manually Installed from the SP4 CD

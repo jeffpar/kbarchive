@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141861: Asian Characters Are Lost in Translation"
-permalink: kb/141/Q141861/
+permalink: /kb/141/Q141861/
 ---
 
 ## Q141861: Asian Characters Are Lost in Translation

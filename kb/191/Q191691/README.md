@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191691: BUG: Sub Moved Above Enum or Type Causes Incompatibility Error"
-permalink: kb/191/Q191691/
+permalink: /kb/191/Q191691/
 ---
 
 ## Q191691: BUG: Sub Moved Above Enum or Type Causes Incompatibility Error

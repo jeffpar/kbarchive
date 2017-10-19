@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152855: XADM: How to Set up the Anonymous Posting Service"
-permalink: kb/152/Q152855/
+permalink: /kb/152/Q152855/
 ---
 
 ## Q152855: XADM: How to Set up the Anonymous Posting Service

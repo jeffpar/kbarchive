@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181085: BUG: SET COLLATE &amp; Queries - Additional Problem Scenarios"
-permalink: kb/181/Q181085/
+permalink: /kb/181/Q181085/
 ---
 
 ## Q181085: BUG: SET COLLATE &amp; Queries - Additional Problem Scenarios

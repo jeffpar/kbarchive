@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244716: FS 2000: Pointing Device Does Not Function on Second Monitor"
-permalink: kb/244/Q244716/
+permalink: /kb/244/Q244716/
 ---
 
 ## Q244716: FS 2000: Pointing Device Does Not Function on Second Monitor

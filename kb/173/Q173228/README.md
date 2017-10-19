@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173228: WD97: Borders Applied to More Lines in Selection Than Expected"
-permalink: kb/173/Q173228/
+permalink: /kb/173/Q173228/
 ---
 
 ## Q173228: WD97: Borders Applied to More Lines in Selection Than Expected

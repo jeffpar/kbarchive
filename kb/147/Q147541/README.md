@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147541: Undoing Goal Deletes Goal Text from New Item box"
-permalink: kb/147/Q147541/
+permalink: /kb/147/Q147541/
 ---
 
 ## Q147541: Undoing Goal Deletes Goal Text from New Item box

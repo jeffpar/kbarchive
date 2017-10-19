@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174852: CC: A Bridge Too Far: Minimum System Requirements for Macintosh"
-permalink: kb/174/Q174852/
+permalink: /kb/174/Q174852/
 ---
 
 ## Q174852: CC: A Bridge Too Far: Minimum System Requirements for Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153203: Err Msg: APPSTART Caused an Error in Act16dll.dll"
-permalink: kb/153/Q153203/
+permalink: /kb/153/Q153203/
 ---
 
 ## Q153203: Err Msg: APPSTART Caused an Error in Act16dll.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163694: PPT: Sample Code to Apply Small Caps Formatting to Selection"
-permalink: kb/163/Q163694/
+permalink: /kb/163/Q163694/
 ---
 
 ## Q163694: PPT: Sample Code to Apply Small Caps Formatting to Selection

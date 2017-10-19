@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169215: Remote Administration of Routing &amp; Remote Access"
-permalink: kb/169/Q169215/
+permalink: /kb/169/Q169215/
 ---
 
 ## Q169215: Remote Administration of Routing &amp; Remote Access

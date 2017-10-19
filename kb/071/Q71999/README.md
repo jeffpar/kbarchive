@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71999: WD97: How to Disable the Fast Saves Option"
-permalink: kb/071/Q71999/
+permalink: /kb/071/Q71999/
 ---
 
 ## Q71999: WD97: How to Disable the Fast Saves Option

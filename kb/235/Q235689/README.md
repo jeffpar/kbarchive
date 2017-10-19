@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235689: How to Troubleshoot  7062 Errors Logged in DNS Event Log"
-permalink: kb/235/Q235689/
+permalink: /kb/235/Q235689/
 ---
 
 ## Q235689: How to Troubleshoot  7062 Errors Logged in DNS Event Log

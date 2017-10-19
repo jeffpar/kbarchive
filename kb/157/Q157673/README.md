@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157673: Policy Not Updated on Workstation"
-permalink: kb/157/Q157673/
+permalink: /kb/157/Q157673/
 ---
 
 ## Q157673: Policy Not Updated on Workstation

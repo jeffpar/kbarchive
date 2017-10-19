@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167393: XFOR: UUENCODED Sections Are Not Decoded into Attachments"
-permalink: kb/167/Q167393/
+permalink: /kb/167/Q167393/
 ---
 
 ## Q167393: XFOR: UUENCODED Sections Are Not Decoded into Attachments

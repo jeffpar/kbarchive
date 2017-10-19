@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160016: Parity Errors with DirectX Video Drivers"
-permalink: kb/160/Q160016/
+permalink: /kb/160/Q160016/
 ---
 
 ## Q160016: Parity Errors with DirectX Video Drivers

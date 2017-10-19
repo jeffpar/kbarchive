@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299360: FP: Include Component, Shared Borders Incorrect on UNIX"
-permalink: kb/299/Q299360/
+permalink: /kb/299/Q299360/
 ---
 
 ## Q299360: FP: Include Component, Shared Borders Incorrect on UNIX

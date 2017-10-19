@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301185: Train Simulator: Err Msg: Train Simulator Has Encountered..."
-permalink: kb/301/Q301185/
+permalink: /kb/301/Q301185/
 ---
 
 ## Q301185: Train Simulator: Err Msg: Train Simulator Has Encountered...

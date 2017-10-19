@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137514: Older ESS Sound Tools Incompatible with Windows 95"
-permalink: kb/137/Q137514/
+permalink: /kb/137/Q137514/
 ---
 
 ## Q137514: Older ESS Sound Tools Incompatible with Windows 95

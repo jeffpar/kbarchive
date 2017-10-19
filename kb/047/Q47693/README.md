@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47693: INFO: Initializing Unions Initializes First Member of the Union"
-permalink: kb/047/Q47693/
+permalink: /kb/047/Q47693/
 ---
 
 ## Q47693: INFO: Initializing Unions Initializes First Member of the Union

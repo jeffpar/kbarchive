@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81046: Epson LQ Support of Extended Characters in Windows"
-permalink: kb/081/Q81046/
+permalink: /kb/081/Q81046/
 ---
 
 ## Q81046: Epson LQ Support of Extended Characters in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141246: PPT7: Group Command Unavailable When Placeholder Object Selected"
-permalink: kb/141/Q141246/
+permalink: /kb/141/Q141246/
 ---
 
 ## Q141246: PPT7: Group Command Unavailable When Placeholder Object Selected

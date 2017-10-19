@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278604: &quot;HTTP 500.100&quot; Error When You Try to Access a Provider"
-permalink: kb/278/Q278604/
+permalink: /kb/278/Q278604/
 ---
 
 ## Q278604: &quot;HTTP 500.100&quot; Error When You Try to Access a Provider

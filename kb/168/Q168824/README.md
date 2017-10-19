@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168824: FIX: Setting ComboBox Control Text in Click Event Wipes Out Text"
-permalink: kb/168/Q168824/
+permalink: /kb/168/Q168824/
 ---
 
 ## Q168824: FIX: Setting ComboBox Control Text in Click Event Wipes Out Text

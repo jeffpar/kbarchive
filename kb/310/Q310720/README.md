@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310720: SMS: SMS Backup Task May Not Run Machinfo.bat Correctly"
-permalink: kb/310/Q310720/
+permalink: /kb/310/Q310720/
 ---
 
 ## Q310720: SMS: SMS Backup Task May Not Run Machinfo.bat Correctly

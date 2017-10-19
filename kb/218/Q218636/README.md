@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218636: DHCP Options Not Set by SBS Setup"
-permalink: kb/218/Q218636/
+permalink: /kb/218/Q218636/
 ---
 
 ## Q218636: DHCP Options Not Set by SBS Setup

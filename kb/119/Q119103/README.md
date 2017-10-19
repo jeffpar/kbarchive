@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119103: Installing Windows NT Version 3.5 on a Dell OmniPlex Pentium"
-permalink: kb/119/Q119103/
+permalink: /kb/119/Q119103/
 ---
 
 ## Q119103: Installing Windows NT Version 3.5 on a Dell OmniPlex Pentium

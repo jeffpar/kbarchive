@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177806: DHCP Server with Superscope Stops Assigning Addresses"
-permalink: kb/177/Q177806/
+permalink: /kb/177/Q177806/
 ---
 
 ## Q177806: DHCP Server with Superscope Stops Assigning Addresses

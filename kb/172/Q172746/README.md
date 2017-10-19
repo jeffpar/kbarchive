@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172746: WD97: Deleted Browser Reappears in Web Page Preview Dialog Box"
-permalink: kb/172/Q172746/
+permalink: /kb/172/Q172746/
 ---
 
 ## Q172746: WD97: Deleted Browser Reappears in Web Page Preview Dialog Box

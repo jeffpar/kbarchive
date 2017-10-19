@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208675: AT Command Displays Scheduled Tasks for Sunday Incorrectly"
-permalink: kb/208/Q208675/
+permalink: /kb/208/Q208675/
 ---
 
 ## Q208675: AT Command Displays Scheduled Tasks for Sunday Incorrectly

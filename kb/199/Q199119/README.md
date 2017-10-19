@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199119: XFOR: SSL Connection to NNTP May Result in Unstable Store"
-permalink: kb/199/Q199119/
+permalink: /kb/199/Q199119/
 ---
 
 ## Q199119: XFOR: SSL Connection to NNTP May Result in Unstable Store

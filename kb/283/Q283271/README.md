@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283271: XADM: How to Give Users Permissions to Create Mail-Enabled Users"
-permalink: kb/283/Q283271/
+permalink: /kb/283/Q283271/
 ---
 
 ## Q283271: XADM: How to Give Users Permissions to Create Mail-Enabled Users

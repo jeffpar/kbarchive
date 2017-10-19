@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168866: FIX: IOS Failed to Initialize Error During Installation"
-permalink: kb/168/Q168866/
+permalink: /kb/168/Q168866/
 ---
 
 ## Q168866: FIX: IOS Failed to Initialize Error During Installation

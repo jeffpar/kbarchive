@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147654: HOWTO: Get or Create a Unique Audio CD Volume Label"
-permalink: kb/147/Q147654/
+permalink: /kb/147/Q147654/
 ---
 
 ## Q147654: HOWTO: Get or Create a Unique Audio CD Volume Label

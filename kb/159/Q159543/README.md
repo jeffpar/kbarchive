@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159543: Intel ProShare PC Card May Hang Computer"
-permalink: kb/159/Q159543/
+permalink: /kb/159/Q159543/
 ---
 
 ## Q159543: Intel ProShare PC Card May Hang Computer

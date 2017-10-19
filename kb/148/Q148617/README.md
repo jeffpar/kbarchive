@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148617: HOWTO: Speed Up Load Time of OLE Controls"
-permalink: kb/148/Q148617/
+permalink: /kb/148/Q148617/
 ---
 
 ## Q148617: HOWTO: Speed Up Load Time of OLE Controls

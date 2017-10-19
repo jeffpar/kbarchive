@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85078: Windows: Sleep Mode and 32-Bit Disk Access"
-permalink: kb/085/Q85078/
+permalink: /kb/085/Q85078/
 ---
 
 ## Q85078: Windows: Sleep Mode and 32-Bit Disk Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140149: SNA 802.2 Connection Icon Indicates Incorrect Network Type"
-permalink: kb/140/Q140149/
+permalink: /kb/140/Q140149/
 ---
 
 ## Q140149: SNA 802.2 Connection Icon Indicates Incorrect Network Type

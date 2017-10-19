@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197078: Tutor: Colors Are Incorrect and Objects Appear Fuzzy or Blurred"
-permalink: kb/197/Q197078/
+permalink: /kb/197/Q197078/
 ---
 
 ## Q197078: Tutor: Colors Are Incorrect and Objects Appear Fuzzy or Blurred

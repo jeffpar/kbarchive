@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138152: Microsoft Fax May Not Detect Dial Tone"
-permalink: kb/138/Q138152/
+permalink: /kb/138/Q138152/
 ---
 
 ## Q138152: Microsoft Fax May Not Detect Dial Tone

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164873: PCI Device Not Configured and Resources Unassigned"
-permalink: kb/164/Q164873/
+permalink: /kb/164/Q164873/
 ---
 
 ## Q164873: PCI Device Not Configured and Resources Unassigned

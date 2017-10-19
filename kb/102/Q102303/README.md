@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102303: Lost Apple Printer Connection Due to Outdated Mac Services"
-permalink: kb/102/Q102303/
+permalink: /kb/102/Q102303/
 ---
 
 ## Q102303: Lost Apple Printer Connection Due to Outdated Mac Services

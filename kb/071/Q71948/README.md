@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71948: Windows 3.0 Drivers for Xerox Panorama-IME 2-Page Display"
-permalink: kb/071/Q71948/
+permalink: /kb/071/Q71948/
 ---
 
 ## Q71948: Windows 3.0 Drivers for Xerox Panorama-IME 2-Page Display

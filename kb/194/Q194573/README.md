@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194573: BUG: Grid Shows Only Two Added Records When Buffering/Order Set"
-permalink: kb/194/Q194573/
+permalink: /kb/194/Q194573/
 ---
 
 ## Q194573: BUG: Grid Shows Only Two Added Records When Buffering/Order Set

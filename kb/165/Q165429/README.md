@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165429: Stop 0x0000001E in Ntoskrnl.exe Caused by an Invalid VCB"
-permalink: kb/165/Q165429/
+permalink: /kb/165/Q165429/
 ---
 
 ## Q165429: Stop 0x0000001E in Ntoskrnl.exe Caused by an Invalid VCB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149284: XADM: PC Mail Shared Folders not Converted To Public Folders"
-permalink: kb/149/Q149284/
+permalink: /kb/149/Q149284/
 ---
 
 ## Q149284: XADM: PC Mail Shared Folders not Converted To Public Folders

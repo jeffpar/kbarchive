@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126226: Writer: TrueType Fonts Not Showing Under Letterizer Tool"
-permalink: kb/126/Q126226/
+permalink: /kb/126/Q126226/
 ---
 
 ## Q126226: Writer: TrueType Fonts Not Showing Under Letterizer Tool

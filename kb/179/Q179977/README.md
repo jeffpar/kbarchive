@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179977: XCLN: Error Msg.: Briefcase Is in Use by Another Computer"
-permalink: kb/179/Q179977/
+permalink: /kb/179/Q179977/
 ---
 
 ## Q179977: XCLN: Error Msg.: Briefcase Is in Use by Another Computer

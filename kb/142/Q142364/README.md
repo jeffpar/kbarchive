@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142364: How to Obtain an IDF File Editor for Custom MIDI Instruments"
-permalink: kb/142/Q142364/
+permalink: /kb/142/Q142364/
 ---
 
 ## Q142364: How to Obtain an IDF File Editor for Custom MIDI Instruments

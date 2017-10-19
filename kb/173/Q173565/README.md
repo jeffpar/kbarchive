@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173565: SMS: Err: &quot;Cannot Establish a Security Context with the Client&quot;"
-permalink: kb/173/Q173565/
+permalink: /kb/173/Q173565/
 ---
 
 ## Q173565: SMS: Err: &quot;Cannot Establish a Security Context with the Client&quot;

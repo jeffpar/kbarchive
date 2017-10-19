@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121555: Compression Performance Tuning in Systems Management Server"
-permalink: kb/121/Q121555/
+permalink: /kb/121/Q121555/
 ---
 
 ## Q121555: Compression Performance Tuning in Systems Management Server

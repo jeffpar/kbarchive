@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128319: PC Adm: Non-Alphanumeric Password Does Not Allow Connection"
-permalink: kb/128/Q128319/
+permalink: /kb/128/Q128319/
 ---
 
 ## Q128319: PC Adm: Non-Alphanumeric Password Does Not Allow Connection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152989: XADM: French Connectors Disks not Recognized"
-permalink: kb/152/Q152989/
+permalink: /kb/152/Q152989/
 ---
 
 ## Q152989: XADM: French Connectors Disks not Recognized

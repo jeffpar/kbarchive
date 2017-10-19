@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160792: &quot;Snap to default&quot; Mouse Feature Not Working"
-permalink: kb/160/Q160792/
+permalink: /kb/160/Q160792/
 ---
 
 ## Q160792: &quot;Snap to default&quot; Mouse Feature Not Working

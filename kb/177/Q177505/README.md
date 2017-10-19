@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177505: How to Use Personalization Server w/ Anonymous Authentication"
-permalink: kb/177/Q177505/
+permalink: /kb/177/Q177505/
 ---
 
 ## Q177505: How to Use Personalization Server w/ Anonymous Authentication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114221: Windows for Workgroups Client Session Dropped"
-permalink: kb/114/Q114221/
+permalink: /kb/114/Q114221/
 ---
 
 ## Q114221: Windows for Workgroups Client Session Dropped

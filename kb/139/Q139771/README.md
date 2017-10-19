@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139771: Fatal Exception Errors and Random Characters Using ATI Mach 32"
-permalink: kb/139/Q139771/
+permalink: /kb/139/Q139771/
 ---
 
 ## Q139771: Fatal Exception Errors and Random Characters Using ATI Mach 32

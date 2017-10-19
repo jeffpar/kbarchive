@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266244: HOWTO: Create Full-Screen Applications for the PocketPC"
-permalink: kb/266/Q266244/
+permalink: /kb/266/Q266244/
 ---
 
 ## Q266244: HOWTO: Create Full-Screen Applications for the PocketPC

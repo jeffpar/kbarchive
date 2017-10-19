@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194787: XFOR: IIS 4.0 SMTP Does Not Retry Delivery on HELO/EHLO Failures"
-permalink: kb/194/Q194787/
+permalink: /kb/194/Q194787/
 ---
 
 ## Q194787: XFOR: IIS 4.0 SMTP Does Not Retry Delivery on HELO/EHLO Failures

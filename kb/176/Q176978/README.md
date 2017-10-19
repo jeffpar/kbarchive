@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176978: Error C00000BE When Changing Password"
-permalink: kb/176/Q176978/
+permalink: /kb/176/Q176978/
 ---
 
 ## Q176978: Error C00000BE When Changing Password

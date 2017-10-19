@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109453: WD97: TOC Field Doesn't Display AUTONUM Fields"
-permalink: kb/109/Q109453/
+permalink: /kb/109/Q109453/
 ---
 
 ## Q109453: WD97: TOC Field Doesn't Display AUTONUM Fields

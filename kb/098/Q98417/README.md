@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98417: Heuristics Don't Disable MS-DOS Workstation Write-Behind"
-permalink: kb/098/Q98417/
+permalink: /kb/098/Q98417/
 ---
 
 ## Q98417: Heuristics Don't Disable MS-DOS Workstation Write-Behind

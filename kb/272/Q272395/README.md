@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272395: Error Message: Boot Record Signature AA55 Not Found"
-permalink: kb/272/Q272395/
+permalink: /kb/272/Q272395/
 ---
 
 ## Q272395: Error Message: Boot Record Signature AA55 Not Found

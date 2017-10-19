@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142686: First Line of Print Job Lost When Printing Using Lpdsvc"
-permalink: kb/142/Q142686/
+permalink: /kb/142/Q142686/
 ---
 
 ## Q142686: First Line of Print Job Lost When Printing Using Lpdsvc

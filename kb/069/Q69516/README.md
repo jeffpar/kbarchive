@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69516: MS-DOS 5.0 UMBs, Enhanced Mode Windows, and LIM 4.0 Support"
-permalink: kb/069/Q69516/
+permalink: /kb/069/Q69516/
 ---
 
 ## Q69516: MS-DOS 5.0 UMBs, Enhanced Mode Windows, and LIM 4.0 Support

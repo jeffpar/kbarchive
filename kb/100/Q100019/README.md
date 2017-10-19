@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100019: How to Score Points in SkiFree"
-permalink: kb/100/Q100019/
+permalink: /kb/100/Q100019/
 ---
 
 ## Q100019: How to Score Points in SkiFree

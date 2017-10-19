@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155955: PowerPoint Animation Doesn't Play After Player Download"
-permalink: kb/155/Q155955/
+permalink: /kb/155/Q155955/
 ---
 
 ## Q155955: PowerPoint Animation Doesn't Play After Player Download

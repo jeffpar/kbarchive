@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237688: HOWTO: Using getsockopt() and setsockopt() in Visual Basic"
-permalink: kb/237/Q237688/
+permalink: /kb/237/Q237688/
 ---
 
 ## Q237688: HOWTO: Using getsockopt() and setsockopt() in Visual Basic

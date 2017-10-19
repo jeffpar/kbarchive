@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172282: MAILSRV: Unable to Receive Mail from UNIX"
-permalink: kb/172/Q172282/
+permalink: /kb/172/Q172282/
 ---
 
 ## Q172282: MAILSRV: Unable to Receive Mail from UNIX

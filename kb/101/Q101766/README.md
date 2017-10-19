@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101766: Highest Score in Windows Solitaire"
-permalink: kb/101/Q101766/
+permalink: /kb/101/Q101766/
 ---
 
 ## Q101766: Highest Score in Windows Solitaire

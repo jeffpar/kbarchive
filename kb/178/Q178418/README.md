@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178418: Err Msg: Could Not Start Another Application During Setup..."
-permalink: kb/178/Q178418/
+permalink: /kb/178/Q178418/
 ---
 
 ## Q178418: Err Msg: Could Not Start Another Application During Setup...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286252: CFS2: How to Import Combat Flight Simulator Aircraft"
-permalink: kb/286/Q286252/
+permalink: /kb/286/Q286252/
 ---
 
 ## Q286252: CFS2: How to Import Combat Flight Simulator Aircraft

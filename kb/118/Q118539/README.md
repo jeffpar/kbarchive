@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118539: Windows 95 Err Msg: This Application Has Performed an Illegal..."
-permalink: kb/118/Q118539/
+permalink: /kb/118/Q118539/
 ---
 
 ## Q118539: Windows 95 Err Msg: This Application Has Performed an Illegal...

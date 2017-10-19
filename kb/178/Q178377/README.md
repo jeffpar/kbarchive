@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178377: How to Use MSN to Automatically Configure Outlook Express"
-permalink: kb/178/Q178377/
+permalink: /kb/178/Q178377/
 ---
 
 ## Q178377: How to Use MSN to Automatically Configure Outlook Express

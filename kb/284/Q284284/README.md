@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284284: Crimson Skies Err Msg: Error Starting Program the Msvp60.dll..."
-permalink: kb/284/Q284284/
+permalink: /kb/284/Q284284/
 ---
 
 ## Q284284: Crimson Skies Err Msg: Error Starting Program the Msvp60.dll...

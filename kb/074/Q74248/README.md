@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74248: Frozen Ballpoint Mouse Pointer in Enhanced mode"
-permalink: kb/074/Q74248/
+permalink: /kb/074/Q74248/
 ---
 
 ## Q74248: Frozen Ballpoint Mouse Pointer in Enhanced mode

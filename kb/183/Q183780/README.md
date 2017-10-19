@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183780: Serial, Parallel, and SDLC Cable End To End Pin Connections"
-permalink: kb/183/Q183780/
+permalink: /kb/183/Q183780/
 ---
 
 ## Q183780: Serial, Parallel, and SDLC Cable End To End Pin Connections

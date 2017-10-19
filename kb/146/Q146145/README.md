@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146145: Schedule+ 1.0 Does Not Adjust for Time Zone Differences"
-permalink: kb/146/Q146145/
+permalink: /kb/146/Q146145/
 ---
 
 ## Q146145: Schedule+ 1.0 Does Not Adjust for Time Zone Differences

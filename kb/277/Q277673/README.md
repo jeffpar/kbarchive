@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277673: Windows NT Backup Software May Have Handle Leak"
-permalink: kb/277/Q277673/
+permalink: /kb/277/Q277673/
 ---
 
 ## Q277673: Windows NT Backup Software May Have Handle Leak

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259170: Allegiance: Quits or Stops Responding When You Start Game"
-permalink: kb/259/Q259170/
+permalink: /kb/259/Q259170/
 ---
 
 ## Q259170: Allegiance: Quits or Stops Responding When You Start Game

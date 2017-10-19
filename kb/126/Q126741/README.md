@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126741: Reinstalling HP DeskJet Version 3.x Printer Driver"
-permalink: kb/126/Q126741/
+permalink: /kb/126/Q126741/
 ---
 
 ## Q126741: Reinstalling HP DeskJet Version 3.x Printer Driver

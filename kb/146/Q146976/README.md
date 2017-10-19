@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146976: XCLN: Deleted Appointments are Downloaded to Intellilink"
-permalink: kb/146/Q146976/
+permalink: /kb/146/Q146976/
 ---
 
 ## Q146976: XCLN: Deleted Appointments are Downloaded to Intellilink

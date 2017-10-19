@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274442: Windows 95/98/Me Users Cannot Process a Logon Script"
-permalink: kb/274/Q274442/
+permalink: /kb/274/Q274442/
 ---
 
 ## Q274442: Windows 95/98/Me Users Cannot Process a Logon Script

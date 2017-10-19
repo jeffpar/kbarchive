@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152278: XCLN: Exchange Client Setup Command Line Switches"
-permalink: kb/152/Q152278/
+permalink: /kb/152/Q152278/
 ---
 
 ## Q152278: XCLN: Exchange Client Setup Command Line Switches

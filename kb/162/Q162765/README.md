@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162765: Access Violation in Snadmod.dll with Multithreaded SLI App."
-permalink: kb/162/Q162765/
+permalink: /kb/162/Q162765/
 ---
 
 ## Q162765: Access Violation in Snadmod.dll with Multithreaded SLI App.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184481: XCON: MTACheck Causes Access Violation"
-permalink: kb/184/Q184481/
+permalink: /kb/184/Q184481/
 ---
 
 ## Q184481: XCON: MTACheck Causes Access Violation

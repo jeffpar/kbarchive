@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168927: FIX: Application_NewWorkspace Event Is Never Fired"
-permalink: kb/168/Q168927/
+permalink: /kb/168/Q168927/
 ---
 
 ## Q168927: FIX: Application_NewWorkspace Event Is Never Fired

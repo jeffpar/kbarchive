@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180694: SMS: Chkdsk Runs Every Time the System Is Restarted Post-SP3"
-permalink: kb/180/Q180694/
+permalink: /kb/180/Q180694/
 ---
 
 ## Q180694: SMS: Chkdsk Runs Every Time the System Is Restarted Post-SP3

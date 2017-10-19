@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133366: Julia Child: Clearing All Notes Disables Buttons"
-permalink: kb/133/Q133366/
+permalink: /kb/133/Q133366/
 ---
 
 ## Q133366: Julia Child: Clearing All Notes Disables Buttons

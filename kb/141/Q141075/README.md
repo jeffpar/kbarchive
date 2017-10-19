@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141075: FIX: FoxPro Quits When It Runs Out of File Handles"
-permalink: kb/141/Q141075/
+permalink: /kb/141/Q141075/
 ---
 
 ## Q141075: FIX: FoxPro Quits When It Runs Out of File Handles

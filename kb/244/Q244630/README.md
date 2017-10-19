@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244630: SMS: Site Status Node May Take a Long Time to Open"
-permalink: kb/244/Q244630/
+permalink: /kb/244/Q244630/
 ---
 
 ## Q244630: SMS: Site Status Node May Take a Long Time to Open

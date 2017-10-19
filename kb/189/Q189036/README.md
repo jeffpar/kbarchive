@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189036: PRB: WinDBG for WinCe 2.0 Does Not Support Named Pipes"
-permalink: kb/189/Q189036/
+permalink: /kb/189/Q189036/
 ---
 
 ## Q189036: PRB: WinDBG for WinCe 2.0 Does Not Support Named Pipes

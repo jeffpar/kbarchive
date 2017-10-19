@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318500: XADM: Quota System Message Is Truncated in the Russian Language"
-permalink: kb/318/Q318500/
+permalink: /kb/318/Q318500/
 ---
 
 ## Q318500: XADM: Quota System Message Is Truncated in the Russian Language

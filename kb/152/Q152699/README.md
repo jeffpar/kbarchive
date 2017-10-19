@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152699: Paul Bunyan: Minimum System Requirements"
-permalink: kb/152/Q152699/
+permalink: /kb/152/Q152699/
 ---
 
 ## Q152699: Paul Bunyan: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255538: Code 19008 (DS_RC_BUFFER_TOO_SMALL) When You Run a Join Search"
-permalink: kb/255/Q255538/
+permalink: /kb/255/Q255538/
 ---
 
 ## Q255538: Code 19008 (DS_RC_BUFFER_TOO_SMALL) When You Run a Join Search

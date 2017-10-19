@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107490: Art Gallery: Some Buttons Stay Depressed"
-permalink: kb/107/Q107490/
+permalink: /kb/107/Q107490/
 ---
 
 ## Q107490: Art Gallery: Some Buttons Stay Depressed

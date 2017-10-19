@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105671: Media Player: CD Audio Device Missing from Device Menu"
-permalink: kb/105/Q105671/
+permalink: /kb/105/Q105671/
 ---
 
 ## Q105671: Media Player: CD Audio Device Missing from Device Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77405: View File Does Not Show Subdirectories in MS-DOS Shell"
-permalink: kb/077/Q77405/
+permalink: /kb/077/Q77405/
 ---
 
 ## Q77405: View File Does Not Show Subdirectories in MS-DOS Shell

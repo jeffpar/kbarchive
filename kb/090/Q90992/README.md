@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90992: HP III Hangs with XLI Adapter"
-permalink: kb/090/Q90992/
+permalink: /kb/090/Q90992/
 ---
 
 ## Q90992: HP III Hangs with XLI Adapter

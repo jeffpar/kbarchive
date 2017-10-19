@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131099: PRB: MFC App's CWinApp::ProcessMessageFilter() Never Invoked"
-permalink: kb/131/Q131099/
+permalink: /kb/131/Q131099/
 ---
 
 ## Q131099: PRB: MFC App's CWinApp::ProcessMessageFilter() Never Invoked

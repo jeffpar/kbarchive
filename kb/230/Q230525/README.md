@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230525: Changes to Domain Group Initiates Full Domain Synchronization"
-permalink: kb/230/Q230525/
+permalink: /kb/230/Q230525/
 ---
 
 ## Q230525: Changes to Domain Group Initiates Full Domain Synchronization

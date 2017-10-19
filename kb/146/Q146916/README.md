@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146916: HOWTO: Create a Modeless CPropertySheet with Standard Buttons"
-permalink: kb/146/Q146916/
+permalink: /kb/146/Q146916/
 ---
 
 ## Q146916: HOWTO: Create a Modeless CPropertySheet with Standard Buttons

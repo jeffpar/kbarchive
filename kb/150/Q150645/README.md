@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150645: INFO: Minor Inconsistencies in the Header Log for &lt;filename&gt;"
-permalink: kb/150/Q150645/
+permalink: /kb/150/Q150645/
 ---
 
 ## Q150645: INFO: Minor Inconsistencies in the Header Log for &lt;filename&gt;

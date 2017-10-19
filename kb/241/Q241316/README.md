@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241316: WD97: Word Count Macro Available to Count Words in a Selection"
-permalink: kb/241/Q241316/
+permalink: /kb/241/Q241316/
 ---
 
 ## Q241316: WD97: Word Count Macro Available to Count Words in a Selection

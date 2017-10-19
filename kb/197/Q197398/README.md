@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197398: XCON: MTA Stops Processing Mail with Events 57, 2051 and 1105"
-permalink: kb/197/Q197398/
+permalink: /kb/197/Q197398/
 ---
 
 ## Q197398: XCON: MTA Stops Processing Mail with Events 57, 2051 and 1105

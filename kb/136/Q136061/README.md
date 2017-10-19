@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136061: Err Msg: Windows Has Disabled Direct Disk Access to Protect"
-permalink: kb/136/Q136061/
+permalink: /kb/136/Q136061/
 ---
 
 ## Q136061: Err Msg: Windows Has Disabled Direct Disk Access to Protect

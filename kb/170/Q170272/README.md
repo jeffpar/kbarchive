@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170272: WD97: Not All Word Editing Functions Available in Form Fields"
-permalink: kb/170/Q170272/
+permalink: /kb/170/Q170272/
 ---
 
 ## Q170272: WD97: Not All Word Editing Functions Available in Form Fields

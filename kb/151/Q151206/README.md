@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151206: Err Msg: ...Problem w/ Mail System. Messages Could Not Be Read"
-permalink: kb/151/Q151206/
+permalink: /kb/151/Q151206/
 ---
 
 ## Q151206: Err Msg: ...Problem w/ Mail System. Messages Could Not Be Read

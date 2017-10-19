@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231309: WD97: Bullets Change When Pasting Text to Another Document"
-permalink: kb/231/Q231309/
+permalink: /kb/231/Q231309/
 ---
 
 ## Q231309: WD97: Bullets Change When Pasting Text to Another Document

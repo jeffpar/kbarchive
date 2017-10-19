@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156775: MSB Dinos: Errors Installing with 8-bit Sound Card"
-permalink: kb/156/Q156775/
+permalink: /kb/156/Q156775/
 ---
 
 ## Q156775: MSB Dinos: Errors Installing with 8-bit Sound Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85625: Write: Save As Leaves the Find Dialog Box on the Screen"
-permalink: kb/085/Q85625/
+permalink: /kb/085/Q85625/
 ---
 
 ## Q85625: Write: Save As Leaves the Find Dialog Box on the Screen

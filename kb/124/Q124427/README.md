@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124427: Hcopy Does Not Preserve Hidden Attributes on Files"
-permalink: kb/124/Q124427/
+permalink: /kb/124/Q124427/
 ---
 
 ## Q124427: Hcopy Does Not Preserve Hidden Attributes on Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150130: BUG: NMAKE Utility May Compile Project Files More Than Once"
-permalink: kb/150/Q150130/
+permalink: /kb/150/Q150130/
 ---
 
 ## Q150130: BUG: NMAKE Utility May Compile Project Files More Than Once

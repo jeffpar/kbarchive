@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253693: Encarta and Reference Products Troubleshooter Available"
-permalink: kb/253/Q253693/
+permalink: /kb/253/Q253693/
 ---
 
 ## Q253693: Encarta and Reference Products Troubleshooter Available

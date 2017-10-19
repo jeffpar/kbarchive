@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95630: Windows for Workgroups and NetBEUI Protocol"
-permalink: kb/095/Q95630/
+permalink: /kb/095/Q95630/
 ---
 
 ## Q95630: Windows for Workgroups and NetBEUI Protocol

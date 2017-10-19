@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168913: WD97: Cannot Insert a Caption Inside a Table Cell"
-permalink: kb/168/Q168913/
+permalink: /kb/168/Q168913/
 ---
 
 ## Q168913: WD97: Cannot Insert a Caption Inside a Table Cell

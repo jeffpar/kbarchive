@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158955: ArcSolo95 May Not Run with Incorrectly Detected SCSI Card"
-permalink: kb/158/Q158955/
+permalink: /kb/158/Q158955/
 ---
 
 ## Q158955: ArcSolo95 May Not Run with Incorrectly Detected SCSI Card

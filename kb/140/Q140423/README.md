@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140423: SNA Server EHNAPPC Security fails using 10 Character User ID"
-permalink: kb/140/Q140423/
+permalink: /kb/140/Q140423/
 ---
 
 ## Q140423: SNA Server EHNAPPC Security fails using 10 Character User ID

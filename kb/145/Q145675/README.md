@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145675: Pregnancy: Who Can I Send Suggestions To?"
-permalink: kb/145/Q145675/
+permalink: /kb/145/Q145675/
 ---
 
 ## Q145675: Pregnancy: Who Can I Send Suggestions To?

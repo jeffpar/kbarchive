@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85366: Maintenance Mode Windows Setup Doesn't Run from Inside Windows"
-permalink: kb/085/Q85366/
+permalink: /kb/085/Q85366/
 ---
 
 ## Q85366: Maintenance Mode Windows Setup Doesn't Run from Inside Windows

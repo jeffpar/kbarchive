@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197864: Cannot Ping a WLBS Server from Another WLBS Server"
-permalink: kb/197/Q197864/
+permalink: /kb/197/Q197864/
 ---
 
 ## Q197864: Cannot Ping a WLBS Server from Another WLBS Server

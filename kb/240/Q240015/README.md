@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240015: FIX: getline Template Function Reads Extra Character"
-permalink: kb/240/Q240015/
+permalink: /kb/240/Q240015/
 ---
 
 ## Q240015: FIX: getline Template Function Reads Extra Character

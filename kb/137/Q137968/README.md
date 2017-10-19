@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137968: Perfmon and Network Monitor Counters Show Incorrect Values"
-permalink: kb/137/Q137968/
+permalink: /kb/137/Q137968/
 ---
 
 ## Q137968: Perfmon and Network Monitor Counters Show Incorrect Values

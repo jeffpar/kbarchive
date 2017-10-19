@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89722: Problems with MS-DOS 5.0 on Leading Edge Model M and Sperry HT"
-permalink: kb/089/Q89722/
+permalink: /kb/089/Q89722/
 ---
 
 ## Q89722: Problems with MS-DOS 5.0 on Leading Edge Model M and Sperry HT

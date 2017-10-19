@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117217: HOWTO: Search for Specific Text in a Memo Field"
-permalink: kb/117/Q117217/
+permalink: /kb/117/Q117217/
 ---
 
 ## Q117217: HOWTO: Search for Specific Text in a Memo Field

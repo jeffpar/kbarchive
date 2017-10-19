@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155251: PPT7: Menu Items Not Available or Missing"
-permalink: kb/155/Q155251/
+permalink: /kb/155/Q155251/
 ---
 
 ## Q155251: PPT7: Menu Items Not Available or Missing

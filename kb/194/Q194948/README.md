@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194948: HOWTO: Create a Child Console Process from a CGI Process"
-permalink: kb/194/Q194948/
+permalink: /kb/194/Q194948/
 ---
 
 ## Q194948: HOWTO: Create a Child Console Process from a CGI Process

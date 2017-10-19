@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156865: PRB: Programmatically Converting 3.0 Project in 5.0 Fails"
-permalink: kb/156/Q156865/
+permalink: /kb/156/Q156865/
 ---
 
 ## Q156865: PRB: Programmatically Converting 3.0 Project in 5.0 Fails

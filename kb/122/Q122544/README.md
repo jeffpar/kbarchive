@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122544: UPDATE.TXT: TCP/IP-32 3.11b for Windows for Workgroups"
-permalink: kb/122/Q122544/
+permalink: /kb/122/Q122544/
 ---
 
 ## Q122544: UPDATE.TXT: TCP/IP-32 3.11b for Windows for Workgroups

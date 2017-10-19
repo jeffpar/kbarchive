@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176478: WD97: TimeOut Argument Ignored by Some Dialog Boxes"
-permalink: kb/176/Q176478/
+permalink: /kb/176/Q176478/
 ---
 
 ## Q176478: WD97: TimeOut Argument Ignored by Some Dialog Boxes

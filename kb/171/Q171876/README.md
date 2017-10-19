@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171876: SNA Server Traps After Receiving BIND +RSP With Invalid Data"
-permalink: kb/171/Q171876/
+permalink: /kb/171/Q171876/
 ---
 
 ## Q171876: SNA Server Traps After Receiving BIND +RSP With Invalid Data

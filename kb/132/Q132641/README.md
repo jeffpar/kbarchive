@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132641: Automatically Detecting Racal Modem Causes Modem Hang"
-permalink: kb/132/Q132641/
+permalink: /kb/132/Q132641/
 ---
 
 ## Q132641: Automatically Detecting Racal Modem Causes Modem Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282495: Encarta World Atlas: Moving Dynamic Sensor Hangs Your Computer"
-permalink: kb/282/Q282495/
+permalink: /kb/282/Q282495/
 ---
 
 ## Q282495: Encarta World Atlas: Moving Dynamic Sensor Hangs Your Computer

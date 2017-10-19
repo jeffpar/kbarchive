@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308953: FP: Hover Buttons Appear Dimmed on Web Pages"
-permalink: kb/308/Q308953/
+permalink: /kb/308/Q308953/
 ---
 
 ## Q308953: FP: Hover Buttons Appear Dimmed on Web Pages

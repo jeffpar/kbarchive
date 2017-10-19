@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141678: FIX: Changes Made to a Sub-Classed CommandGroup are not Saved"
-permalink: kb/141/Q141678/
+permalink: /kb/141/Q141678/
 ---
 
 ## Q141678: FIX: Changes Made to a Sub-Classed CommandGroup are not Saved

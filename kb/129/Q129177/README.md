@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129177: 500 Nations: Wallpaper Images Washed-out or Discolored"
-permalink: kb/129/Q129177/
+permalink: /kb/129/Q129177/
 ---
 
 ## Q129177: 500 Nations: Wallpaper Images Washed-out or Discolored

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159919: XADM: Public Folder Hierarchy Replicates Through Messages"
-permalink: kb/159/Q159919/
+permalink: /kb/159/Q159919/
 ---
 
 ## Q159919: XADM: Public Folder Hierarchy Replicates Through Messages

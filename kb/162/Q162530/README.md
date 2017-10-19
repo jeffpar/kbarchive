@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162530: PRB: Invalid Handle on Client When Journal_Text Set to Bad Path"
-permalink: kb/162/Q162530/
+permalink: /kb/162/Q162530/
 ---
 
 ## Q162530: PRB: Invalid Handle on Client When Journal_Text Set to Bad Path

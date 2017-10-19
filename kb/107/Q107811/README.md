@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107811: Several WFW&lt;nn&gt; Files in Your Windows Directory"
-permalink: kb/107/Q107811/
+permalink: /kb/107/Q107811/
 ---
 
 ## Q107811: Several WFW&lt;nn&gt; Files in Your Windows Directory

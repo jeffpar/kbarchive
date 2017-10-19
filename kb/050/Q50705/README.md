@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50705: DOCERR: L4011, L1005 Errors When /PACKCODE Value Too Large"
-permalink: kb/050/Q50705/
+permalink: /kb/050/Q50705/
 ---
 
 ## Q50705: DOCERR: L4011, L1005 Errors When /PACKCODE Value Too Large

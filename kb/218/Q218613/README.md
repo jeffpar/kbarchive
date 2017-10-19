@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218613: FIX: /DELAYLOAD Linker Option Generates Bad Image On Alpha"
-permalink: kb/218/Q218613/
+permalink: /kb/218/Q218613/
 ---
 
 ## Q218613: FIX: /DELAYLOAD Linker Option Generates Bad Image On Alpha

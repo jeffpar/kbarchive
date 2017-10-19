@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135962: Disk Tools Run by System Agent Pause for User Input"
-permalink: kb/135/Q135962/
+permalink: /kb/135/Q135962/
 ---
 
 ## Q135962: Disk Tools Run by System Agent Pause for User Input

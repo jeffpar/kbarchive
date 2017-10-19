@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138834: Improvements for EIS/3270 and APPC Resource Location"
-permalink: kb/138/Q138834/
+permalink: /kb/138/Q138834/
 ---
 
 ## Q138834: Improvements for EIS/3270 and APPC Resource Location

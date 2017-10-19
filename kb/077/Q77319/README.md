@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77319: Setup Detects Disk Manager Partitions"
-permalink: kb/077/Q77319/
+permalink: /kb/077/Q77319/
 ---
 
 ## Q77319: Setup Detects Disk Manager Partitions

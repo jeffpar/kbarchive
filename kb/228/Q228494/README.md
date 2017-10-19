@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228494: Cannot Install Programs on Portuguese Brazilian Windows 95"
-permalink: kb/228/Q228494/
+permalink: /kb/228/Q228494/
 ---
 
 ## Q228494: Cannot Install Programs on Portuguese Brazilian Windows 95

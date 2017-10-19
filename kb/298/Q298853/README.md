@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298853: Using MSN Explorer After DSL Installation"
-permalink: kb/298/Q298853/
+permalink: /kb/298/Q298853/
 ---
 
 ## Q298853: Using MSN Explorer After DSL Installation

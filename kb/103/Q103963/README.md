@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103963: PC Adm: Err Msg: Notice 157: Public Folders Are in Use..."
-permalink: kb/103/Q103963/
+permalink: /kb/103/Q103963/
 ---
 
 ## Q103963: PC Adm: Err Msg: Notice 157: Public Folders Are in Use...

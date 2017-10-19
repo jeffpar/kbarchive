@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191095: BUG: Error When Attempting to Update Included Files in PDW"
-permalink: kb/191/Q191095/
+permalink: /kb/191/Q191095/
 ---
 
 ## Q191095: BUG: Error When Attempting to Update Included Files in PDW

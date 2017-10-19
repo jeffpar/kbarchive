@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235761: SMS: Foreign Package Information Not Available to Child Sites"
-permalink: kb/235/Q235761/
+permalink: /kb/235/Q235761/
 ---
 
 ## Q235761: SMS: Foreign Package Information Not Available to Child Sites

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158853: Errors Using IBM Anti-Virus with FAT32 File System"
-permalink: kb/158/Q158853/
+permalink: /kb/158/Q158853/
 ---
 
 ## Q158853: Errors Using IBM Anti-Virus with FAT32 File System

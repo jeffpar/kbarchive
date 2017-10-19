@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248722: Plus! for Kids: Cannot Log On When You Upgrade to Windows 2000"
-permalink: kb/248/Q248722/
+permalink: /kb/248/Q248722/
 ---
 
 ## Q248722: Plus! for Kids: Cannot Log On When You Upgrade to Windows 2000

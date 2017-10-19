@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267852: Streets &amp; Trips 2001 Error Message: Unable to Load Vital Strings"
-permalink: kb/267/Q267852/
+permalink: /kb/267/Q267852/
 ---
 
 ## Q267852: Streets &amp; Trips 2001 Error Message: Unable to Load Vital Strings

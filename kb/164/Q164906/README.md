@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164906: Host Security Page in SNA Manager Is Unresponsive After Error"
-permalink: kb/164/Q164906/
+permalink: /kb/164/Q164906/
 ---
 
 ## Q164906: Host Security Page in SNA Manager Is Unresponsive After Error

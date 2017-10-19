@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273782: PRB: Error When You Copy and Paste GUID in Data View Window"
-permalink: kb/273/Q273782/
+permalink: /kb/273/Q273782/
 ---
 
 ## Q273782: PRB: Error When You Copy and Paste GUID in Data View Window

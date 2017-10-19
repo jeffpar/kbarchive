@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138542: RAS Authentication Retry Dialog Box Does Not Appear"
-permalink: kb/138/Q138542/
+permalink: /kb/138/Q138542/
 ---
 
 ## Q138542: RAS Authentication Retry Dialog Box Does Not Appear

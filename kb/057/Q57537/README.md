@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57537: Leading Edge Won't Take Mode CO80 Command"
-permalink: kb/057/Q57537/
+permalink: /kb/057/Q57537/
 ---
 
 ## Q57537: Leading Edge Won't Take Mode CO80 Command

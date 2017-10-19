@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94357: Difference Between DEFRAG and DBLSPACE /DEFRAGMENT"
-permalink: kb/094/Q94357/
+permalink: /kb/094/Q94357/
 ---
 
 ## Q94357: Difference Between DEFRAG and DBLSPACE /DEFRAGMENT

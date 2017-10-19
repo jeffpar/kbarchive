@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136555: Delay Occurs Accessing Phillips CD-ROM Drive"
-permalink: kb/136/Q136555/
+permalink: /kb/136/Q136555/
 ---
 
 ## Q136555: Delay Occurs Accessing Phillips CD-ROM Drive

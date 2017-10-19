@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68301: SAMPLE: Spdsheet.exe - Developing a Spreadsheet App for Windows"
-permalink: kb/068/Q68301/
+permalink: /kb/068/Q68301/
 ---
 
 ## Q68301: SAMPLE: Spdsheet.exe - Developing a Spreadsheet App for Windows

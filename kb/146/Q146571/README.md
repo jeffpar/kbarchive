@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146571: XCLN: Microsoft Word May Not Post to Public Folder"
-permalink: kb/146/Q146571/
+permalink: /kb/146/Q146571/
 ---
 
 ## Q146571: XCLN: Microsoft Word May Not Post to Public Folder

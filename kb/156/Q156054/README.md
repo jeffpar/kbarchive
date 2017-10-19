@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156054: IIS FTP Server Will Not Start"
-permalink: kb/156/Q156054/
+permalink: /kb/156/Q156054/
 ---
 
 ## Q156054: IIS FTP Server Will Not Start

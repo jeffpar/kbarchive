@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138934: Chips and Technologies CT-65545 Does Not Run 256 Color Video"
-permalink: kb/138/Q138934/
+permalink: /kb/138/Q138934/
 ---
 
 ## Q138934: Chips and Technologies CT-65545 Does Not Run 256 Color Video

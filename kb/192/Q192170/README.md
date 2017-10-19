@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192170: HOWTO: Add Explorer Style Rename Capability to TreeView Control"
-permalink: kb/192/Q192170/
+permalink: /kb/192/Q192170/
 ---
 
 ## Q192170: HOWTO: Add Explorer Style Rename Capability to TreeView Control

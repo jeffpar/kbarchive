@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123779: Changing the Windows NT Computer Name on an SNA Server"
-permalink: kb/123/Q123779/
+permalink: /kb/123/Q123779/
 ---
 
 ## Q123779: Changing the Windows NT Computer Name on an SNA Server

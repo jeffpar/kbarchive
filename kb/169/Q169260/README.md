@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169260: HOWTO: No Command Line Equivalent for Some Web Features"
-permalink: kb/169/Q169260/
+permalink: /kb/169/Q169260/
 ---
 
 ## Q169260: HOWTO: No Command Line Equivalent for Some Web Features

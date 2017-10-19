@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116325: BUG: Browser Information Shows Incorrect Reference to Variable"
-permalink: kb/116/Q116325/
+permalink: /kb/116/Q116325/
 ---
 
 ## Q116325: BUG: Browser Information Shows Incorrect Reference to Variable

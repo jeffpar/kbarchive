@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89123: Setting the TEMP Variable on a Novell Network"
-permalink: kb/089/Q89123/
+permalink: /kb/089/Q89123/
 ---
 
 ## Q89123: Setting the TEMP Variable on a Novell Network

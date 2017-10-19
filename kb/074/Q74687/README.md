@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74687: Notepad Err Msg: File Is Empty and Will Be Deleted..."
-permalink: kb/074/Q74687/
+permalink: /kb/074/Q74687/
 ---
 
 ## Q74687: Notepad Err Msg: File Is Empty and Will Be Deleted...

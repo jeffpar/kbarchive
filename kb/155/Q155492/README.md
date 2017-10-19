@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155492: XADM: Optimizer Stops if Free Disk Space Is Low"
-permalink: kb/155/Q155492/
+permalink: /kb/155/Q155492/
 ---
 
 ## Q155492: XADM: Optimizer Stops if Free Disk Space Is Low

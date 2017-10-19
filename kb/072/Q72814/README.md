@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72814: Windows 3.0 Does Not Support Auto-Initialize DMA"
-permalink: kb/072/Q72814/
+permalink: /kb/072/Q72814/
 ---
 
 ## Q72814: Windows 3.0 Does Not Support Auto-Initialize DMA

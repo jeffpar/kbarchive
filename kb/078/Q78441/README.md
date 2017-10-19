@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78441: EMM386.EXE Hangs on GoldStar 386SX Model GT316"
-permalink: kb/078/Q78441/
+permalink: /kb/078/Q78441/
 ---
 
 ## Q78441: EMM386.EXE Hangs on GoldStar 386SX Model GT316

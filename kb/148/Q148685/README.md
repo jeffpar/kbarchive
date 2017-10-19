@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148685: PRB: Changing Partition Formatting Causes Grid to Jump Around"
-permalink: kb/148/Q148685/
+permalink: /kb/148/Q148685/
 ---
 
 ## Q148685: PRB: Changing Partition Formatting Causes Grid to Jump Around

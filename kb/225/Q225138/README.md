@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225138: SMSINST: SMS Installer Messages Truncated After Editing"
-permalink: kb/225/Q225138/
+permalink: /kb/225/Q225138/
 ---
 
 ## Q225138: SMSINST: SMS Installer Messages Truncated After Editing

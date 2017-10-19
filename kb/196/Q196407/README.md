@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196407: XADM: Unwanted Reminders Appear After Using Move Server Wizard"
-permalink: kb/196/Q196407/
+permalink: /kb/196/Q196407/
 ---
 
 ## Q196407: XADM: Unwanted Reminders Appear After Using Move Server Wizard

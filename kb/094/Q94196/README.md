@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94196: Reinstalling Windows Without Losing Settings"
-permalink: kb/094/Q94196/
+permalink: /kb/094/Q94196/
 ---
 
 ## Q94196: Reinstalling Windows Without Losing Settings

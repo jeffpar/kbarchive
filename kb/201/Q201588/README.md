@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201588: BUG: Custom Mouse Pointer Changes Back to Default"
-permalink: kb/201/Q201588/
+permalink: /kb/201/Q201588/
 ---
 
 ## Q201588: BUG: Custom Mouse Pointer Changes Back to Default

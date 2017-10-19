@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107580: Net Watcher Event Log May Not Clear"
-permalink: kb/107/Q107580/
+permalink: /kb/107/Q107580/
 ---
 
 ## Q107580: Net Watcher Event Log May Not Clear

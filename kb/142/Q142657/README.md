@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142657: Data Corruption on Windows NT 4.0"
-permalink: kb/142/Q142657/
+permalink: /kb/142/Q142657/
 ---
 
 ## Q142657: Data Corruption on Windows NT 4.0

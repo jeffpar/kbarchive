@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139435: WMConfig Tool in MS Plus! Refers to Hover! in About Box"
-permalink: kb/139/Q139435/
+permalink: /kb/139/Q139435/
 ---
 
 ## Q139435: WMConfig Tool in MS Plus! Refers to Hover! in About Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175107: XCLN: Directory for the Local Exchange Offline Add"
-permalink: kb/175/Q175107/
+permalink: /kb/175/Q175107/
 ---
 
 ## Q175107: XCLN: Directory for the Local Exchange Offline Add

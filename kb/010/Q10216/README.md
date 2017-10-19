@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10216: Using EndPaint() and BeginPaint()"
-permalink: kb/010/Q10216/
+permalink: /kb/010/Q10216/
 ---
 
 ## Q10216: Using EndPaint() and BeginPaint()

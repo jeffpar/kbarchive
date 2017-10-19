@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139150: PPT7: PowerPoint Missing Features Under Windows NT"
-permalink: kb/139/Q139150/
+permalink: /kb/139/Q139150/
 ---
 
 ## Q139150: PPT7: PowerPoint Missing Features Under Windows NT

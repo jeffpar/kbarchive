@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174018: Description of the Windows 95 Startup Process"
-permalink: kb/174/Q174018/
+permalink: /kb/174/Q174018/
 ---
 
 ## Q174018: Description of the Windows 95 Startup Process

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153582: How to Get Container hWnd from Windowless Custom OLE Control"
-permalink: kb/153/Q153582/
+permalink: /kb/153/Q153582/
 ---
 
 ## Q153582: How to Get Container hWnd from Windowless Custom OLE Control

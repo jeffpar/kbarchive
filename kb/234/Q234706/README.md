@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234706: Microsoft Pocket Guide to Microsoft PowerPoint 2000 Comments and"
-permalink: kb/234/Q234706/
+permalink: /kb/234/Q234706/
 ---
 
 ## Q234706: Microsoft Pocket Guide to Microsoft PowerPoint 2000 Comments and

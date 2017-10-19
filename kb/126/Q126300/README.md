@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126300: Errors Using Lexmark IBM 4039 Printer"
-permalink: kb/126/Q126300/
+permalink: /kb/126/Q126300/
 ---
 
 ## Q126300: Errors Using Lexmark IBM 4039 Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156581: PRB: INSERT Can Freeze VFP if Table's Index File Corrupted"
-permalink: kb/156/Q156581/
+permalink: /kb/156/Q156581/
 ---
 
 ## Q156581: PRB: INSERT Can Freeze VFP if Table's Index File Corrupted

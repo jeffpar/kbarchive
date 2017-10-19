@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87379: PC DB: Description of an .ATT File"
-permalink: kb/087/Q87379/
+permalink: /kb/087/Q87379/
 ---
 
 ## Q87379: PC DB: Description of an .ATT File

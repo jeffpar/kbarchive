@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178358: INFO: October 1997 MSDN Library and Internet Explorer"
-permalink: kb/178/Q178358/
+permalink: /kb/178/Q178358/
 ---
 
 ## Q178358: INFO: October 1997 MSDN Library and Internet Explorer

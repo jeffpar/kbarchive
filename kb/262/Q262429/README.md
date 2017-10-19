@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262429: StarLancer: Description of Enhancement (Cheat) Code"
-permalink: kb/262/Q262429/
+permalink: /kb/262/Q262429/
 ---
 
 ## Q262429: StarLancer: Description of Enhancement (Cheat) Code

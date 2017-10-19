@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176543: Windows 95 Client Is Unable to Receive Roaming Profiles"
-permalink: kb/176/Q176543/
+permalink: /kb/176/Q176543/
 ---
 
 ## Q176543: Windows 95 Client Is Unable to Receive Roaming Profiles

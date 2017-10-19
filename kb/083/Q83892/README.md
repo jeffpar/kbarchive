@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83892: Loss of CMOS Settings When Rebooting on Intel Machines"
-permalink: kb/083/Q83892/
+permalink: /kb/083/Q83892/
 ---
 
 ## Q83892: Loss of CMOS Settings When Rebooting on Intel Machines

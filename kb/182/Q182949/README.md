@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182949: BUG: Modal Form Disabled When Launched From ActiveX Control"
-permalink: kb/182/Q182949/
+permalink: /kb/182/Q182949/
 ---
 
 ## Q182949: BUG: Modal Form Disabled When Launched From ActiveX Control

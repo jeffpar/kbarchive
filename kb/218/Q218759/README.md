@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218759: HOWTO: Display an Image in a Command Button"
-permalink: kb/218/Q218759/
+permalink: /kb/218/Q218759/
 ---
 
 ## Q218759: HOWTO: Display an Image in a Command Button

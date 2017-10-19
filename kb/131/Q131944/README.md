@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131944: Windows 95/98: How to Delete Temporary Files"
-permalink: kb/131/Q131944/
+permalink: /kb/131/Q131944/
 ---
 
 ## Q131944: Windows 95/98: How to Delete Temporary Files

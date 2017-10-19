@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191714: INFO: Limiting the Scope of MSDN Help Topics in Visual FoxPro"
-permalink: kb/191/Q191714/
+permalink: /kb/191/Q191714/
 ---
 
 ## Q191714: INFO: Limiting the Scope of MSDN Help Topics in Visual FoxPro

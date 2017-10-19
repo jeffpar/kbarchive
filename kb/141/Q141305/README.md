@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141305: Winpopup.exe Does Not Report Print Notifications"
-permalink: kb/141/Q141305/
+permalink: /kb/141/Q141305/
 ---
 
 ## Q141305: Winpopup.exe Does Not Report Print Notifications

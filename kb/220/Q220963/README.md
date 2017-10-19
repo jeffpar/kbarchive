@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220963: Object Is Not Displayed in the Multimedia Tool in Control Panel"
-permalink: kb/220/Q220963/
+permalink: /kb/220/Q220963/
 ---
 
 ## Q220963: Object Is Not Displayed in the Multimedia Tool in Control Panel

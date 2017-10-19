@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271684: PRB: Setup for EVT Causes Invalid Page Fault in Ce98pro.dll"
-permalink: kb/271/Q271684/
+permalink: /kb/271/Q271684/
 ---
 
 ## Q271684: PRB: Setup for EVT Causes Invalid Page Fault in Ce98pro.dll

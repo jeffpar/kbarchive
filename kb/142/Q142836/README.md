@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142836: HOWTO: RDO Prepared Statements/Search Crit. to Fill Listbox"
-permalink: kb/142/Q142836/
+permalink: /kb/142/Q142836/
 ---
 
 ## Q142836: HOWTO: RDO Prepared Statements/Search Crit. to Fill Listbox

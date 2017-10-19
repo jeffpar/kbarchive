@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66826: Flt Sim: Crop Duster Score Window Stays Active in Other Modes"
-permalink: kb/066/Q66826/
+permalink: /kb/066/Q66826/
 ---
 
 ## Q66826: Flt Sim: Crop Duster Score Window Stays Active in Other Modes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69302: Changing Display Contrast on Toshiba Laptops Using XCHAD.EXE"
-permalink: kb/069/Q69302/
+permalink: /kb/069/Q69302/
 ---
 
 ## Q69302: Changing Display Contrast on Toshiba Laptops Using XCHAD.EXE

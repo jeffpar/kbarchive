@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168895: HOWTO: Convert Numeric Dollar Amount to Character Form"
-permalink: kb/168/Q168895/
+permalink: /kb/168/Q168895/
 ---
 
 ## Q168895: HOWTO: Convert Numeric Dollar Amount to Character Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89875: Changes Made to SYSTEM.INI File During Sound System Setup 1.0"
-permalink: kb/089/Q89875/
+permalink: /kb/089/Q89875/
 ---
 
 ## Q89875: Changes Made to SYSTEM.INI File During Sound System Setup 1.0

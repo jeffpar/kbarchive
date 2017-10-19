@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238057: Encarta Dictionary 2000: Define Command Is Unavailable in Word"
-permalink: kb/238/Q238057/
+permalink: /kb/238/Q238057/
 ---
 
 ## Q238057: Encarta Dictionary 2000: Define Command Is Unavailable in Word

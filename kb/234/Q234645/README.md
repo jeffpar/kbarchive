@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234645: ODE97: Error Configuring SQL Server Driver During Install of App"
-permalink: kb/234/Q234645/
+permalink: /kb/234/Q234645/
 ---
 
 ## Q234645: ODE97: Error Configuring SQL Server Driver During Install of App

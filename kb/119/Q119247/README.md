@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119247: WFWG: Pause and Resume Events Are Not Logged"
-permalink: kb/119/Q119247/
+permalink: /kb/119/Q119247/
 ---
 
 ## Q119247: WFWG: Pause and Resume Events Are Not Logged

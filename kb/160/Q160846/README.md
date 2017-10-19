@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160846: &quot;Illegal Operation&quot; Error Message Changing Desktop Themes"
-permalink: kb/160/Q160846/
+permalink: /kb/160/Q160846/
 ---
 
 ## Q160846: &quot;Illegal Operation&quot; Error Message Changing Desktop Themes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136889: Windows 95 Backup Asks for Password"
-permalink: kb/136/Q136889/
+permalink: /kb/136/Q136889/
 ---
 
 ## Q136889: Windows 95 Backup Asks for Password

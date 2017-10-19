@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262422: PRB: Visual FoxPro Form Repeatedly Prompts to Be Saved"
-permalink: kb/262/Q262422/
+permalink: /kb/262/Q262422/
 ---
 
 ## Q262422: PRB: Visual FoxPro Form Repeatedly Prompts to Be Saved

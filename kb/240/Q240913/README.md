@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240913: XFOR: PROFS AT Command Fails When Forwarding Meeting Requests."
-permalink: kb/240/Q240913/
+permalink: /kb/240/Q240913/
 ---
 
 ## Q240913: XFOR: PROFS AT Command Fails When Forwarding Meeting Requests.

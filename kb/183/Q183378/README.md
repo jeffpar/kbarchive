@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183378: HTML Help Authoring Kit: vcSampleDoc Files Missing from CD-ROM"
-permalink: kb/183/Q183378/
+permalink: /kb/183/Q183378/
 ---
 
 ## Q183378: HTML Help Authoring Kit: vcSampleDoc Files Missing from CD-ROM

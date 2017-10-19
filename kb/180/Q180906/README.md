@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180906: Dial-Up Networking Cannot Dial Local Area Code"
-permalink: kb/180/Q180906/
+permalink: /kb/180/Q180906/
 ---
 
 ## Q180906: Dial-Up Networking Cannot Dial Local Area Code

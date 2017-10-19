@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184511: DOC: Append Instructions for DAO TableDef Incorrect"
-permalink: kb/184/Q184511/
+permalink: /kb/184/Q184511/
 ---
 
 ## Q184511: DOC: Append Instructions for DAO TableDef Incorrect

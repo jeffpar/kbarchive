@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100984: Additional Information on Using Clean and Interactive Start"
-permalink: kb/100/Q100984/
+permalink: /kb/100/Q100984/
 ---
 
 ## Q100984: Additional Information on Using Clean and Interactive Start

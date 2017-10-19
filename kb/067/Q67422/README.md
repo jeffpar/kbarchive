@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67422: Flt Sim: Using Two Joysticks with CH Products GameCard III"
-permalink: kb/067/Q67422/
+permalink: /kb/067/Q67422/
 ---
 
 ## Q67422: Flt Sim: Using Two Joysticks with CH Products GameCard III

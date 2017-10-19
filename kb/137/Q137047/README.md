@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137047: Windows 95 System Check Tool"
-permalink: kb/137/Q137047/
+permalink: /kb/137/Q137047/
 ---
 
 ## Q137047: Windows 95 System Check Tool

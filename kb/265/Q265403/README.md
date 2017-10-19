@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265403: XFOR: Outbound X.400 Message Created by CDO May Result in NDR"
-permalink: kb/265/Q265403/
+permalink: /kb/265/Q265403/
 ---
 
 ## Q265403: XFOR: Outbound X.400 Message Created by CDO May Result in NDR

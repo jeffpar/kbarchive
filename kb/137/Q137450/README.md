@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137450: HOWTO: Set Up and Troubleshoot Macintosh Communications"
-permalink: kb/137/Q137450/
+permalink: /kb/137/Q137450/
 ---
 
 ## Q137450: HOWTO: Set Up and Troubleshoot Macintosh Communications

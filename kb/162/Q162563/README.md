@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162563: WINS Restore Fails on Windows NT Server 4.0"
-permalink: kb/162/Q162563/
+permalink: /kb/162/Q162563/
 ---
 
 ## Q162563: WINS Restore Fails on Windows NT Server 4.0

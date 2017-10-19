@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275870: Erroneous Query by Win9x SNA Client Causes DNS Event Errors"
-permalink: kb/275/Q275870/
+permalink: /kb/275/Q275870/
 ---
 
 ## Q275870: Erroneous Query by Win9x SNA Client Causes DNS Event Errors

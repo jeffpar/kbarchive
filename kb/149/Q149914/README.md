@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149914: Cannot Use Special Graphics Character Set in VT100 Emulation"
-permalink: kb/149/Q149914/
+permalink: /kb/149/Q149914/
 ---
 
 ## Q149914: Cannot Use Special Graphics Character Set in VT100 Emulation

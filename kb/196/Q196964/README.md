@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196964: WD97: Visual Basic 3.0 Does Not Support Named Arguments"
-permalink: kb/196/Q196964/
+permalink: /kb/196/Q196964/
 ---
 
 ## Q196964: WD97: Visual Basic 3.0 Does Not Support Named Arguments

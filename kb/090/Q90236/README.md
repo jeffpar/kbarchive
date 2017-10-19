@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90236: NET May Not Exit When You Press the Escape Key"
-permalink: kb/090/Q90236/
+permalink: /kb/090/Q90236/
 ---
 
 ## Q90236: NET May Not Exit When You Press the Escape Key

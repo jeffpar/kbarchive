@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260524: Error Message Running Exchange MAPI MA to Discover Mailbox"
-permalink: kb/260/Q260524/
+permalink: /kb/260/Q260524/
 ---
 
 ## Q260524: Error Message Running Exchange MAPI MA to Discover Mailbox

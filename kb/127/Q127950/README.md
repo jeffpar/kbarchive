@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127950: Cannot Use DSP Modem on HP Integrated Office Board"
-permalink: kb/127/Q127950/
+permalink: /kb/127/Q127950/
 ---
 
 ## Q127950: Cannot Use DSP Modem on HP Integrated Office Board

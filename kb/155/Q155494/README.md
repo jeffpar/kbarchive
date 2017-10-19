@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155494: Limiting the Number of Records Returned by IDC"
-permalink: kb/155/Q155494/
+permalink: /kb/155/Q155494/
 ---
 
 ## Q155494: Limiting the Number of Records Returned by IDC

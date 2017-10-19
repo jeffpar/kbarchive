@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224273: Streets &amp; Trips 2000: Cannot Hide Park And Ride Icons on the Map"
-permalink: kb/224/Q224273/
+permalink: /kb/224/Q224273/
 ---
 
 ## Q224273: Streets &amp; Trips 2000: Cannot Hide Park And Ride Icons on the Map

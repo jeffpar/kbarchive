@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170476: Illegal Operation Error Message When Emptying Recycle Bin"
-permalink: kb/170/Q170476/
+permalink: /kb/170/Q170476/
 ---
 
 ## Q170476: Illegal Operation Error Message When Emptying Recycle Bin

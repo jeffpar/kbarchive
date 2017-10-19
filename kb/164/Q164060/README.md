@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164060: XFOR: Internet Mail Service Does Not Advertise ESMTP on Connect"
-permalink: kb/164/Q164060/
+permalink: /kb/164/Q164060/
 ---
 
 ## Q164060: XFOR: Internet Mail Service Does Not Advertise ESMTP on Connect

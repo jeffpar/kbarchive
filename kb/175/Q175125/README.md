@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175125: XWEB: Outlook Web Access May Not See Outlook Schedule"
-permalink: kb/175/Q175125/
+permalink: /kb/175/Q175125/
 ---
 
 ## Q175125: XWEB: Outlook Web Access May Not See Outlook Schedule

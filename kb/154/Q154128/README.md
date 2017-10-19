@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154128: XCLN: Long Filenames Converted to 8.3 Format"
-permalink: kb/154/Q154128/
+permalink: /kb/154/Q154128/
 ---
 
 ## Q154128: XCLN: Long Filenames Converted to 8.3 Format

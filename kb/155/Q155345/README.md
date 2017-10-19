@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155345: How To Re-Create Administrative Shares in Windows NT"
-permalink: kb/155/Q155345/
+permalink: /kb/155/Q155345/
 ---
 
 ## Q155345: How To Re-Create Administrative Shares in Windows NT

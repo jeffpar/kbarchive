@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105829: MS-DOS 6.2 Setup May Overwrite Stacker DBLSPACE.BIN File"
-permalink: kb/105/Q105829/
+permalink: /kb/105/Q105829/
 ---
 
 ## Q105829: MS-DOS 6.2 Setup May Overwrite Stacker DBLSPACE.BIN File

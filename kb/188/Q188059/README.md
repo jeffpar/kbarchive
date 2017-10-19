@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188059: SMS: (SightNT&#92;Lana)RegOpenKeyEx Failed: 2 Error Message"
-permalink: kb/188/Q188059/
+permalink: /kb/188/Q188059/
 ---
 
 ## Q188059: SMS: (SightNT&#92;Lana)RegOpenKeyEx Failed: 2 Error Message

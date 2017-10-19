@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155436: DOC: CImageList Returned from CreateDragImage Needs Delete"
-permalink: kb/155/Q155436/
+permalink: /kb/155/Q155436/
 ---
 
 ## Q155436: DOC: CImageList Returned from CreateDragImage Needs Delete

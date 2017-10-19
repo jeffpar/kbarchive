@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173619: PRB: Winsock Control Generates Error 10048 - Address in Use"
-permalink: kb/173/Q173619/
+permalink: /kb/173/Q173619/
 ---
 
 ## Q173619: PRB: Winsock Control Generates Error 10048 - Address in Use

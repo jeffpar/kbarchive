@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281887: FIX: Invalid Bookmark ErrMsg When Records Added to Recordset"
-permalink: kb/281/Q281887/
+permalink: /kb/281/Q281887/
 ---
 
 ## Q281887: FIX: Invalid Bookmark ErrMsg When Records Added to Recordset

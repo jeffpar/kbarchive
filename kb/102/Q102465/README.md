@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102465: How to Use the _MEMVARMASK Variable"
-permalink: kb/102/Q102465/
+permalink: /kb/102/Q102465/
 ---
 
 ## Q102465: How to Use the _MEMVARMASK Variable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101735: Letter 8.5 x 11 and Note 8.5 x 11 Options in PostScript Driver"
-permalink: kb/101/Q101735/
+permalink: /kb/101/Q101735/
 ---
 
 ## Q101735: Letter 8.5 x 11 and Note 8.5 x 11 Options in PostScript Driver

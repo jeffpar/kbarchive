@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183573: Report.ASP Fails with SNA 4.0 OLE DB Off-line Demo Script"
-permalink: kb/183/Q183573/
+permalink: /kb/183/Q183573/
 ---
 
 ## Q183573: Report.ASP Fails with SNA 4.0 OLE DB Off-line Demo Script

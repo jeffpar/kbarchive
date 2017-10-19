@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198035: User Profiles Not Copied to Server with Updated Mprserv.dll File"
-permalink: kb/198/Q198035/
+permalink: /kb/198/Q198035/
 ---
 
 ## Q198035: User Profiles Not Copied to Server with Updated Mprserv.dll File

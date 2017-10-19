@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71022: BUG: RC Error RW1008 If NULL Entry in PATH"
-permalink: kb/071/Q71022/
+permalink: /kb/071/Q71022/
 ---
 
 ## Q71022: BUG: RC Error RW1008 If NULL Entry in PATH

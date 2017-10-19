@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98011: PC Forms: Mail Options Reset After Using Custom Form"
-permalink: kb/098/Q98011/
+permalink: /kb/098/Q98011/
 ---
 
 ## Q98011: PC Forms: Mail Options Reset After Using Custom Form

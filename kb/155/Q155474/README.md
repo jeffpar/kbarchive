@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155474: PPT7: Text Does Not Display With Generic/Text Only Printer"
-permalink: kb/155/Q155474/
+permalink: /kb/155/Q155474/
 ---
 
 ## Q155474: PPT7: Text Does Not Display With Generic/Text Only Printer

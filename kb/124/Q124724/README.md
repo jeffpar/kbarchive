@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124724: Encarta 1994: Distorted Images Printed to HP LaserJet 4M/4ML"
-permalink: kb/124/Q124724/
+permalink: /kb/124/Q124724/
 ---
 
 ## Q124724: Encarta 1994: Distorted Images Printed to HP LaserJet 4M/4ML

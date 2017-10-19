@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180384: HOWTO: Troubleshoot Run-time Error '70' in DCOM Applications"
-permalink: kb/180/Q180384/
+permalink: /kb/180/Q180384/
 ---
 
 ## Q180384: HOWTO: Troubleshoot Run-time Error '70' in DCOM Applications

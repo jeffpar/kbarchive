@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168011: FIX: C1001, file 'fppeeps.c', line 394, Caused By /Og"
-permalink: kb/168/Q168011/
+permalink: /kb/168/Q168011/
 ---
 
 ## Q168011: FIX: C1001, file 'fppeeps.c', line 394, Caused By /Og

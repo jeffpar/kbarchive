@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326449: LUA Session Allocation Behavior Between Two TN3270 Services"
-permalink: kb/326/Q326449/
+permalink: /kb/326/Q326449/
 ---
 
 ## Q326449: LUA Session Allocation Behavior Between Two TN3270 Services

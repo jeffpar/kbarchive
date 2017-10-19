@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270133: XADM: Exchange Notes Connector Loses Notes Address"
-permalink: kb/270/Q270133/
+permalink: /kb/270/Q270133/
 ---
 
 ## Q270133: XADM: Exchange Notes Connector Loses Notes Address

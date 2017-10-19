@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107208: Adaptec 1740/1742 May Require BIOS Version 1.4"
-permalink: kb/107/Q107208/
+permalink: /kb/107/Q107208/
 ---
 
 ## Q107208: Adaptec 1740/1742 May Require BIOS Version 1.4

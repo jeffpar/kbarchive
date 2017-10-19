@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151724: Meeting Created by Delegate Shows Manager as Organizer"
-permalink: kb/151/Q151724/
+permalink: /kb/151/Q151724/
 ---
 
 ## Q151724: Meeting Created by Delegate Shows Manager as Organizer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287542: SLI Application Fails With LUA_REQUIRED_FIELD_MISSING Error"
-permalink: kb/287/Q287542/
+permalink: /kb/287/Q287542/
 ---
 
 ## Q287542: SLI Application Fails With LUA_REQUIRED_FIELD_MISSING Error

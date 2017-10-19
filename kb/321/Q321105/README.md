@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321105: How to Obtain Visual SourceSafe 6.0c"
-permalink: kb/321/Q321105/
+permalink: /kb/321/Q321105/
 ---
 
 ## Q321105: How to Obtain Visual SourceSafe 6.0c

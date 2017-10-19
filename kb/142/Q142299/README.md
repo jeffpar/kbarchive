@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142299: &quot;Out of Memory&quot; or Garbled Sound Playing MIDI File"
-permalink: kb/142/Q142299/
+permalink: /kb/142/Q142299/
 ---
 
 ## Q142299: &quot;Out of Memory&quot; or Garbled Sound Playing MIDI File

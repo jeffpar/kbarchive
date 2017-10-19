@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111895: PC Forms: Routing Stopped by Client Without E-Form Software"
-permalink: kb/111/Q111895/
+permalink: /kb/111/Q111895/
 ---
 
 ## Q111895: PC Forms: Routing Stopped by Client Without E-Form Software

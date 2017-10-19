@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10837: INFO: A Discussion of Windows Fonts"
-permalink: kb/010/Q10837/
+permalink: /kb/010/Q10837/
 ---
 
 ## Q10837: INFO: A Discussion of Windows Fonts

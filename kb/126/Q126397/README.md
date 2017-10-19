@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126397: SNA Server Installation Guidelines (DC or Member Server)"
-permalink: kb/126/Q126397/
+permalink: /kb/126/Q126397/
 ---
 
 ## Q126397: SNA Server Installation Guidelines (DC or Member Server)

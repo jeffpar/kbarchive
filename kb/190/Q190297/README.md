@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190297: XFOR: Connector for cc:Mail Doesn't Support Long File Names"
-permalink: kb/190/Q190297/
+permalink: /kb/190/Q190297/
 ---
 
 ## Q190297: XFOR: Connector for cc:Mail Doesn't Support Long File Names

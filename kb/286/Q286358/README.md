@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286358: Periods at the Beginning of a Line Are Removed"
-permalink: kb/286/Q286358/
+permalink: /kb/286/Q286358/
 ---
 
 ## Q286358: Periods at the Beginning of a Line Are Removed

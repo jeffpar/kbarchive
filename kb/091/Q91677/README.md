@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91677: Docerr: README.WRI Incorrectly References Display=&#42;vddvga"
-permalink: kb/091/Q91677/
+permalink: /kb/091/Q91677/
 ---
 
 ## Q91677: Docerr: README.WRI Incorrectly References Display=&#42;vddvga

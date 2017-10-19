@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133742: BUG: Toolbar Options Positioned Off the Screen"
-permalink: kb/133/Q133742/
+permalink: /kb/133/Q133742/
 ---
 
 ## Q133742: BUG: Toolbar Options Positioned Off the Screen

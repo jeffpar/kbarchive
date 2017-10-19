@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245580: SMS: Client Connection Account Lockouts on Secondary Site"
-permalink: kb/245/Q245580/
+permalink: /kb/245/Q245580/
 ---
 
 ## Q245580: SMS: Client Connection Account Lockouts on Secondary Site

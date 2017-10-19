@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159209: XFOR: IMC Delivers Only the Mail in the Queue at Dial-Up"
-permalink: kb/159/Q159209/
+permalink: /kb/159/Q159209/
 ---
 
 ## Q159209: XFOR: IMC Delivers Only the Mail in the Queue at Dial-Up

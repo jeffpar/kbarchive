@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79090: Michaelangelo Virus Disables Floppy Drive"
-permalink: kb/079/Q79090/
+permalink: /kb/079/Q79090/
 ---
 
 ## Q79090: Michaelangelo Virus Disables Floppy Drive

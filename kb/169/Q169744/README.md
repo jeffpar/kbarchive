@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169744: Setup Hangs While Detecting Adaptec SCSI Controllers"
-permalink: kb/169/Q169744/
+permalink: /kb/169/Q169744/
 ---
 
 ## Q169744: Setup Hangs While Detecting Adaptec SCSI Controllers

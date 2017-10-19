@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151894: PRB: CToolBarCtrl::GetToolTips() May Return NULL for a ToolBar"
-permalink: kb/151/Q151894/
+permalink: /kb/151/Q151894/
 ---
 
 ## Q151894: PRB: CToolBarCtrl::GetToolTips() May Return NULL for a ToolBar

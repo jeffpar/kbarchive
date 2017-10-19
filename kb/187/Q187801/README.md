@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187801: File Descriptions for RRAS and the RRAS Service Pack"
-permalink: kb/187/Q187801/
+permalink: /kb/187/Q187801/
 ---
 
 ## Q187801: File Descriptions for RRAS and the RRAS Service Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83272: Help File Missing Green Text or Text is Hard to Read"
-permalink: kb/083/Q83272/
+permalink: /kb/083/Q83272/
 ---
 
 ## Q83272: Help File Missing Green Text or Text is Hard to Read

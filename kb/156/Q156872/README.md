@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156872: BUG: Errors Checking In or Out a Custom Resource File (.RES)"
-permalink: kb/156/Q156872/
+permalink: /kb/156/Q156872/
 ---
 
 ## Q156872: BUG: Errors Checking In or Out a Custom Resource File (.RES)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149300: How to Use ToolTips w/ Objects that Do/Do Not Have ToolTipText"
-permalink: kb/149/Q149300/
+permalink: /kb/149/Q149300/
 ---
 
 ## Q149300: How to Use ToolTips w/ Objects that Do/Do Not Have ToolTipText

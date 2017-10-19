@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103223: Trapping System RIPs and Other Notification Messages"
-permalink: kb/103/Q103223/
+permalink: /kb/103/Q103223/
 ---
 
 ## Q103223: Trapping System RIPs and Other Notification Messages

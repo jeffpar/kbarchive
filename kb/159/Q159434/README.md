@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159434: FP97: Graphics File Overwritten in FrontPage Editor"
-permalink: kb/159/Q159434/
+permalink: /kb/159/Q159434/
 ---
 
 ## Q159434: FP97: Graphics File Overwritten in FrontPage Editor

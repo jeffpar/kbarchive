@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96851: MS-DOS 6.0 Configuration Questions and Answers"
-permalink: kb/096/Q96851/
+permalink: /kb/096/Q96851/
 ---
 
 ## Q96851: MS-DOS 6.0 Configuration Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71705: Position of the DOS=HIGH Command in CONFIG.SYS"
-permalink: kb/071/Q71705/
+permalink: /kb/071/Q71705/
 ---
 
 ## Q71705: Position of the DOS=HIGH Command in CONFIG.SYS

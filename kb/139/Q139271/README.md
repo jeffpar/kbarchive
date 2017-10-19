@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139271: FIX: Changing Keyboard Compatibility Fails to Update Some Keys"
-permalink: kb/139/Q139271/
+permalink: /kb/139/Q139271/
 ---
 
 ## Q139271: FIX: Changing Keyboard Compatibility Fails to Update Some Keys

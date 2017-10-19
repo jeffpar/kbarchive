@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142490: How to Connect to the Internet Using DUN and CompuServe"
-permalink: kb/142/Q142490/
+permalink: /kb/142/Q142490/
 ---
 
 ## Q142490: How to Connect to the Internet Using DUN and CompuServe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188779: SMS: Inventory Fails to Properly Identify 400 MHz Processors"
-permalink: kb/188/Q188779/
+permalink: /kb/188/Q188779/
 ---
 
 ## Q188779: SMS: Inventory Fails to Properly Identify 400 MHz Processors

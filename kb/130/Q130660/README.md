@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130660: STOP 0x1E in SFMSRV.SYS When Using Services for Macintosh"
-permalink: kb/130/Q130660/
+permalink: /kb/130/Q130660/
 ---
 
 ## Q130660: STOP 0x1E in SFMSRV.SYS When Using Services for Macintosh

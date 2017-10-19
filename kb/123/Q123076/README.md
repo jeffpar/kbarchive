@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123076: Creative Writer Err Msg: Integer Divide by Zero"
-permalink: kb/123/Q123076/
+permalink: /kb/123/Q123076/
 ---
 
 ## Q123076: Creative Writer Err Msg: Integer Divide by Zero

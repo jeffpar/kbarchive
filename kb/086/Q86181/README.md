@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86181: Programs with Reserved Windows Filenames May Not Run"
-permalink: kb/086/Q86181/
+permalink: /kb/086/Q86181/
 ---
 
 ## Q86181: Programs with Reserved Windows Filenames May Not Run

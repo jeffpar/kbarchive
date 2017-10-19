@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222988: SMS: SystemRole and SystemType Values Removed from Sms.ini"
-permalink: kb/222/Q222988/
+permalink: /kb/222/Q222988/
 ---
 
 ## Q222988: SMS: SystemRole and SystemType Values Removed from Sms.ini

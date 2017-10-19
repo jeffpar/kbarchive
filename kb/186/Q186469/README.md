@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186469: PRB: Rights from Parent Project not Inherited"
-permalink: kb/186/Q186469/
+permalink: /kb/186/Q186469/
 ---
 
 ## Q186469: PRB: Rights from Parent Project not Inherited

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173304: XFOR: Exchange IMC Not Consistent in Handling Importance"
-permalink: kb/173/Q173304/
+permalink: /kb/173/Q173304/
 ---
 
 ## Q173304: XFOR: Exchange IMC Not Consistent in Handling Importance

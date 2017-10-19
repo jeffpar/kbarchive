@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133750: Julia Child: Button Bar Disappears When Selecting Help Index"
-permalink: kb/133/Q133750/
+permalink: /kb/133/Q133750/
 ---
 
 ## Q133750: Julia Child: Button Bar Disappears When Selecting Help Index

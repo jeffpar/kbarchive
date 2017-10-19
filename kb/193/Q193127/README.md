@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193127: How to Set Up IAS (RADIUS Server) with ODBC Authentication"
-permalink: kb/193/Q193127/
+permalink: /kb/193/Q193127/
 ---
 
 ## Q193127: How to Set Up IAS (RADIUS Server) with ODBC Authentication

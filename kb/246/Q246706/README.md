@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246706: Errors Generated if TCP/IP DDM Server on AS/400 Not Started"
-permalink: kb/246/Q246706/
+permalink: /kb/246/Q246706/
 ---
 
 ## Q246706: Errors Generated if TCP/IP DDM Server on AS/400 Not Started

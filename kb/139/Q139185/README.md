@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139185: DOCERR: Incorrect Syntax in SET KEY Command Example in Help"
-permalink: kb/139/Q139185/
+permalink: /kb/139/Q139185/
 ---
 
 ## Q139185: DOCERR: Incorrect Syntax in SET KEY Command Example in Help

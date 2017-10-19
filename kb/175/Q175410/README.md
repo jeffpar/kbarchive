@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175410: XFOR: IMS/IMC Will not Dial an ISP as Specified"
-permalink: kb/175/Q175410/
+permalink: /kb/175/Q175410/
 ---
 
 ## Q175410: XFOR: IMS/IMC Will not Dial an ISP as Specified

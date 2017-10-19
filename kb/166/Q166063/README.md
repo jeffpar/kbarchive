@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166063: WV: Document Open in Word Viewer, Word Has Read-Only Access"
-permalink: kb/166/Q166063/
+permalink: /kb/166/Q166063/
 ---
 
 ## Q166063: WV: Document Open in Word Viewer, Word Has Read-Only Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107204: PROFS: Use of PROFSIN.DAT, Format of PROFSIN.CSI Files"
-permalink: kb/107/Q107204/
+permalink: /kb/107/Q107204/
 ---
 
 ## Q107204: PROFS: Use of PROFSIN.DAT, Format of PROFSIN.CSI Files

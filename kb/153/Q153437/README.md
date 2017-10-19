@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153437: Access Not Allowed When Accessing Web Server"
-permalink: kb/153/Q153437/
+permalink: /kb/153/Q153437/
 ---
 
 ## Q153437: Access Not Allowed When Accessing Web Server

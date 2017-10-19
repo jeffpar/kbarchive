@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111636: Mac Adm GW: Extracting Gateway Format Data"
-permalink: kb/111/Q111636/
+permalink: /kb/111/Q111636/
 ---
 
 ## Q111636: Mac Adm GW: Extracting Gateway Format Data

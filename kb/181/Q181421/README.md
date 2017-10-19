@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181421: XFOR: Access Violation in Lsdxants.exe with Long Fullname Field"
-permalink: kb/181/Q181421/
+permalink: /kb/181/Q181421/
 ---
 
 ## Q181421: XFOR: Access Violation in Lsdxants.exe with Long Fullname Field

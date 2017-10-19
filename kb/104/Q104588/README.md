@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104588: PC MAPI: DocErr: You Cannot Add a New Menu to Microsoft Mail"
-permalink: kb/104/Q104588/
+permalink: /kb/104/Q104588/
 ---
 
 ## Q104588: PC MAPI: DocErr: You Cannot Add a New Menu to Microsoft Mail

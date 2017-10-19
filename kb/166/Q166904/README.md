@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166904: Winsock Application Does Not Generate WSAEMSGSIZE Error Code"
-permalink: kb/166/Q166904/
+permalink: /kb/166/Q166904/
 ---
 
 ## Q166904: Winsock Application Does Not Generate WSAEMSGSIZE Error Code

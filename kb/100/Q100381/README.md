@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100381: How to Use Keystrokes to Insert Special Characters"
-permalink: kb/100/Q100381/
+permalink: /kb/100/Q100381/
 ---
 
 ## Q100381: How to Use Keystrokes to Insert Special Characters

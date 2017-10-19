@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173674: WD97: Blue Underline for Hyperlink Not Placed Below Object"
-permalink: kb/173/Q173674/
+permalink: /kb/173/Q173674/
 ---
 
 ## Q173674: WD97: Blue Underline for Hyperlink Not Placed Below Object

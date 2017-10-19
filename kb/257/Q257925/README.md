@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257925: Cluster Server Does Not Detect Network Problems in Windows NT"
-permalink: kb/257/Q257925/
+permalink: /kb/257/Q257925/
 ---
 
 ## Q257925: Cluster Server Does Not Detect Network Problems in Windows NT

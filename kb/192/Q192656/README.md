@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192656: XADM: Directory Replication Is Object Based, Not Attribute Based"
-permalink: kb/192/Q192656/
+permalink: /kb/192/Q192656/
 ---
 
 ## Q192656: XADM: Directory Replication Is Object Based, Not Attribute Based

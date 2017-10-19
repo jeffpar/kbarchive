@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173098: MDG: System 8 for Macintosh breaks MacMail for PC Networks"
-permalink: kb/173/Q173098/
+permalink: /kb/173/Q173098/
 ---
 
 ## Q173098: MDG: System 8 for Macintosh breaks MacMail for PC Networks

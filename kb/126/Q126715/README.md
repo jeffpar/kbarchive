@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126715: INVDOS Does Not Detect NEC 3x CDROM drives"
-permalink: kb/126/Q126715/
+permalink: /kb/126/Q126715/
 ---
 
 ## Q126715: INVDOS Does Not Detect NEC 3x CDROM drives

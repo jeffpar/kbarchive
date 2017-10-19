@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83399: Using Windows 3.1 with COMPAQ's HIMEM.EXE"
-permalink: kb/083/Q83399/
+permalink: /kb/083/Q83399/
 ---
 
 ## Q83399: Using Windows 3.1 with COMPAQ's HIMEM.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199234: SMS: Systems Management Server 2.0 System Accounts"
-permalink: kb/199/Q199234/
+permalink: /kb/199/Q199234/
 ---
 
 ## Q199234: SMS: Systems Management Server 2.0 System Accounts

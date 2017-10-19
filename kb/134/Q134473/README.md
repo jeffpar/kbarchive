@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134473: Cannot Configure Network with More than One Network Card"
-permalink: kb/134/Q134473/
+permalink: /kb/134/Q134473/
 ---
 
 ## Q134473: Cannot Configure Network with More than One Network Card

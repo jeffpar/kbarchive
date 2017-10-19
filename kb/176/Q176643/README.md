@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176643: HOWTO: Find Multiple Occurrences of a String in a RichTextBox"
-permalink: kb/176/Q176643/
+permalink: /kb/176/Q176643/
 ---
 
 ## Q176643: HOWTO: Find Multiple Occurrences of a String in a RichTextBox

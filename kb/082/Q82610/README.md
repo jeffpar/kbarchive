@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82610: DynaComm 3.0x Fails to Install from File Manager"
-permalink: kb/082/Q82610/
+permalink: /kb/082/Q82610/
 ---
 
 ## Q82610: DynaComm 3.0x Fails to Install from File Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221743: FIX: NVL() Releases Object Ref and Causes Fatal Error C0000005"
-permalink: kb/221/Q221743/
+permalink: /kb/221/Q221743/
 ---
 
 ## Q221743: FIX: NVL() Releases Object Ref and Causes Fatal Error C0000005

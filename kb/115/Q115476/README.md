@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115476: How To Encrypt FoxPro .DBF Files"
-permalink: kb/115/Q115476/
+permalink: /kb/115/Q115476/
 ---
 
 ## Q115476: How To Encrypt FoxPro .DBF Files

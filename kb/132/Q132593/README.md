@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132593: NET VIEW Err Msg: Error 234: Additional Data Is Available"
-permalink: kb/132/Q132593/
+permalink: /kb/132/Q132593/
 ---
 
 ## Q132593: NET VIEW Err Msg: Error 234: Additional Data Is Available

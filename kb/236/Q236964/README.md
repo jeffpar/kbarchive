@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236964: Delayed Return of Paged Pool Causes Error 1450"
-permalink: kb/236/Q236964/
+permalink: /kb/236/Q236964/
 ---
 
 ## Q236964: Delayed Return of Paged Pool Causes Error 1450

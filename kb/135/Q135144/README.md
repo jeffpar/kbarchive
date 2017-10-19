@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135144: System Hang Closing MS-DOS Session with Active Network Request"
-permalink: kb/135/Q135144/
+permalink: /kb/135/Q135144/
 ---
 
 ## Q135144: System Hang Closing MS-DOS Session with Active Network Request

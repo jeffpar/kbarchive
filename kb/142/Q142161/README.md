@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142161: LAN Manager Toolbar Hangs When Accessing Windows NT Computer"
-permalink: kb/142/Q142161/
+permalink: /kb/142/Q142161/
 ---
 
 ## Q142161: LAN Manager Toolbar Hangs When Accessing Windows NT Computer

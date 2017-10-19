@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196023: PRB: Cannot Get Individual Items from the Projects Collection"
-permalink: kb/196/Q196023/
+permalink: /kb/196/Q196023/
 ---
 
 ## Q196023: PRB: Cannot Get Individual Items from the Projects Collection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321080: Ntbackup Does Not Back Up Files from an SFU NFS Mount Point"
-permalink: kb/321/Q321080/
+permalink: /kb/321/Q321080/
 ---
 
 ## Q321080: Ntbackup Does Not Back Up Files from an SFU NFS Mount Point

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188969: XADM: Public Folder Rule Fails Using Field From EFD"
-permalink: kb/188/Q188969/
+permalink: /kb/188/Q188969/
 ---
 
 ## Q188969: XADM: Public Folder Rule Fails Using Field From EFD

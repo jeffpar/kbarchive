@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120922: Visual C++ Vers 2.0 README.WRI, Part 6 Internationalization"
-permalink: kb/120/Q120922/
+permalink: /kb/120/Q120922/
 ---
 
 ## Q120922: Visual C++ Vers 2.0 README.WRI, Part 6 Internationalization

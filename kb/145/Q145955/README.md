@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145955: Overlapping Appointments Cause Synchronization Error"
-permalink: kb/145/Q145955/
+permalink: /kb/145/Q145955/
 ---
 
 ## Q145955: Overlapping Appointments Cause Synchronization Error

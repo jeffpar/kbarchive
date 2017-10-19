@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191306: SMS: Unattended Installation of SMS 1.2 Service Pack 4"
-permalink: kb/191/Q191306/
+permalink: /kb/191/Q191306/
 ---
 
 ## Q191306: SMS: Unattended Installation of SMS 1.2 Service Pack 4

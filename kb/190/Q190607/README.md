@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190607: PRB: DataEnvironment: DataReport Moves Form To EOF"
-permalink: kb/190/Q190607/
+permalink: /kb/190/Q190607/
 ---
 
 ## Q190607: PRB: DataEnvironment: DataReport Moves Form To EOF

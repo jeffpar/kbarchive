@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64859: Testing the Connection to a PostScript Printer"
-permalink: kb/064/Q64859/
+permalink: /kb/064/Q64859/
 ---
 
 ## Q64859: Testing the Connection to a PostScript Printer

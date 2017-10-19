@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131213: PRB: Grid Behavior Isn't Consistent w/ that of List/Combo Box"
-permalink: kb/131/Q131213/
+permalink: /kb/131/Q131213/
 ---
 
 ## Q131213: PRB: Grid Behavior Isn't Consistent w/ that of List/Combo Box

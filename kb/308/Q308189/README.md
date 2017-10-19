@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308189: BackupWithPassword and RestoreWithPassword method documentation"
-permalink: kb/308/Q308189/
+permalink: /kb/308/Q308189/
 ---
 
 ## Q308189: BackupWithPassword and RestoreWithPassword method documentation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172100: PRB: Bound TextBox No Longer Populates During Form's Load Event"
-permalink: kb/172/Q172100/
+permalink: /kb/172/Q172100/
 ---
 
 ## Q172100: PRB: Bound TextBox No Longer Populates During Form's Load Event

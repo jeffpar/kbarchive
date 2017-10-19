@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q52183: Mac Wkst: Flashing Icon Not Removed w/ Different Server Chosen"
-permalink: kb/052/Q52183/
+permalink: /kb/052/Q52183/
 ---
 
 ## Q52183: Mac Wkst: Flashing Icon Not Removed w/ Different Server Chosen

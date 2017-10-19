@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291429: Err Msg: Stop 0x0000003f NO_more_system_PTES"
-permalink: kb/291/Q291429/
+permalink: /kb/291/Q291429/
 ---
 
 ## Q291429: Err Msg: Stop 0x0000003f NO_more_system_PTES

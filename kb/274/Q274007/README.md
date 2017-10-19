@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274007: Asheron's Call Error Message: Corrupt or Missing Data..."
-permalink: kb/274/Q274007/
+permalink: /kb/274/Q274007/
 ---
 
 ## Q274007: Asheron's Call Error Message: Corrupt or Missing Data...

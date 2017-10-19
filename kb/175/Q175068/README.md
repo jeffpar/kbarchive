@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175068: Zero Administration Kit Server Setup Does not Finish"
-permalink: kb/175/Q175068/
+permalink: /kb/175/Q175068/
 ---
 
 ## Q175068: Zero Administration Kit Server Setup Does not Finish

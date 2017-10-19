@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161704: Ibmsync.sys May Cause Connection Loss"
-permalink: kb/161/Q161704/
+permalink: /kb/161/Q161704/
 ---
 
 ## Q161704: Ibmsync.sys May Cause Connection Loss

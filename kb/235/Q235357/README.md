@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235357: PRB: FoxPro ODBC Driver Replaced by Visual FoxPro ODBC Driver"
-permalink: kb/235/Q235357/
+permalink: /kb/235/Q235357/
 ---
 
 ## Q235357: PRB: FoxPro ODBC Driver Replaced by Visual FoxPro ODBC Driver

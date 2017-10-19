@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110763: Postscript Error Printing to Macintosh from Windows NT"
-permalink: kb/110/Q110763/
+permalink: /kb/110/Q110763/
 ---
 
 ## Q110763: Postscript Error Printing to Macintosh from Windows NT

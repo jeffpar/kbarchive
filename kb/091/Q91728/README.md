@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91728: MS-DOS 6 DoubleSpace Files and Functions"
-permalink: kb/091/Q91728/
+permalink: /kb/091/Q91728/
 ---
 
 ## Q91728: MS-DOS 6 DoubleSpace Files and Functions

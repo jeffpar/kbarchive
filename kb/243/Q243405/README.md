@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243405: Device Drivers Use FILE_DEVICE_SECURE_OPEN DeviceCharacteristics"
-permalink: kb/243/Q243405/
+permalink: /kb/243/Q243405/
 ---
 
 ## Q243405: Device Drivers Use FILE_DEVICE_SECURE_OPEN DeviceCharacteristics

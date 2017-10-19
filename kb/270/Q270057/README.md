@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270057: Upgrade to Windows 2000 Indexing Service Deletes Custom Catalogs"
-permalink: kb/270/Q270057/
+permalink: /kb/270/Q270057/
 ---
 
 ## Q270057: Upgrade to Windows 2000 Indexing Service Deletes Custom Catalogs

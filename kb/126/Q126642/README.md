@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126642: SMS: Troubleshooting Inventory Collection Problems"
-permalink: kb/126/Q126642/
+permalink: /kb/126/Q126642/
 ---
 
 ## Q126642: SMS: Troubleshooting Inventory Collection Problems

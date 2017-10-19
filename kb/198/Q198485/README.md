@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198485: HOWTO: SQL Server 7 Distributed Query Using ATL OLEDB Consumer"
-permalink: kb/198/Q198485/
+permalink: /kb/198/Q198485/
 ---
 
 ## Q198485: HOWTO: SQL Server 7 Distributed Query Using ATL OLEDB Consumer

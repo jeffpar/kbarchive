@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135953: 3D Landscape Displays Incorrectly When System Agent Is Running"
-permalink: kb/135/Q135953/
+permalink: /kb/135/Q135953/
 ---
 
 ## Q135953: 3D Landscape Displays Incorrectly When System Agent Is Running

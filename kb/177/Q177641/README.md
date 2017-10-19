@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177641: FIX: Assertion with an Insertable OLE Control"
-permalink: kb/177/Q177641/
+permalink: /kb/177/Q177641/
 ---
 
 ## Q177641: FIX: Assertion with an Insertable OLE Control

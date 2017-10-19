@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184242: WinSock 2.0 Installer for Windows 95 (Ws2setup.exe) Update"
-permalink: kb/184/Q184242/
+permalink: /kb/184/Q184242/
 ---
 
 ## Q184242: WinSock 2.0 Installer for Windows 95 (Ws2setup.exe) Update

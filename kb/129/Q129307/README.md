@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129307: PRB: Project Manager Can't Be Docked at Bottom of Desktop"
-permalink: kb/129/Q129307/
+permalink: /kb/129/Q129307/
 ---
 
 ## Q129307: PRB: Project Manager Can't Be Docked at Bottom of Desktop

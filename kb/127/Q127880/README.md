@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127880: How to View Memo Fields as Edit Boxes in a Grid"
-permalink: kb/127/Q127880/
+permalink: /kb/127/Q127880/
 ---
 
 ## Q127880: How to View Memo Fields as Edit Boxes in a Grid

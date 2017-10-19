@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128030: Setup Error Message: Generic Install Error"
-permalink: kb/128/Q128030/
+permalink: /kb/128/Q128030/
 ---
 
 ## Q128030: Setup Error Message: Generic Install Error

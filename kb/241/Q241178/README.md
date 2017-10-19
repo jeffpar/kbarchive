@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241178: NBA Inside Drive 2000: Court Textures Are Not Displayed Properly"
-permalink: kb/241/Q241178/
+permalink: /kb/241/Q241178/
 ---
 
 ## Q241178: NBA Inside Drive 2000: Court Textures Are Not Displayed Properly

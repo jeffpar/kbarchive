@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194645: WD97: How to Auto-Register a Converter"
-permalink: kb/194/Q194645/
+permalink: /kb/194/Q194645/
 ---
 
 ## Q194645: WD97: How to Auto-Register a Converter

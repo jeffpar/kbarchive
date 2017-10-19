@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99857: SMTP: Err Msg: ERROR Write: (1) (null)"
-permalink: kb/099/Q99857/
+permalink: /kb/099/Q99857/
 ---
 
 ## Q99857: SMTP: Err Msg: ERROR Write: (1) (null)

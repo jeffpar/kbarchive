@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271653: XADM: No Public Information Store After Move Server Wizard  Runs"
-permalink: kb/271/Q271653/
+permalink: /kb/271/Q271653/
 ---
 
 ## Q271653: XADM: No Public Information Store After Move Server Wizard  Runs

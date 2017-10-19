@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170137: XFOR: PCMTA Service Stops When Message Sent with Date 00"
-permalink: kb/170/Q170137/
+permalink: /kb/170/Q170137/
 ---
 
 ## Q170137: XFOR: PCMTA Service Stops When Message Sent with Date 00

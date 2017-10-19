@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139064: Madge Token Ring Card Does Not Automatically Sense Ring Speed"
-permalink: kb/139/Q139064/
+permalink: /kb/139/Q139064/
 ---
 
 ## Q139064: Madge Token Ring Card Does Not Automatically Sense Ring Speed

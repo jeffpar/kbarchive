@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242472: Access Violation in Perfmon If Long Extensible Counter DLL Path"
-permalink: kb/242/Q242472/
+permalink: /kb/242/Q242472/
 ---
 
 ## Q242472: Access Violation in Perfmon If Long Extensible Counter DLL Path

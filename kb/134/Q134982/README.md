@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134982: PRB: Err Msgs Starting Wizards, Building EXE, or Class Browser"
-permalink: kb/134/Q134982/
+permalink: /kb/134/Q134982/
 ---
 
 ## Q134982: PRB: Err Msgs Starting Wizards, Building EXE, or Class Browser

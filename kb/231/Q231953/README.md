@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231953: How to Restrict Permissions for Telnet Users w/Services for UNIX"
-permalink: kb/231/Q231953/
+permalink: /kb/231/Q231953/
 ---
 
 ## Q231953: How to Restrict Permissions for Telnet Users w/Services for UNIX

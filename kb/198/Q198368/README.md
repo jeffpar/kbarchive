@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198368: WD97: Text Boxes/Drawing Objects Not Merged with Track Changes"
-permalink: kb/198/Q198368/
+permalink: /kb/198/Q198368/
 ---
 
 ## Q198368: WD97: Text Boxes/Drawing Objects Not Merged with Track Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134894: LaserWave Futura 16 Sound Card Detected Incorrectly"
-permalink: kb/134/Q134894/
+permalink: /kb/134/Q134894/
 ---
 
 ## Q134894: LaserWave Futura 16 Sound Card Detected Incorrectly

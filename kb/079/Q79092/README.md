@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79092: File Manager Can Delete All Data on a Logical Drive"
-permalink: kb/079/Q79092/
+permalink: /kb/079/Q79092/
 ---
 
 ## Q79092: File Manager Can Delete All Data on a Logical Drive

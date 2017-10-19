@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169484: FIX: CString::MakeUpper and MakeLower Don't Work with Some Char"
-permalink: kb/169/Q169484/
+permalink: /kb/169/Q169484/
 ---
 
 ## Q169484: FIX: CString::MakeUpper and MakeLower Don't Work with Some Char

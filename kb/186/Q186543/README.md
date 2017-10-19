@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186543: Terminal Server Error Messages: 3000 to 3099"
-permalink: kb/186/Q186543/
+permalink: /kb/186/Q186543/
 ---
 
 ## Q186543: Terminal Server Error Messages: 3000 to 3099

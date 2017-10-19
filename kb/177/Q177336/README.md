@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177336: PRB: READ EVENTS in Form's Init Causes the Form Not to Display"
-permalink: kb/177/Q177336/
+permalink: /kb/177/Q177336/
 ---
 
 ## Q177336: PRB: READ EVENTS in Form's Init Causes the Form Not to Display

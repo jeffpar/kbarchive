@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155867: XADM: Directory Replication Portion of Exchange Setup Fails"
-permalink: kb/155/Q155867/
+permalink: /kb/155/Q155867/
 ---
 
 ## Q155867: XADM: Directory Replication Portion of Exchange Setup Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237955: STOP 0x0000001e in Win32k.sys"
-permalink: kb/237/Q237955/
+permalink: /kb/237/Q237955/
 ---
 
 ## Q237955: STOP 0x0000001e in Win32k.sys

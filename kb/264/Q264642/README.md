@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264642: FS2000: Scenery Shudders Violently When You Fly the Concorde"
-permalink: kb/264/Q264642/
+permalink: /kb/264/Q264642/
 ---
 
 ## Q264642: FS2000: Scenery Shudders Violently When You Fly the Concorde

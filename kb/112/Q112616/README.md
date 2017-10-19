@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112616: WFWG: System Error or Network Error with DEC Pathworks"
-permalink: kb/112/Q112616/
+permalink: /kb/112/Q112616/
 ---
 
 ## Q112616: WFWG: System Error or Network Error with DEC Pathworks

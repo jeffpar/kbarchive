@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71230: INFO: ExtTextOut() Instead of TextOut() to Improve Performance"
-permalink: kb/071/Q71230/
+permalink: /kb/071/Q71230/
 ---
 
 ## Q71230: INFO: ExtTextOut() Instead of TextOut() to Improve Performance

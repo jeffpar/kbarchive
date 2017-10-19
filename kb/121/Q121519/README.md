@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121519: DEC Mylex SWXCR Raid Controller Software Causes STOP 0x0A"
-permalink: kb/121/Q121519/
+permalink: /kb/121/Q121519/
 ---
 
 ## Q121519: DEC Mylex SWXCR Raid Controller Software Causes STOP 0x0A

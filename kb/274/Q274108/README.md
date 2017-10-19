@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274108: SMS: How to Troubleshoot NDS Logon Point Creation Failures"
-permalink: kb/274/Q274108/
+permalink: /kb/274/Q274108/
 ---
 
 ## Q274108: SMS: How to Troubleshoot NDS Logon Point Creation Failures

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161869: XCLN: Exchange 16-Bit Forms Performance"
-permalink: kb/161/Q161869/
+permalink: /kb/161/Q161869/
 ---
 
 ## Q161869: XCLN: Exchange 16-Bit Forms Performance

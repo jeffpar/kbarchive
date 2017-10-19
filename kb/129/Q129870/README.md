@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129870: PC Win: Opening Attachments Without an Extension"
-permalink: kb/129/Q129870/
+permalink: /kb/129/Q129870/
 ---
 
 ## Q129870: PC Win: Opening Attachments Without an Extension

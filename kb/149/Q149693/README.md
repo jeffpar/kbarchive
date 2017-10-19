@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149693: XCLN: Multiple Providers Not Available with the MS-DOS Client"
-permalink: kb/149/Q149693/
+permalink: /kb/149/Q149693/
 ---
 
 ## Q149693: XCLN: Multiple Providers Not Available with the MS-DOS Client

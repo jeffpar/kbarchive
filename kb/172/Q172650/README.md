@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172650: Utility Returns Runtime Error when Run with AT command"
-permalink: kb/172/Q172650/
+permalink: /kb/172/Q172650/
 ---
 
 ## Q172650: Utility Returns Runtime Error when Run with AT command

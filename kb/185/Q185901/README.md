@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185901: SMS: Jobs Will Not Go Active, Invalid JobIDs generated."
-permalink: kb/185/Q185901/
+permalink: /kb/185/Q185901/
 ---
 
 ## Q185901: SMS: Jobs Will Not Go Active, Invalid JobIDs generated.

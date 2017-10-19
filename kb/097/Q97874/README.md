@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97874: /N Switch Turns off Verification Search for Protocol"
-permalink: kb/097/Q97874/
+permalink: /kb/097/Q97874/
 ---
 
 ## Q97874: /N Switch Turns off Verification Search for Protocol

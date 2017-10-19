@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98601: HOWTO: Handle Exceptions That Occur in Exception Processing"
-permalink: kb/098/Q98601/
+permalink: /kb/098/Q98601/
 ---
 
 ## Q98601: HOWTO: Handle Exceptions That Occur in Exception Processing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100634: HOWTO: Specify Shared and Nonshared Data in a DLL"
-permalink: kb/100/Q100634/
+permalink: /kb/100/Q100634/
 ---
 
 ## Q100634: HOWTO: Specify Shared and Nonshared Data in a DLL

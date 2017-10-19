@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113775: MS-DOS 6.21: Errors Restoring Compressed Backups"
-permalink: kb/113/Q113775/
+permalink: /kb/113/Q113775/
 ---
 
 ## Q113775: MS-DOS 6.21: Errors Restoring Compressed Backups

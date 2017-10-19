@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123319: PC Win: Err Msg: Mailbag File Required for Accessing Message.."
-permalink: kb/123/Q123319/
+permalink: /kb/123/Q123319/
 ---
 
 ## Q123319: PC Win: Err Msg: Mailbag File Required for Accessing Message..

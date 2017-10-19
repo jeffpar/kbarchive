@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149386: Cannot Connect to MSN After Installing Unimodem V"
-permalink: kb/149/Q149386/
+permalink: /kb/149/Q149386/
 ---
 
 ## Q149386: Cannot Connect to MSN After Installing Unimodem V

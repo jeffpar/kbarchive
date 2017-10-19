@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138917: How to Use the Query Designer to Send Output to a Text File"
-permalink: kb/138/Q138917/
+permalink: /kb/138/Q138917/
 ---
 
 ## Q138917: How to Use the Query Designer to Send Output to a Text File

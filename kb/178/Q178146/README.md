@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178146: Access Violation After Shutting Down Server Processes"
-permalink: kb/178/Q178146/
+permalink: /kb/178/Q178146/
 ---
 
 ## Q178146: Access Violation After Shutting Down Server Processes

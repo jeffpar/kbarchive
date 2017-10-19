@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256142: Memory Leak May Lead to Loss of User Profile"
-permalink: kb/256/Q256142/
+permalink: /kb/256/Q256142/
 ---
 
 ## Q256142: Memory Leak May Lead to Loss of User Profile

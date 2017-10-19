@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130906: Site Configuration Manager's Stages of Operation"
-permalink: kb/130/Q130906/
+permalink: /kb/130/Q130906/
 ---
 
 ## Q130906: Site Configuration Manager's Stages of Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273500: Encarta 2000: Program Installs/Runs Slowly on System w/ Sony DVD"
-permalink: kb/273/Q273500/
+permalink: /kb/273/Q273500/
 ---
 
 ## Q273500: Encarta 2000: Program Installs/Runs Slowly on System w/ Sony DVD

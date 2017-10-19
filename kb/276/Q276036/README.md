@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276036: SNA Server Retrieves Incorrect Net Name from XID"
-permalink: kb/276/Q276036/
+permalink: /kb/276/Q276036/
 ---
 
 ## Q276036: SNA Server Retrieves Incorrect Net Name from XID

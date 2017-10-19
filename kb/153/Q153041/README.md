@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153041: FP: HTTP Error 404, Invalid Proxy Server Error When Opening Web"
-permalink: kb/153/Q153041/
+permalink: /kb/153/Q153041/
 ---
 
 ## Q153041: FP: HTTP Error 404, Invalid Proxy Server Error When Opening Web

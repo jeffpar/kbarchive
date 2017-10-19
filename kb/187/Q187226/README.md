@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187226: XCON: MTA Generates Application Exception in Function otpugobj"
-permalink: kb/187/Q187226/
+permalink: /kb/187/Q187226/
 ---
 
 ## Q187226: XCON: MTA Generates Application Exception in Function otpugobj

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235777: SMS: SMSAPM32 Perform Slow Link Detect All Mandatory Assignment"
-permalink: kb/235/Q235777/
+permalink: /kb/235/Q235777/
 ---
 
 ## Q235777: SMS: SMSAPM32 Perform Slow Link Detect All Mandatory Assignment

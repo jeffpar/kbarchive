@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122241: ADT2: WRKGADM.EXE File Installed Without Being Specified"
-permalink: kb/122/Q122241/
+permalink: /kb/122/Q122241/
 ---
 
 ## Q122241: ADT2: WRKGADM.EXE File Installed Without Being Specified

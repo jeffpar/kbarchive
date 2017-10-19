@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134970: Login Scripts are Not Modified on NetWare Servers"
-permalink: kb/134/Q134970/
+permalink: /kb/134/Q134970/
 ---
 
 ## Q134970: Login Scripts are Not Modified on NetWare Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84152: Linotype Typesetter Support in Windows 3.1"
-permalink: kb/084/Q84152/
+permalink: /kb/084/Q84152/
 ---
 
 ## Q84152: Linotype Typesetter Support in Windows 3.1

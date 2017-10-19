@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78417: Relocating Help Files in Windows with Multimedia Extensions"
-permalink: kb/078/Q78417/
+permalink: /kb/078/Q78417/
 ---
 
 ## Q78417: Relocating Help Files in Windows with Multimedia Extensions

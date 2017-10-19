@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197116: BUG: Label Width Changes with WordWrap and AutoSize Set to True"
-permalink: kb/197/Q197116/
+permalink: /kb/197/Q197116/
 ---
 
 ## Q197116: BUG: Label Width Changes with WordWrap and AutoSize Set to True

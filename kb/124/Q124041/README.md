@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124041: PC Win: Problems with CONVERT.EXE when Upgrading Folders"
-permalink: kb/124/Q124041/
+permalink: /kb/124/Q124041/
 ---
 
 ## Q124041: PC Win: Problems with CONVERT.EXE when Upgrading Folders

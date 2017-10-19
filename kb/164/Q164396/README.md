@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164396: STOP 0x0000000A May Occur in Afd.sys Under High Stress"
-permalink: kb/164/Q164396/
+permalink: /kb/164/Q164396/
 ---
 
 ## Q164396: STOP 0x0000000A May Occur in Afd.sys Under High Stress

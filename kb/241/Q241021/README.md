@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241021: MS Windows NT 4.0 Security, Audit, and Control Corrections"
-permalink: kb/241/Q241021/
+permalink: /kb/241/Q241021/
 ---
 
 ## Q241021: MS Windows NT 4.0 Security, Audit, and Control Corrections

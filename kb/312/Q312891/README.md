@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312891: HOW TO: Synchronize a Computer Database with Pocket Access"
-permalink: kb/312/Q312891/
+permalink: /kb/312/Q312891/
 ---
 
 ## Q312891: HOW TO: Synchronize a Computer Database with Pocket Access

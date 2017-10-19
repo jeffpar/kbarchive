@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326224: FIX: SNA Applications That Use SSO May Stop Responding"
-permalink: kb/326/Q326224/
+permalink: /kb/326/Q326224/
 ---
 
 ## Q326224: FIX: SNA Applications That Use SSO May Stop Responding

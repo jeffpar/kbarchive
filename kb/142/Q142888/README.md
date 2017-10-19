@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142888: FIX: Developer Studio Fails to Recognize Makefile and Quits"
-permalink: kb/142/Q142888/
+permalink: /kb/142/Q142888/
 ---
 
 ## Q142888: FIX: Developer Studio Fails to Recognize Makefile and Quits

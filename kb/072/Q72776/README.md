@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72776: Mac Wkst: Workstation Installer Can Be Copied to AppleShare Srv"
-permalink: kb/072/Q72776/
+permalink: /kb/072/Q72776/
 ---
 
 ## Q72776: Mac Wkst: Workstation Installer Can Be Copied to AppleShare Srv

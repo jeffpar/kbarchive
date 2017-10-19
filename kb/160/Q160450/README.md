@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160450: RUI_TERM Hangs on Inactive LU After Session Cycle"
-permalink: kb/160/Q160450/
+permalink: /kb/160/Q160450/
 ---
 
 ## Q160450: RUI_TERM Hangs on Inactive LU After Session Cycle

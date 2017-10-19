@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146409: Backup Error.log File Contains Garbage Characters"
-permalink: kb/146/Q146409/
+permalink: /kb/146/Q146409/
 ---
 
 ## Q146409: Backup Error.log File Contains Garbage Characters

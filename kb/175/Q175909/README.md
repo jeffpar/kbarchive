@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175909: HOWTO: Hide an Executable from the Taskbar"
-permalink: kb/175/Q175909/
+permalink: /kb/175/Q175909/
 ---
 
 ## Q175909: HOWTO: Hide an Executable from the Taskbar

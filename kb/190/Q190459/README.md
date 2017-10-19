@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190459: BUG: Restricted Function or Interface Error with IDispatch"
-permalink: kb/190/Q190459/
+permalink: /kb/190/Q190459/
 ---
 
 ## Q190459: BUG: Restricted Function or Interface Error with IDispatch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68132: WordPerfect 5.1 Mouse Support Under Windows 3.0 Enhanced Mode"
-permalink: kb/068/Q68132/
+permalink: /kb/068/Q68132/
 ---
 
 ## Q68132: WordPerfect 5.1 Mouse Support Under Windows 3.0 Enhanced Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291279: No Log File Created When There Is No Activity on a Web Site"
-permalink: kb/291/Q291279/
+permalink: /kb/291/Q291279/
 ---
 
 ## Q291279: No Log File Created When There Is No Activity on a Web Site

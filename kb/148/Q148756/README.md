@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148756: Return of Arcade: Game Does Not Install/Start on Windows 2000/NT"
-permalink: kb/148/Q148756/
+permalink: /kb/148/Q148756/
 ---
 
 ## Q148756: Return of Arcade: Game Does Not Install/Start on Windows 2000/NT

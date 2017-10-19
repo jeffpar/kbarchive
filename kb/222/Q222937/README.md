@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222937: INF: Creating a Linked Server to DB2 w/ OLE DB Provider for DB2"
-permalink: kb/222/Q222937/
+permalink: /kb/222/Q222937/
 ---
 
 ## Q222937: INF: Creating a Linked Server to DB2 w/ OLE DB Provider for DB2

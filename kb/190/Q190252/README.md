@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190252: HOWTO: Change the External HTML Editor"
-permalink: kb/190/Q190252/
+permalink: /kb/190/Q190252/
 ---
 
 ## Q190252: HOWTO: Change the External HTML Editor

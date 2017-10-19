@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97420: MS-DOS 6 Upgrade Setup Err Msg: Current Drive Must Be Set to A"
-permalink: kb/097/Q97420/
+permalink: /kb/097/Q97420/
 ---
 
 ## Q97420: MS-DOS 6 Upgrade Setup Err Msg: Current Drive Must Be Set to A

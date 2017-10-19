@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43064: Using the Backslash (&quot;&#92;&quot;) Character in NMAKE"
-permalink: kb/043/Q43064/
+permalink: /kb/043/Q43064/
 ---
 
 ## Q43064: Using the Backslash (&quot;&#92;&quot;) Character in NMAKE

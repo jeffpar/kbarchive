@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163498: XCLN: Resource Kit Utility: How to Install and use Autofill.exe"
-permalink: kb/163/Q163498/
+permalink: /kb/163/Q163498/
 ---
 
 ## Q163498: XCLN: Resource Kit Utility: How to Install and use Autofill.exe

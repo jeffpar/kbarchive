@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251309: How to Enable Line Printer Remote Printing on Macintosh Clients"
-permalink: kb/251/Q251309/
+permalink: /kb/251/Q251309/
 ---
 
 ## Q251309: How to Enable Line Printer Remote Printing on Macintosh Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66250: Novell NetWare Drag and Drop in Windows 3.0 File Manager"
-permalink: kb/066/Q66250/
+permalink: /kb/066/Q66250/
 ---
 
 ## Q66250: Novell NetWare Drag and Drop in Windows 3.0 File Manager

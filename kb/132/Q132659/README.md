@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132659: Cannot Start WordPerfect 6.0a After Local Reboot"
-permalink: kb/132/Q132659/
+permalink: /kb/132/Q132659/
 ---
 
 ## Q132659: Cannot Start WordPerfect 6.0a After Local Reboot

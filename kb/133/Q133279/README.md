@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133279: Using a DNS to Resolve NetBIOS Names Not Ending In &lt;00&gt; or &lt;20"
-permalink: kb/133/Q133279/
+permalink: /kb/133/Q133279/
 ---
 
 ## Q133279: Using a DNS to Resolve NetBIOS Names Not Ending In &lt;00&gt; or &lt;20

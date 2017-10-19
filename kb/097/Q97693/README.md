@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97693: INFO: Dynamic Processing of WM_COMMAND Messages"
-permalink: kb/097/Q97693/
+permalink: /kb/097/Q97693/
 ---
 
 ## Q97693: INFO: Dynamic Processing of WM_COMMAND Messages

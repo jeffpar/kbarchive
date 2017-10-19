@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250338: XADM: Mdbvu32 Enhancements for Viewing/Managing Rules Messages"
-permalink: kb/250/Q250338/
+permalink: /kb/250/Q250338/
 ---
 
 ## Q250338: XADM: Mdbvu32 Enhancements for Viewing/Managing Rules Messages

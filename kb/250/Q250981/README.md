@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250981: PRB: Merged FoxPro Table Fields Display Incorrectly in Word"
-permalink: kb/250/Q250981/
+permalink: /kb/250/Q250981/
 ---
 
 ## Q250981: PRB: Merged FoxPro Table Fields Display Incorrectly in Word

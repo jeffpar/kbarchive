@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128144: SMS Package Number is &lt;null&gt;"
-permalink: kb/128/Q128144/
+permalink: /kb/128/Q128144/
 ---
 
 ## Q128144: SMS Package Number is &lt;null&gt;

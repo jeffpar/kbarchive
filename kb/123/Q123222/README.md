@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123222: PC Gen: External Group Details Do Not Display Friendly Names"
-permalink: kb/123/Q123222/
+permalink: /kb/123/Q123222/
 ---
 
 ## Q123222: PC Gen: External Group Details Do Not Display Friendly Names

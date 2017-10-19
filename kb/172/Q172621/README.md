@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172621: Routing and Remote Access Event ID: 30030"
-permalink: kb/172/Q172621/
+permalink: /kb/172/Q172621/
 ---
 
 ## Q172621: Routing and Remote Access Event ID: 30030

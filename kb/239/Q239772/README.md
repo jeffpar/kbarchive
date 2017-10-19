@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239772: NFL Fever 2000: Unable to Pause a Game or a Practice"
-permalink: kb/239/Q239772/
+permalink: /kb/239/Q239772/
 ---
 
 ## Q239772: NFL Fever 2000: Unable to Pause a Game or a Practice

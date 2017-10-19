@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84196: Some Screen Savers Minimize the Productivity Pack"
-permalink: kb/084/Q84196/
+permalink: /kb/084/Q84196/
 ---
 
 ## Q84196: Some Screen Savers Minimize the Productivity Pack

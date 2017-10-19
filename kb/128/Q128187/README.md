@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128187: Err Msg: Error 171 Could Not Access Schedule Information"
-permalink: kb/128/Q128187/
+permalink: /kb/128/Q128187/
 ---
 
 ## Q128187: Err Msg: Error 171 Could Not Access Schedule Information

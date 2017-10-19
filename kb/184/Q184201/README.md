@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184201: The File &lt;Filename&gt; Could Not Be Found..."
-permalink: kb/184/Q184201/
+permalink: /kb/184/Q184201/
 ---
 
 ## Q184201: The File &lt;Filename&gt; Could Not Be Found...

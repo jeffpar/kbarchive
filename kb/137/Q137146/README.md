@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137146: SnaBase Now Limits Domain or Subdomain to 15 SNA Servers"
-permalink: kb/137/Q137146/
+permalink: /kb/137/Q137146/
 ---
 
 ## Q137146: SnaBase Now Limits Domain or Subdomain to 15 SNA Servers

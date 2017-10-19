@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135908: FIX: Hot Keys Do Not Work If TabStop Is Set to False"
-permalink: kb/135/Q135908/
+permalink: /kb/135/Q135908/
 ---
 
 ## Q135908: FIX: Hot Keys Do Not Work If TabStop Is Set to False

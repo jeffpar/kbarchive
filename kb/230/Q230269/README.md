@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230269: XFOR: How to Re-add Extensions to Exchange for Notes Connector"
-permalink: kb/230/Q230269/
+permalink: /kb/230/Q230269/
 ---
 
 ## Q230269: XFOR: How to Re-add Extensions to Exchange for Notes Connector

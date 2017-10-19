@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149269: Printing Using LPR to QMS Printer with a CrownNet Network Card"
-permalink: kb/149/Q149269/
+permalink: /kb/149/Q149269/
 ---
 
 ## Q149269: Printing Using LPR to QMS Printer with a CrownNet Network Card

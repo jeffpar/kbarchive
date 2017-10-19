@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201860: SMSINST: Installer Uninstall Feature Truncates Registry Values"
-permalink: kb/201/Q201860/
+permalink: /kb/201/Q201860/
 ---
 
 ## Q201860: SMSINST: Installer Uninstall Feature Truncates Registry Values

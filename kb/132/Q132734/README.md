@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132734: NetWare Support in Windows 95 Questions and Answers"
-permalink: kb/132/Q132734/
+permalink: /kb/132/Q132734/
 ---
 
 ## Q132734: NetWare Support in Windows 95 Questions and Answers

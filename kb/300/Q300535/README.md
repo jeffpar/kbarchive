@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300535: Error Message When You Run Internet Mail Connector"
-permalink: kb/300/Q300535/
+permalink: /kb/300/Q300535/
 ---
 
 ## Q300535: Error Message When You Run Internet Mail Connector

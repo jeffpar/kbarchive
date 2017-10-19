@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302579: SMS: An Installation Displays No Feedback on the Screen"
-permalink: kb/302/Q302579/
+permalink: /kb/302/Q302579/
 ---
 
 ## Q302579: SMS: An Installation Displays No Feedback on the Screen

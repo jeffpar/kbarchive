@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310627: MechWarrior 4 Black Knight/Mech Paks: Minimum System Requirement"
-permalink: kb/310/Q310627/
+permalink: /kb/310/Q310627/
 ---
 
 ## Q310627: MechWarrior 4 Black Knight/Mech Paks: Minimum System Requirement

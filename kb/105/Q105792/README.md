@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105792: Machine Hangs Using HIMEM /TESTMEM"
-permalink: kb/105/Q105792/
+permalink: /kb/105/Q105792/
 ---
 
 ## Q105792: Machine Hangs Using HIMEM /TESTMEM

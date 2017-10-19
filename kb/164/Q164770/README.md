@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164770: Host Account Manager Incorrectly Prompts User to Reapply Changes"
-permalink: kb/164/Q164770/
+permalink: /kb/164/Q164770/
 ---
 
 ## Q164770: Host Account Manager Incorrectly Prompts User to Reapply Changes

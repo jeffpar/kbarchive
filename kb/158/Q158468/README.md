@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158468: WD97: Compile, Syntax Errors When You Run a Converted Macro in W"
-permalink: kb/158/Q158468/
+permalink: /kb/158/Q158468/
 ---
 
 ## Q158468: WD97: Compile, Syntax Errors When You Run a Converted Macro in W

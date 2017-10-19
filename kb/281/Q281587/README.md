@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281587: XADM: Unwanted Address Space When Using a Site Connector"
-permalink: kb/281/Q281587/
+permalink: /kb/281/Q281587/
 ---
 
 ## Q281587: XADM: Unwanted Address Space When Using a Site Connector

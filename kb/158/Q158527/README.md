@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158527: WD97: Multi-Column Revision Bars Do Not Print As Expected"
-permalink: kb/158/Q158527/
+permalink: /kb/158/Q158527/
 ---
 
 ## Q158527: WD97: Multi-Column Revision Bars Do Not Print As Expected

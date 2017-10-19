@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193357: City Symbol Used for Country in &quot;Name That Place&quot; Game"
-permalink: kb/193/Q193357/
+permalink: /kb/193/Q193357/
 ---
 
 ## Q193357: City Symbol Used for Country in &quot;Name That Place&quot; Game

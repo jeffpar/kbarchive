@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86377: PC WSPlus: Replies from Gateway Users Not Received"
-permalink: kb/086/Q86377/
+permalink: /kb/086/Q86377/
 ---
 
 ## Q86377: PC WSPlus: Replies from Gateway Users Not Received

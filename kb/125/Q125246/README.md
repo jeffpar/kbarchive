@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125246: MHS: Microsoft Mail Gateway to MHS OUTPOST.EXE Version 3.0.10"
-permalink: kb/125/Q125246/
+permalink: /kb/125/Q125246/
 ---
 
 ## Q125246: MHS: Microsoft Mail Gateway to MHS OUTPOST.EXE Version 3.0.10

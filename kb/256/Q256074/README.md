@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256074: Crystal Reports Selection Formula Reappears After Being Deleted"
-permalink: kb/256/Q256074/
+permalink: /kb/256/Q256074/
 ---
 
 ## Q256074: Crystal Reports Selection Formula Reappears After Being Deleted

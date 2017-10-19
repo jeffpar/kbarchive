@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107157: MS-DOS 6.2 Stacker Conversion Disk Directory List - All Sizes"
-permalink: kb/107/Q107157/
+permalink: /kb/107/Q107157/
 ---
 
 ## Q107157: MS-DOS 6.2 Stacker Conversion Disk Directory List - All Sizes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192407: Caching-Only DNS Server Incorrectly Reports &quot;Name Error&quot;"
-permalink: kb/192/Q192407/
+permalink: /kb/192/Q192407/
 ---
 
 ## Q192407: Caching-Only DNS Server Incorrectly Reports &quot;Name Error&quot;

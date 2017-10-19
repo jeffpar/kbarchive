@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124483: INF: Index Types and NULL Values"
-permalink: kb/124/Q124483/
+permalink: /kb/124/Q124483/
 ---
 
 ## Q124483: INF: Index Types and NULL Values

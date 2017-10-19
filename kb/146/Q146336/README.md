@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146336: Joystick in Windows NT 4.0 Does Not Work Properly"
-permalink: kb/146/Q146336/
+permalink: /kb/146/Q146336/
 ---
 
 ## Q146336: Joystick in Windows NT 4.0 Does Not Work Properly

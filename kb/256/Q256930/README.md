@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256930: XCLN: Save as Web Page Feature Requires Web Publishing Wizard"
-permalink: kb/256/Q256930/
+permalink: /kb/256/Q256930/
 ---
 
 ## Q256930: XCLN: Save as Web Page Feature Requires Web Publishing Wizard

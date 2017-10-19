@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140351: PRB: Assertion in Dlgprop.cpp Line 499"
-permalink: kb/140/Q140351/
+permalink: /kb/140/Q140351/
 ---
 
 ## Q140351: PRB: Assertion in Dlgprop.cpp Line 499

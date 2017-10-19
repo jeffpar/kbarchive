@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87415: PC DB: Symptoms of Not Having an MBG File"
-permalink: kb/087/Q87415/
+permalink: /kb/087/Q87415/
 ---
 
 ## Q87415: PC DB: Symptoms of Not Having an MBG File

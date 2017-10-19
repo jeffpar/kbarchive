@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181256: WD97: Application Error Saving File w/Graphic to WordPerfect 5.x"
-permalink: kb/181/Q181256/
+permalink: /kb/181/Q181256/
 ---
 
 ## Q181256: WD97: Application Error Saving File w/Graphic to WordPerfect 5.x

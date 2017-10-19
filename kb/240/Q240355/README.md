@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240355: NBA Inside Drive 2000: How to Play at Higher Screen Resolutions"
-permalink: kb/240/Q240355/
+permalink: /kb/240/Q240355/
 ---
 
 ## Q240355: NBA Inside Drive 2000: How to Play at Higher Screen Resolutions

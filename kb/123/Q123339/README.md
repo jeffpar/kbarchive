@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123339: Stability Problems on NEC Duo MIPS Computers"
-permalink: kb/123/Q123339/
+permalink: /kb/123/Q123339/
 ---
 
 ## Q123339: Stability Problems on NEC Duo MIPS Computers

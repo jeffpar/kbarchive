@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138878: Routing TCP/IP Packets On a Multihomed RAS Computer"
-permalink: kb/138/Q138878/
+permalink: /kb/138/Q138878/
 ---
 
 ## Q138878: Routing TCP/IP Packets On a Multihomed RAS Computer

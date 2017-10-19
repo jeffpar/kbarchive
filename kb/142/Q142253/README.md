@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142253: Unable to Read from Floppy Disk Drive on Laptop Computer"
-permalink: kb/142/Q142253/
+permalink: /kb/142/Q142253/
 ---
 
 ## Q142253: Unable to Read from Floppy Disk Drive on Laptop Computer

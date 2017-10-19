@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161800: ADT95: Setup of Custom Application Not Completed Successfully"
-permalink: kb/161/Q161800/
+permalink: /kb/161/Q161800/
 ---
 
 ## Q161800: ADT95: Setup of Custom Application Not Completed Successfully

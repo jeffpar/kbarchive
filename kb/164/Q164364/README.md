@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164364: Error Adding a Second Printer in Print Manager Defined by Pserv"
-permalink: kb/164/Q164364/
+permalink: /kb/164/Q164364/
 ---
 
 ## Q164364: Error Adding a Second Printer in Print Manager Defined by Pserv

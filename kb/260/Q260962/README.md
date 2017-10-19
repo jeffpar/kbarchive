@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260962: PC MMTA: Error Message: A Critical Error Has Occurred"
-permalink: kb/260/Q260962/
+permalink: /kb/260/Q260962/
 ---
 
 ## Q260962: PC MMTA: Error Message: A Critical Error Has Occurred

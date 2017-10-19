@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100858: Cinemania: ListMaker Lists Cannot Be Copied"
-permalink: kb/100/Q100858/
+permalink: /kb/100/Q100858/
 ---
 
 ## Q100858: Cinemania: ListMaker Lists Cannot Be Copied

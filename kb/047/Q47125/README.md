@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47125: Demand Paging MS-DOS-Based Applications"
-permalink: kb/047/Q47125/
+permalink: /kb/047/Q47125/
 ---
 
 ## Q47125: Demand Paging MS-DOS-Based Applications

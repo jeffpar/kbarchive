@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129711: HOWTO: Clean Up the Visual FoxPro Environment"
-permalink: kb/129/Q129711/
+permalink: /kb/129/Q129711/
 ---
 
 ## Q129711: HOWTO: Clean Up the Visual FoxPro Environment

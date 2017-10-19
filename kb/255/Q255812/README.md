@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255812: Streets and Trips 2000: Unable to Download Construction Updates"
-permalink: kb/255/Q255812/
+permalink: /kb/255/Q255812/
 ---
 
 ## Q255812: Streets and Trips 2000: Unable to Download Construction Updates

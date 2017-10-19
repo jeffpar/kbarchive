@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140300: FIX: SQL SELECT Returns Different Results Using the Same Data"
-permalink: kb/140/Q140300/
+permalink: /kb/140/Q140300/
 ---
 
 ## Q140300: FIX: SQL SELECT Returns Different Results Using the Same Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298459: Frequently Asked Questions for Windows NT 3.51"
-permalink: kb/298/Q298459/
+permalink: /kb/298/Q298459/
 ---
 
 ## Q298459: Frequently Asked Questions for Windows NT 3.51

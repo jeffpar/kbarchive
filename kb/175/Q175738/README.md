@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175738: Collate Feature May Not Work with PostScript Printing"
-permalink: kb/175/Q175738/
+permalink: /kb/175/Q175738/
 ---
 
 ## Q175738: Collate Feature May Not Work with PostScript Printing

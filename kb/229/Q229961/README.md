@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229961: XFOR:Applying Restrictive Address Space on Internet Mail Service"
-permalink: kb/229/Q229961/
+permalink: /kb/229/Q229961/
 ---
 
 ## Q229961: XFOR:Applying Restrictive Address Space on Internet Mail Service

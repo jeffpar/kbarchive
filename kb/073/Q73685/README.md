@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73685: BUG: Preprocessor Program Invocation Gets Wrong Return Value NMK"
-permalink: kb/073/Q73685/
+permalink: /kb/073/Q73685/
 ---
 
 ## Q73685: BUG: Preprocessor Program Invocation Gets Wrong Return Value NMK

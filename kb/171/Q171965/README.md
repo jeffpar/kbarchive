@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171965: Mac Bookshelf 98: Animations and Movies Slightly Out Of Frame"
-permalink: kb/171/Q171965/
+permalink: /kb/171/Q171965/
 ---
 
 ## Q171965: Mac Bookshelf 98: Animations and Movies Slightly Out Of Frame

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190160: Select &amp; International Versions of Terminal Server Deployment"
-permalink: kb/190/Q190160/
+permalink: /kb/190/Q190160/
 ---
 
 ## Q190160: Select &amp; International Versions of Terminal Server Deployment

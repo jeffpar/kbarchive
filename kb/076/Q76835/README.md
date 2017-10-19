@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76835: General Multimedia Information: MPC Marketing Council"
-permalink: kb/076/Q76835/
+permalink: /kb/076/Q76835/
 ---
 
 ## Q76835: General Multimedia Information: MPC Marketing Council

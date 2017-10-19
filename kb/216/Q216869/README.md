@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216869: FIX: Crash When Editing Code with Parameter Information Visible"
-permalink: kb/216/Q216869/
+permalink: /kb/216/Q216869/
 ---
 
 ## Q216869: FIX: Crash When Editing Code with Parameter Information Visible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175092: 0E Exception in VNETBIOS if NetBIOS Commands Are Issued Quickly"
-permalink: kb/175/Q175092/
+permalink: /kb/175/Q175092/
 ---
 
 ## Q175092: 0E Exception in VNETBIOS if NetBIOS Commands Are Issued Quickly

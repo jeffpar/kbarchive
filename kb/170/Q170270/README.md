@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170270: Availability of ZAK for Windows NT Workstation 4.0"
-permalink: kb/170/Q170270/
+permalink: /kb/170/Q170270/
 ---
 
 ## Q170270: Availability of ZAK for Windows NT Workstation 4.0

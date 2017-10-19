@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194816: Combat Flight Simulator: Description of the Auto-Rudder Feature"
-permalink: kb/194/Q194816/
+permalink: /kb/194/Q194816/
 ---
 
 ## Q194816: Combat Flight Simulator: Description of the Auto-Rudder Feature

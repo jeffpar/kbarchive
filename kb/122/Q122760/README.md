@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122760: PC Win: Shared Folders View Cannot Be Expanded"
-permalink: kb/122/Q122760/
+permalink: /kb/122/Q122760/
 ---
 
 ## Q122760: PC Win: Shared Folders View Cannot Be Expanded

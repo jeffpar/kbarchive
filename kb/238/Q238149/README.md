@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238149: How to Add a Carriage Return to the Legal Notice Text"
-permalink: kb/238/Q238149/
+permalink: /kb/238/Q238149/
 ---
 
 ## Q238149: How to Add a Carriage Return to the Legal Notice Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145741: Cannot Specify Font for Fax Using Compose New Fax Wizard"
-permalink: kb/145/Q145741/
+permalink: /kb/145/Q145741/
 ---
 
 ## Q145741: Cannot Specify Font for Fax Using Compose New Fax Wizard

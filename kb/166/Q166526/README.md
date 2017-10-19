@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166526: WinNT Explorer Clears Archive Attribute after Perms Change"
-permalink: kb/166/Q166526/
+permalink: /kb/166/Q166526/
 ---
 
 ## Q166526: WinNT Explorer Clears Archive Attribute after Perms Change

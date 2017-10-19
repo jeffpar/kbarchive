@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202584: FIX: C1001 Compiling File Containing Local Enum with Debug Info"
-permalink: kb/202/Q202584/
+permalink: /kb/202/Q202584/
 ---
 
 ## Q202584: FIX: C1001 Compiling File Containing Local Enum with Debug Info

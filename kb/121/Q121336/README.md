@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121336: Mozart Does Not Start, and Returns to Program Manager"
-permalink: kb/121/Q121336/
+permalink: /kb/121/Q121336/
 ---
 
 ## Q121336: Mozart Does Not Start, and Returns to Program Manager

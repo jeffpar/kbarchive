@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199034: Remote Control Cannot Connect If 3Com Connectivity Utility Run"
-permalink: kb/199/Q199034/
+permalink: /kb/199/Q199034/
 ---
 
 ## Q199034: Remote Control Cannot Connect If 3Com Connectivity Utility Run

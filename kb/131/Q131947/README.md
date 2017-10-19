@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131947: DOC: CDC::GetWindow() Is Documented but Not Available"
-permalink: kb/131/Q131947/
+permalink: /kb/131/Q131947/
 ---
 
 ## Q131947: DOC: CDC::GetWindow() Is Documented but Not Available

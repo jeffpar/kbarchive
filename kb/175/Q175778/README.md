@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175778: Invalid Page Fault in Wappc32.dll Using WinAPPCSetBlockingHook"
-permalink: kb/175/Q175778/
+permalink: /kb/175/Q175778/
 ---
 
 ## Q175778: Invalid Page Fault in Wappc32.dll Using WinAPPCSetBlockingHook

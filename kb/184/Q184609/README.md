@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184609: PRB: Compile Error: User-Defined Type Not Defined"
-permalink: kb/184/Q184609/
+permalink: /kb/184/Q184609/
 ---
 
 ## Q184609: PRB: Compile Error: User-Defined Type Not Defined

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196241: Event ID 205 Does Not Include Source SAP Information"
-permalink: kb/196/Q196241/
+permalink: /kb/196/Q196241/
 ---
 
 ## Q196241: Event ID 205 Does Not Include Source SAP Information

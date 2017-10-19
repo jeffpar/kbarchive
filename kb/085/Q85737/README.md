@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85737: ALR EISA Err Msg: EMM386: Unrecoverable Privileged...Error #05"
-permalink: kb/085/Q85737/
+permalink: /kb/085/Q85737/
 ---
 
 ## Q85737: ALR EISA Err Msg: EMM386: Unrecoverable Privileged...Error #05

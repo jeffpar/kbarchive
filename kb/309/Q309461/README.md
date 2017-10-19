@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309461: IIS: Applications That Require or Use IIS"
-permalink: kb/309/Q309461/
+permalink: /kb/309/Q309461/
 ---
 
 ## Q309461: IIS: Applications That Require or Use IIS

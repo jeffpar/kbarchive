@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196175: XADM: Move Server Express Install does not Detect &#92;Bin"
-permalink: kb/196/Q196175/
+permalink: /kb/196/Q196175/
 ---
 
 ## Q196175: XADM: Move Server Express Install does not Detect &#92;Bin

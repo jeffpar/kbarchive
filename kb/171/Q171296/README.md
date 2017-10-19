@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171296: Description of the Undo Command in Windows Explorer"
-permalink: kb/171/Q171296/
+permalink: /kb/171/Q171296/
 ---
 
 ## Q171296: Description of the Undo Command in Windows Explorer

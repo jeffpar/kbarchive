@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122579: PC WSPlus: Dynamic Connections Not Released"
-permalink: kb/122/Q122579/
+permalink: /kb/122/Q122579/
 ---
 
 ## Q122579: PC WSPlus: Dynamic Connections Not Released

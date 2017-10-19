@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151718: Managing Memory in MS-DOS Mode"
-permalink: kb/151/Q151718/
+permalink: /kb/151/Q151718/
 ---
 
 ## Q151718: Managing Memory in MS-DOS Mode

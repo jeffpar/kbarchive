@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186182: XFOR: Some Macintosh Attachments Not Encoded Using BinHex"
-permalink: kb/186/Q186182/
+permalink: /kb/186/Q186182/
 ---
 
 ## Q186182: XFOR: Some Macintosh Attachments Not Encoded Using BinHex

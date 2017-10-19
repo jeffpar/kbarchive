@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90944: Windows for Workgroups 3.1 Disks (3.5, 1.44 MB)"
-permalink: kb/090/Q90944/
+permalink: /kb/090/Q90944/
 ---
 
 ## Q90944: Windows for Workgroups 3.1 Disks (3.5, 1.44 MB)

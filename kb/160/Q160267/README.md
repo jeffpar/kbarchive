@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160267: Error When Xcopying from Lan Manager Server"
-permalink: kb/160/Q160267/
+permalink: /kb/160/Q160267/
 ---
 
 ## Q160267: Error When Xcopying from Lan Manager Server

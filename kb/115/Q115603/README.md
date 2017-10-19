@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115603: No Option to Import LMHOSTS with SmartStart"
-permalink: kb/115/Q115603/
+permalink: /kb/115/Q115603/
 ---
 
 ## Q115603: No Option to Import LMHOSTS with SmartStart

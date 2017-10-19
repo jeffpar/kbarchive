@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183522: FIX: Divide by Zero Creates Err with Third-Party Print Drivers"
-permalink: kb/183/Q183522/
+permalink: /kb/183/Q183522/
 ---
 
 ## Q183522: FIX: Divide by Zero Creates Err with Third-Party Print Drivers

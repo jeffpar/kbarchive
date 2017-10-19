@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157487: Golf 3.0 and Soccer 1.0: Troubleshooting Sound Problems"
-permalink: kb/157/Q157487/
+permalink: /kb/157/Q157487/
 ---
 
 ## Q157487: Golf 3.0 and Soccer 1.0: Troubleshooting Sound Problems

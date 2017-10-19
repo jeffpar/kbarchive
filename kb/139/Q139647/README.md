@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139647: XCLN: Address Book Combo Box Not Redrawn Correctly"
-permalink: kb/139/Q139647/
+permalink: /kb/139/Q139647/
 ---
 
 ## Q139647: XCLN: Address Book Combo Box Not Redrawn Correctly

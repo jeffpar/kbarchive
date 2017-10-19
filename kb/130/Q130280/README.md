@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130280: Changing Domain Password Causes Error 7210"
-permalink: kb/130/Q130280/
+permalink: /kb/130/Q130280/
 ---
 
 ## Q130280: Changing Domain Password Causes Error 7210

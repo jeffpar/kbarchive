@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78326: Real Mode Not Supported by Windows 3.1"
-permalink: kb/078/Q78326/
+permalink: /kb/078/Q78326/
 ---
 
 ## Q78326: Real Mode Not Supported by Windows 3.1

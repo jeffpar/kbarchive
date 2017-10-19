@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272925: XFOR: Notes Connector Quits with Messages in the Browser Log"
-permalink: kb/272/Q272925/
+permalink: /kb/272/Q272925/
 ---
 
 ## Q272925: XFOR: Notes Connector Quits with Messages in the Browser Log

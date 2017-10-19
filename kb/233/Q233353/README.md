@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233353: XFOR: OLE Attachment Replaced with &lt;&lt;.&gt;&gt;"
-permalink: kb/233/Q233353/
+permalink: /kb/233/Q233353/
 ---
 
 ## Q233353: XFOR: OLE Attachment Replaced with &lt;&lt;.&gt;&gt;

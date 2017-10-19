@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165648: Host Security Setup Missing Description of Services"
-permalink: kb/165/Q165648/
+permalink: /kb/165/Q165648/
 ---
 
 ## Q165648: Host Security Setup Missing Description of Services

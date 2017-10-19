@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95017: SNADS: Two Message Headers Viewing Loop Around Message"
-permalink: kb/095/Q95017/
+permalink: /kb/095/Q95017/
 ---
 
 ## Q95017: SNADS: Two Message Headers Viewing Loop Around Message

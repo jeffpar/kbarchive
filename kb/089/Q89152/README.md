@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89152: Installing Bookshelf Only from the Word and Bookshelf Bundle"
-permalink: kb/089/Q89152/
+permalink: /kb/089/Q89152/
 ---
 
 ## Q89152: Installing Bookshelf Only from the Word and Bookshelf Bundle

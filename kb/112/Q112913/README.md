@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112913: PC Adm: Five Tildes Required Per Line in ADMIN.TPL File"
-permalink: kb/112/Q112913/
+permalink: /kb/112/Q112913/
 ---
 
 ## Q112913: PC Adm: Five Tildes Required Per Line in ADMIN.TPL File

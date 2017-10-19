@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186763: WD97: Undesired Characters When You Open HTML Document in Word"
-permalink: kb/186/Q186763/
+permalink: /kb/186/Q186763/
 ---
 
 ## Q186763: WD97: Undesired Characters When You Open HTML Document in Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163880: COPY Command Causes File Cache to Grow"
-permalink: kb/163/Q163880/
+permalink: /kb/163/Q163880/
 ---
 
 ## Q163880: COPY Command Causes File Cache to Grow

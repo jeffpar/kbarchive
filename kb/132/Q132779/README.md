@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132779: Horizontal Strip Running Across the Screen"
-permalink: kb/132/Q132779/
+permalink: /kb/132/Q132779/
 ---
 
 ## Q132779: Horizontal Strip Running Across the Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162312: FP: Images Not Saved to Web Aren't Loaded"
-permalink: kb/162/Q162312/
+permalink: /kb/162/Q162312/
 ---
 
 ## Q162312: FP: Images Not Saved to Web Aren't Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148495: PRB: Tool Tips Stop Showing After WM_xBUTTONDOWN"
-permalink: kb/148/Q148495/
+permalink: /kb/148/Q148495/
 ---
 
 ## Q148495: PRB: Tool Tips Stop Showing After WM_xBUTTONDOWN

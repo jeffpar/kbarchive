@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161945: XCON: MSMail Shows Blank Icon for File Attachments from Internet"
-permalink: kb/161/Q161945/
+permalink: /kb/161/Q161945/
 ---
 
 ## Q161945: XCON: MSMail Shows Blank Icon for File Attachments from Internet

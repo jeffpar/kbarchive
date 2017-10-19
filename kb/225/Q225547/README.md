@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225547: Delete Printer and Port Created with HP Internet Printer Connect"
-permalink: kb/225/Q225547/
+permalink: /kb/225/Q225547/
 ---
 
 ## Q225547: Delete Printer and Port Created with HP Internet Printer Connect

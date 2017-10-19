@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259952: StarLancer: 3D Accelerator Card Is Not Detected by the Game"
-permalink: kb/259/Q259952/
+permalink: /kb/259/Q259952/
 ---
 
 ## Q259952: StarLancer: 3D Accelerator Card Is Not Detected by the Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133022: FIX: Spinner Doesn't Inherit Color Props from .vcx Definition"
-permalink: kb/133/Q133022/
+permalink: /kb/133/Q133022/
 ---
 
 ## Q133022: FIX: Spinner Doesn't Inherit Color Props from .vcx Definition

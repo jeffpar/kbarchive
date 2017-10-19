@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157987: XADM: Windows NT SP5 Overwrites Ntbackup.exe"
-permalink: kb/157/Q157987/
+permalink: /kb/157/Q157987/
 ---
 
 ## Q157987: XADM: Windows NT SP5 Overwrites Ntbackup.exe

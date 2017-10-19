@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231314: SMS: Description of the Remote Control Gold Key Feature"
-permalink: kb/231/Q231314/
+permalink: /kb/231/Q231314/
 ---
 
 ## Q231314: SMS: Description of the Remote Control Gold Key Feature

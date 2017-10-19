@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151093: Bookshelf '96-'97: Pop-Up Definition Fails To Close"
-permalink: kb/151/Q151093/
+permalink: /kb/151/Q151093/
 ---
 
 ## Q151093: Bookshelf '96-'97: Pop-Up Definition Fails To Close

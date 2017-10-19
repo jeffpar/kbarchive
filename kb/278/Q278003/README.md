@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278003: CFS2: Slow Frame Rate and Poor Graphics Performance"
-permalink: kb/278/Q278003/
+permalink: /kb/278/Q278003/
 ---
 
 ## Q278003: CFS2: Slow Frame Rate and Poor Graphics Performance

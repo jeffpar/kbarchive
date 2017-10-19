@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184668: WD97: How to Add Path and File Name to Title Bar of Document"
-permalink: kb/184/Q184668/
+permalink: /kb/184/Q184668/
 ---
 
 ## Q184668: WD97: How to Add Path and File Name to Title Bar of Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99100: Reasons Why WFWG Workstations Can't Browse LM Servers"
-permalink: kb/099/Q99100/
+permalink: /kb/099/Q99100/
 ---
 
 ## Q99100: Reasons Why WFWG Workstations Can't Browse LM Servers

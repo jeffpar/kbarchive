@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136554: Cannot Use APM with NEC Image P90 and Matrox MGA PCI Adapter"
-permalink: kb/136/Q136554/
+permalink: /kb/136/Q136554/
 ---
 
 ## Q136554: Cannot Use APM with NEC Image P90 and Matrox MGA PCI Adapter

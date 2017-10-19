@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159461: Mirroring of Software Fault Tolerant Solutions"
-permalink: kb/159/Q159461/
+permalink: /kb/159/Q159461/
 ---
 
 ## Q159461: Mirroring of Software Fault Tolerant Solutions

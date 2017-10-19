@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191590: PRB: FPOle.dll Errors if _VFP.Caption Contains Apostrophe"
-permalink: kb/191/Q191590/
+permalink: /kb/191/Q191590/
 ---
 
 ## Q191590: PRB: FPOle.dll Errors if _VFP.Caption Contains Apostrophe

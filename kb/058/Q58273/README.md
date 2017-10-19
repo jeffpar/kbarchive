@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58273: Not Enough Space to Save File in Write"
-permalink: kb/058/Q58273/
+permalink: /kb/058/Q58273/
 ---
 
 ## Q58273: Not Enough Space to Save File in Write

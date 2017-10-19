@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89999: Removing Time Separator Causes Incorrect Time in File Manager"
-permalink: kb/089/Q89999/
+permalink: /kb/089/Q89999/
 ---
 
 ## Q89999: Removing Time Separator Causes Incorrect Time in File Manager

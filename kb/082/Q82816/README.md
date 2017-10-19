@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82816: User Interface Deviations Among OLE Applications"
-permalink: kb/082/Q82816/
+permalink: /kb/082/Q82816/
 ---
 
 ## Q82816: User Interface Deviations Among OLE Applications

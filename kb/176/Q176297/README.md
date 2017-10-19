@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176297: CFS or FS: Error Message or Hang When You Start Program"
-permalink: kb/176/Q176297/
+permalink: /kb/176/Q176297/
 ---
 
 ## Q176297: CFS or FS: Error Message or Hang When You Start Program

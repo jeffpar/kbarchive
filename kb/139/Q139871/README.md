@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139871: FIX: Error C2371 on Struct Typedef that Does Not Have a Tag"
-permalink: kb/139/Q139871/
+permalink: /kb/139/Q139871/
 ---
 
 ## Q139871: FIX: Error C2371 on Struct Typedef that Does Not Have a Tag

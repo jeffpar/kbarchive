@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76301: SAMPLE: VFood.exe Contains Basic Virtual Device (VxD) Structure"
-permalink: kb/076/Q76301/
+permalink: /kb/076/Q76301/
 ---
 
 ## Q76301: SAMPLE: VFood.exe Contains Basic Virtual Device (VxD) Structure

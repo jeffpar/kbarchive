@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140472: PRB: Limited Virtual Memory Error When Starting Windows NT"
-permalink: kb/140/Q140472/
+permalink: /kb/140/Q140472/
 ---
 
 ## Q140472: PRB: Limited Virtual Memory Error When Starting Windows NT

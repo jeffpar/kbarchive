@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77956: PC DOS: Logging Options Inoperative in Operator and Monitor"
-permalink: kb/077/Q77956/
+permalink: /kb/077/Q77956/
 ---
 
 ## Q77956: PC DOS: Logging Options Inoperative in Operator and Monitor

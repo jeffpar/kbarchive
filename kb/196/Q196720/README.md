@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196720: WD97: Footnote Moved to Next Page"
-permalink: kb/196/Q196720/
+permalink: /kb/196/Q196720/
 ---
 
 ## Q196720: WD97: Footnote Moved to Next Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108373: PC WSPlus: Running Schedule+ Demo from a Network Installation"
-permalink: kb/108/Q108373/
+permalink: /kb/108/Q108373/
 ---
 
 ## Q108373: PC WSPlus: Running Schedule+ Demo from a Network Installation

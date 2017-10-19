@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290391: PRB: &quot;Page Cannot Be Displayed&quot; When You Connect Through HTTPS"
-permalink: kb/290/Q290391/
+permalink: /kb/290/Q290391/
 ---
 
 ## Q290391: PRB: &quot;Page Cannot Be Displayed&quot; When You Connect Through HTTPS

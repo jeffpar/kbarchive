@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291375: Microsoft Exchange 2000 Server Resource Kit Comments And Correct"
-permalink: kb/291/Q291375/
+permalink: /kb/291/Q291375/
 ---
 
 ## Q291375: Microsoft Exchange 2000 Server Resource Kit Comments And Correct

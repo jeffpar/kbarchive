@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171480: FIX: Setting SelAlignment Property Does Not Affect RichTextBox"
-permalink: kb/171/Q171480/
+permalink: /kb/171/Q171480/
 ---
 
 ## Q171480: FIX: Setting SelAlignment Property Does Not Affect RichTextBox

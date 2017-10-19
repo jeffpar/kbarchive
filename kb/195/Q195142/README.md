@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195142: WD97: Revision Colors May Change Unexpectedly"
-permalink: kb/195/Q195142/
+permalink: /kb/195/Q195142/
 ---
 
 ## Q195142: WD97: Revision Colors May Change Unexpectedly

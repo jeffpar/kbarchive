@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192268: Err Msg: Cmmgr32.exe Is Linked to Missing Export Advapi32.dll"
-permalink: kb/192/Q192268/
+permalink: /kb/192/Q192268/
 ---
 
 ## Q192268: Err Msg: Cmmgr32.exe Is Linked to Missing Export Advapi32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102737: Differences Between FTP and TFTP"
-permalink: kb/102/Q102737/
+permalink: /kb/102/Q102737/
 ---
 
 ## Q102737: Differences Between FTP and TFTP

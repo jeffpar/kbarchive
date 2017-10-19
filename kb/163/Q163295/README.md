@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163295: XCON: MTA Events 2219, 2206, and 2207 (MTACHECK)"
-permalink: kb/163/Q163295/
+permalink: /kb/163/Q163295/
 ---
 
 ## Q163295: XCON: MTA Events 2219, 2206, and 2207 (MTACHECK)

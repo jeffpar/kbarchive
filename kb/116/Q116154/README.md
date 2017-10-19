@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116154: Source File Attribute Changes When Copying in Real Mode"
-permalink: kb/116/Q116154/
+permalink: /kb/116/Q116154/
 ---
 
 ## Q116154: Source File Attribute Changes When Copying in Real Mode

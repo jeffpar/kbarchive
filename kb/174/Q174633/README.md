@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174633: Windows NT May Appear To Be Hung with Kernel Debugger"
-permalink: kb/174/Q174633/
+permalink: /kb/174/Q174633/
 ---
 
 ## Q174633: Windows NT May Appear To Be Hung with Kernel Debugger

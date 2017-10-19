@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293187: SMS: Clients Look for Old Packages on Client Access Points"
-permalink: kb/293/Q293187/
+permalink: /kb/293/Q293187/
 ---
 
 ## Q293187: SMS: Clients Look for Old Packages on Client Access Points

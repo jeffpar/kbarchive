@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140505: Disk Space Alarm Reports Status on Hidden Drives"
-permalink: kb/140/Q140505/
+permalink: /kb/140/Q140505/
 ---
 
 ## Q140505: Disk Space Alarm Reports Status on Hidden Drives

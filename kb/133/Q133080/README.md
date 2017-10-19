@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133080: PPT7: Meaning of 24-bit Rendering Options for WMF Files"
-permalink: kb/133/Q133080/
+permalink: /kb/133/Q133080/
 ---
 
 ## Q133080: PPT7: Meaning of 24-bit Rendering Options for WMF Files

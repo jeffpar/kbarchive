@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131718: CD-ROM Optimization Settings Available Without Drive Installed"
-permalink: kb/131/Q131718/
+permalink: /kb/131/Q131718/
 ---
 
 ## Q131718: CD-ROM Optimization Settings Available Without Drive Installed

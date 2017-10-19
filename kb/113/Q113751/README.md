@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113751: Using 32-Bit Disk Access on WD 2540 Hard Disk Drives"
-permalink: kb/113/Q113751/
+permalink: /kb/113/Q113751/
 ---
 
 ## Q113751: Using 32-Bit Disk Access on WD 2540 Hard Disk Drives

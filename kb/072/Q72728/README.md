@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72728: FIX: BIND Generates Multiply Defined Symbols with API.LIB"
-permalink: kb/072/Q72728/
+permalink: /kb/072/Q72728/
 ---
 
 ## Q72728: FIX: BIND Generates Multiply Defined Symbols with API.LIB

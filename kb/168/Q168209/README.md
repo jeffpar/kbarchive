@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168209: PRB: QueryDef dbFailOnError Doesn't Rollback on Failure"
-permalink: kb/168/Q168209/
+permalink: /kb/168/Q168209/
 ---
 
 ## Q168209: PRB: QueryDef dbFailOnError Doesn't Rollback on Failure

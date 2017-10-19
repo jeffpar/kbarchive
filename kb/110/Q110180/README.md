@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110180: BUG: GP Fault in LoadLibrary() with C++ DLL"
-permalink: kb/110/Q110180/
+permalink: /kb/110/Q110180/
 ---
 
 ## Q110180: BUG: GP Fault in LoadLibrary() with C++ DLL

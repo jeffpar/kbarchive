@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68647: Windows Code to Parse MS-DOS Environment Variables"
-permalink: kb/068/Q68647/
+permalink: /kb/068/Q68647/
 ---
 
 ## Q68647: Windows Code to Parse MS-DOS Environment Variables

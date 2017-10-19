@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193081: XADM: NDR When Message Is Routed Between Multiple Connectors"
-permalink: kb/193/Q193081/
+permalink: /kb/193/Q193081/
 ---
 
 ## Q193081: XADM: NDR When Message Is Routed Between Multiple Connectors

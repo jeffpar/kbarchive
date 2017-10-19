@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74305: Logitech Mouse Driver Will Not Work with E000 Page Frame"
-permalink: kb/074/Q74305/
+permalink: /kb/074/Q74305/
 ---
 
 ## Q74305: Logitech Mouse Driver Will Not Work with E000 Page Frame

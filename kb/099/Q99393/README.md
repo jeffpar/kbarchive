@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99393: Mac Srv: Serial Number Conflicts and Routing"
-permalink: kb/099/Q99393/
+permalink: /kb/099/Q99393/
 ---
 
 ## Q99393: Mac Srv: Serial Number Conflicts and Routing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147141: Macintosh Music Central 1996: ReadMe File Contents"
-permalink: kb/147/Q147141/
+permalink: /kb/147/Q147141/
 ---
 
 ## Q147141: Macintosh Music Central 1996: ReadMe File Contents

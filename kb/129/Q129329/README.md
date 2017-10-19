@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129329: HOWTO: Populate a Form's List Box Object from an Array"
-permalink: kb/129/Q129329/
+permalink: /kb/129/Q129329/
 ---
 
 ## Q129329: HOWTO: Populate a Form's List Box Object from an Array

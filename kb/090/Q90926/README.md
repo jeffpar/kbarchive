@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90926: Device Contention Errors with Parallel Port Network Cards"
-permalink: kb/090/Q90926/
+permalink: /kb/090/Q90926/
 ---
 
 ## Q90926: Device Contention Errors with Parallel Port Network Cards

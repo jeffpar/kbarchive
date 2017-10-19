@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151042: FP: FrontPage Personal Web Server Supports Standard CGI Only"
-permalink: kb/151/Q151042/
+permalink: /kb/151/Q151042/
 ---
 
 ## Q151042: FP: FrontPage Personal Web Server Supports Standard CGI Only

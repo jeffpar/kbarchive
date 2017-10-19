@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103010: Read-Only Files Don't Copy Correctly to Net One Server"
-permalink: kb/103/Q103010/
+permalink: /kb/103/Q103010/
 ---
 
 ## Q103010: Read-Only Files Don't Copy Correctly to Net One Server

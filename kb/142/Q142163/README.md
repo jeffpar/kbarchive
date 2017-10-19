@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142163: Setup of OS/2 Logon Servers Fails Under WinNT 3.51 SP3"
-permalink: kb/142/Q142163/
+permalink: /kb/142/Q142163/
 ---
 
 ## Q142163: Setup of OS/2 Logon Servers Fails Under WinNT 3.51 SP3

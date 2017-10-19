@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125440: Modifications to System Files Made by Media Vision Premium/Pro"
-permalink: kb/125/Q125440/
+permalink: /kb/125/Q125440/
 ---
 
 ## Q125440: Modifications to System Files Made by Media Vision Premium/Pro

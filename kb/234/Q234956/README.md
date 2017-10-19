@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234956: Desktop Applications VB MCSD Training Kit: Chapter 12 missing he"
-permalink: kb/234/Q234956/
+permalink: /kb/234/Q234956/
 ---
 
 ## Q234956: Desktop Applications VB MCSD Training Kit: Chapter 12 missing he

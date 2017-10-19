@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85939: HP LaserJet II Is Limited to 32 Permanent Soft Fonts"
-permalink: kb/085/Q85939/
+permalink: /kb/085/Q85939/
 ---
 
 ## Q85939: HP LaserJet II Is Limited to 32 Permanent Soft Fonts

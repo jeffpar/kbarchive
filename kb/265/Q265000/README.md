@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265000: StarLancer Error Message: Debug Assertion Error"
-permalink: kb/265/Q265000/
+permalink: /kb/265/Q265000/
 ---
 
 ## Q265000: StarLancer Error Message: Debug Assertion Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322711: Problems Switching Between Client for NFS and Gateway for NFS"
-permalink: kb/322/Q322711/
+permalink: /kb/322/Q322711/
 ---
 
 ## Q322711: Problems Switching Between Client for NFS and Gateway for NFS

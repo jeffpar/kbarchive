@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281385: PRB: VFP May Not Display All Fields of a dBASE Table"
-permalink: kb/281/Q281385/
+permalink: /kb/281/Q281385/
 ---
 
 ## Q281385: PRB: VFP May Not Display All Fields of a dBASE Table

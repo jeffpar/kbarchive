@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88092: BUG: Cannot Access Static Data Members in Inline Assembly"
-permalink: kb/088/Q88092/
+permalink: /kb/088/Q88092/
 ---
 
 ## Q88092: BUG: Cannot Access Static Data Members in Inline Assembly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135601: Farallon Etherwave ISA Network Card Does Not See the Network"
-permalink: kb/135/Q135601/
+permalink: /kb/135/Q135601/
 ---
 
 ## Q135601: Farallon Etherwave ISA Network Card Does Not See the Network

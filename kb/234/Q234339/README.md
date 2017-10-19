@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234339: Volume Lock Request Does Not Release Volume After File Operation"
-permalink: kb/234/Q234339/
+permalink: /kb/234/Q234339/
 ---
 
 ## Q234339: Volume Lock Request Does Not Release Volume After File Operation

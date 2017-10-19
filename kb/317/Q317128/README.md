@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317128: &quot;Error Loading Driver&quot; Err Msg Accessing Display Properties"
-permalink: kb/317/Q317128/
+permalink: /kb/317/Q317128/
 ---
 
 ## Q317128: &quot;Error Loading Driver&quot; Err Msg Accessing Display Properties

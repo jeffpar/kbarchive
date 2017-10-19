@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101009: How to Perform a DDEPOKE from FoxPro to Word for Windows"
-permalink: kb/101/Q101009/
+permalink: /kb/101/Q101009/
 ---
 
 ## Q101009: How to Perform a DDEPOKE from FoxPro to Word for Windows

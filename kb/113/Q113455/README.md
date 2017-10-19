@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113455: AWFAX: Excel Macro File Does Not Render Correctly When Faxed"
-permalink: kb/113/Q113455/
+permalink: /kb/113/Q113455/
 ---
 
 ## Q113455: AWFAX: Excel Macro File Does Not Render Correctly When Faxed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244382: Windows NT 4.0 Security Account Manager Replication"
-permalink: kb/244/Q244382/
+permalink: /kb/244/Q244382/
 ---
 
 ## Q244382: Windows NT 4.0 Security Account Manager Replication

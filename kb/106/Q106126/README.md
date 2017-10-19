@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106126: DoubleSpace DoubleGuard Error Codes"
-permalink: kb/106/Q106126/
+permalink: /kb/106/Q106126/
 ---
 
 ## Q106126: DoubleSpace DoubleGuard Error Codes

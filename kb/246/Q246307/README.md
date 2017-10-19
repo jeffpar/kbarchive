@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246307: BUG: EXE Crashes on Windows NT when Icon has More Than 256 color"
-permalink: kb/246/Q246307/
+permalink: /kb/246/Q246307/
 ---
 
 ## Q246307: BUG: EXE Crashes on Windows NT when Icon has More Than 256 color

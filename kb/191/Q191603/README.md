@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191603: Modifying the Autochk.exe Time-out Value"
-permalink: kb/191/Q191603/
+permalink: /kb/191/Q191603/
 ---
 
 ## Q191603: Modifying the Autochk.exe Time-out Value

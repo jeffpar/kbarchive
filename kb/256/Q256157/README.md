@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256157: PRB: Field Does Not Accept Null Values When Used with a Union"
-permalink: kb/256/Q256157/
+permalink: /kb/256/Q256157/
 ---
 
 ## Q256157: PRB: Field Does Not Accept Null Values When Used with a Union

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137980: Connecting to Windows 95 User Level Share Results Event ID 3012"
-permalink: kb/137/Q137980/
+permalink: /kb/137/Q137980/
 ---
 
 ## Q137980: Connecting to Windows 95 User Level Share Results Event ID 3012

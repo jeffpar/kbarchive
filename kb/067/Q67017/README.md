@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67017: Fontware Installation Kit Did Not Complete All Phases"
-permalink: kb/067/Q67017/
+permalink: /kb/067/Q67017/
 ---
 
 ## Q67017: Fontware Installation Kit Did Not Complete All Phases

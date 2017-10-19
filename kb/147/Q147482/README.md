@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147482: Picture in About Dialog Box Does Not Fill Frame"
-permalink: kb/147/Q147482/
+permalink: /kb/147/Q147482/
 ---
 
 ## Q147482: Picture in About Dialog Box Does Not Fill Frame

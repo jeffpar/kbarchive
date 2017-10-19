@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195355: TN5250 Logs an Event 15 For Every Configuration Change"
-permalink: kb/195/Q195355/
+permalink: /kb/195/Q195355/
 ---
 
 ## Q195355: TN5250 Logs an Event 15 For Every Configuration Change

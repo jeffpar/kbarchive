@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279523: MSN Companion e-mail trash folder does not empty nightly"
-permalink: kb/279/Q279523/
+permalink: /kb/279/Q279523/
 ---
 
 ## Q279523: MSN Companion e-mail trash folder does not empty nightly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146118: PRB: Duplicate Column Appears in Combo or List Box"
-permalink: kb/146/Q146118/
+permalink: /kb/146/Q146118/
 ---
 
 ## Q146118: PRB: Duplicate Column Appears in Combo or List Box

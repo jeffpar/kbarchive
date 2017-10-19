@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250486: Running a Management Agent for a Limited Number of Entries"
-permalink: kb/250/Q250486/
+permalink: /kb/250/Q250486/
 ---
 
 ## Q250486: Running a Management Agent for a Limited Number of Entries

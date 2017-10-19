@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138915: Listing of Standard Edition files After Installation"
-permalink: kb/138/Q138915/
+permalink: /kb/138/Q138915/
 ---
 
 ## Q138915: Listing of Standard Edition files After Installation

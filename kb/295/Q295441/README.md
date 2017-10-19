@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295441: SMS: Logon Discovery Agent Creates Multiple Connections"
-permalink: kb/295/Q295441/
+permalink: /kb/295/Q295441/
 ---
 
 ## Q295441: SMS: Logon Discovery Agent Creates Multiple Connections

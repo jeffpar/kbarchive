@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158573: STL Sample for the set::(key_, value_)comp Function"
-permalink: kb/158/Q158573/
+permalink: /kb/158/Q158573/
 ---
 
 ## Q158573: STL Sample for the set::(key_, value_)comp Function

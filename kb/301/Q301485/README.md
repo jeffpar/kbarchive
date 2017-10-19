@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301485: INFO: Services Feature Missing from SAK Unattended Install"
-permalink: kb/301/Q301485/
+permalink: /kb/301/Q301485/
 ---
 
 ## Q301485: INFO: Services Feature Missing from SAK Unattended Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166340: Direct Cable Connection May Not Work in Localized OSR2"
-permalink: kb/166/Q166340/
+permalink: /kb/166/Q166340/
 ---
 
 ## Q166340: Direct Cable Connection May Not Work in Localized OSR2

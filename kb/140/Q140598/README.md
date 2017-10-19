@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140598: FIX: AppendOnly Snapshot Recordset Update() Causes Error"
-permalink: kb/140/Q140598/
+permalink: /kb/140/Q140598/
 ---
 
 ## Q140598: FIX: AppendOnly Snapshot Recordset Update() Causes Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132387: Sound Settings Are Not Saved"
-permalink: kb/132/Q132387/
+permalink: /kb/132/Q132387/
 ---
 
 ## Q132387: Sound Settings Are Not Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67518: Shrinking and Replicating Large Images in Paintbrush"
-permalink: kb/067/Q67518/
+permalink: /kb/067/Q67518/
 ---
 
 ## Q67518: Shrinking and Replicating Large Images in Paintbrush

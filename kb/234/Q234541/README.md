@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234541: STOP 0x00000050 When Source Routing Info Exceeds 18 Bytes"
-permalink: kb/234/Q234541/
+permalink: /kb/234/Q234541/
 ---
 
 ## Q234541: STOP 0x00000050 When Source Routing Info Exceeds 18 Bytes

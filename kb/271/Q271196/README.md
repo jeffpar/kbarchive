@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271196: IIS Log File Entries Have the Incorrect Date and Time Stamp"
-permalink: kb/271/Q271196/
+permalink: /kb/271/Q271196/
 ---
 
 ## Q271196: IIS Log File Entries Have the Incorrect Date and Time Stamp

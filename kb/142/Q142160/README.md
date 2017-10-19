@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142160: How to Automate FTP Installation"
-permalink: kb/142/Q142160/
+permalink: /kb/142/Q142160/
 ---
 
 ## Q142160: How to Automate FTP Installation

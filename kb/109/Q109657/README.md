@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109657: Asimov: Can't Do a Global Search"
-permalink: kb/109/Q109657/
+permalink: /kb/109/Q109657/
 ---
 
 ## Q109657: Asimov: Can't Do a Global Search

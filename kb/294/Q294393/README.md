@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294393: Error &quot;No LU in LU Group Free&quot; Occurs When Starting 3270 Applet"
-permalink: kb/294/Q294393/
+permalink: /kb/294/Q294393/
 ---
 
 ## Q294393: Error &quot;No LU in LU Group Free&quot; Occurs When Starting 3270 Applet

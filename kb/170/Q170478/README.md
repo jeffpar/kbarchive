@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170478: XCON: Err Msg: The Recipient could not be Processed"
-permalink: kb/170/Q170478/
+permalink: /kb/170/Q170478/
 ---
 
 ## Q170478: XCON: Err Msg: The Recipient could not be Processed

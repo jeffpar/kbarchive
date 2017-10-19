@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190846: BUG: Calling AsyncRead on a File Twice Causes Error 698"
-permalink: kb/190/Q190846/
+permalink: /kb/190/Q190846/
 ---
 
 ## Q190846: BUG: Calling AsyncRead on a File Twice Causes Error 698

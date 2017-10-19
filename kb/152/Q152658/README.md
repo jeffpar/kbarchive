@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152658: XCLN: Sort Button Behaves Unexpectedly on Forms"
-permalink: kb/152/Q152658/
+permalink: /kb/152/Q152658/
 ---
 
 ## Q152658: XCLN: Sort Button Behaves Unexpectedly on Forms

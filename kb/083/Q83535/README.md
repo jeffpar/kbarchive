@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83535: Mac Fax: MailSender 32-bit Compatibility"
-permalink: kb/083/Q83535/
+permalink: /kb/083/Q83535/
 ---
 
 ## Q83535: Mac Fax: MailSender 32-bit Compatibility

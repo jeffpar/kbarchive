@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98514: MS-DOS Reports Zero Bytes Free on a Network Drive"
-permalink: kb/098/Q98514/
+permalink: /kb/098/Q98514/
 ---
 
 ## Q98514: MS-DOS Reports Zero Bytes Free on a Network Drive

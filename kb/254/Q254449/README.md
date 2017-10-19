@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254449: EST2001: Help Answer Wizard and Index Tabs Hang"
-permalink: kb/254/Q254449/
+permalink: /kb/254/Q254449/
 ---
 
 ## Q254449: EST2001: Help Answer Wizard and Index Tabs Hang

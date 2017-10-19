@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139969: FIX: File Extension Lost if Save As Option is Used in Win95"
-permalink: kb/139/Q139969/
+permalink: /kb/139/Q139969/
 ---
 
 ## Q139969: FIX: File Extension Lost if Save As Option is Used in Win95

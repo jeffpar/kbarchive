@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141309: MS Plus! Setup Cannot Display 1 GB or More Free Disk Space"
-permalink: kb/141/Q141309/
+permalink: /kb/141/Q141309/
 ---
 
 ## Q141309: MS Plus! Setup Cannot Display 1 GB or More Free Disk Space

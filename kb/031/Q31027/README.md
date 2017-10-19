@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31027: Windows 3.0 Video Setup for Compaq Deskpro 286"
-permalink: kb/031/Q31027/
+permalink: /kb/031/Q31027/
 ---
 
 ## Q31027: Windows 3.0 Video Setup for Compaq Deskpro 286

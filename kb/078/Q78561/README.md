@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78561: Incorrect Settings in SYSTEM.INI for Sound Blaster Pro"
-permalink: kb/078/Q78561/
+permalink: /kb/078/Q78561/
 ---
 
 ## Q78561: Incorrect Settings in SYSTEM.INI for Sound Blaster Pro

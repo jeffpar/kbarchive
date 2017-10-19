@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119590: PC DirSync: Conflicting Run Window Times in Dir-Sync Schedule"
-permalink: kb/119/Q119590/
+permalink: /kb/119/Q119590/
 ---
 
 ## Q119590: PC DirSync: Conflicting Run Window Times in Dir-Sync Schedule

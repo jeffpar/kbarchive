@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304035: SMS: Delete Package Wizard Displays Incorrect Value of &quot;Never&quot;"
-permalink: kb/304/Q304035/
+permalink: /kb/304/Q304035/
 ---
 
 ## Q304035: SMS: Delete Package Wizard Displays Incorrect Value of &quot;Never&quot;

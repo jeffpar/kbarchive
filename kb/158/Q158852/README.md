@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158852: XCLN: Client Cannot Read Project 4.0 Files Sent Through Exchange"
-permalink: kb/158/Q158852/
+permalink: /kb/158/Q158852/
 ---
 
 ## Q158852: XCLN: Client Cannot Read Project 4.0 Files Sent Through Exchange

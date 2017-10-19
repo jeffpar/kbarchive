@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76871: Support for DSP Access in Multimedia Windows"
-permalink: kb/076/Q76871/
+permalink: /kb/076/Q76871/
 ---
 
 ## Q76871: Support for DSP Access in Multimedia Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106125: DBLSPACE /UNCOMPRESS Does Not Remove DBLSPACE.SYS Entry"
-permalink: kb/106/Q106125/
+permalink: /kb/106/Q106125/
 ---
 
 ## Q106125: DBLSPACE /UNCOMPRESS Does Not Remove DBLSPACE.SYS Entry

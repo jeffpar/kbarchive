@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142158: PRB: QuickWin App Causes Access Violation Under Windows 95"
-permalink: kb/142/Q142158/
+permalink: /kb/142/Q142158/
 ---
 
 ## Q142158: PRB: QuickWin App Causes Access Violation Under Windows 95

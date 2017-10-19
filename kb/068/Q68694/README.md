@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68694: DOCERR: RTF Codes &#92;fi&lt;n&gt; and &#92;li&lt;n&gt; Use Twips Instead of Spaces"
-permalink: kb/068/Q68694/
+permalink: /kb/068/Q68694/
 ---
 
 ## Q68694: DOCERR: RTF Codes &#92;fi&lt;n&gt; and &#92;li&lt;n&gt; Use Twips Instead of Spaces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123201: Bookshelf Atlas Map Printed on LaserJet III/IIISi Is Dithered"
-permalink: kb/123/Q123201/
+permalink: /kb/123/Q123201/
 ---
 
 ## Q123201: Bookshelf Atlas Map Printed on LaserJet III/IIISi Is Dithered

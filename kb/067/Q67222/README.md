@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67222: Calendar Err Msg: Cannot Add Another Date to Calendar..."
-permalink: kb/067/Q67222/
+permalink: /kb/067/Q67222/
 ---
 
 ## Q67222: Calendar Err Msg: Cannot Add Another Date to Calendar...

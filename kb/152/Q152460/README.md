@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152460: Troubleshooting SrvAny Using Cmd.exe"
-permalink: kb/152/Q152460/
+permalink: /kb/152/Q152460/
 ---
 
 ## Q152460: Troubleshooting SrvAny Using Cmd.exe

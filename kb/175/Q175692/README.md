@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175692: PRB: Unable to Remove Previous MSDN Installation"
-permalink: kb/175/Q175692/
+permalink: /kb/175/Q175692/
 ---
 
 ## Q175692: PRB: Unable to Remove Previous MSDN Installation

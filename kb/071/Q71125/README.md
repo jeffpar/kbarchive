@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71125: Windows 3.0 File Manager Does Not Search Entire Hard Drive"
-permalink: kb/071/Q71125/
+permalink: /kb/071/Q71125/
 ---
 
 ## Q71125: Windows 3.0 File Manager Does Not Search Entire Hard Drive

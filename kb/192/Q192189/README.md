@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192189: XADM: Database Does Not Shrink after Several Mailbox Deletions"
-permalink: kb/192/Q192189/
+permalink: /kb/192/Q192189/
 ---
 
 ## Q192189: XADM: Database Does Not Shrink after Several Mailbox Deletions

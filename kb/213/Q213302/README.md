@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213302: SMS: Reports on Alpha Remote Admin Console Displays Wrong Time"
-permalink: kb/213/Q213302/
+permalink: /kb/213/Q213302/
 ---
 
 ## Q213302: SMS: Reports on Alpha Remote Admin Console Displays Wrong Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99527: Backup, MSAV, and Defrag Don't Display Correctly on AST"
-permalink: kb/099/Q99527/
+permalink: /kb/099/Q99527/
 ---
 
 ## Q99527: Backup, MSAV, and Defrag Don't Display Correctly on AST

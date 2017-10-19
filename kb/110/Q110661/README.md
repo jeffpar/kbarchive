@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110661: PRB: Windows 3.1 SDK HOOKS Sample Causes a GP Fault"
-permalink: kb/110/Q110661/
+permalink: /kb/110/Q110661/
 ---
 
 ## Q110661: PRB: Windows 3.1 SDK HOOKS Sample Causes a GP Fault

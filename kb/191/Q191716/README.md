@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191716: BUG: Assigning Resultset to RDC Does Not Update Control(s)"
-permalink: kb/191/Q191716/
+permalink: /kb/191/Q191716/
 ---
 
 ## Q191716: BUG: Assigning Resultset to RDC Does Not Update Control(s)

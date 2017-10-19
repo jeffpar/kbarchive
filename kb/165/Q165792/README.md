@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165792: FIX: MSDEV.EXE Application Error When Building an Application"
-permalink: kb/165/Q165792/
+permalink: /kb/165/Q165792/
 ---
 
 ## Q165792: FIX: MSDEV.EXE Application Error When Building an Application

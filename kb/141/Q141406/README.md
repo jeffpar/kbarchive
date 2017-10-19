@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141406: Dangerous Creatures: WindowShade Causes Screen Redraw Problem"
-permalink: kb/141/Q141406/
+permalink: /kb/141/Q141406/
 ---
 
 ## Q141406: Dangerous Creatures: WindowShade Causes Screen Redraw Problem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184512: SMS: Despooler Refreshes Every File in Package Directory"
-permalink: kb/184/Q184512/
+permalink: /kb/184/Q184512/
 ---
 
 ## Q184512: SMS: Despooler Refreshes Every File in Package Directory

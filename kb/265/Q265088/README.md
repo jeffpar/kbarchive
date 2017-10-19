@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265088: XCLN: Free and Busy Details Unavailable from Different Time Zone"
-permalink: kb/265/Q265088/
+permalink: /kb/265/Q265088/
 ---
 
 ## Q265088: XCLN: Free and Busy Details Unavailable from Different Time Zone

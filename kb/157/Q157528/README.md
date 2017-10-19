@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157528: WD97: &quot;Outline Effect&quot; Text Garbled or in All Caps When Printed"
-permalink: kb/157/Q157528/
+permalink: /kb/157/Q157528/
 ---
 
 ## Q157528: WD97: &quot;Outline Effect&quot; Text Garbled or in All Caps When Printed

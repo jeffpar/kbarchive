@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108161: Deleting TrueType Font Weights (Bold, Italic, Bold/Italic)"
-permalink: kb/108/Q108161/
+permalink: /kb/108/Q108161/
 ---
 
 ## Q108161: Deleting TrueType Font Weights (Bold, Italic, Bold/Italic)

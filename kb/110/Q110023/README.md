@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110023: GP Fault When Playing Multiple AVI Files"
-permalink: kb/110/Q110023/
+permalink: /kb/110/Q110023/
 ---
 
 ## Q110023: GP Fault When Playing Multiple AVI Files

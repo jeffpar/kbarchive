@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132401: 5250 Printer LU Hangs When Client-Server LAN Session is Lost"
-permalink: kb/132/Q132401/
+permalink: /kb/132/Q132401/
 ---
 
 ## Q132401: 5250 Printer LU Hangs When Client-Server LAN Session is Lost

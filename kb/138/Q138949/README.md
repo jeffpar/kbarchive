@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138949: PPT: Shadows Not Printed from Organization Chart 2.0"
-permalink: kb/138/Q138949/
+permalink: /kb/138/Q138949/
 ---
 
 ## Q138949: PPT: Shadows Not Printed from Organization Chart 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72287: WD97: Using AppActivate to Switch to Another Application"
-permalink: kb/072/Q72287/
+permalink: /kb/072/Q72287/
 ---
 
 ## Q72287: WD97: Using AppActivate to Switch to Another Application

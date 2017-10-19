@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102644: WEP and Link Error L2023 Export Imported"
-permalink: kb/102/Q102644/
+permalink: /kb/102/Q102644/
 ---
 
 ## Q102644: WEP and Link Error L2023 Export Imported

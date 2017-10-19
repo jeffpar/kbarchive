@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172235: Extraction Failed-Service Pack Setup Error When Loading SP3"
-permalink: kb/172/Q172235/
+permalink: /kb/172/Q172235/
 ---
 
 ## Q172235: Extraction Failed-Service Pack Setup Error When Loading SP3

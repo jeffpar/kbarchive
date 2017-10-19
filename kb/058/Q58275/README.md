@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58275: Swapdisk=/E Switch Not Supported in Windows 3.0/3.1"
-permalink: kb/058/Q58275/
+permalink: /kb/058/Q58275/
 ---
 
 ## Q58275: Swapdisk=/E Switch Not Supported in Windows 3.0/3.1

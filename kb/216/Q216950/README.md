@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216950: How to Enable ODBC Connection Pooling Performance Counters"
-permalink: kb/216/Q216950/
+permalink: /kb/216/Q216950/
 ---
 
 ## Q216950: How to Enable ODBC Connection Pooling Performance Counters

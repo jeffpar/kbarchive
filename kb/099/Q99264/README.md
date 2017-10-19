@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99264: Bookshelf: Extraneous Scrolling Region on 1024 x 768 Display"
-permalink: kb/099/Q99264/
+permalink: /kb/099/Q99264/
 ---
 
 ## Q99264: Bookshelf: Extraneous Scrolling Region on 1024 x 768 Display

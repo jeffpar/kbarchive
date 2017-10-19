@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238100: HOWTO: Limit 32-Bit MFC SDI App to a Single Instance in WinCE"
-permalink: kb/238/Q238100/
+permalink: /kb/238/Q238100/
 ---
 
 ## Q238100: HOWTO: Limit 32-Bit MFC SDI App to a Single Instance in WinCE

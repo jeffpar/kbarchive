@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92878: WFWG NET.EXE Err Msg: MS-DOS Popup for Workgroups Could Not..."
-permalink: kb/092/Q92878/
+permalink: /kb/092/Q92878/
 ---
 
 ## Q92878: WFWG NET.EXE Err Msg: MS-DOS Popup for Workgroups Could Not...

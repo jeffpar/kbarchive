@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105830: GP Fault in MS Mail &quot;Work Offline&quot; Dialog When Exiting WFWG"
-permalink: kb/105/Q105830/
+permalink: /kb/105/Q105830/
 ---
 
 ## Q105830: GP Fault in MS Mail &quot;Work Offline&quot; Dialog When Exiting WFWG

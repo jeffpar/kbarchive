@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100554: INFO: Using ADIR() Function to Obtain MS-DOS File Information"
-permalink: kb/100/Q100554/
+permalink: /kb/100/Q100554/
 ---
 
 ## Q100554: INFO: Using ADIR() Function to Obtain MS-DOS File Information

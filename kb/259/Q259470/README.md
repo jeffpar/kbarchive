@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259470: Practical Standards for Visual Basic Comment and Corrections"
-permalink: kb/259/Q259470/
+permalink: /kb/259/Q259470/
 ---
 
 ## Q259470: Practical Standards for Visual Basic Comment and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169864: Windows 95 Creates New Temp Folder"
-permalink: kb/169/Q169864/
+permalink: /kb/169/Q169864/
 ---
 
 ## Q169864: Windows 95 Creates New Temp Folder

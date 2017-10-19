@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q142284: HOWTO: Use gaErrors[] to Find Out Why a Trigger Failed"
-permalink: kb/142/Q142284/
+title: "Q142284: HOWTO: Use gaErrors&#91;&#93; to Find Out Why a Trigger Failed"
+permalink: /kb/142/Q142284/
 ---
 
-## Q142284: HOWTO: Use gaErrors[] to Find Out Why a Trigger Failed
+## Q142284: HOWTO: Use gaErrors&#91;&#93; to Find Out Why a Trigger Failed
 
 	Article: Q142284
 	Product(s): Microsoft FoxPro

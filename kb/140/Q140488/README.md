@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140488: HOWTO: How to Determine the Number of Supported Colors"
-permalink: kb/140/Q140488/
+permalink: /kb/140/Q140488/
 ---
 
 ## Q140488: HOWTO: How to Determine the Number of Supported Colors

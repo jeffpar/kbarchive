@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157073: PRB: Exception Not Caught Using CArchive or CFile"
-permalink: kb/157/Q157073/
+permalink: /kb/157/Q157073/
 ---
 
 ## Q157073: PRB: Exception Not Caught Using CArchive or CFile

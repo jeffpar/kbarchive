@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134542: Extended video (VESA) Programs Display Incorrectly"
-permalink: kb/134/Q134542/
+permalink: /kb/134/Q134542/
 ---
 
 ## Q134542: Extended video (VESA) Programs Display Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115955: How to Determine the Version of QuickTime on a Macintosh"
-permalink: kb/115/Q115955/
+permalink: /kb/115/Q115955/
 ---
 
 ## Q115955: How to Determine the Version of QuickTime on a Macintosh

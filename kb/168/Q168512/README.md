@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168512: IBMTRP.SYS Causes Stop 0x0000000A During Shutdown."
-permalink: kb/168/Q168512/
+permalink: /kb/168/Q168512/
 ---
 
 ## Q168512: IBMTRP.SYS Causes Stop 0x0000000A During Shutdown.

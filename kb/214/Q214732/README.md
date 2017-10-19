@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214732: SFU Password Synchronization to Digital UNIX Server Problem"
-permalink: kb/214/Q214732/
+permalink: /kb/214/Q214732/
 ---
 
 ## Q214732: SFU Password Synchronization to Digital UNIX Server Problem

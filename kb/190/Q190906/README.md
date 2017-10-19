@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190906: BUG: DBGrid Displays Blank Rows When Modifying Column Width"
-permalink: kb/190/Q190906/
+permalink: /kb/190/Q190906/
 ---
 
 ## Q190906: BUG: DBGrid Displays Blank Rows When Modifying Column Width

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120071: BUG: Record Instance Cannot Have Same Name as a Record Field"
-permalink: kb/120/Q120071/
+permalink: /kb/120/Q120071/
 ---
 
 ## Q120071: BUG: Record Instance Cannot Have Same Name as a Record Field

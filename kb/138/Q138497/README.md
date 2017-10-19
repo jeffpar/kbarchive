@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138497: How to Create a Startup Screen in Visual FoxPro"
-permalink: kb/138/Q138497/
+permalink: /kb/138/Q138497/
 ---
 
 ## Q138497: How to Create a Startup Screen in Visual FoxPro

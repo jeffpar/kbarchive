@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238603: SMS: RRAS May Not Work with Event 7023 After Installing SMS 2.0"
-permalink: kb/238/Q238603/
+permalink: /kb/238/Q238603/
 ---
 
 ## Q238603: SMS: RRAS May Not Work with Event 7023 After Installing SMS 2.0

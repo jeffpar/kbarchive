@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234432: XADM: Running Isinteg May Truncate Databases to 8 KB"
-permalink: kb/234/Q234432/
+permalink: /kb/234/Q234432/
 ---
 
 ## Q234432: XADM: Running Isinteg May Truncate Databases to 8 KB

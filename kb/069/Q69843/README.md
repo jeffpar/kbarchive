@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69843: Windows Err Msgs: Lotus 1-2-3 Version 3.1 and Windows"
-permalink: kb/069/Q69843/
+permalink: /kb/069/Q69843/
 ---
 
 ## Q69843: Windows Err Msgs: Lotus 1-2-3 Version 3.1 and Windows

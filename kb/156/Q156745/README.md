@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156745: SMS: App Log Error: Remote Control Keyboard Driver Failed..."
-permalink: kb/156/Q156745/
+permalink: /kb/156/Q156745/
 ---
 
 ## Q156745: SMS: App Log Error: Remote Control Keyboard Driver Failed...

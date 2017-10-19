@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140784: Call to NetUserGetLocalGroups results in NERR_UserNotFound"
-permalink: kb/140/Q140784/
+permalink: /kb/140/Q140784/
 ---
 
 ## Q140784: Call to NetUserGetLocalGroups results in NERR_UserNotFound

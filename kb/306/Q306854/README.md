@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306854: OpenGL Program May Generate Access Violation Error Message"
-permalink: kb/306/Q306854/
+permalink: /kb/306/Q306854/
 ---
 
 ## Q306854: OpenGL Program May Generate Access Violation Error Message

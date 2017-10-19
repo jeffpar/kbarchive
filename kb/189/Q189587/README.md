@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189587: XFOR: How the Internet Mail Service Handles Low Disk Space"
-permalink: kb/189/Q189587/
+permalink: /kb/189/Q189587/
 ---
 
 ## Q189587: XFOR: How the Internet Mail Service Handles Low Disk Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135671: PPT7: How to Play Sound Files Across Multiple Slides"
-permalink: kb/135/Q135671/
+permalink: /kb/135/Q135671/
 ---
 
 ## Q135671: PPT7: How to Play Sound Files Across Multiple Slides

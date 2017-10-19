@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146126: XFOR: Controlling IMC Loopback Connections"
-permalink: kb/146/Q146126/
+permalink: /kb/146/Q146126/
 ---
 
 ## Q146126: XFOR: Controlling IMC Loopback Connections

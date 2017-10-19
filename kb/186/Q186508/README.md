@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186508: Terminal Server Commands: CONNECT"
-permalink: kb/186/Q186508/
+permalink: /kb/186/Q186508/
 ---
 
 ## Q186508: Terminal Server Commands: CONNECT

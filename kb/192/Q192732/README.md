@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192732: PC-cillin on Win95 Causes Srv Event 2000"
-permalink: kb/192/Q192732/
+permalink: /kb/192/Q192732/
 ---
 
 ## Q192732: PC-cillin on Win95 Causes Srv Event 2000

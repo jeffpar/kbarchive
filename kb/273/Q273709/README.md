@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273709: Users Created With Active Directory MA Have A Blank Password"
-permalink: kb/273/Q273709/
+permalink: /kb/273/Q273709/
 ---
 
 ## Q273709: Users Created With Active Directory MA Have A Blank Password

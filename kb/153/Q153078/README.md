@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153078: Err Msg: Your Local Shared Schedule+ File Was Previously..."
-permalink: kb/153/Q153078/
+permalink: /kb/153/Q153078/
 ---
 
 ## Q153078: Err Msg: Your Local Shared Schedule+ File Was Previously...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293109: Saving Archived E-mails Before Deleting MSN Explorer User Accoun"
-permalink: kb/293/Q293109/
+permalink: /kb/293/Q293109/
 ---
 
 ## Q293109: Saving Archived E-mails Before Deleting MSN Explorer User Accoun

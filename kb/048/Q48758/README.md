@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48758: Vertical Speed Indicator Overreacts in Flight Simulator"
-permalink: kb/048/Q48758/
+permalink: /kb/048/Q48758/
 ---
 
 ## Q48758: Vertical Speed Indicator Overreacts in Flight Simulator

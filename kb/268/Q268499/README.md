@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268499: SMS: Software Distribution Does Not Function on Alpha Platform"
-permalink: kb/268/Q268499/
+permalink: /kb/268/Q268499/
 ---
 
 ## Q268499: SMS: Software Distribution Does Not Function on Alpha Platform

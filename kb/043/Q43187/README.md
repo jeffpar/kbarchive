@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43187: Mac Wkst: Diamond Displayed Next to Microsoft Mail DA"
-permalink: kb/043/Q43187/
+permalink: /kb/043/Q43187/
 ---
 
 ## Q43187: Mac Wkst: Diamond Displayed Next to Microsoft Mail DA

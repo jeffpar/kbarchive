@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175531: White Paper: Migrating Applications to Visual Basic 5.0"
-permalink: kb/175/Q175531/
+permalink: /kb/175/Q175531/
 ---
 
 ## Q175531: White Paper: Migrating Applications to Visual Basic 5.0

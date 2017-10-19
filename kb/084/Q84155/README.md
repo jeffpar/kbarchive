@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84155: WIN.INI Switch to Disable Network-Specific Dialog Boxes"
-permalink: kb/084/Q84155/
+permalink: /kb/084/Q84155/
 ---
 
 ## Q84155: WIN.INI Switch to Disable Network-Specific Dialog Boxes

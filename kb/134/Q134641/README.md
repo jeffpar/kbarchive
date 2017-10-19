@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134641: DOCERR: Calling Parent Class Method Code Example Is Incorrect"
-permalink: kb/134/Q134641/
+permalink: /kb/134/Q134641/
 ---
 
 ## Q134641: DOCERR: Calling Parent Class Method Code Example Is Incorrect

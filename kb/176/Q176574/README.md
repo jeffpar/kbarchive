@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176574: Correlation Error Causes Unexpected Loss of TN3270(E) Sessions"
-permalink: kb/176/Q176574/
+permalink: /kb/176/Q176574/
 ---
 
 ## Q176574: Correlation Error Causes Unexpected Loss of TN3270(E) Sessions

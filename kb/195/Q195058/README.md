@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195058: Pinball Arcade: Distorted Graphics or Horizontal Lines in Game"
-permalink: kb/195/Q195058/
+permalink: /kb/195/Q195058/
 ---
 
 ## Q195058: Pinball Arcade: Distorted Graphics or Horizontal Lines in Game

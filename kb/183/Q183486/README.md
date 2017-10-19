@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183486: Using Multilink and ISDN Adapter Second Channel Does Not Connect"
-permalink: kb/183/Q183486/
+permalink: /kb/183/Q183486/
 ---
 
 ## Q183486: Using Multilink and ISDN Adapter Second Channel Does Not Connect

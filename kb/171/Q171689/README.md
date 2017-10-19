@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171689: WD97: Mail Merge Main and Data Documents Not Saved in Background"
-permalink: kb/171/Q171689/
+permalink: /kb/171/Q171689/
 ---
 
 ## Q171689: WD97: Mail Merge Main and Data Documents Not Saved in Background

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139766: Julia Child: Windows Minimize All Option Not Available"
-permalink: kb/139/Q139766/
+permalink: /kb/139/Q139766/
 ---
 
 ## Q139766: Julia Child: Windows Minimize All Option Not Available

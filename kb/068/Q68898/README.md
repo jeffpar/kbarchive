@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68898: Maximized MS-DOS Application Window Does Not Fill Screen"
-permalink: kb/068/Q68898/
+permalink: /kb/068/Q68898/
 ---
 
 ## Q68898: Maximized MS-DOS Application Window Does Not Fill Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90015: Mail in Startup Group Conflicts with Sound System Setup"
-permalink: kb/090/Q90015/
+permalink: /kb/090/Q90015/
 ---
 
 ## Q90015: Mail in Startup Group Conflicts with Sound System Setup

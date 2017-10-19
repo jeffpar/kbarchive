@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72929: Windows Resource Kit HDC Memory Viewer and Windows 3.0"
-permalink: kb/072/Q72929/
+permalink: /kb/072/Q72929/
 ---
 
 ## Q72929: Windows Resource Kit HDC Memory Viewer and Windows 3.0

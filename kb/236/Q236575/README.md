@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236575: XADM: Intersite Directory Replication Stops Functioning"
-permalink: kb/236/Q236575/
+permalink: /kb/236/Q236575/
 ---
 
 ## Q236575: XADM: Intersite Directory Replication Stops Functioning

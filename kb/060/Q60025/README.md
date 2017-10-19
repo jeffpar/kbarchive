@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60025: Mac Form: Removing a Custom Form on a Mail Server"
-permalink: kb/060/Q60025/
+permalink: /kb/060/Q60025/
 ---
 
 ## Q60025: Mac Form: Removing a Custom Form on a Mail Server

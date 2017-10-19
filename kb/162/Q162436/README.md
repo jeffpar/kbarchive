@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162436: WD97: Float Over Text Option Unavailable Recording Macro"
-permalink: kb/162/Q162436/
+permalink: /kb/162/Q162436/
 ---
 
 ## Q162436: WD97: Float Over Text Option Unavailable Recording Macro

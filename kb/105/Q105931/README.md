@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105931: PC WRmt: Problems with Extended Characters"
-permalink: kb/105/Q105931/
+permalink: /kb/105/Q105931/
 ---
 
 ## Q105931: PC WRmt: Problems with Extended Characters

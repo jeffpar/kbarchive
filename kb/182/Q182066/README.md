@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182066: Application Exception in PPD5250 When Set Line Density Is Zero"
-permalink: kb/182/Q182066/
+permalink: /kb/182/Q182066/
 ---
 
 ## Q182066: Application Exception in PPD5250 When Set Line Density Is Zero

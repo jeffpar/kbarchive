@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229032: XADM:How to Install Exchange Server w/Circular Logging Disabled"
-permalink: kb/229/Q229032/
+permalink: /kb/229/Q229032/
 ---
 
 ## Q229032: XADM:How to Install Exchange Server w/Circular Logging Disabled

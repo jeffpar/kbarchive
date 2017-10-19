@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135170: Cannot Use Alternate Font Character Set in WordPad"
-permalink: kb/135/Q135170/
+permalink: /kb/135/Q135170/
 ---
 
 ## Q135170: Cannot Use Alternate Font Character Set in WordPad

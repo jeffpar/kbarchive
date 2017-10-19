@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65475: OS/2 LAN Manager: How to Remove Local and User-Level Security"
-permalink: kb/065/Q65475/
+permalink: /kb/065/Q65475/
 ---
 
 ## Q65475: OS/2 LAN Manager: How to Remove Local and User-Level Security

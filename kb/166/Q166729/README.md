@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166729: Cannot Install Driver for ESS1888 Sound Card"
-permalink: kb/166/Q166729/
+permalink: /kb/166/Q166729/
 ---
 
 ## Q166729: Cannot Install Driver for ESS1888 Sound Card

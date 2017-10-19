@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112877: PC Win: Comma Causes Problems with Name Resolution"
-permalink: kb/112/Q112877/
+permalink: /kb/112/Q112877/
 ---
 
 ## Q112877: PC Win: Comma Causes Problems with Name Resolution

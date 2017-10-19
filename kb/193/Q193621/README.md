@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193621: XCLN: Err Msg: Microsoft_OLE2--ProgIDFromCLSID not found"
-permalink: kb/193/Q193621/
+permalink: /kb/193/Q193621/
 ---
 
 ## Q193621: XCLN: Err Msg: Microsoft_OLE2--ProgIDFromCLSID not found

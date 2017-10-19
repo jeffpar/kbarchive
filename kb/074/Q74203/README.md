@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74203: MS-DOS 5 Can't Install On An IBM AT With Plus Hardcard II XL"
-permalink: kb/074/Q74203/
+permalink: /kb/074/Q74203/
 ---
 
 ## Q74203: MS-DOS 5 Can't Install On An IBM AT With Plus Hardcard II XL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169671: XFOR: MSMI Terminates on Bad SMTP Address"
-permalink: kb/169/Q169671/
+permalink: /kb/169/Q169671/
 ---
 
 ## Q169671: XFOR: MSMI Terminates on Bad SMTP Address

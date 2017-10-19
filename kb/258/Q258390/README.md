@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258390: Baseball 2001: Textures for the Players and Crowd Are Distorted"
-permalink: kb/258/Q258390/
+permalink: /kb/258/Q258390/
 ---
 
 ## Q258390: Baseball 2001: Textures for the Players and Crowd Are Distorted

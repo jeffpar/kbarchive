@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201094: PRB: Error C2259 on &quot;char&quot; Type Redefinition in Visual C++"
-permalink: kb/201/Q201094/
+permalink: /kb/201/Q201094/
 ---
 
 ## Q201094: PRB: Error C2259 on &quot;char&quot; Type Redefinition in Visual C++

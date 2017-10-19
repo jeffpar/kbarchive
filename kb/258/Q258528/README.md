@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258528: HOWTO: Read a REG_MULTI_SZ From the Registry"
-permalink: kb/258/Q258528/
+permalink: /kb/258/Q258528/
 ---
 
 ## Q258528: HOWTO: Read a REG_MULTI_SZ From the Registry

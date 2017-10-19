@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142561: IIS ErrMsg: Specified Driver Could Not Be Loaded"
-permalink: kb/142/Q142561/
+permalink: /kb/142/Q142561/
 ---
 
 ## Q142561: IIS ErrMsg: Specified Driver Could Not Be Loaded

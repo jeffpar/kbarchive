@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223005: XFOR: RTF Information Lost When Sent Through GroupWise Connector"
-permalink: kb/223/Q223005/
+permalink: /kb/223/Q223005/
 ---
 
 ## Q223005: XFOR: RTF Information Lost When Sent Through GroupWise Connector

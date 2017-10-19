@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196454: FIX: Application Error in Windows NT With Access 97"
-permalink: kb/196/Q196454/
+permalink: /kb/196/Q196454/
 ---
 
 ## Q196454: FIX: Application Error in Windows NT With Access 97

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186270: BUG: SSTab Control Containing OLE Control May Crash"
-permalink: kb/186/Q186270/
+permalink: /kb/186/Q186270/
 ---
 
 ## Q186270: BUG: SSTab Control Containing OLE Control May Crash

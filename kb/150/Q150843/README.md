@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150843: FPNW: Event IDs 2635 and 2748"
-permalink: kb/150/Q150843/
+permalink: /kb/150/Q150843/
 ---
 
 ## Q150843: FPNW: Event IDs 2635 and 2748

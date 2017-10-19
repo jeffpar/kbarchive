@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237710: NBA 2000: Pointer Disappears When Pointing at Help Menu Items"
-permalink: kb/237/Q237710/
+permalink: /kb/237/Q237710/
 ---
 
 ## Q237710: NBA 2000: Pointer Disappears When Pointing at Help Menu Items

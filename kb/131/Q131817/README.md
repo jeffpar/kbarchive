@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131817: Julia Child: Readme.wri Contents (Part 2 of 2)"
-permalink: kb/131/Q131817/
+permalink: /kb/131/Q131817/
 ---
 
 ## Q131817: Julia Child: Readme.wri Contents (Part 2 of 2)

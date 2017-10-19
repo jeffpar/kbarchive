@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154701: DIR Command on a NetWare Directory Results in &quot;File Not Found&quot;"
-permalink: kb/154/Q154701/
+permalink: /kb/154/Q154701/
 ---
 
 ## Q154701: DIR Command on a NetWare Directory Results in &quot;File Not Found&quot;

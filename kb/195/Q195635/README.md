@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195635: Install /S100 Series Compaq Switched SCSI Cluster"
-permalink: kb/195/Q195635/
+permalink: /kb/195/Q195635/
 ---
 
 ## Q195635: Install /S100 Series Compaq Switched SCSI Cluster

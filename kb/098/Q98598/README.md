@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98598: HOWTO: Use CFormView in SDI and MDI Applications"
-permalink: kb/098/Q98598/
+permalink: /kb/098/Q98598/
 ---
 
 ## Q98598: HOWTO: Use CFormView in SDI and MDI Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232073: Content Ratings Dates/Times in MMC Use Time Zone of Client"
-permalink: kb/232/Q232073/
+permalink: /kb/232/Q232073/
 ---
 
 ## Q232073: Content Ratings Dates/Times in MMC Use Time Zone of Client

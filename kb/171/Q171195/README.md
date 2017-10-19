@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171195: &quot;Fatal Exception&quot; Error Suspending and Resuming with MSDLC32"
-permalink: kb/171/Q171195/
+permalink: /kb/171/Q171195/
 ---
 
 ## Q171195: &quot;Fatal Exception&quot; Error Suspending and Resuming with MSDLC32

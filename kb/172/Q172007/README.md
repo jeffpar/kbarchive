@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172007: MSB Rainforest: Hangs When Exiting the Driver's License Screen"
-permalink: kb/172/Q172007/
+permalink: /kb/172/Q172007/
 ---
 
 ## Q172007: MSB Rainforest: Hangs When Exiting the Driver's License Screen

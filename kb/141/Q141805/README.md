@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141805: FIX: 'Unknown member' Error Loading Form"
-permalink: kb/141/Q141805/
+permalink: /kb/141/Q141805/
 ---
 
 ## Q141805: FIX: 'Unknown member' Error Loading Form

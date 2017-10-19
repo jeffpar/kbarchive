@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178722: XCLN: Exchange Client Hangs with Norton Anti-Virus AutoProtect"
-permalink: kb/178/Q178722/
+permalink: /kb/178/Q178722/
 ---
 
 ## Q178722: XCLN: Exchange Client Hangs with Norton Anti-Virus AutoProtect

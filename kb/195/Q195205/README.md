@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195205: Outlook/Schedule+ Error &quot;req32.cfg could not be opened&quot;"
-permalink: kb/195/Q195205/
+permalink: /kb/195/Q195205/
 ---
 
 ## Q195205: Outlook/Schedule+ Error &quot;req32.cfg could not be opened&quot;

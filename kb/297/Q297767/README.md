@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297767: FIX: Strings Stored in MEM Files Limited To 64K"
-permalink: kb/297/Q297767/
+permalink: /kb/297/Q297767/
 ---
 
 ## Q297767: FIX: Strings Stored in MEM Files Limited To 64K

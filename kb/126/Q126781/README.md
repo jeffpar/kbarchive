@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126781: Cinemania: Film Clips Do Not Play on Reveal TV 300 Card"
-permalink: kb/126/Q126781/
+permalink: /kb/126/Q126781/
 ---
 
 ## Q126781: Cinemania: Film Clips Do Not Play on Reveal TV 300 Card

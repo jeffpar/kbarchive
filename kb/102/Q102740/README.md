@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102740: Macintosh Alias Does Not Use Microsoft UAM"
-permalink: kb/102/Q102740/
+permalink: /kb/102/Q102740/
 ---
 
 ## Q102740: Macintosh Alias Does Not Use Microsoft UAM

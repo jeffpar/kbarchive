@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165420: FIX: SQL Breakpoint Not Hit After Executing SP in Another DB"
-permalink: kb/165/Q165420/
+permalink: /kb/165/Q165420/
 ---
 
 ## Q165420: FIX: SQL Breakpoint Not Hit After Executing SP in Another DB

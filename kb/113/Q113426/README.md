@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113426: BUG: DX1020 or Application Error from H2INC"
-permalink: kb/113/Q113426/
+permalink: /kb/113/Q113426/
 ---
 
 ## Q113426: BUG: DX1020 or Application Error from H2INC

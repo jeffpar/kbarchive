@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121682: SMS: Memory Performance Tuning in Systems Management Server"
-permalink: kb/121/Q121682/
+permalink: /kb/121/Q121682/
 ---
 
 ## Q121682: SMS: Memory Performance Tuning in Systems Management Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244534: WD97: Word Saves Document Without Prompting to Save"
-permalink: kb/244/Q244534/
+permalink: /kb/244/Q244534/
 ---
 
 ## Q244534: WD97: Word Saves Document Without Prompting to Save

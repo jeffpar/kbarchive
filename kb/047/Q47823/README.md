@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47823: Flight Simulator: Definition of Dihedral"
-permalink: kb/047/Q47823/
+permalink: /kb/047/Q47823/
 ---
 
 ## Q47823: Flight Simulator: Definition of Dihedral

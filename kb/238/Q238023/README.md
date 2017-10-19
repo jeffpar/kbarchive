@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238023: Microsoft BackOffice SBS 4.5 ResKit Comments and Corrections"
-permalink: kb/238/Q238023/
+permalink: /kb/238/Q238023/
 ---
 
 ## Q238023: Microsoft BackOffice SBS 4.5 ResKit Comments and Corrections

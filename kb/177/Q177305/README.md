@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177305: Using the Current User Name and Password Option in RAS"
-permalink: kb/177/Q177305/
+permalink: /kb/177/Q177305/
 ---
 
 ## Q177305: Using the Current User Name and Password Option in RAS

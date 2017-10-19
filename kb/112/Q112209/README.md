@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112209: PC Win: SHARE.EXE Not Added to Floppy Boot Disk"
-permalink: kb/112/Q112209/
+permalink: /kb/112/Q112209/
 ---
 
 ## Q112209: PC Win: SHARE.EXE Not Added to Floppy Boot Disk

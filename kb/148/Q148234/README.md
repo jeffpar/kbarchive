@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148234: XCON: Latin-1 Characters May Be Translated Incorrectly"
-permalink: kb/148/Q148234/
+permalink: /kb/148/Q148234/
 ---
 
 ## Q148234: XCON: Latin-1 Characters May Be Translated Incorrectly

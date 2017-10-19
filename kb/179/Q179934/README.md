@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179934: WD97: How to View Multiple Pages Using Zoom on a Toolbar"
-permalink: kb/179/Q179934/
+permalink: /kb/179/Q179934/
 ---
 
 ## Q179934: WD97: How to View Multiple Pages Using Zoom on a Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87134: Setting Up a 3Station to Remote Boot"
-permalink: kb/087/Q87134/
+permalink: /kb/087/Q87134/
 ---
 
 ## Q87134: Setting Up a 3Station to Remote Boot

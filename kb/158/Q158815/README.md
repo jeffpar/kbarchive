@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158815: FP: Custom Confirmation Page Returns Field Name Adjacent to Data"
-permalink: kb/158/Q158815/
+permalink: /kb/158/Q158815/
 ---
 
 ## Q158815: FP: Custom Confirmation Page Returns Field Name Adjacent to Data

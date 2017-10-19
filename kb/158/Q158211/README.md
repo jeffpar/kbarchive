@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158211: SNA Server Logs Event 579, 699 Followed by Connection Failure"
-permalink: kb/158/Q158211/
+permalink: /kb/158/Q158211/
 ---
 
 ## Q158211: SNA Server Logs Event 579, 699 Followed by Connection Failure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221676: FIX: &quot;Error #1234 in remotizeviews&quot; Using SQL Upsizing Wizard"
-permalink: kb/221/Q221676/
+permalink: /kb/221/Q221676/
 ---
 
 ## Q221676: FIX: &quot;Error #1234 in remotizeviews&quot; Using SQL Upsizing Wizard

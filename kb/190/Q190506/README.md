@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190506: WINS Replication Problem Events 4262, 4261, and 1c Replication"
-permalink: kb/190/Q190506/
+permalink: /kb/190/Q190506/
 ---
 
 ## Q190506: WINS Replication Problem Events 4262, 4261, and 1c Replication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134320: Black Blocks Appear with Pasted Text in Notepad"
-permalink: kb/134/Q134320/
+permalink: /kb/134/Q134320/
 ---
 
 ## Q134320: Black Blocks Appear with Pasted Text in Notepad

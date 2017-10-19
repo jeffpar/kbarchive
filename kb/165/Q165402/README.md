@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165402: Windows 95 Update to Encrypt Passwords in Memory"
-permalink: kb/165/Q165402/
+permalink: /kb/165/Q165402/
 ---
 
 ## Q165402: Windows 95 Update to Encrypt Passwords in Memory

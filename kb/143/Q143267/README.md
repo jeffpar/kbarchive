@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143267: Scenes 2.0: List of Known Content Errors"
-permalink: kb/143/Q143267/
+permalink: /kb/143/Q143267/
 ---
 
 ## Q143267: Scenes 2.0: List of Known Content Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153973: Recovering NTFS Boot Sector on NTFS Partitions"
-permalink: kb/153/Q153973/
+permalink: /kb/153/Q153973/
 ---
 
 ## Q153973: Recovering NTFS Boot Sector on NTFS Partitions

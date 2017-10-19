@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195804: XFOR: Imcsave Utility"
-permalink: kb/195/Q195804/
+permalink: /kb/195/Q195804/
 ---
 
 ## Q195804: XFOR: Imcsave Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319895: Zoo Tycoon: Computer Stops Responding When You Start Zoo Tycoon"
-permalink: kb/319/Q319895/
+permalink: /kb/319/Q319895/
 ---
 
 ## Q319895: Zoo Tycoon: Computer Stops Responding When You Start Zoo Tycoon

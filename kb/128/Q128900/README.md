@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128900: PCMCIA Socket Not Detected on IBM ThinkPad 720C"
-permalink: kb/128/Q128900/
+permalink: /kb/128/Q128900/
 ---
 
 ## Q128900: PCMCIA Socket Not Detected on IBM ThinkPad 720C

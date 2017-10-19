@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85227: FIX: Using EXTERNDEF w/ a label May Work Incorrectly"
-permalink: kb/085/Q85227/
+permalink: /kb/085/Q85227/
 ---
 
 ## Q85227: FIX: Using EXTERNDEF w/ a label May Work Incorrectly

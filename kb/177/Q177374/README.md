@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177374: XCON: Disable BilateralInformation and IternalTraceInformation"
-permalink: kb/177/Q177374/
+permalink: /kb/177/Q177374/
 ---
 
 ## Q177374: XCON: Disable BilateralInformation and IternalTraceInformation

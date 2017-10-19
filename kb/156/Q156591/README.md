@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156591: STL Sample for deque::begin and deque::end Functions"
-permalink: kb/156/Q156591/
+permalink: /kb/156/Q156591/
 ---
 
 ## Q156591: STL Sample for deque::begin and deque::end Functions

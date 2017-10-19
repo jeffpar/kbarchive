@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272124: Unable to Add Workstation to Domain: 'A Domain Controller for Yo"
-permalink: kb/272/Q272124/
+permalink: /kb/272/Q272124/
 ---
 
 ## Q272124: Unable to Add Workstation to Domain: 'A Domain Controller for Yo

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293218: XWEB: &quot;Failed to Create MAPI.Session&quot; Error Message in OWA"
-permalink: kb/293/Q293218/
+permalink: /kb/293/Q293218/
 ---
 
 ## Q293218: XWEB: &quot;Failed to Create MAPI.Session&quot; Error Message in OWA

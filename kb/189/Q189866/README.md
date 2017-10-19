@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189866: BUG: Incorrect Results When Comparing Large Numbers"
-permalink: kb/189/Q189866/
+permalink: /kb/189/Q189866/
 ---
 
 ## Q189866: BUG: Incorrect Results When Comparing Large Numbers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221663: FIX: FFCs - registry.vcx foxreg.EnumOptions Contains Recursion"
-permalink: kb/221/Q221663/
+permalink: /kb/221/Q221663/
 ---
 
 ## Q221663: FIX: FFCs - registry.vcx foxreg.EnumOptions Contains Recursion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174915: PRB: VFP 3.0 for the Macintosh Setup Wizard Fails under OS 8"
-permalink: kb/174/Q174915/
+permalink: /kb/174/Q174915/
 ---
 
 ## Q174915: PRB: VFP 3.0 for the Macintosh Setup Wizard Fails under OS 8

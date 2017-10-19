@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286248: MechWarrior 4: Autoconfig Utility Resets to Default Settings"
-permalink: kb/286/Q286248/
+permalink: /kb/286/Q286248/
 ---
 
 ## Q286248: MechWarrior 4: Autoconfig Utility Resets to Default Settings

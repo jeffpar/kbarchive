@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136906: Mac Encarta ErrMsg: There Is a Problem with Your Printer Setup"
-permalink: kb/136/Q136906/
+permalink: /kb/136/Q136906/
 ---
 
 ## Q136906: Mac Encarta ErrMsg: There Is a Problem with Your Printer Setup

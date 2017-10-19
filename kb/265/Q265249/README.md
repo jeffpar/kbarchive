@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265249: XADM: InterOrg Synchronization Tool Does Not Replicate"
-permalink: kb/265/Q265249/
+permalink: /kb/265/Q265249/
 ---
 
 ## Q265249: XADM: InterOrg Synchronization Tool Does Not Replicate

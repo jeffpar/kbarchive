@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259731: Asheron's Call Err Msg: Subscription Coupon Number Is Not Valid"
-permalink: kb/259/Q259731/
+permalink: /kb/259/Q259731/
 ---
 
 ## Q259731: Asheron's Call Err Msg: Subscription Coupon Number Is Not Valid

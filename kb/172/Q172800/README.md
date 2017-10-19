@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172800: APPC Application Unable to Cancel TEST_RTS_AND_POST"
-permalink: kb/172/Q172800/
+permalink: /kb/172/Q172800/
 ---
 
 ## Q172800: APPC Application Unable to Cancel TEST_RTS_AND_POST

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180460: Rumba v5.1 May Cause Stop 0x0000007f"
-permalink: kb/180/Q180460/
+permalink: /kb/180/Q180460/
 ---
 
 ## Q180460: Rumba v5.1 May Cause Stop 0x0000007f

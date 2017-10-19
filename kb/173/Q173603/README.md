@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173603: WD97: &quot;Word Cannot Save or Create This File&quot; Error Quitting Word"
-permalink: kb/173/Q173603/
+permalink: /kb/173/Q173603/
 ---
 
 ## Q173603: WD97: &quot;Word Cannot Save or Create This File&quot; Error Quitting Word

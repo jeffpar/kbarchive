@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125971: INSIDE VISUAL C++ VERSION 1.5 Corrections and Comments"
-permalink: kb/125/Q125971/
+permalink: /kb/125/Q125971/
 ---
 
 ## Q125971: INSIDE VISUAL C++ VERSION 1.5 Corrections and Comments

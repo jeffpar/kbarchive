@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107352: CD Sampler: Err Msg: Not Present Fault"
-permalink: kb/107/Q107352/
+permalink: /kb/107/Q107352/
 ---
 
 ## Q107352: CD Sampler: Err Msg: Not Present Fault

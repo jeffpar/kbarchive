@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176873: BUG: DBCombo Does Not Display the &quot;&amp;&quot; Character Correctly"
-permalink: kb/176/Q176873/
+permalink: /kb/176/Q176873/
 ---
 
 ## Q176873: BUG: DBCombo Does Not Display the &quot;&amp;&quot; Character Correctly

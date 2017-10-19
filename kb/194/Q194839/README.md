@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194839: XADM: Outlook Web Access Cannot Resolve Name"
-permalink: kb/194/Q194839/
+permalink: /kb/194/Q194839/
 ---
 
 ## Q194839: XADM: Outlook Web Access Cannot Resolve Name

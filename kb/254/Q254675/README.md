@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254675: FIX: DTC/MTS Errors Cause Ora-00000 Normal Successful Completion"
-permalink: kb/254/Q254675/
+permalink: /kb/254/Q254675/
 ---
 
 ## Q254675: FIX: DTC/MTS Errors Cause Ora-00000 Normal Successful Completion

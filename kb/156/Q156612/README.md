@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156612: Using WinNT 3.5x Uptomp.exe to Upgrade 4.0 Systems to multiproc"
-permalink: kb/156/Q156612/
+permalink: /kb/156/Q156612/
 ---
 
 ## Q156612: Using WinNT 3.5x Uptomp.exe to Upgrade 4.0 Systems to multiproc

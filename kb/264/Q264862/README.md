@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264862: XADM: No CRL Distribution Points Extension in X.509 V3 Cert."
-permalink: kb/264/Q264862/
+permalink: /kb/264/Q264862/
 ---
 
 ## Q264862: XADM: No CRL Distribution Points Extension in X.509 V3 Cert.

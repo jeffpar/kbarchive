@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184620: An Instance of the Service is Already Running"
-permalink: kb/184/Q184620/
+permalink: /kb/184/Q184620/
 ---
 
 ## Q184620: An Instance of the Service is Already Running

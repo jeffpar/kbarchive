@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130422: Environment Space Limitations With SMS Inventory Scripts"
-permalink: kb/130/Q130422/
+permalink: /kb/130/Q130422/
 ---
 
 ## Q130422: Environment Space Limitations With SMS Inventory Scripts

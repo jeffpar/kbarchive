@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134245: FIX: Multi-Select List Box Does Not Retain Selected Items"
-permalink: kb/134/Q134245/
+permalink: /kb/134/Q134245/
 ---
 
 ## Q134245: FIX: Multi-Select List Box Does Not Retain Selected Items

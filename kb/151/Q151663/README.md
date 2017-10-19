@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151663: PRB: Memory Leak in MFC Using ODBC Oracle Driver on Win 95"
-permalink: kb/151/Q151663/
+permalink: /kb/151/Q151663/
 ---
 
 ## Q151663: PRB: Memory Leak in MFC Using ODBC Oracle Driver on Win 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195333: Terminal Server Error 0x0a on SMP Computer"
-permalink: kb/195/Q195333/
+permalink: /kb/195/Q195333/
 ---
 
 ## Q195333: Terminal Server Error 0x0a on SMP Computer

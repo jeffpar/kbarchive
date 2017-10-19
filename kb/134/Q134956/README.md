@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134956: Logon Script Not Removed After Domain Is Removed From Site"
-permalink: kb/134/Q134956/
+permalink: /kb/134/Q134956/
 ---
 
 ## Q134956: Logon Script Not Removed After Domain Is Removed From Site

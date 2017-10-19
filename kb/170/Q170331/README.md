@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170331: Automatic Dialog Box Appears During ZAK Setup"
-permalink: kb/170/Q170331/
+permalink: /kb/170/Q170331/
 ---
 
 ## Q170331: Automatic Dialog Box Appears During ZAK Setup

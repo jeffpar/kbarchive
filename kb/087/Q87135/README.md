@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87135: Large Drive Translation Under Microsoft OS/2 1.3"
-permalink: kb/087/Q87135/
+permalink: /kb/087/Q87135/
 ---
 
 ## Q87135: Large Drive Translation Under Microsoft OS/2 1.3

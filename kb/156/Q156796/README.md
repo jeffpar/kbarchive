@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156796: XADM: Forward Rule Causes MTA to NDR When Submitting Msg to IS"
-permalink: kb/156/Q156796/
+permalink: /kb/156/Q156796/
 ---
 
 ## Q156796: XADM: Forward Rule Causes MTA to NDR When Submitting Msg to IS

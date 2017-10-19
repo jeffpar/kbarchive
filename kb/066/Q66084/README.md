@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66084: IgnoreInstalledEMM=yes Not Working Properly with Windows 3.0"
-permalink: kb/066/Q66084/
+permalink: /kb/066/Q66084/
 ---
 
 ## Q66084: IgnoreInstalledEMM=yes Not Working Properly with Windows 3.0

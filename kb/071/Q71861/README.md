@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71861: Printing Problems with Delrina PerForm Pro for Windows"
-permalink: kb/071/Q71861/
+permalink: /kb/071/Q71861/
 ---
 
 ## Q71861: Printing Problems with Delrina PerForm Pro for Windows

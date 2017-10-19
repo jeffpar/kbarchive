@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90235: Pop-up Message Halts Printing and Causes Bad Print Jobs"
-permalink: kb/090/Q90235/
+permalink: /kb/090/Q90235/
 ---
 
 ## Q90235: Pop-up Message Halts Printing and Causes Bad Print Jobs

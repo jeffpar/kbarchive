@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83037: Common Problems with Font Packages and Windows 3.1"
-permalink: kb/083/Q83037/
+permalink: /kb/083/Q83037/
 ---
 
 ## Q83037: Common Problems with Font Packages and Windows 3.1

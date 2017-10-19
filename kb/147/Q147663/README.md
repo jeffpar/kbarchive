@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147663: INFO: Multiple vbCancel Constants Defined with VB 4.0"
-permalink: kb/147/Q147663/
+permalink: /kb/147/Q147663/
 ---
 
 ## Q147663: INFO: Multiple vbCancel Constants Defined with VB 4.0

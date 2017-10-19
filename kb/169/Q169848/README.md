@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169848: XADM: Performance Optimizer Fails with Low Disk Space"
-permalink: kb/169/Q169848/
+permalink: /kb/169/Q169848/
 ---
 
 ## Q169848: XADM: Performance Optimizer Fails with Low Disk Space

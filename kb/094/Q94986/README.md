@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94986: Golf Err Msg: Bad or Missing RealSound Driver"
-permalink: kb/094/Q94986/
+permalink: /kb/094/Q94986/
 ---
 
 ## Q94986: Golf Err Msg: Bad or Missing RealSound Driver

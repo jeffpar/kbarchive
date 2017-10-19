@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170672: Config File Security does not Display Correct Domain Name"
-permalink: kb/170/Q170672/
+permalink: /kb/170/Q170672/
 ---
 
 ## Q170672: Config File Security does not Display Correct Domain Name

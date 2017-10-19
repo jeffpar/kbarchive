@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194997: Pinball Arcade: Slow Game Performance and Flashing Graphics"
-permalink: kb/194/Q194997/
+permalink: /kb/194/Q194997/
 ---
 
 ## Q194997: Pinball Arcade: Slow Game Performance and Flashing Graphics

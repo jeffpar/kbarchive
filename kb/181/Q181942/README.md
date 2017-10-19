@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181942: XCLN: Cannot Resolve SMTP Addresses, Messages Sent Successfully"
-permalink: kb/181/Q181942/
+permalink: /kb/181/Q181942/
 ---
 
 ## Q181942: XCLN: Cannot Resolve SMTP Addresses, Messages Sent Successfully

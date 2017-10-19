@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148721: PRB: ODBC - Call Failed Error When Appending Record in Access"
-permalink: kb/148/Q148721/
+permalink: /kb/148/Q148721/
 ---
 
 ## Q148721: PRB: ODBC - Call Failed Error When Appending Record in Access

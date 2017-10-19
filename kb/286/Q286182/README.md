@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286182: HOWTO: Use Visual Basic to Convert a Raw SID into a String SID"
-permalink: kb/286/Q286182/
+permalink: /kb/286/Q286182/
 ---
 
 ## Q286182: HOWTO: Use Visual Basic to Convert a Raw SID into a String SID

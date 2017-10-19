@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193585: BUG: Recursive History Fails if Used With -f- Switch"
-permalink: kb/193/Q193585/
+permalink: /kb/193/Q193585/
 ---
 
 ## Q193585: BUG: Recursive History Fails if Used With -f- Switch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75233: DTK BIOS version 4.26 Pre-Revision 36 and IDE Drives"
-permalink: kb/075/Q75233/
+permalink: /kb/075/Q75233/
 ---
 
 ## Q75233: DTK BIOS version 4.26 Pre-Revision 36 and IDE Drives

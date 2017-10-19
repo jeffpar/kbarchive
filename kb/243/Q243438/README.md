@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243438: XADM: Replication Doesn't Work; Event 1171 w/Parameters 9, 111"
-permalink: kb/243/Q243438/
+permalink: /kb/243/Q243438/
 ---
 
 ## Q243438: XADM: Replication Doesn't Work; Event 1171 w/Parameters 9, 111

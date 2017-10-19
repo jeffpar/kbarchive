@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125598: Ensoniq Soundscape Support in Windows NT"
-permalink: kb/125/Q125598/
+permalink: /kb/125/Q125598/
 ---
 
 ## Q125598: Ensoniq Soundscape Support in Windows NT

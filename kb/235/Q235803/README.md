@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235803: SMS: Resource Explorer Doesn't Work As MMC Console Snap-in"
-permalink: kb/235/Q235803/
+permalink: /kb/235/Q235803/
 ---
 
 ## Q235803: SMS: Resource Explorer Doesn't Work As MMC Console Snap-in

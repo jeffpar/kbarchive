@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94155: HP LaserJet III/4: Text Prints on Top of Graphic"
-permalink: kb/094/Q94155/
+permalink: /kb/094/Q94155/
 ---
 
 ## Q94155: HP LaserJet III/4: Text Prints on Top of Graphic

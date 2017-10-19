@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104360: PC Win: New Mail Notification Using a Custom Command"
-permalink: kb/104/Q104360/
+permalink: /kb/104/Q104360/
 ---
 
 ## Q104360: PC Win: New Mail Notification Using a Custom Command

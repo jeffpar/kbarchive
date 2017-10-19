@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248200: FS2000: Unable to See Landing Lights from the Cockpit"
-permalink: kb/248/Q248200/
+permalink: /kb/248/Q248200/
 ---
 
 ## Q248200: FS2000: Unable to See Landing Lights from the Cockpit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169040: Puzzle: Game Music Won't Play if Media Player is in Background"
-permalink: kb/169/Q169040/
+permalink: /kb/169/Q169040/
 ---
 
 ## Q169040: Puzzle: Game Music Won't Play if Media Player is in Background

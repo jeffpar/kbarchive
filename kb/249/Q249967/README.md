@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249967: LU1 Print Job Loses First Line When DelayPrintStart Implemented"
-permalink: kb/249/Q249967/
+permalink: /kb/249/Q249967/
 ---
 
 ## Q249967: LU1 Print Job Loses First Line When DelayPrintStart Implemented

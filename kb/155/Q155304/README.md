@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155304: HOWTO: Trap an Invalid ODBC Logon Using the ODBC API"
-permalink: kb/155/Q155304/
+permalink: /kb/155/Q155304/
 ---
 
 ## Q155304: HOWTO: Trap an Invalid ODBC Logon Using the ODBC API

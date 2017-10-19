@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136579: How Visual FoxPro Caches Tables by Using File Caching"
-permalink: kb/136/Q136579/
+permalink: /kb/136/Q136579/
 ---
 
 ## Q136579: How Visual FoxPro Caches Tables by Using File Caching

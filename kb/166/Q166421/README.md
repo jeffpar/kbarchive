@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166421: FPNW Returns Time Stamp with 60 Seconds to Clients"
-permalink: kb/166/Q166421/
+permalink: /kb/166/Q166421/
 ---
 
 ## Q166421: FPNW Returns Time Stamp with 60 Seconds to Clients

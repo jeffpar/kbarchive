@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156190: FIX: LNK1170 Building Project's Makefile from Command Line"
-permalink: kb/156/Q156190/
+permalink: /kb/156/Q156190/
 ---
 
 ## Q156190: FIX: LNK1170 Building Project's Makefile from Command Line

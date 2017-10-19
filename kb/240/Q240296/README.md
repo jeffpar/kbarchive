@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240296: Reference Suite 2000: Error Message When You Start Program"
-permalink: kb/240/Q240296/
+permalink: /kb/240/Q240296/
 ---
 
 ## Q240296: Reference Suite 2000: Error Message When You Start Program

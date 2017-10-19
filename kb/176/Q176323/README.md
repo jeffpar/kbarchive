@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176323: SMS: How to Install Internet Explorer 4.0 with SMS"
-permalink: kb/176/Q176323/
+permalink: /kb/176/Q176323/
 ---
 
 ## Q176323: SMS: How to Install Internet Explorer 4.0 with SMS

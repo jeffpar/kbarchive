@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271834: Cannot Display Some Hong Kong Supplementary Characters"
-permalink: kb/271/Q271834/
+permalink: /kb/271/Q271834/
 ---
 
 ## Q271834: Cannot Display Some Hong Kong Supplementary Characters

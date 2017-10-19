@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158461: Default LPD Printer Name of NetQue/NetJet Card"
-permalink: kb/158/Q158461/
+permalink: /kb/158/Q158461/
 ---
 
 ## Q158461: Default LPD Printer Name of NetQue/NetJet Card

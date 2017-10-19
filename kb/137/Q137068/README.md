@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137068: XADM: Err Msg: The Path Specified Is Invalid..."
-permalink: kb/137/Q137068/
+permalink: /kb/137/Q137068/
 ---
 
 ## Q137068: XADM: Err Msg: The Path Specified Is Invalid...

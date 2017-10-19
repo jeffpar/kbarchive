@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163124: Kids Plus!: Paint It! Creates/Saves To My Documents Folder"
-permalink: kb/163/Q163124/
+permalink: /kb/163/Q163124/
 ---
 
 ## Q163124: Kids Plus!: Paint It! Creates/Saves To My Documents Folder

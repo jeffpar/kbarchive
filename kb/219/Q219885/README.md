@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219885: How to Enable the Quick Reboot Feature for Windows NT 4.0 SP4"
-permalink: kb/219/Q219885/
+permalink: /kb/219/Q219885/
 ---
 
 ## Q219885: How to Enable the Quick Reboot Feature for Windows NT 4.0 SP4

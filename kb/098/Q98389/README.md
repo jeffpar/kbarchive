@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98389: PC WFW: 3.0b Windows Client Disk 2 [3.5, 720K]"
-permalink: kb/098/Q98389/
+title: "Q98389: PC WFW: 3.0b Windows Client Disk 2 &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98389/
 ---
 
-## Q98389: PC WFW: 3.0b Windows Client Disk 2 [3.5, 720K]
+## Q98389: PC WFW: 3.0b Windows Client Disk 2 &#91;3.5, 720K&#93;
 
 	Article: Q98389
 	Product(s): Microsoft Mail For PC Networks

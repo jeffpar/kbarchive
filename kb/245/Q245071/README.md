@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245071: Cannot Use Telnet on UNIX Workstation Through Proxy Server 2.0."
-permalink: kb/245/Q245071/
+permalink: /kb/245/Q245071/
 ---
 
 ## Q245071: Cannot Use Telnet on UNIX Workstation Through Proxy Server 2.0.

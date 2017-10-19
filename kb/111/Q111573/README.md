@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111573: Standby Mode with APM, Mail, &amp; AWFAX May Result in a GP Fault"
-permalink: kb/111/Q111573/
+permalink: /kb/111/Q111573/
 ---
 
 ## Q111573: Standby Mode with APM, Mail, &amp; AWFAX May Result in a GP Fault

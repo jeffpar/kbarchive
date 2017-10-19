@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117581: CONN: Mail Messages Rejected for &gt; 63 Character Subject: Line"
-permalink: kb/117/Q117581/
+permalink: /kb/117/Q117581/
 ---
 
 ## Q117581: CONN: Mail Messages Rejected for &gt; 63 Character Subject: Line

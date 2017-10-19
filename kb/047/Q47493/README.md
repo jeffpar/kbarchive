@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47493: Using the Linker /ALIGN Option"
-permalink: kb/047/Q47493/
+permalink: /kb/047/Q47493/
 ---
 
 ## Q47493: Using the Linker /ALIGN Option

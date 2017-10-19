@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230665: XADM: Why a DL Cannot Be the Owner of Another DL"
-permalink: kb/230/Q230665/
+permalink: /kb/230/Q230665/
 ---
 
 ## Q230665: XADM: Why a DL Cannot Be the Owner of Another DL

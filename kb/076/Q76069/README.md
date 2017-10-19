@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76069: PRB: Help File Missing Green Text Using WACOM Tablet"
-permalink: kb/076/Q76069/
+permalink: /kb/076/Q76069/
 ---
 
 ## Q76069: PRB: Help File Missing Green Text Using WACOM Tablet

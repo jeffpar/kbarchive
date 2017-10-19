@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191752: PRB: DataRepeater Control's RepeaterBindings List Is Empty"
-permalink: kb/191/Q191752/
+permalink: /kb/191/Q191752/
 ---
 
 ## Q191752: PRB: DataRepeater Control's RepeaterBindings List Is Empty

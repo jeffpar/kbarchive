@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261075: Motocross Madness 2: Startup Screen Is Not Displayed Properly"
-permalink: kb/261/Q261075/
+permalink: /kb/261/Q261075/
 ---
 
 ## Q261075: Motocross Madness 2: Startup Screen Is Not Displayed Properly

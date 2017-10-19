@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290651: XADM: Cannot Bring Exchange Services Online Using Cluster Admin"
-permalink: kb/290/Q290651/
+permalink: /kb/290/Q290651/
 ---
 
 ## Q290651: XADM: Cannot Bring Exchange Services Online Using Cluster Admin

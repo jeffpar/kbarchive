@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129173: Taskbar Is Hidden When Program Runs Full-Screen in Windows 95/98"
-permalink: kb/129/Q129173/
+permalink: /kb/129/Q129173/
 ---
 
 ## Q129173: Taskbar Is Hidden When Program Runs Full-Screen in Windows 95/98

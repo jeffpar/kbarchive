@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250667: XWEB: Mailbox access through OWA is denied when Proxy server is"
-permalink: kb/250/Q250667/
+permalink: /kb/250/Q250667/
 ---
 
 ## Q250667: XWEB: Mailbox access through OWA is denied when Proxy server is

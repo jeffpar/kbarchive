@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237544: XADM: Unable to Connect Using IMAP/SSL"
-permalink: kb/237/Q237544/
+permalink: /kb/237/Q237544/
 ---
 
 ## Q237544: XADM: Unable to Connect Using IMAP/SSL

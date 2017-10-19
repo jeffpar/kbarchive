@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128603: FIX: Visual Workbench Generates Dependencies for ODL Files"
-permalink: kb/128/Q128603/
+permalink: /kb/128/Q128603/
 ---
 
 ## Q128603: FIX: Visual Workbench Generates Dependencies for ODL Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110360: How to Select Custom Page Sizes in FoxPro for Macintosh"
-permalink: kb/110/Q110360/
+permalink: /kb/110/Q110360/
 ---
 
 ## Q110360: How to Select Custom Page Sizes in FoxPro for Macintosh

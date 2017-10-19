@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47013: Mac Form: Versions of HyperCard Required by the Form Designer"
-permalink: kb/047/Q47013/
+permalink: /kb/047/Q47013/
 ---
 
 ## Q47013: Mac Form: Versions of HyperCard Required by the Form Designer

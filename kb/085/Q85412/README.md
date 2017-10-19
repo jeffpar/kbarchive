@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85412: MS-DOS 5.0a Upgrade README.TXT: Network Compatibility"
-permalink: kb/085/Q85412/
+permalink: /kb/085/Q85412/
 ---
 
 ## Q85412: MS-DOS 5.0a Upgrade README.TXT: Network Compatibility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120940: Generic Way to Find a Computer BIOS Date Using Debug"
-permalink: kb/120/Q120940/
+permalink: /kb/120/Q120940/
 ---
 
 ## Q120940: Generic Way to Find a Computer BIOS Date Using Debug

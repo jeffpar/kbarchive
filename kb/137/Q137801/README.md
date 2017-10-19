@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137801: Wrong Mouse Displayed in Mouse Properties"
-permalink: kb/137/Q137801/
+permalink: /kb/137/Q137801/
 ---
 
 ## Q137801: Wrong Mouse Displayed in Mouse Properties

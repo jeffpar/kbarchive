@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161855: XADM: Restoring a Public Info Store from Earlier Service Pack"
-permalink: kb/161/Q161855/
+permalink: /kb/161/Q161855/
 ---
 
 ## Q161855: XADM: Restoring a Public Info Store from Earlier Service Pack

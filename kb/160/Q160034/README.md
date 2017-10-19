@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160034: Modem Disconnected Before PC Card Modem Detects Dial Tone"
-permalink: kb/160/Q160034/
+permalink: /kb/160/Q160034/
 ---
 
 ## Q160034: Modem Disconnected Before PC Card Modem Detects Dial Tone

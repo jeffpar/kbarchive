@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175105: XFOR: Internet Message Labeled with Incorrect Character Set"
-permalink: kb/175/Q175105/
+permalink: /kb/175/Q175105/
 ---
 
 ## Q175105: XFOR: Internet Message Labeled with Incorrect Character Set

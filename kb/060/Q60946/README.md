@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60946: Network Functions Provided by Windows 3.0 Environment"
-permalink: kb/060/Q60946/
+permalink: /kb/060/Q60946/
 ---
 
 ## Q60946: Network Functions Provided by Windows 3.0 Environment

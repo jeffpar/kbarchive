@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250979: Contents of Internet Information Server 5.0 Release Notes"
-permalink: kb/250/Q250979/
+permalink: /kb/250/Q250979/
 ---
 
 ## Q250979: Contents of Internet Information Server 5.0 Release Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269806: MSB in Concert/Lands on Mars: How to View the About Dialog Box"
-permalink: kb/269/Q269806/
+permalink: /kb/269/Q269806/
 ---
 
 ## Q269806: MSB in Concert/Lands on Mars: How to View the About Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96061: MS-DOS Err Msg: Could Not Copy COMMAND.COM to Target..."
-permalink: kb/096/Q96061/
+permalink: /kb/096/Q96061/
 ---
 
 ## Q96061: MS-DOS Err Msg: Could Not Copy COMMAND.COM to Target...

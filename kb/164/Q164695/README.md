@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164695: XFOR: CCMC Stops Responding"
-permalink: kb/164/Q164695/
+permalink: /kb/164/Q164695/
 ---
 
 ## Q164695: XFOR: CCMC Stops Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155902: WD97: Wrong Feed Method Selected Using HP LaserJet 4 Driver"
-permalink: kb/155/Q155902/
+permalink: /kb/155/Q155902/
 ---
 
 ## Q155902: WD97: Wrong Feed Method Selected Using HP LaserJet 4 Driver

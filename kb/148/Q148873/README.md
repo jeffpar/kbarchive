@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148873: INFO: Visual FoxPro Calculates Leap Year Correctly in 21st Centu"
-permalink: kb/148/Q148873/
+permalink: /kb/148/Q148873/
 ---
 
 ## Q148873: INFO: Visual FoxPro Calculates Leap Year Correctly in 21st Centu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173793: SMS: How to Use System Policies with Program Group Control"
-permalink: kb/173/Q173793/
+permalink: /kb/173/Q173793/
 ---
 
 ## Q173793: SMS: How to Use System Policies with Program Group Control

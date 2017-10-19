@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163612: PPT: Sample VB Code to Make the Selected Text Bold"
-permalink: kb/163/Q163612/
+permalink: /kb/163/Q163612/
 ---
 
 ## Q163612: PPT: Sample VB Code to Make the Selected Text Bold

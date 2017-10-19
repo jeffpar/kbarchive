@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170534: Microsoft FTP Client Echoes Gateway Password on the Screen"
-permalink: kb/170/Q170534/
+permalink: /kb/170/Q170534/
 ---
 
 ## Q170534: Microsoft FTP Client Echoes Gateway Password on the Screen

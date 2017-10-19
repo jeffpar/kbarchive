@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246472: Unable to Upgrade SNA Server from Back Office 4.5"
-permalink: kb/246/Q246472/
+permalink: /kb/246/Q246472/
 ---
 
 ## Q246472: Unable to Upgrade SNA Server from Back Office 4.5

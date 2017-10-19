@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242126: Cannot Delete Print Job and Printer"
-permalink: kb/242/Q242126/
+permalink: /kb/242/Q242126/
 ---
 
 ## Q242126: Cannot Delete Print Job and Printer

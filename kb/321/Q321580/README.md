@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321580: SMS: Distributions to Windows XP Clients May Not Work"
-permalink: kb/321/Q321580/
+permalink: /kb/321/Q321580/
 ---
 
 ## Q321580: SMS: Distributions to Windows XP Clients May Not Work

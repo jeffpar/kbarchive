@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126959: Automap Pro: Installing Automap Destination Europe"
-permalink: kb/126/Q126959/
+permalink: /kb/126/Q126959/
 ---
 
 ## Q126959: Automap Pro: Installing Automap Destination Europe

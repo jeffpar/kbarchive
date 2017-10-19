@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152391: PRB: Adding OnClose Handler to COleControl Class Causes C2660"
-permalink: kb/152/Q152391/
+permalink: /kb/152/Q152391/
 ---
 
 ## Q152391: PRB: Adding OnClose Handler to COleControl Class Causes C2660

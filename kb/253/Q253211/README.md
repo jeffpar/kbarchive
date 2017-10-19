@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253211: PRB: Large Recordsets Cause Problems When Scrolling Grids"
-permalink: kb/253/Q253211/
+permalink: /kb/253/Q253211/
 ---
 
 ## Q253211: PRB: Large Recordsets Cause Problems When Scrolling Grids

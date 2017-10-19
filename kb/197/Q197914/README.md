@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197914: SAMPLE: RDOBLOBS.EXE RDO and BLOB/TEXT Data with SQL SP"
-permalink: kb/197/Q197914/
+permalink: /kb/197/Q197914/
 ---
 
 ## Q197914: SAMPLE: RDOBLOBS.EXE RDO and BLOB/TEXT Data with SQL SP

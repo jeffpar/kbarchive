@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132516: Suspend Command Appears on Start Menu But Does Not Function"
-permalink: kb/132/Q132516/
+permalink: /kb/132/Q132516/
 ---
 
 ## Q132516: Suspend Command Appears on Start Menu But Does Not Function

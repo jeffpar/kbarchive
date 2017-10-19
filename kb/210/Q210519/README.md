@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210519: Golf 99: Help Topic Lists Incorrect Clubs in Standard Golf Bag"
-permalink: kb/210/Q210519/
+permalink: /kb/210/Q210519/
 ---
 
 ## Q210519: Golf 99: Help Topic Lists Incorrect Clubs in Standard Golf Bag

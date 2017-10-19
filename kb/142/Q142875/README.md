@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142875: Access Denied After Changing FPNW Accounts From WFW"
-permalink: kb/142/Q142875/
+permalink: /kb/142/Q142875/
 ---
 
 ## Q142875: Access Denied After Changing FPNW Accounts From WFW

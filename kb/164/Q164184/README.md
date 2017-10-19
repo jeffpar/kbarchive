@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164184: Associating Index Server File Types for Filtering"
-permalink: kb/164/Q164184/
+permalink: /kb/164/Q164184/
 ---
 
 ## Q164184: Associating Index Server File Types for Filtering

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181741: XADM: Directory Service Does Not Update the Object Count"
-permalink: kb/181/Q181741/
+permalink: /kb/181/Q181741/
 ---
 
 ## Q181741: XADM: Directory Service Does Not Update the Object Count

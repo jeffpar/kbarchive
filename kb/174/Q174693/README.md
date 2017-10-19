@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174693: XADM: Exchange Organization Name Is Case Sensitive"
-permalink: kb/174/Q174693/
+permalink: /kb/174/Q174693/
 ---
 
 ## Q174693: XADM: Exchange Organization Name Is Case Sensitive

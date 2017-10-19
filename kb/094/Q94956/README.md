@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94956: DOCERR: WinExec() Error Codes in Windows 3.0/3.1"
-permalink: kb/094/Q94956/
+permalink: /kb/094/Q94956/
 ---
 
 ## Q94956: DOCERR: WinExec() Error Codes in Windows 3.0/3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130178: FIXPRNT Fixes Database Errors Reported by ANALYZE.EXE"
-permalink: kb/130/Q130178/
+permalink: /kb/130/Q130178/
 ---
 
 ## Q130178: FIXPRNT Fixes Database Errors Reported by ANALYZE.EXE

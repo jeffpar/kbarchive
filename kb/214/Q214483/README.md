@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214483: Implements Statement Requires Interface Derived from IDispatch"
-permalink: kb/214/Q214483/
+permalink: /kb/214/Q214483/
 ---
 
 ## Q214483: Implements Statement Requires Interface Derived from IDispatch

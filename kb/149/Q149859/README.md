@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149859: No Mapping For Invalid Characters In Computer Name"
-permalink: kb/149/Q149859/
+permalink: /kb/149/Q149859/
 ---
 
 ## Q149859: No Mapping For Invalid Characters In Computer Name

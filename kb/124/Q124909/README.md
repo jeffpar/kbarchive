@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124909: Problems Accessing Drive Formatted with Ontrack Disk Manager"
-permalink: kb/124/Q124909/
+permalink: /kb/124/Q124909/
 ---
 
 ## Q124909: Problems Accessing Drive Formatted with Ontrack Disk Manager

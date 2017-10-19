@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106664: Multimedia: GetPixel() Error Message"
-permalink: kb/106/Q106664/
+permalink: /kb/106/Q106664/
 ---
 
 ## Q106664: Multimedia: GetPixel() Error Message

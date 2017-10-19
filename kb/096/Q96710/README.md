@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96710: How Do I Get MS-DOS to Run in the High Memory Area?"
-permalink: kb/096/Q96710/
+permalink: /kb/096/Q96710/
 ---
 
 ## Q96710: How Do I Get MS-DOS to Run in the High Memory Area?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136674: PRB: Can't Print GrandChild Records in One-to-Many Relation"
-permalink: kb/136/Q136674/
+permalink: /kb/136/Q136674/
 ---
 
 ## Q136674: PRB: Can't Print GrandChild Records in One-to-Many Relation

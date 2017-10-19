@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238078: Microsoft Fax Does Not Dial Complete Phone Number"
-permalink: kb/238/Q238078/
+permalink: /kb/238/Q238078/
 ---
 
 ## Q238078: Microsoft Fax Does Not Dial Complete Phone Number

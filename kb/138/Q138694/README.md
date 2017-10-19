@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138694: FIX: Using CSocket w/ CArchive Causes Block from Extra FD_READ"
-permalink: kb/138/Q138694/
+permalink: /kb/138/Q138694/
 ---
 
 ## Q138694: FIX: Using CSocket w/ CArchive Causes Block from Extra FD_READ

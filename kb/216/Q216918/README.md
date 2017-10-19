@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216918: Err Msg: Combat Flight Simulator Requires a Higher Refresh Rate"
-permalink: kb/216/Q216918/
+permalink: /kb/216/Q216918/
 ---
 
 ## Q216918: Err Msg: Combat Flight Simulator Requires a Higher Refresh Rate

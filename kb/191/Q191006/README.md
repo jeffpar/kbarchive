@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191006: DOC: FlexGrid Control Is Limited to 350,000 Total Cells"
-permalink: kb/191/Q191006/
+permalink: /kb/191/Q191006/
 ---
 
 ## Q191006: DOC: FlexGrid Control Is Limited to 350,000 Total Cells

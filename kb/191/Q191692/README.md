@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191692: PRB: Shdocvw.dll Is Not Included in PDW Setup Package"
-permalink: kb/191/Q191692/
+permalink: /kb/191/Q191692/
 ---
 
 ## Q191692: PRB: Shdocvw.dll Is Not Included in PDW Setup Package

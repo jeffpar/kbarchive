@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169669: XADM: Admin Can't Delete/Return Msgs to MS Mail Postoffice"
-permalink: kb/169/Q169669/
+permalink: /kb/169/Q169669/
 ---
 
 ## Q169669: XADM: Admin Can't Delete/Return Msgs to MS Mail Postoffice

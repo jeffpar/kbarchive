@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178401: PRB: Message Box Appears Behind Form Set as Top-Most Window"
-permalink: kb/178/Q178401/
+permalink: /kb/178/Q178401/
 ---
 
 ## Q178401: PRB: Message Box Appears Behind Form Set as Top-Most Window

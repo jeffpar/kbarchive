@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113990: Scenes 1.0: No Picture Sets Installed..."
-permalink: kb/113/Q113990/
+permalink: /kb/113/Q113990/
 ---
 
 ## Q113990: Scenes 1.0: No Picture Sets Installed...

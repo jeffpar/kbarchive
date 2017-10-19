@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155913: INFO: Visual Foxpro and ODBC Server-Side Cursors"
-permalink: kb/155/Q155913/
+permalink: /kb/155/Q155913/
 ---
 
 ## Q155913: INFO: Visual Foxpro and ODBC Server-Side Cursors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316493: Zoo Tycoon Err Msg: &quot;Z00demo.exe has encountered a problem...&quot;"
-permalink: kb/316/Q316493/
+permalink: /kb/316/Q316493/
 ---
 
 ## Q316493: Zoo Tycoon Err Msg: &quot;Z00demo.exe has encountered a problem...&quot;

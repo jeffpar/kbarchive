@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128595: Default Wavemix.ini from Arcade 1.0"
-permalink: kb/128/Q128595/
+permalink: /kb/128/Q128595/
 ---
 
 ## Q128595: Default Wavemix.ini from Arcade 1.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83075: Running MEM /D Under Windows"
-permalink: kb/083/Q83075/
+permalink: /kb/083/Q83075/
 ---
 
 ## Q83075: Running MEM /D Under Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235281: FIX: Negative 0 (zero) Causes ODBC SQL Server Driver Error"
-permalink: kb/235/Q235281/
+permalink: /kb/235/Q235281/
 ---
 
 ## Q235281: FIX: Negative 0 (zero) Causes ODBC SQL Server Driver Error

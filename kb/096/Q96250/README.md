@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96250: How to Remove DoubleSpace and Preserve Your Files"
-permalink: kb/096/Q96250/
+permalink: /kb/096/Q96250/
 ---
 
 ## Q96250: How to Remove DoubleSpace and Preserve Your Files

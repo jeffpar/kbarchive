@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267877: Error Message: Username Not Found"
-permalink: kb/267/Q267877/
+permalink: /kb/267/Q267877/
 ---
 
 ## Q267877: Error Message: Username Not Found

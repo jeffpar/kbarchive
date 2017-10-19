@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140245: PC Ext: Running Externals with the -bt Option in a Batch File"
-permalink: kb/140/Q140245/
+permalink: /kb/140/Q140245/
 ---
 
 ## Q140245: PC Ext: Running Externals with the -bt Option in a Batch File

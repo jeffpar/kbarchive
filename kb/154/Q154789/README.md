@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154789: AVI Playback (Streaming) onto DirectDraw Surface"
-permalink: kb/154/Q154789/
+permalink: /kb/154/Q154789/
 ---
 
 ## Q154789: AVI Playback (Streaming) onto DirectDraw Surface

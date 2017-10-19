@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193505: Event 2048 When Trying to Connect from French Client Workstation"
-permalink: kb/193/Q193505/
+permalink: /kb/193/Q193505/
 ---
 
 ## Q193505: Event 2048 When Trying to Connect from French Client Workstation

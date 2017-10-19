@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162533: FIX: &quot;File or Project Not Found&quot; Errors Between Mac &amp; PC Clients"
-permalink: kb/162/Q162533/
+permalink: /kb/162/Q162533/
 ---
 
 ## Q162533: FIX: &quot;File or Project Not Found&quot; Errors Between Mac &amp; PC Clients

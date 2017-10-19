@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84780: COMxProtocol Setting Not Explained in SYSINI.WRI File"
-permalink: kb/084/Q84780/
+permalink: /kb/084/Q84780/
 ---
 
 ## Q84780: COMxProtocol Setting Not Explained in SYSINI.WRI File

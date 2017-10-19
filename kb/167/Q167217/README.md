@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167217: WD97: Field Switches Moved Inside Field After Saving as HTML"
-permalink: kb/167/Q167217/
+permalink: /kb/167/Q167217/
 ---
 
 ## Q167217: WD97: Field Switches Moved Inside Field After Saving as HTML

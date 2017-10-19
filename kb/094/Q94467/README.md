@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94467: MHS: Updating the MHS Gateway To Version 3.0"
-permalink: kb/094/Q94467/
+permalink: /kb/094/Q94467/
 ---
 
 ## Q94467: MHS: Updating the MHS Gateway To Version 3.0

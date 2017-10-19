@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130378: Mouse Connected to Disabled COM Port Functions Properly"
-permalink: kb/130/Q130378/
+permalink: /kb/130/Q130378/
 ---
 
 ## Q130378: Mouse Connected to Disabled COM Port Functions Properly

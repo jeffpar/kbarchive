@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305203: XCON: Reply to SMTP Messages Routed Across X.400 Connector Fails"
-permalink: kb/305/Q305203/
+permalink: /kb/305/Q305203/
 ---
 
 ## Q305203: XCON: Reply to SMTP Messages Routed Across X.400 Connector Fails

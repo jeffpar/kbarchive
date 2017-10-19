@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146155: XADM: Outstanding Delivery Receipts not Sent to New Location"
-permalink: kb/146/Q146155/
+permalink: /kb/146/Q146155/
 ---
 
 ## Q146155: XADM: Outstanding Delivery Receipts not Sent to New Location

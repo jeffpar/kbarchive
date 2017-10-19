@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175182: Streets 98: Program Hangs When Importing Large Text Files"
-permalink: kb/175/Q175182/
+permalink: /kb/175/Q175182/
 ---
 
 ## Q175182: Streets 98: Program Hangs When Importing Large Text Files

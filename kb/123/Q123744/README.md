@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123744: Secure Erase on Exabyte 2501 Err Msg: The Computer Has Rebooted"
-permalink: kb/123/Q123744/
+permalink: /kb/123/Q123744/
 ---
 
 ## Q123744: Secure Erase on Exabyte 2501 Err Msg: The Computer Has Rebooted

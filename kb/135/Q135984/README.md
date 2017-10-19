@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135984: PC Win: Mail Only Displays the Global Address List"
-permalink: kb/135/Q135984/
+permalink: /kb/135/Q135984/
 ---
 
 ## Q135984: PC Win: Mail Only Displays the Global Address List

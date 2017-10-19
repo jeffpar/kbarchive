@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96519: Situations in Which DEFRAG Cannot Run"
-permalink: kb/096/Q96519/
+permalink: /kb/096/Q96519/
 ---
 
 ## Q96519: Situations in Which DEFRAG Cannot Run

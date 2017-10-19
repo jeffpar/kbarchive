@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95996: Mail: Differences Between WFWG Mail and PC Mail 3.0"
-permalink: kb/095/Q95996/
+permalink: /kb/095/Q95996/
 ---
 
 ## Q95996: Mail: Differences Between WFWG Mail and PC Mail 3.0

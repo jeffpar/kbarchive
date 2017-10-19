@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113077: Golf Is Unplayable Because Swing Is Too Fast"
-permalink: kb/113/Q113077/
+permalink: /kb/113/Q113077/
 ---
 
 ## Q113077: Golf Is Unplayable Because Swing Is Too Fast

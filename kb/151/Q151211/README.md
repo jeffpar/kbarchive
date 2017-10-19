@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151211: Nested Batch Files in Logon Script Hangs at Execution"
-permalink: kb/151/Q151211/
+permalink: /kb/151/Q151211/
 ---
 
 ## Q151211: Nested Batch Files in Logon Script Hangs at Execution

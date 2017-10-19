@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183421: Keyboard Issues with Protel Advanced PCB 2.8 and Windows NT"
-permalink: kb/183/Q183421/
+permalink: /kb/183/Q183421/
 ---
 
 ## Q183421: Keyboard Issues with Protel Advanced PCB 2.8 and Windows NT

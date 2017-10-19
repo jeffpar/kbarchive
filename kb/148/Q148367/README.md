@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148367: Possible Network File Damage with Redirector Caching"
-permalink: kb/148/Q148367/
+permalink: /kb/148/Q148367/
 ---
 
 ## Q148367: Possible Network File Damage with Redirector Caching

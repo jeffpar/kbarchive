@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167346: FIX: GPF Occurs When Starting Visual Basic 5.0"
-permalink: kb/167/Q167346/
+permalink: /kb/167/Q167346/
 ---
 
 ## Q167346: FIX: GPF Occurs When Starting Visual Basic 5.0

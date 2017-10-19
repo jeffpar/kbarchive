@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234062: INF: Determine Conversation State in CICS After SYNCPOINT"
-permalink: kb/234/Q234062/
+permalink: /kb/234/Q234062/
 ---
 
 ## Q234062: INF: Determine Conversation State in CICS After SYNCPOINT

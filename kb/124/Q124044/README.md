@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124044: PC Adm: Replicating Postoffice Address List Groups Between POs"
-permalink: kb/124/Q124044/
+permalink: /kb/124/Q124044/
 ---
 
 ## Q124044: PC Adm: Replicating Postoffice Address List Groups Between POs

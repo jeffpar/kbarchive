@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189101: Understanding NetBIOS Resource Record Flags"
-permalink: kb/189/Q189101/
+permalink: /kb/189/Q189101/
 ---
 
 ## Q189101: Understanding NetBIOS Resource Record Flags

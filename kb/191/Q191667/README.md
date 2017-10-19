@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191667: How to Use ScriptIt to Install FPNW via Unattended Installation"
-permalink: kb/191/Q191667/
+permalink: /kb/191/Q191667/
 ---
 
 ## Q191667: How to Use ScriptIt to Install FPNW via Unattended Installation

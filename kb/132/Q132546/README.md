@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132546: PC WRmt: Mail Remote MSRMTCN.DLL Version 3.2.4013 Update"
-permalink: kb/132/Q132546/
+permalink: /kb/132/Q132546/
 ---
 
 ## Q132546: PC WRmt: Mail Remote MSRMTCN.DLL Version 3.2.4013 Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109999: BUG: Browser Treats  Interface to Function  as a Subprogram"
-permalink: kb/109/Q109999/
+permalink: /kb/109/Q109999/
 ---
 
 ## Q109999: BUG: Browser Treats  Interface to Function  as a Subprogram

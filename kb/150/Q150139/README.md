@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150139: BUG: Using &quot;Save As&quot; to Save File Causes Application Error"
-permalink: kb/150/Q150139/
+permalink: /kb/150/Q150139/
 ---
 
 ## Q150139: BUG: Using &quot;Save As&quot; to Save File Causes Application Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170776: TP_STARTED Stops Responding If NT App Opens More Than 256 TP"
-permalink: kb/170/Q170776/
+permalink: /kb/170/Q170776/
 ---
 
 ## Q170776: TP_STARTED Stops Responding If NT App Opens More Than 256 TP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257901: How to Force the Cluster Service to Stop and Cause a Failover"
-permalink: kb/257/Q257901/
+permalink: /kb/257/Q257901/
 ---
 
 ## Q257901: How to Force the Cluster Service to Stop and Cause a Failover

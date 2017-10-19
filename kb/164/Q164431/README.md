@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164431: XADM: Errors Installing Exchange Server with CleanSweep"
-permalink: kb/164/Q164431/
+permalink: /kb/164/Q164431/
 ---
 
 ## Q164431: XADM: Errors Installing Exchange Server with CleanSweep

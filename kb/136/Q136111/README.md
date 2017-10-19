@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136111: Windows 95 Customer Advisory for Virus on Disk 2 Problems"
-permalink: kb/136/Q136111/
+permalink: /kb/136/Q136111/
 ---
 
 ## Q136111: Windows 95 Customer Advisory for Virus on Disk 2 Problems

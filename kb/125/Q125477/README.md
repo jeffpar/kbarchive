@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125477: Windows NT Workstation Broadcasts to LAN Manager 2.x Clients"
-permalink: kb/125/Q125477/
+permalink: /kb/125/Q125477/
 ---
 
 ## Q125477: Windows NT Workstation Broadcasts to LAN Manager 2.x Clients

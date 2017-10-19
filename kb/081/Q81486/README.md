@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81486: Novell SHELL.CFG and Windows"
-permalink: kb/081/Q81486/
+permalink: /kb/081/Q81486/
 ---
 
 ## Q81486: Novell SHELL.CFG and Windows

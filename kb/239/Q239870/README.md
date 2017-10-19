@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239870: RasDial Returns an Invalid Error Code"
-permalink: kb/239/Q239870/
+permalink: /kb/239/Q239870/
 ---
 
 ## Q239870: RasDial Returns an Invalid Error Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130031: Cannot Remotely Administer RAS Server in Low Speed Connection"
-permalink: kb/130/Q130031/
+permalink: /kb/130/Q130031/
 ---
 
 ## Q130031: Cannot Remotely Administer RAS Server in Low Speed Connection

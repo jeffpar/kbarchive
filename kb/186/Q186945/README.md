@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186945: XCLN: How To Calculate a Future Date Using Outlook"
-permalink: kb/186/Q186945/
+permalink: /kb/186/Q186945/
 ---
 
 ## Q186945: XCLN: How To Calculate a Future Date Using Outlook

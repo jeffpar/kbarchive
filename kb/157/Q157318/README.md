@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157318: DOCERR: Function Key Information Incorrect in VFP 5.0 Help"
-permalink: kb/157/Q157318/
+permalink: /kb/157/Q157318/
 ---
 
 ## Q157318: DOCERR: Function Key Information Incorrect in VFP 5.0 Help

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130307: How to Use Null Values in Visual FoxPro"
-permalink: kb/130/Q130307/
+permalink: /kb/130/Q130307/
 ---
 
 ## Q130307: How to Use Null Values in Visual FoxPro

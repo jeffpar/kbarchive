@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252948: FIX: SQLRowCount Returns -1 After Inserting a BLOB &gt;= 400K"
-permalink: kb/252/Q252948/
+permalink: /kb/252/Q252948/
 ---
 
 ## Q252948: FIX: SQLRowCount Returns -1 After Inserting a BLOB &gt;= 400K

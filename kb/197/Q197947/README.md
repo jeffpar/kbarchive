@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197947: HOWTO: Get Computer Information Using ADSI"
-permalink: kb/197/Q197947/
+permalink: /kb/197/Q197947/
 ---
 
 ## Q197947: HOWTO: Get Computer Information Using ADSI

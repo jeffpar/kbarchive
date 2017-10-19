@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132577: Setup Program for Grammer Game Warns User of Unknown Shell"
-permalink: kb/132/Q132577/
+permalink: /kb/132/Q132577/
 ---
 
 ## Q132577: Setup Program for Grammer Game Warns User of Unknown Shell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249878: XFOR: Notes Dirsync Doesn't Catch All Changes Using Mapping Rule"
-permalink: kb/249/Q249878/
+permalink: /kb/249/Q249878/
 ---
 
 ## Q249878: XFOR: Notes Dirsync Doesn't Catch All Changes Using Mapping Rule

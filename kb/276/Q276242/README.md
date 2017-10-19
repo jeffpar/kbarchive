@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276242: SNA Service Table Objects Increased from 1 KB to 4 KB"
-permalink: kb/276/Q276242/
+permalink: /kb/276/Q276242/
 ---
 
 ## Q276242: SNA Service Table Objects Increased from 1 KB to 4 KB

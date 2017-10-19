@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320460: Zone: &quot;Cannot Launch Game&quot; Err Msg When You Try to Play a Game"
-permalink: kb/320/Q320460/
+permalink: /kb/320/Q320460/
 ---
 
 ## Q320460: Zone: &quot;Cannot Launch Game&quot; Err Msg When You Try to Play a Game

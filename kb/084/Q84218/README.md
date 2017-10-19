@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84218: File Manager Brings over Wrong Hidden Files"
-permalink: kb/084/Q84218/
+permalink: /kb/084/Q84218/
 ---
 
 ## Q84218: File Manager Brings over Wrong Hidden Files

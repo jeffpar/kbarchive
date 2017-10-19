@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117310: &quot;Copy to Word&quot; Missing from Bookshelf Edit Menu"
-permalink: kb/117/Q117310/
+permalink: /kb/117/Q117310/
 ---
 
 ## Q117310: &quot;Copy to Word&quot; Missing from Bookshelf Edit Menu

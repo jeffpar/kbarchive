@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142622: Repeated Automatic Logons in Windows NT May Fail"
-permalink: kb/142/Q142622/
+permalink: /kb/142/Q142622/
 ---
 
 ## Q142622: Repeated Automatic Logons in Windows NT May Fail

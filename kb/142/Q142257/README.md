@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142257: XCON: MTA Database XFER-IN Thread Error"
-permalink: kb/142/Q142257/
+permalink: /kb/142/Q142257/
 ---
 
 ## Q142257: XCON: MTA Database XFER-IN Thread Error

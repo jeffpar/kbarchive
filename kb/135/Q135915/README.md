@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135915: PRB: BackColor for Objects in a Grid Appears to Be Incorrect"
-permalink: kb/135/Q135915/
+permalink: /kb/135/Q135915/
 ---
 
 ## Q135915: PRB: BackColor for Objects in a Grid Appears to Be Incorrect

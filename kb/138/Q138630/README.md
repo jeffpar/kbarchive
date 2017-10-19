@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138630: PRB: AMD PCNET Family Ethernet Adapter Cannot Be Installed Unatt"
-permalink: kb/138/Q138630/
+permalink: /kb/138/Q138630/
 ---
 
 ## Q138630: PRB: AMD PCNET Family Ethernet Adapter Cannot Be Installed Unatt

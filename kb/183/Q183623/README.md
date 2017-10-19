@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183623: WD97: Tabs Are Removed Running Spelling Check"
-permalink: kb/183/Q183623/
+permalink: /kb/183/Q183623/
 ---
 
 ## Q183623: WD97: Tabs Are Removed Running Spelling Check

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162202: Encarta 97 Err Msg: Encarta Cannot Connect to the Web"
-permalink: kb/162/Q162202/
+permalink: /kb/162/Q162202/
 ---
 
 ## Q162202: Encarta 97 Err Msg: Encarta Cannot Connect to the Web

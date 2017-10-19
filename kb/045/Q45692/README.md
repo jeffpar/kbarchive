@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45692: Getting an Application Ready for Retail Release"
-permalink: kb/045/Q45692/
+permalink: /kb/045/Q45692/
 ---
 
 ## Q45692: Getting an Application Ready for Retail Release

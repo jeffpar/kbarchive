@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128920: Setup Hangs on First Boot Configuring Plug and Play Devices"
-permalink: kb/128/Q128920/
+permalink: /kb/128/Q128920/
 ---
 
 ## Q128920: Setup Hangs on First Boot Configuring Plug and Play Devices

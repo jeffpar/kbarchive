@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122320: Problems with Client PCMWIN16 and Mandatory Jobs"
-permalink: kb/122/Q122320/
+permalink: /kb/122/Q122320/
 ---
 
 ## Q122320: Problems with Client PCMWIN16 and Mandatory Jobs

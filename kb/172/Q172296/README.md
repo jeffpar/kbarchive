@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172296: Snacfg.exe Uses Default Printer Properties When Adding Printers"
-permalink: kb/172/Q172296/
+permalink: /kb/172/Q172296/
 ---
 
 ## Q172296: Snacfg.exe Uses Default Printer Properties When Adding Printers

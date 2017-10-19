@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135699: PRB: In Windows NT Visual FoxPro DIR Command Differs"
-permalink: kb/135/Q135699/
+permalink: /kb/135/Q135699/
 ---
 
 ## Q135699: PRB: In Windows NT Visual FoxPro DIR Command Differs

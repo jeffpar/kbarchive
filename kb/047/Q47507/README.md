@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47507: Mac DOS: Err Msg: &quot;You Need to Run AppleTalk&quot; with TOPS"
-permalink: kb/047/Q47507/
+permalink: /kb/047/Q47507/
 ---
 
 ## Q47507: Mac DOS: Err Msg: &quot;You Need to Run AppleTalk&quot; with TOPS

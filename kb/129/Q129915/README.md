@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129915: Cannot Print Selected Text in WordPad or Paint"
-permalink: kb/129/Q129915/
+permalink: /kb/129/Q129915/
 ---
 
 ## Q129915: Cannot Print Selected Text in WordPad or Paint

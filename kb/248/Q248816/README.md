@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248816: Creating PDT Files for Epson Emulation Printers"
-permalink: kb/248/Q248816/
+permalink: /kb/248/Q248816/
 ---
 
 ## Q248816: Creating PDT Files for Epson Emulation Printers

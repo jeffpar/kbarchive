@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68124: Task List Tile Option Doesn't Tile Maximized Windows"
-permalink: kb/068/Q68124/
+permalink: /kb/068/Q68124/
 ---
 
 ## Q68124: Task List Tile Option Doesn't Tile Maximized Windows

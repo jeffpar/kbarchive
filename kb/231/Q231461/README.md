@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231461: XADM: Moving Mailboxes to a Different Recipient Subcontainer"
-permalink: kb/231/Q231461/
+permalink: /kb/231/Q231461/
 ---
 
 ## Q231461: XADM: Moving Mailboxes to a Different Recipient Subcontainer

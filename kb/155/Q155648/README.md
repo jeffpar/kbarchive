@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155648: Cannot Connect To MSN At Maximum Modem Speed"
-permalink: kb/155/Q155648/
+permalink: /kb/155/Q155648/
 ---
 
 ## Q155648: Cannot Connect To MSN At Maximum Modem Speed

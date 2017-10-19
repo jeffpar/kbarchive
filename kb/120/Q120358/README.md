@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120358: Volume Label Lost/Changed After Opening Properties Dialog Box"
-permalink: kb/120/Q120358/
+permalink: /kb/120/Q120358/
 ---
 
 ## Q120358: Volume Label Lost/Changed After Opening Properties Dialog Box

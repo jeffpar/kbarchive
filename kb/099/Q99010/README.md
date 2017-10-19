@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99010: Multimedia Err Msg: This AVI File Is too Big..."
-permalink: kb/099/Q99010/
+permalink: /kb/099/Q99010/
 ---
 
 ## Q99010: Multimedia Err Msg: This AVI File Is too Big...

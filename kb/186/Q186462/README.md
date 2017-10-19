@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186462: DHCPLOC Should Not Be Run from DHCP Servers"
-permalink: kb/186/Q186462/
+permalink: /kb/186/Q186462/
 ---
 
 ## Q186462: DHCPLOC Should Not Be Run from DHCP Servers

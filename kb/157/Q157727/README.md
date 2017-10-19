@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157727: BUG: Animated Mouse Cursor Does Not Work in .exe File"
-permalink: kb/157/Q157727/
+permalink: /kb/157/Q157727/
 ---
 
 ## Q157727: BUG: Animated Mouse Cursor Does Not Work in .exe File

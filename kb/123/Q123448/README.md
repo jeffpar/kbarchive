@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123448: MDI DGDB2.EXE &quot;Entry Point Not Found&quot; Error"
-permalink: kb/123/Q123448/
+permalink: /kb/123/Q123448/
 ---
 
 ## Q123448: MDI DGDB2.EXE &quot;Entry Point Not Found&quot; Error

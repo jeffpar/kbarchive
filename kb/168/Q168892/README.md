@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168892: XCON: MTA Reports Failure on Ecbios.dll During Startup"
-permalink: kb/168/Q168892/
+permalink: /kb/168/Q168892/
 ---
 
 ## Q168892: XCON: MTA Reports Failure on Ecbios.dll During Startup

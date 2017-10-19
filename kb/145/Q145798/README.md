@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145798: STOP Msg: Unable to Save C:&#92;TEMP&#92;FILENAME with Internet Explorer"
-permalink: kb/145/Q145798/
+permalink: /kb/145/Q145798/
 ---
 
 ## Q145798: STOP Msg: Unable to Save C:&#92;TEMP&#92;FILENAME with Internet Explorer

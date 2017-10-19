@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69786: Flight Simulator: Fuel Gauge Setting Not Saved with Mode"
-permalink: kb/069/Q69786/
+permalink: /kb/069/Q69786/
 ---
 
 ## Q69786: Flight Simulator: Fuel Gauge Setting Not Saved with Mode

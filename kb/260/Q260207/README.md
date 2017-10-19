@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260207: Partitions Mounted to an NTFS Folder Are Not Indexed"
-permalink: kb/260/Q260207/
+permalink: /kb/260/Q260207/
 ---
 
 ## Q260207: Partitions Mounted to an NTFS Folder Are Not Indexed

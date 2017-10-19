@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168188: XADM: Possible Loss of Mail with Move Mailbox"
-permalink: kb/168/Q168188/
+permalink: /kb/168/Q168188/
 ---
 
 ## Q168188: XADM: Possible Loss of Mail with Move Mailbox

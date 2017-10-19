@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249918: Logon Does Not Work, System Error 1385 Appears"
-permalink: kb/249/Q249918/
+permalink: /kb/249/Q249918/
 ---
 
 ## Q249918: Logon Does Not Work, System Error 1385 Appears

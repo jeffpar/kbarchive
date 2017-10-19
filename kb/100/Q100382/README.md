@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100382: Doc Err: Invalid Manual Reference to Character Map Help Topic"
-permalink: kb/100/Q100382/
+permalink: /kb/100/Q100382/
 ---
 
 ## Q100382: Doc Err: Invalid Manual Reference to Character Map Help Topic

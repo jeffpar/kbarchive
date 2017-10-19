@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148483: XCLN: Prev/Next Unavailable After Open from Notify Dialog"
-permalink: kb/148/Q148483/
+permalink: /kb/148/Q148483/
 ---
 
 ## Q148483: XCLN: Prev/Next Unavailable After Open from Notify Dialog

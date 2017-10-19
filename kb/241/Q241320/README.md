@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241320: LU Has Blank Status after Connection Move to Another SNA Server"
-permalink: kb/241/Q241320/
+permalink: /kb/241/Q241320/
 ---
 
 ## Q241320: LU Has Blank Status after Connection Move to Another SNA Server

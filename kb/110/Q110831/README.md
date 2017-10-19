@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110831: PPT: Slides Look Bad When Pasted into Other Programs"
-permalink: kb/110/Q110831/
+permalink: /kb/110/Q110831/
 ---
 
 ## Q110831: PPT: Slides Look Bad When Pasted into Other Programs

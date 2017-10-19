@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148250: Streets 4.0: Cannot Delete the Area Map File Airports.gaz"
-permalink: kb/148/Q148250/
+permalink: /kb/148/Q148250/
 ---
 
 ## Q148250: Streets 4.0: Cannot Delete the Area Map File Airports.gaz

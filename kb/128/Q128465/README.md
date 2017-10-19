@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128465: How to Obtain Windows NT Version 3.51 U.S. Service Pack"
-permalink: kb/128/Q128465/
+permalink: /kb/128/Q128465/
 ---
 
 ## Q128465: How to Obtain Windows NT Version 3.51 U.S. Service Pack

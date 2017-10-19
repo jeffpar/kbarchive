@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157188: PRB: String Functions Cannot Be Used with SQL ORDER BY Clause"
-permalink: kb/157/Q157188/
+permalink: /kb/157/Q157188/
 ---
 
 ## Q157188: PRB: String Functions Cannot Be Used with SQL ORDER BY Clause

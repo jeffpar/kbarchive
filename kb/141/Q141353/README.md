@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141353: PRB: Check-in That Uses Drag and Drop Causes Application Error"
-permalink: kb/141/Q141353/
+permalink: /kb/141/Q141353/
 ---
 
 ## Q141353: PRB: Check-in That Uses Drag and Drop Causes Application Error

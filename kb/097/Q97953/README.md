@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97953: Anti-Virus for Windows Doesn't Scan Due to Insufficient Memory"
-permalink: kb/097/Q97953/
+permalink: /kb/097/Q97953/
 ---
 
 ## Q97953: Anti-Virus for Windows Doesn't Scan Due to Insufficient Memory

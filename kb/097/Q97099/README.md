@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97099: Windows NT Does Not Support Windows Printing System 1.0"
-permalink: kb/097/Q97099/
+permalink: /kb/097/Q97099/
 ---
 
 ## Q97099: Windows NT Does Not Support Windows Printing System 1.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102030: Microsoft Systems Journal: September 1993"
-permalink: kb/102/Q102030/
+permalink: /kb/102/Q102030/
 ---
 
 ## Q102030: Microsoft Systems Journal: September 1993

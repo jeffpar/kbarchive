@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150231: FIX: Toolbar Does Not Show ToolTips Under Certain Circumstance"
-permalink: kb/150/Q150231/
+permalink: /kb/150/Q150231/
 ---
 
 ## Q150231: FIX: Toolbar Does Not Show ToolTips Under Certain Circumstance

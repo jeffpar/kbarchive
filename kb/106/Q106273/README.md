@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106273: NE1500T Network Card Cannot Talk to Network"
-permalink: kb/106/Q106273/
+permalink: /kb/106/Q106273/
 ---
 
 ## Q106273: NE1500T Network Card Cannot Talk to Network

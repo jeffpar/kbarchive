@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151084: Gardening/Do-It-Yourself: No Cancel Button in Settings Dialog"
-permalink: kb/151/Q151084/
+permalink: /kb/151/Q151084/
 ---
 
 ## Q151084: Gardening/Do-It-Yourself: No Cancel Button in Settings Dialog

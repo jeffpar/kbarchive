@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114265: HP Scanjet IIc May Fail With Future Domain TMC 1670"
-permalink: kb/114/Q114265/
+permalink: /kb/114/Q114265/
 ---
 
 ## Q114265: HP Scanjet IIc May Fail With Future Domain TMC 1670

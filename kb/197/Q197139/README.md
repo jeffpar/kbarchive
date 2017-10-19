@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197139: WD97: Heading 1 Style Starts with &quot;2&quot; When Numbered"
-permalink: kb/197/Q197139/
+permalink: /kb/197/Q197139/
 ---
 
 ## Q197139: WD97: Heading 1 Style Starts with &quot;2&quot; When Numbered

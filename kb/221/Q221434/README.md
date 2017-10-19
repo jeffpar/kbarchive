@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221434: XADM: &quot;Send As&quot; Functionality Does Not Work When DPA Is Used"
-permalink: kb/221/Q221434/
+permalink: /kb/221/Q221434/
 ---
 
 ## Q221434: XADM: &quot;Send As&quot; Functionality Does Not Work When DPA Is Used

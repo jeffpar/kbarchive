@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156895: XCLN: Auto Forward Does Not Work with Private Mail"
-permalink: kb/156/Q156895/
+permalink: /kb/156/Q156895/
 ---
 
 ## Q156895: XCLN: Auto Forward Does Not Work with Private Mail

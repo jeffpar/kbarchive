@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321802: SMS: Chinese Client Cannot Report Inventory to Japanese Server"
-permalink: kb/321/Q321802/
+permalink: /kb/321/Q321802/
 ---
 
 ## Q321802: SMS: Chinese Client Cannot Report Inventory to Japanese Server

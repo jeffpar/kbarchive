@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149271: PC DirSync: Explanation of DSSERVER.LOG Codes 167, 171 and 105"
-permalink: kb/149/Q149271/
+permalink: /kb/149/Q149271/
 ---
 
 ## Q149271: PC DirSync: Explanation of DSSERVER.LOG Codes 167, 171 and 105

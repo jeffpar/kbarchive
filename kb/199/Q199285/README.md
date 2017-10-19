@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199285: Upgrading Convoy to Windows NT Load Balancing Service"
-permalink: kb/199/Q199285/
+permalink: /kb/199/Q199285/
 ---
 
 ## Q199285: Upgrading Convoy to Windows NT Load Balancing Service

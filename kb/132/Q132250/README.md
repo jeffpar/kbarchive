@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132250: SMS Reports Incorrect Disk Information on NetWare Servers"
-permalink: kb/132/Q132250/
+permalink: /kb/132/Q132250/
 ---
 
 ## Q132250: SMS Reports Incorrect Disk Information on NetWare Servers

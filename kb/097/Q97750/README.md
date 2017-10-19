@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97750: PC WRmt: No Demos Available"
-permalink: kb/097/Q97750/
+permalink: /kb/097/Q97750/
 ---
 
 ## Q97750: PC WRmt: No Demos Available

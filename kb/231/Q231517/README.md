@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231517: MapPoint 2000: Graphics in Legend Are Jagged When You Print Map"
-permalink: kb/231/Q231517/
+permalink: /kb/231/Q231517/
 ---
 
 ## Q231517: MapPoint 2000: Graphics in Legend Are Jagged When You Print Map

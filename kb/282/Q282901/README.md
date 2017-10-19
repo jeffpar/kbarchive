@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282901: Drive Letters Are Not Assigned for SCSI Devices"
-permalink: kb/282/Q282901/
+permalink: /kb/282/Q282901/
 ---
 
 ## Q282901: Drive Letters Are Not Assigned for SCSI Devices

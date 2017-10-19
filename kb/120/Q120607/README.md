@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120607: Cannot Browse If No SMB Server Exists in Your Workgroup"
-permalink: kb/120/Q120607/
+permalink: /kb/120/Q120607/
 ---
 
 ## Q120607: Cannot Browse If No SMB Server Exists in Your Workgroup

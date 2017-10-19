@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135814: Setup Error 943 and 723 Setting Up or Removing Microsoft Plus!"
-permalink: kb/135/Q135814/
+permalink: /kb/135/Q135814/
 ---
 
 ## Q135814: Setup Error 943 and 723 Setting Up or Removing Microsoft Plus!

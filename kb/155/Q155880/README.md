@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155880: DOC: README FIRST Card Has a Typo in Stored Procedure Name"
-permalink: kb/155/Q155880/
+permalink: /kb/155/Q155880/
 ---
 
 ## Q155880: DOC: README FIRST Card Has a Typo in Stored Procedure Name

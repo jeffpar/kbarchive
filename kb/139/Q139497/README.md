@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139497: Bitmaps and Objects Removed from Messages in No-Attachment BBS"
-permalink: kb/139/Q139497/
+permalink: /kb/139/Q139497/
 ---
 
 ## Q139497: Bitmaps and Objects Removed from Messages in No-Attachment BBS

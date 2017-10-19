@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244434: WD97: Table Is Corrupted After Saving in Word 6.0/95 Format"
-permalink: kb/244/Q244434/
+permalink: /kb/244/Q244434/
 ---
 
 ## Q244434: WD97: Table Is Corrupted After Saving in Word 6.0/95 Format

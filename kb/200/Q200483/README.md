@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200483: SMS: Description of Remote Control Client Installation"
-permalink: kb/200/Q200483/
+permalink: /kb/200/Q200483/
 ---
 
 ## Q200483: SMS: Description of Remote Control Client Installation

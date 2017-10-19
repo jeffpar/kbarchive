@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148767: Contents of Return of Arcade README.TXT"
-permalink: kb/148/Q148767/
+permalink: /kb/148/Q148767/
 ---
 
 ## Q148767: Contents of Return of Arcade README.TXT

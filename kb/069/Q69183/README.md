@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69183: Okidata Laser 400 Emulates HP Series II Printer"
-permalink: kb/069/Q69183/
+permalink: /kb/069/Q69183/
 ---
 
 ## Q69183: Okidata Laser 400 Emulates HP Series II Printer

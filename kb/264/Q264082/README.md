@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000"
-permalink: kb/264/Q264082/
+permalink: /kb/264/Q264082/
 ---
 
 ## Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000

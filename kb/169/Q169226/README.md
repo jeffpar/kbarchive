@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169226: Path of Nested Desktop Folder Not Displayed Correctly"
-permalink: kb/169/Q169226/
+permalink: /kb/169/Q169226/
 ---
 
 ## Q169226: Path of Nested Desktop Folder Not Displayed Correctly

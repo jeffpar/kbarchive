@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162617: How to Install Windows NT from Multiple Distribution Sources"
-permalink: kb/162/Q162617/
+permalink: /kb/162/Q162617/
 ---
 
 ## Q162617: How to Install Windows NT from Multiple Distribution Sources

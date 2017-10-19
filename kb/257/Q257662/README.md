@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257662: FIX: Entering Text w/IME Set to Double Byte Input Option Crashes"
-permalink: kb/257/Q257662/
+permalink: /kb/257/Q257662/
 ---
 
 ## Q257662: FIX: Entering Text w/IME Set to Double Byte Input Option Crashes

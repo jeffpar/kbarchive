@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172236: SNABase Status Does Not Change From Stopped to Running"
-permalink: kb/172/Q172236/
+permalink: /kb/172/Q172236/
 ---
 
 ## Q172236: SNABase Status Does Not Change From Stopped to Running

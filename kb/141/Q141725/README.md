@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141725: INFO: Stopping MFC/MDI from Creating New MDI Child Window On Sta"
-permalink: kb/141/Q141725/
+permalink: /kb/141/Q141725/
 ---
 
 ## Q141725: INFO: Stopping MFC/MDI from Creating New MDI Child Window On Sta

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96337: Setup Fails with Tandy Sensation Shell"
-permalink: kb/096/Q96337/
+permalink: /kb/096/Q96337/
 ---
 
 ## Q96337: Setup Fails with Tandy Sensation Shell

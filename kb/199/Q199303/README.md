@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199303: Explorer Draws Default Icon for Shortcuts over Slow Link"
-permalink: kb/199/Q199303/
+permalink: /kb/199/Q199303/
 ---
 
 ## Q199303: Explorer Draws Default Icon for Shortcuts over Slow Link

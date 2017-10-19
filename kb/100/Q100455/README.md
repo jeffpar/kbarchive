@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100455: PC WRmt CONN: Using Gateway Address Lists"
-permalink: kb/100/Q100455/
+permalink: /kb/100/Q100455/
 ---
 
 ## Q100455: PC WRmt CONN: Using Gateway Address Lists

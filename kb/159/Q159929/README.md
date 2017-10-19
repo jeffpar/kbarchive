@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159929: User Manager Fails at Startup If Windows 95 Is in the Path"
-permalink: kb/159/Q159929/
+permalink: /kb/159/Q159929/
 ---
 
 ## Q159929: User Manager Fails at Startup If Windows 95 Is in the Path

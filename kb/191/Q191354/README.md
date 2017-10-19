@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191354: SMS: Remote Control May Fail with a Fire 1000GL Video Card"
-permalink: kb/191/Q191354/
+permalink: /kb/191/Q191354/
 ---
 
 ## Q191354: SMS: Remote Control May Fail with a Fire 1000GL Video Card

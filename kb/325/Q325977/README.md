@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325977: Train Simulator 1.0: Mouse Pointer Is Erratic or Stops Moving"
-permalink: kb/325/Q325977/
+permalink: /kb/325/Q325977/
 ---
 
 ## Q325977: Train Simulator 1.0: Mouse Pointer Is Erratic or Stops Moving

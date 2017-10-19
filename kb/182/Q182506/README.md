@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182506: XADM: Exchange Aware Windows NT Backup Event IDs"
-permalink: kb/182/Q182506/
+permalink: /kb/182/Q182506/
 ---
 
 ## Q182506: XADM: Exchange Aware Windows NT Backup Event IDs

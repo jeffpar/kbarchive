@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252852: SMS: Admin Console Doesn't Display Local SMS Version Installed"
-permalink: kb/252/Q252852/
+permalink: /kb/252/Q252852/
 ---
 
 ## Q252852: SMS: Admin Console Doesn't Display Local SMS Version Installed

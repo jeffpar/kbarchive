@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92428: WFWG: MSDLC.EXE Needed for Attachmate's Extra! for Windows"
-permalink: kb/092/Q92428/
+permalink: /kb/092/Q92428/
 ---
 
 ## Q92428: WFWG: MSDLC.EXE Needed for Attachmate's Extra! for Windows

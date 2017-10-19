@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254117: HOWTO: Display Recordset 'Pages' in MSHFlexGrid Control"
-permalink: kb/254/Q254117/
+permalink: /kb/254/Q254117/
 ---
 
 ## Q254117: HOWTO: Display Recordset 'Pages' in MSHFlexGrid Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221210: Browsing with a Multihomed PDC"
-permalink: kb/221/Q221210/
+permalink: /kb/221/Q221210/
 ---
 
 ## Q221210: Browsing with a Multihomed PDC

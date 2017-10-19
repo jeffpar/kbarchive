@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150133: BUG: WRITE Fails with Preconnected Unit=5 in Console Program"
-permalink: kb/150/Q150133/
+permalink: /kb/150/Q150133/
 ---
 
 ## Q150133: BUG: WRITE Fails with Preconnected Unit=5 in Console Program

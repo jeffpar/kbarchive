@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166617: XCLN: GPF in MSSPC16.DLL in Spanish Schedule+"
-permalink: kb/166/Q166617/
+permalink: /kb/166/Q166617/
 ---
 
 ## Q166617: XCLN: GPF in MSSPC16.DLL in Spanish Schedule+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89494: VHotKeyd.exe VxD Hot Keys in Windows 386 Enhanced Mode"
-permalink: kb/089/Q89494/
+permalink: /kb/089/Q89494/
 ---
 
 ## Q89494: VHotKeyd.exe VxD Hot Keys in Windows 386 Enhanced Mode

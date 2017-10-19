@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165128: Range Of LUs Wizard Should Use 2 Digits if Base is Hexadecimal"
-permalink: kb/165/Q165128/
+permalink: /kb/165/Q165128/
 ---
 
 ## Q165128: Range Of LUs Wizard Should Use 2 Digits if Base is Hexadecimal

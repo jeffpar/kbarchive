@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140957: XFOR: X.400 Message from Third Party Gateway Causes Event ID 940"
-permalink: kb/140/Q140957/
+permalink: /kb/140/Q140957/
 ---
 
 ## Q140957: XFOR: X.400 Message from Third Party Gateway Causes Event ID 940

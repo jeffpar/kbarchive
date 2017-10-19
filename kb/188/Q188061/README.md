@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188061: SMS: Unable to Inventory Software with Year 2000"
-permalink: kb/188/Q188061/
+permalink: /kb/188/Q188061/
 ---
 
 ## Q188061: SMS: Unable to Inventory Software with Year 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151214: XADM: Send &amp; Receive logs in MDBDATA directory"
-permalink: kb/151/Q151214/
+permalink: /kb/151/Q151214/
 ---
 
 ## Q151214: XADM: Send &amp; Receive logs in MDBDATA directory

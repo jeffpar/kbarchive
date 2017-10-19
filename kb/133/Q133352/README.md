@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133352: Desktop Theme Cannot Find Existing .wav Files"
-permalink: kb/133/Q133352/
+permalink: /kb/133/Q133352/
 ---
 
 ## Q133352: Desktop Theme Cannot Find Existing .wav Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226882: SMS: APMSPY.EXE Requires Program Number to Display Offers"
-permalink: kb/226/Q226882/
+permalink: /kb/226/Q226882/
 ---
 
 ## Q226882: SMS: APMSPY.EXE Requires Program Number to Display Offers

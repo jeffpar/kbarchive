@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178545: PRB: Cannot Set Marker Size or Style for MSChart"
-permalink: kb/178/Q178545/
+permalink: /kb/178/Q178545/
 ---
 
 ## Q178545: PRB: Cannot Set Marker Size or Style for MSChart

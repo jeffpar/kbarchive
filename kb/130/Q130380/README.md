@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130380: How to Specify a Value for a Custom Property"
-permalink: kb/130/Q130380/
+permalink: /kb/130/Q130380/
 ---
 
 ## Q130380: How to Specify a Value for a Custom Property

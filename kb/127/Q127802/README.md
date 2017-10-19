@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127802: PRB: Debugger Loses Source/Disassembly File Mapping"
-permalink: kb/127/Q127802/
+permalink: /kb/127/Q127802/
 ---
 
 ## Q127802: PRB: Debugger Loses Source/Disassembly File Mapping

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245649: SMS: License Server Manager Causes Full Synchronization Requests"
-permalink: kb/245/Q245649/
+permalink: /kb/245/Q245649/
 ---
 
 ## Q245649: SMS: License Server Manager Causes Full Synchronization Requests

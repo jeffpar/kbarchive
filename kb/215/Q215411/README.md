@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215411: BUG: VBCE: Some MessageBox Options Not Implemented"
-permalink: kb/215/Q215411/
+permalink: /kb/215/Q215411/
 ---
 
 ## Q215411: BUG: VBCE: Some MessageBox Options Not Implemented

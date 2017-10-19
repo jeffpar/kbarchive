@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127908: Granularity Value Changes After Installing Service Pack 2"
-permalink: kb/127/Q127908/
+permalink: /kb/127/Q127908/
 ---
 
 ## Q127908: Granularity Value Changes After Installing Service Pack 2

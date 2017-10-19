@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110254: INFO: How to Restart Windows from Within FoxPro"
-permalink: kb/110/Q110254/
+permalink: /kb/110/Q110254/
 ---
 
 ## Q110254: INFO: How to Restart Windows from Within FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186144: Dialog Box w/ Red Circle &amp; White X During WinNT 3.51 Upgrade"
-permalink: kb/186/Q186144/
+permalink: /kb/186/Q186144/
 ---
 
 ## Q186144: Dialog Box w/ Red Circle &amp; White X During WinNT 3.51 Upgrade

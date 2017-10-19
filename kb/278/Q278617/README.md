@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278617: Blank Pages or Access Violation with LU3 Print Jobs"
-permalink: kb/278/Q278617/
+permalink: /kb/278/Q278617/
 ---
 
 ## Q278617: Blank Pages or Access Violation with LU3 Print Jobs

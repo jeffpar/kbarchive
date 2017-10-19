@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67516: Windows Err Msg: Cannot Save New Settings"
-permalink: kb/067/Q67516/
+permalink: /kb/067/Q67516/
 ---
 
 ## Q67516: Windows Err Msg: Cannot Save New Settings

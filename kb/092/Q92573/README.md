@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92573: Most Recently Used (MRU) Lists of Previous Connections in WFWG"
-permalink: kb/092/Q92573/
+permalink: /kb/092/Q92573/
 ---
 
 ## Q92573: Most Recently Used (MRU) Lists of Previous Connections in WFWG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137304: Garbled Text Setting up MSN Using Remote Control"
-permalink: kb/137/Q137304/
+permalink: /kb/137/Q137304/
 ---
 
 ## Q137304: Garbled Text Setting up MSN Using Remote Control

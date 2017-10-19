@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269202: Join Not Working on First Run of Management Agent"
-permalink: kb/269/Q269202/
+permalink: /kb/269/Q269202/
 ---
 
 ## Q269202: Join Not Working on First Run of Management Agent

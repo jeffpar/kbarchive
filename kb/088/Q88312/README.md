@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88312: Windows Hangs on Dell 310 with Genius 420 Monitor"
-permalink: kb/088/Q88312/
+permalink: /kb/088/Q88312/
 ---
 
 ## Q88312: Windows Hangs on Dell 310 with Genius 420 Monitor

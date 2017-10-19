@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82817: Metafile (MS Draw) and Bitmap (Paintbrush) Pictures"
-permalink: kb/082/Q82817/
+permalink: /kb/082/Q82817/
 ---
 
 ## Q82817: Metafile (MS Draw) and Bitmap (Paintbrush) Pictures

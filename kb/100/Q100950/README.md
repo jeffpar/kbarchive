@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100950: SoundBits: Maximizing and Minimizing Windows Causes GP Fault"
-permalink: kb/100/Q100950/
+permalink: /kb/100/Q100950/
 ---
 
 ## Q100950: SoundBits: Maximizing and Minimizing Windows Causes GP Fault

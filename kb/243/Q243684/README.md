@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243684: WD97:Deleting Paragraph Mark at End of Table Causes Exception AV"
-permalink: kb/243/Q243684/
+permalink: /kb/243/Q243684/
 ---
 
 ## Q243684: WD97:Deleting Paragraph Mark at End of Table Causes Exception AV

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31999: Information LINK Shows with Invalid Object Module Errors"
-permalink: kb/031/Q31999/
+permalink: /kb/031/Q31999/
 ---
 
 ## Q31999: Information LINK Shows with Invalid Object Module Errors

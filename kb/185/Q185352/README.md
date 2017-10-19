@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185352: SMS: How to Set Up a Simple Test Environment"
-permalink: kb/185/Q185352/
+permalink: /kb/185/Q185352/
 ---
 
 ## Q185352: SMS: How to Set Up a Simple Test Environment

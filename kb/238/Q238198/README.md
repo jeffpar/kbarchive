@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238198: RAS Callback to a Hunt Group Does Not Work"
-permalink: kb/238/Q238198/
+permalink: /kb/238/Q238198/
 ---
 
 ## Q238198: RAS Callback to a Hunt Group Does Not Work

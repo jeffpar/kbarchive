@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183740: Key Manager Started from MMC Does Not Return Focus"
-permalink: kb/183/Q183740/
+permalink: /kb/183/Q183740/
 ---
 
 ## Q183740: Key Manager Started from MMC Does Not Return Focus

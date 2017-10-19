@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100709: SMTP: Err Msg: Network_read: Lost Network Connection"
-permalink: kb/100/Q100709/
+permalink: /kb/100/Q100709/
 ---
 
 ## Q100709: SMTP: Err Msg: Network_read: Lost Network Connection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272596: IIS: Enabling HTTP Compression Returns Content with 1997 Date"
-permalink: kb/272/Q272596/
+permalink: /kb/272/Q272596/
 ---
 
 ## Q272596: IIS: Enabling HTTP Compression Returns Content with 1997 Date

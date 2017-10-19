@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147250: Strauss: Minimum System Requirements"
-permalink: kb/147/Q147250/
+permalink: /kb/147/Q147250/
 ---
 
 ## Q147250: Strauss: Minimum System Requirements

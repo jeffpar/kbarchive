@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111420: MIPS Four-Processor Computer Halts for Long Time"
-permalink: kb/111/Q111420/
+permalink: /kb/111/Q111420/
 ---
 
 ## Q111420: MIPS Four-Processor Computer Halts for Long Time

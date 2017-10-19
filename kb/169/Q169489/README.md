@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169489: Snabase.exe AV After You Save Configuration Changes"
-permalink: kb/169/Q169489/
+permalink: /kb/169/Q169489/
 ---
 
 ## Q169489: Snabase.exe AV After You Save Configuration Changes

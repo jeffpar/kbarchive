@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141917: PRB: WAIT WINDOW Will Not Terminate with Outline Control"
-permalink: kb/141/Q141917/
+permalink: /kb/141/Q141917/
 ---
 
 ## Q141917: PRB: WAIT WINDOW Will Not Terminate with Outline Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304329: Fix:Microsoft Oracle ODBC Driver Crashes When TNS Does Not Exist"
-permalink: kb/304/Q304329/
+permalink: /kb/304/Q304329/
 ---
 
 ## Q304329: Fix:Microsoft Oracle ODBC Driver Crashes When TNS Does Not Exist

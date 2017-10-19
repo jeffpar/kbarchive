@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171474: FIX: Path Problems Using Project on Network Server"
-permalink: kb/171/Q171474/
+permalink: /kb/171/Q171474/
 ---
 
 ## Q171474: FIX: Path Problems Using Project on Network Server

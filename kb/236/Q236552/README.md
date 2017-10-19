@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236552: MOD2000: Errors When Clicking Get in Get Object from SourceSafe"
-permalink: kb/236/Q236552/
+permalink: /kb/236/Q236552/
 ---
 
 ## Q236552: MOD2000: Errors When Clicking Get in Get Object from SourceSafe

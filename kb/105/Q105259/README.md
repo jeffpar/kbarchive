@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105259: Using Microsoft Backup to Back Up to a Network Drive"
-permalink: kb/105/Q105259/
+permalink: /kb/105/Q105259/
 ---
 
 ## Q105259: Using Microsoft Backup to Back Up to a Network Drive

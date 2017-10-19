@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148725: NEC CD-ROM Drive Controls Do Not Work in Windows 95"
-permalink: kb/148/Q148725/
+permalink: /kb/148/Q148725/
 ---
 
 ## Q148725: NEC CD-ROM Drive Controls Do Not Work in Windows 95

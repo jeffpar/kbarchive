@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72049: Windows Causes Reboot on Everex 386/25 AGI 3900A"
-permalink: kb/072/Q72049/
+permalink: /kb/072/Q72049/
 ---
 
 ## Q72049: Windows Causes Reboot on Everex 386/25 AGI 3900A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66349: Windows Entertainment Pack Disk Labels Incorrect"
-permalink: kb/066/Q66349/
+permalink: /kb/066/Q66349/
 ---
 
 ## Q66349: Windows Entertainment Pack Disk Labels Incorrect

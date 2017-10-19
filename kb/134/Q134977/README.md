@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134977: FIX: Error Occurs When Remove Object That Has Pending Code"
-permalink: kb/134/Q134977/
+permalink: /kb/134/Q134977/
 ---
 
 ## Q134977: FIX: Error Occurs When Remove Object That Has Pending Code

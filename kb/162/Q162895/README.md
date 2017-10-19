@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162895: WD97: How to Use the ListNum Field in Word"
-permalink: kb/162/Q162895/
+permalink: /kb/162/Q162895/
 ---
 
 ## Q162895: WD97: How to Use the ListNum Field in Word

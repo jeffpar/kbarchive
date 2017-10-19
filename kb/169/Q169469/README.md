@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169469: BUG: SQLState S1000 with SQL_AUTOCOMMIT_OFF/SQLTransact"
-permalink: kb/169/Q169469/
+permalink: /kb/169/Q169469/
 ---
 
 ## Q169469: BUG: SQLState S1000 with SQL_AUTOCOMMIT_OFF/SQLTransact

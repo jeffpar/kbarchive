@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190532: Import COBOL Wizard Cannot Select LL, ZZ, TRANCODE (IMS)"
-permalink: kb/190/Q190532/
+permalink: /kb/190/Q190532/
 ---
 
 ## Q190532: Import COBOL Wizard Cannot Select LL, ZZ, TRANCODE (IMS)

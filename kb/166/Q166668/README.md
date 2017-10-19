@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166668: XFOR: How to Eliminate Duplicates in Exchange GAL"
-permalink: kb/166/Q166668/
+permalink: /kb/166/Q166668/
 ---
 
 ## Q166668: XFOR: How to Eliminate Duplicates in Exchange GAL

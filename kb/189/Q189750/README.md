@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189750: Error Message: Bad Resource Data Checksum Error"
-permalink: kb/189/Q189750/
+permalink: /kb/189/Q189750/
 ---
 
 ## Q189750: Error Message: Bad Resource Data Checksum Error

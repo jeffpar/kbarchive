@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268550: HOWTO: Use DCOMCNFG for a VB DCOM Client/Server Application"
-permalink: kb/268/Q268550/
+permalink: /kb/268/Q268550/
 ---
 
 ## Q268550: HOWTO: Use DCOMCNFG for a VB DCOM Client/Server Application

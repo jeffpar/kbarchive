@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193941: INFO: Location of Oracle's Public FTP Site"
-permalink: kb/193/Q193941/
+permalink: /kb/193/Q193941/
 ---
 
 ## Q193941: INFO: Location of Oracle's Public FTP Site

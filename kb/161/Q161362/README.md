@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161362: Windows NT 4.0 Driver for SideWinder Now Available"
-permalink: kb/161/Q161362/
+permalink: /kb/161/Q161362/
 ---
 
 ## Q161362: Windows NT 4.0 Driver for SideWinder Now Available

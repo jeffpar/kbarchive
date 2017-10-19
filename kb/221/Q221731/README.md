@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221731: FIX: Copy/Paste Allowed With Password Character"
-permalink: kb/221/Q221731/
+permalink: /kb/221/Q221731/
 ---
 
 ## Q221731: FIX: Copy/Paste Allowed With Password Character

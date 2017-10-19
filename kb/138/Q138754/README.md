@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138754: PRB: Exported Comma-Delimited File Has 3 Commas &amp; No Quotes"
-permalink: kb/138/Q138754/
+permalink: /kb/138/Q138754/
 ---
 
 ## Q138754: PRB: Exported Comma-Delimited File Has 3 Commas &amp; No Quotes

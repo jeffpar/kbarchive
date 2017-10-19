@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135458: PC WSPlus: Future Tasks Disappear and Reappear"
-permalink: kb/135/Q135458/
+permalink: /kb/135/Q135458/
 ---
 
 ## Q135458: PC WSPlus: Future Tasks Disappear and Reappear

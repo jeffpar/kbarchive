@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166768: HOWTO: Implementing a Custom Property Showing a FileOpen Dialog"
-permalink: kb/166/Q166768/
+permalink: /kb/166/Q166768/
 ---
 
 ## Q166768: HOWTO: Implementing a Custom Property Showing a FileOpen Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248072: Err Msg: HTTP 403.3 - Forbidden: Write Access Forbidden"
-permalink: kb/248/Q248072/
+permalink: /kb/248/Q248072/
 ---
 
 ## Q248072: Err Msg: HTTP 403.3 - Forbidden: Write Access Forbidden

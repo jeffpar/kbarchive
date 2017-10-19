@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236030: PCI Video Adapter May Not Function on Secondary PCI Bus"
-permalink: kb/236/Q236030/
+permalink: /kb/236/Q236030/
 ---
 
 ## Q236030: PCI Video Adapter May Not Function on Secondary PCI Bus

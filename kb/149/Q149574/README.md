@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149574: Internet Explorer 2.0 Fails to Connect to SSL Enabled IIS Server"
-permalink: kb/149/Q149574/
+permalink: /kb/149/Q149574/
 ---
 
 ## Q149574: Internet Explorer 2.0 Fails to Connect to SSL Enabled IIS Server

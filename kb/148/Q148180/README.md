@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148180: INFO: File Differences in Visual Basic 4.0a"
-permalink: kb/148/Q148180/
+permalink: /kb/148/Q148180/
 ---
 
 ## Q148180: INFO: File Differences in Visual Basic 4.0a

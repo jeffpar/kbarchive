@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133435: Cannot Install Windows 95 Drivers"
-permalink: kb/133/Q133435/
+permalink: /kb/133/Q133435/
 ---
 
 ## Q133435: Cannot Install Windows 95 Drivers

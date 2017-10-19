@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167320: Fixacls.exe Not Available in Windows NT Server 4.0 Resource Kit"
-permalink: kb/167/Q167320/
+permalink: /kb/167/Q167320/
 ---
 
 ## Q167320: Fixacls.exe Not Available in Windows NT Server 4.0 Resource Kit

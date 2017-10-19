@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87931: Preventing Microsoft LINK From Running CVPACK"
-permalink: kb/087/Q87931/
+permalink: /kb/087/Q87931/
 ---
 
 ## Q87931: Preventing Microsoft LINK From Running CVPACK

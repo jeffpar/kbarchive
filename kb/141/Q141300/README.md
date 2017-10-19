@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141300: Primary and Secondary WINS Servers in Unattended Setup"
-permalink: kb/141/Q141300/
+permalink: /kb/141/Q141300/
 ---
 
 ## Q141300: Primary and Secondary WINS Servers in Unattended Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92728: Running CorelDRAW! with Windows 3.1"
-permalink: kb/092/Q92728/
+permalink: /kb/092/Q92728/
 ---
 
 ## Q92728: Running CorelDRAW! with Windows 3.1

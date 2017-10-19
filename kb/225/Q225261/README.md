@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225261: Error Line Number Returned By Snacfg.exe May Be Incorrect"
-permalink: kb/225/Q225261/
+permalink: /kb/225/Q225261/
 ---
 
 ## Q225261: Error Line Number Returned By Snacfg.exe May Be Incorrect

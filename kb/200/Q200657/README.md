@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200657: SMS: Character Display Limit in Status Viewer Description Field"
-permalink: kb/200/Q200657/
+permalink: /kb/200/Q200657/
 ---
 
 ## Q200657: SMS: Character Display Limit in Status Viewer Description Field

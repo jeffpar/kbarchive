@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312146: Microsoft Windows 2000 Server Administrator's Companion Comments"
-permalink: kb/312/Q312146/
+permalink: /kb/312/Q312146/
 ---
 
 ## Q312146: Microsoft Windows 2000 Server Administrator's Companion Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124552: User Account Limitation"
-permalink: kb/124/Q124552/
+permalink: /kb/124/Q124552/
 ---
 
 ## Q124552: User Account Limitation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149261: Can't Use Security Properties via Win95 Server Admin Tools"
-permalink: kb/149/Q149261/
+permalink: /kb/149/Q149261/
 ---
 
 ## Q149261: Can't Use Security Properties via Win95 Server Admin Tools

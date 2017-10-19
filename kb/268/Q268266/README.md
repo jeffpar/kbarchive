@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268266: TN3270 Print Session Stops Responding When Host Sends a SHUTD"
-permalink: kb/268/Q268266/
+permalink: /kb/268/Q268266/
 ---
 
 ## Q268266: TN3270 Print Session Stops Responding When Host Sends a SHUTD

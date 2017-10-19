@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136515: XADM: &quot;Not Read&quot; Notification"
-permalink: kb/136/Q136515/
+permalink: /kb/136/Q136515/
 ---
 
 ## Q136515: XADM: &quot;Not Read&quot; Notification

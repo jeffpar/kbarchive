@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186466: Terminal Server Clients Should be Set to at Least 256 Colors"
-permalink: kb/186/Q186466/
+permalink: /kb/186/Q186466/
 ---
 
 ## Q186466: Terminal Server Clients Should be Set to at Least 256 Colors

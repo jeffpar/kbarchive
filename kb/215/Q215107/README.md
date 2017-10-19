@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215107: SMS: Client w/ Non-Admin Rights Doesn't Create CCR for 2nd Site"
-permalink: kb/215/Q215107/
+permalink: /kb/215/Q215107/
 ---
 
 ## Q215107: SMS: Client w/ Non-Admin Rights Doesn't Create CCR for 2nd Site

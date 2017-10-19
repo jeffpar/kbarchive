@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154538: WinNT 4.0 Upgrade CD Will Not Upgrade WinNT 4.0 Installation"
-permalink: kb/154/Q154538/
+permalink: /kb/154/Q154538/
 ---
 
 ## Q154538: WinNT 4.0 Upgrade CD Will Not Upgrade WinNT 4.0 Installation

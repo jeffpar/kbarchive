@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130009: Mac Bookshelf 94: Only Prints in Upper-Left Corner"
-permalink: kb/130/Q130009/
+permalink: /kb/130/Q130009/
 ---
 
 ## Q130009: Mac Bookshelf 94: Only Prints in Upper-Left Corner

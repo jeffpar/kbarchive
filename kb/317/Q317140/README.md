@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317140: Event ID 3870, 7023, 2504 and 7002 Messages Are Logged"
-permalink: kb/317/Q317140/
+permalink: /kb/317/Q317140/
 ---
 
 ## Q317140: Event ID 3870, 7023, 2504 and 7002 Messages Are Logged

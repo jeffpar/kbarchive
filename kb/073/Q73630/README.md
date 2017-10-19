@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73630: Cannot Swap Out of WordPerfect 5.1 in 132 Column Video Mode"
-permalink: kb/073/Q73630/
+permalink: /kb/073/Q73630/
 ---
 
 ## Q73630: Cannot Swap Out of WordPerfect 5.1 in 132 Column Video Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280321: LDAP Program May Generate Access Violation Under Stress"
-permalink: kb/280/Q280321/
+permalink: /kb/280/Q280321/
 ---
 
 ## Q280321: LDAP Program May Generate Access Violation Under Stress

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162518: PRB: &quot;Unexpected error; quitting&quot; Installing VB4 Application"
-permalink: kb/162/Q162518/
+permalink: /kb/162/Q162518/
 ---
 
 ## Q162518: PRB: &quot;Unexpected error; quitting&quot; Installing VB4 Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199423: XFOR: Error 403 When Issuing a MODE on an Invisible Chat User"
-permalink: kb/199/Q199423/
+permalink: /kb/199/Q199423/
 ---
 
 ## Q199423: XFOR: Error 403 When Issuing a MODE on an Invisible Chat User

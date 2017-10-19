@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142883: HOWTO: Troubleshooting Btrieve Connections in Visual FoxPro"
-permalink: kb/142/Q142883/
+permalink: /kb/142/Q142883/
 ---
 
 ## Q142883: HOWTO: Troubleshooting Btrieve Connections in Visual FoxPro

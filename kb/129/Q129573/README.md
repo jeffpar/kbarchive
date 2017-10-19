@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129573: Alternative to Using the _CUROBJ Variable with Forms"
-permalink: kb/129/Q129573/
+permalink: /kb/129/Q129573/
 ---
 
 ## Q129573: Alternative to Using the _CUROBJ Variable with Forms

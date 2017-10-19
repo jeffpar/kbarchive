@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140798: Julia Child: More Popup Window Closes Help"
-permalink: kb/140/Q140798/
+permalink: /kb/140/Q140798/
 ---
 
 ## Q140798: Julia Child: More Popup Window Closes Help

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195885: Installing Seagate Backup Exec 7.x on Terminal Server"
-permalink: kb/195/Q195885/
+permalink: /kb/195/Q195885/
 ---
 
 ## Q195885: Installing Seagate Backup Exec 7.x on Terminal Server

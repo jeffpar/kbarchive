@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156454: FIX: Adding File Causes Error if Name Contains a Space"
-permalink: kb/156/Q156454/
+permalink: /kb/156/Q156454/
 ---
 
 ## Q156454: FIX: Adding File Causes Error if Name Contains a Space

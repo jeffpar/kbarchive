@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49326: Determining Number of Partitions Per Hard Disk"
-permalink: kb/049/Q49326/
+permalink: /kb/049/Q49326/
 ---
 
 ## Q49326: Determining Number of Partitions Per Hard Disk

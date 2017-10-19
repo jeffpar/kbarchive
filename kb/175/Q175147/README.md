@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175147: Problem Registering Multicast Addresses with NDIS Miniports"
-permalink: kb/175/Q175147/
+permalink: /kb/175/Q175147/
 ---
 
 ## Q175147: Problem Registering Multicast Addresses with NDIS Miniports

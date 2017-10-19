@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265359: Error Message &quot;Unknown Registry Failure: Service NDIS WAN&quot;"
-permalink: kb/265/Q265359/
+permalink: /kb/265/Q265359/
 ---
 
 ## Q265359: Error Message &quot;Unknown Registry Failure: Service NDIS WAN&quot;

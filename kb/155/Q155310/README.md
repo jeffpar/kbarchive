@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155310: Cannot Print Pages in Reverse Order with HP 1600C Driver"
-permalink: kb/155/Q155310/
+permalink: /kb/155/Q155310/
 ---
 
 ## Q155310: Cannot Print Pages in Reverse Order with HP 1600C Driver

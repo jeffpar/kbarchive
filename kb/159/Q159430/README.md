@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159430: Full Court Press: 24-Second Clock Not Reset"
-permalink: kb/159/Q159430/
+permalink: /kb/159/Q159430/
 ---
 
 ## Q159430: Full Court Press: 24-Second Clock Not Reset

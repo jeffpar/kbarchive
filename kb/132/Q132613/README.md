@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132613: Memory Problems on EISA Computers"
-permalink: kb/132/Q132613/
+permalink: /kb/132/Q132613/
 ---
 
 ## Q132613: Memory Problems on EISA Computers

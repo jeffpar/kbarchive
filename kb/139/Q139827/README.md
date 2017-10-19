@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139827: ThinkPad Hibernation File Does Not Work with DriveSpace"
-permalink: kb/139/Q139827/
+permalink: /kb/139/Q139827/
 ---
 
 ## Q139827: ThinkPad Hibernation File Does Not Work with DriveSpace

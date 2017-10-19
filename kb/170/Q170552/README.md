@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170552: HOWTO: Establish a One-to-Many Relation with a DBCombo"
-permalink: kb/170/Q170552/
+permalink: /kb/170/Q170552/
 ---
 
 ## Q170552: HOWTO: Establish a One-to-Many Relation with a DBCombo

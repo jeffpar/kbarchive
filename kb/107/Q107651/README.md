@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107651: 32-Bit File Access Can Cause ScanDisk to Report Harmless Error"
-permalink: kb/107/Q107651/
+permalink: /kb/107/Q107651/
 ---
 
 ## Q107651: 32-Bit File Access Can Cause ScanDisk to Report Harmless Error

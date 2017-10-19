@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146267: XCLN: Selecting Sort for Case Sensitivity Inconsistent"
-permalink: kb/146/Q146267/
+permalink: /kb/146/Q146267/
 ---
 
 ## Q146267: XCLN: Selecting Sort for Case Sensitivity Inconsistent

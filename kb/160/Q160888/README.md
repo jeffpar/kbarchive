@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160888: PRB: VSS Explorer Error: &quot;This Is an Integration Only Project&quot;"
-permalink: kb/160/Q160888/
+permalink: /kb/160/Q160888/
 ---
 
 ## Q160888: PRB: VSS Explorer Error: &quot;This Is an Integration Only Project&quot;

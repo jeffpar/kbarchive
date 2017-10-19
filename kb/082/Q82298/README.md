@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82298: Windows 3.1 Standard Mode and the VCPI"
-permalink: kb/082/Q82298/
+permalink: /kb/082/Q82298/
 ---
 
 ## Q82298: Windows 3.1 Standard Mode and the VCPI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110764: BUG: Scrollable List Box Displays Blank Line at Bottom"
-permalink: kb/110/Q110764/
+permalink: /kb/110/Q110764/
 ---
 
 ## Q110764: BUG: Scrollable List Box Displays Blank Line at Bottom

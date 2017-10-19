@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121385: SMS Program Group Controller and AutoDisconnect"
-permalink: kb/121/Q121385/
+permalink: /kb/121/Q121385/
 ---
 
 ## Q121385: SMS Program Group Controller and AutoDisconnect

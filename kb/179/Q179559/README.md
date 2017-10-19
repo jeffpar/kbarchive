@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179559: WD97: Changing Object Wrapping Changes Order to Behind Text"
-permalink: kb/179/Q179559/
+permalink: /kb/179/Q179559/
 ---
 
 ## Q179559: WD97: Changing Object Wrapping Changes Order to Behind Text

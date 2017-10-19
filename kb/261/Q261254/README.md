@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261254: SMS: APM Enters Endless Loop on Windows NT 3.51 Clients"
-permalink: kb/261/Q261254/
+permalink: /kb/261/Q261254/
 ---
 
 ## Q261254: SMS: APM Enters Endless Loop on Windows NT 3.51 Clients

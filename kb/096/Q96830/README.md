@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96830: Windows 3.0 Doesn't Run in 386 Enhanced Mode"
-permalink: kb/096/Q96830/
+permalink: /kb/096/Q96830/
 ---
 
 ## Q96830: Windows 3.0 Doesn't Run in 386 Enhanced Mode

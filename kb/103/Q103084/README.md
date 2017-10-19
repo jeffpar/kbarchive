@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103084: Changes to Windows NT Driver Library: Miscellaneous"
-permalink: kb/103/Q103084/
+permalink: /kb/103/Q103084/
 ---
 
 ## Q103084: Changes to Windows NT Driver Library: Miscellaneous

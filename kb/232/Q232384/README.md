@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232384: XFOR: Store Does Not Recognize Double Angle Brackets Correctly"
-permalink: kb/232/Q232384/
+permalink: /kb/232/Q232384/
 ---
 
 ## Q232384: XFOR: Store Does Not Recognize Double Angle Brackets Correctly

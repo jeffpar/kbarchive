@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170372: BUG: Setup Wizard Closes With Error: Invalid Property Value..."
-permalink: kb/170/Q170372/
+permalink: /kb/170/Q170372/
 ---
 
 ## Q170372: BUG: Setup Wizard Closes With Error: Invalid Property Value...

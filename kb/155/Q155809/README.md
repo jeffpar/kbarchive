@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155809: HOWTO: Use the SYS(3053) Function Handle with ODBC"
-permalink: kb/155/Q155809/
+permalink: /kb/155/Q155809/
 ---
 
 ## Q155809: HOWTO: Use the SYS(3053) Function Handle with ODBC

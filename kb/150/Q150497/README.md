@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150497: How to Repair Windows NT System Files Without a CD-ROM Attached"
-permalink: kb/150/Q150497/
+permalink: /kb/150/Q150497/
 ---
 
 ## Q150497: How to Repair Windows NT System Files Without a CD-ROM Attached

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142203: DOC: GetFileTitle() &amp; GetFileName() Docs Are Switched"
-permalink: kb/142/Q142203/
+permalink: /kb/142/Q142203/
 ---
 
 ## Q142203: DOC: GetFileTitle() &amp; GetFileName() Docs Are Switched

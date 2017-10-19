@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132245: SNA Server Version 2.11 - New Features"
-permalink: kb/132/Q132245/
+permalink: /kb/132/Q132245/
 ---
 
 ## Q132245: SNA Server Version 2.11 - New Features

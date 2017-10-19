@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80155: PaintJet Printing May Default to LPT1 with Other Port Selected"
-permalink: kb/080/Q80155/
+permalink: /kb/080/Q80155/
 ---
 
 ## Q80155: PaintJet Printing May Default to LPT1 with Other Port Selected

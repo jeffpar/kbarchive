@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233196: RRAS VPN Demand Dial Router Connection May Be Delayed"
-permalink: kb/233/Q233196/
+permalink: /kb/233/Q233196/
 ---
 
 ## Q233196: RRAS VPN Demand Dial Router Connection May Be Delayed

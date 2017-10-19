@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90217: Purpose of Chat's Custom Colors Button"
-permalink: kb/090/Q90217/
+permalink: /kb/090/Q90217/
 ---
 
 ## Q90217: Purpose of Chat's Custom Colors Button

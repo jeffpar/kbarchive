@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167170: BUG: GetWindowContextHelpId() returns 0 for ActiveX Controls"
-permalink: kb/167/Q167170/
+permalink: /kb/167/Q167170/
 ---
 
 ## Q167170: BUG: GetWindowContextHelpId() returns 0 for ActiveX Controls

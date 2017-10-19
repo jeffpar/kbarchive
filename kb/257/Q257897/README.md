@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257897: Printer Shares May Not Come Online If Quorum Log Is Too Small"
-permalink: kb/257/Q257897/
+permalink: /kb/257/Q257897/
 ---
 
 ## Q257897: Printer Shares May Not Come Online If Quorum Log Is Too Small

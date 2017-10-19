@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156864: FIX: Debugger Hangs Expanding TreeView in Debug Watch Window"
-permalink: kb/156/Q156864/
+permalink: /kb/156/Q156864/
 ---
 
 ## Q156864: FIX: Debugger Hangs Expanding TreeView in Debug Watch Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134662: Incorrect Time Reported in the Database for Last Software Scan"
-permalink: kb/134/Q134662/
+permalink: /kb/134/Q134662/
 ---
 
 ## Q134662: Incorrect Time Reported in the Database for Last Software Scan

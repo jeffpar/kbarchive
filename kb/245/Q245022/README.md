@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245022: How To Use WEventMon.exe and SNA Trace Maker"
-permalink: kb/245/Q245022/
+permalink: /kb/245/Q245022/
 ---
 
 ## Q245022: How To Use WEventMon.exe and SNA Trace Maker

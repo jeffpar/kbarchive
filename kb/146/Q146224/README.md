@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146224: HOWTO: Use SQL Pass Through to Connect to ASCII Text Files"
-permalink: kb/146/Q146224/
+permalink: /kb/146/Q146224/
 ---
 
 ## Q146224: HOWTO: Use SQL Pass Through to Connect to ASCII Text Files

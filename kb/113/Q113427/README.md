@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113427: FIX: Incorrect Optimization of Left Shift Operator"
-permalink: kb/113/Q113427/
+permalink: /kb/113/Q113427/
 ---
 
 ## Q113427: FIX: Incorrect Optimization of Left Shift Operator

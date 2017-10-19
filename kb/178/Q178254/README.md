@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178254: SNA Server Access Violation in Function S1practs"
-permalink: kb/178/Q178254/
+permalink: /kb/178/Q178254/
 ---
 
 ## Q178254: SNA Server Access Violation in Function S1practs

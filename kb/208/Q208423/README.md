@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208423: FP: WMF Files Display Larger Than Expected"
-permalink: kb/208/Q208423/
+permalink: /kb/208/Q208423/
 ---
 
 ## Q208423: FP: WMF Files Display Larger Than Expected

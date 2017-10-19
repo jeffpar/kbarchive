@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176739: XFOR: IMS Uses Incorrect 'Reply To' Address"
-permalink: kb/176/Q176739/
+permalink: /kb/176/Q176739/
 ---
 
 ## Q176739: XFOR: IMS Uses Incorrect 'Reply To' Address

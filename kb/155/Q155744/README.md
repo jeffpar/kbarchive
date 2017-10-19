@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155744: SMS: WINS Replication Causes Remote Control Delay"
-permalink: kb/155/Q155744/
+permalink: /kb/155/Q155744/
 ---
 
 ## Q155744: SMS: WINS Replication Causes Remote Control Delay

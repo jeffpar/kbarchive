@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166596: XADM: Starting Information Store Generates Dr. Watson Error"
-permalink: kb/166/Q166596/
+permalink: /kb/166/Q166596/
 ---
 
 ## Q166596: XADM: Starting Information Store Generates Dr. Watson Error

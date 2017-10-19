@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133735: PPT: Rotated Text Prints Horizontally on Canon LBP 1260 Printer"
-permalink: kb/133/Q133735/
+permalink: /kb/133/Q133735/
 ---
 
 ## Q133735: PPT: Rotated Text Prints Horizontally on Canon LBP 1260 Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67015: Fontware Installation Kit Typeface Information Missing"
-permalink: kb/067/Q67015/
+permalink: /kb/067/Q67015/
 ---
 
 ## Q67015: Fontware Installation Kit Typeface Information Missing

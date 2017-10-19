@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153699: XFOR: The character set files could not be found."
-permalink: kb/153/Q153699/
+permalink: /kb/153/Q153699/
 ---
 
 ## Q153699: XFOR: The character set files could not be found.

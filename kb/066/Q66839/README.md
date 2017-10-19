@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66839: Flight Simulator: Plane Does Not Crash into Scenery Object"
-permalink: kb/066/Q66839/
+permalink: /kb/066/Q66839/
 ---
 
 ## Q66839: Flight Simulator: Plane Does Not Crash into Scenery Object

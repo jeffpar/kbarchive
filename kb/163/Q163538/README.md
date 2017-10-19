@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163538: NTBackup Does Not Properly Eject Tapes on DLT Tape Devices"
-permalink: kb/163/Q163538/
+permalink: /kb/163/Q163538/
 ---
 
 ## Q163538: NTBackup Does Not Properly Eject Tapes on DLT Tape Devices

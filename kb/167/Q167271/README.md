@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167271: &quot;Path Not Found&quot; When Using 3Com LANPLEX 2500 Router"
-permalink: kb/167/Q167271/
+permalink: /kb/167/Q167271/
 ---
 
 ## Q167271: &quot;Path Not Found&quot; When Using 3Com LANPLEX 2500 Router

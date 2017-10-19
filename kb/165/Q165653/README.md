@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165653: Cannot Open Pipe for NetMN (Access Denied)"
-permalink: kb/165/Q165653/
+permalink: /kb/165/Q165653/
 ---
 
 ## Q165653: Cannot Open Pipe for NetMN (Access Denied)

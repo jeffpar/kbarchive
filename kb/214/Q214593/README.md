@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214593: Terminal Server w/ Metaframe ICA Client Can't Autocreate Printer"
-permalink: kb/214/Q214593/
+permalink: /kb/214/Q214593/
 ---
 
 ## Q214593: Terminal Server w/ Metaframe ICA Client Can't Autocreate Printer

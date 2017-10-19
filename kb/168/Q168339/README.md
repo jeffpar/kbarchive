@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168339: WD97: Invalid Page Fault Promoting/Demoting Heading"
-permalink: kb/168/Q168339/
+permalink: /kb/168/Q168339/
 ---
 
 ## Q168339: WD97: Invalid Page Fault Promoting/Demoting Heading

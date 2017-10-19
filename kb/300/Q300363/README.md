@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300363: INFO: Hotfixes Available for Server Appliance Kit"
-permalink: kb/300/Q300363/
+permalink: /kb/300/Q300363/
 ---
 
 ## Q300363: INFO: Hotfixes Available for Server Appliance Kit

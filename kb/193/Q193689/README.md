@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193689: IIS Security: Mapping IDC Reveals Paths for Web Directories"
-permalink: kb/193/Q193689/
+permalink: /kb/193/Q193689/
 ---
 
 ## Q193689: IIS Security: Mapping IDC Reveals Paths for Web Directories

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90791: DOCERR: Minimal SDK Profiler Functions Required"
-permalink: kb/090/Q90791/
+permalink: /kb/090/Q90791/
 ---
 
 ## Q90791: DOCERR: Minimal SDK Profiler Functions Required

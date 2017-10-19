@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264126: XADM: Cannot Send SSL Messages After Installing Certificate"
-permalink: kb/264/Q264126/
+permalink: /kb/264/Q264126/
 ---
 
 ## Q264126: XADM: Cannot Send SSL Messages After Installing Certificate

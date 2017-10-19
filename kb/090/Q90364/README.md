@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90364: PPT: Omit Master Disables Number, Date, Time Features"
-permalink: kb/090/Q90364/
+permalink: /kb/090/Q90364/
 ---
 
 ## Q90364: PPT: Omit Master Disables Number, Date, Time Features

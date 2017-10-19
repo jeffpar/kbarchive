@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197413: WD97: Error Message: &quot;There Are Too Many Edits in the Document&quot;"
-permalink: kb/197/Q197413/
+permalink: /kb/197/Q197413/
 ---
 
 ## Q197413: WD97: Error Message: &quot;There Are Too Many Edits in the Document&quot;

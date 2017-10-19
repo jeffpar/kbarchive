@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189095: XFOR: Messages Not Delivered Due to IMS Size Restrictions"
-permalink: kb/189/Q189095/
+permalink: /kb/189/Q189095/
 ---
 
 ## Q189095: XFOR: Messages Not Delivered Due to IMS Size Restrictions

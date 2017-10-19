@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191067: SMS: PGC Fails to Configure Apps When Roaming Profiles Are Used"
-permalink: kb/191/Q191067/
+permalink: /kb/191/Q191067/
 ---
 
 ## Q191067: SMS: PGC Fails to Configure Apps When Roaming Profiles Are Used

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187926: Use of the SAP Agent Service on a Windows NT Server"
-permalink: kb/187/Q187926/
+permalink: /kb/187/Q187926/
 ---
 
 ## Q187926: Use of the SAP Agent Service on a Windows NT Server

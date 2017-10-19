@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229099: XFOR: NNTP Does Not Support PULL/POST Feed"
-permalink: kb/229/Q229099/
+permalink: /kb/229/Q229099/
 ---
 
 ## Q229099: XFOR: NNTP Does Not Support PULL/POST Feed

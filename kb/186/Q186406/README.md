@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186406: SMS: Drive Letter Selection for SMS Client Files Inconsistent"
-permalink: kb/186/Q186406/
+permalink: /kb/186/Q186406/
 ---
 
 ## Q186406: SMS: Drive Letter Selection for SMS Client Files Inconsistent

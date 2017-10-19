@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166605: XFOR: Reply Message to Internet Will Have Embedded Text Ticked"
-permalink: kb/166/Q166605/
+permalink: /kb/166/Q166605/
 ---
 
 ## Q166605: XFOR: Reply Message to Internet Will Have Embedded Text Ticked

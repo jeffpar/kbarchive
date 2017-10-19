@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191320: SMS: Getmem Hangs Inventory at 27 to 30 Percent"
-permalink: kb/191/Q191320/
+permalink: /kb/191/Q191320/
 ---
 
 ## Q191320: SMS: Getmem Hangs Inventory at 27 to 30 Percent

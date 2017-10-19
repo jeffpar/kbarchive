@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77632: Trailing Spaces in SET TEMP Returns Error in MS-DOS Shell"
-permalink: kb/077/Q77632/
+permalink: /kb/077/Q77632/
 ---
 
 ## Q77632: Trailing Spaces in SET TEMP Returns Error in MS-DOS Shell

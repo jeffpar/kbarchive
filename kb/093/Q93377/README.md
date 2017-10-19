@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93377: Changes Made to SYSTEM.INI by MS-DOS MemMaker"
-permalink: kb/093/Q93377/
+permalink: /kb/093/Q93377/
 ---
 
 ## Q93377: Changes Made to SYSTEM.INI by MS-DOS MemMaker

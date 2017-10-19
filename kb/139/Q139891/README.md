@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139891: INFO: Visual SourceSafe Installation is Processor Specific"
-permalink: kb/139/Q139891/
+permalink: /kb/139/Q139891/
 ---
 
 ## Q139891: INFO: Visual SourceSafe Installation is Processor Specific

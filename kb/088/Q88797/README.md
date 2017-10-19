@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88797: CalComp Wiz Mouse Drivers for Windows"
-permalink: kb/088/Q88797/
+permalink: /kb/088/Q88797/
 ---
 
 ## Q88797: CalComp Wiz Mouse Drivers for Windows

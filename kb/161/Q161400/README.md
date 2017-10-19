@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161400: Authenticated Users Cannot Query Secured Documents"
-permalink: kb/161/Q161400/
+permalink: /kb/161/Q161400/
 ---
 
 ## Q161400: Authenticated Users Cannot Query Secured Documents

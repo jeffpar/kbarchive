@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70888: Can't Use Some Attributes on Redirected Drive"
-permalink: kb/070/Q70888/
+permalink: /kb/070/Q70888/
 ---
 
 ## Q70888: Can't Use Some Attributes on Redirected Drive

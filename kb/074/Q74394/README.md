@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74394: Microsoft Recognizer Supports Only Horizontal Writing"
-permalink: kb/074/Q74394/
+permalink: /kb/074/Q74394/
 ---
 
 ## Q74394: Microsoft Recognizer Supports Only Horizontal Writing

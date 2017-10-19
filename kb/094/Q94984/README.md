@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94984: INF: Cursor Behavior in Autocommit Mode"
-permalink: kb/094/Q94984/
+permalink: /kb/094/Q94984/
 ---
 
 ## Q94984: INF: Cursor Behavior in Autocommit Mode

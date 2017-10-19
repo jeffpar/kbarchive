@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300586: BUG: Error &quot;Row Cannot Be Located for Updating&quot;"
-permalink: kb/300/Q300586/
+permalink: /kb/300/Q300586/
 ---
 
 ## Q300586: BUG: Error &quot;Row Cannot Be Located for Updating&quot;

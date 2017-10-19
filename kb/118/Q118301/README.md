@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118301: Online Help Incorrectly Refers to &quot;Creator File Types&quot;"
-permalink: kb/118/Q118301/
+permalink: /kb/118/Q118301/
 ---
 
 ## Q118301: Online Help Incorrectly Refers to &quot;Creator File Types&quot;

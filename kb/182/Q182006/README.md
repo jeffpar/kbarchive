@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182006: FTP Service SIZE Command Leaves File Handles Open"
-permalink: kb/182/Q182006/
+permalink: /kb/182/Q182006/
 ---
 
 ## Q182006: FTP Service SIZE Command Leaves File Handles Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102741: Windows NT Guest Account vs. Macintosh Guest Account"
-permalink: kb/102/Q102741/
+permalink: /kb/102/Q102741/
 ---
 
 ## Q102741: Windows NT Guest Account vs. Macintosh Guest Account

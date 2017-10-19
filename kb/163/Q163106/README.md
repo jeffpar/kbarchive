@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163106: ODE97: ODBC Desktop Database Drivers Needed by ODE Setup Wizard"
-permalink: kb/163/Q163106/
+permalink: /kb/163/Q163106/
 ---
 
 ## Q163106: ODE97: ODBC Desktop Database Drivers Needed by ODE Setup Wizard

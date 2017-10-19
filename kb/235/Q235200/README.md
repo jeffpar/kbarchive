@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235200: SMS: Err Msg Using W95to98.inf to Upgrade to Windows 98 SE"
-permalink: kb/235/Q235200/
+permalink: /kb/235/Q235200/
 ---
 
 ## Q235200: SMS: Err Msg Using W95to98.inf to Upgrade to Windows 98 SE

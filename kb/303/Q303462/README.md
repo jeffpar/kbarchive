@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303462: Access Violation in the SMS_OFFER_STATUS_SUMMARIZER Thread"
-permalink: kb/303/Q303462/
+permalink: /kb/303/Q303462/
 ---
 
 ## Q303462: Access Violation in the SMS_OFFER_STATUS_SUMMARIZER Thread

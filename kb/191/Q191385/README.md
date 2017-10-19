@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191385: Duplicate Rules Appear in Secure Channel Account Mappings Advanc"
-permalink: kb/191/Q191385/
+permalink: /kb/191/Q191385/
 ---
 
 ## Q191385: Duplicate Rules Appear in Secure Channel Account Mappings Advanc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245128: Restrict Remote Access to Event Viewer on Windows NT Server."
-permalink: kb/245/Q245128/
+permalink: /kb/245/Q245128/
 ---
 
 ## Q245128: Restrict Remote Access to Event Viewer on Windows NT Server.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161426: How to Enable Logging with Routing and Remote Access"
-permalink: kb/161/Q161426/
+permalink: /kb/161/Q161426/
 ---
 
 ## Q161426: How to Enable Logging with Routing and Remote Access

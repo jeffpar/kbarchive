@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164469: XFOR: Scheduled X.400 Connector Doesn't Initiate Connection"
-permalink: kb/164/Q164469/
+permalink: /kb/164/Q164469/
 ---
 
 ## Q164469: XFOR: Scheduled X.400 Connector Doesn't Initiate Connection

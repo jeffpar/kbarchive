@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235406: SNA Server Support for External Attach Managers"
-permalink: kb/235/Q235406/
+permalink: /kb/235/Q235406/
 ---
 
 ## Q235406: SNA Server Support for External Attach Managers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117129: Cannot Drag and Drop Icons in Program Manager"
-permalink: kb/117/Q117129/
+permalink: /kb/117/Q117129/
 ---
 
 ## Q117129: Cannot Drag and Drop Icons in Program Manager

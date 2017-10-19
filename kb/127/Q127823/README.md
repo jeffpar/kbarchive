@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127823: Printed Schedule+ Daily View Has Errant Text in Notes Box"
-permalink: kb/127/Q127823/
+permalink: /kb/127/Q127823/
 ---
 
 ## Q127823: Printed Schedule+ Daily View Has Errant Text in Notes Box

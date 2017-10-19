@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128363: Aztech Nova Sound Board Support in Windows NT"
-permalink: kb/128/Q128363/
+permalink: /kb/128/Q128363/
 ---
 
 ## Q128363: Aztech Nova Sound Board Support in Windows NT

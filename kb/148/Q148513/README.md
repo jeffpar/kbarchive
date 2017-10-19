@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148513: HOWTO: Use Pin and Label for Quality Assurance"
-permalink: kb/148/Q148513/
+permalink: /kb/148/Q148513/
 ---
 
 ## Q148513: HOWTO: Use Pin and Label for Quality Assurance

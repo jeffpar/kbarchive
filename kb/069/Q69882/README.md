@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69882: Windows Help (HLP) File Format Is Not Available"
-permalink: kb/069/Q69882/
+permalink: /kb/069/Q69882/
 ---
 
 ## Q69882: Windows Help (HLP) File Format Is Not Available

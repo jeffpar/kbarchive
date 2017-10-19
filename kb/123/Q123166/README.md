@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123166: Time and Date Stamp of Word 6.0 Document Updated"
-permalink: kb/123/Q123166/
+permalink: /kb/123/Q123166/
 ---
 
 ## Q123166: Time and Date Stamp of Word 6.0 Document Updated

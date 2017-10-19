@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187948: INFO: Server Installation With Visual Studio 6.0"
-permalink: kb/187/Q187948/
+permalink: /kb/187/Q187948/
 ---
 
 ## Q187948: INFO: Server Installation With Visual Studio 6.0

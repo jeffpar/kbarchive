@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175179: SAMPLE: VBFTP.EXE: Implementing FTP Using WinInet API from VB"
-permalink: kb/175/Q175179/
+permalink: /kb/175/Q175179/
 ---
 
 ## Q175179: SAMPLE: VBFTP.EXE: Implementing FTP Using WinInet API from VB

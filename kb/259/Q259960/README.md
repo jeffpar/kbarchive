@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259960: StarLancer: Game Stops Responding During 3D Hardware Detection"
-permalink: kb/259/Q259960/
+permalink: /kb/259/Q259960/
 ---
 
 ## Q259960: StarLancer: Game Stops Responding During 3D Hardware Detection

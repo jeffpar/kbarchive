@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194616: FIX: error CBE7002: Failed assertion &quot;lab&quot; ascoff.cpp, line 769"
-permalink: kb/194/Q194616/
+permalink: /kb/194/Q194616/
 ---
 
 ## Q194616: FIX: error CBE7002: Failed assertion &quot;lab&quot; ascoff.cpp, line 769

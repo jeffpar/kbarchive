@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180544: XADM: SMTP Display Name in Korean Displays Incorrectly"
-permalink: kb/180/Q180544/
+permalink: /kb/180/Q180544/
 ---
 
 ## Q180544: XADM: SMTP Display Name in Korean Displays Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237733: NFL Fever 2000: Player Appears Twice in Global Substitutions"
-permalink: kb/237/Q237733/
+permalink: /kb/237/Q237733/
 ---
 
 ## Q237733: NFL Fever 2000: Player Appears Twice in Global Substitutions

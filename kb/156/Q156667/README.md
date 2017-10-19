@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156667: INFO: Limitations of View Designer vs. CREATE SQL VIEW Command"
-permalink: kb/156/Q156667/
+permalink: /kb/156/Q156667/
 ---
 
 ## Q156667: INFO: Limitations of View Designer vs. CREATE SQL VIEW Command

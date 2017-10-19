@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163673: &quot;Exception 0E&quot; Using MSNDS Over Dial-Up Connection"
-permalink: kb/163/Q163673/
+permalink: /kb/163/Q163673/
 ---
 
 ## Q163673: &quot;Exception 0E&quot; Using MSNDS Over Dial-Up Connection

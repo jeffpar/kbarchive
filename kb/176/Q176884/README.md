@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176884: BUG: Problems with SET COLLATE and Queries with Integer Fields"
-permalink: kb/176/Q176884/
+permalink: /kb/176/Q176884/
 ---
 
 ## Q176884: BUG: Problems with SET COLLATE and Queries with Integer Fields

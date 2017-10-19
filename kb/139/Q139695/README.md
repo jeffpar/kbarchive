@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139695: SilentRip Registry Entry within MPR for Windows NT 3.51"
-permalink: kb/139/Q139695/
+permalink: /kb/139/Q139695/
 ---
 
 ## Q139695: SilentRip Registry Entry within MPR for Windows NT 3.51

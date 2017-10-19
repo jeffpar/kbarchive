@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131422: PC Ext: Purpose and Function of -V20 Switch"
-permalink: kb/131/Q131422/
+permalink: /kb/131/Q131422/
 ---
 
 ## Q131422: PC Ext: Purpose and Function of -V20 Switch

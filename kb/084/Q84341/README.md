@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84341: Quietwriter III Cartridge Fonts Incorrect"
-permalink: kb/084/Q84341/
+permalink: /kb/084/Q84341/
 ---
 
 ## Q84341: Quietwriter III Cartridge Fonts Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174981: HOWTO: Retrieve Typical Resultsets From Oracle Stored Procedures"
-permalink: kb/174/Q174981/
+permalink: /kb/174/Q174981/
 ---
 
 ## Q174981: HOWTO: Retrieve Typical Resultsets From Oracle Stored Procedures

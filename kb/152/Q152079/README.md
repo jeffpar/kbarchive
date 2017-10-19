@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152079: SNMP Traps Contain Invalid Agent ID Field"
-permalink: kb/152/Q152079/
+permalink: /kb/152/Q152079/
 ---
 
 ## Q152079: SNMP Traps Contain Invalid Agent ID Field

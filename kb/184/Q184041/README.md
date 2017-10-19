@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184041: WD97: Macro to Add, Delete, Find Hidden/Non-Hidden Bookmarks"
-permalink: kb/184/Q184041/
+permalink: /kb/184/Q184041/
 ---
 
 ## Q184041: WD97: Macro to Add, Delete, Find Hidden/Non-Hidden Bookmarks

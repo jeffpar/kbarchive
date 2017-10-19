@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104550: RPLLINK.EXE Allows Dynamic Loading and Unloading of Protocols"
-permalink: kb/104/Q104550/
+permalink: /kb/104/Q104550/
 ---
 
 ## Q104550: RPLLINK.EXE Allows Dynamic Loading and Unloading of Protocols

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140954: XCLN: Win16 Silent Mode Setup Fails to Create Profile"
-permalink: kb/140/Q140954/
+permalink: /kb/140/Q140954/
 ---
 
 ## Q140954: XCLN: Win16 Silent Mode Setup Fails to Create Profile

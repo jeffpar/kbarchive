@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159730: WD97: Word 97 Doesn't Save Version When Document Is Closed"
-permalink: kb/159/Q159730/
+permalink: /kb/159/Q159730/
 ---
 
 ## Q159730: WD97: Word 97 Doesn't Save Version When Document Is Closed

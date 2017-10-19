@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157011: XCLN: Large Icon Labels can Cause Access Violation"
-permalink: kb/157/Q157011/
+permalink: /kb/157/Q157011/
 ---
 
 ## Q157011: XCLN: Large Icon Labels can Cause Access Violation

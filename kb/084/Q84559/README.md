@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84559: HP DeskJet Scalable Font Driver Setup and TrueType"
-permalink: kb/084/Q84559/
+permalink: /kb/084/Q84559/
 ---
 
 ## Q84559: HP DeskJet Scalable Font Driver Setup and TrueType

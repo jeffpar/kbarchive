@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193416: PRB: Cannot Set the ReadOnly Property of a File"
-permalink: kb/193/Q193416/
+permalink: /kb/193/Q193416/
 ---
 
 ## Q193416: PRB: Cannot Set the ReadOnly Property of a File

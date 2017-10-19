@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193143: BUG: DCOM Client Hangs and Then Gives Error 429"
-permalink: kb/193/Q193143/
+permalink: /kb/193/Q193143/
 ---
 
 ## Q193143: BUG: DCOM Client Hangs and Then Gives Error 429

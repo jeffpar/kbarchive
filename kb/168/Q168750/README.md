@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168750: How to Easily Get to the Windows 95 Startup Menu"
-permalink: kb/168/Q168750/
+permalink: /kb/168/Q168750/
 ---
 
 ## Q168750: How to Easily Get to the Windows 95 Startup Menu

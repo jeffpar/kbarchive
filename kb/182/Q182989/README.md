@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182989: XCON: Attempt to Start MTA Fails with Error 1058"
-permalink: kb/182/Q182989/
+permalink: /kb/182/Q182989/
 ---
 
 ## Q182989: XCON: Attempt to Start MTA Fails with Error 1058

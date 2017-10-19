@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134711: X-Tree Gold for Windows 4.0 Produces GP Fault"
-permalink: kb/134/Q134711/
+permalink: /kb/134/Q134711/
 ---
 
 ## Q134711: X-Tree Gold for Windows 4.0 Produces GP Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140974: XCON: HP Openmail Messages with FTBP Attachments NDR"
-permalink: kb/140/Q140974/
+permalink: /kb/140/Q140974/
 ---
 
 ## Q140974: XCON: HP Openmail Messages with FTBP Attachments NDR

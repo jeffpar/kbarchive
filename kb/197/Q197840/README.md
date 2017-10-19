@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197840: WD97: Certain Characters Do Not Display in Field Result"
-permalink: kb/197/Q197840/
+permalink: /kb/197/Q197840/
 ---
 
 ## Q197840: WD97: Certain Characters Do Not Display in Field Result

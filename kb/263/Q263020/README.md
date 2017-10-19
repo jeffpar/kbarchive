@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263020: WD97: Word Crashes When You View Form Field Properties"
-permalink: kb/263/Q263020/
+permalink: /kb/263/Q263020/
 ---
 
 ## Q263020: WD97: Word Crashes When You View Form Field Properties

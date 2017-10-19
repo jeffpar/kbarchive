@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125173: Calling a 32-bit Application From WOW Causes Memory Leak"
-permalink: kb/125/Q125173/
+permalink: /kb/125/Q125173/
 ---
 
 ## Q125173: Calling a 32-bit Application From WOW Causes Memory Leak

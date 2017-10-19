@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105732: Network-Based Installation Issues with WFWG 3.11"
-permalink: kb/105/Q105732/
+permalink: /kb/105/Q105732/
 ---
 
 ## Q105732: Network-Based Installation Issues with WFWG 3.11

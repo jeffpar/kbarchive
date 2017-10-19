@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198562: XCLN: Cannot Find Users on Referral Server Using Outlook Express"
-permalink: kb/198/Q198562/
+permalink: /kb/198/Q198562/
 ---
 
 ## Q198562: XCLN: Cannot Find Users on Referral Server Using Outlook Express

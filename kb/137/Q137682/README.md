@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137682: PRB: &quot;Record validation rule is violated&quot; Error in a Form"
-permalink: kb/137/Q137682/
+permalink: /kb/137/Q137682/
 ---
 
 ## Q137682: PRB: &quot;Record validation rule is violated&quot; Error in a Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248292: XCLN: Forwarded or Replied Banner on a Message May Be Incorrect"
-permalink: kb/248/Q248292/
+permalink: /kb/248/Q248292/
 ---
 
 ## Q248292: XCLN: Forwarded or Replied Banner on a Message May Be Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108626: Writer 1: Gaps in Letters that Cross Page Breaks"
-permalink: kb/108/Q108626/
+permalink: /kb/108/Q108626/
 ---
 
 ## Q108626: Writer 1: Gaps in Letters that Cross Page Breaks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153665: SPX Data Stream Type Header May Reset Unexpectedly"
-permalink: kb/153/Q153665/
+permalink: /kb/153/Q153665/
 ---
 
 ## Q153665: SPX Data Stream Type Header May Reset Unexpectedly

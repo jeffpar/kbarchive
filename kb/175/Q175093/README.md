@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175093: User Manager Does Not Recognize February 2000 As a Leap Year"
-permalink: kb/175/Q175093/
+permalink: /kb/175/Q175093/
 ---
 
 ## Q175093: User Manager Does Not Recognize February 2000 As a Leap Year

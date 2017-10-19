@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186682: FIX: DBCombo BoundText Incorrect When Setting Text Property"
-permalink: kb/186/Q186682/
+permalink: /kb/186/Q186682/
 ---
 
 ## Q186682: FIX: DBCombo BoundText Incorrect When Setting Text Property

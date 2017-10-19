@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179422: WD97: MS LineDraw Font Not Usable in Word"
-permalink: kb/179/Q179422/
+permalink: /kb/179/Q179422/
 ---
 
 ## Q179422: WD97: MS LineDraw Font Not Usable in Word

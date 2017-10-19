@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165077: WD97: Clipart Loses Objects in Word Picture Editor"
-permalink: kb/165/Q165077/
+permalink: /kb/165/Q165077/
 ---
 
 ## Q165077: WD97: Clipart Loses Objects in Word Picture Editor

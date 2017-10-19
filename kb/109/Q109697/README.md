@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109697: Multimedia Err Msg: Failed to Open CD-Audio Device..."
-permalink: kb/109/Q109697/
+permalink: /kb/109/Q109697/
 ---
 
 ## Q109697: Multimedia Err Msg: Failed to Open CD-Audio Device...

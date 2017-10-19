@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119724: ADT2: Creating Additional ADT Application Program Groups, Items"
-permalink: kb/119/Q119724/
+permalink: /kb/119/Q119724/
 ---
 
 ## Q119724: ADT2: Creating Additional ADT Application Program Groups, Items

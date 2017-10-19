@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108100: PC-NFS Error: NFS903F Missing or Invalid PROTOCOL.INI Data"
-permalink: kb/108/Q108100/
+permalink: /kb/108/Q108100/
 ---
 
 ## Q108100: PC-NFS Error: NFS903F Missing or Invalid PROTOCOL.INI Data

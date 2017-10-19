@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221785: Encarta: Error Messages Displayed While Setup Updates Computer"
-permalink: kb/221/Q221785/
+permalink: /kb/221/Q221785/
 ---
 
 ## Q221785: Encarta: Error Messages Displayed While Setup Updates Computer

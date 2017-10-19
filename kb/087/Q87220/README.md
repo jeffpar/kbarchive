@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87220: PROFS: What Happens in the Event of a Mail Failure?"
-permalink: kb/087/Q87220/
+permalink: /kb/087/Q87220/
 ---
 
 ## Q87220: PROFS: What Happens in the Event of a Mail Failure?

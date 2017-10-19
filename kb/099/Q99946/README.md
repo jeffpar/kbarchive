@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99946: PC WRmt: Available Modem Scripts"
-permalink: kb/099/Q99946/
+permalink: /kb/099/Q99946/
 ---
 
 ## Q99946: PC WRmt: Available Modem Scripts

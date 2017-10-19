@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103289: Mac Gty: Using Auto-Propagation Versus Gateway Installer"
-permalink: kb/103/Q103289/
+permalink: /kb/103/Q103289/
 ---
 
 ## Q103289: Mac Gty: Using Auto-Propagation Versus Gateway Installer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134981: PRB: Directories &amp; Registry Entries Left After Deinstall"
-permalink: kb/134/Q134981/
+permalink: /kb/134/Q134981/
 ---
 
 ## Q134981: PRB: Directories &amp; Registry Entries Left After Deinstall

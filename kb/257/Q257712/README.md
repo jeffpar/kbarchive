@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257712: FIX: DBCS Characters Cause Duplicate Column Name Using Jet 4"
-permalink: kb/257/Q257712/
+permalink: /kb/257/Q257712/
 ---
 
 ## Q257712: FIX: DBCS Characters Cause Duplicate Column Name Using Jet 4

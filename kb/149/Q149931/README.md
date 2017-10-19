@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149931: XADM: Setup Cannot Connect To Remote Directory Service"
-permalink: kb/149/Q149931/
+permalink: /kb/149/Q149931/
 ---
 
 ## Q149931: XADM: Setup Cannot Connect To Remote Directory Service

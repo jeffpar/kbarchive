@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230240: A+ Certification Training Kit Comments and Corrections"
-permalink: kb/230/Q230240/
+permalink: /kb/230/Q230240/
 ---
 
 ## Q230240: A+ Certification Training Kit Comments and Corrections

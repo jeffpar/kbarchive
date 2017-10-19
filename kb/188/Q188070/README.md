@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188070: List of Bugs Fixed in SNA Server 4.0 Service Packs 1 and 2"
-permalink: kb/188/Q188070/
+permalink: /kb/188/Q188070/
 ---
 
 ## Q188070: List of Bugs Fixed in SNA Server 4.0 Service Packs 1 and 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82352: WindowBase 1.0 Screen Does Not Update Properly"
-permalink: kb/082/Q82352/
+permalink: /kb/082/Q82352/
 ---
 
 ## Q82352: WindowBase 1.0 Screen Does Not Update Properly

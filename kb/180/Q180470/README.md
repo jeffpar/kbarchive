@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180470: Scale Font Option Not Working for SNA Server Print Server"
-permalink: kb/180/Q180470/
+permalink: /kb/180/Q180470/
 ---
 
 ## Q180470: Scale Font Option Not Working for SNA Server Print Server

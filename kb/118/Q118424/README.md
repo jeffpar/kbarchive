@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118424: Schedule+ Err Msg: Mailbox Name or Password Is Incorrect..."
-permalink: kb/118/Q118424/
+permalink: /kb/118/Q118424/
 ---
 
 ## Q118424: Schedule+ Err Msg: Mailbox Name or Password Is Incorrect...

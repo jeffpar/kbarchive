@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216303: Incorrect NDIS Filtering of Some Ethernet Multicast Frames"
-permalink: kb/216/Q216303/
+permalink: /kb/216/Q216303/
 ---
 
 ## Q216303: Incorrect NDIS Filtering of Some Ethernet Multicast Frames

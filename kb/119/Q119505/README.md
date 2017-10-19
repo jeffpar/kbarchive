@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119505: Using Docking Stations With Windows NT"
-permalink: kb/119/Q119505/
+permalink: /kb/119/Q119505/
 ---
 
 ## Q119505: Using Docking Stations With Windows NT

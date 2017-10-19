@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251143: Problems Installing Proxy Server 2.0 Update in Windows 2000"
-permalink: kb/251/Q251143/
+permalink: /kb/251/Q251143/
 ---
 
 ## Q251143: Problems Installing Proxy Server 2.0 Update in Windows 2000

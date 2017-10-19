@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152056: BUG: Using Intrinsic Versions of log10 and fmod"
-permalink: kb/152/Q152056/
+permalink: /kb/152/Q152056/
 ---
 
 ## Q152056: BUG: Using Intrinsic Versions of log10 and fmod

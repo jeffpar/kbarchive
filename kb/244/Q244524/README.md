@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244524: XADM: How to Configure the Exchange Online Defragmentation Time"
-permalink: kb/244/Q244524/
+permalink: /kb/244/Q244524/
 ---
 
 ## Q244524: XADM: How to Configure the Exchange Online Defragmentation Time

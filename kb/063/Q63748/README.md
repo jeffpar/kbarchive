@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63748: Using Colorgraphics Dual VGA Card with Windows 3.0"
-permalink: kb/063/Q63748/
+permalink: /kb/063/Q63748/
 ---
 
 ## Q63748: Using Colorgraphics Dual VGA Card with Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243445: Mastering Office 2000 Development Comments and Corrections"
-permalink: kb/243/Q243445/
+permalink: /kb/243/Q243445/
 ---
 
 ## Q243445: Mastering Office 2000 Development Comments and Corrections

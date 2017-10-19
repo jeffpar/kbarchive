@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169502: BUG: All Characters Following CHR(0) are Ignored with MSComm"
-permalink: kb/169/Q169502/
+permalink: /kb/169/Q169502/
 ---
 
 ## Q169502: BUG: All Characters Following CHR(0) are Ignored with MSComm

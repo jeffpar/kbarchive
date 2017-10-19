@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277709: XFOR: Notes Calendar Entries Not Migrated with Migration Wizard"
-permalink: kb/277/Q277709/
+permalink: /kb/277/Q277709/
 ---
 
 ## Q277709: XFOR: Notes Calendar Entries Not Migrated with Migration Wizard

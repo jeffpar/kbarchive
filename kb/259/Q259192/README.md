@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259192: PRB: Updating a Table with DTOC() in an Index Using ODBC"
-permalink: kb/259/Q259192/
+permalink: /kb/259/Q259192/
 ---
 
 ## Q259192: PRB: Updating a Table with DTOC() in an Index Using ODBC

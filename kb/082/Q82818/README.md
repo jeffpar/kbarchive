@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82818: Effect of IconTitleFaceName Switch with OLE"
-permalink: kb/082/Q82818/
+permalink: /kb/082/Q82818/
 ---
 
 ## Q82818: Effect of IconTitleFaceName Switch with OLE

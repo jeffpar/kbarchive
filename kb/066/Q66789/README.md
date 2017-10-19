@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66789: Using 3Com EtherLink Plus w/ DOS LAN Man 2.x/Windows 3.x"
-permalink: kb/066/Q66789/
+permalink: /kb/066/Q66789/
 ---
 
 ## Q66789: Using 3Com EtherLink Plus w/ DOS LAN Man 2.x/Windows 3.x

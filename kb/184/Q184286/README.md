@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184286: BUG: Enumerated Type Parameters Break Binary Compatibility"
-permalink: kb/184/Q184286/
+permalink: /kb/184/Q184286/
 ---
 
 ## Q184286: BUG: Enumerated Type Parameters Break Binary Compatibility

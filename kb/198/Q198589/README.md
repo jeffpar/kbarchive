@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198589: HOWTO: Determine Justification in a ListView Control"
-permalink: kb/198/Q198589/
+permalink: /kb/198/Q198589/
 ---
 
 ## Q198589: HOWTO: Determine Justification in a ListView Control

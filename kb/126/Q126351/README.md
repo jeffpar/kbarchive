@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126351: Different Language Site Reporting Not Supported in SMS"
-permalink: kb/126/Q126351/
+permalink: /kb/126/Q126351/
 ---
 
 ## Q126351: Different Language Site Reporting Not Supported in SMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249796: XCLN:Outlook Rule Creates Message Loop in Information Store"
-permalink: kb/249/Q249796/
+permalink: /kb/249/Q249796/
 ---
 
 ## Q249796: XCLN:Outlook Rule Creates Message Loop in Information Store

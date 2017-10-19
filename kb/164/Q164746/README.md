@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164746: SMC 9332 EtherPower 10/100 Driver Does Not Load"
-permalink: kb/164/Q164746/
+permalink: /kb/164/Q164746/
 ---
 
 ## Q164746: SMC 9332 EtherPower 10/100 Driver Does Not Load

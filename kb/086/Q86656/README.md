@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86656: TrueType Symbol Fonts Display in Italics"
-permalink: kb/086/Q86656/
+permalink: /kb/086/Q86656/
 ---
 
 ## Q86656: TrueType Symbol Fonts Display in Italics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93114: DOCERR: HELP_PARTIALKEY Doesn't List Topics in Dialog Box"
-permalink: kb/093/Q93114/
+permalink: /kb/093/Q93114/
 ---
 
 ## Q93114: DOCERR: HELP_PARTIALKEY Doesn't List Topics in Dialog Box

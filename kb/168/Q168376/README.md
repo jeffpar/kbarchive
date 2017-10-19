@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168376: PRB: STL string Class insert Function Does Not Work as Expected"
-permalink: kb/168/Q168376/
+permalink: /kb/168/Q168376/
 ---
 
 ## Q168376: PRB: STL string Class insert Function Does Not Work as Expected

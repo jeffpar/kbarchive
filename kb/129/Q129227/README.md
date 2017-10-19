@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129227: PRB: Wrong Form Name Returned in Opentables Event"
-permalink: kb/129/Q129227/
+permalink: /kb/129/Q129227/
 ---
 
 ## Q129227: PRB: Wrong Form Name Returned in Opentables Event

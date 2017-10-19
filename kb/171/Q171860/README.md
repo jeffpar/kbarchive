@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171860: Duplicate IP Address in RAS Pool Causes Event ID 20050"
-permalink: kb/171/Q171860/
+permalink: /kb/171/Q171860/
 ---
 
 ## Q171860: Duplicate IP Address in RAS Pool Causes Event ID 20050

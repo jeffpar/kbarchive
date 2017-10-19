@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155754: PRB: File Could Not Be Mapped to the SourceSafe Project"
-permalink: kb/155/Q155754/
+permalink: /kb/155/Q155754/
 ---
 
 ## Q155754: PRB: File Could Not Be Mapped to the SourceSafe Project

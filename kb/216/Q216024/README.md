@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216024: Maintenance Mode Setup for BackOffice 4.5"
-permalink: kb/216/Q216024/
+permalink: /kb/216/Q216024/
 ---
 
 ## Q216024: Maintenance Mode Setup for BackOffice 4.5

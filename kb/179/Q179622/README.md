@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179622: Err Msg: Encarta Was Not Able to Integrate Any New Updates"
-permalink: kb/179/Q179622/
+permalink: /kb/179/Q179622/
 ---
 
 ## Q179622: Err Msg: Encarta Was Not Able to Integrate Any New Updates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135226: Sound Blaster 16 Automatic Gain Control Setting Is Lost"
-permalink: kb/135/Q135226/
+permalink: /kb/135/Q135226/
 ---
 
 ## Q135226: Sound Blaster 16 Automatic Gain Control Setting Is Lost

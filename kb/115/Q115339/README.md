@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115339: STOP Message During Setup on Compaq SystemPro"
-permalink: kb/115/Q115339/
+permalink: /kb/115/Q115339/
 ---
 
 ## Q115339: STOP Message During Setup on Compaq SystemPro

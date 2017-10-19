@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162608: Cannot Start OSR2 After Installing Retail Windows 95"
-permalink: kb/162/Q162608/
+permalink: /kb/162/Q162608/
 ---
 
 ## Q162608: Cannot Start OSR2 After Installing Retail Windows 95

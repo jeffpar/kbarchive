@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150628: Event 3 May Indicate Excessive APPC LU Partnerships"
-permalink: kb/150/Q150628/
+permalink: /kb/150/Q150628/
 ---
 
 ## Q150628: Event 3 May Indicate Excessive APPC LU Partnerships

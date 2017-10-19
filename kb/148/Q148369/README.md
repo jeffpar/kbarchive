@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148369: PC MAPI: Loss of Memory with MapiSendMail and Visual Basic"
-permalink: kb/148/Q148369/
+permalink: /kb/148/Q148369/
 ---
 
 ## Q148369: PC MAPI: Loss of Memory with MapiSendMail and Visual Basic

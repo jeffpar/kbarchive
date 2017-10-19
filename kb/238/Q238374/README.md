@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238374: How to Produce a List of Users and Their Last Password Change"
-permalink: kb/238/Q238374/
+permalink: /kb/238/Q238374/
 ---
 
 ## Q238374: How to Produce a List of Users and Their Last Password Change

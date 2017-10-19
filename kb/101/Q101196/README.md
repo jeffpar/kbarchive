@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101196: LastDrive Affects Windows on Novell and LAN Manager"
-permalink: kb/101/Q101196/
+permalink: /kb/101/Q101196/
 ---
 
 ## Q101196: LastDrive Affects Windows on Novell and LAN Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166590: XCLN: Searching for Manager Produces MAPI Error"
-permalink: kb/166/Q166590/
+permalink: /kb/166/Q166590/
 ---
 
 ## Q166590: XCLN: Searching for Manager Produces MAPI Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130446: MSB Solar: Computer Freezes When Entering Games"
-permalink: kb/130/Q130446/
+permalink: /kb/130/Q130446/
 ---
 
 ## Q130446: MSB Solar: Computer Freezes When Entering Games

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162684: FIX: Modal Form Fails to Close with Focus on Check Box"
-permalink: kb/162/Q162684/
+permalink: /kb/162/Q162684/
 ---
 
 ## Q162684: FIX: Modal Form Fails to Close with Focus on Check Box

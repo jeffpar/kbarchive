@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69925: Running Recorder Lesson in Windows Class-in-the-Box"
-permalink: kb/069/Q69925/
+permalink: /kb/069/Q69925/
 ---
 
 ## Q69925: Running Recorder Lesson in Windows Class-in-the-Box

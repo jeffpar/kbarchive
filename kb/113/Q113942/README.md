@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113942: Converting dBASE Files to FoxPro"
-permalink: kb/113/Q113942/
+permalink: /kb/113/Q113942/
 ---
 
 ## Q113942: Converting dBASE Files to FoxPro

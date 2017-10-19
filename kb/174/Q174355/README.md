@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174355: XADM: Msf32.dll Error During Migration From MS Mail to Exchange"
-permalink: kb/174/Q174355/
+permalink: /kb/174/Q174355/
 ---
 
 ## Q174355: XADM: Msf32.dll Error During Migration From MS Mail to Exchange

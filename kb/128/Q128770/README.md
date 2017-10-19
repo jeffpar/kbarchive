@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128770: PRB: &quot;Insufficient Memory&quot; Previewing A Report In FPM"
-permalink: kb/128/Q128770/
+permalink: /kb/128/Q128770/
 ---
 
 ## Q128770: PRB: &quot;Insufficient Memory&quot; Previewing A Report In FPM

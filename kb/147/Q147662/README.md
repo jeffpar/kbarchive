@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147662: Err Msg: DRVSPACE130 Your Computer Does Not Have Any..."
-permalink: kb/147/Q147662/
+permalink: /kb/147/Q147662/
 ---
 
 ## Q147662: Err Msg: DRVSPACE130 Your Computer Does Not Have Any...

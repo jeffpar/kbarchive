@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243469: Cluster SMB Share Resource Causes Momentary Disconnection"
-permalink: kb/243/Q243469/
+permalink: /kb/243/Q243469/
 ---
 
 ## Q243469: Cluster SMB Share Resource Causes Momentary Disconnection

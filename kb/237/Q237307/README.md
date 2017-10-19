@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237307: WINS Lookup May Not Resolve Some Name Queries"
-permalink: kb/237/Q237307/
+permalink: /kb/237/Q237307/
 ---
 
 ## Q237307: WINS Lookup May Not Resolve Some Name Queries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216460: XADM: ISINTEG Reports JET_errUpdateNotPrepared"
-permalink: kb/216/Q216460/
+permalink: /kb/216/Q216460/
 ---
 
 ## Q216460: XADM: ISINTEG Reports JET_errUpdateNotPrepared

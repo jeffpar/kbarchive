@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159867: The Microsoft Network 2.0 CD-ROM Readme.txt File"
-permalink: kb/159/Q159867/
+permalink: /kb/159/Q159867/
 ---
 
 ## Q159867: The Microsoft Network 2.0 CD-ROM Readme.txt File

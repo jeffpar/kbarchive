@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39442: DOCERR: asub and ctest in MASM Programmer's Guide"
-permalink: kb/039/Q39442/
+permalink: /kb/039/Q39442/
 ---
 
 ## Q39442: DOCERR: asub and ctest in MASM Programmer's Guide

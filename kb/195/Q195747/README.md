@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195747: Implicit Incoming LU Not Used After Saving Configuration Change"
-permalink: kb/195/Q195747/
+permalink: /kb/195/Q195747/
 ---
 
 ## Q195747: Implicit Incoming LU Not Used After Saving Configuration Change

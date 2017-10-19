@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94651: Scratchy Sound, Erratic Sound, or Sound Stops"
-permalink: kb/094/Q94651/
+permalink: /kb/094/Q94651/
 ---
 
 ## Q94651: Scratchy Sound, Erratic Sound, or Sound Stops

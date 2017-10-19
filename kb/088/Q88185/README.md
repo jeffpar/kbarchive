@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88185: WinLogin Version 1.0 Disk (3.5 Inch)"
-permalink: kb/088/Q88185/
+permalink: /kb/088/Q88185/
 ---
 
 ## Q88185: WinLogin Version 1.0 Disk (3.5 Inch)

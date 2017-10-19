@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313945: Encarta 2001: IPF Err Msg When Program Reads CD-ROM"
-permalink: kb/313/Q313945/
+permalink: /kb/313/Q313945/
 ---
 
 ## Q313945: Encarta 2001: IPF Err Msg When Program Reads CD-ROM

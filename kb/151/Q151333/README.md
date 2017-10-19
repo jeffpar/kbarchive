@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151333: Mac Bookshelf 96-97: Problems Looking Up Words from Cinemania"
-permalink: kb/151/Q151333/
+permalink: /kb/151/Q151333/
 ---
 
 ## Q151333: Mac Bookshelf 96-97: Problems Looking Up Words from Cinemania

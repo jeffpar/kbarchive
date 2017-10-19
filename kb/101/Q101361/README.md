@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101361: PRB: VSafe Manager Does Not Appear in Windows Task List"
-permalink: kb/101/Q101361/
+permalink: /kb/101/Q101361/
 ---
 
 ## Q101361: PRB: VSafe Manager Does Not Appear in Windows Task List

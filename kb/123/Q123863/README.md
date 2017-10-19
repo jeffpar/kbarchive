@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123863: README.TXT: Windows NT Version 3.5 U.S. Service Pack"
-permalink: kb/123/Q123863/
+permalink: /kb/123/Q123863/
 ---
 
 ## Q123863: README.TXT: Windows NT Version 3.5 U.S. Service Pack

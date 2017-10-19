@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24955: Results of not Specifying a Starting Address"
-permalink: kb/024/Q24955/
+permalink: /kb/024/Q24955/
 ---
 
 ## Q24955: Results of not Specifying a Starting Address

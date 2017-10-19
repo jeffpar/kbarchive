@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198102: Combat Flight Simulator: Terrain and 3D Objects Flicker"
-permalink: kb/198/Q198102/
+permalink: /kb/198/Q198102/
 ---
 
 ## Q198102: Combat Flight Simulator: Terrain and 3D Objects Flicker

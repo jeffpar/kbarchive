@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140710: Incorrect Help Topic: Cannot Select Service Type During Signup"
-permalink: kb/140/Q140710/
+permalink: /kb/140/Q140710/
 ---
 
 ## Q140710: Incorrect Help Topic: Cannot Select Service Type During Signup

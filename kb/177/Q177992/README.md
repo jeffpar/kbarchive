@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177992: HOWTO: Intercept Keyboard Input from Visual Basic"
-permalink: kb/177/Q177992/
+permalink: /kb/177/Q177992/
 ---
 
 ## Q177992: HOWTO: Intercept Keyboard Input from Visual Basic

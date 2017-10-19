@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198043: WD97: Extra Paragraph Mark Above Include Field at Top of Doc"
-permalink: kb/198/Q198043/
+permalink: /kb/198/Q198043/
 ---
 
 ## Q198043: WD97: Extra Paragraph Mark Above Include Field at Top of Doc

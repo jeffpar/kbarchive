@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199954: XADM: Forklifting All Users to a New Server"
-permalink: kb/199/Q199954/
+permalink: /kb/199/Q199954/
 ---
 
 ## Q199954: XADM: Forklifting All Users to a New Server

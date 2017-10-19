@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111724: BUG: Extra Block of 256 Bytes Used by Access ODBC Driver"
-permalink: kb/111/Q111724/
+permalink: /kb/111/Q111724/
 ---
 
 ## Q111724: BUG: Extra Block of 256 Bytes Used by Access ODBC Driver

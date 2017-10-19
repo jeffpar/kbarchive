@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134580: Cannot Install Fastback 6.0 with Install Program Wizard"
-permalink: kb/134/Q134580/
+permalink: /kb/134/Q134580/
 ---
 
 ## Q134580: Cannot Install Fastback 6.0 with Install Program Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115548: FAX: Err Msg: Profile Error: Incorrect or Missing Printer Path"
-permalink: kb/115/Q115548/
+permalink: /kb/115/Q115548/
 ---
 
 ## Q115548: FAX: Err Msg: Profile Error: Incorrect or Missing Printer Path

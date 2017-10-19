@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235299: BUG: Parameterized Queries that Are Not Prepared Fail to Execute"
-permalink: kb/235/Q235299/
+permalink: /kb/235/Q235299/
 ---
 
 ## Q235299: BUG: Parameterized Queries that Are Not Prepared Fail to Execute

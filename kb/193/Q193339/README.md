@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193339: PRB: Unexpected Errors Using OLE DB Provider for SQL Server"
-permalink: kb/193/Q193339/
+permalink: /kb/193/Q193339/
 ---
 
 ## Q193339: PRB: Unexpected Errors Using OLE DB Provider for SQL Server

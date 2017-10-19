@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137557: Bookshelf 1995: Opening Word Minimizes Bookshelf"
-permalink: kb/137/Q137557/
+permalink: /kb/137/Q137557/
 ---
 
 ## Q137557: Bookshelf 1995: Opening Word Minimizes Bookshelf

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94358: MemMaker Err Msg with QEMM: 'Bad Command or Filename'"
-permalink: kb/094/Q94358/
+permalink: /kb/094/Q94358/
 ---
 
 ## Q94358: MemMaker Err Msg with QEMM: 'Bad Command or Filename'

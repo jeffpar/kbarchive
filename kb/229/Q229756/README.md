@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229756: INFO: Maximum Number of Controls on a Form"
-permalink: kb/229/Q229756/
+permalink: /kb/229/Q229756/
 ---
 
 ## Q229756: INFO: Maximum Number of Controls on a Form

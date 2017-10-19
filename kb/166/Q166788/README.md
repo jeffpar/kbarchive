@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166788: WD97: Can't Save with Embedded Control and Missing Reference"
-permalink: kb/166/Q166788/
+permalink: /kb/166/Q166788/
 ---
 
 ## Q166788: WD97: Can't Save with Embedded Control and Missing Reference

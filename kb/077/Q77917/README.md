@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77917: 1024 x 768 Wallpaper Causes UAE in Windows"
-permalink: kb/077/Q77917/
+permalink: /kb/077/Q77917/
 ---
 
 ## Q77917: 1024 x 768 Wallpaper Causes UAE in Windows

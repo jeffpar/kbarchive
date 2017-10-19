@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142906: Visual Basic FileLen Returns Zero Bytes For File Size"
-permalink: kb/142/Q142906/
+permalink: /kb/142/Q142906/
 ---
 
 ## Q142906: Visual Basic FileLen Returns Zero Bytes For File Size

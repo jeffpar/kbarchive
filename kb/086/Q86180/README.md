@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86180: Ansel Palette May Show Only 8 Shades of Gray in Windows 3.1"
-permalink: kb/086/Q86180/
+permalink: /kb/086/Q86180/
 ---
 
 ## Q86180: Ansel Palette May Show Only 8 Shades of Gray in Windows 3.1

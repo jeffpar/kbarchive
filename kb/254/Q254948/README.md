@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254948: MapPoint 2001: How to Install and Run Over a Network"
-permalink: kb/254/Q254948/
+permalink: /kb/254/Q254948/
 ---
 
 ## Q254948: MapPoint 2001: How to Install and Run Over a Network

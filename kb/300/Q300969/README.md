@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300969: HOW TO: Make a COM Object and ASP Pages Run In-Process to IIS"
-permalink: kb/300/Q300969/
+permalink: /kb/300/Q300969/
 ---
 
 ## Q300969: HOW TO: Make a COM Object and ASP Pages Run In-Process to IIS

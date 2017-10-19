@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149422: XCON: Creating Crash Dump Files when MTA Encounters Fatal Errors"
-permalink: kb/149/Q149422/
+permalink: /kb/149/Q149422/
 ---
 
 ## Q149422: XCON: Creating Crash Dump Files when MTA Encounters Fatal Errors

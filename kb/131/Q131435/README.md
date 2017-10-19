@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131435: Mac Encarta 95: Can't Print from Atlas"
-permalink: kb/131/Q131435/
+permalink: /kb/131/Q131435/
 ---
 
 ## Q131435: Mac Encarta 95: Can't Print from Atlas

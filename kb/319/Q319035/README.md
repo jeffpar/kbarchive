@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319035: How To Import Contacts From Netscape Address Book to Outlook Exp"
-permalink: kb/319/Q319035/
+permalink: /kb/319/Q319035/
 ---
 
 ## Q319035: How To Import Contacts From Netscape Address Book to Outlook Exp

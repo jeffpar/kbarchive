@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63713: Largest Document Size MS-DOS Editor Can Edit"
-permalink: kb/063/Q63713/
+permalink: /kb/063/Q63713/
 ---
 
 ## Q63713: Largest Document Size MS-DOS Editor Can Edit

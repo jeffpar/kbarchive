@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217892: DirectX Err Msg: Problem Getting Extra Display Info at Step 3..."
-permalink: kb/217/Q217892/
+permalink: /kb/217/Q217892/
 ---
 
 ## Q217892: DirectX Err Msg: Problem Getting Extra Display Info at Step 3...

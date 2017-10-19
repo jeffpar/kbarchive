@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146214: How to Change Insertion Point Color in Windows-Based Programs"
-permalink: kb/146/Q146214/
+permalink: /kb/146/Q146214/
 ---
 
 ## Q146214: How to Change Insertion Point Color in Windows-Based Programs

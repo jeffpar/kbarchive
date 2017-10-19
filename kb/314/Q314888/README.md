@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314888: FIX: OLE DB Provider Improperly Enumerates DBSCHEMA_TABLES"
-permalink: kb/314/Q314888/
+permalink: /kb/314/Q314888/
 ---
 
 ## Q314888: FIX: OLE DB Provider Improperly Enumerates DBSCHEMA_TABLES

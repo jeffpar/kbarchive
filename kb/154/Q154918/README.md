@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154918: MicroGrafx Draw 4.0 Prints Garbled Output to PostSript Printer"
-permalink: kb/154/Q154918/
+permalink: /kb/154/Q154918/
 ---
 
 ## Q154918: MicroGrafx Draw 4.0 Prints Garbled Output to PostSript Printer

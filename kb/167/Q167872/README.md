@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167872: 1.44-MB Media DriveSpace Upgrade in 120-MB Floptical Drive"
-permalink: kb/167/Q167872/
+permalink: /kb/167/Q167872/
 ---
 
 ## Q167872: 1.44-MB Media DriveSpace Upgrade in 120-MB Floptical Drive

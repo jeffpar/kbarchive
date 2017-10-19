@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308171: IIS 5.1 Installation Tries to Register Sslcfg.dll"
-permalink: kb/308/Q308171/
+permalink: /kb/308/Q308171/
 ---
 
 ## Q308171: IIS 5.1 Installation Tries to Register Sslcfg.dll

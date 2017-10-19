@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154270: Desktop Wallpaper Overruns Desktop"
-permalink: kb/154/Q154270/
+permalink: /kb/154/Q154270/
 ---
 
 ## Q154270: Desktop Wallpaper Overruns Desktop

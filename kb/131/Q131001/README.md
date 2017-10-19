@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131001: No Start Menu Icons After Installing Borland C++ 4.02"
-permalink: kb/131/Q131001/
+permalink: /kb/131/Q131001/
 ---
 
 ## Q131001: No Start Menu Icons After Installing Borland C++ 4.02

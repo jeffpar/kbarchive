@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166445: Stop 0x00000050 with S3 Video"
-permalink: kb/166/Q166445/
+permalink: /kb/166/Q166445/
 ---
 
 ## Q166445: Stop 0x00000050 with S3 Video

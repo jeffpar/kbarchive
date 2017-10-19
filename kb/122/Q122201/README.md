@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122201: Foreign NAD Items Remain After Child Detaches"
-permalink: kb/122/Q122201/
+permalink: /kb/122/Q122201/
 ---
 
 ## Q122201: Foreign NAD Items Remain After Child Detaches

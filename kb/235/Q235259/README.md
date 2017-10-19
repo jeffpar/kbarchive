@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235259: HOWTO: Delete a Database in ATSWeb 2.0"
-permalink: kb/235/Q235259/
+permalink: /kb/235/Q235259/
 ---
 
 ## Q235259: HOWTO: Delete a Database in ATSWeb 2.0

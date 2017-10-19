@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247009: XIMS: Exchange Server 5.5 Post-SP3 Connector for cc:Mail Fixes"
-permalink: kb/247/Q247009/
+permalink: /kb/247/Q247009/
 ---
 
 ## Q247009: XIMS: Exchange Server 5.5 Post-SP3 Connector for cc:Mail Fixes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149002: BUG: Visual Basic Project Window Not Displaying Project Files"
-permalink: kb/149/Q149002/
+permalink: /kb/149/Q149002/
 ---
 
 ## Q149002: BUG: Visual Basic Project Window Not Displaying Project Files

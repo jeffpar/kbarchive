@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118550: BUG: READ and WRITE Fail on Unit 64"
-permalink: kb/118/Q118550/
+permalink: /kb/118/Q118550/
 ---
 
 ## Q118550: BUG: READ and WRITE Fail on Unit 64

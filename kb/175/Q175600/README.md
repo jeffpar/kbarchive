@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175600: HOWTO: Give Your ActiveX Component a Friendly Name"
-permalink: kb/175/Q175600/
+permalink: /kb/175/Q175600/
 ---
 
 ## Q175600: HOWTO: Give Your ActiveX Component a Friendly Name

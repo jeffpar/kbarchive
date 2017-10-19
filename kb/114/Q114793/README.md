@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114793: Color Sets Not Supported on FoxPro for Macintosh"
-permalink: kb/114/Q114793/
+permalink: /kb/114/Q114793/
 ---
 
 ## Q114793: Color Sets Not Supported on FoxPro for Macintosh

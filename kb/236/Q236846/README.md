@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236846: Zone: Error Message or Nothing Happens When You Click a Web Link"
-permalink: kb/236/Q236846/
+permalink: /kb/236/Q236846/
 ---
 
 ## Q236846: Zone: Error Message or Nothing Happens When You Click a Web Link

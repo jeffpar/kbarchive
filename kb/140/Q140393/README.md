@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140393: STOP 0x0000007F Running SMS Network Monitor"
-permalink: kb/140/Q140393/
+permalink: /kb/140/Q140393/
 ---
 
 ## Q140393: STOP 0x0000007F Running SMS Network Monitor

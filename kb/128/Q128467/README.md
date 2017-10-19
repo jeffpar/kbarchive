@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128467: PROFS: Err Msg: Intermittent 'ABEND 0C4' Would Be Reported..."
-permalink: kb/128/Q128467/
+permalink: /kb/128/Q128467/
 ---
 
 ## Q128467: PROFS: Err Msg: Intermittent 'ABEND 0C4' Would Be Reported...

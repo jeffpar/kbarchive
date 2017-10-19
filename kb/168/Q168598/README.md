@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168598: SMS: NetWare Clients Are Always Verifying Installation"
-permalink: kb/168/Q168598/
+permalink: /kb/168/Q168598/
 ---
 
 ## Q168598: SMS: NetWare Clients Are Always Verifying Installation

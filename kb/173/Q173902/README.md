@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173902: XWEB: Default Start Time for Appointment or Meeting Is 8:00"
-permalink: kb/173/Q173902/
+permalink: /kb/173/Q173902/
 ---
 
 ## Q173902: XWEB: Default Start Time for Appointment or Meeting Is 8:00

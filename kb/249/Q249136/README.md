@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249136: Software Inventory Agent May Cause Windows 95 Clients to Hang"
-permalink: kb/249/Q249136/
+permalink: /kb/249/Q249136/
 ---
 
 ## Q249136: Software Inventory Agent May Cause Windows 95 Clients to Hang

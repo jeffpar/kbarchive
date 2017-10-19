@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163762: XCLN: Run Time Error 5 Occurs When Using EFD Tab Field"
-permalink: kb/163/Q163762/
+permalink: /kb/163/Q163762/
 ---
 
 ## Q163762: XCLN: Run Time Error 5 Occurs When Using EFD Tab Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166822: Remote Password Change Works Incorrectly to Down-Level Server"
-permalink: kb/166/Q166822/
+permalink: /kb/166/Q166822/
 ---
 
 ## Q166822: Remote Password Change Works Incorrectly to Down-Level Server

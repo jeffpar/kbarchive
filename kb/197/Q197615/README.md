@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197615: PowerPoint 97 Step by Step Corrections and Comments"
-permalink: kb/197/Q197615/
+permalink: /kb/197/Q197615/
 ---
 
 ## Q197615: PowerPoint 97 Step by Step Corrections and Comments

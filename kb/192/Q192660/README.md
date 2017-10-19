@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192660: SMS: Login Scripts Do Not Run from Subfolder in Netlogon Share"
-permalink: kb/192/Q192660/
+permalink: /kb/192/Q192660/
 ---
 
 ## Q192660: SMS: Login Scripts Do Not Run from Subfolder in Netlogon Share

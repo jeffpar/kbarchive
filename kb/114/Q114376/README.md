@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114376: FIX: CWnd::ExecuteDlgInit() Uses AfxGetInstanceHandle"
-permalink: kb/114/Q114376/
+permalink: /kb/114/Q114376/
 ---
 
 ## Q114376: FIX: CWnd::ExecuteDlgInit() Uses AfxGetInstanceHandle

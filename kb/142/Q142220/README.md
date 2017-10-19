@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142220: World Atlas 96 Printing: Unable to Continue Running..."
-permalink: kb/142/Q142220/
+permalink: /kb/142/Q142220/
 ---
 
 ## Q142220: World Atlas 96 Printing: Unable to Continue Running...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164259: MS DOS 3.0 Client May Need Newer Network Card Driver"
-permalink: kb/164/Q164259/
+permalink: /kb/164/Q164259/
 ---
 
 ## Q164259: MS DOS 3.0 Client May Need Newer Network Card Driver

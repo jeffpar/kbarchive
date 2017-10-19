@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231795: How to Automatically Close a NetBIOS Session"
-permalink: kb/231/Q231795/
+permalink: /kb/231/Q231795/
 ---
 
 ## Q231795: How to Automatically Close a NetBIOS Session

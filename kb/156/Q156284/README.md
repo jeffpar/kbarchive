@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156284: ARP -A Causes Access Violation When Pinging Heavily"
-permalink: kb/156/Q156284/
+permalink: /kb/156/Q156284/
 ---
 
 ## Q156284: ARP -A Causes Access Violation When Pinging Heavily

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66247: MENUITEMTEMPLATE Structure Is Documented Incorrectly"
-permalink: kb/066/Q66247/
+permalink: /kb/066/Q66247/
 ---
 
 ## Q66247: MENUITEMTEMPLATE Structure Is Documented Incorrectly

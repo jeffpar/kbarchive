@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185795: WD97: ErrMsg: &quot;... Unable to Open the Data Source&quot; Using ODBC"
-permalink: kb/185/Q185795/
+permalink: /kb/185/Q185795/
 ---
 
 ## Q185795: WD97: ErrMsg: &quot;... Unable to Open the Data Source&quot; Using ODBC

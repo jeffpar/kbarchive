@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242456: FTP Service Ignores File Names/User Names Beginning with 0xF&#42;"
-permalink: kb/242/Q242456/
+permalink: /kb/242/Q242456/
 ---
 
 ## Q242456: FTP Service Ignores File Names/User Names Beginning with 0xF&#42;

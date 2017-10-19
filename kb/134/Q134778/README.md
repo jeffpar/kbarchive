@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134778: Cannot Print from MS-DOS to JetDirect Printer in Direct Mode"
-permalink: kb/134/Q134778/
+permalink: /kb/134/Q134778/
 ---
 
 ## Q134778: Cannot Print from MS-DOS to JetDirect Printer in Direct Mode

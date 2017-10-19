@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255888: XFOR: Migration from MS Mail to Exchange Server Does Not Work"
-permalink: kb/255/Q255888/
+permalink: /kb/255/Q255888/
 ---
 
 ## Q255888: XFOR: Migration from MS Mail to Exchange Server Does Not Work

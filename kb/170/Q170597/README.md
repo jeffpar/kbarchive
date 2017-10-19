@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170597: BUG: Special Effect Does Not Work for Container Control"
-permalink: kb/170/Q170597/
+permalink: /kb/170/Q170597/
 ---
 
 ## Q170597: BUG: Special Effect Does Not Work for Container Control

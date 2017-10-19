@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50146: Mac Wkst Srv: Installer on Server Disk Not Install Workstation"
-permalink: kb/050/Q50146/
+permalink: /kb/050/Q50146/
 ---
 
 ## Q50146: Mac Wkst Srv: Installer on Server Disk Not Install Workstation

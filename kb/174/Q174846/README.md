@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174846: Mac Close Combat: Error -192 When Starting Program"
-permalink: kb/174/Q174846/
+permalink: /kb/174/Q174846/
 ---
 
 ## Q174846: Mac Close Combat: Error -192 When Starting Program

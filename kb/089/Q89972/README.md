@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89972: Sound Finder Does Not Use Uniform Naming Convention"
-permalink: kb/089/Q89972/
+permalink: /kb/089/Q89972/
 ---
 
 ## Q89972: Sound Finder Does Not Use Uniform Naming Convention

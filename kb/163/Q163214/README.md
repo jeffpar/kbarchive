@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163214: RAS Script with Set IPADDR May Fail with 3Com Defender Add-on"
-permalink: kb/163/Q163214/
+permalink: /kb/163/Q163214/
 ---
 
 ## Q163214: RAS Script with Set IPADDR May Fail with 3Com Defender Add-on

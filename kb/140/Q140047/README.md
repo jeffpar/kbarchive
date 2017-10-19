@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140047: Eicon Diva ISDN PC-Card Setup Disables Mass-Storage Devices"
-permalink: kb/140/Q140047/
+permalink: /kb/140/Q140047/
 ---
 
 ## Q140047: Eicon Diva ISDN PC-Card Setup Disables Mass-Storage Devices

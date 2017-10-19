@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174465: Bad SAP Packet Causes Stop 0x0000000A in Afd.sys"
-permalink: kb/174/Q174465/
+permalink: /kb/174/Q174465/
 ---
 
 ## Q174465: Bad SAP Packet Causes Stop 0x0000000A in Afd.sys

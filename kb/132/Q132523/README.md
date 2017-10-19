@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132523: SAP Agent and NWLNKRIP Services Fail to Start"
-permalink: kb/132/Q132523/
+permalink: /kb/132/Q132523/
 ---
 
 ## Q132523: SAP Agent and NWLNKRIP Services Fail to Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168132: After Applying Service Pack NT Reports Single Processor"
-permalink: kb/168/Q168132/
+permalink: /kb/168/Q168132/
 ---
 
 ## Q168132: After Applying Service Pack NT Reports Single Processor

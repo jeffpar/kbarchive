@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192582: XCLN: Cannot Log On with Account Containing Extended Characters"
-permalink: kb/192/Q192582/
+permalink: /kb/192/Q192582/
 ---
 
 ## Q192582: XCLN: Cannot Log On with Account Containing Extended Characters

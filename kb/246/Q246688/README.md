@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246688: XCLN: Private Calendar Items Not Showing for Secondary Mailbox"
-permalink: kb/246/Q246688/
+permalink: /kb/246/Q246688/
 ---
 
 ## Q246688: XCLN: Private Calendar Items Not Showing for Secondary Mailbox

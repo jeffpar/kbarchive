@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129785: PC Win: Err Msg: ...MAILSPL Caused a GPF in Module MAILSPL.EXE"
-permalink: kb/129/Q129785/
+permalink: /kb/129/Q129785/
 ---
 
 ## Q129785: PC Win: Err Msg: ...MAILSPL Caused a GPF in Module MAILSPL.EXE

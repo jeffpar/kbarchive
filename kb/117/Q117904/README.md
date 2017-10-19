@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117904: DOCERR: F2400 : &quot;&lt;name&gt; : COMMON not defined&quot;"
-permalink: kb/117/Q117904/
+permalink: /kb/117/Q117904/
 ---
 
 ## Q117904: DOCERR: F2400 : &quot;&lt;name&gt; : COMMON not defined&quot;

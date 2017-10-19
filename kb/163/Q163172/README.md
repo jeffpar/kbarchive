@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163172: ODE97: Autorun Screen Appears When Adding ODE Tools Components"
-permalink: kb/163/Q163172/
+permalink: /kb/163/Q163172/
 ---
 
 ## Q163172: ODE97: Autorun Screen Appears When Adding ODE Tools Components

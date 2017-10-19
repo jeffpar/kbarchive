@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101707: Machine Not Found When Adding to Directory Permissions"
-permalink: kb/101/Q101707/
+permalink: /kb/101/Q101707/
 ---
 
 ## Q101707: Machine Not Found When Adding to Directory Permissions

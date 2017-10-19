@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257862: Advertisement Creation Indicates a Program Is Disabled When Not"
-permalink: kb/257/Q257862/
+permalink: /kb/257/Q257862/
 ---
 
 ## Q257862: Advertisement Creation Indicates a Program Is Disabled When Not

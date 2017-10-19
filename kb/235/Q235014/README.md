@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235014: Microsoft Access 2000 Step by Step Comments and Corrections"
-permalink: kb/235/Q235014/
+permalink: /kb/235/Q235014/
 ---
 
 ## Q235014: Microsoft Access 2000 Step by Step Comments and Corrections

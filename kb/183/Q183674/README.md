@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183674: XADM: How to Find What User Is Changing Objects in Administrator"
-permalink: kb/183/Q183674/
+permalink: /kb/183/Q183674/
 ---
 
 ## Q183674: XADM: How to Find What User Is Changing Objects in Administrator

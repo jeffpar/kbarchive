@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254613: Error Message: HTTP/1.0 Invalid Application Name"
-permalink: kb/254/Q254613/
+permalink: /kb/254/Q254613/
 ---
 
 ## Q254613: Error Message: HTTP/1.0 Invalid Application Name

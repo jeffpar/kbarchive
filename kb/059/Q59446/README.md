@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59446: Mac AL: AppleLink Comm Cannot Open Preferences After Crash"
-permalink: kb/059/Q59446/
+permalink: /kb/059/Q59446/
 ---
 
 ## Q59446: Mac AL: AppleLink Comm Cannot Open Preferences After Crash

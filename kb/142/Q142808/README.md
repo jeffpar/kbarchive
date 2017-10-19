@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142808: Error Message: The Password-List File %1 Is Damaged..."
-permalink: kb/142/Q142808/
+permalink: /kb/142/Q142808/
 ---
 
 ## Q142808: Error Message: The Password-List File %1 Is Damaged...

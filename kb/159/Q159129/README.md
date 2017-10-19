@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159129: OpenGL Access Violation with Invalid OpenGL Context"
-permalink: kb/159/Q159129/
+permalink: /kb/159/Q159129/
 ---
 
 ## Q159129: OpenGL Access Violation with Invalid OpenGL Context

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263908: XADM: Information Store Crash in EcReplFolderMessagesUnpack"
-permalink: kb/263/Q263908/
+permalink: /kb/263/Q263908/
 ---
 
 ## Q263908: XADM: Information Store Crash in EcReplFolderMessagesUnpack

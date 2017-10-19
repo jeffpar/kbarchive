@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168414: BUG: Binary Compatibility Leaves Source File in Open State"
-permalink: kb/168/Q168414/
+permalink: /kb/168/Q168414/
 ---
 
 ## Q168414: BUG: Binary Compatibility Leaves Source File in Open State

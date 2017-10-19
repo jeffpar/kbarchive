@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129670: GSNW Not Releasing Session to NetWare Server"
-permalink: kb/129/Q129670/
+permalink: /kb/129/Q129670/
 ---
 
 ## Q129670: GSNW Not Releasing Session to NetWare Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219261: PRB: VB References Dialog Doesn't List an MFC DLL Automation Svr"
-permalink: kb/219/Q219261/
+permalink: /kb/219/Q219261/
 ---
 
 ## Q219261: PRB: VB References Dialog Doesn't List an MFC DLL Automation Svr

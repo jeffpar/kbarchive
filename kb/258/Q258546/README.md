@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258546: Cannot Retrieve Default Web Site from External Network"
-permalink: kb/258/Q258546/
+permalink: /kb/258/Q258546/
 ---
 
 ## Q258546: Cannot Retrieve Default Web Site from External Network

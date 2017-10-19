@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168654: How to Obtain SNA Version 3.0 U.S. Service Pack 2"
-permalink: kb/168/Q168654/
+permalink: /kb/168/Q168654/
 ---
 
 ## Q168654: How to Obtain SNA Version 3.0 U.S. Service Pack 2

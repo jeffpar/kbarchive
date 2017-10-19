@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96840: Mac Wkst: Sent Mail Folder Not Available"
-permalink: kb/096/Q96840/
+permalink: /kb/096/Q96840/
 ---
 
 ## Q96840: Mac Wkst: Sent Mail Folder Not Available

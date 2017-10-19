@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140525: HOWTO: Receive from the Serial Port by Using MScomm32.ocx"
-permalink: kb/140/Q140525/
+permalink: /kb/140/Q140525/
 ---
 
 ## Q140525: HOWTO: Receive from the Serial Port by Using MScomm32.ocx

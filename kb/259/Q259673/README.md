@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259673: HOWTO: Change the Application Icon with Visual Basic"
-permalink: kb/259/Q259673/
+permalink: /kb/259/Q259673/
 ---
 
 ## Q259673: HOWTO: Change the Application Icon with Visual Basic

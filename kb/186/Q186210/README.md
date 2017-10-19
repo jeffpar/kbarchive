@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186210: XCLN: Exchange Client Won't Print Meeting Requests &amp; Messages"
-permalink: kb/186/Q186210/
+permalink: /kb/186/Q186210/
 ---
 
 ## Q186210: XCLN: Exchange Client Won't Print Meeting Requests &amp; Messages

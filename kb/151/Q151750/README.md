@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151750: BUG: SET SYSMENU OFF Malfunctioning"
-permalink: kb/151/Q151750/
+permalink: /kb/151/Q151750/
 ---
 
 ## Q151750: BUG: SET SYSMENU OFF Malfunctioning

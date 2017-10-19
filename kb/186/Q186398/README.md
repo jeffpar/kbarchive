@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186398: SMS: How to Use the PDF Wizard - Pdfwiz.exe"
-permalink: kb/186/Q186398/
+permalink: /kb/186/Q186398/
 ---
 
 ## Q186398: SMS: How to Use the PDF Wizard - Pdfwiz.exe

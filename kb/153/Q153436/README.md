@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153436: MSB: Hangs on Exit with Alliance Promotion Video Driver"
-permalink: kb/153/Q153436/
+permalink: /kb/153/Q153436/
 ---
 
 ## Q153436: MSB: Hangs on Exit with Alliance Promotion Video Driver

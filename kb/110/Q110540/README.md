@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110540: PRB: Quotation Marks Missing from Compiled Help File"
-permalink: kb/110/Q110540/
+permalink: /kb/110/Q110540/
 ---
 
 ## Q110540: PRB: Quotation Marks Missing from Compiled Help File

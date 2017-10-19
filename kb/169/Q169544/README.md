@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169544: WD97: ReadabilityStatistics Collection Causes Invalid Page Fault"
-permalink: kb/169/Q169544/
+permalink: /kb/169/Q169544/
 ---
 
 ## Q169544: WD97: ReadabilityStatistics Collection Causes Invalid Page Fault

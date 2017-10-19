@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158515: Auto Started TP Is Not Invoked if TP Has Mixed-Case TP Name"
-permalink: kb/158/Q158515/
+permalink: /kb/158/Q158515/
 ---
 
 ## Q158515: Auto Started TP Is Not Invoked if TP Has Mixed-Case TP Name

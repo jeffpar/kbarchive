@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174829: Restoring the Security Menu in Explorer"
-permalink: kb/174/Q174829/
+permalink: /kb/174/Q174829/
 ---
 
 ## Q174829: Restoring the Security Menu in Explorer

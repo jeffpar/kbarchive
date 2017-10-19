@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173405: PRB: Misleading Message When Checking Out Older File Version"
-permalink: kb/173/Q173405/
+permalink: /kb/173/Q173405/
 ---
 
 ## Q173405: PRB: Misleading Message When Checking Out Older File Version

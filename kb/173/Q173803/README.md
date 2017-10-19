@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173803: XADM: Exchange Setup Remove All Removes Mapi32.dll"
-permalink: kb/173/Q173803/
+permalink: /kb/173/Q173803/
 ---
 
 ## Q173803: XADM: Exchange Setup Remove All Removes Mapi32.dll

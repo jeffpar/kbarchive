@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182511: XADM: Top Level Raw Property Attributes"
-permalink: kb/182/Q182511/
+permalink: /kb/182/Q182511/
 ---
 
 ## Q182511: XADM: Top Level Raw Property Attributes

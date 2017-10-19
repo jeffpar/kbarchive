@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137790: Backslash Characters Used in MIFGEN Do Not Appear in Inventory"
-permalink: kb/137/Q137790/
+permalink: /kb/137/Q137790/
 ---
 
 ## Q137790: Backslash Characters Used in MIFGEN Do Not Appear in Inventory

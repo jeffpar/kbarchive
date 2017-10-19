@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197021: WD97: Saving Form Data as Text Does Not Change Document Name"
-permalink: kb/197/Q197021/
+permalink: /kb/197/Q197021/
 ---
 
 ## Q197021: WD97: Saving Form Data as Text Does Not Change Document Name

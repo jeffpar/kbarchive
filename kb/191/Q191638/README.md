@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191638: HOWTO: Programmatically Access the Registry in Visual FoxPro"
-permalink: kb/191/Q191638/
+permalink: /kb/191/Q191638/
 ---
 
 ## Q191638: HOWTO: Programmatically Access the Registry in Visual FoxPro

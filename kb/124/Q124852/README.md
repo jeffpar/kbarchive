@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124852: Program Doesn't Take Up Entire Screen at 640 x 480 Resolution"
-permalink: kb/124/Q124852/
+permalink: /kb/124/Q124852/
 ---
 
 ## Q124852: Program Doesn't Take Up Entire Screen at 640 x 480 Resolution

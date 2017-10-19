@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165308: FIX: Left Outer Join with &quot;WHERE NOT IN&quot; Clause Incorrect"
-permalink: kb/165/Q165308/
+permalink: /kb/165/Q165308/
 ---
 
 ## Q165308: FIX: Left Outer Join with &quot;WHERE NOT IN&quot; Clause Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300873: Office XP Step by Step Interactive Training"
-permalink: kb/300/Q300873/
+permalink: /kb/300/Q300873/
 ---
 
 ## Q300873: Office XP Step by Step Interactive Training

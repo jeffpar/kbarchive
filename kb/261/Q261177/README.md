@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261177: XADM: Adminpak Needed for Installing Exchange System Manager"
-permalink: kb/261/Q261177/
+permalink: /kb/261/Q261177/
 ---
 
 ## Q261177: XADM: Adminpak Needed for Installing Exchange System Manager

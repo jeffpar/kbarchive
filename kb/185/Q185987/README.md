@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185987: Virtual Globe 98: World Flights: Flight Does Not Stop"
-permalink: kb/185/Q185987/
+permalink: /kb/185/Q185987/
 ---
 
 ## Q185987: Virtual Globe 98: World Flights: Flight Does Not Stop

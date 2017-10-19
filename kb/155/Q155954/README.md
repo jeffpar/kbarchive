@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155954: Lines with Arrowheads Distorted When Pasted into Word"
-permalink: kb/155/Q155954/
+permalink: /kb/155/Q155954/
 ---
 
 ## Q155954: Lines with Arrowheads Distorted When Pasted into Word

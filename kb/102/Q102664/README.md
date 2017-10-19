@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102664: FIX: BSCMAKE Fails When Project Contains Only Object Files"
-permalink: kb/102/Q102664/
+permalink: /kb/102/Q102664/
 ---
 
 ## Q102664: FIX: BSCMAKE Fails When Project Contains Only Object Files

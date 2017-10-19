@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124957: ATAPI Driver Fails to Load For Sony CDU-55E CD-ROM"
-permalink: kb/124/Q124957/
+permalink: /kb/124/Q124957/
 ---
 
 ## Q124957: ATAPI Driver Fails to Load For Sony CDU-55E CD-ROM

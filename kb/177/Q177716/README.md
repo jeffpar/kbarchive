@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177716: Age of Empires: Game Unexpectedly Quits When You Play a Scenario"
-permalink: kb/177/Q177716/
+permalink: /kb/177/Q177716/
 ---
 
 ## Q177716: Age of Empires: Game Unexpectedly Quits When You Play a Scenario

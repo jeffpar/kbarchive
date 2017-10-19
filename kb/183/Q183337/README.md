@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183337: IAS: Error Code 8199 Trying to Authenticate with MS RADIUS"
-permalink: kb/183/Q183337/
+permalink: /kb/183/Q183337/
 ---
 
 ## Q183337: IAS: Error Code 8199 Trying to Authenticate with MS RADIUS

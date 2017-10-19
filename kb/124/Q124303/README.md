@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124303: Windows NT LPD Service Requires One Control File Per Data File"
-permalink: kb/124/Q124303/
+permalink: /kb/124/Q124303/
 ---
 
 ## Q124303: Windows NT LPD Service Requires One Control File Per Data File

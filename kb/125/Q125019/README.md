@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125019: Long Filename Creates an MS-DOS Volume Label"
-permalink: kb/125/Q125019/
+permalink: /kb/125/Q125019/
 ---
 
 ## Q125019: Long Filename Creates an MS-DOS Volume Label

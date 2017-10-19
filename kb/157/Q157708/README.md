@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157708: XADM: MTA Error 9405"
-permalink: kb/157/Q157708/
+permalink: /kb/157/Q157708/
 ---
 
 ## Q157708: XADM: MTA Error 9405

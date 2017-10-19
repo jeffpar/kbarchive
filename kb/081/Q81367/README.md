@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81367: FIX: EVEN, ALIGN Generate Error in AT Segments"
-permalink: kb/081/Q81367/
+permalink: /kb/081/Q81367/
 ---
 
 ## Q81367: FIX: EVEN, ALIGN Generate Error in AT Segments

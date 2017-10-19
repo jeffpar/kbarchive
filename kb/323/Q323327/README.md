@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323327: WM_TIMER Messages May Stop Being Delivered to Programs"
-permalink: kb/323/Q323327/
+permalink: /kb/323/Q323327/
 ---
 
 ## Q323327: WM_TIMER Messages May Stop Being Delivered to Programs

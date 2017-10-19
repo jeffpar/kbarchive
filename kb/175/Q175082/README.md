@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175082: Bookshelf: Cannot Use ALT+F4 to Quit Program"
-permalink: kb/175/Q175082/
+permalink: /kb/175/Q175082/
 ---
 
 ## Q175082: Bookshelf: Cannot Use ALT+F4 to Quit Program

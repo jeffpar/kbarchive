@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235731: Remote Control Cannot Connect to Child Site Client Via RAS"
-permalink: kb/235/Q235731/
+permalink: /kb/235/Q235731/
 ---
 
 ## Q235731: Remote Control Cannot Connect to Child Site Client Via RAS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115364: X400: Comma Before Final Term Omitted by Display Format"
-permalink: kb/115/Q115364/
+permalink: /kb/115/Q115364/
 ---
 
 ## Q115364: X400: Comma Before Final Term Omitted by Display Format

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272037: Encarta 2001 Err Msg: ENC2001 Caused an Invalid Page Fault..."
-permalink: kb/272/Q272037/
+permalink: /kb/272/Q272037/
 ---
 
 ## Q272037: Encarta 2001 Err Msg: ENC2001 Caused an Invalid Page Fault...

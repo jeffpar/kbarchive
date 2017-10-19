@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91201: WFWG Setup Does Not Warn That PC-NFS is Not Supported"
-permalink: kb/091/Q91201/
+permalink: /kb/091/Q91201/
 ---
 
 ## Q91201: WFWG Setup Does Not Warn That PC-NFS is Not Supported

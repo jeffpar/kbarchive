@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165889: PRB: ItemTips = .T. Causes Error When in Private DataSession"
-permalink: kb/165/Q165889/
+permalink: /kb/165/Q165889/
 ---
 
 ## Q165889: PRB: ItemTips = .T. Causes Error When in Private DataSession

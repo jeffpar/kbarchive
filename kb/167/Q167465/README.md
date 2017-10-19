@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167465: WD97: Inserting a Graphic Over Hyperlink Retains Hyperlink Style"
-permalink: kb/167/Q167465/
+permalink: /kb/167/Q167465/
 ---
 
 ## Q167465: WD97: Inserting a Graphic Over Hyperlink Retains Hyperlink Style

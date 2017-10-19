@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186043: XCON: ECB Usage Count Events Appear with Large Directories"
-permalink: kb/186/Q186043/
+permalink: /kb/186/Q186043/
 ---
 
 ## Q186043: XCON: ECB Usage Count Events Appear with Large Directories

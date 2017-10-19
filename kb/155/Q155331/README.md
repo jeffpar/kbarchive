@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155331: How To Enable VfW 1.1 CAPSCRN.EXE to Work in Windows 95"
-permalink: kb/155/Q155331/
+permalink: /kb/155/Q155331/
 ---
 
 ## Q155331: How To Enable VfW 1.1 CAPSCRN.EXE to Work in Windows 95

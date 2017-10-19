@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q178074: RUI_TERM Fails to Return When lua_resv56[2] Is Set in RUI_INIT"
-permalink: kb/178/Q178074/
+title: "Q178074: RUI_TERM Fails to Return When lua_resv56&#91;2&#93; Is Set in RUI_INIT"
+permalink: /kb/178/Q178074/
 ---
 
-## Q178074: RUI_TERM Fails to Return When lua_resv56[2] Is Set in RUI_INIT
+## Q178074: RUI_TERM Fails to Return When lua_resv56&#91;2&#93; Is Set in RUI_INIT
 
 	Article: Q178074
 	Product(s): Microsoft SNA Server

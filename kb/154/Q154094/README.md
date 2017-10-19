@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154094: Using Iomega ATAPI Zip Drives with Windows NT"
-permalink: kb/154/Q154094/
+permalink: /kb/154/Q154094/
 ---
 
 ## Q154094: Using Iomega ATAPI Zip Drives with Windows NT

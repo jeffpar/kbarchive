@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194300: FIX: Asserts When Creating a Dialog Box in an MFC Regular DLL"
-permalink: kb/194/Q194300/
+permalink: /kb/194/Q194300/
 ---
 
 ## Q194300: FIX: Asserts When Creating a Dialog Box in an MFC Regular DLL

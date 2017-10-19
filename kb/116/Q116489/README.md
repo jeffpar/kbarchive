@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116489: BUG: Printing to stdout with CV /2 Can Cause Screen Corruption"
-permalink: kb/116/Q116489/
+permalink: /kb/116/Q116489/
 ---
 
 ## Q116489: BUG: Printing to stdout with CV /2 Can Cause Screen Corruption

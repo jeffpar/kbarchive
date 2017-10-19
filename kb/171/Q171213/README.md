@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171213: Copy to Removable Drive in Explorer May Fail After Media Swap"
-permalink: kb/171/Q171213/
+permalink: /kb/171/Q171213/
 ---
 
 ## Q171213: Copy to Removable Drive in Explorer May Fail After Media Swap

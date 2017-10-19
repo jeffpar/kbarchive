@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201129: Unable to Delete Folders with Non-Standard MS-DOS Names"
-permalink: kb/201/Q201129/
+permalink: /kb/201/Q201129/
 ---
 
 ## Q201129: Unable to Delete Folders with Non-Standard MS-DOS Names

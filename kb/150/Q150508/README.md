@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150508: Netscape Clients Hang While Posting Data to SSL Forms on IIS"
-permalink: kb/150/Q150508/
+permalink: /kb/150/Q150508/
 ---
 
 ## Q150508: Netscape Clients Hang While Posting Data to SSL Forms on IIS

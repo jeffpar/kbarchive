@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85242: Using CalComp 2300 Drawing Boards with Windows 3.1"
-permalink: kb/085/Q85242/
+permalink: /kb/085/Q85242/
 ---
 
 ## Q85242: Using CalComp 2300 Drawing Boards with Windows 3.1

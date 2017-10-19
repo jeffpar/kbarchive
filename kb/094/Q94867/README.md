@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94867: Err Msg after Running MemMaker: Double-Buffering Driver..."
-permalink: kb/094/Q94867/
+permalink: /kb/094/Q94867/
 ---
 
 ## Q94867: Err Msg after Running MemMaker: Double-Buffering Driver...

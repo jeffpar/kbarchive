@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223310: Zone Err Msg: Your Current Security Settings Prohibit..."
-permalink: kb/223/Q223310/
+permalink: /kb/223/Q223310/
 ---
 
 ## Q223310: Zone Err Msg: Your Current Security Settings Prohibit...

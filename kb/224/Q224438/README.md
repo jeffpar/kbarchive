@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224438: XADM: Some Information Store Counters Not Updated Properly"
-permalink: kb/224/Q224438/
+permalink: /kb/224/Q224438/
 ---
 
 ## Q224438: XADM: Some Information Store Counters Not Updated Properly

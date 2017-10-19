@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127053: Two Keyboard Components Appear in Control Panel"
-permalink: kb/127/Q127053/
+permalink: /kb/127/Q127053/
 ---
 
 ## Q127053: Two Keyboard Components Appear in Control Panel

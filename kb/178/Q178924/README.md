@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178924: How to Upgrade an Evaluation Version of Cluster Server"
-permalink: kb/178/Q178924/
+permalink: /kb/178/Q178924/
 ---
 
 ## Q178924: How to Upgrade an Evaluation Version of Cluster Server

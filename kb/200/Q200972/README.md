@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200972: SMS: Custom Collection Examples"
-permalink: kb/200/Q200972/
+permalink: /kb/200/Q200972/
 ---
 
 ## Q200972: SMS: Custom Collection Examples

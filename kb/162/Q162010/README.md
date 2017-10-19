@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162010: XCLN: Exchange Server Name Resolution on a Novell Network"
-permalink: kb/162/Q162010/
+permalink: /kb/162/Q162010/
 ---
 
 ## Q162010: XCLN: Exchange Server Name Resolution on a Novell Network

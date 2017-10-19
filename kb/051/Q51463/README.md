@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51463: PPT: How to Copy Slides Between PowerPoint Presentations"
-permalink: kb/051/Q51463/
+permalink: /kb/051/Q51463/
 ---
 
 ## Q51463: PPT: How to Copy Slides Between PowerPoint Presentations

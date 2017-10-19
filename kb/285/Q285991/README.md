@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285991: OLE DB Provider for DB2 Error Transferring More Than 32,763 Rows"
-permalink: kb/285/Q285991/
+permalink: /kb/285/Q285991/
 ---
 
 ## Q285991: OLE DB Provider for DB2 Error Transferring More Than 32,763 Rows

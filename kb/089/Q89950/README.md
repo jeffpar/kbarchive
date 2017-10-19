@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89950: No Shortcut Keys for Label/Description Fields in Sound Finder"
-permalink: kb/089/Q89950/
+permalink: /kb/089/Q89950/
 ---
 
 ## Q89950: No Shortcut Keys for Label/Description Fields in Sound Finder

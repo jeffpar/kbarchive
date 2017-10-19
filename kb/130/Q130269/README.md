@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130269: Arcade: No Support for Joysticks or Other Game Port Devices"
-permalink: kb/130/Q130269/
+permalink: /kb/130/Q130269/
 ---
 
 ## Q130269: Arcade: No Support for Joysticks or Other Game Port Devices

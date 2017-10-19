@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162211: &quot;Fatal Exception 0E&quot; May Occur During Critical Suspend"
-permalink: kb/162/Q162211/
+permalink: /kb/162/Q162211/
 ---
 
 ## Q162211: &quot;Fatal Exception 0E&quot; May Occur During Critical Suspend

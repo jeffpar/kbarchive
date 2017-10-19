@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124329: Windows NT Setup Err Msg with Olicom NIC: The Primary Domain..."
-permalink: kb/124/Q124329/
+permalink: /kb/124/Q124329/
 ---
 
 ## Q124329: Windows NT Setup Err Msg with Olicom NIC: The Primary Domain...

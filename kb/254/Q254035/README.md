@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254035: XADM: Stack Overflow While Deleting Child Folders in a Deep Hier"
-permalink: kb/254/Q254035/
+permalink: /kb/254/Q254035/
 ---
 
 ## Q254035: XADM: Stack Overflow While Deleting Child Folders in a Deep Hier

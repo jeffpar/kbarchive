@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71872: MS-DOS 5 Upgrade README.TXT: Network Compatibility"
-permalink: kb/071/Q71872/
+permalink: /kb/071/Q71872/
 ---
 
 ## Q71872: MS-DOS 5 Upgrade README.TXT: Network Compatibility

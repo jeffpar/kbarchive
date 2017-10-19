@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225207: APPC/CPIC App Unable to Allocate Conversation over Dependent LU"
-permalink: kb/225/Q225207/
+permalink: /kb/225/Q225207/
 ---
 
 ## Q225207: APPC/CPIC App Unable to Allocate Conversation over Dependent LU

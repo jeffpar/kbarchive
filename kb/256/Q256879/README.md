@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256879: XADM: Mbclean Stops Unexpectedly Because of Memory Corruption"
-permalink: kb/256/Q256879/
+permalink: /kb/256/Q256879/
 ---
 
 ## Q256879: XADM: Mbclean Stops Unexpectedly Because of Memory Corruption

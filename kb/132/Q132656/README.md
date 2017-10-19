@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132656: Quattro Pro 6.0: Problems Setting Up to NetWare drive"
-permalink: kb/132/Q132656/
+permalink: /kb/132/Q132656/
 ---
 
 ## Q132656: Quattro Pro 6.0: Problems Setting Up to NetWare drive

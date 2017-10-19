@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111460: Autoback TSR Creates Erroneous Path Statement"
-permalink: kb/111/Q111460/
+permalink: /kb/111/Q111460/
 ---
 
 ## Q111460: Autoback TSR Creates Erroneous Path Statement

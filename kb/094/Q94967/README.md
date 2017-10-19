@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94967: FAX: &quot;Communication Error&quot; Using Intel SatisFAXtion 200 Board"
-permalink: kb/094/Q94967/
+permalink: /kb/094/Q94967/
 ---
 
 ## Q94967: FAX: &quot;Communication Error&quot; Using Intel SatisFAXtion 200 Board

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96568: Using SQL Server over Novell NetWare with WFWG"
-permalink: kb/096/Q96568/
+permalink: /kb/096/Q96568/
 ---
 
 ## Q96568: Using SQL Server over Novell NetWare with WFWG

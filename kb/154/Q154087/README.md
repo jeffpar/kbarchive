@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154087: Access Violation in Lsass.exe Due to Incorrect Buffer Size"
-permalink: kb/154/Q154087/
+permalink: /kb/154/Q154087/
 ---
 
 ## Q154087: Access Violation in Lsass.exe Due to Incorrect Buffer Size

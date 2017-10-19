@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130351: PRB: Movable Property in Effect at Design Time"
-permalink: kb/130/Q130351/
+permalink: /kb/130/Q130351/
 ---
 
 ## Q130351: PRB: Movable Property in Effect at Design Time

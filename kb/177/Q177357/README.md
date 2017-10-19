@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177357: DHCP Client Does Not Immediately Renew Address"
-permalink: kb/177/Q177357/
+permalink: /kb/177/Q177357/
 ---
 
 ## Q177357: DHCP Client Does Not Immediately Renew Address

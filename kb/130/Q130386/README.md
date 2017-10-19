@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130386: RECEIVE_ALLOCATE May Return AP_UNEXPECTED_DOS_ERROR (F011)"
-permalink: kb/130/Q130386/
+permalink: /kb/130/Q130386/
 ---
 
 ## Q130386: RECEIVE_ALLOCATE May Return AP_UNEXPECTED_DOS_ERROR (F011)

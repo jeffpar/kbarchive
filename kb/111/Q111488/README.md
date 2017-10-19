@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111488: Pipe Dream: Scoring Error in Help File"
-permalink: kb/111/Q111488/
+permalink: /kb/111/Q111488/
 ---
 
 ## Q111488: Pipe Dream: Scoring Error in Help File

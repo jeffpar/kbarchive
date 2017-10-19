@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150937: Visual C++ Version 4.1 Patch"
-permalink: kb/150/Q150937/
+permalink: /kb/150/Q150937/
 ---
 
 ## Q150937: Visual C++ Version 4.1 Patch

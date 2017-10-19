@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146961: XCLN: Outbox on Win16 Client Does Not Change Color"
-permalink: kb/146/Q146961/
+permalink: /kb/146/Q146961/
 ---
 
 ## Q146961: XCLN: Outbox on Win16 Client Does Not Change Color

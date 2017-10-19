@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177238: HOWTO: Hyperlink in UserDocuments"
-permalink: kb/177/Q177238/
+permalink: /kb/177/Q177238/
 ---
 
 ## Q177238: HOWTO: Hyperlink in UserDocuments

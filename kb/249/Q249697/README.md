@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249697: Encarta 2000: How to Disable or Enable MindMaze"
-permalink: kb/249/Q249697/
+permalink: /kb/249/Q249697/
 ---
 
 ## Q249697: Encarta 2000: How to Disable or Enable MindMaze

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193400: BUG: Show Event in a UserControl Array Member Does Not Execute"
-permalink: kb/193/Q193400/
+permalink: /kb/193/Q193400/
 ---
 
 ## Q193400: BUG: Show Event in a UserControl Array Member Does Not Execute

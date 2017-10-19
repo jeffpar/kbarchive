@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89975: F1 Key Dysfunctional in Customize Toolbar Dialog Box"
-permalink: kb/089/Q89975/
+permalink: /kb/089/Q89975/
 ---
 
 ## Q89975: F1 Key Dysfunctional in Customize Toolbar Dialog Box

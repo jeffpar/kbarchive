@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260192: XADM: Global Address List Only Displays Contents of One ABV"
-permalink: kb/260/Q260192/
+permalink: /kb/260/Q260192/
 ---
 
 ## Q260192: XADM: Global Address List Only Displays Contents of One ABV

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158445: SMS: Remote Control Agent Unable to Get Workstation Name"
-permalink: kb/158/Q158445/
+permalink: /kb/158/Q158445/
 ---
 
 ## Q158445: SMS: Remote Control Agent Unable to Get Workstation Name

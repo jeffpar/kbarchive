@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113167: PC Win: How Open Attachments Are Handled"
-permalink: kb/113/Q113167/
+permalink: /kb/113/Q113167/
 ---
 
 ## Q113167: PC Win: How Open Attachments Are Handled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134367: PRB: &quot;Too Many Files&quot; Open in FoxPro for Macintosh"
-permalink: kb/134/Q134367/
+permalink: /kb/134/Q134367/
 ---
 
 ## Q134367: PRB: &quot;Too Many Files&quot; Open in FoxPro for Macintosh

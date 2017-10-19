@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186340: NAT Routers Disallow Setup of One-way Trusts Between Domains"
-permalink: kb/186/Q186340/
+permalink: /kb/186/Q186340/
 ---
 
 ## Q186340: NAT Routers Disallow Setup of One-way Trusts Between Domains

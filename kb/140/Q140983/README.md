@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140983: PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1"
-permalink: kb/140/Q140983/
+permalink: /kb/140/Q140983/
 ---
 
 ## Q140983: PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1

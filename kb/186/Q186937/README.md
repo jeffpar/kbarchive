@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186937: XWEB: Cannot See Note/Post In the Calendar/Contact Folder In OWA"
-permalink: kb/186/Q186937/
+permalink: /kb/186/Q186937/
 ---
 
 ## Q186937: XWEB: Cannot See Note/Post In the Calendar/Contact Folder In OWA

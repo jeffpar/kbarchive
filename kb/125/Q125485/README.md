@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125485: View Drop Down Menu in File Manager Has Non-Applicable Choices"
-permalink: kb/125/Q125485/
+permalink: /kb/125/Q125485/
 ---
 
 ## Q125485: View Drop Down Menu in File Manager Has Non-Applicable Choices

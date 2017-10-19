@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187420: Taskbar Disappears When Changing Screen Resolution on Alpha"
-permalink: kb/187/Q187420/
+permalink: /kb/187/Q187420/
 ---
 
 ## Q187420: Taskbar Disappears When Changing Screen Resolution on Alpha

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166536: XCON: MTA Generates Event ID 2187 on Deferred Delivery Message"
-permalink: kb/166/Q166536/
+permalink: /kb/166/Q166536/
 ---
 
 ## Q166536: XCON: MTA Generates Event ID 2187 on Deferred Delivery Message

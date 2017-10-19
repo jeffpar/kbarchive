@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219025: BUG: ODBC Query of VFP View Returns SQL_NO_DATA_FOUND"
-permalink: kb/219/Q219025/
+permalink: /kb/219/Q219025/
 ---
 
 ## Q219025: BUG: ODBC Query of VFP View Returns SQL_NO_DATA_FOUND

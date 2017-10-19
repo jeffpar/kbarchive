@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199261: SMS: Advertisements to Users and User Groups"
-permalink: kb/199/Q199261/
+permalink: /kb/199/Q199261/
 ---
 
 ## Q199261: SMS: Advertisements to Users and User Groups

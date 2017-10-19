@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210202: SMS: Software Metering Servers Not Balancing Licenses Correctly"
-permalink: kb/210/Q210202/
+permalink: /kb/210/Q210202/
 ---
 
 ## Q210202: SMS: Software Metering Servers Not Balancing Licenses Correctly

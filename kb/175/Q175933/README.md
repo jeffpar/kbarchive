@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175933: PRB: Using Views with Non-Unique Key Fields"
-permalink: kb/175/Q175933/
+permalink: /kb/175/Q175933/
 ---
 
 ## Q175933: PRB: Using Views with Non-Unique Key Fields

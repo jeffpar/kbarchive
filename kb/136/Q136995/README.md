@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136995: How the Visual FoxPro Setup Wizard Compresses Large Files"
-permalink: kb/136/Q136995/
+permalink: /kb/136/Q136995/
 ---
 
 ## Q136995: How the Visual FoxPro Setup Wizard Compresses Large Files

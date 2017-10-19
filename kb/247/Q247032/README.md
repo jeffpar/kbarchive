@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247032: XADM: Unable to Add a Directory Replication Connector to a Site"
-permalink: kb/247/Q247032/
+permalink: /kb/247/Q247032/
 ---
 
 ## Q247032: XADM: Unable to Add a Directory Replication Connector to a Site

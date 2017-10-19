@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163139: XADM: Err Msg 1005: Access Is Denied"
-permalink: kb/163/Q163139/
+permalink: /kb/163/Q163139/
 ---
 
 ## Q163139: XADM: Err Msg 1005: Access Is Denied

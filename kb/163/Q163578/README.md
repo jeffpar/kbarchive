@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163578: TN3270 Client's Session Drops"
-permalink: kb/163/Q163578/
+permalink: /kb/163/Q163578/
 ---
 
 ## Q163578: TN3270 Client's Session Drops

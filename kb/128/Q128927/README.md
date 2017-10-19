@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128927: Err Msg: Remote Control Agent Cannot Load IDIS_IPX.DLL"
-permalink: kb/128/Q128927/
+permalink: /kb/128/Q128927/
 ---
 
 ## Q128927: Err Msg: Remote Control Agent Cannot Load IDIS_IPX.DLL

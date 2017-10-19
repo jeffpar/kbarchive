@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82460: Command Post Clock with Windows 3.1"
-permalink: kb/082/Q82460/
+permalink: /kb/082/Q82460/
 ---
 
 ## Q82460: Command Post Clock with Windows 3.1

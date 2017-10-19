@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159183: XADM: Err Msgs About Previously Deleted Msgs in Sync Log"
-permalink: kb/159/Q159183/
+permalink: /kb/159/Q159183/
 ---
 
 ## Q159183: XADM: Err Msgs About Previously Deleted Msgs in Sync Log

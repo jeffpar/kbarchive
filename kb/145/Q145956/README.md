@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145956: XCLN: Phonebook Entries w/ Extended Chars Not Sorted Correctly"
-permalink: kb/145/Q145956/
+permalink: /kb/145/Q145956/
 ---
 
 ## Q145956: XCLN: Phonebook Entries w/ Extended Chars Not Sorted Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116298: Bookshelf: System Error When Choosing Control Panel"
-permalink: kb/116/Q116298/
+permalink: /kb/116/Q116298/
 ---
 
 ## Q116298: Bookshelf: System Error When Choosing Control Panel

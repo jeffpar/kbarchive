@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51761: Flight Simulator 4.00: Heading Drifts to the Left"
-permalink: kb/051/Q51761/
+permalink: /kb/051/Q51761/
 ---
 
 ## Q51761: Flight Simulator 4.00: Heading Drifts to the Left

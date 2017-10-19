@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303076: Academic Learning Series Designing a Microsoft Windows 2000 Dire"
-permalink: kb/303/Q303076/
+permalink: /kb/303/Q303076/
 ---
 
 ## Q303076: Academic Learning Series Designing a Microsoft Windows 2000 Dire

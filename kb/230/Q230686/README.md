@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230686: Print Server Doesn't Support Print Filter DLL for APPC Printing"
-permalink: kb/230/Q230686/
+permalink: /kb/230/Q230686/
 ---
 
 ## Q230686: Print Server Doesn't Support Print Filter DLL for APPC Printing

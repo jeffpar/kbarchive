@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74466: UNDELETE Does Not Work If File Deleted from Windows or Shell"
-permalink: kb/074/Q74466/
+permalink: /kb/074/Q74466/
 ---
 
 ## Q74466: UNDELETE Does Not Work If File Deleted from Windows or Shell

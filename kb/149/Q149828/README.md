@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149828: CACLS /C Doesn't Work with /T switch"
-permalink: kb/149/Q149828/
+permalink: /kb/149/Q149828/
 ---
 
 ## Q149828: CACLS /C Doesn't Work with /T switch

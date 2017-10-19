@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161316: Ejecting Network PC Card from CardBus Socket Reboots Computer"
-permalink: kb/161/Q161316/
+permalink: /kb/161/Q161316/
 ---
 
 ## Q161316: Ejecting Network PC Card from CardBus Socket Reboots Computer

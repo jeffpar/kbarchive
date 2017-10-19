@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257379: Wspsrv.exe Exception: Access Violation (0xC0000005)"
-permalink: kb/257/Q257379/
+permalink: /kb/257/Q257379/
 ---
 
 ## Q257379: Wspsrv.exe Exception: Access Violation (0xC0000005)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81356: BUG: QuickHelp /t Option Is Not Implemented"
-permalink: kb/081/Q81356/
+permalink: /kb/081/Q81356/
 ---
 
 ## Q81356: BUG: QuickHelp /t Option Is Not Implemented

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163897: Using GSI Model 18 Add-in IDE Controller Causes STOP 0x7B"
-permalink: kb/163/Q163897/
+permalink: /kb/163/Q163897/
 ---
 
 ## Q163897: Using GSI Model 18 Add-in IDE Controller Causes STOP 0x7B

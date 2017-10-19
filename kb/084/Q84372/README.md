@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84372: Failed Installation When Using Full Page Genius Video Monitor"
-permalink: kb/084/Q84372/
+permalink: /kb/084/Q84372/
 ---
 
 ## Q84372: Failed Installation When Using Full Page Genius Video Monitor

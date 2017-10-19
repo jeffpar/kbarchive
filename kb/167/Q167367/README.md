@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167367: XFOR: Routing Exchange DXA Updates Over SNADS Backbone"
-permalink: kb/167/Q167367/
+permalink: /kb/167/Q167367/
 ---
 
 ## Q167367: XFOR: Routing Exchange DXA Updates Over SNADS Backbone

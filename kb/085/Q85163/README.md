@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85163: Default CONFIG.SYS and AUTOEXEC.BAT Files"
-permalink: kb/085/Q85163/
+permalink: /kb/085/Q85163/
 ---
 
 ## Q85163: Default CONFIG.SYS and AUTOEXEC.BAT Files

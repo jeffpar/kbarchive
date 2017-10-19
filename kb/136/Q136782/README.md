@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136782: Unable To Connect To AT&amp;T Advanced Server For UNIX Printer Share"
-permalink: kb/136/Q136782/
+permalink: /kb/136/Q136782/
 ---
 
 ## Q136782: Unable To Connect To AT&amp;T Advanced Server For UNIX Printer Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298999: Baseball2001: Cannot Find the Roster Update"
-permalink: kb/298/Q298999/
+permalink: /kb/298/Q298999/
 ---
 
 ## Q298999: Baseball2001: Cannot Find the Roster Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232130: BUG: Opening Then Closing 2nd Modal Form Disables VFP Close Box"
-permalink: kb/232/Q232130/
+permalink: /kb/232/Q232130/
 ---
 
 ## Q232130: BUG: Opening Then Closing 2nd Modal Form Disables VFP Close Box

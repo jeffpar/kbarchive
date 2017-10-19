@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197470: WD97: Fonts Not Displayed with True WYSIWYG"
-permalink: kb/197/Q197470/
+permalink: /kb/197/Q197470/
 ---
 
 ## Q197470: WD97: Fonts Not Displayed with True WYSIWYG

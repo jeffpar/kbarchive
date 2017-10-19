@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159788: XADM: SP3 Update Fails on Admin Only Server"
-permalink: kb/159/Q159788/
+permalink: /kb/159/Q159788/
 ---
 
 ## Q159788: XADM: SP3 Update Fails on Admin Only Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175779: Microsoft Cluster Server Requires Service Pack 3 or Later."
-permalink: kb/175/Q175779/
+permalink: /kb/175/Q175779/
 ---
 
 ## Q175779: Microsoft Cluster Server Requires Service Pack 3 or Later.

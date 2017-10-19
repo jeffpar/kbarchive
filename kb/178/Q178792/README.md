@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178792: Tutor: Error Message: Unable to Initialize Direct Draw"
-permalink: kb/178/Q178792/
+permalink: /kb/178/Q178792/
 ---
 
 ## Q178792: Tutor: Error Message: Unable to Initialize Direct Draw

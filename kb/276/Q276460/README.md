@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276460: Internal Record Error Opening HIS 2000 Com.cfg with SNA 4.0"
-permalink: kb/276/Q276460/
+permalink: /kb/276/Q276460/
 ---
 
 ## Q276460: Internal Record Error Opening HIS 2000 Com.cfg with SNA 4.0

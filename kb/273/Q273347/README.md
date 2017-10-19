@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273347: Dirsync Server and Remote Requestor Objects Not Removed"
-permalink: kb/273/Q273347/
+permalink: /kb/273/Q273347/
 ---
 
 ## Q273347: Dirsync Server and Remote Requestor Objects Not Removed

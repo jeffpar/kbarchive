@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36605: Environment Variable Trailing Spaces Not Truncated"
-permalink: kb/036/Q36605/
+permalink: /kb/036/Q36605/
 ---
 
 ## Q36605: Environment Variable Trailing Spaces Not Truncated

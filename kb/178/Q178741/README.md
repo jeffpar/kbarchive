@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178741: Event Log Opening Problem Causes Services.exe Failure"
-permalink: kb/178/Q178741/
+permalink: /kb/178/Q178741/
 ---
 
 ## Q178741: Event Log Opening Problem Causes Services.exe Failure

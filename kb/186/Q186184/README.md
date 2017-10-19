@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186184: XADM: Cannot Perform Online Backup After Repairing Database"
-permalink: kb/186/Q186184/
+permalink: /kb/186/Q186184/
 ---
 
 ## Q186184: XADM: Cannot Perform Online Backup After Repairing Database

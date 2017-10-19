@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322964: XADM: An Exchange Server 5.5 Reinstallation Stops Responding"
-permalink: kb/322/Q322964/
+permalink: /kb/322/Q322964/
 ---
 
 ## Q322964: XADM: An Exchange Server 5.5 Reinstallation Stops Responding

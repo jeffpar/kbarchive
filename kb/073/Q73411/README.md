@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73411: Commenting Lines in DOSSHELL.INI"
-permalink: kb/073/Q73411/
+permalink: /kb/073/Q73411/
 ---
 
 ## Q73411: Commenting Lines in DOSSHELL.INI

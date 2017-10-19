@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140856: SMS Client DEINSTAL.BAT Fails on Windows 95 w/out Full Shutdown"
-permalink: kb/140/Q140856/
+permalink: /kb/140/Q140856/
 ---
 
 ## Q140856: SMS Client DEINSTAL.BAT Fails on Windows 95 w/out Full Shutdown

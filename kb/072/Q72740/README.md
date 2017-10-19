@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72740: Bypassing the 'Welcome to MS-DOS QBasic' Window"
-permalink: kb/072/Q72740/
+permalink: /kb/072/Q72740/
 ---
 
 ## Q72740: Bypassing the 'Welcome to MS-DOS QBasic' Window

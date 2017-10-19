@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276265: AS/400 Print Jobs May Print Blank Pages after Job End"
-permalink: kb/276/Q276265/
+permalink: /kb/276/Q276265/
 ---
 
 ## Q276265: AS/400 Print Jobs May Print Blank Pages after Job End

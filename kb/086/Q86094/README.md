@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q86094: PC Win: MSMAIL.INI Entries in [Address Book]"
-permalink: kb/086/Q86094/
+title: "Q86094: PC Win: MSMAIL.INI Entries in &#91;Address Book&#93;"
+permalink: /kb/086/Q86094/
 ---
 
-## Q86094: PC Win: MSMAIL.INI Entries in [Address Book]
+## Q86094: PC Win: MSMAIL.INI Entries in &#91;Address Book&#93;
 
 	Article: Q86094
 	Product(s): Microsoft Mail For PC Networks

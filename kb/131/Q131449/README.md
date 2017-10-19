@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131449: HOWTO: Troubleshoot &quot;Out of Memory&quot; Errors"
-permalink: kb/131/Q131449/
+permalink: /kb/131/Q131449/
 ---
 
 ## Q131449: HOWTO: Troubleshoot &quot;Out of Memory&quot; Errors

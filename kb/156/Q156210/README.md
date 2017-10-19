@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156210: Cannot Expand or Extend the Stripe Set After Creation"
-permalink: kb/156/Q156210/
+permalink: /kb/156/Q156210/
 ---
 
 ## Q156210: Cannot Expand or Extend the Stripe Set After Creation

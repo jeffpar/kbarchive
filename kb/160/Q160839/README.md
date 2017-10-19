@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160839: Delay Occurs When Unlocking Workstation"
-permalink: kb/160/Q160839/
+permalink: /kb/160/Q160839/
 ---
 
 ## Q160839: Delay Occurs When Unlocking Workstation

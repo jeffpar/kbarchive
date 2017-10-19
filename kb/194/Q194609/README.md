@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194609: HOWTO: Pass Array of UDTs with Variable Length Strings to C/C++"
-permalink: kb/194/Q194609/
+permalink: /kb/194/Q194609/
 ---
 
 ## Q194609: HOWTO: Pass Array of UDTs with Variable Length Strings to C/C++

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316387: FP: &quot;Unable to Run Text Converter&quot; Err Msg When Pasting Text"
-permalink: kb/316/Q316387/
+permalink: /kb/316/Q316387/
 ---
 
 ## Q316387: FP: &quot;Unable to Run Text Converter&quot; Err Msg When Pasting Text

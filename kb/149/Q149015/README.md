@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149015: Kernel Debugging: &quot;Parity Error: Bad Instruction Pointer&quot;"
-permalink: kb/149/Q149015/
+permalink: /kb/149/Q149015/
 ---
 
 ## Q149015: Kernel Debugging: &quot;Parity Error: Bad Instruction Pointer&quot;

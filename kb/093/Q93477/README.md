@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93477: Default Entries in WFWG SCHDPLUS.INI File"
-permalink: kb/093/Q93477/
+permalink: /kb/093/Q93477/
 ---
 
 ## Q93477: Default Entries in WFWG SCHDPLUS.INI File

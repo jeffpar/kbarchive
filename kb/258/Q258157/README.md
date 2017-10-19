@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258157: HOWTO: Deploy the SQL Distributed Management Objects w/ the PDW"
-permalink: kb/258/Q258157/
+permalink: /kb/258/Q258157/
 ---
 
 ## Q258157: HOWTO: Deploy the SQL Distributed Management Objects w/ the PDW

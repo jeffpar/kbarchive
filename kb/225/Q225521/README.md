@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225521: Y2K.TXT Information No Longer Valid"
-permalink: kb/225/Q225521/
+permalink: /kb/225/Q225521/
 ---
 
 ## Q225521: Y2K.TXT Information No Longer Valid

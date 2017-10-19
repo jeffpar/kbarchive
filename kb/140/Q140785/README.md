@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140785: PPT7: Style Checker Capitalizes Words Incorrectly"
-permalink: kb/140/Q140785/
+permalink: /kb/140/Q140785/
 ---
 
 ## Q140785: PPT7: Style Checker Capitalizes Words Incorrectly

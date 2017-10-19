@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152229: SMS: Expired SMS Jobs Alter Detailed Job Status"
-permalink: kb/152/Q152229/
+permalink: /kb/152/Q152229/
 ---
 
 ## Q152229: SMS: Expired SMS Jobs Alter Detailed Job Status

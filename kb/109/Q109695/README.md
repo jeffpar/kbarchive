@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109695: Cannot Read Last Image from Photo-CD"
-permalink: kb/109/Q109695/
+permalink: /kb/109/Q109695/
 ---
 
 ## Q109695: Cannot Read Last Image from Photo-CD

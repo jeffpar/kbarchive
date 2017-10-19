@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163588: FP97: SQL Query Missing, Deleted When Running IDC Wizard"
-permalink: kb/163/Q163588/
+permalink: /kb/163/Q163588/
 ---
 
 ## Q163588: FP97: SQL Query Missing, Deleted When Running IDC Wizard

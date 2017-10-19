@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212941: SMS: How to Perform a Search and Replace by Using SMS Installer"
-permalink: kb/212/Q212941/
+permalink: /kb/212/Q212941/
 ---
 
 ## Q212941: SMS: How to Perform a Search and Replace by Using SMS Installer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82333: Out Of Memory Errors with True Color Display Drivers"
-permalink: kb/082/Q82333/
+permalink: /kb/082/Q82333/
 ---
 
 ## Q82333: Out Of Memory Errors with True Color Display Drivers

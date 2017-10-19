@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131339: STOP Msg: 0x0000000A or 0X0000001E Dis/Reconnecting to WfWG Svr"
-permalink: kb/131/Q131339/
+permalink: /kb/131/Q131339/
 ---
 
 ## Q131339: STOP Msg: 0x0000000A or 0X0000001E Dis/Reconnecting to WfWG Svr

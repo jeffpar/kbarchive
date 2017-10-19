@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164908: Removing Host Security Causes Error &quot;Snarpc.dll Not Found&quot;"
-permalink: kb/164/Q164908/
+permalink: /kb/164/Q164908/
 ---
 
 ## Q164908: Removing Host Security Causes Error &quot;Snarpc.dll Not Found&quot;

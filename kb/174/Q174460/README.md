@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174460: SMS: PCM Introduction Dialog Box Does Not Close Automatically"
-permalink: kb/174/Q174460/
+permalink: /kb/174/Q174460/
 ---
 
 ## Q174460: SMS: PCM Introduction Dialog Box Does Not Close Automatically

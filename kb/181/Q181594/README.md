@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181594: Windows 95 Can Access Up to Two GB of RAM"
-permalink: kb/181/Q181594/
+permalink: /kb/181/Q181594/
 ---
 
 ## Q181594: Windows 95 Can Access Up to Two GB of RAM

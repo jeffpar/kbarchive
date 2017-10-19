@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258004: How to Configure the Nvalert.ini file with the NVAlert Service"
-permalink: kb/258/Q258004/
+permalink: /kb/258/Q258004/
 ---
 
 ## Q258004: How to Configure the Nvalert.ini file with the NVAlert Service

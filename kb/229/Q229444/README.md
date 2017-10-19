@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229444: WD97: Word 2000 HTML File Opens as Text Only in Word 97"
-permalink: kb/229/Q229444/
+permalink: /kb/229/Q229444/
 ---
 
 ## Q229444: WD97: Word 2000 HTML File Opens as Text Only in Word 97

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112863: Letter Forms Pull Only from Upper Tray on Postscript Printers"
-permalink: kb/112/Q112863/
+permalink: /kb/112/Q112863/
 ---
 
 ## Q112863: Letter Forms Pull Only from Upper Tray on Postscript Printers

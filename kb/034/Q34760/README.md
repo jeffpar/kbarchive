@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34760: Missing &lt;CR&gt; after Batch Label Causes Repeat of Last Command"
-permalink: kb/034/Q34760/
+permalink: /kb/034/Q34760/
 ---
 
 ## Q34760: Missing &lt;CR&gt; after Batch Label Causes Repeat of Last Command

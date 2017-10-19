@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110377: Using Windows Sound System 2.0 with Unsupported Card"
-permalink: kb/110/Q110377/
+permalink: /kb/110/Q110377/
 ---
 
 ## Q110377: Using Windows Sound System 2.0 with Unsupported Card

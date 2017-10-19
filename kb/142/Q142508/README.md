@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142508: SAMPLE: Sys0.exe with DLL that Retrieves a Novell Machine Name"
-permalink: kb/142/Q142508/
+permalink: /kb/142/Q142508/
 ---
 
 ## Q142508: SAMPLE: Sys0.exe with DLL that Retrieves a Novell Machine Name

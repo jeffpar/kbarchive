@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121658: SMS Remote Control Fails if Not Enough LANAs are Available"
-permalink: kb/121/Q121658/
+permalink: /kb/121/Q121658/
 ---
 
 ## Q121658: SMS Remote Control Fails if Not Enough LANAs are Available

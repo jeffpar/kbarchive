@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138666: HOWTO: Browse on Demand with Visual C++ Version 4.0"
-permalink: kb/138/Q138666/
+permalink: /kb/138/Q138666/
 ---
 
 ## Q138666: HOWTO: Browse on Demand with Visual C++ Version 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152671: XADM: Can't Create/Open the LoadSim Performance Registry Key"
-permalink: kb/152/Q152671/
+permalink: /kb/152/Q152671/
 ---
 
 ## Q152671: XADM: Can't Create/Open the LoadSim Performance Registry Key

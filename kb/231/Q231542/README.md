@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231542: MapPoint 2000: &quot;Send Behind Roads&quot; Command Behaves Unexpectedly"
-permalink: kb/231/Q231542/
+permalink: /kb/231/Q231542/
 ---
 
 ## Q231542: MapPoint 2000: &quot;Send Behind Roads&quot; Command Behaves Unexpectedly

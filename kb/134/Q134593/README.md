@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134593: How to Modify the Documents Menu"
-permalink: kb/134/Q134593/
+permalink: /kb/134/Q134593/
 ---
 
 ## Q134593: How to Modify the Documents Menu

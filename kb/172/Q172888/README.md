@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172888: PRB: ComCtl32.ocx - The Dependency File is Out of Date"
-permalink: kb/172/Q172888/
+permalink: /kb/172/Q172888/
 ---
 
 ## Q172888: PRB: ComCtl32.ocx - The Dependency File is Out of Date

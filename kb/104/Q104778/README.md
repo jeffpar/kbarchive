@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104778: DblSpace Err Msg: An Unrecognized Error Has Occurred During..."
-permalink: kb/104/Q104778/
+permalink: /kb/104/Q104778/
 ---
 
 ## Q104778: DblSpace Err Msg: An Unrecognized Error Has Occurred During...

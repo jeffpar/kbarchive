@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222086: Gateway Services for NetWare (GSNW) Gateway Shares Shown as Dele"
-permalink: kb/222/Q222086/
+permalink: /kb/222/Q222086/
 ---
 
 ## Q222086: Gateway Services for NetWare (GSNW) Gateway Shares Shown as Dele

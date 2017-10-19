@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178537: XCON: NDR and Event ID 3150 When Sending to PAB Entry"
-permalink: kb/178/Q178537/
+permalink: /kb/178/Q178537/
 ---
 
 ## Q178537: XCON: NDR and Event ID 3150 When Sending to PAB Entry

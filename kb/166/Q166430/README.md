@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166430: Error Viewing Text File Using Chinese Code Converter."
-permalink: kb/166/Q166430/
+permalink: /kb/166/Q166430/
 ---
 
 ## Q166430: Error Viewing Text File Using Chinese Code Converter.

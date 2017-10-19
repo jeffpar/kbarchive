@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120077: Files Missing in File Manager After Running Search Command"
-permalink: kb/120/Q120077/
+permalink: /kb/120/Q120077/
 ---
 
 ## Q120077: Files Missing in File Manager After Running Search Command

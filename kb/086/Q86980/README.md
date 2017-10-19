@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86980: X400: How Address Conversion Is Performed by the Gateway"
-permalink: kb/086/Q86980/
+permalink: /kb/086/Q86980/
 ---
 
 ## Q86980: X400: How Address Conversion Is Performed by the Gateway

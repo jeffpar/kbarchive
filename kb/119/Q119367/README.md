@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119367: Error When Printing PageMaker 5.0 File to QMS 860 Printer"
-permalink: kb/119/Q119367/
+permalink: /kb/119/Q119367/
 ---
 
 ## Q119367: Error When Printing PageMaker 5.0 File to QMS 860 Printer

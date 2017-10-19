@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76911: FIX: JMP Jumps to the Proc When Using Duplicate Names"
-permalink: kb/076/Q76911/
+permalink: /kb/076/Q76911/
 ---
 
 ## Q76911: FIX: JMP Jumps to the Proc When Using Duplicate Names

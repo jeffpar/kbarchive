@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123669: Err Msg: Cannot Load Extension FTPSMX.DLL"
-permalink: kb/123/Q123669/
+permalink: /kb/123/Q123669/
 ---
 
 ## Q123669: Err Msg: Cannot Load Extension FTPSMX.DLL

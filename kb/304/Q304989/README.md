@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304989: PRB: Debugger Cannot Read System Symbols on Windows XP"
-permalink: kb/304/Q304989/
+permalink: /kb/304/Q304989/
 ---
 
 ## Q304989: PRB: Debugger Cannot Read System Symbols on Windows XP

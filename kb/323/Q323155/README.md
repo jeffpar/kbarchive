@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323155: Migrating to MSN Internet Access (Dial-up) Using Mac OS X"
-permalink: kb/323/Q323155/
+permalink: /kb/323/Q323155/
 ---
 
 ## Q323155: Migrating to MSN Internet Access (Dial-up) Using Mac OS X

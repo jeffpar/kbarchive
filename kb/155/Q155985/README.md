@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155985: WD97: Run-Time Error Using Macro to Save File with Name"
-permalink: kb/155/Q155985/
+permalink: /kb/155/Q155985/
 ---
 
 ## Q155985: WD97: Run-Time Error Using Macro to Save File with Name

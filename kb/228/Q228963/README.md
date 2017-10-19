@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228963: Midtown Madness: Finish Line Does Not Appear in Checkpoint Race"
-permalink: kb/228/Q228963/
+permalink: /kb/228/Q228963/
 ---
 
 ## Q228963: Midtown Madness: Finish Line Does Not Appear in Checkpoint Race

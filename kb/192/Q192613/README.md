@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192613: Bookshelf 98: How to Change Scroll Bar and Article Font Sizes"
-permalink: kb/192/Q192613/
+permalink: /kb/192/Q192613/
 ---
 
 ## Q192613: Bookshelf 98: How to Change Scroll Bar and Article Font Sizes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307495: PRB: Error 0x80004005 When You Try to Register a WebClass DLL"
-permalink: kb/307/Q307495/
+permalink: /kb/307/Q307495/
 ---
 
 ## Q307495: PRB: Error 0x80004005 When You Try to Register a WebClass DLL

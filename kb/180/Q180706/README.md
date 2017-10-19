@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180706: Incoming X.25 Host Connection Indicates Primary Link Role"
-permalink: kb/180/Q180706/
+permalink: /kb/180/Q180706/
 ---
 
 ## Q180706: Incoming X.25 Host Connection Indicates Primary Link Role

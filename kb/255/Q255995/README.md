@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255995: Deploying Windows 2000 with SMS Requires an Unattend.txt File"
-permalink: kb/255/Q255995/
+permalink: /kb/255/Q255995/
 ---
 
 ## Q255995: Deploying Windows 2000 with SMS Requires an Unattend.txt File

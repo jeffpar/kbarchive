@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79890: Printing to Auxiliary Ports from MS-DOS Editor and QBasic"
-permalink: kb/079/Q79890/
+permalink: /kb/079/Q79890/
 ---
 
 ## Q79890: Printing to Auxiliary Ports from MS-DOS Editor and QBasic

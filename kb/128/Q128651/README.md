@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128651: How to Add Custom Label Sizes to Visual FoxPro"
-permalink: kb/128/Q128651/
+permalink: /kb/128/Q128651/
 ---
 
 ## Q128651: How to Add Custom Label Sizes to Visual FoxPro

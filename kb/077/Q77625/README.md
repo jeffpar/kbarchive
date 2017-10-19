@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77625: XIOS Corporation Software Conflicts with MS-DOS 5.0"
-permalink: kb/077/Q77625/
+permalink: /kb/077/Q77625/
 ---
 
 ## Q77625: XIOS Corporation Software Conflicts with MS-DOS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305713: &quot;Margins Do Not Fit Page Size&quot; After You Switch Printer Driver"
-permalink: kb/305/Q305713/
+permalink: /kb/305/Q305713/
 ---
 
 ## Q305713: &quot;Margins Do Not Fit Page Size&quot; After You Switch Printer Driver

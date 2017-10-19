@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83426: Aldus PhotoStyler GP Faults in UNIDRV.DLL"
-permalink: kb/083/Q83426/
+permalink: /kb/083/Q83426/
 ---
 
 ## Q83426: Aldus PhotoStyler GP Faults in UNIDRV.DLL

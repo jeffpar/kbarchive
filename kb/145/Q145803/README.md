@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145803: Pregnancy and Child Care: Print Option Unavailable in Overview"
-permalink: kb/145/Q145803/
+permalink: /kb/145/Q145803/
 ---
 
 ## Q145803: Pregnancy and Child Care: Print Option Unavailable in Overview

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87197: PROFS: Steps That Must Be Completed to Install PROFS Gateway"
-permalink: kb/087/Q87197/
+permalink: /kb/087/Q87197/
 ---
 
 ## Q87197: PROFS: Steps That Must Be Completed to Install PROFS Gateway

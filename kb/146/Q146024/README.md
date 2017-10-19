@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146024: XCLN: Ambiguous Name Resolution Methods"
-permalink: kb/146/Q146024/
+permalink: /kb/146/Q146024/
 ---
 
 ## Q146024: XCLN: Ambiguous Name Resolution Methods

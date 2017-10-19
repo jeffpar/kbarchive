@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231934: Cannot Connect to a Local Share Using Cached Credentials"
-permalink: kb/231/Q231934/
+permalink: /kb/231/Q231934/
 ---
 
 ## Q231934: Cannot Connect to a Local Share Using Cached Credentials

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134385: Unable to Open or Copy Files from a NetWare Server on FDDI Ring"
-permalink: kb/134/Q134385/
+permalink: /kb/134/Q134385/
 ---
 
 ## Q134385: Unable to Open or Copy Files from a NetWare Server on FDDI Ring

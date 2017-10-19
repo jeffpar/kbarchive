@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185061: XFOR: Err Msg: Internet Mail Service Already Installed"
-permalink: kb/185/Q185061/
+permalink: /kb/185/Q185061/
 ---
 
 ## Q185061: XFOR: Err Msg: Internet Mail Service Already Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100308: Disk Errors with EMM386.EXE on Laptop Computers"
-permalink: kb/100/Q100308/
+permalink: /kb/100/Q100308/
 ---
 
 ## Q100308: Disk Errors with EMM386.EXE on Laptop Computers

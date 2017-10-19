@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85543: Windows Err Msg: Bookmarks are Damaged. Delete WINHELP.BMK"
-permalink: kb/085/Q85543/
+permalink: /kb/085/Q85543/
 ---
 
 ## Q85543: Windows Err Msg: Bookmarks are Damaged. Delete WINHELP.BMK

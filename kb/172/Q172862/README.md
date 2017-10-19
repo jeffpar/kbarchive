@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172862: DOCFIX: Error in Sample Code for Async Downloading of Property"
-permalink: kb/172/Q172862/
+permalink: /kb/172/Q172862/
 ---
 
 ## Q172862: DOCFIX: Error in Sample Code for Async Downloading of Property

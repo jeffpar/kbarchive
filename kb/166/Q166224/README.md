@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166224: SNA Server 802.2 Connection Fails to Reactivate"
-permalink: kb/166/Q166224/
+permalink: /kb/166/Q166224/
 ---
 
 ## Q166224: SNA Server 802.2 Connection Fails to Reactivate

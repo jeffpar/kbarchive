@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158598: Mac Encarta 97: Readme.txt: Video and Sound Issues"
-permalink: kb/158/Q158598/
+permalink: /kb/158/Q158598/
 ---
 
 ## Q158598: Mac Encarta 97: Readme.txt: Video and Sound Issues

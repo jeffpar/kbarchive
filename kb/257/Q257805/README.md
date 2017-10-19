@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257805: Encarta World English Dictionary: QuickDefine Dialog Box Closes"
-permalink: kb/257/Q257805/
+permalink: /kb/257/Q257805/
 ---
 
 ## Q257805: Encarta World English Dictionary: QuickDefine Dialog Box Closes

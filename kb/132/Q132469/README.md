@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132469: Windows NT 3.51 Setup Hangs on a Computer With Three IDE Drives"
-permalink: kb/132/Q132469/
+permalink: /kb/132/Q132469/
 ---
 
 ## Q132469: Windows NT 3.51 Setup Hangs on a Computer With Three IDE Drives

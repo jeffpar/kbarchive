@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90679: PC Gen: Differences Among Mail Versions 3.0, 3.0a, and 3.0b"
-permalink: kb/090/Q90679/
+permalink: /kb/090/Q90679/
 ---
 
 ## Q90679: PC Gen: Differences Among Mail Versions 3.0, 3.0a, and 3.0b

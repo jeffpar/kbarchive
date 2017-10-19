@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130427: A Task's Start Time Cannot Be Changed"
-permalink: kb/130/Q130427/
+permalink: /kb/130/Q130427/
 ---
 
 ## Q130427: A Task's Start Time Cannot Be Changed

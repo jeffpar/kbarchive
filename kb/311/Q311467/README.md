@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311467: SMS: Clients Do Not Download Large Excluded Programs Lists"
-permalink: kb/311/Q311467/
+permalink: /kb/311/Q311467/
 ---
 
 ## Q311467: SMS: Clients Do Not Download Large Excluded Programs Lists

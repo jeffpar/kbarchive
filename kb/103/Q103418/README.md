@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103418: No Diamond Drivers in Windows NT Setup"
-permalink: kb/103/Q103418/
+permalink: /kb/103/Q103418/
 ---
 
 ## Q103418: No Diamond Drivers in Windows NT Setup

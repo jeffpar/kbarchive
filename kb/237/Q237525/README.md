@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237525: Reference Suite 2000: Some Features Unavailable on Dual Boot"
-permalink: kb/237/Q237525/
+permalink: /kb/237/Q237525/
 ---
 
 ## Q237525: Reference Suite 2000: Some Features Unavailable on Dual Boot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186260: HOWTO: Rotate a Bitmap Image in 90-Degree Increments"
-permalink: kb/186/Q186260/
+permalink: /kb/186/Q186260/
 ---
 
 ## Q186260: HOWTO: Rotate a Bitmap Image in 90-Degree Increments

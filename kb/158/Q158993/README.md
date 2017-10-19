@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158993: SMS: Troubleshooting Novell NetWare Client32 Clients"
-permalink: kb/158/Q158993/
+permalink: /kb/158/Q158993/
 ---
 
 ## Q158993: SMS: Troubleshooting Novell NetWare Client32 Clients

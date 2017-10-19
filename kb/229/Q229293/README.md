@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229293: User Manager crashes when users are members of many global group"
-permalink: kb/229/Q229293/
+permalink: /kb/229/Q229293/
 ---
 
 ## Q229293: User Manager crashes when users are members of many global group

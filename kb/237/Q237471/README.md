@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237471: ISAPI Filters Marked as Unknown Called before Priority Filters"
-permalink: kb/237/Q237471/
+permalink: /kb/237/Q237471/
 ---
 
 ## Q237471: ISAPI Filters Marked as Unknown Called before Priority Filters

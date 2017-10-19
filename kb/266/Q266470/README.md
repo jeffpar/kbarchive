@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266470: Encarta 2001: Only Copyright Is Printed When You Print Timeline"
-permalink: kb/266/Q266470/
+permalink: /kb/266/Q266470/
 ---
 
 ## Q266470: Encarta 2001: Only Copyright Is Printed When You Print Timeline

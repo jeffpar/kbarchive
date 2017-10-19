@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189133: HOWTO: Make C DLL More Accessible to VB with a Type Library"
-permalink: kb/189/Q189133/
+permalink: /kb/189/Q189133/
 ---
 
 ## Q189133: HOWTO: Make C DLL More Accessible to VB with a Type Library

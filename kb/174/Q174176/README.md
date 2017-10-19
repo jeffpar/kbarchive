@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174176: XADM: Err Msg: Error 8 Has Occurred (Internal ID 30f0090)"
-permalink: kb/174/Q174176/
+permalink: /kb/174/Q174176/
 ---
 
 ## Q174176: XADM: Err Msg: Error 8 Has Occurred (Internal ID 30f0090)

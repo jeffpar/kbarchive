@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126049: Writer: How To Set Default Font/Font Size for a Session"
-permalink: kb/126/Q126049/
+permalink: /kb/126/Q126049/
 ---
 
 ## Q126049: Writer: How To Set Default Font/Font Size for a Session

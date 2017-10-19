@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128218: Using Remote Mail on The Microsoft Network"
-permalink: kb/128/Q128218/
+permalink: /kb/128/Q128218/
 ---
 
 ## Q128218: Using Remote Mail on The Microsoft Network

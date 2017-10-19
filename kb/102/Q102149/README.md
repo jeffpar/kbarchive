@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102149: CodeView Debugger Function Keys List"
-permalink: kb/102/Q102149/
+permalink: /kb/102/Q102149/
 ---
 
 ## Q102149: CodeView Debugger Function Keys List

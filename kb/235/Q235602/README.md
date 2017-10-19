@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235602: Client Computers Report Problems Connecting to Server"
-permalink: kb/235/Q235602/
+permalink: /kb/235/Q235602/
 ---
 
 ## Q235602: Client Computers Report Problems Connecting to Server

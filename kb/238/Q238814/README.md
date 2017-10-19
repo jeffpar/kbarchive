@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238814: Bookshelf/Dictionary: How to Use Command-Line Switches"
-permalink: kb/238/Q238814/
+permalink: /kb/238/Q238814/
 ---
 
 ## Q238814: Bookshelf/Dictionary: How to Use Command-Line Switches

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155055: PRB: Problem Adding VB File from Other Drive to VSS Project"
-permalink: kb/155/Q155055/
+permalink: /kb/155/Q155055/
 ---
 
 ## Q155055: PRB: Problem Adding VB File from Other Drive to VSS Project

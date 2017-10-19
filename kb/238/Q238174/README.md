@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238174: Profile Quota Error Message Is Not Reset in German Windows NT"
-permalink: kb/238/Q238174/
+permalink: /kb/238/Q238174/
 ---
 
 ## Q238174: Profile Quota Error Message Is Not Reset in German Windows NT

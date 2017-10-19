@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249588: Package from Parent Makes SQL Problems at Restored Child Site"
-permalink: kb/249/Q249588/
+permalink: /kb/249/Q249588/
 ---
 
 ## Q249588: Package from Parent Makes SQL Problems at Restored Child Site

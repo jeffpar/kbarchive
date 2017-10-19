@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75632: Anatomy of the Sound Blaster"
-permalink: kb/075/Q75632/
+permalink: /kb/075/Q75632/
 ---
 
 ## Q75632: Anatomy of the Sound Blaster

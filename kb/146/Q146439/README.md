@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146439: Cannot Delete Briefcase on Novell NetWare Server"
-permalink: kb/146/Q146439/
+permalink: /kb/146/Q146439/
 ---
 
 ## Q146439: Cannot Delete Briefcase on Novell NetWare Server

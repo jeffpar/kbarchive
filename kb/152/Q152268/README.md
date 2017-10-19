@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152268: XFOR: MSMI Won't Set SNADS as Reply-To Address"
-permalink: kb/152/Q152268/
+permalink: /kb/152/Q152268/
 ---
 
 ## Q152268: XFOR: MSMI Won't Set SNADS as Reply-To Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136212: How to Activate FoxPro 2.6 Style System Menu in Visual FoxPro"
-permalink: kb/136/Q136212/
+permalink: /kb/136/Q136212/
 ---
 
 ## Q136212: How to Activate FoxPro 2.6 Style System Menu in Visual FoxPro

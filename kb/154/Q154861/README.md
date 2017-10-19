@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154861: Scheduler Start of a Job Takes One Second Per Computer"
-permalink: kb/154/Q154861/
+permalink: /kb/154/Q154861/
 ---
 
 ## Q154861: Scheduler Start of a Job Takes One Second Per Computer

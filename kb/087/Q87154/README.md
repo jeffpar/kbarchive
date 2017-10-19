@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87154: Mac Wkst: Local Outbox Is Listed in Move/Copy Folder List"
-permalink: kb/087/Q87154/
+permalink: /kb/087/Q87154/
 ---
 
 ## Q87154: Mac Wkst: Local Outbox Is Listed in Move/Copy Folder List

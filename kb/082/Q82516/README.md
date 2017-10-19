@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82516: DEC Pathworks System Error with Windows 3.1"
-permalink: kb/082/Q82516/
+permalink: /kb/082/Q82516/
 ---
 
 ## Q82516: DEC Pathworks System Error with Windows 3.1

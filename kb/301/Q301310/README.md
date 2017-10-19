@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301310: IIS 5 Common Registry Parameters (1 of 2)"
-permalink: kb/301/Q301310/
+permalink: /kb/301/Q301310/
 ---
 
 ## Q301310: IIS 5 Common Registry Parameters (1 of 2)

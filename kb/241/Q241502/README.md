@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241502: XFOR: Misdirection of E-mail May Occur Under High Load"
-permalink: kb/241/Q241502/
+permalink: /kb/241/Q241502/
 ---
 
 ## Q241502: XFOR: Misdirection of E-mail May Occur Under High Load

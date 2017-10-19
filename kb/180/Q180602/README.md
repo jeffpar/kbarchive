@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180602: RRAS Fails to Start with Event IDs 20103, 20133, or 7024"
-permalink: kb/180/Q180602/
+permalink: /kb/180/Q180602/
 ---
 
 ## Q180602: RRAS Fails to Start with Event IDs 20103, 20133, or 7024

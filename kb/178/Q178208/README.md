@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178208: CrashOnAuditFail with Logon/Logoff Auditing Causes Blue Screen"
-permalink: kb/178/Q178208/
+permalink: /kb/178/Q178208/
 ---
 
 ## Q178208: CrashOnAuditFail with Logon/Logoff Auditing Causes Blue Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132888: Encarta 95: GP Fault When Using Dictionary or Thesaurus"
-permalink: kb/132/Q132888/
+permalink: /kb/132/Q132888/
 ---
 
 ## Q132888: Encarta 95: GP Fault When Using Dictionary or Thesaurus

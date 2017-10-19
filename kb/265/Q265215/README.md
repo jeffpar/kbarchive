@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265215: DocErr: SMCLIENT.DOC Incorrectly References SpyHydra Application"
-permalink: kb/265/Q265215/
+permalink: /kb/265/Q265215/
 ---
 
 ## Q265215: DocErr: SMCLIENT.DOC Incorrectly References SpyHydra Application

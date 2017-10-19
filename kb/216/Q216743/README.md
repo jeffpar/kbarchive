@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216743: Unable to KILL Processes or Terminate Down Sessions"
-permalink: kb/216/Q216743/
+permalink: /kb/216/Q216743/
 ---
 
 ## Q216743: Unable to KILL Processes or Terminate Down Sessions

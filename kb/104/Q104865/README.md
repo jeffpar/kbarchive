@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104865: PRB: &quot;Report File Invalid&quot; or &quot;Memo File Missing/Invalid&quot;"
-permalink: kb/104/Q104865/
+permalink: /kb/104/Q104865/
 ---
 
 ## Q104865: PRB: &quot;Report File Invalid&quot; or &quot;Memo File Missing/Invalid&quot;

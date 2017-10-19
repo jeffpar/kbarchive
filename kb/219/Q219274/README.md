@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219274: Rise of Rome Trial Edition: Cannot Export Punic War Campaign"
-permalink: kb/219/Q219274/
+permalink: /kb/219/Q219274/
 ---
 
 ## Q219274: Rise of Rome Trial Edition: Cannot Export Punic War Campaign

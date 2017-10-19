@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64793: Bus Speed 3C603 Token Link Card Problem w/ LAN Manager"
-permalink: kb/064/Q64793/
+permalink: /kb/064/Q64793/
 ---
 
 ## Q64793: Bus Speed 3C603 Token Link Card Problem w/ LAN Manager

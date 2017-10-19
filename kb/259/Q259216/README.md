@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q259216: Behavior of DOMAINNAME[1Bh] Entries in WINS Manager"
-permalink: kb/259/Q259216/
+title: "Q259216: Behavior of DOMAINNAME&#91;1Bh&#93; Entries in WINS Manager"
+permalink: /kb/259/Q259216/
 ---
 
-## Q259216: Behavior of DOMAINNAME[1Bh] Entries in WINS Manager
+## Q259216: Behavior of DOMAINNAME&#91;1Bh&#93; Entries in WINS Manager
 
 	Article: Q259216
 	Product(s): Microsoft Windows NT

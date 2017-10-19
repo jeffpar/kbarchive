@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146349: XCLN: Insert Document Not Update Vertical Scroll Bar"
-permalink: kb/146/Q146349/
+permalink: /kb/146/Q146349/
 ---
 
 ## Q146349: XCLN: Insert Document Not Update Vertical Scroll Bar

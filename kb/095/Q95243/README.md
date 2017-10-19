@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95243: DEFINE WINDOW IN DESKTOP Documentation Error"
-permalink: kb/095/Q95243/
+permalink: /kb/095/Q95243/
 ---
 
 ## Q95243: DEFINE WINDOW IN DESKTOP Documentation Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244829: FS2000: Adventures and Lessons Are Not Available"
-permalink: kb/244/Q244829/
+permalink: /kb/244/Q244829/
 ---
 
 ## Q244829: FS2000: Adventures and Lessons Are Not Available

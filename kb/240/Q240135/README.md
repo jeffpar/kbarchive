@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240135: XFOR: Creating WinNT Account in Win2000 Domain Stops Migration"
-permalink: kb/240/Q240135/
+permalink: /kb/240/Q240135/
 ---
 
 ## Q240135: XFOR: Creating WinNT Account in Win2000 Domain Stops Migration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298433: SMS: Clients in Shared Subnet Don't Inst. in Multiple SMS Sites"
-permalink: kb/298/Q298433/
+permalink: /kb/298/Q298433/
 ---
 
 ## Q298433: SMS: Clients in Shared Subnet Don't Inst. in Multiple SMS Sites

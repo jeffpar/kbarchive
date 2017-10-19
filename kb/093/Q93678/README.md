@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93678: Differences Between SMARTDrive Version 4.0 and 4.1"
-permalink: kb/093/Q93678/
+permalink: /kb/093/Q93678/
 ---
 
 ## Q93678: Differences Between SMARTDrive Version 4.0 and 4.1

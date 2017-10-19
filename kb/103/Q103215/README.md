@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103215: Animation in Windows"
-permalink: kb/103/Q103215/
+permalink: /kb/103/Q103215/
 ---
 
 ## Q103215: Animation in Windows

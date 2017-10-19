@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150168: Mastering Access: Setup Program Files Always Installed"
-permalink: kb/150/Q150168/
+permalink: /kb/150/Q150168/
 ---
 
 ## Q150168: Mastering Access: Setup Program Files Always Installed

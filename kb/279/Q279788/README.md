@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279788: SMS: Software Metering Client Agent Generates Access Violation"
-permalink: kb/279/Q279788/
+permalink: /kb/279/Q279788/
 ---
 
 ## Q279788: SMS: Software Metering Client Agent Generates Access Violation

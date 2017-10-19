@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78056: Roland Driver Does Not Play Wave Files"
-permalink: kb/078/Q78056/
+permalink: /kb/078/Q78056/
 ---
 
 ## Q78056: Roland Driver Does Not Play Wave Files

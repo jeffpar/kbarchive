@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130637: PC Gen: Modem Vendor Voice Support and BBS Phone Numbers"
-permalink: kb/130/Q130637/
+permalink: /kb/130/Q130637/
 ---
 
 ## Q130637: PC Gen: Modem Vendor Voice Support and BBS Phone Numbers

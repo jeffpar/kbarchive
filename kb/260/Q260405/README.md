@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260405: HOWTO: Import Table Structures and Data from Microsoft Access"
-permalink: kb/260/Q260405/
+permalink: /kb/260/Q260405/
 ---
 
 ## Q260405: HOWTO: Import Table Structures and Data from Microsoft Access

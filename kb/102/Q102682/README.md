@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102682: PC Forms: Text Not Aligned in Mail 2.1 Client"
-permalink: kb/102/Q102682/
+permalink: /kb/102/Q102682/
 ---
 
 ## Q102682: PC Forms: Text Not Aligned in Mail 2.1 Client

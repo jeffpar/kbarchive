@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243896: Dual Boot Windows 98/Windows NT 4.0 with FAT16 or NTFS Volumes"
-permalink: kb/243/Q243896/
+permalink: /kb/243/Q243896/
 ---
 
 ## Q243896: Dual Boot Windows 98/Windows NT 4.0 with FAT16 or NTFS Volumes

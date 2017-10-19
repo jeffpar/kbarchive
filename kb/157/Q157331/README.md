@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157331: HP JetAdmin 2.0 Does Not Attach Printers in Windows NT 4.0"
-permalink: kb/157/Q157331/
+permalink: /kb/157/Q157331/
 ---
 
 ## Q157331: HP JetAdmin 2.0 Does Not Attach Printers in Windows NT 4.0

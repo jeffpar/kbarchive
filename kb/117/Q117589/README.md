@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117589: ASLM Licensing Information"
-permalink: kb/117/Q117589/
+permalink: /kb/117/Q117589/
 ---
 
 ## Q117589: ASLM Licensing Information

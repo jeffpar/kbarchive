@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196615: XFOR: PROFS and SNADS Connector Does Not Support Euro Symbol"
-permalink: kb/196/Q196615/
+permalink: /kb/196/Q196615/
 ---
 
 ## Q196615: XFOR: PROFS and SNADS Connector Does Not Support Euro Symbol

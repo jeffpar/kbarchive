@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311860: The HP NTLock Services Do Not Start After Installing the SRP"
-permalink: kb/311/Q311860/
+permalink: /kb/311/Q311860/
 ---
 
 ## Q311860: The HP NTLock Services Do Not Start After Installing the SRP

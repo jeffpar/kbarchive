@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126688: Stack Overflow with Windows NT 3.51 RAS"
-permalink: kb/126/Q126688/
+permalink: /kb/126/Q126688/
 ---
 
 ## Q126688: Stack Overflow with Windows NT 3.51 RAS

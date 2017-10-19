@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86382: PC WSPlus: Moving Appointments Off Line Gives Error Message"
-permalink: kb/086/Q86382/
+permalink: /kb/086/Q86382/
 ---
 
 ## Q86382: PC WSPlus: Moving Appointments Off Line Gives Error Message

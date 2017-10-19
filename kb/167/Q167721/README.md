@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167721: WD97: IPF Error Opening File with Recover Text Converter"
-permalink: kb/167/Q167721/
+permalink: /kb/167/Q167721/
 ---
 
 ## Q167721: WD97: IPF Error Opening File with Recover Text Converter

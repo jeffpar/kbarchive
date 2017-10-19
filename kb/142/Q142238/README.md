@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142238: BUG: Setup /AUTO Fails to Install 32-bit ODBC on Windows NT"
-permalink: kb/142/Q142238/
+permalink: /kb/142/Q142238/
 ---
 
 ## Q142238: BUG: Setup /AUTO Fails to Install 32-bit ODBC on Windows NT

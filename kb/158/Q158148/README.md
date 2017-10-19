@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158148: Domain Secure Channel Utility -- Nltest.exe"
-permalink: kb/158/Q158148/
+permalink: /kb/158/Q158148/
 ---
 
 ## Q158148: Domain Secure Channel Utility -- Nltest.exe

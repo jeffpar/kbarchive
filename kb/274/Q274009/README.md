@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274009: XADM: Event ID 179  Message Is Logged During Automated Directory"
-permalink: kb/274/Q274009/
+permalink: /kb/274/Q274009/
 ---
 
 ## Q274009: XADM: Event ID 179  Message Is Logged During Automated Directory

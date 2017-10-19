@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105214: Windows NT 3.1 to HP LM/X 1.4 Long Filename Problems"
-permalink: kb/105/Q105214/
+permalink: /kb/105/Q105214/
 ---
 
 ## Q105214: Windows NT 3.1 to HP LM/X 1.4 Long Filename Problems

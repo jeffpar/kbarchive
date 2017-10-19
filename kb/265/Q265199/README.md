@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q265199: SNA LU6.2 Session May Incorrectly Display [Not In Use]"
-permalink: kb/265/Q265199/
+title: "Q265199: SNA LU6.2 Session May Incorrectly Display &#91;Not In Use&#93;"
+permalink: /kb/265/Q265199/
 ---
 
-## Q265199: SNA LU6.2 Session May Incorrectly Display [Not In Use]
+## Q265199: SNA LU6.2 Session May Incorrectly Display &#91;Not In Use&#93;
 
 	Article: Q265199
 	Product(s): Microsoft SNA Server

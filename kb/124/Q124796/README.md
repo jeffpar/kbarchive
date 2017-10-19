@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124796: DHCP Client Does Not Support Domain Name Option"
-permalink: kb/124/Q124796/
+permalink: /kb/124/Q124796/
 ---
 
 ## Q124796: DHCP Client Does Not Support Domain Name Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161912: SMS: Winpopup.exe May Cause Windows 95 Shut Down to Fail"
-permalink: kb/161/Q161912/
+permalink: /kb/161/Q161912/
 ---
 
 ## Q161912: SMS: Winpopup.exe May Cause Windows 95 Shut Down to Fail

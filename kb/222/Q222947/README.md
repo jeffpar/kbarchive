@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222947: COMTI: Allow Use Of Already Verified and Application Override"
-permalink: kb/222/Q222947/
+permalink: /kb/222/Q222947/
 ---
 
 ## Q222947: COMTI: Allow Use Of Already Verified and Application Override

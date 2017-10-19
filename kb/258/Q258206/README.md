@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258206: XFOR: Installing Internet Mail Service Extension Imsext.dll"
-permalink: kb/258/Q258206/
+permalink: /kb/258/Q258206/
 ---
 
 ## Q258206: XFOR: Installing Internet Mail Service Extension Imsext.dll

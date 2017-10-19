@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130289: TN3270 Errors with Telnet Daemon Installed"
-permalink: kb/130/Q130289/
+permalink: /kb/130/Q130289/
 ---
 
 ## Q130289: TN3270 Errors with Telnet Daemon Installed

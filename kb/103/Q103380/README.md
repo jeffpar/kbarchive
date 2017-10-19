@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103380: PC Forms: File Scan Rights Required for Novell NetWare"
-permalink: kb/103/Q103380/
+permalink: /kb/103/Q103380/
 ---
 
 ## Q103380: PC Forms: File Scan Rights Required for Novell NetWare

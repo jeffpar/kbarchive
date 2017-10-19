@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318901: Application Exception in Explorer.exe When You Use OLE DB for DB"
-permalink: kb/318/Q318901/
+permalink: /kb/318/Q318901/
 ---
 
 ## Q318901: Application Exception in Explorer.exe When You Use OLE DB for DB

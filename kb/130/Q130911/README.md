@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130911: 16-bit Applications Hang Using Sony CDU 3x CD-ROM"
-permalink: kb/130/Q130911/
+permalink: /kb/130/Q130911/
 ---
 
 ## Q130911: 16-bit Applications Hang Using Sony CDU 3x CD-ROM

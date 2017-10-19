@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140961: XADM: Duplicate Entries in PC Mail GAL"
-permalink: kb/140/Q140961/
+permalink: /kb/140/Q140961/
 ---
 
 ## Q140961: XADM: Duplicate Entries in PC Mail GAL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119795: PC Rmt WRmt: Address List Doesn't Update with Custom Views"
-permalink: kb/119/Q119795/
+permalink: /kb/119/Q119795/
 ---
 
 ## Q119795: PC Rmt WRmt: Address List Doesn't Update with Custom Views

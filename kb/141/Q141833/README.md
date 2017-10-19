@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141833: Performance Monitor Reports Wrong Percent of Free Disk Space"
-permalink: kb/141/Q141833/
+permalink: /kb/141/Q141833/
 ---
 
 ## Q141833: Performance Monitor Reports Wrong Percent of Free Disk Space

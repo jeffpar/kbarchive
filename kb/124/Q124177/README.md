@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124177: Application Error: SUWIN Caused an Illegal Instruction"
-permalink: kb/124/Q124177/
+permalink: /kb/124/Q124177/
 ---
 
 ## Q124177: Application Error: SUWIN Caused an Illegal Instruction

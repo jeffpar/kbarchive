@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276346: FIX: SendKeys Function Locks Keyboard on Windows 2000"
-permalink: kb/276/Q276346/
+permalink: /kb/276/Q276346/
 ---
 
 ## Q276346: FIX: SendKeys Function Locks Keyboard on Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202333: Printer Codes from MS-DOS-based Programs Do Not Function"
-permalink: kb/202/Q202333/
+permalink: /kb/202/Q202333/
 ---
 
 ## Q202333: Printer Codes from MS-DOS-based Programs Do Not Function

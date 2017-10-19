@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88983: Approximating the Size of a .DBF File in FoxBASE+"
-permalink: kb/088/Q88983/
+permalink: /kb/088/Q88983/
 ---
 
 ## Q88983: Approximating the Size of a .DBF File in FoxBASE+

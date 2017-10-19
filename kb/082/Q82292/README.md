@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82292: Example PWB Macro That Works Similar to QuickC DEL Key"
-permalink: kb/082/Q82292/
+permalink: /kb/082/Q82292/
 ---
 
 ## Q82292: Example PWB Macro That Works Similar to QuickC DEL Key

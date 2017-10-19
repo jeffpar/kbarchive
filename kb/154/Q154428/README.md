@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154428: INFO: Visual C++ Version 4.1b"
-permalink: kb/154/Q154428/
+permalink: /kb/154/Q154428/
 ---
 
 ## Q154428: INFO: Visual C++ Version 4.1b

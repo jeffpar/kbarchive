@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256207: SMS: Clients Do Not Get Advertisements with SQL Account Problems"
-permalink: kb/256/Q256207/
+permalink: /kb/256/Q256207/
 ---
 
 ## Q256207: SMS: Clients Do Not Get Advertisements with SQL Account Problems

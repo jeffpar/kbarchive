@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107724: Writer: System Error 15 with Insufficient Disk Space"
-permalink: kb/107/Q107724/
+permalink: /kb/107/Q107724/
 ---
 
 ## Q107724: Writer: System Error 15 with Insufficient Disk Space

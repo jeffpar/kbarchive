@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153826: Double Quotes in Software Inventory Package Causes Event ID 118"
-permalink: kb/153/Q153826/
+permalink: /kb/153/Q153826/
 ---
 
 ## Q153826: Double Quotes in Software Inventory Package Causes Event ID 118

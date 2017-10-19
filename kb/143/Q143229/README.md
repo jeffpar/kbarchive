@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143229: Writer: Borders Cut Off on Cards: Alternate Layout Method"
-permalink: kb/143/Q143229/
+permalink: /kb/143/Q143229/
 ---
 
 ## Q143229: Writer: Borders Cut Off on Cards: Alternate Layout Method

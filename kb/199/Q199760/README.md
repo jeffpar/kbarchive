@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199760: XADM: Prompt for Password When Re-enrolling in Advanced Security"
-permalink: kb/199/Q199760/
+permalink: /kb/199/Q199760/
 ---
 
 ## Q199760: XADM: Prompt for Password When Re-enrolling in Advanced Security

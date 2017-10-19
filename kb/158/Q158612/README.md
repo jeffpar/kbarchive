@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158612: STL Sample for the vector::(empty, erase, push_back) Functions"
-permalink: kb/158/Q158612/
+permalink: /kb/158/Q158612/
 ---
 
 ## Q158612: STL Sample for the vector::(empty, erase, push_back) Functions

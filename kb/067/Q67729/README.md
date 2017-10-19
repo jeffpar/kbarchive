@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67729: Error if Productivity Pack Installed in Root Directory"
-permalink: kb/067/Q67729/
+permalink: /kb/067/Q67729/
 ---
 
 ## Q67729: Error if Productivity Pack Installed in Root Directory

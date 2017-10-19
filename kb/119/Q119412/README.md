@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119412: Mac Srv: Problems with Backup and Startup Manager"
-permalink: kb/119/Q119412/
+permalink: /kb/119/Q119412/
 ---
 
 ## Q119412: Mac Srv: Problems with Backup and Startup Manager

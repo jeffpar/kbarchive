@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247241: WhatsThisHelp.exe: Implement HTMLHelp &amp; WhatsThisHelp"
-permalink: kb/247/Q247241/
+permalink: /kb/247/Q247241/
 ---
 
 ## Q247241: WhatsThisHelp.exe: Implement HTMLHelp &amp; WhatsThisHelp

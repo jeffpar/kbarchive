@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74591: Search Command in File Manager Finds Hidden Files"
-permalink: kb/074/Q74591/
+permalink: /kb/074/Q74591/
 ---
 
 ## Q74591: Search Command in File Manager Finds Hidden Files

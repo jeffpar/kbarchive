@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159950: WD97: General Information About International Functionality"
-permalink: kb/159/Q159950/
+permalink: /kb/159/Q159950/
 ---
 
 ## Q159950: WD97: General Information About International Functionality

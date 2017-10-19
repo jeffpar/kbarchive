@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106392: PRB: C2666 Error Generated with Overloaded Operator"
-permalink: kb/106/Q106392/
+permalink: /kb/106/Q106392/
 ---
 
 ## Q106392: PRB: C2666 Error Generated with Overloaded Operator

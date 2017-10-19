@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174240: The Microsoft Network Setup Stops Responding"
-permalink: kb/174/Q174240/
+permalink: /kb/174/Q174240/
 ---
 
 ## Q174240: The Microsoft Network Setup Stops Responding

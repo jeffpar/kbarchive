@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119204: Setup Problems on NEC Docking Station When Checking for APM"
-permalink: kb/119/Q119204/
+permalink: /kb/119/Q119204/
 ---
 
 ## Q119204: Setup Problems on NEC Docking Station When Checking for APM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244530: NBF PPP Reuses IDs for Identical Config_reqs"
-permalink: kb/244/Q244530/
+permalink: /kb/244/Q244530/
 ---
 
 ## Q244530: NBF PPP Reuses IDs for Identical Config_reqs

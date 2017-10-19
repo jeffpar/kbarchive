@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166215: INFO: Modifying VTables with AddressOf Is Not Supported"
-permalink: kb/166/Q166215/
+permalink: /kb/166/Q166215/
 ---
 
 ## Q166215: INFO: Modifying VTables with AddressOf Is Not Supported

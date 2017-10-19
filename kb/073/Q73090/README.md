@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73090: &quot;Wrong Disk&quot; Error When Installing MS-DOS"
-permalink: kb/073/Q73090/
+permalink: /kb/073/Q73090/
 ---
 
 ## Q73090: &quot;Wrong Disk&quot; Error When Installing MS-DOS

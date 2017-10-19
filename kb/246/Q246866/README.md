@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246866: XCLN: Resource Calendars Display Incorrect Free and Busy Times"
-permalink: kb/246/Q246866/
+permalink: /kb/246/Q246866/
 ---
 
 ## Q246866: XCLN: Resource Calendars Display Incorrect Free and Busy Times

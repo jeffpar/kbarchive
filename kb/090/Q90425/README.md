@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90425: Using LAN Manager Scripts with WFWG Real-Mode Redirector"
-permalink: kb/090/Q90425/
+permalink: /kb/090/Q90425/
 ---
 
 ## Q90425: Using LAN Manager Scripts with WFWG Real-Mode Redirector

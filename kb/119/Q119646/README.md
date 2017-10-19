@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119646: PC Win: Undocumented Extension to Custom Command Syntax"
-permalink: kb/119/Q119646/
+permalink: /kb/119/Q119646/
 ---
 
 ## Q119646: PC Win: Undocumented Extension to Custom Command Syntax

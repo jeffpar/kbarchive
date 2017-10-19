@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309693: Zoo Tycoon: Minimum System Requirements"
-permalink: kb/309/Q309693/
+permalink: /kb/309/Q309693/
 ---
 
 ## Q309693: Zoo Tycoon: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301498: E-mail: Inbox Protector"
-permalink: kb/301/Q301498/
+permalink: /kb/301/Q301498/
 ---
 
 ## Q301498: E-mail: Inbox Protector

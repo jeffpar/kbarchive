@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246314: Configure Scripts and Porting: Configuration Scripts in Interix"
-permalink: kb/246/Q246314/
+permalink: /kb/246/Q246314/
 ---
 
 ## Q246314: Configure Scripts and Porting: Configuration Scripts in Interix

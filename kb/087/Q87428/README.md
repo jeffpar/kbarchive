@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87428: PROFS: How Import/Export Feature Works for PROFS Addresses"
-permalink: kb/087/Q87428/
+permalink: /kb/087/Q87428/
 ---
 
 ## Q87428: PROFS: How Import/Export Feature Works for PROFS Addresses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108849: Gateway Keyboard Performs Incorrectly or Doesn't Respond"
-permalink: kb/108/Q108849/
+permalink: /kb/108/Q108849/
 ---
 
 ## Q108849: Gateway Keyboard Performs Incorrectly or Doesn't Respond

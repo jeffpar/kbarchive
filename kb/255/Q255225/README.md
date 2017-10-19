@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255225: XWEB: Meeting Request for Feb. 29 Doesn't Work with Asian OWA"
-permalink: kb/255/Q255225/
+permalink: /kb/255/Q255225/
 ---
 
 ## Q255225: XWEB: Meeting Request for Feb. 29 Doesn't Work with Asian OWA

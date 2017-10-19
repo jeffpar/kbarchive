@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67440: Tracing into a Macro When Debugging Assembly Programs"
-permalink: kb/067/Q67440/
+permalink: /kb/067/Q67440/
 ---
 
 ## Q67440: Tracing into a Macro When Debugging Assembly Programs

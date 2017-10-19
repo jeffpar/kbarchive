@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128168: Configuring Windows 3.x Clients to use TCP/IP with SNA Server"
-permalink: kb/128/Q128168/
+permalink: /kb/128/Q128168/
 ---
 
 ## Q128168: Configuring Windows 3.x Clients to use TCP/IP with SNA Server

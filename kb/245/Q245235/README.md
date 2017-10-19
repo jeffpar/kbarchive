@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245235: XADM: Running Performance Optimizer Resets Registry Values"
-permalink: kb/245/Q245235/
+permalink: /kb/245/Q245235/
 ---
 
 ## Q245235: XADM: Running Performance Optimizer Resets Registry Values

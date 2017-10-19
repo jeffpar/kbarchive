@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96307: Mac SMI: MapiSaveMail Is Not Supported"
-permalink: kb/096/Q96307/
+permalink: /kb/096/Q96307/
 ---
 
 ## Q96307: Mac SMI: MapiSaveMail Is Not Supported

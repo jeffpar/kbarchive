@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214682: XCON: MTA Deferred Delivery Message Generates NDR"
-permalink: kb/214/Q214682/
+permalink: /kb/214/Q214682/
 ---
 
 ## Q214682: XCON: MTA Deferred Delivery Message Generates NDR

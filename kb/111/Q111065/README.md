@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111065: Flight Simulator: No Sound in Some New York Add-On Situations"
-permalink: kb/111/Q111065/
+permalink: /kb/111/Q111065/
 ---
 
 ## Q111065: Flight Simulator: No Sound in Some New York Add-On Situations

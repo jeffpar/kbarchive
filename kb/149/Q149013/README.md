@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149013: XCLN: Schedule+ 1.0a for the Macintosh May Not Display Details"
-permalink: kb/149/Q149013/
+permalink: /kb/149/Q149013/
 ---
 
 ## Q149013: XCLN: Schedule+ 1.0a for the Macintosh May Not Display Details

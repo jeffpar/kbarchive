@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232526: FP: Earlier FrontPage Versions Can Use 2000 Server Extensions"
-permalink: kb/232/Q232526/
+permalink: /kb/232/Q232526/
 ---
 
 ## Q232526: FP: Earlier FrontPage Versions Can Use 2000 Server Extensions

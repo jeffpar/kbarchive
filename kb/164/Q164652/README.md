@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164652: Verify Old Passwords Before Updating SNA Host Account Database"
-permalink: kb/164/Q164652/
+permalink: /kb/164/Q164652/
 ---
 
 ## Q164652: Verify Old Passwords Before Updating SNA Host Account Database

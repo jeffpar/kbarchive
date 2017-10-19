@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178221: XCLN: Microsoft Outlook Displays Incorrect Size for Attachments"
-permalink: kb/178/Q178221/
+permalink: /kb/178/Q178221/
 ---
 
 ## Q178221: XCLN: Microsoft Outlook Displays Incorrect Size for Attachments

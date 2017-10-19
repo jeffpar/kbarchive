@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155716: PRB: SQL Single-Stepping Does Not Display Errors as They Occur"
-permalink: kb/155/Q155716/
+permalink: /kb/155/Q155716/
 ---
 
 ## Q155716: PRB: SQL Single-Stepping Does Not Display Errors as They Occur

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121247: Pressing F3 in Help Doesn't Exit DriveSpace Conversion"
-permalink: kb/121/Q121247/
+permalink: /kb/121/Q121247/
 ---
 
 ## Q121247: Pressing F3 in Help Doesn't Exit DriveSpace Conversion

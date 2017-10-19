@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126577: SMS Modifies Application INI Files"
-permalink: kb/126/Q126577/
+permalink: /kb/126/Q126577/
 ---
 
 ## Q126577: SMS Modifies Application INI Files

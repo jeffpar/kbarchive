@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86626: Magic Cursor! Hot Keys Take Precedence over Windows Defaults"
-permalink: kb/086/Q86626/
+permalink: /kb/086/Q86626/
 ---
 
 ## Q86626: Magic Cursor! Hot Keys Take Precedence over Windows Defaults

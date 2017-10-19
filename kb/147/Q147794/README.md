@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147794: Implementing Per Server RAS Permissions"
-permalink: kb/147/Q147794/
+permalink: /kb/147/Q147794/
 ---
 
 ## Q147794: Implementing Per Server RAS Permissions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301462: RDP High Encryption Unavailable with French (Standard) Locale"
-permalink: kb/301/Q301462/
+permalink: /kb/301/Q301462/
 ---
 
 ## Q301462: RDP High Encryption Unavailable with French (Standard) Locale

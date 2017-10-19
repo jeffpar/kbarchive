@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40452: FIX: A2006: Phase Error Using EQU in An IFNDEF Block"
-permalink: kb/040/Q40452/
+permalink: /kb/040/Q40452/
 ---
 
 ## Q40452: FIX: A2006: Phase Error Using EQU in An IFNDEF Block

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114393: WD97:Word Prompts to Select Header Delimiter Opening Header File"
-permalink: kb/114/Q114393/
+permalink: /kb/114/Q114393/
 ---
 
 ## Q114393: WD97:Word Prompts to Select Header Delimiter Opening Header File

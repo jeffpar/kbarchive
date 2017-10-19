@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68114: INFO: Using a Fixed-Pitch Font as the System Default"
-permalink: kb/068/Q68114/
+permalink: /kb/068/Q68114/
 ---
 
 ## Q68114: INFO: Using a Fixed-Pitch Font as the System Default

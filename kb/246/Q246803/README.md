@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246803: STOP 0xA Error After Heavy Usage of NetFlex-3 with Compaq Driver"
-permalink: kb/246/Q246803/
+permalink: /kb/246/Q246803/
 ---
 
 ## Q246803: STOP 0xA Error After Heavy Usage of NetFlex-3 with Compaq Driver

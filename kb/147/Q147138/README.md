@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147138: Mac Encarta 96 Encyclopedia: Memory ReadMe Contents"
-permalink: kb/147/Q147138/
+permalink: /kb/147/Q147138/
 ---
 
 ## Q147138: Mac Encarta 96 Encyclopedia: Memory ReadMe Contents

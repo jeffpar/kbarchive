@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207723: SMS: Button Text in Software Metering Tool Disappears"
-permalink: kb/207/Q207723/
+permalink: /kb/207/Q207723/
 ---
 
 ## Q207723: SMS: Button Text in Software Metering Tool Disappears

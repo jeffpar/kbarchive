@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192823: Printer Disappears If Ports Entry Contains &gt; 255 Characters"
-permalink: kb/192/Q192823/
+permalink: /kb/192/Q192823/
 ---
 
 ## Q192823: Printer Disappears If Ports Entry Contains &gt; 255 Characters

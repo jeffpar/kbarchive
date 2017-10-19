@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132983: Registry Editor Error Message: Access Code Is Invalid"
-permalink: kb/132/Q132983/
+permalink: /kb/132/Q132983/
 ---
 
 ## Q132983: Registry Editor Error Message: Access Code Is Invalid

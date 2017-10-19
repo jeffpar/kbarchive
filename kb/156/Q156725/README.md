@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156725: XFOR: MS Mail X.400 Gateways and Exchange X.121 Addresses"
-permalink: kb/156/Q156725/
+permalink: /kb/156/Q156725/
 ---
 
 ## Q156725: XFOR: MS Mail X.400 Gateways and Exchange X.121 Addresses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200421: HOWTO: Enhance File Open Dialog with Multiple Extension Filters"
-permalink: kb/200/Q200421/
+permalink: /kb/200/Q200421/
 ---
 
 ## Q200421: HOWTO: Enhance File Open Dialog with Multiple Extension Filters

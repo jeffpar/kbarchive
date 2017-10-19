@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153491: PRB: Jet 3.0 UserCommitSync &amp; ImplicitCommitSync Values Wrong"
-permalink: kb/153/Q153491/
+permalink: /kb/153/Q153491/
 ---
 
 ## Q153491: PRB: Jet 3.0 UserCommitSync &amp; ImplicitCommitSync Values Wrong

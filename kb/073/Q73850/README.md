@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73850: PRB: Variables with Local Scope to Switch Won't Be Initialized"
-permalink: kb/073/Q73850/
+permalink: /kb/073/Q73850/
 ---
 
 ## Q73850: PRB: Variables with Local Scope to Switch Won't Be Initialized

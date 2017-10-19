@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156091: Access Violation with Long NDS Context in CSNW/GSNW"
-permalink: kb/156/Q156091/
+permalink: /kb/156/Q156091/
 ---
 
 ## Q156091: Access Violation with Long NDS Context in CSNW/GSNW

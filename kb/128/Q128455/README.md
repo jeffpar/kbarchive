@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128455: SMSRUN16 Fails to Create SMS Client Group on Installation"
-permalink: kb/128/Q128455/
+permalink: /kb/128/Q128455/
 ---
 
 ## Q128455: SMSRUN16 Fails to Create SMS Client Group on Installation

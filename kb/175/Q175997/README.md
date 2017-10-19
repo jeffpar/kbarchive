@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175997: Err Msg: Findfast Caused an Invalid Page Fault in Findfast.exe"
-permalink: kb/175/Q175997/
+permalink: /kb/175/Q175997/
 ---
 
 ## Q175997: Err Msg: Findfast Caused an Invalid Page Fault in Findfast.exe

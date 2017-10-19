@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185130: Outwars: Sounds Are Distorted When You Play Game"
-permalink: kb/185/Q185130/
+permalink: /kb/185/Q185130/
 ---
 
 ## Q185130: Outwars: Sounds Are Distorted When You Play Game

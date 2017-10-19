@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299732: Train Simulator: Route Editor Hangs w/Desktop Resolution Change"
-permalink: kb/299/Q299732/
+permalink: /kb/299/Q299732/
 ---
 
 ## Q299732: Train Simulator: Route Editor Hangs w/Desktop Resolution Change

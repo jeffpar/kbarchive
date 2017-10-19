@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228889: Err Msg: &quot;NFS Login Failed&quot; When Connecting to NFS Share"
-permalink: kb/228/Q228889/
+permalink: /kb/228/Q228889/
 ---
 
 ## Q228889: Err Msg: &quot;NFS Login Failed&quot; When Connecting to NFS Share

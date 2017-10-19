@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128086: PRB: Failing to Initialize OLE Generates Out of Memory Error"
-permalink: kb/128/Q128086/
+permalink: /kb/128/Q128086/
 ---
 
 ## Q128086: PRB: Failing to Initialize OLE Generates Out of Memory Error

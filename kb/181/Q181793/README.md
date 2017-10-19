@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181793: XADM: MAPI_E_Failoneprovider Error from LOADSIM"
-permalink: kb/181/Q181793/
+permalink: /kb/181/Q181793/
 ---
 
 ## Q181793: XADM: MAPI_E_Failoneprovider Error from LOADSIM

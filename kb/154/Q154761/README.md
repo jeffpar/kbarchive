@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154761: DSMN How to Recover from a Loss of the Account Synchronization"
-permalink: kb/154/Q154761/
+permalink: /kb/154/Q154761/
 ---
 
 ## Q154761: DSMN How to Recover from a Loss of the Account Synchronization

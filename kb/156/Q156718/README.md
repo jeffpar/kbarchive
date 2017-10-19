@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156718: XCLN: Attachment Unusable in Message but Opens in Folder"
-permalink: kb/156/Q156718/
+permalink: /kb/156/Q156718/
 ---
 
 ## Q156718: XCLN: Attachment Unusable in Message but Opens in Folder

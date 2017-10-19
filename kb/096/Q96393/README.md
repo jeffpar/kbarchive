@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96393: Drive Letter Icons Unavailable with the FTP TCP/IP Protocol"
-permalink: kb/096/Q96393/
+permalink: /kb/096/Q96393/
 ---
 
 ## Q96393: Drive Letter Icons Unavailable with the FTP TCP/IP Protocol

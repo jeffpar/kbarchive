@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196537: PC MMTA: External Doesn't Automatically Restart with &gt; 4 GB Vol"
-permalink: kb/196/Q196537/
+permalink: /kb/196/Q196537/
 ---
 
 ## Q196537: PC MMTA: External Doesn't Automatically Restart with &gt; 4 GB Vol

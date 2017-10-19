@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85847: PPT: Objects on Master Appear Behind Objects on Slide"
-permalink: kb/085/Q85847/
+permalink: /kb/085/Q85847/
 ---
 
 ## Q85847: PPT: Objects on Master Appear Behind Objects on Slide

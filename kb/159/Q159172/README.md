@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159172: XCON: Attachments from Wang Office are Losing Filenames"
-permalink: kb/159/Q159172/
+permalink: /kb/159/Q159172/
 ---
 
 ## Q159172: XCON: Attachments from Wang Office are Losing Filenames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176001: XFOR: Accessing the Contents Table of Non-Replicated PF Fails"
-permalink: kb/176/Q176001/
+permalink: /kb/176/Q176001/
 ---
 
 ## Q176001: XFOR: Accessing the Contents Table of Non-Replicated PF Fails

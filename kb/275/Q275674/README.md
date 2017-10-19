@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275674: BUG: C2955 Error When You Use Template Name as Function Argument"
-permalink: kb/275/Q275674/
+permalink: /kb/275/Q275674/
 ---
 
 ## Q275674: BUG: C2955 Error When You Use Template Name as Function Argument

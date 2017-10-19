@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159290: XFOR: Data Truncated in SMTP Protocol Log"
-permalink: kb/159/Q159290/
+permalink: /kb/159/Q159290/
 ---
 
 ## Q159290: XFOR: Data Truncated in SMTP Protocol Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86723: PRB: Creating File with Exclusive Access Allows Concurrent Use"
-permalink: kb/086/Q86723/
+permalink: /kb/086/Q86723/
 ---
 
 ## Q86723: PRB: Creating File with Exclusive Access Allows Concurrent Use

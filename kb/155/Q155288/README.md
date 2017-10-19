@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155288: Slidedmp.exe Will Not Run By Itself"
-permalink: kb/155/Q155288/
+permalink: /kb/155/Q155288/
 ---
 
 ## Q155288: Slidedmp.exe Will Not Run By Itself

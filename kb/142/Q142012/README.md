@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142012: Error Starting Smtpsrv in NT 3.51 Resource Kit"
-permalink: kb/142/Q142012/
+permalink: /kb/142/Q142012/
 ---
 
 ## Q142012: Error Starting Smtpsrv in NT 3.51 Resource Kit

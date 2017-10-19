@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148242: HOWTO: Handle OCM_CTLCOLORxxx Reflected Messages"
-permalink: kb/148/Q148242/
+permalink: /kb/148/Q148242/
 ---
 
 ## Q148242: HOWTO: Handle OCM_CTLCOLORxxx Reflected Messages

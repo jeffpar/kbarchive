@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138734: BUG: Cancel Doesn't Work in RESTORE MACROS FROM GETFILE()"
-permalink: kb/138/Q138734/
+permalink: /kb/138/Q138734/
 ---
 
 ## Q138734: BUG: Cancel Doesn't Work in RESTORE MACROS FROM GETFILE()

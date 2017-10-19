@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235130: Quick Course in Microsoft Office 2000 Comments and Corrections"
-permalink: kb/235/Q235130/
+permalink: /kb/235/Q235130/
 ---
 
 ## Q235130: Quick Course in Microsoft Office 2000 Comments and Corrections

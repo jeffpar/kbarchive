@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150468: HOWTO: Clear the Contents of a DBGrid Control"
-permalink: kb/150/Q150468/
+permalink: /kb/150/Q150468/
 ---
 
 ## Q150468: HOWTO: Clear the Contents of a DBGrid Control

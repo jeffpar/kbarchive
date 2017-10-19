@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191758: HOWTO: Convert FoxPro Cursor into XML Data Format"
-permalink: kb/191/Q191758/
+permalink: /kb/191/Q191758/
 ---
 
 ## Q191758: HOWTO: Convert FoxPro Cursor into XML Data Format

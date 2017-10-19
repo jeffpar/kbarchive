@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246818: Windows 95 Does Not Support Hard Disks Larger Than 32 GB"
-permalink: kb/246/Q246818/
+permalink: /kb/246/Q246818/
 ---
 
 ## Q246818: Windows 95 Does Not Support Hard Disks Larger Than 32 GB

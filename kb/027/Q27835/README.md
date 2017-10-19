@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27835: FIX: Operator &quot;.&quot; and the Operator &quot;&#42;&quot;"
-permalink: kb/027/Q27835/
+permalink: /kb/027/Q27835/
 ---
 
 ## Q27835: FIX: Operator &quot;.&quot; and the Operator &quot;&#42;&quot;

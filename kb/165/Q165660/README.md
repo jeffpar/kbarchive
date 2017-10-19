@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165660: 3270 Wizard Dialog Does Not Work Properly When Adding Users"
-permalink: kb/165/Q165660/
+permalink: /kb/165/Q165660/
 ---
 
 ## Q165660: 3270 Wizard Dialog Does Not Work Properly When Adding Users

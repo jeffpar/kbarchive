@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245131: GSNW Shares Appear to Be Deleted After You Restart Windows NT."
-permalink: kb/245/Q245131/
+permalink: /kb/245/Q245131/
 ---
 
 ## Q245131: GSNW Shares Appear to Be Deleted After You Restart Windows NT.

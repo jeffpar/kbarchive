@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278205: SMS: Keyboard Problems with IntelliPoint Mouse Driver 3.1 or 3.2"
-permalink: kb/278/Q278205/
+permalink: /kb/278/Q278205/
 ---
 
 ## Q278205: SMS: Keyboard Problems with IntelliPoint Mouse Driver 3.1 or 3.2

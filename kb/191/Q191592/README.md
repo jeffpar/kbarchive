@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191592: BUG: List Box Shrinks on No Height When Displaying Large Fonts"
-permalink: kb/191/Q191592/
+permalink: /kb/191/Q191592/
 ---
 
 ## Q191592: BUG: List Box Shrinks on No Height When Displaying Large Fonts

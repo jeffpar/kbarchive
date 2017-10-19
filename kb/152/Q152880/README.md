@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152880: XADM: Cannot Reinstall on a BDC Using a Domain Service Account"
-permalink: kb/152/Q152880/
+permalink: /kb/152/Q152880/
 ---
 
 ## Q152880: XADM: Cannot Reinstall on a BDC Using a Domain Service Account

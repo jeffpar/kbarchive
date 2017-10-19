@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271867: Err Msg: Event ID: 2140 An Internal Windows NT Error Occurred"
-permalink: kb/271/Q271867/
+permalink: /kb/271/Q271867/
 ---
 
 ## Q271867: Err Msg: Event ID: 2140 An Internal Windows NT Error Occurred

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159174: XADM: MTA Terminates Unexpectedly with Events 251 and 9405"
-permalink: kb/159/Q159174/
+permalink: /kb/159/Q159174/
 ---
 
 ## Q159174: XADM: MTA Terminates Unexpectedly with Events 251 and 9405

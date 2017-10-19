@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163398: XCLN: Option Button Frames Skipped in Tab Order"
-permalink: kb/163/Q163398/
+permalink: /kb/163/Q163398/
 ---
 
 ## Q163398: XCLN: Option Button Frames Skipped in Tab Order

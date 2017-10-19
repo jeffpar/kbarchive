@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245613: SMS: Error Message Occurs When Status Messages Are Deleted"
-permalink: kb/245/Q245613/
+permalink: /kb/245/Q245613/
 ---
 
 ## Q245613: SMS: Error Message Occurs When Status Messages Are Deleted

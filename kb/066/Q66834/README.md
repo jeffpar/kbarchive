@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66834: ASD: Using 747 Panel Distance Measuring Equipment (DME)"
-permalink: kb/066/Q66834/
+permalink: /kb/066/Q66834/
 ---
 
 ## Q66834: ASD: Using 747 Panel Distance Measuring Equipment (DME)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140256: &quot;Listen&quot; for NetBIOS Group Name Fails"
-permalink: kb/140/Q140256/
+permalink: /kb/140/Q140256/
 ---
 
 ## Q140256: &quot;Listen&quot; for NetBIOS Group Name Fails

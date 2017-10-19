@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76882: Uninstalling Older Version of MS-DOS Without Uninstall Disk"
-permalink: kb/076/Q76882/
+permalink: /kb/076/Q76882/
 ---
 
 ## Q76882: Uninstalling Older Version of MS-DOS Without Uninstall Disk

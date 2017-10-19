@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94587: FIX: DUP Behavior Different with Span-Dependent Value"
-permalink: kb/094/Q94587/
+permalink: /kb/094/Q94587/
 ---
 
 ## Q94587: FIX: DUP Behavior Different with Span-Dependent Value

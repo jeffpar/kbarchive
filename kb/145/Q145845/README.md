@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145845: HOWTO: Suppress the Default Menu for a Visual FoxPro .EXE File"
-permalink: kb/145/Q145845/
+permalink: /kb/145/Q145845/
 ---
 
 ## Q145845: HOWTO: Suppress the Default Menu for a Visual FoxPro .EXE File

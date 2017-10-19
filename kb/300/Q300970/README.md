@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300970: Train Simulator: Joystick Does Not Work as Expected"
-permalink: kb/300/Q300970/
+permalink: /kb/300/Q300970/
 ---
 
 ## Q300970: Train Simulator: Joystick Does Not Work as Expected

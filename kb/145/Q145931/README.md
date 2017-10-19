@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145931: Scenes 2.0: Stereogram Disk 1 Contents"
-permalink: kb/145/Q145931/
+permalink: /kb/145/Q145931/
 ---
 
 ## Q145931: Scenes 2.0: Stereogram Disk 1 Contents

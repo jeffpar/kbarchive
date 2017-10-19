@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289358: FP: DHTML Effects Don't Occur in All Table Cells"
-permalink: kb/289/Q289358/
+permalink: /kb/289/Q289358/
 ---
 
 ## Q289358: FP: DHTML Effects Don't Occur in All Table Cells

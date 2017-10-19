@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102789: Mac Srv: Description of Gateway Services"
-permalink: kb/102/Q102789/
+permalink: /kb/102/Q102789/
 ---
 
 ## Q102789: Mac Srv: Description of Gateway Services

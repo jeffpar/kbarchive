@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323532: SMS: Client Exception Errors Occur When No User Is Logged On"
-permalink: kb/323/Q323532/
+permalink: /kb/323/Q323532/
 ---
 
 ## Q323532: SMS: Client Exception Errors Occur When No User Is Logged On

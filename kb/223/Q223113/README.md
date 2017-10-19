@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223113: FIX: EXE Crashes When Looping Through Array From Property Get"
-permalink: kb/223/Q223113/
+permalink: /kb/223/Q223113/
 ---
 
 ## Q223113: FIX: EXE Crashes When Looping Through Array From Property Get

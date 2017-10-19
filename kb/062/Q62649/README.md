@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62649: HIMEM.SYS Locks Hyundai 286c Keyboard"
-permalink: kb/062/Q62649/
+permalink: /kb/062/Q62649/
 ---
 
 ## Q62649: HIMEM.SYS Locks Hyundai 286c Keyboard

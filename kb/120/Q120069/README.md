@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120069: Real and Protected Mode Segment Size"
-permalink: kb/120/Q120069/
+permalink: /kb/120/Q120069/
 ---
 
 ## Q120069: Real and Protected Mode Segment Size

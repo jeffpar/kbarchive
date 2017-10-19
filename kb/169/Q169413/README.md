@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169413: XADM: Mailbox Resources Does Not Show All Mailboxes"
-permalink: kb/169/Q169413/
+permalink: /kb/169/Q169413/
 ---
 
 ## Q169413: XADM: Mailbox Resources Does Not Show All Mailboxes

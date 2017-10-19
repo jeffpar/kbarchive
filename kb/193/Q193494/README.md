@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193494: Fatal Exception Error Message in VXD VMCPD(01)"
-permalink: kb/193/Q193494/
+permalink: /kb/193/Q193494/
 ---
 
 ## Q193494: Fatal Exception Error Message in VXD VMCPD(01)

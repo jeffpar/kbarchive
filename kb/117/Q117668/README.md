@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117668: Err Msg: Ring 0 Systems. Virtual 16550 Driver..."
-permalink: kb/117/Q117668/
+permalink: /kb/117/Q117668/
 ---
 
 ## Q117668: Err Msg: Ring 0 Systems. Virtual 16550 Driver...

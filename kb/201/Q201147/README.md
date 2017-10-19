@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201147: XFOR: Group Wise Router Takes Three Minutes to Stop"
-permalink: kb/201/Q201147/
+permalink: /kb/201/Q201147/
 ---
 
 ## Q201147: XFOR: Group Wise Router Takes Three Minutes to Stop

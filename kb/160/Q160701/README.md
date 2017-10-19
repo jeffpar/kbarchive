@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160701: SMS: Inventory Does Not Detect Memory Beyond 16 MB"
-permalink: kb/160/Q160701/
+permalink: /kb/160/Q160701/
 ---
 
 ## Q160701: SMS: Inventory Does Not Detect Memory Beyond 16 MB

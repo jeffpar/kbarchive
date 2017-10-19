@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165335: Active Server Pages: Progressive Memory Leak"
-permalink: kb/165/Q165335/
+permalink: /kb/165/Q165335/
 ---
 
 ## Q165335: Active Server Pages: Progressive Memory Leak

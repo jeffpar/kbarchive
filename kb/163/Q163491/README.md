@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163491: WD97:Can't Assign an Array to Explicitly Declared Array Variable"
-permalink: kb/163/Q163491/
+permalink: /kb/163/Q163491/
 ---
 
 ## Q163491: WD97:Can't Assign an Array to Explicitly Declared Array Variable

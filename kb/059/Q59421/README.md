@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59421: PRB: L2029: Unresolved External &#95;&#95;_aDBswpchk with GRAPHICS.LIB"
-permalink: kb/059/Q59421/
+permalink: /kb/059/Q59421/
 ---
 
 ## Q59421: PRB: L2029: Unresolved External &#95;&#95;_aDBswpchk with GRAPHICS.LIB

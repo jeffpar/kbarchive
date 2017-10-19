@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159524: SMS: Color Option Causes Folder Name Display Problems w/PCMMAC"
-permalink: kb/159/Q159524/
+permalink: /kb/159/Q159524/
 ---
 
 ## Q159524: SMS: Color Option Causes Folder Name Display Problems w/PCMMAC

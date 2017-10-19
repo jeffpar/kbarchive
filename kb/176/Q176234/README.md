@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176234: XADM: Named Props Error When Running ISINTEG Utility"
-permalink: kb/176/Q176234/
+permalink: /kb/176/Q176234/
 ---
 
 ## Q176234: XADM: Named Props Error When Running ISINTEG Utility

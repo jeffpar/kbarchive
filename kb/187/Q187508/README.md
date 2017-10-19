@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187508: FTP Server Fails to Respond If First Binding Does Not Work"
-permalink: kb/187/Q187508/
+permalink: /kb/187/Q187508/
 ---
 
 ## Q187508: FTP Server Fails to Respond If First Binding Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91193: Windows Err Msg:  Missing / Unable to Load"
-permalink: kb/091/Q91193/
+permalink: /kb/091/Q91193/
 ---
 
 ## Q91193: Windows Err Msg:  Missing / Unable to Load

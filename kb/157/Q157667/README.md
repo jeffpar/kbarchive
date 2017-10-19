@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157667: WD97: Float Over Text Objects Cut Off in Online Layout View"
-permalink: kb/157/Q157667/
+permalink: /kb/157/Q157667/
 ---
 
 ## Q157667: WD97: Float Over Text Objects Cut Off in Online Layout View

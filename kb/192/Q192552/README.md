@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192552: HOWTO: Create an HTML Form With DHTML Page Designer"
-permalink: kb/192/Q192552/
+permalink: /kb/192/Q192552/
 ---
 
 ## Q192552: HOWTO: Create an HTML Form With DHTML Page Designer

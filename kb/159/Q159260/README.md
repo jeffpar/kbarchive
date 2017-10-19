@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159260: Spike's World: What Is Shareware?"
-permalink: kb/159/Q159260/
+permalink: /kb/159/Q159260/
 ---
 
 ## Q159260: Spike's World: What Is Shareware?

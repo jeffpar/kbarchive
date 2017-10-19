@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203661: Error Message: Windows Has Encountered a Problem Accessing Mmsys"
-permalink: kb/203/Q203661/
+permalink: /kb/203/Q203661/
 ---
 
 ## Q203661: Error Message: Windows Has Encountered a Problem Accessing Mmsys

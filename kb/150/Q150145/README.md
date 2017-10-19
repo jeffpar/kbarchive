@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150145: PRB: FOR3852 Error in Consecutive Arithmetic Operations"
-permalink: kb/150/Q150145/
+permalink: /kb/150/Q150145/
 ---
 
 ## Q150145: PRB: FOR3852 Error in Consecutive Arithmetic Operations

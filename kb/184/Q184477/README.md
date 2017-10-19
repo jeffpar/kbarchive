@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184477: Stop Some Services Before Installing Proxy Server 2.0"
-permalink: kb/184/Q184477/
+permalink: /kb/184/Q184477/
 ---
 
 ## Q184477: Stop Some Services Before Installing Proxy Server 2.0

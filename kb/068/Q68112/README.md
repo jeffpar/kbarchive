@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68112: ASD: Coordinate Systems Available"
-permalink: kb/068/Q68112/
+permalink: /kb/068/Q68112/
 ---
 
 ## Q68112: ASD: Coordinate Systems Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139530: Multimedia: Using an Asterisk Wildcard Slows Searches"
-permalink: kb/139/Q139530/
+permalink: /kb/139/Q139530/
 ---
 
 ## Q139530: Multimedia: Using an Asterisk Wildcard Slows Searches

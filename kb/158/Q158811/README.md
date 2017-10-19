@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158811: Some Exchange Objects Cannot be Added to Performance Data Log"
-permalink: kb/158/Q158811/
+permalink: /kb/158/Q158811/
 ---
 
 ## Q158811: Some Exchange Objects Cannot be Added to Performance Data Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72006: AST Premium 286 Does Not Require Selection During Setup"
-permalink: kb/072/Q72006/
+permalink: /kb/072/Q72006/
 ---
 
 ## Q72006: AST Premium 286 Does Not Require Selection During Setup

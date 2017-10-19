@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189293: XADM: 4GT RAM Tuning Using Windows NT Server Enterprise Edition"
-permalink: kb/189/Q189293/
+permalink: /kb/189/Q189293/
 ---
 
 ## Q189293: XADM: 4GT RAM Tuning Using Windows NT Server Enterprise Edition

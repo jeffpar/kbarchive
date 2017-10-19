@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216998: XWEB: OWA Logon Screen Displays Again When Opening Mail Message"
-permalink: kb/216/Q216998/
+permalink: /kb/216/Q216998/
 ---
 
 ## Q216998: XWEB: OWA Logon Screen Displays Again When Opening Mail Message

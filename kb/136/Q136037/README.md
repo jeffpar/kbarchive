@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136037: OLEDLG.DLL and MSVCRT20.DLL Not Found For Crystal Reports"
-permalink: kb/136/Q136037/
+permalink: /kb/136/Q136037/
 ---
 
 ## Q136037: OLEDLG.DLL and MSVCRT20.DLL Not Found For Crystal Reports

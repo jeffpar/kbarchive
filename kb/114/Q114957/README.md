@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114957: Artist: Prints Only in Landscape Orientation"
-permalink: kb/114/Q114957/
+permalink: /kb/114/Q114957/
 ---
 
 ## Q114957: Artist: Prints Only in Landscape Orientation

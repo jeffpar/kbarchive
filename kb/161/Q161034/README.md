@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161034: PRB:Cannot Open File AppleGuideGlueLib When Trying to Quit VFP"
-permalink: kb/161/Q161034/
+permalink: /kb/161/Q161034/
 ---
 
 ## Q161034: PRB:Cannot Open File AppleGuideGlueLib When Trying to Quit VFP

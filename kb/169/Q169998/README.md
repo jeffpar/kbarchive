@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169998: XCON: ISOCOR MTA Does Not Accept BP15 Attachments"
-permalink: kb/169/Q169998/
+permalink: /kb/169/Q169998/
 ---
 
 ## Q169998: XCON: ISOCOR MTA Does Not Accept BP15 Attachments

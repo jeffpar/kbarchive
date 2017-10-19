@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173000: Moving Files on Macintosh Volume Causes Stop 0x0000001E"
-permalink: kb/173/Q173000/
+permalink: /kb/173/Q173000/
 ---
 
 ## Q173000: Moving Files on Macintosh Volume Causes Stop 0x0000001E

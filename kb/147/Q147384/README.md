@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147384: FIX: Icons, Bitmaps, &amp; Menus Not Displayed in an AFXDLL Dialog"
-permalink: kb/147/Q147384/
+permalink: /kb/147/Q147384/
 ---
 
 ## Q147384: FIX: Icons, Bitmaps, &amp; Menus Not Displayed in an AFXDLL Dialog

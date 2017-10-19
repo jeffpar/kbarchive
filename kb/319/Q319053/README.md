@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319053: How To Modify Program Settings In MSN Internet Access For Macint"
-permalink: kb/319/Q319053/
+permalink: /kb/319/Q319053/
 ---
 
 ## Q319053: How To Modify Program Settings In MSN Internet Access For Macint

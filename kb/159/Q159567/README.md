@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159567: Windows 95 SNMP Agent Allows Only Read-Only Access"
-permalink: kb/159/Q159567/
+permalink: /kb/159/Q159567/
 ---
 
 ## Q159567: Windows 95 SNMP Agent Allows Only Read-Only Access

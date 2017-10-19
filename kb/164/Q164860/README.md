@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164860: XFOR: Garbled Attachments Between Exchange 4.0 and 5.0 IMCs"
-permalink: kb/164/Q164860/
+permalink: /kb/164/Q164860/
 ---
 
 ## Q164860: XFOR: Garbled Attachments Between Exchange 4.0 and 5.0 IMCs

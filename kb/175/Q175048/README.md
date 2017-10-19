@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175048: CACLS Quits on Access Denied Errors with /c"
-permalink: kb/175/Q175048/
+permalink: /kb/175/Q175048/
 ---
 
 ## Q175048: CACLS Quits on Access Denied Errors with /c

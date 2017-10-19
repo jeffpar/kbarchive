@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174668: INFO: Dbgrid32.ocx Requires Grdkrn32.dll"
-permalink: kb/174/Q174668/
+permalink: /kb/174/Q174668/
 ---
 
 ## Q174668: INFO: Dbgrid32.ocx Requires Grdkrn32.dll

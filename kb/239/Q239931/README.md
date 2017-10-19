@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239931: System Crashes When Unprivileged User Accesses Privileged IOCTL"
-permalink: kb/239/Q239931/
+permalink: /kb/239/Q239931/
 ---
 
 ## Q239931: System Crashes When Unprivileged User Accesses Privileged IOCTL

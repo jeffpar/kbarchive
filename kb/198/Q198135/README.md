@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198135: Combat FS: Overlapping View Windows Appear When Switching to HUD"
-permalink: kb/198/Q198135/
+permalink: /kb/198/Q198135/
 ---
 
 ## Q198135: Combat FS: Overlapping View Windows Appear When Switching to HUD

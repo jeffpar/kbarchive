@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59208: PPT: Creating Transparent Bitmaps in Paintbrush for PowerPoint"
-permalink: kb/059/Q59208/
+permalink: /kb/059/Q59208/
 ---
 
 ## Q59208: PPT: Creating Transparent Bitmaps in Paintbrush for PowerPoint

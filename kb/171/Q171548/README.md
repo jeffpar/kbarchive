@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171548: FIX: Binary-Compatible Server Causes VB to Hang in IDE"
-permalink: kb/171/Q171548/
+permalink: /kb/171/Q171548/
 ---
 
 ## Q171548: FIX: Binary-Compatible Server Causes VB to Hang in IDE

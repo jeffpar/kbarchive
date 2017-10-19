@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258006: XADM: Free/Busy Resource Info Disappears when Auto-Accept Runs"
-permalink: kb/258/Q258006/
+permalink: /kb/258/Q258006/
 ---
 
 ## Q258006: XADM: Free/Busy Resource Info Disappears when Auto-Accept Runs

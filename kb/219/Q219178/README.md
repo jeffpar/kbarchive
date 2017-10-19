@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q219178: SFM Macintosh Clients Print %%[Error: undefined...]%%"
-permalink: kb/219/Q219178/
+title: "Q219178: SFM Macintosh Clients Print %%&#91;Error: undefined...&#93;%%"
+permalink: /kb/219/Q219178/
 ---
 
-## Q219178: SFM Macintosh Clients Print %%[Error: undefined...]%%
+## Q219178: SFM Macintosh Clients Print %%&#91;Error: undefined...&#93;%%
 
 	Article: Q219178
 	Product(s): Microsoft Windows NT

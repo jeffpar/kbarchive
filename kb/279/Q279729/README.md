@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279729: Web Pages Not Serving from IIS"
-permalink: kb/279/Q279729/
+permalink: /kb/279/Q279729/
 ---
 
 ## Q279729: Web Pages Not Serving from IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161524: WD97: Invalid Page Fault Modifying Numbered Style"
-permalink: kb/161/Q161524/
+permalink: /kb/161/Q161524/
 ---
 
 ## Q161524: WD97: Invalid Page Fault Modifying Numbered Style

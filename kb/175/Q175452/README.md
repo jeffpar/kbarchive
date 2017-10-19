@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175452: Microsoft TCP/IP Training Comments and Corrections"
-permalink: kb/175/Q175452/
+permalink: /kb/175/Q175452/
 ---
 
 ## Q175452: Microsoft TCP/IP Training Comments and Corrections

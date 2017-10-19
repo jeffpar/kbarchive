@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134867: &quot;Cannot Find File&quot; When Object Clicked to Run Interactively"
-permalink: kb/134/Q134867/
+permalink: /kb/134/Q134867/
 ---
 
 ## Q134867: &quot;Cannot Find File&quot; When Object Clicked to Run Interactively

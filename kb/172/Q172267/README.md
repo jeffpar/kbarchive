@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172267: SAMPLE: RECEDIT.VBP Demonstrates File I/O in Visual Basic"
-permalink: kb/172/Q172267/
+permalink: /kb/172/Q172267/
 ---
 
 ## Q172267: SAMPLE: RECEDIT.VBP Demonstrates File I/O in Visual Basic

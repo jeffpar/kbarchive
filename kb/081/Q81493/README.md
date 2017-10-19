@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81493: Using VCPI Programs with Windows"
-permalink: kb/081/Q81493/
+permalink: /kb/081/Q81493/
 ---
 
 ## Q81493: Using VCPI Programs with Windows

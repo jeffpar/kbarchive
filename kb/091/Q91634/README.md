@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91634: Using RAMDrive to Speed Up MS-DOS Task Swapper"
-permalink: kb/091/Q91634/
+permalink: /kb/091/Q91634/
 ---
 
 ## Q91634: Using RAMDrive to Speed Up MS-DOS Task Swapper

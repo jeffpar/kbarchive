@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86405: PC MAPI: MAPISendDocuments: Wrong Error If Full Path Not Spec."
-permalink: kb/086/Q86405/
+permalink: /kb/086/Q86405/
 ---
 
 ## Q86405: PC MAPI: MAPISendDocuments: Wrong Error If Full Path Not Spec.

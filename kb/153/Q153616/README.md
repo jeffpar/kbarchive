@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153616: Contents of Close Combat Trouble.doc"
-permalink: kb/153/Q153616/
+permalink: /kb/153/Q153616/
 ---
 
 ## Q153616: Contents of Close Combat Trouble.doc

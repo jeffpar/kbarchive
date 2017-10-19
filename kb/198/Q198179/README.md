@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198179: Enabling an APPC/CPIC Program to Use Persistent Verification"
-permalink: kb/198/Q198179/
+permalink: /kb/198/Q198179/
 ---
 
 ## Q198179: Enabling an APPC/CPIC Program to Use Persistent Verification

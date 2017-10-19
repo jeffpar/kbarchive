@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216860: PRB: Chat Server Hangs When Extension Filter Is Installed"
-permalink: kb/216/Q216860/
+permalink: /kb/216/Q216860/
 ---
 
 ## Q216860: PRB: Chat Server Hangs When Extension Filter Is Installed

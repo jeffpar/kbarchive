@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68923: Flight Simulator: Planes Don't Fly Realistically"
-permalink: kb/068/Q68923/
+permalink: /kb/068/Q68923/
 ---
 
 ## Q68923: Flight Simulator: Planes Don't Fly Realistically

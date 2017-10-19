@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150052: XCLN: Simple MAPI Not Supported as an Exchange 4.0 Service"
-permalink: kb/150/Q150052/
+permalink: /kb/150/Q150052/
 ---
 
 ## Q150052: XCLN: Simple MAPI Not Supported as an Exchange 4.0 Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161938: Slow Exchange Client Logons Due to Resource Deadlock"
-permalink: kb/161/Q161938/
+permalink: /kb/161/Q161938/
 ---
 
 ## Q161938: Slow Exchange Client Logons Due to Resource Deadlock

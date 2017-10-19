@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247348: ASP 200 Error Setting Cookie Expiration Past January 19, 2038"
-permalink: kb/247/Q247348/
+permalink: /kb/247/Q247348/
 ---
 
 ## Q247348: ASP 200 Error Setting Cookie Expiration Past January 19, 2038

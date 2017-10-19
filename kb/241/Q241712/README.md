@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241712: Cannot Start 16-Bit Program with Long Path Name"
-permalink: kb/241/Q241712/
+permalink: /kb/241/Q241712/
 ---
 
 ## Q241712: Cannot Start 16-Bit Program with Long Path Name

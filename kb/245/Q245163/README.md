@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245163: &quot;Stop 0x0000000A&quot; Error After Installing Services for Macintosh"
-permalink: kb/245/Q245163/
+permalink: /kb/245/Q245163/
 ---
 
 ## Q245163: &quot;Stop 0x0000000A&quot; Error After Installing Services for Macintosh

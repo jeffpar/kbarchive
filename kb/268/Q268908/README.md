@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268908: PRB: Error Message &quot;Variable 'APP_CLASSNAME' Is Not Found&quot;"
-permalink: kb/268/Q268908/
+permalink: /kb/268/Q268908/
 ---
 
 ## Q268908: PRB: Error Message &quot;Variable 'APP_CLASSNAME' Is Not Found&quot;

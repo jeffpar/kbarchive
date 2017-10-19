@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84564: Windows Err Msg: Setup Error #S019. Cannot Create... WIN.COM"
-permalink: kb/084/Q84564/
+permalink: /kb/084/Q84564/
 ---
 
 ## Q84564: Windows Err Msg: Setup Error #S019. Cannot Create... WIN.COM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190264: PRB: Unusual Characteristics of the ActiveMovie Control"
-permalink: kb/190/Q190264/
+permalink: /kb/190/Q190264/
 ---
 
 ## Q190264: PRB: Unusual Characteristics of the ActiveMovie Control

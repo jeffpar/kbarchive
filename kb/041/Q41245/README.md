@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41245: Change in Functionality of FORMAT Command"
-permalink: kb/041/Q41245/
+permalink: /kb/041/Q41245/
 ---
 
 ## Q41245: Change in Functionality of FORMAT Command

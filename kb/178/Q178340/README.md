@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178340: CFS or FS98/2000: Outside View Constantly Pans or Shifts"
-permalink: kb/178/Q178340/
+permalink: /kb/178/Q178340/
 ---
 
 ## Q178340: CFS or FS98/2000: Outside View Constantly Pans or Shifts

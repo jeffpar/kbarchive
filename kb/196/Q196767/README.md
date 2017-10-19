@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196767: WD97: Formulas Incorrectly Calculate Times"
-permalink: kb/196/Q196767/
+permalink: /kb/196/Q196767/
 ---
 
 ## Q196767: WD97: Formulas Incorrectly Calculate Times

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154856: SMS: Software Audit Fails to Find Package"
-permalink: kb/154/Q154856/
+permalink: /kb/154/Q154856/
 ---
 
 ## Q154856: SMS: Software Audit Fails to Find Package

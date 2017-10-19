@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141211: Memory Leak with Multithreaded Winsock Programs"
-permalink: kb/141/Q141211/
+permalink: /kb/141/Q141211/
 ---
 
 ## Q141211: Memory Leak with Multithreaded Winsock Programs

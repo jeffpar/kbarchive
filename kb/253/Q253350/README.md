@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253350: XCON: Connector for Lotus Notes Performance Monitor Doesn't Work"
-permalink: kb/253/Q253350/
+permalink: /kb/253/Q253350/
 ---
 
 ## Q253350: XCON: Connector for Lotus Notes Performance Monitor Doesn't Work

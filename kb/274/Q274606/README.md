@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274606: CFS2: Collision Detection Does Not Occur in Carrier Mission"
-permalink: kb/274/Q274606/
+permalink: /kb/274/Q274606/
 ---
 
 ## Q274606: CFS2: Collision Detection Does Not Occur in Carrier Mission

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163857: PPT: Sample VB Code Adds Multiple New Slides to Presentation"
-permalink: kb/163/Q163857/
+permalink: /kb/163/Q163857/
 ---
 
 ## Q163857: PPT: Sample VB Code Adds Multiple New Slides to Presentation

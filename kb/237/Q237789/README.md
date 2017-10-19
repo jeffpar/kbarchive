@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237789: INFO: Windows 2000 Registry Entries Are Not Expanded"
-permalink: kb/237/Q237789/
+permalink: /kb/237/Q237789/
 ---
 
 ## Q237789: INFO: Windows 2000 Registry Entries Are Not Expanded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71612: The RasterOps Colorboard 1024MC and Microsoft Windows"
-permalink: kb/071/Q71612/
+permalink: /kb/071/Q71612/
 ---
 
 ## Q71612: The RasterOps Colorboard 1024MC and Microsoft Windows

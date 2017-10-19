@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107583: No Servers If Real-Mode Redirector Started Before WFWG 3.11"
-permalink: kb/107/Q107583/
+permalink: /kb/107/Q107583/
 ---
 
 ## Q107583: No Servers If Real-Mode Redirector Started Before WFWG 3.11

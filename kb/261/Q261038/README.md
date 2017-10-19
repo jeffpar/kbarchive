@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261038: Motocross Madness 2: Opening Video Is Not Displayed Properly"
-permalink: kb/261/Q261038/
+permalink: /kb/261/Q261038/
 ---
 
 ## Q261038: Motocross Madness 2: Opening Video Is Not Displayed Properly

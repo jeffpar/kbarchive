@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268120: Web Applications with Visual InterDev 6.0 Comments and Correctio"
-permalink: kb/268/Q268120/
+permalink: /kb/268/Q268120/
 ---
 
 ## Q268120: Web Applications with Visual InterDev 6.0 Comments and Correctio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166937: HOWTO: Programmatically Add Images to ImageList Control"
-permalink: kb/166/Q166937/
+permalink: /kb/166/Q166937/
 ---
 
 ## Q166937: HOWTO: Programmatically Add Images to ImageList Control

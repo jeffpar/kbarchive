@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82482: Fuji-Matrix Printer Driver and Windows 3.1 Upgrade"
-permalink: kb/082/Q82482/
+permalink: /kb/082/Q82482/
 ---
 
 ## Q82482: Fuji-Matrix Printer Driver and Windows 3.1 Upgrade

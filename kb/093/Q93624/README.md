@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93624: How to Activate Screen Background Color in FoxBASE+/Mac"
-permalink: kb/093/Q93624/
+permalink: /kb/093/Q93624/
 ---
 
 ## Q93624: How to Activate Screen Background Color in FoxBASE+/Mac

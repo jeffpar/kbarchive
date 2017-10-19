@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189999: XADM: BCC Recipients Are Visible in an Embedded Message"
-permalink: kb/189/Q189999/
+permalink: /kb/189/Q189999/
 ---
 
 ## Q189999: XADM: BCC Recipients Are Visible in an Embedded Message

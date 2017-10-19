@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32539: PRB: fclose() on Unopened Files Causes Protection Violation"
-permalink: kb/032/Q32539/
+permalink: /kb/032/Q32539/
 ---
 
 ## Q32539: PRB: fclose() on Unopened Files Causes Protection Violation

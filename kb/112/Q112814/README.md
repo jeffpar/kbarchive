@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112814: Scenes 1.0: After Dark Does Not Recognize Custom Picture Sets"
-permalink: kb/112/Q112814/
+permalink: /kb/112/Q112814/
 ---
 
 ## Q112814: Scenes 1.0: After Dark Does Not Recognize Custom Picture Sets

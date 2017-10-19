@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307195: XWEB: Unauthenticated User Can Enumerate Global Address List"
-permalink: kb/307/Q307195/
+permalink: /kb/307/Q307195/
 ---
 
 ## Q307195: XWEB: Unauthenticated User Can Enumerate Global Address List

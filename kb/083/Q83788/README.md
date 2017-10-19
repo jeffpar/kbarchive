@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83788: How to Use the LandScapeOrient=Angle Setting"
-permalink: kb/083/Q83788/
+permalink: /kb/083/Q83788/
 ---
 
 ## Q83788: How to Use the LandScapeOrient=Angle Setting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180006: Event ID: 4229 When Replicating with Partners"
-permalink: kb/180/Q180006/
+permalink: /kb/180/Q180006/
 ---
 
 ## Q180006: Event ID: 4229 When Replicating with Partners

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136787: XCLN: Amalgamated Read/Delivery Receipts"
-permalink: kb/136/Q136787/
+permalink: /kb/136/Q136787/
 ---
 
 ## Q136787: XCLN: Amalgamated Read/Delivery Receipts

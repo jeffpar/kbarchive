@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72051: HP Plotters Supported with Windows 3.0"
-permalink: kb/072/Q72051/
+permalink: /kb/072/Q72051/
 ---
 
 ## Q72051: HP Plotters Supported with Windows 3.0

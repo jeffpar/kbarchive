@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163874: Pressing CTRL+ALT+DEL When Logging On Can Cause Blue Screen"
-permalink: kb/163/Q163874/
+permalink: /kb/163/Q163874/
 ---
 
 ## Q163874: Pressing CTRL+ALT+DEL When Logging On Can Cause Blue Screen

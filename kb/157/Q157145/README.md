@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157145: Extended or Unintelligible Characters Printed Starting Windows"
-permalink: kb/157/Q157145/
+permalink: /kb/157/Q157145/
 ---
 
 ## Q157145: Extended or Unintelligible Characters Printed Starting Windows

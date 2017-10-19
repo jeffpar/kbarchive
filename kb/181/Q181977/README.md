@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181977: Application Exception in Snanmvt.exe"
-permalink: kb/181/Q181977/
+permalink: /kb/181/Q181977/
 ---
 
 ## Q181977: Application Exception in Snanmvt.exe

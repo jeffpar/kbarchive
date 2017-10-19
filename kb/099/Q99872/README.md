@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99872: FIX: Wrong Menu Click Event After Hiding Menu"
-permalink: kb/099/Q99872/
+permalink: /kb/099/Q99872/
 ---
 
 ## Q99872: FIX: Wrong Menu Click Event After Hiding Menu

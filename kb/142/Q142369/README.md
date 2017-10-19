@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142369: INFO: AS/400 Command Syntax"
-permalink: kb/142/Q142369/
+permalink: /kb/142/Q142369/
 ---
 
 ## Q142369: INFO: AS/400 Command Syntax

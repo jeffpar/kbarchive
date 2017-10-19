@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121161: Access Denied Using User Manager for Domains in Server Tools"
-permalink: kb/121/Q121161/
+permalink: /kb/121/Q121161/
 ---
 
 ## Q121161: Access Denied Using User Manager for Domains in Server Tools

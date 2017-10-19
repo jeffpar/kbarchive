@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185689: Snaserver.exe May Trap in Function S1PXSND()"
-permalink: kb/185/Q185689/
+permalink: /kb/185/Q185689/
 ---
 
 ## Q185689: Snaserver.exe May Trap in Function S1PXSND()

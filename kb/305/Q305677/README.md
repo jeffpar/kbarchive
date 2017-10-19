@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305677: MSN Explorer 6.1 Connection Dropped When Switching Users In Wind"
-permalink: kb/305/Q305677/
+permalink: /kb/305/Q305677/
 ---
 
 ## Q305677: MSN Explorer 6.1 Connection Dropped When Switching Users In Wind

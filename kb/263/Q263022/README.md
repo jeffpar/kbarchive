@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263022: XCLN: Xprint Utility Print Dialog Box Is Displayed in Background"
-permalink: kb/263/Q263022/
+permalink: /kb/263/Q263022/
 ---
 
 ## Q263022: XCLN: Xprint Utility Print Dialog Box Is Displayed in Background

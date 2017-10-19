@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187774: FP: FrontPage Editor Removes Blank Lines in Tables"
-permalink: kb/187/Q187774/
+permalink: /kb/187/Q187774/
 ---
 
 ## Q187774: FP: FrontPage Editor Removes Blank Lines in Tables

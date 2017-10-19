@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84260: Printing Problems on an Okidata ML 380 Under Windows 3.1"
-permalink: kb/084/Q84260/
+permalink: /kb/084/Q84260/
 ---
 
 ## Q84260: Printing Problems on an Okidata ML 380 Under Windows 3.1

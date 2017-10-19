@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79982: PRB: BS_GROUPBOX-Style Child Window Background Painting Wrong"
-permalink: kb/079/Q79982/
+permalink: /kb/079/Q79982/
 ---
 
 ## Q79982: PRB: BS_GROUPBOX-Style Child Window Background Painting Wrong

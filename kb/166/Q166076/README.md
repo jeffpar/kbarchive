@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166076: New Event IDs for SNA Server Print Service"
-permalink: kb/166/Q166076/
+permalink: /kb/166/Q166076/
 ---
 
 ## Q166076: New Event IDs for SNA Server Print Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78805: Terminal Does Not Accept Eight Data Bits and Odd Parity"
-permalink: kb/078/Q78805/
+permalink: /kb/078/Q78805/
 ---
 
 ## Q78805: Terminal Does Not Accept Eight Data Bits and Odd Parity

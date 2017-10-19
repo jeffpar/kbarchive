@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133239: Enabling PCMCIA Support in Windows 95"
-permalink: kb/133/Q133239/
+permalink: /kb/133/Q133239/
 ---
 
 ## Q133239: Enabling PCMCIA Support in Windows 95

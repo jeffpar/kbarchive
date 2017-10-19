@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88455: Terminal Settings for Popular Online Services"
-permalink: kb/088/Q88455/
+permalink: /kb/088/Q88455/
 ---
 
 ## Q88455: Terminal Settings for Popular Online Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142281: How to Display Columns Other than Default in a Combo Box"
-permalink: kb/142/Q142281/
+permalink: /kb/142/Q142281/
 ---
 
 ## Q142281: How to Display Columns Other than Default in a Combo Box

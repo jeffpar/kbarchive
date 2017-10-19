@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275479: Access Violation in 5250 Application While in TN5250 Mode"
-permalink: kb/275/Q275479/
+permalink: /kb/275/Q275479/
 ---
 
 ## Q275479: Access Violation in 5250 Application While in TN5250 Mode

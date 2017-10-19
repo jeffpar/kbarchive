@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166365: ACC97: Changing Your Data Source for a Microsoft Word Mail Merge"
-permalink: kb/166/Q166365/
+permalink: /kb/166/Q166365/
 ---
 
 ## Q166365: ACC97: Changing Your Data Source for a Microsoft Word Mail Merge

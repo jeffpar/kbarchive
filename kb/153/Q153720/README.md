@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153720: Cannot Compress a Drive with Little Free Space"
-permalink: kb/153/Q153720/
+permalink: /kb/153/Q153720/
 ---
 
 ## Q153720: Cannot Compress a Drive with Little Free Space

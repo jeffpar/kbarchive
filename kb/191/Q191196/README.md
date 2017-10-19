@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191196: XCLN: Frames Do Not Convert Correctly in HTML Form Converter"
-permalink: kb/191/Q191196/
+permalink: /kb/191/Q191196/
 ---
 
 ## Q191196: XCLN: Frames Do Not Convert Correctly in HTML Form Converter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89517: Accessing Microsoft LAN Manager Servers with WFWG"
-permalink: kb/089/Q89517/
+permalink: /kb/089/Q89517/
 ---
 
 ## Q89517: Accessing Microsoft LAN Manager Servers with WFWG

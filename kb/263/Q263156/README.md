@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263156: SNA Server Event IDs 4, 13, and 38 Message Sequence Errors"
-permalink: kb/263/Q263156/
+permalink: /kb/263/Q263156/
 ---
 
 ## Q263156: SNA Server Event IDs 4, 13, and 38 Message Sequence Errors

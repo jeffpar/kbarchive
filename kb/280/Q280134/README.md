@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280134: PRB: Error When You Create SQL Server TEMP Tables Using RDO"
-permalink: kb/280/Q280134/
+permalink: /kb/280/Q280134/
 ---
 
 ## Q280134: PRB: Error When You Create SQL Server TEMP Tables Using RDO

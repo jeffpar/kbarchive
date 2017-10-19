@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250311: Setting MA Logging Levels in Microsoft Metadirectory Services"
-permalink: kb/250/Q250311/
+permalink: /kb/250/Q250311/
 ---
 
 ## Q250311: Setting MA Logging Levels in Microsoft Metadirectory Services

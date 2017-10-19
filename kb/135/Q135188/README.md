@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135188: Page Fault When Setup Detects Future Domain SCSI Controller"
-permalink: kb/135/Q135188/
+permalink: /kb/135/Q135188/
 ---
 
 ## Q135188: Page Fault When Setup Detects Future Domain SCSI Controller

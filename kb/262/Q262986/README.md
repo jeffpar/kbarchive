@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262986: XGEN: Exchange 5.5 and Exchange 2K RFC/Standards Compliance"
-permalink: kb/262/Q262986/
+permalink: /kb/262/Q262986/
 ---
 
 ## Q262986: XGEN: Exchange 5.5 and Exchange 2K RFC/Standards Compliance

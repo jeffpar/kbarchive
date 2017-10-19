@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72386: INFO: Background, Foreground, and System Palette Management"
-permalink: kb/072/Q72386/
+permalink: /kb/072/Q72386/
 ---
 
 ## Q72386: INFO: Background, Foreground, and System Palette Management

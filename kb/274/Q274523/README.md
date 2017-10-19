@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274523: BUG: Print to File Fails to Request Output File Name"
-permalink: kb/274/Q274523/
+permalink: /kb/274/Q274523/
 ---
 
 ## Q274523: BUG: Print to File Fails to Request Output File Name

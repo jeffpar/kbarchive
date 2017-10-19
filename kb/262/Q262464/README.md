@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262464: WD97: File Size Increases with EMF, PNG, GIF, or JPEG Graphics"
-permalink: kb/262/Q262464/
+permalink: /kb/262/Q262464/
 ---
 
 ## Q262464: WD97: File Size Increases with EMF, PNG, GIF, or JPEG Graphics

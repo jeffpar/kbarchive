@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199101: Rasman.exe Causes Access Violation with Connection Manager"
-permalink: kb/199/Q199101/
+permalink: /kb/199/Q199101/
 ---
 
 ## Q199101: Rasman.exe Causes Access Violation with Connection Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186645: Troubleshooting RDP Client Connection Problems"
-permalink: kb/186/Q186645/
+permalink: /kb/186/Q186645/
 ---
 
 ## Q186645: Troubleshooting RDP Client Connection Problems

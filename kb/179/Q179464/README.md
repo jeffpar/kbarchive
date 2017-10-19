@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179464: CedarBank: Session Object Error 'ASP 0168 : 80004005'"
-permalink: kb/179/Q179464/
+permalink: /kb/179/Q179464/
 ---
 
 ## Q179464: CedarBank: Session Object Error 'ASP 0168 : 80004005'

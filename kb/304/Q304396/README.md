@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304396: Close Combat 3: Err Msg: Unable to Get Format on Stream"
-permalink: kb/304/Q304396/
+permalink: /kb/304/Q304396/
 ---
 
 ## Q304396: Close Combat 3: Err Msg: Unable to Get Format on Stream

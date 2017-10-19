@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78856: INFO: Watch Window Displays Arrays as Pointers"
-permalink: kb/078/Q78856/
+permalink: /kb/078/Q78856/
 ---
 
 ## Q78856: INFO: Watch Window Displays Arrays as Pointers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173245: Long Text Messages May Cause Receiving Computer to Hang"
-permalink: kb/173/Q173245/
+permalink: /kb/173/Q173245/
 ---
 
 ## Q173245: Long Text Messages May Cause Receiving Computer to Hang

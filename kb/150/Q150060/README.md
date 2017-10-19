@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150060: Cannot Delete Directory Structure on FPNW Volume"
-permalink: kb/150/Q150060/
+permalink: /kb/150/Q150060/
 ---
 
 ## Q150060: Cannot Delete Directory Structure on FPNW Volume

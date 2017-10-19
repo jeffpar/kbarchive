@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82947: Printing with Additional COM Ports"
-permalink: kb/082/Q82947/
+permalink: /kb/082/Q82947/
 ---
 
 ## Q82947: Printing with Additional COM Ports

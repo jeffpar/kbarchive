@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314756: Microsoft Visual C++ .NET Step by Step Comments and Corrections"
-permalink: kb/314/Q314756/
+permalink: /kb/314/Q314756/
 ---
 
 ## Q314756: Microsoft Visual C++ .NET Step by Step Comments and Corrections

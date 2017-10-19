@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292542: HOWTO: IIS5: Setting Up Index Server 2.0 as a Generic Clustered"
-permalink: kb/292/Q292542/
+permalink: /kb/292/Q292542/
 ---
 
 ## Q292542: HOWTO: IIS5: Setting Up Index Server 2.0 as a Generic Clustered

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99002: Mac LDF: No Password Assigned When Rebuilding Local Mail File"
-permalink: kb/099/Q99002/
+permalink: /kb/099/Q99002/
 ---
 
 ## Q99002: Mac LDF: No Password Assigned When Rebuilding Local Mail File

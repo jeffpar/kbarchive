@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145580: Remotable Link Services Started by SNABASE"
-permalink: kb/145/Q145580/
+permalink: /kb/145/Q145580/
 ---
 
 ## Q145580: Remotable Link Services Started by SNABASE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235743: SMS: Pre-Defined Product Compliance Queries Return Wrong Results"
-permalink: kb/235/Q235743/
+permalink: /kb/235/Q235743/
 ---
 
 ## Q235743: SMS: Pre-Defined Product Compliance Queries Return Wrong Results

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172099: PRB: T-SQL - Running Remote and Local SQL Debugging"
-permalink: kb/172/Q172099/
+permalink: /kb/172/Q172099/
 ---
 
 ## Q172099: PRB: T-SQL - Running Remote and Local SQL Debugging

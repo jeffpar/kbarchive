@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138704: DOC: GETFILE() Help Topic States DialogCaption Is at Top"
-permalink: kb/138/Q138704/
+permalink: /kb/138/Q138704/
 ---
 
 ## Q138704: DOC: GETFILE() Help Topic States DialogCaption Is at Top

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85127: Changes to the SYSTEM.INI Made by BallPoint Mouse"
-permalink: kb/085/Q85127/
+permalink: /kb/085/Q85127/
 ---
 
 ## Q85127: Changes to the SYSTEM.INI Made by BallPoint Mouse

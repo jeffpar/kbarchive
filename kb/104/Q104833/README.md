@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104833: Cinemania: Movie Titles Not Found with &quot;Topic Titles Only&quot;"
-permalink: kb/104/Q104833/
+permalink: /kb/104/Q104833/
 ---
 
 ## Q104833: Cinemania: Movie Titles Not Found with &quot;Topic Titles Only&quot;

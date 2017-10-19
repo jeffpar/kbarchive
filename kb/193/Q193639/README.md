@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193639: XFOR: Internet Mail Service Stops with Event Log Error 4116"
-permalink: kb/193/Q193639/
+permalink: /kb/193/Q193639/
 ---
 
 ## Q193639: XFOR: Internet Mail Service Stops with Event Log Error 4116

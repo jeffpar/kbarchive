@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318992: FIX: Fatal Exception in Edit Box with MS Active Accessibility"
-permalink: kb/318/Q318992/
+permalink: /kb/318/Q318992/
 ---
 
 ## Q318992: FIX: Fatal Exception in Edit Box with MS Active Accessibility

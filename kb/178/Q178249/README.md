@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178249: Using Network Control Panel to Configure SNA Server Fails"
-permalink: kb/178/Q178249/
+permalink: /kb/178/Q178249/
 ---
 
 ## Q178249: Using Network Control Panel to Configure SNA Server Fails

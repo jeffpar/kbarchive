@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244831: XCLN: How to Make Exchange Designer Forms Run on Term Serv"
-permalink: kb/244/Q244831/
+permalink: /kb/244/Q244831/
 ---
 
 ## Q244831: XCLN: How to Make Exchange Designer Forms Run on Term Serv

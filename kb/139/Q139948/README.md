@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139948: DNS Settings in Dial-Up Networking Connectoid Are Not Used"
-permalink: kb/139/Q139948/
+permalink: /kb/139/Q139948/
 ---
 
 ## Q139948: DNS Settings in Dial-Up Networking Connectoid Are Not Used

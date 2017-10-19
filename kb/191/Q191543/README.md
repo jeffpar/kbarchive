@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191543: Urban Assault Err Msg: The Mss.dll Is Incorrectly Installed..."
-permalink: kb/191/Q191543/
+permalink: /kb/191/Q191543/
 ---
 
 ## Q191543: Urban Assault Err Msg: The Mss.dll Is Incorrectly Installed...

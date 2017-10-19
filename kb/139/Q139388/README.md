@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139388: HOWTO: Create a Thermometer Bar in Visual FoxPro"
-permalink: kb/139/Q139388/
+permalink: /kb/139/Q139388/
 ---
 
 ## Q139388: HOWTO: Create a Thermometer Bar in Visual FoxPro

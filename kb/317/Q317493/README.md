@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317493: FIX: &quot;Unable to find Visual Class Library&quot; Msgs with NewObject"
-permalink: kb/317/Q317493/
+permalink: /kb/317/Q317493/
 ---
 
 ## Q317493: FIX: &quot;Unable to find Visual Class Library&quot; Msgs with NewObject

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110621: Defragmenter Err Msg: Program Too Big to Fit into Memory"
-permalink: kb/110/Q110621/
+permalink: /kb/110/Q110621/
 ---
 
 ## Q110621: Defragmenter Err Msg: Program Too Big to Fit into Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313898: BUG: StartUp Project Changes When You &quot;Get Latest Version&quot;"
-permalink: kb/313/Q313898/
+permalink: /kb/313/Q313898/
 ---
 
 ## Q313898: BUG: StartUp Project Changes When You &quot;Get Latest Version&quot;

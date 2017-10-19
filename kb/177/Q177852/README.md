@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177852: FIX: VFP5.0a under Japanese OS Causes DBC Characters Problems"
-permalink: kb/177/Q177852/
+permalink: /kb/177/Q177852/
 ---
 
 ## Q177852: FIX: VFP5.0a under Japanese OS Causes DBC Characters Problems

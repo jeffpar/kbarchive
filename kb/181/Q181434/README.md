@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181434: PRB: SQL_DRIVER_NOPROMPT Error in IIS 4.0 ISAPI Application"
-permalink: kb/181/Q181434/
+permalink: /kb/181/Q181434/
 ---
 
 ## Q181434: PRB: SQL_DRIVER_NOPROMPT Error in IIS 4.0 ISAPI Application

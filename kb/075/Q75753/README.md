@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75753: Winconnect and Windows 3.0"
-permalink: kb/075/Q75753/
+permalink: /kb/075/Q75753/
 ---
 
 ## Q75753: Winconnect and Windows 3.0

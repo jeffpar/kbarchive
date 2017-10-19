@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154809: Error Changing Password with Multiple Network User Names"
-permalink: kb/154/Q154809/
+permalink: /kb/154/Q154809/
 ---
 
 ## Q154809: Error Changing Password with Multiple Network User Names

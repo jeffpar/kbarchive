@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156269: PRB: Quote Marks Cause Error Messages in Setup Wizard"
-permalink: kb/156/Q156269/
+permalink: /kb/156/Q156269/
 ---
 
 ## Q156269: PRB: Quote Marks Cause Error Messages in Setup Wizard

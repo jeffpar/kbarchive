@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239099: FIX: Microsoft ODBC Driver for Oracle Truncates Error Messages"
-permalink: kb/239/Q239099/
+permalink: /kb/239/Q239099/
 ---
 
 ## Q239099: FIX: Microsoft ODBC Driver for Oracle Truncates Error Messages

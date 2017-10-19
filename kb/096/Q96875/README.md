@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96875: Backup Not Compatible with Norton Backup Sets"
-permalink: kb/096/Q96875/
+permalink: /kb/096/Q96875/
 ---
 
 ## Q96875: Backup Not Compatible with Norton Backup Sets

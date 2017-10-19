@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q194742: XFOR: Internet Mail Service Support for user@[IP Address] Format"
-permalink: kb/194/Q194742/
+title: "Q194742: XFOR: Internet Mail Service Support for user@&#91;IP Address&#93; Format"
+permalink: /kb/194/Q194742/
 ---
 
-## Q194742: XFOR: Internet Mail Service Support for user@[IP Address] Format
+## Q194742: XFOR: Internet Mail Service Support for user@&#91;IP Address&#93; Format
 
 	Article: Q194742
 	Product(s): Microsoft Exchange

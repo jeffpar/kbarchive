@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155462: MSD Fails With Application Error After Clicking Network"
-permalink: kb/155/Q155462/
+permalink: /kb/155/Q155462/
 ---
 
 ## Q155462: MSD Fails With Application Error After Clicking Network

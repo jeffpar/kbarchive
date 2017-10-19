@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214798: Cannot Print After Installing HP JetAdmin Print Monitor"
-permalink: kb/214/Q214798/
+permalink: /kb/214/Q214798/
 ---
 
 ## Q214798: Cannot Print After Installing HP JetAdmin Print Monitor

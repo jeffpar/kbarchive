@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182403: XFOR: Store Causes Access Violation in NdrServerUnmarshall"
-permalink: kb/182/Q182403/
+permalink: /kb/182/Q182403/
 ---
 
 ## Q182403: XFOR: Store Causes Access Violation in NdrServerUnmarshall

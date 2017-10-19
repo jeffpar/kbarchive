@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151779: Error C0000034: The LsaOpenSecret Call Failed"
-permalink: kb/151/Q151779/
+permalink: /kb/151/Q151779/
 ---
 
 ## Q151779: Error C0000034: The LsaOpenSecret Call Failed

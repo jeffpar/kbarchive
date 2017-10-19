@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125599: Err Msg: Cannot Find SMSROUTR.VXD in SYSTEM.INI"
-permalink: kb/125/Q125599/
+permalink: /kb/125/Q125599/
 ---
 
 ## Q125599: Err Msg: Cannot Find SMSROUTR.VXD in SYSTEM.INI

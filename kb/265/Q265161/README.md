@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265161: FP: Errors Appear When You Attempt to Connect to Results Page"
-permalink: kb/265/Q265161/
+permalink: /kb/265/Q265161/
 ---
 
 ## Q265161: FP: Errors Appear When You Attempt to Connect to Results Page

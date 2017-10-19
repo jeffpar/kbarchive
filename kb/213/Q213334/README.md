@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213334: SMS: &quot;All Systems By System Name&quot; Reports Only One NIC"
-permalink: kb/213/Q213334/
+permalink: /kb/213/Q213334/
 ---
 
 ## Q213334: SMS: &quot;All Systems By System Name&quot; Reports Only One NIC

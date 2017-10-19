@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152953: XADM: SMTP Proxy Generation Fails After 21st Address"
-permalink: kb/152/Q152953/
+permalink: /kb/152/Q152953/
 ---
 
 ## Q152953: XADM: SMTP Proxy Generation Fails After 21st Address

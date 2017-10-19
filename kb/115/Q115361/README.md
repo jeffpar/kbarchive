@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115361: X400: X400ADM.EXE Log Print Job Errors Overwrite Admin Menu"
-permalink: kb/115/Q115361/
+permalink: /kb/115/Q115361/
 ---
 
 ## Q115361: X400: X400ADM.EXE Log Print Job Errors Overwrite Admin Menu

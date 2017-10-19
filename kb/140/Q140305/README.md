@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140305: How to Bring an Overlapping Image to the Foreground"
-permalink: kb/140/Q140305/
+permalink: /kb/140/Q140305/
 ---
 
 ## Q140305: How to Bring an Overlapping Image to the Foreground

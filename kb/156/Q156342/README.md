@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156342: PRB: DO &lt;Program Name&gt; Runs Cached Version of Program"
-permalink: kb/156/Q156342/
+permalink: /kb/156/Q156342/
 ---
 
 ## Q156342: PRB: DO &lt;Program Name&gt; Runs Cached Version of Program

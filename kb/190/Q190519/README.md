@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190519: BUG: UserControl Causes VB IDE to Crash on Shutdown"
-permalink: kb/190/Q190519/
+permalink: /kb/190/Q190519/
 ---
 
 ## Q190519: BUG: UserControl Causes VB IDE to Crash on Shutdown

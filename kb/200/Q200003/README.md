@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200003: XFOR: Messages Sit in MS Mail Connector Queue and Event ID 2028"
-permalink: kb/200/Q200003/
+permalink: /kb/200/Q200003/
 ---
 
 ## Q200003: XFOR: Messages Sit in MS Mail Connector Queue and Event ID 2028

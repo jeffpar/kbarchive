@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321168: SMS: Advertisements for a User or User Group Can Run Again"
-permalink: kb/321/Q321168/
+permalink: /kb/321/Q321168/
 ---
 
 ## Q321168: SMS: Advertisements for a User or User Group Can Run Again

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246752: Admin&#36; and IPC&#36; Shares Missing at Domain Controller Startup"
-permalink: kb/246/Q246752/
+permalink: /kb/246/Q246752/
 ---
 
 ## Q246752: Admin&#36; and IPC&#36; Shares Missing at Domain Controller Startup

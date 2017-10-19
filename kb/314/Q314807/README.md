@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314807: LUWID Specified by SET_TP_PROPERTIES Verb May Be Overwritten"
-permalink: kb/314/Q314807/
+permalink: /kb/314/Q314807/
 ---
 
 ## Q314807: LUWID Specified by SET_TP_PROPERTIES Verb May Be Overwritten

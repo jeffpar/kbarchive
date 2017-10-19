@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120713: Err Msg w/IntelliPoint/Type &amp; ProofReader: Sound Input Is Busy"
-permalink: kb/120/Q120713/
+permalink: /kb/120/Q120713/
 ---
 
 ## Q120713: Err Msg w/IntelliPoint/Type &amp; ProofReader: Sound Input Is Busy

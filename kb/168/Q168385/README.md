@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168385: BUG: The &quot;this&quot; Pointer Is Incorrect in Destructor of Base Class"
-permalink: kb/168/Q168385/
+permalink: /kb/168/Q168385/
 ---
 
 ## Q168385: BUG: The &quot;this&quot; Pointer Is Incorrect in Destructor of Base Class

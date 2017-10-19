@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271968: XCON: Dr. Watson Message Occurs When Attempting to Start MTA"
-permalink: kb/271/Q271968/
+permalink: /kb/271/Q271968/
 ---
 
 ## Q271968: XCON: Dr. Watson Message Occurs When Attempting to Start MTA

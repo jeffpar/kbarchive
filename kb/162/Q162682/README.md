@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162682: PRB: Visual FoxPro Form Is Inaccessible with Foundation READ"
-permalink: kb/162/Q162682/
+permalink: /kb/162/Q162682/
 ---
 
 ## Q162682: PRB: Visual FoxPro Form Is Inaccessible with Foundation READ

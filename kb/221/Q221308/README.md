@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221308: NumberOfRings=0 Does Not Work for RRAS Auto-Answer in WinNT4.0"
-permalink: kb/221/Q221308/
+permalink: /kb/221/Q221308/
 ---
 
 ## Q221308: NumberOfRings=0 Does Not Work for RRAS Auto-Answer in WinNT4.0

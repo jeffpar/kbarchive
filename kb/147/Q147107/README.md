@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147107: XADM: Installing Dynamic RAS Connector without RAS Installed"
-permalink: kb/147/Q147107/
+permalink: /kb/147/Q147107/
 ---
 
 ## Q147107: XADM: Installing Dynamic RAS Connector without RAS Installed

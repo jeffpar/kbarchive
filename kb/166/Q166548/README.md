@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166548: XADM: Administrators Cannot Add Accounts to Private IS"
-permalink: kb/166/Q166548/
+permalink: /kb/166/Q166548/
 ---
 
 ## Q166548: XADM: Administrators Cannot Add Accounts to Private IS

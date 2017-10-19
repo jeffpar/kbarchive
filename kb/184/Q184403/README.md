@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184403: XCLN: How to Reset the Recently Used File List in Schedule+"
-permalink: kb/184/Q184403/
+permalink: /kb/184/Q184403/
 ---
 
 ## Q184403: XCLN: How to Reset the Recently Used File List in Schedule+

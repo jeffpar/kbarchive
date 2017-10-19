@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180408: Country Does Not Appear in Telephony Country Code List"
-permalink: kb/180/Q180408/
+permalink: /kb/180/Q180408/
 ---
 
 ## Q180408: Country Does Not Appear in Telephony Country Code List

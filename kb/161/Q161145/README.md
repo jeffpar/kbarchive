@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161145: BUG: Group Header on Report with Columns Prints on Detail Band"
-permalink: kb/161/Q161145/
+permalink: /kb/161/Q161145/
 ---
 
 ## Q161145: BUG: Group Header on Report with Columns Prints on Detail Band

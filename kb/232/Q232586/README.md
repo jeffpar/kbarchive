@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232586: XCON: X.400 MTA Logs &quot;Loop Detected&quot; Error Message"
-permalink: kb/232/Q232586/
+permalink: /kb/232/Q232586/
 ---
 
 ## Q232586: XCON: X.400 MTA Logs &quot;Loop Detected&quot; Error Message

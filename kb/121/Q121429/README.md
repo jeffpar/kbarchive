@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121429: Scenes 2.0: Cannot Interrupt Display of Thumbnails"
-permalink: kb/121/Q121429/
+permalink: /kb/121/Q121429/
 ---
 
 ## Q121429: Scenes 2.0: Cannot Interrupt Display of Thumbnails

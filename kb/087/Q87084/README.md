@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87084: VGA Chip Sets and Revisions Used on Video Cards"
-permalink: kb/087/Q87084/
+permalink: /kb/087/Q87084/
 ---
 
 ## Q87084: VGA Chip Sets and Revisions Used on Video Cards

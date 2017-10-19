@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147589: Location of .Vue File Can Be Customized"
-permalink: kb/147/Q147589/
+permalink: /kb/147/Q147589/
 ---
 
 ## Q147589: Location of .Vue File Can Be Customized

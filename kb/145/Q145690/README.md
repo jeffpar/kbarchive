@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145690: Quick Viewer Blank When You Remote Control to Clients"
-permalink: kb/145/Q145690/
+permalink: /kb/145/Q145690/
 ---
 
 ## Q145690: Quick Viewer Blank When You Remote Control to Clients

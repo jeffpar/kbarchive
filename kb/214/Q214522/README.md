@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214522: Fatal Exception in IOS.VXD When Formatting Disk in LS-120 Drive"
-permalink: kb/214/Q214522/
+permalink: /kb/214/Q214522/
 ---
 
 ## Q214522: Fatal Exception in IOS.VXD When Formatting Disk in LS-120 Drive

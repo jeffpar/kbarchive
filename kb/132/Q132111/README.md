@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132111: Digiboard Drops DTR After Disconnect"
-permalink: kb/132/Q132111/
+permalink: /kb/132/Q132111/
 ---
 
 ## Q132111: Digiboard Drops DTR After Disconnect

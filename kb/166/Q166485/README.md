@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166485: Removing Entries in WINS from Other Non-Existent WINS Servers"
-permalink: kb/166/Q166485/
+permalink: /kb/166/Q166485/
 ---
 
 ## Q166485: Removing Entries in WINS from Other Non-Existent WINS Servers

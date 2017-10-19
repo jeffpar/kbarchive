@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194861: FIX: &quot;AtlReportError: no overloaded function takes X parameters&quot;"
-permalink: kb/194/Q194861/
+permalink: /kb/194/Q194861/
 ---
 
 ## Q194861: FIX: &quot;AtlReportError: no overloaded function takes X parameters&quot;

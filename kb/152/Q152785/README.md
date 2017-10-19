@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152785: FILE: RDOTEST.EXE Test RDO and ODBC Driver Without Writing Code"
-permalink: kb/152/Q152785/
+permalink: /kb/152/Q152785/
 ---
 
 ## Q152785: FILE: RDOTEST.EXE Test RDO and ODBC Driver Without Writing Code

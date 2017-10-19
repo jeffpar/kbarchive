@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193336: HOWTO: Install Crystal Reports for Use in Visual Basic 6.0"
-permalink: kb/193/Q193336/
+permalink: /kb/193/Q193336/
 ---
 
 ## Q193336: HOWTO: Install Crystal Reports for Use in Visual Basic 6.0

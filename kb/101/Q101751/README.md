@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101751: PC Forms: Err Msg: Another Application Denied Your Request"
-permalink: kb/101/Q101751/
+permalink: /kb/101/Q101751/
 ---
 
 ## Q101751: PC Forms: Err Msg: Another Application Denied Your Request

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173255: VB5 Step By Step: Page 141 Code Returns Error"
-permalink: kb/173/Q173255/
+permalink: /kb/173/Q173255/
 ---
 
 ## Q173255: VB5 Step By Step: Page 141 Code Returns Error

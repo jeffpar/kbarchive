@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83063: README.WRI from Windows 3.1"
-permalink: kb/083/Q83063/
+permalink: /kb/083/Q83063/
 ---
 
 ## Q83063: README.WRI from Windows 3.1

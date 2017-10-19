@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135554: U.S Robotics Courier V.34 Fax/Modem Not Detected"
-permalink: kb/135/Q135554/
+permalink: /kb/135/Q135554/
 ---
 
 ## Q135554: U.S Robotics Courier V.34 Fax/Modem Not Detected

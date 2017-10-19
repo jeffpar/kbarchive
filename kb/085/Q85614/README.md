@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85614: FAX: Primary Causes of Mail Failures to Fax Machines"
-permalink: kb/085/Q85614/
+permalink: /kb/085/Q85614/
 ---
 
 ## Q85614: FAX: Primary Causes of Mail Failures to Fax Machines

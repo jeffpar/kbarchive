@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178491: HOWTO: Change the TreeView Control Background Color"
-permalink: kb/178/Q178491/
+permalink: /kb/178/Q178491/
 ---
 
 ## Q178491: HOWTO: Change the TreeView Control Background Color

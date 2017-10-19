@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82872: Recommended WIN.INI Switch Settings for Dr. Watson 0.80"
-permalink: kb/082/Q82872/
+permalink: /kb/082/Q82872/
 ---
 
 ## Q82872: Recommended WIN.INI Switch Settings for Dr. Watson 0.80

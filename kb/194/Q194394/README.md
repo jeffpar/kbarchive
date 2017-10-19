@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194394: FTP Service Does Not Log All FTP Verbs"
-permalink: kb/194/Q194394/
+permalink: /kb/194/Q194394/
 ---
 
 ## Q194394: FTP Service Does Not Log All FTP Verbs

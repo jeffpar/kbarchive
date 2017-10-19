@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241385: PRB: MSDN Library Topics Display ActiveX Control Warning"
-permalink: kb/241/Q241385/
+permalink: /kb/241/Q241385/
 ---
 
 ## Q241385: PRB: MSDN Library Topics Display ActiveX Control Warning

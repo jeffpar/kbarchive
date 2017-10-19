@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225471: LU3 Printing: Print Data May Overwrite Previous Line of Data"
-permalink: kb/225/Q225471/
+permalink: /kb/225/Q225471/
 ---
 
 ## Q225471: LU3 Printing: Print Data May Overwrite Previous Line of Data

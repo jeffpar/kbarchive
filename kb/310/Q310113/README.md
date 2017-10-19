@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310113: Ldap Query Following a Simple Bind May Not Work"
-permalink: kb/310/Q310113/
+permalink: /kb/310/Q310113/
 ---
 
 ## Q310113: Ldap Query Following a Simple Bind May Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221701: FIX: MouseUp Event Does Not Fire on Contained Objects"
-permalink: kb/221/Q221701/
+permalink: /kb/221/Q221701/
 ---
 
 ## Q221701: FIX: MouseUp Event Does Not Fire on Contained Objects

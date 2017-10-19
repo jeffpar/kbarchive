@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150942: PRB: ISAM Tuning Information Not Read From VB.INI"
-permalink: kb/150/Q150942/
+permalink: /kb/150/Q150942/
 ---
 
 ## Q150942: PRB: ISAM Tuning Information Not Read From VB.INI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139614: Microsoft Project Hangs Under Windows NT 3.51"
-permalink: kb/139/Q139614/
+permalink: /kb/139/Q139614/
 ---
 
 ## Q139614: Microsoft Project Hangs Under Windows NT 3.51

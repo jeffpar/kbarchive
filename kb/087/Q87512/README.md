@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87512: Intellifont Problems with QEMM, Adobe Type Manager, EOF Marker"
-permalink: kb/087/Q87512/
+permalink: /kb/087/Q87512/
 ---
 
 ## Q87512: Intellifont Problems with QEMM, Adobe Type Manager, EOF Marker

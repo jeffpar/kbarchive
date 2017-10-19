@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119358: Mac Hyp: Calling MS Mail XFCN from Microsoft FoxPro"
-permalink: kb/119/Q119358/
+permalink: /kb/119/Q119358/
 ---
 
 ## Q119358: Mac Hyp: Calling MS Mail XFCN from Microsoft FoxPro

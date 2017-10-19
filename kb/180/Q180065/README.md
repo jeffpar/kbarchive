@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180065: Err Msg: Error 709: Try Changing Your Password Again. If You..."
-permalink: kb/180/Q180065/
+permalink: /kb/180/Q180065/
 ---
 
 ## Q180065: Err Msg: Error 709: Try Changing Your Password Again. If You...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159004: Using the Hard Disk Drive Low Power Mode"
-permalink: kb/159/Q159004/
+permalink: /kb/159/Q159004/
 ---
 
 ## Q159004: Using the Hard Disk Drive Low Power Mode

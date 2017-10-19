@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149341: FIX: CreatePointFont() May Create Wrong Size Font in Preview"
-permalink: kb/149/Q149341/
+permalink: /kb/149/Q149341/
 ---
 
 ## Q149341: FIX: CreatePointFont() May Create Wrong Size Font in Preview

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22131: INFO: Using a Different Hardware Font Instead of the Default"
-permalink: kb/022/Q22131/
+permalink: /kb/022/Q22131/
 ---
 
 ## Q22131: INFO: Using a Different Hardware Font Instead of the Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132698: Make Wallpaper Doesn't Function: Saved with 0 Byte File Size"
-permalink: kb/132/Q132698/
+permalink: /kb/132/Q132698/
 ---
 
 ## Q132698: Make Wallpaper Doesn't Function: Saved with 0 Byte File Size

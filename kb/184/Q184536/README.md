@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184536: XADM: Removing E-mail Addresses Through Directory Import"
-permalink: kb/184/Q184536/
+permalink: /kb/184/Q184536/
 ---
 
 ## Q184536: XADM: Removing E-mail Addresses Through Directory Import

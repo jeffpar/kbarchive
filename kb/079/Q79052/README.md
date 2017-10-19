@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79052: Reference to NetAsyncSwithching in NETWORKS.TXT"
-permalink: kb/079/Q79052/
+permalink: /kb/079/Q79052/
 ---
 
 ## Q79052: Reference to NetAsyncSwithching in NETWORKS.TXT

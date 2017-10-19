@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245020: BUG: Bus Error When Copying and Pasting In Browse Window"
-permalink: kb/245/Q245020/
+permalink: /kb/245/Q245020/
 ---
 
 ## Q245020: BUG: Bus Error When Copying and Pasting In Browse Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290624: HOWTO: Configure MSDTC in a Windows 2000 Cluster Environment"
-permalink: kb/290/Q290624/
+permalink: /kb/290/Q290624/
 ---
 
 ## Q290624: HOWTO: Configure MSDTC in a Windows 2000 Cluster Environment

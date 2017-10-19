@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124402: Calling a User-Defined Function (UDF) from SQL SELECT"
-permalink: kb/124/Q124402/
+permalink: /kb/124/Q124402/
 ---
 
 ## Q124402: Calling a User-Defined Function (UDF) from SQL SELECT

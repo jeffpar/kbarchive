@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153820: ADT95: &quot;Setup Error 992&quot; Installing ADT Application"
-permalink: kb/153/Q153820/
+permalink: /kb/153/Q153820/
 ---
 
 ## Q153820: ADT95: &quot;Setup Error 992&quot; Installing ADT Application

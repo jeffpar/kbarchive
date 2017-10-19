@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131596: MAC ANCIENT LANDS: Movies Look Hazy and Washed Out"
-permalink: kb/131/Q131596/
+permalink: /kb/131/Q131596/
 ---
 
 ## Q131596: MAC ANCIENT LANDS: Movies Look Hazy and Washed Out

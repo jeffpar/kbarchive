@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182814: XADM: Err Msg: System Could Not Find the Path Specified"
-permalink: kb/182/Q182814/
+permalink: /kb/182/Q182814/
 ---
 
 ## Q182814: XADM: Err Msg: System Could Not Find the Path Specified

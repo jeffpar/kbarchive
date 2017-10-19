@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250488: Problems with DNS Zone Transfers that Included Unicode Character"
-permalink: kb/250/Q250488/
+permalink: /kb/250/Q250488/
 ---
 
 ## Q250488: Problems with DNS Zone Transfers that Included Unicode Character

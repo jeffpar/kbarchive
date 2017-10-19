@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239661: XIMS: Err Mss: The Service Configuration Dynamic Link Library..."
-permalink: kb/239/Q239661/
+permalink: /kb/239/Q239661/
 ---
 
 ## Q239661: XIMS: Err Mss: The Service Configuration Dynamic Link Library...

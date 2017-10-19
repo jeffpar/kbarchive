@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67709: System Bitmaps Available Through LoadBitmap() Data"
-permalink: kb/067/Q67709/
+permalink: /kb/067/Q67709/
 ---
 
 ## Q67709: System Bitmaps Available Through LoadBitmap() Data

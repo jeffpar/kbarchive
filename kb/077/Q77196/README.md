@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77196: When Windows 3.0 Setup Installs HIMEM.SYS"
-permalink: kb/077/Q77196/
+permalink: /kb/077/Q77196/
 ---
 
 ## Q77196: When Windows 3.0 Setup Installs HIMEM.SYS

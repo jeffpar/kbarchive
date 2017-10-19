@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173934: WD97: No Outlook Address Book File to Open on Hard Disk Drive"
-permalink: kb/173/Q173934/
+permalink: /kb/173/Q173934/
 ---
 
 ## Q173934: WD97: No Outlook Address Book File to Open on Hard Disk Drive

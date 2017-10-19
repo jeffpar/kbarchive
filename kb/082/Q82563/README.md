@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82563: Windows Hangs on ALT+TAB with Logitech Mouse Driver"
-permalink: kb/082/Q82563/
+permalink: /kb/082/Q82563/
 ---
 
 ## Q82563: Windows Hangs on ALT+TAB with Logitech Mouse Driver

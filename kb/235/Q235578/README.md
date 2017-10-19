@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235578: You Can Now to Add Static IP Addresses to the SNA Service Table"
-permalink: kb/235/Q235578/
+permalink: /kb/235/Q235578/
 ---
 
 ## Q235578: You Can Now to Add Static IP Addresses to the SNA Service Table

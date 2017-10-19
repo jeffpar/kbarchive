@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183157: Plotter Forms Missing after Adding Plotter Driver"
-permalink: kb/183/Q183157/
+permalink: /kb/183/Q183157/
 ---
 
 ## Q183157: Plotter Forms Missing after Adding Plotter Driver

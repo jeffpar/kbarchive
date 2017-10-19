@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147040: PC Win: Large Recipient List Stops Download of New Mail"
-permalink: kb/147/Q147040/
+permalink: /kb/147/Q147040/
 ---
 
 ## Q147040: PC Win: Large Recipient List Stops Download of New Mail

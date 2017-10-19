@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95743: Recovering Windows 3.1 After Installing WFWG"
-permalink: kb/095/Q95743/
+permalink: /kb/095/Q95743/
 ---
 
 ## Q95743: Recovering Windows 3.1 After Installing WFWG

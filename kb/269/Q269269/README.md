@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269269: How to Use the TakeOwn Utility to Manage Shares in Windows NT 4"
-permalink: kb/269/Q269269/
+permalink: /kb/269/Q269269/
 ---
 
 ## Q269269: How to Use the TakeOwn Utility to Manage Shares in Windows NT 4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137962: HOWTO: Have a Disabled Picture Command Button Look Enabled"
-permalink: kb/137/Q137962/
+permalink: /kb/137/Q137962/
 ---
 
 ## Q137962: HOWTO: Have a Disabled Picture Command Button Look Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157191: DOCERR: GotFocus Event Documented Incorrectly in VFP Help"
-permalink: kb/157/Q157191/
+permalink: /kb/157/Q157191/
 ---
 
 ## Q157191: DOCERR: GotFocus Event Documented Incorrectly in VFP Help

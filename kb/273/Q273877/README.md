@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273877: IIS Shuts Down and Restarts for No Apparent Reason"
-permalink: kb/273/Q273877/
+permalink: /kb/273/Q273877/
 ---
 
 ## Q273877: IIS Shuts Down and Restarts for No Apparent Reason

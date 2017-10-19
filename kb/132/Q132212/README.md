@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132212: PC Gen: Sample Code for CMC.DLL &quot;Who Am I&quot;"
-permalink: kb/132/Q132212/
+permalink: /kb/132/Q132212/
 ---
 
 ## Q132212: PC Gen: Sample Code for CMC.DLL &quot;Who Am I&quot;

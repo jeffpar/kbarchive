@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150479: Mac Bookshelf '96-'97: Cannot Change Memory Allocation"
-permalink: kb/150/Q150479/
+permalink: /kb/150/Q150479/
 ---
 
 ## Q150479: Mac Bookshelf '96-'97: Cannot Change Memory Allocation

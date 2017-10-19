@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313984: INFO: Winsock Control Run-Time Error 429 and Scalability"
-permalink: kb/313/Q313984/
+permalink: /kb/313/Q313984/
 ---
 
 ## Q313984: INFO: Winsock Control Run-Time Error 429 and Scalability

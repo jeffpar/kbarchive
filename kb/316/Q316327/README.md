@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316327: IIS: Errmsg: This Server Was Already Configured..."
-permalink: kb/316/Q316327/
+permalink: /kb/316/Q316327/
 ---
 
 ## Q316327: IIS: Errmsg: This Server Was Already Configured...

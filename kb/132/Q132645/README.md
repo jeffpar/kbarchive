@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132645: Setting Up a Printer with Banyan VINES (Real Mode)"
-permalink: kb/132/Q132645/
+permalink: /kb/132/Q132645/
 ---
 
 ## Q132645: Setting Up a Printer with Banyan VINES (Real Mode)

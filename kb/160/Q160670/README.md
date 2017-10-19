@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160670: FPSCR is Not Being Saved Across Thread Context Switches"
-permalink: kb/160/Q160670/
+permalink: /kb/160/Q160670/
 ---
 
 ## Q160670: FPSCR is Not Being Saved Across Thread Context Switches

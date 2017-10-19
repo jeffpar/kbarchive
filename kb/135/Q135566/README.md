@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135566: FIX: GATHER FROM Command Checks Lock Status of Table"
-permalink: kb/135/Q135566/
+permalink: /kb/135/Q135566/
 ---
 
 ## Q135566: FIX: GATHER FROM Command Checks Lock Status of Table

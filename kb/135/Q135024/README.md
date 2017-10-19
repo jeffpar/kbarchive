@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135024: Packard Bell Legend Hard Disk Using MS-DOS Compatibility Mode"
-permalink: kb/135/Q135024/
+permalink: /kb/135/Q135024/
 ---
 
 ## Q135024: Packard Bell Legend Hard Disk Using MS-DOS Compatibility Mode

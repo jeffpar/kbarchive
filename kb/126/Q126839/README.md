@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126839: HOWTO: Create Special Effects in a Grid"
-permalink: kb/126/Q126839/
+permalink: /kb/126/Q126839/
 ---
 
 ## Q126839: HOWTO: Create Special Effects in a Grid

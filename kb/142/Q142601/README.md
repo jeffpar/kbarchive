@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142601: ADT2: How to Supply a Custom System Database with an ADT App"
-permalink: kb/142/Q142601/
+permalink: /kb/142/Q142601/
 ---
 
 ## Q142601: ADT2: How to Supply a Custom System Database with an ADT App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280309: PRB: _VFP.DataToClip() Only Reads DataSession 1"
-permalink: kb/280/Q280309/
+permalink: /kb/280/Q280309/
 ---
 
 ## Q280309: PRB: _VFP.DataToClip() Only Reads DataSession 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90911: FIX: CodeView Version 4.0 Redirects STDPRN to the Screen"
-permalink: kb/090/Q90911/
+permalink: /kb/090/Q90911/
 ---
 
 ## Q90911: FIX: CodeView Version 4.0 Redirects STDPRN to the Screen

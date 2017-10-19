@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149459: MS Exchange Tools Menu Does Not Work or Mouse Hangs"
-permalink: kb/149/Q149459/
+permalink: /kb/149/Q149459/
 ---
 
 ## Q149459: MS Exchange Tools Menu Does Not Work or Mouse Hangs

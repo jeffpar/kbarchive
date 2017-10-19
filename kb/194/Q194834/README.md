@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194834: List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 2)"
-permalink: kb/194/Q194834/
+permalink: /kb/194/Q194834/
 ---
 
 ## Q194834: List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 2)

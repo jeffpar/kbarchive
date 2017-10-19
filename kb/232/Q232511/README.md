@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232511: Client Dialup, Authentication, Browsing Using TCPIP, IPX/SPX"
-permalink: kb/232/Q232511/
+permalink: /kb/232/Q232511/
 ---
 
 ## Q232511: Client Dialup, Authentication, Browsing Using TCPIP, IPX/SPX

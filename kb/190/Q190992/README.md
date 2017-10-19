@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190992: BUG: Mouse Events Do Not Fire From ADODC"
-permalink: kb/190/Q190992/
+permalink: /kb/190/Q190992/
 ---
 
 ## Q190992: BUG: Mouse Events Do Not Fire From ADODC

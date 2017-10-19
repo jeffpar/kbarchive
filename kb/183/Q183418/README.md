@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183418: BUG: Build Succeeds Despite Invalid Custom Build Command"
-permalink: kb/183/Q183418/
+permalink: /kb/183/Q183418/
 ---
 
 ## Q183418: BUG: Build Succeeds Despite Invalid Custom Build Command

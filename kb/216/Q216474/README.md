@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216474: XFOR: Delivery Receipts, OV/VM (PROFS) Connector &amp; the Internet"
-permalink: kb/216/Q216474/
+permalink: /kb/216/Q216474/
 ---
 
 ## Q216474: XFOR: Delivery Receipts, OV/VM (PROFS) Connector &amp; the Internet

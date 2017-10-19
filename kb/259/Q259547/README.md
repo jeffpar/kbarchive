@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259547: PRB: BROWSE LAST Affected by SET COMPATIBLE"
-permalink: kb/259/Q259547/
+permalink: /kb/259/Q259547/
 ---
 
 ## Q259547: PRB: BROWSE LAST Affected by SET COMPATIBLE

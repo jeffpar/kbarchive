@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192594: XFOR: Message with Empty From: Field Stuck in MTS_OUT Queue"
-permalink: kb/192/Q192594/
+permalink: /kb/192/Q192594/
 ---
 
 ## Q192594: XFOR: Message with Empty From: Field Stuck in MTS_OUT Queue

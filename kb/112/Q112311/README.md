@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112311: FILE: Fw1003.exe FoxPro for Windows 2.5x Resource Kit"
-permalink: kb/112/Q112311/
+permalink: /kb/112/Q112311/
 ---
 
 ## Q112311: FILE: Fw1003.exe FoxPro for Windows 2.5x Resource Kit

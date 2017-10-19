@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127960: PC WRmt: Err Msg: Mail Driver Could Not Be Activated..."
-permalink: kb/127/Q127960/
+permalink: /kb/127/Q127960/
 ---
 
 ## Q127960: PC WRmt: Err Msg: Mail Driver Could Not Be Activated...

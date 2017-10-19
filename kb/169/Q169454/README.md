@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169454: Cannot See All FPNW Files from Windows 95 Explorer"
-permalink: kb/169/Q169454/
+permalink: /kb/169/Q169454/
 ---
 
 ## Q169454: Cannot See All FPNW Files from Windows 95 Explorer

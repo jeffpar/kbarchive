@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187739: Edits to Virtual Directories are Not Reflected in the Metabase"
-permalink: kb/187/Q187739/
+permalink: /kb/187/Q187739/
 ---
 
 ## Q187739: Edits to Virtual Directories are Not Reflected in the Metabase

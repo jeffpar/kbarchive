@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156935: Writer 2: Email Packages Contain Creative Writer 2 Viewer"
-permalink: kb/156/Q156935/
+permalink: /kb/156/Q156935/
 ---
 
 ## Q156935: Writer 2: Email Packages Contain Creative Writer 2 Viewer

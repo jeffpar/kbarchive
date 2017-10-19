@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163331: Cirrus Logic Video Causes Event ID 21 on MIPS Computers"
-permalink: kb/163/Q163331/
+permalink: /kb/163/Q163331/
 ---
 
 ## Q163331: Cirrus Logic Video Causes Event ID 21 on MIPS Computers

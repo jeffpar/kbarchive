@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156051: PRB: Messages Not Received by Dynamically Created Control"
-permalink: kb/156/Q156051/
+permalink: /kb/156/Q156051/
 ---
 
 ## Q156051: PRB: Messages Not Received by Dynamically Created Control

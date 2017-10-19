@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170921: Scaling Windows NT Server Storage and Fault Tolerance"
-permalink: kb/170/Q170921/
+permalink: /kb/170/Q170921/
 ---
 
 ## Q170921: Scaling Windows NT Server Storage and Fault Tolerance

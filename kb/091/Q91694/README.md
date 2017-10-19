@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91694: WFWG Err Msg: Protocol Manager Reported an Incomplete Binding"
-permalink: kb/091/Q91694/
+permalink: /kb/091/Q91694/
 ---
 
 ## Q91694: WFWG Err Msg: Protocol Manager Reported an Incomplete Binding

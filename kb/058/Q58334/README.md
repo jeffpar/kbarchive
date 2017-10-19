@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58334: Windows 3.0 WIN.INI [ports] Section"
-permalink: kb/058/Q58334/
+title: "Q58334: Windows 3.0 WIN.INI &#91;ports&#93; Section"
+permalink: /kb/058/Q58334/
 ---
 
-## Q58334: Windows 3.0 WIN.INI [ports] Section
+## Q58334: Windows 3.0 WIN.INI &#91;ports&#93; Section
 
 	Article: Q58334
 	Product(s): Microsoft Windows 95.x Retail Product

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138675: How to Create Raised Text Boxes in Visual FoxPro"
-permalink: kb/138/Q138675/
+permalink: /kb/138/Q138675/
 ---
 
 ## Q138675: How to Create Raised Text Boxes in Visual FoxPro

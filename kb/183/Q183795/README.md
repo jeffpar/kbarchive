@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183795: XCLN: Err Msg Opening Read Receipt After Upgrading NT Server"
-permalink: kb/183/Q183795/
+permalink: /kb/183/Q183795/
 ---
 
 ## Q183795: XCLN: Err Msg Opening Read Receipt After Upgrading NT Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162528: WD97: Returning Object Counts for Parts of a Document"
-permalink: kb/162/Q162528/
+permalink: /kb/162/Q162528/
 ---
 
 ## Q162528: WD97: Returning Object Counts for Parts of a Document

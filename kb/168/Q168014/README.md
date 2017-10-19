@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168014: Corrupt DCASYNC.SYS File in SNA 2.11 SP2 and 3.0 SP1"
-permalink: kb/168/Q168014/
+permalink: /kb/168/Q168014/
 ---
 
 ## Q168014: Corrupt DCASYNC.SYS File in SNA 2.11 SP2 and 3.0 SP1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134359: Starting Media Player Plays Audio CD"
-permalink: kb/134/Q134359/
+permalink: /kb/134/Q134359/
 ---
 
 ## Q134359: Starting Media Player Plays Audio CD

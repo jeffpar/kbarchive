@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164928: Not All Objects Are Displayed When Browsing NDS Trees"
-permalink: kb/164/Q164928/
+permalink: /kb/164/Q164928/
 ---
 
 ## Q164928: Not All Objects Are Displayed When Browsing NDS Trees

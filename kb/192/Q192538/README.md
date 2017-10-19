@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192538: DOC: Cursor Functions Not Included in Winuser.h for Windows CE"
-permalink: kb/192/Q192538/
+permalink: /kb/192/Q192538/
 ---
 
 ## Q192538: DOC: Cursor Functions Not Included in Winuser.h for Windows CE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243015: INFO: Migration DLLs Target Only Windows 95/98 Applications"
-permalink: kb/243/Q243015/
+permalink: /kb/243/Q243015/
 ---
 
 ## Q243015: INFO: Migration DLLs Target Only Windows 95/98 Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287888: XADM: Corrupted Message-ID Text"
-permalink: kb/287/Q287888/
+permalink: /kb/287/Q287888/
 ---
 
 ## Q287888: XADM: Corrupted Message-ID Text

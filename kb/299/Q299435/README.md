@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299435: Cannot Run SMS Service Manager After You Apply a Hotfix"
-permalink: kb/299/Q299435/
+permalink: /kb/299/Q299435/
 ---
 
 ## Q299435: Cannot Run SMS Service Manager After You Apply a Hotfix

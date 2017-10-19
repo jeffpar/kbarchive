@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81770: Windows 3.1 Setup May Not Detect Networks Not in the Path"
-permalink: kb/081/Q81770/
+permalink: /kb/081/Q81770/
 ---
 
 ## Q81770: Windows 3.1 Setup May Not Detect Networks Not in the Path

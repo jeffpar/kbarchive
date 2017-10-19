@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98465: Word Prompts For Bookshelf CD When Starting"
-permalink: kb/098/Q98465/
+permalink: /kb/098/Q98465/
 ---
 
 ## Q98465: Word Prompts For Bookshelf CD When Starting

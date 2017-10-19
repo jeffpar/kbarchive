@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123148: FIX: Problem w/Traditional Chinese Windows 3.1 DBCS File Names"
-permalink: kb/123/Q123148/
+permalink: /kb/123/Q123148/
 ---
 
 ## Q123148: FIX: Problem w/Traditional Chinese Windows 3.1 DBCS File Names

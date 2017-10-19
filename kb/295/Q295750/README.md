@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295750: Error Message: Unable to Set Default Formats and Patterns"
-permalink: kb/295/Q295750/
+permalink: /kb/295/Q295750/
 ---
 
 ## Q295750: Error Message: Unable to Set Default Formats and Patterns

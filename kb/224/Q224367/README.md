@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224367: Err Msg: An Essential Component for Full Screen Video Is Missing"
-permalink: kb/224/Q224367/
+permalink: /kb/224/Q224367/
 ---
 
 ## Q224367: Err Msg: An Essential Component for Full Screen Video Is Missing

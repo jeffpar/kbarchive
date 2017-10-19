@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139694: Description and Availability of Wizards in Visual FoxPro"
-permalink: kb/139/Q139694/
+permalink: /kb/139/Q139694/
 ---
 
 ## Q139694: Description and Availability of Wizards in Visual FoxPro

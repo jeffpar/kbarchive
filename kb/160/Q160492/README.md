@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160492: Administrator Privilege Required to Administer DNS"
-permalink: kb/160/Q160492/
+permalink: /kb/160/Q160492/
 ---
 
 ## Q160492: Administrator Privilege Required to Administer DNS

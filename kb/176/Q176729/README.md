@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176729: PRB: Menus Behave Differently in OS 8"
-permalink: kb/176/Q176729/
+permalink: /kb/176/Q176729/
 ---
 
 ## Q176729: PRB: Menus Behave Differently in OS 8

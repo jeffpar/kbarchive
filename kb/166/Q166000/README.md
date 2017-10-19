@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166000: Landscape Orientation Not Available for Generic/Text Only Driver"
-permalink: kb/166/Q166000/
+permalink: /kb/166/Q166000/
 ---
 
 ## Q166000: Landscape Orientation Not Available for Generic/Text Only Driver

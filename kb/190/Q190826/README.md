@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190826: Windows 95 Starts Only in Safe Mode After Installing Sound Card"
-permalink: kb/190/Q190826/
+permalink: /kb/190/Q190826/
 ---
 
 ## Q190826: Windows 95 Starts Only in Safe Mode After Installing Sound Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153972: Err Msg: Error 1:There Is an Internal Error on the IRDA Device"
-permalink: kb/153/Q153972/
+permalink: /kb/153/Q153972/
 ---
 
 ## Q153972: Err Msg: Error 1:There Is an Internal Error on the IRDA Device

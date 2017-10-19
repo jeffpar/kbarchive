@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115197: BUG: Double-Clicking .VUE File in Finder Won't Restore View"
-permalink: kb/115/Q115197/
+permalink: /kb/115/Q115197/
 ---
 
 ## Q115197: BUG: Double-Clicking .VUE File in Finder Won't Restore View

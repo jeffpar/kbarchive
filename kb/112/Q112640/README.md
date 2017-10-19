@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112640: Odvarlb.exe Pages Down in Owner-Draw Variable List Box"
-permalink: kb/112/Q112640/
+permalink: /kb/112/Q112640/
 ---
 
 ## Q112640: Odvarlb.exe Pages Down in Owner-Draw Variable List Box

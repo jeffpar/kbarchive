@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158471: PRB: 'File not found' When Attempting Command Line Check In"
-permalink: kb/158/Q158471/
+permalink: /kb/158/Q158471/
 ---
 
 ## Q158471: PRB: 'File not found' When Attempting Command Line Check In

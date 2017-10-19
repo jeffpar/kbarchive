@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252893: XCLN: Error Message When Opening an Outlook Calendar Folder"
-permalink: kb/252/Q252893/
+permalink: /kb/252/Q252893/
 ---
 
 ## Q252893: XCLN: Error Message When Opening an Outlook Calendar Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126336: Works 3.0: Problems Printing to HP DeskJet Drivers 4.x and 5.x"
-permalink: kb/126/Q126336/
+permalink: /kb/126/Q126336/
 ---
 
 ## Q126336: Works 3.0: Problems Printing to HP DeskJet Drivers 4.x and 5.x

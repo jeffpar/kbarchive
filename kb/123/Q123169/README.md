@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123169: WINS Event Log IDs 4096 - 4134 (Informational Messages)"
-permalink: kb/123/Q123169/
+permalink: /kb/123/Q123169/
 ---
 
 ## Q123169: WINS Event Log IDs 4096 - 4134 (Informational Messages)

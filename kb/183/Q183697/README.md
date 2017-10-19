@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183697: WD97: Table Border Print Problems When Next to Frame or Text Box"
-permalink: kb/183/Q183697/
+permalink: /kb/183/Q183697/
 ---
 
 ## Q183697: WD97: Table Border Print Problems When Next to Frame or Text Box

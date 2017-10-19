@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238734: How to Disable Microsoft CHAP Authentication"
-permalink: kb/238/Q238734/
+permalink: /kb/238/Q238734/
 ---
 
 ## Q238734: How to Disable Microsoft CHAP Authentication

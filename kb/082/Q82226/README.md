@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82226: Minor Distortions Using TrueType Fonts"
-permalink: kb/082/Q82226/
+permalink: /kb/082/Q82226/
 ---
 
 ## Q82226: Minor Distortions Using TrueType Fonts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234661: Cannot Log On if Desktop Background File Is on a Floppy Disk"
-permalink: kb/234/Q234661/
+permalink: /kb/234/Q234661/
 ---
 
 ## Q234661: Cannot Log On if Desktop Background File Is on a Floppy Disk

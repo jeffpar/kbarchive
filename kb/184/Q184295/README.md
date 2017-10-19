@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184295: Compaq System Management Driver 2.05B in Service Pack 4"
-permalink: kb/184/Q184295/
+permalink: /kb/184/Q184295/
 ---
 
 ## Q184295: Compaq System Management Driver 2.05B in Service Pack 4

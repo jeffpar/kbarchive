@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216099: BUG: Developer Studio Stops Responding"
-permalink: kb/216/Q216099/
+permalink: /kb/216/Q216099/
 ---
 
 ## Q216099: BUG: Developer Studio Stops Responding

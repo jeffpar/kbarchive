@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257543: FIX: MouseDown Event Fires Unexpectedly on Modal Form"
-permalink: kb/257/Q257543/
+permalink: /kb/257/Q257543/
 ---
 
 ## Q257543: FIX: MouseDown Event Fires Unexpectedly on Modal Form

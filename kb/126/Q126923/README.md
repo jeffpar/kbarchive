@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126923: PC DOS: How to Use CONVERT.EXE"
-permalink: kb/126/Q126923/
+permalink: /kb/126/Q126923/
 ---
 
 ## Q126923: PC DOS: How to Use CONVERT.EXE

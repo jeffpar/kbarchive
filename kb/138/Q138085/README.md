@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138085: Appends Fail on Sony SDT 5000 DAT Drive"
-permalink: kb/138/Q138085/
+permalink: /kb/138/Q138085/
 ---
 
 ## Q138085: Appends Fail on Sony SDT 5000 DAT Drive

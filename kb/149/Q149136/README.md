@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149136: BUG: FOR1252 Error USE of Module in Internal Module Procedure"
-permalink: kb/149/Q149136/
+permalink: /kb/149/Q149136/
 ---
 
 ## Q149136: BUG: FOR1252 Error USE of Module in Internal Module Procedure

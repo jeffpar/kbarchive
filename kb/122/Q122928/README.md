@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122928: Description of the WINSOCK.DLL File"
-permalink: kb/122/Q122928/
+permalink: /kb/122/Q122928/
 ---
 
 ## Q122928: Description of the WINSOCK.DLL File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197722: XCLN: Outlook Additional Appointments Icon Doesn't Work"
-permalink: kb/197/Q197722/
+permalink: /kb/197/Q197722/
 ---
 
 ## Q197722: XCLN: Outlook Additional Appointments Icon Doesn't Work

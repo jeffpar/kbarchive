@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143285: How to Use Format and InputMask to Format Data"
-permalink: kb/143/Q143285/
+permalink: /kb/143/Q143285/
 ---
 
 ## Q143285: How to Use Format and InputMask to Format Data

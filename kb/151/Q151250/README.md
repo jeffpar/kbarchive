@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151250: SMS Tracer Filter Help Button Does Nothing"
-permalink: kb/151/Q151250/
+permalink: /kb/151/Q151250/
 ---
 
 ## Q151250: SMS Tracer Filter Help Button Does Nothing

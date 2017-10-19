@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182887: XCLN: Error Message Installing E-forms on Non-Intel Computer"
-permalink: kb/182/Q182887/
+permalink: /kb/182/Q182887/
 ---
 
 ## Q182887: XCLN: Error Message Installing E-forms on Non-Intel Computer

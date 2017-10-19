@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128517: MS-DOS-Based Game Plays No Sound or Shuts Down"
-permalink: kb/128/Q128517/
+permalink: /kb/128/Q128517/
 ---
 
 ## Q128517: MS-DOS-Based Game Plays No Sound or Shuts Down

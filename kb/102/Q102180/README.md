@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102180: VB MDI Applications Missing Menu Bar with Windows NT"
-permalink: kb/102/Q102180/
+permalink: /kb/102/Q102180/
 ---
 
 ## Q102180: VB MDI Applications Missing Menu Bar with Windows NT

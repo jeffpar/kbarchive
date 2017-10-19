@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312297: Cannot Update Cached Forms if You Are Not an Administrator"
-permalink: kb/312/Q312297/
+permalink: /kb/312/Q312297/
 ---
 
 ## Q312297: Cannot Update Cached Forms if You Are Not an Administrator

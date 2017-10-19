@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156681: Remote Access Errors 657 and 659 with Dial-Up Networking"
-permalink: kb/156/Q156681/
+permalink: /kb/156/Q156681/
 ---
 
 ## Q156681: Remote Access Errors 657 and 659 with Dial-Up Networking

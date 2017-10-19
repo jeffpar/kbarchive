@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171318: HOWTO: Bind Data Controls Across Multiple Forms"
-permalink: kb/171/Q171318/
+permalink: /kb/171/Q171318/
 ---
 
 ## Q171318: HOWTO: Bind Data Controls Across Multiple Forms

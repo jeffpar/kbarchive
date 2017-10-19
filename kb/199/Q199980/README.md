@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199980: XFOR: Err Msg: Could not Migrate MMF File for Account"
-permalink: kb/199/Q199980/
+permalink: /kb/199/Q199980/
 ---
 
 ## Q199980: XFOR: Err Msg: Could not Migrate MMF File for Account

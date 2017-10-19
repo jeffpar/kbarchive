@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66846: ASD: Wind/Speed Indicator on 747 Enhanced Panel"
-permalink: kb/066/Q66846/
+permalink: /kb/066/Q66846/
 ---
 
 ## Q66846: ASD: Wind/Speed Indicator on 747 Enhanced Panel

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255037: XADM: Information Store Stops Responding with Event ID 1220"
-permalink: kb/255/Q255037/
+permalink: /kb/255/Q255037/
 ---
 
 ## Q255037: XADM: Information Store Stops Responding with Event ID 1220

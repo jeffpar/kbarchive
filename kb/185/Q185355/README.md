@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185355: Printers Folder Displays Printer Error When Printer Is Busy"
-permalink: kb/185/Q185355/
+permalink: /kb/185/Q185355/
 ---
 
 ## Q185355: Printers Folder Displays Printer Error When Printer Is Busy

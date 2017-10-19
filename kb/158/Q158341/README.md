@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158341: Applying Windows NT 4.0 Service Pack 128-Bit Encryption"
-permalink: kb/158/Q158341/
+permalink: /kb/158/Q158341/
 ---
 
 ## Q158341: Applying Windows NT 4.0 Service Pack 128-Bit Encryption

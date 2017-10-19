@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315600: Asheron's Call: Err Msg: One of Your Characters Is Still in..."
-permalink: kb/315/Q315600/
+permalink: /kb/315/Q315600/
 ---
 
 ## Q315600: Asheron's Call: Err Msg: One of Your Characters Is Still in...

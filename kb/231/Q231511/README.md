@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231511: MapPoint 2000: Currency Data Is Not Sorted Properly"
-permalink: kb/231/Q231511/
+permalink: /kb/231/Q231511/
 ---
 
 ## Q231511: MapPoint 2000: Currency Data Is Not Sorted Properly

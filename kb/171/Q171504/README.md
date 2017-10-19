@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171504: FIX: Problems Setting PropertyPage Caption Property"
-permalink: kb/171/Q171504/
+permalink: /kb/171/Q171504/
 ---
 
 ## Q171504: FIX: Problems Setting PropertyPage Caption Property

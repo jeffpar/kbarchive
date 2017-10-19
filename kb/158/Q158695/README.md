@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158695: WD97: How to Use the Name...As Statement to Rename Files"
-permalink: kb/158/Q158695/
+permalink: /kb/158/Q158695/
 ---
 
 ## Q158695: WD97: How to Use the Name...As Statement to Rename Files

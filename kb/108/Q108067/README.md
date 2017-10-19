@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108067: PC DirSync: Requestor Inactive for Longer Than Update Window"
-permalink: kb/108/Q108067/
+permalink: /kb/108/Q108067/
 ---
 
 ## Q108067: PC DirSync: Requestor Inactive for Longer Than Update Window

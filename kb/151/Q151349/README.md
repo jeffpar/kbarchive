@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151349: FP: No Server on Port 80 After Laptop Computer Has Been Idle"
-permalink: kb/151/Q151349/
+permalink: /kb/151/Q151349/
 ---
 
 ## Q151349: FP: No Server on Port 80 After Laptop Computer Has Been Idle

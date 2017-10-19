@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158499: WD97: Cannot Use ScanProt with Word 97"
-permalink: kb/158/Q158499/
+permalink: /kb/158/Q158499/
 ---
 
 ## Q158499: WD97: Cannot Use ScanProt with Word 97

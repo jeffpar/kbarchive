@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298836: XIMS: Exchange Server 5.5 Generates Error Messages"
-permalink: kb/298/Q298836/
+permalink: /kb/298/Q298836/
 ---
 
 ## Q298836: XIMS: Exchange Server 5.5 Generates Error Messages

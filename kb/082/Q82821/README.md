@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82821: Registration Info Editor (REGEDIT) Command-Line Switches"
-permalink: kb/082/Q82821/
+permalink: /kb/082/Q82821/
 ---
 
 ## Q82821: Registration Info Editor (REGEDIT) Command-Line Switches

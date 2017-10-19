@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106030: How to Print Multiple Copies of the Same Label"
-permalink: kb/106/Q106030/
+permalink: /kb/106/Q106030/
 ---
 
 ## Q106030: How to Print Multiple Copies of the Same Label

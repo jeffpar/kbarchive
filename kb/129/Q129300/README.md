@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129300: RAS Support for Security Dynamics ACE/Server"
-permalink: kb/129/Q129300/
+permalink: /kb/129/Q129300/
 ---
 
 ## Q129300: RAS Support for Security Dynamics ACE/Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245700: Software Inventory Does Not Report All Files"
-permalink: kb/245/Q245700/
+permalink: /kb/245/Q245700/
 ---
 
 ## Q245700: Software Inventory Does Not Report All Files

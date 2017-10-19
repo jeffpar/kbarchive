@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79526: Quicken 5.00 PIFs Require Modification"
-permalink: kb/079/Q79526/
+permalink: /kb/079/Q79526/
 ---
 
 ## Q79526: Quicken 5.00 PIFs Require Modification

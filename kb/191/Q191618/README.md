@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191618: Urban Assault: Computer Hangs at the End of Movies"
-permalink: kb/191/Q191618/
+permalink: /kb/191/Q191618/
 ---
 
 ## Q191618: Urban Assault: Computer Hangs at the End of Movies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274499: Error Message Is Generated When Starting Account Joiner Utility"
-permalink: kb/274/Q274499/
+permalink: /kb/274/Q274499/
 ---
 
 ## Q274499: Error Message Is Generated When Starting Account Joiner Utility

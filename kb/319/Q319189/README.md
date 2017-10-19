@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319189: SMS: Distribution Manager Continuously Processes .pkg Files"
-permalink: kb/319/Q319189/
+permalink: /kb/319/Q319189/
 ---
 
 ## Q319189: SMS: Distribution Manager Continuously Processes .pkg Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136055: PC Ext: Windows 95 Inbox to Use an External Delivery Agent"
-permalink: kb/136/Q136055/
+permalink: /kb/136/Q136055/
 ---
 
 ## Q136055: PC Ext: Windows 95 Inbox to Use an External Delivery Agent

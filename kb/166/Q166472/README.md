@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166472: Using Fonts in ATL Controls with NiceText.exe"
-permalink: kb/166/Q166472/
+permalink: /kb/166/Q166472/
 ---
 
 ## Q166472: Using Fonts in ATL Controls with NiceText.exe

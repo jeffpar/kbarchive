@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198855: Certificate Phone Number Field Does Not Accept Letters"
-permalink: kb/198/Q198855/
+permalink: /kb/198/Q198855/
 ---
 
 ## Q198855: Certificate Phone Number Field Does Not Accept Letters

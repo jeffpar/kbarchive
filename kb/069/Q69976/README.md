@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69976: Windows Hangs with Fast Tech Hard Drive Controller #1050"
-permalink: kb/069/Q69976/
+permalink: /kb/069/Q69976/
 ---
 
 ## Q69976: Windows Hangs with Fast Tech Hard Drive Controller #1050

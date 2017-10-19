@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151309: Maintenance Manager Copies Files to Root of NetWare Servers"
-permalink: kb/151/Q151309/
+permalink: /kb/151/Q151309/
 ---
 
 ## Q151309: Maintenance Manager Copies Files to Root of NetWare Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199964: XCLN: Err Msg: The Delegate Page Is Not Available. Unable to Acc"
-permalink: kb/199/Q199964/
+permalink: /kb/199/Q199964/
 ---
 
 ## Q199964: XCLN: Err Msg: The Delegate Page Is Not Available. Unable to Acc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172473: Disk Defragmenter or ScanDisk Loops Continuously"
-permalink: kb/172/Q172473/
+permalink: /kb/172/Q172473/
 ---
 
 ## Q172473: Disk Defragmenter or ScanDisk Loops Continuously

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152700: Koi and the Kola Nuts: Minimum System Requirements"
-permalink: kb/152/Q152700/
+permalink: /kb/152/Q152700/
 ---
 
 ## Q152700: Koi and the Kola Nuts: Minimum System Requirements

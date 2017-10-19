@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157182: FPNW Causes STOP 0x50 When Connection Is Closed Twice"
-permalink: kb/157/Q157182/
+permalink: /kb/157/Q157182/
 ---
 
 ## Q157182: FPNW Causes STOP 0x50 When Connection Is Closed Twice

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126296: OEM ATI Drivers Available for Windows NT 3.5"
-permalink: kb/126/Q126296/
+permalink: /kb/126/Q126296/
 ---
 
 ## Q126296: OEM ATI Drivers Available for Windows NT 3.5

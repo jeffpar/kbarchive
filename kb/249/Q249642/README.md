@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249642: Golf 1999 Error Message: Run Time Error '11' Division by Zero"
-permalink: kb/249/Q249642/
+permalink: /kb/249/Q249642/
 ---
 
 ## Q249642: Golf 1999 Error Message: Run Time Error '11' Division by Zero

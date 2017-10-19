@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215467: SMS: Delays When Starting SMS Service Manager w/ Multiple Sites"
-permalink: kb/215/Q215467/
+permalink: /kb/215/Q215467/
 ---
 
 ## Q215467: SMS: Delays When Starting SMS Service Manager w/ Multiple Sites

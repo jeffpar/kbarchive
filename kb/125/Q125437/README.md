@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125437: TCP/IP-32 Winsock calls return WSAEINPROGRESS"
-permalink: kb/125/Q125437/
+permalink: /kb/125/Q125437/
 ---
 
 ## Q125437: TCP/IP-32 Winsock calls return WSAEINPROGRESS

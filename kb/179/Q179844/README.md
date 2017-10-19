@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179844: XCLN: Client for Macintosh Release Notes, Version 5"
-permalink: kb/179/Q179844/
+permalink: /kb/179/Q179844/
 ---
 
 ## Q179844: XCLN: Client for Macintosh Release Notes, Version 5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156418: SMS: Standalone Servers Report to Site Server Domain"
-permalink: kb/156/Q156418/
+permalink: /kb/156/Q156418/
 ---
 
 ## Q156418: SMS: Standalone Servers Report to Site Server Domain

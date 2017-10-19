@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246837: XWEB: OWA Can't Display Previous Month's Free and Busy Info"
-permalink: kb/246/Q246837/
+permalink: /kb/246/Q246837/
 ---
 
 ## Q246837: XWEB: OWA Can't Display Previous Month's Free and Busy Info

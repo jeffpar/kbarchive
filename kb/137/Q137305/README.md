@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137305: SMS Remote Control: Unavailable Controls Have Blue Backgrounds"
-permalink: kb/137/Q137305/
+permalink: /kb/137/Q137305/
 ---
 
 ## Q137305: SMS Remote Control: Unavailable Controls Have Blue Backgrounds

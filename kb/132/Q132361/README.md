@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132361: Updated Proteon 139X NDIS Driver Needed for Network Client 3.0"
-permalink: kb/132/Q132361/
+permalink: /kb/132/Q132361/
 ---
 
 ## Q132361: Updated Proteon 139X NDIS Driver Needed for Network Client 3.0

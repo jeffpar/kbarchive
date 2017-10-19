@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185791: STOP on DEC Miata and Rawhide Platforms Using Graphics Tablet"
-permalink: kb/185/Q185791/
+permalink: /kb/185/Q185791/
 ---
 
 ## Q185791: STOP on DEC Miata and Rawhide Platforms Using Graphics Tablet

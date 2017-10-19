@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183774: XCLN: How to Allow File Attachments in EFD Forms"
-permalink: kb/183/Q183774/
+permalink: /kb/183/Q183774/
 ---
 
 ## Q183774: XCLN: How to Allow File Attachments in EFD Forms

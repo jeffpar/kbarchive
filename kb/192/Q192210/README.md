@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192210: DOC: TabStrip Separators Do Not Work with tabButtons Style"
-permalink: kb/192/Q192210/
+permalink: /kb/192/Q192210/
 ---
 
 ## Q192210: DOC: TabStrip Separators Do Not Work with tabButtons Style

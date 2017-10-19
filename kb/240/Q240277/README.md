@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240277: XFOR: Lotus Notes Configuration Utility Does Not Finish and Save"
-permalink: kb/240/Q240277/
+permalink: /kb/240/Q240277/
 ---
 
 ## Q240277: XFOR: Lotus Notes Configuration Utility Does Not Finish and Save

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139365: Capabilities of the &quot;Add Workstations To Domain&quot; Right"
-permalink: kb/139/Q139365/
+permalink: /kb/139/Q139365/
 ---
 
 ## Q139365: Capabilities of the &quot;Add Workstations To Domain&quot; Right

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174807: HOWTO: Edit the SQL Statement of a Remote or Local View"
-permalink: kb/174/Q174807/
+permalink: /kb/174/Q174807/
 ---
 
 ## Q174807: HOWTO: Edit the SQL Statement of a Remote or Local View

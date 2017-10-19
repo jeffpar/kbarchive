@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157098: WD97: General Information About Page Borders in Word"
-permalink: kb/157/Q157098/
+permalink: /kb/157/Q157098/
 ---
 
 ## Q157098: WD97: General Information About Page Borders in Word

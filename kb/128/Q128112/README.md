@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128112: INFO: CFile::end (from CFile::Seek) Uses a Forward Offset"
-permalink: kb/128/Q128112/
+permalink: /kb/128/Q128112/
 ---
 
 ## Q128112: INFO: CFile::end (from CFile::Seek) Uses a Forward Offset

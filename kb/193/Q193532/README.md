@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193532: Stop 0x0000000A When Running Executable from Floppy Disk"
-permalink: kb/193/Q193532/
+permalink: /kb/193/Q193532/
 ---
 
 ## Q193532: Stop 0x0000000A When Running Executable from Floppy Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247526: BUG: Hundreds of Icons Cause Icon Property Not to Refresh"
-permalink: kb/247/Q247526/
+permalink: /kb/247/Q247526/
 ---
 
 ## Q247526: BUG: Hundreds of Icons Cause Icon Property Not to Refresh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191415: NCSA Log Format May Cause Access Violation in IIS 4.0"
-permalink: kb/191/Q191415/
+permalink: /kb/191/Q191415/
 ---
 
 ## Q191415: NCSA Log Format May Cause Access Violation in IIS 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130120: Event Error 2000 Logged Repeatedly Due to Illegal Command"
-permalink: kb/130/Q130120/
+permalink: /kb/130/Q130120/
 ---
 
 ## Q130120: Event Error 2000 Logged Repeatedly Due to Illegal Command

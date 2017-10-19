@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194641: HOWTO: Make A Trusted SQL Server DSNLESS Connection"
-permalink: kb/194/Q194641/
+permalink: /kb/194/Q194641/
 ---
 
 ## Q194641: HOWTO: Make A Trusted SQL Server DSNLESS Connection

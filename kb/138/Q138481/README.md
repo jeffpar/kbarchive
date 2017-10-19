@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138481: Win95 LUA/RUI Application Hangs with Named Pipes"
-permalink: kb/138/Q138481/
+permalink: /kb/138/Q138481/
 ---
 
 ## Q138481: Win95 LUA/RUI Application Hangs with Named Pipes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259321: XWEB: Outlook Web Access Error Replying or Forwarding Messages"
-permalink: kb/259/Q259321/
+permalink: /kb/259/Q259321/
 ---
 
 ## Q259321: XWEB: Outlook Web Access Error Replying or Forwarding Messages

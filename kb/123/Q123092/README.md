@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123092: FIX: Duplicate Source Files Cause Breakpoint Failures"
-permalink: kb/123/Q123092/
+permalink: /kb/123/Q123092/
 ---
 
 ## Q123092: FIX: Duplicate Source Files Cause Breakpoint Failures

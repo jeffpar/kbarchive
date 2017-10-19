@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156645: Deadly Tide: Sound Troubleshooting"
-permalink: kb/156/Q156645/
+permalink: /kb/156/Q156645/
 ---
 
 ## Q156645: Deadly Tide: Sound Troubleshooting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103712: FIX: Help, Online Books Inaccessible After Custom Install"
-permalink: kb/103/Q103712/
+permalink: /kb/103/Q103712/
 ---
 
 ## Q103712: FIX: Help, Online Books Inaccessible After Custom Install

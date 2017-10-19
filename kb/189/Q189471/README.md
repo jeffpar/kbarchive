@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189471: WpuOpenCurrentThread Does Not Work"
-permalink: kb/189/Q189471/
+permalink: /kb/189/Q189471/
 ---
 
 ## Q189471: WpuOpenCurrentThread Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131407: Check for Long File Names in Windows 3.x w/ Visual FoxPro"
-permalink: kb/131/Q131407/
+permalink: /kb/131/Q131407/
 ---
 
 ## Q131407: Check for Long File Names in Windows 3.x w/ Visual FoxPro

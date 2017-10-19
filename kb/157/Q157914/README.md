@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157914: &quot;Netware Compatible Home Directory&quot; Setting Has No Effect"
-permalink: kb/157/Q157914/
+permalink: /kb/157/Q157914/
 ---
 
 ## Q157914: &quot;Netware Compatible Home Directory&quot; Setting Has No Effect

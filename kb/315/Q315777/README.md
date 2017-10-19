@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315777: Event 744 or SnaBase Failure When Using Active Directory"
-permalink: kb/315/Q315777/
+permalink: /kb/315/Q315777/
 ---
 
 ## Q315777: Event 744 or SnaBase Failure When Using Active Directory

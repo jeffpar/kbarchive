@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32775: Flight Simulator: Airport Appears in Sky"
-permalink: kb/032/Q32775/
+permalink: /kb/032/Q32775/
 ---
 
 ## Q32775: Flight Simulator: Airport Appears in Sky

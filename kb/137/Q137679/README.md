@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137679: SMS: CNOTIN.EXE and Direct Architectures"
-permalink: kb/137/Q137679/
+permalink: /kb/137/Q137679/
 ---
 
 ## Q137679: SMS: CNOTIN.EXE and Direct Architectures

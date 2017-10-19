@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223008: FP98: FrontPage Hit Counter Displays a Red X in the Browser"
-permalink: kb/223/Q223008/
+permalink: /kb/223/Q223008/
 ---
 
 ## Q223008: FP98: FrontPage Hit Counter Displays a Red X in the Browser

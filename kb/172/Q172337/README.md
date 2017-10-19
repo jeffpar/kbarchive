@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172337: FIX: SSARC &amp; SSRESTOR Do Not Store Macintosh Resource Fork Data"
-permalink: kb/172/Q172337/
+permalink: /kb/172/Q172337/
 ---
 
 ## Q172337: FIX: SSARC &amp; SSRESTOR Do Not Store Macintosh Resource Fork Data

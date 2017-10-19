@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200266: PRB: Form's KeyPress Is Not Fired When ActiveX Control Has Focus"
-permalink: kb/200/Q200266/
+permalink: /kb/200/Q200266/
 ---
 
 ## Q200266: PRB: Form's KeyPress Is Not Fired When ActiveX Control Has Focus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186713: Event IDs 1010, 1008, 1011, and 4005 with CIM and Perflib"
-permalink: kb/186/Q186713/
+permalink: /kb/186/Q186713/
 ---
 
 ## Q186713: Event IDs 1010, 1008, 1011, and 4005 with CIM and Perflib

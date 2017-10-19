@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48422: Mac DOS: AppleShare PC and Mail 1.37 Are Not Compatible"
-permalink: kb/048/Q48422/
+permalink: /kb/048/Q48422/
 ---
 
 ## Q48422: Mac DOS: AppleShare PC and Mail 1.37 Are Not Compatible

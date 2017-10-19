@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198536: HOWTO: #include the Localized MFC Resources in an EXE or DLL"
-permalink: kb/198/Q198536/
+permalink: /kb/198/Q198536/
 ---
 
 ## Q198536: HOWTO: #include the Localized MFC Resources in an EXE or DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143000: PC Ext NTMMTA: Err Msg: &quot;No Answer&quot; Using NULLMODM Script"
-permalink: kb/143/Q143000/
+permalink: /kb/143/Q143000/
 ---
 
 ## Q143000: PC Ext NTMMTA: Err Msg: &quot;No Answer&quot; Using NULLMODM Script

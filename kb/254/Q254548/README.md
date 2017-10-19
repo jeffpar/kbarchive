@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254548: XCLN: Connecting Windows CE Handheld PCs to Exchange Server"
-permalink: kb/254/Q254548/
+permalink: /kb/254/Q254548/
 ---
 
 ## Q254548: XCLN: Connecting Windows CE Handheld PCs to Exchange Server

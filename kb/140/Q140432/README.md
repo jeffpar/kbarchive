@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140432: Problems Sending Fax from MAPI-Aware Programs"
-permalink: kb/140/Q140432/
+permalink: /kb/140/Q140432/
 ---
 
 ## Q140432: Problems Sending Fax from MAPI-Aware Programs

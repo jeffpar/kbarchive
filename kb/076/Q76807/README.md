@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76807: Sound Blaster: Built-In Stereo Power Amplifier"
-permalink: kb/076/Q76807/
+permalink: /kb/076/Q76807/
 ---
 
 ## Q76807: Sound Blaster: Built-In Stereo Power Amplifier

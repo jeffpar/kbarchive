@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84744: Conditionally Assembling the END Directive"
-permalink: kb/084/Q84744/
+permalink: /kb/084/Q84744/
 ---
 
 ## Q84744: Conditionally Assembling the END Directive

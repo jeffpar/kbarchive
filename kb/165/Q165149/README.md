@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165149: TN3270E Access Violation in HonestySeatAvailable"
-permalink: kb/165/Q165149/
+permalink: /kb/165/Q165149/
 ---
 
 ## Q165149: TN3270E Access Violation in HonestySeatAvailable

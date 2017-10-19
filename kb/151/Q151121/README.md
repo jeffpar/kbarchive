@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151121: Cinemania 96: Unable to Export Contents of April Update"
-permalink: kb/151/Q151121/
+permalink: /kb/151/Q151121/
 ---
 
 ## Q151121: Cinemania 96: Unable to Export Contents of April Update

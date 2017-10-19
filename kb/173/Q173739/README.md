@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173739: XADM: How to View Deleted Items Space Usage in Administrator"
-permalink: kb/173/Q173739/
+permalink: /kb/173/Q173739/
 ---
 
 ## Q173739: XADM: How to View Deleted Items Space Usage in Administrator

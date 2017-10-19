@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248792: Connection Wizard Incorrectly Displays Option for DB2 on VM/VSE"
-permalink: kb/248/Q248792/
+permalink: /kb/248/Q248792/
 ---
 
 ## Q248792: Connection Wizard Incorrectly Displays Option for DB2 on VM/VSE

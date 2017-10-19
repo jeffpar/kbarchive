@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131615: Windows NT Backup Does Not Support Special-Character Filenames"
-permalink: kb/131/Q131615/
+permalink: /kb/131/Q131615/
 ---
 
 ## Q131615: Windows NT Backup Does Not Support Special-Character Filenames

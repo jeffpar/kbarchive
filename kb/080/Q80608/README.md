@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80608: MS-DOS 5 Upgrade 5.0a Disk Directories (5.25-Inch, 1.2 MB)"
-permalink: kb/080/Q80608/
+permalink: /kb/080/Q80608/
 ---
 
 ## Q80608: MS-DOS 5 Upgrade 5.0a Disk Directories (5.25-Inch, 1.2 MB)

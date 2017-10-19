@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86925: DOC: Region Functions Documented Incorrectly"
-permalink: kb/086/Q86925/
+permalink: /kb/086/Q86925/
 ---
 
 ## Q86925: DOC: Region Functions Documented Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258545: HOWTO: Write a REG_MULTI_SZ Value to the Registry"
-permalink: kb/258/Q258545/
+permalink: /kb/258/Q258545/
 ---
 
 ## Q258545: HOWTO: Write a REG_MULTI_SZ Value to the Registry

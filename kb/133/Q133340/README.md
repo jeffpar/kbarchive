@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133340: Windows 95/98: How to Delete a File"
-permalink: kb/133/Q133340/
+permalink: /kb/133/Q133340/
 ---
 
 ## Q133340: Windows 95/98: How to Delete a File

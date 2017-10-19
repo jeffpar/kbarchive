@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125666: Noncritical Error Opening RPLSVC.MDB for Remoteboot Service"
-permalink: kb/125/Q125666/
+permalink: /kb/125/Q125666/
 ---
 
 ## Q125666: Noncritical Error Opening RPLSVC.MDB for Remoteboot Service

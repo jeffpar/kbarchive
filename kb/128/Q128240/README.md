@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128240: Cannot Print Reports from Device Manager"
-permalink: kb/128/Q128240/
+permalink: /kb/128/Q128240/
 ---
 
 ## Q128240: Cannot Print Reports from Device Manager

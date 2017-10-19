@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263437: Adding Software Metering to a Secondary Site After Installation"
-permalink: kb/263/Q263437/
+permalink: /kb/263/Q263437/
 ---
 
 ## Q263437: Adding Software Metering to a Secondary Site After Installation

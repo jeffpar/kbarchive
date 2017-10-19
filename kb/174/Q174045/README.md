@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174045: Installing and Using the CleanSweep Tool"
-permalink: kb/174/Q174045/
+permalink: /kb/174/Q174045/
 ---
 
 ## Q174045: Installing and Using the CleanSweep Tool

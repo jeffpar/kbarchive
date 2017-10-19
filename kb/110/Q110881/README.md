@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110881: Poor Sound Quality Using TrueSpeech Compression"
-permalink: kb/110/Q110881/
+permalink: /kb/110/Q110881/
 ---
 
 ## Q110881: Poor Sound Quality Using TrueSpeech Compression

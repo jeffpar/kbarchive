@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140426: STOP 0x0000000A Using HP 10/100 J2577a EISA LAN Adapter"
-permalink: kb/140/Q140426/
+permalink: /kb/140/Q140426/
 ---
 
 ## Q140426: STOP 0x0000000A Using HP 10/100 J2577a EISA LAN Adapter

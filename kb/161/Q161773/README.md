@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161773: IBM Client Access/95 Setup Stops Responding"
-permalink: kb/161/Q161773/
+permalink: /kb/161/Q161773/
 ---
 
 ## Q161773: IBM Client Access/95 Setup Stops Responding

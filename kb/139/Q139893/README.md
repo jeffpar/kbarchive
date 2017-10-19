@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139893: Win95 Client Setup Puts SnaTcp Registry Key in Wrong Place"
-permalink: kb/139/Q139893/
+permalink: /kb/139/Q139893/
 ---
 
 ## Q139893: Win95 Client Setup Puts SnaTcp Registry Key in Wrong Place

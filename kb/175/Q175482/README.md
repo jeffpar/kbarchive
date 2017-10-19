@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175482: XFOR: Populating First and Last Name for Dirsync'd MS Mail"
-permalink: kb/175/Q175482/
+permalink: /kb/175/Q175482/
 ---
 
 ## Q175482: XFOR: Populating First and Last Name for Dirsync'd MS Mail

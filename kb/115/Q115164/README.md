@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115164: PC MAPI: Errors When Compiling Sample in Visual Basic"
-permalink: kb/115/Q115164/
+permalink: /kb/115/Q115164/
 ---
 
 ## Q115164: PC MAPI: Errors When Compiling Sample in Visual Basic

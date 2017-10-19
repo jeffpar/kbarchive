@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152918: XCON: MTA: Mail Delivery Slow and Disk Space Consumed"
-permalink: kb/152/Q152918/
+permalink: /kb/152/Q152918/
 ---
 
 ## Q152918: XCON: MTA: Mail Delivery Slow and Disk Space Consumed

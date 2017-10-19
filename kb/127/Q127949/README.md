@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127949: Unrecognizable Characters Displayed Using Remote Control"
-permalink: kb/127/Q127949/
+permalink: /kb/127/Q127949/
 ---
 
 ## Q127949: Unrecognizable Characters Displayed Using Remote Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166512: PRB: Form Goes &quot;White&quot; when Viewing Tab Order with SSTab Control"
-permalink: kb/166/Q166512/
+permalink: /kb/166/Q166512/
 ---
 
 ## Q166512: PRB: Form Goes &quot;White&quot; when Viewing Tab Order with SSTab Control

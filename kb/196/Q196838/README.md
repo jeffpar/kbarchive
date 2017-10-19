@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196838: XFOR: GroupWise Migration Event ID 4012"
-permalink: kb/196/Q196838/
+permalink: /kb/196/Q196838/
 ---
 
 ## Q196838: XFOR: GroupWise Migration Event ID 4012

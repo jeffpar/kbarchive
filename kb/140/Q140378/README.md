@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140378: Using NETSVC.EXE To Control and Display Services"
-permalink: kb/140/Q140378/
+permalink: /kb/140/Q140378/
 ---
 
 ## Q140378: Using NETSVC.EXE To Control and Display Services

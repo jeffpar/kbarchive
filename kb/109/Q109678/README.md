@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109678: FIX: CodeView/Visual Workbench Can't Watch static const Member"
-permalink: kb/109/Q109678/
+permalink: /kb/109/Q109678/
 ---
 
 ## Q109678: FIX: CodeView/Visual Workbench Can't Watch static const Member

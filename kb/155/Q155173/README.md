@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155173: PRB: Undocumented Compiler Switches /QIfdiv, /QIf, and /QI6"
-permalink: kb/155/Q155173/
+permalink: /kb/155/Q155173/
 ---
 
 ## Q155173: PRB: Undocumented Compiler Switches /QIfdiv, /QIf, and /QI6

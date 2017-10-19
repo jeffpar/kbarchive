@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94335: DoubleSpace Installation Fails to Update SYSTEM.INI File"
-permalink: kb/094/Q94335/
+permalink: /kb/094/Q94335/
 ---
 
 ## Q94335: DoubleSpace Installation Fails to Update SYSTEM.INI File

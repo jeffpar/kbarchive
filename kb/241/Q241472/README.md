@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241472: XADM: How to Add a Hidden Recipient to a Distribution List"
-permalink: kb/241/Q241472/
+permalink: /kb/241/Q241472/
 ---
 
 ## Q241472: XADM: How to Add a Hidden Recipient to a Distribution List

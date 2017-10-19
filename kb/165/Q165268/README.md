@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165268: WD97: wdParagraph, ColumnSelectMode Do Not Select Text Column"
-permalink: kb/165/Q165268/
+permalink: /kb/165/Q165268/
 ---
 
 ## Q165268: WD97: wdParagraph, ColumnSelectMode Do Not Select Text Column

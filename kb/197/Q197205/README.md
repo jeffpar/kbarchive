@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197205: RRAS IPX VPNs Generate Event ID 20124"
-permalink: kb/197/Q197205/
+permalink: /kb/197/Q197205/
 ---
 
 ## Q197205: RRAS IPX VPNs Generate Event ID 20124

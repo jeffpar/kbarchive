@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276446: Branch Servers Using DLS Use Dynamic Port for SnaBase Connection"
-permalink: kb/276/Q276446/
+permalink: /kb/276/Q276446/
 ---
 
 ## Q276446: Branch Servers Using DLS Use Dynamic Port for SnaBase Connection

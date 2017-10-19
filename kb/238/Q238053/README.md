@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238053: Encarta Dictionary: How to Turn Off Sounds and Visual Effects"
-permalink: kb/238/Q238053/
+permalink: /kb/238/Q238053/
 ---
 
 ## Q238053: Encarta Dictionary: How to Turn Off Sounds and Visual Effects

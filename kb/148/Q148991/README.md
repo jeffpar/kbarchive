@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148991: How to Disable Pop-up Dialog Boxes in Windows NT"
-permalink: kb/148/Q148991/
+permalink: /kb/148/Q148991/
 ---
 
 ## Q148991: How to Disable Pop-up Dialog Boxes in Windows NT

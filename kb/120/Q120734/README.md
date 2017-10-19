@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120734: Microsoft Windows NT Internet Servers"
-permalink: kb/120/Q120734/
+permalink: /kb/120/Q120734/
 ---
 
 ## Q120734: Microsoft Windows NT Internet Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140892: World Atlas Stops Responding with Ensoniq Card"
-permalink: kb/140/Q140892/
+permalink: /kb/140/Q140892/
 ---
 
 ## Q140892: World Atlas Stops Responding with Ensoniq Card

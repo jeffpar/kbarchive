@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191554: Err Msg: UA Caused an Invalid Page Fault in Module Unknown"
-permalink: kb/191/Q191554/
+permalink: /kb/191/Q191554/
 ---
 
 ## Q191554: Err Msg: UA Caused an Invalid Page Fault in Module Unknown

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168635: INFO: Explanation of Diff_Ignore"
-permalink: kb/168/Q168635/
+permalink: /kb/168/Q168635/
 ---
 
 ## Q168635: INFO: Explanation of Diff_Ignore

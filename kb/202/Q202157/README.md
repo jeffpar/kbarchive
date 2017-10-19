@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202157: FP98: Unable to Create CGI-BIN Folder When Publishing Web"
-permalink: kb/202/Q202157/
+permalink: /kb/202/Q202157/
 ---
 
 ## Q202157: FP98: Unable to Create CGI-BIN Folder When Publishing Web

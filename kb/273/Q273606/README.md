@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273606: SMS Is Slow Enumerating Large Numbers of Packages"
-permalink: kb/273/Q273606/
+permalink: /kb/273/Q273606/
 ---
 
 ## Q273606: SMS Is Slow Enumerating Large Numbers of Packages

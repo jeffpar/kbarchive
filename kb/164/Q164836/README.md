@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164836: XCON: Conditional Reroute on Single Link Bounces Back"
-permalink: kb/164/Q164836/
+permalink: /kb/164/Q164836/
 ---
 
 ## Q164836: XCON: Conditional Reroute on Single Link Bounces Back

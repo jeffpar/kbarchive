@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152399: MPI: MS WINDOWS 95 STARTS HERE Corrections and Comments"
-permalink: kb/152/Q152399/
+permalink: /kb/152/Q152399/
 ---
 
 ## Q152399: MPI: MS WINDOWS 95 STARTS HERE Corrections and Comments

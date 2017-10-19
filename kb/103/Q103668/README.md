@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103668: System Hangs When SCSI Driver Is Loaded After DBLSPACE.SYS"
-permalink: kb/103/Q103668/
+permalink: /kb/103/Q103668/
 ---
 
 ## Q103668: System Hangs When SCSI Driver Is Loaded After DBLSPACE.SYS

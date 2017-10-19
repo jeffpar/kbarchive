@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174517: PRB: Office 97 SR-1 Patch Doesn't Update VB 5.0 Jet/DAO DLLs"
-permalink: kb/174/Q174517/
+permalink: /kb/174/Q174517/
 ---
 
 ## Q174517: PRB: Office 97 SR-1 Patch Doesn't Update VB 5.0 Jet/DAO DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269177: SMS: Calls to GetKeyboardType() May Not Work"
-permalink: kb/269/Q269177/
+permalink: /kb/269/Q269177/
 ---
 
 ## Q269177: SMS: Calls to GetKeyboardType() May Not Work

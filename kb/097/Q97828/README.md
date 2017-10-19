@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97828: WEP 2: Level Passwords for Pipe Dream"
-permalink: kb/097/Q97828/
+permalink: /kb/097/Q97828/
 ---
 
 ## Q97828: WEP 2: Level Passwords for Pipe Dream

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77226: Memory Access Methods for Protected Mode Applications"
-permalink: kb/077/Q77226/
+permalink: /kb/077/Q77226/
 ---
 
 ## Q77226: Memory Access Methods for Protected Mode Applications

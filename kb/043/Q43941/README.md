@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43941: Mac Wkst: Searching for Names in the Address Window"
-permalink: kb/043/Q43941/
+permalink: /kb/043/Q43941/
 ---
 
 ## Q43941: Mac Wkst: Searching for Names in the Address Window

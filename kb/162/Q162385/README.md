@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162385: PPT: How to Use the EntryEffect Property"
-permalink: kb/162/Q162385/
+permalink: /kb/162/Q162385/
 ---
 
 ## Q162385: PPT: How to Use the EntryEffect Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171112: FP: 32-bit TCP/IP Required or IPF Error Starting FP Explorer"
-permalink: kb/171/Q171112/
+permalink: /kb/171/Q171112/
 ---
 
 ## Q171112: FP: 32-bit TCP/IP Required or IPF Error Starting FP Explorer

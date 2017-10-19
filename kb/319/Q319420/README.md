@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319420: Problems with Very High Data Rates Over TCP/IP with Windows NT"
-permalink: kb/319/Q319420/
+permalink: /kb/319/Q319420/
 ---
 
 ## Q319420: Problems with Very High Data Rates Over TCP/IP with Windows NT

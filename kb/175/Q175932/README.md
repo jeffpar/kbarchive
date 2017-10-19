@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175932: Could Not Load Ntkrnlmp.exe. The Error Code Is 4"
-permalink: kb/175/Q175932/
+permalink: /kb/175/Q175932/
 ---
 
 ## Q175932: Could Not Load Ntkrnlmp.exe. The Error Code Is 4

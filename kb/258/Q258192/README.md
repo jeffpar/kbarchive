@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258192: PRB: Errors Recompiling ActiveX Component w/ Binary Compability"
-permalink: kb/258/Q258192/
+permalink: /kb/258/Q258192/
 ---
 
 ## Q258192: PRB: Errors Recompiling ActiveX Component w/ Binary Compability

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168008: FIX: C2166 Incorrect Type Deduction for Template Parameter"
-permalink: kb/168/Q168008/
+permalink: /kb/168/Q168008/
 ---
 
 ## Q168008: FIX: C2166 Incorrect Type Deduction for Template Parameter

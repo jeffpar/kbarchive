@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117201: BUG: sizeof Used in Comparison Does Not Generate C4018"
-permalink: kb/117/Q117201/
+permalink: /kb/117/Q117201/
 ---
 
 ## Q117201: BUG: sizeof Used in Comparison Does Not Generate C4018

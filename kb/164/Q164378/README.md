@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164378: WinNT 4.0 SP2 or SP3 Atapi Does Not Support Ultra DMA Devices"
-permalink: kb/164/Q164378/
+permalink: /kb/164/Q164378/
 ---
 
 ## Q164378: WinNT 4.0 SP2 or SP3 Atapi Does Not Support Ultra DMA Devices

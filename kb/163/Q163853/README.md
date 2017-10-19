@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163853: RAS Phone Book Terminal in Chinese Function Does Not Work"
-permalink: kb/163/Q163853/
+permalink: /kb/163/Q163853/
 ---
 
 ## Q163853: RAS Phone Book Terminal in Chinese Function Does Not Work

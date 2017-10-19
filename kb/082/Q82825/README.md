@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82825: How a Font Is Embedded into a Document"
-permalink: kb/082/Q82825/
+permalink: /kb/082/Q82825/
 ---
 
 ## Q82825: How a Font Is Embedded into a Document

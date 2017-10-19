@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85452: Windows Err Msg: Error Loading SYSTEM.DRV"
-permalink: kb/085/Q85452/
+permalink: /kb/085/Q85452/
 ---
 
 ## Q85452: Windows Err Msg: Error Loading SYSTEM.DRV

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154944: Power PC (PPC) Only: OldIrql Is Stored Before Spinlock"
-permalink: kb/154/Q154944/
+permalink: /kb/154/Q154944/
 ---
 
 ## Q154944: Power PC (PPC) Only: OldIrql Is Stored Before Spinlock

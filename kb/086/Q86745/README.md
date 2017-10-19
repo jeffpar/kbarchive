@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86745: Bookshelf Demonstration on the Multimedia Works Disc"
-permalink: kb/086/Q86745/
+permalink: /kb/086/Q86745/
 ---
 
 ## Q86745: Bookshelf Demonstration on the Multimedia Works Disc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264203: Enumdisk1.exe: Enumdisk Sample for Enumerating Disk Devices"
-permalink: kb/264/Q264203/
+permalink: /kb/264/Q264203/
 ---
 
 ## Q264203: Enumdisk1.exe: Enumdisk Sample for Enumerating Disk Devices

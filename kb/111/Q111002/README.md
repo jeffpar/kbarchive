@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111002: Shiva Support for Windows for Workgroups 3.11"
-permalink: kb/111/Q111002/
+permalink: /kb/111/Q111002/
 ---
 
 ## Q111002: Shiva Support for Windows for Workgroups 3.11

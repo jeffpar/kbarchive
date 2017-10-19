@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108490: PC Win: Creating Groups That Contain Other Groups"
-permalink: kb/108/Q108490/
+permalink: /kb/108/Q108490/
 ---
 
 ## Q108490: PC Win: Creating Groups That Contain Other Groups

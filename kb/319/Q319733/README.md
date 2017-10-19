@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319733: MS02-018: April 2002 Cumulative Patch for IIS"
-permalink: kb/319/Q319733/
+permalink: /kb/319/Q319733/
 ---
 
 ## Q319733: MS02-018: April 2002 Cumulative Patch for IIS

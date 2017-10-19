@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156554: &quot;Non-System Disk Error&quot; with LBA Hard Disk Controller"
-permalink: kb/156/Q156554/
+permalink: /kb/156/Q156554/
 ---
 
 ## Q156554: &quot;Non-System Disk Error&quot; with LBA Hard Disk Controller

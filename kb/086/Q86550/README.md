@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86550: MHS: Definition of an MHS Host"
-permalink: kb/086/Q86550/
+permalink: /kb/086/Q86550/
 ---
 
 ## Q86550: MHS: Definition of an MHS Host

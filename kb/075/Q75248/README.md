@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75248: PROC w/ Parameters Requires Language Specifier on .MODEL"
-permalink: kb/075/Q75248/
+permalink: /kb/075/Q75248/
 ---
 
 ## Q75248: PROC w/ Parameters Requires Language Specifier on .MODEL

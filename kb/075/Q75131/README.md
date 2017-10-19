@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75131: Standard Floppy Disk Formats Supported by MS-DOS"
-permalink: kb/075/Q75131/
+permalink: /kb/075/Q75131/
 ---
 
 ## Q75131: Standard Floppy Disk Formats Supported by MS-DOS

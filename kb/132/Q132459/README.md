@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132459: TEXT &quot;Datatype&quot; Does Not Interpret Form-Feed Correctly"
-permalink: kb/132/Q132459/
+permalink: /kb/132/Q132459/
 ---
 
 ## Q132459: TEXT &quot;Datatype&quot; Does Not Interpret Form-Feed Correctly

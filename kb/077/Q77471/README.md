@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77471: Knowledge Dynamics INSTALL.EXE and MS-DOS 5.0"
-permalink: kb/077/Q77471/
+permalink: /kb/077/Q77471/
 ---
 
 ## Q77471: Knowledge Dynamics INSTALL.EXE and MS-DOS 5.0

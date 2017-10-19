@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229809: SMS: Unexpected Reinstallation of SMS Packages"
-permalink: kb/229/Q229809/
+permalink: /kb/229/Q229809/
 ---
 
 ## Q229809: SMS: Unexpected Reinstallation of SMS Packages

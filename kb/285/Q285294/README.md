@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285294: Midtown Madness 2: Cannot Use USB Steering Wheel to Drive Cars"
-permalink: kb/285/Q285294/
+permalink: /kb/285/Q285294/
 ---
 
 ## Q285294: Midtown Madness 2: Cannot Use USB Steering Wheel to Drive Cars

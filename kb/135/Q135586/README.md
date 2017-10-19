@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135586: Hiding the Last Logged On User Name in Windows 95"
-permalink: kb/135/Q135586/
+permalink: /kb/135/Q135586/
 ---
 
 ## Q135586: Hiding the Last Logged On User Name in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191104: PRB: Drive ListBox Fails to Drop Down with a Small FontSize"
-permalink: kb/191/Q191104/
+permalink: /kb/191/Q191104/
 ---
 
 ## Q191104: PRB: Drive ListBox Fails to Drop Down with a Small FontSize

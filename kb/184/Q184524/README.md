@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184524: XFOR: cc:Mail Connector Sends Messages Twice Under Load"
-permalink: kb/184/Q184524/
+permalink: /kb/184/Q184524/
 ---
 
 ## Q184524: XFOR: cc:Mail Connector Sends Messages Twice Under Load

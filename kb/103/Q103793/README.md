@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103793: PC Forms: Err Msg: The Application Could Not Be Executed..."
-permalink: kb/103/Q103793/
+permalink: /kb/103/Q103793/
 ---
 
 ## Q103793: PC Forms: Err Msg: The Application Could Not Be Executed...

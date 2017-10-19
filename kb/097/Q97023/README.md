@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97023: PC WRmt: Version 3.2 Unable to Open Packaged Item"
-permalink: kb/097/Q97023/
+permalink: /kb/097/Q97023/
 ---
 
 ## Q97023: PC WRmt: Version 3.2 Unable to Open Packaged Item

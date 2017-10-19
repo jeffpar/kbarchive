@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262291: DOC: Win2000 Supports Delegations with Kerberos Authentication"
-permalink: kb/262/Q262291/
+permalink: /kb/262/Q262291/
 ---
 
 ## Q262291: DOC: Win2000 Supports Delegations with Kerberos Authentication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172633: Unable to Ping Cisco Router or Through Router"
-permalink: kb/172/Q172633/
+permalink: /kb/172/Q172633/
 ---
 
 ## Q172633: Unable to Ping Cisco Router or Through Router

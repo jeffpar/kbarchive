@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246045: RFPoison: Denial of Service Attack Causes Access Violation"
-permalink: kb/246/Q246045/
+permalink: /kb/246/Q246045/
 ---
 
 ## Q246045: RFPoison: Denial of Service Attack Causes Access Violation

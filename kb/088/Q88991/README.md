@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88991: Visual Basic for MS-DOS: Memory Management Questions &amp; Answers"
-permalink: kb/088/Q88991/
+permalink: /kb/088/Q88991/
 ---
 
 ## Q88991: Visual Basic for MS-DOS: Memory Management Questions &amp; Answers

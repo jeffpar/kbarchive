@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142551: FIX: No Carriage Return Between RI Code and Appended Code"
-permalink: kb/142/Q142551/
+permalink: /kb/142/Q142551/
 ---
 
 ## Q142551: FIX: No Carriage Return Between RI Code and Appended Code

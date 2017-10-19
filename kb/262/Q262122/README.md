@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262122: XIMS: Internet Mail Service Extension Message Journaling"
-permalink: kb/262/Q262122/
+permalink: /kb/262/Q262122/
 ---
 
 ## Q262122: XIMS: Internet Mail Service Extension Message Journaling

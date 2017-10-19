@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232307: XFOR: How to One-off a SNADS Address"
-permalink: kb/232/Q232307/
+permalink: /kb/232/Q232307/
 ---
 
 ## Q232307: XFOR: How to One-off a SNADS Address

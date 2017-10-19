@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140790: MS Backup Err Msg: Errors Occurred During This Operation..."
-permalink: kb/140/Q140790/
+permalink: /kb/140/Q140790/
 ---
 
 ## Q140790: MS Backup Err Msg: Errors Occurred During This Operation...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80131: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 1-6"
-permalink: kb/080/Q80131/
+permalink: /kb/080/Q80131/
 ---
 
 ## Q80131: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 1-6

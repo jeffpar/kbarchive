@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150944: How to Improve Performance in Fury3"
-permalink: kb/150/Q150944/
+permalink: /kb/150/Q150944/
 ---
 
 ## Q150944: How to Improve Performance in Fury3

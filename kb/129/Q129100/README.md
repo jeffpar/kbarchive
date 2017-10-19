@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129100: Bookshelf 93: Scrolling Off Screen Causes Audio to Stop Playin"
-permalink: kb/129/Q129100/
+permalink: /kb/129/Q129100/
 ---
 
 ## Q129100: Bookshelf 93: Scrolling Off Screen Causes Audio to Stop Playin

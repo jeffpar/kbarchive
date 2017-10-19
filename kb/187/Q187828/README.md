@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187828: XADM: Information Store Hangs as Thread CPU Utilization Drops"
-permalink: kb/187/Q187828/
+permalink: /kb/187/Q187828/
 ---
 
 ## Q187828: XADM: Information Store Hangs as Thread CPU Utilization Drops

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109203: Sharing Violations Executing Logon Scripts and SHARE.EXE"
-permalink: kb/109/Q109203/
+permalink: /kb/109/Q109203/
 ---
 
 ## Q109203: Sharing Violations Executing Logon Scripts and SHARE.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82479: PostScript Italics Simulation Doesn't Print Italics"
-permalink: kb/082/Q82479/
+permalink: /kb/082/Q82479/
 ---
 
 ## Q82479: PostScript Italics Simulation Doesn't Print Italics

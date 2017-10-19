@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117738: PC Adm: IMPORT.EXE Does Not Recover from Reset CONTROL.GLB"
-permalink: kb/117/Q117738/
+permalink: /kb/117/Q117738/
 ---
 
 ## Q117738: PC Adm: IMPORT.EXE Does Not Recover from Reset CONTROL.GLB

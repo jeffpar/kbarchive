@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125633: Start Menu Wraps Off the Display"
-permalink: kb/125/Q125633/
+permalink: /kb/125/Q125633/
 ---
 
 ## Q125633: Start Menu Wraps Off the Display

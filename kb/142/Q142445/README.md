@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142445: DOC: CWnd::LockWindowUpdate Does Not Unlock the Window"
-permalink: kb/142/Q142445/
+permalink: /kb/142/Q142445/
 ---
 
 ## Q142445: DOC: CWnd::LockWindowUpdate Does Not Unlock the Window

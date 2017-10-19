@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255922: Management Agent Configuration Form Contains Incorrect Example"
-permalink: kb/255/Q255922/
+permalink: /kb/255/Q255922/
 ---
 
 ## Q255922: Management Agent Configuration Form Contains Incorrect Example

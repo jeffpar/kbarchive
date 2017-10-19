@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289552: SMS: Hardware Inventory Agent Causes SMS Client to Hang"
-permalink: kb/289/Q289552/
+permalink: /kb/289/Q289552/
 ---
 
 ## Q289552: SMS: Hardware Inventory Agent Causes SMS Client to Hang

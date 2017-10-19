@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180929: TN3270 Client Ignoring Keyboard Lock"
-permalink: kb/180/Q180929/
+permalink: /kb/180/Q180929/
 ---
 
 ## Q180929: TN3270 Client Ignoring Keyboard Lock

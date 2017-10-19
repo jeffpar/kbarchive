@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169628: XCON: MTA May Hang After Running from the Command Line"
-permalink: kb/169/Q169628/
+permalink: /kb/169/Q169628/
 ---
 
 ## Q169628: XCON: MTA May Hang After Running from the Command Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162250: Service Packs on Compaq MPS Systems May Cause System Hangs"
-permalink: kb/162/Q162250/
+permalink: /kb/162/Q162250/
 ---
 
 ## Q162250: Service Packs on Compaq MPS Systems May Cause System Hangs

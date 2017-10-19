@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110432: SFM: Printing Postscript Fails, Err Msg: Invalid Access"
-permalink: kb/110/Q110432/
+permalink: /kb/110/Q110432/
 ---
 
 ## Q110432: SFM: Printing Postscript Fails, Err Msg: Invalid Access

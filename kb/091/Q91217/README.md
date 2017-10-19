@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91217: Remove Locator Service After Installing LM 2.1 3Com Tape"
-permalink: kb/091/Q91217/
+permalink: /kb/091/Q91217/
 ---
 
 ## Q91217: Remove Locator Service After Installing LM 2.1 3Com Tape

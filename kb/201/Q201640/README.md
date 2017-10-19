@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201640: SMS: Windows 9x NetWare Clients Not Running SMS Logon Script"
-permalink: kb/201/Q201640/
+permalink: /kb/201/Q201640/
 ---
 
 ## Q201640: SMS: Windows 9x NetWare Clients Not Running SMS Logon Script

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69926: Windows 3.0 HIMEM.SYS Requires /M:2 Switch on Tangent 486"
-permalink: kb/069/Q69926/
+permalink: /kb/069/Q69926/
 ---
 
 ## Q69926: Windows 3.0 HIMEM.SYS Requires /M:2 Switch on Tangent 486

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178154: XWEB: Err Msg: Unable to Render This view424Object Required"
-permalink: kb/178/Q178154/
+permalink: /kb/178/Q178154/
 ---
 
 ## Q178154: XWEB: Err Msg: Unable to Render This view424Object Required

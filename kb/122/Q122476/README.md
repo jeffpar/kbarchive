@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122476: Cinemania '95: Manual Installation Instructions"
-permalink: kb/122/Q122476/
+permalink: /kb/122/Q122476/
 ---
 
 ## Q122476: Cinemania '95: Manual Installation Instructions

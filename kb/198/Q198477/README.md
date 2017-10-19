@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198477: PRB: Use of /ZI May Cause Access Violation"
-permalink: kb/198/Q198477/
+permalink: /kb/198/Q198477/
 ---
 
 ## Q198477: PRB: Use of /ZI May Cause Access Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215884: XWEB: Can't Clear OWA Error Dialog Box When Using Netscape Com."
-permalink: kb/215/Q215884/
+permalink: /kb/215/Q215884/
 ---
 
 ## Q215884: XWEB: Can't Clear OWA Error Dialog Box When Using Netscape Com.

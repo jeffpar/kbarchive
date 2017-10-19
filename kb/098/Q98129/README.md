@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98129: Allow Continual User Access with Password Restrictions"
-permalink: kb/098/Q98129/
+permalink: /kb/098/Q98129/
 ---
 
 ## Q98129: Allow Continual User Access with Password Restrictions

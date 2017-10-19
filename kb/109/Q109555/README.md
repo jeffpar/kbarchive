@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109555: Virtual Circuit Error 3193"
-permalink: kb/109/Q109555/
+permalink: /kb/109/Q109555/
 ---
 
 ## Q109555: Virtual Circuit Error 3193

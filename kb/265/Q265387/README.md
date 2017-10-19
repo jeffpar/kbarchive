@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265387: SystemBiosDate Extraction Interprets Date as MM/DD/YY"
-permalink: kb/265/Q265387/
+permalink: /kb/265/Q265387/
 ---
 
 ## Q265387: SystemBiosDate Extraction Interprets Date as MM/DD/YY

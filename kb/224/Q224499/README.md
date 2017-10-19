@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224499: SBS Modem Unavailable if Clients Do Not Disconnect"
-permalink: kb/224/Q224499/
+permalink: /kb/224/Q224499/
 ---
 
 ## Q224499: SBS Modem Unavailable if Clients Do Not Disconnect

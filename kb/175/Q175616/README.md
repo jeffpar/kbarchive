@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175616: FIX: Error 438: &quot;Object Doesn't Support This Property or Method&quot;"
-permalink: kb/175/Q175616/
+permalink: /kb/175/Q175616/
 ---
 
 ## Q175616: FIX: Error 438: &quot;Object Doesn't Support This Property or Method&quot;

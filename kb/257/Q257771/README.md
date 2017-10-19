@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257771: FS2000: Computer Stops Responding During Game Play"
-permalink: kb/257/Q257771/
+permalink: /kb/257/Q257771/
 ---
 
 ## Q257771: FS2000: Computer Stops Responding During Game Play

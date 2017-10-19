@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153525: Flltest.exe Determines if FLL File Loads Successfully"
-permalink: kb/153/Q153525/
+permalink: /kb/153/Q153525/
 ---
 
 ## Q153525: Flltest.exe Determines if FLL File Loads Successfully

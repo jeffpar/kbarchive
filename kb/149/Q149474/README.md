@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149474: BUG: F2333 Error Not Generated in Illegal Redefinition"
-permalink: kb/149/Q149474/
+permalink: /kb/149/Q149474/
 ---
 
 ## Q149474: BUG: F2333 Error Not Generated in Illegal Redefinition

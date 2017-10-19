@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177579: SNA Client Loses One TCP/IP Address on a Multihomed Server"
-permalink: kb/177/Q177579/
+permalink: /kb/177/Q177579/
 ---
 
 ## Q177579: SNA Client Loses One TCP/IP Address on a Multihomed Server

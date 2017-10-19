@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157735: XFOR: Character Set Not Supported"
-permalink: kb/157/Q157735/
+permalink: /kb/157/Q157735/
 ---
 
 ## Q157735: XFOR: Character Set Not Supported

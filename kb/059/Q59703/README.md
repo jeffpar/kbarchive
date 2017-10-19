@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59703: 3Com 3+Share Messaging Service and Windows 3.0"
-permalink: kb/059/Q59703/
+permalink: /kb/059/Q59703/
 ---
 
 ## Q59703: 3Com 3+Share Messaging Service and Windows 3.0

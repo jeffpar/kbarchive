@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191193: XCLN: Error Msg. Opening PST: The Folder Could Not Be Opened"
-permalink: kb/191/Q191193/
+permalink: /kb/191/Q191193/
 ---
 
 ## Q191193: XCLN: Error Msg. Opening PST: The Folder Could Not Be Opened

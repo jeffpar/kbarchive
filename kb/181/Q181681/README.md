@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181681: Microsoft Project 98 Step by Step Corrections and Comments"
-permalink: kb/181/Q181681/
+permalink: /kb/181/Q181681/
 ---
 
 ## Q181681: Microsoft Project 98 Step by Step Corrections and Comments

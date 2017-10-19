@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105928: DBLSPACE /CREATE: DoubleSpace Does Not Run ScanDisk"
-permalink: kb/105/Q105928/
+permalink: /kb/105/Q105928/
 ---
 
 ## Q105928: DBLSPACE /CREATE: DoubleSpace Does Not Run ScanDisk

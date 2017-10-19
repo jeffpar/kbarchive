@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113183: Difficulty Adding Support for ODI/NDIS or IPX/SPX"
-permalink: kb/113/Q113183/
+permalink: /kb/113/Q113183/
 ---
 
 ## Q113183: Difficulty Adding Support for ODI/NDIS or IPX/SPX

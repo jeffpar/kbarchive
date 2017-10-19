@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264968: Files without Extensions are Mapped to Application/Octet-Stream"
-permalink: kb/264/Q264968/
+permalink: /kb/264/Q264968/
 ---
 
 ## Q264968: Files without Extensions are Mapped to Application/Octet-Stream

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115553: MHS: Backboning Microsoft Mail over MHS"
-permalink: kb/115/Q115553/
+permalink: /kb/115/Q115553/
 ---
 
 ## Q115553: MHS: Backboning Microsoft Mail over MHS

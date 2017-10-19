@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141025: PRB:Can't Create new .EXE w/ Same Name If It's Already Running"
-permalink: kb/141/Q141025/
+permalink: /kb/141/Q141025/
 ---
 
 ## Q141025: PRB:Can't Create new .EXE w/ Same Name If It's Already Running

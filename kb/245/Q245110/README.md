@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245110: Err Msg: Internet Explorer Installation is Incomplete."
-permalink: kb/245/Q245110/
+permalink: /kb/245/Q245110/
 ---
 
 ## Q245110: Err Msg: Internet Explorer Installation is Incomplete.

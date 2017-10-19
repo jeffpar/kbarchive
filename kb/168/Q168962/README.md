@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168962: Number of Copies Option Is Unavailable When Printing"
-permalink: kb/168/Q168962/
+permalink: /kb/168/Q168962/
 ---
 
 ## Q168962: Number of Copies Option Is Unavailable When Printing

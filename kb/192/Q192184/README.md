@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192184: HOWTO: Add a Horizontal Scroll Bar to a Visual Basic ListBox"
-permalink: kb/192/Q192184/
+permalink: /kb/192/Q192184/
 ---
 
 ## Q192184: HOWTO: Add a Horizontal Scroll Bar to a Visual Basic ListBox

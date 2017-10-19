@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187446: Uninstall Routines May Not Complete Successfully for Users"
-permalink: kb/187/Q187446/
+permalink: /kb/187/Q187446/
 ---
 
 ## Q187446: Uninstall Routines May Not Complete Successfully for Users

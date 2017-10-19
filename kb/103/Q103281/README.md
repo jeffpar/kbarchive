@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103281: Windows Sound System Err Msg: Could Not Play File"
-permalink: kb/103/Q103281/
+permalink: /kb/103/Q103281/
 ---
 
 ## Q103281: Windows Sound System Err Msg: Could Not Play File

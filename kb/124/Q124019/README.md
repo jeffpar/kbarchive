@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124019: Basketball and Encarta: GPF in WSSSBPRO.DRV"
-permalink: kb/124/Q124019/
+permalink: /kb/124/Q124019/
 ---
 
 ## Q124019: Basketball and Encarta: GPF in WSSSBPRO.DRV

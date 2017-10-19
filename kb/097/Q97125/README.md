@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97125: Bookshelf: Mouse Pointer Changes After Animation Sequence"
-permalink: kb/097/Q97125/
+permalink: /kb/097/Q97125/
 ---
 
 ## Q97125: Bookshelf: Mouse Pointer Changes After Animation Sequence

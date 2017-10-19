@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135029: X400: Doc Err: Incorrect Step in Extracting MAPTBL.OUT"
-permalink: kb/135/Q135029/
+permalink: /kb/135/Q135029/
 ---
 
 ## Q135029: X400: Doc Err: Incorrect Step in Extracting MAPTBL.OUT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264945: SMS: Explanation of Error 38a in the Despooler Log File"
-permalink: kb/264/Q264945/
+permalink: /kb/264/Q264945/
 ---
 
 ## Q264945: SMS: Explanation of Error 38a in the Despooler Log File

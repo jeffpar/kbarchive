@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130459: Adding TrueType, Raster, or Vector Fonts to System"
-permalink: kb/130/Q130459/
+permalink: /kb/130/Q130459/
 ---
 
 ## Q130459: Adding TrueType, Raster, or Vector Fonts to System

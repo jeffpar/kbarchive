@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231454: Installing Windows NT If You Receive &quot;Out of Memory&quot; Errors"
-permalink: kb/231/Q231454/
+permalink: /kb/231/Q231454/
 ---
 
 ## Q231454: Installing Windows NT If You Receive &quot;Out of Memory&quot; Errors

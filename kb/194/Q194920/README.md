@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194920: XFOR: Missing Message Bodies after GroupWise Migration"
-permalink: kb/194/Q194920/
+permalink: /kb/194/Q194920/
 ---
 
 ## Q194920: XFOR: Missing Message Bodies after GroupWise Migration

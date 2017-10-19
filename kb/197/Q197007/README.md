@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197007: WD97: How to Import Font Substitution Functions in Word"
-permalink: kb/197/Q197007/
+permalink: /kb/197/Q197007/
 ---
 
 ## Q197007: WD97: How to Import Font Substitution Functions in Word

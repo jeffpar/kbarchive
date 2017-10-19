@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95457: PPT: Aligning Bullets with Higher Level Text Margin"
-permalink: kb/095/Q95457/
+permalink: /kb/095/Q95457/
 ---
 
 ## Q95457: PPT: Aligning Bullets with Higher Level Text Margin

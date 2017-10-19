@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108465: Saving Changes to a File on an SFM Volume Fails"
-permalink: kb/108/Q108465/
+permalink: /kb/108/Q108465/
 ---
 
 ## Q108465: Saving Changes to a File on an SFM Volume Fails

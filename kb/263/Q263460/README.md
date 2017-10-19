@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263460: XADM: Error When You Import a Folder with MBX Proxy Addresses"
-permalink: kb/263/Q263460/
+permalink: /kb/263/Q263460/
 ---
 
 ## Q263460: XADM: Error When You Import a Folder with MBX Proxy Addresses

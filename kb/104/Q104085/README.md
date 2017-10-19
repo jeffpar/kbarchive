@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104085: PC WSPlus: Err Msg: Clean-Up Schedule Files"
-permalink: kb/104/Q104085/
+permalink: /kb/104/Q104085/
 ---
 
 ## Q104085: PC WSPlus: Err Msg: Clean-Up Schedule Files

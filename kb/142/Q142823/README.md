@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142823: INFO: Visual Basic Programmer's Guide to Visual SourceSafe"
-permalink: kb/142/Q142823/
+permalink: /kb/142/Q142823/
 ---
 
 ## Q142823: INFO: Visual Basic Programmer's Guide to Visual SourceSafe

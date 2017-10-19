@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163122: Kids Plus!: Desktop Wallpaper Settings Lost After Installing"
-permalink: kb/163/Q163122/
+permalink: /kb/163/Q163122/
 ---
 
 ## Q163122: Kids Plus!: Desktop Wallpaper Settings Lost After Installing

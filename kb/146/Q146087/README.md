@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146087: XCLN: A Microsoft EFD Installation Cannot be Shared"
-permalink: kb/146/Q146087/
+permalink: /kb/146/Q146087/
 ---
 
 ## Q146087: XCLN: A Microsoft EFD Installation Cannot be Shared

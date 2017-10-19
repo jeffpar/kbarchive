@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264967: Third-Party Utilities to Manage NTFS ACLs"
-permalink: kb/264/Q264967/
+permalink: /kb/264/Q264967/
 ---
 
 ## Q264967: Third-Party Utilities to Manage NTFS ACLs

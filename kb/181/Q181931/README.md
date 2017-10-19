@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181931: XADM: Information Store Crashes in JetMove"
-permalink: kb/181/Q181931/
+permalink: /kb/181/Q181931/
 ---
 
 ## Q181931: XADM: Information Store Crashes in JetMove

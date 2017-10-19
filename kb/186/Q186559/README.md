@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186559: Common Question: Will Terminal Server Run on Windows NT 4.0?"
-permalink: kb/186/Q186559/
+permalink: /kb/186/Q186559/
 ---
 
 ## Q186559: Common Question: Will Terminal Server Run on Windows NT 4.0?

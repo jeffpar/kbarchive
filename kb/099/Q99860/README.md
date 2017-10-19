@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99860: Debug Script to Test for Sound Blaster Emulation"
-permalink: kb/099/Q99860/
+permalink: /kb/099/Q99860/
 ---
 
 ## Q99860: Debug Script to Test for Sound Blaster Emulation

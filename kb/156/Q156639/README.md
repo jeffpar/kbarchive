@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156639: PRB: Using Date Function Code in @...GET Does Not Work"
-permalink: kb/156/Q156639/
+permalink: /kb/156/Q156639/
 ---
 
 ## Q156639: PRB: Using Date Function Code in @...GET Does Not Work

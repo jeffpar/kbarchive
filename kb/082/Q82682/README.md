@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82682: HDC Memory Viewer Loses Title"
-permalink: kb/082/Q82682/
+permalink: /kb/082/Q82682/
 ---
 
 ## Q82682: HDC Memory Viewer Loses Title

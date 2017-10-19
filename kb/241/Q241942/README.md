@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241942: HOWTO: Prevent Word Printing Error with BackgroundPrintingStatus"
-permalink: kb/241/Q241942/
+permalink: /kb/241/Q241942/
 ---
 
 ## Q241942: HOWTO: Prevent Word Printing Error with BackgroundPrintingStatus

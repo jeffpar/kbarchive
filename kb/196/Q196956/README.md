@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196956: DOC: Visual Basic Does Not Allow You to Build OLE DB Providers"
-permalink: kb/196/Q196956/
+permalink: /kb/196/Q196956/
 ---
 
 ## Q196956: DOC: Visual Basic Does Not Allow You to Build OLE DB Providers

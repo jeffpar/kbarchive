@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110082: Art Gallery: Monitor Changes to 256 Shades of Gray on Restart"
-permalink: kb/110/Q110082/
+permalink: /kb/110/Q110082/
 ---
 
 ## Q110082: Art Gallery: Monitor Changes to 256 Shades of Gray on Restart

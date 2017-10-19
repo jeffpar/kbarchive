@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182575: IBM PComm AS/400 Data Transfer Doesn't Display Remote APPC LUs"
-permalink: kb/182/Q182575/
+permalink: /kb/182/Q182575/
 ---
 
 ## Q182575: IBM PComm AS/400 Data Transfer Doesn't Display Remote APPC LUs

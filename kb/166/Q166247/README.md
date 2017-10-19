@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166247: XADM: Inproxy.dll Creates Non-RFC Conformant SMTP Addresses"
-permalink: kb/166/Q166247/
+permalink: /kb/166/Q166247/
 ---
 
 ## Q166247: XADM: Inproxy.dll Creates Non-RFC Conformant SMTP Addresses

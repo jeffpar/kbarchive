@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83362: Windows-Based Applications Drift After Being Reopened"
-permalink: kb/083/Q83362/
+permalink: /kb/083/Q83362/
 ---
 
 ## Q83362: Windows-Based Applications Drift After Being Reopened

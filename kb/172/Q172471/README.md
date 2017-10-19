@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172471: Request Definite Response Doesn't Signal When Job Sent"
-permalink: kb/172/Q172471/
+permalink: /kb/172/Q172471/
 ---
 
 ## Q172471: Request Definite Response Doesn't Signal When Job Sent

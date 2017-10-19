@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119523: Troubleshooting Printing Problems on Notebook Computers"
-permalink: kb/119/Q119523/
+permalink: /kb/119/Q119523/
 ---
 
 ## Q119523: Troubleshooting Printing Problems on Notebook Computers

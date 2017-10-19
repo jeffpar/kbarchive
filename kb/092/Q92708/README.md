@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92708: WFWG Err Msg: &quot;Extended Error 65&quot; or &quot;File Manager Cannot...&quot;"
-permalink: kb/092/Q92708/
+permalink: /kb/092/Q92708/
 ---
 
 ## Q92708: WFWG Err Msg: &quot;Extended Error 65&quot; or &quot;File Manager Cannot...&quot;

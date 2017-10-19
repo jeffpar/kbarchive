@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101784: After Creating Backup Domain Controller Cannot Logon as Admin."
-permalink: kb/101/Q101784/
+permalink: /kb/101/Q101784/
 ---
 
 ## Q101784: After Creating Backup Domain Controller Cannot Logon as Admin.

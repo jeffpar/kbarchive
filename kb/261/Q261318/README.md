@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261318: Access Violation with Long Environment Variables"
-permalink: kb/261/Q261318/
+permalink: /kb/261/Q261318/
 ---
 
 ## Q261318: Access Violation with Long Environment Variables

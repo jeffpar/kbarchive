@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274221: Encarta: Cannot Zoom in to an Urban Area on a Map"
-permalink: kb/274/Q274221/
+permalink: /kb/274/Q274221/
 ---
 
 ## Q274221: Encarta: Cannot Zoom in to an Urban Area on a Map

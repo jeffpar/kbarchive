@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167859: FP: How to Move FrontPage PWS to Another Drive"
-permalink: kb/167/Q167859/
+permalink: /kb/167/Q167859/
 ---
 
 ## Q167859: FP: How to Move FrontPage PWS to Another Drive

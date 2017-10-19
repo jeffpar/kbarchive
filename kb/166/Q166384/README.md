@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166384: PRB: IME Always Active in Browse Window at VFP Run-Time"
-permalink: kb/166/Q166384/
+permalink: /kb/166/Q166384/
 ---
 
 ## Q166384: PRB: IME Always Active in Browse Window at VFP Run-Time

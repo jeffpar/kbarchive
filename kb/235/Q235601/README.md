@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235601: FIX: Putenv() Function Causes Memory Leak"
-permalink: kb/235/Q235601/
+permalink: /kb/235/Q235601/
 ---
 
 ## Q235601: FIX: Putenv() Function Causes Memory Leak

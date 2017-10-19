@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127096: INF: Implementation of Searched Updates in the Access Driver"
-permalink: kb/127/Q127096/
+permalink: /kb/127/Q127096/
 ---
 
 ## Q127096: INF: Implementation of Searched Updates in the Access Driver

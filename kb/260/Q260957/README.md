@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260957: RAS Returns Error 633 When Installed on a Lotus Notes Server"
-permalink: kb/260/Q260957/
+permalink: /kb/260/Q260957/
 ---
 
 ## Q260957: RAS Returns Error 633 When Installed on a Lotus Notes Server

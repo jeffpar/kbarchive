@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99929: PC WRmt: Connection Time-Outs"
-permalink: kb/099/Q99929/
+permalink: /kb/099/Q99929/
 ---
 
 ## Q99929: PC WRmt: Connection Time-Outs

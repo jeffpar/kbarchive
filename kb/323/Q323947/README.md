@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323947: MechWarrior 4: Black Knight: Maps Do Not Appear in List"
-permalink: kb/323/Q323947/
+permalink: /kb/323/Q323947/
 ---
 
 ## Q323947: MechWarrior 4: Black Knight: Maps Do Not Appear in List

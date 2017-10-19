@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113065: PRB: Extra Copies of Function Added to Library"
-permalink: kb/113/Q113065/
+permalink: /kb/113/Q113065/
 ---
 
 ## Q113065: PRB: Extra Copies of Function Added to Library

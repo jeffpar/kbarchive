@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178339: FS98/2000: Helicopter Controls for the Bell 206B JetRanger III"
-permalink: kb/178/Q178339/
+permalink: /kb/178/Q178339/
 ---
 
 ## Q178339: FS98/2000: Helicopter Controls for the Bell 206B JetRanger III

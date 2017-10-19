@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176522: IIS Server Instance Error Message with Microsoft Cluster Server"
-permalink: kb/176/Q176522/
+permalink: /kb/176/Q176522/
 ---
 
 ## Q176522: IIS Server Instance Error Message with Microsoft Cluster Server

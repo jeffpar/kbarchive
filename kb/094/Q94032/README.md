@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94032: &quot;Cannot Write to Device Aux&quot; Error When Using Norton's Sleeper"
-permalink: kb/094/Q94032/
+permalink: /kb/094/Q94032/
 ---
 
 ## Q94032: &quot;Cannot Write to Device Aux&quot; Error When Using Norton's Sleeper

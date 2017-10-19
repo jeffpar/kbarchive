@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221675: FIX: Problem Converting FP2.6 Screens With Large Labels &amp; @SAYs"
-permalink: kb/221/Q221675/
+permalink: /kb/221/Q221675/
 ---
 
 ## Q221675: FIX: Problem Converting FP2.6 Screens With Large Labels &amp; @SAYs

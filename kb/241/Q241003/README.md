@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241003: Microsoft Works Suite 2000 Step by Step Comments and Corrections"
-permalink: kb/241/Q241003/
+permalink: /kb/241/Q241003/
 ---
 
 ## Q241003: Microsoft Works Suite 2000 Step by Step Comments and Corrections

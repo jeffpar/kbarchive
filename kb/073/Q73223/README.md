@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73223: Group Window Does Not Repaint Properly in Windows 3.0"
-permalink: kb/073/Q73223/
+permalink: /kb/073/Q73223/
 ---
 
 ## Q73223: Group Window Does Not Repaint Properly in Windows 3.0

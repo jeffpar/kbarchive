@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93252: No Network Services if Real Mode Redirector Started"
-permalink: kb/093/Q93252/
+permalink: /kb/093/Q93252/
 ---
 
 ## Q93252: No Network Services if Real Mode Redirector Started

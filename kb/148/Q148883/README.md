@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148883: FIX: Setting the Value of a Text Box Adds New Record to Table"
-permalink: kb/148/Q148883/
+permalink: /kb/148/Q148883/
 ---
 
 ## Q148883: FIX: Setting the Value of a Text Box Adds New Record to Table

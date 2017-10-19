@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96620: Obtaining Security Certification Specifications"
-permalink: kb/096/Q96620/
+permalink: /kb/096/Q96620/
 ---
 
 ## Q96620: Obtaining Security Certification Specifications

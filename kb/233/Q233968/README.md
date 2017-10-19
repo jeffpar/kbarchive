@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233968: AspAllowOutOfProcComponents Is Obsolete in IIS 5.0"
-permalink: kb/233/Q233968/
+permalink: /kb/233/Q233968/
 ---
 
 ## Q233968: AspAllowOutOfProcComponents Is Obsolete in IIS 5.0

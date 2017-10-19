@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38133: Hewlett-Packard Font Cartridges &quot;A&quot; Through &quot;G&quot; Description"
-permalink: kb/038/Q38133/
+permalink: /kb/038/Q38133/
 ---
 
 ## Q38133: Hewlett-Packard Font Cartridges &quot;A&quot; Through &quot;G&quot; Description

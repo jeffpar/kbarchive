@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71207: Previous Button Dimmed in Connect Net Drive Dialog Box"
-permalink: kb/071/Q71207/
+permalink: /kb/071/Q71207/
 ---
 
 ## Q71207: Previous Button Dimmed in Connect Net Drive Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146455: XADM: Generated SMTP Addresses for Duplicate Mailboxes"
-permalink: kb/146/Q146455/
+permalink: /kb/146/Q146455/
 ---
 
 ## Q146455: XADM: Generated SMTP Addresses for Duplicate Mailboxes

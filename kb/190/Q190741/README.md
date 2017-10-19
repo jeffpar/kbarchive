@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190741: HOWTO: Get User Information Using ADSI"
-permalink: kb/190/Q190741/
+permalink: /kb/190/Q190741/
 ---
 
 ## Q190741: HOWTO: Get User Information Using ADSI

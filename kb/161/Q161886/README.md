@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161886: Property Sheet as the View Window of a CFrameWnd"
-permalink: kb/161/Q161886/
+permalink: /kb/161/Q161886/
 ---
 
 ## Q161886: Property Sheet as the View Window of a CFrameWnd

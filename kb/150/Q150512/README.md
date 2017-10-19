@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150512: Client Setup is Unable To Validate Windows Path"
-permalink: kb/150/Q150512/
+permalink: /kb/150/Q150512/
 ---
 
 ## Q150512: Client Setup is Unable To Validate Windows Path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90918: MS-DOS Applications in Windows with Proteon Network Cards"
-permalink: kb/090/Q90918/
+permalink: /kb/090/Q90918/
 ---
 
 ## Q90918: MS-DOS Applications in Windows with Proteon Network Cards

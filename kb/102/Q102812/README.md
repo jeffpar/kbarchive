@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102812: WFWG: Separator Page Prints First Name of User Only"
-permalink: kb/102/Q102812/
+permalink: /kb/102/Q102812/
 ---
 
 ## Q102812: WFWG: Separator Page Prints First Name of User Only

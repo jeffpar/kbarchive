@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135614: FIX: GET Field Default Sizes on the Desktop Are Too Small"
-permalink: kb/135/Q135614/
+permalink: /kb/135/Q135614/
 ---
 
 ## Q135614: FIX: GET Field Default Sizes on the Desktop Are Too Small

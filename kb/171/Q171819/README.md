@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171819: FIX: Invalid Enum Value Causes Incompatible Binary Compatible"
-permalink: kb/171/Q171819/
+permalink: /kb/171/Q171819/
 ---
 
 ## Q171819: FIX: Invalid Enum Value Causes Incompatible Binary Compatible

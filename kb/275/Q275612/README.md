@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q275612: SMS: Modifying [Tokens] Section of Smsbkup.ctl May Delete Files"
-permalink: kb/275/Q275612/
+title: "Q275612: SMS: Modifying &#91;Tokens&#93; Section of Smsbkup.ctl May Delete Files"
+permalink: /kb/275/Q275612/
 ---
 
-## Q275612: SMS: Modifying [Tokens] Section of Smsbkup.ctl May Delete Files
+## Q275612: SMS: Modifying &#91;Tokens&#93; Section of Smsbkup.ctl May Delete Files
 
 	Article: Q275612
 	Product(s): Microsoft Systems Management Server

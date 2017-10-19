@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96517: Using DoubleSpace to Compress a Bootable Hard Card"
-permalink: kb/096/Q96517/
+permalink: /kb/096/Q96517/
 ---
 
 ## Q96517: Using DoubleSpace to Compress a Bootable Hard Card

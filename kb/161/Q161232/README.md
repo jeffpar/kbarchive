@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161232: HOWTO: Use Spaces in Enumerated Types"
-permalink: kb/161/Q161232/
+permalink: /kb/161/Q161232/
 ---
 
 ## Q161232: HOWTO: Use Spaces in Enumerated Types

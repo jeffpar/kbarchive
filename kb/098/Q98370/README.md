@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98370: Err Msg: Golf Requires a Minimum of 16 Color Graphics"
-permalink: kb/098/Q98370/
+permalink: /kb/098/Q98370/
 ---
 
 ## Q98370: Err Msg: Golf Requires a Minimum of 16 Color Graphics

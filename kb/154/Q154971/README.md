@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154971: PPT: Sound or Movie Objects Play Incorrectly or Not at All on NT"
-permalink: kb/154/Q154971/
+permalink: /kb/154/Q154971/
 ---
 
 ## Q154971: PPT: Sound or Movie Objects Play Incorrectly or Not at All on NT

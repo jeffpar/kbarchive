@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180704: SLI_CLOSE May Hang if CICS Doesn't Respond to SHUTC"
-permalink: kb/180/Q180704/
+permalink: /kb/180/Q180704/
 ---
 
 ## Q180704: SLI_CLOSE May Hang if CICS Doesn't Respond to SHUTC

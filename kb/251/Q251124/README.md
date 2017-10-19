@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251124: XFOR: How to Configure Alias Table in Exchange Server"
-permalink: kb/251/Q251124/
+permalink: /kb/251/Q251124/
 ---
 
 ## Q251124: XFOR: How to Configure Alias Table in Exchange Server

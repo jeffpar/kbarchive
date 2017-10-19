@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145816: How to Access Report's Data Environment While the Report Runs"
-permalink: kb/145/Q145816/
+permalink: /kb/145/Q145816/
 ---
 
 ## Q145816: How to Access Report's Data Environment While the Report Runs

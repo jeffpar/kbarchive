@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139628: Running Batch File Through PIF Returns Different Results"
-permalink: kb/139/Q139628/
+permalink: /kb/139/Q139628/
 ---
 
 ## Q139628: Running Batch File Through PIF Returns Different Results

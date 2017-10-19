@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321512: HOWTO: Call a Visual FoxPro 7.0 Web Service from ASP"
-permalink: kb/321/Q321512/
+permalink: /kb/321/Q321512/
 ---
 
 ## Q321512: HOWTO: Call a Visual FoxPro 7.0 Web Service from ASP

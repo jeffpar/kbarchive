@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107416: INFO: User-Defined Function to Convert a Date into Words"
-permalink: kb/107/Q107416/
+permalink: /kb/107/Q107416/
 ---
 
 ## Q107416: INFO: User-Defined Function to Convert a Date into Words

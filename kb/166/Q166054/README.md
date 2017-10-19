@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166054: WV: Outline Expand/Collapse Keystrokes Fail in Word Viewer"
-permalink: kb/166/Q166054/
+permalink: /kb/166/Q166054/
 ---
 
 ## Q166054: WV: Outline Expand/Collapse Keystrokes Fail in Word Viewer

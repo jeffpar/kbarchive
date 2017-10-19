@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191207: BUG: Compile Error When You Reopen a Project That Uses Implement"
-permalink: kb/191/Q191207/
+permalink: /kb/191/Q191207/
 ---
 
 ## Q191207: BUG: Compile Error When You Reopen a Project That Uses Implement

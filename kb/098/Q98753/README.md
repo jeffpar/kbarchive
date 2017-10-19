@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98753: ERR: &quot;Feature Not Available&quot;; MODIFY/CREATE QUERY in .EXE File"
-permalink: kb/098/Q98753/
+permalink: /kb/098/Q98753/
 ---
 
 ## Q98753: ERR: &quot;Feature Not Available&quot;; MODIFY/CREATE QUERY in .EXE File

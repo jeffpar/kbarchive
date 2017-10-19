@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43971: INFO: qsort(): Parameters to the Compare Function"
-permalink: kb/043/Q43971/
+permalink: /kb/043/Q43971/
 ---
 
 ## Q43971: INFO: qsort(): Parameters to the Compare Function

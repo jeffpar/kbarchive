@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170777: INFO: Interpreting 802.2 DLC Outage Code from SNA Server Level 2"
-permalink: kb/170/Q170777/
+permalink: /kb/170/Q170777/
 ---
 
 ## Q170777: INFO: Interpreting 802.2 DLC Outage Code from SNA Server Level 2

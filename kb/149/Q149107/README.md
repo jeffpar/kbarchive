@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149107: How to Return Values to AppleScript from FoxPro"
-permalink: kb/149/Q149107/
+permalink: /kb/149/Q149107/
 ---
 
 ## Q149107: How to Return Values to AppleScript from FoxPro

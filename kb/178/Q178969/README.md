@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178969: MS Graph 97: Keyboard Shortcuts for Microsoft Graph 97"
-permalink: kb/178/Q178969/
+permalink: /kb/178/Q178969/
 ---
 
 ## Q178969: MS Graph 97: Keyboard Shortcuts for Microsoft Graph 97

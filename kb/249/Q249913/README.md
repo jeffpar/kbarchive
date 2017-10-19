@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249913: Asheron's Call: How Character Information Is Stored"
-permalink: kb/249/Q249913/
+permalink: /kb/249/Q249913/
 ---
 
 ## Q249913: Asheron's Call: How Character Information Is Stored

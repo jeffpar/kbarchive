@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112334: Hollerith Constants in Argument Lists"
-permalink: kb/112/Q112334/
+permalink: /kb/112/Q112334/
 ---
 
 ## Q112334: Hollerith Constants in Argument Lists

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181281: BUG: ListBox Text Property Not Functional"
-permalink: kb/181/Q181281/
+permalink: /kb/181/Q181281/
 ---
 
 ## Q181281: BUG: ListBox Text Property Not Functional

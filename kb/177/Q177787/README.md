@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177787: Age of Empires: WordPad Cannot Read Stratsmp.doc or Strattyp.doc"
-permalink: kb/177/Q177787/
+permalink: /kb/177/Q177787/
 ---
 
 ## Q177787: Age of Empires: WordPad Cannot Read Stratsmp.doc or Strattyp.doc

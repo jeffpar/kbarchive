@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192535: PRB: Regsvr32.exe Fails in Mfco42d.dll Registering MFC Server"
-permalink: kb/192/Q192535/
+permalink: /kb/192/Q192535/
 ---
 
 ## Q192535: PRB: Regsvr32.exe Fails in Mfco42d.dll Registering MFC Server

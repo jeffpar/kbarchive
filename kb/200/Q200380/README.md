@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200380: SMS: Y2K Testing on SMS Site Server Causes Problems"
-permalink: kb/200/Q200380/
+permalink: /kb/200/Q200380/
 ---
 
 ## Q200380: SMS: Y2K Testing on SMS Site Server Causes Problems

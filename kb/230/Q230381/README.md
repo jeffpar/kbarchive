@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230381: TCP/IP Dead Gateway Detection May Not Work if ARP Cache Empty"
-permalink: kb/230/Q230381/
+permalink: /kb/230/Q230381/
 ---
 
 ## Q230381: TCP/IP Dead Gateway Detection May Not Work if ARP Cache Empty

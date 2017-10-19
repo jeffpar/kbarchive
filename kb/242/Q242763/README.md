@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242763: Age of Empires II: Cannot Name a Saved Game &quot;COMx&quot; or &quot;LPTx&quot;"
-permalink: kb/242/Q242763/
+permalink: /kb/242/Q242763/
 ---
 
 ## Q242763: Age of Empires II: Cannot Name a Saved Game &quot;COMx&quot; or &quot;LPTx&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248654: List of Articles About Windows NT Load Balancing Service"
-permalink: kb/248/Q248654/
+permalink: /kb/248/Q248654/
 ---
 
 ## Q248654: List of Articles About Windows NT Load Balancing Service

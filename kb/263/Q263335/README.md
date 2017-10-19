@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263335: SMS 1.2 Secondary Site Properties Unavailable After Upgrade"
-permalink: kb/263/Q263335/
+permalink: /kb/263/Q263335/
 ---
 
 ## Q263335: SMS 1.2 Secondary Site Properties Unavailable After Upgrade

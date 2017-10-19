@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179825: Contents of the Plus! For Kids Readme.doc File"
-permalink: kb/179/Q179825/
+permalink: /kb/179/Q179825/
 ---
 
 ## Q179825: Contents of the Plus! For Kids Readme.doc File

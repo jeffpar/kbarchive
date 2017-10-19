@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245159: FIX: SendData Only Works Over the Latest Connection"
-permalink: kb/245/Q245159/
+permalink: /kb/245/Q245159/
 ---
 
 ## Q245159: FIX: SendData Only Works Over the Latest Connection

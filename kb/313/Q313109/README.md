@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313109: HOW TO: Find the Problem Exception Stack in the Stack Trace"
-permalink: kb/313/Q313109/
+permalink: /kb/313/Q313109/
 ---
 
 ## Q313109: HOW TO: Find the Problem Exception Stack in the Stack Trace

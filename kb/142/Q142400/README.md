@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142400: Encarta 96: National Anthem Play Button Unavailable"
-permalink: kb/142/Q142400/
+permalink: /kb/142/Q142400/
 ---
 
 ## Q142400: Encarta 96: National Anthem Play Button Unavailable

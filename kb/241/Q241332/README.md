@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241332: Zone: Unable to Connect Using America Online"
-permalink: kb/241/Q241332/
+permalink: /kb/241/Q241332/
 ---
 
 ## Q241332: Zone: Unable to Connect Using America Online

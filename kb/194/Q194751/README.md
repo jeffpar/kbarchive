@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194751: FILE: VB6Cli.exe Fixes License Problems with Visual Basic 6.0"
-permalink: kb/194/Q194751/
+permalink: /kb/194/Q194751/
 ---
 
 ## Q194751: FILE: VB6Cli.exe Fixes License Problems with Visual Basic 6.0

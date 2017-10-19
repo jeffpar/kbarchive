@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78422: Incorrect DIR Listing with Personics Ultravision"
-permalink: kb/078/Q78422/
+permalink: /kb/078/Q78422/
 ---
 
 ## Q78422: Incorrect DIR Listing with Personics Ultravision

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152439: XADM: How to Tell if Exchange a Has Service Pack Installed"
-permalink: kb/152/Q152439/
+permalink: /kb/152/Q152439/
 ---
 
 ## Q152439: XADM: How to Tell if Exchange a Has Service Pack Installed

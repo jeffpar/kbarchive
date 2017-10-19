@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168845: Windows NT SMS Clients Produce NT Event 3031"
-permalink: kb/168/Q168845/
+permalink: /kb/168/Q168845/
 ---
 
 ## Q168845: Windows NT SMS Clients Produce NT Event 3031

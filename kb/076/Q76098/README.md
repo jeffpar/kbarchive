@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76098: MS-DOS Err Msg: SMARTDrive: Not Enough Memory to Load Driver"
-permalink: kb/076/Q76098/
+permalink: /kb/076/Q76098/
 ---
 
 ## Q76098: MS-DOS Err Msg: SMARTDrive: Not Enough Memory to Load Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274681: Metal Gear Solid: How to Improve Game Performance"
-permalink: kb/274/Q274681/
+permalink: /kb/274/Q274681/
 ---
 
 ## Q274681: Metal Gear Solid: How to Improve Game Performance

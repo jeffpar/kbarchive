@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98784: PC WSPlus: Cannot Choose All When Exporting to a Text File"
-permalink: kb/098/Q98784/
+permalink: /kb/098/Q98784/
 ---
 
 ## Q98784: PC WSPlus: Cannot Choose All When Exporting to a Text File

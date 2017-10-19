@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299918: FIX: Memory Leak Calling Connection Designer from Database"
-permalink: kb/299/Q299918/
+permalink: /kb/299/Q299918/
 ---
 
 ## Q299918: FIX: Memory Leak Calling Connection Designer from Database

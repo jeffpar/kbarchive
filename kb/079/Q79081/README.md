@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79081: Icon Description Line Character Limit"
-permalink: kb/079/Q79081/
+permalink: /kb/079/Q79081/
 ---
 
 ## Q79081: Icon Description Line Character Limit

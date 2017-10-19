@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142680: Modification to Support Direct Host IPX Acceleration Drivers"
-permalink: kb/142/Q142680/
+permalink: /kb/142/Q142680/
 ---
 
 ## Q142680: Modification to Support Direct Host IPX Acceleration Drivers

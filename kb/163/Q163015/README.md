@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163015: Use of &quot;Already Verified&quot; APPC Security from Invoking TPs"
-permalink: kb/163/Q163015/
+permalink: /kb/163/Q163015/
 ---
 
 ## Q163015: Use of &quot;Already Verified&quot; APPC Security from Invoking TPs

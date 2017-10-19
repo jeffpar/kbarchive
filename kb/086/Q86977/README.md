@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86977: X400: Definition of X.121 Address"
-permalink: kb/086/Q86977/
+permalink: /kb/086/Q86977/
 ---
 
 ## Q86977: X400: Definition of X.121 Address

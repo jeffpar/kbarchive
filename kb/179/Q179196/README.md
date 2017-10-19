@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179196: PRB: &quot;Insert the CD Labeled Microsoft VFP Setup CD-Rom&quot; Error"
-permalink: kb/179/Q179196/
+permalink: /kb/179/Q179196/
 ---
 
 ## Q179196: PRB: &quot;Insert the CD Labeled Microsoft VFP Setup CD-Rom&quot; Error

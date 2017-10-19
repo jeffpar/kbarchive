@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173432: WD97: Web Page Wizard Creates Unnecessary Copies of Image Files"
-permalink: kb/173/Q173432/
+permalink: /kb/173/Q173432/
 ---
 
 ## Q173432: WD97: Web Page Wizard Creates Unnecessary Copies of Image Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186915: XFOR: Notes Connector May Send Empty Messages"
-permalink: kb/186/Q186915/
+permalink: /kb/186/Q186915/
 ---
 
 ## Q186915: XFOR: Notes Connector May Send Empty Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49723: Spot Plane Doesn't Recognize Aircraft Carrier"
-permalink: kb/049/Q49723/
+permalink: /kb/049/Q49723/
 ---
 
 ## Q49723: Spot Plane Doesn't Recognize Aircraft Carrier

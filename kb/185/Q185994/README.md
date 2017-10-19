@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185994: GPS Err Msg: This Program Was Designed for a Previous Version..."
-permalink: kb/185/Q185994/
+permalink: /kb/185/Q185994/
 ---
 
 ## Q185994: GPS Err Msg: This Program Was Designed for a Previous Version...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160660: Ntregmon.exe causes STOP 0x0000001E with New Service Pack"
-permalink: kb/160/Q160660/
+permalink: /kb/160/Q160660/
 ---
 
 ## Q160660: Ntregmon.exe causes STOP 0x0000001E with New Service Pack

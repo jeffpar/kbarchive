@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145711: Only First Two Events Will Display in Notes"
-permalink: kb/145/Q145711/
+permalink: /kb/145/Q145711/
 ---
 
 ## Q145711: Only First Two Events Will Display in Notes

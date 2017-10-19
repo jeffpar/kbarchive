@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155791: FIX: Some Intermediate Files not Deleted by FileView"
-permalink: kb/155/Q155791/
+permalink: /kb/155/Q155791/
 ---
 
 ## Q155791: FIX: Some Intermediate Files not Deleted by FileView

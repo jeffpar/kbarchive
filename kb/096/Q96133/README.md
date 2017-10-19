@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96133: DoubleSpace Err Msg: 'Your Computer Might Be Running...'"
-permalink: kb/096/Q96133/
+permalink: /kb/096/Q96133/
 ---
 
 ## Q96133: DoubleSpace Err Msg: 'Your Computer Might Be Running...'

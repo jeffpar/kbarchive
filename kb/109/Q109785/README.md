@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109785: Command Line NTBACKUP /B Omits Registry Files"
-permalink: kb/109/Q109785/
+permalink: /kb/109/Q109785/
 ---
 
 ## Q109785: Command Line NTBACKUP /B Omits Registry Files

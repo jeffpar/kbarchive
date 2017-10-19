@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105255: Err Msg with Removable Media: Dblspace Cannot Mount Drive..."
-permalink: kb/105/Q105255/
+permalink: /kb/105/Q105255/
 ---
 
 ## Q105255: Err Msg with Removable Media: Dblspace Cannot Mount Drive...

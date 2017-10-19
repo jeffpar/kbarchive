@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162622: HOWTO: Pass a NULL String to a Windows API from Visual Basic"
-permalink: kb/162/Q162622/
+permalink: /kb/162/Q162622/
 ---
 
 ## Q162622: HOWTO: Pass a NULL String to a Windows API from Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158348: WD97: How to Change the Default File Name and Directory"
-permalink: kb/158/Q158348/
+permalink: /kb/158/Q158348/
 ---
 
 ## Q158348: WD97: How to Change the Default File Name and Directory

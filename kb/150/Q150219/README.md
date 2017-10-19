@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150219: BUG: Progress Bar Does Not Paint When DragMode Automatic"
-permalink: kb/150/Q150219/
+permalink: /kb/150/Q150219/
 ---
 
 ## Q150219: BUG: Progress Bar Does Not Paint When DragMode Automatic

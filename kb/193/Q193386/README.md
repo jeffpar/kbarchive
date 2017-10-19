@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193386: MSJET35.dll Error Installing Microsoft Office 97 SR2"
-permalink: kb/193/Q193386/
+permalink: /kb/193/Q193386/
 ---
 
 ## Q193386: MSJET35.dll Error Installing Microsoft Office 97 SR2

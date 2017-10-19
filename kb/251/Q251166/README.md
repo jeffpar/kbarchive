@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251166: NetBIOS Connections Using IP Address Fail After Applying SP5"
-permalink: kb/251/Q251166/
+permalink: /kb/251/Q251166/
 ---
 
 ## Q251166: NetBIOS Connections Using IP Address Fail After Applying SP5

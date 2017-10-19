@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168849: Puzzle Collection: Contents And Requirements for Trial Version"
-permalink: kb/168/Q168849/
+permalink: /kb/168/Q168849/
 ---
 
 ## Q168849: Puzzle Collection: Contents And Requirements for Trial Version

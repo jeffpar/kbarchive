@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173555: XADM: Exchange Generates Conflict for Same Public Folder"
-permalink: kb/173/Q173555/
+permalink: /kb/173/Q173555/
 ---
 
 ## Q173555: XADM: Exchange Generates Conflict for Same Public Folder

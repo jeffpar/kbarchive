@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157440: Windows 95 Client Receives MSN Pop-up Screen When Starting"
-permalink: kb/157/Q157440/
+permalink: /kb/157/Q157440/
 ---
 
 ## Q157440: Windows 95 Client Receives MSN Pop-up Screen When Starting

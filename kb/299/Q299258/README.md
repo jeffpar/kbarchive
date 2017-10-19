@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299258: XADM: Information Store Access Violation with Virus Scanning API"
-permalink: kb/299/Q299258/
+permalink: /kb/299/Q299258/
 ---
 
 ## Q299258: XADM: Information Store Access Violation with Virus Scanning API

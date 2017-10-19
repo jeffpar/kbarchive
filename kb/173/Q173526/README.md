@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173526: &quot;Serious Disk Error&quot; When Saving Word 6.0 Document on Windows NT"
-permalink: kb/173/Q173526/
+permalink: /kb/173/Q173526/
 ---
 
 ## Q173526: &quot;Serious Disk Error&quot; When Saving Word 6.0 Document on Windows NT

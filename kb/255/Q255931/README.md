@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255931: TAMA Additions Appear as Modifcations in Export File"
-permalink: kb/255/Q255931/
+permalink: /kb/255/Q255931/
 ---
 
 ## Q255931: TAMA Additions Appear as Modifcations in Export File

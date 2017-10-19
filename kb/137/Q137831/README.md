@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137831: PPT7: Default Formatting Not Applied to Every New Presentation"
-permalink: kb/137/Q137831/
+permalink: /kb/137/Q137831/
 ---
 
 ## Q137831: PPT7: Default Formatting Not Applied to Every New Presentation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179725: XFOR: ICS: &quot;Cant&quot; Misspelling Is Per RFC-1459"
-permalink: kb/179/Q179725/
+permalink: /kb/179/Q179725/
 ---
 
 ## Q179725: XFOR: ICS: &quot;Cant&quot; Misspelling Is Per RFC-1459

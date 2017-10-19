@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184089: FIX: C2555 with Virtual Function Returning Template Object"
-permalink: kb/184/Q184089/
+permalink: /kb/184/Q184089/
 ---
 
 ## Q184089: FIX: C2555 with Virtual Function Returning Template Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191983: XADM: Cannot Stop Information Store from Command Line"
-permalink: kb/191/Q191983/
+permalink: /kb/191/Q191983/
 ---
 
 ## Q191983: XADM: Cannot Stop Information Store from Command Line

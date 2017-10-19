@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157080: XADM: Microsoft Sponsored Exchange NNTP Newsgroups"
-permalink: kb/157/Q157080/
+permalink: /kb/157/Q157080/
 ---
 
 ## Q157080: XADM: Microsoft Sponsored Exchange NNTP Newsgroups

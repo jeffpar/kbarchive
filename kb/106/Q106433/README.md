@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106433: MS-DOS 6.2 Step-Up Error Message: Cannot Update File"
-permalink: kb/106/Q106433/
+permalink: /kb/106/Q106433/
 ---
 
 ## Q106433: MS-DOS 6.2 Step-Up Error Message: Cannot Update File

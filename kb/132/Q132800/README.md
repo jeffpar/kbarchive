@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132800: Rebel Assault 1.4 Reports Protected Mode Already in Use"
-permalink: kb/132/Q132800/
+permalink: /kb/132/Q132800/
 ---
 
 ## Q132800: Rebel Assault 1.4 Reports Protected Mode Already in Use

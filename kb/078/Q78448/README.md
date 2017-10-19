@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78448: MS-DOS 5, 6, and 6.2 Upgrades Provide DMDRVR.BIN &amp; SSTOR.SYS"
-permalink: kb/078/Q78448/
+permalink: /kb/078/Q78448/
 ---
 
 ## Q78448: MS-DOS 5, 6, and 6.2 Upgrades Provide DMDRVR.BIN &amp; SSTOR.SYS

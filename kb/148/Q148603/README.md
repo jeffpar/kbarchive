@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148603: Invalid Sense Code Returned In APPC Allocate Response"
-permalink: kb/148/Q148603/
+permalink: /kb/148/Q148603/
 ---
 
 ## Q148603: Invalid Sense Code Returned In APPC Allocate Response

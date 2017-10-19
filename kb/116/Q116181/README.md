@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116181: FIX: ClassWizard Option Isn't Disabled for Non-MFC Projects"
-permalink: kb/116/Q116181/
+permalink: /kb/116/Q116181/
 ---
 
 ## Q116181: FIX: ClassWizard Option Isn't Disabled for Non-MFC Projects

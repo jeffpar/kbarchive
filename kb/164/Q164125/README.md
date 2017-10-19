@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164125: XCLN: Creator Information Missing for Scheduled Appointment"
-permalink: kb/164/Q164125/
+permalink: /kb/164/Q164125/
 ---
 
 ## Q164125: XCLN: Creator Information Missing for Scheduled Appointment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245055: Streets and Trips: How to Import Outlook Express Contacts"
-permalink: kb/245/Q245055/
+permalink: /kb/245/Q245055/
 ---
 
 ## Q245055: Streets and Trips: How to Import Outlook Express Contacts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116332: PRB: Floats May Be Rounded Up Using ODBC SQL Server Driver"
-permalink: kb/116/Q116332/
+permalink: /kb/116/Q116332/
 ---
 
 ## Q116332: PRB: Floats May Be Rounded Up Using ODBC SQL Server Driver

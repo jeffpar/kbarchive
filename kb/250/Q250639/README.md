@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250639: FPNW Has Problems with Files Created in 1980"
-permalink: kb/250/Q250639/
+permalink: /kb/250/Q250639/
 ---
 
 ## Q250639: FPNW Has Problems with Files Created in 1980

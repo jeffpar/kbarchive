@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92632: Windows Err Msg: General Protection Fault in Module Calisto"
-permalink: kb/092/Q92632/
+permalink: /kb/092/Q92632/
 ---
 
 ## Q92632: Windows Err Msg: General Protection Fault in Module Calisto

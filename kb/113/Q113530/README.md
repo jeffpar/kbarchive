@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113530: BUG: Parent Folder Icon Not at Top of List in Filer"
-permalink: kb/113/Q113530/
+permalink: /kb/113/Q113530/
 ---
 
 ## Q113530: BUG: Parent Folder Icon Not at Top of List in Filer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126792: PC Win WRmt: Err Msg: Following Recipient(s) Could Not Be..."
-permalink: kb/126/Q126792/
+permalink: /kb/126/Q126792/
 ---
 
 ## Q126792: PC Win WRmt: Err Msg: Following Recipient(s) Could Not Be...

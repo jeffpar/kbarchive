@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168135: HP Font Attributes Display and Print Incorrectly"
-permalink: kb/168/Q168135/
+permalink: /kb/168/Q168135/
 ---
 
 ## Q168135: HP Font Attributes Display and Print Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141852: Closing MS Info Version 2.5 Disables Sound"
-permalink: kb/141/Q141852/
+permalink: /kb/141/Q141852/
 ---
 
 ## Q141852: Closing MS Info Version 2.5 Disables Sound

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166389: Err Msg: Cannot Find File or One of its Components"
-permalink: kb/166/Q166389/
+permalink: /kb/166/Q166389/
 ---
 
 ## Q166389: Err Msg: Cannot Find File or One of its Components

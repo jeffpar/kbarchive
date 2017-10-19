@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153464: XFOR: Unexpected Text Attachment in Mail Received from Internet"
-permalink: kb/153/Q153464/
+permalink: /kb/153/Q153464/
 ---
 
 ## Q153464: XFOR: Unexpected Text Attachment in Mail Received from Internet

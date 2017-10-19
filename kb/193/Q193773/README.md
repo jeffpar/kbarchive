@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193773: HOWTO: Detect File System Changes under Windows NT"
-permalink: kb/193/Q193773/
+permalink: /kb/193/Q193773/
 ---
 
 ## Q193773: HOWTO: Detect File System Changes under Windows NT

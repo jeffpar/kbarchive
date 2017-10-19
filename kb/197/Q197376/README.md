@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197376: XFOR: IRCX Channel Name on Remote Server Appears Incorrectly"
-permalink: kb/197/Q197376/
+permalink: /kb/197/Q197376/
 ---
 
 ## Q197376: XFOR: IRCX Channel Name on Remote Server Appears Incorrectly

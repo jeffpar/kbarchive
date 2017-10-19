@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185179: SMS: No Retry For &quot;Remove Package&quot; Jobs"
-permalink: kb/185/Q185179/
+permalink: /kb/185/Q185179/
 ---
 
 ## Q185179: SMS: No Retry For &quot;Remove Package&quot; Jobs

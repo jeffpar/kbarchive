@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312433: XFOR: How to Use Mdbvu32.exe to Find and Remove a Delegate Rule"
-permalink: kb/312/Q312433/
+permalink: /kb/312/Q312433/
 ---
 
 ## Q312433: XFOR: How to Use Mdbvu32.exe to Find and Remove a Delegate Rule

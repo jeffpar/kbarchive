@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119080: WinPopUp Msg: There Has Been a Failure of the Network"
-permalink: kb/119/Q119080/
+permalink: /kb/119/Q119080/
 ---
 
 ## Q119080: WinPopUp Msg: There Has Been a Failure of the Network

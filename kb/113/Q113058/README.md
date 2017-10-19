@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113058: Using Interrupt 21h, Function 3Fh to Read the Keyboard"
-permalink: kb/113/Q113058/
+permalink: /kb/113/Q113058/
 ---
 
 ## Q113058: Using Interrupt 21h, Function 3Fh to Read the Keyboard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134598: Corel Draw 3.0 TrueType Fonts Printed Incorrectly"
-permalink: kb/134/Q134598/
+permalink: /kb/134/Q134598/
 ---
 
 ## Q134598: Corel Draw 3.0 TrueType Fonts Printed Incorrectly

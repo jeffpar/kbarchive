@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198718: SMS: Client-Side WUSER Logging for Remote Tools"
-permalink: kb/198/Q198718/
+permalink: /kb/198/Q198718/
 ---
 
 ## Q198718: SMS: Client-Side WUSER Logging for Remote Tools

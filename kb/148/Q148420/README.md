@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148420: XCLN: Can't Change Password on Novell Client"
-permalink: kb/148/Q148420/
+permalink: /kb/148/Q148420/
 ---
 
 ## Q148420: XCLN: Can't Change Password on Novell Client

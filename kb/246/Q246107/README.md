@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246107: WINAT Returns Error When Current Day Is Sunday"
-permalink: kb/246/Q246107/
+permalink: /kb/246/Q246107/
 ---
 
 ## Q246107: WINAT Returns Error When Current Day Is Sunday

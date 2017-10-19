@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69303: Using the Western Digital Ethernet Plus Card and Windows 3.0"
-permalink: kb/069/Q69303/
+permalink: /kb/069/Q69303/
 ---
 
 ## Q69303: Using the Western Digital Ethernet Plus Card and Windows 3.0

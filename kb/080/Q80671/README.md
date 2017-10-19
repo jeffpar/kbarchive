@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80671: Novell Err Msg: VIPX.386 Cannot Load"
-permalink: kb/080/Q80671/
+permalink: /kb/080/Q80671/
 ---
 
 ## Q80671: Novell Err Msg: VIPX.386 Cannot Load

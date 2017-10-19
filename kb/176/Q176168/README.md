@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176168: XADM: Schema Changes for Exchange Server 5.0 and 5.5"
-permalink: kb/176/Q176168/
+permalink: /kb/176/Q176168/
 ---
 
 ## Q176168: XADM: Schema Changes for Exchange Server 5.0 and 5.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177673: XADM: Incoming PF Replication Message Causes Events in App Log"
-permalink: kb/177/Q177673/
+permalink: /kb/177/Q177673/
 ---
 
 ## Q177673: XADM: Incoming PF Replication Message Causes Events in App Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315471: HOW TO: Perform Secure Internet Messaging over HTTPS"
-permalink: kb/315/Q315471/
+permalink: /kb/315/Q315471/
 ---
 
 ## Q315471: HOW TO: Perform Secure Internet Messaging over HTTPS

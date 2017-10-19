@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86057: Window Title Does Not Change When Modified with PIF Editor"
-permalink: kb/086/Q86057/
+permalink: /kb/086/Q86057/
 ---
 
 ## Q86057: Window Title Does Not Change When Modified with PIF Editor

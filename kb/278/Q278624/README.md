@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278624: How to determine if the MSN Companion unit is connected"
-permalink: kb/278/Q278624/
+permalink: /kb/278/Q278624/
 ---
 
 ## Q278624: How to determine if the MSN Companion unit is connected

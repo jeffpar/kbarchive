@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193077: FIX: Passing Array to Init with Addobject Passes First Element"
-permalink: kb/193/Q193077/
+permalink: /kb/193/Q193077/
 ---
 
 ## Q193077: FIX: Passing Array to Init with Addobject Passes First Element

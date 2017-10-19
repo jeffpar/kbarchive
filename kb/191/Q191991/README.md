@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191991: Error Message: Stop C0000142 (DLL Initialization Failed)"
-permalink: kb/191/Q191991/
+permalink: /kb/191/Q191991/
 ---
 
 ## Q191991: Error Message: Stop C0000142 (DLL Initialization Failed)

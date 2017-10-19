@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153586: HOWTO: Call C Functions That Use the _cdecl Calling Convention"
-permalink: kb/153/Q153586/
+permalink: /kb/153/Q153586/
 ---
 
 ## Q153586: HOWTO: Call C Functions That Use the _cdecl Calling Convention

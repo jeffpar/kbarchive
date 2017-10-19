@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308269: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP4"
-permalink: kb/308/Q308269/
+permalink: /kb/308/Q308269/
 ---
 
 ## Q308269: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP4

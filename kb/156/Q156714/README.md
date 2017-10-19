@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156714: XFOR: Dir-Sync Requestor Updates Not Being Updated Properly"
-permalink: kb/156/Q156714/
+permalink: /kb/156/Q156714/
 ---
 
 ## Q156714: XFOR: Dir-Sync Requestor Updates Not Being Updated Properly

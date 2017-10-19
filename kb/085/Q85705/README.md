@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85705: Compuserve's CIM May Not Run on Packard Bell with SVGA Display"
-permalink: kb/085/Q85705/
+permalink: /kb/085/Q85705/
 ---
 
 ## Q85705: Compuserve's CIM May Not Run on Packard Bell with SVGA Display

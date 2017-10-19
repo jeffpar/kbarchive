@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66884: ASD: Using SubLogic Scenery"
-permalink: kb/066/Q66884/
+permalink: /kb/066/Q66884/
 ---
 
 ## Q66884: ASD: Using SubLogic Scenery

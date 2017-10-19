@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256225: ATT: Extracting ATT Gateway User List by Using the Import Tool"
-permalink: kb/256/Q256225/
+permalink: /kb/256/Q256225/
 ---
 
 ## Q256225: ATT: Extracting ATT Gateway User List by Using the Import Tool

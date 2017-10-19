@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257286: Changing Password Over RAS May Not Work"
-permalink: kb/257/Q257286/
+permalink: /kb/257/Q257286/
 ---
 
 ## Q257286: Changing Password Over RAS May Not Work

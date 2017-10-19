@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187297: PRB: Run-time Error Message 3024 Using SQL and DAO Against Oracl"
-permalink: kb/187/Q187297/
+permalink: /kb/187/Q187297/
 ---
 
 ## Q187297: PRB: Run-time Error Message 3024 Using SQL and DAO Against Oracl

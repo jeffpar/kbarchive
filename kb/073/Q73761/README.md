@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73761: Mac Util: Dial-in Utility ReadMe File"
-permalink: kb/073/Q73761/
+permalink: /kb/073/Q73761/
 ---
 
 ## Q73761: Mac Util: Dial-in Utility ReadMe File

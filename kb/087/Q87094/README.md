@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87094: Media Player May Not Seek with CDAudio Selected"
-permalink: kb/087/Q87094/
+permalink: /kb/087/Q87094/
 ---
 
 ## Q87094: Media Player May Not Seek with CDAudio Selected

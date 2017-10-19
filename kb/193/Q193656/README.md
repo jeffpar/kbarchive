@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193656: &quot;The File Format Is Invalid&quot; Playing Large AVI File"
-permalink: kb/193/Q193656/
+permalink: /kb/193/Q193656/
 ---
 
 ## Q193656: &quot;The File Format Is Invalid&quot; Playing Large AVI File

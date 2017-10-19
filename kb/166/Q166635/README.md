@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166635: XWEB: Setting the Default Logon Domain for IIS"
-permalink: kb/166/Q166635/
+permalink: /kb/166/Q166635/
 ---
 
 ## Q166635: XWEB: Setting the Default Logon Domain for IIS

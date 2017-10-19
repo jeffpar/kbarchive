@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98294: DELTREE Identifies a Directory Name as a Filename"
-permalink: kb/098/Q98294/
+permalink: /kb/098/Q98294/
 ---
 
 ## Q98294: DELTREE Identifies a Directory Name as a Filename

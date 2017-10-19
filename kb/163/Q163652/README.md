@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163652: ODE97: Error Msg: ISAM Unable to Register Itself in Custom App"
-permalink: kb/163/Q163652/
+permalink: /kb/163/Q163652/
 ---
 
 ## Q163652: ODE97: Error Msg: ISAM Unable to Register Itself in Custom App

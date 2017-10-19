@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148188: Internet Information Server Security .CMD /.BAT Patch"
-permalink: kb/148/Q148188/
+permalink: /kb/148/Q148188/
 ---
 
 ## Q148188: Internet Information Server Security .CMD /.BAT Patch

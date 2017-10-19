@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113526: PRB: Can't Enter Valid Date with SET DATE and @ ... GET Date"
-permalink: kb/113/Q113526/
+permalink: /kb/113/Q113526/
 ---
 
 ## Q113526: PRB: Can't Enter Valid Date with SET DATE and @ ... GET Date

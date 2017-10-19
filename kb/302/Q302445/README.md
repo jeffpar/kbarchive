@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302445: MSN Explorer 6.1 Setup Stops Responding When Used With ZoomText"
-permalink: kb/302/Q302445/
+permalink: /kb/302/Q302445/
 ---
 
 ## Q302445: MSN Explorer 6.1 Setup Stops Responding When Used With ZoomText

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239852: NFL Fever 2000: Graphics Are Blurry or Distorted"
-permalink: kb/239/Q239852/
+permalink: /kb/239/Q239852/
 ---
 
 ## Q239852: NFL Fever 2000: Graphics Are Blurry or Distorted

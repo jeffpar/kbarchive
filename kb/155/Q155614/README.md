@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155614: Unattended Installation of Microsoft Windows NT 4.0"
-permalink: kb/155/Q155614/
+permalink: /kb/155/Q155614/
 ---
 
 ## Q155614: Unattended Installation of Microsoft Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194491: WD97: How to Convert WordPerfect Merge Data Documents to Word"
-permalink: kb/194/Q194491/
+permalink: /kb/194/Q194491/
 ---
 
 ## Q194491: WD97: How to Convert WordPerfect Merge Data Documents to Word

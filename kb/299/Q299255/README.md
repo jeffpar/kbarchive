@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299255: XADM: Error Message Using the Check Name Option"
-permalink: kb/299/Q299255/
+permalink: /kb/299/Q299255/
 ---
 
 ## Q299255: XADM: Error Message Using the Check Name Option

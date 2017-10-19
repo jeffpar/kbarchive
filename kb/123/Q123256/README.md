@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123256: Enabling SNA Server Windows 3.x Client Traces"
-permalink: kb/123/Q123256/
+permalink: /kb/123/Q123256/
 ---
 
 ## Q123256: Enabling SNA Server Windows 3.x Client Traces

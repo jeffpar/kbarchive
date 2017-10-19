@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115108: Cursor Name Must Be Alias, Not .DBF Name"
-permalink: kb/115/Q115108/
+permalink: /kb/115/Q115108/
 ---
 
 ## Q115108: Cursor Name Must Be Alias, Not .DBF Name

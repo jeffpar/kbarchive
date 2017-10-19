@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285867: Casino Err Msg: Microsoft Casino Requires 32 MB of RAM"
-permalink: kb/285/Q285867/
+permalink: /kb/285/Q285867/
 ---
 
 ## Q285867: Casino Err Msg: Microsoft Casino Requires 32 MB of RAM

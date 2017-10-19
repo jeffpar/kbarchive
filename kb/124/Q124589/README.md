@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124589: How to Create a Left-Right Outer Join in FoxPro for Windows"
-permalink: kb/124/Q124589/
+permalink: /kb/124/Q124589/
 ---
 
 ## Q124589: How to Create a Left-Right Outer Join in FoxPro for Windows

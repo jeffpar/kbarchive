@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108794: Video for Windows 1.1 Setup Disk (3.5 Inch, 1.44 MB)"
-permalink: kb/108/Q108794/
+permalink: /kb/108/Q108794/
 ---
 
 ## Q108794: Video for Windows 1.1 Setup Disk (3.5 Inch, 1.44 MB)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243934: SNA Print Server May Take 100 Percent of CPU Processing Time"
-permalink: kb/243/Q243934/
+permalink: /kb/243/Q243934/
 ---
 
 ## Q243934: SNA Print Server May Take 100 Percent of CPU Processing Time

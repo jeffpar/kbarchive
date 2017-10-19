@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259681: SMS: Hardware Inventory Doesn't Capture Variables on Win9x"
-permalink: kb/259/Q259681/
+permalink: /kb/259/Q259681/
 ---
 
 ## Q259681: SMS: Hardware Inventory Doesn't Capture Variables on Win9x

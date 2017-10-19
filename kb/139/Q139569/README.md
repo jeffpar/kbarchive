@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139569: BUG: MDI Window Reverses Parent/Child Window Name in Title Bar"
-permalink: kb/139/Q139569/
+permalink: /kb/139/Q139569/
 ---
 
 ## Q139569: BUG: MDI Window Reverses Parent/Child Window Name in Title Bar

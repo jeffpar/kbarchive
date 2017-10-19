@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117371: Setting Performance Monitor Alert to Run Program May Not Work"
-permalink: kb/117/Q117371/
+permalink: /kb/117/Q117371/
 ---
 
 ## Q117371: Setting Performance Monitor Alert to Run Program May Not Work

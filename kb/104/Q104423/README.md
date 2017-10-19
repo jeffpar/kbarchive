@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104423: PC DB: How to Reset the .MAI File Counter of MBG Owners"
-permalink: kb/104/Q104423/
+permalink: /kb/104/Q104423/
 ---
 
 ## Q104423: PC DB: How to Reset the .MAI File Counter of MBG Owners

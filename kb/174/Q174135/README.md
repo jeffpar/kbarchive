@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174135: PRB: Setup Cannot Continue...System Files Are Out of Date"
-permalink: kb/174/Q174135/
+permalink: /kb/174/Q174135/
 ---
 
 ## Q174135: PRB: Setup Cannot Continue...System Files Are Out of Date

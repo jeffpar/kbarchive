@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228934: XCLN: Understanding Deleted Item Recovery"
-permalink: kb/228/Q228934/
+permalink: /kb/228/Q228934/
 ---
 
 ## Q228934: XCLN: Understanding Deleted Item Recovery

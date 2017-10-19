@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31789: Converting Between Decimal, Octal, and Binary Numbers"
-permalink: kb/031/Q31789/
+permalink: /kb/031/Q31789/
 ---
 
 ## Q31789: Converting Between Decimal, Octal, and Binary Numbers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181184: WD97: Incorrect Calculation in Drop-Down Form Field Using Macro"
-permalink: kb/181/Q181184/
+permalink: /kb/181/Q181184/
 ---
 
 ## Q181184: WD97: Incorrect Calculation in Drop-Down Form Field Using Macro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221723: FIX: Container Click Not Fired When Clicking Disabled Control"
-permalink: kb/221/Q221723/
+permalink: /kb/221/Q221723/
 ---
 
 ## Q221723: FIX: Container Click Not Fired When Clicking Disabled Control

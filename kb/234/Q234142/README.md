@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234142: Updating IIS After You Change the Computer Name"
-permalink: kb/234/Q234142/
+permalink: /kb/234/Q234142/
 ---
 
 ## Q234142: Updating IIS After You Change the Computer Name

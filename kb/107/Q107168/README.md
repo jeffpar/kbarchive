@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107168: Limits on Number of Groups and Word Wheels"
-permalink: kb/107/Q107168/
+permalink: /kb/107/Q107168/
 ---
 
 ## Q107168: Limits on Number of Groups and Word Wheels

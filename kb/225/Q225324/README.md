@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225324: NetBT Clients Can Only Connect if They Are Set to use B-Node"
-permalink: kb/225/Q225324/
+permalink: /kb/225/Q225324/
 ---
 
 ## Q225324: NetBT Clients Can Only Connect if They Are Set to use B-Node

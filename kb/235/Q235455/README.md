@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235455: XCON: Modification in X.400 Blind Copy Implementation"
-permalink: kb/235/Q235455/
+permalink: /kb/235/Q235455/
 ---
 
 ## Q235455: XCON: Modification in X.400 Blind Copy Implementation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237695: XFOR: Cannot Send Message Through Microsoft Mail Connector"
-permalink: kb/237/Q237695/
+permalink: /kb/237/Q237695/
 ---
 
 ## Q237695: XFOR: Cannot Send Message Through Microsoft Mail Connector

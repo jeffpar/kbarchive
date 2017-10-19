@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99260: PC Forms: Err Msg: Invalid Message"
-permalink: kb/099/Q99260/
+permalink: /kb/099/Q99260/
 ---
 
 ## Q99260: PC Forms: Err Msg: Invalid Message

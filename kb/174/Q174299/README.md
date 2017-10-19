@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174299: XADM: Private or Public Information Store Option Not Available"
-permalink: kb/174/Q174299/
+permalink: /kb/174/Q174299/
 ---
 
 ## Q174299: XADM: Private or Public Information Store Option Not Available

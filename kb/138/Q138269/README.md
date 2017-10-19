@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138269: Attachmate Extra! 3270 V4.x Causes Trap in SNA Server Service"
-permalink: kb/138/Q138269/
+permalink: /kb/138/Q138269/
 ---
 
 ## Q138269: Attachmate Extra! 3270 V4.x Causes Trap in SNA Server Service

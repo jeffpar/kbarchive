@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121689: TCP/IP Help File States Incorrect Definition for LPQ"
-permalink: kb/121/Q121689/
+permalink: /kb/121/Q121689/
 ---
 
 ## Q121689: TCP/IP Help File States Incorrect Definition for LPQ

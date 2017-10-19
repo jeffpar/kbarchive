@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159428: Writer 2: Creative Writer Needs a Printer When Started"
-permalink: kb/159/Q159428/
+permalink: /kb/159/Q159428/
 ---
 
 ## Q159428: Writer 2: Creative Writer Needs a Printer When Started

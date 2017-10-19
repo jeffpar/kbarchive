@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129949: PRB: Empty Sub Procedures Are Not Persistent"
-permalink: kb/129/Q129949/
+permalink: /kb/129/Q129949/
 ---
 
 ## Q129949: PRB: Empty Sub Procedures Are Not Persistent

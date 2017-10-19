@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200054: PRB: OnTimer() Is Not Called Repeatedly for a List Control"
-permalink: kb/200/Q200054/
+permalink: /kb/200/Q200054/
 ---
 
 ## Q200054: PRB: OnTimer() Is Not Called Repeatedly for a List Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223774: Mplay32.exe Leaks Memory When Playing a MIDI File"
-permalink: kb/223/Q223774/
+permalink: /kb/223/Q223774/
 ---
 
 ## Q223774: Mplay32.exe Leaks Memory When Playing a MIDI File

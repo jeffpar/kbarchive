@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256350: XCON: MTA Event 246 w. PR_CONTENT_CORRELATOR More Than 2 Bytes"
-permalink: kb/256/Q256350/
+permalink: /kb/256/Q256350/
 ---
 
 ## Q256350: XCON: MTA Event 246 w. PR_CONTENT_CORRELATOR More Than 2 Bytes

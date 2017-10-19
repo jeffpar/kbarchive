@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163518: License Restrictions for ODBC/DRDA Driver"
-permalink: kb/163/Q163518/
+permalink: /kb/163/Q163518/
 ---
 
 ## Q163518: License Restrictions for ODBC/DRDA Driver

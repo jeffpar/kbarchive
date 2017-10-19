@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130180: Safe Mode Reports 4K Less Conventional Memory"
-permalink: kb/130/Q130180/
+permalink: /kb/130/Q130180/
 ---
 
 ## Q130180: Safe Mode Reports 4K Less Conventional Memory

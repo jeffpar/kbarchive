@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308927: CNOS Negotiation May Fail with &quot;Modename not recognized&quot; Error"
-permalink: kb/308/Q308927/
+permalink: /kb/308/Q308927/
 ---
 
 ## Q308927: CNOS Negotiation May Fail with &quot;Modename not recognized&quot; Error

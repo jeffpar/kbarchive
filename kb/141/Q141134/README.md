@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141134: PC WRmt: ErrMsg: Connection End Disconnect After Win95 Upgrade"
-permalink: kb/141/Q141134/
+permalink: /kb/141/Q141134/
 ---
 
 ## Q141134: PC WRmt: ErrMsg: Connection End Disconnect After Win95 Upgrade

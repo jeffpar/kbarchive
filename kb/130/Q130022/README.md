@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130022: XCLN: White Space Not Ignored When Grouping by Subject"
-permalink: kb/130/Q130022/
+permalink: /kb/130/Q130022/
 ---
 
 ## Q130022: XCLN: White Space Not Ignored When Grouping by Subject

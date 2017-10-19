@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11685: PRB: MAPSYM 3.10 Truncating Line-Number Information"
-permalink: kb/011/Q11685/
+permalink: /kb/011/Q11685/
 ---
 
 ## Q11685: PRB: MAPSYM 3.10 Truncating Line-Number Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247275: XADM: Recreating the Public Store on a Private Store Only Server"
-permalink: kb/247/Q247275/
+permalink: /kb/247/Q247275/
 ---
 
 ## Q247275: XADM: Recreating the Public Store on a Private Store Only Server

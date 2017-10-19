@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198920: XWEB: OWA Is Not Designed for Use with Exchange Server 4.0"
-permalink: kb/198/Q198920/
+permalink: /kb/198/Q198920/
 ---
 
 ## Q198920: XWEB: OWA Is Not Designed for Use with Exchange Server 4.0

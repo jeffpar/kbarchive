@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198610: AoE: Err Msg &quot;Could Not Initialize Graphics&quot; on ViewSonic VPA150"
-permalink: kb/198/Q198610/
+permalink: /kb/198/Q198610/
 ---
 
 ## Q198610: AoE: Err Msg &quot;Could Not Initialize Graphics&quot; on ViewSonic VPA150

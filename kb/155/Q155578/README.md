@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155578: Computer May Not Boot with CD-ROM Installed"
-permalink: kb/155/Q155578/
+permalink: /kb/155/Q155578/
 ---
 
 ## Q155578: Computer May Not Boot with CD-ROM Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151292: Top Articles on Microsoft Product Support Offerings"
-permalink: kb/151/Q151292/
+permalink: /kb/151/Q151292/
 ---
 
 ## Q151292: Top Articles on Microsoft Product Support Offerings

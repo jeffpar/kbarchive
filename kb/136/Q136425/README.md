@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136425: Err Msg: Drive Cannot Be Locked for Exclusive Use"
-permalink: kb/136/Q136425/
+permalink: /kb/136/Q136425/
 ---
 
 ## Q136425: Err Msg: Drive Cannot Be Locked for Exclusive Use

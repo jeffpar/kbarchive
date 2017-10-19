@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129568: PC WSPlus: Schedule+ Libraries Won't Work on 32 Bit Schedule+"
-permalink: kb/129/Q129568/
+permalink: /kb/129/Q129568/
 ---
 
 ## Q129568: PC WSPlus: Schedule+ Libraries Won't Work on 32 Bit Schedule+

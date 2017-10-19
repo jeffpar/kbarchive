@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120476: ADT2: Microsoft ADT Disk Contents (3.5 Inch, 1.44 MB)"
-permalink: kb/120/Q120476/
+permalink: /kb/120/Q120476/
 ---
 
 ## Q120476: ADT2: Microsoft ADT Disk Contents (3.5 Inch, 1.44 MB)

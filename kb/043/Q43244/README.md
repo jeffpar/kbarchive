@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43244: Mac Wkst Srv: Auto Login Not Working on Server Macintosh"
-permalink: kb/043/Q43244/
+permalink: /kb/043/Q43244/
 ---
 
 ## Q43244: Mac Wkst Srv: Auto Login Not Working on Server Macintosh

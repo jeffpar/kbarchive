@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314220: Microsoft Visual C# .NET Step by Step Comments and Corrections"
-permalink: kb/314/Q314220/
+permalink: /kb/314/Q314220/
 ---
 
 ## Q314220: Microsoft Visual C# .NET Step by Step Comments and Corrections

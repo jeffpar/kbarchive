@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148786: Fury 3: Ship Direction Problem with Blue Lightning Motherboard"
-permalink: kb/148/Q148786/
+permalink: /kb/148/Q148786/
 ---
 
 ## Q148786: Fury 3: Ship Direction Problem with Blue Lightning Motherboard

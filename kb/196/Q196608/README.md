@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196608: HP4000 Paper Drawer Options Not Available When Using HPT"
-permalink: kb/196/Q196608/
+permalink: /kb/196/Q196608/
 ---
 
 ## Q196608: HP4000 Paper Drawer Options Not Available When Using HPT

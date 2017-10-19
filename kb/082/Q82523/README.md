@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82523: Character Map Displays FaceLift Fonts Incorrectly"
-permalink: kb/082/Q82523/
+permalink: /kb/082/Q82523/
 ---
 
 ## Q82523: Character Map Displays FaceLift Fonts Incorrectly

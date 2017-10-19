@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96656: 3COM: Starting Gateway with PO1/NET1 Documented Incorrectly"
-permalink: kb/096/Q96656/
+permalink: /kb/096/Q96656/
 ---
 
 ## Q96656: 3COM: Starting Gateway with PO1/NET1 Documented Incorrectly

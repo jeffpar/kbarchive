@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232371: Gray Text Prints Black When Using the LaserJet 6L Printer"
-permalink: kb/232/Q232371/
+permalink: /kb/232/Q232371/
 ---
 
 ## Q232371: Gray Text Prints Black When Using the LaserJet 6L Printer

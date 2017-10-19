@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224004: Encarta Err Msg: There Is a Problem with Your Sound Card..."
-permalink: kb/224/Q224004/
+permalink: /kb/224/Q224004/
 ---
 
 ## Q224004: Encarta Err Msg: There Is a Problem with Your Sound Card...

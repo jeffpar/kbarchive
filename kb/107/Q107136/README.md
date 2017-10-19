@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107136: Can't Access Compressed Drives; DBLSPACE.BIN Is Not Loaded"
-permalink: kb/107/Q107136/
+permalink: /kb/107/Q107136/
 ---
 
 ## Q107136: Can't Access Compressed Drives; DBLSPACE.BIN Is Not Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238904: HOWTO: Use SQL Pass Through to Issue SELECT INTO a New SQL Table"
-permalink: kb/238/Q238904/
+permalink: /kb/238/Q238904/
 ---
 
 ## Q238904: HOWTO: Use SQL Pass Through to Issue SELECT INTO a New SQL Table

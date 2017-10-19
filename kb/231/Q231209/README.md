@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231209: SMS: Update Distribution Points on a Schedule Cannot Be Cleared"
-permalink: kb/231/Q231209/
+permalink: /kb/231/Q231209/
 ---
 
 ## Q231209: SMS: Update Distribution Points on a Schedule Cannot Be Cleared

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72926: Upper Memory Managers for 8086, 8088, or 80286 Computers"
-permalink: kb/072/Q72926/
+permalink: /kb/072/Q72926/
 ---
 
 ## Q72926: Upper Memory Managers for 8086, 8088, or 80286 Computers

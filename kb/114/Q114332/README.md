@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114332: BUG: L2029 Error Truncates Debug Information"
-permalink: kb/114/Q114332/
+permalink: /kb/114/Q114332/
 ---
 
 ## Q114332: BUG: L2029 Error Truncates Debug Information

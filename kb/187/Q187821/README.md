@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187821: FP: What Is a Registration Web?"
-permalink: kb/187/Q187821/
+permalink: /kb/187/Q187821/
 ---
 
 ## Q187821: FP: What Is a Registration Web?

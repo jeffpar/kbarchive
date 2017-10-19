@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180216: PRB: Error Setting CanGetFocus Property to False"
-permalink: kb/180/Q180216/
+permalink: /kb/180/Q180216/
 ---
 
 ## Q180216: PRB: Error Setting CanGetFocus Property to False

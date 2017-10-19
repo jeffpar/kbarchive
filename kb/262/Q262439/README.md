@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262439: XADM: Indexes Rebuilt Twice or More After NT Upgrade"
-permalink: kb/262/Q262439/
+permalink: /kb/262/Q262439/
 ---
 
 ## Q262439: XADM: Indexes Rebuilt Twice or More After NT Upgrade

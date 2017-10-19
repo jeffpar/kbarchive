@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167807: XFOR: Lotus cc:Mail Connector Event ID 45"
-permalink: kb/167/Q167807/
+permalink: /kb/167/Q167807/
 ---
 
 ## Q167807: XFOR: Lotus cc:Mail Connector Event ID 45

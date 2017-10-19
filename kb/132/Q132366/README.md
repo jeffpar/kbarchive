@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132366: PRB: Unexpected SelStart Property Behavior in Grid's Textbox"
-permalink: kb/132/Q132366/
+permalink: /kb/132/Q132366/
 ---
 
 ## Q132366: PRB: Unexpected SelStart Property Behavior in Grid's Textbox

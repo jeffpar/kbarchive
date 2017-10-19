@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179953: Shiva Client De-installation Leaves File References"
-permalink: kb/179/Q179953/
+permalink: /kb/179/Q179953/
 ---
 
 ## Q179953: Shiva Client De-installation Leaves File References

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174573: SMS: Remote Control May Get a Dr.Watson Error w/ Acrobat Viewer"
-permalink: kb/174/Q174573/
+permalink: /kb/174/Q174573/
 ---
 
 ## Q174573: SMS: Remote Control May Get a Dr.Watson Error w/ Acrobat Viewer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307355: HOW TO: Call a Web Service in Visual FoxPro 7.0"
-permalink: kb/307/Q307355/
+permalink: /kb/307/Q307355/
 ---
 
 ## Q307355: HOW TO: Call a Web Service in Visual FoxPro 7.0

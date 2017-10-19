@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187070: Office 97 Uninstall Program Does Not Clean Registry"
-permalink: kb/187/Q187070/
+permalink: /kb/187/Q187070/
 ---
 
 ## Q187070: Office 97 Uninstall Program Does Not Clean Registry

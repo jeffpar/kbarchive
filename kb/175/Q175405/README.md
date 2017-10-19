@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175405: Plus! For Kids: All Bitmap (.bmp) Files Open With Paint It!"
-permalink: kb/175/Q175405/
+permalink: /kb/175/Q175405/
 ---
 
 ## Q175405: Plus! For Kids: All Bitmap (.bmp) Files Open With Paint It!

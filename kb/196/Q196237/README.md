@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196237: SDLC Multiport Connection Only Works with One DSPU at a Time"
-permalink: kb/196/Q196237/
+permalink: /kb/196/Q196237/
 ---
 
 ## Q196237: SDLC Multiport Connection Only Works with One DSPU at a Time

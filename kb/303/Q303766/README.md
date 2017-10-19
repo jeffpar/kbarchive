@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303766: Passport Custom Setup Components Disk Allocation Does Not Add Up"
-permalink: kb/303/Q303766/
+permalink: /kb/303/Q303766/
 ---
 
 ## Q303766: Passport Custom Setup Components Disk Allocation Does Not Add Up

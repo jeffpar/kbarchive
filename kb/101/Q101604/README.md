@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101604: PC WRmt: Possible Results of Missing or Invalid ACCESS4.GLB"
-permalink: kb/101/Q101604/
+permalink: /kb/101/Q101604/
 ---
 
 ## Q101604: PC WRmt: Possible Results of Missing or Invalid ACCESS4.GLB

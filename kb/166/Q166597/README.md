@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166597: XFOR: Outlook Chinese SFS Client Receives NDRs on Replies"
-permalink: kb/166/Q166597/
+permalink: /kb/166/Q166597/
 ---
 
 ## Q166597: XFOR: Outlook Chinese SFS Client Receives NDRs on Replies

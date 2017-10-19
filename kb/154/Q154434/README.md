@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154434: Err Msg: No Domain Server Was Available to Validate..."
-permalink: kb/154/Q154434/
+permalink: /kb/154/Q154434/
 ---
 
 ## Q154434: Err Msg: No Domain Server Was Available to Validate...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142727: System Agent Reports a Stacker Drive Error with ScanDisk"
-permalink: kb/142/Q142727/
+permalink: /kb/142/Q142727/
 ---
 
 ## Q142727: System Agent Reports a Stacker Drive Error with ScanDisk

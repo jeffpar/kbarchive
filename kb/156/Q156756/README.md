@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156756: Using the IDC &quot;%z&quot; Parameter"
-permalink: kb/156/Q156756/
+permalink: /kb/156/Q156756/
 ---
 
 ## Q156756: Using the IDC &quot;%z&quot; Parameter

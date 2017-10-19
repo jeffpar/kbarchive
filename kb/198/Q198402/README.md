@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198402: Combat Flight Simulator: Computer Hangs While Playing Game"
-permalink: kb/198/Q198402/
+permalink: /kb/198/Q198402/
 ---
 
 ## Q198402: Combat Flight Simulator: Computer Hangs While Playing Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280384: Links LS Error Message: File Not Found"
-permalink: kb/280/Q280384/
+permalink: /kb/280/Q280384/
 ---
 
 ## Q280384: Links LS Error Message: File Not Found

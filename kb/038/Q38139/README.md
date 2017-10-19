@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38139: Hewlett-Packard Font Cartridges &quot;H&quot; through &quot;P&quot; Description"
-permalink: kb/038/Q38139/
+permalink: /kb/038/Q38139/
 ---
 
 ## Q38139: Hewlett-Packard Font Cartridges &quot;H&quot; through &quot;P&quot; Description

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167019: New OLE Features and Enhancements in WinNT 4.0 Service Pack 2"
-permalink: kb/167/Q167019/
+permalink: /kb/167/Q167019/
 ---
 
 ## Q167019: New OLE Features and Enhancements in WinNT 4.0 Service Pack 2

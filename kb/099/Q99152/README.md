@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99152: PRB: MOVE Application Requires Additional Memory to Load"
-permalink: kb/099/Q99152/
+permalink: /kb/099/Q99152/
 ---
 
 ## Q99152: PRB: MOVE Application Requires Additional Memory to Load

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154503: SMS: Wuser2.exe GPF When Using Hurricane VMM"
-permalink: kb/154/Q154503/
+permalink: /kb/154/Q154503/
 ---
 
 ## Q154503: SMS: Wuser2.exe GPF When Using Hurricane VMM

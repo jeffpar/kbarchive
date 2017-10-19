@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158621: STL Sample for vector::(size, capacity, and so on) Functions"
-permalink: kb/158/Q158621/
+permalink: /kb/158/Q158621/
 ---
 
 ## Q158621: STL Sample for vector::(size, capacity, and so on) Functions

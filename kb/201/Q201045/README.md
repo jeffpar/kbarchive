@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201045: HOWTO: Add Multiple Window Types to a Non-Document/View MDI App"
-permalink: kb/201/Q201045/
+permalink: /kb/201/Q201045/
 ---
 
 ## Q201045: HOWTO: Add Multiple Window Types to a Non-Document/View MDI App

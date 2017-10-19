@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27225: INFO: Determining Available RGB Values of an Output Device"
-permalink: kb/027/Q27225/
+permalink: /kb/027/Q27225/
 ---
 
 ## Q27225: INFO: Determining Available RGB Values of an Output Device

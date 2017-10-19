@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171071: WD97: Extended Characters Improperly Converted in ASCII RTF File"
-permalink: kb/171/Q171071/
+permalink: /kb/171/Q171071/
 ---
 
 ## Q171071: WD97: Extended Characters Improperly Converted in ASCII RTF File

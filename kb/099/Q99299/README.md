@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99299: Seek Error on DoubleSpace Drive with LaserTwin 5.0"
-permalink: kb/099/Q99299/
+permalink: /kb/099/Q99299/
 ---
 
 ## Q99299: Seek Error on DoubleSpace Drive with LaserTwin 5.0

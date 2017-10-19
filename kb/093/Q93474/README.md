@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93474: Cinemania Err Msg: There Was an Error Writing This File"
-permalink: kb/093/Q93474/
+permalink: /kb/093/Q93474/
 ---
 
 ## Q93474: Cinemania Err Msg: There Was an Error Writing This File

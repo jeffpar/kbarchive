@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122675: BUG: Wrong Operator Delete Called for Exported Class"
-permalink: kb/122/Q122675/
+permalink: /kb/122/Q122675/
 ---
 
 ## Q122675: BUG: Wrong Operator Delete Called for Exported Class

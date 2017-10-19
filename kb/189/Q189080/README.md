@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189080: TCP Connection May Drop When Transferring Large Amounts of Data"
-permalink: kb/189/Q189080/
+permalink: /kb/189/Q189080/
 ---
 
 ## Q189080: TCP Connection May Drop When Transferring Large Amounts of Data

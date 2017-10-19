@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196286: Vb4Run.exe Run-Time .dlls for Visual Basic 4.0 Apps"
-permalink: kb/196/Q196286/
+permalink: /kb/196/Q196286/
 ---
 
 ## Q196286: Vb4Run.exe Run-Time .dlls for Visual Basic 4.0 Apps

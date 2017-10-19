@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115496: SMTP: Configuring the Mail Routing Host Without DNS"
-permalink: kb/115/Q115496/
+permalink: /kb/115/Q115496/
 ---
 
 ## Q115496: SMTP: Configuring the Mail Routing Host Without DNS

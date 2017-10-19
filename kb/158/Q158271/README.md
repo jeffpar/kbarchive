@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158271: SNA Windows 95 Client Not Support Windows NT Password Change"
-permalink: kb/158/Q158271/
+permalink: /kb/158/Q158271/
 ---
 
 ## Q158271: SNA Windows 95 Client Not Support Windows NT Password Change

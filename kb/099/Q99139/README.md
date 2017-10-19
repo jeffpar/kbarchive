@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99139: PC Ext: SESSION.LOG File Shows Only First 10 Characters"
-permalink: kb/099/Q99139/
+permalink: /kb/099/Q99139/
 ---
 
 ## Q99139: PC Ext: SESSION.LOG File Shows Only First 10 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131771: Cannot Change Duplex Printing Mode In Excel (16-Bit)"
-permalink: kb/131/Q131771/
+permalink: /kb/131/Q131771/
 ---
 
 ## Q131771: Cannot Change Duplex Printing Mode In Excel (16-Bit)

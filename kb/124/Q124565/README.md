@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124565: TCP/IP-32 Leaves Names in the NetBIOS Name Table"
-permalink: kb/124/Q124565/
+permalink: /kb/124/Q124565/
 ---
 
 ## Q124565: TCP/IP-32 Leaves Names in the NetBIOS Name Table

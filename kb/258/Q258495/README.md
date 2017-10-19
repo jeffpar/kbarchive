@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258495: XCLN: Troubleshooting Client Connectivity Using Command Lines"
-permalink: kb/258/Q258495/
+permalink: /kb/258/Q258495/
 ---
 
 ## Q258495: XCLN: Troubleshooting Client Connectivity Using Command Lines

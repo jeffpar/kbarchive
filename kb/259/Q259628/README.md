@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259628: XADM: Restoring Exchange Databases from Alpha to Intel Servers"
-permalink: kb/259/Q259628/
+permalink: /kb/259/Q259628/
 ---
 
 ## Q259628: XADM: Restoring Exchange Databases from Alpha to Intel Servers

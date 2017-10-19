@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86422: CalComp Printer Drivers for Windows"
-permalink: kb/086/Q86422/
+permalink: /kb/086/Q86422/
 ---
 
 ## Q86422: CalComp Printer Drivers for Windows

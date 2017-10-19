@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237195: WD97: Cannot Find/Replace Text with Paragraph Format in Table"
-permalink: kb/237/Q237195/
+permalink: /kb/237/Q237195/
 ---
 
 ## Q237195: WD97: Cannot Find/Replace Text with Paragraph Format in Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129055: Search Mode Limitation in Client for NetWare Networks"
-permalink: kb/129/Q129055/
+permalink: /kb/129/Q129055/
 ---
 
 ## Q129055: Search Mode Limitation in Client for NetWare Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123652: FIX: Update() Fails to Write Changed Text Field"
-permalink: kb/123/Q123652/
+permalink: /kb/123/Q123652/
 ---
 
 ## Q123652: FIX: Update() Fails to Write Changed Text Field

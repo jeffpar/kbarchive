@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141350: .inf File Install Fails with Error: &quot;A device attached to...&quot;"
-permalink: kb/141/Q141350/
+permalink: /kb/141/Q141350/
 ---
 
 ## Q141350: .inf File Install Fails with Error: &quot;A device attached to...&quot;

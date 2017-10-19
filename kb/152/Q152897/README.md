@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152897: XCON: POP-4 State Checks (4282, 4283, 4284, 4287)"
-permalink: kb/152/Q152897/
+permalink: /kb/152/Q152897/
 ---
 
 ## Q152897: XCON: POP-4 State Checks (4282, 4283, 4284, 4287)

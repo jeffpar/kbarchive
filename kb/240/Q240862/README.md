@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240862: FIX: C2555 On Virtual Functions with Covariant Return Types"
-permalink: kb/240/Q240862/
+permalink: /kb/240/Q240862/
 ---
 
 ## Q240862: FIX: C2555 On Virtual Functions with Covariant Return Types

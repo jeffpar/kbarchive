@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229907: MCSE Readiness Review--Exam 70-087: Comments and Corrections"
-permalink: kb/229/Q229907/
+permalink: /kb/229/Q229907/
 ---
 
 ## Q229907: MCSE Readiness Review--Exam 70-087: Comments and Corrections

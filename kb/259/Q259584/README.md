@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259584: XFOR: Notes Directory Synch Fails from Exchange to Notes"
-permalink: kb/259/Q259584/
+permalink: /kb/259/Q259584/
 ---
 
 ## Q259584: XFOR: Notes Directory Synch Fails from Exchange to Notes

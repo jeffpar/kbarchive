@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103498: Telebit T2500 Modem Fails to Dial Out"
-permalink: kb/103/Q103498/
+permalink: /kb/103/Q103498/
 ---
 
 ## Q103498: Telebit T2500 Modem Fails to Dial Out

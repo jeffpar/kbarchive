@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182336: WD97: Lists in Word Cause Numbering Problems When Saved As RTF"
-permalink: kb/182/Q182336/
+permalink: /kb/182/Q182336/
 ---
 
 ## Q182336: WD97: Lists in Word Cause Numbering Problems When Saved As RTF

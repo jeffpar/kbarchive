@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259573: BUG: SCSI Pass Through Fails with Invalid User Buffer Error"
-permalink: kb/259/Q259573/
+permalink: /kb/259/Q259573/
 ---
 
 ## Q259573: BUG: SCSI Pass Through Fails with Invalid User Buffer Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146674: XCLN: Win95 Registry Entries for MSMail Function Incorrectly"
-permalink: kb/146/Q146674/
+permalink: /kb/146/Q146674/
 ---
 
 ## Q146674: XCLN: Win95 Registry Entries for MSMail Function Incorrectly

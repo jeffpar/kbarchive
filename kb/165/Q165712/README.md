@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165712: XFOR: Err Msg: The Microsoft Exchange Server is Down"
-permalink: kb/165/Q165712/
+permalink: /kb/165/Q165712/
 ---
 
 ## Q165712: XFOR: Err Msg: The Microsoft Exchange Server is Down

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102089: PC WRmt: Mail Message Formatting Changes"
-permalink: kb/102/Q102089/
+permalink: /kb/102/Q102089/
 ---
 
 ## Q102089: PC WRmt: Mail Message Formatting Changes

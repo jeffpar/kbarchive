@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161876: Problems After Removing Atria Clearcase Software"
-permalink: kb/161/Q161876/
+permalink: /kb/161/Q161876/
 ---
 
 ## Q161876: Problems After Removing Atria Clearcase Software

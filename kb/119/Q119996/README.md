@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119996: Muliple Access of Clipper Index File Causes Corruption"
-permalink: kb/119/Q119996/
+permalink: /kb/119/Q119996/
 ---
 
 ## Q119996: Muliple Access of Clipper Index File Causes Corruption

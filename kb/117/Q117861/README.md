@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117861: Encarta: Can't Install If Clipboard Contains Large Object"
-permalink: kb/117/Q117861/
+permalink: /kb/117/Q117861/
 ---
 
 ## Q117861: Encarta: Can't Install If Clipboard Contains Large Object

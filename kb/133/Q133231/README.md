@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133231: Dogs: Interactivity, Did You Know? Screen Smeared"
-permalink: kb/133/Q133231/
+permalink: /kb/133/Q133231/
 ---
 
 ## Q133231: Dogs: Interactivity, Did You Know? Screen Smeared

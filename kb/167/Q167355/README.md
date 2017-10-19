@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167355: FIX: C4786 Warning Is Not Disabled with #pragma Warning"
-permalink: kb/167/Q167355/
+permalink: /kb/167/Q167355/
 ---
 
 ## Q167355: FIX: C4786 Warning Is Not Disabled with #pragma Warning

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231282: INFO: Stress Tools to Test Your Web Server"
-permalink: kb/231/Q231282/
+permalink: /kb/231/Q231282/
 ---
 
 ## Q231282: INFO: Stress Tools to Test Your Web Server

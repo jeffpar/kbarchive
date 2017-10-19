@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175567: XCLN: Upgrading to Outlook 8.03 Does not Remove Exchange Icons"
-permalink: kb/175/Q175567/
+permalink: /kb/175/Q175567/
 ---
 
 ## Q175567: XCLN: Upgrading to Outlook 8.03 Does not Remove Exchange Icons

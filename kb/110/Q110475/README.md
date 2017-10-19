@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110475: INF: Sharing ODBC Handles Among Several Applications"
-permalink: kb/110/Q110475/
+permalink: /kb/110/Q110475/
 ---
 
 ## Q110475: INF: Sharing ODBC Handles Among Several Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128349: Unable to Detect RAM Beyond 64 MB On HP Vectra XU P5/90"
-permalink: kb/128/Q128349/
+permalink: /kb/128/Q128349/
 ---
 
 ## Q128349: Unable to Detect RAM Beyond 64 MB On HP Vectra XU P5/90

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154139: XCLN: Set Exchange to Use Alternate Spelling Checker"
-permalink: kb/154/Q154139/
+permalink: /kb/154/Q154139/
 ---
 
 ## Q154139: XCLN: Set Exchange to Use Alternate Spelling Checker

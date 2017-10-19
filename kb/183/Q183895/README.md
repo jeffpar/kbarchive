@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183895: FIX: Problems with @GETS and CLEAR GETS If No READ"
-permalink: kb/183/Q183895/
+permalink: /kb/183/Q183895/
 ---
 
 ## Q183895: FIX: Problems with @GETS and CLEAR GETS If No READ

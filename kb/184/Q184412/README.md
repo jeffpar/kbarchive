@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184412: FP: How to Find a Web Presence Provider for Your FrontPage Web"
-permalink: kb/184/Q184412/
+permalink: /kb/184/Q184412/
 ---
 
 ## Q184412: FP: How to Find a Web Presence Provider for Your FrontPage Web

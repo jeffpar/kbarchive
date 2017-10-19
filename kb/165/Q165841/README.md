@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165841: Support for More than 158 Characters Per Line"
-permalink: kb/165/Q165841/
+permalink: /kb/165/Q165841/
 ---
 
 ## Q165841: Support for More than 158 Characters Per Line

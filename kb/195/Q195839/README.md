@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195839: Windows Explorer Display Not Updated with NEC PD Media Change"
-permalink: kb/195/Q195839/
+permalink: /kb/195/Q195839/
 ---
 
 ## Q195839: Windows Explorer Display Not Updated with NEC PD Media Change

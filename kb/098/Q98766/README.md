@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98766: VIREX-PC May Incorrectly Report Viruses with VSAFE Installed"
-permalink: kb/098/Q98766/
+permalink: /kb/098/Q98766/
 ---
 
 ## Q98766: VIREX-PC May Incorrectly Report Viruses with VSAFE Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180413: TN5250 Server Uses LUs from an Incorrect SNA Server"
-permalink: kb/180/Q180413/
+permalink: /kb/180/Q180413/
 ---
 
 ## Q180413: TN5250 Server Uses LUs from an Incorrect SNA Server

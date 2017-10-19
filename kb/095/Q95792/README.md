@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95792: Services for Macintosh 1.0a Fix List"
-permalink: kb/095/Q95792/
+permalink: /kb/095/Q95792/
 ---
 
 ## Q95792: Services for Macintosh 1.0a Fix List

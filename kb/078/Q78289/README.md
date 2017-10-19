@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78289: LOADHIGH Command with Non MS-DOS Command Interpreter"
-permalink: kb/078/Q78289/
+permalink: /kb/078/Q78289/
 ---
 
 ## Q78289: LOADHIGH Command with Non MS-DOS Command Interpreter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159952: SMS: &quot;Please Insert Diskette in Drive&quot; Message"
-permalink: kb/159/Q159952/
+permalink: /kb/159/Q159952/
 ---
 
 ## Q159952: SMS: &quot;Please Insert Diskette in Drive&quot; Message

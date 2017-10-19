@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133475: Corrupted Directory Replicator Registry Entries"
-permalink: kb/133/Q133475/
+permalink: /kb/133/Q133475/
 ---
 
 ## Q133475: Corrupted Directory Replicator Registry Entries

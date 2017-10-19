@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249574: Schedule+ 7.5 To Do Tab Maps Short Date Style Year Incorrectly"
-permalink: kb/249/Q249574/
+permalink: /kb/249/Q249574/
 ---
 
 ## Q249574: Schedule+ 7.5 To Do Tab Maps Short Date Style Year Incorrectly

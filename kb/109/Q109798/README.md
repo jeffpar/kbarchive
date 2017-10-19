@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109798: Using the Sound Blaster 16 SCSI-2 with Windows NT"
-permalink: kb/109/Q109798/
+permalink: /kb/109/Q109798/
 ---
 
 ## Q109798: Using the Sound Blaster 16 SCSI-2 with Windows NT

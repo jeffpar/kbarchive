@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75127: How to Modify the Command Prompt within MS-DOS Shell"
-permalink: kb/075/Q75127/
+permalink: /kb/075/Q75127/
 ---
 
 ## Q75127: How to Modify the Command Prompt within MS-DOS Shell

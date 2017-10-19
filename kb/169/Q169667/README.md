@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169667: XCON: X.25 Support for Cirel Cards"
-permalink: kb/169/Q169667/
+permalink: /kb/169/Q169667/
 ---
 
 ## Q169667: XCON: X.25 Support for Cirel Cards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81067: Features of LOG and Time/Date Command in Notepad"
-permalink: kb/081/Q81067/
+permalink: /kb/081/Q81067/
 ---
 
 ## Q81067: Features of LOG and Time/Date Command in Notepad

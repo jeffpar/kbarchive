@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78373: Applications Run Minimized When SHIFT Key Held Down"
-permalink: kb/078/Q78373/
+permalink: /kb/078/Q78373/
 ---
 
 ## Q78373: Applications Run Minimized When SHIFT Key Held Down

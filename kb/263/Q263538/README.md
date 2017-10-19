@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263538: XWEB: How to Move Messages to Folders in OWA"
-permalink: kb/263/Q263538/
+permalink: /kb/263/Q263538/
 ---
 
 ## Q263538: XWEB: How to Move Messages to Folders in OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236066: SMS: INVMAC Fails to Report Package During Software Inventory"
-permalink: kb/236/Q236066/
+permalink: /kb/236/Q236066/
 ---
 
 ## Q236066: SMS: INVMAC Fails to Report Package During Software Inventory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115439: X400: Longer-than-Maximum Address Map Values Displayed"
-permalink: kb/115/Q115439/
+permalink: /kb/115/Q115439/
 ---
 
 ## Q115439: X400: Longer-than-Maximum Address Map Values Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97759: Starting Heap Walker Results in a GP Fault"
-permalink: kb/097/Q97759/
+permalink: /kb/097/Q97759/
 ---
 
 ## Q97759: Starting Heap Walker Results in a GP Fault

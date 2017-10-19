@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254930: TCP Session with Server Never Closes"
-permalink: kb/254/Q254930/
+permalink: /kb/254/Q254930/
 ---
 
 ## Q254930: TCP Session with Server Never Closes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185889: HOWTO: Access Host Objects and Controls Using the ScriptControl"
-permalink: kb/185/Q185889/
+permalink: /kb/185/Q185889/
 ---
 
 ## Q185889: HOWTO: Access Host Objects and Controls Using the ScriptControl

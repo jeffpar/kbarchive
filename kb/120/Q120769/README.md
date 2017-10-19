@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120769: Visual C++ Version 2.0 README.WRI File - Part 1 Setup"
-permalink: kb/120/Q120769/
+permalink: /kb/120/Q120769/
 ---
 
 ## Q120769: Visual C++ Version 2.0 README.WRI File - Part 1 Setup

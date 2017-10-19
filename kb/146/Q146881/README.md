@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146881: XCLN: Column Order Changed After Group By Operation"
-permalink: kb/146/Q146881/
+permalink: /kb/146/Q146881/
 ---
 
 ## Q146881: XCLN: Column Order Changed After Group By Operation

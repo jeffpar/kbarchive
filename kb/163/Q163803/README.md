@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163803: BUG: Cannot Set ImageList Property of Treeview Visually"
-permalink: kb/163/Q163803/
+permalink: /kb/163/Q163803/
 ---
 
 ## Q163803: BUG: Cannot Set ImageList Property of Treeview Visually

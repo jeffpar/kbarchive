@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121884: Golf Err Msg: Not Enough Memory to Zoom Top View"
-permalink: kb/121/Q121884/
+permalink: /kb/121/Q121884/
 ---
 
 ## Q121884: Golf Err Msg: Not Enough Memory to Zoom Top View

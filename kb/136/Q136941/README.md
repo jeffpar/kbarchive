@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136941: Options Dialog Box Choices That Are Set Immediately"
-permalink: kb/136/Q136941/
+permalink: /kb/136/Q136941/
 ---
 
 ## Q136941: Options Dialog Box Choices That Are Set Immediately

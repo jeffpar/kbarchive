@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141458: FIX: Large Selections Fail in Disassembly Window"
-permalink: kb/141/Q141458/
+permalink: /kb/141/Q141458/
 ---
 
 ## Q141458: FIX: Large Selections Fail in Disassembly Window

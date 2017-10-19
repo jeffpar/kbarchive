@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190780: Zone Err Msg: We Are Not Able to Detect &lt;Game&gt; on Your Hard..."
-permalink: kb/190/Q190780/
+permalink: /kb/190/Q190780/
 ---
 
 ## Q190780: Zone Err Msg: We Are Not Able to Detect &lt;Game&gt; on Your Hard...

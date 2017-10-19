@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156577: WD97: Why You Are Unable to Recover a Lost Document"
-permalink: kb/156/Q156577/
+permalink: /kb/156/Q156577/
 ---
 
 ## Q156577: WD97: Why You Are Unable to Recover a Lost Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189472: PRB: &quot;Unexpected Error; Quitting&quot; When Starting Visual Basic"
-permalink: kb/189/Q189472/
+permalink: /kb/189/Q189472/
 ---
 
 ## Q189472: PRB: &quot;Unexpected Error; Quitting&quot; When Starting Visual Basic

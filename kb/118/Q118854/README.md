@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118854: Mac OOF: Unable to Register Server Names Containing Commas"
-permalink: kb/118/Q118854/
+permalink: /kb/118/Q118854/
 ---
 
 ## Q118854: Mac OOF: Unable to Register Server Names Containing Commas

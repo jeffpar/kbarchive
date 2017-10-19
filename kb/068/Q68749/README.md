@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68749: Windows Err Msg: Protected Mode Violation (LeadingTech 6000sx)"
-permalink: kb/068/Q68749/
+permalink: /kb/068/Q68749/
 ---
 
 ## Q68749: Windows Err Msg: Protected Mode Violation (LeadingTech 6000sx)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69652: How to Reset the High Scores in Tetris of the WEP"
-permalink: kb/069/Q69652/
+permalink: /kb/069/Q69652/
 ---
 
 ## Q69652: How to Reset the High Scores in Tetris of the WEP

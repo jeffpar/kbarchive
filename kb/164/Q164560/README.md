@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164560: How to Update a Client Install Share with 5.0 SP1"
-permalink: kb/164/Q164560/
+permalink: /kb/164/Q164560/
 ---
 
 ## Q164560: How to Update a Client Install Share with 5.0 SP1

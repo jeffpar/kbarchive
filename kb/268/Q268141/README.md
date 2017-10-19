@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268141: XADM: Information Store Stops Resp. Retrieving S/MIME Message"
-permalink: kb/268/Q268141/
+permalink: /kb/268/Q268141/
 ---
 
 ## Q268141: XADM: Information Store Stops Resp. Retrieving S/MIME Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29240: HOWTO: Converting Colors Between RGB and HLS (HBS)"
-permalink: kb/029/Q29240/
+permalink: /kb/029/Q29240/
 ---
 
 ## Q29240: HOWTO: Converting Colors Between RGB and HLS (HBS)

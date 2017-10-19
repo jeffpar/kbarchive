@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74443: Updated Genius Mouse Driver Required for MS-DOS Shell"
-permalink: kb/074/Q74443/
+permalink: /kb/074/Q74443/
 ---
 
 ## Q74443: Updated Genius Mouse Driver Required for MS-DOS Shell

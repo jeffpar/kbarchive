@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186391: FIX: ATL Controls Don't Remove CLSID Key During Unregistration"
-permalink: kb/186/Q186391/
+permalink: /kb/186/Q186391/
 ---
 
 ## Q186391: FIX: ATL Controls Don't Remove CLSID Key During Unregistration

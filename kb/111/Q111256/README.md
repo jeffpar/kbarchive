@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111256: PRB: ODBC Icon Does Not Appear in Windows Control Panel"
-permalink: kb/111/Q111256/
+permalink: /kb/111/Q111256/
 ---
 
 ## Q111256: PRB: ODBC Icon Does Not Appear in Windows Control Panel

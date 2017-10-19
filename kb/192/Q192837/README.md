@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192837: PPT7: Black and White Versus Pure Black and White Printing"
-permalink: kb/192/Q192837/
+permalink: /kb/192/Q192837/
 ---
 
 ## Q192837: PPT7: Black and White Versus Pure Black and White Printing

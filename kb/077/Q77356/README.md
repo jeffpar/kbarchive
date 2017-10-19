@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77356: PC Rmt: Mail Sent to Group via External or Remote Returned"
-permalink: kb/077/Q77356/
+permalink: /kb/077/Q77356/
 ---
 
 ## Q77356: PC Rmt: Mail Sent to Group via External or Remote Returned

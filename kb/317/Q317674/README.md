@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317674: SMS: You Receive a &quot;Snap-in Failed to Initialize&quot; Error Message"
-permalink: kb/317/Q317674/
+permalink: /kb/317/Q317674/
 ---
 
 ## Q317674: SMS: You Receive a &quot;Snap-in Failed to Initialize&quot; Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221702: FIX: C0000005 Fatal Error w/ ISBLANK( ) and Array Prop in Init"
-permalink: kb/221/Q221702/
+permalink: /kb/221/Q221702/
 ---
 
 ## Q221702: FIX: C0000005 Fatal Error w/ ISBLANK( ) and Array Prop in Init

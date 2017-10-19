@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86705: Problems When Exiting Windows or WFWG After Running 386 Enh"
-permalink: kb/086/Q86705/
+permalink: /kb/086/Q86705/
 ---
 
 ## Q86705: Problems When Exiting Windows or WFWG After Running 386 Enh

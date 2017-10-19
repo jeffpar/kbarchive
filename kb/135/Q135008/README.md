@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135008: SMS NetMon Counters for Network Segment Object Show Wrong Info"
-permalink: kb/135/Q135008/
+permalink: /kb/135/Q135008/
 ---
 
 ## Q135008: SMS NetMon Counters for Network Segment Object Show Wrong Info

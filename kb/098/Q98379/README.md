@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98379: BUG: xlCoerce() Can Cause GP Fault in EXCEL.EXE"
-permalink: kb/098/Q98379/
+permalink: /kb/098/Q98379/
 ---
 
 ## Q98379: BUG: xlCoerce() Can Cause GP Fault in EXCEL.EXE

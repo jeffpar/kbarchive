@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168247: BUG: Keywords Cause New Version When &quot;Undo Check Out&quot; Set"
-permalink: kb/168/Q168247/
+permalink: /kb/168/Q168247/
 ---
 
 ## Q168247: BUG: Keywords Cause New Version When &quot;Undo Check Out&quot; Set

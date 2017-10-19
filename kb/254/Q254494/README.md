@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254494: FIX: Analyze -F Causes Inconsistencies Error Messages"
-permalink: kb/254/Q254494/
+permalink: /kb/254/Q254494/
 ---
 
 ## Q254494: FIX: Analyze -F Causes Inconsistencies Error Messages

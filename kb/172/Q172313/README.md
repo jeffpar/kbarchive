@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172313: FIX: Using ODBCDirect, Transactions and Oracle Causes Hang"
-permalink: kb/172/Q172313/
+permalink: /kb/172/Q172313/
 ---
 
 ## Q172313: FIX: Using ODBCDirect, Transactions and Oracle Causes Hang

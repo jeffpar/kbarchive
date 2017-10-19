@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142851: Internet Explorer FTP Cannot 'PUT' (Upload) Files"
-permalink: kb/142/Q142851/
+permalink: /kb/142/Q142851/
 ---
 
 ## Q142851: Internet Explorer FTP Cannot 'PUT' (Upload) Files

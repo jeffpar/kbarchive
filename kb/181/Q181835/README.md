@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181835: Unable to Start the Server Service"
-permalink: kb/181/Q181835/
+permalink: /kb/181/Q181835/
 ---
 
 ## Q181835: Unable to Start the Server Service

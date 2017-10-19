@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104024: Ethernet Frame Types for NWLINK"
-permalink: kb/104/Q104024/
+permalink: /kb/104/Q104024/
 ---
 
 ## Q104024: Ethernet Frame Types for NWLINK

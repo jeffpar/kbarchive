@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156296: PRB: CLongBinary Edits Fail with SQL Server Snapshot"
-permalink: kb/156/Q156296/
+permalink: /kb/156/Q156296/
 ---
 
 ## Q156296: PRB: CLongBinary Edits Fail with SQL Server Snapshot

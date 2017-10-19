@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195404: HOWTO: Keep Word Print Dialog Box on Top Using APIs"
-permalink: kb/195/Q195404/
+permalink: /kb/195/Q195404/
 ---
 
 ## Q195404: HOWTO: Keep Word Print Dialog Box on Top Using APIs

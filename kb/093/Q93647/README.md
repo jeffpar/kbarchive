@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93647: Creating a Custom Voice Pilot Vocabulary"
-permalink: kb/093/Q93647/
+permalink: /kb/093/Q93647/
 ---
 
 ## Q93647: Creating a Custom Voice Pilot Vocabulary

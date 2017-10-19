@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323317: HOW TO: Create an IIS Baseline by Using the Web Service Object"
-permalink: kb/323/Q323317/
+permalink: /kb/323/Q323317/
 ---
 
 ## Q323317: HOW TO: Create an IIS Baseline by Using the Web Service Object

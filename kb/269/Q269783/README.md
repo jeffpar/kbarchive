@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269783: BUG: Cannot Drag Multiple Selections from ListView Control"
-permalink: kb/269/Q269783/
+permalink: /kb/269/Q269783/
 ---
 
 ## Q269783: BUG: Cannot Drag Multiple Selections from ListView Control

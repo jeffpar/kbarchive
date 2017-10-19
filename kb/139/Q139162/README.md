@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139162: Encarta World Atlas, 1996: README.WRI Contents"
-permalink: kb/139/Q139162/
+permalink: /kb/139/Q139162/
 ---
 
 ## Q139162: Encarta World Atlas, 1996: README.WRI Contents

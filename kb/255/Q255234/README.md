@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255234: XFOR: Internet Mail Service Setup Can't Authenticate Password"
-permalink: kb/255/Q255234/
+permalink: /kb/255/Q255234/
 ---
 
 ## Q255234: XFOR: Internet Mail Service Setup Can't Authenticate Password

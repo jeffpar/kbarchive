@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190447: FIX: RDO BatchUpdate Causes Visual Basic 5.0 to Crash"
-permalink: kb/190/Q190447/
+permalink: /kb/190/Q190447/
 ---
 
 ## Q190447: FIX: RDO BatchUpdate Causes Visual Basic 5.0 to Crash

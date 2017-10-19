@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138014: File May Be Truncated to Zero Bytes When Copied Onto Itself"
-permalink: kb/138/Q138014/
+permalink: /kb/138/Q138014/
 ---
 
 ## Q138014: File May Be Truncated to Zero Bytes When Copied Onto Itself

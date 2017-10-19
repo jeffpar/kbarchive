@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67788: FIX: IRP Directive Has Single Line Limit of 120 Characters"
-permalink: kb/067/Q67788/
+permalink: /kb/067/Q67788/
 ---
 
 ## Q67788: FIX: IRP Directive Has Single Line Limit of 120 Characters

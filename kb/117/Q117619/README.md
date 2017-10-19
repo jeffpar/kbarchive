@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117619: Cannot Use UNC Names for Working or Startup Directory"
-permalink: kb/117/Q117619/
+permalink: /kb/117/Q117619/
 ---
 
 ## Q117619: Cannot Use UNC Names for Working or Startup Directory

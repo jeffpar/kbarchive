@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239829: How to Automate Uninstalling the DLC Protocol"
-permalink: kb/239/Q239829/
+permalink: /kb/239/Q239829/
 ---
 
 ## Q239829: How to Automate Uninstalling the DLC Protocol

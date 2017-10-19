@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135707: Programs Run at Priority Level 15 May Cause Computer to Hang"
-permalink: kb/135/Q135707/
+permalink: /kb/135/Q135707/
 ---
 
 ## Q135707: Programs Run at Priority Level 15 May Cause Computer to Hang

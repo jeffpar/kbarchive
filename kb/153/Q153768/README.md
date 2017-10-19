@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153768: INFO: Changing the Default Installation Drive Using Unattended S"
-permalink: kb/153/Q153768/
+permalink: /kb/153/Q153768/
 ---
 
 ## Q153768: INFO: Changing the Default Installation Drive Using Unattended S

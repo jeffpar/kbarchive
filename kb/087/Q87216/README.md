@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87216: PROFS: Why Can't the Gateway Find the File Transfer Programs?"
-permalink: kb/087/Q87216/
+permalink: /kb/087/Q87216/
 ---
 
 ## Q87216: PROFS: Why Can't the Gateway Find the File Transfer Programs?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131846: BUG: Deleted Rows Show w/ 'Show Deleted Rows' Option Cleared"
-permalink: kb/131/Q131846/
+permalink: /kb/131/Q131846/
 ---
 
 ## Q131846: BUG: Deleted Rows Show w/ 'Show Deleted Rows' Option Cleared

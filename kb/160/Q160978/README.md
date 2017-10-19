@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160978: Terminal Type Negotiation Fails w/RUMBA v3.2J TN3270 Emulator"
-permalink: kb/160/Q160978/
+permalink: /kb/160/Q160978/
 ---
 
 ## Q160978: Terminal Type Negotiation Fails w/RUMBA v3.2J TN3270 Emulator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264057: Cannot Install IIS 5.0 on Windows 95/98 or Windows NT 4.0"
-permalink: kb/264/Q264057/
+permalink: /kb/264/Q264057/
 ---
 
 ## Q264057: Cannot Install IIS 5.0 on Windows 95/98 or Windows NT 4.0

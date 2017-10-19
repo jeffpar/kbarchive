@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165162: WD97: AutoNum Fields Don't Update When Deleted W/ Track Changes"
-permalink: kb/165/Q165162/
+permalink: /kb/165/Q165162/
 ---
 
 ## Q165162: WD97: AutoNum Fields Don't Update When Deleted W/ Track Changes

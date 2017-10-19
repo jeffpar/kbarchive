@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188990: Application Exception in Snamanag!CSISend"
-permalink: kb/188/Q188990/
+permalink: /kb/188/Q188990/
 ---
 
 ## Q188990: Application Exception in Snamanag!CSISend

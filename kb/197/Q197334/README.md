@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197334: XFOR: Setting All Chat TCP Ports to the Same Number Stops Linkin"
-permalink: kb/197/Q197334/
+permalink: /kb/197/Q197334/
 ---
 
 ## Q197334: XFOR: Setting All Chat TCP Ports to the Same Number Stops Linkin

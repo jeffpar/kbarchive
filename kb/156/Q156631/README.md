@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156631: PRB: Parameterized View Discrepancy Using IN() Filter Criteria"
-permalink: kb/156/Q156631/
+permalink: /kb/156/Q156631/
 ---
 
 ## Q156631: PRB: Parameterized View Discrepancy Using IN() Filter Criteria

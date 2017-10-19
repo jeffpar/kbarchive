@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35882: FIX: A5114: Operand Size Does Not Match Segment Word Size"
-permalink: kb/035/Q35882/
+permalink: /kb/035/Q35882/
 ---
 
 ## Q35882: FIX: A5114: Operand Size Does Not Match Segment Word Size

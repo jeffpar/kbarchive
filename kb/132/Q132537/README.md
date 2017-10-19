@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132537: Optimizing Autoexec.bat and Config.sys for CD-ROM Performance"
-permalink: kb/132/Q132537/
+permalink: /kb/132/Q132537/
 ---
 
 ## Q132537: Optimizing Autoexec.bat and Config.sys for CD-ROM Performance

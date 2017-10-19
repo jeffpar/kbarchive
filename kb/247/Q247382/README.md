@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247382: PRB: ToolTips for Controls in ActiveX Document Server Are Hidden"
-permalink: kb/247/Q247382/
+permalink: /kb/247/Q247382/
 ---
 
 ## Q247382: PRB: ToolTips for Controls in ActiveX Document Server Are Hidden

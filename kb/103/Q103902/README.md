@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103902: PC WRmt: Baud Rate Displayed Not Always Accurate"
-permalink: kb/103/Q103902/
+permalink: /kb/103/Q103902/
 ---
 
 ## Q103902: PC WRmt: Baud Rate Displayed Not Always Accurate

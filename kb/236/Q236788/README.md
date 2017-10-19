@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236788: XIMS: URL Not Formatted Properly in IMAP Referral Response"
-permalink: kb/236/Q236788/
+permalink: /kb/236/Q236788/
 ---
 
 ## Q236788: XIMS: URL Not Formatted Properly in IMAP Referral Response

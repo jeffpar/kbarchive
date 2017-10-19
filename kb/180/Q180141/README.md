@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180141: XADM: Recurring Address Book Views in Exchange Server"
-permalink: kb/180/Q180141/
+permalink: /kb/180/Q180141/
 ---
 
 ## Q180141: XADM: Recurring Address Book Views in Exchange Server

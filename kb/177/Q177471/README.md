@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177471: EBCDIC Characters Not Properly Converted to ANSI Characters"
-permalink: kb/177/Q177471/
+permalink: /kb/177/Q177471/
 ---
 
 ## Q177471: EBCDIC Characters Not Properly Converted to ANSI Characters

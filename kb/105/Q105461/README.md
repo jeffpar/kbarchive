@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105461: Windows NT Advanced Server CD Contents &#92;I386 (511)"
-permalink: kb/105/Q105461/
+permalink: /kb/105/Q105461/
 ---
 
 ## Q105461: Windows NT Advanced Server CD Contents &#92;I386 (511)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104205: How to Remove an Extended NTFS Partition"
-permalink: kb/104/Q104205/
+permalink: /kb/104/Q104205/
 ---
 
 ## Q104205: How to Remove an Extended NTFS Partition

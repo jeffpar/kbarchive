@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138106: PRB: Navigation Buttons Font Different from Other Object Fonts"
-permalink: kb/138/Q138106/
+permalink: /kb/138/Q138106/
 ---
 
 ## Q138106: PRB: Navigation Buttons Font Different from Other Object Fonts

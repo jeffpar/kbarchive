@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311521: HOW TO: Index ASP.NET Content by Using MS Index Server"
-permalink: kb/311/Q311521/
+permalink: /kb/311/Q311521/
 ---
 
 ## Q311521: HOW TO: Index ASP.NET Content by Using MS Index Server

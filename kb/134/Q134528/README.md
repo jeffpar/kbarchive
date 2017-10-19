@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134528: Cannot Format Startup Disk During Setup"
-permalink: kb/134/Q134528/
+permalink: /kb/134/Q134528/
 ---
 
 ## Q134528: Cannot Format Startup Disk During Setup

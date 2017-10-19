@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147419: Macintosh Frank Lloyd Wright: Minimum System Requirements"
-permalink: kb/147/Q147419/
+permalink: /kb/147/Q147419/
 ---
 
 ## Q147419: Macintosh Frank Lloyd Wright: Minimum System Requirements

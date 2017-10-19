@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168251: FIX: Odbccp32.lib Requires Msvcrt.lib to Compiler"
-permalink: kb/168/Q168251/
+permalink: /kb/168/Q168251/
 ---
 
 ## Q168251: FIX: Odbccp32.lib Requires Msvcrt.lib to Compiler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285860: XFOR: Domains Removed from Message Filtering List Are Turfed"
-permalink: kb/285/Q285860/
+permalink: /kb/285/Q285860/
 ---
 
 ## Q285860: XFOR: Domains Removed from Message Filtering List Are Turfed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99306: PC Forms: Err Msg: Another Application Refused the Request"
-permalink: kb/099/Q99306/
+permalink: /kb/099/Q99306/
 ---
 
 ## Q99306: PC Forms: Err Msg: Another Application Refused the Request

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228514: Baseball 2000: Game Quits and You Are Returned to the Desktop"
-permalink: kb/228/Q228514/
+permalink: /kb/228/Q228514/
 ---
 
 ## Q228514: Baseball 2000: Game Quits and You Are Returned to the Desktop

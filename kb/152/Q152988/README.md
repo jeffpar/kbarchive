@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152988: Works: Troubleshooting Communications Problems in Windows 95"
-permalink: kb/152/Q152988/
+permalink: /kb/152/Q152988/
 ---
 
 ## Q152988: Works: Troubleshooting Communications Problems in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222914: XCLN: Error When Adding Mailboxes to Profile"
-permalink: kb/222/Q222914/
+permalink: /kb/222/Q222914/
 ---
 
 ## Q222914: XCLN: Error When Adding Mailboxes to Profile

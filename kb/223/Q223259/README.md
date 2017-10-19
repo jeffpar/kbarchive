@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223259: How To Install FTP from NTOP on Microsoft Cluster Server 1.0"
-permalink: kb/223/Q223259/
+permalink: /kb/223/Q223259/
 ---
 
 ## Q223259: How To Install FTP from NTOP on Microsoft Cluster Server 1.0

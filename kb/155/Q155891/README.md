@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155891: INFO: VFP 5.0 Compatible with Oracle's SQL&#42;Net and ODBC Drivers"
-permalink: kb/155/Q155891/
+permalink: /kb/155/Q155891/
 ---
 
 ## Q155891: INFO: VFP 5.0 Compatible with Oracle's SQL&#42;Net and ODBC Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100516: Error 2 Stops OTN Installation of DCA Token Ring Adapters"
-permalink: kb/100/Q100516/
+permalink: /kb/100/Q100516/
 ---
 
 ## Q100516: Error 2 Stops OTN Installation of DCA Token Ring Adapters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228947: Midtown Madness: Snow Textures, Cloud Shadows Appear Triangular"
-permalink: kb/228/Q228947/
+permalink: /kb/228/Q228947/
 ---
 
 ## Q228947: Midtown Madness: Snow Textures, Cloud Shadows Appear Triangular

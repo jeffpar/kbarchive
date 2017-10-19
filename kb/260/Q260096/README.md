@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260096: Page Cannot Be Displayed When You Connect Through SSL"
-permalink: kb/260/Q260096/
+permalink: /kb/260/Q260096/
 ---
 
 ## Q260096: Page Cannot Be Displayed When You Connect Through SSL

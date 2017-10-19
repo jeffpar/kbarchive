@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195654: Methods for Condensing a Performance Monitor Log File"
-permalink: kb/195/Q195654/
+permalink: /kb/195/Q195654/
 ---
 
 ## Q195654: Methods for Condensing a Performance Monitor Log File

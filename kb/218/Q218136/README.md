@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218136: How to Configure SBS to Send E-Mail Messages Larger Than 1 MB"
-permalink: kb/218/Q218136/
+permalink: /kb/218/Q218136/
 ---
 
 ## Q218136: How to Configure SBS to Send E-Mail Messages Larger Than 1 MB

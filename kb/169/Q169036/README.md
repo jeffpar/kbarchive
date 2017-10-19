@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169036: Puzzle: Unable to Start a Puzzle Collection Game or Uninstall"
-permalink: kb/169/Q169036/
+permalink: /kb/169/Q169036/
 ---
 
 ## Q169036: Puzzle: Unable to Start a Puzzle Collection Game or Uninstall

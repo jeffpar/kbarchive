@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146373: XCLN: Persistent Finder on Public Folder Does Not Work"
-permalink: kb/146/Q146373/
+permalink: /kb/146/Q146373/
 ---
 
 ## Q146373: XCLN: Persistent Finder on Public Folder Does Not Work

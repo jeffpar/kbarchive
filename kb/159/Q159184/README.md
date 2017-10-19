@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159184: XADM: No Messages from MTA with High Directory Service Activity"
-permalink: kb/159/Q159184/
+permalink: /kb/159/Q159184/
 ---
 
 ## Q159184: XADM: No Messages from MTA with High Directory Service Activity

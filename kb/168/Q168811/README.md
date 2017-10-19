@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168811: WD97: Cannot Paste or Drag Text to Text Box"
-permalink: kb/168/Q168811/
+permalink: /kb/168/Q168811/
 ---
 
 ## Q168811: WD97: Cannot Paste or Drag Text to Text Box

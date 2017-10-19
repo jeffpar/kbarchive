@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198616: MCSE Readiness Review Windows NT Server Corrections and Comments"
-permalink: kb/198/Q198616/
+permalink: /kb/198/Q198616/
 ---
 
 ## Q198616: MCSE Readiness Review Windows NT Server Corrections and Comments

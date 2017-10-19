@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111757: CD-ROM Always Shows 127 MB Used and Zero Bytes Free"
-permalink: kb/111/Q111757/
+permalink: /kb/111/Q111757/
 ---
 
 ## Q111757: CD-ROM Always Shows 127 MB Used and Zero Bytes Free

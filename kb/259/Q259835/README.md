@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259835: StarLancer Setup Warning: Your Computer Is Slower Than 233 MHz"
-permalink: kb/259/Q259835/
+permalink: /kb/259/Q259835/
 ---
 
 ## Q259835: StarLancer Setup Warning: Your Computer Is Slower Than 233 MHz

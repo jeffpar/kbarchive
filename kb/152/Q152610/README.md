@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152610: Compression Agent Restarts Continuously on PCMCIA Drives"
-permalink: kb/152/Q152610/
+permalink: /kb/152/Q152610/
 ---
 
 ## Q152610: Compression Agent Restarts Continuously on PCMCIA Drives

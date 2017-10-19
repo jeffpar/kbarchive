@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155555: SNA Server Event 686 When Using MS-DOS Client with ODI Stack"
-permalink: kb/155/Q155555/
+permalink: /kb/155/Q155555/
 ---
 
 ## Q155555: SNA Server Event 686 When Using MS-DOS Client with ODI Stack

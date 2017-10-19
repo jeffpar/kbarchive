@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127767: PC WRmt: MWave Modem Is Incompatible w/ Mail Remote Client"
-permalink: kb/127/Q127767/
+permalink: /kb/127/Q127767/
 ---
 
 ## Q127767: PC WRmt: MWave Modem Is Incompatible w/ Mail Remote Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135227: Err Msg: Error Starting Program: Regserv.exe Linked to Missing"
-permalink: kb/135/Q135227/
+permalink: /kb/135/Q135227/
 ---
 
 ## Q135227: Err Msg: Error Starting Program: Regserv.exe Linked to Missing

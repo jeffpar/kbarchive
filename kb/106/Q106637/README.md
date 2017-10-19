@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106637: FIX: Typing 80 Characters in a Watch Window Can Hang the VWB"
-permalink: kb/106/Q106637/
+permalink: /kb/106/Q106637/
 ---
 
 ## Q106637: FIX: Typing 80 Characters in a Watch Window Can Hang the VWB

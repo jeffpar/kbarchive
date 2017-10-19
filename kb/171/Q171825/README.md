@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171825: FIX: Tabbing Problems Using ActiveX Document in a Frame"
-permalink: kb/171/Q171825/
+permalink: /kb/171/Q171825/
 ---
 
 ## Q171825: FIX: Tabbing Problems Using ActiveX Document in a Frame

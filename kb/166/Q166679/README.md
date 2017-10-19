@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166679: SMS: Smsacm32.exe Does Not Set Status to Success"
-permalink: kb/166/Q166679/
+permalink: /kb/166/Q166679/
 ---
 
 ## Q166679: SMS: Smsacm32.exe Does Not Set Status to Success

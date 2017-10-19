@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148499: Differences Between SLIP and PPP with Dial-Up Networking"
-permalink: kb/148/Q148499/
+permalink: /kb/148/Q148499/
 ---
 
 ## Q148499: Differences Between SLIP and PPP with Dial-Up Networking

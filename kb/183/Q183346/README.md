@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183346: SMS: Windows 95 Page File Is Not Inventoried"
-permalink: kb/183/Q183346/
+permalink: /kb/183/Q183346/
 ---
 
 ## Q183346: SMS: Windows 95 Page File Is Not Inventoried

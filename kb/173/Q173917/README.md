@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173917: XWEB: Pine Puts Windows NT Domain Name in Internet Address"
-permalink: kb/173/Q173917/
+permalink: /kb/173/Q173917/
 ---
 
 ## Q173917: XWEB: Pine Puts Windows NT Domain Name in Internet Address

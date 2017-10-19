@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259840: XADM: How to Obtain Move Server Wizard"
-permalink: kb/259/Q259840/
+permalink: /kb/259/Q259840/
 ---
 
 ## Q259840: XADM: How to Obtain Move Server Wizard

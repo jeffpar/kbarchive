@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78004: Compaticard, AMI BIOS, and MS-DOS 5.0"
-permalink: kb/078/Q78004/
+permalink: /kb/078/Q78004/
 ---
 
 ## Q78004: Compaticard, AMI BIOS, and MS-DOS 5.0

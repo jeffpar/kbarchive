@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193363: BUG: DDE Paste Link with Word Fails to Update Using LinkSend"
-permalink: kb/193/Q193363/
+permalink: /kb/193/Q193363/
 ---
 
 ## Q193363: BUG: DDE Paste Link with Word Fails to Update Using LinkSend

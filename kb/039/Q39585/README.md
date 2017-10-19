@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39585: Correct Testing Precedence of Batch File ERRORLEVELs"
-permalink: kb/039/Q39585/
+permalink: /kb/039/Q39585/
 ---
 
 ## Q39585: Correct Testing Precedence of Batch File ERRORLEVELs

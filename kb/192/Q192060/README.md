@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192060: Cannot Send Or Receive E-mail On MSN Using Outlook Express"
-permalink: kb/192/Q192060/
+permalink: /kb/192/Q192060/
 ---
 
 ## Q192060: Cannot Send Or Receive E-mail On MSN Using Outlook Express

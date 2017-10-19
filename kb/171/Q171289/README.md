@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171289: SMS: Grey Quick Windows Viewer with Remote Control"
-permalink: kb/171/Q171289/
+permalink: /kb/171/Q171289/
 ---
 
 ## Q171289: SMS: Grey Quick Windows Viewer with Remote Control

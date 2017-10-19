@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135207: Setup Hangs During Hardware Detection on IBM ThinkPad"
-permalink: kb/135/Q135207/
+permalink: /kb/135/Q135207/
 ---
 
 ## Q135207: Setup Hangs During Hardware Detection on IBM ThinkPad

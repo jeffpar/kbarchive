@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253584: How to Prevent an MA from Writing to the Transaction Stack"
-permalink: kb/253/Q253584/
+permalink: /kb/253/Q253584/
 ---
 
 ## Q253584: How to Prevent an MA from Writing to the Transaction Stack

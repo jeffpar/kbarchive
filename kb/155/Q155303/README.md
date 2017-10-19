@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155303: HOWTO: Create Shortcuts (Shell Links) within Windows"
-permalink: kb/155/Q155303/
+permalink: /kb/155/Q155303/
 ---
 
 ## Q155303: HOWTO: Create Shortcuts (Shell Links) within Windows

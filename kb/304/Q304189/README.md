@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304189: Error Entering Negative Number for ASP Files Cached in Memory"
-permalink: kb/304/Q304189/
+permalink: /kb/304/Q304189/
 ---
 
 ## Q304189: Error Entering Negative Number for ASP Files Cached in Memory

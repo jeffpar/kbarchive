@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74601: INFO: Using GetDIBits()"
-permalink: kb/074/Q74601/
+permalink: /kb/074/Q74601/
 ---
 
 ## Q74601: INFO: Using GetDIBits()

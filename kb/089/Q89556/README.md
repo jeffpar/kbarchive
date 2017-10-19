@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89556: Windows for Workgroups Drivers Install in Root Directory"
-permalink: kb/089/Q89556/
+permalink: /kb/089/Q89556/
 ---
 
 ## Q89556: Windows for Workgroups Drivers Install in Root Directory

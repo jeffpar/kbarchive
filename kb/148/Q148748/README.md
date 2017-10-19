@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148748: XCLN: How to Change the Web Browser Association"
-permalink: kb/148/Q148748/
+permalink: /kb/148/Q148748/
 ---
 
 ## Q148748: XCLN: How to Change the Web Browser Association

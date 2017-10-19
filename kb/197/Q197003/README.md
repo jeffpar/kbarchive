@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197003: ASP Cached Data for One Site Used in Multiple Sites"
-permalink: kb/197/Q197003/
+permalink: /kb/197/Q197003/
 ---
 
 ## Q197003: ASP Cached Data for One Site Used in Multiple Sites

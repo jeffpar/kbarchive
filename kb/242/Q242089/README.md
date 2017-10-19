@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242089: New Application Installation Programs Will Not Run"
-permalink: kb/242/Q242089/
+permalink: /kb/242/Q242089/
 ---
 
 ## Q242089: New Application Installation Programs Will Not Run

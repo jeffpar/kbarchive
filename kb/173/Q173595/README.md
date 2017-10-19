@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173595: XCLN: Netscape Client Returns Confusing Error Message"
-permalink: kb/173/Q173595/
+permalink: /kb/173/Q173595/
 ---
 
 ## Q173595: XCLN: Netscape Client Returns Confusing Error Message

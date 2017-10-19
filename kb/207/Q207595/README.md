@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207595: HOWTO: SQL Server 7.0 Distributed Query With FoxPro .dbf Files"
-permalink: kb/207/Q207595/
+permalink: /kb/207/Q207595/
 ---
 
 ## Q207595: HOWTO: SQL Server 7.0 Distributed Query With FoxPro .dbf Files

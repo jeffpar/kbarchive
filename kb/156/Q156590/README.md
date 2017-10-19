@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156590: STL Sample for deque::erase and deque::clear Functions"
-permalink: kb/156/Q156590/
+permalink: /kb/156/Q156590/
 ---
 
 ## Q156590: STL Sample for deque::erase and deque::clear Functions

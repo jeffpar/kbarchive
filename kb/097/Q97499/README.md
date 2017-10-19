@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97499: Ensure User Permissions Are Retained During Transfer"
-permalink: kb/097/Q97499/
+permalink: /kb/097/Q97499/
 ---
 
 ## Q97499: Ensure User Permissions Are Retained During Transfer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112286: SMTP: Example of SMTP Gateway Log File"
-permalink: kb/112/Q112286/
+permalink: /kb/112/Q112286/
 ---
 
 ## Q112286: SMTP: Example of SMTP Gateway Log File

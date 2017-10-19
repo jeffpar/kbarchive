@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165311: SNA Server 3.0 Windows 95 Clients Hang when Using Encryption"
-permalink: kb/165/Q165311/
+permalink: /kb/165/Q165311/
 ---
 
 ## Q165311: SNA Server 3.0 Windows 95 Clients Hang when Using Encryption

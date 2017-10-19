@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190141: IIS Administrator Service Fails to Stop"
-permalink: kb/190/Q190141/
+permalink: /kb/190/Q190141/
 ---
 
 ## Q190141: IIS Administrator Service Fails to Stop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178437: VB 5.0 Developer's Workshop, 4th Ed. Commments and Corrections"
-permalink: kb/178/Q178437/
+permalink: /kb/178/Q178437/
 ---
 
 ## Q178437: VB 5.0 Developer's Workshop, 4th Ed. Commments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239043: IIS: &quot;Unable to Enumerate Files and Directories&quot;"
-permalink: kb/239/Q239043/
+permalink: /kb/239/Q239043/
 ---
 
 ## Q239043: IIS: &quot;Unable to Enumerate Files and Directories&quot;

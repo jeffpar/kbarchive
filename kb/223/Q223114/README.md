@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223114: FIX: Scale and Line Methods Work Differently on Printer Object"
-permalink: kb/223/Q223114/
+permalink: /kb/223/Q223114/
 ---
 
 ## Q223114: FIX: Scale and Line Methods Work Differently on Printer Object

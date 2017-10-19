@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138258: Windows NT Debug Symbol Setup Information"
-permalink: kb/138/Q138258/
+permalink: /kb/138/Q138258/
 ---
 
 ## Q138258: Windows NT Debug Symbol Setup Information

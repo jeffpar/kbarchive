@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250903: XADM: 'Fuserext' Error Appears When You Try to Access Mailbox"
-permalink: kb/250/Q250903/
+permalink: /kb/250/Q250903/
 ---
 
 ## Q250903: XADM: 'Fuserext' Error Appears When You Try to Access Mailbox

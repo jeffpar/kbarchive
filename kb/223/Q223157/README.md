@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223157: Integrating WLBS and MSCS"
-permalink: kb/223/Q223157/
+permalink: /kb/223/Q223157/
 ---
 
 ## Q223157: Integrating WLBS and MSCS

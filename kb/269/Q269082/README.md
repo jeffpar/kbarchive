@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269082: IISADMPWD Virtual Directory Not Created During IIS 5.0 Installat"
-permalink: kb/269/Q269082/
+permalink: /kb/269/Q269082/
 ---
 
 ## Q269082: IISADMPWD Virtual Directory Not Created During IIS 5.0 Installat

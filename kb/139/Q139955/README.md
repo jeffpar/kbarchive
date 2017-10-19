@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139955: Err Msg: This Is an Invalid CD Key Value. Check the..."
-permalink: kb/139/Q139955/
+permalink: /kb/139/Q139955/
 ---
 
 ## Q139955: Err Msg: This Is an Invalid CD Key Value. Check the...

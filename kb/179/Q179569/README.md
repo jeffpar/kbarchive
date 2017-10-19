@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179569: Error in SQL Setup: Can't Find SQLBOOKS.IDX"
-permalink: kb/179/Q179569/
+permalink: /kb/179/Q179569/
 ---
 
 ## Q179569: Error in SQL Setup: Can't Find SQLBOOKS.IDX

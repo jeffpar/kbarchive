@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130929: DHCP Seconds Field Limits Forwarding of Packets by Relay Agents"
-permalink: kb/130/Q130929/
+permalink: /kb/130/Q130929/
 ---
 
 ## Q130929: DHCP Seconds Field Limits Forwarding of Packets by Relay Agents

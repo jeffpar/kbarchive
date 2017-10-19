@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158392: Hellbender and MTM: Screen Goes Black with Hercules Dynamite"
-permalink: kb/158/Q158392/
+permalink: /kb/158/Q158392/
 ---
 
 ## Q158392: Hellbender and MTM: Screen Goes Black with Hercules Dynamite

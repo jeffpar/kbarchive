@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85602: FAX: What Occurs in the Event of a Mail Failure"
-permalink: kb/085/Q85602/
+permalink: /kb/085/Q85602/
 ---
 
 ## Q85602: FAX: What Occurs in the Event of a Mail Failure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193602: Configuration Options for WLBS Hosts Connected to Layer 2 Switch"
-permalink: kb/193/Q193602/
+permalink: /kb/193/Q193602/
 ---
 
 ## Q193602: Configuration Options for WLBS Hosts Connected to Layer 2 Switch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163074: XADM: Use Message Tracking Logs to Identify Oversize Msgs"
-permalink: kb/163/Q163074/
+permalink: /kb/163/Q163074/
 ---
 
 ## Q163074: XADM: Use Message Tracking Logs to Identify Oversize Msgs

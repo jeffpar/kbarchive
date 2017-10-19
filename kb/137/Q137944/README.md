@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137944: HOWTO: How to Create a Remote Connection or View Programmaticall"
-permalink: kb/137/Q137944/
+permalink: /kb/137/Q137944/
 ---
 
 ## Q137944: HOWTO: How to Create a Remote Connection or View Programmaticall

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99156: Strategies for Boosting File Transfer Throughput Rates"
-permalink: kb/099/Q99156/
+permalink: /kb/099/Q99156/
 ---
 
 ## Q99156: Strategies for Boosting File Transfer Throughput Rates

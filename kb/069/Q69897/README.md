@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69897: Using Variable Argument Lists in DLL Functions"
-permalink: kb/069/Q69897/
+permalink: /kb/069/Q69897/
 ---
 
 ## Q69897: Using Variable Argument Lists in DLL Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312603: FS2000: Err Msg During Installation Loading Language Resources"
-permalink: kb/312/Q312603/
+permalink: /kb/312/Q312603/
 ---
 
 ## Q312603: FS2000: Err Msg During Installation Loading Language Resources

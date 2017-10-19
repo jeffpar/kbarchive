@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181742: XFOR: Message from Notes to Exchange Gets Stuck in Exchange.box"
-permalink: kb/181/Q181742/
+permalink: /kb/181/Q181742/
 ---
 
 ## Q181742: XFOR: Message from Notes to Exchange Gets Stuck in Exchange.box

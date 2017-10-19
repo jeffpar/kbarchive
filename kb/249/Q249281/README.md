@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249281: COMTI May Generate 1507 Error When Converting COMP-3 Data Type"
-permalink: kb/249/Q249281/
+permalink: /kb/249/Q249281/
 ---
 
 ## Q249281: COMTI May Generate 1507 Error When Converting COMP-3 Data Type

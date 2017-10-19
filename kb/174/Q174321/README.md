@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174321: FIX: BackColor of MaskEdBox Control Changes When Enabled=False"
-permalink: kb/174/Q174321/
+permalink: /kb/174/Q174321/
 ---
 
 ## Q174321: FIX: BackColor of MaskEdBox Control Changes When Enabled=False

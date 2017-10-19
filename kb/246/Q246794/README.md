@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246794: Invokable APPC/CPI-C TP May Fail Intermittently with Event 60"
-permalink: kb/246/Q246794/
+permalink: /kb/246/Q246794/
 ---
 
 ## Q246794: Invokable APPC/CPI-C TP May Fail Intermittently with Event 60

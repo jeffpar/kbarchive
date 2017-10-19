@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189249: HOWTO: Determine Which 32-Bit Windows Version Is Being Used"
-permalink: kb/189/Q189249/
+permalink: /kb/189/Q189249/
 ---
 
 ## Q189249: HOWTO: Determine Which 32-Bit Windows Version Is Being Used

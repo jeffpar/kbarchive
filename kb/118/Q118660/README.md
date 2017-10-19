@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118660: RAS: ClientsPerProcess Registry Entry"
-permalink: kb/118/Q118660/
+permalink: /kb/118/Q118660/
 ---
 
 ## Q118660: RAS: ClientsPerProcess Registry Entry

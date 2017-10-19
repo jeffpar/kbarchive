@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151788: XADM: &quot;Reps-From&quot; USN Too High for One Server"
-permalink: kb/151/Q151788/
+permalink: /kb/151/Q151788/
 ---
 
 ## Q151788: XADM: &quot;Reps-From&quot; USN Too High for One Server

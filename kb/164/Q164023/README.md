@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164023: Fix for Gethostbyname() IP Address Order on Local Multihomed Mac"
-permalink: kb/164/Q164023/
+permalink: /kb/164/Q164023/
 ---
 
 ## Q164023: Fix for Gethostbyname() IP Address Order on Local Multihomed Mac

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233193: LMHOSTS File Referenced in #INCLUDE Is Not Parsed at Startup"
-permalink: kb/233/Q233193/
+permalink: /kb/233/Q233193/
 ---
 
 ## Q233193: LMHOSTS File Referenced in #INCLUDE Is Not Parsed at Startup

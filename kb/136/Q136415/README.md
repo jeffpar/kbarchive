@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136415: Err Msg: SUWIN Caused a General Protection Fault in Module..."
-permalink: kb/136/Q136415/
+permalink: /kb/136/Q136415/
 ---
 
 ## Q136415: Err Msg: SUWIN Caused a General Protection Fault in Module...

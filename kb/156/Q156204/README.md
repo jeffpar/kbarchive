@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156204: Unusual Addresses Like 1.10.0.184 Showing in WINS Database"
-permalink: kb/156/Q156204/
+permalink: /kb/156/Q156204/
 ---
 
 ## Q156204: Unusual Addresses Like 1.10.0.184 Showing in WINS Database

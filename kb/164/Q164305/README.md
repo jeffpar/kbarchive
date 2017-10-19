@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164305: Performance Problems Using USB Camera"
-permalink: kb/164/Q164305/
+permalink: /kb/164/Q164305/
 ---
 
 ## Q164305: Performance Problems Using USB Camera

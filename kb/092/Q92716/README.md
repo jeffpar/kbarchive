@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92716: WFWG 3.10: 3Com EtherLink Supported Only with Sharing Disabled"
-permalink: kb/092/Q92716/
+permalink: /kb/092/Q92716/
 ---
 
 ## Q92716: WFWG 3.10: 3Com EtherLink Supported Only with Sharing Disabled

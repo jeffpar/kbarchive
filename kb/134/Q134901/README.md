@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134901: WD97: How to Modify the Layout of an Address Book Entry"
-permalink: kb/134/Q134901/
+permalink: /kb/134/Q134901/
 ---
 
 ## Q134901: WD97: How to Modify the Layout of an Address Book Entry

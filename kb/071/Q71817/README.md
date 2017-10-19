@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71817: Windows Err Msg: No Fonts Installed (Control Panel)"
-permalink: kb/071/Q71817/
+permalink: /kb/071/Q71817/
 ---
 
 ## Q71817: Windows Err Msg: No Fonts Installed (Control Panel)

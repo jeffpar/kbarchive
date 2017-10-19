@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103594: SET LIBRARY TO Search Method"
-permalink: kb/103/Q103594/
+permalink: /kb/103/Q103594/
 ---
 
 ## Q103594: SET LIBRARY TO Search Method

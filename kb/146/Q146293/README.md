@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146293: XADM: Auto-naming Feature Doesn't Work with Directory Import"
-permalink: kb/146/Q146293/
+permalink: /kb/146/Q146293/
 ---
 
 ## Q146293: XADM: Auto-naming Feature Doesn't Work with Directory Import

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137340: Err Msg: The File C:&#92;W95undo.dat Is Missing or Invalid"
-permalink: kb/137/Q137340/
+permalink: /kb/137/Q137340/
 ---
 
 ## Q137340: Err Msg: The File C:&#92;W95undo.dat Is Missing or Invalid

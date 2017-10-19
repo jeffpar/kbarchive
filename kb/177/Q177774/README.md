@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177774: XADM: Event ID 1171 Occurs When Diagnostics Logging Is Set Too H"
-permalink: kb/177/Q177774/
+permalink: /kb/177/Q177774/
 ---
 
 ## Q177774: XADM: Event ID 1171 Occurs When Diagnostics Logging Is Set Too H

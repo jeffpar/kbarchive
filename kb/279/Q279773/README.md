@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279773: Combat Flight Simulator 2: Cannot Set Precipitation Type to Snow"
-permalink: kb/279/Q279773/
+permalink: /kb/279/Q279773/
 ---
 
 ## Q279773: Combat Flight Simulator 2: Cannot Set Precipitation Type to Snow

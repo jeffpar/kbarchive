@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137426: Program Manager Disappears After Log On, Log Off or Shutdown"
-permalink: kb/137/Q137426/
+permalink: /kb/137/Q137426/
 ---
 
 ## Q137426: Program Manager Disappears After Log On, Log Off or Shutdown

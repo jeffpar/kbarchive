@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59407: PRB: Inaccurate Representation of Large Double Values"
-permalink: kb/059/Q59407/
+permalink: /kb/059/Q59407/
 ---
 
 ## Q59407: PRB: Inaccurate Representation of Large Double Values

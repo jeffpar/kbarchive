@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241752: Terminal Server Cannot Load 106-Key Japanese Keyboard Driver"
-permalink: kb/241/Q241752/
+permalink: /kb/241/Q241752/
 ---
 
 ## Q241752: Terminal Server Cannot Load 106-Key Japanese Keyboard Driver

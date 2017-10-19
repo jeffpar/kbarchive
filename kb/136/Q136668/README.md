@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136668: FIX: Inconsistent Behavior of KeyPreview Property"
-permalink: kb/136/Q136668/
+permalink: /kb/136/Q136668/
 ---
 
 ## Q136668: FIX: Inconsistent Behavior of KeyPreview Property

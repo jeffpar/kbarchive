@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274678: Crimson Skies: List of Campaigns and Missions"
-permalink: kb/274/Q274678/
+permalink: /kb/274/Q274678/
 ---
 
 ## Q274678: Crimson Skies: List of Campaigns and Missions

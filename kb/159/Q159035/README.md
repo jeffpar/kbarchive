@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159035: SMC 8016 PC Card May Not Work with NEC Versa 6000H/IBM 760ED"
-permalink: kb/159/Q159035/
+permalink: /kb/159/Q159035/
 ---
 
 ## Q159035: SMC 8016 PC Card May Not Work with NEC Versa 6000H/IBM 760ED

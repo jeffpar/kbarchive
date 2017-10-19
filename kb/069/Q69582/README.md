@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69582: CHKDSK Does Not Subtract EBDA Memory"
-permalink: kb/069/Q69582/
+permalink: /kb/069/Q69582/
 ---
 
 ## Q69582: CHKDSK Does Not Subtract EBDA Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90796: Instanced Data Management in Enhanced Mode Windows"
-permalink: kb/090/Q90796/
+permalink: /kb/090/Q90796/
 ---
 
 ## Q90796: Instanced Data Management in Enhanced Mode Windows

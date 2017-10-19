@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261209: StarLancer: Cannot Assign a Different Function to the POV Switch"
-permalink: kb/261/Q261209/
+permalink: /kb/261/Q261209/
 ---
 
 ## Q261209: StarLancer: Cannot Assign a Different Function to the POV Switch

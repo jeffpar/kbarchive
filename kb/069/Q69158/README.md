@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69158: ISAMCVT Doesn't Properly Convert db/LIB Date Fields"
-permalink: kb/069/Q69158/
+permalink: /kb/069/Q69158/
 ---
 
 ## Q69158: ISAMCVT Doesn't Properly Convert db/LIB Date Fields

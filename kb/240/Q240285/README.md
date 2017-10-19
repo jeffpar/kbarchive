@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240285: NBA Inside Drive 2000: Cannot Hear Sound in Introductory Video"
-permalink: kb/240/Q240285/
+permalink: /kb/240/Q240285/
 ---
 
 ## Q240285: NBA Inside Drive 2000: Cannot Hear Sound in Introductory Video

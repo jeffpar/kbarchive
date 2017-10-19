@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213241: SMS: Software-Metering Server Is Not Fully Uninstalled"
-permalink: kb/213/Q213241/
+permalink: /kb/213/Q213241/
 ---
 
 ## Q213241: SMS: Software-Metering Server Is Not Fully Uninstalled

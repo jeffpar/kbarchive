@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318434: SMS: How to Use SMS 2.0 to Silently Install  .NET Framework"
-permalink: kb/318/Q318434/
+permalink: /kb/318/Q318434/
 ---
 
 ## Q318434: SMS: How to Use SMS 2.0 to Silently Install  .NET Framework

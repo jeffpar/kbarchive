@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154756: HOWTO: List Stored Procedures in a SQL Server Database"
-permalink: kb/154/Q154756/
+permalink: /kb/154/Q154756/
 ---
 
 ## Q154756: HOWTO: List Stored Procedures in a SQL Server Database

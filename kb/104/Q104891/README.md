@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104891: FIX: F1001 &quot;@(#)fltreg.c:1.31&quot; When Compiling with /Ox"
-permalink: kb/104/Q104891/
+permalink: /kb/104/Q104891/
 ---
 
 ## Q104891: FIX: F1001 &quot;@(#)fltreg.c:1.31&quot; When Compiling with /Ox

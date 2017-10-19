@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded"
-permalink: kb/166/Q166577/
+permalink: /kb/166/Q166577/
 ---
 
 ## Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded

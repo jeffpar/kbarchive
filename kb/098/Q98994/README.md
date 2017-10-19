@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98994: P.C. Logic Video Adapters Require Updated Drivers"
-permalink: kb/098/Q98994/
+permalink: /kb/098/Q98994/
 ---
 
 ## Q98994: P.C. Logic Video Adapters Require Updated Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108400: Art Gallery: Quick Keys &amp; Mouse Invoke &quot;Go Back&quot; Differently"
-permalink: kb/108/Q108400/
+permalink: /kb/108/Q108400/
 ---
 
 ## Q108400: Art Gallery: Quick Keys &amp; Mouse Invoke &quot;Go Back&quot; Differently

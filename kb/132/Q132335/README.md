@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132335: Mac Bookshelf 95: Error Type 15 Occurs in Quotation Book"
-permalink: kb/132/Q132335/
+permalink: /kb/132/Q132335/
 ---
 
 ## Q132335: Mac Bookshelf 95: Error Type 15 Occurs in Quotation Book

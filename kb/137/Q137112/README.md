@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137112: Select Drive Button Available with Only One Compressed Drive"
-permalink: kb/137/Q137112/
+permalink: /kb/137/Q137112/
 ---
 
 ## Q137112: Select Drive Button Available with Only One Compressed Drive

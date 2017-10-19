@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81336: ExeView.exe Extracts and Displays Application Resources"
-permalink: kb/081/Q81336/
+permalink: /kb/081/Q81336/
 ---
 
 ## Q81336: ExeView.exe Extracts and Displays Application Resources

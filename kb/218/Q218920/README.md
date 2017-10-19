@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218920: XADM: How to Prevent Logons During Move Mailbox"
-permalink: kb/218/Q218920/
+permalink: /kb/218/Q218920/
 ---
 
 ## Q218920: XADM: How to Prevent Logons During Move Mailbox

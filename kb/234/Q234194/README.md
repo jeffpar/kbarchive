@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234194: BUG: Conflicting Versions of MFC Stop Responding Upon Shutdown"
-permalink: kb/234/Q234194/
+permalink: /kb/234/Q234194/
 ---
 
 ## Q234194: BUG: Conflicting Versions of MFC Stop Responding Upon Shutdown

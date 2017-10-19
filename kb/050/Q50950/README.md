@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50950: HOWTO: Specify Stack Size (Clarification)"
-permalink: kb/050/Q50950/
+permalink: /kb/050/Q50950/
 ---
 
 ## Q50950: HOWTO: Specify Stack Size (Clarification)

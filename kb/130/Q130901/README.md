@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130901: Frame Corruption in Retransmitted IPX Packet"
-permalink: kb/130/Q130901/
+permalink: /kb/130/Q130901/
 ---
 
 ## Q130901: Frame Corruption in Retransmitted IPX Packet

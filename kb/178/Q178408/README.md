@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178408: BUG: Value Property of Calendar Control Not on Properties Sheet"
-permalink: kb/178/Q178408/
+permalink: /kb/178/Q178408/
 ---
 
 ## Q178408: BUG: Value Property of Calendar Control Not on Properties Sheet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162247: PPT: Sample Code to Center a Selection of Objects"
-permalink: kb/162/Q162247/
+permalink: /kb/162/Q162247/
 ---
 
 ## Q162247: PPT: Sample Code to Center a Selection of Objects

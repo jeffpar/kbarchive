@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129578: Broken Sound or Heavy Reverberation Playing .WAV File"
-permalink: kb/129/Q129578/
+permalink: /kb/129/Q129578/
 ---
 
 ## Q129578: Broken Sound or Heavy Reverberation Playing .WAV File

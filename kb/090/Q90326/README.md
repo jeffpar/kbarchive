@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90326: Schedule+ Err Msg: Schedule Transport DLL Does Not Support..."
-permalink: kb/090/Q90326/
+permalink: /kb/090/Q90326/
 ---
 
 ## Q90326: Schedule+ Err Msg: Schedule Transport DLL Does Not Support...

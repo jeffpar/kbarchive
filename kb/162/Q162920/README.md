@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162920: Cannot Change the Default Sending Font in Microsoft Exchange"
-permalink: kb/162/Q162920/
+permalink: /kb/162/Q162920/
 ---
 
 ## Q162920: Cannot Change the Default Sending Font in Microsoft Exchange

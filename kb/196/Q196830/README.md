@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196830: FIX: MIDL2039 Warning with IFontDisp/IPictureDisp Parameter Type"
-permalink: kb/196/Q196830/
+permalink: /kb/196/Q196830/
 ---
 
 ## Q196830: FIX: MIDL2039 Warning with IFontDisp/IPictureDisp Parameter Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171806: FIX: Memory Leak When RDC Bound to OLE Container Control"
-permalink: kb/171/Q171806/
+permalink: /kb/171/Q171806/
 ---
 
 ## Q171806: FIX: Memory Leak When RDC Bound to OLE Container Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69684: Installing Windows 3.0 on Everex 386/20 AGI 3000D"
-permalink: kb/069/Q69684/
+permalink: /kb/069/Q69684/
 ---
 
 ## Q69684: Installing Windows 3.0 on Everex 386/20 AGI 3000D

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199364: SMS: SQL Server Error 1105 - Tempdb Is Full"
-permalink: kb/199/Q199364/
+permalink: /kb/199/Q199364/
 ---
 
 ## Q199364: SMS: SQL Server Error 1105 - Tempdb Is Full

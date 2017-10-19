@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189487: XWEB: Dr. Watson Opening Welcome to Microsoft Outlook 98! Msg."
-permalink: kb/189/Q189487/
+permalink: /kb/189/Q189487/
 ---
 
 ## Q189487: XWEB: Dr. Watson Opening Welcome to Microsoft Outlook 98! Msg.

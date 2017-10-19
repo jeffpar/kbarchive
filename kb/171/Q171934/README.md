@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171934: Cancelling SNA Windows 95 Logon Causes Sbpuinit() rc = 563"
-permalink: kb/171/Q171934/
+permalink: /kb/171/Q171934/
 ---
 
 ## Q171934: Cancelling SNA Windows 95 Logon Causes Sbpuinit() rc = 563

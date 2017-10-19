@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156259: Wacom Tablet Driver Does Not Unload at System Shutdown"
-permalink: kb/156/Q156259/
+permalink: /kb/156/Q156259/
 ---
 
 ## Q156259: Wacom Tablet Driver Does Not Unload at System Shutdown

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184336: XCLN: Message Format Unavailable After Outlook 98 Is Installed"
-permalink: kb/184/Q184336/
+permalink: /kb/184/Q184336/
 ---
 
 ## Q184336: XCLN: Message Format Unavailable After Outlook 98 Is Installed

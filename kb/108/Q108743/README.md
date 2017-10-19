@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108743: Writer 1: Fir Tree Border Prints Incorrectly on Card"
-permalink: kb/108/Q108743/
+permalink: /kb/108/Q108743/
 ---
 
 ## Q108743: Writer 1: Fir Tree Border Prints Incorrectly on Card

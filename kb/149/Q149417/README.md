@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149417: Users Can't Copy Common Group Program Icons to Personal Group"
-permalink: kb/149/Q149417/
+permalink: /kb/149/Q149417/
 ---
 
 ## Q149417: Users Can't Copy Common Group Program Icons to Personal Group

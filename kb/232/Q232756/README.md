@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232756: Connection Manager Runs After Disconnecting from Internet"
-permalink: kb/232/Q232756/
+permalink: /kb/232/Q232756/
 ---
 
 ## Q232756: Connection Manager Runs After Disconnecting from Internet

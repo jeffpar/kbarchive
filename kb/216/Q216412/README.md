@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216412: BUG: Duplicate HotKey on Project Information Dialog Servers Tab"
-permalink: kb/216/Q216412/
+permalink: /kb/216/Q216412/
 ---
 
 ## Q216412: BUG: Duplicate HotKey on Project Information Dialog Servers Tab

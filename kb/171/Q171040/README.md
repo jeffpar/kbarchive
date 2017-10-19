@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171040: Incorrect Domain Name for SNAPMP Causes Events 22 and 1314"
-permalink: kb/171/Q171040/
+permalink: /kb/171/Q171040/
 ---
 
 ## Q171040: Incorrect Domain Name for SNAPMP Causes Events 22 and 1314

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185026: XADM: Local Message Delivery Not Subject To Size Restriction"
-permalink: kb/185/Q185026/
+permalink: /kb/185/Q185026/
 ---
 
 ## Q185026: XADM: Local Message Delivery Not Subject To Size Restriction

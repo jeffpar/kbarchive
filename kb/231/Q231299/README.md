@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231299: XADM: Information Store Returns Service-Specific Error 335544375"
-permalink: kb/231/Q231299/
+permalink: /kb/231/Q231299/
 ---
 
 ## Q231299: XADM: Information Store Returns Service-Specific Error 335544375

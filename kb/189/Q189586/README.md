@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189586: XFOR: Dial-up Internet Mail Service Fails with Event 4106"
-permalink: kb/189/Q189586/
+permalink: /kb/189/Q189586/
 ---
 
 ## Q189586: XFOR: Dial-up Internet Mail Service Fails with Event 4106

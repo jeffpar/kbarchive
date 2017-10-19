@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288181: FP2002: How to Create Home Page Hot Key with JavaScript"
-permalink: kb/288/Q288181/
+permalink: /kb/288/Q288181/
 ---
 
 ## Q288181: FP2002: How to Create Home Page Hot Key with JavaScript

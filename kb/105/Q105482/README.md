@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105482: Windows NT 3.5-Inch Disk Contents (528)"
-permalink: kb/105/Q105482/
+permalink: /kb/105/Q105482/
 ---
 
 ## Q105482: Windows NT 3.5-Inch Disk Contents (528)

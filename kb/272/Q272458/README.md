@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272458: BETA-BUG: Interpreting App Center 2000 8022 Event Log Messages"
-permalink: kb/272/Q272458/
+permalink: /kb/272/Q272458/
 ---
 
 ## Q272458: BETA-BUG: Interpreting App Center 2000 8022 Event Log Messages

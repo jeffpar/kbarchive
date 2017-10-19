@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151085: Mastering Visual C++: Help/Print Closes Unexpectedly"
-permalink: kb/151/Q151085/
+permalink: /kb/151/Q151085/
 ---
 
 ## Q151085: Mastering Visual C++: Help/Print Closes Unexpectedly

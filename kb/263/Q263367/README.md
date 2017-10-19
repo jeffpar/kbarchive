@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263367: Component Status Summarizer Threshold of Zero Does Not Work"
-permalink: kb/263/Q263367/
+permalink: /kb/263/Q263367/
 ---
 
 ## Q263367: Component Status Summarizer Threshold of Zero Does Not Work

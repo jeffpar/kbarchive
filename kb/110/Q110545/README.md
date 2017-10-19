@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110545: No Runway, Grid, or Summary in Crop Duster"
-permalink: kb/110/Q110545/
+permalink: /kb/110/Q110545/
 ---
 
 ## Q110545: No Runway, Grid, or Summary in Crop Duster

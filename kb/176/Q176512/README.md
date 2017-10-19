@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176512: RRAS Event ID 20050: The User Domain&#92;User Connected to..."
-permalink: kb/176/Q176512/
+permalink: /kb/176/Q176512/
 ---
 
 ## Q176512: RRAS Event ID 20050: The User Domain&#92;User Connected to...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239561: HOWTO: Use CoInitializeSecurity in Visual Basic"
-permalink: kb/239/Q239561/
+permalink: /kb/239/Q239561/
 ---
 
 ## Q239561: HOWTO: Use CoInitializeSecurity in Visual Basic

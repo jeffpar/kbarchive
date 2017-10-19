@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191773: XFOR: Correlation Table Cleanup Fails; Ct2.dat &amp; Ct2.idx Grow"
-permalink: kb/191/Q191773/
+permalink: /kb/191/Q191773/
 ---
 
 ## Q191773: XFOR: Correlation Table Cleanup Fails; Ct2.dat &amp; Ct2.idx Grow

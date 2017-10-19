@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74208: Conflict Using ALR VEISA with PS/2 Mouse and HIMEM.SYS"
-permalink: kb/074/Q74208/
+permalink: /kb/074/Q74208/
 ---
 
 ## Q74208: Conflict Using ALR VEISA with PS/2 Mouse and HIMEM.SYS

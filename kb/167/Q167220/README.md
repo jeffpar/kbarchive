@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167220: How to Create Custom Calling Card Rules"
-permalink: kb/167/Q167220/
+permalink: /kb/167/Q167220/
 ---
 
 ## Q167220: How to Create Custom Calling Card Rules

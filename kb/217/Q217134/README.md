@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217134: Err Msg: The Application Failed to Initialize Properly"
-permalink: kb/217/Q217134/
+permalink: /kb/217/Q217134/
 ---
 
 ## Q217134: Err Msg: The Application Failed to Initialize Properly

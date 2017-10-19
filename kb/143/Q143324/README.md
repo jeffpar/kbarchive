@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143324: FP: HTTP Error 404 Opening Deleted Web"
-permalink: kb/143/Q143324/
+permalink: /kb/143/Q143324/
 ---
 
 ## Q143324: FP: HTTP Error 404 Opening Deleted Web

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97137: PC WRmt: Mail Hangs in Connection Dialog If No Timer Available"
-permalink: kb/097/Q97137/
+permalink: /kb/097/Q97137/
 ---
 
 ## Q97137: PC WRmt: Mail Hangs in Connection Dialog If No Timer Available

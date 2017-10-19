@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192109: Extended Characters May Be Unavailable in Run Dialog Box"
-permalink: kb/192/Q192109/
+permalink: /kb/192/Q192109/
 ---
 
 ## Q192109: Extended Characters May Be Unavailable in Run Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148705: PC DirSync ErrMsg: NSDA -x Terminated Abnormally w/ Exit Code"
-permalink: kb/148/Q148705/
+permalink: /kb/148/Q148705/
 ---
 
 ## Q148705: PC DirSync ErrMsg: NSDA -x Terminated Abnormally w/ Exit Code

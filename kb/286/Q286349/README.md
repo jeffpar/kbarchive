@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286349: Print Server Application Exception in Function TRNSDT!ibm_pc"
-permalink: kb/286/Q286349/
+permalink: /kb/286/Q286349/
 ---
 
 ## Q286349: Print Server Application Exception in Function TRNSDT!ibm_pc

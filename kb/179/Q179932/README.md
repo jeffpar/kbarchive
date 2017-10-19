@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179932: Encarta: Amount from Contribution Is Incorrect"
-permalink: kb/179/Q179932/
+permalink: /kb/179/Q179932/
 ---
 
 ## Q179932: Encarta: Amount from Contribution Is Incorrect

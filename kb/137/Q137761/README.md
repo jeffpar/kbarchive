@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137761: PPT7: Color Mapping Errors Between Windows 95 and NT 3.51"
-permalink: kb/137/Q137761/
+permalink: /kb/137/Q137761/
 ---
 
 ## Q137761: PPT7: Color Mapping Errors Between Windows 95 and NT 3.51

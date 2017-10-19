@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193010: BUG: Blinking Hourglass When Expanding Object in Watch Window"
-permalink: kb/193/Q193010/
+permalink: /kb/193/Q193010/
 ---
 
 ## Q193010: BUG: Blinking Hourglass When Expanding Object in Watch Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190502: PRB: Missing Files Dialog Box Appears When Running PDW"
-permalink: kb/190/Q190502/
+permalink: /kb/190/Q190502/
 ---
 
 ## Q190502: PRB: Missing Files Dialog Box Appears When Running PDW

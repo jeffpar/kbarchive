@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302354: SMS: Hardware Inventory Logs Exception After Inventory Finishes"
-permalink: kb/302/Q302354/
+permalink: /kb/302/Q302354/
 ---
 
 ## Q302354: SMS: Hardware Inventory Logs Exception After Inventory Finishes

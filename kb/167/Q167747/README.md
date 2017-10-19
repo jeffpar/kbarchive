@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167747: WD97: IPF Linking Custom Document Property to Empty"
-permalink: kb/167/Q167747/
+permalink: /kb/167/Q167747/
 ---
 
 ## Q167747: WD97: IPF Linking Custom Document Property to Empty

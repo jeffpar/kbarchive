@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156156: PPT7: Color Text in Shaded Objects Doesn't Print to DeskJet 1600"
-permalink: kb/156/Q156156/
+permalink: /kb/156/Q156156/
 ---
 
 ## Q156156: PPT7: Color Text in Shaded Objects Doesn't Print to DeskJet 1600

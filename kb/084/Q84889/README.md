@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84889: Asymetrix DayBook/ToolBook Issues and Problems/Solutions"
-permalink: kb/084/Q84889/
+permalink: /kb/084/Q84889/
 ---
 
 ## Q84889: Asymetrix DayBook/ToolBook Issues and Problems/Solutions

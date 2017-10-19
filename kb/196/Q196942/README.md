@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196942: WD97: How to Select the Current Page in a Word Document"
-permalink: kb/196/Q196942/
+permalink: /kb/196/Q196942/
 ---
 
 ## Q196942: WD97: How to Select the Current Page in a Word Document

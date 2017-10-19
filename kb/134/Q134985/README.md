@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134985: Browsing &amp; Other Traffic Incur High Costs over ISDN Routers"
-permalink: kb/134/Q134985/
+permalink: /kb/134/Q134985/
 ---
 
 ## Q134985: Browsing &amp; Other Traffic Incur High Costs over ISDN Routers

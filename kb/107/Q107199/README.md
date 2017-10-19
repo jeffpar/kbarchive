@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107199: Windows Help Does Not Save Maximized Window Position"
-permalink: kb/107/Q107199/
+permalink: /kb/107/Q107199/
 ---
 
 ## Q107199: Windows Help Does Not Save Maximized Window Position

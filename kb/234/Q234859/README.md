@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234859: PRB: Windows Desktop Update Is Required for Product Resiliency"
-permalink: kb/234/Q234859/
+permalink: /kb/234/Q234859/
 ---
 
 ## Q234859: PRB: Windows Desktop Update Is Required for Product Resiliency

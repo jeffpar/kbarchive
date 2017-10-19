@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243694: Asheron's Call: Play Button Is Unavailable"
-permalink: kb/243/Q243694/
+permalink: /kb/243/Q243694/
 ---
 
 ## Q243694: Asheron's Call: Play Button Is Unavailable

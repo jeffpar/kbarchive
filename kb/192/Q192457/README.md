@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192457: Downloaded File May Be Saved in Incorrect Folder with IE"
-permalink: kb/192/Q192457/
+permalink: /kb/192/Q192457/
 ---
 
 ## Q192457: Downloaded File May Be Saved in Incorrect Folder with IE

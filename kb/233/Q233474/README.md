@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233474: Business Planner: Does Not Start if Internet Explorer 5 Removed"
-permalink: kb/233/Q233474/
+permalink: /kb/233/Q233474/
 ---
 
 ## Q233474: Business Planner: Does Not Start if Internet Explorer 5 Removed

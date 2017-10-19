@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237495: SMS Err Msg: ERROR 2 Failed to Run MofComp"
-permalink: kb/237/Q237495/
+permalink: /kb/237/Q237495/
 ---
 
 ## Q237495: SMS Err Msg: ERROR 2 Failed to Run MofComp

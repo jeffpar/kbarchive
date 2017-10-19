@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285987: WD97: Picture or Object Does Not Appear in Word Document"
-permalink: kb/285/Q285987/
+permalink: /kb/285/Q285987/
 ---
 
 ## Q285987: WD97: Picture or Object Does Not Appear in Word Document

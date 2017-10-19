@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165775: HOWTO: Set up a Visual FoxPro Internet Server"
-permalink: kb/165/Q165775/
+permalink: /kb/165/Q165775/
 ---
 
 ## Q165775: HOWTO: Set up a Visual FoxPro Internet Server

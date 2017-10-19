@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319039: How To Manage Identities In Outlook Express 5.0.4 For Macintosh"
-permalink: kb/319/Q319039/
+permalink: /kb/319/Q319039/
 ---
 
 ## Q319039: How To Manage Identities In Outlook Express 5.0.4 For Macintosh

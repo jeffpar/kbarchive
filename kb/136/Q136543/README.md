@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136543: Madge PCI Ringnode Network Adapter Hangs Using NDIS 3 Driver"
-permalink: kb/136/Q136543/
+permalink: /kb/136/Q136543/
 ---
 
 ## Q136543: Madge PCI Ringnode Network Adapter Hangs Using NDIS 3 Driver

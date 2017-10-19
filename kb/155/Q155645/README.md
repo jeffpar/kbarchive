@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155645: PRB: ActiveX Control Fails in Visual Basic but Works Fine in MFC"
-permalink: kb/155/Q155645/
+permalink: /kb/155/Q155645/
 ---
 
 ## Q155645: PRB: ActiveX Control Fails in Visual Basic but Works Fine in MFC

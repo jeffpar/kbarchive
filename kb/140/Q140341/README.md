@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140341: INFO: Fixlist for Visual Basic 4.0 for Windows - 26-Nov-1995"
-permalink: kb/140/Q140341/
+permalink: /kb/140/Q140341/
 ---
 
 ## Q140341: INFO: Fixlist for Visual Basic 4.0 for Windows - 26-Nov-1995

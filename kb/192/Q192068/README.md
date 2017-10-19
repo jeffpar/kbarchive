@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192068: WD97: Documents Will Not Print Until Macro Ends"
-permalink: kb/192/Q192068/
+permalink: /kb/192/Q192068/
 ---
 
 ## Q192068: WD97: Documents Will Not Print Until Macro Ends

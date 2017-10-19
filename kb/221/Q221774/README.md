@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221774: Combat FS: Crosshairs Turn Black or Appear as a Black Box"
-permalink: kb/221/Q221774/
+permalink: /kb/221/Q221774/
 ---
 
 ## Q221774: Combat FS: Crosshairs Turn Black or Appear as a Black Box

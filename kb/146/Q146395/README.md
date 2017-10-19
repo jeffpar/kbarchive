@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146395: XCLN: Some Inbox Rules will not Fire on Bcc'd Mail"
-permalink: kb/146/Q146395/
+permalink: /kb/146/Q146395/
 ---
 
 ## Q146395: XCLN: Some Inbox Rules will not Fire on Bcc'd Mail

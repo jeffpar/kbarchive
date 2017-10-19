@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159600: PerfMon Server-Sessions Errored Out Also Tracks Autodisconnects"
-permalink: kb/159/Q159600/
+permalink: /kb/159/Q159600/
 ---
 
 ## Q159600: PerfMon Server-Sessions Errored Out Also Tracks Autodisconnects

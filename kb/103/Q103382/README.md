@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103382: PC Win: Err Msg: Notice 73: You Don't Have Sufficient Rights.."
-permalink: kb/103/Q103382/
+permalink: /kb/103/Q103382/
 ---
 
 ## Q103382: PC Win: Err Msg: Notice 73: You Don't Have Sufficient Rights..

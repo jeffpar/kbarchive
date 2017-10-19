@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151994: Basketball 94-95 Err Msg: Unable To Start DDE Communications"
-permalink: kb/151/Q151994/
+permalink: /kb/151/Q151994/
 ---
 
 ## Q151994: Basketball 94-95 Err Msg: Unable To Start DDE Communications

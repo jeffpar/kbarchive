@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237716: NFL Fever 2000: User Interface Text Is Illegible"
-permalink: kb/237/Q237716/
+permalink: /kb/237/Q237716/
 ---
 
 ## Q237716: NFL Fever 2000: User Interface Text Is Illegible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298969: Web Site Operator Capabilities and Limitations"
-permalink: kb/298/Q298969/
+permalink: /kb/298/Q298969/
 ---
 
 ## Q298969: Web Site Operator Capabilities and Limitations

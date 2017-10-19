@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189470: PRB: Read-only Msvbvm50.dll Causes Errors During VB5 App Install"
-permalink: kb/189/Q189470/
+permalink: /kb/189/Q189470/
 ---
 
 ## Q189470: PRB: Read-only Msvbvm50.dll Causes Errors During VB5 App Install

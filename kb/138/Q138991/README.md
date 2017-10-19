@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138991: Problems Using Windows 95 or MS Plus! Startup Disk"
-permalink: kb/138/Q138991/
+permalink: /kb/138/Q138991/
 ---
 
 ## Q138991: Problems Using Windows 95 or MS Plus! Startup Disk

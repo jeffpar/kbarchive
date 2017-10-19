@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129588: MAC Asimov: Can't Launch with Apple's At Ease"
-permalink: kb/129/Q129588/
+permalink: /kb/129/Q129588/
 ---
 
 ## Q129588: MAC Asimov: Can't Launch with Apple's At Ease

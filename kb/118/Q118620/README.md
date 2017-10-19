@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118620: PC Ext: Support of EXTERNAL.EXE Under Windows NT"
-permalink: kb/118/Q118620/
+permalink: /kb/118/Q118620/
 ---
 
 ## Q118620: PC Ext: Support of EXTERNAL.EXE Under Windows NT

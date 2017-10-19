@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155887: How to Change International Dialing Access Codes"
-permalink: kb/155/Q155887/
+permalink: /kb/155/Q155887/
 ---
 
 ## Q155887: How to Change International Dialing Access Codes

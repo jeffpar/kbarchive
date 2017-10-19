@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214485: SMS: How Senders Interact w/ Inactive or Congested Sites"
-permalink: kb/214/Q214485/
+permalink: /kb/214/Q214485/
 ---
 
 ## Q214485: SMS: How Senders Interact w/ Inactive or Congested Sites

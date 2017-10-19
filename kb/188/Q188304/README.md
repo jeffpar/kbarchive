@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188304: PRB: Calling 32-bit Help Files from 16-bit Applications on NT"
-permalink: kb/188/Q188304/
+permalink: /kb/188/Q188304/
 ---
 
 ## Q188304: PRB: Calling 32-bit Help Files from 16-bit Applications on NT

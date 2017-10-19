@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316647: PRB: Merge Module (.msm) Files Not Updated by VFP 7.0 SP1"
-permalink: kb/316/Q316647/
+permalink: /kb/316/Q316647/
 ---
 
 ## Q316647: PRB: Merge Module (.msm) Files Not Updated by VFP 7.0 SP1

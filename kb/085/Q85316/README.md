@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85316: Linotronic Driver Is Missing Zapf Dingbats and Other Fonts"
-permalink: kb/085/Q85316/
+permalink: /kb/085/Q85316/
 ---
 
 ## Q85316: Linotronic Driver Is Missing Zapf Dingbats and Other Fonts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265462: FP: Err Msg Installing Server Extensions with Disk-Based Web"
-permalink: kb/265/Q265462/
+permalink: /kb/265/Q265462/
 ---
 
 ## Q265462: FP: Err Msg Installing Server Extensions with Disk-Based Web

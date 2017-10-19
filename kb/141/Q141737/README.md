@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141737: BUG: Invalid Page Fault When Form Released in Error Event"
-permalink: kb/141/Q141737/
+permalink: /kb/141/Q141737/
 ---
 
 ## Q141737: BUG: Invalid Page Fault When Form Released in Error Event

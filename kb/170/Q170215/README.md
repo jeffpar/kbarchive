@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170215: XCON: Message Text Word-Wrap Broken in MS Exchange 5.0"
-permalink: kb/170/Q170215/
+permalink: /kb/170/Q170215/
 ---
 
 ## Q170215: XCON: Message Text Word-Wrap Broken in MS Exchange 5.0

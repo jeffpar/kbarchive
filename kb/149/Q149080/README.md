@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149080: Err Msg in SNMPUTIL: &quot;error on SnmpMgrRequest 40&quot;"
-permalink: kb/149/Q149080/
+permalink: /kb/149/Q149080/
 ---
 
 ## Q149080: Err Msg in SNMPUTIL: &quot;error on SnmpMgrRequest 40&quot;

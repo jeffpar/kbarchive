@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305399: Malformed Request to RPC Endpoint Mapper can Cause RPC Service t"
-permalink: kb/305/Q305399/
+permalink: /kb/305/Q305399/
 ---
 
 ## Q305399: Malformed Request to RPC Endpoint Mapper can Cause RPC Service t

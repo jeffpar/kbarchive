@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140573: FIX: F4 to Go to Error/Tag Doesn't Always Open Source File"
-permalink: kb/140/Q140573/
+permalink: /kb/140/Q140573/
 ---
 
 ## Q140573: FIX: F4 to Go to Error/Tag Doesn't Always Open Source File

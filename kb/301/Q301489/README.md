@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301489: Dialing Magic Codes"
-permalink: kb/301/Q301489/
+permalink: /kb/301/Q301489/
 ---
 
 ## Q301489: Dialing Magic Codes

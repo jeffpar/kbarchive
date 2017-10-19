@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263159: How to Troubleshoot Extension Conflicts on the Macintosh"
-permalink: kb/263/Q263159/
+permalink: /kb/263/Q263159/
 ---
 
 ## Q263159: How to Troubleshoot Extension Conflicts on the Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275709: Event 108 When You Cancel CPI-C CMALLC Verb"
-permalink: kb/275/Q275709/
+permalink: /kb/275/Q275709/
 ---
 
 ## Q275709: Event 108 When You Cancel CPI-C CMALLC Verb

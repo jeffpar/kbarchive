@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142827: BUG: DBList Flashes Continuously with SSPanel"
-permalink: kb/142/Q142827/
+permalink: /kb/142/Q142827/
 ---
 
 ## Q142827: BUG: DBList Flashes Continuously with SSPanel

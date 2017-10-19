@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182558: XADM: Sending To A Mailbox With An Invalid Alternate Recipient"
-permalink: kb/182/Q182558/
+permalink: /kb/182/Q182558/
 ---
 
 ## Q182558: XADM: Sending To A Mailbox With An Invalid Alternate Recipient

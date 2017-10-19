@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101813: Why AutoCAD 386 Doesn't Work with Windows NT"
-permalink: kb/101/Q101813/
+permalink: /kb/101/Q101813/
 ---
 
 ## Q101813: Why AutoCAD 386 Doesn't Work with Windows NT

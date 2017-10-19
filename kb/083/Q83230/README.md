@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83230: Determining the Default EXETYPE Value in Microsoft LINK"
-permalink: kb/083/Q83230/
+permalink: /kb/083/Q83230/
 ---
 
 ## Q83230: Determining the Default EXETYPE Value in Microsoft LINK

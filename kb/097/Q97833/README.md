@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97833: Restoring Previous Version of MS-DOS After Uninstall Fails"
-permalink: kb/097/Q97833/
+permalink: /kb/097/Q97833/
 ---
 
 ## Q97833: Restoring Previous Version of MS-DOS After Uninstall Fails

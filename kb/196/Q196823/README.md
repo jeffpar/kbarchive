@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196823: INFO: Files Remaining Windows 98&#92;SYSTEM After Removing VFP6"
-permalink: kb/196/Q196823/
+permalink: /kb/196/Q196823/
 ---
 
 ## Q196823: INFO: Files Remaining Windows 98&#92;SYSTEM After Removing VFP6

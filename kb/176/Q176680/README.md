@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176680: XFOR: Embedded Cc: Line is Interpreted as Cc: Line for Forwards"
-permalink: kb/176/Q176680/
+permalink: /kb/176/Q176680/
 ---
 
 ## Q176680: XFOR: Embedded Cc: Line is Interpreted as Cc: Line for Forwards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89921: Applications, Executables, &amp; Libraries Q&amp;A for FoxPro 2.0"
-permalink: kb/089/Q89921/
+permalink: /kb/089/Q89921/
 ---
 
 ## Q89921: Applications, Executables, &amp; Libraries Q&amp;A for FoxPro 2.0

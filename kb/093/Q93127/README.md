@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93127: Changing from a Read-Only Password to a Full-Access Password"
-permalink: kb/093/Q93127/
+permalink: /kb/093/Q93127/
 ---
 
 ## Q93127: Changing from a Read-Only Password to a Full-Access Password

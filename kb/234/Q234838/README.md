@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234838: MOD2000: Deleted Modules Not Are Removed from VSS Control"
-permalink: kb/234/Q234838/
+permalink: /kb/234/Q234838/
 ---
 
 ## Q234838: MOD2000: Deleted Modules Not Are Removed from VSS Control

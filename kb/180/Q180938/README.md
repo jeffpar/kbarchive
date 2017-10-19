@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180938: Unable to Activate Multiple DLS Connections Using the Same SAP"
-permalink: kb/180/Q180938/
+permalink: /kb/180/Q180938/
 ---
 
 ## Q180938: Unable to Activate Multiple DLS Connections Using the Same SAP

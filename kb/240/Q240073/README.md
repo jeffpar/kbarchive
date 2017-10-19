@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240073: Privilege Violation When Creating a Pipe Instance in NPFS"
-permalink: kb/240/Q240073/
+permalink: /kb/240/Q240073/
 ---
 
 ## Q240073: Privilege Violation When Creating a Pipe Instance in NPFS

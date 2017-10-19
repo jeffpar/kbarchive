@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181853: HOWTO: Access and Retrieve the SQL QueryPlan from RDO"
-permalink: kb/181/Q181853/
+permalink: /kb/181/Q181853/
 ---
 
 ## Q181853: HOWTO: Access and Retrieve the SQL QueryPlan from RDO

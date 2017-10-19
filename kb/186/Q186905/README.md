@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186905: Radius Client Uses 100 Percent CPU on Invalid Response"
-permalink: kb/186/Q186905/
+permalink: /kb/186/Q186905/
 ---
 
 ## Q186905: Radius Client Uses 100 Percent CPU on Invalid Response

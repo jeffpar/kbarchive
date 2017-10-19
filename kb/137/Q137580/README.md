@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137580: Compaq Computers That May Require Updates for Windows 95"
-permalink: kb/137/Q137580/
+permalink: /kb/137/Q137580/
 ---
 
 ## Q137580: Compaq Computers That May Require Updates for Windows 95

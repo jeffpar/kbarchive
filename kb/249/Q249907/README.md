@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249907: When You Apply SP4, Q147222 Appears in Registry Under Hotfix Key"
-permalink: kb/249/Q249907/
+permalink: /kb/249/Q249907/
 ---
 
 ## Q249907: When You Apply SP4, Q147222 Appears in Registry Under Hotfix Key

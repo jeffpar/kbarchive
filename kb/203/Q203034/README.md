@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203034: XIMS: Internet Custom Recipients Sending Wrong REPLY TO Address"
-permalink: kb/203/Q203034/
+permalink: /kb/203/Q203034/
 ---
 
 ## Q203034: XIMS: Internet Custom Recipients Sending Wrong REPLY TO Address

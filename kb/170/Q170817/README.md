@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170817: Windows NT Causes APC Smart UPS Battery to Discharge"
-permalink: kb/170/Q170817/
+permalink: /kb/170/Q170817/
 ---
 
 ## Q170817: Windows NT Causes APC Smart UPS Battery to Discharge

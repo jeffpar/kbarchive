@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112903: PC Gen: Err Msg: Notice 51: No Folders to Select"
-permalink: kb/112/Q112903/
+permalink: /kb/112/Q112903/
 ---
 
 ## Q112903: PC Gen: Err Msg: Notice 51: No Folders to Select

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137322: Bookshelf  95: Accents Stripped from International Characters"
-permalink: kb/137/Q137322/
+permalink: /kb/137/Q137322/
 ---
 
 ## Q137322: Bookshelf  95: Accents Stripped from International Characters

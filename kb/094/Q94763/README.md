@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94763: VidEdit: Unnecessary Recompression of .AVI Files"
-permalink: kb/094/Q94763/
+permalink: /kb/094/Q94763/
 ---
 
 ## Q94763: VidEdit: Unnecessary Recompression of .AVI Files

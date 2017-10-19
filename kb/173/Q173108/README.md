@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173108: XADM: Mbclean.exe Deletes Outlook Calendar, Contacts, and Tasks"
-permalink: kb/173/Q173108/
+permalink: /kb/173/Q173108/
 ---
 
 ## Q173108: XADM: Mbclean.exe Deletes Outlook Calendar, Contacts, and Tasks

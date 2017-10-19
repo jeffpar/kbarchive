@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163846: SID Values For Default Windows NT Installations"
-permalink: kb/163/Q163846/
+permalink: /kb/163/Q163846/
 ---
 
 ## Q163846: SID Values For Default Windows NT Installations

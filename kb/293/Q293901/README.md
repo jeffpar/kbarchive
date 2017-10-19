@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293901: BUG: Wrong Number of Rows Inserted w/ MS ODBC Driver &amp; Stored Pr"
-permalink: kb/293/Q293901/
+permalink: /kb/293/Q293901/
 ---
 
 ## Q293901: BUG: Wrong Number of Rows Inserted w/ MS ODBC Driver &amp; Stored Pr

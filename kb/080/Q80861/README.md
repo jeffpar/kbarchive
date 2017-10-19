@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80861: Tandy Ethernet Adapters from Western Digital"
-permalink: kb/080/Q80861/
+permalink: /kb/080/Q80861/
 ---
 
 ## Q80861: Tandy Ethernet Adapters from Western Digital

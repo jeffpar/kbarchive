@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189431: DOC: Setting ActiveProject and ActiveConfiguration Properties"
-permalink: kb/189/Q189431/
+permalink: /kb/189/Q189431/
 ---
 
 ## Q189431: DOC: Setting ActiveProject and ActiveConfiguration Properties

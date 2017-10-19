@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129925: Requery Method Not Available on PassThrough Queries"
-permalink: kb/129/Q129925/
+permalink: /kb/129/Q129925/
 ---
 
 ## Q129925: Requery Method Not Available on PassThrough Queries

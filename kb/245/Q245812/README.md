@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245812: SMS: Visual C++ 6 Run-Time Libraries Installed with SMS"
-permalink: kb/245/Q245812/
+permalink: /kb/245/Q245812/
 ---
 
 ## Q245812: SMS: Visual C++ 6 Run-Time Libraries Installed with SMS

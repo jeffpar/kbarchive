@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172742: WD97: Batch Converter Not Restored on AutoUpdate Uninstall"
-permalink: kb/172/Q172742/
+permalink: /kb/172/Q172742/
 ---
 
 ## Q172742: WD97: Batch Converter Not Restored on AutoUpdate Uninstall

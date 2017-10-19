@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231790: File Sharing Operations to a Share on Local Computer May Be Slow"
-permalink: kb/231/Q231790/
+permalink: /kb/231/Q231790/
 ---
 
 ## Q231790: File Sharing Operations to a Share on Local Computer May Be Slow

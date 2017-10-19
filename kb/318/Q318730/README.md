@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318730: &quot;??_U@YAPAXI@Z Not Located in Msvcrt.dll&quot; Err Msg at Startup"
-permalink: kb/318/Q318730/
+permalink: /kb/318/Q318730/
 ---
 
 ## Q318730: &quot;??_U@YAPAXI@Z Not Located in Msvcrt.dll&quot; Err Msg at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140767: Explorapedia: Clicking Taskbar Does Not Maximize Program"
-permalink: kb/140/Q140767/
+permalink: /kb/140/Q140767/
 ---
 
 ## Q140767: Explorapedia: Clicking Taskbar Does Not Maximize Program

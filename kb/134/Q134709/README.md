@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134709: Slow Performance with Single-Speed CD-ROM Drive"
-permalink: kb/134/Q134709/
+permalink: /kb/134/Q134709/
 ---
 
 ## Q134709: Slow Performance with Single-Speed CD-ROM Drive

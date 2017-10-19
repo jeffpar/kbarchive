@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159110: CDFS Does Not Complete IRPs Correctly"
-permalink: kb/159/Q159110/
+permalink: /kb/159/Q159110/
 ---
 
 ## Q159110: CDFS Does Not Complete IRPs Correctly

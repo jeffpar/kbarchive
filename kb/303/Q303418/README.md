@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303418: TRAP Page Fault Error Message with Damaged System Hive"
-permalink: kb/303/Q303418/
+permalink: /kb/303/Q303418/
 ---
 
 ## Q303418: TRAP Page Fault Error Message with Damaged System Hive

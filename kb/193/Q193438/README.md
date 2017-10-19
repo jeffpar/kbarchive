@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193438: BUG: Server Not Released if Raise Error in Class_Initialize"
-permalink: kb/193/Q193438/
+permalink: /kb/193/Q193438/
 ---
 
 ## Q193438: BUG: Server Not Released if Raise Error in Class_Initialize

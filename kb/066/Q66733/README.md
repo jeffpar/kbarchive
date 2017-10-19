@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66733: Windows Err Msg: Setup Cannot Modify Your SYSTEM.INI..."
-permalink: kb/066/Q66733/
+permalink: /kb/066/Q66733/
 ---
 
 ## Q66733: Windows Err Msg: Setup Cannot Modify Your SYSTEM.INI...

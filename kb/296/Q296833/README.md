@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296833: PRB: Windows Can't Handle SSL Certificates Contain Odd-Sized Key"
-permalink: kb/296/Q296833/
+permalink: /kb/296/Q296833/
 ---
 
 ## Q296833: PRB: Windows Can't Handle SSL Certificates Contain Odd-Sized Key

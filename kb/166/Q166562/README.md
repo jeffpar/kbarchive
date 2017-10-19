@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166562: XFOR: Store.exe GPFs When POP3 Client Submits Bad Message Header"
-permalink: kb/166/Q166562/
+permalink: /kb/166/Q166562/
 ---
 
 ## Q166562: XFOR: Store.exe GPFs When POP3 Client Submits Bad Message Header

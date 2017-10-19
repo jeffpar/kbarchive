@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298933: XADM: Exchange Services Won't Start After SP3 Canceled"
-permalink: kb/298/Q298933/
+permalink: /kb/298/Q298933/
 ---
 
 ## Q298933: XADM: Exchange Services Won't Start After SP3 Canceled

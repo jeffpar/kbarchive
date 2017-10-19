@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259149: SNA Server Selects Bad Dependent APPC LU from Default Pool"
-permalink: kb/259/Q259149/
+permalink: /kb/259/Q259149/
 ---
 
 ## Q259149: SNA Server Selects Bad Dependent APPC LU from Default Pool

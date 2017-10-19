@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200126: HOWTO: Determining the Domain of A User Through ADSI"
-permalink: kb/200/Q200126/
+permalink: /kb/200/Q200126/
 ---
 
 ## Q200126: HOWTO: Determining the Domain of A User Through ADSI

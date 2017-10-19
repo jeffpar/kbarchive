@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178632: Cannot Start Windows 95 After You Run DirectX Setup"
-permalink: kb/178/Q178632/
+permalink: /kb/178/Q178632/
 ---
 
 ## Q178632: Cannot Start Windows 95 After You Run DirectX Setup

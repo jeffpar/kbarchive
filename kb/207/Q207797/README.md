@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207797: BUG: Cursor Jumps Around when Typing in Edit Box"
-permalink: kb/207/Q207797/
+permalink: /kb/207/Q207797/
 ---
 
 ## Q207797: BUG: Cursor Jumps Around when Typing in Edit Box

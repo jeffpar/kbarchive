@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161953: XFOR: Unable to Forward Schedule+ Messages"
-permalink: kb/161/Q161953/
+permalink: /kb/161/Q161953/
 ---
 
 ## Q161953: XFOR: Unable to Forward Schedule+ Messages

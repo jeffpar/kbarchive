@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139079: MSB Ocean: Minimum System Requirements"
-permalink: kb/139/Q139079/
+permalink: /kb/139/Q139079/
 ---
 
 ## Q139079: MSB Ocean: Minimum System Requirements

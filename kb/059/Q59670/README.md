@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59670: Unstable After Drive A Access on SupersPort SX"
-permalink: kb/059/Q59670/
+permalink: /kb/059/Q59670/
 ---
 
 ## Q59670: Unstable After Drive A Access on SupersPort SX

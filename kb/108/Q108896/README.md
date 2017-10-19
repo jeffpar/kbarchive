@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108896: INFO: Dynamically Disabling/Enabling a Control in a Dialog Box"
-permalink: kb/108/Q108896/
+permalink: /kb/108/Q108896/
 ---
 
 ## Q108896: INFO: Dynamically Disabling/Enabling a Control in a Dialog Box

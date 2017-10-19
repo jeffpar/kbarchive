@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81704: PRB: VGA Monitor Loses Sync on 8514 Dual Monitor System"
-permalink: kb/081/Q81704/
+permalink: /kb/081/Q81704/
 ---
 
 ## Q81704: PRB: VGA Monitor Loses Sync on 8514 Dual Monitor System

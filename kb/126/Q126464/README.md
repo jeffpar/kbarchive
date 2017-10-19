@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126464: Repair Disk Utility Does Not Update SAM and Security Hives"
-permalink: kb/126/Q126464/
+permalink: /kb/126/Q126464/
 ---
 
 ## Q126464: Repair Disk Utility Does Not Update SAM and Security Hives

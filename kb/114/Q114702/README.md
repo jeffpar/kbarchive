@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114702: How to Use the LIKE and EXCEPT Clauses"
-permalink: kb/114/Q114702/
+permalink: /kb/114/Q114702/
 ---
 
 ## Q114702: How to Use the LIKE and EXCEPT Clauses

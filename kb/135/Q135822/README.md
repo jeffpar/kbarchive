@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135822: PPT7: Write-up Fails If &quot;Show Field Codes&quot; Turned On in Word"
-permalink: kb/135/Q135822/
+permalink: /kb/135/Q135822/
 ---
 
 ## Q135822: PPT7: Write-up Fails If &quot;Show Field Codes&quot; Turned On in Word

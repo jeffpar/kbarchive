@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149899: BUG: Password Property Accepts No More Than 8 Characters"
-permalink: kb/149/Q149899/
+permalink: /kb/149/Q149899/
 ---
 
 ## Q149899: BUG: Password Property Accepts No More Than 8 Characters

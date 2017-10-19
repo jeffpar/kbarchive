@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148649: INVPROC Should Force Pragma:Resync If There Is No History"
-permalink: kb/148/Q148649/
+permalink: /kb/148/Q148649/
 ---
 
 ## Q148649: INVPROC Should Force Pragma:Resync If There Is No History

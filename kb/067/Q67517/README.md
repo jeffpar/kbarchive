@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67517: EXPAND.EXE Error Msg: Can't Open Output File &lt;filename.ext&gt;"
-permalink: kb/067/Q67517/
+permalink: /kb/067/Q67517/
 ---
 
 ## Q67517: EXPAND.EXE Error Msg: Can't Open Output File &lt;filename.ext&gt;

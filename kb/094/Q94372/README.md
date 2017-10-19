@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94372: Golf Err Msg: Machine Is Too Slow to Play Sounds"
-permalink: kb/094/Q94372/
+permalink: /kb/094/Q94372/
 ---
 
 ## Q94372: Golf Err Msg: Machine Is Too Slow to Play Sounds

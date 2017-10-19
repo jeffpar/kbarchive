@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156596: Cannot Change Mailbox Numbers in Microsoft Phone"
-permalink: kb/156/Q156596/
+permalink: /kb/156/Q156596/
 ---
 
 ## Q156596: Cannot Change Mailbox Numbers in Microsoft Phone

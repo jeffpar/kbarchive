@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274018: Err Msg When Receive Load Balancing Is Enabled with Netmon"
-permalink: kb/274/Q274018/
+permalink: /kb/274/Q274018/
 ---
 
 ## Q274018: Err Msg When Receive Load Balancing Is Enabled with Netmon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217908: SMS: &quot;Hhctrl.ocx&quot; Error Message When Viewing SMS 2.0 Online Help"
-permalink: kb/217/Q217908/
+permalink: /kb/217/Q217908/
 ---
 
 ## Q217908: SMS: &quot;Hhctrl.ocx&quot; Error Message When Viewing SMS 2.0 Online Help

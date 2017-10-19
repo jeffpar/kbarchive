@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148561: PPT: How to Open a PowerPoint 7.0 File in PowerPoint 4.0"
-permalink: kb/148/Q148561/
+permalink: /kb/148/Q148561/
 ---
 
 ## Q148561: PPT: How to Open a PowerPoint 7.0 File in PowerPoint 4.0

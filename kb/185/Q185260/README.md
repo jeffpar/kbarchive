@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185260: User Accounts May Get Locked out After Entering Wrong Password"
-permalink: kb/185/Q185260/
+permalink: /kb/185/Q185260/
 ---
 
 ## Q185260: User Accounts May Get Locked out After Entering Wrong Password

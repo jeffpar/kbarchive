@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229698: SMS: New Functionality Added to Audit"
-permalink: kb/229/Q229698/
+permalink: /kb/229/Q229698/
 ---
 
 ## Q229698: SMS: New Functionality Added to Audit

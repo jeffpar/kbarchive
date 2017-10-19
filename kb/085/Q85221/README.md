@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85221: HOW TO: Debug a Dynamic-Link Library (DLL) in Windows"
-permalink: kb/085/Q85221/
+permalink: /kb/085/Q85221/
 ---
 
 ## Q85221: HOW TO: Debug a Dynamic-Link Library (DLL) in Windows

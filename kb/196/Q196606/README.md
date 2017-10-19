@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196606: APPC DLL Has A Hardcoded Limit of 4 KB GDS Data Size"
-permalink: kb/196/Q196606/
+permalink: /kb/196/Q196606/
 ---
 
 ## Q196606: APPC DLL Has A Hardcoded Limit of 4 KB GDS Data Size

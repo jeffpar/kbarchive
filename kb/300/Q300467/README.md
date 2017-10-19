@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300467: FP: How to Clear a Search Form Text Box By Using DHTML"
-permalink: kb/300/Q300467/
+permalink: /kb/300/Q300467/
 ---
 
 ## Q300467: FP: How to Clear a Search Form Text Box By Using DHTML

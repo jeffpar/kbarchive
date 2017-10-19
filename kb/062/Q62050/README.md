@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62050: Mac Hyp: Get the Name of an Enclosed File"
-permalink: kb/062/Q62050/
+permalink: /kb/062/Q62050/
 ---
 
 ## Q62050: Mac Hyp: Get the Name of an Enclosed File

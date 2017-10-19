@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74650: BUG: &quot;Insufficient Floppy Drive&quot; (DataView Snap 1+1)"
-permalink: kb/074/Q74650/
+permalink: /kb/074/Q74650/
 ---
 
 ## Q74650: BUG: &quot;Insufficient Floppy Drive&quot; (DataView Snap 1+1)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98468: OS/2 2.0 Doesn't Recognize DoubleSpace Volumes"
-permalink: kb/098/Q98468/
+permalink: /kb/098/Q98468/
 ---
 
 ## Q98468: OS/2 2.0 Doesn't Recognize DoubleSpace Volumes

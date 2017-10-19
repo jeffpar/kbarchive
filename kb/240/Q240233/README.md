@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240233: XCLN: Local Free-Busy Cache Not Updated When Using AutoAccept"
-permalink: kb/240/Q240233/
+permalink: /kb/240/Q240233/
 ---
 
 ## Q240233: XCLN: Local Free-Busy Cache Not Updated When Using AutoAccept

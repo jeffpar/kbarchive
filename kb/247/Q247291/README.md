@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247291: XFOR: Migration Slow to Enumerate Names from a Large NAB"
-permalink: kb/247/Q247291/
+permalink: /kb/247/Q247291/
 ---
 
 ## Q247291: XFOR: Migration Slow to Enumerate Names from a Large NAB

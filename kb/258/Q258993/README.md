@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258993: Perflib Event 1009 Occurs When Opening COMTI Performance Monito"
-permalink: kb/258/Q258993/
+permalink: /kb/258/Q258993/
 ---
 
 ## Q258993: Perflib Event 1009 Occurs When Opening COMTI Performance Monito

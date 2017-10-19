@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236156: XADM: Permissions for Viewing Client Permissions on PF"
-permalink: kb/236/Q236156/
+permalink: /kb/236/Q236156/
 ---
 
 ## Q236156: XADM: Permissions for Viewing Client Permissions on PF

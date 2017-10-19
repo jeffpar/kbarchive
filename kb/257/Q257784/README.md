@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257784: FIX: ARROW Key Doesn't Work with DBCS on Japanese Windows"
-permalink: kb/257/Q257784/
+permalink: /kb/257/Q257784/
 ---
 
 ## Q257784: FIX: ARROW Key Doesn't Work with DBCS on Japanese Windows

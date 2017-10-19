@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196413: XADM: Remove Connectors Before Running Move Server Wizard"
-permalink: kb/196/Q196413/
+permalink: /kb/196/Q196413/
 ---
 
 ## Q196413: XADM: Remove Connectors Before Running Move Server Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155728: Changing Access Rights for a User Changes Group Rights"
-permalink: kb/155/Q155728/
+permalink: /kb/155/Q155728/
 ---
 
 ## Q155728: Changing Access Rights for a User Changes Group Rights

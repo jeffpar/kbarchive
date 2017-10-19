@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194578: SAMPLE: MULTIMON.EXE Uses Multiple Monitors in Visual Basic"
-permalink: kb/194/Q194578/
+permalink: /kb/194/Q194578/
 ---
 
 ## Q194578: SAMPLE: MULTIMON.EXE Uses Multiple Monitors in Visual Basic

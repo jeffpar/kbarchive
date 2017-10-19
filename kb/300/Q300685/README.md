@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300685: PRB: OLEDB Err Msg: Conversation Was Deallocated with AP_ABEND"
-permalink: kb/300/Q300685/
+permalink: /kb/300/Q300685/
 ---
 
 ## Q300685: PRB: OLEDB Err Msg: Conversation Was Deallocated with AP_ABEND

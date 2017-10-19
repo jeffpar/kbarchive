@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138737: Directory Synchronization May Fail with Windows NT 3.51 Mail"
-permalink: kb/138/Q138737/
+permalink: /kb/138/Q138737/
 ---
 
 ## Q138737: Directory Synchronization May Fail with Windows NT 3.51 Mail

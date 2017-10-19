@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67493: HP ProCollection Font Cartridge Prints Bold from Notepad"
-permalink: kb/067/Q67493/
+permalink: /kb/067/Q67493/
 ---
 
 ## Q67493: HP ProCollection Font Cartridge Prints Bold from Notepad

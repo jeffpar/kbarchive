@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317398: Reader 2.0: &quot;Server Is Down for Maintenance&quot; Message"
-permalink: kb/317/Q317398/
+permalink: /kb/317/Q317398/
 ---
 
 ## Q317398: Reader 2.0: &quot;Server Is Down for Maintenance&quot; Message

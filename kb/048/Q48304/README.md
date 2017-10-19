@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48304: Throttle Indicator Displayed Flying Schweizer 2-32"
-permalink: kb/048/Q48304/
+permalink: /kb/048/Q48304/
 ---
 
 ## Q48304: Throttle Indicator Displayed Flying Schweizer 2-32

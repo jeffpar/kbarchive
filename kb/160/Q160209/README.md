@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160209: XCLN: Quiet Mode Setup (setup /q) Defaults to Pacific Time"
-permalink: kb/160/Q160209/
+permalink: /kb/160/Q160209/
 ---
 
 ## Q160209: XCLN: Quiet Mode Setup (setup /q) Defaults to Pacific Time

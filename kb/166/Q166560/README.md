@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166560: XGEN: German EDB Error Messages not Localized"
-permalink: kb/166/Q166560/
+permalink: /kb/166/Q166560/
 ---
 
 ## Q166560: XGEN: German EDB Error Messages not Localized

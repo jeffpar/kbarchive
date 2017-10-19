@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257785: FIX: Access Violation Closing IE Window After Opening HTML Page"
-permalink: kb/257/Q257785/
+permalink: /kb/257/Q257785/
 ---
 
 ## Q257785: FIX: Access Violation Closing IE Window After Opening HTML Page

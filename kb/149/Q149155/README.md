@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149155: BUG: Assertion Failure with ERR= and END= in READ Statement"
-permalink: kb/149/Q149155/
+permalink: /kb/149/Q149155/
 ---
 
 ## Q149155: BUG: Assertion Failure with ERR= and END= in READ Statement

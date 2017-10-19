@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59977: Mac Hyp: Using HyperCard Global Variables for Error Checking"
-permalink: kb/059/Q59977/
+permalink: /kb/059/Q59977/
 ---
 
 ## Q59977: Mac Hyp: Using HyperCard Global Variables for Error Checking

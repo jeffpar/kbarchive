@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118574: Err Msg with Word or Excel Installed: Cannot Read from Drive C"
-permalink: kb/118/Q118574/
+permalink: /kb/118/Q118574/
 ---
 
 ## Q118574: Err Msg with Word or Excel Installed: Cannot Read from Drive C

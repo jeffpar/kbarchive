@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221728: FIX: C0000005 Fatal Error With MODIFY WINDOW SCREEN in EXE"
-permalink: kb/221/Q221728/
+permalink: /kb/221/Q221728/
 ---
 
 ## Q221728: FIX: C0000005 Fatal Error With MODIFY WINDOW SCREEN in EXE

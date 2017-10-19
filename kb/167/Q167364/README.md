@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167364: Automating AUTOADMINLOGON Locally When Joining a Domain"
-permalink: kb/167/Q167364/
+permalink: /kb/167/Q167364/
 ---
 
 ## Q167364: Automating AUTOADMINLOGON Locally When Joining a Domain

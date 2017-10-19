@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173668: SAMPLE: AVIRSCE.EXE Plays an AVI Stored in a Resource .dll File"
-permalink: kb/173/Q173668/
+permalink: /kb/173/Q173668/
 ---
 
 ## Q173668: SAMPLE: AVIRSCE.EXE Plays an AVI Stored in a Resource .dll File

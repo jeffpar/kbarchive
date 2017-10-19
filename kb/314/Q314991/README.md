@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314991: INFO: VB 6.0 Does Not Support Applications for Multiple Monitors"
-permalink: kb/314/Q314991/
+permalink: /kb/314/Q314991/
 ---
 
 ## Q314991: INFO: VB 6.0 Does Not Support Applications for Multiple Monitors

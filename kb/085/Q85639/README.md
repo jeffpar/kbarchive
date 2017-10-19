@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85639: Manual Feed Selection Not Working in the QMS PS2200"
-permalink: kb/085/Q85639/
+permalink: /kb/085/Q85639/
 ---
 
 ## Q85639: Manual Feed Selection Not Working in the QMS PS2200

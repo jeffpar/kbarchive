@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197823: WD97: Word Sorts Numeric Index Entries as Alphabetic Entries"
-permalink: kb/197/Q197823/
+permalink: /kb/197/Q197823/
 ---
 
 ## Q197823: WD97: Word Sorts Numeric Index Entries as Alphabetic Entries

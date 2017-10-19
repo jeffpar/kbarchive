@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166452: WD97: Table Row Height Set to &quot;At Least&quot; After Vertical Merge"
-permalink: kb/166/Q166452/
+permalink: /kb/166/Q166452/
 ---
 
 ## Q166452: WD97: Table Row Height Set to &quot;At Least&quot; After Vertical Merge

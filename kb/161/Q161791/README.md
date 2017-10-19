@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161791: XADM: Err Msg: The Command LODCTR DSACTRS.INI Failed"
-permalink: kb/161/Q161791/
+permalink: /kb/161/Q161791/
 ---
 
 ## Q161791: XADM: Err Msg: The Command LODCTR DSACTRS.INI Failed

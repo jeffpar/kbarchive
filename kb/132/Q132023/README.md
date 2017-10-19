@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132023: ADT2: Menu Items That Should Be Disabled in Run-Time Apps"
-permalink: kb/132/Q132023/
+permalink: /kb/132/Q132023/
 ---
 
 ## Q132023: ADT2: Menu Items That Should Be Disabled in Run-Time Apps

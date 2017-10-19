@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111862: BUG: TabbedTextOut() in Metric Mapping Mode Incorrect"
-permalink: kb/111/Q111862/
+permalink: /kb/111/Q111862/
 ---
 
 ## Q111862: BUG: TabbedTextOut() in Metric Mapping Mode Incorrect

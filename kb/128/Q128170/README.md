@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128170: PC WSPlus: MVCAL Fails If USERNAME.BAD Exists in CAL Directory"
-permalink: kb/128/Q128170/
+permalink: /kb/128/Q128170/
 ---
 
 ## Q128170: PC WSPlus: MVCAL Fails If USERNAME.BAD Exists in CAL Directory

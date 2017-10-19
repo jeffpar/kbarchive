@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96491: OS2.TXT: Microsoft MS-DOS 6 Upgrade, 6.2 Upgrade, and Step-Up"
-permalink: kb/096/Q96491/
+permalink: /kb/096/Q96491/
 ---
 
 ## Q96491: OS2.TXT: Microsoft MS-DOS 6 Upgrade, 6.2 Upgrade, and Step-Up

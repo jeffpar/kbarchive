@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313947: ENC2002:  &quot;Page Cannot Be Displayed&quot; Err Msg Starting Researcher"
-permalink: kb/313/Q313947/
+permalink: /kb/313/Q313947/
 ---
 
 ## Q313947: ENC2002:  &quot;Page Cannot Be Displayed&quot; Err Msg Starting Researcher

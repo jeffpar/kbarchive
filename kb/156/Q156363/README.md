@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156363: Tape and Drive Compatibility for QIC 117 S"
-permalink: kb/156/Q156363/
+permalink: /kb/156/Q156363/
 ---
 
 ## Q156363: Tape and Drive Compatibility for QIC 117 S

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242896: SFM Causes a Problem When FastIoUnlockSingle() Returns FALSE"
-permalink: kb/242/Q242896/
+permalink: /kb/242/Q242896/
 ---
 
 ## Q242896: SFM Causes a Problem When FastIoUnlockSingle() Returns FALSE

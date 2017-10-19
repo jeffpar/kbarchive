@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167662: ODE97: Uninstall Fails If Run-Time Not Shown in Component List"
-permalink: kb/167/Q167662/
+permalink: /kb/167/Q167662/
 ---
 
 ## Q167662: ODE97: Uninstall Fails If Run-Time Not Shown in Component List

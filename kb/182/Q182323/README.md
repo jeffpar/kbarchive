@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182323: BUG: ClassView Add... Errors with Read-Only Project Files"
-permalink: kb/182/Q182323/
+permalink: /kb/182/Q182323/
 ---
 
 ## Q182323: BUG: ClassView Add... Errors with Read-Only Project Files

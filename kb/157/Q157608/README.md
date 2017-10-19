@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157608: User Migration Fails If Only the &quot;Everyone&quot; Group Exists"
-permalink: kb/157/Q157608/
+permalink: /kb/157/Q157608/
 ---
 
 ## Q157608: User Migration Fails If Only the &quot;Everyone&quot; Group Exists

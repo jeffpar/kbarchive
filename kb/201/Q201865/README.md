@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201865: CPU Usage at 100% After Installing MetaFrame 1.0"
-permalink: kb/201/Q201865/
+permalink: /kb/201/Q201865/
 ---
 
 ## Q201865: CPU Usage at 100% After Installing MetaFrame 1.0

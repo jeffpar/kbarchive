@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151563: PRB: Err Msg. Unable to Create The Directory &#92;C:"
-permalink: kb/151/Q151563/
+permalink: /kb/151/Q151563/
 ---
 
 ## Q151563: PRB: Err Msg. Unable to Create The Directory &#92;C:

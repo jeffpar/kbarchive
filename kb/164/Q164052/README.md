@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164052: PPTP and Interoperability with Other Local Machine Services"
-permalink: kb/164/Q164052/
+permalink: /kb/164/Q164052/
 ---
 
 ## Q164052: PPTP and Interoperability with Other Local Machine Services

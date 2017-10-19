@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158349: XCLN: Print/Add/Remove Columns from Contact or To Do Lists"
-permalink: kb/158/Q158349/
+permalink: /kb/158/Q158349/
 ---
 
 ## Q158349: XCLN: Print/Add/Remove Columns from Contact or To Do Lists

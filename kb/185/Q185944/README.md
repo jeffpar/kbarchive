@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185944: Stop 0x7B After Installing Windows NT on an ALR Evolution-V ST"
-permalink: kb/185/Q185944/
+permalink: /kb/185/Q185944/
 ---
 
 ## Q185944: Stop 0x7B After Installing Windows NT on an ALR Evolution-V ST

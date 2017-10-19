@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253756: Availability of Universal Serial Bus Support in Windows 95"
-permalink: kb/253/Q253756/
+permalink: /kb/253/Q253756/
 ---
 
 ## Q253756: Availability of Universal Serial Bus Support in Windows 95

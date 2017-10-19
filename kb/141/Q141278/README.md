@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141278: Err Msg: Incompatible Parameters: Sector Size Adjusted"
-permalink: kb/141/Q141278/
+permalink: /kb/141/Q141278/
 ---
 
 ## Q141278: Err Msg: Incompatible Parameters: Sector Size Adjusted

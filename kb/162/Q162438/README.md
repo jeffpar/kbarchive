@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162438: &quot;STOP 0x50&quot; Accessing Files on Windows NT from Windows 95"
-permalink: kb/162/Q162438/
+permalink: /kb/162/Q162438/
 ---
 
 ## Q162438: &quot;STOP 0x50&quot; Accessing Files on Windows NT from Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199811: How to Install ATI Rage Pro Drivers During Unattended Install"
-permalink: kb/199/Q199811/
+permalink: /kb/199/Q199811/
 ---
 
 ## Q199811: How to Install ATI Rage Pro Drivers During Unattended Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139089: PPT7: No Support for Natural Keyboard Application Key"
-permalink: kb/139/Q139089/
+permalink: /kb/139/Q139089/
 ---
 
 ## Q139089: PPT7: No Support for Natural Keyboard Application Key

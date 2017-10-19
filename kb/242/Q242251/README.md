@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242251: XWEB: First Chance Exception in Mapi32.dll"
-permalink: kb/242/Q242251/
+permalink: /kb/242/Q242251/
 ---
 
 ## Q242251: XWEB: First Chance Exception in Mapi32.dll

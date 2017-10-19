@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238046: Reference Suite 2000: Error Messages When You Restart Computer"
-permalink: kb/238/Q238046/
+permalink: /kb/238/Q238046/
 ---
 
 ## Q238046: Reference Suite 2000: Error Messages When You Restart Computer

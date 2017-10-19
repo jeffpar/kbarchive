@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231974: XFOR: Notes Connector Doesn't Restart"
-permalink: kb/231/Q231974/
+permalink: /kb/231/Q231974/
 ---
 
 ## Q231974: XFOR: Notes Connector Doesn't Restart

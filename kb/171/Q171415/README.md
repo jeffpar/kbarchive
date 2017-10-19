@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171415: Network Adapter Fault Tolerance for Windows NT 4.0"
-permalink: kb/171/Q171415/
+permalink: /kb/171/Q171415/
 ---
 
 ## Q171415: Network Adapter Fault Tolerance for Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133431: PC NTMMTA: Service Drive Letters Not User Selectable"
-permalink: kb/133/Q133431/
+permalink: /kb/133/Q133431/
 ---
 
 ## Q133431: PC NTMMTA: Service Drive Letters Not User Selectable

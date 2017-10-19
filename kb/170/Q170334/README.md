@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170334: XADM: Troubleshooting Intrasite Directory Replication"
-permalink: kb/170/Q170334/
+permalink: /kb/170/Q170334/
 ---
 
 ## Q170334: XADM: Troubleshooting Intrasite Directory Replication

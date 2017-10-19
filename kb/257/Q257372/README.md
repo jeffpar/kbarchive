@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257372: XADM: Exchange Server 5.5 Post-SP3 Directory Fixes Available"
-permalink: kb/257/Q257372/
+permalink: /kb/257/Q257372/
 ---
 
 ## Q257372: XADM: Exchange Server 5.5 Post-SP3 Directory Fixes Available

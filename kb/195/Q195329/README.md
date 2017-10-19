@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195329: WD97: Text Converted to One-Row Table (Paragraph Marks Ignored)"
-permalink: kb/195/Q195329/
+permalink: /kb/195/Q195329/
 ---
 
 ## Q195329: WD97: Text Converted to One-Row Table (Paragraph Marks Ignored)

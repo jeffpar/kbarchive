@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155613: AMD Nx586 Processor Incompatible with Windows NT 4.0"
-permalink: kb/155/Q155613/
+permalink: /kb/155/Q155613/
 ---
 
 ## Q155613: AMD Nx586 Processor Incompatible with Windows NT 4.0

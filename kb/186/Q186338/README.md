@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186338: BUG: Unattended Installation of IBMTOK Disables Networking"
-permalink: kb/186/Q186338/
+permalink: /kb/186/Q186338/
 ---
 
 ## Q186338: BUG: Unattended Installation of IBMTOK Disables Networking

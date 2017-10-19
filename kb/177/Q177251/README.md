@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177251: XADM: Disabling PF Replication Status Messages on IS Startup"
-permalink: kb/177/Q177251/
+permalink: /kb/177/Q177251/
 ---
 
 ## Q177251: XADM: Disabling PF Replication Status Messages on IS Startup

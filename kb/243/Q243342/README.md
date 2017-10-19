@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243342: IISSYNC Returns a Status of 214598801"
-permalink: kb/243/Q243342/
+permalink: /kb/243/Q243342/
 ---
 
 ## Q243342: IISSYNC Returns a Status of 214598801

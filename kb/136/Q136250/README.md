@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136250: HOWTO: Determine Visual Basic Trappable Errors"
-permalink: kb/136/Q136250/
+permalink: /kb/136/Q136250/
 ---
 
 ## Q136250: HOWTO: Determine Visual Basic Trappable Errors

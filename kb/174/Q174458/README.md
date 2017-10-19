@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174458: SMS: Failure Playing AVIs During a Win95 Remote Control Session"
-permalink: kb/174/Q174458/
+permalink: /kb/174/Q174458/
 ---
 
 ## Q174458: SMS: Failure Playing AVIs During a Win95 Remote Control Session

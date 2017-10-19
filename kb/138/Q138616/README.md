@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138616: PRB: Displayed Value Changes If Press TAB to Move into TextBox"
-permalink: kb/138/Q138616/
+permalink: /kb/138/Q138616/
 ---
 
 ## Q138616: PRB: Displayed Value Changes If Press TAB to Move into TextBox

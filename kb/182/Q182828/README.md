@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182828: Access Violation in Posix Subsystem"
-permalink: kb/182/Q182828/
+permalink: /kb/182/Q182828/
 ---
 
 ## Q182828: Access Violation in Posix Subsystem

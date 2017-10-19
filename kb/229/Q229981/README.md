@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229981: Err Msg: The Windows 95 Year 2000 Update Could Not Determine..."
-permalink: kb/229/Q229981/
+permalink: /kb/229/Q229981/
 ---
 
 ## Q229981: Err Msg: The Windows 95 Year 2000 Update Could Not Determine...

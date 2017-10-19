@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178664: BUG: ? Displays Incorrect Number of Characters to Screen"
-permalink: kb/178/Q178664/
+permalink: /kb/178/Q178664/
 ---
 
 ## Q178664: BUG: ? Displays Incorrect Number of Characters to Screen

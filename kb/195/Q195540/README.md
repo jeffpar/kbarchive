@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195540: Windows NT 4.0 Does Not Recognize ATAPI Iomega Clik 40! Drive"
-permalink: kb/195/Q195540/
+permalink: /kb/195/Q195540/
 ---
 
 ## Q195540: Windows NT 4.0 Does Not Recognize ATAPI Iomega Clik 40! Drive

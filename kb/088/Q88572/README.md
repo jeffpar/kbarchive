@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88572: Using the Intel Inboard 386/PC with Windows"
-permalink: kb/088/Q88572/
+permalink: /kb/088/Q88572/
 ---
 
 ## Q88572: Using the Intel Inboard 386/PC with Windows

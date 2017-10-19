@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138838: PPT7: Limitations of the PowerPoint Viewer for Windows 95"
-permalink: kb/138/Q138838/
+permalink: /kb/138/Q138838/
 ---
 
 ## Q138838: PPT7: Limitations of the PowerPoint Viewer for Windows 95

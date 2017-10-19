@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90994: File Manager Displays Actual Total Disk Space"
-permalink: kb/090/Q90994/
+permalink: /kb/090/Q90994/
 ---
 
 ## Q90994: File Manager Displays Actual Total Disk Space

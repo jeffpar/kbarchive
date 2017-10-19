@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83048: Using ATM Versions 1.1, 1.5, 2.0 with Windows Version 3.1"
-permalink: kb/083/Q83048/
+permalink: /kb/083/Q83048/
 ---
 
 ## Q83048: Using ATM Versions 1.1, 1.5, 2.0 with Windows Version 3.1

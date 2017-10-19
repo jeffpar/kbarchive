@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137895: Add Components Selects All Components by Default"
-permalink: kb/137/Q137895/
+permalink: /kb/137/Q137895/
 ---
 
 ## Q137895: Add Components Selects All Components by Default

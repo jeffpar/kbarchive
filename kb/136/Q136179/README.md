@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136179: PPT7: You Can Add Only One Textured Background Format at a Time"
-permalink: kb/136/Q136179/
+permalink: /kb/136/Q136179/
 ---
 
 ## Q136179: PPT7: You Can Add Only One Textured Background Format at a Time

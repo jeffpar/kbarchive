@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185483: WD97: Compare Documents Reinserts Deleted Paragraph Marks"
-permalink: kb/185/Q185483/
+permalink: /kb/185/Q185483/
 ---
 
 ## Q185483: WD97: Compare Documents Reinserts Deleted Paragraph Marks

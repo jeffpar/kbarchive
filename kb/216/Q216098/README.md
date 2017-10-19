@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216098: Visual C++ IDE Slows When Files Are in Many Directories"
-permalink: kb/216/Q216098/
+permalink: /kb/216/Q216098/
 ---
 
 ## Q216098: Visual C++ IDE Slows When Files Are in Many Directories

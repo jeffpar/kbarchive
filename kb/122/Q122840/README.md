@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122840: BUG: ODS Driver May Give an Error on Outer Join Escape Clause"
-permalink: kb/122/Q122840/
+permalink: /kb/122/Q122840/
 ---
 
 ## Q122840: BUG: ODS Driver May Give an Error on Outer Join Escape Clause

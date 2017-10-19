@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175499: XCON: NDR When Replying to Another Exchange Organization"
-permalink: kb/175/Q175499/
+permalink: /kb/175/Q175499/
 ---
 
 ## Q175499: XCON: NDR When Replying to Another Exchange Organization

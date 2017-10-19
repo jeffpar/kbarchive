@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234380: XFOR: GroupWise Attached Object Does Not Appear in Exchange"
-permalink: kb/234/Q234380/
+permalink: /kb/234/Q234380/
 ---
 
 ## Q234380: XFOR: GroupWise Attached Object Does Not Appear in Exchange

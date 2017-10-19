@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124171: NETADMIN Causes GP Faults When Accessing File Permissions"
-permalink: kb/124/Q124171/
+permalink: /kb/124/Q124171/
 ---
 
 ## Q124171: NETADMIN Causes GP Faults When Accessing File Permissions

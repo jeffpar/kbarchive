@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314591: Streets and Trips 2002: Hangs At Various Times"
-permalink: kb/314/Q314591/
+permalink: /kb/314/Q314591/
 ---
 
 ## Q314591: Streets and Trips 2002: Hangs At Various Times

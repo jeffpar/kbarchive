@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216712: Error Message in SPOOLER(03) Printing from MS-DOS Window"
-permalink: kb/216/Q216712/
+permalink: /kb/216/Q216712/
 ---
 
 ## Q216712: Error Message in SPOOLER(03) Printing from MS-DOS Window

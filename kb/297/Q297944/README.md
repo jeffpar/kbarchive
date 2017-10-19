@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297944: Calling GetProps(NULL,...) Returns E_FAIL for Some Messages"
-permalink: kb/297/Q297944/
+permalink: /kb/297/Q297944/
 ---
 
 ## Q297944: Calling GetProps(NULL,...) Returns E_FAIL for Some Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228802: MS RPC Incorrect Behavior for Frame Following Maybe Frame"
-permalink: kb/228/Q228802/
+permalink: /kb/228/Q228802/
 ---
 
 ## Q228802: MS RPC Incorrect Behavior for Frame Following Maybe Frame

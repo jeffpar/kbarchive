@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154954: XADM: Limited Sort Options in Administrator Program"
-permalink: kb/154/Q154954/
+permalink: /kb/154/Q154954/
 ---
 
 ## Q154954: XADM: Limited Sort Options in Administrator Program

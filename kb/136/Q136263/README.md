@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136263: How to Use the Convert Source Code to Debug Convert Error"
-permalink: kb/136/Q136263/
+permalink: /kb/136/Q136263/
 ---
 
 ## Q136263: How to Use the Convert Source Code to Debug Convert Error

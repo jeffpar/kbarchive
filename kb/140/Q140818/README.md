@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140818: STOP Message: After &quot;DIR ..&#92;&quot; is Issued from a Samba Client"
-permalink: kb/140/Q140818/
+permalink: /kb/140/Q140818/
 ---
 
 ## Q140818: STOP Message: After &quot;DIR ..&#92;&quot; is Issued from a Samba Client

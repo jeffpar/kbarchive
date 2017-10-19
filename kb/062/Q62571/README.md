@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62571: Converting Drive Letters to MS-DOS INT 13H Disk Drive Numbers"
-permalink: kb/062/Q62571/
+permalink: /kb/062/Q62571/
 ---
 
 ## Q62571: Converting Drive Letters to MS-DOS INT 13H Disk Drive Numbers

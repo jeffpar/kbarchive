@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189159: HOWTO: Set a Custom Range for Value Axis with MSChart Control"
-permalink: kb/189/Q189159/
+permalink: /kb/189/Q189159/
 ---
 
 ## Q189159: HOWTO: Set a Custom Range for Value Axis with MSChart Control

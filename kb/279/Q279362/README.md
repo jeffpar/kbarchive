@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279362: MechWarrior 4: Vengeance: Minimum System Requirements"
-permalink: kb/279/Q279362/
+permalink: /kb/279/Q279362/
 ---
 
 ## Q279362: MechWarrior 4: Vengeance: Minimum System Requirements

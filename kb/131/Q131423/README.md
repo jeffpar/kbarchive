@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131423: PC Adm: Err Msg: Notice 162 Failed to Complete Installation..."
-permalink: kb/131/Q131423/
+permalink: /kb/131/Q131423/
 ---
 
 ## Q131423: PC Adm: Err Msg: Notice 162 Failed to Complete Installation...

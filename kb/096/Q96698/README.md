@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96698: How to Create a New WIN.INI Without Third-Party Information"
-permalink: kb/096/Q96698/
+permalink: /kb/096/Q96698/
 ---
 
 ## Q96698: How to Create a New WIN.INI Without Third-Party Information

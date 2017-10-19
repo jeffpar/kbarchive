@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161188: FIX: RELEASE POPUP _medit Command Causes Invalid Page Fault"
-permalink: kb/161/Q161188/
+permalink: /kb/161/Q161188/
 ---
 
 ## Q161188: FIX: RELEASE POPUP _medit Command Causes Invalid Page Fault

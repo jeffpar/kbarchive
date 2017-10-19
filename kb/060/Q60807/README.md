@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60807: Windows Paintbrush Spill Tool Fills Only Once"
-permalink: kb/060/Q60807/
+permalink: /kb/060/Q60807/
 ---
 
 ## Q60807: Windows Paintbrush Spill Tool Fills Only Once

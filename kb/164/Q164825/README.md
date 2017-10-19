@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164825: SMS: User Cannot Refuse Second Remote Control Session"
-permalink: kb/164/Q164825/
+permalink: /kb/164/Q164825/
 ---
 
 ## Q164825: SMS: User Cannot Refuse Second Remote Control Session

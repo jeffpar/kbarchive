@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119803: Windows for Workgroups: Error 58 on Protocol 0 - (Non-ODI)"
-permalink: kb/119/Q119803/
+permalink: /kb/119/Q119803/
 ---
 
 ## Q119803: Windows for Workgroups: Error 58 on Protocol 0 - (Non-ODI)

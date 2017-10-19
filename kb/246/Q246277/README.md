@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246277: XADM: Cannot Restore Exchange Server 5.5 with Seagate BackupExec"
-permalink: kb/246/Q246277/
+permalink: /kb/246/Q246277/
 ---
 
 ## Q246277: XADM: Cannot Restore Exchange Server 5.5 with Seagate BackupExec

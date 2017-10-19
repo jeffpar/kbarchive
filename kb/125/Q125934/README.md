@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125934: PATCH.EXE Fails When Launched by PCMSVC32.EXE"
-permalink: kb/125/Q125934/
+permalink: /kb/125/Q125934/
 ---
 
 ## Q125934: PATCH.EXE Fails When Launched by PCMSVC32.EXE

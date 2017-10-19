@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112365: Explanation of NET DIAG /STATUS Information"
-permalink: kb/112/Q112365/
+permalink: /kb/112/Q112365/
 ---
 
 ## Q112365: Explanation of NET DIAG /STATUS Information

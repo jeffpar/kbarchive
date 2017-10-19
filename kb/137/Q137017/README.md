@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137017: INFO: Visual Basic 4.0 File Types &amp; Version Control Recommendati"
-permalink: kb/137/Q137017/
+permalink: /kb/137/Q137017/
 ---
 
 ## Q137017: INFO: Visual Basic 4.0 File Types &amp; Version Control Recommendati

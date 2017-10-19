@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171412: FIX: SMC 8416 is Not Recognized during Windows NT Unattended Set"
-permalink: kb/171/Q171412/
+permalink: /kb/171/Q171412/
 ---
 
 ## Q171412: FIX: SMC 8416 is Not Recognized during Windows NT Unattended Set

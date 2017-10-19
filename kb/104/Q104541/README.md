@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104541: PC Tools SI Doesn't See Automounted DoubleSpace Floppy Disk"
-permalink: kb/104/Q104541/
+permalink: /kb/104/Q104541/
 ---
 
 ## Q104541: PC Tools SI Doesn't See Automounted DoubleSpace Floppy Disk

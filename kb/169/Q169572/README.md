@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169572: No Speech in Talk It! With Sound Blaster 32 or AWE 64"
-permalink: kb/169/Q169572/
+permalink: /kb/169/Q169572/
 ---
 
 ## Q169572: No Speech in Talk It! With Sound Blaster 32 or AWE 64

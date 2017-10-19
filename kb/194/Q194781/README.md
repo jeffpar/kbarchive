@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194781: PRB: Version Information in Project Causes Invalid .Exe File"
-permalink: kb/194/Q194781/
+permalink: /kb/194/Q194781/
 ---
 
 ## Q194781: PRB: Version Information in Project Causes Invalid .Exe File

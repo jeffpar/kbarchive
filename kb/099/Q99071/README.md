@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99071: Err Msg Copying Files to a RAMDrive: Cannot Make Directory..."
-permalink: kb/099/Q99071/
+permalink: /kb/099/Q99071/
 ---
 
 ## Q99071: Err Msg Copying Files to a RAMDrive: Cannot Make Directory...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123734: Writer/Artist: CD-ROM System Requirements"
-permalink: kb/123/Q123734/
+permalink: /kb/123/Q123734/
 ---
 
 ## Q123734: Writer/Artist: CD-ROM System Requirements

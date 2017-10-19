@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74817: Using Different Filename Extensions with PWB Program List"
-permalink: kb/074/Q74817/
+permalink: /kb/074/Q74817/
 ---
 
 ## Q74817: Using Different Filename Extensions with PWB Program List

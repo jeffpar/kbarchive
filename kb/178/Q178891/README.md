@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178891: XADM: Incorrect Message When Issue Warning Limit Is Reached"
-permalink: kb/178/Q178891/
+permalink: /kb/178/Q178891/
 ---
 
 ## Q178891: XADM: Incorrect Message When Issue Warning Limit Is Reached

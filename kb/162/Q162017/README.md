@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162017: XFOR: Messages Not Being Delivered to X.400 Recipients"
-permalink: kb/162/Q162017/
+permalink: /kb/162/Q162017/
 ---
 
 ## Q162017: XFOR: Messages Not Being Delivered to X.400 Recipients

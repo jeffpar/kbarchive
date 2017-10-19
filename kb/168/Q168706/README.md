@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168706: FIX: PivotTable Wizard - Cannot Find Excel 97"
-permalink: kb/168/Q168706/
+permalink: /kb/168/Q168706/
 ---
 
 ## Q168706: FIX: PivotTable Wizard - Cannot Find Excel 97

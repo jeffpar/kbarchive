@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193680: DOCERR: AGETFILEVERSION() Function Incorrectly Documented"
-permalink: kb/193/Q193680/
+permalink: /kb/193/Q193680/
 ---
 
 ## Q193680: DOCERR: AGETFILEVERSION() Function Incorrectly Documented

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30898: DOCERR: KBDINFO Incorrectly Defined"
-permalink: kb/030/Q30898/
+permalink: /kb/030/Q30898/
 ---
 
 ## Q30898: DOCERR: KBDINFO Incorrectly Defined

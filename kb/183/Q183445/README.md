@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183445: Etk50pid.exe Incorrect Product ID Displayed in About Box"
-permalink: kb/183/Q183445/
+permalink: /kb/183/Q183445/
 ---
 
 ## Q183445: Etk50pid.exe Incorrect Product ID Displayed in About Box

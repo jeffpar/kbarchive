@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234869: XADM: Multi-Valued String Array MAPI Property Not Copied"
-permalink: kb/234/Q234869/
+permalink: /kb/234/Q234869/
 ---
 
 ## Q234869: XADM: Multi-Valued String Array MAPI Property Not Copied

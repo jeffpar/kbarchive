@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104528: PC Adm: Microsoft Extraction Utilities Error Messages"
-permalink: kb/104/Q104528/
+permalink: /kb/104/Q104528/
 ---
 
 ## Q104528: PC Adm: Microsoft Extraction Utilities Error Messages

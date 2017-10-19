@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171613: INFO: Retaining Transactions with Transaction Object"
-permalink: kb/171/Q171613/
+permalink: /kb/171/Q171613/
 ---
 
 ## Q171613: INFO: Retaining Transactions with Transaction Object

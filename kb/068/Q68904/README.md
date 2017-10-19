@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68904: Windows Applications that Work in the Windows Working Model"
-permalink: kb/068/Q68904/
+permalink: /kb/068/Q68904/
 ---
 
 ## Q68904: Windows Applications that Work in the Windows Working Model

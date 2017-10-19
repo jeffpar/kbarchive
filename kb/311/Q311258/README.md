@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311258: SMS: Collection Evaluator May Cause Many Event ID 565 Events"
-permalink: kb/311/Q311258/
+permalink: /kb/311/Q311258/
 ---
 
 ## Q311258: SMS: Collection Evaluator May Cause Many Event ID 565 Events

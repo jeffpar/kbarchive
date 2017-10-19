@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194414: FIX: &quot;Unexpected Error&quot; Message When Loading a GIF"
-permalink: kb/194/Q194414/
+permalink: /kb/194/Q194414/
 ---
 
 ## Q194414: FIX: &quot;Unexpected Error&quot; Message When Loading a GIF

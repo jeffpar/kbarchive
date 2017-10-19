@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124081: Configuring Schedule Plus To Run Without a Postoffice"
-permalink: kb/124/Q124081/
+permalink: /kb/124/Q124081/
 ---
 
 ## Q124081: Configuring Schedule Plus To Run Without a Postoffice

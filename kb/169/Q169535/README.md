@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169535: INFO: Cannot Set EOL Option from the Visual SourceSafe GUI"
-permalink: kb/169/Q169535/
+permalink: /kb/169/Q169535/
 ---
 
 ## Q169535: INFO: Cannot Set EOL Option from the Visual SourceSafe GUI

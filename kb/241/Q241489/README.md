@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241489: User Right Incorrectly Configured in SCE High-Security Template"
-permalink: kb/241/Q241489/
+permalink: /kb/241/Q241489/
 ---
 
 ## Q241489: User Right Incorrectly Configured in SCE High-Security Template

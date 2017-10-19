@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221164: XFOR: Outlook Express Using IMAP4 Doesn't Display Attachments"
-permalink: kb/221/Q221164/
+permalink: /kb/221/Q221164/
 ---
 
 ## Q221164: XFOR: Outlook Express Using IMAP4 Doesn't Display Attachments

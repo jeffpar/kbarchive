@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193915: How to Troubleshoot Internet Issues in Streets and Trip Planner"
-permalink: kb/193/Q193915/
+permalink: /kb/193/Q193915/
 ---
 
 ## Q193915: How to Troubleshoot Internet Issues in Streets and Trip Planner

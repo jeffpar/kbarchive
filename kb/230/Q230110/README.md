@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230110: Default Newsgroups Installed with NNTP Server"
-permalink: kb/230/Q230110/
+permalink: /kb/230/Q230110/
 ---
 
 ## Q230110: Default Newsgroups Installed with NNTP Server

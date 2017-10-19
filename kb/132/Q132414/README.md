@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132414: Bitmaps Stretched by Microsoft Plus! May Appear Distorted"
-permalink: kb/132/Q132414/
+permalink: /kb/132/Q132414/
 ---
 
 ## Q132414: Bitmaps Stretched by Microsoft Plus! May Appear Distorted

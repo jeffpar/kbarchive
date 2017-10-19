@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148380: XADM: Exchange Server Setup Directory"
-permalink: kb/148/Q148380/
+permalink: /kb/148/Q148380/
 ---
 
 ## Q148380: XADM: Exchange Server Setup Directory

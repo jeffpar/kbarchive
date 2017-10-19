@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287710: SMS: User Prompted for Credentials During Remote Control Session"
-permalink: kb/287/Q287710/
+permalink: /kb/287/Q287710/
 ---
 
 ## Q287710: SMS: User Prompted for Credentials During Remote Control Session

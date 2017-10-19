@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139320: World Atlas Err Msg: Setup Unable to Determine Valid Default.."
-permalink: kb/139/Q139320/
+permalink: /kb/139/Q139320/
 ---
 
 ## Q139320: World Atlas Err Msg: Setup Unable to Determine Valid Default..

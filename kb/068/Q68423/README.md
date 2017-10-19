@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68423: INFO: The Use of a CTRL+Z Is Limited in Text Files"
-permalink: kb/068/Q68423/
+permalink: /kb/068/Q68423/
 ---
 
 ## Q68423: INFO: The Use of a CTRL+Z Is Limited in Text Files

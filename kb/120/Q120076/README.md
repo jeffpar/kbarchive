@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120076: Incorrect PSS Phone Number for Workgroup Add-On for MS-DOS"
-permalink: kb/120/Q120076/
+permalink: /kb/120/Q120076/
 ---
 
 ## Q120076: Incorrect PSS Phone Number for Workgroup Add-On for MS-DOS

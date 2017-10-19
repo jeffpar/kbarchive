@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248148: XCLN: The Signature &lt;Name.sig&gt; Could Not Be Located"
-permalink: kb/248/Q248148/
+permalink: /kb/248/Q248148/
 ---
 
 ## Q248148: XCLN: The Signature &lt;Name.sig&gt; Could Not Be Located

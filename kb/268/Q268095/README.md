@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268095: SMS: Modifying ProviderForLocalSite Value Causes MMC to Fail"
-permalink: kb/268/Q268095/
+permalink: /kb/268/Q268095/
 ---
 
 ## Q268095: SMS: Modifying ProviderForLocalSite Value Causes MMC to Fail

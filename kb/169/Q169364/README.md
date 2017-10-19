@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169364: FIX: CLEAR CLASS of Objects in Containers Causes GPF"
-permalink: kb/169/Q169364/
+permalink: /kb/169/Q169364/
 ---
 
 ## Q169364: FIX: CLEAR CLASS of Objects in Containers Causes GPF

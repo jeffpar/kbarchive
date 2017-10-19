@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194338: Unusual Mappings Appear in WINS Database"
-permalink: kb/194/Q194338/
+permalink: /kb/194/Q194338/
 ---
 
 ## Q194338: Unusual Mappings Appear in WINS Database

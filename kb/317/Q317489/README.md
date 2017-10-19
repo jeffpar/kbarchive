@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317489: FIX: Exclude Property Not Refreshed When File Excluded/Included"
-permalink: kb/317/Q317489/
+permalink: /kb/317/Q317489/
 ---
 
 ## Q317489: FIX: Exclude Property Not Refreshed When File Excluded/Included

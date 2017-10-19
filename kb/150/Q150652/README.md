@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150652: MSB Ocean: How to Run MSB Ocean for Macintosh without CD"
-permalink: kb/150/Q150652/
+permalink: /kb/150/Q150652/
 ---
 
 ## Q150652: MSB Ocean: How to Run MSB Ocean for Macintosh without CD

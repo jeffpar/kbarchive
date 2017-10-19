@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187568: HOWTO: Create Your Own Bitmap Object Class"
-permalink: kb/187/Q187568/
+permalink: /kb/187/Q187568/
 ---
 
 ## Q187568: HOWTO: Create Your Own Bitmap Object Class

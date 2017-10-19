@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137504: Server Operators Group Unable to Install FPNW"
-permalink: kb/137/Q137504/
+permalink: /kb/137/Q137504/
 ---
 
 ## Q137504: Server Operators Group Unable to Install FPNW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67705: User's Guide Incorrect on Configuring an 8086 or 8088 System"
-permalink: kb/067/Q67705/
+permalink: /kb/067/Q67705/
 ---
 
 ## Q67705: User's Guide Incorrect on Configuring an 8086 or 8088 System

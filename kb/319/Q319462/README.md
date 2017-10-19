@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319462: SMS: Travel Mode Discovery Property May Not Be Reported in DDRs"
-permalink: kb/319/Q319462/
+permalink: /kb/319/Q319462/
 ---
 
 ## Q319462: SMS: Travel Mode Discovery Property May Not Be Reported in DDRs

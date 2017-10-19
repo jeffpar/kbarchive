@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185703: Limitations of the CB Feature in Monster Truck Madness 2"
-permalink: kb/185/Q185703/
+permalink: /kb/185/Q185703/
 ---
 
 ## Q185703: Limitations of the CB Feature in Monster Truck Madness 2

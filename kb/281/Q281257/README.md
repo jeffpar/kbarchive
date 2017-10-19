@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281257: SMSINST: Access Violation When Appending Data to REG_MULTI_SZ"
-permalink: kb/281/Q281257/
+permalink: /kb/281/Q281257/
 ---
 
 ## Q281257: SMSINST: Access Violation When Appending Data to REG_MULTI_SZ

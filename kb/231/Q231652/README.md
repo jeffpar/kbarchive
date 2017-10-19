@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231652: PRB: Paste Fails in the VC IDE After Installing NT 4.0 SP4"
-permalink: kb/231/Q231652/
+permalink: /kb/231/Q231652/
 ---
 
 ## Q231652: PRB: Paste Fails in the VC IDE After Installing NT 4.0 SP4

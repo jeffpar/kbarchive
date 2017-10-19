@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126969: PRB: Running Genxtab with an Empty Table Causes Error"
-permalink: kb/126/Q126969/
+permalink: /kb/126/Q126969/
 ---
 
 ## Q126969: PRB: Running Genxtab with an Empty Table Causes Error

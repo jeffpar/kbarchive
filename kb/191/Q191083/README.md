@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191083: BUG: IPF When Replacing Class Module with UserControl"
-permalink: kb/191/Q191083/
+permalink: /kb/191/Q191083/
 ---
 
 ## Q191083: BUG: IPF When Replacing Class Module with UserControl

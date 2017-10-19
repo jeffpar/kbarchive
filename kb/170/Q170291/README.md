@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170291: APPC Call to GET_LU_STATUS() Never Returns"
-permalink: kb/170/Q170291/
+permalink: /kb/170/Q170291/
 ---
 
 ## Q170291: APPC Call to GET_LU_STATUS() Never Returns

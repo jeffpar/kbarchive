@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185695: HOWTO: Renaming an ActiveX Control After its Project Is Created"
-permalink: kb/185/Q185695/
+permalink: /kb/185/Q185695/
 ---
 
 ## Q185695: HOWTO: Renaming an ActiveX Control After its Project Is Created

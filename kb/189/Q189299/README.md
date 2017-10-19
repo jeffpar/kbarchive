@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189299: SMS: Windows 95 Client Reports BIOS Manufacturer Name as Unknown"
-permalink: kb/189/Q189299/
+permalink: /kb/189/Q189299/
 ---
 
 ## Q189299: SMS: Windows 95 Client Reports BIOS Manufacturer Name as Unknown

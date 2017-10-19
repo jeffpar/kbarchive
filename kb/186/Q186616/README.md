@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186616: Terminal Server Client Error 13D at Logon"
-permalink: kb/186/Q186616/
+permalink: /kb/186/Q186616/
 ---
 
 ## Q186616: Terminal Server Client Error 13D at Logon

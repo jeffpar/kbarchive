@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194218: XFOR: cc:Mail Migration Wizard Fails to Migrate cc:Mail User"
-permalink: kb/194/Q194218/
+permalink: /kb/194/Q194218/
 ---
 
 ## Q194218: XFOR: cc:Mail Migration Wizard Fails to Migrate cc:Mail User

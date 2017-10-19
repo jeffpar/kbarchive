@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87320: Program Manager Limit on the Number of Items and Groups"
-permalink: kb/087/Q87320/
+permalink: /kb/087/Q87320/
 ---
 
 ## Q87320: Program Manager Limit on the Number of Items and Groups

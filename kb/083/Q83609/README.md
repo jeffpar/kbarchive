@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83609: Missing Network Drives in Common Dialog Boxes in Windows 3.1"
-permalink: kb/083/Q83609/
+permalink: /kb/083/Q83609/
 ---
 
 ## Q83609: Missing Network Drives in Common Dialog Boxes in Windows 3.1

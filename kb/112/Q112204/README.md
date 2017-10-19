@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112204: PC Adm: Doc Err: After Completing Task Import"
-permalink: kb/112/Q112204/
+permalink: /kb/112/Q112204/
 ---
 
 ## Q112204: PC Adm: Doc Err: After Completing Task Import

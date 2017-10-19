@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314526: Club Encarta: Web Site Does Not Fully Load"
-permalink: kb/314/Q314526/
+permalink: /kb/314/Q314526/
 ---
 
 ## Q314526: Club Encarta: Web Site Does Not Fully Load

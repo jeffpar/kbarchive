@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230305: Contents of Script Debugger Release Notes"
-permalink: kb/230/Q230305/
+permalink: /kb/230/Q230305/
 ---
 
 ## Q230305: Contents of Script Debugger Release Notes

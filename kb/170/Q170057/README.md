@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170057: Dr. Watson Dialog Box Stops Responding"
-permalink: kb/170/Q170057/
+permalink: /kb/170/Q170057/
 ---
 
 ## Q170057: Dr. Watson Dialog Box Stops Responding

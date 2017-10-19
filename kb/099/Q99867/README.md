@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99867: Random Keeps Running Even When Focus Is Changed"
-permalink: kb/099/Q99867/
+permalink: /kb/099/Q99867/
 ---
 
 ## Q99867: Random Keeps Running Even When Focus Is Changed

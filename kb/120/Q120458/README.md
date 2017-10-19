@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120458: 2 RAS Client/RAS IPX Server's Cannot Dial into Another IPX Netwk"
-permalink: kb/120/Q120458/
+permalink: /kb/120/Q120458/
 ---
 
 ## Q120458: 2 RAS Client/RAS IPX Server's Cannot Dial into Another IPX Netwk

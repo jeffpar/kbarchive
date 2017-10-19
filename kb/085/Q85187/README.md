@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85187: Directly Accessing Control Panel Options"
-permalink: kb/085/Q85187/
+permalink: /kb/085/Q85187/
 ---
 
 ## Q85187: Directly Accessing Control Panel Options

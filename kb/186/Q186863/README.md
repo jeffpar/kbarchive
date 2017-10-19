@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186863: XWEB: Unable to Change Password Using OWA"
-permalink: kb/186/Q186863/
+permalink: /kb/186/Q186863/
 ---
 
 ## Q186863: XWEB: Unable to Change Password Using OWA

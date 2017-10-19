@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234162: SMS: Remote Control May Not Work If User Name Contains a Space"
-permalink: kb/234/Q234162/
+permalink: /kb/234/Q234162/
 ---
 
 ## Q234162: SMS: Remote Control May Not Work If User Name Contains a Space

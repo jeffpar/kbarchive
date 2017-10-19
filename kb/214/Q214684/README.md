@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214684: XADM: Information Store Crashes Due to Database Corruption"
-permalink: kb/214/Q214684/
+permalink: /kb/214/Q214684/
 ---
 
 ## Q214684: XADM: Information Store Crashes Due to Database Corruption

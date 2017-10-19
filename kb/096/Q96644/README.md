@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96644: PC DOS: 3.0 MS-DOS Workstation Disk [5.25, 1.2 MB]"
-permalink: kb/096/Q96644/
+title: "Q96644: PC DOS: 3.0 MS-DOS Workstation Disk &#91;5.25, 1.2 MB&#93;"
+permalink: /kb/096/Q96644/
 ---
 
-## Q96644: PC DOS: 3.0 MS-DOS Workstation Disk [5.25, 1.2 MB]
+## Q96644: PC DOS: 3.0 MS-DOS Workstation Disk &#91;5.25, 1.2 MB&#93;
 
 	Article: Q96644
 	Product(s): Microsoft Mail For PC Networks

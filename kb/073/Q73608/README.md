@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73608: Disk Manager 3.x Requires MS-DOS 3.x Bootable Disk"
-permalink: kb/073/Q73608/
+permalink: /kb/073/Q73608/
 ---
 
 ## Q73608: Disk Manager 3.x Requires MS-DOS 3.x Bootable Disk

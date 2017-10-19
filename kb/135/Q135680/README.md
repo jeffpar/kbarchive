@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135680: RAS Err Msg: Unable to Connect. No More Connections can be..."
-permalink: kb/135/Q135680/
+permalink: /kb/135/Q135680/
 ---
 
 ## Q135680: RAS Err Msg: Unable to Connect. No More Connections can be...

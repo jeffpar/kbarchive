@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160798: How to Change the SMS Remote Control Agent Startup Value"
-permalink: kb/160/Q160798/
+permalink: /kb/160/Q160798/
 ---
 
 ## Q160798: How to Change the SMS Remote Control Agent Startup Value

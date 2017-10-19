@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302769: Cannot Add Or Edit Address Book Entries In Offline Mode With MSN"
-permalink: kb/302/Q302769/
+permalink: /kb/302/Q302769/
 ---
 
 ## Q302769: Cannot Add Or Edit Address Book Entries In Offline Mode With MSN

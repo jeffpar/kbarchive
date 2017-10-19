@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244288: Phone Dialer Speed Dial Cannot Accept More Than 46 Characters"
-permalink: kb/244/Q244288/
+permalink: /kb/244/Q244288/
 ---
 
 ## Q244288: Phone Dialer Speed Dial Cannot Accept More Than 46 Characters

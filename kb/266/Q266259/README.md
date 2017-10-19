@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266259: XGEN: Messages Properties Do Not Save Correctly"
-permalink: kb/266/Q266259/
+permalink: /kb/266/Q266259/
 ---
 
 ## Q266259: XGEN: Messages Properties Do Not Save Correctly

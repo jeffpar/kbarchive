@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134496: Error Message: SDMErr(80000003): Registry Access Failed"
-permalink: kb/134/Q134496/
+permalink: /kb/134/Q134496/
 ---
 
 ## Q134496: Error Message: SDMErr(80000003): Registry Access Failed

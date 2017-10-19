@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181737: How a 3270 EIS Application May Affect Outbound Pacing"
-permalink: kb/181/Q181737/
+permalink: /kb/181/Q181737/
 ---
 
 ## Q181737: How a 3270 EIS Application May Affect Outbound Pacing

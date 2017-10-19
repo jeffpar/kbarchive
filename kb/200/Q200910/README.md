@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200910: How to Install Network Monitor in Windows 95/98"
-permalink: kb/200/Q200910/
+permalink: /kb/200/Q200910/
 ---
 
 ## Q200910: How to Install Network Monitor in Windows 95/98

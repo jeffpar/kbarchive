@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170762: Cluster Shares Appear in Browse List Under Other Names"
-permalink: kb/170/Q170762/
+permalink: /kb/170/Q170762/
 ---
 
 ## Q170762: Cluster Shares Appear in Browse List Under Other Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86625: PC Adm: Err Msg: This Post Office Is a Hub for Other..."
-permalink: kb/086/Q86625/
+permalink: /kb/086/Q86625/
 ---
 
 ## Q86625: PC Adm: Err Msg: This Post Office Is a Hub for Other...

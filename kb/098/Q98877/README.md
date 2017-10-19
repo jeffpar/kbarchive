@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98877: Mac Wkst: Cannot Print to Early LaserWriters"
-permalink: kb/098/Q98877/
+permalink: /kb/098/Q98877/
 ---
 
 ## Q98877: Mac Wkst: Cannot Print to Early LaserWriters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245042: XFOR: Invalid PO Name or Pwd Error Migrating cc:Mail Mobile User"
-permalink: kb/245/Q245042/
+permalink: /kb/245/Q245042/
 ---
 
 ## Q245042: XFOR: Invalid PO Name or Pwd Error Migrating cc:Mail Mobile User

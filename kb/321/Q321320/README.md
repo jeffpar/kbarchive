@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321320: SMSINST: Installer v2.0.148.00 repackage changes registry entry"
-permalink: kb/321/Q321320/
+permalink: /kb/321/Q321320/
 ---
 
 ## Q321320: SMSINST: Installer v2.0.148.00 repackage changes registry entry

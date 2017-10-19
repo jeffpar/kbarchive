@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218127: Migrate User Wizard Does Not Configure Internet Connectivity"
-permalink: kb/218/Q218127/
+permalink: /kb/218/Q218127/
 ---
 
 ## Q218127: Migrate User Wizard Does Not Configure Internet Connectivity

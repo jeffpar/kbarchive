@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318851: FS2002: How to Find Airport Radio Frequency Information"
-permalink: kb/318/Q318851/
+permalink: /kb/318/Q318851/
 ---
 
 ## Q318851: FS2002: How to Find Airport Radio Frequency Information

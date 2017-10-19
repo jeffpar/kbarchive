@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139840: Users Logging Into FPNW are Not Ask to Change Their Password"
-permalink: kb/139/Q139840/
+permalink: /kb/139/Q139840/
 ---
 
 ## Q139840: Users Logging Into FPNW are Not Ask to Change Their Password
