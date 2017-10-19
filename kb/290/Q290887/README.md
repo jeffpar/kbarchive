@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290887: FILE: VBRun60sp5.exe Installs Visual Basic 6.0 SP5 Run-Time File"
-permalink: kb/290/Q290887/
+permalink: /kb/290/Q290887/
 ---
 
 ## Q290887: FILE: VBRun60sp5.exe Installs Visual Basic 6.0 SP5 Run-Time File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239633: World Atlas 2000: Error Messages When You Use InterActivity"
-permalink: kb/239/Q239633/
+permalink: /kb/239/Q239633/
 ---
 
 ## Q239633: World Atlas 2000: Error Messages When You Use InterActivity

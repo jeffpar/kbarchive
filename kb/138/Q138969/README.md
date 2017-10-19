@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138969: HOWTO: Include Report Toolbars in a Distributed Application"
-permalink: kb/138/Q138969/
+permalink: /kb/138/Q138969/
 ---
 
 ## Q138969: HOWTO: Include Report Toolbars in a Distributed Application

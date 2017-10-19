@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77635: Lotus 1-2-3 Version 3.1 Won't Start"
-permalink: kb/077/Q77635/
+permalink: /kb/077/Q77635/
 ---
 
 ## Q77635: Lotus 1-2-3 Version 3.1 Won't Start

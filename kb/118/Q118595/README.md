@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118595: SMTP: Gateway Tries to UUDECODE Text That is not UUENCODED"
-permalink: kb/118/Q118595/
+permalink: /kb/118/Q118595/
 ---
 
 ## Q118595: SMTP: Gateway Tries to UUDECODE Text That is not UUENCODED

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80843: INFO: Possible Causes of Dialog Box Creation Failure"
-permalink: kb/080/Q80843/
+permalink: /kb/080/Q80843/
 ---
 
 ## Q80843: INFO: Possible Causes of Dialog Box Creation Failure

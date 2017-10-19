@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248142: Default System Date Behavior in Windows NT 4.0 and Windows 2000"
-permalink: kb/248/Q248142/
+permalink: /kb/248/Q248142/
 ---
 
 ## Q248142: Default System Date Behavior in Windows NT 4.0 and Windows 2000

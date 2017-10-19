@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288562: XADM: Isinteg Won't Patch Information Store Running on Cluster"
-permalink: kb/288/Q288562/
+permalink: /kb/288/Q288562/
 ---
 
 ## Q288562: XADM: Isinteg Won't Patch Information Store Running on Cluster

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49693: Microsoft Systems Journal Ordering Information"
-permalink: kb/049/Q49693/
+permalink: /kb/049/Q49693/
 ---
 
 ## Q49693: Microsoft Systems Journal Ordering Information

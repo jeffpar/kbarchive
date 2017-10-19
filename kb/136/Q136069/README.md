@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136069: FIX: Visual C++ Build Process Won't Return If Missing ')'"
-permalink: kb/136/Q136069/
+permalink: /kb/136/Q136069/
 ---
 
 ## Q136069: FIX: Visual C++ Build Process Won't Return If Missing ')'

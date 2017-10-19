@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109510: Err Msg Changing Virtual Memory Setting: 32-Bit File Access..."
-permalink: kb/109/Q109510/
+permalink: /kb/109/Q109510/
 ---
 
 ## Q109510: Err Msg Changing Virtual Memory Setting: 32-Bit File Access...

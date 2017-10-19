@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153152: How To Compile a CFM for Visual FoxPro/Mac with CodeWarrior"
-permalink: kb/153/Q153152/
+permalink: /kb/153/Q153152/
 ---
 
 ## Q153152: How To Compile a CFM for Visual FoxPro/Mac with CodeWarrior

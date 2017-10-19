@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218170: APPC Application Receives AP_ALLOCATION_FAILURE_RETRY In Error."
-permalink: kb/218/Q218170/
+permalink: /kb/218/Q218170/
 ---
 
 ## Q218170: APPC Application Receives AP_ALLOCATION_FAILURE_RETRY In Error.

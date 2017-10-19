@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83844: Incorrect Syntax for MONOUMB2.386 in Windows 3.1 README.WRI"
-permalink: kb/083/Q83844/
+permalink: /kb/083/Q83844/
 ---
 
 ## Q83844: Incorrect Syntax for MONOUMB2.386 in Windows 3.1 README.WRI

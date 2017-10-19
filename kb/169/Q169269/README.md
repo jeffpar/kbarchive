@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169269: Creating Virtual Directories with NetWare Share Names"
-permalink: kb/169/Q169269/
+permalink: /kb/169/Q169269/
 ---
 
 ## Q169269: Creating Virtual Directories with NetWare Share Names

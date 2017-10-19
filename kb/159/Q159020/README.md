@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159020: Reinstalling OSR2 Removes Language Indicator on Taskbar"
-permalink: kb/159/Q159020/
+permalink: /kb/159/Q159020/
 ---
 
 ## Q159020: Reinstalling OSR2 Removes Language Indicator on Taskbar

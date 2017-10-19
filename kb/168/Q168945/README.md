@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168945: Puzzle Collection: Rat Poker: Red And Orange Rats Appear Similar"
-permalink: kb/168/Q168945/
+permalink: /kb/168/Q168945/
 ---
 
 ## Q168945: Puzzle Collection: Rat Poker: Red And Orange Rats Appear Similar

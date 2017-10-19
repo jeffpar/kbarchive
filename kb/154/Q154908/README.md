@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154908: Mastering Access: Error When Viewing Video or Graphic Files"
-permalink: kb/154/Q154908/
+permalink: /kb/154/Q154908/
 ---
 
 ## Q154908: Mastering Access: Error When Viewing Video or Graphic Files

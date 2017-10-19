@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148533: PRB: No ANSI Notifications from Control Created in OnCreate"
-permalink: kb/148/Q148533/
+permalink: /kb/148/Q148533/
 ---
 
 ## Q148533: PRB: No ANSI Notifications from Control Created in OnCreate

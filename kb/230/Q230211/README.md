@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230211: Tdpipe.sys Symbols Are Missing in Terminal Server Service Pack 4"
-permalink: kb/230/Q230211/
+permalink: /kb/230/Q230211/
 ---
 
 ## Q230211: Tdpipe.sys Symbols Are Missing in Terminal Server Service Pack 4

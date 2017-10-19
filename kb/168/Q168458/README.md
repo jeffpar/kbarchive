@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168458: XCLN: Formatting on Incoming Internet E-mail Is Wrong"
-permalink: kb/168/Q168458/
+permalink: /kb/168/Q168458/
 ---
 
 ## Q168458: XCLN: Formatting on Incoming Internet E-mail Is Wrong

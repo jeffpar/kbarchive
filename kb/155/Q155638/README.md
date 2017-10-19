@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155638: Monster Truck Madness: Minimum System Requirements"
-permalink: kb/155/Q155638/
+permalink: /kb/155/Q155638/
 ---
 
 ## Q155638: Monster Truck Madness: Minimum System Requirements

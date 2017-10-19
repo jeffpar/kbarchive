@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122778: CONN: Connection Name Utility (CNU) 3.4 Update"
-permalink: kb/122/Q122778/
+permalink: /kb/122/Q122778/
 ---
 
 ## Q122778: CONN: Connection Name Utility (CNU) 3.4 Update

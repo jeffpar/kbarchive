@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64329: INFO: Windows Message-Processing Caveats"
-permalink: kb/064/Q64329/
+permalink: /kb/064/Q64329/
 ---
 
 ## Q64329: INFO: Windows Message-Processing Caveats

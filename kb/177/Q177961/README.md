@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177961: XFOR: Fail to Decode Inbound Messages with 1522 UTF Encoding"
-permalink: kb/177/Q177961/
+permalink: /kb/177/Q177961/
 ---
 
 ## Q177961: XFOR: Fail to Decode Inbound Messages with 1522 UTF Encoding

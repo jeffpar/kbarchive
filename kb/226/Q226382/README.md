@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226382: XWEB: WWW Service Crash Causes Server Unavailable Errors w/WLBS"
-permalink: kb/226/Q226382/
+permalink: /kb/226/Q226382/
 ---
 
 ## Q226382: XWEB: WWW Service Crash Causes Server Unavailable Errors w/WLBS

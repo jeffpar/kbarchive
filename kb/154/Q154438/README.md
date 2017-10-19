@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154438: Koi and Bunyan: Ejecting CD During Setup Causes Error Message"
-permalink: kb/154/Q154438/
+permalink: /kb/154/Q154438/
 ---
 
 ## Q154438: Koi and Bunyan: Ejecting CD During Setup Causes Error Message

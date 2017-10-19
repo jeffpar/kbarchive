@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172512: Routing and Remote Access Event ID 20100"
-permalink: kb/172/Q172512/
+permalink: /kb/172/Q172512/
 ---
 
 ## Q172512: Routing and Remote Access Event ID 20100

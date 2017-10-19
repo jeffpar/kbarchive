@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269522: BUG: Data Doesn't Revert to Original Value After CancelUpdate"
-permalink: kb/269/Q269522/
+permalink: /kb/269/Q269522/
 ---
 
 ## Q269522: BUG: Data Doesn't Revert to Original Value After CancelUpdate

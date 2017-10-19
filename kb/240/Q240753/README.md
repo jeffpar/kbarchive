@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240753: XWEB: How to Change the TCP/IP Port for Outlook Web Access"
-permalink: kb/240/Q240753/
+permalink: /kb/240/Q240753/
 ---
 
 ## Q240753: XWEB: How to Change the TCP/IP Port for Outlook Web Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154790: Weitek PCI Video Fails to Load on PowerPC Secondary PCI Bus"
-permalink: kb/154/Q154790/
+permalink: /kb/154/Q154790/
 ---
 
 ## Q154790: Weitek PCI Video Fails to Load on PowerPC Secondary PCI Bus

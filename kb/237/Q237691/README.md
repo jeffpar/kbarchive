@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237691: Windows 98 Dial-Up Networking Security Upgrade Release Notes"
-permalink: kb/237/Q237691/
+permalink: /kb/237/Q237691/
 ---
 
 ## Q237691: Windows 98 Dial-Up Networking Security Upgrade Release Notes

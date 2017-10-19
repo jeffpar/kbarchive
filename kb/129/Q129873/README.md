@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129873: Why Property Pages Might Be Missing on OLE Controls"
-permalink: kb/129/Q129873/
+permalink: /kb/129/Q129873/
 ---
 
 ## Q129873: Why Property Pages Might Be Missing on OLE Controls

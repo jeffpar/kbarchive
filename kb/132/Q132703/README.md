@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132703: HOWTO: Set Up SourceSafe for the Macintosh Manually"
-permalink: kb/132/Q132703/
+permalink: /kb/132/Q132703/
 ---
 
 ## Q132703: HOWTO: Set Up SourceSafe for the Macintosh Manually

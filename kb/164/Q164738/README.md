@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164738: Shared Installation May Fail with IBM Token Ring Auto 16/4 ISA"
-permalink: kb/164/Q164738/
+permalink: /kb/164/Q164738/
 ---
 
 ## Q164738: Shared Installation May Fail with IBM Token Ring Auto 16/4 ISA

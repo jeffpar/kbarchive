@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169290: DHCP Reservations Do Not Get Assigned from a Superscope"
-permalink: kb/169/Q169290/
+permalink: /kb/169/Q169290/
 ---
 
 ## Q169290: DHCP Reservations Do Not Get Assigned from a Superscope

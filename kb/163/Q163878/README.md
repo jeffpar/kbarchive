@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163878: CreateBitmap() API - Bitmap Size Limits Introduced in WinNT 4.0"
-permalink: kb/163/Q163878/
+permalink: /kb/163/Q163878/
 ---
 
 ## Q163878: CreateBitmap() API - Bitmap Size Limits Introduced in WinNT 4.0

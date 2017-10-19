@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176730: Sound Quality Is Poor When You Enable Hardware Acceleration"
-permalink: kb/176/Q176730/
+permalink: /kb/176/Q176730/
 ---
 
 ## Q176730: Sound Quality Is Poor When You Enable Hardware Acceleration

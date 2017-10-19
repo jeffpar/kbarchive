@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178542: Age of Empires: Clicking Diplomacy Button Hangs Computer"
-permalink: kb/178/Q178542/
+permalink: /kb/178/Q178542/
 ---
 
 ## Q178542: Age of Empires: Clicking Diplomacy Button Hangs Computer

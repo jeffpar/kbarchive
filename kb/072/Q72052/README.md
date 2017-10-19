@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72052: Duplicate Dates in Month View When Converting Calendar Files"
-permalink: kb/072/Q72052/
+permalink: /kb/072/Q72052/
 ---
 
 ## Q72052: Duplicate Dates in Month View When Converting Calendar Files

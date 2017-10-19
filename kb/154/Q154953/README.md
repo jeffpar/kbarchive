@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154953: Setup Unable to Create IUSR_computername Account"
-permalink: kb/154/Q154953/
+permalink: /kb/154/Q154953/
 ---
 
 ## Q154953: Setup Unable to Create IUSR_computername Account

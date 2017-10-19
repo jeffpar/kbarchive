@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153116: BUG: Support Library Creates Files with Creator of FOXX"
-permalink: kb/153/Q153116/
+permalink: /kb/153/Q153116/
 ---
 
 ## Q153116: BUG: Support Library Creates Files with Creator of FOXX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122362: Error C0000004 When Running Process-Monitoring Tools"
-permalink: kb/122/Q122362/
+permalink: /kb/122/Q122362/
 ---
 
 ## Q122362: Error C0000004 When Running Process-Monitoring Tools

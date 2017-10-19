@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111873: GETFILE() and PUTFILE() Return Values in Uppercase"
-permalink: kb/111/Q111873/
+permalink: /kb/111/Q111873/
 ---
 
 ## Q111873: GETFILE() and PUTFILE() Return Values in Uppercase

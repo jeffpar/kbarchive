@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150030: Complete Gardening: Unable To Set Zone On USDA Map"
-permalink: kb/150/Q150030/
+permalink: /kb/150/Q150030/
 ---
 
 ## Q150030: Complete Gardening: Unable To Set Zone On USDA Map

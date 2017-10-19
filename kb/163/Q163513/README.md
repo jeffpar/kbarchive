@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163513: Mac Multimedia: Internet Config Error Messages and Solutions"
-permalink: kb/163/Q163513/
+permalink: /kb/163/Q163513/
 ---
 
 ## Q163513: Mac Multimedia: Internet Config Error Messages and Solutions

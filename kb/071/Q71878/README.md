@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71878: Resource Kit Installation Leaves PPTMP Directory in Windows"
-permalink: kb/071/Q71878/
+permalink: /kb/071/Q71878/
 ---
 
 ## Q71878: Resource Kit Installation Leaves PPTMP Directory in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162081: PRB: In-Process Server Fails on CREATEOBJECT in VFP Run Time"
-permalink: kb/162/Q162081/
+permalink: /kb/162/Q162081/
 ---
 
 ## Q162081: PRB: In-Process Server Fails on CREATEOBJECT in VFP Run Time

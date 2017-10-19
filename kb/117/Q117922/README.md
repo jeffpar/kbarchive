@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117922: BUG: CONTROL+C, CONTROL+X, &amp; CONTROL+V Don't Always Work"
-permalink: kb/117/Q117922/
+permalink: /kb/117/Q117922/
 ---
 
 ## Q117922: BUG: CONTROL+C, CONTROL+X, &amp; CONTROL+V Don't Always Work

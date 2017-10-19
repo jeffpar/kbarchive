@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159452: SNA Shared Folders Gateway Shows Large Free Disk Space"
-permalink: kb/159/Q159452/
+permalink: /kb/159/Q159452/
 ---
 
 ## Q159452: SNA Shared Folders Gateway Shows Large Free Disk Space

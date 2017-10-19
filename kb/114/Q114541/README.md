@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114541: TCP/IP-based Applications Hang on Multiprocessor Systems"
-permalink: kb/114/Q114541/
+permalink: /kb/114/Q114541/
 ---
 
 ## Q114541: TCP/IP-based Applications Hang on Multiprocessor Systems

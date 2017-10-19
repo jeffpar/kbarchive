@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176409: XADM: Internet Newsgroup Public Folder Becomes Visible"
-permalink: kb/176/Q176409/
+permalink: /kb/176/Q176409/
 ---
 
 ## Q176409: XADM: Internet Newsgroup Public Folder Becomes Visible

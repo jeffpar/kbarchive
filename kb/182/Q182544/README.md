@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182544: Memory Leaks, Database Corruption, Event Logging"
-permalink: kb/182/Q182544/
+permalink: /kb/182/Q182544/
 ---
 
 ## Q182544: Memory Leaks, Database Corruption, Event Logging

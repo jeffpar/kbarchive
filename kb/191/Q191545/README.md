@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191545: Urban Assault Err Msg: Please Insert the Urban Assault CD"
-permalink: kb/191/Q191545/
+permalink: /kb/191/Q191545/
 ---
 
 ## Q191545: Urban Assault Err Msg: Please Insert the Urban Assault CD

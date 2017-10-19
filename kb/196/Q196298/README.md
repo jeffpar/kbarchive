@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196298: Characters May Print Over Each Other When Using Print Server"
-permalink: kb/196/Q196298/
+permalink: /kb/196/Q196298/
 ---
 
 ## Q196298: Characters May Print Over Each Other When Using Print Server

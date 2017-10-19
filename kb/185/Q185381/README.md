@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185381: How to Give Remote Web Site Operators Access to New Web Site"
-permalink: kb/185/Q185381/
+permalink: /kb/185/Q185381/
 ---
 
 ## Q185381: How to Give Remote Web Site Operators Access to New Web Site

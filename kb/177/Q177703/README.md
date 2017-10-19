@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177703: FIX: Access Violation with Public Enums in UserControl"
-permalink: kb/177/Q177703/
+permalink: /kb/177/Q177703/
 ---
 
 ## Q177703: FIX: Access Violation with Public Enums in UserControl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100178: PaintBrush May Be Unable to Paste and Save 256-Color Images"
-permalink: kb/100/Q100178/
+permalink: /kb/100/Q100178/
 ---
 
 ## Q100178: PaintBrush May Be Unable to Paste and Save 256-Color Images

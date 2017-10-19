@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69185: Windows Err Msg: Cannot Run Windows in Standard Mode (LANMAN)"
-permalink: kb/069/Q69185/
+permalink: /kb/069/Q69185/
 ---
 
 ## Q69185: Windows Err Msg: Cannot Run Windows in Standard Mode (LANMAN)

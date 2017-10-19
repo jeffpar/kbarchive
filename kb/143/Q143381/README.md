@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143381: XCLN: New Mail Notification Not Visible with Screen Saver"
-permalink: kb/143/Q143381/
+permalink: /kb/143/Q143381/
 ---
 
 ## Q143381: XCLN: New Mail Notification Not Visible with Screen Saver

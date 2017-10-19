@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235504: XFOR: Warning Event ID 31043 Logged by GroupWise Connector"
-permalink: kb/235/Q235504/
+permalink: /kb/235/Q235504/
 ---
 
 ## Q235504: XFOR: Warning Event ID 31043 Logged by GroupWise Connector

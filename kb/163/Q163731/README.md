@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163731: WD97: Bullets and Horizontal Lines Lost After Save to FTP Server"
-permalink: kb/163/Q163731/
+permalink: /kb/163/Q163731/
 ---
 
 ## Q163731: WD97: Bullets and Horizontal Lines Lost After Save to FTP Server

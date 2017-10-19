@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193765: HOWTO: Using Visual FoxPro Online Help Without Installing MSDN"
-permalink: kb/193/Q193765/
+permalink: /kb/193/Q193765/
 ---
 
 ## Q193765: HOWTO: Using Visual FoxPro Online Help Without Installing MSDN

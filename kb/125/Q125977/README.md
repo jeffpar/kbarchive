@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125977: Installing Windows NT Server As a BDC Fails"
-permalink: kb/125/Q125977/
+permalink: /kb/125/Q125977/
 ---
 
 ## Q125977: Installing Windows NT Server As a BDC Fails

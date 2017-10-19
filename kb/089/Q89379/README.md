@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89379: APPEND.EXE Causes Problems in All Versions of Windows"
-permalink: kb/089/Q89379/
+permalink: /kb/089/Q89379/
 ---
 
 ## Q89379: APPEND.EXE Causes Problems in All Versions of Windows

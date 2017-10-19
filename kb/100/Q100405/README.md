@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100405: Microsoft Undelete for Windows Fails to Find Deleted Files"
-permalink: kb/100/Q100405/
+permalink: /kb/100/Q100405/
 ---
 
 ## Q100405: Microsoft Undelete for Windows Fails to Find Deleted Files

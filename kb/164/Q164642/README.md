@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164642: SNANLS API Problems Using Far-East Codepages"
-permalink: kb/164/Q164642/
+permalink: /kb/164/Q164642/
 ---
 
 ## Q164642: SNANLS API Problems Using Far-East Codepages

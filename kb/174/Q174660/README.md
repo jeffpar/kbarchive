@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174660: Err Msg: Engct Caused Invalid Page Fault in Module Tcpconn.dll"
-permalink: kb/174/Q174660/
+permalink: /kb/174/Q174660/
 ---
 
 ## Q174660: Err Msg: Engct Caused Invalid Page Fault in Module Tcpconn.dll

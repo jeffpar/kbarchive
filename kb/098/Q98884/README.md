@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98884: Recover from 20CLEAN.CMD when Upgrading from LAN Man 2.1"
-permalink: kb/098/Q98884/
+permalink: /kb/098/Q98884/
 ---
 
 ## Q98884: Recover from 20CLEAN.CMD when Upgrading from LAN Man 2.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235997: SSIExecDisable Does Not Work after Applying Windows NT SP4"
-permalink: kb/235/Q235997/
+permalink: /kb/235/Q235997/
 ---
 
 ## Q235997: SSIExecDisable Does Not Work after Applying Windows NT SP4

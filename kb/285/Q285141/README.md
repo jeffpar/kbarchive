@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285141: Troubleshooting Your PC Comments and Corrections"
-permalink: kb/285/Q285141/
+permalink: /kb/285/Q285141/
 ---
 
 ## Q285141: Troubleshooting Your PC Comments and Corrections

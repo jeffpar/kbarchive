@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233177: Enable Point to Point IP and IP Packet Size Options Missing"
-permalink: kb/233/Q233177/
+permalink: /kb/233/Q233177/
 ---
 
 ## Q233177: Enable Point to Point IP and IP Packet Size Options Missing

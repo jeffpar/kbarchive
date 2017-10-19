@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224186: Access Violation Selecting More Than 32,767 Objects in Windows N"
-permalink: kb/224/Q224186/
+permalink: /kb/224/Q224186/
 ---
 
 ## Q224186: Access Violation Selecting More Than 32,767 Objects in Windows N

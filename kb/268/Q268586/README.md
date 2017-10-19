@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268586: SMS: SMS 2.0 Clients Do Not Complete Installation Due to a Space"
-permalink: kb/268/Q268586/
+permalink: /kb/268/Q268586/
 ---
 
 ## Q268586: SMS: SMS 2.0 Clients Do Not Complete Installation Due to a Space

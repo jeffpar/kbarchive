@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175376: Connected User Names Disappear from List on SBS"
-permalink: kb/175/Q175376/
+permalink: /kb/175/Q175376/
 ---
 
 ## Q175376: Connected User Names Disappear from List on SBS

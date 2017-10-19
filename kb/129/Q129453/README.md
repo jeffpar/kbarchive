@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129453: Explorapedia: Error Messages When Running Explorapedia"
-permalink: kb/129/Q129453/
+permalink: /kb/129/Q129453/
 ---
 
 ## Q129453: Explorapedia: Error Messages When Running Explorapedia

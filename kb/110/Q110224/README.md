@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110224: PC Gen: PODIAG.EXE Command-Line Options"
-permalink: kb/110/Q110224/
+permalink: /kb/110/Q110224/
 ---
 
 ## Q110224: PC Gen: PODIAG.EXE Command-Line Options

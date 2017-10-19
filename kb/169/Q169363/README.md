@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169363: DOC Err: SNMP OIDs Leave off Leading Dot"
-permalink: kb/169/Q169363/
+permalink: /kb/169/Q169363/
 ---
 
 ## Q169363: DOC Err: SNMP OIDs Leave off Leading Dot

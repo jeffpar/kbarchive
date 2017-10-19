@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219192: FP: Publishing to UNIX May Produce Broken Hyperlinks"
-permalink: kb/219/Q219192/
+permalink: /kb/219/Q219192/
 ---
 
 ## Q219192: FP: Publishing to UNIX May Produce Broken Hyperlinks

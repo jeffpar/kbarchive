@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84954: Windows 3.1 Maintenance Mode Setup Asks for Disk in Drive A"
-permalink: kb/084/Q84954/
+permalink: /kb/084/Q84954/
 ---
 
 ## Q84954: Windows 3.1 Maintenance Mode Setup Asks for Disk in Drive A

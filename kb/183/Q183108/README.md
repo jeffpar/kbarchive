@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183108: WD97: Err Msg: &quot;Setup Could Not Open the File: Ie4setup.exe&quot;"
-permalink: kb/183/Q183108/
+permalink: /kb/183/Q183108/
 ---
 
 ## Q183108: WD97: Err Msg: &quot;Setup Could Not Open the File: Ie4setup.exe&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155701: Invalid UDP Frames May Cause WINS to Terminate"
-permalink: kb/155/Q155701/
+permalink: /kb/155/Q155701/
 ---
 
 ## Q155701: Invalid UDP Frames May Cause WINS to Terminate

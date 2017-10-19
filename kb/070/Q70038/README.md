@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70038: Using QRAM.SYS with Microsoft Windows 3.0"
-permalink: kb/070/Q70038/
+permalink: /kb/070/Q70038/
 ---
 
 ## Q70038: Using QRAM.SYS with Microsoft Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39310: INFO: Selective Initialization of Array Elements Not Allowed"
-permalink: kb/039/Q39310/
+permalink: /kb/039/Q39310/
 ---
 
 ## Q39310: INFO: Selective Initialization of Array Elements Not Allowed

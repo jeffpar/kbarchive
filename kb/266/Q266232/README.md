@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266232: Windows 9x Clients Hang When Remote Control Agent Is Installed"
-permalink: kb/266/Q266232/
+permalink: /kb/266/Q266232/
 ---
 
 ## Q266232: Windows 9x Clients Hang When Remote Control Agent Is Installed

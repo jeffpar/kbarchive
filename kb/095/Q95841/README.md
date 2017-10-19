@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95841: The Four Levels of Font Embedding in Windows"
-permalink: kb/095/Q95841/
+permalink: /kb/095/Q95841/
 ---
 
 ## Q95841: The Four Levels of Font Embedding in Windows

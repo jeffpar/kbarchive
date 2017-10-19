@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154378: Tooltips Slow to Appear"
-permalink: kb/154/Q154378/
+permalink: /kb/154/Q154378/
 ---
 
 ## Q154378: Tooltips Slow to Appear

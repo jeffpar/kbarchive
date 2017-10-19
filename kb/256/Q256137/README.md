@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256137: Cannot Log Off or Shut Down a Windows NT Server"
-permalink: kb/256/Q256137/
+permalink: /kb/256/Q256137/
 ---
 
 ## Q256137: Cannot Log Off or Shut Down a Windows NT Server

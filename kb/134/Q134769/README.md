@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134769: System Agent Does Not Shut Down Startup Tasks"
-permalink: kb/134/Q134769/
+permalink: /kb/134/Q134769/
 ---
 
 ## Q134769: System Agent Does Not Shut Down Startup Tasks

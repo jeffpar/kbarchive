@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135628: PRB: Disabled Grid Column Allows Focus with Mouse Click"
-permalink: kb/135/Q135628/
+permalink: /kb/135/Q135628/
 ---
 
 ## Q135628: PRB: Disabled Grid Column Allows Focus with Mouse Click

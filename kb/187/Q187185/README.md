@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187185: Users Cannot Customize Application Shortcuts"
-permalink: kb/187/Q187185/
+permalink: /kb/187/Q187185/
 ---
 
 ## Q187185: Users Cannot Customize Application Shortcuts

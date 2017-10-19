@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137552: Monitor Service Generates Event 7005"
-permalink: kb/137/Q137552/
+permalink: /kb/137/Q137552/
 ---
 
 ## Q137552: Monitor Service Generates Event 7005

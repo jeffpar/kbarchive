@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163905: Auditing User Right Assignment Changes"
-permalink: kb/163/Q163905/
+permalink: /kb/163/Q163905/
 ---
 
 ## Q163905: Auditing User Right Assignment Changes

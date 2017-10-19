@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85180: Windows 3.1 Screen Savers Do Not Run with Tutorial Active"
-permalink: kb/085/Q85180/
+permalink: /kb/085/Q85180/
 ---
 
 ## Q85180: Windows 3.1 Screen Savers Do Not Run with Tutorial Active

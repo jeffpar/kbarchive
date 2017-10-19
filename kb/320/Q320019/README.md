@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320019: Dungeon Siege: Known Video Issues"
-permalink: kb/320/Q320019/
+permalink: /kb/320/Q320019/
 ---
 
 ## Q320019: Dungeon Siege: Known Video Issues

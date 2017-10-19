@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161868: WD97: Captions in Text Boxes Not Updated Correctly"
-permalink: kb/161/Q161868/
+permalink: /kb/161/Q161868/
 ---
 
 ## Q161868: WD97: Captions in Text Boxes Not Updated Correctly

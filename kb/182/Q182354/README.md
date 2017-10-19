@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182354: PRB: Jet Text IISAM Driver Drops Leading Spaces"
-permalink: kb/182/Q182354/
+permalink: /kb/182/Q182354/
 ---
 
 ## Q182354: PRB: Jet Text IISAM Driver Drops Leading Spaces

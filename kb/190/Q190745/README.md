@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190745: Manager Does Not Show Details View for TN3270 and Print Server"
-permalink: kb/190/Q190745/
+permalink: /kb/190/Q190745/
 ---
 
 ## Q190745: Manager Does Not Show Details View for TN3270 and Print Server

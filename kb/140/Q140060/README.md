@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140060: Error Accessing Floppy Disks Using Windows NT"
-permalink: kb/140/Q140060/
+permalink: /kb/140/Q140060/
 ---
 
 ## Q140060: Error Accessing Floppy Disks Using Windows NT

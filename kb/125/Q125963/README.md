@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125963: IPCONFIG Shows Leftover DHCP Parameters On Non-DHCP Clients"
-permalink: kb/125/Q125963/
+permalink: /kb/125/Q125963/
 ---
 
 ## Q125963: IPCONFIG Shows Leftover DHCP Parameters On Non-DHCP Clients

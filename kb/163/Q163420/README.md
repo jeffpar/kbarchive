@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163420: FIX: Running JOIN on Three or More Tables is Slow"
-permalink: kb/163/Q163420/
+permalink: /kb/163/Q163420/
 ---
 
 ## Q163420: FIX: Running JOIN on Three or More Tables is Slow

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142233: No Password Prompt After Network Adapter Is Detected"
-permalink: kb/142/Q142233/
+permalink: /kb/142/Q142233/
 ---
 
 ## Q142233: No Password Prompt After Network Adapter Is Detected

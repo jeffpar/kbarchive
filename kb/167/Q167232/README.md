@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167232: STOP:0x0000000A While Using HP NetServer Assistant 2.5"
-permalink: kb/167/Q167232/
+permalink: /kb/167/Q167232/
 ---
 
 ## Q167232: STOP:0x0000000A While Using HP NetServer Assistant 2.5

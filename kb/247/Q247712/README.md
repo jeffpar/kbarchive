@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247712: Wlbs.exe Generates Incorrect Information on Cluster Status"
-permalink: kb/247/Q247712/
+permalink: /kb/247/Q247712/
 ---
 
 ## Q247712: Wlbs.exe Generates Incorrect Information on Cluster Status

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255987: Service Pack Requires Logon with Local Administrative Rights"
-permalink: kb/255/Q255987/
+permalink: /kb/255/Q255987/
 ---
 
 ## Q255987: Service Pack Requires Logon with Local Administrative Rights

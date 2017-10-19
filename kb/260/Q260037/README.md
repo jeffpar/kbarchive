@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260037: XADM: How to Remove a Message from Exchange by Using ExMerge"
-permalink: kb/260/Q260037/
+permalink: /kb/260/Q260037/
 ---
 
 ## Q260037: XADM: How to Remove a Message from Exchange by Using ExMerge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163297: XCON: MTA Taking a Long Time to Start"
-permalink: kb/163/Q163297/
+permalink: /kb/163/Q163297/
 ---
 
 ## Q163297: XCON: MTA Taking a Long Time to Start

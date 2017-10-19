@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69835: Epson Equity III Does Not Run Standard Mode"
-permalink: kb/069/Q69835/
+permalink: /kb/069/Q69835/
 ---
 
 ## Q69835: Epson Equity III Does Not Run Standard Mode

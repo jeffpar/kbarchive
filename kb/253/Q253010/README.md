@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253010: FIX: Busy Connections Leave Cursors Open"
-permalink: kb/253/Q253010/
+permalink: /kb/253/Q253010/
 ---
 
 ## Q253010: FIX: Busy Connections Leave Cursors Open

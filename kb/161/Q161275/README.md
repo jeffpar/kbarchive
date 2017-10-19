@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161275: Interaction of File and Folder Security on NTFS Volumes"
-permalink: kb/161/Q161275/
+permalink: /kb/161/Q161275/
 ---
 
 ## Q161275: Interaction of File and Folder Security on NTFS Volumes

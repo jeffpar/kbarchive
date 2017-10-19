@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257223: SMS: SMS Clients Do Not Release Netware Licenses"
-permalink: kb/257/Q257223/
+permalink: /kb/257/Q257223/
 ---
 
 ## Q257223: SMS: SMS Clients Do Not Release Netware Licenses

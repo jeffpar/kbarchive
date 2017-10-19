@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83507: Using Dell Notebooks with External Monitors"
-permalink: kb/083/Q83507/
+permalink: /kb/083/Q83507/
 ---
 
 ## Q83507: Using Dell Notebooks with External Monitors

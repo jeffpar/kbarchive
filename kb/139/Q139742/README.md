@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139742: Cannot Print Hard Copy of Billing Statement"
-permalink: kb/139/Q139742/
+permalink: /kb/139/Q139742/
 ---
 
 ## Q139742: Cannot Print Hard Copy of Billing Statement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186360: PRB: Visual Merge Doesn't Happen When Expected"
-permalink: kb/186/Q186360/
+permalink: /kb/186/Q186360/
 ---
 
 ## Q186360: PRB: Visual Merge Doesn't Happen When Expected

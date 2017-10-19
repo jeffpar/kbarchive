@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148890: Mastering Series Titles: Title Cut Off in Setup Dialogs"
-permalink: kb/148/Q148890/
+permalink: /kb/148/Q148890/
 ---
 
 ## Q148890: Mastering Series Titles: Title Cut Off in Setup Dialogs

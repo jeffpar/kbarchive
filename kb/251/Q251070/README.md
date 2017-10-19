@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251070: SMS: Copylog.tcf Does Not Show Site that Updated Logon Point"
-permalink: kb/251/Q251070/
+permalink: /kb/251/Q251070/
 ---
 
 ## Q251070: SMS: Copylog.tcf Does Not Show Site that Updated Logon Point

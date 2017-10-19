@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118874: Command-Line Options for MVIEWER2.EXE"
-permalink: kb/118/Q118874/
+permalink: /kb/118/Q118874/
 ---
 
 ## Q118874: Command-Line Options for MVIEWER2.EXE

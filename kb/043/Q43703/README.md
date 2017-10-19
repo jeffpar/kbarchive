@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43703: INFO: Casting a Pointer to Type Equivalent to Multidimensional"
-permalink: kb/043/Q43703/
+permalink: /kb/043/Q43703/
 ---
 
 ## Q43703: INFO: Casting a Pointer to Type Equivalent to Multidimensional

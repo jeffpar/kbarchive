@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127868: XGEN: Supported CCITT and ISO Standards"
-permalink: kb/127/Q127868/
+permalink: /kb/127/Q127868/
 ---
 
 ## Q127868: XGEN: Supported CCITT and ISO Standards

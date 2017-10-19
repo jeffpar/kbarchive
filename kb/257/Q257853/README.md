@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257853: PRB: Problem When You Call ITC Execute from Form_Load"
-permalink: kb/257/Q257853/
+permalink: /kb/257/Q257853/
 ---
 
 ## Q257853: PRB: Problem When You Call ITC Execute from Form_Load

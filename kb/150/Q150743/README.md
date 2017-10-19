@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150743: Cannot Use DISKCOPY Command on Identical 3.5-Inch Disk Drives"
-permalink: kb/150/Q150743/
+permalink: /kb/150/Q150743/
 ---
 
 ## Q150743: Cannot Use DISKCOPY Command on Identical 3.5-Inch Disk Drives

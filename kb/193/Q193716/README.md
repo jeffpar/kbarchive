@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193716: WD97: How to Use Microsoft Access 97 Data in Word"
-permalink: kb/193/Q193716/
+permalink: /kb/193/Q193716/
 ---
 
 ## Q193716: WD97: How to Use Microsoft Access 97 Data in Word

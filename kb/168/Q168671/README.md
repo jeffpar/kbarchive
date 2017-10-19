@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168671: Cannot Connect to MSN Using Dial-Up Internet Provider or LAN"
-permalink: kb/168/Q168671/
+permalink: /kb/168/Q168671/
 ---
 
 ## Q168671: Cannot Connect to MSN Using Dial-Up Internet Provider or LAN

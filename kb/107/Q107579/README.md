@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107579: Novell: Direct Hosting Works on ODI Drivers Only"
-permalink: kb/107/Q107579/
+permalink: /kb/107/Q107579/
 ---
 
 ## Q107579: Novell: Direct Hosting Works on ODI Drivers Only

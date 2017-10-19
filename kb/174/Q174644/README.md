@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174644: Perfmon Degrades SNA Server When Many 3270 LUs in Use"
-permalink: kb/174/Q174644/
+permalink: /kb/174/Q174644/
 ---
 
 ## Q174644: Perfmon Degrades SNA Server When Many 3270 LUs in Use

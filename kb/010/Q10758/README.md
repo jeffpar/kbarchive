@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10758: Managing Memory with calloc() and malloc()"
-permalink: kb/010/Q10758/
+permalink: /kb/010/Q10758/
 ---
 
 ## Q10758: Managing Memory with calloc() and malloc()

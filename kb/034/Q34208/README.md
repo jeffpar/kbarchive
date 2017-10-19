@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q34208: LINK /OV[ERLAYINTERRUPT] Option, Valid Interrupt Numbers"
-permalink: kb/034/Q34208/
+title: "Q34208: LINK /OV&#91;ERLAYINTERRUPT&#93; Option, Valid Interrupt Numbers"
+permalink: /kb/034/Q34208/
 ---
 
-## Q34208: LINK /OV[ERLAYINTERRUPT] Option, Valid Interrupt Numbers
+## Q34208: LINK /OV&#91;ERLAYINTERRUPT&#93; Option, Valid Interrupt Numbers
 
 	Article: Q34208
 	Product(s): Microsoft Programming Utilities

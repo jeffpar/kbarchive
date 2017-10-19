@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161559: Executing Perl Scripts Generates 403 Access Forbidden Error"
-permalink: kb/161/Q161559/
+permalink: /kb/161/Q161559/
 ---
 
 ## Q161559: Executing Perl Scripts Generates 403 Access Forbidden Error

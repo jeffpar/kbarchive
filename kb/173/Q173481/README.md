@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173481: XADM: PerfWiz Reports Multiple Errors when Moving Files"
-permalink: kb/173/Q173481/
+permalink: /kb/173/Q173481/
 ---
 
 ## Q173481: XADM: PerfWiz Reports Multiple Errors when Moving Files

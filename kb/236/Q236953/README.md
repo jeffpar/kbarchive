@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236953: Printer Sessions Status Not Updated in SNA Manager"
-permalink: kb/236/Q236953/
+permalink: /kb/236/Q236953/
 ---
 
 ## Q236953: Printer Sessions Status Not Updated in SNA Manager

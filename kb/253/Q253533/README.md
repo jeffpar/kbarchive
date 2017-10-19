@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253533: Using the Person Entry Count to Determine the Number of Users"
-permalink: kb/253/Q253533/
+permalink: /kb/253/Q253533/
 ---
 
 ## Q253533: Using the Person Entry Count to Determine the Number of Users

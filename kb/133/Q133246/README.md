@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133246: How to Install VFP300.ESL in a Distributed Application"
-permalink: kb/133/Q133246/
+permalink: /kb/133/Q133246/
 ---
 
 ## Q133246: How to Install VFP300.ESL in a Distributed Application

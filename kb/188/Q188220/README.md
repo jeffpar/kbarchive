@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188220: NTOP May Cause Win95 Clients To Fail When Using CMAK"
-permalink: kb/188/Q188220/
+permalink: /kb/188/Q188220/
 ---
 
 ## Q188220: NTOP May Cause Win95 Clients To Fail When Using CMAK

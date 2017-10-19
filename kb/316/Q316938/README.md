@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316938: Active Server Pages with ODBC Driver for DB2 Causes Creation of"
-permalink: kb/316/Q316938/
+permalink: /kb/316/Q316938/
 ---
 
 ## Q316938: Active Server Pages with ODBC Driver for DB2 Causes Creation of

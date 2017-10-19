@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256936: SMS: Showgrps Tool Added to Support.exe in Service Pack 2"
-permalink: kb/256/Q256936/
+permalink: /kb/256/Q256936/
 ---
 
 ## Q256936: SMS: Showgrps Tool Added to Support.exe in Service Pack 2

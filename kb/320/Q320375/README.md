@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320375: HOW TO: Create GUIDs by Using Active Server Pages in IIS"
-permalink: kb/320/Q320375/
+permalink: /kb/320/Q320375/
 ---
 
 ## Q320375: HOW TO: Create GUIDs by Using Active Server Pages in IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223492: Registry Size Increases After Installing Outlook Express 5"
-permalink: kb/223/Q223492/
+permalink: /kb/223/Q223492/
 ---
 
 ## Q223492: Registry Size Increases After Installing Outlook Express 5

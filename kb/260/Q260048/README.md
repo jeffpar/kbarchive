@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260048: PRB: Grid Becomes Empty When Changing DataSession"
-permalink: kb/260/Q260048/
+permalink: /kb/260/Q260048/
 ---
 
 ## Q260048: PRB: Grid Becomes Empty When Changing DataSession

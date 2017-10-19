@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293638: BUG: Header Corruption Causes END TRANSACTION to Discard Appends"
-permalink: kb/293/Q293638/
+permalink: /kb/293/Q293638/
 ---
 
 ## Q293638: BUG: Header Corruption Causes END TRANSACTION to Discard Appends

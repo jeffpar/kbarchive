@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97600: Printed Colors Different than on Screen: Blue is Purple, etc."
-permalink: kb/097/Q97600/
+permalink: /kb/097/Q97600/
 ---
 
 ## Q97600: Printed Colors Different than on Screen: Blue is Purple, etc.

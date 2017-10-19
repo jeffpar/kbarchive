@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189477: Linkutil.exe May Display Link Service Properties Incorrectly"
-permalink: kb/189/Q189477/
+permalink: /kb/189/Q189477/
 ---
 
 ## Q189477: Linkutil.exe May Display Link Service Properties Incorrectly

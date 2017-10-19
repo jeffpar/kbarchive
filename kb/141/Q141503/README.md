@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141503: FIX: Can't Connect to Excel Data Source in Remote View Wizard"
-permalink: kb/141/Q141503/
+permalink: /kb/141/Q141503/
 ---
 
 ## Q141503: FIX: Can't Connect to Excel Data Source in Remote View Wizard

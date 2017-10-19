@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191129: FIX: Menu Merge Problem with Server in Active Doc Container"
-permalink: kb/191/Q191129/
+permalink: /kb/191/Q191129/
 ---
 
 ## Q191129: FIX: Menu Merge Problem with Server in Active Doc Container

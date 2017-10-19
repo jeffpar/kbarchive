@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150611: Qvision 2000 and Matrox Mga Ultima Cause Access Violation"
-permalink: kb/150/Q150611/
+permalink: /kb/150/Q150611/
 ---
 
 ## Q150611: Qvision 2000 and Matrox Mga Ultima Cause Access Violation

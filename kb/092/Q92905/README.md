@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92905: DlgTab.exe - Infinite Loop Moving Through Dialog Ctrl"
-permalink: kb/092/Q92905/
+permalink: /kb/092/Q92905/
 ---
 
 ## Q92905: DlgTab.exe - Infinite Loop Moving Through Dialog Ctrl

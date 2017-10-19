@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240638: World Atlas 2000: Character in Favorite Name Appears As a Dash"
-permalink: kb/240/Q240638/
+permalink: /kb/240/Q240638/
 ---
 
 ## Q240638: World Atlas 2000: Character in Favorite Name Appears As a Dash

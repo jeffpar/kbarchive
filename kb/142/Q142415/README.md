@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142415: PRB: MFC Message Handler Not Called with PostThreadMessage()"
-permalink: kb/142/Q142415/
+permalink: /kb/142/Q142415/
 ---
 
 ## Q142415: PRB: MFC Message Handler Not Called with PostThreadMessage()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65893: HP LaserJet Series II Family Printers Do Not Shade Text"
-permalink: kb/065/Q65893/
+permalink: /kb/065/Q65893/
 ---
 
 ## Q65893: HP LaserJet Series II Family Printers Do Not Shade Text

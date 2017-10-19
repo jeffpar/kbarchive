@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182581: Runtime Error: Attempt to Initialize Tagen.dll Fails"
-permalink: kb/182/Q182581/
+permalink: /kb/182/Q182581/
 ---
 
 ## Q182581: Runtime Error: Attempt to Initialize Tagen.dll Fails

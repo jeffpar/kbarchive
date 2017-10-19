@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164983: HOWTO: Do Asynchronous WinInet with MFC Classes"
-permalink: kb/164/Q164983/
+permalink: /kb/164/Q164983/
 ---
 
 ## Q164983: HOWTO: Do Asynchronous WinInet with MFC Classes

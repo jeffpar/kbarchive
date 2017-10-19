@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300606: HOWTO: Design a Resizable MFC Property Sheet"
-permalink: kb/300/Q300606/
+permalink: /kb/300/Q300606/
 ---
 
 ## Q300606: HOWTO: Design a Resizable MFC Property Sheet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182964: XADM: Unable to Access Others' Schedules"
-permalink: kb/182/Q182964/
+permalink: /kb/182/Q182964/
 ---
 
 ## Q182964: XADM: Unable to Access Others' Schedules

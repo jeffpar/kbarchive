@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134512: Problems Installing Hardware Drivers Across NetWare Network"
-permalink: kb/134/Q134512/
+permalink: /kb/134/Q134512/
 ---
 
 ## Q134512: Problems Installing Hardware Drivers Across NetWare Network

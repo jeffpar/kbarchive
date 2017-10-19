@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86758: Disabling Print Manager in (WIN.SRC) Source File"
-permalink: kb/086/Q86758/
+permalink: /kb/086/Q86758/
 ---
 
 ## Q86758: Disabling Print Manager in (WIN.SRC) Source File

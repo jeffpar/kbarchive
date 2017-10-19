@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196404: XADM: Load Simulator Missing in Exchange Server 5.5"
-permalink: kb/196/Q196404/
+permalink: /kb/196/Q196404/
 ---
 
 ## Q196404: XADM: Load Simulator Missing in Exchange Server 5.5

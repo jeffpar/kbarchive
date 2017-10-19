@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88140: DOCERR: &quot;Guide to Programming&quot; DLL Example Incorrect"
-permalink: kb/088/Q88140/
+permalink: /kb/088/Q88140/
 ---
 
 ## Q88140: DOCERR: &quot;Guide to Programming&quot; DLL Example Incorrect

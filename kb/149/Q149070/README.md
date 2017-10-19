@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149070: 3D Movie Maker: Files Installed by 3D Movie Maker"
-permalink: kb/149/Q149070/
+permalink: /kb/149/Q149070/
 ---
 
 ## Q149070: 3D Movie Maker: Files Installed by 3D Movie Maker

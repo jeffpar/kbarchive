@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174050: HOWTO: Determine File Type from Registered CLSID"
-permalink: kb/174/Q174050/
+permalink: /kb/174/Q174050/
 ---
 
 ## Q174050: HOWTO: Determine File Type from Registered CLSID

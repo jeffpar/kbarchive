@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148383: BUG: INTENT(OUT) Allows Subroutine to Use Undefined Argument"
-permalink: kb/148/Q148383/
+permalink: /kb/148/Q148383/
 ---
 
 ## Q148383: BUG: INTENT(OUT) Allows Subroutine to Use Undefined Argument

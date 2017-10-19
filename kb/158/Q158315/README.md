@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158315: Multiprocessor failure with Adaptec 2940"
-permalink: kb/158/Q158315/
+permalink: /kb/158/Q158315/
 ---
 
 ## Q158315: Multiprocessor failure with Adaptec 2940

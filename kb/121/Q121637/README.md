@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121637: Summary List of MS-DOS 6.22 Confirmed Bugs"
-permalink: kb/121/Q121637/
+permalink: /kb/121/Q121637/
 ---
 
 ## Q121637: Summary List of MS-DOS 6.22 Confirmed Bugs

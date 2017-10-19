@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100013: Defrag Reports Unmovable Block Without Any Hidden/System Files"
-permalink: kb/100/Q100013/
+permalink: /kb/100/Q100013/
 ---
 
 ## Q100013: Defrag Reports Unmovable Block Without Any Hidden/System Files

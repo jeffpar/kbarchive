@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171317: Upgrade WinNT to 4.0 May Hang with Trident 94XX AGI Video Card"
-permalink: kb/171/Q171317/
+permalink: /kb/171/Q171317/
 ---
 
 ## Q171317: Upgrade WinNT to 4.0 May Hang with Trident 94XX AGI Video Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121242: HOWTO: Produce a List of Other Applications Running in Windows"
-permalink: kb/121/Q121242/
+permalink: /kb/121/Q121242/
 ---
 
 ## Q121242: HOWTO: Produce a List of Other Applications Running in Windows

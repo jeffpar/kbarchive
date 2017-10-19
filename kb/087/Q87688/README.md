@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87688: PRB: &quot;Not a Database File&quot; Error Using a Database File"
-permalink: kb/087/Q87688/
+permalink: /kb/087/Q87688/
 ---
 
 ## Q87688: PRB: &quot;Not a Database File&quot; Error Using a Database File

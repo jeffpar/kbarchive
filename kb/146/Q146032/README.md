@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146032: XCON: MTA: Invalid Originator Address When Sending to X.400"
-permalink: kb/146/Q146032/
+permalink: /kb/146/Q146032/
 ---
 
 ## Q146032: XCON: MTA: Invalid Originator Address When Sending to X.400

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179140: BUG: &quot;Too Many Local, Nonstatic Variables&quot; Error Message"
-permalink: kb/179/Q179140/
+permalink: /kb/179/Q179140/
 ---
 
 ## Q179140: BUG: &quot;Too Many Local, Nonstatic Variables&quot; Error Message

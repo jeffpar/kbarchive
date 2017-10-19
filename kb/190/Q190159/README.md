@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190159: Returning Username Rather than Computername in Terminal Server"
-permalink: kb/190/Q190159/
+permalink: /kb/190/Q190159/
 ---
 
 ## Q190159: Returning Username Rather than Computername in Terminal Server

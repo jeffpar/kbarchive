@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220943: SNA Server Unattended Setup Parameter ServerLoginDomain"
-permalink: kb/220/Q220943/
+permalink: /kb/220/Q220943/
 ---
 
 ## Q220943: SNA Server Unattended Setup Parameter ServerLoginDomain

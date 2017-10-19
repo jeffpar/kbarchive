@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221428: XFOR: Mail Forwarded from GroupWise to Exchange Loses Flag"
-permalink: kb/221/Q221428/
+permalink: /kb/221/Q221428/
 ---
 
 ## Q221428: XFOR: Mail Forwarded from GroupWise to Exchange Loses Flag

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q24962: &lt;constant&gt; and [&lt;constant&gt;] Are Semantically the Same"
-permalink: kb/024/Q24962/
+title: "Q24962: &lt;constant&gt; and &#91;&lt;constant&gt;&#93; Are Semantically the Same"
+permalink: /kb/024/Q24962/
 ---
 
-## Q24962: &lt;constant&gt; and [&lt;constant&gt;] Are Semantically the Same
+## Q24962: &lt;constant&gt; and &#91;&lt;constant&gt;&#93; Are Semantically the Same
 
 	Article: Q24962
 	Product(s): Microsoft Macro Assembler

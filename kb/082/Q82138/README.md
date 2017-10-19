@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82138: IBM Personal Printer 2380 &amp; 2381 Available for Windows"
-permalink: kb/082/Q82138/
+permalink: /kb/082/Q82138/
 ---
 
 ## Q82138: IBM Personal Printer 2380 &amp; 2381 Available for Windows

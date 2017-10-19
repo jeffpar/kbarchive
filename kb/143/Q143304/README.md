@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143304: Content of the README.HLP That Ships with Visual FoxPro 3.0b"
-permalink: kb/143/Q143304/
+permalink: /kb/143/Q143304/
 ---
 
 ## Q143304: Content of the README.HLP That Ships with Visual FoxPro 3.0b

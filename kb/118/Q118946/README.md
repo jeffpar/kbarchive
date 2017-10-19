@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118946: PC Ext: What Is the RNETSEM.GLB?"
-permalink: kb/118/Q118946/
+permalink: /kb/118/Q118946/
 ---
 
 ## Q118946: PC Ext: What Is the RNETSEM.GLB?

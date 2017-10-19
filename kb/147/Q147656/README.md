@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147656: Updated Backup Corrects Erasing Data and Memory Manager Errors"
-permalink: kb/147/Q147656/
+permalink: /kb/147/Q147656/
 ---
 
 ## Q147656: Updated Backup Corrects Erasing Data and Memory Manager Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182984: Problems Accessing CompuServe from an IBM ThinkPad Computer"
-permalink: kb/182/Q182984/
+permalink: /kb/182/Q182984/
 ---
 
 ## Q182984: Problems Accessing CompuServe from an IBM ThinkPad Computer

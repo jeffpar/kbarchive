@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145953: Unable to Install TCP/IP Protocol and Component After Setup"
-permalink: kb/145/Q145953/
+permalink: /kb/145/Q145953/
 ---
 
 ## Q145953: Unable to Install TCP/IP Protocol and Component After Setup

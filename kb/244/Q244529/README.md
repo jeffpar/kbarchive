@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244529: XADM: Find Recipients in Exchange Admin Does Not Use Wildcards"
-permalink: kb/244/Q244529/
+permalink: /kb/244/Q244529/
 ---
 
 ## Q244529: XADM: Find Recipients in Exchange Admin Does Not Use Wildcards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321084: Dungeon Siege: Game Stops During Startup at Black Screen"
-permalink: kb/321/Q321084/
+permalink: /kb/321/Q321084/
 ---
 
 ## Q321084: Dungeon Siege: Game Stops During Startup at Black Screen

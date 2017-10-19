@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258161: HOWTO: Read a DWORD From the Registry"
-permalink: kb/258/Q258161/
+permalink: /kb/258/Q258161/
 ---
 
 ## Q258161: HOWTO: Read a DWORD From the Registry

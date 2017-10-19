@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140536: PRB: &quot;TDS buffer length too large&quot; Error with SQL Server"
-permalink: kb/140/Q140536/
+permalink: /kb/140/Q140536/
 ---
 
 ## Q140536: PRB: &quot;TDS buffer length too large&quot; Error with SQL Server

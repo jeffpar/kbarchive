@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q52196: Serial Communications Parity Definition"
-permalink: kb/052/Q52196/
+permalink: /kb/052/Q52196/
 ---
 
 ## Q52196: Serial Communications Parity Definition

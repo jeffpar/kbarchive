@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243388: Shared Folders Connections Fail Using Same User ID"
-permalink: kb/243/Q243388/
+permalink: /kb/243/Q243388/
 ---
 
 ## Q243388: Shared Folders Connections Fail Using Same User ID

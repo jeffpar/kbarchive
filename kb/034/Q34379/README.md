@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34379: Making Multiple Initialized Far Data Segments"
-permalink: kb/034/Q34379/
+permalink: /kb/034/Q34379/
 ---
 
 ## Q34379: Making Multiple Initialized Far Data Segments

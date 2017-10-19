@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259204: &quot;Access Is Denied&quot; Error Message Running Winntup.exe"
-permalink: kb/259/Q259204/
+permalink: /kb/259/Q259204/
 ---
 
 ## Q259204: &quot;Access Is Denied&quot; Error Message Running Winntup.exe

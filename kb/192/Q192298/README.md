@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192298: Third Party GINAs May Fail with Service Pack 4 Causing STOP 0x21"
-permalink: kb/192/Q192298/
+permalink: /kb/192/Q192298/
 ---
 
 ## Q192298: Third Party GINAs May Fail with Service Pack 4 Causing STOP 0x21

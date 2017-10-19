@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134572: FOR Command Behaves Differently From Previous MS-DOS Versions"
-permalink: kb/134/Q134572/
+permalink: /kb/134/Q134572/
 ---
 
 ## Q134572: FOR Command Behaves Differently From Previous MS-DOS Versions

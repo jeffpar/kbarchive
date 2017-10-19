@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137125: How to Use IncrementalSearch Property of List and Combo Boxes"
-permalink: kb/137/Q137125/
+permalink: /kb/137/Q137125/
 ---
 
 ## Q137125: How to Use IncrementalSearch Property of List and Combo Boxes

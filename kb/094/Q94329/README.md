@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94329: MS-DOS OEM Setup Doesn't Boot on Tandy 1000TX 286"
-permalink: kb/094/Q94329/
+permalink: /kb/094/Q94329/
 ---
 
 ## Q94329: MS-DOS OEM Setup Doesn't Boot on Tandy 1000TX 286

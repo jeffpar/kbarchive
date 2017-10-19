@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152864: XFOR: Exchange Doesn't Handle Multiple Comments in Addresses"
-permalink: kb/152/Q152864/
+permalink: /kb/152/Q152864/
 ---
 
 ## Q152864: XFOR: Exchange Doesn't Handle Multiple Comments in Addresses

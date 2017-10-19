@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235423: Cannot Open Config File if CPI-C Symbolic Name Has Invalid LU"
-permalink: kb/235/Q235423/
+permalink: /kb/235/Q235423/
 ---
 
 ## Q235423: Cannot Open Config File if CPI-C Symbolic Name Has Invalid LU

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156186: XCLN: Shared Install of Microsoft Exchange NT Client with SMS"
-permalink: kb/156/Q156186/
+permalink: /kb/156/Q156186/
 ---
 
 ## Q156186: XCLN: Shared Install of Microsoft Exchange NT Client with SMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192181: XADM: Renewing User Certificates in Key Management Server"
-permalink: kb/192/Q192181/
+permalink: /kb/192/Q192181/
 ---
 
 ## Q192181: XADM: Renewing User Certificates in Key Management Server

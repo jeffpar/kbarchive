@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202063: SMS: Forced Disconnect Not Available on NW Distribution Servers"
-permalink: kb/202/Q202063/
+permalink: /kb/202/Q202063/
 ---
 
 ## Q202063: SMS: Forced Disconnect Not Available on NW Distribution Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185739: How to Disable Restarting GUI Mode Setup"
-permalink: kb/185/Q185739/
+permalink: /kb/185/Q185739/
 ---
 
 ## Q185739: How to Disable Restarting GUI Mode Setup

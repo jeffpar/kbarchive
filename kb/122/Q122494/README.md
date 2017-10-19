@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122494: Network Storm Caused By Basic Redirector"
-permalink: kb/122/Q122494/
+permalink: /kb/122/Q122494/
 ---
 
 ## Q122494: Network Storm Caused By Basic Redirector

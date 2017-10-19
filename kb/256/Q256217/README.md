@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256217: INFO: Free Threaded Marshaler Guidelines"
-permalink: kb/256/Q256217/
+permalink: /kb/256/Q256217/
 ---
 
 ## Q256217: INFO: Free Threaded Marshaler Guidelines

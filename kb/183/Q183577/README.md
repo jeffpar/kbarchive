@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183577: Access Violation in Snaoledb.dll File"
-permalink: kb/183/Q183577/
+permalink: /kb/183/Q183577/
 ---
 
 ## Q183577: Access Violation in Snaoledb.dll File

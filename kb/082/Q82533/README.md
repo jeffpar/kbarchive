@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82533: PackRat 3.0 and Windows 3.1"
-permalink: kb/082/Q82533/
+permalink: /kb/082/Q82533/
 ---
 
 ## Q82533: PackRat 3.0 and Windows 3.1

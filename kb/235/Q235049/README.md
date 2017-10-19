@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235049: Quick Course in Microsoft Publisher 2000 Comments and Correction"
-permalink: kb/235/Q235049/
+permalink: /kb/235/Q235049/
 ---
 
 ## Q235049: Quick Course in Microsoft Publisher 2000 Comments and Correction

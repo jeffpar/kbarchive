@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100947: Port Trapping in Windows 3.0/3.1"
-permalink: kb/100/Q100947/
+permalink: /kb/100/Q100947/
 ---
 
 ## Q100947: Port Trapping in Windows 3.0/3.1

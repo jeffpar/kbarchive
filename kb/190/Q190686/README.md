@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190686: FIX: ATL Server Registration May Fail for Non-Administrators"
-permalink: kb/190/Q190686/
+permalink: /kb/190/Q190686/
 ---
 
 ## Q190686: FIX: ATL Server Registration May Fail for Non-Administrators

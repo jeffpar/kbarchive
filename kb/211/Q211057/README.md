@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q211057: Computer Stops Responding When Your Plane Stalls"
-permalink: kb/211/Q211057/
+permalink: /kb/211/Q211057/
 ---
 
 ## Q211057: Computer Stops Responding When Your Plane Stalls

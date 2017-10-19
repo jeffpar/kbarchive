@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254909: XCON: Connectors Stop with 9301 After Proxy Client Installed"
-permalink: kb/254/Q254909/
+permalink: /kb/254/Q254909/
 ---
 
 ## Q254909: XCON: Connectors Stop with 9301 After Proxy Client Installed

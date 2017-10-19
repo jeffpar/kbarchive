@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169575: Interpreting an FMH-5 Attach for Independent LU 6.2"
-permalink: kb/169/Q169575/
+permalink: /kb/169/Q169575/
 ---
 
 ## Q169575: Interpreting an FMH-5 Attach for Independent LU 6.2

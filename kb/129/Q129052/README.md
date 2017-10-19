@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129052: Missing IntelliType Keyboard Tabs in Windows NT"
-permalink: kb/129/Q129052/
+permalink: /kb/129/Q129052/
 ---
 
 ## Q129052: Missing IntelliType Keyboard Tabs in Windows NT

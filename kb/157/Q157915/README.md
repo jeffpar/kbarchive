@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157915: SMS: Network Monitor Save As Only Saves One Frame"
-permalink: kb/157/Q157915/
+permalink: /kb/157/Q157915/
 ---
 
 ## Q157915: SMS: Network Monitor Save As Only Saves One Frame

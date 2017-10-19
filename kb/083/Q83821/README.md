@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83821: Bookshelf: Windows 3.1 Setup Renames MIDIMAP .CFG"
-permalink: kb/083/Q83821/
+permalink: /kb/083/Q83821/
 ---
 
 ## Q83821: Bookshelf: Windows 3.1 Setup Renames MIDIMAP .CFG

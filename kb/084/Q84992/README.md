@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84992: UMBFILES.COM and Windows Err Msg: Unsupported MS-DOS Version"
-permalink: kb/084/Q84992/
+permalink: /kb/084/Q84992/
 ---
 
 ## Q84992: UMBFILES.COM and Windows Err Msg: Unsupported MS-DOS Version

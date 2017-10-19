@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104594: Tandberg Firmware Versions Required for Windows NT"
-permalink: kb/104/Q104594/
+permalink: /kb/104/Q104594/
 ---
 
 ## Q104594: Tandberg Firmware Versions Required for Windows NT

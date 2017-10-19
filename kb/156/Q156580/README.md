@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156580: INFO: SetAll('Value') Works for Text Boxes in Grids in VFP"
-permalink: kb/156/Q156580/
+permalink: /kb/156/Q156580/
 ---
 
 ## Q156580: INFO: SetAll('Value') Works for Text Boxes in Grids in VFP

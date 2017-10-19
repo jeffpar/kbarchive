@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233319: XCON: INMR01 Record Doesn't Have All Recipient Addresses"
-permalink: kb/233/Q233319/
+permalink: /kb/233/Q233319/
 ---
 
 ## Q233319: XCON: INMR01 Record Doesn't Have All Recipient Addresses

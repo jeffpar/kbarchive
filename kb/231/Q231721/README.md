@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231721: HOWTO: Obtain Files Copied from Windows Explorer"
-permalink: kb/231/Q231721/
+permalink: /kb/231/Q231721/
 ---
 
 ## Q231721: HOWTO: Obtain Files Copied from Windows Explorer

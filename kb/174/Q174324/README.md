@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174324: WD97: Can Add Bookmark to Hyperlink When No Bookmark Exists"
-permalink: kb/174/Q174324/
+permalink: /kb/174/Q174324/
 ---
 
 ## Q174324: WD97: Can Add Bookmark to Hyperlink When No Bookmark Exists

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114452: Terminal Err Msg: Cannot Create Specified File. Make Sure..."
-permalink: kb/114/Q114452/
+permalink: /kb/114/Q114452/
 ---
 
 ## Q114452: Terminal Err Msg: Cannot Create Specified File. Make Sure...

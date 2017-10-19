@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156263: Some Text Not Printed When Using HP DeskJet 855c"
-permalink: kb/156/Q156263/
+permalink: /kb/156/Q156263/
 ---
 
 ## Q156263: Some Text Not Printed When Using HP DeskJet 855c

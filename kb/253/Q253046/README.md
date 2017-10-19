@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253046: XCLN: Error Message Opening Routed Document from Office"
-permalink: kb/253/Q253046/
+permalink: /kb/253/Q253046/
 ---
 
 ## Q253046: XCLN: Error Message Opening Routed Document from Office

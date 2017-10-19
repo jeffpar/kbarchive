@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266371: XADM: Exchange Server 5.5 User Receives Duplicate E-Mail Message"
-permalink: kb/266/Q266371/
+permalink: /kb/266/Q266371/
 ---
 
 ## Q266371: XADM: Exchange Server 5.5 User Receives Duplicate E-Mail Message

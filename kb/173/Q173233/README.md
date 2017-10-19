@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173233: WD97: Borders Overlap When You Position Frames Side by Side"
-permalink: kb/173/Q173233/
+permalink: /kb/173/Q173233/
 ---
 
 ## Q173233: WD97: Borders Overlap When You Position Frames Side by Side

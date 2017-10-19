@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136417: No Sounds in Da Vinci eMAIL After Restarting Windows 95"
-permalink: kb/136/Q136417/
+permalink: /kb/136/Q136417/
 ---
 
 ## Q136417: No Sounds in Da Vinci eMAIL After Restarting Windows 95

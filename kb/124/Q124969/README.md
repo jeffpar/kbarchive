@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124969: Kids: ErrMsg: Error Messages When Accessing CD-ROM Drive"
-permalink: kb/124/Q124969/
+permalink: /kb/124/Q124969/
 ---
 
 ## Q124969: Kids: ErrMsg: Error Messages When Accessing CD-ROM Drive

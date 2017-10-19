@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282115: If more than 4 SAP Exchange Connectors are installed, mail stop"
-permalink: kb/282/Q282115/
+permalink: /kb/282/Q282115/
 ---
 
 ## Q282115: If more than 4 SAP Exchange Connectors are installed, mail stop

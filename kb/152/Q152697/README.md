@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152697: Koi and the Kola Nuts: The Story of Koi and the Kola Nuts"
-permalink: kb/152/Q152697/
+permalink: /kb/152/Q152697/
 ---
 
 ## Q152697: Koi and the Kola Nuts: The Story of Koi and the Kola Nuts

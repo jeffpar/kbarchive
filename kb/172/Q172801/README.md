@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172801: TN3270 Client Session Lost Using PF Keys to Toggle Screens"
-permalink: kb/172/Q172801/
+permalink: /kb/172/Q172801/
 ---
 
 ## Q172801: TN3270 Client Session Lost Using PF Keys to Toggle Screens

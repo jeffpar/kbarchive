@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86399: PC OS2: PM Setup Does Not Check for Disk Space"
-permalink: kb/086/Q86399/
+permalink: /kb/086/Q86399/
 ---
 
 ## Q86399: PC OS2: PM Setup Does Not Check for Disk Space

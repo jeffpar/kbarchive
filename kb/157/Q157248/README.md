@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157248: Contents of Soccer Readme.txt"
-permalink: kb/157/Q157248/
+permalink: /kb/157/Q157248/
 ---
 
 ## Q157248: Contents of Soccer Readme.txt

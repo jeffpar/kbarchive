@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103816: Err Msg Swapping Disk on Floptical Drive: Invalid Disk..."
-permalink: kb/103/Q103816/
+permalink: /kb/103/Q103816/
 ---
 
 ## Q103816: Err Msg Swapping Disk on Floptical Drive: Invalid Disk...

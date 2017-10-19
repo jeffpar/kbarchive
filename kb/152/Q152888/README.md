@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152888: XADM: Profile Wizard Fails to Upgrade MMF"
-permalink: kb/152/Q152888/
+permalink: /kb/152/Q152888/
 ---
 
 ## Q152888: XADM: Profile Wizard Fails to Upgrade MMF

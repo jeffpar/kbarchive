@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235568: Official Microsoft FrontPage 2000 Book Comments and Corrections"
-permalink: kb/235/Q235568/
+permalink: /kb/235/Q235568/
 ---
 
 ## Q235568: Official Microsoft FrontPage 2000 Book Comments and Corrections

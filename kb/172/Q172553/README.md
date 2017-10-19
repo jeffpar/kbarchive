@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172553: How To Determine Sound Card Brand and Model in Windows 95/98"
-permalink: kb/172/Q172553/
+permalink: /kb/172/Q172553/
 ---
 
 ## Q172553: How To Determine Sound Card Brand and Model in Windows 95/98

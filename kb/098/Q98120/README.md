@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98120: PC WSPlus: Troubleshooting Corrupted Schedule+ Calendar Files"
-permalink: kb/098/Q98120/
+permalink: /kb/098/Q98120/
 ---
 
 ## Q98120: PC WSPlus: Troubleshooting Corrupted Schedule+ Calendar Files

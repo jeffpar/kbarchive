@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147293: QMS Spooler Monitor Does Not Deallocate Memory, Causes Errors"
-permalink: kb/147/Q147293/
+permalink: /kb/147/Q147293/
 ---
 
 ## Q147293: QMS Spooler Monitor Does Not Deallocate Memory, Causes Errors

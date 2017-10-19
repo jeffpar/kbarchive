@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129053: Enabling TCP/IP WinSock Support for RemoteBoot Workstations"
-permalink: kb/129/Q129053/
+permalink: /kb/129/Q129053/
 ---
 
 ## Q129053: Enabling TCP/IP WinSock Support for RemoteBoot Workstations

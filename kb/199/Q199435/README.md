@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199435: SMS: Keywords List for Searching"
-permalink: kb/199/Q199435/
+permalink: /kb/199/Q199435/
 ---
 
 ## Q199435: SMS: Keywords List for Searching

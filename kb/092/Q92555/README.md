@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92555: WFWG: Null Password Bypasses Login"
-permalink: kb/092/Q92555/
+permalink: /kb/092/Q92555/
 ---
 
 ## Q92555: WFWG: Null Password Bypasses Login

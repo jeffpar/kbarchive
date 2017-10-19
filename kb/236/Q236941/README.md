@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236941: BUG: VB 6.0 Fails if ADO DataControl References fMoreData"
-permalink: kb/236/Q236941/
+permalink: /kb/236/Q236941/
 ---
 
 ## Q236941: BUG: VB 6.0 Fails if ADO DataControl References fMoreData

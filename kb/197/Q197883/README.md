@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197883: PRB: Run-time Error '40002' When Querying on s_GUID field in RDO"
-permalink: kb/197/Q197883/
+permalink: /kb/197/Q197883/
 ---
 
 ## Q197883: PRB: Run-time Error '40002' When Querying on s_GUID field in RDO

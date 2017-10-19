@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199041: SMS: NET TIME Offered as a Package Will Not Traverse Domains"
-permalink: kb/199/Q199041/
+permalink: /kb/199/Q199041/
 ---
 
 ## Q199041: SMS: NET TIME Offered as a Package Will Not Traverse Domains

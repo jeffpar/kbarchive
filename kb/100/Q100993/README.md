@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100993: HOWTO: Create Additional Views with CreateNewFrame() Function"
-permalink: kb/100/Q100993/
+permalink: /kb/100/Q100993/
 ---
 
 ## Q100993: HOWTO: Create Additional Views with CreateNewFrame() Function

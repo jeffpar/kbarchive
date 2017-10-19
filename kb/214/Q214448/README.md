@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214448: SMS: Job Status Stays at None for Run Command on Workstation Job"
-permalink: kb/214/Q214448/
+permalink: /kb/214/Q214448/
 ---
 
 ## Q214448: SMS: Job Status Stays at None for Run Command on Workstation Job

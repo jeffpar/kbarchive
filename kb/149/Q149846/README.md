@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149846: RPC Program Fails When Server Run Down Occurs"
-permalink: kb/149/Q149846/
+permalink: /kb/149/Q149846/
 ---
 
 ## Q149846: RPC Program Fails When Server Run Down Occurs

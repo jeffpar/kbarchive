@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195919: Excluding Exchange Services from Inoculan Realtime Scanner"
-permalink: kb/195/Q195919/
+permalink: /kb/195/Q195919/
 ---
 
 ## Q195919: Excluding Exchange Services from Inoculan Realtime Scanner

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174757: XADM: INS Service Is Not Removed After Removing All Newsfeeds"
-permalink: kb/174/Q174757/
+permalink: /kb/174/Q174757/
 ---
 
 ## Q174757: XADM: INS Service Is Not Removed After Removing All Newsfeeds

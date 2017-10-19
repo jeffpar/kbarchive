@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126027: SMS Inventory Processor: Compilation Error on Dell Computers"
-permalink: kb/126/Q126027/
+permalink: /kb/126/Q126027/
 ---
 
 ## Q126027: SMS Inventory Processor: Compilation Error on Dell Computers

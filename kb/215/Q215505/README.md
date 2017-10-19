@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215505: XFOR: Error 14 While Running Import in MS Mail"
-permalink: kb/215/Q215505/
+permalink: /kb/215/Q215505/
 ---
 
 ## Q215505: XFOR: Error 14 While Running Import in MS Mail

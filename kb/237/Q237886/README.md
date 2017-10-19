@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237886: XFOR: Msg. Attachment Name Changed in Migration from cc:Mail DB6"
-permalink: kb/237/Q237886/
+permalink: /kb/237/Q237886/
 ---
 
 ## Q237886: XFOR: Msg. Attachment Name Changed in Migration from cc:Mail DB6

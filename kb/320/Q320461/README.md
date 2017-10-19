@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320461: Flight Simulator: Real-World Weather Is Not Accurate in the Game"
-permalink: kb/320/Q320461/
+permalink: /kb/320/Q320461/
 ---
 
 ## Q320461: Flight Simulator: Real-World Weather Is Not Accurate in the Game

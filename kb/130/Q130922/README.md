@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130922: Event Error 2022: Server Unable to Find a Free Connection"
-permalink: kb/130/Q130922/
+permalink: /kb/130/Q130922/
 ---
 
 ## Q130922: Event Error 2022: Server Unable to Find a Free Connection

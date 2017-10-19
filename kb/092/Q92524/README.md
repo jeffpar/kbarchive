@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92524: PRB: Setup Toolkit's SETUP.EXE Does Not Launch Windows"
-permalink: kb/092/Q92524/
+permalink: /kb/092/Q92524/
 ---
 
 ## Q92524: PRB: Setup Toolkit's SETUP.EXE Does Not Launch Windows

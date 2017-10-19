@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126677: Writer/Artist: Limitation on Number of Users"
-permalink: kb/126/Q126677/
+permalink: /kb/126/Q126677/
 ---
 
 ## Q126677: Writer/Artist: Limitation on Number of Users

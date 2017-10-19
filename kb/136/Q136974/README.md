@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136974: PPT7: Error Opening Earlier Version Presentation"
-permalink: kb/136/Q136974/
+permalink: /kb/136/Q136974/
 ---
 
 ## Q136974: PPT7: Error Opening Earlier Version Presentation

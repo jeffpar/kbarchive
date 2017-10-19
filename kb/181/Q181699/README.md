@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181699: WD97: Index Updates Incorrectly with Modified Page Numbering"
-permalink: kb/181/Q181699/
+permalink: /kb/181/Q181699/
 ---
 
 ## Q181699: WD97: Index Updates Incorrectly with Modified Page Numbering

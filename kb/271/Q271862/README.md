@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271862: Password Filter Excludes the Slash Character"
-permalink: kb/271/Q271862/
+permalink: /kb/271/Q271862/
 ---
 
 ## Q271862: Password Filter Excludes the Slash Character

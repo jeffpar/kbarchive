@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153227: SMS: PCM Requires Restart After Running a Package"
-permalink: kb/153/Q153227/
+permalink: /kb/153/Q153227/
 ---
 
 ## Q153227: SMS: PCM Requires Restart After Running a Package

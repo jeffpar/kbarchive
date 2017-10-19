@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147380: MSN Context Menus Not Available with XMouse Installed"
-permalink: kb/147/Q147380/
+permalink: /kb/147/Q147380/
 ---
 
 ## Q147380: MSN Context Menus Not Available with XMouse Installed

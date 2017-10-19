@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141014: Emergency Recovery Utility Does Not Back Up Files"
-permalink: kb/141/Q141014/
+permalink: /kb/141/Q141014/
 ---
 
 ## Q141014: Emergency Recovery Utility Does Not Back Up Files

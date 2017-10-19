@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108164: PRB: RQBE Not Generating FROM Clause When .QPR Table Missing"
-permalink: kb/108/Q108164/
+permalink: /kb/108/Q108164/
 ---
 
 ## Q108164: PRB: RQBE Not Generating FROM Clause When .QPR Table Missing

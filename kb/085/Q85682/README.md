@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85682: WRK Incorrectly Documents TTIfCollisions="
-permalink: kb/085/Q85682/
+permalink: /kb/085/Q85682/
 ---
 
 ## Q85682: WRK Incorrectly Documents TTIfCollisions=

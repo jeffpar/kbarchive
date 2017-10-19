@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43748: Changing Printers During Print Job Affects Output"
-permalink: kb/043/Q43748/
+permalink: /kb/043/Q43748/
 ---
 
 ## Q43748: Changing Printers During Print Job Affects Output

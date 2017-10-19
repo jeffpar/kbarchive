@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138463: Upgrade Site Option Not Available in SMS 1.1 Setup"
-permalink: kb/138/Q138463/
+permalink: /kb/138/Q138463/
 ---
 
 ## Q138463: Upgrade Site Option Not Available in SMS 1.1 Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215838: How to Obtain the Latest SNA Server Version 4.0 Service Pack"
-permalink: kb/215/Q215838/
+permalink: /kb/215/Q215838/
 ---
 
 ## Q215838: How to Obtain the Latest SNA Server Version 4.0 Service Pack

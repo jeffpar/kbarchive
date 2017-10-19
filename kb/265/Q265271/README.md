@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265271: Error Message Appears When Using Iomega Zip Drive"
-permalink: kb/265/Q265271/
+permalink: /kb/265/Q265271/
 ---
 
 ## Q265271: Error Message Appears When Using Iomega Zip Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195515: XADM:Perform a full online backup of servers after a server move"
-permalink: kb/195/Q195515/
+permalink: /kb/195/Q195515/
 ---
 
 ## Q195515: XADM:Perform a full online backup of servers after a server move

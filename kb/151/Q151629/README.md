@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151629: INFO: TN3270 LU Assignment and the Use of Submasks"
-permalink: kb/151/Q151629/
+permalink: /kb/151/Q151629/
 ---
 
 ## Q151629: INFO: TN3270 LU Assignment and the Use of Submasks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86359: README.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade (Part A)"
-permalink: kb/086/Q86359/
+permalink: /kb/086/Q86359/
 ---
 
 ## Q86359: README.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade (Part A)

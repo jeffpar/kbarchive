@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248995: SMS: Support for Systems Management Server Queries"
-permalink: kb/248/Q248995/
+permalink: /kb/248/Q248995/
 ---
 
 ## Q248995: SMS: Support for Systems Management Server Queries

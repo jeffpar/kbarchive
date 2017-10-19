@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171560: Inside COM: INF: Missing Header and Source Code Files"
-permalink: kb/171/Q171560/
+permalink: /kb/171/Q171560/
 ---
 
 ## Q171560: Inside COM: INF: Missing Header and Source Code Files

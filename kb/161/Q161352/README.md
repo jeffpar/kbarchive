@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161352: Problems Using the SideWinder Joystick with Games on NT 4.0"
-permalink: kb/161/Q161352/
+permalink: /kb/161/Q161352/
 ---
 
 ## Q161352: Problems Using the SideWinder Joystick with Games on NT 4.0

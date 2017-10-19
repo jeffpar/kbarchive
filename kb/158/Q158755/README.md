@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158755: FIX: CLEAR ALL with Object References Causes Page Fault"
-permalink: kb/158/Q158755/
+permalink: /kb/158/Q158755/
 ---
 
 ## Q158755: FIX: CLEAR ALL with Object References Causes Page Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123052: Notepad Does Not Print Tabs Properly"
-permalink: kb/123/Q123052/
+permalink: /kb/123/Q123052/
 ---
 
 ## Q123052: Notepad Does Not Print Tabs Properly

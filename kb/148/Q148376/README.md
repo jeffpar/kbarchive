@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148376: NetSoft NS/Router Not Working After SNA Server 2.11 SP1"
-permalink: kb/148/Q148376/
+permalink: /kb/148/Q148376/
 ---
 
 ## Q148376: NetSoft NS/Router Not Working After SNA Server 2.11 SP1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197457: INFO: ATSWeb - Web-centric Anomaly Tracking System 2.0"
-permalink: kb/197/Q197457/
+permalink: /kb/197/Q197457/
 ---
 
 ## Q197457: INFO: ATSWeb - Web-centric Anomaly Tracking System 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134877: PPT: Using Transitions to Achieve Smoother Branching"
-permalink: kb/134/Q134877/
+permalink: /kb/134/Q134877/
 ---
 
 ## Q134877: PPT: Using Transitions to Achieve Smoother Branching

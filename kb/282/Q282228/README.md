@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282228: Terminal Server Random &quot;Stop 0x0000001E&quot; Error Message"
-permalink: kb/282/Q282228/
+permalink: /kb/282/Q282228/
 ---
 
 ## Q282228: Terminal Server Random &quot;Stop 0x0000001E&quot; Error Message

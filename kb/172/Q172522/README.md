@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172522: PRB: Unattended Install Does Not Stop After Text Mode"
-permalink: kb/172/Q172522/
+permalink: /kb/172/Q172522/
 ---
 
 ## Q172522: PRB: Unattended Install Does Not Stop After Text Mode

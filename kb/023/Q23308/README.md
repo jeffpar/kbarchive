@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q23308: PRB: Debugging High Resolution EGA or VGA Graphics with CodeView"
-permalink: kb/023/Q23308/
+permalink: /kb/023/Q23308/
 ---
 
 ## Q23308: PRB: Debugging High Resolution EGA or VGA Graphics with CodeView

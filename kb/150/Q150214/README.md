@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150214: BUG: Able to Open Multiple Copies of DBGrid Property Page"
-permalink: kb/150/Q150214/
+permalink: /kb/150/Q150214/
 ---
 
 ## Q150214: BUG: Able to Open Multiple Copies of DBGrid Property Page

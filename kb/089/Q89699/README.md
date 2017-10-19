@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89699: HIMEM.SYS Err Msg: ERROR: Can't Enable A20"
-permalink: kb/089/Q89699/
+permalink: /kb/089/Q89699/
 ---
 
 ## Q89699: HIMEM.SYS Err Msg: ERROR: Can't Enable A20

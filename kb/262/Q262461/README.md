@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262461: Terminal Server Client Truncates Server Name to 32 Characters"
-permalink: kb/262/Q262461/
+permalink: /kb/262/Q262461/
 ---
 
 ## Q262461: Terminal Server Client Truncates Server Name to 32 Characters

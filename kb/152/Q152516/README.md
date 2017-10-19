@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152516: INFO: List of ODBC Files Installed During Setup"
-permalink: kb/152/Q152516/
+permalink: /kb/152/Q152516/
 ---
 
 ## Q152516: INFO: List of ODBC Files Installed During Setup

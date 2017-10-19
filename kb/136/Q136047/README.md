@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136047: PC Adm: Err Msg: Notice 1 Device Not Available"
-permalink: kb/136/Q136047/
+permalink: /kb/136/Q136047/
 ---
 
 ## Q136047: PC Adm: Err Msg: Notice 1 Device Not Available

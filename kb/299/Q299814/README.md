@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299814: Train Simulator: &quot;There is Not Enough Memory&quot; Error Message"
-permalink: kb/299/Q299814/
+permalink: /kb/299/Q299814/
 ---
 
 ## Q299814: Train Simulator: &quot;There is Not Enough Memory&quot; Error Message

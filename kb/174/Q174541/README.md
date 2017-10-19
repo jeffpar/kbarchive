@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174541: Publisher 3.0/4.0 Does Not Print Brick or Vertical Line Patterns"
-permalink: kb/174/Q174541/
+permalink: /kb/174/Q174541/
 ---
 
 ## Q174541: Publisher 3.0/4.0 Does Not Print Brick or Vertical Line Patterns

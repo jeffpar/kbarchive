@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110968: INFO: FoxPro Header Check to Determine if Table is Corrupt"
-permalink: kb/110/Q110968/
+permalink: /kb/110/Q110968/
 ---
 
 ## Q110968: INFO: FoxPro Header Check to Determine if Table is Corrupt

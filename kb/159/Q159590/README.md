@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159590: HOWTO: Connect to SQL Server Using a Trusted Connection in VFP"
-permalink: kb/159/Q159590/
+permalink: /kb/159/Q159590/
 ---
 
 ## Q159590: HOWTO: Connect to SQL Server Using a Trusted Connection in VFP

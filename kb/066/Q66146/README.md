@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66146: Tetris 2-Player Mode Not Saved in Windows Entertainment Pack"
-permalink: kb/066/Q66146/
+permalink: /kb/066/Q66146/
 ---
 
 ## Q66146: Tetris 2-Player Mode Not Saved in Windows Entertainment Pack

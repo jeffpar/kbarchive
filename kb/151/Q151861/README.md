@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151861: Hardware Inventory Fails on Removable Media Drives"
-permalink: kb/151/Q151861/
+permalink: /kb/151/Q151861/
 ---
 
 ## Q151861: Hardware Inventory Fails on Removable Media Drives

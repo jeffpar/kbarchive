@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238739: Cannot Administer Index Server 2.0 from the MMC"
-permalink: kb/238/Q238739/
+permalink: /kb/238/Q238739/
 ---
 
 ## Q238739: Cannot Administer Index Server 2.0 from the MMC

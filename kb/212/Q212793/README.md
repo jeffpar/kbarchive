@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212793: SMSINST: Increment Variable Operation Does Not Work as Expected"
-permalink: kb/212/Q212793/
+permalink: /kb/212/Q212793/
 ---
 
 ## Q212793: SMSINST: Increment Variable Operation Does Not Work as Expected

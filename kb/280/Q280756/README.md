@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280756: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP3"
-permalink: kb/280/Q280756/
+permalink: /kb/280/Q280756/
 ---
 
 ## Q280756: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132081: HOWTO: How to Place Scroll Bars on an Object Derived from CContr"
-permalink: kb/132/Q132081/
+permalink: /kb/132/Q132081/
 ---
 
 ## Q132081: HOWTO: How to Place Scroll Bars on an Object Derived from CContr

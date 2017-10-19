@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167696: FIX: Debug Static MFC Library Links to UrlMon.dll/Wininet.dll"
-permalink: kb/167/Q167696/
+permalink: /kb/167/Q167696/
 ---
 
 ## Q167696: FIX: Debug Static MFC Library Links to UrlMon.dll/Wininet.dll

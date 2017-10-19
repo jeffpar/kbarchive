@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178942: HOWTO: Performance Tuning the Jet Engine Per Instance in MFC"
-permalink: kb/178/Q178942/
+permalink: /kb/178/Q178942/
 ---
 
 ## Q178942: HOWTO: Performance Tuning the Jet Engine Per Instance in MFC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226895: SMS: APS Error When Printing Systems by File Name and File Size"
-permalink: kb/226/Q226895/
+permalink: /kb/226/Q226895/
 ---
 
 ## Q226895: SMS: APS Error When Printing Systems by File Name and File Size

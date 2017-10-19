@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136339: How to Make a Form that Has a Scroll Bar that Scrolls Records"
-permalink: kb/136/Q136339/
+permalink: /kb/136/Q136339/
 ---
 
 ## Q136339: How to Make a Form that Has a Scroll Bar that Scrolls Records

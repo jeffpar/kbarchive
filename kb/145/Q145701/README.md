@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145701: HOWTO: Close Shelled Process When Finished under Windows95/98/Me"
-permalink: kb/145/Q145701/
+permalink: /kb/145/Q145701/
 ---
 
 ## Q145701: HOWTO: Close Shelled Process When Finished under Windows95/98/Me

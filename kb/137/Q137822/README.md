@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137822: Printing to a File Initiates the Fax Wizard"
-permalink: kb/137/Q137822/
+permalink: /kb/137/Q137822/
 ---
 
 ## Q137822: Printing to a File Initiates the Fax Wizard

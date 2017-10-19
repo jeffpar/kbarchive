@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105790: MS-DOS 6.2 Step-Up May Leave Temporary Files If Interrupted"
-permalink: kb/105/Q105790/
+permalink: /kb/105/Q105790/
 ---
 
 ## Q105790: MS-DOS 6.2 Step-Up May Leave Temporary Files If Interrupted

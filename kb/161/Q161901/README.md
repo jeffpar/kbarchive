@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161901: BUG: Table Wizard Cannot Overwrite Text File"
-permalink: kb/161/Q161901/
+permalink: /kb/161/Q161901/
 ---
 
 ## Q161901: BUG: Table Wizard Cannot Overwrite Text File

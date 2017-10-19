@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160766: FP97: VSS Source Control Project Box Does Not Appear in FrontPag"
-permalink: kb/160/Q160766/
+permalink: /kb/160/Q160766/
 ---
 
 ## Q160766: FP97: VSS Source Control Project Box Does Not Appear in FrontPag

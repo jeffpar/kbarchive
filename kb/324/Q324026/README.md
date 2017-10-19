@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324026: XCON: Error 2140 and Event IDs, MTA Does Not Start"
-permalink: kb/324/Q324026/
+permalink: /kb/324/Q324026/
 ---
 
 ## Q324026: XCON: Error 2140 and Event IDs, MTA Does Not Start

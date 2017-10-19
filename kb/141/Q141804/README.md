@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141804: How to Force Input to Uppercase in a Combo Box"
-permalink: kb/141/Q141804/
+permalink: /kb/141/Q141804/
 ---
 
 ## Q141804: How to Force Input to Uppercase in a Combo Box

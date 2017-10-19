@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177586: How to Change the Connection Settings for MSN 1.x and 2.0"
-permalink: kb/177/Q177586/
+permalink: /kb/177/Q177586/
 ---
 
 ## Q177586: How to Change the Connection Settings for MSN 1.x and 2.0

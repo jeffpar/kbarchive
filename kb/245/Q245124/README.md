@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245124: FIX: Access Violation in Remote Automation Manager"
-permalink: kb/245/Q245124/
+permalink: /kb/245/Q245124/
 ---
 
 ## Q245124: FIX: Access Violation in Remote Automation Manager

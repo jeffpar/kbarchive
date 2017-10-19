@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182966: XADM: Exchange 5.0 SP2 Upgrade Fails with No Mapping Error"
-permalink: kb/182/Q182966/
+permalink: /kb/182/Q182966/
 ---
 
 ## Q182966: XADM: Exchange 5.0 SP2 Upgrade Fails with No Mapping Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148889: Desktop Appearance Changes After Installing Corel Draw 6.0"
-permalink: kb/148/Q148889/
+permalink: /kb/148/Q148889/
 ---
 
 ## Q148889: Desktop Appearance Changes After Installing Corel Draw 6.0

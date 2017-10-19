@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113197: GP Fault in Chip's Challenge When Playing at Level 104"
-permalink: kb/113/Q113197/
+permalink: /kb/113/Q113197/
 ---
 
 ## Q113197: GP Fault in Chip's Challenge When Playing at Level 104

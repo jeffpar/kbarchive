@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114758: TrueType Fonts Are Randomly Dropped with Kyocera F-800"
-permalink: kb/114/Q114758/
+permalink: /kb/114/Q114758/
 ---
 
 ## Q114758: TrueType Fonts Are Randomly Dropped with Kyocera F-800

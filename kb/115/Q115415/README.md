@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115415: Maynstream 1350Q Tape Drive Fails to Backup or Restore"
-permalink: kb/115/Q115415/
+permalink: /kb/115/Q115415/
 ---
 
 ## Q115415: Maynstream 1350Q Tape Drive Fails to Backup or Restore

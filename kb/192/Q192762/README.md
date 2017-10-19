@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192762: Dbf2rs.exe Converts a VFP Cursor to ADO 2.x Recordset"
-permalink: kb/192/Q192762/
+permalink: /kb/192/Q192762/
 ---
 
 ## Q192762: Dbf2rs.exe Converts a VFP Cursor to ADO 2.x Recordset

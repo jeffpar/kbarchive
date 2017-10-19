@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186965: WD97: Cannot Turn Off List of Most Recently Used Fonts"
-permalink: kb/186/Q186965/
+permalink: /kb/186/Q186965/
 ---
 
 ## Q186965: WD97: Cannot Turn Off List of Most Recently Used Fonts

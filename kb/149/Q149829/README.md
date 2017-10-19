@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149829: Long File Names Are Truncated in File Manager Properties"
-permalink: kb/149/Q149829/
+permalink: /kb/149/Q149829/
 ---
 
 ## Q149829: Long File Names Are Truncated in File Manager Properties

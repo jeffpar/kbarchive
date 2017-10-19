@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158074: XCLN: Using ShivaRemote w/ Exchange (MS-DOS/Real-Mode IPX)"
-permalink: kb/158/Q158074/
+permalink: /kb/158/Q158074/
 ---
 
 ## Q158074: XCLN: Using ShivaRemote w/ Exchange (MS-DOS/Real-Mode IPX)

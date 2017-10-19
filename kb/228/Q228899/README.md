@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228899: SMS: How to Use Software Metering in Online Mode"
-permalink: kb/228/Q228899/
+permalink: /kb/228/Q228899/
 ---
 
 ## Q228899: SMS: How to Use Software Metering in Online Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303913: MechCommander 2.0: You Cannot See In-Game Videos"
-permalink: kb/303/Q303913/
+permalink: /kb/303/Q303913/
 ---
 
 ## Q303913: MechCommander 2.0: You Cannot See In-Game Videos

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315355: Creating a Certificate Request Causes An Internal Error to Occur"
-permalink: kb/315/Q315355/
+permalink: /kb/315/Q315355/
 ---
 
 ## Q315355: Creating a Certificate Request Causes An Internal Error to Occur

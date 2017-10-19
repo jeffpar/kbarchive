@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176206: Cannot Log On to Local Subnet with Windows 95 Client"
-permalink: kb/176/Q176206/
+permalink: /kb/176/Q176206/
 ---
 
 ## Q176206: Cannot Log On to Local Subnet with Windows 95 Client

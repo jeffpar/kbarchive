@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241017: Analyzing Requirements and Defining Solution Architectures MCSD"
-permalink: kb/241/Q241017/
+permalink: /kb/241/Q241017/
 ---
 
 ## Q241017: Analyzing Requirements and Defining Solution Architectures MCSD

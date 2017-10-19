@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194532: Urban Assault/Dreamworks: &quot;Application Error&quot; Msg Starting Game"
-permalink: kb/194/Q194532/
+permalink: /kb/194/Q194532/
 ---
 
 ## Q194532: Urban Assault/Dreamworks: &quot;Application Error&quot; Msg Starting Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194598: Print Server Overrides Font ID Parameter When Using HPT"
-permalink: kb/194/Q194598/
+permalink: /kb/194/Q194598/
 ---
 
 ## Q194598: Print Server Overrides Font ID Parameter When Using HPT

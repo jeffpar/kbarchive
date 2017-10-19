@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192053: XADM: Information Store Access Violates When Freeing Memory"
-permalink: kb/192/Q192053/
+permalink: /kb/192/Q192053/
 ---
 
 ## Q192053: XADM: Information Store Access Violates When Freeing Memory

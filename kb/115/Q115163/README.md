@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115163: PC Gen: Automating Multiple Mail Logins on NetWare 3.11"
-permalink: kb/115/Q115163/
+permalink: /kb/115/Q115163/
 ---
 
 ## Q115163: PC Gen: Automating Multiple Mail Logins on NetWare 3.11

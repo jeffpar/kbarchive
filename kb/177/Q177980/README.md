@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177980: Identification and Access Control Tabs Missing"
-permalink: kb/177/Q177980/
+permalink: /kb/177/Q177980/
 ---
 
 ## Q177980: Identification and Access Control Tabs Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88776: Using Sigma Video Cards and Displays Windows 3.0 and 3.1"
-permalink: kb/088/Q88776/
+permalink: /kb/088/Q88776/
 ---
 
 ## Q88776: Using Sigma Video Cards and Displays Windows 3.0 and 3.1

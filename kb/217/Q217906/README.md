@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217906: Foreign Language Error Messages on Intranet Starter Site"
-permalink: kb/217/Q217906/
+permalink: /kb/217/Q217906/
 ---
 
 ## Q217906: Foreign Language Error Messages on Intranet Starter Site

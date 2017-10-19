@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149514: BUG: Developer Studio Hangs with !MS&#36;FIXEDFORMLINESIZE: 132"
-permalink: kb/149/Q149514/
+permalink: /kb/149/Q149514/
 ---
 
 ## Q149514: BUG: Developer Studio Hangs with !MS&#36;FIXEDFORMLINESIZE: 132

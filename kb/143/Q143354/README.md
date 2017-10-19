@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q143354: PC Ext Gen: Questions Asked About X.25 and External [Part 1]"
-permalink: kb/143/Q143354/
+title: "Q143354: PC Ext Gen: Questions Asked About X.25 and External &#91;Part 1&#93;"
+permalink: /kb/143/Q143354/
 ---
 
-## Q143354: PC Ext Gen: Questions Asked About X.25 and External [Part 1]
+## Q143354: PC Ext Gen: Questions Asked About X.25 and External &#91;Part 1&#93;
 
 	Article: Q143354
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140984: PPT7: Lines Appear Next to Slides on Printed Handouts"
-permalink: kb/140/Q140984/
+permalink: /kb/140/Q140984/
 ---
 
 ## Q140984: PPT7: Lines Appear Next to Slides on Printed Handouts

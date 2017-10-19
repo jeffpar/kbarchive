@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62493: Mac Hyp: displayMessageCenter Displays Mail DA Account"
-permalink: kb/062/Q62493/
+permalink: /kb/062/Q62493/
 ---
 
 ## Q62493: Mac Hyp: displayMessageCenter Displays Mail DA Account

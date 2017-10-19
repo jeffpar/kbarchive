@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299955: FIX: Using SET('PRINTER) in COM Server Causes Error"
-permalink: kb/299/Q299955/
+permalink: /kb/299/Q299955/
 ---
 
 ## Q299955: FIX: Using SET('PRINTER) in COM Server Causes Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143137: How to temporarily disable logons/connections"
-permalink: kb/143/Q143137/
+permalink: /kb/143/Q143137/
 ---
 
 ## Q143137: How to temporarily disable logons/connections

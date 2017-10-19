@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59972: Mac Hyp: Getting a Macintosh Resource from a Message"
-permalink: kb/059/Q59972/
+permalink: /kb/059/Q59972/
 ---
 
 ## Q59972: Mac Hyp: Getting a Macintosh Resource from a Message

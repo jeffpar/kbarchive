@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60317: Cannot Associate to a File with No Extension"
-permalink: kb/060/Q60317/
+permalink: /kb/060/Q60317/
 ---
 
 ## Q60317: Cannot Associate to a File with No Extension

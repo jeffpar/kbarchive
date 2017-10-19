@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145804: Pregnancy: What Do I Do with Problems Not Addressed in FAQ?"
-permalink: kb/145/Q145804/
+permalink: /kb/145/Q145804/
 ---
 
 ## Q145804: Pregnancy: What Do I Do with Problems Not Addressed in FAQ?

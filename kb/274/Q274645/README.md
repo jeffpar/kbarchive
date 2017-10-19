@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274645: MGS: SideWinder Dual Strike Buttons Do Not Function Correctly"
-permalink: kb/274/Q274645/
+permalink: /kb/274/Q274645/
 ---
 
 ## Q274645: MGS: SideWinder Dual Strike Buttons Do Not Function Correctly

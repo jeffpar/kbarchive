@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165165: Sync Point Applications Now Supported on Windows NT &amp; Windows 95"
-permalink: kb/165/Q165165/
+permalink: /kb/165/Q165165/
 ---
 
 ## Q165165: Sync Point Applications Now Supported on Windows NT &amp; Windows 95

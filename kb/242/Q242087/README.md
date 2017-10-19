@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242087: How to Prevent My Briefcase from Appearing for New Users"
-permalink: kb/242/Q242087/
+permalink: /kb/242/Q242087/
 ---
 
 ## Q242087: How to Prevent My Briefcase from Appearing for New Users

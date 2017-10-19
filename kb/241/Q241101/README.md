@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241101: Streets and Trips: Description of the Pushpin Conversion Tool"
-permalink: kb/241/Q241101/
+permalink: /kb/241/Q241101/
 ---
 
 ## Q241101: Streets and Trips: Description of the Pushpin Conversion Tool

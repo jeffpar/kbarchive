@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149436: Err Msg When Adding Remoteboot Workstations to Windows NT"
-permalink: kb/149/Q149436/
+permalink: /kb/149/Q149436/
 ---
 
 ## Q149436: Err Msg When Adding Remoteboot Workstations to Windows NT

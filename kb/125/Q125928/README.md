@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125928: HOWTO: How to Mix GDI and WinG"
-permalink: kb/125/Q125928/
+permalink: /kb/125/Q125928/
 ---
 
 ## Q125928: HOWTO: How to Mix GDI and WinG

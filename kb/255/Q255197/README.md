@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255197: Cannot Add a Printer Port, Access Violation in Spools.exe Occurs"
-permalink: kb/255/Q255197/
+permalink: /kb/255/Q255197/
 ---
 
 ## Q255197: Cannot Add a Printer Port, Access Violation in Spools.exe Occurs

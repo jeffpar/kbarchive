@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184773: XADM: Public Folder Doesn't Follow Replication Schedule"
-permalink: kb/184/Q184773/
+permalink: /kb/184/Q184773/
 ---
 
 ## Q184773: XADM: Public Folder Doesn't Follow Replication Schedule

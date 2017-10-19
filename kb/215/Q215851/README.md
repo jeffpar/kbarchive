@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215851: XADM: Send Options in PAB Entry is Ignored"
-permalink: kb/215/Q215851/
+permalink: /kb/215/Q215851/
 ---
 
 ## Q215851: XADM: Send Options in PAB Entry is Ignored

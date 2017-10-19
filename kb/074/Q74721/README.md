@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74721: Windows Err Msg: Full Paint Reject (Canon LBP-8II Printer)"
-permalink: kb/074/Q74721/
+permalink: /kb/074/Q74721/
 ---
 
 ## Q74721: Windows Err Msg: Full Paint Reject (Canon LBP-8II Printer)

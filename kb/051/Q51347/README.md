@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51347: Mac SDK: Software Development Kits Descriptions"
-permalink: kb/051/Q51347/
+permalink: /kb/051/Q51347/
 ---
 
 ## Q51347: Mac SDK: Software Development Kits Descriptions

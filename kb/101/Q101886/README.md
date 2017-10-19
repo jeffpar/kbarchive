@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101886: MS-DOS Shell Displays Undelete's Hidden Sentry Directory"
-permalink: kb/101/Q101886/
+permalink: /kb/101/Q101886/
 ---
 
 ## Q101886: MS-DOS Shell Displays Undelete's Hidden Sentry Directory

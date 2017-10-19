@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286130: Casino: Game Quits When You Win Too Many Complimentary Items"
-permalink: kb/286/Q286130/
+permalink: /kb/286/Q286130/
 ---
 
 ## Q286130: Casino: Game Quits When You Win Too Many Complimentary Items

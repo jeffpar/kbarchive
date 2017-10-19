@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q204216: XCLN: Schedule+ 1.0a Does Not Refresh Free and Busy Time"
-permalink: kb/204/Q204216/
+permalink: /kb/204/Q204216/
 ---
 
 ## Q204216: XCLN: Schedule+ 1.0a Does Not Refresh Free and Busy Time

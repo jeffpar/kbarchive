@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114864: How to Find the Hard Disk Drive Name Using FoxPro for Mac"
-permalink: kb/114/Q114864/
+permalink: /kb/114/Q114864/
 ---
 
 ## Q114864: How to Find the Hard Disk Drive Name Using FoxPro for Mac

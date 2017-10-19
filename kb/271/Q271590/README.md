@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271590: XFOR: Excalcon Stops Working When Notes Server Upgraded to 5.02c"
-permalink: kb/271/Q271590/
+permalink: /kb/271/Q271590/
 ---
 
 ## Q271590: XFOR: Excalcon Stops Working When Notes Server Upgraded to 5.02c

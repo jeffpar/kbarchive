@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158758: FIX: Form Wizard EditBox ForeColor Property Not Recognized"
-permalink: kb/158/Q158758/
+permalink: /kb/158/Q158758/
 ---
 
 ## Q158758: FIX: Form Wizard EditBox ForeColor Property Not Recognized

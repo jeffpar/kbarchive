@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74747: INFO: Why Microsoft Development Tools Use TMP Instead of TEMP"
-permalink: kb/074/Q74747/
+permalink: /kb/074/Q74747/
 ---
 
 ## Q74747: INFO: Why Microsoft Development Tools Use TMP Instead of TEMP

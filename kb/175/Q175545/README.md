@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175545: XADM: Directory Replication Occurs Five Minutes After Startup"
-permalink: kb/175/Q175545/
+permalink: /kb/175/Q175545/
 ---
 
 ## Q175545: XADM: Directory Replication Occurs Five Minutes After Startup

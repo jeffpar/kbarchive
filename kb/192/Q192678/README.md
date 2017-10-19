@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192678: Add/Remove TS Client Requires Original Installation Point"
-permalink: kb/192/Q192678/
+permalink: /kb/192/Q192678/
 ---
 
 ## Q192678: Add/Remove TS Client Requires Original Installation Point

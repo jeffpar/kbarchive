@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216892: How to Disable the Default Exchange Mail Client Installation"
-permalink: kb/216/Q216892/
+permalink: /kb/216/Q216892/
 ---
 
 ## Q216892: How to Disable the Default Exchange Mail Client Installation

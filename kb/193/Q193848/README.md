@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193848: PPT: PowerPoint Presentation Cloning Add-in Available"
-permalink: kb/193/Q193848/
+permalink: /kb/193/Q193848/
 ---
 
 ## Q193848: PPT: PowerPoint Presentation Cloning Add-in Available

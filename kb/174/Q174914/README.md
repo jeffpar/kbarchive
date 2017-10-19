@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174914: Encarta 98 Does Not Display Home Screen or Play Animations"
-permalink: kb/174/Q174914/
+permalink: /kb/174/Q174914/
 ---
 
 ## Q174914: Encarta 98 Does Not Display Home Screen or Play Animations

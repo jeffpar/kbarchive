@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174851: CC: A Bridge Too Far: Minimum System Requirements for Windows"
-permalink: kb/174/Q174851/
+permalink: /kb/174/Q174851/
 ---
 
 ## Q174851: CC: A Bridge Too Far: Minimum System Requirements for Windows

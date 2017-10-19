@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157953: FIX: Print Button in Preview Does Not Respect the FOR Clause"
-permalink: kb/157/Q157953/
+permalink: /kb/157/Q157953/
 ---
 
 ## Q157953: FIX: Print Button in Preview Does Not Respect the FOR Clause

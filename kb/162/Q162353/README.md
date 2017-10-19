@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162353: XADM: Restoring an Exchange Directory"
-permalink: kb/162/Q162353/
+permalink: /kb/162/Q162353/
 ---
 
 ## Q162353: XADM: Restoring an Exchange Directory

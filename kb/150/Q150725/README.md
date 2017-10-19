@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150725: Cannot Run MSN Without Modem if You Do Not Sign Up on Computer"
-permalink: kb/150/Q150725/
+permalink: /kb/150/Q150725/
 ---
 
 ## Q150725: Cannot Run MSN Without Modem if You Do Not Sign Up on Computer

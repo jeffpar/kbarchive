@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270874: ELL Err Msg: Encarta &lt;Language&gt; Cannot Find the Software..."
-permalink: kb/270/Q270874/
+permalink: /kb/270/Q270874/
 ---
 
 ## Q270874: ELL Err Msg: Encarta &lt;Language&gt; Cannot Find the Software...

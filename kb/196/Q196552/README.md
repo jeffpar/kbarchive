@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196552: WD97: How to Reset Character and Style Formatting"
-permalink: kb/196/Q196552/
+permalink: /kb/196/Q196552/
 ---
 
 ## Q196552: WD97: How to Reset Character and Style Formatting

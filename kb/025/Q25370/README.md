@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25370: Imported Word Documents Convert to Courier 12 Point in Write"
-permalink: kb/025/Q25370/
+permalink: /kb/025/Q25370/
 ---
 
 ## Q25370: Imported Word Documents Convert to Courier 12 Point in Write

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103705: Piping LOAD Commands to NUL Causes Windows Sharing Violations"
-permalink: kb/103/Q103705/
+permalink: /kb/103/Q103705/
 ---
 
 ## Q103705: Piping LOAD Commands to NUL Causes Windows Sharing Violations

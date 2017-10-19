@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94388: Modifying MS-DOS Help Command Reference"
-permalink: kb/094/Q94388/
+permalink: /kb/094/Q94388/
 ---
 
 ## Q94388: Modifying MS-DOS Help Command Reference

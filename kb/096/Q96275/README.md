@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96275: Mac ARA: AppleLink Gateway Conflicts with ARA"
-permalink: kb/096/Q96275/
+permalink: /kb/096/Q96275/
 ---
 
 ## Q96275: Mac ARA: AppleLink Gateway Conflicts with ARA

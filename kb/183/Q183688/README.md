@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183688: WD97: Undesired Font in Imported Text Files"
-permalink: kb/183/Q183688/
+permalink: /kb/183/Q183688/
 ---
 
 ## Q183688: WD97: Undesired Font in Imported Text Files

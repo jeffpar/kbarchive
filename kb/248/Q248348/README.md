@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248348: PRB: SaveSetting and GetSetting Are Not Available in VB WebClass"
-permalink: kb/248/Q248348/
+permalink: /kb/248/Q248348/
 ---
 
 ## Q248348: PRB: SaveSetting and GetSetting Are Not Available in VB WebClass

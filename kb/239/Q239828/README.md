@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239828: SMS: Access Violation in SMS_SITE_SYSTEM_STATUS_SUMMARIZER"
-permalink: kb/239/Q239828/
+permalink: /kb/239/Q239828/
 ---
 
 ## Q239828: SMS: Access Violation in SMS_SITE_SYSTEM_STATUS_SUMMARIZER

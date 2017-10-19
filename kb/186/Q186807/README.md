@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186807: How to Reinstall Certificate Server and Keep the CA"
-permalink: kb/186/Q186807/
+permalink: /kb/186/Q186807/
 ---
 
 ## Q186807: How to Reinstall Certificate Server and Keep the CA

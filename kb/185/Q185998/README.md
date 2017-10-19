@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185998: SMS: What Is SMS and What Capabilities Does It Provide?"
-permalink: kb/185/Q185998/
+permalink: /kb/185/Q185998/
 ---
 
 ## Q185998: SMS: What Is SMS and What Capabilities Does It Provide?

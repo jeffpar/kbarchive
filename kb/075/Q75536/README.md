@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75536: Idle Interrupt (INT 28h) Under Windows 3.0"
-permalink: kb/075/Q75536/
+permalink: /kb/075/Q75536/
 ---
 
 ## Q75536: Idle Interrupt (INT 28h) Under Windows 3.0

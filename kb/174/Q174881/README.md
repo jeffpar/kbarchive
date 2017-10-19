@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174881: XCLN: Error: The End Date Entered Occurs Before Start Date"
-permalink: kb/174/Q174881/
+permalink: /kb/174/Q174881/
 ---
 
 ## Q174881: XCLN: Error: The End Date Entered Occurs Before Start Date

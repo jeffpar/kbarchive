@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154754: STB PowerGraph Video VLB Display Adapter Not Detected"
-permalink: kb/154/Q154754/
+permalink: /kb/154/Q154754/
 ---
 
 ## Q154754: STB PowerGraph Video VLB Display Adapter Not Detected

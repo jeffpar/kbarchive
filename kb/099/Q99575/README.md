@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99575: FIX: Phar Lap err 58 Running MASM From Read-Only Drive"
-permalink: kb/099/Q99575/
+permalink: /kb/099/Q99575/
 ---
 
 ## Q99575: FIX: Phar Lap err 58 Running MASM From Read-Only Drive

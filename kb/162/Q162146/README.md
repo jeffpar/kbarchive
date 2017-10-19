@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162146: FP: Checked Out Files Aren't Published to Server"
-permalink: kb/162/Q162146/
+permalink: /kb/162/Q162146/
 ---
 
 ## Q162146: FP: Checked Out Files Aren't Published to Server

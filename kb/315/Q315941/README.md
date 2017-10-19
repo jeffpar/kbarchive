@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315941: Flight Simulator 2002: Troubleshooting Joystick Problems Part 2"
-permalink: kb/315/Q315941/
+permalink: /kb/315/Q315941/
 ---
 
 ## Q315941: Flight Simulator 2002: Troubleshooting Joystick Problems Part 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119049: FAX: FAXVIEW Incorrectly Displays Driver on Multiple Ports"
-permalink: kb/119/Q119049/
+permalink: /kb/119/Q119049/
 ---
 
 ## Q119049: FAX: FAXVIEW Incorrectly Displays Driver on Multiple Ports

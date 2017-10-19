@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93591: DOC: strstream Constructor Documented Incorrectly"
-permalink: kb/093/Q93591/
+permalink: /kb/093/Q93591/
 ---
 
 ## Q93591: DOC: strstream Constructor Documented Incorrectly

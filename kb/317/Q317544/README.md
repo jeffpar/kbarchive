@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317544: How To Connect To MSN Using Macintosh OS X"
-permalink: kb/317/Q317544/
+permalink: /kb/317/Q317544/
 ---
 
 ## Q317544: How To Connect To MSN Using Macintosh OS X

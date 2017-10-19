@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82815: OLE Performance Factors with Windows 3.1"
-permalink: kb/082/Q82815/
+permalink: /kb/082/Q82815/
 ---
 
 ## Q82815: OLE Performance Factors with Windows 3.1

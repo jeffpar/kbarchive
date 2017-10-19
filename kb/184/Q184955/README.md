@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184955: Monster Truck Madness 2: Music Volume Control Does Not Work"
-permalink: kb/184/Q184955/
+permalink: /kb/184/Q184955/
 ---
 
 ## Q184955: Monster Truck Madness 2: Music Volume Control Does Not Work

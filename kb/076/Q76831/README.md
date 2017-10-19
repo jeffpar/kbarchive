@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76831: SMARTDRV.SYS Reports &quot;Bad or Missing Command Interpreter&quot;"
-permalink: kb/076/Q76831/
+permalink: /kb/076/Q76831/
 ---
 
 ## Q76831: SMARTDRV.SYS Reports &quot;Bad or Missing Command Interpreter&quot;

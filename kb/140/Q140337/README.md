@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140337: PC MAPI: Sample C++ Code to Read Mail Messages"
-permalink: kb/140/Q140337/
+permalink: /kb/140/Q140337/
 ---
 
 ## Q140337: PC MAPI: Sample C++ Code to Read Mail Messages

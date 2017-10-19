@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174255: XFOR: Migrating cc:Mail Release 8 Client Users"
-permalink: kb/174/Q174255/
+permalink: /kb/174/Q174255/
 ---
 
 ## Q174255: XFOR: Migrating cc:Mail Release 8 Client Users

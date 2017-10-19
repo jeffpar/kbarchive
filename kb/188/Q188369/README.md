@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188369: XADM: AUTHINFO Command Causes Information Store Problems"
-permalink: kb/188/Q188369/
+permalink: /kb/188/Q188369/
 ---
 
 ## Q188369: XADM: AUTHINFO Command Causes Information Store Problems

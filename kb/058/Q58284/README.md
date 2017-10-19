@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58284: Printer Support Changes in Windows 3.0"
-permalink: kb/058/Q58284/
+permalink: /kb/058/Q58284/
 ---
 
 ## Q58284: Printer Support Changes in Windows 3.0

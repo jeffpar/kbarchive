@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87513: Using Hewlett-Packard Intellifont with Windows 3.1"
-permalink: kb/087/Q87513/
+permalink: /kb/087/Q87513/
 ---
 
 ## Q87513: Using Hewlett-Packard Intellifont with Windows 3.1

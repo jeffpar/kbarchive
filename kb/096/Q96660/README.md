@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96660: CIT24US.DRV Version 2.0 Does Not Contain Margins Feature"
-permalink: kb/096/Q96660/
+permalink: /kb/096/Q96660/
 ---
 
 ## Q96660: CIT24US.DRV Version 2.0 Does Not Contain Margins Feature

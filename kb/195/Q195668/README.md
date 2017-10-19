@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195668: Windows NT 4.0 Alpha DHCP Servers Ignoring Packets"
-permalink: kb/195/Q195668/
+permalink: /kb/195/Q195668/
 ---
 
 ## Q195668: Windows NT 4.0 Alpha DHCP Servers Ignoring Packets

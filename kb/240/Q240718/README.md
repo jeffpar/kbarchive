@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240718: Previous OS Disabled by Setup and Is Not Listed on Boot Menu"
-permalink: kb/240/Q240718/
+permalink: /kb/240/Q240718/
 ---
 
 ## Q240718: Previous OS Disabled by Setup and Is Not Listed on Boot Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135616: How to Remove Records from a Table Without Using Delete/Pack"
-permalink: kb/135/Q135616/
+permalink: /kb/135/Q135616/
 ---
 
 ## Q135616: How to Remove Records from a Table Without Using Delete/Pack

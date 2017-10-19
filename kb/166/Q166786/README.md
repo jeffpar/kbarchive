@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166786: WD97: Selection.Cells.Shading Applies Shading to Selected Text"
-permalink: kb/166/Q166786/
+permalink: /kb/166/Q166786/
 ---
 
 ## Q166786: WD97: Selection.Cells.Shading Applies Shading to Selected Text

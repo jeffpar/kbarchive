@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143058: Cannot Add Internet Address by Clicking To Button"
-permalink: kb/143/Q143058/
+permalink: /kb/143/Q143058/
 ---
 
 ## Q143058: Cannot Add Internet Address by Clicking To Button

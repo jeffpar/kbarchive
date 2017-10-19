@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280512: SAMPLE: ATLCPImplMT - ATL Event Firing Across COM Apartments"
-permalink: kb/280/Q280512/
+permalink: /kb/280/Q280512/
 ---
 
 ## Q280512: SAMPLE: ATLCPImplMT - ATL Event Firing Across COM Apartments

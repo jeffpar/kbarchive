@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196796: FIX: ClassWizard Unable to Create Files for New Class"
-permalink: kb/196/Q196796/
+permalink: /kb/196/Q196796/
 ---
 
 ## Q196796: FIX: ClassWizard Unable to Create Files for New Class

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178087: Err Msg: Unable to Logon to the Server Using Distributed..."
-permalink: kb/178/Q178087/
+permalink: /kb/178/Q178087/
 ---
 
 ## Q178087: Err Msg: Unable to Logon to the Server Using Distributed...

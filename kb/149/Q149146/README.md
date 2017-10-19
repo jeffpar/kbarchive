@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149146: BUG: Incorrect Output with CARRIAGECONTROL='fortran' Option"
-permalink: kb/149/Q149146/
+permalink: /kb/149/Q149146/
 ---
 
 ## Q149146: BUG: Incorrect Output with CARRIAGECONTROL='fortran' Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109254: CONN: Guest Access to the MACGATE Volume Not Recommended"
-permalink: kb/109/Q109254/
+permalink: /kb/109/Q109254/
 ---
 
 ## Q109254: CONN: Guest Access to the MACGATE Volume Not Recommended

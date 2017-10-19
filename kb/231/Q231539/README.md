@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231539: MapPoint: You Are Prompted to Install Internet Explorer"
-permalink: kb/231/Q231539/
+permalink: /kb/231/Q231539/
 ---
 
 ## Q231539: MapPoint: You Are Prompted to Install Internet Explorer

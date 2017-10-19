@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73829: Windows/386 2.1x Compatibility with MS-DOS 5.0 or Later"
-permalink: kb/073/Q73829/
+permalink: /kb/073/Q73829/
 ---
 
 ## Q73829: Windows/386 2.1x Compatibility with MS-DOS 5.0 or Later

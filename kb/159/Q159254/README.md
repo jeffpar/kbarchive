@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159254: Windows Sockets Programs Using WSIPX May Not Work"
-permalink: kb/159/Q159254/
+permalink: /kb/159/Q159254/
 ---
 
 ## Q159254: Windows Sockets Programs Using WSIPX May Not Work

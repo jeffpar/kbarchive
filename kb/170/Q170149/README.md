@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170149: PRB: Recordset Name Property is Limited to 256 Characters"
-permalink: kb/170/Q170149/
+permalink: /kb/170/Q170149/
 ---
 
 ## Q170149: PRB: Recordset Name Property is Limited to 256 Characters

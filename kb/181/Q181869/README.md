@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181869: Desktop Folders Are Not Deleted Under Roving Profiles"
-permalink: kb/181/Q181869/
+permalink: /kb/181/Q181869/
 ---
 
 ## Q181869: Desktop Folders Are Not Deleted Under Roving Profiles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102375: Maximum Entry of 6 for OTHERDOMAINS= in LANMAN.INI"
-permalink: kb/102/Q102375/
+permalink: /kb/102/Q102375/
 ---
 
 ## Q102375: Maximum Entry of 6 for OTHERDOMAINS= in LANMAN.INI

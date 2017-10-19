@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134395: Sorting by Size and Date Modified Does Not Work in MSN Explorer"
-permalink: kb/134/Q134395/
+permalink: /kb/134/Q134395/
 ---
 
 ## Q134395: Sorting by Size and Date Modified Does Not Work in MSN Explorer

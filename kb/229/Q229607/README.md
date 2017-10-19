@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229607: File Corruption on an NTFS Volume with More Than 4 Million Files"
-permalink: kb/229/Q229607/
+permalink: /kb/229/Q229607/
 ---
 
 ## Q229607: File Corruption on an NTFS Volume with More Than 4 Million Files

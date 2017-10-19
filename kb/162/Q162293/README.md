@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162293: Troubleshooting RAS Client Issues in Windows NT 4.0"
-permalink: kb/162/Q162293/
+permalink: /kb/162/Q162293/
 ---
 
 ## Q162293: Troubleshooting RAS Client Issues in Windows NT 4.0

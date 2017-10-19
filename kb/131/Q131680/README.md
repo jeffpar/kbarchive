@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131680: PC Ext: Possible Status Values in F2 and F3 Screens"
-permalink: kb/131/Q131680/
+permalink: /kb/131/Q131680/
 ---
 
 ## Q131680: PC Ext: Possible Status Values in F2 and F3 Screens

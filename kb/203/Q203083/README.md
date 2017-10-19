@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203083: SMS: Site System Status Does Not Show Current Database Size"
-permalink: kb/203/Q203083/
+permalink: /kb/203/Q203083/
 ---
 
 ## Q203083: SMS: Site System Status Does Not Show Current Database Size

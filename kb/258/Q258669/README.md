@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258669: Redirection Operators (&lt; and &gt;) May Not Work"
-permalink: kb/258/Q258669/
+permalink: /kb/258/Q258669/
 ---
 
 ## Q258669: Redirection Operators (&lt; and &gt;) May Not Work

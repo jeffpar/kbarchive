@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139860: Printing Multiple Copies Is Controlled in Windows 95"
-permalink: kb/139/Q139860/
+permalink: /kb/139/Q139860/
 ---
 
 ## Q139860: Printing Multiple Copies Is Controlled in Windows 95

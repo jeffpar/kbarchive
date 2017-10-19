@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133024: PRB: Error Loading File w/Combo Box RowSourceType = 6 (Fields)"
-permalink: kb/133/Q133024/
+permalink: /kb/133/Q133024/
 ---
 
 ## Q133024: PRB: Error Loading File w/Combo Box RowSourceType = 6 (Fields)

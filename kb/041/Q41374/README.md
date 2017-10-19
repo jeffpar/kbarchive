@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41374: Assignment of Void Pointer Does Not Give Warning Message"
-permalink: kb/041/Q41374/
+permalink: /kb/041/Q41374/
 ---
 
 ## Q41374: Assignment of Void Pointer Does Not Give Warning Message

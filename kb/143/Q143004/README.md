@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143004: Description of Microsoft Windows 95 Service Pack 1 Tools"
-permalink: kb/143/Q143004/
+permalink: /kb/143/Q143004/
 ---
 
 ## Q143004: Description of Microsoft Windows 95 Service Pack 1 Tools

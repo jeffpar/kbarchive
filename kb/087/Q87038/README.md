@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87038: SMTP: Dir-Sync Effect on SMTP Addresses"
-permalink: kb/087/Q87038/
+permalink: /kb/087/Q87038/
 ---
 
 ## Q87038: SMTP: Dir-Sync Effect on SMTP Addresses

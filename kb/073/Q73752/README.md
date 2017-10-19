@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73752: FIX: MASM 6.0 Does Not Detect Overflow Initializing Structures"
-permalink: kb/073/Q73752/
+permalink: /kb/073/Q73752/
 ---
 
 ## Q73752: FIX: MASM 6.0 Does Not Detect Overflow Initializing Structures

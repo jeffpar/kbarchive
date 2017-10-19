@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193675: XWEB: Bad Error Handling in CfolderRender::put_DataSource"
-permalink: kb/193/Q193675/
+permalink: /kb/193/Q193675/
 ---
 
 ## Q193675: XWEB: Bad Error Handling in CfolderRender::put_DataSource

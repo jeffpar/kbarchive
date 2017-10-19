@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164689: Can't Create Pushpin with Insufficient Disk Space"
-permalink: kb/164/Q164689/
+permalink: /kb/164/Q164689/
 ---
 
 ## Q164689: Can't Create Pushpin with Insufficient Disk Space

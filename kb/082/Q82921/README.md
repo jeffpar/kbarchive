@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82921: PC Win: Err Msg: This Name or Comment Is Too Long"
-permalink: kb/082/Q82921/
+permalink: /kb/082/Q82921/
 ---
 
 ## Q82921: PC Win: Err Msg: This Name or Comment Is Too Long

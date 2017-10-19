@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190697: XADM: Mt.exe Unable to Locate DLL on Startup"
-permalink: kb/190/Q190697/
+permalink: /kb/190/Q190697/
 ---
 
 ## Q190697: XADM: Mt.exe Unable to Locate DLL on Startup

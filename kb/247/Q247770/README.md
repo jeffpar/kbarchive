@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247770: XADM: DS Does Not Start After Error 1507 with Event ID 1002"
-permalink: kb/247/Q247770/
+permalink: /kb/247/Q247770/
 ---
 
 ## Q247770: XADM: DS Does Not Start After Error 1507 with Event ID 1002

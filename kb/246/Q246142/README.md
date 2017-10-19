@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246142: Missing Screen Savers Do Not Lock Computer"
-permalink: kb/246/Q246142/
+permalink: /kb/246/Q246142/
 ---
 
 ## Q246142: Missing Screen Savers Do Not Lock Computer

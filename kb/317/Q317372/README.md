@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317372: You Receive a &quot;STOP 0x00000050&quot; Error Message in Win32k.sys"
-permalink: kb/317/Q317372/
+permalink: /kb/317/Q317372/
 ---
 
 ## Q317372: You Receive a &quot;STOP 0x00000050&quot; Error Message in Win32k.sys

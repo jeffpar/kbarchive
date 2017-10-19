@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81075: HP IIIsi Auto Select Option Not Saved when Windows Restarts"
-permalink: kb/081/Q81075/
+permalink: /kb/081/Q81075/
 ---
 
 ## Q81075: HP IIIsi Auto Select Option Not Saved when Windows Restarts

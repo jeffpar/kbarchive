@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59681: Slow Return to MS-DOS If Keys Pressed on Exit"
-permalink: kb/059/Q59681/
+permalink: /kb/059/Q59681/
 ---
 
 ## Q59681: Slow Return to MS-DOS If Keys Pressed on Exit

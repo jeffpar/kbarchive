@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195854: SMS: Poor Mouse Control Using Cirrus-Logic 5436/34 w/ WUSER32"
-permalink: kb/195/Q195854/
+permalink: /kb/195/Q195854/
 ---
 
 ## Q195854: SMS: Poor Mouse Control Using Cirrus-Logic 5436/34 w/ WUSER32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152841: Windows NT 4.0 Service Pack 3 Readme.txt File (40-bit)"
-permalink: kb/152/Q152841/
+permalink: /kb/152/Q152841/
 ---
 
 ## Q152841: Windows NT 4.0 Service Pack 3 Readme.txt File (40-bit)

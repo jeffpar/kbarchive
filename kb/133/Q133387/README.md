@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133387: SETLS16 Fails to Enumerate a Domain Using SMSLS.INI"
-permalink: kb/133/Q133387/
+permalink: /kb/133/Q133387/
 ---
 
 ## Q133387: SETLS16 Fails to Enumerate a Domain Using SMSLS.INI

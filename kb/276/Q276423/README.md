@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276423: How to Reinstall Audio and Video Codecs in Windows 2000"
-permalink: kb/276/Q276423/
+permalink: /kb/276/Q276423/
 ---
 
 ## Q276423: How to Reinstall Audio and Video Codecs in Windows 2000

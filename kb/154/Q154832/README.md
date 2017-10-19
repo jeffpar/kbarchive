@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154832: Disabling Thread Creation for CGI I/O in IIS 1.0"
-permalink: kb/154/Q154832/
+permalink: /kb/154/Q154832/
 ---
 
 ## Q154832: Disabling Thread Creation for CGI I/O in IIS 1.0

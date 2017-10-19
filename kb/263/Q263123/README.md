@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263123: BUG: Intermittent Crashes in NdisMWanIndicateReceive on Win2000"
-permalink: kb/263/Q263123/
+permalink: /kb/263/Q263123/
 ---
 
 ## Q263123: BUG: Intermittent Crashes in NdisMWanIndicateReceive on Win2000

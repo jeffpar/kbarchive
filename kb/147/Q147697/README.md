@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147697: Turning Off Auditing of Security Policy Changes Not Audited"
-permalink: kb/147/Q147697/
+permalink: /kb/147/Q147697/
 ---
 
 ## Q147697: Turning Off Auditing of Security Policy Changes Not Audited

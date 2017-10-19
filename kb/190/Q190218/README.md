@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190218: HOWTO: Retrieve Settings From a Printer Driver"
-permalink: kb/190/Q190218/
+permalink: /kb/190/Q190218/
 ---
 
 ## Q190218: HOWTO: Retrieve Settings From a Printer Driver

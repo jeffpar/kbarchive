@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186690: XCLN: Bcc Field Does not Appear when Printing a Message"
-permalink: kb/186/Q186690/
+permalink: /kb/186/Q186690/
 ---
 
 ## Q186690: XCLN: Bcc Field Does not Appear when Printing a Message

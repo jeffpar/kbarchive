@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184249: XCLN: Setup Fails Installing from ODK Over Old Installation"
-permalink: kb/184/Q184249/
+permalink: /kb/184/Q184249/
 ---
 
 ## Q184249: XCLN: Setup Fails Installing from ODK Over Old Installation

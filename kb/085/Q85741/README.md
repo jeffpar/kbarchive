@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85741: Set Default Directory Starting Applications from Command Line"
-permalink: kb/085/Q85741/
+permalink: /kb/085/Q85741/
 ---
 
 ## Q85741: Set Default Directory Starting Applications from Command Line

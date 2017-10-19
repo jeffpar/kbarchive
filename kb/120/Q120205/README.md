@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120205: Stravinsky: Manual Installation Instructions"
-permalink: kb/120/Q120205/
+permalink: /kb/120/Q120205/
 ---
 
 ## Q120205: Stravinsky: Manual Installation Instructions

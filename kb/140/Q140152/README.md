@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140152: Client Setup Fails to Find Windows If WINDIR is Incorrect"
-permalink: kb/140/Q140152/
+permalink: /kb/140/Q140152/
 ---
 
 ## Q140152: Client Setup Fails to Find Windows If WINDIR is Incorrect

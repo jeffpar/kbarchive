@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171407: NetManage Chameleon 32 NFS v4.0-v6.0 Causes STOP:0x1E in NT 4.0"
-permalink: kb/171/Q171407/
+permalink: /kb/171/Q171407/
 ---
 
 ## Q171407: NetManage Chameleon 32 NFS v4.0-v6.0 Causes STOP:0x1E in NT 4.0

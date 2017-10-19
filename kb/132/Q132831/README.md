@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132831: SBS Computer Prompts You for Network Logon Twice"
-permalink: kb/132/Q132831/
+permalink: /kb/132/Q132831/
 ---
 
 ## Q132831: SBS Computer Prompts You for Network Logon Twice

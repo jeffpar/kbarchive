@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99484: File Functions, Load Procedure, and Resources for XPad"
-permalink: kb/099/Q99484/
+permalink: /kb/099/Q99484/
 ---
 
 ## Q99484: File Functions, Load Procedure, and Resources for XPad

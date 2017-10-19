@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123000: PC Win: Cannot Control Typeface Printed from Mail"
-permalink: kb/123/Q123000/
+permalink: /kb/123/Q123000/
 ---
 
 ## Q123000: PC Win: Cannot Control Typeface Printed from Mail

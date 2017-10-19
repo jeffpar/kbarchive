@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166156: XFOR: How to Change the Migration PAB Message"
-permalink: kb/166/Q166156/
+permalink: /kb/166/Q166156/
 ---
 
 ## Q166156: XFOR: How to Change the Migration PAB Message

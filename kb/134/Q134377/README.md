@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134377: CONN: How to Reset the Mail Queue for Mail Connection 1.0b"
-permalink: kb/134/Q134377/
+permalink: /kb/134/Q134377/
 ---
 
 ## Q134377: CONN: How to Reset the Mail Queue for Mail Connection 1.0b

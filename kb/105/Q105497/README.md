@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105497: Directory Picker Sample Using Modified CFileDialog"
-permalink: kb/105/Q105497/
+permalink: /kb/105/Q105497/
 ---
 
 ## Q105497: Directory Picker Sample Using Modified CFileDialog

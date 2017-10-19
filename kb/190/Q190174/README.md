@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190174: HOWTO: Create Shortcuts on the Programs Menu with PDW"
-permalink: kb/190/Q190174/
+permalink: /kb/190/Q190174/
 ---
 
 ## Q190174: HOWTO: Create Shortcuts on the Programs Menu with PDW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215115: SMS: Windows 16-Bit Client Stops Responding with Remote Tools"
-permalink: kb/215/Q215115/
+permalink: /kb/215/Q215115/
 ---
 
 ## Q215115: SMS: Windows 16-Bit Client Stops Responding with Remote Tools

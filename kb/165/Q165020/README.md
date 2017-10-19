@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165020: INFO: Responding to Mouse Events with MFC ActiveX Controls"
-permalink: kb/165/Q165020/
+permalink: /kb/165/Q165020/
 ---
 
 ## Q165020: INFO: Responding to Mouse Events with MFC ActiveX Controls

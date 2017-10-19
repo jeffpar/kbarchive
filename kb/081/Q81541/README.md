@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81541: Using PWB to Maintain Libraries"
-permalink: kb/081/Q81541/
+permalink: /kb/081/Q81541/
 ---
 
 ## Q81541: Using PWB to Maintain Libraries

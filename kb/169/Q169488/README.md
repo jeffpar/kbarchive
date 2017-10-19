@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169488: Errors When Performance Monitoring SNA Server"
-permalink: kb/169/Q169488/
+permalink: /kb/169/Q169488/
 ---
 
 ## Q169488: Errors When Performance Monitoring SNA Server

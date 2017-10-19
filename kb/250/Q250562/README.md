@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250562: Error: Access Violation RemoveEntryList() Function TN3270 Server"
-permalink: kb/250/Q250562/
+permalink: /kb/250/Q250562/
 ---
 
 ## Q250562: Error: Access Violation RemoveEntryList() Function TN3270 Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200090: XFOR: Wrong cc:Mail Connector Screen in Exchange 5.0 What's New"
-permalink: kb/200/Q200090/
+permalink: /kb/200/Q200090/
 ---
 
 ## Q200090: XFOR: Wrong cc:Mail Connector Screen in Exchange 5.0 What's New

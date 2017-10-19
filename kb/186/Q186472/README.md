@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186472: PRB: MFC Subclassed Static Control Does Not Work in VB5"
-permalink: kb/186/Q186472/
+permalink: /kb/186/Q186472/
 ---
 
 ## Q186472: PRB: MFC Subclassed Static Control Does Not Work in VB5

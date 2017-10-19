@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193235: SAMPLE: VBCECOMM.EXE Uses the MSCEComm Control in Emulation"
-permalink: kb/193/Q193235/
+permalink: /kb/193/Q193235/
 ---
 
 ## Q193235: SAMPLE: VBCECOMM.EXE Uses the MSCEComm Control in Emulation

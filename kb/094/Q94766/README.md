@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94766: Workstation Not Showing Status w/Print Mgr Minimized on Server"
-permalink: kb/094/Q94766/
+permalink: /kb/094/Q94766/
 ---
 
 ## Q94766: Workstation Not Showing Status w/Print Mgr Minimized on Server

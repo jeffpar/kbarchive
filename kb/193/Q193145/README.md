@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193145: WD97: How to Have More Than One Index in a Document"
-permalink: kb/193/Q193145/
+permalink: /kb/193/Q193145/
 ---
 
 ## Q193145: WD97: How to Have More Than One Index in a Document

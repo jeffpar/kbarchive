@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240740: Overflow from NtGdiAddFontResourceW Returning Uninitialized Pool"
-permalink: kb/240/Q240740/
+permalink: /kb/240/Q240740/
 ---
 
 ## Q240740: Overflow from NtGdiAddFontResourceW Returning Uninitialized Pool

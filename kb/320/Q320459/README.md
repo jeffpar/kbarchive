@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320459: SMS: Advertisements May Run When No User Is Logged On"
-permalink: kb/320/Q320459/
+permalink: /kb/320/Q320459/
 ---
 
 ## Q320459: SMS: Advertisements May Run When No User Is Logged On

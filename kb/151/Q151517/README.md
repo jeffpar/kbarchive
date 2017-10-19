@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151517: Stop: Common Dialog Error 0x00A When Printing From Notepad"
-permalink: kb/151/Q151517/
+permalink: /kb/151/Q151517/
 ---
 
 ## Q151517: Stop: Common Dialog Error 0x00A When Printing From Notepad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216902: DirectX: Files That Are Updated When You Install DirectX 6.1"
-permalink: kb/216/Q216902/
+permalink: /kb/216/Q216902/
 ---
 
 ## Q216902: DirectX: Files That Are Updated When You Install DirectX 6.1

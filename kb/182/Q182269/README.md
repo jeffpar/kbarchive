@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182269: TN3270 Incorrectly Logs Event 902 - TCPRecv Internal Error"
-permalink: kb/182/Q182269/
+permalink: /kb/182/Q182269/
 ---
 
 ## Q182269: TN3270 Incorrectly Logs Event 902 - TCPRecv Internal Error

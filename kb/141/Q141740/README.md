@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141740: PRB: APPEND BLANK on a Child Grid Does Not Display New Record"
-permalink: kb/141/Q141740/
+permalink: /kb/141/Q141740/
 ---
 
 ## Q141740: PRB: APPEND BLANK on a Child Grid Does Not Display New Record

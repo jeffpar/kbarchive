@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100401: Musical Instruments: Break in Sound if Played after Stopping"
-permalink: kb/100/Q100401/
+permalink: /kb/100/Q100401/
 ---
 
 ## Q100401: Musical Instruments: Break in Sound if Played after Stopping

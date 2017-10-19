@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132778: Poor Performance Accessing Network Files with Basic Redirector"
-permalink: kb/132/Q132778/
+permalink: /kb/132/Q132778/
 ---
 
 ## Q132778: Poor Performance Accessing Network Files with Basic Redirector

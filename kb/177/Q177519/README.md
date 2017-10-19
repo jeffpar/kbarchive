@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177519: WD97: Comments Lost When Word 2.x File Converted to Word 97"
-permalink: kb/177/Q177519/
+permalink: /kb/177/Q177519/
 ---
 
 ## Q177519: WD97: Comments Lost When Word 2.x File Converted to Word 97

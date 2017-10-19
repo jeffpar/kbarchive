@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212885: INFO: VBCE: Samples Included with the Windows CE Toolkit for VB6"
-permalink: kb/212/Q212885/
+permalink: /kb/212/Q212885/
 ---
 
 ## Q212885: INFO: VBCE: Samples Included with the Windows CE Toolkit for VB6

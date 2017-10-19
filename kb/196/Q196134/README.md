@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196134: XCLN: Favorites Added in OWA Do Not Appear Without Refresh"
-permalink: kb/196/Q196134/
+permalink: /kb/196/Q196134/
 ---
 
 ## Q196134: XCLN: Favorites Added in OWA Do Not Appear Without Refresh

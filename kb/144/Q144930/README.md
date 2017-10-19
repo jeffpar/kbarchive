@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q144930: OFF97: Size of TIFF Picture Is Incorrect When Inserted"
-permalink: kb/144/Q144930/
+permalink: /kb/144/Q144930/
 ---
 
 ## Q144930: OFF97: Size of TIFF Picture Is Incorrect When Inserted

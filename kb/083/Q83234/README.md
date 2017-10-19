@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83234: MDIRest.exe Saves and Restores Window Size &amp; Position"
-permalink: kb/083/Q83234/
+permalink: /kb/083/Q83234/
 ---
 
 ## Q83234: MDIRest.exe Saves and Restores Window Size &amp; Position

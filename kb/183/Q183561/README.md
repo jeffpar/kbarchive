@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183561: Excessive Non-paged Pool Memory At SNA DDM Service Startup"
-permalink: kb/183/Q183561/
+permalink: /kb/183/Q183561/
 ---
 
 ## Q183561: Excessive Non-paged Pool Memory At SNA DDM Service Startup

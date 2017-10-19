@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110095: PC Forms: Err Msg: &quot;Invalid Column Value&quot; Using Grid Control"
-permalink: kb/110/Q110095/
+permalink: /kb/110/Q110095/
 ---
 
 ## Q110095: PC Forms: Err Msg: &quot;Invalid Column Value&quot; Using Grid Control

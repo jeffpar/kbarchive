@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90080: General Protection Fault in Module FLSYS30.DLL"
-permalink: kb/090/Q90080/
+permalink: /kb/090/Q90080/
 ---
 
 ## Q90080: General Protection Fault in Module FLSYS30.DLL

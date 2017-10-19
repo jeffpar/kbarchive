@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93454: SETUP.TXT from Windows for Workgroups Version 3.1 (Part A)"
-permalink: kb/093/Q93454/
+permalink: /kb/093/Q93454/
 ---
 
 ## Q93454: SETUP.TXT from Windows for Workgroups Version 3.1 (Part A)

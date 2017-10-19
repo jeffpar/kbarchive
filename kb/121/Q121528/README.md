@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121528: Writer/Artist: True Type Font is Required to Run Programs"
-permalink: kb/121/Q121528/
+permalink: /kb/121/Q121528/
 ---
 
 ## Q121528: Writer/Artist: True Type Font is Required to Run Programs

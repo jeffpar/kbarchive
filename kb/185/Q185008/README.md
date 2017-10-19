@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185008: XADM: Err. Msg.: Information Store Fails to Start with Error 429"
-permalink: kb/185/Q185008/
+permalink: /kb/185/Q185008/
 ---
 
 ## Q185008: XADM: Err. Msg.: Information Store Fails to Start with Error 429

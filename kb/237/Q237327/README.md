@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237327: XIMS: STARTTLS Advertised Even If SSL Certificate Not Available"
-permalink: kb/237/Q237327/
+permalink: /kb/237/Q237327/
 ---
 
 ## Q237327: XIMS: STARTTLS Advertised Even If SSL Certificate Not Available

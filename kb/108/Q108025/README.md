@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108025: Suffix String Not Available for Microsoft At Work PC Fax"
-permalink: kb/108/Q108025/
+permalink: /kb/108/Q108025/
 ---
 
 ## Q108025: Suffix String Not Available for Microsoft At Work PC Fax

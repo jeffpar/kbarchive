@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216639: Controlling Password Synchronization in Services for UNIX"
-permalink: kb/216/Q216639/
+permalink: /kb/216/Q216639/
 ---
 
 ## Q216639: Controlling Password Synchronization in Services for UNIX

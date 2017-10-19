@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141354: FIX: Adding Description to Table's Index in DBC Corrupts Table"
-permalink: kb/141/Q141354/
+permalink: /kb/141/Q141354/
 ---
 
 ## Q141354: FIX: Adding Description to Table's Index in DBC Corrupts Table

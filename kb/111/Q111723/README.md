@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111723: BUG: SQL Server SQLSetParam Fails on the 252nd Parameter"
-permalink: kb/111/Q111723/
+permalink: /kb/111/Q111723/
 ---
 
 ## Q111723: BUG: SQL Server SQLSetParam Fails on the 252nd Parameter

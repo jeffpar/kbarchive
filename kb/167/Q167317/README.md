@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167317: WD97: Cannot Close or Save Htmlview.dot"
-permalink: kb/167/Q167317/
+permalink: /kb/167/Q167317/
 ---
 
 ## Q167317: WD97: Cannot Close or Save Htmlview.dot

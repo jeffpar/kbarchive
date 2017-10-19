@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36011: Reading Serial Port Information Impossible"
-permalink: kb/036/Q36011/
+permalink: /kb/036/Q36011/
 ---
 
 ## Q36011: Reading Serial Port Information Impossible

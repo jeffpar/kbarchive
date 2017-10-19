@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82379: MicroCourier Displays Vertical Lines"
-permalink: kb/082/Q82379/
+permalink: /kb/082/Q82379/
 ---
 
 ## Q82379: MicroCourier Displays Vertical Lines

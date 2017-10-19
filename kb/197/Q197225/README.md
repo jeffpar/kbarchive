@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197225: WD97: Text Larger Than Expected or Distorted in Normal View"
-permalink: kb/197/Q197225/
+permalink: /kb/197/Q197225/
 ---
 
 ## Q197225: WD97: Text Larger Than Expected or Distorted in Normal View

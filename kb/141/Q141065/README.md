@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141065: PC Win: MMF Displays No Messages After Integrity Check"
-permalink: kb/141/Q141065/
+permalink: /kb/141/Q141065/
 ---
 
 ## Q141065: PC Win: MMF Displays No Messages After Integrity Check

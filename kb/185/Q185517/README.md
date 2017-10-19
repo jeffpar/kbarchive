@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185517: AOE: Connection Type Dialog Box Does Not Include Zone.com"
-permalink: kb/185/Q185517/
+permalink: /kb/185/Q185517/
 ---
 
 ## Q185517: AOE: Connection Type Dialog Box Does Not Include Zone.com

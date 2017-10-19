@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178203: FS98: Nothing Happens When You Click a Menu Command"
-permalink: kb/178/Q178203/
+permalink: /kb/178/Q178203/
 ---
 
 ## Q178203: FS98: Nothing Happens When You Click a Menu Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67882: DOC: Error C2213 Occurs When Base Is an Expression"
-permalink: kb/067/Q67882/
+permalink: /kb/067/Q67882/
 ---
 
 ## Q67882: DOC: Error C2213 Occurs When Base Is an Expression

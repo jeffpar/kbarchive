@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140306: HOWTO: Change a Grid's RecordSource Property Programmatically"
-permalink: kb/140/Q140306/
+permalink: /kb/140/Q140306/
 ---
 
 ## Q140306: HOWTO: Change a Grid's RecordSource Property Programmatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132436: SNA Server Handling of 3270 LU Session Cleanup"
-permalink: kb/132/Q132436/
+permalink: /kb/132/Q132436/
 ---
 
 ## Q132436: SNA Server Handling of 3270 LU Session Cleanup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173027: FIX: CRichEditView as Second Splitter Pane Causes Crash"
-permalink: kb/173/Q173027/
+permalink: /kb/173/Q173027/
 ---
 
 ## Q173027: FIX: CRichEditView as Second Splitter Pane Causes Crash

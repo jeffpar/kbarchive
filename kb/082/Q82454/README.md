@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82454: TIGA May Hang with Window Border Width Equal to 1"
-permalink: kb/082/Q82454/
+permalink: /kb/082/Q82454/
 ---
 
 ## Q82454: TIGA May Hang with Window Border Width Equal to 1

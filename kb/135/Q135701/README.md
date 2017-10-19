@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135701: FIX: TTOC Returns More Than 14 Characters"
-permalink: kb/135/Q135701/
+permalink: /kb/135/Q135701/
 ---
 
 ## Q135701: FIX: TTOC Returns More Than 14 Characters

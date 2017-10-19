@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150164: VFBACKUP Could Not Load VFD.VXD"
-permalink: kb/150/Q150164/
+permalink: /kb/150/Q150164/
 ---
 
 ## Q150164: VFBACKUP Could Not Load VFD.VXD

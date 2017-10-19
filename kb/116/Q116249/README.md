@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116249: Object Packager Font Is Unreadable in Windows 95"
-permalink: kb/116/Q116249/
+permalink: /kb/116/Q116249/
 ---
 
 ## Q116249: Object Packager Font Is Unreadable in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154664: PRB: Dispatch Interface for Automation Object Must Be Registered"
-permalink: kb/154/Q154664/
+permalink: /kb/154/Q154664/
 ---
 
 ## Q154664: PRB: Dispatch Interface for Automation Object Must Be Registered

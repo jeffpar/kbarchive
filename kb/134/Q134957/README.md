@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134957: Systems Management Server 1.1 Requires WinNT 3.5 Service Pack 2"
-permalink: kb/134/Q134957/
+permalink: /kb/134/Q134957/
 ---
 
 ## Q134957: Systems Management Server 1.1 Requires WinNT 3.5 Service Pack 2

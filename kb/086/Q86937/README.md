@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86937: 3COM: How to Configure the Gateway Using the GATEWAY.INI File"
-permalink: kb/086/Q86937/
+permalink: /kb/086/Q86937/
 ---
 
 ## Q86937: 3COM: How to Configure the Gateway Using the GATEWAY.INI File

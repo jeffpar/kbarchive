@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165202: WinNT Client Logon in Resource and Master Domain Environment"
-permalink: kb/165/Q165202/
+permalink: /kb/165/Q165202/
 ---
 
 ## Q165202: WinNT Client Logon in Resource and Master Domain Environment

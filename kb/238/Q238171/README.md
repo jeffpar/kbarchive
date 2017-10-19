@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238171: RAS Port Becomes Unavailable in Windows NT 4.0"
-permalink: kb/238/Q238171/
+permalink: /kb/238/Q238171/
 ---
 
 ## Q238171: RAS Port Becomes Unavailable in Windows NT 4.0

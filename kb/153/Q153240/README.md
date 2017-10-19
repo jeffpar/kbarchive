@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153240: Office95 Fails to Report in Inventory"
-permalink: kb/153/Q153240/
+permalink: /kb/153/Q153240/
 ---
 
 ## Q153240: Office95 Fails to Report in Inventory

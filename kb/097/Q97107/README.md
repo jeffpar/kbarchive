@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97107: Compressed SCSI Drive Does Not Mount at Startup"
-permalink: kb/097/Q97107/
+permalink: /kb/097/Q97107/
 ---
 
 ## Q97107: Compressed SCSI Drive Does Not Mount at Startup

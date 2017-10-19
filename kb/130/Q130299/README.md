@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130299: PRB: CURVAL() Returns Same Value as OLDVAL()"
-permalink: kb/130/Q130299/
+permalink: /kb/130/Q130299/
 ---
 
 ## Q130299: PRB: CURVAL() Returns Same Value as OLDVAL()

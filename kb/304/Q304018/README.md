@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304018: Logon Failure When a Primary Domain Controller Is Unavailable"
-permalink: kb/304/Q304018/
+permalink: /kb/304/Q304018/
 ---
 
 ## Q304018: Logon Failure When a Primary Domain Controller Is Unavailable

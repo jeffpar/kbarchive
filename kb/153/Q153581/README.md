@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153581: HOWTO: Implement the Type Property of a Custom OLE Control"
-permalink: kb/153/Q153581/
+permalink: /kb/153/Q153581/
 ---
 
 ## Q153581: HOWTO: Implement the Type Property of a Custom OLE Control

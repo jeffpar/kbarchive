@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69790: ASD: EICAS Section Not Controllable with Mouse"
-permalink: kb/069/Q69790/
+permalink: /kb/069/Q69790/
 ---
 
 ## Q69790: ASD: EICAS Section Not Controllable with Mouse

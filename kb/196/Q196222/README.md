@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196222: Cannot Log On to Windows NT and NetWare Simultaneously"
-permalink: kb/196/Q196222/
+permalink: /kb/196/Q196222/
 ---
 
 ## Q196222: Cannot Log On to Windows NT and NetWare Simultaneously

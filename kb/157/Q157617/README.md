@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157617: BUG: SQLStatistics Does Not Return Unique Index Information"
-permalink: kb/157/Q157617/
+permalink: /kb/157/Q157617/
 ---
 
 ## Q157617: BUG: SQLStatistics Does Not Return Unique Index Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150301: Global Voice Commands Take Precedence over Custom Commands"
-permalink: kb/150/Q150301/
+permalink: /kb/150/Q150301/
 ---
 
 ## Q150301: Global Voice Commands Take Precedence over Custom Commands

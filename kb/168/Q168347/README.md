@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168347: XADM: New Mailbox Attribute in Exchange Server 5.0 and 5.5"
-permalink: kb/168/Q168347/
+permalink: /kb/168/Q168347/
 ---
 
 ## Q168347: XADM: New Mailbox Attribute in Exchange Server 5.0 and 5.5

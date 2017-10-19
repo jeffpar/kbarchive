@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188696: XCLN: Deferred Delivery Options for Exchange/Outlook Clients"
-permalink: kb/188/Q188696/
+permalink: /kb/188/Q188696/
 ---
 
 ## Q188696: XCLN: Deferred Delivery Options for Exchange/Outlook Clients

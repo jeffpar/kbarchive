@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129054: Periods Not Displayed in CD-ROM Disc Volume Label"
-permalink: kb/129/Q129054/
+permalink: /kb/129/Q129054/
 ---
 
 ## Q129054: Periods Not Displayed in CD-ROM Disc Volume Label

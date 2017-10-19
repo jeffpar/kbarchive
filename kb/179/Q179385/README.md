@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179385: HOWTO: Add Custom ATL Objects to the ATL Object Wizard"
-permalink: kb/179/Q179385/
+permalink: /kb/179/Q179385/
 ---
 
 ## Q179385: HOWTO: Add Custom ATL Objects to the ATL Object Wizard

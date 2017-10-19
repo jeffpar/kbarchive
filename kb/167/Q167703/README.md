@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167703: Canon Bubble Jet BJC-4300 Does Not Support Ledger Paper"
-permalink: kb/167/Q167703/
+permalink: /kb/167/Q167703/
 ---
 
 ## Q167703: Canon Bubble Jet BJC-4300 Does Not Support Ledger Paper

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249243: XWEB: Appointments Created in OWA Appear Shifted One Hour Ahead"
-permalink: kb/249/Q249243/
+permalink: /kb/249/Q249243/
 ---
 
 ## Q249243: XWEB: Appointments Created in OWA Appear Shifted One Hour Ahead

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138500: PRB: Array-Based List Box or Combo Box Shows One Row Only"
-permalink: kb/138/Q138500/
+permalink: /kb/138/Q138500/
 ---
 
 ## Q138500: PRB: Array-Based List Box or Combo Box Shows One Row Only

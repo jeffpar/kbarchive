@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162605: The SLI Interface Does not Return LUA_DATA_INCOMPLETE"
-permalink: kb/162/Q162605/
+permalink: /kb/162/Q162605/
 ---
 
 ## Q162605: The SLI Interface Does not Return LUA_DATA_INCOMPLETE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247822: How to Use Demo SDLC Link Service for 3270 Client Testing"
-permalink: kb/247/Q247822/
+permalink: /kb/247/Q247822/
 ---
 
 ## Q247822: How to Use Demo SDLC Link Service for 3270 Client Testing

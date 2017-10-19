@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111557: PC Win: Mail for Windows MSMAIL.EXE 3.20.4085 Update"
-permalink: kb/111/Q111557/
+permalink: /kb/111/Q111557/
 ---
 
 ## Q111557: PC Win: Mail for Windows MSMAIL.EXE 3.20.4085 Update

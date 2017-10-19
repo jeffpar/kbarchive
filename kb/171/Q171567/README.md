@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171567: Windows NT 4.0 ServiceProvider Priority Values Not Applied"
-permalink: kb/171/Q171567/
+permalink: /kb/171/Q171567/
 ---
 
 ## Q171567: Windows NT 4.0 ServiceProvider Priority Values Not Applied

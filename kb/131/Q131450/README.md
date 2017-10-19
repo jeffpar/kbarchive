@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131450: INFO: Description of Files in the &#92;SS&#92;DATA Directory"
-permalink: kb/131/Q131450/
+permalink: /kb/131/Q131450/
 ---
 
 ## Q131450: INFO: Description of Files in the &#92;SS&#92;DATA Directory

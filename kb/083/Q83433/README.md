@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83433: Windows 3.1 Resource Kit WIN.INI Section Settings"
-permalink: kb/083/Q83433/
+permalink: /kb/083/Q83433/
 ---
 
 ## Q83433: Windows 3.1 Resource Kit WIN.INI Section Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158154: WD97: Multiple Line Table Row in Text Box Won't Break"
-permalink: kb/158/Q158154/
+permalink: /kb/158/Q158154/
 ---
 
 ## Q158154: WD97: Multiple Line Table Row in Text Box Won't Break

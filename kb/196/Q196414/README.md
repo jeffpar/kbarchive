@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196414: XADM: Opening Move Server Documentation Crashes JPN Netscape"
-permalink: kb/196/Q196414/
+permalink: /kb/196/Q196414/
 ---
 
 ## Q196414: XADM: Opening Move Server Documentation Crashes JPN Netscape

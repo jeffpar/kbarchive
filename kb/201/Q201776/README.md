@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201776: SMS: Double-Byte Character Set Name Sorting Limitation"
-permalink: kb/201/Q201776/
+permalink: /kb/201/Q201776/
 ---
 
 ## Q201776: SMS: Double-Byte Character Set Name Sorting Limitation

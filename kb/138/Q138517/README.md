@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138517: Properties of Object Passed ByVal Can Be Modified"
-permalink: kb/138/Q138517/
+permalink: /kb/138/Q138517/
 ---
 
 ## Q138517: Properties of Object Passed ByVal Can Be Modified

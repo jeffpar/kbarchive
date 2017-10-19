@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160921: PRB: Error Using OLE Controls"
-permalink: kb/160/Q160921/
+permalink: /kb/160/Q160921/
 ---
 
 ## Q160921: PRB: Error Using OLE Controls

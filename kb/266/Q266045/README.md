@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266045: XADM: The &quot;Melissa Virus Incident&quot; White Paper Is Available"
-permalink: kb/266/Q266045/
+permalink: /kb/266/Q266045/
 ---
 
 ## Q266045: XADM: The &quot;Melissa Virus Incident&quot; White Paper Is Available

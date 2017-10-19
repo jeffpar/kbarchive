@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181481: XFOR: Non-Delivery Report When Using SSL Without Authentication"
-permalink: kb/181/Q181481/
+permalink: /kb/181/Q181481/
 ---
 
 ## Q181481: XFOR: Non-Delivery Report When Using SSL Without Authentication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270999: Encarta 2001: Web Links Do Not Respond"
-permalink: kb/270/Q270999/
+permalink: /kb/270/Q270999/
 ---
 
 ## Q270999: Encarta 2001: Web Links Do Not Respond

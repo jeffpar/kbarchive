@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151274: Remote Control GP Faults in IDIS_LM.DLL"
-permalink: kb/151/Q151274/
+permalink: /kb/151/Q151274/
 ---
 
 ## Q151274: Remote Control GP Faults in IDIS_LM.DLL

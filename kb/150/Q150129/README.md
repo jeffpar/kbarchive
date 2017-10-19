@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150129: FTM Reports Incorrect Connect Speed for ISDN Modems"
-permalink: kb/150/Q150129/
+permalink: /kb/150/Q150129/
 ---
 
 ## Q150129: FTM Reports Incorrect Connect Speed for ISDN Modems

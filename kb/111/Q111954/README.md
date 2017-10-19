@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111954: SMB Incorrectly Defined in Windows NT Resource Kit"
-permalink: kb/111/Q111954/
+permalink: /kb/111/Q111954/
 ---
 
 ## Q111954: SMB Incorrectly Defined in Windows NT Resource Kit

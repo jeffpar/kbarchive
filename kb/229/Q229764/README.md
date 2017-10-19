@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229764: Err Msg: &quot;System error 87 has occured.&quot; On Alpha Computers"
-permalink: kb/229/Q229764/
+permalink: /kb/229/Q229764/
 ---
 
 ## Q229764: Err Msg: &quot;System error 87 has occured.&quot; On Alpha Computers

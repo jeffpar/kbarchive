@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191875: FIX: Multiple Open Class Browsers Cause Error Message"
-permalink: kb/191/Q191875/
+permalink: /kb/191/Q191875/
 ---
 
 ## Q191875: FIX: Multiple Open Class Browsers Cause Error Message

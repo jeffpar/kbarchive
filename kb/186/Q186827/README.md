@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186827: SMS: Despooler Causes AV While Creating Retry Instruction"
-permalink: kb/186/Q186827/
+permalink: /kb/186/Q186827/
 ---
 
 ## Q186827: SMS: Despooler Causes AV While Creating Retry Instruction

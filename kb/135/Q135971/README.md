@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135971: Cannot Compress Incorrectly Configured Drive with DriveSpace"
-permalink: kb/135/Q135971/
+permalink: /kb/135/Q135971/
 ---
 
 ## Q135971: Cannot Compress Incorrectly Configured Drive with DriveSpace

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62647: How to View Recorder Macro Events"
-permalink: kb/062/Q62647/
+permalink: /kb/062/Q62647/
 ---
 
 ## Q62647: How to View Recorder Macro Events

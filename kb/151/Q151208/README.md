@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151208: XCLN: Unable to Copy Mssp2_en.lex During Client Setup"
-permalink: kb/151/Q151208/
+permalink: /kb/151/Q151208/
 ---
 
 ## Q151208: XCLN: Unable to Copy Mssp2_en.lex During Client Setup

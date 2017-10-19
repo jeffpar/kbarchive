@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98811: ATT: Err=-101 Function=FFAPI_RunGet / Error=20"
-permalink: kb/098/Q98811/
+permalink: /kb/098/Q98811/
 ---
 
 ## Q98811: ATT: Err=-101 Function=FFAPI_RunGet / Error=20

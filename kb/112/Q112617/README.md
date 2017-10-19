@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112617: WFWG 3.11 Err Msg: Write Timeout on Drive C:"
-permalink: kb/112/Q112617/
+permalink: /kb/112/Q112617/
 ---
 
 ## Q112617: WFWG 3.11 Err Msg: Write Timeout on Drive C:

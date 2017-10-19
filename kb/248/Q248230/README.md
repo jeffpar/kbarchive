@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248230: IPX Clients with Session ID &gt; 4,095 Can Cause &quot;Stop 0x1E&quot;"
-permalink: kb/248/Q248230/
+permalink: /kb/248/Q248230/
 ---
 
 ## Q248230: IPX Clients with Session ID &gt; 4,095 Can Cause &quot;Stop 0x1E&quot;

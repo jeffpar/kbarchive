@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160470: Stop 0x0000000a IPX Sends Browser an Incomplete Datagram"
-permalink: kb/160/Q160470/
+permalink: /kb/160/Q160470/
 ---
 
 ## Q160470: Stop 0x0000000a IPX Sends Browser an Incomplete Datagram

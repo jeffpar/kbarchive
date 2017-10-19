@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155651: Monster Truck Madness: Stuck in Arizona Rally Trap"
-permalink: kb/155/Q155651/
+permalink: /kb/155/Q155651/
 ---
 
 ## Q155651: Monster Truck Madness: Stuck in Arizona Rally Trap

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173212: FIX: &quot;Default&quot; Property Ignored for CommandButton on Win NT"
-permalink: kb/173/Q173212/
+permalink: /kb/173/Q173212/
 ---
 
 ## Q173212: FIX: &quot;Default&quot; Property Ignored for CommandButton on Win NT

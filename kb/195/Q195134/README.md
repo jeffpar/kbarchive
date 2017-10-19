@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195134: WD97: Can't Remove Footnote Separator from Master Document"
-permalink: kb/195/Q195134/
+permalink: /kb/195/Q195134/
 ---
 
 ## Q195134: WD97: Can't Remove Footnote Separator from Master Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130460: Using a Variable as a Parameter for CreateObject()"
-permalink: kb/130/Q130460/
+permalink: /kb/130/Q130460/
 ---
 
 ## Q130460: Using a Variable as a Parameter for CreateObject()

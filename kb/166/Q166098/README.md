@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166098: WD97: DocVariable Field Is Autoindex Field After Conversion"
-permalink: kb/166/Q166098/
+permalink: /kb/166/Q166098/
 ---
 
 ## Q166098: WD97: DocVariable Field Is Autoindex Field After Conversion

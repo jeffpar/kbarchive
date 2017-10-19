@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126102: Paintbrush Causes GP Fault with VGA or SVGA Display Driver"
-permalink: kb/126/Q126102/
+permalink: /kb/126/Q126102/
 ---
 
 ## Q126102: Paintbrush Causes GP Fault with VGA or SVGA Display Driver

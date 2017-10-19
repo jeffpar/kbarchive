@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177090: FIX: Returning Empty Array from ActiveX EXE Fails with SP2"
-permalink: kb/177/Q177090/
+permalink: /kb/177/Q177090/
 ---
 
 ## Q177090: FIX: Returning Empty Array from ActiveX EXE Fails with SP2

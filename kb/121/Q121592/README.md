@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121592: SNA Err Msg: Configuration Error. Allocation Error...."
-permalink: kb/121/Q121592/
+permalink: /kb/121/Q121592/
 ---
 
 ## Q121592: SNA Err Msg: Configuration Error. Allocation Error....

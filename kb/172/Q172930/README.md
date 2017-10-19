@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172930: Removing Bypass Traverse Checking Causes Copy to Drop Streams"
-permalink: kb/172/Q172930/
+permalink: /kb/172/Q172930/
 ---
 
 ## Q172930: Removing Bypass Traverse Checking Causes Copy to Drop Streams

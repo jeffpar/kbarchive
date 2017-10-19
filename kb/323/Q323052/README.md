@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323052: PRB: .NET Alerts Code Results in E_DELIVER_FAILED Error"
-permalink: kb/323/Q323052/
+permalink: /kb/323/Q323052/
 ---
 
 ## Q323052: PRB: .NET Alerts Code Results in E_DELIVER_FAILED Error

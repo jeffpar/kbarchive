@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155257: Dialog Templates in Memory"
-permalink: kb/155/Q155257/
+permalink: /kb/155/Q155257/
 ---
 
 ## Q155257: Dialog Templates in Memory

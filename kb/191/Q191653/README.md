@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191653: FP: Link to Bookmark Not Working in Browser"
-permalink: kb/191/Q191653/
+permalink: /kb/191/Q191653/
 ---
 
 ## Q191653: FP: Link to Bookmark Not Working in Browser

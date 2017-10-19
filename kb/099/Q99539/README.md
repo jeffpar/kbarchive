@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99539: Third-Party Books on FoxBASE+/Mac"
-permalink: kb/099/Q99539/
+permalink: /kb/099/Q99539/
 ---
 
 ## Q99539: Third-Party Books on FoxBASE+/Mac

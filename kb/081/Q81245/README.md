@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81245: DeviceCapabilities Function Sample Code"
-permalink: kb/081/Q81245/
+permalink: /kb/081/Q81245/
 ---
 
 ## Q81245: DeviceCapabilities Function Sample Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170034: XFOR: IMC Causes Stop Error in Windows NT"
-permalink: kb/170/Q170034/
+permalink: /kb/170/Q170034/
 ---
 
 ## Q170034: XFOR: IMC Causes Stop Error in Windows NT

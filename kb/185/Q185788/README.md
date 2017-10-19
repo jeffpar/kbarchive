@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185788: Windows NT Hangs on Boot on DEC Alpha Clustered Servers"
-permalink: kb/185/Q185788/
+permalink: /kb/185/Q185788/
 ---
 
 ## Q185788: Windows NT Hangs on Boot on DEC Alpha Clustered Servers

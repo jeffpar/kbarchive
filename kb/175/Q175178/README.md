@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175178: Bookshelf: Images Are Printed Incorrectly on Dot-Matrix Printers"
-permalink: kb/175/Q175178/
+permalink: /kb/175/Q175178/
 ---
 
 ## Q175178: Bookshelf: Images Are Printed Incorrectly on Dot-Matrix Printers

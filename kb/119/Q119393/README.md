@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119393: BUG: Invalid Extraction from istrstream Does Not Set failbit"
-permalink: kb/119/Q119393/
+permalink: /kb/119/Q119393/
 ---
 
 ## Q119393: BUG: Invalid Extraction from istrstream Does Not Set failbit

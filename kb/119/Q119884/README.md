@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119884: PC Ext: Increasing Retry Count for LAN-Based Mail"
-permalink: kb/119/Q119884/
+permalink: /kb/119/Q119884/
 ---
 
 ## Q119884: PC Ext: Increasing Retry Count for LAN-Based Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151388: Setup Prompts for CD-ROM When Installing to Removable Disk"
-permalink: kb/151/Q151388/
+permalink: /kb/151/Q151388/
 ---
 
 ## Q151388: Setup Prompts for CD-ROM When Installing to Removable Disk

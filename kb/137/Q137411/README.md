@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137411: BUG: HalfHeight Forms Closable Even If Closable = False"
-permalink: kb/137/Q137411/
+permalink: /kb/137/Q137411/
 ---
 
 ## Q137411: BUG: HalfHeight Forms Closable Even If Closable = False

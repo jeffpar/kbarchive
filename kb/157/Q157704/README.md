@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157704: XCLN: Schedule+ Appointments Scheduled Time Incorrect"
-permalink: kb/157/Q157704/
+permalink: /kb/157/Q157704/
 ---
 
 ## Q157704: XCLN: Schedule+ Appointments Scheduled Time Incorrect

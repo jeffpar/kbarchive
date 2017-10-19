@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89378: Champ Mouse Operation Modes"
-permalink: kb/089/Q89378/
+permalink: /kb/089/Q89378/
 ---
 
 ## Q89378: Champ Mouse Operation Modes

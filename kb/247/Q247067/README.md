@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247067: Cluster Server Is Not Configured Properly After Unattended Setup"
-permalink: kb/247/Q247067/
+permalink: /kb/247/Q247067/
 ---
 
 ## Q247067: Cluster Server Is Not Configured Properly After Unattended Setup

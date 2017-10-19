@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252388: How to Add a Default Printer for All New Users"
-permalink: kb/252/Q252388/
+permalink: /kb/252/Q252388/
 ---
 
 ## Q252388: How to Add a Default Printer for All New Users

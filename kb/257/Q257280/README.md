@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257280: SMS: Advertisement Runs Multiple Times on Windows 95/98 Clients"
-permalink: kb/257/Q257280/
+permalink: /kb/257/Q257280/
 ---
 
 ## Q257280: SMS: Advertisement Runs Multiple Times on Windows 95/98 Clients

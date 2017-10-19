@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189234: Hellbender: Pressing ALT+TAB Does Not Switch Tasks Properly"
-permalink: kb/189/Q189234/
+permalink: /kb/189/Q189234/
 ---
 
 ## Q189234: Hellbender: Pressing ALT+TAB Does Not Switch Tasks Properly

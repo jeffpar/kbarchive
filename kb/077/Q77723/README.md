@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77723: Paintbrush Loses Copied Images in Windows 3.0"
-permalink: kb/077/Q77723/
+permalink: /kb/077/Q77723/
 ---
 
 ## Q77723: Paintbrush Loses Copied Images in Windows 3.0

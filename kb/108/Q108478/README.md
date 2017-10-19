@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108478: After Dark AD-DOS.COM and Novell NetWare LSL.COM"
-permalink: kb/108/Q108478/
+permalink: /kb/108/Q108478/
 ---
 
 ## Q108478: After Dark AD-DOS.COM and Novell NetWare LSL.COM

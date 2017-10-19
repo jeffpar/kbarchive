@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190313: PRB: Form QueryUnload Fires Before the Activate Event"
-permalink: kb/190/Q190313/
+permalink: /kb/190/Q190313/
 ---
 
 ## Q190313: PRB: Form QueryUnload Fires Before the Activate Event

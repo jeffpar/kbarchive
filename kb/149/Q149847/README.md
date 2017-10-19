@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149847: XADM: Isinteg Reports IPM Subtree Missing From IMC Mailbox"
-permalink: kb/149/Q149847/
+permalink: /kb/149/Q149847/
 ---
 
 ## Q149847: XADM: Isinteg Reports IPM Subtree Missing From IMC Mailbox

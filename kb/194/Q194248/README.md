@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194248: FP98: Errors w/ Ismaps, Searches After Moving Content to Server"
-permalink: kb/194/Q194248/
+permalink: /kb/194/Q194248/
 ---
 
 ## Q194248: FP98: Errors w/ Ismaps, Searches After Moving Content to Server

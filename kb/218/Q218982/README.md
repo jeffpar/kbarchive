@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218982: HOWTO: Override IUnknown Methods in an ATL Server"
-permalink: kb/218/Q218982/
+permalink: /kb/218/Q218982/
 ---
 
 ## Q218982: HOWTO: Override IUnknown Methods in an ATL Server

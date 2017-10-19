@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321599: MS02-028: Heap Overrun in HTR Chunked Encoding Weakens Web Srv"
-permalink: kb/321/Q321599/
+permalink: /kb/321/Q321599/
 ---
 
 ## Q321599: MS02-028: Heap Overrun in HTR Chunked Encoding Weakens Web Srv

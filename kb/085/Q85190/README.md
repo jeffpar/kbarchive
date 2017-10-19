@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85190: WINMATIC.SHH File Is Created by SETUP /H"
-permalink: kb/085/Q85190/
+permalink: /kb/085/Q85190/
 ---
 
 ## Q85190: WINMATIC.SHH File Is Created by SETUP /H

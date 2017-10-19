@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133457: Bookshelf '95: How CD Edition Differs from the Intro Edition"
-permalink: kb/133/Q133457/
+permalink: /kb/133/Q133457/
 ---
 
 ## Q133457: Bookshelf '95: How CD Edition Differs from the Intro Edition

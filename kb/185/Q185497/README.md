@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185497: HOWTO: Using GridHitTest() with OLE Drag and Drop"
-permalink: kb/185/Q185497/
+permalink: /kb/185/Q185497/
 ---
 
 ## Q185497: HOWTO: Using GridHitTest() with OLE Drag and Drop

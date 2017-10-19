@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74445: Opening Files, Compatibility Mode and Windows"
-permalink: kb/074/Q74445/
+permalink: /kb/074/Q74445/
 ---
 
 ## Q74445: Opening Files, Compatibility Mode and Windows

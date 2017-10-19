@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137428: Not Enough Memory on 4-MB System When Setup Is Started Again"
-permalink: kb/137/Q137428/
+permalink: /kb/137/Q137428/
 ---
 
 ## Q137428: Not Enough Memory on 4-MB System When Setup Is Started Again

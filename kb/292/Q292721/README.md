@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292721: Windows NT 4.0 Resource Kit, Supplement One Comments and Correct"
-permalink: kb/292/Q292721/
+permalink: /kb/292/Q292721/
 ---
 
 ## Q292721: Windows NT 4.0 Resource Kit, Supplement One Comments and Correct

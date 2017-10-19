@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190253: INFO: VB6 Designers Do Not Work in VB5"
-permalink: kb/190/Q190253/
+permalink: /kb/190/Q190253/
 ---
 
 ## Q190253: INFO: VB6 Designers Do Not Work in VB5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155234: Computer Restart After Text-Mode Setup Fails"
-permalink: kb/155/Q155234/
+permalink: /kb/155/Q155234/
 ---
 
 ## Q155234: Computer Restart After Text-Mode Setup Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311396: XADM: Error -1022 and -1032 After Restore of Directory"
-permalink: kb/311/Q311396/
+permalink: /kb/311/Q311396/
 ---
 
 ## Q311396: XADM: Error -1022 and -1032 After Restore of Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139106: Modifying the Toll Prefix List in Windows 95/98"
-permalink: kb/139/Q139106/
+permalink: /kb/139/Q139106/
 ---
 
 ## Q139106: Modifying the Toll Prefix List in Windows 95/98

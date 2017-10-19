@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185193: PRB: Clireg32 Fails to Register the Type Library of DCOM Server"
-permalink: kb/185/Q185193/
+permalink: /kb/185/Q185193/
 ---
 
 ## Q185193: PRB: Clireg32 Fails to Register the Type Library of DCOM Server

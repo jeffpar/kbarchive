@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193812: Extended Characters in URL Translated into UTF-8 Characters"
-permalink: kb/193/Q193812/
+permalink: /kb/193/Q193812/
 ---
 
 ## Q193812: Extended Characters in URL Translated into UTF-8 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174649: SMS: Remote Control Viewer Is Blank for a Busy WinNT Client"
-permalink: kb/174/Q174649/
+permalink: /kb/174/Q174649/
 ---
 
 ## Q174649: SMS: Remote Control Viewer Is Blank for a Busy WinNT Client

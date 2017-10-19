@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159304: XADM: Quoted-Printable Is Used in Mixed DBCS/SBCS Messages"
-permalink: kb/159/Q159304/
+permalink: /kb/159/Q159304/
 ---
 
 ## Q159304: XADM: Quoted-Printable Is Used in Mixed DBCS/SBCS Messages

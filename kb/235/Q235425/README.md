@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235425: CreateFile() Can Cause Leak in Paged Pool Memory"
-permalink: kb/235/Q235425/
+permalink: /kb/235/Q235425/
 ---
 
 ## Q235425: CreateFile() Can Cause Leak in Paged Pool Memory

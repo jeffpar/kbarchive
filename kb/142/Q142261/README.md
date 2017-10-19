@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142261: XFOR: Correct Syntax For Debug Option of Restest.exe"
-permalink: kb/142/Q142261/
+permalink: /kb/142/Q142261/
 ---
 
 ## Q142261: XFOR: Correct Syntax For Debug Option of Restest.exe

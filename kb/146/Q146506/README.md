@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146506: WD97: After Save As, Original Doc Unavailable to Other Programs"
-permalink: kb/146/Q146506/
+permalink: /kb/146/Q146506/
 ---
 
 ## Q146506: WD97: After Save As, Original Doc Unavailable to Other Programs

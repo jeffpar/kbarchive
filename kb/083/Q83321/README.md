@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83321: Some Applications Won't Print from File Manager Version 3.1"
-permalink: kb/083/Q83321/
+permalink: /kb/083/Q83321/
 ---
 
 ## Q83321: Some Applications Won't Print from File Manager Version 3.1

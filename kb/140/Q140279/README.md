@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140279: PC NTMMTA: How to Start Services from the Command Line"
-permalink: kb/140/Q140279/
+permalink: /kb/140/Q140279/
 ---
 
 ## Q140279: PC NTMMTA: How to Start Services from the Command Line

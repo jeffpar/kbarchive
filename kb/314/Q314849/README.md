@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314849: FIX: Parameters Passed as Empty Placeholders Default to NULL"
-permalink: kb/314/Q314849/
+permalink: /kb/314/Q314849/
 ---
 
 ## Q314849: FIX: Parameters Passed as Empty Placeholders Default to NULL

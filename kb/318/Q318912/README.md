@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318912: Cannot Connect to Network After Upgrade to Windows NT 4.0 SP6a"
-permalink: kb/318/Q318912/
+permalink: /kb/318/Q318912/
 ---
 
 ## Q318912: Cannot Connect to Network After Upgrade to Windows NT 4.0 SP6a

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236335: XFOR: To Field Empty if User Sends Mail w/AT Command from OV/VM"
-permalink: kb/236/Q236335/
+permalink: /kb/236/Q236335/
 ---
 
 ## Q236335: XFOR: To Field Empty if User Sends Mail w/AT Command from OV/VM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119375: Shiva Remote 3.1.0 and TCP/IP-32"
-permalink: kb/119/Q119375/
+permalink: /kb/119/Q119375/
 ---
 
 ## Q119375: Shiva Remote 3.1.0 and TCP/IP-32

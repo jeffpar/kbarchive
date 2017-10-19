@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139115: SNA Server Support for FNA and HNA"
-permalink: kb/139/Q139115/
+permalink: /kb/139/Q139115/
 ---
 
 ## Q139115: SNA Server Support for FNA and HNA

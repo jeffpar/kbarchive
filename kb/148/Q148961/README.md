@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148961: XADM: Event ID 9037 Advising Increased JET Tables"
-permalink: kb/148/Q148961/
+permalink: /kb/148/Q148961/
 ---
 
 ## Q148961: XADM: Event ID 9037 Advising Increased JET Tables

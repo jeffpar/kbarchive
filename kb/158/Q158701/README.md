@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158701: PRB: Error When Renaming a File That Is Checked Out"
-permalink: kb/158/Q158701/
+permalink: /kb/158/Q158701/
 ---
 
 ## Q158701: PRB: Error When Renaming a File That Is Checked Out

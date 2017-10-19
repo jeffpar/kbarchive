@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113689: PRB: Transport Screens w/ PICT Files from Macintosh to Windows"
-permalink: kb/113/Q113689/
+permalink: /kb/113/Q113689/
 ---
 
 ## Q113689: PRB: Transport Screens w/ PICT Files from Macintosh to Windows

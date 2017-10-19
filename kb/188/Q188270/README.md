@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188270: FP97: Cannot View Global IP Restrictions in FrontPage Explorer"
-permalink: kb/188/Q188270/
+permalink: /kb/188/Q188270/
 ---
 
 ## Q188270: FP97: Cannot View Global IP Restrictions in FrontPage Explorer

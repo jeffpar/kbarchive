@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248466: INFO: File Checked Out in Working Directory May Not by Replaced"
-permalink: kb/248/Q248466/
+permalink: /kb/248/Q248466/
 ---
 
 ## Q248466: INFO: File Checked Out in Working Directory May Not by Replaced

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153252: RUI Contention Leads to Session Error"
-permalink: kb/153/Q153252/
+permalink: /kb/153/Q153252/
 ---
 
 ## Q153252: RUI Contention Leads to Session Error

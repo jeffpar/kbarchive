@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214406: CICS ABEND ATCV When Using Two Phase Commit and CICS Remote Envi"
-permalink: kb/214/Q214406/
+permalink: /kb/214/Q214406/
 ---
 
 ## Q214406: CICS ABEND ATCV When Using Two Phase Commit and CICS Remote Envi

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157756: Remote Control Problem with Matrox MGA Millennium PowerDesk"
-permalink: kb/157/Q157756/
+permalink: /kb/157/Q157756/
 ---
 
 ## Q157756: Remote Control Problem with Matrox MGA Millennium PowerDesk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255768: XADM: Mbclean Report Messages Are Composed in German"
-permalink: kb/255/Q255768/
+permalink: /kb/255/Q255768/
 ---
 
 ## Q255768: XADM: Mbclean Report Messages Are Composed in German

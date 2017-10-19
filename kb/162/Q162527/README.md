@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162527: WD97: Word Count for Comments Number Incorrect"
-permalink: kb/162/Q162527/
+permalink: /kb/162/Q162527/
 ---
 
 ## Q162527: WD97: Word Count for Comments Number Incorrect

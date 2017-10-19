@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126498: PATCH: Vfp3sbs.exe VFP 3.0 Step By Step Corrections"
-permalink: kb/126/Q126498/
+permalink: /kb/126/Q126498/
 ---
 
 ## Q126498: PATCH: Vfp3sbs.exe VFP 3.0 Step By Step Corrections

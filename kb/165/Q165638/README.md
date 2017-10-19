@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165638: HOWTO: Print Two Reports in One Duplexed Report"
-permalink: kb/165/Q165638/
+permalink: /kb/165/Q165638/
 ---
 
 ## Q165638: HOWTO: Print Two Reports in One Duplexed Report

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77875: Blank Window Title in PIF Editor Defaults to PIF Name"
-permalink: kb/077/Q77875/
+permalink: /kb/077/Q77875/
 ---
 
 ## Q77875: Blank Window Title in PIF Editor Defaults to PIF Name

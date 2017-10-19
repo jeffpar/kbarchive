@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141731: Mac Musical Instruments: Files Installed During Installation"
-permalink: kb/141/Q141731/
+permalink: /kb/141/Q141731/
 ---
 
 ## Q141731: Mac Musical Instruments: Files Installed During Installation

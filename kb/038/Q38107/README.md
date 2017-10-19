@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38107: Windows Support of Hewlett-Packard Font Cartridges"
-permalink: kb/038/Q38107/
+permalink: /kb/038/Q38107/
 ---
 
 ## Q38107: Windows Support of Hewlett-Packard Font Cartridges

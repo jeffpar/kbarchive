@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168036: Link State Routing Basics"
-permalink: kb/168/Q168036/
+permalink: /kb/168/Q168036/
 ---
 
 ## Q168036: Link State Routing Basics

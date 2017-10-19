@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183874: AOE: Priests Do Not Heal Assassins in Yamato Campaign"
-permalink: kb/183/Q183874/
+permalink: /kb/183/Q183874/
 ---
 
 ## Q183874: AOE: Priests Do Not Heal Assassins in Yamato Campaign

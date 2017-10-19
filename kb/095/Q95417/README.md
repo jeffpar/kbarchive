@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95417: VidCap: Preview Is Black and White with Video Blaster"
-permalink: kb/095/Q95417/
+permalink: /kb/095/Q95417/
 ---
 
 ## Q95417: VidCap: Preview Is Black and White with Video Blaster

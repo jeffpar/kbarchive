@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84518: Cannot Switch from WordPerfect for MS-DOS Version 5.1"
-permalink: kb/084/Q84518/
+permalink: /kb/084/Q84518/
 ---
 
 ## Q84518: Cannot Switch from WordPerfect for MS-DOS Version 5.1

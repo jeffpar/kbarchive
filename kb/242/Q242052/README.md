@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242052: Cannot Use Point and Print with OEM Windows 95 Printer Drivers"
-permalink: kb/242/Q242052/
+permalink: /kb/242/Q242052/
 ---
 
 ## Q242052: Cannot Use Point and Print with OEM Windows 95 Printer Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246583: SMS: RC Does Not Work in Master Domain Model Using Global Groups"
-permalink: kb/246/Q246583/
+permalink: /kb/246/Q246583/
 ---
 
 ## Q246583: SMS: RC Does Not Work in Master Domain Model Using Global Groups

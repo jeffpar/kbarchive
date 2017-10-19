@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300238: Error Message: &quot;No Web Site Is Configured At This Address&quot;"
-permalink: kb/300/Q300238/
+permalink: /kb/300/Q300238/
 ---
 
 ## Q300238: Error Message: &quot;No Web Site Is Configured At This Address&quot;

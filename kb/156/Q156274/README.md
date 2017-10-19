@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156274: XADM: Saving Changes to Customized Templates"
-permalink: kb/156/Q156274/
+permalink: /kb/156/Q156274/
 ---
 
 ## Q156274: XADM: Saving Changes to Customized Templates

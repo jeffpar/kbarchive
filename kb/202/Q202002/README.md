@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202002: SMS: PC BIOS Properties Should Be Updated for New Systems"
-permalink: kb/202/Q202002/
+permalink: /kb/202/Q202002/
 ---
 
 ## Q202002: SMS: PC BIOS Properties Should Be Updated for New Systems

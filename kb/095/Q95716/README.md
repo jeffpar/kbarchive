@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95716: Error Message &quot;Cannot Create Program Workspace&quot;"
-permalink: kb/095/Q95716/
+permalink: /kb/095/Q95716/
 ---
 
 ## Q95716: Error Message &quot;Cannot Create Program Workspace&quot;

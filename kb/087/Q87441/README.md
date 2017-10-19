@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87441: Windows is Currently Using a Temporary Swap File Located on..."
-permalink: kb/087/Q87441/
+permalink: /kb/087/Q87441/
 ---
 
 ## Q87441: Windows is Currently Using a Temporary Swap File Located on...

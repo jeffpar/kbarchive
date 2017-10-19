@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117778: HOWTO: Change the Background Color of an MFC Edit Control"
-permalink: kb/117/Q117778/
+permalink: /kb/117/Q117778/
 ---
 
 ## Q117778: HOWTO: Change the Background Color of an MFC Edit Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263718: XADM: Performance Optimizer Service Restart Stops on KM Server"
-permalink: kb/263/Q263718/
+permalink: /kb/263/Q263718/
 ---
 
 ## Q263718: XADM: Performance Optimizer Service Restart Stops on KM Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250982: User Cannot Be Given the Right to Load or Unload Device Drivers"
-permalink: kb/250/Q250982/
+permalink: /kb/250/Q250982/
 ---
 
 ## Q250982: User Cannot Be Given the Right to Load or Unload Device Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155932: BUG: Changing ScaleMode in Form Class Moves Objects in VFP 5.0"
-permalink: kb/155/Q155932/
+permalink: /kb/155/Q155932/
 ---
 
 ## Q155932: BUG: Changing ScaleMode in Form Class Moves Objects in VFP 5.0

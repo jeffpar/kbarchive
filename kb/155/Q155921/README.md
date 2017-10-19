@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155921: User Profile Editor Does Not Show Unlocked Program Groups"
-permalink: kb/155/Q155921/
+permalink: /kb/155/Q155921/
 ---
 
 ## Q155921: User Profile Editor Does Not Show Unlocked Program Groups

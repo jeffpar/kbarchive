@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126058: Err Msg: Cannot Create C:&#92;AUTOMAP&#92;USERDATA&#92;USA.MAP"
-permalink: kb/126/Q126058/
+permalink: /kb/126/Q126058/
 ---
 
 ## Q126058: Err Msg: Cannot Create C:&#92;AUTOMAP&#92;USERDATA&#92;USA.MAP

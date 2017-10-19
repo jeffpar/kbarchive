@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243824: XFOR: How to Install the Application Converter for Lotus Notes"
-permalink: kb/243/Q243824/
+permalink: /kb/243/Q243824/
 ---
 
 ## Q243824: XFOR: How to Install the Application Converter for Lotus Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247558: Browsing HTML Administrator without Default Document Enabled Ret"
-permalink: kb/247/Q247558/
+permalink: /kb/247/Q247558/
 ---
 
 ## Q247558: Browsing HTML Administrator without Default Document Enabled Ret

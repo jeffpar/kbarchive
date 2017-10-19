@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117585: Using Supra Fax Modem V.32bis 144i with Windows NT RAS"
-permalink: kb/117/Q117585/
+permalink: /kb/117/Q117585/
 ---
 
 ## Q117585: Using Supra Fax Modem V.32bis 144i with Windows NT RAS

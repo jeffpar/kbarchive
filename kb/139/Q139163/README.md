@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139163: World Atlas 1996: Incorrect Resolution Requirements on Package"
-permalink: kb/139/Q139163/
+permalink: /kb/139/Q139163/
 ---
 
 ## Q139163: World Atlas 1996: Incorrect Resolution Requirements on Package

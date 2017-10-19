@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142020: PRB: Corel Professional Photos CD-ROM Shows _1 After File Name"
-permalink: kb/142/Q142020/
+permalink: /kb/142/Q142020/
 ---
 
 ## Q142020: PRB: Corel Professional Photos CD-ROM Shows _1 After File Name

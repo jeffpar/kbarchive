@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296390: ALS Windows 2000 Network Infrastructure Administration Comments"
-permalink: kb/296/Q296390/
+permalink: /kb/296/Q296390/
 ---
 
 ## Q296390: ALS Windows 2000 Network Infrastructure Administration Comments

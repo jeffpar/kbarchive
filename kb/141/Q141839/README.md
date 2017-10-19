@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141839: How to Set Up a Network Printer Using Point and Print"
-permalink: kb/141/Q141839/
+permalink: /kb/141/Q141839/
 ---
 
 ## Q141839: How to Set Up a Network Printer Using Point and Print

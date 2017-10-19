@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110189: Joystick Doesn't Work with Media Vision Card"
-permalink: kb/110/Q110189/
+permalink: /kb/110/Q110189/
 ---
 
 ## Q110189: Joystick Doesn't Work with Media Vision Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143393: CONN: Changing the Preferred Memory Size of the CNU"
-permalink: kb/143/Q143393/
+permalink: /kb/143/Q143393/
 ---
 
 ## Q143393: CONN: Changing the Preferred Memory Size of the CNU

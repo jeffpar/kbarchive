@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71971: Calculating the Checksum for a Segmented-Executable File"
-permalink: kb/071/Q71971/
+permalink: /kb/071/Q71971/
 ---
 
 ## Q71971: Calculating the Checksum for a Segmented-Executable File

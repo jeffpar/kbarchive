@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235452: XGEN: Updates to the Exchange Server 5.5 SP3 Release Notes"
-permalink: kb/235/Q235452/
+permalink: /kb/235/Q235452/
 ---
 
 ## Q235452: XGEN: Updates to the Exchange Server 5.5 SP3 Release Notes

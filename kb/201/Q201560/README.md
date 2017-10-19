@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201560: Streets 98: Cannot Start or Export Yellow Pages USA Addresses"
-permalink: kb/201/Q201560/
+permalink: /kb/201/Q201560/
 ---
 
 ## Q201560: Streets 98: Cannot Start or Export Yellow Pages USA Addresses

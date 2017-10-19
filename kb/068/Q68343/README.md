@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68343: Add Printer Button in Control Panel Not Working"
-permalink: kb/068/Q68343/
+permalink: /kb/068/Q68343/
 ---
 
 ## Q68343: Add Printer Button in Control Panel Not Working

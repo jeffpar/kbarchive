@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77435: Setup May Report Incorrect Swap File Size and Location"
-permalink: kb/077/Q77435/
+permalink: /kb/077/Q77435/
 ---
 
 ## Q77435: Setup May Report Incorrect Swap File Size and Location

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78627: FIX: Address Label Offset Incorrect in USE32 Data Segment"
-permalink: kb/078/Q78627/
+permalink: /kb/078/Q78627/
 ---
 
 ## Q78627: FIX: Address Label Offset Incorrect in USE32 Data Segment

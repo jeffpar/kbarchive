@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184019: Error Message: Remote Server Does Not Support Encryption"
-permalink: kb/184/Q184019/
+permalink: /kb/184/Q184019/
 ---
 
 ## Q184019: Error Message: Remote Server Does Not Support Encryption

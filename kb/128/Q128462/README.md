@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128462: PROFS: VMGATE Log .MAI File Errors"
-permalink: kb/128/Q128462/
+permalink: /kb/128/Q128462/
 ---
 
 ## Q128462: PROFS: VMGATE Log .MAI File Errors

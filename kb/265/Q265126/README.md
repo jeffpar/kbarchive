@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265126: HOWTO: Print Contents of the Web Browser Control from VFP"
-permalink: kb/265/Q265126/
+permalink: /kb/265/Q265126/
 ---
 
 ## Q265126: HOWTO: Print Contents of the Web Browser Control from VFP

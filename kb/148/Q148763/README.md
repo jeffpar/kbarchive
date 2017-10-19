@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148763: IIS Returns IP Address Instead of Host Name"
-permalink: kb/148/Q148763/
+permalink: /kb/148/Q148763/
 ---
 
 ## Q148763: IIS Returns IP Address Instead of Host Name

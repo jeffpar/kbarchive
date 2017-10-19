@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92541: WFWG and Novell Netware Connectivity Configuration Files"
-permalink: kb/092/Q92541/
+permalink: /kb/092/Q92541/
 ---
 
 ## Q92541: WFWG and Novell Netware Connectivity Configuration Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148259: Cinemania 94: Minimum System Requirements"
-permalink: kb/148/Q148259/
+permalink: /kb/148/Q148259/
 ---
 
 ## Q148259: Cinemania 94: Minimum System Requirements

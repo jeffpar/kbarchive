@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75479: Windows 3.0 Notepad Search and Replace Macro"
-permalink: kb/075/Q75479/
+permalink: /kb/075/Q75479/
 ---
 
 ## Q75479: Windows 3.0 Notepad Search and Replace Macro

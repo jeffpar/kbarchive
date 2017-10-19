@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157884: LAN Man 2.2c Diskless Client May Not Respond As Some Apps Run"
-permalink: kb/157/Q157884/
+permalink: /kb/157/Q157884/
 ---
 
 ## Q157884: LAN Man 2.2c Diskless Client May Not Respond As Some Apps Run

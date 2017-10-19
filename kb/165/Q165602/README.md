@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165602: WD97: RecentFile.Path Is Empty When Referencing An ODMA DMS"
-permalink: kb/165/Q165602/
+permalink: /kb/165/Q165602/
 ---
 
 ## Q165602: WD97: RecentFile.Path Is Empty When Referencing An ODMA DMS

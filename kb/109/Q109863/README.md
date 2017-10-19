@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109863: Writer 1: Difficulty Printing Card to Canon BubbleJet"
-permalink: kb/109/Q109863/
+permalink: /kb/109/Q109863/
 ---
 
 ## Q109863: Writer 1: Difficulty Printing Card to Canon BubbleJet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254251: XADM: LDAP Err. on Mailbox Manager on Windows 2000 Server DC"
-permalink: kb/254/Q254251/
+permalink: /kb/254/Q254251/
 ---
 
 ## Q254251: XADM: LDAP Err. on Mailbox Manager on Windows 2000 Server DC

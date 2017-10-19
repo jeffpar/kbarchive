@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199277: Installing Windows NT 4.0 SP4 Requests Windows NT 4.0 SP3 CD-ROM"
-permalink: kb/199/Q199277/
+permalink: /kb/199/Q199277/
 ---
 
 ## Q199277: Installing Windows NT 4.0 SP4 Requests Windows NT 4.0 SP3 CD-ROM

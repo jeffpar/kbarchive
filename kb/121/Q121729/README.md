@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121729: Space Err Msg: Error Loading 2D driver"
-permalink: kb/121/Q121729/
+permalink: /kb/121/Q121729/
 ---
 
 ## Q121729: Space Err Msg: Error Loading 2D driver

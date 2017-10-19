@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99011: Encarta Err Msg: This List Is Corrupt!"
-permalink: kb/099/Q99011/
+permalink: /kb/099/Q99011/
 ---
 
 ## Q99011: Encarta Err Msg: This List Is Corrupt!

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142900: How to Print a Document Unattended with System Agent"
-permalink: kb/142/Q142900/
+permalink: /kb/142/Q142900/
 ---
 
 ## Q142900: How to Print a Document Unattended with System Agent

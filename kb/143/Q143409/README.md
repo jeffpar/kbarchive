@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143409: DOC: CFile::GetFileTitle May Return with File Extension"
-permalink: kb/143/Q143409/
+permalink: /kb/143/Q143409/
 ---
 
 ## Q143409: DOC: CFile::GetFileTitle May Return with File Extension

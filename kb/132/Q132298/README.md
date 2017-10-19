@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132298: Bookshelf 1995 for the Macintosh: Movie Skips As It Plays"
-permalink: kb/132/Q132298/
+permalink: /kb/132/Q132298/
 ---
 
 ## Q132298: Bookshelf 1995 for the Macintosh: Movie Skips As It Plays

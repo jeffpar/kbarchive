@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155083: INFO: Benefits and Uses of Automation in Visual FoxPro Servers"
-permalink: kb/155/Q155083/
+permalink: /kb/155/Q155083/
 ---
 
 ## Q155083: INFO: Benefits and Uses of Automation in Visual FoxPro Servers

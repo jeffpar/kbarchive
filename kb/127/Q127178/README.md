@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127178: Cannot Open Chat History File While in Chat Session"
-permalink: kb/127/Q127178/
+permalink: /kb/127/Q127178/
 ---
 
 ## Q127178: Cannot Open Chat History File While in Chat Session

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215343: WD97: Outline Numbering Wrong with Special Characters"
-permalink: kb/215/Q215343/
+permalink: /kb/215/Q215343/
 ---
 
 ## Q215343: WD97: Outline Numbering Wrong with Special Characters

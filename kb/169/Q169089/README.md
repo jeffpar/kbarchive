@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169089: FP: New Disk-Based Web Times Out While Trying to Connect"
-permalink: kb/169/Q169089/
+permalink: /kb/169/Q169089/
 ---
 
 ## Q169089: FP: New Disk-Based Web Times Out While Trying to Connect

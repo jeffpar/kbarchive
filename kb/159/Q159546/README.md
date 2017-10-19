@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159546: Monster Truck Madness: Configuring the Thrustmaster Formula"
-permalink: kb/159/Q159546/
+permalink: /kb/159/Q159546/
 ---
 
 ## Q159546: Monster Truck Madness: Configuring the Thrustmaster Formula

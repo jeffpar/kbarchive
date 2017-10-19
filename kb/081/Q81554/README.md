@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81554: PC Win: Only First File of Multiple Files Copies"
-permalink: kb/081/Q81554/
+permalink: /kb/081/Q81554/
 ---
 
 ## Q81554: PC Win: Only First File of Multiple Files Copies

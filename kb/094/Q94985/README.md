@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94985: MemMaker Fails to Undo Changes to CONFIG.SYS File"
-permalink: kb/094/Q94985/
+permalink: /kb/094/Q94985/
 ---
 
 ## Q94985: MemMaker Fails to Undo Changes to CONFIG.SYS File

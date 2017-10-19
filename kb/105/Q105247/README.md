@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105247: Err Msg: There are no Print Processors... Creating a Printer"
-permalink: kb/105/Q105247/
+permalink: /kb/105/Q105247/
 ---
 
 ## Q105247: Err Msg: There are no Print Processors... Creating a Printer

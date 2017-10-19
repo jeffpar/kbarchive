@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173996: Explorer Caused an Invalid Page Fault in Comctl32.dll"
-permalink: kb/173/Q173996/
+permalink: /kb/173/Q173996/
 ---
 
 ## Q173996: Explorer Caused an Invalid Page Fault in Comctl32.dll

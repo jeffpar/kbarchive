@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50351: DOC: mktemp() Creates a Maximum of 27 Unique Filenames"
-permalink: kb/050/Q50351/
+permalink: /kb/050/Q50351/
 ---
 
 ## Q50351: DOC: mktemp() Creates a Maximum of 27 Unique Filenames

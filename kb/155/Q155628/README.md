@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155628: PRB: &quot;Save As&quot; Does Not Save a Stored Procedure on the Server"
-permalink: kb/155/Q155628/
+permalink: /kb/155/Q155628/
 ---
 
 ## Q155628: PRB: &quot;Save As&quot; Does Not Save a Stored Procedure on the Server

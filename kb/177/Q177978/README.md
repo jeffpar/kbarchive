@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177978: Modem Does Not Dial All Numbers in Calling Card Rule"
-permalink: kb/177/Q177978/
+permalink: /kb/177/Q177978/
 ---
 
 ## Q177978: Modem Does Not Dial All Numbers in Calling Card Rule

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153614: Games/DreamWorks Err Msg: The Wsock32.dll File Cannot Start"
-permalink: kb/153/Q153614/
+permalink: /kb/153/Q153614/
 ---
 
 ## Q153614: Games/DreamWorks Err Msg: The Wsock32.dll File Cannot Start

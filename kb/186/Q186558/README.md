@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186558: Terminal Server System Font Setting Affects All Clients"
-permalink: kb/186/Q186558/
+permalink: /kb/186/Q186558/
 ---
 
 ## Q186558: Terminal Server System Font Setting Affects All Clients

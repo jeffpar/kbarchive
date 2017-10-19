@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213279: SMS: Component Status Summarizer Does Not Clear Daily Buckets"
-permalink: kb/213/Q213279/
+permalink: /kb/213/Q213279/
 ---
 
 ## Q213279: SMS: Component Status Summarizer Does Not Clear Daily Buckets

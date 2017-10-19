@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231276: Missing IIS 4.0 Software Development Kit (SDK) Files"
-permalink: kb/231/Q231276/
+permalink: /kb/231/Q231276/
 ---
 
 ## Q231276: Missing IIS 4.0 Software Development Kit (SDK) Files

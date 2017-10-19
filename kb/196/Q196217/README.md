@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196217: XADM: IS Shuts Down with JET Reporting Out of Disk Space"
-permalink: kb/196/Q196217/
+permalink: /kb/196/Q196217/
 ---
 
 ## Q196217: XADM: IS Shuts Down with JET Reporting Out of Disk Space

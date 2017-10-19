@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124409: UT1x: Upsizing Wizard Incorrectly Converts Extended Characters"
-permalink: kb/124/Q124409/
+permalink: /kb/124/Q124409/
 ---
 
 ## Q124409: UT1x: Upsizing Wizard Incorrectly Converts Extended Characters

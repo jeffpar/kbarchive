@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281134: Windows 2000 Administrator's Pocket Consultant Comments and Corr"
-permalink: kb/281/Q281134/
+permalink: /kb/281/Q281134/
 ---
 
 ## Q281134: Windows 2000 Administrator's Pocket Consultant Comments and Corr

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176196: XADM: Some Mailboxes Not Included in Directory Synchronization"
-permalink: kb/176/Q176196/
+permalink: /kb/176/Q176196/
 ---
 
 ## Q176196: XADM: Some Mailboxes Not Included in Directory Synchronization

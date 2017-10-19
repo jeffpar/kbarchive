@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145873: Copying/Pasting Appointment Inherits New Appt. Time"
-permalink: kb/145/Q145873/
+permalink: /kb/145/Q145873/
 ---
 
 ## Q145873: Copying/Pasting Appointment Inherits New Appt. Time

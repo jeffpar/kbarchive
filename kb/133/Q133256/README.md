@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133256: HOWTO: How to Prevent Mainframe Window from Being ReSized"
-permalink: kb/133/Q133256/
+permalink: /kb/133/Q133256/
 ---
 
 ## Q133256: HOWTO: How to Prevent Mainframe Window from Being ReSized

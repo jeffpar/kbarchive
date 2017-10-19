@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234826: MOD2000: Source Code Control Check Out Status Tab Is Blank"
-permalink: kb/234/Q234826/
+permalink: /kb/234/Q234826/
 ---
 
 ## Q234826: MOD2000: Source Code Control Check Out Status Tab Is Blank

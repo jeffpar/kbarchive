@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146356: Large Width Scrollbars Causes Wisdom Lit. to Word Wrap"
-permalink: kb/146/Q146356/
+permalink: /kb/146/Q146356/
 ---
 
 ## Q146356: Large Width Scrollbars Causes Wisdom Lit. to Word Wrap

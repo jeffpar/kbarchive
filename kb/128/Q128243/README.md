@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128243: PC Win: GP Fault with Corrupt .XTN Files"
-permalink: kb/128/Q128243/
+permalink: /kb/128/Q128243/
 ---
 
 ## Q128243: PC Win: GP Fault with Corrupt .XTN Files

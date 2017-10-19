@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190663: PRB: Opening an ODBC Database Inside a Jet Workspace Hangs VB"
-permalink: kb/190/Q190663/
+permalink: /kb/190/Q190663/
 ---
 
 ## Q190663: PRB: Opening an ODBC Database Inside a Jet Workspace Hangs VB

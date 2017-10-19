@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140422: Domain Synchronization Over a Slow WAN Link"
-permalink: kb/140/Q140422/
+permalink: /kb/140/Q140422/
 ---
 
 ## Q140422: Domain Synchronization Over a Slow WAN Link

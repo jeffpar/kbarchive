@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259310: Error Message &quot;0x80080005&quot; and Logon Problems"
-permalink: kb/259/Q259310/
+permalink: /kb/259/Q259310/
 ---
 
 ## Q259310: Error Message &quot;0x80080005&quot; and Logon Problems

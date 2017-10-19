@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250450: XFOR: Using Notes Document Type Cause Address Books to Reload"
-permalink: kb/250/Q250450/
+permalink: /kb/250/Q250450/
 ---
 
 ## Q250450: XFOR: Using Notes Document Type Cause Address Books to Reload

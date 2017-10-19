@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226865: SMS: Ping Tool Button Is Not Available in Remote Control Session"
-permalink: kb/226/Q226865/
+permalink: /kb/226/Q226865/
 ---
 
 ## Q226865: SMS: Ping Tool Button Is Not Available in Remote Control Session

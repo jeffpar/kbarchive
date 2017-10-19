@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171348: PRB: TabStrip Control is Always on Top During Runtime"
-permalink: kb/171/Q171348/
+permalink: /kb/171/Q171348/
 ---
 
 ## Q171348: PRB: TabStrip Control is Always on Top During Runtime

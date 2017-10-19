@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171490: FIX: Crash After Toggling Folders in ActiveX EXE Project"
-permalink: kb/171/Q171490/
+permalink: /kb/171/Q171490/
 ---
 
 ## Q171490: FIX: Crash After Toggling Folders in ActiveX EXE Project

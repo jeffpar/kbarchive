@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190067: BUG: Object References Might Not Be Released Properly"
-permalink: kb/190/Q190067/
+permalink: /kb/190/Q190067/
 ---
 
 ## Q190067: BUG: Object References Might Not Be Released Properly

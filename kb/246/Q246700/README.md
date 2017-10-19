@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246700: XFOR: Dirsync: Export Containers Empty After Applying 5.5 SP3"
-permalink: kb/246/Q246700/
+permalink: /kb/246/Q246700/
 ---
 
 ## Q246700: XFOR: Dirsync: Export Containers Empty After Applying 5.5 SP3

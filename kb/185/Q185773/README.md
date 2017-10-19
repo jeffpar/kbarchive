@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185773: NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition"
-permalink: kb/185/Q185773/
+permalink: /kb/185/Q185773/
 ---
 
 ## Q185773: NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition

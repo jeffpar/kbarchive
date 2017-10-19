@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37606: Entering Airplane Position Using Keyboard"
-permalink: kb/037/Q37606/
+permalink: /kb/037/Q37606/
 ---
 
 ## Q37606: Entering Airplane Position Using Keyboard

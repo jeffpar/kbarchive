@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150017: Multimedia Err Msg: &quot;The File Wing32.dll open...,&quot;"
-permalink: kb/150/Q150017/
+permalink: /kb/150/Q150017/
 ---
 
 ## Q150017: Multimedia Err Msg: &quot;The File Wing32.dll open...,&quot;

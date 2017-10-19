@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83537: Mac Fax: Fax Gateway Sending an Extra Page"
-permalink: kb/083/Q83537/
+permalink: /kb/083/Q83537/
 ---
 
 ## Q83537: Mac Fax: Fax Gateway Sending an Extra Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140557: Microsoft Windows 95 Password List Security Issue"
-permalink: kb/140/Q140557/
+permalink: /kb/140/Q140557/
 ---
 
 ## Q140557: Microsoft Windows 95 Password List Security Issue

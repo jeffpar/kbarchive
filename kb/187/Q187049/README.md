@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187049: Active Sessions Cannot Have Related Clients"
-permalink: kb/187/Q187049/
+permalink: /kb/187/Q187049/
 ---
 
 ## Q187049: Active Sessions Cannot Have Related Clients

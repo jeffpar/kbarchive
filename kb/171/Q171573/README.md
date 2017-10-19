@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171573: Webhits.exe Error Message: General Access Denied"
-permalink: kb/171/Q171573/
+permalink: /kb/171/Q171573/
 ---
 
 ## Q171573: Webhits.exe Error Message: General Access Denied

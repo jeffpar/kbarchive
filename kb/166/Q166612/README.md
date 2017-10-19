@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166612: XADM: Migration from Collabra to MS Exchange Fails"
-permalink: kb/166/Q166612/
+permalink: /kb/166/Q166612/
 ---
 
 ## Q166612: XADM: Migration from Collabra to MS Exchange Fails

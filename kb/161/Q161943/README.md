@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161943: XFOR: RFC822 Header Includes BCC Recipients Fields"
-permalink: kb/161/Q161943/
+permalink: /kb/161/Q161943/
 ---
 
 ## Q161943: XFOR: RFC822 Header Includes BCC Recipients Fields

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162787: Access Denied Error with User Manager or Server Manager"
-permalink: kb/162/Q162787/
+permalink: /kb/162/Q162787/
 ---
 
 ## Q162787: Access Denied Error with User Manager or Server Manager

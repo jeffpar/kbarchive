@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82691: Novell NetWare Incompatible with XTreeNet 2.0 in VM"
-permalink: kb/082/Q82691/
+permalink: /kb/082/Q82691/
 ---
 
 ## Q82691: Novell NetWare Incompatible with XTreeNet 2.0 in VM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165347: FP: FrontPage Save Results Forms Altered By Web Browsers"
-permalink: kb/165/Q165347/
+permalink: /kb/165/Q165347/
 ---
 
 ## Q165347: FP: FrontPage Save Results Forms Altered By Web Browsers

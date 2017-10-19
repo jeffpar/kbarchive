@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119359: PC DB Win: Steps to Move User's Account Without Using MoveUser"
-permalink: kb/119/Q119359/
+permalink: /kb/119/Q119359/
 ---
 
 ## Q119359: PC DB Win: Steps to Move User's Account Without Using MoveUser

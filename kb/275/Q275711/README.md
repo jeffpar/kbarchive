@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275711: SNACFG Incorrectly Uses Long File Names"
-permalink: kb/275/Q275711/
+permalink: /kb/275/Q275711/
 ---
 
 ## Q275711: SNACFG Incorrectly Uses Long File Names

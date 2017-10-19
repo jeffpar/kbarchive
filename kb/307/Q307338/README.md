@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307338: Stop 0xA Error in nwlnkspx!SpxConnConnectFindRouteComplete()"
-permalink: kb/307/Q307338/
+permalink: /kb/307/Q307338/
 ---
 
 ## Q307338: Stop 0xA Error in nwlnkspx!SpxConnConnectFindRouteComplete()

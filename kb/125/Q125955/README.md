@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125955: Paste Link Fails to Create Network DDE Link in Excel"
-permalink: kb/125/Q125955/
+permalink: /kb/125/Q125955/
 ---
 
 ## Q125955: Paste Link Fails to Create Network DDE Link in Excel

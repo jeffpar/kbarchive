@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275515: PRB: Performance Degradation with SQL Selects from Offline Views"
-permalink: kb/275/Q275515/
+permalink: /kb/275/Q275515/
 ---
 
 ## Q275515: PRB: Performance Degradation with SQL Selects from Offline Views

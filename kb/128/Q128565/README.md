@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128565: LMHOSTS File Generates STOP 0x00000050"
-permalink: kb/128/Q128565/
+permalink: /kb/128/Q128565/
 ---
 
 ## Q128565: LMHOSTS File Generates STOP 0x00000050

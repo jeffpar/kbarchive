@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190442: XADM: Error 0xc0020422 Installing Service Pack"
-permalink: kb/190/Q190442/
+permalink: /kb/190/Q190442/
 ---
 
 ## Q190442: XADM: Error 0xc0020422 Installing Service Pack

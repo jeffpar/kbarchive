@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163244: PRB: RFX Unnecessarily Updates Floating Point Fields"
-permalink: kb/163/Q163244/
+permalink: /kb/163/Q163244/
 ---
 
 ## Q163244: PRB: RFX Unnecessarily Updates Floating Point Fields

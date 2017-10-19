@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156251: ADT95: Cannot Configure Local Dropbox in Replication Manager"
-permalink: kb/156/Q156251/
+permalink: /kb/156/Q156251/
 ---
 
 ## Q156251: ADT95: Cannot Configure Local Dropbox in Replication Manager

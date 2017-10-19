@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130144: PRB: SourceSafe for Windows Setup Fails w/ Novell VLM.EXE 1.1"
-permalink: kb/130/Q130144/
+permalink: /kb/130/Q130144/
 ---
 
 ## Q130144: PRB: SourceSafe for Windows Setup Fails w/ Novell VLM.EXE 1.1

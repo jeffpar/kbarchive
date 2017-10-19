@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26295: Valid Characters for a Volume Label"
-permalink: kb/026/Q26295/
+permalink: /kb/026/Q26295/
 ---
 
 ## Q26295: Valid Characters for a Volume Label

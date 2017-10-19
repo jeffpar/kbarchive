@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109272: Writer: Can't Print from Control Room (Adult Mode)"
-permalink: kb/109/Q109272/
+permalink: /kb/109/Q109272/
 ---
 
 ## Q109272: Writer: Can't Print from Control Room (Adult Mode)

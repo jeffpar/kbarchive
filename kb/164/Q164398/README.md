@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164398: Afd.sys May Cause a STOP 0x0000001e Error Under High Stress"
-permalink: kb/164/Q164398/
+permalink: /kb/164/Q164398/
 ---
 
 ## Q164398: Afd.sys May Cause a STOP 0x0000001e Error Under High Stress

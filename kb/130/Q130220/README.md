@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130220: DHCP Client Renew Fails after Deleting Active Lease"
-permalink: kb/130/Q130220/
+permalink: /kb/130/Q130220/
 ---
 
 ## Q130220: DHCP Client Renew Fails after Deleting Active Lease

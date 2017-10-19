@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154527: BUG: C2374 in OLECTLID.H When Rebuilding DBDAO3.DLL for VC 4.2"
-permalink: kb/154/Q154527/
+permalink: /kb/154/Q154527/
 ---
 
 ## Q154527: BUG: C2374 in OLECTLID.H When Rebuilding DBDAO3.DLL for VC 4.2

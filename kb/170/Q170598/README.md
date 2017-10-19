@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170598: Start Menu Items Missing on ZAK Appstation Client"
-permalink: kb/170/Q170598/
+permalink: /kb/170/Q170598/
 ---
 
 ## Q170598: Start Menu Items Missing on ZAK Appstation Client

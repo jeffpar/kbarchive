@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248747: Error Message: STOP 0x00000041 MUST_SUCCEED_POOL_EMPTY"
-permalink: kb/248/Q248747/
+permalink: /kb/248/Q248747/
 ---
 
 ## Q248747: Error Message: STOP 0x00000041 MUST_SUCCEED_POOL_EMPTY

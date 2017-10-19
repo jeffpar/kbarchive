@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86923: DOCERR: EMC, EML, and EMR RTF Tokens Documented Incorrectly"
-permalink: kb/086/Q86923/
+permalink: /kb/086/Q86923/
 ---
 
 ## Q86923: DOCERR: EMC, EML, and EMR RTF Tokens Documented Incorrectly

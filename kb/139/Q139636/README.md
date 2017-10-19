@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139636: X400: Abbreviations for CCITT Recommendation X.224"
-permalink: kb/139/Q139636/
+permalink: /kb/139/Q139636/
 ---
 
 ## Q139636: X400: Abbreviations for CCITT Recommendation X.224

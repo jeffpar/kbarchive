@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264446: XADM: Installation Folder Is the Same After Upgrade"
-permalink: kb/264/Q264446/
+permalink: /kb/264/Q264446/
 ---
 
 ## Q264446: XADM: Installation Folder Is the Same After Upgrade

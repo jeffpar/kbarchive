@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166638: How the Default User Policy Is Implemented"
-permalink: kb/166/Q166638/
+permalink: /kb/166/Q166638/
 ---
 
 ## Q166638: How the Default User Policy Is Implemented

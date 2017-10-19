@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169417: RAS Clients Cannot Access All Networks in an OSPF Network"
-permalink: kb/169/Q169417/
+permalink: /kb/169/Q169417/
 ---
 
 ## Q169417: RAS Clients Cannot Access All Networks in an OSPF Network

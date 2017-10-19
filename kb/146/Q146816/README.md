@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146816: IIS Troubleshooting With ODBC SQL Integration"
-permalink: kb/146/Q146816/
+permalink: /kb/146/Q146816/
 ---
 
 ## Q146816: IIS Troubleshooting With ODBC SQL Integration

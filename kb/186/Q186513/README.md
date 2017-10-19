@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186513: Terminal Server Commands: DISCONN"
-permalink: kb/186/Q186513/
+permalink: /kb/186/Q186513/
 ---
 
 ## Q186513: Terminal Server Commands: DISCONN

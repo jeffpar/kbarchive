@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135047: HOWTO: Use Resource Editor for 16-Color 32x32 Mouse Pointers"
-permalink: kb/135/Q135047/
+permalink: /kb/135/Q135047/
 ---
 
 ## Q135047: HOWTO: Use Resource Editor for 16-Color 32x32 Mouse Pointers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254230: XADM: Running Isinteg in Fix Mode Affects Appointments"
-permalink: kb/254/Q254230/
+permalink: /kb/254/Q254230/
 ---
 
 ## Q254230: XADM: Running Isinteg in Fix Mode Affects Appointments

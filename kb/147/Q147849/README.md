@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147849: MSB: &quot;Internal Error&quot; or Computer Hangs When Starting"
-permalink: kb/147/Q147849/
+permalink: /kb/147/Q147849/
 ---
 
 ## Q147849: MSB: &quot;Internal Error&quot; or Computer Hangs When Starting

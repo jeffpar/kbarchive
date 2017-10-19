@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158949: Lexmark Monitor Reports Only Printer Error"
-permalink: kb/158/Q158949/
+permalink: /kb/158/Q158949/
 ---
 
 ## Q158949: Lexmark Monitor Reports Only Printer Error

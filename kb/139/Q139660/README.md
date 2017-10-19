@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139660: Magic School Bus: Requires 13-Inch Monitor or Larger on Mac"
-permalink: kb/139/Q139660/
+permalink: /kb/139/Q139660/
 ---
 
 ## Q139660: Magic School Bus: Requires 13-Inch Monitor or Larger on Mac

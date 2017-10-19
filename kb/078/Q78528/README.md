@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78528: Shadow RAM Basics"
-permalink: kb/078/Q78528/
+permalink: /kb/078/Q78528/
 ---
 
 ## Q78528: Shadow RAM Basics

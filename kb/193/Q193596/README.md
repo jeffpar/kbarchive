@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193596: RASMAN Registry Values Cannot Be Set Higher Than 0xFF"
-permalink: kb/193/Q193596/
+permalink: /kb/193/Q193596/
 ---
 
 ## Q193596: RASMAN Registry Values Cannot Be Set Higher Than 0xFF

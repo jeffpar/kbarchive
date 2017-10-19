@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185900: Configuring SNA Server and Exchange for SNADS Connectivity"
-permalink: kb/185/Q185900/
+permalink: /kb/185/Q185900/
 ---
 
 ## Q185900: Configuring SNA Server and Exchange for SNADS Connectivity

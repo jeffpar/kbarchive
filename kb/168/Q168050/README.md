@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168050: Access Violation in Explorer when Viewing &#42;.ht file Properties"
-permalink: kb/168/Q168050/
+permalink: /kb/168/Q168050/
 ---
 
 ## Q168050: Access Violation in Explorer when Viewing &#42;.ht file Properties

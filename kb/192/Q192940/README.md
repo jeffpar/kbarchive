@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192940: XFOR: Internet Mail Loses Message Body"
-permalink: kb/192/Q192940/
+permalink: /kb/192/Q192940/
 ---
 
 ## Q192940: XFOR: Internet Mail Loses Message Body

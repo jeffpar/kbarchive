@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191587: HOWTO: Remove a Catalog from Component Gallery View"
-permalink: kb/191/Q191587/
+permalink: /kb/191/Q191587/
 ---
 
 ## Q191587: HOWTO: Remove a Catalog from Component Gallery View

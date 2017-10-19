@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156324: Device Failure Message with Microchannel Network Adapter"
-permalink: kb/156/Q156324/
+permalink: /kb/156/Q156324/
 ---
 
 ## Q156324: Device Failure Message with Microchannel Network Adapter

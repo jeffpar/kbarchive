@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261041: Motocross Madness 2: Game Quits Unexpectedly When You Start Race"
-permalink: kb/261/Q261041/
+permalink: /kb/261/Q261041/
 ---
 
 ## Q261041: Motocross Madness 2: Game Quits Unexpectedly When You Start Race

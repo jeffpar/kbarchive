@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293384: Screen Goes Black Shortly After Signing In To MSN Explorer"
-permalink: kb/293/Q293384/
+permalink: /kb/293/Q293384/
 ---
 
 ## Q293384: Screen Goes Black Shortly After Signing In To MSN Explorer

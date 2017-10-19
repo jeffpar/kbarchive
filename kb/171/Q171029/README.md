@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171029: Error Message: Invalid Page Fault in Module Mcm.dll"
-permalink: kb/171/Q171029/
+permalink: /kb/171/Q171029/
 ---
 
 ## Q171029: Error Message: Invalid Page Fault in Module Mcm.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111596: BUG: Dr. Watson Fails to Write Log File"
-permalink: kb/111/Q111596/
+permalink: /kb/111/Q111596/
 ---
 
 ## Q111596: BUG: Dr. Watson Fails to Write Log File

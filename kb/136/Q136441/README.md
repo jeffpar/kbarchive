@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136441: Last Known Good Always Restores Original Boot Settings"
-permalink: kb/136/Q136441/
+permalink: /kb/136/Q136441/
 ---
 
 ## Q136441: Last Known Good Always Restores Original Boot Settings

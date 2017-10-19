@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88113: INFO: Compile and Link Requirements for MFC Applications"
-permalink: kb/088/Q88113/
+permalink: /kb/088/Q88113/
 ---
 
 ## Q88113: INFO: Compile and Link Requirements for MFC Applications

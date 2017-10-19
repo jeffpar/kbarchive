@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136895: PC Gen: First Contact Form for MS Mail Connection Gateway"
-permalink: kb/136/Q136895/
+permalink: /kb/136/Q136895/
 ---
 
 ## Q136895: PC Gen: First Contact Form for MS Mail Connection Gateway

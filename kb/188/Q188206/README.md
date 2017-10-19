@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188206: &quot;Access Denied&quot; Connecting to Windows NT Server with Many Shares"
-permalink: kb/188/Q188206/
+permalink: /kb/188/Q188206/
 ---
 
 ## Q188206: &quot;Access Denied&quot; Connecting to Windows NT Server with Many Shares

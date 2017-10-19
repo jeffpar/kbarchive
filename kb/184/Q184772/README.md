@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184772: XFOR: Internet Messages Received in Raw Form"
-permalink: kb/184/Q184772/
+permalink: /kb/184/Q184772/
 ---
 
 ## Q184772: XFOR: Internet Messages Received in Raw Form

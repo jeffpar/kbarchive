@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82512: ATI ULTRA Crystal Fonts Incorrect in Excel Formula Bar"
-permalink: kb/082/Q82512/
+permalink: /kb/082/Q82512/
 ---
 
 ## Q82512: ATI ULTRA Crystal Fonts Incorrect in Excel Formula Bar

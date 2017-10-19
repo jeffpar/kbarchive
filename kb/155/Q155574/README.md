@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155574: NFS Share Cannot Be Established from Windows NT Explorer"
-permalink: kb/155/Q155574/
+permalink: /kb/155/Q155574/
 ---
 
 ## Q155574: NFS Share Cannot Be Established from Windows NT Explorer

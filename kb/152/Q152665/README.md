@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152665: How to Immediately Disable and Log off a Domain User"
-permalink: kb/152/Q152665/
+permalink: /kb/152/Q152665/
 ---
 
 ## Q152665: How to Immediately Disable and Log off a Domain User

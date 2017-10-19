@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182444: NBF MaxFrameSize Calculated Incorrectly on Token Ring"
-permalink: kb/182/Q182444/
+permalink: /kb/182/Q182444/
 ---
 
 ## Q182444: NBF MaxFrameSize Calculated Incorrectly on Token Ring

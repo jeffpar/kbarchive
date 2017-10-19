@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178677: Err Msg: MMSYSTEMxxx: There is Not Enough Memory Available for T"
-permalink: kb/178/Q178677/
+permalink: /kb/178/Q178677/
 ---
 
 ## Q178677: Err Msg: MMSYSTEMxxx: There is Not Enough Memory Available for T

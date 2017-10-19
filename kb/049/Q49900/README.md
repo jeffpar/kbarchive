@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49900: PRB: Jumping to an Absolute Address with MASM"
-permalink: kb/049/Q49900/
+permalink: /kb/049/Q49900/
 ---
 
 ## Q49900: PRB: Jumping to an Absolute Address with MASM

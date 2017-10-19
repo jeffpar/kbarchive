@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153271: XCLN: How to Disable Autoprocessing of S+ Meeting Responses"
-permalink: kb/153/Q153271/
+permalink: /kb/153/Q153271/
 ---
 
 ## Q153271: XCLN: How to Disable Autoprocessing of S+ Meeting Responses

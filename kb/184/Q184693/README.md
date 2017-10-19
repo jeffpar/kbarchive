@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184693: DNS/DHCP/WINS Release Notes for Windows NT 4.0 SP4 Update"
-permalink: kb/184/Q184693/
+permalink: /kb/184/Q184693/
 ---
 
 ## Q184693: DNS/DHCP/WINS Release Notes for Windows NT 4.0 SP4 Update

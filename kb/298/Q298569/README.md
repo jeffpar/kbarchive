@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298569: /Oxs Is Always Present in Project Options"
-permalink: kb/298/Q298569/
+permalink: /kb/298/Q298569/
 ---
 
 ## Q298569: /Oxs Is Always Present in Project Options

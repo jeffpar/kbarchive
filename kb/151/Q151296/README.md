@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151296: Top Articles on Windows 95 Communications"
-permalink: kb/151/Q151296/
+permalink: /kb/151/Q151296/
 ---
 
 ## Q151296: Top Articles on Windows 95 Communications

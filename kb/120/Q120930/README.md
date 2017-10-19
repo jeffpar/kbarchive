@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120930: How to Re-sync a LAN Manager Server in a Windows NT Domain"
-permalink: kb/120/Q120930/
+permalink: /kb/120/Q120930/
 ---
 
 ## Q120930: How to Re-sync a LAN Manager Server in a Windows NT Domain

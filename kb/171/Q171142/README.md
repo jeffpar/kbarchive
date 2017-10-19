@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171142: Safety Error During Internet Explorer Enrollment"
-permalink: kb/171/Q171142/
+permalink: /kb/171/Q171142/
 ---
 
 ## Q171142: Safety Error During Internet Explorer Enrollment

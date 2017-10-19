@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106230: Cinemania 1994: Manual Installation Instructions"
-permalink: kb/106/Q106230/
+permalink: /kb/106/Q106230/
 ---
 
 ## Q106230: Cinemania 1994: Manual Installation Instructions

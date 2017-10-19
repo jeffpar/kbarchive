@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132712: Doc Err: Attachmate Extra for Windows Requires IPXINTFC TSR"
-permalink: kb/132/Q132712/
+permalink: /kb/132/Q132712/
 ---
 
 ## Q132712: Doc Err: Attachmate Extra for Windows Requires IPXINTFC TSR

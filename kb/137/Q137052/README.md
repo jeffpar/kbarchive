@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137052: Changed Interactive Setting Not Reflected in Active Slide Show"
-permalink: kb/137/Q137052/
+permalink: /kb/137/Q137052/
 ---
 
 ## Q137052: Changed Interactive Setting Not Reflected in Active Slide Show

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198293: WD97: How to Use Mail Merge with a Microsoft Access Parameter"
-permalink: kb/198/Q198293/
+permalink: /kb/198/Q198293/
 ---
 
 ## Q198293: WD97: How to Use Mail Merge with a Microsoft Access Parameter

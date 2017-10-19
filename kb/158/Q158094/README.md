@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158094: Do Not Run System Agent While Playing GEX"
-permalink: kb/158/Q158094/
+permalink: /kb/158/Q158094/
 ---
 
 ## Q158094: Do Not Run System Agent While Playing GEX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238776: XCLN: MAPIsend Tool Usage and Error Codes"
-permalink: kb/238/Q238776/
+permalink: /kb/238/Q238776/
 ---
 
 ## Q238776: XCLN: MAPIsend Tool Usage and Error Codes

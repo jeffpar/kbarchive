@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238013: XADM: How to Disable a Mailbox in Exchange Server"
-permalink: kb/238/Q238013/
+permalink: /kb/238/Q238013/
 ---
 
 ## Q238013: XADM: How to Disable a Mailbox in Exchange Server

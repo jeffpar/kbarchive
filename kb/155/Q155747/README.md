@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155747: HOWTO: Use the New Application Property in Visual FoxPro 5.0"
-permalink: kb/155/Q155747/
+permalink: /kb/155/Q155747/
 ---
 
 ## Q155747: HOWTO: Use the New Application Property in Visual FoxPro 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82312: Setup Does Not Modify CONFIG.SYS when ATDOSXL.SYS Is Loaded"
-permalink: kb/082/Q82312/
+permalink: /kb/082/Q82312/
 ---
 
 ## Q82312: Setup Does Not Modify CONFIG.SYS when ATDOSXL.SYS Is Loaded

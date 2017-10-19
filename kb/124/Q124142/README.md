@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124142: Registry Editor Hangs When You Select a Key"
-permalink: kb/124/Q124142/
+permalink: /kb/124/Q124142/
 ---
 
 ## Q124142: Registry Editor Hangs When You Select a Key

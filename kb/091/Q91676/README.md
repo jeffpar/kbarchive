@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91676: TV Link Video Connection Device"
-permalink: kb/091/Q91676/
+permalink: /kb/091/Q91676/
 ---
 
 ## Q91676: TV Link Video Connection Device

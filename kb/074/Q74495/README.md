@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74495: Norton NDOS and DOSKEY"
-permalink: kb/074/Q74495/
+permalink: /kb/074/Q74495/
 ---
 
 ## Q74495: Norton NDOS and DOSKEY

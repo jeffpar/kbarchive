@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173394: WD97: Check Links Does Not Accept Some Protocols as Valid Links"
-permalink: kb/173/Q173394/
+permalink: /kb/173/Q173394/
 ---
 
 ## Q173394: WD97: Check Links Does Not Accept Some Protocols as Valid Links

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140887: VB Grid Custom Control: Text Limited to 255 Characters"
-permalink: kb/140/Q140887/
+permalink: /kb/140/Q140887/
 ---
 
 ## Q140887: VB Grid Custom Control: Text Limited to 255 Characters

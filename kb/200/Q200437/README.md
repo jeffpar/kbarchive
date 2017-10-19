@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200437: SMS: Status MIFs Are Generated with .MIF.MIF Extension"
-permalink: kb/200/Q200437/
+permalink: /kb/200/Q200437/
 ---
 
 ## Q200437: SMS: Status MIFs Are Generated with .MIF.MIF Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161403: ADT/ODE: Err Running Setup If More Than 40 Registry Keys Define"
-permalink: kb/161/Q161403/
+permalink: /kb/161/Q161403/
 ---
 
 ## Q161403: ADT/ODE: Err Running Setup If More Than 40 Registry Keys Define

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284932: XADM: Error Message: Unable to Get Organizational Information..."
-permalink: kb/284/Q284932/
+permalink: /kb/284/Q284932/
 ---
 
 ## Q284932: XADM: Error Message: Unable to Get Organizational Information...

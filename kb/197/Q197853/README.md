@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197853: SBS Client Setup Will Not Run After Reboot"
-permalink: kb/197/Q197853/
+permalink: /kb/197/Q197853/
 ---
 
 ## Q197853: SBS Client Setup Will Not Run After Reboot

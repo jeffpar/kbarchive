@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227225: WD97: TOC Shows Backslash Instead of Quotation Marks"
-permalink: kb/227/Q227225/
+permalink: /kb/227/Q227225/
 ---
 
 ## Q227225: WD97: TOC Shows Backslash Instead of Quotation Marks

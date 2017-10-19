@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158368: Missing Control in Volume Control Tool"
-permalink: kb/158/Q158368/
+permalink: /kb/158/Q158368/
 ---
 
 ## Q158368: Missing Control in Volume Control Tool

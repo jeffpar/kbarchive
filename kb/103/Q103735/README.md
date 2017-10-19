@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103735: PostScript Error: Offending Command: MSTT#### Undefined"
-permalink: kb/103/Q103735/
+permalink: /kb/103/Q103735/
 ---
 
 ## Q103735: PostScript Error: Offending Command: MSTT#### Undefined

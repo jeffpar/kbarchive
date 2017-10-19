@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151803: XADM: Setting Up Receive-Only Mailboxes"
-permalink: kb/151/Q151803/
+permalink: /kb/151/Q151803/
 ---
 
 ## Q151803: XADM: Setting Up Receive-Only Mailboxes

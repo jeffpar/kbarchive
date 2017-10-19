@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173199: Multiple Credentials in a Single Windows NT Session"
-permalink: kb/173/Q173199/
+permalink: /kb/173/Q173199/
 ---
 
 ## Q173199: Multiple Credentials in a Single Windows NT Session

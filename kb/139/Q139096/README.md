@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139096: HOWTO: How to Set Up and Use 320x200x8 and 320x240x8 DDraw Modes"
-permalink: kb/139/Q139096/
+permalink: /kb/139/Q139096/
 ---
 
 ## Q139096: HOWTO: How to Set Up and Use 320x200x8 and 320x240x8 DDraw Modes

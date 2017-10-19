@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153970: NETWORKING FUNDAMENTALS TRAINING Corrections and Comments"
-permalink: kb/153/Q153970/
+permalink: /kb/153/Q153970/
 ---
 
 ## Q153970: NETWORKING FUNDAMENTALS TRAINING Corrections and Comments

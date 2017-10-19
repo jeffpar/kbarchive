@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139345: Problems with Spanish Keyboard and Learn to Speak Spanish"
-permalink: kb/139/Q139345/
+permalink: /kb/139/Q139345/
 ---
 
 ## Q139345: Problems with Spanish Keyboard and Learn to Speak Spanish

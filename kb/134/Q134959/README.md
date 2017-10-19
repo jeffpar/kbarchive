@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134959: Cannot copy Icons From a Common Group to a Personal Group"
-permalink: kb/134/Q134959/
+permalink: /kb/134/Q134959/
 ---
 
 ## Q134959: Cannot copy Icons From a Common Group to a Personal Group

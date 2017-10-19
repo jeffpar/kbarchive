@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180594: WD97: Document Map Applies Level 1 to Incorrect Paragraphs"
-permalink: kb/180/Q180594/
+permalink: /kb/180/Q180594/
 ---
 
 ## Q180594: WD97: Document Map Applies Level 1 to Incorrect Paragraphs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244335: SMS: Network Discovery Causes Incorrect Names in Collections"
-permalink: kb/244/Q244335/
+permalink: /kb/244/Q244335/
 ---
 
 ## Q244335: SMS: Network Discovery Causes Incorrect Names in Collections

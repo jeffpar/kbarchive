@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309387: SMS: &quot;Invalid Collection Name&quot; After Valid Collection Browsing"
-permalink: kb/309/Q309387/
+permalink: /kb/309/Q309387/
 ---
 
 ## Q309387: SMS: &quot;Invalid Collection Name&quot; After Valid Collection Browsing

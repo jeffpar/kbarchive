@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186211: Cannot Connect to MSN When More Than One Modem Is Installed"
-permalink: kb/186/Q186211/
+permalink: /kb/186/Q186211/
 ---
 
 ## Q186211: Cannot Connect to MSN When More Than One Modem Is Installed

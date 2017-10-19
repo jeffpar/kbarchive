@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141367: Supported Network Adapters for Windows 95 RPL Boot"
-permalink: kb/141/Q141367/
+permalink: /kb/141/Q141367/
 ---
 
 ## Q141367: Supported Network Adapters for Windows 95 RPL Boot

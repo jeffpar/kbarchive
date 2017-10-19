@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191324: FIX: Clicking Page Does Not Call Valid of Text or Edit Box"
-permalink: kb/191/Q191324/
+permalink: /kb/191/Q191324/
 ---
 
 ## Q191324: FIX: Clicking Page Does Not Call Valid of Text or Edit Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139857: XCLN: Closing Client by Double-Clicking the System Menu"
-permalink: kb/139/Q139857/
+permalink: /kb/139/Q139857/
 ---
 
 ## Q139857: XCLN: Closing Client by Double-Clicking the System Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104681: FIX: StreBlt Sample Causes Windows NT to Hang"
-permalink: kb/104/Q104681/
+permalink: /kb/104/Q104681/
 ---
 
 ## Q104681: FIX: StreBlt Sample Causes Windows NT to Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256179: PRB: BackColor of Shape Bleeds Through on Top-Level Form w/ Grid"
-permalink: kb/256/Q256179/
+permalink: /kb/256/Q256179/
 ---
 
 ## Q256179: PRB: BackColor of Shape Bleeds Through on Top-Level Form w/ Grid

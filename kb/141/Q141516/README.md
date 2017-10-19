@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141516: Updated HP PCL5EMS Drivers for NT"
-permalink: kb/141/Q141516/
+permalink: /kb/141/Q141516/
 ---
 
 ## Q141516: Updated HP PCL5EMS Drivers for NT

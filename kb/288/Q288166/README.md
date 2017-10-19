@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288166: XCON: MTA Stops Delivering from Certain Queues After Event 2187"
-permalink: kb/288/Q288166/
+permalink: /kb/288/Q288166/
 ---
 
 ## Q288166: XCON: MTA Stops Delivering from Certain Queues After Event 2187

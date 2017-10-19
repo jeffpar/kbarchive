@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278331: COMTI: Deallocate Issued to Host for Every COMTI Transaction"
-permalink: kb/278/Q278331/
+permalink: /kb/278/Q278331/
 ---
 
 ## Q278331: COMTI: Deallocate Issued to Host for Every COMTI Transaction

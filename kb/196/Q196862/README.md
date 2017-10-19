@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196862: WD97: Heading Numbering Command Changes Style, Paragraph Format"
-permalink: kb/196/Q196862/
+permalink: /kb/196/Q196862/
 ---
 
 ## Q196862: WD97: Heading Numbering Command Changes Style, Paragraph Format

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81365: FIX: PWB Incorrectly Handles Select in Saved Macros"
-permalink: kb/081/Q81365/
+permalink: /kb/081/Q81365/
 ---
 
 ## Q81365: FIX: PWB Incorrectly Handles Select in Saved Macros

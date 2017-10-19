@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120934: MWBACKUP Can't Back Up More Than 1637 Files from One Dir"
-permalink: kb/120/Q120934/
+permalink: /kb/120/Q120934/
 ---
 
 ## Q120934: MWBACKUP Can't Back Up More Than 1637 Files from One Dir

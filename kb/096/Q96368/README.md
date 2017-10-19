@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96368: How to Encrypt a Program with a Password"
-permalink: kb/096/Q96368/
+permalink: /kb/096/Q96368/
 ---
 
 ## Q96368: How to Encrypt a Program with a Password

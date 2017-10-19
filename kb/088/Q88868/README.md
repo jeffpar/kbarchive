@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88868: Cannot Print Mixed Orientations on Same Page in Duplex Mode"
-permalink: kb/088/Q88868/
+permalink: /kb/088/Q88868/
 ---
 
 ## Q88868: Cannot Print Mixed Orientations on Same Page in Duplex Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173123: XCLN: 5.0/SP1 Macintosh Client Drops Three-Letter Extension"
-permalink: kb/173/Q173123/
+permalink: /kb/173/Q173123/
 ---
 
 ## Q173123: XCLN: 5.0/SP1 Macintosh Client Drops Three-Letter Extension

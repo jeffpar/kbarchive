@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169262: FTP Service Blue Screens When Downloading"
-permalink: kb/169/Q169262/
+permalink: /kb/169/Q169262/
 ---
 
 ## Q169262: FTP Service Blue Screens When Downloading

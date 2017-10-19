@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146598: XFOR: Messages Are Stuck in the IMC's OUT Queue"
-permalink: kb/146/Q146598/
+permalink: /kb/146/Q146598/
 ---
 
 ## Q146598: XFOR: Messages Are Stuck in the IMC's OUT Queue

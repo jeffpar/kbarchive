@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263345: SMS: Client Installation Is Prevented if Logon Point Has Changed"
-permalink: kb/263/Q263345/
+permalink: /kb/263/Q263345/
 ---
 
 ## Q263345: SMS: Client Installation Is Prevented if Logon Point Has Changed

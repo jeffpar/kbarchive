@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149034: FIX: OLE Control Updated Event Fired in Endless Loop"
-permalink: kb/149/Q149034/
+permalink: /kb/149/Q149034/
 ---
 
 ## Q149034: FIX: OLE Control Updated Event Fired in Endless Loop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221718: FIX:C0000005 Fatal Error Saving FormSet After Add Cancel in DE"
-permalink: kb/221/Q221718/
+permalink: /kb/221/Q221718/
 ---
 
 ## Q221718: FIX:C0000005 Fatal Error Saving FormSet After Add Cancel in DE

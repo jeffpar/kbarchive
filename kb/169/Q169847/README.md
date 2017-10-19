@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169847: SNMP SysUpTime Counter Resets After 49.7 Days"
-permalink: kb/169/Q169847/
+permalink: /kb/169/Q169847/
 ---
 
 ## Q169847: SNMP SysUpTime Counter Resets After 49.7 Days

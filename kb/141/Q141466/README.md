@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141466: DHCP Client Reserved Name and Comment Changed by Client"
-permalink: kb/141/Q141466/
+permalink: /kb/141/Q141466/
 ---
 
 ## Q141466: DHCP Client Reserved Name and Comment Changed by Client

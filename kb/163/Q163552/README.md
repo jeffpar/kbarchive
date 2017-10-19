@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163552: HOWTO: Reduce the Size of Exe Files Built with VFP"
-permalink: kb/163/Q163552/
+permalink: /kb/163/Q163552/
 ---
 
 ## Q163552: HOWTO: Reduce the Size of Exe Files Built with VFP

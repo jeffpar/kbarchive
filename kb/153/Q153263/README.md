@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153263: Close Combat Trial Version: System Requirements for Macintosh"
-permalink: kb/153/Q153263/
+permalink: /kb/153/Q153263/
 ---
 
 ## Q153263: Close Combat Trial Version: System Requirements for Macintosh

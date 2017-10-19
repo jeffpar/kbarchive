@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181296: WD97: Macro to Dock Toolbars That Are Beyond Screen Borders"
-permalink: kb/181/Q181296/
+permalink: /kb/181/Q181296/
 ---
 
 ## Q181296: WD97: Macro to Dock Toolbars That Are Beyond Screen Borders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132789: &quot;Network Drive No Longer Exists&quot; Error with NetFlex Card"
-permalink: kb/132/Q132789/
+permalink: /kb/132/Q132789/
 ---
 
 ## Q132789: &quot;Network Drive No Longer Exists&quot; Error with NetFlex Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168292: XFOR: Err Msg: (RAS) Phone Book Cannot Be Opened"
-permalink: kb/168/Q168292/
+permalink: /kb/168/Q168292/
 ---
 
 ## Q168292: XFOR: Err Msg: (RAS) Phone Book Cannot Be Opened

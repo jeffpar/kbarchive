@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173815: Open File Is Slow When Using Novell IntranetWare Client"
-permalink: kb/173/Q173815/
+permalink: /kb/173/Q173815/
 ---
 
 ## Q173815: Open File Is Slow When Using Novell IntranetWare Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68802: INFO: Obtaining Support for Adobe Type Manager (ATM)"
-permalink: kb/068/Q68802/
+permalink: /kb/068/Q68802/
 ---
 
 ## Q68802: INFO: Obtaining Support for Adobe Type Manager (ATM)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255235: SQL Backup to Remote Drive Fails, Error 18204: Access is Denied"
-permalink: kb/255/Q255235/
+permalink: /kb/255/Q255235/
 ---
 
 ## Q255235: SQL Backup to Remote Drive Fails, Error 18204: Access is Denied

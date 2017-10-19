@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171643: Winlogon Hangs at the Log On Screen"
-permalink: kb/171/Q171643/
+permalink: /kb/171/Q171643/
 ---
 
 ## Q171643: Winlogon Hangs at the Log On Screen

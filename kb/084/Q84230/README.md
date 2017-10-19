@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84230: DPT 2011 and 2012B Controllers Need at Least 2G BIOS"
-permalink: kb/084/Q84230/
+permalink: /kb/084/Q84230/
 ---
 
 ## Q84230: DPT 2011 and 2012B Controllers Need at Least 2G BIOS

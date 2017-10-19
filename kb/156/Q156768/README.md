@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156768: STL Sample for deque::push_front, deque::pop_front Functions"
-permalink: kb/156/Q156768/
+permalink: /kb/156/Q156768/
 ---
 
 ## Q156768: STL Sample for deque::push_front, deque::pop_front Functions

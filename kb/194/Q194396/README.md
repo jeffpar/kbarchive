@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194396: MDM.EXE - DLL Initialization Failed Error"
-permalink: kb/194/Q194396/
+permalink: /kb/194/Q194396/
 ---
 
 ## Q194396: MDM.EXE - DLL Initialization Failed Error

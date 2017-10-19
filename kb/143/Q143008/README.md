@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143008: 32-Bit PowerPoint Viewer Interface Different on Windows NT"
-permalink: kb/143/Q143008/
+permalink: /kb/143/Q143008/
 ---
 
 ## Q143008: 32-Bit PowerPoint Viewer Interface Different on Windows NT

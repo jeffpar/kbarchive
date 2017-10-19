@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150131: &quot;Windows: A Fatal Exception&quot; Error Message When Opening BBS"
-permalink: kb/150/Q150131/
+permalink: /kb/150/Q150131/
 ---
 
 ## Q150131: &quot;Windows: A Fatal Exception&quot; Error Message When Opening BBS

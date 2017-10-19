@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170513: DOC: PRF1301 Using Sample Command &quot;FTIME test.exe&quot;"
-permalink: kb/170/Q170513/
+permalink: /kb/170/Q170513/
 ---
 
 ## Q170513: DOC: PRF1301 Using Sample Command &quot;FTIME test.exe&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238864: Windows 98/95 Clients Hang or Become Unstable After SP1 Upgrade"
-permalink: kb/238/Q238864/
+permalink: /kb/238/Q238864/
 ---
 
 ## Q238864: Windows 98/95 Clients Hang or Become Unstable After SP1 Upgrade

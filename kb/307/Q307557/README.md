@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307557: BUG: 32-Bit App. Use of DBGrid Fails When 16-Bit Already Running"
-permalink: kb/307/Q307557/
+permalink: /kb/307/Q307557/
 ---
 
 ## Q307557: BUG: 32-Bit App. Use of DBGrid Fails When 16-Bit Already Running

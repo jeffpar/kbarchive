@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132726: How to Enumerate and Open All Tables in a Database Container"
-permalink: kb/132/Q132726/
+permalink: /kb/132/Q132726/
 ---
 
 ## Q132726: How to Enumerate and Open All Tables in a Database Container

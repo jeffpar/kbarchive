@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129537: PRB: APPEND BLANK Fires Field-Level Validation"
-permalink: kb/129/Q129537/
+permalink: /kb/129/Q129537/
 ---
 
 ## Q129537: PRB: APPEND BLANK Fires Field-Level Validation

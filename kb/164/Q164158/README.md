@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164158: OpenGL Diffuse Settings Revert to Default"
-permalink: kb/164/Q164158/
+permalink: /kb/164/Q164158/
 ---
 
 ## Q164158: OpenGL Diffuse Settings Revert to Default

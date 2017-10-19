@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142434: BUG: Jetpack Overwrites Existing TEMP.MDB File"
-permalink: kb/142/Q142434/
+permalink: /kb/142/Q142434/
 ---
 
 ## Q142434: BUG: Jetpack Overwrites Existing TEMP.MDB File

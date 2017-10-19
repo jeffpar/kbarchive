@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31075: PRB: Window Dragged Close to Screen Edge Becomes Invisible"
-permalink: kb/031/Q31075/
+permalink: /kb/031/Q31075/
 ---
 
 ## Q31075: PRB: Window Dragged Close to Screen Edge Becomes Invisible

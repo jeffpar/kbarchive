@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308121: ELL: Movie Stops on the First Frame"
-permalink: kb/308/Q308121/
+permalink: /kb/308/Q308121/
 ---
 
 ## Q308121: ELL: Movie Stops on the First Frame

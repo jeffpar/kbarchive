@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137276: Cannot Enter Page Breaks in WordPad"
-permalink: kb/137/Q137276/
+permalink: /kb/137/Q137276/
 ---
 
 ## Q137276: Cannot Enter Page Breaks in WordPad

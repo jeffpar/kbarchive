@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174534: BitBlt May Not Work When Raster Operation Mode Is NOTSRCCOPY"
-permalink: kb/174/Q174534/
+permalink: /kb/174/Q174534/
 ---
 
 ## Q174534: BitBlt May Not Work When Raster Operation Mode Is NOTSRCCOPY

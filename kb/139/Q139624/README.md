@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139624: How to Print Pictures in a Report by Using an Embedded Path"
-permalink: kb/139/Q139624/
+permalink: /kb/139/Q139624/
 ---
 
 ## Q139624: How to Print Pictures in a Report by Using an Embedded Path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166484: SNA Server 3.0 Hangs in Stopping Status on Windows NT 4.0 SP3"
-permalink: kb/166/Q166484/
+permalink: /kb/166/Q166484/
 ---
 
 ## Q166484: SNA Server 3.0 Hangs in Stopping Status on Windows NT 4.0 SP3

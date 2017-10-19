@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177941: 16-bit Windows Mail Client Slow on Windows NT 4.0"
-permalink: kb/177/Q177941/
+permalink: /kb/177/Q177941/
 ---
 
 ## Q177941: 16-bit Windows Mail Client Slow on Windows NT 4.0

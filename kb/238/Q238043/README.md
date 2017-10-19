@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238043: Encarta 2000: Setup Unexpectedly Removes Virtual Globe 99"
-permalink: kb/238/Q238043/
+permalink: /kb/238/Q238043/
 ---
 
 ## Q238043: Encarta 2000: Setup Unexpectedly Removes Virtual Globe 99

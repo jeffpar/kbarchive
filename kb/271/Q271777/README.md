@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271777: Distributed Applications with Visual C++ 6.0 Training Kit Commen"
-permalink: kb/271/Q271777/
+permalink: /kb/271/Q271777/
 ---
 
 ## Q271777: Distributed Applications with Visual C++ 6.0 Training Kit Commen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315905: INF: Use the RetryConns Parameter to Retry Connection Attempts"
-permalink: kb/315/Q315905/
+permalink: /kb/315/Q315905/
 ---
 
 ## Q315905: INF: Use the RetryConns Parameter to Retry Connection Attempts

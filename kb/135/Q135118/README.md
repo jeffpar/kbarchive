@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135118: FIX: ResizeParentToFit Won't Work w/ CScrollView on Windows 95"
-permalink: kb/135/Q135118/
+permalink: /kb/135/Q135118/
 ---
 
 ## Q135118: FIX: ResizeParentToFit Won't Work w/ CScrollView on Windows 95

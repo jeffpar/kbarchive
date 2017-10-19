@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128095: SMS Setup Does Not Update PlatformFlags Table in the Database"
-permalink: kb/128/Q128095/
+permalink: /kb/128/Q128095/
 ---
 
 ## Q128095: SMS Setup Does Not Update PlatformFlags Table in the Database

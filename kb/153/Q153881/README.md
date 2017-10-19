@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153881: HOWTO: How To Assign the ActiveX Control LPDispatch Property in"
-permalink: kb/153/Q153881/
+permalink: /kb/153/Q153881/
 ---
 
 ## Q153881: HOWTO: How To Assign the ActiveX Control LPDispatch Property in

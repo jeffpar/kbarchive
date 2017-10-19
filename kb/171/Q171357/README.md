@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171357: HOWTO: Get FoxISAPI Running Without Logging on to Server"
-permalink: kb/171/Q171357/
+permalink: /kb/171/Q171357/
 ---
 
 ## Q171357: HOWTO: Get FoxISAPI Running Without Logging on to Server

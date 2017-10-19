@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82575: Windows Programs Rely on BIOS to Detect Coprocessor"
-permalink: kb/082/Q82575/
+permalink: /kb/082/Q82575/
 ---
 
 ## Q82575: Windows Programs Rely on BIOS to Detect Coprocessor

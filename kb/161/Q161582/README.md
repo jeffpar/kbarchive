@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161582: WD97: AutoCorrect Text Deleted, Partially Visible in Form Field"
-permalink: kb/161/Q161582/
+permalink: /kb/161/Q161582/
 ---
 
 ## Q161582: WD97: AutoCorrect Text Deleted, Partially Visible in Form Field

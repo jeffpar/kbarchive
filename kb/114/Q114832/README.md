@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114832: ADT/ODE: Calendar Control Cannot Format Individual Dates"
-permalink: kb/114/Q114832/
+permalink: /kb/114/Q114832/
 ---
 
 ## Q114832: ADT/ODE: Calendar Control Cannot Format Individual Dates

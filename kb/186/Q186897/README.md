@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186897: PRB: &quot;Failure Writing to the System Registry&quot; Error Message"
-permalink: kb/186/Q186897/
+permalink: /kb/186/Q186897/
 ---
 
 ## Q186897: PRB: &quot;Failure Writing to the System Registry&quot; Error Message

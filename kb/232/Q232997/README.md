@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232997: Convergence in Windows NT Load Balancing Service"
-permalink: kb/232/Q232997/
+permalink: /kb/232/Q232997/
 ---
 
 ## Q232997: Convergence in Windows NT Load Balancing Service

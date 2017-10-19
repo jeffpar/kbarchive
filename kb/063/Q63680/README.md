@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63680: AutoCAD 386 and Windows 3.0"
-permalink: kb/063/Q63680/
+permalink: /kb/063/Q63680/
 ---
 
 ## Q63680: AutoCAD 386 and Windows 3.0

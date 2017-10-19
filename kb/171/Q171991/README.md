@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171991: 3270 Emulator May Truncate Script File When Disk Full"
-permalink: kb/171/Q171991/
+permalink: /kb/171/Q171991/
 ---
 
 ## Q171991: 3270 Emulator May Truncate Script File When Disk Full

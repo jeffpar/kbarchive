@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263395: SMS: LSM Prevents Senior Site Logic from Being Transferred"
-permalink: kb/263/Q263395/
+permalink: /kb/263/Q263395/
 ---
 
 ## Q263395: SMS: LSM Prevents Senior Site Logic from Being Transferred

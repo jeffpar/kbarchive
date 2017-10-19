@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140353: BUG: KeyAscii Behavior Different with DBCombo Control"
-permalink: kb/140/Q140353/
+permalink: /kb/140/Q140353/
 ---
 
 ## Q140353: BUG: KeyAscii Behavior Different with DBCombo Control

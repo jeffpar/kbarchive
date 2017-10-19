@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253994: SMS: Network Discovery Does Not Change &quot;client=1&quot; to &quot;client=0&quot;"
-permalink: kb/253/Q253994/
+permalink: /kb/253/Q253994/
 ---
 
 ## Q253994: SMS: Network Discovery Does Not Change &quot;client=1&quot; to &quot;client=0&quot;

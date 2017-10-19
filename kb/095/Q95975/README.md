@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95975: PC DB: Rebuilding Group Folders Changes Folder Type"
-permalink: kb/095/Q95975/
+permalink: /kb/095/Q95975/
 ---
 
 ## Q95975: PC DB: Rebuilding Group Folders Changes Folder Type

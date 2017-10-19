@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277016: Cannot Install Windows Services for UNIX 2.0 on Windows NT TS"
-permalink: kb/277/Q277016/
+permalink: /kb/277/Q277016/
 ---
 
 ## Q277016: Cannot Install Windows Services for UNIX 2.0 on Windows NT TS

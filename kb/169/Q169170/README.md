@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169170: RAS Error 692 Using USR Sportster ISDN 128k"
-permalink: kb/169/Q169170/
+permalink: /kb/169/Q169170/
 ---
 
 ## Q169170: RAS Error 692 Using USR Sportster ISDN 128k

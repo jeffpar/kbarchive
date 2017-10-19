@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154841: Problem Connecting to Xylogics Annex-3 Terminal Server"
-permalink: kb/154/Q154841/
+permalink: /kb/154/Q154841/
 ---
 
 ## Q154841: Problem Connecting to Xylogics Annex-3 Terminal Server

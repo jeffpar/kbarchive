@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196284: Controlling Default Behavior for Roaming User Profiles"
-permalink: kb/196/Q196284/
+permalink: /kb/196/Q196284/
 ---
 
 ## Q196284: Controlling Default Behavior for Roaming User Profiles

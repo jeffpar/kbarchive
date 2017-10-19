@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198124: WD97: Comments/Annotations Scramble When Merging Documents"
-permalink: kb/198/Q198124/
+permalink: /kb/198/Q198124/
 ---
 
 ## Q198124: WD97: Comments/Annotations Scramble When Merging Documents

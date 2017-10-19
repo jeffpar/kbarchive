@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264675: XADM: Directory Replication Fails with 1091 Error 2147746077"
-permalink: kb/264/Q264675/
+permalink: /kb/264/Q264675/
 ---
 
 ## Q264675: XADM: Directory Replication Fails with 1091 Error 2147746077

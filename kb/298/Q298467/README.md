@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298467: Allow Automatic Logging In MSN Explorer 6.1"
-permalink: kb/298/Q298467/
+permalink: /kb/298/Q298467/
 ---
 
 ## Q298467: Allow Automatic Logging In MSN Explorer 6.1

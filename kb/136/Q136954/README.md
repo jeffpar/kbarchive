@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136954: Disk Formatting Is Slow After Failing on Write-Protected Disk"
-permalink: kb/136/Q136954/
+permalink: /kb/136/Q136954/
 ---
 
 ## Q136954: Disk Formatting Is Slow After Failing on Write-Protected Disk

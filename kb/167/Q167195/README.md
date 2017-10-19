@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167195: 5250 Print Jobs Fail If Connection to Printer Lost/Recovered"
-permalink: kb/167/Q167195/
+permalink: /kb/167/Q167195/
 ---
 
 ## Q167195: 5250 Print Jobs Fail If Connection to Printer Lost/Recovered

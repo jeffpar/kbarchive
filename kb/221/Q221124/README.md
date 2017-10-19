@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221124: Slow File Saves Using Structured Storage Commits with Large Docs"
-permalink: kb/221/Q221124/
+permalink: /kb/221/Q221124/
 ---
 
 ## Q221124: Slow File Saves Using Structured Storage Commits with Large Docs

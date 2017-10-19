@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186094: HOWTO: Change the Data Series in MSGraph Using the PlotBy Prop"
-permalink: kb/186/Q186094/
+permalink: /kb/186/Q186094/
 ---
 
 ## Q186094: HOWTO: Change the Data Series in MSGraph Using the PlotBy Prop

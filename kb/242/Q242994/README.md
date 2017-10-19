@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242994: PRB:ATL IOleInPlaceSite::OnPosRectChange Doesn't Resize Control"
-permalink: kb/242/Q242994/
+permalink: /kb/242/Q242994/
 ---
 
 ## Q242994: PRB:ATL IOleInPlaceSite::OnPosRectChange Doesn't Resize Control

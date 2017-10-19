@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161152: HOWTO: Add a New Appointment in Schedule Plus"
-permalink: kb/161/Q161152/
+permalink: /kb/161/Q161152/
 ---
 
 ## Q161152: HOWTO: Add a New Appointment in Schedule Plus

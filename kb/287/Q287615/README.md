@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287615: SMS: Remctrl.exe Causes PendingFileRenameOperations During Clien"
-permalink: kb/287/Q287615/
+permalink: /kb/287/Q287615/
 ---
 
 ## Q287615: SMS: Remctrl.exe Causes PendingFileRenameOperations During Clien

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161765: Incorrect Resource Information Printed from Device Manager"
-permalink: kb/161/Q161765/
+permalink: /kb/161/Q161765/
 ---
 
 ## Q161765: Incorrect Resource Information Printed from Device Manager

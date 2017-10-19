@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192193: Windows Cannot Find USB Drivers on OSR2.1 CD-ROM"
-permalink: kb/192/Q192193/
+permalink: /kb/192/Q192193/
 ---
 
 ## Q192193: Windows Cannot Find USB Drivers on OSR2.1 CD-ROM

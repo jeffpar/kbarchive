@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115819: QuickShelf: Highlighted Word Not Searched on with NT"
-permalink: kb/115/Q115819/
+permalink: /kb/115/Q115819/
 ---
 
 ## Q115819: QuickShelf: Highlighted Word Not Searched on with NT

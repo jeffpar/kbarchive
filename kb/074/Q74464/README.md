@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74464: Pipe (&#124;) After IF EXIST Fails"
-permalink: kb/074/Q74464/
+permalink: /kb/074/Q74464/
 ---
 
 ## Q74464: Pipe (&#124;) After IF EXIST Fails

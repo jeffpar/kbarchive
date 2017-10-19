@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106414: Err Msg After Upgrading from 3.3 to 6.2: Incorrect DOS Version"
-permalink: kb/106/Q106414/
+permalink: /kb/106/Q106414/
 ---
 
 ## Q106414: Err Msg After Upgrading from 3.3 to 6.2: Incorrect DOS Version

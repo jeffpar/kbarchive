@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156348: Memory-Related Performance Counters Show Zero Values"
-permalink: kb/156/Q156348/
+permalink: /kb/156/Q156348/
 ---
 
 ## Q156348: Memory-Related Performance Counters Show Zero Values

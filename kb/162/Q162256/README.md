@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162256: FIX: TextBox Value in Grid Column Using Numeric ControlSource"
-permalink: kb/162/Q162256/
+permalink: /kb/162/Q162256/
 ---
 
 ## Q162256: FIX: TextBox Value in Grid Column Using Numeric ControlSource

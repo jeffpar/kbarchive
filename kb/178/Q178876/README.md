@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178876: Age of Empires Err Msg: Invalid Page Fault in Kernel32.dll"
-permalink: kb/178/Q178876/
+permalink: /kb/178/Q178876/
 ---
 
 ## Q178876: Age of Empires Err Msg: Invalid Page Fault in Kernel32.dll

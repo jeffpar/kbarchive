@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127002: PC Ext: Err Msg: A Critical Error Has Occurred..."
-permalink: kb/127/Q127002/
+permalink: /kb/127/Q127002/
 ---
 
 ## Q127002: PC Ext: Err Msg: A Critical Error Has Occurred...

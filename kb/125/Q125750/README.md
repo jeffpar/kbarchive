@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125750: PRB: Error LNK2001: '_WinMain@16': Unresolved External Symbol"
-permalink: kb/125/Q125750/
+permalink: /kb/125/Q125750/
 ---
 
 ## Q125750: PRB: Error LNK2001: '_WinMain@16': Unresolved External Symbol

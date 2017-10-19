@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95304: Three Ways to Use the RUN Command in FoxPro for Windows"
-permalink: kb/095/Q95304/
+permalink: /kb/095/Q95304/
 ---
 
 ## Q95304: Three Ways to Use the RUN Command in FoxPro for Windows

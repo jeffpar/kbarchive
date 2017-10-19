@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274229: XADM: How to Copy Exchange Attributes from One AD to Another"
-permalink: kb/274/Q274229/
+permalink: /kb/274/Q274229/
 ---
 
 ## Q274229: XADM: How to Copy Exchange Attributes from One AD to Another

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148200: XGEN: Error Forwarding Exchange Mail with Mac Client PC Mail"
-permalink: kb/148/Q148200/
+permalink: /kb/148/Q148200/
 ---
 
 ## Q148200: XGEN: Error Forwarding Exchange Mail with Mac Client PC Mail

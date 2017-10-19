@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179072: XFOR: Exchange cc:Mail Connector Causes NFT Error on Clandata"
-permalink: kb/179/Q179072/
+permalink: /kb/179/Q179072/
 ---
 
 ## Q179072: XFOR: Exchange cc:Mail Connector Causes NFT Error on Clandata

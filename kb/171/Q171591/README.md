@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171591: Syntax Examples of WinNT Server Registry Resource Kit Utilities"
-permalink: kb/171/Q171591/
+permalink: /kb/171/Q171591/
 ---
 
 ## Q171591: Syntax Examples of WinNT Server Registry Resource Kit Utilities

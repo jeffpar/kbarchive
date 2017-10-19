@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170808: Net.exe Duplicate Name Error 52 with Multihomed Computer"
-permalink: kb/170/Q170808/
+permalink: /kb/170/Q170808/
 ---
 
 ## Q170808: Net.exe Duplicate Name Error 52 with Multihomed Computer

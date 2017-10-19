@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154555: When to Enter Dotted vs Non-Dotted Names in DNS Manager"
-permalink: kb/154/Q154555/
+permalink: /kb/154/Q154555/
 ---
 
 ## Q154555: When to Enter Dotted vs Non-Dotted Names in DNS Manager

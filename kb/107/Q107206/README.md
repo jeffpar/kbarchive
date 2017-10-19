@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107206: HIVEHDR.EXE Mentioned in Resource Kit"
-permalink: kb/107/Q107206/
+permalink: /kb/107/Q107206/
 ---
 
 ## Q107206: HIVEHDR.EXE Mentioned in Resource Kit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153650: Database Manager Does Not Delete Collected Files"
-permalink: kb/153/Q153650/
+permalink: /kb/153/Q153650/
 ---
 
 ## Q153650: Database Manager Does Not Delete Collected Files

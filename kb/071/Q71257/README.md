@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71257: Mac Srv: Deleting Messages Not Work Properly Under Low Memory"
-permalink: kb/071/Q71257/
+permalink: /kb/071/Q71257/
 ---
 
 ## Q71257: Mac Srv: Deleting Messages Not Work Properly Under Low Memory

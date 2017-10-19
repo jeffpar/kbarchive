@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102044: Bringing Up a Windows NT Advanced Server in a TCP/IP WAN"
-permalink: kb/102/Q102044/
+permalink: /kb/102/Q102044/
 ---
 
 ## Q102044: Bringing Up a Windows NT Advanced Server in a TCP/IP WAN

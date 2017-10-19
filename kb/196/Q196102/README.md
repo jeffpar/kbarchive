@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196102: PRB: User Defined Page Size May Causes Report Distortion"
-permalink: kb/196/Q196102/
+permalink: /kb/196/Q196102/
 ---
 
 ## Q196102: PRB: User Defined Page Size May Causes Report Distortion

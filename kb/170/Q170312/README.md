@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170312: FP: Java Applets Fail if Case Is Incorrect in Codebase"
-permalink: kb/170/Q170312/
+permalink: /kb/170/Q170312/
 ---
 
 ## Q170312: FP: Java Applets Fail if Case Is Incorrect in Codebase

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199051: XFOR: Incoming SMTP Messages Missing To, From, and/or Subject"
-permalink: kb/199/Q199051/
+permalink: /kb/199/Q199051/
 ---
 
 ## Q199051: XFOR: Incoming SMTP Messages Missing To, From, and/or Subject

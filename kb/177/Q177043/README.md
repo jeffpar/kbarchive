@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177043: Age of Empires: How to Complete the River Outpost Campaign"
-permalink: kb/177/Q177043/
+permalink: /kb/177/Q177043/
 ---
 
 ## Q177043: Age of Empires: How to Complete the River Outpost Campaign

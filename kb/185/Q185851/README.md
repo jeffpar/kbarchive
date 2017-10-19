@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185851: Parts of Volume Control Are Cut Off at Some Resolutions"
-permalink: kb/185/Q185851/
+permalink: /kb/185/Q185851/
 ---
 
 ## Q185851: Parts of Volume Control Are Cut Off at Some Resolutions

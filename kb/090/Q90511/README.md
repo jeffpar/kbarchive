@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90511: What Is a Clean Boot for Windows for Workgroups?"
-permalink: kb/090/Q90511/
+permalink: /kb/090/Q90511/
 ---
 
 ## Q90511: What Is a Clean Boot for Windows for Workgroups?

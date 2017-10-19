@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q79159: FIX: Incorrect Code Generated If Operand Is [esp][esp]"
-permalink: kb/079/Q79159/
+title: "Q79159: FIX: Incorrect Code Generated If Operand Is &#91;esp&#93;&#91;esp&#93;"
+permalink: /kb/079/Q79159/
 ---
 
-## Q79159: FIX: Incorrect Code Generated If Operand Is [esp][esp]
+## Q79159: FIX: Incorrect Code Generated If Operand Is &#91;esp&#93;&#91;esp&#93;
 
 	Article: Q79159
 	Product(s): Microsoft Macro Assembler

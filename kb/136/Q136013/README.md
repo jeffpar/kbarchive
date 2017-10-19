@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136013: Minitel Emulation in HyperTerminal"
-permalink: kb/136/Q136013/
+permalink: /kb/136/Q136013/
 ---
 
 ## Q136013: Minitel Emulation in HyperTerminal

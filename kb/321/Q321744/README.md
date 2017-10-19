@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321744: Dungeon Siege 1.0: Err Msg: Could Not Connect to the ZoneMatch"
-permalink: kb/321/Q321744/
+permalink: /kb/321/Q321744/
 ---
 
 ## Q321744: Dungeon Siege 1.0: Err Msg: Could Not Connect to the ZoneMatch

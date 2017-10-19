@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135907: PRB: APPEND PROCEDURES Command Generates a Warning"
-permalink: kb/135/Q135907/
+permalink: /kb/135/Q135907/
 ---
 
 ## Q135907: PRB: APPEND PROCEDURES Command Generates a Warning

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239872: NBA/NFL 2000: Can Only Play Game in Software Mode"
-permalink: kb/239/Q239872/
+permalink: /kb/239/Q239872/
 ---
 
 ## Q239872: NBA/NFL 2000: Can Only Play Game in Software Mode

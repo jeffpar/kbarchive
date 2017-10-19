@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143129: Location of Windows NT Server Tools for Windows 95"
-permalink: kb/143/Q143129/
+permalink: /kb/143/Q143129/
 ---
 
 ## Q143129: Location of Windows NT Server Tools for Windows 95

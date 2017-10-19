@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231470: SFU Telnet Security Overview"
-permalink: kb/231/Q231470/
+permalink: /kb/231/Q231470/
 ---
 
 ## Q231470: SFU Telnet Security Overview

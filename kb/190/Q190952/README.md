@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190952: PRB: Upgrade Project to Use New VB6 Controls"
-permalink: kb/190/Q190952/
+permalink: /kb/190/Q190952/
 ---
 
 ## Q190952: PRB: Upgrade Project to Use New VB6 Controls

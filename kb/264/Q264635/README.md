@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264635: Code Page 932 Translation of Roman Numerals Is Not as Expected"
-permalink: kb/264/Q264635/
+permalink: /kb/264/Q264635/
 ---
 
 ## Q264635: Code Page 932 Translation of Roman Numerals Is Not as Expected

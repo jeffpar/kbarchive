@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166013: Error Message: A:&#92; Is Not Accessible"
-permalink: kb/166/Q166013/
+permalink: /kb/166/Q166013/
 ---
 
 ## Q166013: Error Message: A:&#92; Is Not Accessible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166686: English Text in Error Message on Non-English Windows NT"
-permalink: kb/166/Q166686/
+permalink: /kb/166/Q166686/
 ---
 
 ## Q166686: English Text in Error Message on Non-English Windows NT

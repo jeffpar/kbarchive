@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242523: Cannot Delete Macintosh Volume Using MACFILE REMOVE VOLUME"
-permalink: kb/242/Q242523/
+permalink: /kb/242/Q242523/
 ---
 
 ## Q242523: Cannot Delete Macintosh Volume Using MACFILE REMOVE VOLUME

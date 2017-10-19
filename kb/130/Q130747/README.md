@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130747: WSS Setup Does Not Load TASKMAN.EXE"
-permalink: kb/130/Q130747/
+permalink: /kb/130/Q130747/
 ---
 
 ## Q130747: WSS Setup Does Not Load TASKMAN.EXE

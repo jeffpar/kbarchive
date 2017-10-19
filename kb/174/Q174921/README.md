@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174921: HOWTO: Communicate with a UserDocument from a WebBrowser Control"
-permalink: kb/174/Q174921/
+permalink: /kb/174/Q174921/
 ---
 
 ## Q174921: HOWTO: Communicate with a UserDocument from a WebBrowser Control

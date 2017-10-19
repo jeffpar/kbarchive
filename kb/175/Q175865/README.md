@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175865: Print Directly to Printer Unsupported with LPR Devices"
-permalink: kb/175/Q175865/
+permalink: /kb/175/Q175865/
 ---
 
 ## Q175865: Print Directly to Printer Unsupported with LPR Devices

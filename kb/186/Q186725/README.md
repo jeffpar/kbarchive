@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186725: WD97: Leading Spaces and Tabs Removed with Inserted Database"
-permalink: kb/186/Q186725/
+permalink: /kb/186/Q186725/
 ---
 
 ## Q186725: WD97: Leading Spaces and Tabs Removed with Inserted Database

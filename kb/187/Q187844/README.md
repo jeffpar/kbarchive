@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187844: XCLN: Viewing Calendar Information In a Public Folder"
-permalink: kb/187/Q187844/
+permalink: /kb/187/Q187844/
 ---
 
 ## Q187844: XCLN: Viewing Calendar Information In a Public Folder

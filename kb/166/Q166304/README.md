@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166304: Flight Simulator 95: No Brakes Available on the Sopwith Camel"
-permalink: kb/166/Q166304/
+permalink: /kb/166/Q166304/
 ---
 
 ## Q166304: Flight Simulator 95: No Brakes Available on the Sopwith Camel

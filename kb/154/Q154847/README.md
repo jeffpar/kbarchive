@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154847: WINMSD May Not Report Correct Service Pack Version"
-permalink: kb/154/Q154847/
+permalink: /kb/154/Q154847/
 ---
 
 ## Q154847: WINMSD May Not Report Correct Service Pack Version

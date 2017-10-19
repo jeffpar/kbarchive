@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145802: Pregnancy and Child Care: Find By Symptom Seems Inaccurate"
-permalink: kb/145/Q145802/
+permalink: /kb/145/Q145802/
 ---
 
 ## Q145802: Pregnancy and Child Care: Find By Symptom Seems Inaccurate

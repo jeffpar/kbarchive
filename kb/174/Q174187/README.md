@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174187: WinNT Does Not Display IBM PS/2 TrackPoint as the Mouse Driver"
-permalink: kb/174/Q174187/
+permalink: /kb/174/Q174187/
 ---
 
 ## Q174187: WinNT Does Not Display IBM PS/2 TrackPoint as the Mouse Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147551: Serial Mouse Fails With CalComp Digitizer"
-permalink: kb/147/Q147551/
+permalink: /kb/147/Q147551/
 ---
 
 ## Q147551: Serial Mouse Fails With CalComp Digitizer

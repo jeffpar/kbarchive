@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217978: Outgoing and Incoming Values Do Not Refresh as Frequently"
-permalink: kb/217/Q217978/
+permalink: /kb/217/Q217978/
 ---
 
 ## Q217978: Outgoing and Incoming Values Do Not Refresh as Frequently

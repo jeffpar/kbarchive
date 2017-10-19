@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140574: How to Set Global Environment Variables in Windows 95"
-permalink: kb/140/Q140574/
+permalink: /kb/140/Q140574/
 ---
 
 ## Q140574: How to Set Global Environment Variables in Windows 95

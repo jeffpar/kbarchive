@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87148: Mac Wkst: Contents of Cache File and Data File for User"
-permalink: kb/087/Q87148/
+permalink: /kb/087/Q87148/
 ---
 
 ## Q87148: Mac Wkst: Contents of Cache File and Data File for User

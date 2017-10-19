@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206626: HOWTO: Change the Text Color of the Selected Property Sheet Tab"
-permalink: kb/206/Q206626/
+permalink: /kb/206/Q206626/
 ---
 
 ## Q206626: HOWTO: Change the Text Color of the Selected Property Sheet Tab

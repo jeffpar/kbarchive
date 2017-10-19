@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139997: FIX: &quot;Item not found in this collection&quot; with MFC DAO Join"
-permalink: kb/139/Q139997/
+permalink: /kb/139/Q139997/
 ---
 
 ## Q139997: FIX: &quot;Item not found in this collection&quot; with MFC DAO Join

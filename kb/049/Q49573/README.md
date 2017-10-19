@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49573: INFO: scanf() with %i and a Leading 0 Gives Octal Conversion"
-permalink: kb/049/Q49573/
+permalink: /kb/049/Q49573/
 ---
 
 ## Q49573: INFO: scanf() with %i and a Leading 0 Gives Octal Conversion

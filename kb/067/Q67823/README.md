@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67823: ASD: SHIFT+INSERT Doesn't Work on Tandy 1000 Keyboard"
-permalink: kb/067/Q67823/
+permalink: /kb/067/Q67823/
 ---
 
 ## Q67823: ASD: SHIFT+INSERT Doesn't Work on Tandy 1000 Keyboard

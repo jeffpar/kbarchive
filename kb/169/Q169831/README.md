@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169831: PPTP May Fail with Error: Remote PPP Peer is Not Responding"
-permalink: kb/169/Q169831/
+permalink: /kb/169/Q169831/
 ---
 
 ## Q169831: PPTP May Fail with Error: Remote PPP Peer is Not Responding

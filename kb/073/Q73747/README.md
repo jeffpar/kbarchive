@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73747: QDOS II Must Be Upgraded for Use with MS-DOS"
-permalink: kb/073/Q73747/
+permalink: /kb/073/Q73747/
 ---
 
 ## Q73747: QDOS II Must Be Upgraded for Use with MS-DOS

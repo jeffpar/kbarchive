@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117561: CONN: Two or More Attachments Not Transferred via PC Mail"
-permalink: kb/117/Q117561/
+permalink: /kb/117/Q117561/
 ---
 
 ## Q117561: CONN: Two or More Attachments Not Transferred via PC Mail

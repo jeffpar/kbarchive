@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126307: F4 Boot Feature Does Not Work Correctly with SuperStore 2.04"
-permalink: kb/126/Q126307/
+permalink: /kb/126/Q126307/
 ---
 
 ## Q126307: F4 Boot Feature Does Not Work Correctly with SuperStore 2.04

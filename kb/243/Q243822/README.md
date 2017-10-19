@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243822: XCON: Incorrect Internet Mail Service Msg Size Restriction"
-permalink: kb/243/Q243822/
+permalink: /kb/243/Q243822/
 ---
 
 ## Q243822: XCON: Incorrect Internet Mail Service Msg Size Restriction

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242898: IIS Log File Naming Syntax"
-permalink: kb/242/Q242898/
+permalink: /kb/242/Q242898/
 ---
 
 ## Q242898: IIS Log File Naming Syntax

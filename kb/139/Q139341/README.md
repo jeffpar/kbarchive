@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139341: FTP Server Interaction with Guest Account"
-permalink: kb/139/Q139341/
+permalink: /kb/139/Q139341/
 ---
 
 ## Q139341: FTP Server Interaction with Guest Account

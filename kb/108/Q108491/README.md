@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108491: Writer 1: Upside Down Pages Not Dithered"
-permalink: kb/108/Q108491/
+permalink: /kb/108/Q108491/
 ---
 
 ## Q108491: Writer 1: Upside Down Pages Not Dithered

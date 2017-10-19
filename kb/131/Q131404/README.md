@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131404: Err Msg: Cannot Find the File RNETWORK.GLB on the Server"
-permalink: kb/131/Q131404/
+permalink: /kb/131/Q131404/
 ---
 
 ## Q131404: Err Msg: Cannot Find the File RNETWORK.GLB on the Server

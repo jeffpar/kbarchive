@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249840: FS2000 Err Msg: Video Display Must Be in 16-bit Color Mode..."
-permalink: kb/249/Q249840/
+permalink: /kb/249/Q249840/
 ---
 
 ## Q249840: FS2000 Err Msg: Video Display Must Be in 16-bit Color Mode...

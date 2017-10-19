@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103538: MEM &amp; MSD Only See 16 MB of Memory on Dell Machines"
-permalink: kb/103/Q103538/
+permalink: /kb/103/Q103538/
 ---
 
 ## Q103538: MEM &amp; MSD Only See 16 MB of Memory on Dell Machines

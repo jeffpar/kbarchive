@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125258: Pending Local Print Jobs May Disappear After Reboot of Server"
-permalink: kb/125/Q125258/
+permalink: /kb/125/Q125258/
 ---
 
 ## Q125258: Pending Local Print Jobs May Disappear After Reboot of Server

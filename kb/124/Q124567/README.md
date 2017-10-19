@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124567: LPR.EXE Command Can Pass Control Characters to an LPD Server"
-permalink: kb/124/Q124567/
+permalink: /kb/124/Q124567/
 ---
 
 ## Q124567: LPR.EXE Command Can Pass Control Characters to an LPD Server

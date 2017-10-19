@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170873: WD97: IPF Viewing Name or Path on Linked Floating Picture"
-permalink: kb/170/Q170873/
+permalink: /kb/170/Q170873/
 ---
 
 ## Q170873: WD97: IPF Viewing Name or Path on Linked Floating Picture

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129732: INFO: Data Access Objects Have Properties Based on Database Type"
-permalink: kb/129/Q129732/
+permalink: /kb/129/Q129732/
 ---
 
 ## Q129732: INFO: Data Access Objects Have Properties Based on Database Type

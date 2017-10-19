@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83010: SAMPLE: Navigating a Windows Help File Topic Hierarchy"
-permalink: kb/083/Q83010/
+permalink: /kb/083/Q83010/
 ---
 
 ## Q83010: SAMPLE: Navigating a Windows Help File Topic Hierarchy

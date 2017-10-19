@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125478: Replicating Login Scripts from Windows NT to LAN Manager"
-permalink: kb/125/Q125478/
+permalink: /kb/125/Q125478/
 ---
 
 ## Q125478: Replicating Login Scripts from Windows NT to LAN Manager

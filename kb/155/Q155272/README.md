@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155272: Cogent eMaster 110 Network Card Detected as DEC 21140"
-permalink: kb/155/Q155272/
+permalink: /kb/155/Q155272/
 ---
 
 ## Q155272: Cogent eMaster 110 Network Card Detected as DEC 21140

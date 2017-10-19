@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235611: IIS 3.0 May Stop Responding to Client Requests"
-permalink: kb/235/Q235611/
+permalink: /kb/235/Q235611/
 ---
 
 ## Q235611: IIS 3.0 May Stop Responding to Client Requests

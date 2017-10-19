@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138863: SNA Server Setup Always Adds COMNETMN to Registry in Error"
-permalink: kb/138/Q138863/
+permalink: /kb/138/Q138863/
 ---
 
 ## Q138863: SNA Server Setup Always Adds COMNETMN to Registry in Error

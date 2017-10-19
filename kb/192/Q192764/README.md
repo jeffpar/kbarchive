@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192764: HOWTO: Provide Inverse AT() Functionality"
-permalink: kb/192/Q192764/
+permalink: /kb/192/Q192764/
 ---
 
 ## Q192764: HOWTO: Provide Inverse AT() Functionality

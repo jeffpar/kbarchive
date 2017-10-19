@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193040: XADM: Cannot Stop Information Store from a Command Prompt"
-permalink: kb/193/Q193040/
+permalink: /kb/193/Q193040/
 ---
 
 ## Q193040: XADM: Cannot Stop Information Store from a Command Prompt

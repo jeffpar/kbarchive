@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76270: Lotus 1-2-3 for Windows Dithers 256-color Wallpaper"
-permalink: kb/076/Q76270/
+permalink: /kb/076/Q76270/
 ---
 
 ## Q76270: Lotus 1-2-3 for Windows Dithers 256-color Wallpaper

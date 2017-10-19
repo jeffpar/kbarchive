@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131194: MSN E-mail Is Not Delivered"
-permalink: kb/131/Q131194/
+permalink: /kb/131/Q131194/
 ---
 
 ## Q131194: MSN E-mail Is Not Delivered

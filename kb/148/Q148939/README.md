@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148939: DHCP Server Creates Unnecessary Lease"
-permalink: kb/148/Q148939/
+permalink: /kb/148/Q148939/
 ---
 
 ## Q148939: DHCP Server Creates Unnecessary Lease

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178440: SMS Training: Smartest.exe Returns Error Or Has No Questions"
-permalink: kb/178/Q178440/
+permalink: /kb/178/Q178440/
 ---
 
 ## Q178440: SMS Training: Smartest.exe Returns Error Or Has No Questions

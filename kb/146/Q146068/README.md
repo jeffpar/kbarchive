@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146068: XCLN: Display Bug with OLE Objects Causes Size Change"
-permalink: kb/146/Q146068/
+permalink: /kb/146/Q146068/
 ---
 
 ## Q146068: XCLN: Display Bug with OLE Objects Causes Size Change

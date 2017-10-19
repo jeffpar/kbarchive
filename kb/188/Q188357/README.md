@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188357: DSMN Application Log Error Messages"
-permalink: kb/188/Q188357/
+permalink: /kb/188/Q188357/
 ---
 
 ## Q188357: DSMN Application Log Error Messages

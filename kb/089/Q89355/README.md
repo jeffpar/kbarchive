@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89355: Add/Remove Components Does Not Delete .INI Files"
-permalink: kb/089/Q89355/
+permalink: /kb/089/Q89355/
 ---
 
 ## Q89355: Add/Remove Components Does Not Delete .INI Files

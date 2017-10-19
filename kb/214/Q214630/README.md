@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214630: How to Install Encarta Africana in Safe Mode"
-permalink: kb/214/Q214630/
+permalink: /kb/214/Q214630/
 ---
 
 ## Q214630: How to Install Encarta Africana in Safe Mode

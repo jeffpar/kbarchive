@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143200: RAS Server Does Not Prompt Client for a Callback Number"
-permalink: kb/143/Q143200/
+permalink: /kb/143/Q143200/
 ---
 
 ## Q143200: RAS Server Does Not Prompt Client for a Callback Number

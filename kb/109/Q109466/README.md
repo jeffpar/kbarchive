@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109466: PC Gen: PODIAG.EXE Creates INI Directory on 2.1 &amp; 3.0 POs"
-permalink: kb/109/Q109466/
+permalink: /kb/109/Q109466/
 ---
 
 ## Q109466: PC Gen: PODIAG.EXE Creates INI Directory on 2.1 &amp; 3.0 POs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134698: Windows NT Setup Does Not Detect QLogic PCI SCSI Adapter"
-permalink: kb/134/Q134698/
+permalink: /kb/134/Q134698/
 ---
 
 ## Q134698: Windows NT Setup Does Not Detect QLogic PCI SCSI Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98833: Interpreting LAN Manager's Audit Log"
-permalink: kb/098/Q98833/
+permalink: /kb/098/Q98833/
 ---
 
 ## Q98833: Interpreting LAN Manager's Audit Log

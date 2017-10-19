@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173428: WD97: General Information About the Comments Feature"
-permalink: kb/173/Q173428/
+permalink: /kb/173/Q173428/
 ---
 
 ## Q173428: WD97: General Information About the Comments Feature

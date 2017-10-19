@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128928: Unable to Browse PDC with 3COM 3C770 FDDI NIC Using TCP/IP"
-permalink: kb/128/Q128928/
+permalink: /kb/128/Q128928/
 ---
 
 ## Q128928: Unable to Browse PDC with 3COM 3C770 FDDI NIC Using TCP/IP

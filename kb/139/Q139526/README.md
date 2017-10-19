@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139526: HOWTO: Send to the Serial Port by Using Mscomm32.ocx"
-permalink: kb/139/Q139526/
+permalink: /kb/139/Q139526/
 ---
 
 ## Q139526: HOWTO: Send to the Serial Port by Using Mscomm32.ocx

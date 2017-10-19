@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171694: Differences Between the Recycle Bin and the Recycler Folder"
-permalink: kb/171/Q171694/
+permalink: /kb/171/Q171694/
 ---
 
 ## Q171694: Differences Between the Recycle Bin and the Recycler Folder

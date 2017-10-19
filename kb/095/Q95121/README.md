@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95121: FIX: L1101 Error Linking MASM Object Module w/ Large Structure"
-permalink: kb/095/Q95121/
+permalink: /kb/095/Q95121/
 ---
 
 ## Q95121: FIX: L1101 Error Linking MASM Object Module w/ Large Structure

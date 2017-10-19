@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198789: XADM: How to Install, Configure, and Use the InterOrg Tool"
-permalink: kb/198/Q198789/
+permalink: /kb/198/Q198789/
 ---
 
 ## Q198789: XADM: How to Install, Configure, and Use the InterOrg Tool

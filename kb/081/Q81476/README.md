@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81476: MS-DOS Customers Who Want Windows 3.1 EMM386.EXE"
-permalink: kb/081/Q81476/
+permalink: /kb/081/Q81476/
 ---
 
 ## Q81476: MS-DOS Customers Who Want Windows 3.1 EMM386.EXE

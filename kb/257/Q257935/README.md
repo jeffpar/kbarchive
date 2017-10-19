@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257935: Clustool Replaces ClusConB As Cluster Configuration Backup Util."
-permalink: kb/257/Q257935/
+permalink: /kb/257/Q257935/
 ---
 
 ## Q257935: Clustool Replaces ClusConB As Cluster Configuration Backup Util.

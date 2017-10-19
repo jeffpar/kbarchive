@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162252: BUG: Erroneous &quot;Class Definition is Cyclical&quot; Error"
-permalink: kb/162/Q162252/
+permalink: /kb/162/Q162252/
 ---
 
 ## Q162252: BUG: Erroneous &quot;Class Definition is Cyclical&quot; Error

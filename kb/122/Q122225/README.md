@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122225: Sub-directory and File Permissions Not Set on Macintosh Volume"
-permalink: kb/122/Q122225/
+permalink: /kb/122/Q122225/
 ---
 
 ## Q122225: Sub-directory and File Permissions Not Set on Macintosh Volume

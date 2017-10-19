@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240018: Schedule+ Stack Fault After You Apply Office 95 Y2K Update"
-permalink: kb/240/Q240018/
+permalink: /kb/240/Q240018/
 ---
 
 ## Q240018: Schedule+ Stack Fault After You Apply Office 95 Y2K Update

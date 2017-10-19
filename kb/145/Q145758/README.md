@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145758: INFO: Redistributable Files in the PSS Directory of VB 4.0 CD"
-permalink: kb/145/Q145758/
+permalink: /kb/145/Q145758/
 ---
 
 ## Q145758: INFO: Redistributable Files in the PSS Directory of VB 4.0 CD

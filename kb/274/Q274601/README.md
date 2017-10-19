@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274601: XADM: Mailbox Manager Does Not Detect Hidden Mailboxes"
-permalink: kb/274/Q274601/
+permalink: /kb/274/Q274601/
 ---
 
 ## Q274601: XADM: Mailbox Manager Does Not Detect Hidden Mailboxes

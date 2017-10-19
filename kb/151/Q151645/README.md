@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151645: Pregnancy and Child Care: Multiple Radio Buttons Selected"
-permalink: kb/151/Q151645/
+permalink: /kb/151/Q151645/
 ---
 
 ## Q151645: Pregnancy and Child Care: Multiple Radio Buttons Selected

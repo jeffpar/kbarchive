@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241527: System or Processor Queue Length Counter Gives High Values"
-permalink: kb/241/Q241527/
+permalink: /kb/241/Q241527/
 ---
 
 ## Q241527: System or Processor Queue Length Counter Gives High Values

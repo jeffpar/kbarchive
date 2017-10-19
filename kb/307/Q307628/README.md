@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307628: XFOR: Routing to Multiple Domains with a Single SMTP Proxy Addr"
-permalink: kb/307/Q307628/
+permalink: /kb/307/Q307628/
 ---
 
 ## Q307628: XFOR: Routing to Multiple Domains with a Single SMTP Proxy Addr

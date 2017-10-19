@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87290: What Is a Clean Boot for Windows 3.1?"
-permalink: kb/087/Q87290/
+permalink: /kb/087/Q87290/
 ---
 
 ## Q87290: What Is a Clean Boot for Windows 3.1?

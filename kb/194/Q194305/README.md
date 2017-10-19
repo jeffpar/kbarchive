@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194305: BUG: Highlighter in List Box Does Not Move with MoverBar"
-permalink: kb/194/Q194305/
+permalink: /kb/194/Q194305/
 ---
 
 ## Q194305: BUG: Highlighter in List Box Does Not Move with MoverBar

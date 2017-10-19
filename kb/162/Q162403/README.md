@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162403: WD97: Selection Returns Question Marks Instead of Text"
-permalink: kb/162/Q162403/
+permalink: /kb/162/Q162403/
 ---
 
 ## Q162403: WD97: Selection Returns Question Marks Instead of Text

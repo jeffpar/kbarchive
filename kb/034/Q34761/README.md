@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34761: Regarding the Use of Undocumented MS-DOS Features"
-permalink: kb/034/Q34761/
+permalink: /kb/034/Q34761/
 ---
 
 ## Q34761: Regarding the Use of Undocumented MS-DOS Features

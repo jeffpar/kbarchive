@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112281: PC Ext: /ClockRollOver May Be Needed When BIOS Not Detected"
-permalink: kb/112/Q112281/
+permalink: /kb/112/Q112281/
 ---
 
 ## Q112281: PC Ext: /ClockRollOver May Be Needed When BIOS Not Detected

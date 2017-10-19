@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260349: INFO: What Does &quot;Terminate 0 1&quot; Mean in the Routing Process?"
-permalink: kb/260/Q260349/
+permalink: /kb/260/Q260349/
 ---
 
 ## Q260349: INFO: What Does &quot;Terminate 0 1&quot; Mean in the Routing Process?

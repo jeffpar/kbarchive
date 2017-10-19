@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117325: C++ Tutorial Removed from Visual C++ Product"
-permalink: kb/117/Q117325/
+permalink: /kb/117/Q117325/
 ---
 
 ## Q117325: C++ Tutorial Removed from Visual C++ Product

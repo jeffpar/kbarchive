@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259702: SMS: Loss of Status Messages During Software Distribution"
-permalink: kb/259/Q259702/
+permalink: /kb/259/Q259702/
 ---
 
 ## Q259702: SMS: Loss of Status Messages During Software Distribution

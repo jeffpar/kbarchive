@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124415: Cinemania 1995: Manual Setup Err Msg: &quot;Path Not Found&quot;"
-permalink: kb/124/Q124415/
+permalink: /kb/124/Q124415/
 ---
 
 ## Q124415: Cinemania 1995: Manual Setup Err Msg: &quot;Path Not Found&quot;

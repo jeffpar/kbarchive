@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157265: Msbatch.inf Parameters: Disable Password Caching"
-permalink: kb/157/Q157265/
+permalink: /kb/157/Q157265/
 ---
 
 ## Q157265: Msbatch.inf Parameters: Disable Password Caching

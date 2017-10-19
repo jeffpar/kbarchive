@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60874: Print Screen Features and Workarounds for Windows"
-permalink: kb/060/Q60874/
+permalink: /kb/060/Q60874/
 ---
 
 ## Q60874: Print Screen Features and Workarounds for Windows

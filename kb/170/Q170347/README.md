@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170347: Oops Error Message When Attempting an FTP MGET"
-permalink: kb/170/Q170347/
+permalink: /kb/170/Q170347/
 ---
 
 ## Q170347: Oops Error Message When Attempting an FTP MGET

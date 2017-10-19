@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186600: Do Not Use Screen Savers with Terminal Server"
-permalink: kb/186/Q186600/
+permalink: /kb/186/Q186600/
 ---
 
 ## Q186600: Do Not Use Screen Savers with Terminal Server

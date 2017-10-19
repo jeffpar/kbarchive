@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173344: XFOR: MSMI Cannot Process 256+ Character Recipient Names"
-permalink: kb/173/Q173344/
+permalink: /kb/173/Q173344/
 ---
 
 ## Q173344: XFOR: MSMI Cannot Process 256+ Character Recipient Names

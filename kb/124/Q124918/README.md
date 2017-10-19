@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124918: TCP/IP-32 NetBIOS over TCP/IP May Not Parse DNS Correctly"
-permalink: kb/124/Q124918/
+permalink: /kb/124/Q124918/
 ---
 
 ## Q124918: TCP/IP-32 NetBIOS over TCP/IP May Not Parse DNS Correctly

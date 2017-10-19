@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240987: Pandora's Box: Color Is Distorted When You Start or Quit Game"
-permalink: kb/240/Q240987/
+permalink: /kb/240/Q240987/
 ---
 
 ## Q240987: Pandora's Box: Color Is Distorted When You Start or Quit Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143380: XGEN: Exchange Server Services and Their Dependencies"
-permalink: kb/143/Q143380/
+permalink: /kb/143/Q143380/
 ---
 
 ## Q143380: XGEN: Exchange Server Services and Their Dependencies

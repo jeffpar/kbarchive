@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154642: Power Management in Windows NT 4.0"
-permalink: kb/154/Q154642/
+permalink: /kb/154/Q154642/
 ---
 
 ## Q154642: Power Management in Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192675: XWEB: Min. Size Requirements for Multipage Control on HTML Form"
-permalink: kb/192/Q192675/
+permalink: /kb/192/Q192675/
 ---
 
 ## Q192675: XWEB: Min. Size Requirements for Multipage Control on HTML Form

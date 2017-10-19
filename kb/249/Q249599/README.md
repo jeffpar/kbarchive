@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249599: Virtual Directory Mapped to UNC Returns Server-Side Script Code"
-permalink: kb/249/Q249599/
+permalink: /kb/249/Q249599/
 ---
 
 ## Q249599: Virtual Directory Mapped to UNC Returns Server-Side Script Code

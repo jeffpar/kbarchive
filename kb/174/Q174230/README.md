@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174230: Adding Duplicate Accounts May Cause A Memory Leak"
-permalink: kb/174/Q174230/
+permalink: /kb/174/Q174230/
 ---
 
 ## Q174230: Adding Duplicate Accounts May Cause A Memory Leak

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259770: Baseball 2001 Err Msg: ...Invalid Page Fault in Graphics.dll"
-permalink: kb/259/Q259770/
+permalink: /kb/259/Q259770/
 ---
 
 ## Q259770: Baseball 2001 Err Msg: ...Invalid Page Fault in Graphics.dll

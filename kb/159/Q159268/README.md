@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159268: How To Create VFP Setup Disks for Both Win3.1 Chinese Versions"
-permalink: kb/159/Q159268/
+permalink: /kb/159/Q159268/
 ---
 
 ## Q159268: How To Create VFP Setup Disks for Both Win3.1 Chinese Versions

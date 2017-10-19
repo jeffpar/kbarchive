@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311913: PRB: Problem When Send Notification Contains Less Than (&lt;) Chara"
-permalink: kb/311/Q311913/
+permalink: /kb/311/Q311913/
 ---
 
 ## Q311913: PRB: Problem When Send Notification Contains Less Than (&lt;) Chara

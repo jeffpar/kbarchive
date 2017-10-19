@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300140: FIX: Minimized Modal Form Cannot Be Restored"
-permalink: kb/300/Q300140/
+permalink: /kb/300/Q300140/
 ---
 
 ## Q300140: FIX: Minimized Modal Form Cannot Be Restored

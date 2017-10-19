@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224345: Spooler Service May Leak Private Bytes Closing a Remote Printer"
-permalink: kb/224/Q224345/
+permalink: /kb/224/Q224345/
 ---
 
 ## Q224345: Spooler Service May Leak Private Bytes Closing a Remote Printer

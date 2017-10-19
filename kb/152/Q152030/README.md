@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152030: FIX: Port I/O Functions Not in DLL Version of CRT for VC++ 4.0"
-permalink: kb/152/Q152030/
+permalink: /kb/152/Q152030/
 ---
 
 ## Q152030: FIX: Port I/O Functions Not in DLL Version of CRT for VC++ 4.0

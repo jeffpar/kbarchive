@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296667: SMS: French SMS 2.0 SP3 Contains an Incorrect Colleval.dll File"
-permalink: kb/296/Q296667/
+permalink: /kb/296/Q296667/
 ---
 
 ## Q296667: SMS: French SMS 2.0 SP3 Contains an Incorrect Colleval.dll File

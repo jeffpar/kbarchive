@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303756: Passport Developer Support Options"
-permalink: kb/303/Q303756/
+permalink: /kb/303/Q303756/
 ---
 
 ## Q303756: Passport Developer Support Options

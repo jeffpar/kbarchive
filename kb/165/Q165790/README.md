@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165790: INFO: Microsoft Visual Database Tools Readme"
-permalink: kb/165/Q165790/
+permalink: /kb/165/Q165790/
 ---
 
 ## Q165790: INFO: Microsoft Visual Database Tools Readme

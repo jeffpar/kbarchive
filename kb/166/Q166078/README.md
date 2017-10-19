@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166078: PRB: SQLSetDescField Appears to Call Itself"
-permalink: kb/166/Q166078/
+permalink: /kb/166/Q166078/
 ---
 
 ## Q166078: PRB: SQLSetDescField Appears to Call Itself

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82347: GP Fault in Ami Pro when Viewing Facing Page Is Selected"
-permalink: kb/082/Q82347/
+permalink: /kb/082/Q82347/
 ---
 
 ## Q82347: GP Fault in Ami Pro when Viewing Facing Page Is Selected

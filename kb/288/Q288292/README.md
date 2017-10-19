@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288292: Managing File and Folder Permissions with Command Line Utility"
-permalink: kb/288/Q288292/
+permalink: /kb/288/Q288292/
 ---
 
 ## Q288292: Managing File and Folder Permissions with Command Line Utility

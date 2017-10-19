@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246315: Interix, GNU, Configure Scripts, and Portability"
-permalink: kb/246/Q246315/
+permalink: /kb/246/Q246315/
 ---
 
 ## Q246315: Interix, GNU, Configure Scripts, and Portability

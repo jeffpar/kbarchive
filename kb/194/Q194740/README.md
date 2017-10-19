@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194740: How to Bypass the 8-Workstation Logon Limit"
-permalink: kb/194/Q194740/
+permalink: /kb/194/Q194740/
 ---
 
 ## Q194740: How to Bypass the 8-Workstation Logon Limit

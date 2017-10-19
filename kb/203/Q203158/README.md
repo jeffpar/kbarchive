@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203158: INFO: IIS 4.0 Is Not Compatible with Proxy Server 1.0"
-permalink: kb/203/Q203158/
+permalink: /kb/203/Q203158/
 ---
 
 ## Q203158: INFO: IIS 4.0 Is Not Compatible with Proxy Server 1.0

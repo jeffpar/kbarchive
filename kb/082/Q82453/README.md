@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82453: Time-Outs Occur When Printing Complex Jobs with PostScript"
-permalink: kb/082/Q82453/
+permalink: /kb/082/Q82453/
 ---
 
 ## Q82453: Time-Outs Occur When Printing Complex Jobs with PostScript

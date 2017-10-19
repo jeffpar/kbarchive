@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155639: Monster Truck Madness: Setup Notes and Troubleshooting"
-permalink: kb/155/Q155639/
+permalink: /kb/155/Q155639/
 ---
 
 ## Q155639: Monster Truck Madness: Setup Notes and Troubleshooting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83549: Unable to Print to LPT1/LPT2 on Novell NetWare 3.11"
-permalink: kb/083/Q83549/
+permalink: /kb/083/Q83549/
 ---
 
 ## Q83549: Unable to Print to LPT1/LPT2 on Novell NetWare 3.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134753: PC Gen: README.TXT: Mail 3.5 Diagnostics Utility"
-permalink: kb/134/Q134753/
+permalink: /kb/134/Q134753/
 ---
 
 ## Q134753: PC Gen: README.TXT: Mail 3.5 Diagnostics Utility

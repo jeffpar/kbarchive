@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89985: Windows Sound System and MPC Compatibility"
-permalink: kb/089/Q89985/
+permalink: /kb/089/Q89985/
 ---
 
 ## Q89985: Windows Sound System and MPC Compatibility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106645: Frequently Asked Questions on PowerStation for MS-DOS"
-permalink: kb/106/Q106645/
+permalink: /kb/106/Q106645/
 ---
 
 ## Q106645: Frequently Asked Questions on PowerStation for MS-DOS

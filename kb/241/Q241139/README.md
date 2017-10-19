@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241139: TPU: Collaboration Data Objects Required to Install TPU"
-permalink: kb/241/Q241139/
+permalink: /kb/241/Q241139/
 ---
 
 ## Q241139: TPU: Collaboration Data Objects Required to Install TPU

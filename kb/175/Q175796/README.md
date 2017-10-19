@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175796: HP LaserJet 5Si MX May Repeatedly Print the First Page"
-permalink: kb/175/Q175796/
+permalink: /kb/175/Q175796/
 ---
 
 ## Q175796: HP LaserJet 5Si MX May Repeatedly Print the First Page

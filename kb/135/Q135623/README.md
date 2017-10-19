@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135623: DOC: Column Title of Property Should Be Method"
-permalink: kb/135/Q135623/
+permalink: /kb/135/Q135623/
 ---
 
 ## Q135623: DOC: Column Title of Property Should Be Method

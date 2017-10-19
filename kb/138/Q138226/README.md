@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138226: Windows NT 3.51 RAS Server Ignores Newly Added Serial Ports"
-permalink: kb/138/Q138226/
+permalink: /kb/138/Q138226/
 ---
 
 ## Q138226: Windows NT 3.51 RAS Server Ignores Newly Added Serial Ports

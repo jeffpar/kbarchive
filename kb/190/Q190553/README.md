@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190553: INFO: Do Not Use VB Color Constants in DHTML Page Designer"
-permalink: kb/190/Q190553/
+permalink: /kb/190/Q190553/
 ---
 
 ## Q190553: INFO: Do Not Use VB Color Constants in DHTML Page Designer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179337: WD97: Recorded Macro to Stop &quot;Same As Previous&quot; Fail on Playback"
-permalink: kb/179/Q179337/
+permalink: /kb/179/Q179337/
 ---
 
 ## Q179337: WD97: Recorded Macro to Stop &quot;Same As Previous&quot; Fail on Playback

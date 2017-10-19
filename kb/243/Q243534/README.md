@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243534: BUG: Optim. Gives Wrong Result for Inline Func Returning double"
-permalink: kb/243/Q243534/
+permalink: /kb/243/Q243534/
 ---
 
 ## Q243534: BUG: Optim. Gives Wrong Result for Inline Func Returning double

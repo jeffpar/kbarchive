@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241001: SMS: Troubleshooting Server, Component, and Hierarchy Issues"
-permalink: kb/241/Q241001/
+permalink: /kb/241/Q241001/
 ---
 
 ## Q241001: SMS: Troubleshooting Server, Component, and Hierarchy Issues

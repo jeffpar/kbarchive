@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214823: How to Resolve Display Problems in Close Combat III"
-permalink: kb/214/Q214823/
+permalink: /kb/214/Q214823/
 ---
 
 ## Q214823: How to Resolve Display Problems in Close Combat III

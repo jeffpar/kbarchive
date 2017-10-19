@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232448: XFOR: Netscape 4.x Cannot Delete Appointments in Calendar"
-permalink: kb/232/Q232448/
+permalink: /kb/232/Q232448/
 ---
 
 ## Q232448: XFOR: Netscape 4.x Cannot Delete Appointments in Calendar

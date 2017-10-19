@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152452: Access Setup Wizard Fails Because of Permission"
-permalink: kb/152/Q152452/
+permalink: /kb/152/Q152452/
 ---
 
 ## Q152452: Access Setup Wizard Fails Because of Permission

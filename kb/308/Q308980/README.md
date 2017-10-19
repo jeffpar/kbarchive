@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308980: PRB:Native Error Not Sent Back to ADO When You Run SQL XML Query"
-permalink: kb/308/Q308980/
+permalink: /kb/308/Q308980/
 ---
 
 ## Q308980: PRB:Native Error Not Sent Back to ADO When You Run SQL XML Query

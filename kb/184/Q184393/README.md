@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184393: INFO: Script Errors Using HTMLA When Shift-Clicking Links"
-permalink: kb/184/Q184393/
+permalink: /kb/184/Q184393/
 ---
 
 ## Q184393: INFO: Script Errors Using HTMLA When Shift-Clicking Links

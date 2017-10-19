@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195751: Encarta: Selecting Special Character Disables Read Aloud Feature"
-permalink: kb/195/Q195751/
+permalink: /kb/195/Q195751/
 ---
 
 ## Q195751: Encarta: Selecting Special Character Disables Read Aloud Feature

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187515: REG.EXE Err Msg: The Operation Could not be Completed"
-permalink: kb/187/Q187515/
+permalink: /kb/187/Q187515/
 ---
 
 ## Q187515: REG.EXE Err Msg: The Operation Could not be Completed

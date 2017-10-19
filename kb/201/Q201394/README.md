@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201394: PRB: Only Project Folders Restored from Archive"
-permalink: kb/201/Q201394/
+permalink: /kb/201/Q201394/
 ---
 
 ## Q201394: PRB: Only Project Folders Restored from Archive

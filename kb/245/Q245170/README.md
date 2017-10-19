@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245170: SMS: Cannot Run Advertisement with Missing or Damaged Offer File"
-permalink: kb/245/Q245170/
+permalink: /kb/245/Q245170/
 ---
 
 ## Q245170: SMS: Cannot Run Advertisement with Missing or Damaged Offer File

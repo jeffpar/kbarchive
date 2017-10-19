@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165307: BUG: Incorrect WHERE Clause Shows in View Designer"
-permalink: kb/165/Q165307/
+permalink: /kb/165/Q165307/
 ---
 
 ## Q165307: BUG: Incorrect WHERE Clause Shows in View Designer

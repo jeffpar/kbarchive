@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251083: XFOR: How to Install the GroupWise Proxy Generator"
-permalink: kb/251/Q251083/
+permalink: /kb/251/Q251083/
 ---
 
 ## Q251083: XFOR: How to Install the GroupWise Proxy Generator

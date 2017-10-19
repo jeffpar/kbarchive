@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236787: SNACFG Should Allow Configuration of Compression for 3270 LUs"
-permalink: kb/236/Q236787/
+permalink: /kb/236/Q236787/
 ---
 
 ## Q236787: SNACFG Should Allow Configuration of Compression for 3270 LUs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266112: Microsoft SQL Server 7.0 Data Warehousing Training Kit Comments"
-permalink: kb/266/Q266112/
+permalink: /kb/266/Q266112/
 ---
 
 ## Q266112: Microsoft SQL Server 7.0 Data Warehousing Training Kit Comments

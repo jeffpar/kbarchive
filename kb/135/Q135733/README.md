@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135733: PC NTMMTA: Errors Installing on Unsupported Platforms"
-permalink: kb/135/Q135733/
+permalink: /kb/135/Q135733/
 ---
 
 ## Q135733: PC NTMMTA: Errors Installing on Unsupported Platforms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74734: Loading Programs Automatically into MS-DOS Shell Task List"
-permalink: kb/074/Q74734/
+permalink: /kb/074/Q74734/
 ---
 
 ## Q74734: Loading Programs Automatically into MS-DOS Shell Task List

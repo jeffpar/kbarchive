@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136518: PC Gen: What's New in Mail for PC Networks Version 3.5"
-permalink: kb/136/Q136518/
+permalink: /kb/136/Q136518/
 ---
 
 ## Q136518: PC Gen: What's New in Mail for PC Networks Version 3.5

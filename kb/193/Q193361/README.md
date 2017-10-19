@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193361: MSGINA.DLL does not Reset WINLOGON Structure"
-permalink: kb/193/Q193361/
+permalink: /kb/193/Q193361/
 ---
 
 ## Q193361: MSGINA.DLL does not Reset WINLOGON Structure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174874: FIX: Branched Files Restored to New Database Cause Corruption"
-permalink: kb/174/Q174874/
+permalink: /kb/174/Q174874/
 ---
 
 ## Q174874: FIX: Branched Files Restored to New Database Cause Corruption

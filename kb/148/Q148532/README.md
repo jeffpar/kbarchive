@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148532: &quot;Fury 3: The Official Strategy Guide&quot; Book Available"
-permalink: kb/148/Q148532/
+permalink: /kb/148/Q148532/
 ---
 
 ## Q148532: &quot;Fury 3: The Official Strategy Guide&quot; Book Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196992: Current NonAnonymous Users Performance Counter Is Incorrect"
-permalink: kb/196/Q196992/
+permalink: /kb/196/Q196992/
 ---
 
 ## Q196992: Current NonAnonymous Users Performance Counter Is Incorrect

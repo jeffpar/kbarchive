@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146681: XFOR: DXA Improperly Appending 001 to Friendly Names in the GAL"
-permalink: kb/146/Q146681/
+permalink: /kb/146/Q146681/
 ---
 
 ## Q146681: XFOR: DXA Improperly Appending 001 to Friendly Names in the GAL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153796: Close Combat: Hang at Splash Screen"
-permalink: kb/153/Q153796/
+permalink: /kb/153/Q153796/
 ---
 
 ## Q153796: Close Combat: Hang at Splash Screen

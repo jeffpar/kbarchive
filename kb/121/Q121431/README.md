@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121431: Scenes 2.0: Cannot Activate from Windows NT Control Panel"
-permalink: kb/121/Q121431/
+permalink: /kb/121/Q121431/
 ---
 
 ## Q121431: Scenes 2.0: Cannot Activate from Windows NT Control Panel

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165025: 16-bit Apps Always Return a Retcode of 0 When Run As a Service"
-permalink: kb/165/Q165025/
+permalink: /kb/165/Q165025/
 ---
 
 ## Q165025: 16-bit Apps Always Return a Retcode of 0 When Run As a Service

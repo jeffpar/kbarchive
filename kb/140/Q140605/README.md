@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140605: PRB: C2059 When Declaring Friend Template Functions in a Class"
-permalink: kb/140/Q140605/
+permalink: /kb/140/Q140605/
 ---
 
 ## Q140605: PRB: C2059 When Declaring Friend Template Functions in a Class

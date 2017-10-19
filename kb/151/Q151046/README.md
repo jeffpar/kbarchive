@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151046: Errors Opening &quot;PowerPoint Step by Step&quot; Presentations"
-permalink: kb/151/Q151046/
+permalink: /kb/151/Q151046/
 ---
 
 ## Q151046: Errors Opening &quot;PowerPoint Step by Step&quot; Presentations

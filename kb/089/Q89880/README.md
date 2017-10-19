@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89880: Toolbar Buttons Extend Beyond the Toolbar in File Manager"
-permalink: kb/089/Q89880/
+permalink: /kb/089/Q89880/
 ---
 
 ## Q89880: Toolbar Buttons Extend Beyond the Toolbar in File Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199385: PRB: Active OLE Control Prevents Logging Off or Shutting Down"
-permalink: kb/199/Q199385/
+permalink: /kb/199/Q199385/
 ---
 
 ## Q199385: PRB: Active OLE Control Prevents Logging Off or Shutting Down

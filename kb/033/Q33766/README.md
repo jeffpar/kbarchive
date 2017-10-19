@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33766: Cannot Open a File Without an Extension by Double-Clicking"
-permalink: kb/033/Q33766/
+permalink: /kb/033/Q33766/
 ---
 
 ## Q33766: Cannot Open a File Without an Extension by Double-Clicking

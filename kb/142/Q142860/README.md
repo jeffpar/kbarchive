@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142860: Unattended Setup of Internet Information Server"
-permalink: kb/142/Q142860/
+permalink: /kb/142/Q142860/
 ---
 
 ## Q142860: Unattended Setup of Internet Information Server

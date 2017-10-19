@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196242: SNA Print Server May Leak Memory"
-permalink: kb/196/Q196242/
+permalink: /kb/196/Q196242/
 ---
 
 ## Q196242: SNA Print Server May Leak Memory

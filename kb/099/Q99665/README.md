@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99665: PC WSPlus: Displaying the Time in a Military Time Format"
-permalink: kb/099/Q99665/
+permalink: /kb/099/Q99665/
 ---
 
 ## Q99665: PC WSPlus: Displaying the Time in a Military Time Format

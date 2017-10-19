@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135063: XCON: Changing MTA Conformance on X.400 Connectors Fails"
-permalink: kb/135/Q135063/
+permalink: /kb/135/Q135063/
 ---
 
 ## Q135063: XCON: Changing MTA Conformance on X.400 Connectors Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178153: Multimedia: Only Administrator Can Install Program Under NT 4.0"
-permalink: kb/178/Q178153/
+permalink: /kb/178/Q178153/
 ---
 
 ## Q178153: Multimedia: Only Administrator Can Install Program Under NT 4.0

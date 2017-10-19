@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280123: Internal NetLib Error When OLE DB Data Source Is Instantiated"
-permalink: kb/280/Q280123/
+permalink: /kb/280/Q280123/
 ---
 
 ## Q280123: Internal NetLib Error When OLE DB Data Source Is Instantiated

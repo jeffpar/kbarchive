@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136019: FAQ: Visual SourceSafe Integration with Visual C++ 4.0"
-permalink: kb/136/Q136019/
+permalink: /kb/136/Q136019/
 ---
 
 ## Q136019: FAQ: Visual SourceSafe Integration with Visual C++ 4.0

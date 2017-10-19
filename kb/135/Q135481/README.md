@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135481: Windows 95 CD-ROM Config.txt File"
-permalink: kb/135/Q135481/
+permalink: /kb/135/Q135481/
 ---
 
 ## Q135481: Windows 95 CD-ROM Config.txt File

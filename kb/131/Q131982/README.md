@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131982: Job Prints While Spooling Option Ineffective With LPR"
-permalink: kb/131/Q131982/
+permalink: /kb/131/Q131982/
 ---
 
 ## Q131982: Job Prints While Spooling Option Ineffective With LPR

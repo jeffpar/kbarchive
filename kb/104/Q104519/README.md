@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104519: PC OS2: Err Msg: The Server Path in the MSMAIL.INI Is Missing"
-permalink: kb/104/Q104519/
+permalink: /kb/104/Q104519/
 ---
 
 ## Q104519: PC OS2: Err Msg: The Server Path in the MSMAIL.INI Is Missing

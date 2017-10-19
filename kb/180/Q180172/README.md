@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180172: PRB: &quot;Login has failed&quot; Error Using the MAPISession Control"
-permalink: kb/180/Q180172/
+permalink: /kb/180/Q180172/
 ---
 
 ## Q180172: PRB: &quot;Login has failed&quot; Error Using the MAPISession Control

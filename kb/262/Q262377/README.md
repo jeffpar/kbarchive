@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262377: SNA Services Fail to Start Due to Logon Failure"
-permalink: kb/262/Q262377/
+permalink: /kb/262/Q262377/
 ---
 
 ## Q262377: SNA Services Fail to Start Due to Logon Failure

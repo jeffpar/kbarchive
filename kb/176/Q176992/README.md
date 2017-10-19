@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176992: WD97: How to Find the ANSI Value of Characters"
-permalink: kb/176/Q176992/
+permalink: /kb/176/Q176992/
 ---
 
 ## Q176992: WD97: How to Find the ANSI Value of Characters

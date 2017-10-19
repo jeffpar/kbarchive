@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152951: XCON: MTA Heap Corruption With Misconfigured TP4/TCP Connection"
-permalink: kb/152/Q152951/
+permalink: /kb/152/Q152951/
 ---
 
 ## Q152951: XCON: MTA Heap Corruption With Misconfigured TP4/TCP Connection

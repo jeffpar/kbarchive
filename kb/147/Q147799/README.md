@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147799: Net3779 Errors During Domain Validation"
-permalink: kb/147/Q147799/
+permalink: /kb/147/Q147799/
 ---
 
 ## Q147799: Net3779 Errors During Domain Validation

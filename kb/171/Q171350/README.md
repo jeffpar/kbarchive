@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171350: BUG: Analyze Always Updates aaaaaaaa.cnt"
-permalink: kb/171/Q171350/
+permalink: /kb/171/Q171350/
 ---
 
 ## Q171350: BUG: Analyze Always Updates aaaaaaaa.cnt

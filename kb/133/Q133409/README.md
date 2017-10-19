@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133409: Checking Recovery Options for a Remote Windows NT Computer"
-permalink: kb/133/Q133409/
+permalink: /kb/133/Q133409/
 ---
 
 ## Q133409: Checking Recovery Options for a Remote Windows NT Computer

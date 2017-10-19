@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229794: XCLN: Macintosh Outlook Doesn't Open PAB/PST Files NT MAC Vol."
-permalink: kb/229/Q229794/
+permalink: /kb/229/Q229794/
 ---
 
 ## Q229794: XCLN: Macintosh Outlook Doesn't Open PAB/PST Files NT MAC Vol.

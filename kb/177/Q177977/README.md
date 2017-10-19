@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177977: FS95 Err Msg: Invalid Page Fault in Module Msvcrt.dll"
-permalink: kb/177/Q177977/
+permalink: /kb/177/Q177977/
 ---
 
 ## Q177977: FS95 Err Msg: Invalid Page Fault in Module Msvcrt.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273029: SMS: Network Discovery Does Not Detect the Default Gateway"
-permalink: kb/273/Q273029/
+permalink: /kb/273/Q273029/
 ---
 
 ## Q273029: SMS: Network Discovery Does Not Detect the Default Gateway

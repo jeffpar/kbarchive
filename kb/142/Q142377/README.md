@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142377: MMFILE - Class for Memory-Mapped Files"
-permalink: kb/142/Q142377/
+permalink: /kb/142/Q142377/
 ---
 
 ## Q142377: MMFILE - Class for Memory-Mapped Files

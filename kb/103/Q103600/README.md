@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103600: How Menu Events Are Handled by Windows &amp; Macintosh"
-permalink: kb/103/Q103600/
+permalink: /kb/103/Q103600/
 ---
 
 ## Q103600: How Menu Events Are Handled by Windows &amp; Macintosh

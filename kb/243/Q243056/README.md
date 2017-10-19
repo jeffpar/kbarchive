@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243056: INFO: Using SchemaName and the SchemaSeparator in ODBC"
-permalink: kb/243/Q243056/
+permalink: /kb/243/Q243056/
 ---
 
 ## Q243056: INFO: Using SchemaName and the SchemaSeparator in ODBC

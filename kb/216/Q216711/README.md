@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216711: After SDLC Outage, SNA Server Takes 5-10 Seconds to Recover"
-permalink: kb/216/Q216711/
+permalink: /kb/216/Q216711/
 ---
 
 ## Q216711: After SDLC Outage, SNA Server Takes 5-10 Seconds to Recover

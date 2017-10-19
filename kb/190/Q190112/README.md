@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190112: PRB: Data Object Wizard Fails If Field Names Contain Spaces"
-permalink: kb/190/Q190112/
+permalink: /kb/190/Q190112/
 ---
 
 ## Q190112: PRB: Data Object Wizard Fails If Field Names Contain Spaces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118432: BUG: Block-Data Subprograms Are Not Global Symbols"
-permalink: kb/118/Q118432/
+permalink: /kb/118/Q118432/
 ---
 
 ## Q118432: BUG: Block-Data Subprograms Are Not Global Symbols

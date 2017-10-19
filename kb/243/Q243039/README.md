@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243039: How to Perform a Clean Boot in Windows 95"
-permalink: kb/243/Q243039/
+permalink: /kb/243/Q243039/
 ---
 
 ## Q243039: How to Perform a Clean Boot in Windows 95

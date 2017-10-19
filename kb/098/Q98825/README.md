@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98825: PROFS: Address List from PROFS Fails to Import"
-permalink: kb/098/Q98825/
+permalink: /kb/098/Q98825/
 ---
 
 ## Q98825: PROFS: Address List from PROFS Fails to Import

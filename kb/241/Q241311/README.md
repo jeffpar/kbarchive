@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241311: Text After Embedded Object May Be Printed with Blank Characters"
-permalink: kb/241/Q241311/
+permalink: /kb/241/Q241311/
 ---
 
 ## Q241311: Text After Embedded Object May Be Printed with Blank Characters

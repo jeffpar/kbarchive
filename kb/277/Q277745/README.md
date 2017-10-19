@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277745: Creation of Cyclical Redundancy Checksum Entries for Programs"
-permalink: kb/277/Q277745/
+permalink: /kb/277/Q277745/
 ---
 
 ## Q277745: Creation of Cyclical Redundancy Checksum Entries for Programs

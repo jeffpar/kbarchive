@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133114: No Files Found Accessing NetWare Shares from WFW Through GSNW"
-permalink: kb/133/Q133114/
+permalink: /kb/133/Q133114/
 ---
 
 ## Q133114: No Files Found Accessing NetWare Shares from WFW Through GSNW

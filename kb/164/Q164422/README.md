@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164422: XADM: How to Test the LDAP Functionality of Exchange Server"
-permalink: kb/164/Q164422/
+permalink: /kb/164/Q164422/
 ---
 
 ## Q164422: XADM: How to Test the LDAP Functionality of Exchange Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123392: Input Method Editor (IME) in Japanese Windows 3.1"
-permalink: kb/123/Q123392/
+permalink: /kb/123/Q123392/
 ---
 
 ## Q123392: Input Method Editor (IME) in Japanese Windows 3.1

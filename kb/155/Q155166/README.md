@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155166: Fonts That Do Not Change After Reapplying Slide Master"
-permalink: kb/155/Q155166/
+permalink: /kb/155/Q155166/
 ---
 
 ## Q155166: Fonts That Do Not Change After Reapplying Slide Master

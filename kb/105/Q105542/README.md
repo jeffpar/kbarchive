@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105542: Mac Srv: Users Missing After Upgrading to System 7"
-permalink: kb/105/Q105542/
+permalink: /kb/105/Q105542/
 ---
 
 ## Q105542: Mac Srv: Users Missing After Upgrading to System 7

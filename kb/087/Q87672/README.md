@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87672: Create a Boot Disk for LAN Manager Enhanced Workstation"
-permalink: kb/087/Q87672/
+permalink: /kb/087/Q87672/
 ---
 
 ## Q87672: Create a Boot Disk for LAN Manager Enhanced Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139874: How to Disable a Button &amp; Move the Focus to a Specified Object"
-permalink: kb/139/Q139874/
+permalink: /kb/139/Q139874/
 ---
 
 ## Q139874: How to Disable a Button &amp; Move the Focus to a Specified Object

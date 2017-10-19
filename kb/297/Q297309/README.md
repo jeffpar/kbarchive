@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297309: ADDUSERS.EXE Does Not Add Accounts and Does Not Return Error"
-permalink: kb/297/Q297309/
+permalink: /kb/297/Q297309/
 ---
 
 ## Q297309: ADDUSERS.EXE Does Not Add Accounts and Does Not Return Error

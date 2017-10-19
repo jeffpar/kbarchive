@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135846: Using the Novell NetWare MAP command with CSNW and GSNW"
-permalink: kb/135/Q135846/
+permalink: /kb/135/Q135846/
 ---
 
 ## Q135846: Using the Novell NetWare MAP command with CSNW and GSNW

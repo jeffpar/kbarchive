@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59754: FIX: A2006: Phase Error May Be Caused By Incorrect NOP"
-permalink: kb/059/Q59754/
+permalink: /kb/059/Q59754/
 ---
 
 ## Q59754: FIX: A2006: Phase Error May Be Caused By Incorrect NOP

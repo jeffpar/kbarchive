@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237511: Encarta 2000: Article Title Is Displayed with Jagged Edges"
-permalink: kb/237/Q237511/
+permalink: /kb/237/Q237511/
 ---
 
 ## Q237511: Encarta 2000: Article Title Is Displayed with Jagged Edges

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111011: Changing the Style of the Main Window"
-permalink: kb/111/Q111011/
+permalink: /kb/111/Q111011/
 ---
 
 ## Q111011: Changing the Style of the Main Window

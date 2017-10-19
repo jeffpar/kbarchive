@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95726: PRB: SHOW WINDOW &lt;Window Name&gt; REFRESH with Browse Window"
-permalink: kb/095/Q95726/
+permalink: /kb/095/Q95726/
 ---
 
 ## Q95726: PRB: SHOW WINDOW &lt;Window Name&gt; REFRESH with Browse Window

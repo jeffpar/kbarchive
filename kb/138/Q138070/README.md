@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138070: Protocol for Remote OLE Automation Depends on First Client"
-permalink: kb/138/Q138070/
+permalink: /kb/138/Q138070/
 ---
 
 ## Q138070: Protocol for Remote OLE Automation Depends on First Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72254: User Directory Must Precede the Shared Windows Directory"
-permalink: kb/072/Q72254/
+permalink: /kb/072/Q72254/
 ---
 
 ## Q72254: User Directory Must Precede the Shared Windows Directory

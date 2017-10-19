@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97455: MS-DOS: Making a Bootable DoubleSpace Floppy Disk"
-permalink: kb/097/Q97455/
+permalink: /kb/097/Q97455/
 ---
 
 ## Q97455: MS-DOS: Making a Bootable DoubleSpace Floppy Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32762: FIX: Forward Reference to Segment Name Gives Phase Error"
-permalink: kb/032/Q32762/
+permalink: /kb/032/Q32762/
 ---
 
 ## Q32762: FIX: Forward Reference to Segment Name Gives Phase Error

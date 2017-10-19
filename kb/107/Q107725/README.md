@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107725: Writer: Can't Preview 16-Bit Sounds"
-permalink: kb/107/Q107725/
+permalink: /kb/107/Q107725/
 ---
 
 ## Q107725: Writer: Can't Preview 16-Bit Sounds

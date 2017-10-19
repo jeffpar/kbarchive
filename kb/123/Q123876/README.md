@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123876: Installed Components for Typical, Compact, or Portable Setup"
-permalink: kb/123/Q123876/
+permalink: /kb/123/Q123876/
 ---
 
 ## Q123876: Installed Components for Typical, Compact, or Portable Setup

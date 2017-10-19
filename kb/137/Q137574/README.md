@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137574: Error Message Installing Corel Draw 6.0"
-permalink: kb/137/Q137574/
+permalink: /kb/137/Q137574/
 ---
 
 ## Q137574: Error Message Installing Corel Draw 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322967: SMS: Client Software Distribution Component May Not Be Upgraded"
-permalink: kb/322/Q322967/
+permalink: /kb/322/Q322967/
 ---
 
 ## Q322967: SMS: Client Software Distribution Component May Not Be Upgraded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194591: XFOR: SNADS Connector Diagnostic Logging Registry Settings"
-permalink: kb/194/Q194591/
+permalink: /kb/194/Q194591/
 ---
 
 ## Q194591: XFOR: SNADS Connector Diagnostic Logging Registry Settings

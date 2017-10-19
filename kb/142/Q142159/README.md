@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142159: How to Automate SNMP Installation"
-permalink: kb/142/Q142159/
+permalink: /kb/142/Q142159/
 ---
 
 ## Q142159: How to Automate SNMP Installation

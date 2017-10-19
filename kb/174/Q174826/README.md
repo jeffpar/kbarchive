@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174826: Printing Using EMF May Not Allow Text to Wrap Correctly"
-permalink: kb/174/Q174826/
+permalink: /kb/174/Q174826/
 ---
 
 ## Q174826: Printing Using EMF May Not Allow Text to Wrap Correctly

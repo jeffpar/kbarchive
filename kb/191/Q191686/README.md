@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191686: BUG: Focus Changes Even Though Grid Text Box Valid Returns .F."
-permalink: kb/191/Q191686/
+permalink: /kb/191/Q191686/
 ---
 
 ## Q191686: BUG: Focus Changes Even Though Grid Text Box Valid Returns .F.

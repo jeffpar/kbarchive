@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295592: BUG: PDW Limits 'Add Files' String to 256 Characters"
-permalink: kb/295/Q295592/
+permalink: /kb/295/Q295592/
 ---
 
 ## Q295592: BUG: PDW Limits 'Add Files' String to 256 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155246: Shared Resources Unavailable When Organic Screen Saver Active"
-permalink: kb/155/Q155246/
+permalink: /kb/155/Q155246/
 ---
 
 ## Q155246: Shared Resources Unavailable When Organic Screen Saver Active

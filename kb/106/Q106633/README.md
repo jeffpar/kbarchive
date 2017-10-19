@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106633: BUG: Sample Code for GRDEMO Contains Errors"
-permalink: kb/106/Q106633/
+permalink: /kb/106/Q106633/
 ---
 
 ## Q106633: BUG: Sample Code for GRDEMO Contains Errors

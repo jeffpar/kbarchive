@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175653: Err Msg: At Least One Service or Driver Failed..."
-permalink: kb/175/Q175653/
+permalink: /kb/175/Q175653/
 ---
 
 ## Q175653: Err Msg: At Least One Service or Driver Failed...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178930: XADM: Directory Does Not Start After Service Pack Upgrade"
-permalink: kb/178/Q178930/
+permalink: /kb/178/Q178930/
 ---
 
 ## Q178930: XADM: Directory Does Not Start After Service Pack Upgrade

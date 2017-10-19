@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149215: VB 4.0 Apps Can Only Be Scheduled Using System Account"
-permalink: kb/149/Q149215/
+permalink: /kb/149/Q149215/
 ---
 
 ## Q149215: VB 4.0 Apps Can Only Be Scheduled Using System Account

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180495: BUG: Pages of PageFrame Created with AddObject Method Invisible"
-permalink: kb/180/Q180495/
+permalink: /kb/180/Q180495/
 ---
 
 ## Q180495: BUG: Pages of PageFrame Created with AddObject Method Invisible

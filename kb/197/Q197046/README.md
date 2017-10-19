@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197046: How to Set up a Print Spooler on Microsoft Cluster Server"
-permalink: kb/197/Q197046/
+permalink: /kb/197/Q197046/
 ---
 
 ## Q197046: How to Set up a Print Spooler on Microsoft Cluster Server

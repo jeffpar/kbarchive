@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95554: Not Using the /P Switch with the SHELL Command"
-permalink: kb/095/Q95554/
+permalink: /kb/095/Q95554/
 ---
 
 ## Q95554: Not Using the /P Switch with the SHELL Command

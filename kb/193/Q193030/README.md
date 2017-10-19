@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193030: SMS:Logged on User Name Not Reported on OS/2 Clients"
-permalink: kb/193/Q193030/
+permalink: /kb/193/Q193030/
 ---
 
 ## Q193030: SMS:Logged on User Name Not Reported on OS/2 Clients

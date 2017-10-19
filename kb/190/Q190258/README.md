@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190258: BUG: Pressing ESC Twice in Combo Box Resets ListIndex Property"
-permalink: kb/190/Q190258/
+permalink: /kb/190/Q190258/
 ---
 
 ## Q190258: BUG: Pressing ESC Twice in Combo Box Resets ListIndex Property

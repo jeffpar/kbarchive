@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188905: FIX: Sharing a File from Command Line Causes Corruption"
-permalink: kb/188/Q188905/
+permalink: /kb/188/Q188905/
 ---
 
 ## Q188905: FIX: Sharing a File from Command Line Causes Corruption

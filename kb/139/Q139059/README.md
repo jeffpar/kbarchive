@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139059: No Personal Folders Password By Default in MS Exchange"
-permalink: kb/139/Q139059/
+permalink: /kb/139/Q139059/
 ---
 
 ## Q139059: No Personal Folders Password By Default in MS Exchange

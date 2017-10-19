@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170445: XADM: Exchange Server Reboots Frequently"
-permalink: kb/170/Q170445/
+permalink: /kb/170/Q170445/
 ---
 
 ## Q170445: XADM: Exchange Server Reboots Frequently

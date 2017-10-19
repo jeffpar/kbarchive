@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160757: WD97: Run-Tme Error Using True Parameter on NewTemplate Method"
-permalink: kb/160/Q160757/
+permalink: /kb/160/Q160757/
 ---
 
 ## Q160757: WD97: Run-Tme Error Using True Parameter on NewTemplate Method

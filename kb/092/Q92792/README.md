@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92792: WFWG: Segment Load Failure with NCR MCA 486"
-permalink: kb/092/Q92792/
+permalink: /kb/092/Q92792/
 ---
 
 ## Q92792: WFWG: Segment Load Failure with NCR MCA 486

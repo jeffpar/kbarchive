@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269630: Performance Monitor Counters for Redirector Object Are Invalid"
-permalink: kb/269/Q269630/
+permalink: /kb/269/Q269630/
 ---
 
 ## Q269630: Performance Monitor Counters for Redirector Object Are Invalid

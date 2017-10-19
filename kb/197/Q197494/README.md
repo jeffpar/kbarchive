@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197494: XADM: Outlook Client May Error When Updating Free and Busy"
-permalink: kb/197/Q197494/
+permalink: /kb/197/Q197494/
 ---
 
 ## Q197494: XADM: Outlook Client May Error When Updating Free and Busy

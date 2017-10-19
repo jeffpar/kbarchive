@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167263: PRB: &lt;filename&gt; is Already Open"
-permalink: kb/167/Q167263/
+permalink: /kb/167/Q167263/
 ---
 
 ## Q167263: PRB: &lt;filename&gt; is Already Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262479: Tcpip.sys Does Not Free Unwanted Broadcast Packets"
-permalink: kb/262/Q262479/
+permalink: /kb/262/Q262479/
 ---
 
 ## Q262479: Tcpip.sys Does Not Free Unwanted Broadcast Packets

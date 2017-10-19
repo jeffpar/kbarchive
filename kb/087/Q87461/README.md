@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87461: ErrMsg Installing Third-Party Applications: Isdel Not Launched"
-permalink: kb/087/Q87461/
+permalink: /kb/087/Q87461/
 ---
 
 ## Q87461: ErrMsg Installing Third-Party Applications: Isdel Not Launched

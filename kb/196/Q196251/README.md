@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196251: XFOR: 1007 Character Limit for &quot;Message of the Day&quot; in Web Admin"
-permalink: kb/196/Q196251/
+permalink: /kb/196/Q196251/
 ---
 
 ## Q196251: XFOR: 1007 Character Limit for &quot;Message of the Day&quot; in Web Admin

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150091: New Features in Compaq SSD Version 1.17c"
-permalink: kb/150/Q150091/
+permalink: /kb/150/Q150091/
 ---
 
 ## Q150091: New Features in Compaq SSD Version 1.17c

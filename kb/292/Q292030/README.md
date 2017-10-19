@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292030: The Install Status May Be Missing for Advertised Programs"
-permalink: kb/292/Q292030/
+permalink: /kb/292/Q292030/
 ---
 
 ## Q292030: The Install Status May Be Missing for Advertised Programs

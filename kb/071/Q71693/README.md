@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71693: File Managing Functions in Shell Not Found at Command Line"
-permalink: kb/071/Q71693/
+permalink: /kb/071/Q71693/
 ---
 
 ## Q71693: File Managing Functions in Shell Not Found at Command Line

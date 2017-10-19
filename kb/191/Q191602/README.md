@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191602: INFO: Bypassing Display Adapter Autodetect during Unattended Set"
-permalink: kb/191/Q191602/
+permalink: /kb/191/Q191602/
 ---
 
 ## Q191602: INFO: Bypassing Display Adapter Autodetect during Unattended Set

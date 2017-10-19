@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122162: SMC9000.DOS Doesn't Activate Megahertz PCMCIA Ethernet Card"
-permalink: kb/122/Q122162/
+permalink: /kb/122/Q122162/
 ---
 
 ## Q122162: SMC9000.DOS Doesn't Activate Megahertz PCMCIA Ethernet Card

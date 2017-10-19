@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171657: Hardcore VB 2ed: Goodies CD-ROM Directory Missing"
-permalink: kb/171/Q171657/
+permalink: /kb/171/Q171657/
 ---
 
 ## Q171657: Hardcore VB 2ed: Goodies CD-ROM Directory Missing

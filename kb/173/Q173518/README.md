@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173518: Stop: 0xC000012F -Image File Did Not Have the Correct Format"
-permalink: kb/173/Q173518/
+permalink: /kb/173/Q173518/
 ---
 
 ## Q173518: Stop: 0xC000012F -Image File Did Not Have the Correct Format

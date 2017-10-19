@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89721: Setup Rebuilds Default Group &amp; Program Information Files"
-permalink: kb/089/Q89721/
+permalink: /kb/089/Q89721/
 ---
 
 ## Q89721: Setup Rebuilds Default Group &amp; Program Information Files

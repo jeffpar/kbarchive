@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245330: XADM: Information Store Stops Responding With Autoforward Rule"
-permalink: kb/245/Q245330/
+permalink: /kb/245/Q245330/
 ---
 
 ## Q245330: XADM: Information Store Stops Responding With Autoforward Rule

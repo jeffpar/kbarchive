@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216376: Stop 0xA in Rdr.sys"
-permalink: kb/216/Q216376/
+permalink: /kb/216/Q216376/
 ---
 
 ## Q216376: Stop 0xA in Rdr.sys

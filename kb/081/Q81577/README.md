@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81577: Limits on the Number of Open Files"
-permalink: kb/081/Q81577/
+permalink: /kb/081/Q81577/
 ---
 
 ## Q81577: Limits on the Number of Open Files

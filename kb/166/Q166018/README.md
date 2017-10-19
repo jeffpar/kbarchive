@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166018: WD97: Newsletter Wizard Creates Extra Blank Page"
-permalink: kb/166/Q166018/
+permalink: /kb/166/Q166018/
 ---
 
 ## Q166018: WD97: Newsletter Wizard Creates Extra Blank Page

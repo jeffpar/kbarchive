@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232044: The Stats Frame in a Network Monitor Capture"
-permalink: kb/232/Q232044/
+permalink: /kb/232/Q232044/
 ---
 
 ## Q232044: The Stats Frame in a Network Monitor Capture

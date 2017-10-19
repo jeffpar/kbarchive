@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132295: How to Change the Attributes of a Visual FoxPro Window"
-permalink: kb/132/Q132295/
+permalink: /kb/132/Q132295/
 ---
 
 ## Q132295: How to Change the Attributes of a Visual FoxPro Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223315: Zone Err Msg: An ActiveX Control on This Page Is Not Safe..."
-permalink: kb/223/Q223315/
+permalink: /kb/223/Q223315/
 ---
 
 ## Q223315: Zone Err Msg: An ActiveX Control on This Page Is Not Safe...

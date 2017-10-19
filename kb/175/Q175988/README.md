@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175988: XFOR: Not All IMAP Clients Are Built Alike"
-permalink: kb/175/Q175988/
+permalink: /kb/175/Q175988/
 ---
 
 ## Q175988: XFOR: Not All IMAP Clients Are Built Alike

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258998: PRB: DateTime Subtraction May Not Produce an Exact Integer"
-permalink: kb/258/Q258998/
+permalink: /kb/258/Q258998/
 ---
 
 ## Q258998: PRB: DateTime Subtraction May Not Produce an Exact Integer

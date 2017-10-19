@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74166: MS-DOS: Piped DIR Command Shows Temporary Files"
-permalink: kb/074/Q74166/
+permalink: /kb/074/Q74166/
 ---
 
 ## Q74166: MS-DOS: Piped DIR Command Shows Temporary Files

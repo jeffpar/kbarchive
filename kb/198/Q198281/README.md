@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198281: XCLN: Using Electronic Forms Designer with Outlook 98"
-permalink: kb/198/Q198281/
+permalink: /kb/198/Q198281/
 ---
 
 ## Q198281: XCLN: Using Electronic Forms Designer with Outlook 98

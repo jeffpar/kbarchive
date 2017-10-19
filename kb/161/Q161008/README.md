@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161008: HOWTO: Add an About Box to an ActiveX Control (UserControl)"
-permalink: kb/161/Q161008/
+permalink: /kb/161/Q161008/
 ---
 
 ## Q161008: HOWTO: Add an About Box to an ActiveX Control (UserControl)

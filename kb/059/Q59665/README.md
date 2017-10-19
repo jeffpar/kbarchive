@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59665: Loss of Colors in Paintbrush File"
-permalink: kb/059/Q59665/
+permalink: /kb/059/Q59665/
 ---
 
 ## Q59665: Loss of Colors in Paintbrush File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150660: Mac Bookshelf Does Not Install to Less than System 7.0"
-permalink: kb/150/Q150660/
+permalink: /kb/150/Q150660/
 ---
 
 ## Q150660: Mac Bookshelf Does Not Install to Less than System 7.0

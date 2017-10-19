@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145715: Internet Service Manager Fails to Start"
-permalink: kb/145/Q145715/
+permalink: /kb/145/Q145715/
 ---
 
 ## Q145715: Internet Service Manager Fails to Start

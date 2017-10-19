@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151429: Err Msg: Can't Run 16-Bit Windows Program"
-permalink: kb/151/Q151429/
+permalink: /kb/151/Q151429/
 ---
 
 ## Q151429: Err Msg: Can't Run 16-Bit Windows Program

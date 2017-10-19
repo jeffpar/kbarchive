@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118392: BUG: Incorrect F2370 or C1900 when Compiling with /4Y"
-permalink: kb/118/Q118392/
+permalink: /kb/118/Q118392/
 ---
 
 ## Q118392: BUG: Incorrect F2370 or C1900 when Compiling with /4Y

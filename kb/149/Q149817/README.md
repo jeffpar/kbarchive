@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149817: STOP 0x0000000A and STOP 0x0000001E in Isotp.sys"
-permalink: kb/149/Q149817/
+permalink: /kb/149/Q149817/
 ---
 
 ## Q149817: STOP 0x0000000A and STOP 0x0000001E in Isotp.sys

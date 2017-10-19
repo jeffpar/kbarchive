@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172438: How to View Connection Status Information on MSN"
-permalink: kb/172/Q172438/
+permalink: /kb/172/Q172438/
 ---
 
 ## Q172438: How to View Connection Status Information on MSN

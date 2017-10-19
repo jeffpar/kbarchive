@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126646: PRB: Error Msg: LNK2001 on &#95;&#95;beginthreadex and &#95;&#95;endthreadex"
-permalink: kb/126/Q126646/
+permalink: /kb/126/Q126646/
 ---
 
 ## Q126646: PRB: Error Msg: LNK2001 on &#95;&#95;beginthreadex and &#95;&#95;endthreadex

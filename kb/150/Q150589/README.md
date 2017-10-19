@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150589: Windows 95 Logon Script Is Not Processed"
-permalink: kb/150/Q150589/
+permalink: /kb/150/Q150589/
 ---
 
 ## Q150589: Windows 95 Logon Script Is Not Processed

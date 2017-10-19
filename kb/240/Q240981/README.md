@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240981: Games: Cannot Play When Configured to Use Multiple Monitors"
-permalink: kb/240/Q240981/
+permalink: /kb/240/Q240981/
 ---
 
 ## Q240981: Games: Cannot Play When Configured to Use Multiple Monitors

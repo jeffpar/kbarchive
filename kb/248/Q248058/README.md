@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248058: Error Message: HTTP 403.13 Forbidden: Client Certificate Revoked"
-permalink: kb/248/Q248058/
+permalink: /kb/248/Q248058/
 ---
 
 ## Q248058: Error Message: HTTP 403.13 Forbidden: Client Certificate Revoked

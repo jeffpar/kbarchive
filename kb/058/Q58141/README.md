@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58141: Computer Viruses Can Increase .COM and .EXE File Sizes"
-permalink: kb/058/Q58141/
+permalink: /kb/058/Q58141/
 ---
 
 ## Q58141: Computer Viruses Can Increase .COM and .EXE File Sizes

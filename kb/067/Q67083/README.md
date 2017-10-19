@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67083: DOC: Online Help Lists Wrong Warning Level for C4127 &amp; C4135"
-permalink: kb/067/Q67083/
+permalink: /kb/067/Q67083/
 ---
 
 ## Q67083: DOC: Online Help Lists Wrong Warning Level for C4127 &amp; C4135

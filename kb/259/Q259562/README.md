@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259562: INFO: The Visual FoxPro Digits of Precision"
-permalink: kb/259/Q259562/
+permalink: /kb/259/Q259562/
 ---
 
 ## Q259562: INFO: The Visual FoxPro Digits of Precision

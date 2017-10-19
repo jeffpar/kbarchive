@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225094: RPC Named Pipe Server App Encounters Invalid Handle Exceptions"
-permalink: kb/225/Q225094/
+permalink: /kb/225/Q225094/
 ---
 
 ## Q225094: RPC Named Pipe Server App Encounters Invalid Handle Exceptions

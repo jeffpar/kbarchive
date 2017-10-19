@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82407: Vistacom Problems When Switching COM Ports"
-permalink: kb/082/Q82407/
+permalink: /kb/082/Q82407/
 ---
 
 ## Q82407: Vistacom Problems When Switching COM Ports

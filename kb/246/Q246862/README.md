@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246862: How to Install Microsoft Metadirector Services on a Windows 2000"
-permalink: kb/246/Q246862/
+permalink: /kb/246/Q246862/
 ---
 
 ## Q246862: How to Install Microsoft Metadirector Services on a Windows 2000

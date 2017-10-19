@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153652: Errors Occur on OS/2 Client Setup When Windows Path Is Bad"
-permalink: kb/153/Q153652/
+permalink: /kb/153/Q153652/
 ---
 
 ## Q153652: Errors Occur on OS/2 Client Setup When Windows Path Is Bad

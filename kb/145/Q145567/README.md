@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145567: BUG: TabStrip Control Incorrectly Displays TABs on Form_Load"
-permalink: kb/145/Q145567/
+permalink: /kb/145/Q145567/
 ---
 
 ## Q145567: BUG: TabStrip Control Incorrectly Displays TABs on Form_Load

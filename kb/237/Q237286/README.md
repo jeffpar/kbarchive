@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237286: BUG: Event Doesn't Fire when Raised from a DLL's Modal Form"
-permalink: kb/237/Q237286/
+permalink: /kb/237/Q237286/
 ---
 
 ## Q237286: BUG: Event Doesn't Fire when Raised from a DLL's Modal Form

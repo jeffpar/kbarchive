@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171780: How to Use WinDiff to Compare Registry Files"
-permalink: kb/171/Q171780/
+permalink: /kb/171/Q171780/
 ---
 
 ## Q171780: How to Use WinDiff to Compare Registry Files

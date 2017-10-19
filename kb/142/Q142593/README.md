@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142593: FIX: Header Files Not Excluded from Project Directory"
-permalink: kb/142/Q142593/
+permalink: /kb/142/Q142593/
 ---
 
 ## Q142593: FIX: Header Files Not Excluded from Project Directory

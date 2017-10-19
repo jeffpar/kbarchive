@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220724: Name Change of an IIS 5.0 Application Restarts the Application"
-permalink: kb/220/Q220724/
+permalink: /kb/220/Q220724/
 ---
 
 ## Q220724: Name Change of an IIS 5.0 Application Restarts the Application

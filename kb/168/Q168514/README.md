@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168514: XFOR: Rasphone.pbk Cannot Be Accessed"
-permalink: kb/168/Q168514/
+permalink: /kb/168/Q168514/
 ---
 
 ## Q168514: XFOR: Rasphone.pbk Cannot Be Accessed

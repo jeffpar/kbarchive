@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121715: PC NT: Err Msg: Mail Could Not Read the Entire Message..."
-permalink: kb/121/Q121715/
+permalink: /kb/121/Q121715/
 ---
 
 ## Q121715: PC NT: Err Msg: Mail Could Not Read the Entire Message...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230754: Zone Error Message: Failed to Extract File..."
-permalink: kb/230/Q230754/
+permalink: /kb/230/Q230754/
 ---
 
 ## Q230754: Zone Error Message: Failed to Extract File...

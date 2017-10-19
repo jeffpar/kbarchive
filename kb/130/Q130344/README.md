@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130344: Adding Additional Target Device Types to Imagedit"
-permalink: kb/130/Q130344/
+permalink: /kb/130/Q130344/
 ---
 
 ## Q130344: Adding Additional Target Device Types to Imagedit

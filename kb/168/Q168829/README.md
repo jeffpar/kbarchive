@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168829: HOWTO: Get a Hierarchical List of Window Names and Classes"
-permalink: kb/168/Q168829/
+permalink: /kb/168/Q168829/
 ---
 
 ## Q168829: HOWTO: Get a Hierarchical List of Window Names and Classes

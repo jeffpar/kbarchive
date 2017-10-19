@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143066: Dogs: Unable to Run When Using NT Guest Account"
-permalink: kb/143/Q143066/
+permalink: /kb/143/Q143066/
 ---
 
 ## Q143066: Dogs: Unable to Run When Using NT Guest Account

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229702: Unable to Prevent RPC from Binding to an Interface"
-permalink: kb/229/Q229702/
+permalink: /kb/229/Q229702/
 ---
 
 ## Q229702: Unable to Prevent RPC from Binding to an Interface

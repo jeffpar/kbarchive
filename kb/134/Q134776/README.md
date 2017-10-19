@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134776: QAPlus for Windows Does Not Detect Network Properly"
-permalink: kb/134/Q134776/
+permalink: /kb/134/Q134776/
 ---
 
 ## Q134776: QAPlus for Windows Does Not Detect Network Properly

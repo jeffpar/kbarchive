@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164742: PRB: Error Message Cannot Load 32-bit DLL"
-permalink: kb/164/Q164742/
+permalink: /kb/164/Q164742/
 ---
 
 ## Q164742: PRB: Error Message Cannot Load 32-bit DLL

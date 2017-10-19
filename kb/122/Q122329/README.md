@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122329: Err Msg: System Error 59 Has Occurred, an Unexpected..."
-permalink: kb/122/Q122329/
+permalink: /kb/122/Q122329/
 ---
 
 ## Q122329: Err Msg: System Error 59 Has Occurred, an Unexpected...

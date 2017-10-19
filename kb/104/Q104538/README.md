@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104538: DBLSPACE /UNCOMPRESS Doesn't Work (Network Mapped over Host)"
-permalink: kb/104/Q104538/
+permalink: /kb/104/Q104538/
 ---
 
 ## Q104538: DBLSPACE /UNCOMPRESS Doesn't Work (Network Mapped over Host)

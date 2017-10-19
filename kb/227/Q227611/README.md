@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227611: IIS 5.0 &quot;Site Operators Can Administer This Site Remotely&quot;"
-permalink: kb/227/Q227611/
+permalink: /kb/227/Q227611/
 ---
 
 ## Q227611: IIS 5.0 &quot;Site Operators Can Administer This Site Remotely&quot;

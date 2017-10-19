@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281698: FIX: Error When You Run EXE Remotely Using UNC Name with Spaces"
-permalink: kb/281/Q281698/
+permalink: /kb/281/Q281698/
 ---
 
 ## Q281698: FIX: Error When You Run EXE Remotely Using UNC Name with Spaces

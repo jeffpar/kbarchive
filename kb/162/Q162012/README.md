@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162012: XADM: Unable to Change the Routing Calculation Server"
-permalink: kb/162/Q162012/
+permalink: /kb/162/Q162012/
 ---
 
 ## Q162012: XADM: Unable to Change the Routing Calculation Server

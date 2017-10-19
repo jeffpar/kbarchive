@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64510: Windows Err Msg: System Error, Cannot Read from Drive A:"
-permalink: kb/064/Q64510/
+permalink: /kb/064/Q64510/
 ---
 
 ## Q64510: Windows Err Msg: System Error, Cannot Read from Drive A:

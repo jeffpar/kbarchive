@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159540: SMS: HelpDesk Cannot Reconnect to Windows 95 with Client32"
-permalink: kb/159/Q159540/
+permalink: /kb/159/Q159540/
 ---
 
 ## Q159540: SMS: HelpDesk Cannot Reconnect to Windows 95 with Client32

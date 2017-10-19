@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124812: Kids: Hangs with Ensoniq Sound Card"
-permalink: kb/124/Q124812/
+permalink: /kb/124/Q124812/
 ---
 
 ## Q124812: Kids: Hangs with Ensoniq Sound Card

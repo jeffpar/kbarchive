@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190929: DirectX: List of Files Installed by the DirectX 6.0 Update Files"
-permalink: kb/190/Q190929/
+permalink: /kb/190/Q190929/
 ---
 
 ## Q190929: DirectX: List of Files Installed by the DirectX 6.0 Update Files

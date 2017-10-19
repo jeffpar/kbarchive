@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182515: XADM: Admin Program Does Not Save Customized Toolbar Changes"
-permalink: kb/182/Q182515/
+permalink: /kb/182/Q182515/
 ---
 
 ## Q182515: XADM: Admin Program Does Not Save Customized Toolbar Changes

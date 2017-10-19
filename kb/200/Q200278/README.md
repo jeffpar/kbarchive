@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200278: XFOR: Messages in Draft Folder Lose Draft Flag after Migration"
-permalink: kb/200/Q200278/
+permalink: /kb/200/Q200278/
 ---
 
 ## Q200278: XFOR: Messages in Draft Folder Lose Draft Flag after Migration

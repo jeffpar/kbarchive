@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82481: Error: Unable to Retain Printer Codes"
-permalink: kb/082/Q82481/
+permalink: /kb/082/Q82481/
 ---
 
 ## Q82481: Error: Unable to Retain Printer Codes

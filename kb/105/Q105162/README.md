@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105162: PC Win: MIME Currently Not Supported"
-permalink: kb/105/Q105162/
+permalink: /kb/105/Q105162/
 ---
 
 ## Q105162: PC Win: MIME Currently Not Supported

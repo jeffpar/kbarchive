@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104855: Flight Simulator: Sound Problems with Sound Blaster"
-permalink: kb/104/Q104855/
+permalink: /kb/104/Q104855/
 ---
 
 ## Q104855: Flight Simulator: Sound Problems with Sound Blaster

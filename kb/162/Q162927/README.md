@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162927: Telnetting to Port 53 May Crash DNS Service"
-permalink: kb/162/Q162927/
+permalink: /kb/162/Q162927/
 ---
 
 ## Q162927: Telnetting to Port 53 May Crash DNS Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146352: XCLN: Invalid Temp Variable Causes Files to Appear on Desktop"
-permalink: kb/146/Q146352/
+permalink: /kb/146/Q146352/
 ---
 
 ## Q146352: XCLN: Invalid Temp Variable Causes Files to Appear on Desktop

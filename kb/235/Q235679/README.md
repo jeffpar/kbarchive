@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235679: XADM: Slow Performance Opening Unread Item from Public Folder"
-permalink: kb/235/Q235679/
+permalink: /kb/235/Q235679/
 ---
 
 ## Q235679: XADM: Slow Performance Opening Unread Item from Public Folder

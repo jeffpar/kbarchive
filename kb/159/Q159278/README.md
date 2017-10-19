@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159278: PRB: Can Log on to a Locked Visual SourceSafe Database"
-permalink: kb/159/Q159278/
+permalink: /kb/159/Q159278/
 ---
 
 ## Q159278: PRB: Can Log on to a Locked Visual SourceSafe Database

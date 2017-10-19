@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201097: PRB: ClassView Does Not Display COM Interface Nodes"
-permalink: kb/201/Q201097/
+permalink: /kb/201/Q201097/
 ---
 
 ## Q201097: PRB: ClassView Does Not Display COM Interface Nodes

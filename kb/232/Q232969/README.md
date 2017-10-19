@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232969: INFO: Error Listing for Microsoft Index Server"
-permalink: kb/232/Q232969/
+permalink: /kb/232/Q232969/
 ---
 
 ## Q232969: INFO: Error Listing for Microsoft Index Server

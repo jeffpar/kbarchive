@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223111: FIX: Type Mismatch Error When Compiling UserControl"
-permalink: kb/223/Q223111/
+permalink: /kb/223/Q223111/
 ---
 
 ## Q223111: FIX: Type Mismatch Error When Compiling UserControl

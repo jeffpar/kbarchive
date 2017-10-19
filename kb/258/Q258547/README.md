@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258547: SMS: Upgrade Process May Hang When Upgrading Site Server to SP2"
-permalink: kb/258/Q258547/
+permalink: /kb/258/Q258547/
 ---
 
 ## Q258547: SMS: Upgrade Process May Hang When Upgrading Site Server to SP2

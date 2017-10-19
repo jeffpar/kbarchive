@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132877: PC NTMMTA: RebootOnCE Does Not Work with NT MMTA"
-permalink: kb/132/Q132877/
+permalink: /kb/132/Q132877/
 ---
 
 ## Q132877: PC NTMMTA: RebootOnCE Does Not Work with NT MMTA

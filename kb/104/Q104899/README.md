@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104899: FIX: String Comparison Stops at Char(0) (NUL)"
-permalink: kb/104/Q104899/
+permalink: /kb/104/Q104899/
 ---
 
 ## Q104899: FIX: String Comparison Stops at Char(0) (NUL)

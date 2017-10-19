@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149517: BUG: /Ox and /4Ya Options Together Cause Incorrect Results"
-permalink: kb/149/Q149517/
+permalink: /kb/149/Q149517/
 ---
 
 ## Q149517: BUG: /Ox and /4Ya Options Together Cause Incorrect Results

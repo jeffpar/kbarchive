@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131022: INFO: Required Network Rights for the SourceSafe Directories"
-permalink: kb/131/Q131022/
+permalink: /kb/131/Q131022/
 ---
 
 ## Q131022: INFO: Required Network Rights for the SourceSafe Directories

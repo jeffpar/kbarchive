@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114465: FIX: Error Message When Comparing Large Strings"
-permalink: kb/114/Q114465/
+permalink: /kb/114/Q114465/
 ---
 
 ## Q114465: FIX: Error Message When Comparing Large Strings

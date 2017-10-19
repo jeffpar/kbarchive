@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187847: FP: Explorer Automatically Updates Hyperlinks in Editor"
-permalink: kb/187/Q187847/
+permalink: /kb/187/Q187847/
 ---
 
 ## Q187847: FP: Explorer Automatically Updates Hyperlinks in Editor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277873: Patch for &quot;Web Server File Request Parsing&quot; Vulnerability"
-permalink: kb/277/Q277873/
+permalink: /kb/277/Q277873/
 ---
 
 ## Q277873: Patch for &quot;Web Server File Request Parsing&quot; Vulnerability

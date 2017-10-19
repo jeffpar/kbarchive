@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181937: Latest SGC-Enabled Schannel.dll Breaks IIS 3.0 Key Manager"
-permalink: kb/181/Q181937/
+permalink: /kb/181/Q181937/
 ---
 
 ## Q181937: Latest SGC-Enabled Schannel.dll Breaks IIS 3.0 Key Manager

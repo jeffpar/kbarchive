@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158197: SAMPLE: ODBCBIND.EXE RDO: Bind Parameters to Stored Procedures"
-permalink: kb/158/Q158197/
+permalink: /kb/158/Q158197/
 ---
 
 ## Q158197: SAMPLE: ODBCBIND.EXE RDO: Bind Parameters to Stored Procedures

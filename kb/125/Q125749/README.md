@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125749: PRB: Cause of the R6025 Run-Time Error"
-permalink: kb/125/Q125749/
+permalink: /kb/125/Q125749/
 ---
 
 ## Q125749: PRB: Cause of the R6025 Run-Time Error

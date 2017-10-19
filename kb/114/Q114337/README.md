@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114337: WFWG: Using NetDDE with Third-Party Networks"
-permalink: kb/114/Q114337/
+permalink: /kb/114/Q114337/
 ---
 
 ## Q114337: WFWG: Using NetDDE with Third-Party Networks

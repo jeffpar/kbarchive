@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165663: XWEB: Active Server Components Failed to Install Properly"
-permalink: kb/165/Q165663/
+permalink: /kb/165/Q165663/
 ---
 
 ## Q165663: XWEB: Active Server Components Failed to Install Properly

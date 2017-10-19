@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222514: Errors Running Federal Express FedEx Ship Program"
-permalink: kb/222/Q222514/
+permalink: /kb/222/Q222514/
 ---
 
 ## Q222514: Errors Running Federal Express FedEx Ship Program

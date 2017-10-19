@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138742: NetWare Drive Mappings Lost After Resuming from Suspended Mode"
-permalink: kb/138/Q138742/
+permalink: /kb/138/Q138742/
 ---
 
 ## Q138742: NetWare Drive Mappings Lost After Resuming from Suspended Mode

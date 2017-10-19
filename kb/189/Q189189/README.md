@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189189: SMS: Fiperf.bat - Add SMS File Counters to Performance Monitor"
-permalink: kb/189/Q189189/
+permalink: /kb/189/Q189189/
 ---
 
 ## Q189189: SMS: Fiperf.bat - Add SMS File Counters to Performance Monitor

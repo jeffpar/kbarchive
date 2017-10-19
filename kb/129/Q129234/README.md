@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129234: Net Watcher Continues to List Disconnected Client"
-permalink: kb/129/Q129234/
+permalink: /kb/129/Q129234/
 ---
 
 ## Q129234: Net Watcher Continues to List Disconnected Client

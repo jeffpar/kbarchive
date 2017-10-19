@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177127: Incorrect Report on Disk Free Space Under Dfs"
-permalink: kb/177/Q177127/
+permalink: /kb/177/Q177127/
 ---
 
 ## Q177127: Incorrect Report on Disk Free Space Under Dfs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96555: INTERLNK.EXE Doesn't Work with Xircom PPX and Pocket Adapter"
-permalink: kb/096/Q96555/
+permalink: /kb/096/Q96555/
 ---
 
 ## Q96555: INTERLNK.EXE Doesn't Work with Xircom PPX and Pocket Adapter

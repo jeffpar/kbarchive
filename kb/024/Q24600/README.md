@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24600: AddMenu.exe Demonstrates Adding Menus Dynamically"
-permalink: kb/024/Q24600/
+permalink: /kb/024/Q24600/
 ---
 
 ## Q24600: AddMenu.exe Demonstrates Adding Menus Dynamically

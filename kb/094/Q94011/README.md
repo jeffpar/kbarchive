@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94011: Zenith MasterSport SL/SLE BIOS Update Required"
-permalink: kb/094/Q94011/
+permalink: /kb/094/Q94011/
 ---
 
 ## Q94011: Zenith MasterSport SL/SLE BIOS Update Required

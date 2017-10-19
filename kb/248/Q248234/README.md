@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248234: XCLN:Exchange Clients Get No Results Querying on Bcc Address"
-permalink: kb/248/Q248234/
+permalink: /kb/248/Q248234/
 ---
 
 ## Q248234: XCLN:Exchange Clients Get No Results Querying on Bcc Address

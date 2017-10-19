@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123991: Windows 95 Cannot Print to Coactive Network Shared Printer"
-permalink: kb/123/Q123991/
+permalink: /kb/123/Q123991/
 ---
 
 ## Q123991: Windows 95 Cannot Print to Coactive Network Shared Printer

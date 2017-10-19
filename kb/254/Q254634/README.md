@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254634: PRB: Updating DAO Recordset from Excel Increases File Size"
-permalink: kb/254/Q254634/
+permalink: /kb/254/Q254634/
 ---
 
 ## Q254634: PRB: Updating DAO Recordset from Excel Increases File Size

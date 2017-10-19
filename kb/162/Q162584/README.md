@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162584: ADT/ODE: Developing a Plan to Deploy Run-Time Applications"
-permalink: kb/162/Q162584/
+permalink: /kb/162/Q162584/
 ---
 
 ## Q162584: ADT/ODE: Developing a Plan to Deploy Run-Time Applications

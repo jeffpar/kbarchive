@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163312: Incorrect Format 0 XID for Channel Connections"
-permalink: kb/163/Q163312/
+permalink: /kb/163/Q163312/
 ---
 
 ## Q163312: Incorrect Format 0 XID for Channel Connections

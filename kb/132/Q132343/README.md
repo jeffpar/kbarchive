@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132343: Err Msg on AST Manhattan: STOP: 0x0000000A"
-permalink: kb/132/Q132343/
+permalink: /kb/132/Q132343/
 ---
 
 ## Q132343: Err Msg on AST Manhattan: STOP: 0x0000000A

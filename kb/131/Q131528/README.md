@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131528: PRB: Dynamic Grid Properties Don't Appear in Property Sheet"
-permalink: kb/131/Q131528/
+permalink: /kb/131/Q131528/
 ---
 
 ## Q131528: PRB: Dynamic Grid Properties Don't Appear in Property Sheet

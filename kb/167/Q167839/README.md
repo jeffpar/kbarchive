@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167839: BUG: PopupMenu on Modal Form Not Displayed"
-permalink: kb/167/Q167839/
+permalink: /kb/167/Q167839/
 ---
 
 ## Q167839: BUG: PopupMenu on Modal Form Not Displayed

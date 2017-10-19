@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152651: Audit32.log Displays &quot;Unable to write Status MIF&quot; Error"
-permalink: kb/152/Q152651/
+permalink: /kb/152/Q152651/
 ---
 
 ## Q152651: Audit32.log Displays &quot;Unable to write Status MIF&quot; Error

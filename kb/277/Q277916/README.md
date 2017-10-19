@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277916: HOWTO: Use GetKeyState() to Check If the TAB Key Was Pressed"
-permalink: kb/277/Q277916/
+permalink: /kb/277/Q277916/
 ---
 
 ## Q277916: HOWTO: Use GetKeyState() to Check If the TAB Key Was Pressed

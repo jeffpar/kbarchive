@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96333: MS Backup Err Msg: File Is Not a Setup File..."
-permalink: kb/096/Q96333/
+permalink: /kb/096/Q96333/
 ---
 
 ## Q96333: MS Backup Err Msg: File Is Not a Setup File...

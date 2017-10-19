@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160101: NBA Full Court Press: Invalid Page Fault in Kernel32.dll"
-permalink: kb/160/Q160101/
+permalink: /kb/160/Q160101/
 ---
 
 ## Q160101: NBA Full Court Press: Invalid Page Fault in Kernel32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157612: WD97: No Warning When You Edit EPS Image (Image Converted)"
-permalink: kb/157/Q157612/
+permalink: /kb/157/Q157612/
 ---
 
 ## Q157612: WD97: No Warning When You Edit EPS Image (Image Converted)

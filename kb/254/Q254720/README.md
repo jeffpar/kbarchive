@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254720: XADM: Install of French Mailbox Manager on cluster server fails"
-permalink: kb/254/Q254720/
+permalink: /kb/254/Q254720/
 ---
 
 ## Q254720: XADM: Install of French Mailbox Manager on cluster server fails

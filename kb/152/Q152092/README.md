@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152092: DRAGD95.EXE OLE Drag/Drop in Windows 95 Common Controls"
-permalink: kb/152/Q152092/
+permalink: /kb/152/Q152092/
 ---
 
 ## Q152092: DRAGD95.EXE OLE Drag/Drop in Windows 95 Common Controls

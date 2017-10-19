@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124899: BUG: SQLNumResultCols May Fail After Prepared SQL Statement"
-permalink: kb/124/Q124899/
+permalink: /kb/124/Q124899/
 ---
 
 ## Q124899: BUG: SQLNumResultCols May Fail After Prepared SQL Statement

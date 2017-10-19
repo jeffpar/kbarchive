@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231206: SMS: Problems Installing Netmon When Dialog Box Is Open"
-permalink: kb/231/Q231206/
+permalink: /kb/231/Q231206/
 ---
 
 ## Q231206: SMS: Problems Installing Netmon When Dialog Box Is Open

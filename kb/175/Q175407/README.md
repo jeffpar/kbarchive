@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175407: Age of Empires: Hangs During Multiplayer Game on Zone.com"
-permalink: kb/175/Q175407/
+permalink: /kb/175/Q175407/
 ---
 
 ## Q175407: Age of Empires: Hangs During Multiplayer Game on Zone.com

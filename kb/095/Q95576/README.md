@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95576: WFWG: Network Card Detection Hangs Machine During Setup"
-permalink: kb/095/Q95576/
+permalink: /kb/095/Q95576/
 ---
 
 ## Q95576: WFWG: Network Card Detection Hangs Machine During Setup

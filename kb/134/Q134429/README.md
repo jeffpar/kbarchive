@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134429: Cannot Print to WGAO for MS-DOS-Based Computer"
-permalink: kb/134/Q134429/
+permalink: /kb/134/Q134429/
 ---
 
 ## Q134429: Cannot Print to WGAO for MS-DOS-Based Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191980: PRB: Application Builder Not Removing Form/Report from Project"
-permalink: kb/191/Q191980/
+permalink: /kb/191/Q191980/
 ---
 
 ## Q191980: PRB: Application Builder Not Removing Form/Report from Project

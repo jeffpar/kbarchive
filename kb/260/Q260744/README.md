@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260744: HOWTO: Set ActiveX Control Design-Time Properties at Run Time"
-permalink: kb/260/Q260744/
+permalink: /kb/260/Q260744/
 ---
 
 ## Q260744: HOWTO: Set ActiveX Control Design-Time Properties at Run Time

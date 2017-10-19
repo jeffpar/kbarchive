@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76867: MIDIMAP.INI Edited Through Control Panel"
-permalink: kb/076/Q76867/
+permalink: /kb/076/Q76867/
 ---
 
 ## Q76867: MIDIMAP.INI Edited Through Control Panel

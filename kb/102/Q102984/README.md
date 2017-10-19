@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102984: REG: ControlSet&#92;Select Subkey Entries"
-permalink: kb/102/Q102984/
+permalink: /kb/102/Q102984/
 ---
 
 ## Q102984: REG: ControlSet&#92;Select Subkey Entries

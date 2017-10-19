@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255783: Allegiance Err Msg: Invalid Page Fault in Module Allegiance.exe"
-permalink: kb/255/Q255783/
+permalink: /kb/255/Q255783/
 ---
 
 ## Q255783: Allegiance Err Msg: Invalid Page Fault in Module Allegiance.exe

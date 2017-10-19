@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110730: Flight Simulator: Radio Frequency Documentation Errors"
-permalink: kb/110/Q110730/
+permalink: /kb/110/Q110730/
 ---
 
 ## Q110730: Flight Simulator: Radio Frequency Documentation Errors

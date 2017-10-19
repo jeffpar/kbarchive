@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194422: How to Extract Service Pack 3 Files"
-permalink: kb/194/Q194422/
+permalink: /kb/194/Q194422/
 ---
 
 ## Q194422: How to Extract Service Pack 3 Files

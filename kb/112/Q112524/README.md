@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112524: PPT: Lotus 1-2-3 Chart Object Fill Colors Lost in PowerPoint"
-permalink: kb/112/Q112524/
+permalink: /kb/112/Q112524/
 ---
 
 ## Q112524: PPT: Lotus 1-2-3 Chart Object Fill Colors Lost in PowerPoint

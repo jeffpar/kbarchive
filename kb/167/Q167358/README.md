@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167358: FIX: Remote Windows 95 Machine Crashes on Stop Debugging"
-permalink: kb/167/Q167358/
+permalink: /kb/167/Q167358/
 ---
 
 ## Q167358: FIX: Remote Windows 95 Machine Crashes on Stop Debugging

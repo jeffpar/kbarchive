@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136130: ADT: Overview of MS Access Developer's Toolkit (ADT)"
-permalink: kb/136/Q136130/
+permalink: /kb/136/Q136130/
 ---
 
 ## Q136130: ADT: Overview of MS Access Developer's Toolkit (ADT)

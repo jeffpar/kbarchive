@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37642: Copying a File Between Disks on a Single Drive"
-permalink: kb/037/Q37642/
+permalink: /kb/037/Q37642/
 ---
 
 ## Q37642: Copying a File Between Disks on a Single Drive

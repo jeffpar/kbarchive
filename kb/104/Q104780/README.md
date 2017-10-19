@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104780: MIRROR Err Msg on DBLSPACE Drive: The Boot Sector for this..."
-permalink: kb/104/Q104780/
+permalink: /kb/104/Q104780/
 ---
 
 ## Q104780: MIRROR Err Msg on DBLSPACE Drive: The Boot Sector for this...

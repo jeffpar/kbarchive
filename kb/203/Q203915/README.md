@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203915: &quot;Send To&quot; Command Missing When You Right-Click a File or Folder"
-permalink: kb/203/Q203915/
+permalink: /kb/203/Q203915/
 ---
 
 ## Q203915: &quot;Send To&quot; Command Missing When You Right-Click a File or Folder

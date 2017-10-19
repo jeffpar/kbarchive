@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113365: Writer/Artist: PowerBook 180C Crashes with Sounds On"
-permalink: kb/113/Q113365/
+permalink: /kb/113/Q113365/
 ---
 
 ## Q113365: Writer/Artist: PowerBook 180C Crashes with Sounds On

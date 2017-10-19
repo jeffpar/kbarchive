@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90563: Using the AdvancedSetUpDialog() Configuration Call"
-permalink: kb/090/Q90563/
+permalink: /kb/090/Q90563/
 ---
 
 ## Q90563: Using the AdvancedSetUpDialog() Configuration Call

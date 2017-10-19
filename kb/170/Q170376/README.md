@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170376: XFOR: Surgically Removing LinkAge Connectors and Dirsync Compone"
-permalink: kb/170/Q170376/
+permalink: /kb/170/Q170376/
 ---
 
 ## Q170376: XFOR: Surgically Removing LinkAge Connectors and Dirsync Compone

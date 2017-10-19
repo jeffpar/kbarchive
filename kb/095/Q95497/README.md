@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95497: Less Disk Space After Converting a Stacker Drive"
-permalink: kb/095/Q95497/
+permalink: /kb/095/Q95497/
 ---
 
 ## Q95497: Less Disk Space After Converting a Stacker Drive

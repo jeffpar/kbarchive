@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88383: Windows Err Msg: Problem Drawing or Printing Object"
-permalink: kb/088/Q88383/
+permalink: /kb/088/Q88383/
 ---
 
 ## Q88383: Windows Err Msg: Problem Drawing or Printing Object

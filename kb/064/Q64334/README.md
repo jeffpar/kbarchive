@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64334: Flight Simulator: Gates Learjet Documentation Error"
-permalink: kb/064/Q64334/
+permalink: /kb/064/Q64334/
 ---
 
 ## Q64334: Flight Simulator: Gates Learjet Documentation Error

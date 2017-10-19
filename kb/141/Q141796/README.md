@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141796: HOWTO: Identify the Jet Database Engine Components"
-permalink: kb/141/Q141796/
+permalink: /kb/141/Q141796/
 ---
 
 ## Q141796: HOWTO: Identify the Jet Database Engine Components

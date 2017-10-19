@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253257: HOWTO: Capture the EOF Character with the MSComm Control"
-permalink: kb/253/Q253257/
+permalink: /kb/253/Q253257/
 ---
 
 ## Q253257: HOWTO: Capture the EOF Character with the MSComm Control

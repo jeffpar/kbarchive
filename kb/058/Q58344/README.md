@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58344: Windows 3.0 SYSTEM.INI [standard] Section"
-permalink: kb/058/Q58344/
+title: "Q58344: Windows 3.0 SYSTEM.INI &#91;standard&#93; Section"
+permalink: /kb/058/Q58344/
 ---
 
-## Q58344: Windows 3.0 SYSTEM.INI [standard] Section
+## Q58344: Windows 3.0 SYSTEM.INI &#91;standard&#93; Section
 
 	Article: Q58344
 	Product(s): Microsoft Windows 95.x Retail Product

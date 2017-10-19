@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302863: XFOR: How to Use the IMC Queue Dump Utility (Imcdump.exe)"
-permalink: kb/302/Q302863/
+permalink: /kb/302/Q302863/
 ---
 
 ## Q302863: XFOR: How to Use the IMC Queue Dump Utility (Imcdump.exe)

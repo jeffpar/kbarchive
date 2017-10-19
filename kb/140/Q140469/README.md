@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140469: Err Msg: CHKDSK Is Correcting a Minor Error in File 5"
-permalink: kb/140/Q140469/
+permalink: /kb/140/Q140469/
 ---
 
 ## Q140469: Err Msg: CHKDSK Is Correcting a Minor Error in File 5

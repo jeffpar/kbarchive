@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246608: XCON: Event ID 9405: MTA Causes Access Violation"
-permalink: kb/246/Q246608/
+permalink: /kb/246/Q246608/
 ---
 
 ## Q246608: XCON: Event ID 9405: MTA Causes Access Violation

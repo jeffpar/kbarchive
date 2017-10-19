@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257783: FIX: Function with Numeric Label May Cause Crash"
-permalink: kb/257/Q257783/
+permalink: /kb/257/Q257783/
 ---
 
 ## Q257783: FIX: Function with Numeric Label May Cause Crash

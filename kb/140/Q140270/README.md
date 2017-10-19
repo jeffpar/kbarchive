@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140270: FIX:ClassView Add Function/Variable Fails If Header File Moved"
-permalink: kb/140/Q140270/
+permalink: /kb/140/Q140270/
 ---
 
 ## Q140270: FIX:ClassView Add Function/Variable Fails If Header File Moved

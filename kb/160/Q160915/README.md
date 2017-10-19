@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160915: WD97: Caption with Chapter Numbering Reset to 1"
-permalink: kb/160/Q160915/
+permalink: /kb/160/Q160915/
 ---
 
 ## Q160915: WD97: Caption with Chapter Numbering Reset to 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112922: PC Win: Shortcut Key F1 in Export Dialog Invokes Import Help"
-permalink: kb/112/Q112922/
+permalink: /kb/112/Q112922/
 ---
 
 ## Q112922: PC Win: Shortcut Key F1 in Export Dialog Invokes Import Help

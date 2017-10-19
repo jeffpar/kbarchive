@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239838: Err Msg: This Drive Cannot Be Checked with this Version of..."
-permalink: kb/239/Q239838/
+permalink: /kb/239/Q239838/
 ---
 
 ## Q239838: Err Msg: This Drive Cannot Be Checked with this Version of...

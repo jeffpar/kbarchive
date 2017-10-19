@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71868: MS-DOS 5 Upgrade README.TXT: Memory Management"
-permalink: kb/071/Q71868/
+permalink: /kb/071/Q71868/
 ---
 
 ## Q71868: MS-DOS 5 Upgrade README.TXT: Memory Management

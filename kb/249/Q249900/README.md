@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249900: PRB: Unable to Open/Import FoxPro Table in Some Applications"
-permalink: kb/249/Q249900/
+permalink: /kb/249/Q249900/
 ---
 
 ## Q249900: PRB: Unable to Open/Import FoxPro Table in Some Applications

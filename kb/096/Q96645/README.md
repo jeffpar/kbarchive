@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96645: PC DOS: 3.0 MS-DOS Workstation Update Disk 1 [3.5, 720K]"
-permalink: kb/096/Q96645/
+title: "Q96645: PC DOS: 3.0 MS-DOS Workstation Update Disk 1 &#91;3.5, 720K&#93;"
+permalink: /kb/096/Q96645/
 ---
 
-## Q96645: PC DOS: 3.0 MS-DOS Workstation Update Disk 1 [3.5, 720K]
+## Q96645: PC DOS: 3.0 MS-DOS Workstation Update Disk 1 &#91;3.5, 720K&#93;
 
 	Article: Q96645
 	Product(s): Microsoft Mail For PC Networks

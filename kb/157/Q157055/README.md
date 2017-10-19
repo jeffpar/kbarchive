@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157055: INF: ODBC Access Driver Does Not Support Create or Drop View"
-permalink: kb/157/Q157055/
+permalink: /kb/157/Q157055/
 ---
 
 ## Q157055: INF: ODBC Access Driver Does Not Support Create or Drop View

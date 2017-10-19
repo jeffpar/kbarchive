@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167351: FIX: Using Declaration Causes C2327"
-permalink: kb/167/Q167351/
+permalink: /kb/167/Q167351/
 ---
 
 ## Q167351: FIX: Using Declaration Causes C2327

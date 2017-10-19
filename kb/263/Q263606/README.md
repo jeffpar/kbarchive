@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263606: BUG: Optimization Bug When Using Array with memset Initializer"
-permalink: kb/263/Q263606/
+permalink: /kb/263/Q263606/
 ---
 
 ## Q263606: BUG: Optimization Bug When Using Array with memset Initializer

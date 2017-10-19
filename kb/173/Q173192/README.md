@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173192: Logon Total Counter in PerfMon Returns Incorrect Values"
-permalink: kb/173/Q173192/
+permalink: /kb/173/Q173192/
 ---
 
 ## Q173192: Logon Total Counter in PerfMon Returns Incorrect Values

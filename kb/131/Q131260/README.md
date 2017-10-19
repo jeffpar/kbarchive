@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131260: Adaptec AHA-2940 SCSI and Viper PCI Video Hang Windows NT Setup"
-permalink: kb/131/Q131260/
+permalink: /kb/131/Q131260/
 ---
 
 ## Q131260: Adaptec AHA-2940 SCSI and Viper PCI Video Hang Windows NT Setup

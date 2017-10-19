@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156304: XCLN: Err Msg: The Set of Folders Could Not Be Opened"
-permalink: kb/156/Q156304/
+permalink: /kb/156/Q156304/
 ---
 
 ## Q156304: XCLN: Err Msg: The Set of Folders Could Not Be Opened

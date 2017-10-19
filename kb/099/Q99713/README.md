@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99713: SMTP: How Reply Chooses a From Address"
-permalink: kb/099/Q99713/
+permalink: /kb/099/Q99713/
 ---
 
 ## Q99713: SMTP: How Reply Chooses a From Address

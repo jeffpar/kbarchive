@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246758: How to Monitor a Remote Computer Without Logging On to It"
-permalink: kb/246/Q246758/
+permalink: /kb/246/Q246758/
 ---
 
 ## Q246758: How to Monitor a Remote Computer Without Logging On to It

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109597: How to Customize About Menu Option on Apple Menu"
-permalink: kb/109/Q109597/
+permalink: /kb/109/Q109597/
 ---
 
 ## Q109597: How to Customize About Menu Option on Apple Menu

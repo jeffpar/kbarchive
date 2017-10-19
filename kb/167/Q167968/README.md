@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167968: Access Violation Causes 16-Bit Applications to Silently Quit"
-permalink: kb/167/Q167968/
+permalink: /kb/167/Q167968/
 ---
 
 ## Q167968: Access Violation Causes 16-Bit Applications to Silently Quit

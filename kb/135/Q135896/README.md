@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135896: Windows 95 CD-ROM Hardware.txt File"
-permalink: kb/135/Q135896/
+permalink: /kb/135/Q135896/
 ---
 
 ## Q135896: Windows 95 CD-ROM Hardware.txt File

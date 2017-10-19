@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142432: Problems Running Batch Files Through Scheduler Service"
-permalink: kb/142/Q142432/
+permalink: /kb/142/Q142432/
 ---
 
 ## Q142432: Problems Running Batch Files Through Scheduler Service

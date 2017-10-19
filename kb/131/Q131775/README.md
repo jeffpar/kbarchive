@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131775: HOWTO: Access Child Process Exit Code from 32-Bit Parent Proc."
-permalink: kb/131/Q131775/
+permalink: /kb/131/Q131775/
 ---
 
 ## Q131775: HOWTO: Access Child Process Exit Code from 32-Bit Parent Proc.

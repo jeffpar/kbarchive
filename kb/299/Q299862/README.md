@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299862: Mixed Secure and Nonsecure Content Dialog Boxes"
-permalink: kb/299/Q299862/
+permalink: /kb/299/Q299862/
 ---
 
 ## Q299862: Mixed Secure and Nonsecure Content Dialog Boxes

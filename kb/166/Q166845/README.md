@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166845: TN3270E Service Error 503 - Session Dropped Due to Inactivity"
-permalink: kb/166/Q166845/
+permalink: /kb/166/Q166845/
 ---
 
 ## Q166845: TN3270E Service Error 503 - Session Dropped Due to Inactivity

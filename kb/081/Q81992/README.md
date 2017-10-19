@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81992: PRB: Two Builds of Same Windows Help File Not Identical"
-permalink: kb/081/Q81992/
+permalink: /kb/081/Q81992/
 ---
 
 ## Q81992: PRB: Two Builds of Same Windows Help File Not Identical

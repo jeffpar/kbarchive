@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223281: Alternate File Names Are Not Supported in NetWare Redirector"
-permalink: kb/223/Q223281/
+permalink: /kb/223/Q223281/
 ---
 
 ## Q223281: Alternate File Names Are Not Supported in NetWare Redirector

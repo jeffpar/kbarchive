@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165059: XCON: Exchange Does Not Support Maximum 3-digit Country Codes"
-permalink: kb/165/Q165059/
+permalink: /kb/165/Q165059/
 ---
 
 ## Q165059: XCON: Exchange Does Not Support Maximum 3-digit Country Codes

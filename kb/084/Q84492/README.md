@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84492: Setup Error If SYSTEM Subdirectory Exists on Workstation"
-permalink: kb/084/Q84492/
+permalink: /kb/084/Q84492/
 ---
 
 ## Q84492: Setup Error If SYSTEM Subdirectory Exists on Workstation

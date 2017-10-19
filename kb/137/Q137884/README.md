@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137884: Workgroups and Windows 95 Clients Not Validated with DNS"
-permalink: kb/137/Q137884/
+permalink: /kb/137/Q137884/
 ---
 
 ## Q137884: Workgroups and Windows 95 Clients Not Validated with DNS

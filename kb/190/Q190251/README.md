@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190251: BUG: Option Explicit Statement is Not Added by a DHTML Page"
-permalink: kb/190/Q190251/
+permalink: /kb/190/Q190251/
 ---
 
 ## Q190251: BUG: Option Explicit Statement is Not Added by a DHTML Page

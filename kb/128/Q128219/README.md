@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128219: PC Win: Importing PROFS Nicknames Displays Incorrect Templates"
-permalink: kb/128/Q128219/
+permalink: /kb/128/Q128219/
 ---
 
 ## Q128219: PC Win: Importing PROFS Nicknames Displays Incorrect Templates

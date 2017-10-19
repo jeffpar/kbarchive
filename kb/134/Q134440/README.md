@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134440: Road Atlas 3.x ErrMsg: NBAMWV3 caused a GPF in AMW.EXE"
-permalink: kb/134/Q134440/
+permalink: /kb/134/Q134440/
 ---
 
 ## Q134440: Road Atlas 3.x ErrMsg: NBAMWV3 caused a GPF in AMW.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323803: BUG: Issues Related to Using ODBC Driver for DB2 with File DSNs"
-permalink: kb/323/Q323803/
+permalink: /kb/323/Q323803/
 ---
 
 ## Q323803: BUG: Issues Related to Using ODBC Driver for DB2 with File DSNs

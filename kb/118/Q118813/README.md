@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118813: PC Ext: Script File Order of Precedence"
-permalink: kb/118/Q118813/
+permalink: /kb/118/Q118813/
 ---
 
 ## Q118813: PC Ext: Script File Order of Precedence

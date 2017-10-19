@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193422: Last Day of the Month Reverts Back to First Day of Same Month"
-permalink: kb/193/Q193422/
+permalink: /kb/193/Q193422/
 ---
 
 ## Q193422: Last Day of the Month Reverts Back to First Day of Same Month

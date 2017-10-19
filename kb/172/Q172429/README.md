@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172429: Mac Bookshelf 98: System Hangs When Adjusting Slider Bar"
-permalink: kb/172/Q172429/
+permalink: /kb/172/Q172429/
 ---
 
 ## Q172429: Mac Bookshelf 98: System Hangs When Adjusting Slider Bar

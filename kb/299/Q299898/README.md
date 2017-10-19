@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299898: FIX: Coverage Profiler Fails when Procedure Contains &amp;&amp;"
-permalink: kb/299/Q299898/
+permalink: /kb/299/Q299898/
 ---
 
 ## Q299898: FIX: Coverage Profiler Fails when Procedure Contains &amp;&amp;

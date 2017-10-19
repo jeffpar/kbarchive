@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163798: BUG: Spell Checking on Memo Field Causes Error"
-permalink: kb/163/Q163798/
+permalink: /kb/163/Q163798/
 ---
 
 ## Q163798: BUG: Spell Checking on Memo Field Causes Error

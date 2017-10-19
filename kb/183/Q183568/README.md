@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183568: CCSID In The Data Source Does Not Override Driver's Value"
-permalink: kb/183/Q183568/
+permalink: /kb/183/Q183568/
 ---
 
 ## Q183568: CCSID In The Data Source Does Not Override Driver's Value

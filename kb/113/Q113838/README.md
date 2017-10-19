@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113838: Comprehensive List of MS-DOS 6.21 Documentation Errors"
-permalink: kb/113/Q113838/
+permalink: /kb/113/Q113838/
 ---
 
 ## Q113838: Comprehensive List of MS-DOS 6.21 Documentation Errors

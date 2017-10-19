@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172913: Server Stops with STOP 0xA in Ibmsync.sys Driver Under Stress"
-permalink: kb/172/Q172913/
+permalink: /kb/172/Q172913/
 ---
 
 ## Q172913: Server Stops with STOP 0xA in Ibmsync.sys Driver Under Stress

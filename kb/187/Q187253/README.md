@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187253: FP: Broken Image Icon Appears Pasting from Internet Explorer"
-permalink: kb/187/Q187253/
+permalink: /kb/187/Q187253/
 ---
 
 ## Q187253: FP: Broken Image Icon Appears Pasting from Internet Explorer

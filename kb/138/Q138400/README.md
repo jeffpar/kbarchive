@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138400: Troubleshooting LNK2001 or L2029 Unresolved External Errors"
-permalink: kb/138/Q138400/
+permalink: /kb/138/Q138400/
 ---
 
 ## Q138400: Troubleshooting LNK2001 or L2029 Unresolved External Errors

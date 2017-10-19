@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202621: FIX: SQL PassThrough May Return Incorrect String"
-permalink: kb/202/Q202621/
+permalink: /kb/202/Q202621/
 ---
 
 ## Q202621: FIX: SQL PassThrough May Return Incorrect String

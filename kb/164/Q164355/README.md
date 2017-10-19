@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164355: PRB: Programmatically Adding Stored Procedure May Cause Error"
-permalink: kb/164/Q164355/
+permalink: /kb/164/Q164355/
 ---
 
 ## Q164355: PRB: Programmatically Adding Stored Procedure May Cause Error

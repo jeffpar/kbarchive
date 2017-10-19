@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108052: SMTP: Err Msg: Recipient Unknown"
-permalink: kb/108/Q108052/
+permalink: /kb/108/Q108052/
 ---
 
 ## Q108052: SMTP: Err Msg: Recipient Unknown

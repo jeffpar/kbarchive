@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150600: Full Screen Option Doesn't Change in Full Screen View"
-permalink: kb/150/Q150600/
+permalink: /kb/150/Q150600/
 ---
 
 ## Q150600: Full Screen Option Doesn't Change in Full Screen View

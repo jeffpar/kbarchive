@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276053: 5250 Applet Uses Wrong Conversion Table for Host Code Page 870"
-permalink: kb/276/Q276053/
+permalink: /kb/276/Q276053/
 ---
 
 ## Q276053: 5250 Applet Uses Wrong Conversion Table for Host Code Page 870

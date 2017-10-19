@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77111: Running AutoResume with Toshiba T2000SX/T3100SX"
-permalink: kb/077/Q77111/
+permalink: /kb/077/Q77111/
 ---
 
 ## Q77111: Running AutoResume with Toshiba T2000SX/T3100SX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130302: PRB: OLE Word 6 Object Does Not Close Itself in Windows NT"
-permalink: kb/130/Q130302/
+permalink: /kb/130/Q130302/
 ---
 
 ## Q130302: PRB: OLE Word 6 Object Does Not Close Itself in Windows NT

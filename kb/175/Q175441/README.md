@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175441: XFOR: Dr. Watson Error When Running GWReset"
-permalink: kb/175/Q175441/
+permalink: /kb/175/Q175441/
 ---
 
 ## Q175441: XFOR: Dr. Watson Error When Running GWReset

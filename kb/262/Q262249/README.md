@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262249: StarLancer: Cannot Play Game in Direct 3-D Render Mode"
-permalink: kb/262/Q262249/
+permalink: /kb/262/Q262249/
 ---
 
 ## Q262249: StarLancer: Cannot Play Game in Direct 3-D Render Mode

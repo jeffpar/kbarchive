@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212898: SMS: Advertisement Start Time Is 1 Hour Earlier w/ IntraNetware"
-permalink: kb/212/Q212898/
+permalink: /kb/212/Q212898/
 ---
 
 ## Q212898: SMS: Advertisement Start Time Is 1 Hour Earlier w/ IntraNetware

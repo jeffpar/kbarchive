@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250528: Using Account Joiner Utility in Microsoft Metadirectory Services"
-permalink: kb/250/Q250528/
+permalink: /kb/250/Q250528/
 ---
 
 ## Q250528: Using Account Joiner Utility in Microsoft Metadirectory Services

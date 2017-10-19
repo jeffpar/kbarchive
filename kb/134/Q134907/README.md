@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134907: AFTP Server May Stop Accepting New Conversations"
-permalink: kb/134/Q134907/
+permalink: /kb/134/Q134907/
 ---
 
 ## Q134907: AFTP Server May Stop Accepting New Conversations

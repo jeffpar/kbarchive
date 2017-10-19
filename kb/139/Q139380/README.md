@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139380: Multihomed WINS Server Replication Partner Failures"
-permalink: kb/139/Q139380/
+permalink: /kb/139/Q139380/
 ---
 
 ## Q139380: Multihomed WINS Server Replication Partner Failures

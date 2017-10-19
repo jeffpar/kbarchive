@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190873: WD97: Entries in Text Box/Callouts Missing from TOC"
-permalink: kb/190/Q190873/
+permalink: /kb/190/Q190873/
 ---
 
 ## Q190873: WD97: Entries in Text Box/Callouts Missing from TOC

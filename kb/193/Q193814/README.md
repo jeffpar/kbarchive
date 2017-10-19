@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193814: Performance Improvements for APPC/CPIC Applications"
-permalink: kb/193/Q193814/
+permalink: /kb/193/Q193814/
 ---
 
 ## Q193814: Performance Improvements for APPC/CPIC Applications

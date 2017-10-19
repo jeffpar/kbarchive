@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156529: Deleting Favorite Place May Cause Page Fault"
-permalink: kb/156/Q156529/
+permalink: /kb/156/Q156529/
 ---
 
 ## Q156529: Deleting Favorite Place May Cause Page Fault

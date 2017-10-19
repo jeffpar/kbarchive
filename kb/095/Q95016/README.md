@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95016: PROFS: &quot;System Abend 155&quot; Installing Gateway on Host"
-permalink: kb/095/Q95016/
+permalink: /kb/095/Q95016/
 ---
 
 ## Q95016: PROFS: &quot;System Abend 155&quot; Installing Gateway on Host

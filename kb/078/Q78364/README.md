@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78364: Explanation of Device Contention and Windows"
-permalink: kb/078/Q78364/
+permalink: /kb/078/Q78364/
 ---
 
 ## Q78364: Explanation of Device Contention and Windows

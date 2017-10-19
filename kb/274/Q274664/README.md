@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274664: Crimson Skies: Saved Single Player Campaign Games are Lost"
-permalink: kb/274/Q274664/
+permalink: /kb/274/Q274664/
 ---
 
 ## Q274664: Crimson Skies: Saved Single Player Campaign Games are Lost

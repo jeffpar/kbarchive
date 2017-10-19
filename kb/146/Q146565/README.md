@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146565: Multiple Indented IF Statements Results in Error"
-permalink: kb/146/Q146565/
+permalink: /kb/146/Q146565/
 ---
 
 ## Q146565: Multiple Indented IF Statements Results in Error

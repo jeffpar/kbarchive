@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184226: XADM: How Advanced Security Works on a Mailbox"
-permalink: kb/184/Q184226/
+permalink: /kb/184/Q184226/
 ---
 
 ## Q184226: XADM: How Advanced Security Works on a Mailbox

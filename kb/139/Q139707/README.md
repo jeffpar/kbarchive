@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139707: Err Msg: System Agent Error - Cannot Find the File..."
-permalink: kb/139/Q139707/
+permalink: /kb/139/Q139707/
 ---
 
 ## Q139707: Err Msg: System Agent Error - Cannot Find the File...

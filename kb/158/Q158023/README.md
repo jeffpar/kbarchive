@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158023: GEX: Gex.lnk Shortcut Error Message"
-permalink: kb/158/Q158023/
+permalink: /kb/158/Q158023/
 ---
 
 ## Q158023: GEX: Gex.lnk Shortcut Error Message

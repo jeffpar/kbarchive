@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233245: Streets and Trips 2000: Cannot Use GPS Device with Program"
-permalink: kb/233/Q233245/
+permalink: /kb/233/Q233245/
 ---
 
 ## Q233245: Streets and Trips 2000: Cannot Use GPS Device with Program

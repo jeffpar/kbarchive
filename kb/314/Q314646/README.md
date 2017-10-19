@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314646: FIX: ResetToDefault May Remove a Custom Method Completely"
-permalink: kb/314/Q314646/
+permalink: /kb/314/Q314646/
 ---
 
 ## Q314646: FIX: ResetToDefault May Remove a Custom Method Completely

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148782: Err Msg: &quot;Modem Is Busy or Cannot Be Found&quot; Using Aptiva Guide"
-permalink: kb/148/Q148782/
+permalink: /kb/148/Q148782/
 ---
 
 ## Q148782: Err Msg: &quot;Modem Is Busy or Cannot Be Found&quot; Using Aptiva Guide

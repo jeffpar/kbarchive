@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136925: How to Change the Color of an &quot;X&quot; in a Check Box"
-permalink: kb/136/Q136925/
+permalink: /kb/136/Q136925/
 ---
 
 ## Q136925: How to Change the Color of an &quot;X&quot; in a Check Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137445: How to Display View and Connection Properties"
-permalink: kb/137/Q137445/
+permalink: /kb/137/Q137445/
 ---
 
 ## Q137445: How to Display View and Connection Properties

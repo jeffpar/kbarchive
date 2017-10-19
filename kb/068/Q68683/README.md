@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68683: ASD: Unable to Rotate Objects in the Scenery Editor"
-permalink: kb/068/Q68683/
+permalink: /kb/068/Q68683/
 ---
 
 ## Q68683: ASD: Unable to Rotate Objects in the Scenery Editor

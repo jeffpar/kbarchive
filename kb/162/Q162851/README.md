@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162851: ACC97: &quot;Couldn't find object&quot; Error Checking Out Table/Query"
-permalink: kb/162/Q162851/
+permalink: /kb/162/Q162851/
 ---
 
 ## Q162851: ACC97: &quot;Couldn't find object&quot; Error Checking Out Table/Query

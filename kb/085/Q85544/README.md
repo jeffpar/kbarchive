@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85544: Bitstream Fontware Installation Kit: Information and Errors"
-permalink: kb/085/Q85544/
+permalink: /kb/085/Q85544/
 ---
 
 ## Q85544: Bitstream Fontware Installation Kit: Information and Errors

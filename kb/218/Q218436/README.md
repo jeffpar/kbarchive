@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218436: DOC: Wrong Technical Support Phone Number on MSDN 6.0 CD Insert"
-permalink: kb/218/Q218436/
+permalink: /kb/218/Q218436/
 ---
 
 ## Q218436: DOC: Wrong Technical Support Phone Number on MSDN 6.0 CD Insert

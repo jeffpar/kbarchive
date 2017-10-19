@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146077: XADM: Deleted Exchange Server Appears in PerfMon"
-permalink: kb/146/Q146077/
+permalink: /kb/146/Q146077/
 ---
 
 ## Q146077: XADM: Deleted Exchange Server Appears in PerfMon

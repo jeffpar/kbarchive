@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160455: WD97: Can't Use CRTL+ALT+F8 on Programmable Keyboard"
-permalink: kb/160/Q160455/
+permalink: /kb/160/Q160455/
 ---
 
 ## Q160455: WD97: Can't Use CRTL+ALT+F8 on Programmable Keyboard

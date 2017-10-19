@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111010: HOWTO: Use PASSTHROUGH As An Alternative to SpoolFile()"
-permalink: kb/111/Q111010/
+permalink: /kb/111/Q111010/
 ---
 
 ## Q111010: HOWTO: Use PASSTHROUGH As An Alternative to SpoolFile()

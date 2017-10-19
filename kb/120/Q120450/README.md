@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120450: Missing Characters Using TCP/IP-32 Telnet"
-permalink: kb/120/Q120450/
+permalink: /kb/120/Q120450/
 ---
 
 ## Q120450: Missing Characters Using TCP/IP-32 Telnet

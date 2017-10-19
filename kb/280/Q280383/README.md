@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280383: IIS Security Recommendations When You Use a UNC Share"
-permalink: kb/280/Q280383/
+permalink: /kb/280/Q280383/
 ---
 
 ## Q280383: IIS Security Recommendations When You Use a UNC Share

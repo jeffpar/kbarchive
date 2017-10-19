@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197827: WD97: SET Fields Within IF Field Evaluate Incorrectly"
-permalink: kb/197/Q197827/
+permalink: /kb/197/Q197827/
 ---
 
 ## Q197827: WD97: SET Fields Within IF Field Evaluate Incorrectly

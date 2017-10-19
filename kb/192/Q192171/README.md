@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192171: BUG: OLEDragDrop Fails on Contained Windowless Controls"
-permalink: kb/192/Q192171/
+permalink: /kb/192/Q192171/
 ---
 
 ## Q192171: BUG: OLEDragDrop Fails on Contained Windowless Controls

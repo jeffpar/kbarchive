@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192934: PRB: Error &quot;The Jet VBA File...Failed to Initialize When Called&quot;"
-permalink: kb/192/Q192934/
+permalink: /kb/192/Q192934/
 ---
 
 ## Q192934: PRB: Error &quot;The Jet VBA File...Failed to Initialize When Called&quot;

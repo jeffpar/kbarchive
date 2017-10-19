@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142681: IDC Script Fails to Connect to Database"
-permalink: kb/142/Q142681/
+permalink: /kb/142/Q142681/
 ---
 
 ## Q142681: IDC Script Fails to Connect to Database

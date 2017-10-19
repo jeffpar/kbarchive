@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76919: Bookshelf 1991: Problems Copying Almanac Table Headings"
-permalink: kb/076/Q76919/
+permalink: /kb/076/Q76919/
 ---
 
 ## Q76919: Bookshelf 1991: Problems Copying Almanac Table Headings

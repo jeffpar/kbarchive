@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181661: Files Included with the USB Supplement in OSR2.1 and OSR2.5"
-permalink: kb/181/Q181661/
+permalink: /kb/181/Q181661/
 ---
 
 ## Q181661: Files Included with the USB Supplement in OSR2.1 and OSR2.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118560: How to Indicate Record Continues on Next Page of Report"
-permalink: kb/118/Q118560/
+permalink: /kb/118/Q118560/
 ---
 
 ## Q118560: How to Indicate Record Continues on Next Page of Report

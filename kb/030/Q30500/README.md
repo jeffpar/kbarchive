@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30500: Segment Relative Versus Group Relative"
-permalink: kb/030/Q30500/
+permalink: /kb/030/Q30500/
 ---
 
 ## Q30500: Segment Relative Versus Group Relative

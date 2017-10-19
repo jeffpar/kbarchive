@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216469: Combat FS Err Msg: Invalid Page Fault in Module Simsui.dll"
-permalink: kb/216/Q216469/
+permalink: /kb/216/Q216469/
 ---
 
 ## Q216469: Combat FS Err Msg: Invalid Page Fault in Module Simsui.dll

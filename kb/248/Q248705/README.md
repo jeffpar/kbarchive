@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248705: PRB: Quality of Service and Wake on LAN"
-permalink: kb/248/Q248705/
+permalink: /kb/248/Q248705/
 ---
 
 ## Q248705: PRB: Quality of Service and Wake on LAN

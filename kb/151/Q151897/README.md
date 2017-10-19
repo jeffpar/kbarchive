@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151897: FIX: CListCtrl::InsertColumn() Causes Column Data to Shift"
-permalink: kb/151/Q151897/
+permalink: /kb/151/Q151897/
 ---
 
 ## Q151897: FIX: CListCtrl::InsertColumn() Causes Column Data to Shift

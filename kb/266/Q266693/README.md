@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266693: XFOR: Can't Add Exchange Server SMTP Addr. in Directory Sync."
-permalink: kb/266/Q266693/
+permalink: /kb/266/Q266693/
 ---
 
 ## Q266693: XFOR: Can't Add Exchange Server SMTP Addr. in Directory Sync.

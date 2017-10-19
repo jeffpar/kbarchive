@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257926: Encarta Dictionary: Essays in Hardbound Edition Are Not Included"
-permalink: kb/257/Q257926/
+permalink: /kb/257/Q257926/
 ---
 
 ## Q257926: Encarta Dictionary: Essays in Hardbound Edition Are Not Included

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321390: PRB:Cold Fusion Pages Set for Anon Access Prompt for Credentials"
-permalink: kb/321/Q321390/
+permalink: /kb/321/Q321390/
 ---
 
 ## Q321390: PRB:Cold Fusion Pages Set for Anon Access Prompt for Credentials

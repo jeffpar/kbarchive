@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152949: XFOR: Read Receipt is Received Instead of Return Receipt"
-permalink: kb/152/Q152949/
+permalink: /kb/152/Q152949/
 ---
 
 ## Q152949: XFOR: Read Receipt is Received Instead of Return Receipt

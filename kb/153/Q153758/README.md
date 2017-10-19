@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153758: XCON: Dynamic RAS Error Msg: An Interface Error Has Occured"
-permalink: kb/153/Q153758/
+permalink: /kb/153/Q153758/
 ---
 
 ## Q153758: XCON: Dynamic RAS Error Msg: An Interface Error Has Occured

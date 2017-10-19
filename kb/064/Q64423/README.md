@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64423: WD97: Setting the Default Font in Word for Windows"
-permalink: kb/064/Q64423/
+permalink: /kb/064/Q64423/
 ---
 
 ## Q64423: WD97: Setting the Default Font in Word for Windows

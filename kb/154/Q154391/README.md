@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154391: Flashing Question Mark During Startup"
-permalink: kb/154/Q154391/
+permalink: /kb/154/Q154391/
 ---
 
 ## Q154391: Flashing Question Mark During Startup

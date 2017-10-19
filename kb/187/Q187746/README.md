@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187746: BUG: ERROR MESSAGE() Function with ODBC Connection Causes Error"
-permalink: kb/187/Q187746/
+permalink: /kb/187/Q187746/
 ---
 
 ## Q187746: BUG: ERROR MESSAGE() Function with ODBC Connection Causes Error

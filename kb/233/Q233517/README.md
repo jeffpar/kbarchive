@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233517: Domain Logon Attempt Does Not Work with M-Node Clients"
-permalink: kb/233/Q233517/
+permalink: /kb/233/Q233517/
 ---
 
 ## Q233517: Domain Logon Attempt Does Not Work with M-Node Clients

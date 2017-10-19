@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159722: Err Msg: The User Has Not Been Granted the Requested Logon..."
-permalink: kb/159/Q159722/
+permalink: /kb/159/Q159722/
 ---
 
 ## Q159722: Err Msg: The User Has Not Been Granted the Requested Logon...

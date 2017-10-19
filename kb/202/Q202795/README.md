@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202795: PRB: REPLACE Command is Slow in Some Instances"
-permalink: kb/202/Q202795/
+permalink: /kb/202/Q202795/
 ---
 
 ## Q202795: PRB: REPLACE Command is Slow in Some Instances

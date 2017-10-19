@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297789: How to Disable the Computer Browser Service Throughout a Domain"
-permalink: kb/297/Q297789/
+permalink: /kb/297/Q297789/
 ---
 
 ## Q297789: How to Disable the Computer Browser Service Throughout a Domain

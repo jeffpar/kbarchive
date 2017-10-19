@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231538: MapPoint 2000: Zooms In Unexpectedly on an Enclosed Box"
-permalink: kb/231/Q231538/
+permalink: /kb/231/Q231538/
 ---
 
 ## Q231538: MapPoint 2000: Zooms In Unexpectedly on an Enclosed Box

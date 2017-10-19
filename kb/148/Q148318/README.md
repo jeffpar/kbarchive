@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148318: FIX: Using #define NOGDI Results in Compilation Syntax Errors"
-permalink: kb/148/Q148318/
+permalink: /kb/148/Q148318/
 ---
 
 ## Q148318: FIX: Using #define NOGDI Results in Compilation Syntax Errors

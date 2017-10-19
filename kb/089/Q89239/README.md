@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89239: Novell NetWare 286 Hanging with Windows"
-permalink: kb/089/Q89239/
+permalink: /kb/089/Q89239/
 ---
 
 ## Q89239: Novell NetWare 286 Hanging with Windows

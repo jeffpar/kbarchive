@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242190: BUG: Full Koenig Lookup Works Only for Operators"
-permalink: kb/242/Q242190/
+permalink: /kb/242/Q242190/
 ---
 
 ## Q242190: BUG: Full Koenig Lookup Works Only for Operators

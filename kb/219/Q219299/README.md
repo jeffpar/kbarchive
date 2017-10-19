@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219299: Hotfix Data Written After Unsuccessful Non-Cached Read"
-permalink: kb/219/Q219299/
+permalink: /kb/219/Q219299/
 ---
 
 ## Q219299: Hotfix Data Written After Unsuccessful Non-Cached Read

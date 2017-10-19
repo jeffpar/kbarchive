@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141634: BUG: Setup Parse Error &quot;Object ID 335&quot; from Distributed Setup"
-permalink: kb/141/Q141634/
+permalink: /kb/141/Q141634/
 ---
 
 ## Q141634: BUG: Setup Parse Error &quot;Object ID 335&quot; from Distributed Setup

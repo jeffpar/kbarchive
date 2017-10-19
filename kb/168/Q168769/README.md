@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168769: SMSINST: Registering Third-Party Applications and Controls"
-permalink: kb/168/Q168769/
+permalink: /kb/168/Q168769/
 ---
 
 ## Q168769: SMSINST: Registering Third-Party Applications and Controls

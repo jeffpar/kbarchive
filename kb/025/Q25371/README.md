@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25371: Underlining Spaces in Microsoft Windows Write"
-permalink: kb/025/Q25371/
+permalink: /kb/025/Q25371/
 ---
 
 ## Q25371: Underlining Spaces in Microsoft Windows Write

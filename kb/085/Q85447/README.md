@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85447: No Draft Mode with TrueType Fonts on a Dot-Matrix Printer"
-permalink: kb/085/Q85447/
+permalink: /kb/085/Q85447/
 ---
 
 ## Q85447: No Draft Mode with TrueType Fonts on a Dot-Matrix Printer

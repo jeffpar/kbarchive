@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142607: Extra Sets for Pan Chinese Windows NT Workstation 4.0"
-permalink: kb/142/Q142607/
+permalink: /kb/142/Q142607/
 ---
 
 ## Q142607: Extra Sets for Pan Chinese Windows NT Workstation 4.0

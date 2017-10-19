@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236278: Computer Starts with Error 162 or Has Accelerated System Clock"
-permalink: kb/236/Q236278/
+permalink: /kb/236/Q236278/
 ---
 
 ## Q236278: Computer Starts with Error 162 or Has Accelerated System Clock

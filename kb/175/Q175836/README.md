@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175836: XFOR: Lotus Notes Low Delivery Priority Message Not Delivered"
-permalink: kb/175/Q175836/
+permalink: /kb/175/Q175836/
 ---
 
 ## Q175836: XFOR: Lotus Notes Low Delivery Priority Message Not Delivered

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186418: SMS: NOAUTOUPGRADE Switch to Prevent Upgrade of Secondary Sites"
-permalink: kb/186/Q186418/
+permalink: /kb/186/Q186418/
 ---
 
 ## Q186418: SMS: NOAUTOUPGRADE Switch to Prevent Upgrade of Secondary Sites

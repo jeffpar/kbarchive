@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84258: Network Drive Icons Do Not Appear in File Manager"
-permalink: kb/084/Q84258/
+permalink: /kb/084/Q84258/
 ---
 
 ## Q84258: Network Drive Icons Do Not Appear in File Manager

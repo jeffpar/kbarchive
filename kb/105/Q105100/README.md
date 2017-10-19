@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105100: Very Large File Prevent Completion of DoubleSpace Uncompress"
-permalink: kb/105/Q105100/
+permalink: /kb/105/Q105100/
 ---
 
 ## Q105100: Very Large File Prevent Completion of DoubleSpace Uncompress

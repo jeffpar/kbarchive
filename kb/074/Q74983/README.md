@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74983: Configuring Extended Memory on Zenith Supersport 386sx"
-permalink: kb/074/Q74983/
+permalink: /kb/074/Q74983/
 ---
 
 ## Q74983: Configuring Extended Memory on Zenith Supersport 386sx

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122323: WinNT 3.5 Software Update for the Pentium Floating Point Error"
-permalink: kb/122/Q122323/
+permalink: /kb/122/Q122323/
 ---
 
 ## Q122323: WinNT 3.5 Software Update for the Pentium Floating Point Error

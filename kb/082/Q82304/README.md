@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82304: PC OS2: Incorrect Minimize/Maximize Buttons"
-permalink: kb/082/Q82304/
+permalink: /kb/082/Q82304/
 ---
 
 ## Q82304: PC OS2: Incorrect Minimize/Maximize Buttons

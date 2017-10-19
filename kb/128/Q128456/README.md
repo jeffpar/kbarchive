@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128456: PCM and PGC Fail to Execute Package from Servers with Long Name"
-permalink: kb/128/Q128456/
+permalink: /kb/128/Q128456/
 ---
 
 ## Q128456: PCM and PGC Fail to Execute Package from Servers with Long Name

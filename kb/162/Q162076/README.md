@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162076: HOWTO: Converting VFP Files from Version 3.0 to 5.0 and Back"
-permalink: kb/162/Q162076/
+permalink: /kb/162/Q162076/
 ---
 
 ## Q162076: HOWTO: Converting VFP Files from Version 3.0 to 5.0 and Back

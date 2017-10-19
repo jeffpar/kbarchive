@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257493: Troubleshooting System Error 12 After Installing Q243222 Hotfix"
-permalink: kb/257/Q257493/
+permalink: /kb/257/Q257493/
 ---
 
 ## Q257493: Troubleshooting System Error 12 After Installing Q243222 Hotfix

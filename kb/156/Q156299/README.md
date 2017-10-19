@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156299: STL Sample for the find_if Function"
-permalink: kb/156/Q156299/
+permalink: /kb/156/Q156299/
 ---
 
 ## Q156299: STL Sample for the find_if Function

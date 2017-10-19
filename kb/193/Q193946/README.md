@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193946: HOWTO: Demo of ADO AddNew, Update, Delete, Find and Filter"
-permalink: kb/193/Q193946/
+permalink: /kb/193/Q193946/
 ---
 
 ## Q193946: HOWTO: Demo of ADO AddNew, Update, Delete, Find and Filter

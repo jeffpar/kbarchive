@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150736: Stopping SNA Server Service Leads to Perpetual Stopping State"
-permalink: kb/150/Q150736/
+permalink: /kb/150/Q150736/
 ---
 
 ## Q150736: Stopping SNA Server Service Leads to Perpetual Stopping State

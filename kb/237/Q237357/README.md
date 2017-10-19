@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237357: BUG: SSEXP Stops Responding w/ Invalid Page Fault During Checkin"
-permalink: kb/237/Q237357/
+permalink: /kb/237/Q237357/
 ---
 
 ## Q237357: BUG: SSEXP Stops Responding w/ Invalid Page Fault During Checkin

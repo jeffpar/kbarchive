@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140691: How to Manipulate &amp; Sort Character Arrays in the API"
-permalink: kb/140/Q140691/
+permalink: /kb/140/Q140691/
 ---
 
 ## Q140691: How to Manipulate &amp; Sort Character Arrays in the API

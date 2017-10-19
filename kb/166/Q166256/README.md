@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166256: XFOR: Directory You Have Selected Is Not a cc:Mail Post Office"
-permalink: kb/166/Q166256/
+permalink: /kb/166/Q166256/
 ---
 
 ## Q166256: XFOR: Directory You Have Selected Is Not a cc:Mail Post Office

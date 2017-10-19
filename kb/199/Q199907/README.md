@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199907: DOC: Debugger.Evaluate Method Doesn't Evaluate Functions"
-permalink: kb/199/Q199907/
+permalink: /kb/199/Q199907/
 ---
 
 ## Q199907: DOC: Debugger.Evaluate Method Doesn't Evaluate Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173399: WD97: Image Not Correctly Shown in Table of HTML Document"
-permalink: kb/173/Q173399/
+permalink: /kb/173/Q173399/
 ---
 
 ## Q173399: WD97: Image Not Correctly Shown in Table of HTML Document

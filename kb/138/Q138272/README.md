@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138272: Browse List Contains Obsolete Domain Names"
-permalink: kb/138/Q138272/
+permalink: /kb/138/Q138272/
 ---
 
 ## Q138272: Browse List Contains Obsolete Domain Names

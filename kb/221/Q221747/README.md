@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221747: FIX:C0000005 Fatal Error Passing FGETS() a String &gt; 256 chars"
-permalink: kb/221/Q221747/
+permalink: /kb/221/Q221747/
 ---
 
 ## Q221747: FIX:C0000005 Fatal Error Passing FGETS() a String &gt; 256 chars

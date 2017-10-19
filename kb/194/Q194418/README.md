@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194418: PRB: CallByName Fails to Return the Correct Error Information"
-permalink: kb/194/Q194418/
+permalink: /kb/194/Q194418/
 ---
 
 ## Q194418: PRB: CallByName Fails to Return the Correct Error Information

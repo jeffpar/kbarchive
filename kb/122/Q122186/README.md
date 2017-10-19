@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122186: Err Msg: Could Not Find Setup File F:&#92;&lt;Platform&gt;&#92;PRINTER.INF"
-permalink: kb/122/Q122186/
+permalink: /kb/122/Q122186/
 ---
 
 ## Q122186: Err Msg: Could Not Find Setup File F:&#92;&lt;Platform&gt;&#92;PRINTER.INF

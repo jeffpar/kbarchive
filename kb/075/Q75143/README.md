@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75143: Using DISPLAY.SYS and PRINTER.SYS Drivers with QEMM"
-permalink: kb/075/Q75143/
+permalink: /kb/075/Q75143/
 ---
 
 ## Q75143: Using DISPLAY.SYS and PRINTER.SYS Drivers with QEMM

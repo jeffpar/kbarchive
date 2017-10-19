@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281772: Simple Maps Are Not Mapped Correctly for User Group Mappings"
-permalink: kb/281/Q281772/
+permalink: /kb/281/Q281772/
 ---
 
 ## Q281772: Simple Maps Are Not Mapped Correctly for User Group Mappings

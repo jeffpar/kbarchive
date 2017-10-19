@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123647: CACLS Directory Output Defined"
-permalink: kb/123/Q123647/
+permalink: /kb/123/Q123647/
 ---
 
 ## Q123647: CACLS Directory Output Defined

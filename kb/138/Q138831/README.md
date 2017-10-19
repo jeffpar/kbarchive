@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138831: Disabling TCP/IP Nagle Algorithm Improves Speed on Slow Nets"
-permalink: kb/138/Q138831/
+permalink: /kb/138/Q138831/
 ---
 
 ## Q138831: Disabling TCP/IP Nagle Algorithm Improves Speed on Slow Nets

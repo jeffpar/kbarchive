@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191141: Internet Service Manager (HTML) Returns HTTP Error 403"
-permalink: kb/191/Q191141/
+permalink: /kb/191/Q191141/
 ---
 
 ## Q191141: Internet Service Manager (HTML) Returns HTTP Error 403

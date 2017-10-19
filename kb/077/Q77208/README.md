@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77208: Windows 3.0 Err Msg: Unable to Run Setup for xxxxx Driver..."
-permalink: kb/077/Q77208/
+permalink: /kb/077/Q77208/
 ---
 
 ## Q77208: Windows 3.0 Err Msg: Unable to Run Setup for xxxxx Driver...

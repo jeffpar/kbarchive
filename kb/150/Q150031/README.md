@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150031: Use of SSL Creates Performance Overhead for Browsers"
-permalink: kb/150/Q150031/
+permalink: /kb/150/Q150031/
 ---
 
 ## Q150031: Use of SSL Creates Performance Overhead for Browsers

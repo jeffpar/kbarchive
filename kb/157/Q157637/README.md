@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157637: WD97: Placeholder Replaces Image After Adding Hyperlink"
-permalink: kb/157/Q157637/
+permalink: /kb/157/Q157637/
 ---
 
 ## Q157637: WD97: Placeholder Replaces Image After Adding Hyperlink

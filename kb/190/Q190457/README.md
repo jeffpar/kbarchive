@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190457: FIX: Extended Character Data Overwritten Upon Reselection"
-permalink: kb/190/Q190457/
+permalink: /kb/190/Q190457/
 ---
 
 ## Q190457: FIX: Extended Character Data Overwritten Upon Reselection

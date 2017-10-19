@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241279: SMS: Client Appears as Not Installed in Administrator Console"
-permalink: kb/241/Q241279/
+permalink: /kb/241/Q241279/
 ---
 
 ## Q241279: SMS: Client Appears as Not Installed in Administrator Console

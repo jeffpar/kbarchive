@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84963: dBASE IV Text Not Being Displayed in Reverse Video in Cells"
-permalink: kb/084/Q84963/
+permalink: /kb/084/Q84963/
 ---
 
 ## Q84963: dBASE IV Text Not Being Displayed in Reverse Video in Cells

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242205: Usage of RootUse.exe Program"
-permalink: kb/242/Q242205/
+permalink: /kb/242/Q242205/
 ---
 
 ## Q242205: Usage of RootUse.exe Program

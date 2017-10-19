@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80662: Mac Wkst: Hayes Smartmodem 9600 Modification for MSMail Dial-In"
-permalink: kb/080/Q80662/
+permalink: /kb/080/Q80662/
 ---
 
 ## Q80662: Mac Wkst: Hayes Smartmodem 9600 Modification for MSMail Dial-In

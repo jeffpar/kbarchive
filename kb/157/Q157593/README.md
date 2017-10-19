@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157593: STL Sample for map::max_size, clear, erase, size Functions"
-permalink: kb/157/Q157593/
+permalink: /kb/157/Q157593/
 ---
 
 ## Q157593: STL Sample for map::max_size, clear, erase, size Functions

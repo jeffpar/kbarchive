@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151341: Gardening: Mouse Cursor Changes To Gardening Icon"
-permalink: kb/151/Q151341/
+permalink: /kb/151/Q151341/
 ---
 
 ## Q151341: Gardening: Mouse Cursor Changes To Gardening Icon

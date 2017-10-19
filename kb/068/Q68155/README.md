@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68155: BUG: PM or Windows DLL Build Options Ignore .RC Files in PWB 1.1"
-permalink: kb/068/Q68155/
+permalink: /kb/068/Q68155/
 ---
 
 ## Q68155: BUG: PM or Windows DLL Build Options Ignore .RC Files in PWB 1.1

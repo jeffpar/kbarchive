@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127736: PC Win : Err Msg: Microsoft Tutorial - File Error"
-permalink: kb/127/Q127736/
+permalink: /kb/127/Q127736/
 ---
 
 ## Q127736: PC Win : Err Msg: Microsoft Tutorial - File Error

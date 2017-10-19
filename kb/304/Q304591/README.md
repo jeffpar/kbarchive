@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304591: SMS: Mouse and Keyboard May Not Work in Remote Control Session"
-permalink: kb/304/Q304591/
+permalink: /kb/304/Q304591/
 ---
 
 ## Q304591: SMS: Mouse and Keyboard May Not Work in Remote Control Session

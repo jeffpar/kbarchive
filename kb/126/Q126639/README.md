@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126639: Terminate Viewer Option in Remote Control Agent Does Not Work"
-permalink: kb/126/Q126639/
+permalink: /kb/126/Q126639/
 ---
 
 ## Q126639: Terminate Viewer Option in Remote Control Agent Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158710: RASDIAL Does Not Redial On Link Failure with RASPHONE Running"
-permalink: kb/158/Q158710/
+permalink: /kb/158/Q158710/
 ---
 
 ## Q158710: RASDIAL Does Not Redial On Link Failure with RASPHONE Running

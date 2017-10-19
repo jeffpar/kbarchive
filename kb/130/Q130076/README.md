@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130076: Briefcase Cannot Contain More Than 1.44 MB"
-permalink: kb/130/Q130076/
+permalink: /kb/130/Q130076/
 ---
 
 ## Q130076: Briefcase Cannot Contain More Than 1.44 MB

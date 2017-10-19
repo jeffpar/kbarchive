@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318060: DOC: List of Possible Errors When You Check Out a File from Visu"
-permalink: kb/318/Q318060/
+permalink: /kb/318/Q318060/
 ---
 
 ## Q318060: DOC: List of Possible Errors When You Check Out a File from Visu

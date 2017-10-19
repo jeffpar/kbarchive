@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131085: WordPad Text Inserted as Object in Other Programs"
-permalink: kb/131/Q131085/
+permalink: /kb/131/Q131085/
 ---
 
 ## Q131085: WordPad Text Inserted as Object in Other Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271924: Permissions for Users in a Trusted Domain Appear as 'Account Unk"
-permalink: kb/271/Q271924/
+permalink: /kb/271/Q271924/
 ---
 
 ## Q271924: Permissions for Users in a Trusted Domain Appear as 'Account Unk

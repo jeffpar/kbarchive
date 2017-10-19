@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170605: XCLN: Troubleshooting Schedule Synchronization in Schedule+"
-permalink: kb/170/Q170605/
+permalink: /kb/170/Q170605/
 ---
 
 ## Q170605: XCLN: Troubleshooting Schedule Synchronization in Schedule+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167340: FIX: ATL Control Causes Access Violation In Visual Basic 5.0"
-permalink: kb/167/Q167340/
+permalink: /kb/167/Q167340/
 ---
 
 ## Q167340: FIX: ATL Control Causes Access Violation In Visual Basic 5.0

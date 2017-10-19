@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216731: FIX: Dtor of Explicitly Constructed Anonymous Temp Not Called"
-permalink: kb/216/Q216731/
+permalink: /kb/216/Q216731/
 ---
 
 ## Q216731: FIX: Dtor of Explicitly Constructed Anonymous Temp Not Called

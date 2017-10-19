@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175493: XADM: Can't Extract Account List if Similar Domain Name Exists"
-permalink: kb/175/Q175493/
+permalink: /kb/175/Q175493/
 ---
 
 ## Q175493: XADM: Can't Extract Account List if Similar Domain Name Exists

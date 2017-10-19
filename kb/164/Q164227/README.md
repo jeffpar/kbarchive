@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164227: Second PC Card Not Recognized When Inserted in Dock"
-permalink: kb/164/Q164227/
+permalink: /kb/164/Q164227/
 ---
 
 ## Q164227: Second PC Card Not Recognized When Inserted in Dock

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64444: CTRL Keys Not Functional on Monterey International Keyboard"
-permalink: kb/064/Q64444/
+permalink: /kb/064/Q64444/
 ---
 
 ## Q64444: CTRL Keys Not Functional on Monterey International Keyboard

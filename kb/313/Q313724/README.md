@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313724: Dial-up Networking Version 1.3 Is Required When Upgrading From M"
-permalink: kb/313/Q313724/
+permalink: /kb/313/Q313724/
 ---
 
 ## Q313724: Dial-up Networking Version 1.3 Is Required When Upgrading From M

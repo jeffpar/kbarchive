@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162356: 3D Graphics Programming for Windows 95 Author Web site"
-permalink: kb/162/Q162356/
+permalink: /kb/162/Q162356/
 ---
 
 ## Q162356: 3D Graphics Programming for Windows 95 Author Web site

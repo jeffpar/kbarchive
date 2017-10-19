@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154007: HOWTO: Connect to a Network Printer with the Win32 API"
-permalink: kb/154/Q154007/
+permalink: /kb/154/Q154007/
 ---
 
 ## Q154007: HOWTO: Connect to a Network Printer with the Win32 API

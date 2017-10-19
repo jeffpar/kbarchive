@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238062: BDC Promotion May Be Unsuccessful Using Server Manager"
-permalink: kb/238/Q238062/
+permalink: /kb/238/Q238062/
 ---
 
 ## Q238062: BDC Promotion May Be Unsuccessful Using Server Manager

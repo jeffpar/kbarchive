@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176235: XCON: Cyrillic Characters Not Rendered Correctly"
-permalink: kb/176/Q176235/
+permalink: /kb/176/Q176235/
 ---
 
 ## Q176235: XCON: Cyrillic Characters Not Rendered Correctly

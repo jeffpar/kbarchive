@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151830: Table of Contents for FoxPro Advisor Magazine for July 1996"
-permalink: kb/151/Q151830/
+permalink: /kb/151/Q151830/
 ---
 
 ## Q151830: Table of Contents for FoxPro Advisor Magazine for July 1996

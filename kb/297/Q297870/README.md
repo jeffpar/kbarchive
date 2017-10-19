@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297870: SMS: Status Message Flood from Child or Secondary Servers"
-permalink: kb/297/Q297870/
+permalink: /kb/297/Q297870/
 ---
 
 ## Q297870: SMS: Status Message Flood from Child or Secondary Servers

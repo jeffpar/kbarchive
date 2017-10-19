@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107767: PC Gen: How Global Groups Work When Sending Mail"
-permalink: kb/107/Q107767/
+permalink: /kb/107/Q107767/
 ---
 
 ## Q107767: PC Gen: How Global Groups Work When Sending Mail

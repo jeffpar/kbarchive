@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165026: NTBackup Cannot Restore Font Files That Are in Use"
-permalink: kb/165/Q165026/
+permalink: /kb/165/Q165026/
 ---
 
 ## Q165026: NTBackup Cannot Restore Font Files That Are in Use

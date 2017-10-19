@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155683: Verification of From Address in SMTP Messages"
-permalink: kb/155/Q155683/
+permalink: /kb/155/Q155683/
 ---
 
 ## Q155683: Verification of From Address in SMTP Messages

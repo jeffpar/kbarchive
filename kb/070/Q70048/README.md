@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70048: Top and Bottom of Printer Output Missing on Legal-Size Paper"
-permalink: kb/070/Q70048/
+permalink: /kb/070/Q70048/
 ---
 
 ## Q70048: Top and Bottom of Printer Output Missing on Legal-Size Paper

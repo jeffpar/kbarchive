@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162397: WD97: Cannot Switch to Navigation Pane in Document Map View"
-permalink: kb/162/Q162397/
+permalink: /kb/162/Q162397/
 ---
 
 ## Q162397: WD97: Cannot Switch to Navigation Pane in Document Map View

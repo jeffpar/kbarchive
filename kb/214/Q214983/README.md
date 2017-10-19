@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214983: Skipinv.exe Fails to Compensate for Change of Month"
-permalink: kb/214/Q214983/
+permalink: /kb/214/Q214983/
 ---
 
 ## Q214983: Skipinv.exe Fails to Compensate for Change of Month

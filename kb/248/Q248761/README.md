@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248761: Fighter Ace II: Engine Is Not Numbered Correctly"
-permalink: kb/248/Q248761/
+permalink: /kb/248/Q248761/
 ---
 
 ## Q248761: Fighter Ace II: Engine Is Not Numbered Correctly

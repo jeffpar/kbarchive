@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116300: BUG: CV: Trace Does Not Step Into Some MOVE Overlay Functions"
-permalink: kb/116/Q116300/
+permalink: /kb/116/Q116300/
 ---
 
 ## Q116300: BUG: CV: Trace Does Not Step Into Some MOVE Overlay Functions

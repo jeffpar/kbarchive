@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189324: SNA Server Manager Shows Incorrect DLC t1 Timer Value"
-permalink: kb/189/Q189324/
+permalink: /kb/189/Q189324/
 ---
 
 ## Q189324: SNA Server Manager Shows Incorrect DLC t1 Timer Value

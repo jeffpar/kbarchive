@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317499: BUG: Mouse Clicks Do Not Work on a Scrollable SDI Form"
-permalink: kb/317/Q317499/
+permalink: /kb/317/Q317499/
 ---
 
 ## Q317499: BUG: Mouse Clicks Do Not Work on a Scrollable SDI Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63739: Setting Up a Dvorak Keyboard for Windows Version 3.0"
-permalink: kb/063/Q63739/
+permalink: /kb/063/Q63739/
 ---
 
 ## Q63739: Setting Up a Dvorak Keyboard for Windows Version 3.0

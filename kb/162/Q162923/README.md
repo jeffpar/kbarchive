@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162923: WinNT Err: User Cannot Be Authenticated on Server"
-permalink: kb/162/Q162923/
+permalink: /kb/162/Q162923/
 ---
 
 ## Q162923: WinNT Err: User Cannot Be Authenticated on Server

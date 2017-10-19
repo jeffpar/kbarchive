@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226848: SMS: Network Discovery Doesn't Time Out After Failed RPC Call"
-permalink: kb/226/Q226848/
+permalink: /kb/226/Q226848/
 ---
 
 ## Q226848: SMS: Network Discovery Doesn't Time Out After Failed RPC Call

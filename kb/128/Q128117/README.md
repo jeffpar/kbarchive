@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128117: How to Close a Form from a Toolbar"
-permalink: kb/128/Q128117/
+permalink: /kb/128/Q128117/
 ---
 
 ## Q128117: How to Close a Form from a Toolbar

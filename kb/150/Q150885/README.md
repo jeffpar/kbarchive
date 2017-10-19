@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150885: FIX: C2321 Expanding Template with a Pointer to a Nested Class"
-permalink: kb/150/Q150885/
+permalink: /kb/150/Q150885/
 ---
 
 ## Q150885: FIX: C2321 Expanding Template with a Pointer to a Nested Class

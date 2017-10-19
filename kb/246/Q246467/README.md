@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246467: RAS Server Stops Responding to New PPP Connection Requests"
-permalink: kb/246/Q246467/
+permalink: /kb/246/Q246467/
 ---
 
 ## Q246467: RAS Server Stops Responding to New PPP Connection Requests

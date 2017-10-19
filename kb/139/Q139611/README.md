@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139611: Using Network Client Administrator Files From Hard drive"
-permalink: kb/139/Q139611/
+permalink: /kb/139/Q139611/
 ---
 
 ## Q139611: Using Network Client Administrator Files From Hard drive

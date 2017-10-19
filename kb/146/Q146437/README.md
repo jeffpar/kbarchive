@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146437: Horizontal Scrolling List Box in an MFC Class"
-permalink: kb/146/Q146437/
+permalink: /kb/146/Q146437/
 ---
 
 ## Q146437: Horizontal Scrolling List Box in an MFC Class

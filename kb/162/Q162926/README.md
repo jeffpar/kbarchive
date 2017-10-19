@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162926: STOP: 0x0x0000000A After Call to GlobalAddAtom()"
-permalink: kb/162/Q162926/
+permalink: /kb/162/Q162926/
 ---
 
 ## Q162926: STOP: 0x0x0000000A After Call to GlobalAddAtom()

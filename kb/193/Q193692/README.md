@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193692: Exchange Server Eval Copy Will Not Send Mail"
-permalink: kb/193/Q193692/
+permalink: /kb/193/Q193692/
 ---
 
 ## Q193692: Exchange Server Eval Copy Will Not Send Mail

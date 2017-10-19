@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182414: SMS: Despooler Force Disconnect Setting Alters Directory Rights"
-permalink: kb/182/Q182414/
+permalink: /kb/182/Q182414/
 ---
 
 ## Q182414: SMS: Despooler Force Disconnect Setting Alters Directory Rights

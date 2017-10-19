@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101138: PC Win: Using the ServerPath Entry in the MSMAIL.INI File"
-permalink: kb/101/Q101138/
+permalink: /kb/101/Q101138/
 ---
 
 ## Q101138: PC Win: Using the ServerPath Entry in the MSMAIL.INI File

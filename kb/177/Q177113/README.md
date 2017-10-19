@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177113: Incomplete Print Jobs Using JetDirect over SPX"
-permalink: kb/177/Q177113/
+permalink: /kb/177/Q177113/
 ---
 
 ## Q177113: Incomplete Print Jobs Using JetDirect over SPX

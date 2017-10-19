@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102047: PRB: Two Error Messages When Closing Query with No Fields"
-permalink: kb/102/Q102047/
+permalink: /kb/102/Q102047/
 ---
 
 ## Q102047: PRB: Two Error Messages When Closing Query with No Fields

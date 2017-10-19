@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151781: Renaming Server-Based Profiles for Use by Local User Accounts"
-permalink: kb/151/Q151781/
+permalink: /kb/151/Q151781/
 ---
 
 ## Q151781: Renaming Server-Based Profiles for Use by Local User Accounts

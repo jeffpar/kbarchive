@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257787: FIX: Program w/ Usercontrol Causes Access Violation When Exiting"
-permalink: kb/257/Q257787/
+permalink: /kb/257/Q257787/
 ---
 
 ## Q257787: FIX: Program w/ Usercontrol Causes Access Violation When Exiting

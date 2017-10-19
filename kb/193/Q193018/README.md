@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193018: INFO: Java and Visual C++ Cannot Access Hidden VB Interface"
-permalink: kb/193/Q193018/
+permalink: /kb/193/Q193018/
 ---
 
 ## Q193018: INFO: Java and Visual C++ Cannot Access Hidden VB Interface

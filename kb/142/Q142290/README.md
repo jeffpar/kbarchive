@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142290: FIX: Printer Error When Printing from RTF Control"
-permalink: kb/142/Q142290/
+permalink: /kb/142/Q142290/
 ---
 
 ## Q142290: FIX: Printer Error When Printing from RTF Control

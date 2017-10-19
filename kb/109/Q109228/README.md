@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109228: SQL Server and Windows NT Thread Scheduling"
-permalink: kb/109/Q109228/
+permalink: /kb/109/Q109228/
 ---
 
 ## Q109228: SQL Server and Windows NT Thread Scheduling

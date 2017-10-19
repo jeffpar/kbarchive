@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167122: FIX: FindItem Method of ListView Incorrectly Returns an Error"
-permalink: kb/167/Q167122/
+permalink: /kb/167/Q167122/
 ---
 
 ## Q167122: FIX: FindItem Method of ListView Incorrectly Returns an Error

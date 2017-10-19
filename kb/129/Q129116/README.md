@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129116: Members of the Server Operators Group Cannot Add Workstations"
-permalink: kb/129/Q129116/
+permalink: /kb/129/Q129116/
 ---
 
 ## Q129116: Members of the Server Operators Group Cannot Add Workstations

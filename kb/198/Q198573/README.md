@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198573: 16-bit Windows-Based Programs Support Up to 26 DDE Connections"
-permalink: kb/198/Q198573/
+permalink: /kb/198/Q198573/
 ---
 
 ## Q198573: 16-bit Windows-Based Programs Support Up to 26 DDE Connections

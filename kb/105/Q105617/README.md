@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105617: MS-DOS 6.2 Upgrade Directory Listing for 5.25-Inch 1.2 MB Set"
-permalink: kb/105/Q105617/
+permalink: /kb/105/Q105617/
 ---
 
 ## Q105617: MS-DOS 6.2 Upgrade Directory Listing for 5.25-Inch 1.2 MB Set

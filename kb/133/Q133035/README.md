@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133035: Diamond Sonic Sound LX Card Does Not Seem to Work"
-permalink: kb/133/Q133035/
+permalink: /kb/133/Q133035/
 ---
 
 ## Q133035: Diamond Sonic Sound LX Card Does Not Seem to Work

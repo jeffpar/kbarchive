@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113422: BUG: Incorrect Formatting of Macro Comment Listings"
-permalink: kb/113/Q113422/
+permalink: /kb/113/Q113422/
 ---
 
 ## Q113422: BUG: Incorrect Formatting of Macro Comment Listings

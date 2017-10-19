@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124945: Vidio Clip Error Msg: Cannot Find Decompressor"
-permalink: kb/124/Q124945/
+permalink: /kb/124/Q124945/
 ---
 
 ## Q124945: Vidio Clip Error Msg: Cannot Find Decompressor

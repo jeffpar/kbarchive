@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94772: MemMaker Err Msg: &quot;SIZER: UMBs Overran List Buffer&quot;"
-permalink: kb/094/Q94772/
+permalink: /kb/094/Q94772/
 ---
 
 ## Q94772: MemMaker Err Msg: &quot;SIZER: UMBs Overran List Buffer&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140359: Err Msg: Windows Could Not Find a Backup Program"
-permalink: kb/140/Q140359/
+permalink: /kb/140/Q140359/
 ---
 
 ## Q140359: Err Msg: Windows Could Not Find a Backup Program

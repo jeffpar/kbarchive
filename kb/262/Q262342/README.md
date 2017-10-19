@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262342: SMS: Setup May Not Succeed When Upgrading During Table Indexing"
-permalink: kb/262/Q262342/
+permalink: /kb/262/Q262342/
 ---
 
 ## Q262342: SMS: Setup May Not Succeed When Upgrading During Table Indexing

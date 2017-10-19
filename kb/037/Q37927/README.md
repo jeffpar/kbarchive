@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37927: Mac DOS: Options Stored in MAIL.INI File"
-permalink: kb/037/Q37927/
+permalink: /kb/037/Q37927/
 ---
 
 ## Q37927: Mac DOS: Options Stored in MAIL.INI File

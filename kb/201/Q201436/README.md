@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201436: XFOR: After Notes Migration, Calendar Entries Cannot Be Modified"
-permalink: kb/201/Q201436/
+permalink: /kb/201/Q201436/
 ---
 
 ## Q201436: XFOR: After Notes Migration, Calendar Entries Cannot Be Modified

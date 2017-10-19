@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246768: XCLN: Err Msg: VBScript: Team Folders: 424: There Has Been..."
-permalink: kb/246/Q246768/
+permalink: /kb/246/Q246768/
 ---
 
 ## Q246768: XCLN: Err Msg: VBScript: Team Folders: 424: There Has Been...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175275: How to Replace Shared SCSI Controller When Using MSCS"
-permalink: kb/175/Q175275/
+permalink: /kb/175/Q175275/
 ---
 
 ## Q175275: How to Replace Shared SCSI Controller When Using MSCS

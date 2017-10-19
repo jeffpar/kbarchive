@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158033: PRB: Browse Information Not Generated"
-permalink: kb/158/Q158033/
+permalink: /kb/158/Q158033/
 ---
 
 ## Q158033: PRB: Browse Information Not Generated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244645: User May Get Access Denied Executing a GET from the FTP Prompt"
-permalink: kb/244/Q244645/
+permalink: /kb/244/Q244645/
 ---
 
 ## Q244645: User May Get Access Denied Executing a GET from the FTP Prompt

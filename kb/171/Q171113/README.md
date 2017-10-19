@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171113: XCON: Event ID 55 Incorrect Link Option"
-permalink: kb/171/Q171113/
+permalink: /kb/171/Q171113/
 ---
 
 ## Q171113: XCON: Event ID 55 Incorrect Link Option

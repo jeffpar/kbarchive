@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90784: Err Msg: Invalid Device Request Reading Drive..."
-permalink: kb/090/Q90784/
+permalink: /kb/090/Q90784/
 ---
 
 ## Q90784: Err Msg: Invalid Device Request Reading Drive...

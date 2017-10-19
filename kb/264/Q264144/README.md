@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264144: Starlancer: No Forces on Windows 2000 or Windows XP"
-permalink: kb/264/Q264144/
+permalink: /kb/264/Q264144/
 ---
 
 ## Q264144: Starlancer: No Forces on Windows 2000 or Windows XP

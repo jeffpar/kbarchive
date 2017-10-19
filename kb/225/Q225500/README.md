@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225500: XCLN: CDO Search of GAL for CdoPR_MHS_COMMON_NAME is Slow"
-permalink: kb/225/Q225500/
+permalink: /kb/225/Q225500/
 ---
 
 ## Q225500: XCLN: CDO Search of GAL for CdoPR_MHS_COMMON_NAME is Slow

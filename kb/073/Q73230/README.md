@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73230: Cannot Change Orientation with MoreFonts HP LaserJet II Driver"
-permalink: kb/073/Q73230/
+permalink: /kb/073/Q73230/
 ---
 
 ## Q73230: Cannot Change Orientation with MoreFonts HP LaserJet II Driver

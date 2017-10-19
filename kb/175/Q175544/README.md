@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175544: Windows NT Setup for 3.51 Fails When Deleting User Profiles"
-permalink: kb/175/Q175544/
+permalink: /kb/175/Q175544/
 ---
 
 ## Q175544: Windows NT Setup for 3.51 Fails When Deleting User Profiles

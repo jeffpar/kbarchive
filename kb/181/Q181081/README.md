@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181081: SMS: ScanDisk Runs After a Remote Reboot of a Win95 OSR2 Client"
-permalink: kb/181/Q181081/
+permalink: /kb/181/Q181081/
 ---
 
 ## Q181081: SMS: ScanDisk Runs After a Remote Reboot of a Win95 OSR2 Client

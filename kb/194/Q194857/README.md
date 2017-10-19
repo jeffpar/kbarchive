@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194857: PC DirSync: Break Relative Parameter Not Set Properly"
-permalink: kb/194/Q194857/
+permalink: /kb/194/Q194857/
 ---
 
 ## Q194857: PC DirSync: Break Relative Parameter Not Set Properly

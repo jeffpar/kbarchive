@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271374: Windows NT 4.0 SP6 Clients Contact the PDC Every 21 Minutes"
-permalink: kb/271/Q271374/
+permalink: /kb/271/Q271374/
 ---
 
 ## Q271374: Windows NT 4.0 SP6 Clients Contact the PDC Every 21 Minutes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129981: FIX: Custom Form Property Set to () Causes Infinite Loop"
-permalink: kb/129/Q129981/
+permalink: /kb/129/Q129981/
 ---
 
 ## Q129981: FIX: Custom Form Property Set to () Causes Infinite Loop

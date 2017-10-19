@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84577: Error in Media Player with Speaker Driver"
-permalink: kb/084/Q84577/
+permalink: /kb/084/Q84577/
 ---
 
 ## Q84577: Error in Media Player with Speaker Driver

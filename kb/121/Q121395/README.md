@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121395: Running NetBEUI in Real Mode with WFW 3.11"
-permalink: kb/121/Q121395/
+permalink: /kb/121/Q121395/
 ---
 
 ## Q121395: Running NetBEUI in Real Mode with WFW 3.11

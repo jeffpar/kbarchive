@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189832: Dial-Up Networking Generates Dr Watson When Called Via Shortcut"
-permalink: kb/189/Q189832/
+permalink: /kb/189/Q189832/
 ---
 
 ## Q189832: Dial-Up Networking Generates Dr Watson When Called Via Shortcut

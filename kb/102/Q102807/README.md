@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102807: Removing a User from a Windows for Workgroups Machine"
-permalink: kb/102/Q102807/
+permalink: /kb/102/Q102807/
 ---
 
 ## Q102807: Removing a User from a Windows for Workgroups Machine

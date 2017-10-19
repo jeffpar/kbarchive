@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88324: SoundBlaster Version 2.0 Needs Updated Drivers"
-permalink: kb/088/Q88324/
+permalink: /kb/088/Q88324/
 ---
 
 ## Q88324: SoundBlaster Version 2.0 Needs Updated Drivers

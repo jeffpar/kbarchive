@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248031: Err Msg: HTTP 403.17 - Forbidden: Client Certificate Has Expired"
-permalink: kb/248/Q248031/
+permalink: /kb/248/Q248031/
 ---
 
 ## Q248031: Err Msg: HTTP 403.17 - Forbidden: Client Certificate Has Expired

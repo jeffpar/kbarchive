@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229462: SystemSoft HotSwap Test Causes Problems with CardBus Adapter"
-permalink: kb/229/Q229462/
+permalink: /kb/229/Q229462/
 ---
 
 ## Q229462: SystemSoft HotSwap Test Causes Problems with CardBus Adapter

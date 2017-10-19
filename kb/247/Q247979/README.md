@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247979: PRB: Error 429 Using MSDN File System Object Programming Example"
-permalink: kb/247/Q247979/
+permalink: /kb/247/Q247979/
 ---
 
 ## Q247979: PRB: Error 429 Using MSDN File System Object Programming Example

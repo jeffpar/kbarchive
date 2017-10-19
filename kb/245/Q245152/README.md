@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245152: XADM: How Secure Sockets Layer Works"
-permalink: kb/245/Q245152/
+permalink: /kb/245/Q245152/
 ---
 
 ## Q245152: XADM: How Secure Sockets Layer Works

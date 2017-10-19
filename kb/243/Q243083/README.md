@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243083: Learn Microsoft Visual C++ 6.0 Now Comments and Corrections"
-permalink: kb/243/Q243083/
+permalink: /kb/243/Q243083/
 ---
 
 ## Q243083: Learn Microsoft Visual C++ 6.0 Now Comments and Corrections

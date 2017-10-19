@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189785: FS98/2000: Delete Button Unavailable in Select Flight Dialog Box"
-permalink: kb/189/Q189785/
+permalink: /kb/189/Q189785/
 ---
 
 ## Q189785: FS98/2000: Delete Button Unavailable in Select Flight Dialog Box

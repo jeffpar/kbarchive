@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104646: When Setup Configures SMARTDrive 5.0 for Read-Only Caching"
-permalink: kb/104/Q104646/
+permalink: /kb/104/Q104646/
 ---
 
 ## Q104646: When Setup Configures SMARTDrive 5.0 for Read-Only Caching

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114574: Control Panel Serial Port Settings Are for Printing Only"
-permalink: kb/114/Q114574/
+permalink: /kb/114/Q114574/
 ---
 
 ## Q114574: Control Panel Serial Port Settings Are for Printing Only

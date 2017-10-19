@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236069: PRB:View Field Properties Window Defaults to First Field of View"
-permalink: kb/236/Q236069/
+permalink: /kb/236/Q236069/
 ---
 
 ## Q236069: PRB:View Field Properties Window Defaults to First Field of View

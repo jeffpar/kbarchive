@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190250: BUG: DHTML Page Designer: Cannot Find the Mshtml.Hlp File"
-permalink: kb/190/Q190250/
+permalink: /kb/190/Q190250/
 ---
 
 ## Q190250: BUG: DHTML Page Designer: Cannot Find the Mshtml.Hlp File

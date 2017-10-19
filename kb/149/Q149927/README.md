@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149927: FTedit.exe: What You Can and Can't Use It For"
-permalink: kb/149/Q149927/
+permalink: /kb/149/Q149927/
 ---
 
 ## Q149927: FTedit.exe: What You Can and Can't Use It For

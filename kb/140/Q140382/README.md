@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140382: SNA Server Internal Traces Do Not Log SNA Server Version"
-permalink: kb/140/Q140382/
+permalink: /kb/140/Q140382/
 ---
 
 ## Q140382: SNA Server Internal Traces Do Not Log SNA Server Version

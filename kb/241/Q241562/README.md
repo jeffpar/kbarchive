@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241562: IIS May Permit Clients with an Unresolved IP Address to Connect"
-permalink: kb/241/Q241562/
+permalink: /kb/241/Q241562/
 ---
 
 ## Q241562: IIS May Permit Clients with an Unresolved IP Address to Connect

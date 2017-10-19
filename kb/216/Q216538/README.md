@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216538: STOP 0x0000000A in NTOSKRNL at 801453ea"
-permalink: kb/216/Q216538/
+permalink: /kb/216/Q216538/
 ---
 
 ## Q216538: STOP 0x0000000A in NTOSKRNL at 801453ea

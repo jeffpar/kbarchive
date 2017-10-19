@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167101: Cannot Start FPNW Services If The Spooler Is Not Running"
-permalink: kb/167/Q167101/
+permalink: /kb/167/Q167101/
 ---
 
 ## Q167101: Cannot Start FPNW Services If The Spooler Is Not Running

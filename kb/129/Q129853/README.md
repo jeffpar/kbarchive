@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129853: PRB: Exceeded Limits on Array Sizes of User Defined Types"
-permalink: kb/129/Q129853/
+permalink: /kb/129/Q129853/
 ---
 
 ## Q129853: PRB: Exceeded Limits on Array Sizes of User Defined Types

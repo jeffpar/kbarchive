@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126968: Microsoft Systems Journal: April 1995"
-permalink: kb/126/Q126968/
+permalink: /kb/126/Q126968/
 ---
 
 ## Q126968: Microsoft Systems Journal: April 1995

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219602: Random Dr. Watson Errors in Services.exe"
-permalink: kb/219/Q219602/
+permalink: /kb/219/Q219602/
 ---
 
 ## Q219602: Random Dr. Watson Errors in Services.exe

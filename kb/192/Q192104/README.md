@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192104: Windows NT Does Not Start If Primary Partition Is Above 2 GB"
-permalink: kb/192/Q192104/
+permalink: /kb/192/Q192104/
 ---
 
 ## Q192104: Windows NT Does Not Start If Primary Partition Is Above 2 GB

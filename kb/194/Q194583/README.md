@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194583: XWEB: Cannot Save Message with Right-Click in Outlook Web Client"
-permalink: kb/194/Q194583/
+permalink: /kb/194/Q194583/
 ---
 
 ## Q194583: XWEB: Cannot Save Message with Right-Click in Outlook Web Client

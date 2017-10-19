@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150706: PRB: Long File Names are Converted to Short by Association"
-permalink: kb/150/Q150706/
+permalink: /kb/150/Q150706/
 ---
 
 ## Q150706: PRB: Long File Names are Converted to Short by Association

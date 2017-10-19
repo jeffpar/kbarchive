@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195685: Err Msg: Error 709: Cannot Establish the Dial-Up Networking..."
-permalink: kb/195/Q195685/
+permalink: /kb/195/Q195685/
 ---
 
 ## Q195685: Err Msg: Error 709: Cannot Establish the Dial-Up Networking...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311948: SNA LU6.2 Resync TP Service Logs Event 131 and Fails to Start"
-permalink: kb/311/Q311948/
+permalink: /kb/311/Q311948/
 ---
 
 ## Q311948: SNA LU6.2 Resync TP Service Logs Event 131 and Fails to Start

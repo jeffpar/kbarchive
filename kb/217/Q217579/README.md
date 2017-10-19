@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217579: Motocross Madness: Ground Textures Are Distorted or Missing"
-permalink: kb/217/Q217579/
+permalink: /kb/217/Q217579/
 ---
 
 ## Q217579: Motocross Madness: Ground Textures Are Distorted or Missing

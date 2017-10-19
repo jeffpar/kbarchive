@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150952: One-Time Install Message When No Configuration Command Line"
-permalink: kb/150/Q150952/
+permalink: /kb/150/Q150952/
 ---
 
 ## Q150952: One-Time Install Message When No Configuration Command Line

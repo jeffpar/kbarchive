@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110507: HOWTO: Configure ODBC Data Sources on the Fly"
-permalink: kb/110/Q110507/
+permalink: /kb/110/Q110507/
 ---
 
 ## Q110507: HOWTO: Configure ODBC Data Sources on the Fly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151737: Shortcut Inserted as Object Loses Command-Line Options"
-permalink: kb/151/Q151737/
+permalink: /kb/151/Q151737/
 ---
 
 ## Q151737: Shortcut Inserted as Object Loses Command-Line Options

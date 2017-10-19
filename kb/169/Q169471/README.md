@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169471: BUG: SET CENTURY OFF is Ignored if Date is Over Year 2000"
-permalink: kb/169/Q169471/
+permalink: /kb/169/Q169471/
 ---
 
 ## Q169471: BUG: SET CENTURY OFF is Ignored if Date is Over Year 2000

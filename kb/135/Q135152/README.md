@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135152: Text Appears as Blocky Characters with S3 Video Card"
-permalink: kb/135/Q135152/
+permalink: /kb/135/Q135152/
 ---
 
 ## Q135152: Text Appears as Blocky Characters with S3 Video Card

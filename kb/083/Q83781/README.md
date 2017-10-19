@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83781: Beethoven Arrows Invisible Under Windows 3.1"
-permalink: kb/083/Q83781/
+permalink: /kb/083/Q83781/
 ---
 
 ## Q83781: Beethoven Arrows Invisible Under Windows 3.1

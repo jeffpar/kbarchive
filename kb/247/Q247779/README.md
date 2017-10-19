@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247779: XCLN: Mailboxes Not Available Through OWA, Timeout Error Appears"
-permalink: kb/247/Q247779/
+permalink: /kb/247/Q247779/
 ---
 
 ## Q247779: XCLN: Mailboxes Not Available Through OWA, Timeout Error Appears

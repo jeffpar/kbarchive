@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179560: SMS: Remote Control Fails to Bring Up the Quick Viewer Window"
-permalink: kb/179/Q179560/
+permalink: /kb/179/Q179560/
 ---
 
 ## Q179560: SMS: Remote Control Fails to Bring Up the Quick Viewer Window

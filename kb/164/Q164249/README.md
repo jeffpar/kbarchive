@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164249: Autodial Heuristics"
-permalink: kb/164/Q164249/
+permalink: /kb/164/Q164249/
 ---
 
 ## Q164249: Autodial Heuristics

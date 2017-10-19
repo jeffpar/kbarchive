@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101264: Assembling Code Developed for MASM 5.x with MASM 6.x"
-permalink: kb/101/Q101264/
+permalink: /kb/101/Q101264/
 ---
 
 ## Q101264: Assembling Code Developed for MASM 5.x with MASM 6.x

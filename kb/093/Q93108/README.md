@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93108: Windows 3.0a Disk Directories (5.25 Inch 360K)"
-permalink: kb/093/Q93108/
+permalink: /kb/093/Q93108/
 ---
 
 ## Q93108: Windows 3.0a Disk Directories (5.25 Inch 360K)

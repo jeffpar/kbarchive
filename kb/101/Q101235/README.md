@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101235: TN3270 Server Now Supports Client-Side Hot Backup"
-permalink: kb/101/Q101235/
+permalink: /kb/101/Q101235/
 ---
 
 ## Q101235: TN3270 Server Now Supports Client-Side Hot Backup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164839: XCLN: Application Err When MSMail Client Gets the Return Receipt"
-permalink: kb/164/Q164839/
+permalink: /kb/164/Q164839/
 ---
 
 ## Q164839: XCLN: Application Err When MSMail Client Gets the Return Receipt

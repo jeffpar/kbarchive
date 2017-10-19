@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103893: Encarta MindMaze Err Msg: Invalid Property Value"
-permalink: kb/103/Q103893/
+permalink: /kb/103/Q103893/
 ---
 
 ## Q103893: Encarta MindMaze Err Msg: Invalid Property Value

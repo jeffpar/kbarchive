@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60072: FIX: Duplicate Struc Declaration and /Zi Hangs MASM 5.1, 5.1a"
-permalink: kb/060/Q60072/
+permalink: /kb/060/Q60072/
 ---
 
 ## Q60072: FIX: Duplicate Struc Declaration and /Zi Hangs MASM 5.1, 5.1a

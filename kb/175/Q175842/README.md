@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175842: XFOR: EXPN Command Not Supported By Internet Mail Service"
-permalink: kb/175/Q175842/
+permalink: /kb/175/Q175842/
 ---
 
 ## Q175842: XFOR: EXPN Command Not Supported By Internet Mail Service

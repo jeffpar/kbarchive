@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157057: XCLN: Display Name from GAL is not Added to PAB"
-permalink: kb/157/Q157057/
+permalink: /kb/157/Q157057/
 ---
 
 ## Q157057: XCLN: Display Name from GAL is not Added to PAB

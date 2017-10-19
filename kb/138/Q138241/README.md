@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138241: PCM Reports Failed Job As Complete"
-permalink: kb/138/Q138241/
+permalink: /kb/138/Q138241/
 ---
 
 ## Q138241: PCM Reports Failed Job As Complete

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149047: How to Specify Informational Text for VB4 OLE Servers"
-permalink: kb/149/Q149047/
+permalink: /kb/149/Q149047/
 ---
 
 ## Q149047: How to Specify Informational Text for VB4 OLE Servers

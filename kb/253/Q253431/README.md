@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253431: FS 2000: ATIS Frequency Broadcasts Only Current Weather"
-permalink: kb/253/Q253431/
+permalink: /kb/253/Q253431/
 ---
 
 ## Q253431: FS 2000: ATIS Frequency Broadcasts Only Current Weather

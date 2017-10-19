@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155495: Reference Counter Overflow in Security Descriptor Causes STOP"
-permalink: kb/155/Q155495/
+permalink: /kb/155/Q155495/
 ---
 
 ## Q155495: Reference Counter Overflow in Security Descriptor Causes STOP

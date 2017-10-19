@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181086: XCLN: Err Msg: The MS Exchange Directory Service Could Not Be..."
-permalink: kb/181/Q181086/
+permalink: /kb/181/Q181086/
 ---
 
 ## Q181086: XCLN: Err Msg: The MS Exchange Directory Service Could Not Be...

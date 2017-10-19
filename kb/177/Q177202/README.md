@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177202: Installing WinNT SPs with Compaq's SSD and Insight Mgr"
-permalink: kb/177/Q177202/
+permalink: /kb/177/Q177202/
 ---
 
 ## Q177202: Installing WinNT SPs with Compaq's SSD and Insight Mgr

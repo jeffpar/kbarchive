@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74188: Running Paradox 3.5 with EMM386.EXE and MS-DOS 5.0 or later"
-permalink: kb/074/Q74188/
+permalink: /kb/074/Q74188/
 ---
 
 ## Q74188: Running Paradox 3.5 with EMM386.EXE and MS-DOS 5.0 or later

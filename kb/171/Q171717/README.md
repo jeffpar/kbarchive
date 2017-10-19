@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171717: FP: Cannot Create Web Using .com, .dll, or .exe Extension"
-permalink: kb/171/Q171717/
+permalink: /kb/171/Q171717/
 ---
 
 ## Q171717: FP: Cannot Create Web Using .com, .dll, or .exe Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129894: PRB: Can't Get Tabstrip Control to Support Hot-Key Activation"
-permalink: kb/129/Q129894/
+permalink: /kb/129/Q129894/
 ---
 
 ## Q129894: PRB: Can't Get Tabstrip Control to Support Hot-Key Activation

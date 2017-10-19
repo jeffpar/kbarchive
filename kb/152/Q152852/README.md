@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152852: XADM: Steps to Move User and Inbox Assistant Rules"
-permalink: kb/152/Q152852/
+permalink: /kb/152/Q152852/
 ---
 
 ## Q152852: XADM: Steps to Move User and Inbox Assistant Rules

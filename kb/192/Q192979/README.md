@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192979: PRB: VFPODBC Driver Ignores Path in DSN When Executing SQL"
-permalink: kb/192/Q192979/
+permalink: /kb/192/Q192979/
 ---
 
 ## Q192979: PRB: VFPODBC Driver Ignores Path in DSN When Executing SQL

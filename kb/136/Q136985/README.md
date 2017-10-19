@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136985: Bookshelf 95(32-Bit): Anthem Doesn't Play, Causes Error Msg."
-permalink: kb/136/Q136985/
+permalink: /kb/136/Q136985/
 ---
 
 ## Q136985: Bookshelf 95(32-Bit): Anthem Doesn't Play, Causes Error Msg.

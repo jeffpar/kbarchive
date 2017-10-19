@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108382: WRITE.EXE Not Added or Removed by Setup"
-permalink: kb/108/Q108382/
+permalink: /kb/108/Q108382/
 ---
 
 ## Q108382: WRITE.EXE Not Added or Removed by Setup

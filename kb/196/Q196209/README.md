@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196209: WINS Replication Does Not Start at the Scheduled Time Every Day"
-permalink: kb/196/Q196209/
+permalink: /kb/196/Q196209/
 ---
 
 ## Q196209: WINS Replication Does Not Start at the Scheduled Time Every Day

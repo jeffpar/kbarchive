@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177351: BUG: 16-bit Executable Resources Gets Corrupted"
-permalink: kb/177/Q177351/
+permalink: /kb/177/Q177351/
 ---
 
 ## Q177351: BUG: 16-bit Executable Resources Gets Corrupted

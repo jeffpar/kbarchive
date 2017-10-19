@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147701: XADM: Exchange Service Account Permissions"
-permalink: kb/147/Q147701/
+permalink: /kb/147/Q147701/
 ---
 
 ## Q147701: XADM: Exchange Service Account Permissions

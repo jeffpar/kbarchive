@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258907: INFO: LOGO FAQ: Key Topics of Certified for Win2000 Spec"
-permalink: kb/258/Q258907/
+permalink: /kb/258/Q258907/
 ---
 
 ## Q258907: INFO: LOGO FAQ: Key Topics of Certified for Win2000 Spec

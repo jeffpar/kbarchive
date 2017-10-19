@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248470: Fighter Ace II: Minimum System Requirements"
-permalink: kb/248/Q248470/
+permalink: /kb/248/Q248470/
 ---
 
 ## Q248470: Fighter Ace II: Minimum System Requirements

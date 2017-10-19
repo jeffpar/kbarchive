@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253029: XFOR: Connector for Lotus Notes Supports Embedded Attachments"
-permalink: kb/253/Q253029/
+permalink: /kb/253/Q253029/
 ---
 
 ## Q253029: XFOR: Connector for Lotus Notes Supports Embedded Attachments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68463: Using the SHIFT+F1 Pointer for Topic-Specific Help in Windows"
-permalink: kb/068/Q68463/
+permalink: /kb/068/Q68463/
 ---
 
 ## Q68463: Using the SHIFT+F1 Pointer for Topic-Specific Help in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174364: FS98: Forces not Felt Immediately when Flying Helicopter"
-permalink: kb/174/Q174364/
+permalink: /kb/174/Q174364/
 ---
 
 ## Q174364: FS98: Forces not Felt Immediately when Flying Helicopter

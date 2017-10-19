@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130512: PC NTMMTA: Cannot Browse Service Accounts on NT Server"
-permalink: kb/130/Q130512/
+permalink: /kb/130/Q130512/
 ---
 
 ## Q130512: PC NTMMTA: Cannot Browse Service Accounts on NT Server

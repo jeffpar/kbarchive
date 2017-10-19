@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214563: NET USE /d Returns Error 2404 After Applying Service Pack 4"
-permalink: kb/214/Q214563/
+permalink: /kb/214/Q214563/
 ---
 
 ## Q214563: NET USE /d Returns Error 2404 After Applying Service Pack 4

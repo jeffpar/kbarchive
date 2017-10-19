@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257683: SMS: TMP Variable Not Consistent in SMSCliToknAcct&amp; Environment"
-permalink: kb/257/Q257683/
+permalink: /kb/257/Q257683/
 ---
 
 ## Q257683: SMS: TMP Variable Not Consistent in SMSCliToknAcct&amp; Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165217: PPT: Sample VB Code to Create a Custom Slide Show"
-permalink: kb/165/Q165217/
+permalink: /kb/165/Q165217/
 ---
 
 ## Q165217: PPT: Sample VB Code to Create a Custom Slide Show

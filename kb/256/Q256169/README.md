@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256169: GLINT-Based Display Adapters Disabled in Windows 2000 on Upgrade"
-permalink: kb/256/Q256169/
+permalink: /kb/256/Q256169/
 ---
 
 ## Q256169: GLINT-Based Display Adapters Disabled in Windows 2000 on Upgrade

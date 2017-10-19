@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124360: Non Critical Error with IR32_32.DLL and Mitsumi IDE CD-ROM"
-permalink: kb/124/Q124360/
+permalink: /kb/124/Q124360/
 ---
 
 ## Q124360: Non Critical Error with IR32_32.DLL and Mitsumi IDE CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74209: Why MEM /C Does Not Show UMB Information"
-permalink: kb/074/Q74209/
+permalink: /kb/074/Q74209/
 ---
 
 ## Q74209: Why MEM /C Does Not Show UMB Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197104: Error Message If Laptop Is Ejected While Copying to Floppy Disk"
-permalink: kb/197/Q197104/
+permalink: /kb/197/Q197104/
 ---
 
 ## Q197104: Error Message If Laptop Is Ejected While Copying to Floppy Disk

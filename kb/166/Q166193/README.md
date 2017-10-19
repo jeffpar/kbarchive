@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166193: SAMPLE: ColorFrm Demonstrates ActiveX Control w/ Popup Toolbar"
-permalink: kb/166/Q166193/
+permalink: /kb/166/Q166193/
 ---
 
 ## Q166193: SAMPLE: ColorFrm Demonstrates ActiveX Control w/ Popup Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247647: XIMS: Colon in Display Name Causes SMTP: to Be Added to Address"
-permalink: kb/247/Q247647/
+permalink: /kb/247/Q247647/
 ---
 
 ## Q247647: XIMS: Colon in Display Name Causes SMTP: to Be Added to Address

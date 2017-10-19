@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91019: Characters Lost or Changed and File Access Problems"
-permalink: kb/091/Q91019/
+permalink: /kb/091/Q91019/
 ---
 
 ## Q91019: Characters Lost or Changed and File Access Problems

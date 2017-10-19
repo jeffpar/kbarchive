@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147665: HOWTO: Override Implicit Declaration with Declared Variable"
-permalink: kb/147/Q147665/
+permalink: /kb/147/Q147665/
 ---
 
 ## Q147665: HOWTO: Override Implicit Declaration with Declared Variable

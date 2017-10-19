@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143269: 3D Movie Maker: Windows NT 3.51 Requires Administrative Rights"
-permalink: kb/143/Q143269/
+permalink: /kb/143/Q143269/
 ---
 
 ## Q143269: 3D Movie Maker: Windows NT 3.51 Requires Administrative Rights

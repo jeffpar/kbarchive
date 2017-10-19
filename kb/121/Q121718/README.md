@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121718: Disabled Net Card on Compaq XL560 Is Detected By Plug and Play"
-permalink: kb/121/Q121718/
+permalink: /kb/121/Q121718/
 ---
 
 ## Q121718: Disabled Net Card on Compaq XL560 Is Detected By Plug and Play

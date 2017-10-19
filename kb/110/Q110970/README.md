@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110970: INFO: Use of the ON SHUTDOWN Command"
-permalink: kb/110/Q110970/
+permalink: /kb/110/Q110970/
 ---
 
 ## Q110970: INFO: Use of the ON SHUTDOWN Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98619: PATPOLY Demos Polygon Filled with Dithered Color"
-permalink: kb/098/Q98619/
+permalink: /kb/098/Q98619/
 ---
 
 ## Q98619: PATPOLY Demos Polygon Filled with Dithered Color

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123766: Doc Err: WINS and LAN Manager 2.x Clients"
-permalink: kb/123/Q123766/
+permalink: /kb/123/Q123766/
 ---
 
 ## Q123766: Doc Err: WINS and LAN Manager 2.x Clients

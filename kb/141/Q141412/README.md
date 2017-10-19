@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141412: Encarta 1995: Mindmaze May Hang with 8-bit Sound Blaster Cards"
-permalink: kb/141/Q141412/
+permalink: /kb/141/Q141412/
 ---
 
 ## Q141412: Encarta 1995: Mindmaze May Hang with 8-bit Sound Blaster Cards

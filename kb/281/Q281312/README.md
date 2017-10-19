@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281312: NetUserGetGroups Gives a 1722 Error With Multiple Providers"
-permalink: kb/281/Q281312/
+permalink: /kb/281/Q281312/
 ---
 
 ## Q281312: NetUserGetGroups Gives a 1722 Error With Multiple Providers

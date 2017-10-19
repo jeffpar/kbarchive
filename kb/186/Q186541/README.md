@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186541: Terminal Server Error Messages: 2400 to 2499"
-permalink: kb/186/Q186541/
+permalink: /kb/186/Q186541/
 ---
 
 ## Q186541: Terminal Server Error Messages: 2400 to 2499

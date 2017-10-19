@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248456: XADM: OOF Does Not Start If a Rule Stops Processing Other Rules"
-permalink: kb/248/Q248456/
+permalink: /kb/248/Q248456/
 ---
 
 ## Q248456: XADM: OOF Does Not Start If a Rule Stops Processing Other Rules

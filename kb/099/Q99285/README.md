@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99285: Extract From VidEdit Supports 8-Bit Color Only"
-permalink: kb/099/Q99285/
+permalink: /kb/099/Q99285/
 ---
 
 ## Q99285: Extract From VidEdit Supports 8-Bit Color Only

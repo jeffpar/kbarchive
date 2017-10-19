@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66351: Description of Pegged in Windows Entertainment Pack"
-permalink: kb/066/Q66351/
+permalink: /kb/066/Q66351/
 ---
 
 ## Q66351: Description of Pegged in Windows Entertainment Pack

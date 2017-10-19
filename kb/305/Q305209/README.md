@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305209: Cannot Migrate to SMS 2.0 If Any Component Uses the LANDesk Key"
-permalink: kb/305/Q305209/
+permalink: /kb/305/Q305209/
 ---
 
 ## Q305209: Cannot Migrate to SMS 2.0 If Any Component Uses the LANDesk Key

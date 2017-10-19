@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249682: HOWTO: Change a Field's Datatype using DAO"
-permalink: kb/249/Q249682/
+permalink: /kb/249/Q249682/
 ---
 
 ## Q249682: HOWTO: Change a Field's Datatype using DAO

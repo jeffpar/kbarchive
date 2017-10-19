@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161257: HOWTO: Add a Toolbar to a Visual Basic Project"
-permalink: kb/161/Q161257/
+permalink: /kb/161/Q161257/
 ---
 
 ## Q161257: HOWTO: Add a Toolbar to a Visual Basic Project

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195983: PRB: DataGrid Control Does Not Return Contents of Edited Cell"
-permalink: kb/195/Q195983/
+permalink: /kb/195/Q195983/
 ---
 
 ## Q195983: PRB: DataGrid Control Does Not Return Contents of Edited Cell

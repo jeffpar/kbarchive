@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172808: EBCDIC 0xB5 Not Mapped by PDT File"
-permalink: kb/172/Q172808/
+permalink: /kb/172/Q172808/
 ---
 
 ## Q172808: EBCDIC 0xB5 Not Mapped by PDT File

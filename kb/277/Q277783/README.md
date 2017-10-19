@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277783: Clicore.log Incorrectly Displays That Client Files Are Installed"
-permalink: kb/277/Q277783/
+permalink: /kb/277/Q277783/
 ---
 
 ## Q277783: Clicore.log Incorrectly Displays That Client Files Are Installed

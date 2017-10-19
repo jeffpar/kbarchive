@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89836: System Hangs with ASPI4DOS.SYS Version 3.0 or Earlier"
-permalink: kb/089/Q89836/
+permalink: /kb/089/Q89836/
 ---
 
 ## Q89836: System Hangs with ASPI4DOS.SYS Version 3.0 or Earlier

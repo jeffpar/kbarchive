@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169854: Print Session Hangs in Spooling Status and Printing for Session"
-permalink: kb/169/Q169854/
+permalink: /kb/169/Q169854/
 ---
 
 ## Q169854: Print Session Hangs in Spooling Status and Printing for Session

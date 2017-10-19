@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178159: XCLN: Outlook for Windows 3.1x Fails to Import CAL Files"
-permalink: kb/178/Q178159/
+permalink: /kb/178/Q178159/
 ---
 
 ## Q178159: XCLN: Outlook for Windows 3.1x Fails to Import CAL Files

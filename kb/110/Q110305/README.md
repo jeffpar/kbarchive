@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110305: INFO: Windows NT Reads Environment Variables from AUTOEXEC.BAT"
-permalink: kb/110/Q110305/
+permalink: /kb/110/Q110305/
 ---
 
 ## Q110305: INFO: Windows NT Reads Environment Variables from AUTOEXEC.BAT

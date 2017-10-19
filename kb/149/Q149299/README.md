@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149299: PRB: &quot;RUN Command Failed&quot; (1405) Under Windows 95 &amp; Windows NT"
-permalink: kb/149/Q149299/
+permalink: /kb/149/Q149299/
 ---
 
 ## Q149299: PRB: &quot;RUN Command Failed&quot; (1405) Under Windows 95 &amp; Windows NT

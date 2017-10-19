@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186914: HOWTO: Implement Additional Interfaces in an ActiveX Control"
-permalink: kb/186/Q186914/
+permalink: /kb/186/Q186914/
 ---
 
 ## Q186914: HOWTO: Implement Additional Interfaces in an ActiveX Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166938: HOWTO: Find Users Connected to an Access 7.0 Database"
-permalink: kb/166/Q166938/
+permalink: /kb/166/Q166938/
 ---
 
 ## Q166938: HOWTO: Find Users Connected to an Access 7.0 Database

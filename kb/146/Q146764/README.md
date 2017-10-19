@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146764: XADM: Limiting Logons to the Information Store"
-permalink: kb/146/Q146764/
+permalink: /kb/146/Q146764/
 ---
 
 ## Q146764: XADM: Limiting Logons to the Information Store

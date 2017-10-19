@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96647: PC DB: 3.0 Server Update Disk 1 [3.5, 5.25]"
-permalink: kb/096/Q96647/
+title: "Q96647: PC DB: 3.0 Server Update Disk 1 &#91;3.5, 5.25&#93;"
+permalink: /kb/096/Q96647/
 ---
 
-## Q96647: PC DB: 3.0 Server Update Disk 1 [3.5, 5.25]
+## Q96647: PC DB: 3.0 Server Update Disk 1 &#91;3.5, 5.25&#93;
 
 	Article: Q96647
 	Product(s): Microsoft Mail For PC Networks

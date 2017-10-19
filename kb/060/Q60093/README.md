@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60093: Mac GW: User Can't Send Mail Through a Gateway"
-permalink: kb/060/Q60093/
+permalink: /kb/060/Q60093/
 ---
 
 ## Q60093: Mac GW: User Can't Send Mail Through a Gateway

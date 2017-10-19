@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242579: Age of Empires II: Zone Prompts You to Insert the CD-ROM"
-permalink: kb/242/Q242579/
+permalink: /kb/242/Q242579/
 ---
 
 ## Q242579: Age of Empires II: Zone Prompts You to Insert the CD-ROM

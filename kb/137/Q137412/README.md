@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137412: PRB: Fields Can Be Removed from Field Name List"
-permalink: kb/137/Q137412/
+permalink: /kb/137/Q137412/
 ---
 
 ## Q137412: PRB: Fields Can Be Removed from Field Name List

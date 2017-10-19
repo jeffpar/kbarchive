@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190623: INFO: Accessing Data in an Active Document Application"
-permalink: kb/190/Q190623/
+permalink: /kb/190/Q190623/
 ---
 
 ## Q190623: INFO: Accessing Data in an Active Document Application

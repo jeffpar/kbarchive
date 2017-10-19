@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148175: Scenes 2.0: Minimum System Requirements"
-permalink: kb/148/Q148175/
+permalink: /kb/148/Q148175/
 ---
 
 ## Q148175: Scenes 2.0: Minimum System Requirements

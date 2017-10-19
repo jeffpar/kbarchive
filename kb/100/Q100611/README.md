@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100611: FIX: VB 2.0 Prof Demo Causes Error: Invalid File Format"
-permalink: kb/100/Q100611/
+permalink: /kb/100/Q100611/
 ---
 
 ## Q100611: FIX: VB 2.0 Prof Demo Causes Error: Invalid File Format

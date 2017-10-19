@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153285: INFO: Will VSS 5.0 Be Able to Read a VSS 6.0 Database?"
-permalink: kb/153/Q153285/
+permalink: /kb/153/Q153285/
 ---
 
 ## Q153285: INFO: Will VSS 5.0 Be Able to Read a VSS 6.0 Database?

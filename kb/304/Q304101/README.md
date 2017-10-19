@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304101: Backup Fails with Event ID 1450"
-permalink: kb/304/Q304101/
+permalink: /kb/304/Q304101/
 ---
 
 ## Q304101: Backup Fails with Event ID 1450

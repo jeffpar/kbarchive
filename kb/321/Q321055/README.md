@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321055: Deadlock Occurs If You Use Printer Object in Multithreaded App."
-permalink: kb/321/Q321055/
+permalink: /kb/321/Q321055/
 ---
 
 ## Q321055: Deadlock Occurs If You Use Printer Object in Multithreaded App.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169326: Does InterNIC Think Your DNS Servers Are Working?"
-permalink: kb/169/Q169326/
+permalink: /kb/169/Q169326/
 ---
 
 ## Q169326: Does InterNIC Think Your DNS Servers Are Working?

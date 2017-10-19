@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159843: PRB: GPF with MDI Child Form System Menu and Right Arrow Key"
-permalink: kb/159/Q159843/
+permalink: /kb/159/Q159843/
 ---
 
 ## Q159843: PRB: GPF with MDI Child Form System Menu and Right Arrow Key

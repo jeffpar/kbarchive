@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112842: Locating the Source of AppleTalk Error 48"
-permalink: kb/112/Q112842/
+permalink: /kb/112/Q112842/
 ---
 
 ## Q112842: Locating the Source of AppleTalk Error 48

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237510: Encarta 2000: Err Msg: An Error Occurred During Printing"
-permalink: kb/237/Q237510/
+permalink: /kb/237/Q237510/
 ---
 
 ## Q237510: Encarta 2000: Err Msg: An Error Occurred During Printing

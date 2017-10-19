@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100485: Musical Instruments: Colored Icons Turn Black and White"
-permalink: kb/100/Q100485/
+permalink: /kb/100/Q100485/
 ---
 
 ## Q100485: Musical Instruments: Colored Icons Turn Black and White

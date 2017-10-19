@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169441: MSB Human Body Minimizes When Printing To HP Deskjet"
-permalink: kb/169/Q169441/
+permalink: /kb/169/Q169441/
 ---
 
 ## Q169441: MSB Human Body Minimizes When Printing To HP Deskjet

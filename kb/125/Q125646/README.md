@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125646: Computer with Intel Neptune PCI Chip Hangs on Warm Reboot"
-permalink: kb/125/Q125646/
+permalink: /kb/125/Q125646/
 ---
 
 ## Q125646: Computer with Intel Neptune PCI Chip Hangs on Warm Reboot

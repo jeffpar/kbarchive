@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174749: XFOR: cc:Mail Migration Does Not Create PST File"
-permalink: kb/174/Q174749/
+permalink: /kb/174/Q174749/
 ---
 
 ## Q174749: XFOR: cc:Mail Migration Does Not Create PST File

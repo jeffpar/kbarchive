@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72485: Error Copying Files During Entertainment Pack Setup"
-permalink: kb/072/Q72485/
+permalink: /kb/072/Q72485/
 ---
 
 ## Q72485: Error Copying Files During Entertainment Pack Setup

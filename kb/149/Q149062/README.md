@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149062: XCON: Eicon Tech. X.25 Diagnostic Commands for WinNT &amp; Exchange"
-permalink: kb/149/Q149062/
+permalink: /kb/149/Q149062/
 ---
 
 ## Q149062: XCON: Eicon Tech. X.25 Diagnostic Commands for WinNT &amp; Exchange

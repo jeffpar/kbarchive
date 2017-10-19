@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82734: Meaning of SYSTEM.INI File's SVGAMODE= Setting"
-permalink: kb/082/Q82734/
+permalink: /kb/082/Q82734/
 ---
 
 ## Q82734: Meaning of SYSTEM.INI File's SVGAMODE= Setting

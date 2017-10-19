@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134583: Xircom PE3 Parallel Adapter Does Not Work on Toshiba Laptops"
-permalink: kb/134/Q134583/
+permalink: /kb/134/Q134583/
 ---
 
 ## Q134583: Xircom PE3 Parallel Adapter Does Not Work on Toshiba Laptops

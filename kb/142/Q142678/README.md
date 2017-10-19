@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142678: Cannot Print Envelopes with Envelope Feeder"
-permalink: kb/142/Q142678/
+permalink: /kb/142/Q142678/
 ---
 
 ## Q142678: Cannot Print Envelopes with Envelope Feeder

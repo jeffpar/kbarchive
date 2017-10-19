@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166970: WD97: &quot;...Invalid Page Fault in Excel32.cnv&quot; When Opening a File"
-permalink: kb/166/Q166970/
+permalink: /kb/166/Q166970/
 ---
 
 ## Q166970: WD97: &quot;...Invalid Page Fault in Excel32.cnv&quot; When Opening a File

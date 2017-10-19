@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228859: FIX: GDI Resource Leak Using Checkboxes in Treeview Control"
-permalink: kb/228/Q228859/
+permalink: /kb/228/Q228859/
 ---
 
 ## Q228859: FIX: GDI Resource Leak Using Checkboxes in Treeview Control

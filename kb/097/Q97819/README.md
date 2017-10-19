@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97819: Ambiguous References to Sector One and Sector Zero"
-permalink: kb/097/Q97819/
+permalink: /kb/097/Q97819/
 ---
 
 ## Q97819: Ambiguous References to Sector One and Sector Zero

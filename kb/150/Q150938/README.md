@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150938: Printer Resident Fonts not Available w/ &quot;Print Text as Graphics&quot;"
-permalink: kb/150/Q150938/
+permalink: /kb/150/Q150938/
 ---
 
 ## Q150938: Printer Resident Fonts not Available w/ &quot;Print Text as Graphics&quot;

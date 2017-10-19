@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88886: Using ON KEY Command in FoxBASE+"
-permalink: kb/088/Q88886/
+permalink: /kb/088/Q88886/
 ---
 
 ## Q88886: Using ON KEY Command in FoxBASE+

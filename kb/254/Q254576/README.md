@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254576: XADM: Isinteg Reports ecCorruptData-MAPI_E_CORRUPT_DATA"
-permalink: kb/254/Q254576/
+permalink: /kb/254/Q254576/
 ---
 
 ## Q254576: XADM: Isinteg Reports ecCorruptData-MAPI_E_CORRUPT_DATA

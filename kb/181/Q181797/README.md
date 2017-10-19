@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181797: XFOR: Message May Be Duplicated In cc:Mail Inbox"
-permalink: kb/181/Q181797/
+permalink: /kb/181/Q181797/
 ---
 
 ## Q181797: XFOR: Message May Be Duplicated In cc:Mail Inbox

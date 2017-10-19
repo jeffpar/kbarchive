@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214726: Err Msg: &quot;A Specified Logon Session Does Not Exist&quot; with Telnet"
-permalink: kb/214/Q214726/
+permalink: /kb/214/Q214726/
 ---
 
 ## Q214726: Err Msg: &quot;A Specified Logon Session Does Not Exist&quot; with Telnet

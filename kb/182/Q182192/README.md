@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182192: HOWTO: Rtwizx86.exe and Rtwizaxp.exe Create New Resource Types"
-permalink: kb/182/Q182192/
+permalink: /kb/182/Q182192/
 ---
 
 ## Q182192: HOWTO: Rtwizx86.exe and Rtwizaxp.exe Create New Resource Types

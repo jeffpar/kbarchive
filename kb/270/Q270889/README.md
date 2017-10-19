@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270889: XCON: How to Manually Create Site Connectors"
-permalink: kb/270/Q270889/
+permalink: /kb/270/Q270889/
 ---
 
 ## Q270889: XCON: How to Manually Create Site Connectors

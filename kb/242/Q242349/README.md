@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242349: 'Error 5: Access Denied' When Connecting Using PPTP"
-permalink: kb/242/Q242349/
+permalink: /kb/242/Q242349/
 ---
 
 ## Q242349: 'Error 5: Access Denied' When Connecting Using PPTP

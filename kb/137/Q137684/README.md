@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137684: Attachments in Microsoft Exchange Printed to Default Printer"
-permalink: kb/137/Q137684/
+permalink: /kb/137/Q137684/
 ---
 
 ## Q137684: Attachments in Microsoft Exchange Printed to Default Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159542: Remote Execute Shows Multiple Windows on Windows 95 Clients"
-permalink: kb/159/Q159542/
+permalink: /kb/159/Q159542/
 ---
 
 ## Q159542: Remote Execute Shows Multiple Windows on Windows 95 Clients

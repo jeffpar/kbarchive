@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160597: Mac Multimedia: Page Setup Option Doesn't Function Properly"
-permalink: kb/160/Q160597/
+permalink: /kb/160/Q160597/
 ---
 
 ## Q160597: Mac Multimedia: Page Setup Option Doesn't Function Properly

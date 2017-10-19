@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97469: PC WRmt: Sharing the AT&amp;T Message File with Microsoft Mail"
-permalink: kb/097/Q97469/
+permalink: /kb/097/Q97469/
 ---
 
 ## Q97469: PC WRmt: Sharing the AT&amp;T Message File with Microsoft Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244653: SMS: License Metering Messages w/Windows 98/95 Client Computers"
-permalink: kb/244/Q244653/
+permalink: /kb/244/Q244653/
 ---
 
 ## Q244653: SMS: License Metering Messages w/Windows 98/95 Client Computers

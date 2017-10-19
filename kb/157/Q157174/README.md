@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157174: Windows NT Logon Script Does Not Run on Windows 95 RAS Client"
-permalink: kb/157/Q157174/
+permalink: /kb/157/Q157174/
 ---
 
 ## Q157174: Windows NT Logon Script Does Not Run on Windows 95 RAS Client

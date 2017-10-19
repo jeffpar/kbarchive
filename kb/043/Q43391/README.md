@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43391: INFO: Handling Floating-Point Errors in C"
-permalink: kb/043/Q43391/
+permalink: /kb/043/Q43391/
 ---
 
 ## Q43391: INFO: Handling Floating-Point Errors in C

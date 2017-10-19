@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235204: SMS: %sys% Variable Differs for 16-bit and 32-bit Executables"
-permalink: kb/235/Q235204/
+permalink: /kb/235/Q235204/
 ---
 
 ## Q235204: SMS: %sys% Variable Differs for 16-bit and 32-bit Executables

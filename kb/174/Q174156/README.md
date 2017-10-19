@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174156: HOWTO: Programmatically Launch the Default Internet Browser"
-permalink: kb/174/Q174156/
+permalink: /kb/174/Q174156/
 ---
 
 ## Q174156: HOWTO: Programmatically Launch the Default Internet Browser

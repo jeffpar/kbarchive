@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180751: INFO: Error Messages Shared Between VBCE and VBScript"
-permalink: kb/180/Q180751/
+permalink: /kb/180/Q180751/
 ---
 
 ## Q180751: INFO: Error Messages Shared Between VBCE and VBScript

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215057: SMS: Multiple SMS2 Sites Cannot Use Same NetWare and NDS Servers"
-permalink: kb/215/Q215057/
+permalink: /kb/215/Q215057/
 ---
 
 ## Q215057: SMS: Multiple SMS2 Sites Cannot Use Same NetWare and NDS Servers

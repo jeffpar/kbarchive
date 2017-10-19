@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110194: Kids: HP DeskJet 500/550C Omits Patterns"
-permalink: kb/110/Q110194/
+permalink: /kb/110/Q110194/
 ---
 
 ## Q110194: Kids: HP DeskJet 500/550C Omits Patterns

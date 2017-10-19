@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97081: PC WRmt: Mail Remote for Windows Cannot Receive Incoming Calls"
-permalink: kb/097/Q97081/
+permalink: /kb/097/Q97081/
 ---
 
 ## Q97081: PC WRmt: Mail Remote for Windows Cannot Receive Incoming Calls

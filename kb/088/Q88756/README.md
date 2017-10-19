@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88756: Embedded Paintbrush Object Disappears in Write"
-permalink: kb/088/Q88756/
+permalink: /kb/088/Q88756/
 ---
 
 ## Q88756: Embedded Paintbrush Object Disappears in Write

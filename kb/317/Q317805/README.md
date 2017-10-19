@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317805: Sponsor Connection Changes in Host Integration Server 2000"
-permalink: kb/317/Q317805/
+permalink: /kb/317/Q317805/
 ---
 
 ## Q317805: Sponsor Connection Changes in Host Integration Server 2000

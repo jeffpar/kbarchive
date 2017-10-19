@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116436: PC DOS: MS-DOS Mail Client Can Misdirect Mail"
-permalink: kb/116/Q116436/
+permalink: /kb/116/Q116436/
 ---
 
 ## Q116436: PC DOS: MS-DOS Mail Client Can Misdirect Mail

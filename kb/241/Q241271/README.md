@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241271: IIS 5.0 Returns 500;100 Error Page with Response.Buffer=False"
-permalink: kb/241/Q241271/
+permalink: /kb/241/Q241271/
 ---
 
 ## Q241271: IIS 5.0 Returns 500;100 Error Page with Response.Buffer=False

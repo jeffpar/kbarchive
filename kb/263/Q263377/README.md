@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263377: Sitecomp.exe May Generate Access Violations After Site Install"
-permalink: kb/263/Q263377/
+permalink: /kb/263/Q263377/
 ---
 
 ## Q263377: Sitecomp.exe May Generate Access Violations After Site Install

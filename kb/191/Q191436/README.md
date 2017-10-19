@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191436: SMS: Event to Trap Translator May Stop SNMP Service on NT 3.51"
-permalink: kb/191/Q191436/
+permalink: /kb/191/Q191436/
 ---
 
 ## Q191436: SMS: Event to Trap Translator May Stop SNMP Service on NT 3.51

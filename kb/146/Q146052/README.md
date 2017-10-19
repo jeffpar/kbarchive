@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146052: &lt;1Ch&gt; Entries Can Be Removed From Static Mappings Dialog Box"
-permalink: kb/146/Q146052/
+permalink: /kb/146/Q146052/
 ---
 
 ## Q146052: &lt;1Ch&gt; Entries Can Be Removed From Static Mappings Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286814: &quot;Event ID 36&quot; Err Msg When You Run ASP Pages"
-permalink: kb/286/Q286814/
+permalink: /kb/286/Q286814/
 ---
 
 ## Q286814: &quot;Event ID 36&quot; Err Msg When You Run ASP Pages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175568: XADM: Pause Option Not Available With Exchange Admin on Cluster"
-permalink: kb/175/Q175568/
+permalink: /kb/175/Q175568/
 ---
 
 ## Q175568: XADM: Pause Option Not Available With Exchange Admin on Cluster

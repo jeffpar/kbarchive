@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198669: SMS: Status Message Viewer Shows Conflicting Statistics"
-permalink: kb/198/Q198669/
+permalink: /kb/198/Q198669/
 ---
 
 ## Q198669: SMS: Status Message Viewer Shows Conflicting Statistics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167722: WD97: How to Format a Hyperlinked Object in an HTML Document"
-permalink: kb/167/Q167722/
+permalink: /kb/167/Q167722/
 ---
 
 ## Q167722: WD97: How to Format a Hyperlinked Object in an HTML Document

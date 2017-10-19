@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97869: Cannot Delete Stuck Print Jobs when Using HPREDIR"
-permalink: kb/097/Q97869/
+permalink: /kb/097/Q97869/
 ---
 
 ## Q97869: Cannot Delete Stuck Print Jobs when Using HPREDIR

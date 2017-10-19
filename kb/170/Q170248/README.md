@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170248: ODE97: Some Properties of ActiveX Controls Not Supported"
-permalink: kb/170/Q170248/
+permalink: /kb/170/Q170248/
 ---
 
 ## Q170248: ODE97: Some Properties of ActiveX Controls Not Supported

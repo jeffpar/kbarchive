@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83888: XGA Driver Support in Windows 3.1"
-permalink: kb/083/Q83888/
+permalink: /kb/083/Q83888/
 ---
 
 ## Q83888: XGA Driver Support in Windows 3.1

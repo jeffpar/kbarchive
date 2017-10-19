@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197969: XADM: Dr. Watson in Dsamain.exe"
-permalink: kb/197/Q197969/
+permalink: /kb/197/Q197969/
 ---
 
 ## Q197969: XADM: Dr. Watson in Dsamain.exe

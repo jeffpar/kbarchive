@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182836: Numeric Edit Fields Allow Non-numeric Input"
-permalink: kb/182/Q182836/
+permalink: /kb/182/Q182836/
 ---
 
 ## Q182836: Numeric Edit Fields Allow Non-numeric Input

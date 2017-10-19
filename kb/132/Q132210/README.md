@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132210: PC Win: Use of the Mail Utility PABSYNC.DLL"
-permalink: kb/132/Q132210/
+permalink: /kb/132/Q132210/
 ---
 
 ## Q132210: PC Win: Use of the Mail Utility PABSYNC.DLL

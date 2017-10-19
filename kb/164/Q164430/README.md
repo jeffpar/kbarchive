@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164430: Access Denied When Saving Event Log"
-permalink: kb/164/Q164430/
+permalink: /kb/164/Q164430/
 ---
 
 ## Q164430: Access Denied When Saving Event Log

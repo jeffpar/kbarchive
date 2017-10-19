@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83293: Emulation Modes for Mannesmann Tally Printers with Windows 3.0"
-permalink: kb/083/Q83293/
+permalink: /kb/083/Q83293/
 ---
 
 ## Q83293: Emulation Modes for Mannesmann Tally Printers with Windows 3.0

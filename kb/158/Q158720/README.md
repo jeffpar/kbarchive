@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158720: Error Message: No Data Requested"
-permalink: kb/158/Q158720/
+permalink: /kb/158/Q158720/
 ---
 
 ## Q158720: Error Message: No Data Requested

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111066: Flight Simulator: Land Me Does Not Work at All Airports"
-permalink: kb/111/Q111066/
+permalink: /kb/111/Q111066/
 ---
 
 ## Q111066: Flight Simulator: Land Me Does Not Work at All Airports

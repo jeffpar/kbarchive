@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133437: Sign-Up Uses The Microsoft Network Phone Numbers"
-permalink: kb/133/Q133437/
+permalink: /kb/133/Q133437/
 ---
 
 ## Q133437: Sign-Up Uses The Microsoft Network Phone Numbers

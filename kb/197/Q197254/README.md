@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197254: Customize Dirsynced cc:Mail Display and Alias Names"
-permalink: kb/197/Q197254/
+permalink: /kb/197/Q197254/
 ---
 
 ## Q197254: Customize Dirsynced cc:Mail Display and Alias Names

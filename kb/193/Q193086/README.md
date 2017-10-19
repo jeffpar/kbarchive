@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193086: Bookshelf 98 Err Msg: An Error Occurred While Attempting..."
-permalink: kb/193/Q193086/
+permalink: /kb/193/Q193086/
 ---
 
 ## Q193086: Bookshelf 98 Err Msg: An Error Occurred While Attempting...

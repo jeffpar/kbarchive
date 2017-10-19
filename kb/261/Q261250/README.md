@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261250: HOWTO: Expose and Use ENUMS from VB Components in ASP"
-permalink: kb/261/Q261250/
+permalink: /kb/261/Q261250/
 ---
 
 ## Q261250: HOWTO: Expose and Use ENUMS from VB Components in ASP

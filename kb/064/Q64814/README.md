@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64814: Minimize and Maximize Buttons Appear Blacked Out"
-permalink: kb/064/Q64814/
+permalink: /kb/064/Q64814/
 ---
 
 ## Q64814: Minimize and Maximize Buttons Appear Blacked Out

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136273: System Hangs When CD-ROM Is Not in Drive"
-permalink: kb/136/Q136273/
+permalink: /kb/136/Q136273/
 ---
 
 ## Q136273: System Hangs When CD-ROM Is Not in Drive

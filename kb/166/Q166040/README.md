@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166040: Bookshelf: Unable to Find National Zip Code Directory"
-permalink: kb/166/Q166040/
+permalink: /kb/166/Q166040/
 ---
 
 ## Q166040: Bookshelf: Unable to Find National Zip Code Directory

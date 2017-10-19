@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231227: SMS: Credentials Request Does Not Succeed"
-permalink: kb/231/Q231227/
+permalink: /kb/231/Q231227/
 ---
 
 ## Q231227: SMS: Credentials Request Does Not Succeed

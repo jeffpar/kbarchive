@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163774: Err Msg: HTTP/1.0 406 No Acceptable Objects Were Found"
-permalink: kb/163/Q163774/
+permalink: /kb/163/Q163774/
 ---
 
 ## Q163774: Err Msg: HTTP/1.0 406 No Acceptable Objects Were Found

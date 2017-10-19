@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190180: PRB: Value of the Point Function Does Not Match Set Color"
-permalink: kb/190/Q190180/
+permalink: /kb/190/Q190180/
 ---
 
 ## Q190180: PRB: Value of the Point Function Does Not Match Set Color

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173509: XADM: Setup Fails when Installing Outlook Web Access"
-permalink: kb/173/Q173509/
+permalink: /kb/173/Q173509/
 ---
 
 ## Q173509: XADM: Setup Fails when Installing Outlook Web Access

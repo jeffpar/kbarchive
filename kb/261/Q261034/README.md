@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261034: MCM2: Distorted Textures When You Start Race or Encounter Snow"
-permalink: kb/261/Q261034/
+permalink: /kb/261/Q261034/
 ---
 
 ## Q261034: MCM2: Distorted Textures When You Start Race or Encounter Snow

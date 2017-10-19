@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197209: WD97: Calculation Form Field Is Not Updated"
-permalink: kb/197/Q197209/
+permalink: /kb/197/Q197209/
 ---
 
 ## Q197209: WD97: Calculation Form Field Is Not Updated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131770: PDC Not Listed in Server Manager After Changing Computer Name"
-permalink: kb/131/Q131770/
+permalink: /kb/131/Q131770/
 ---
 
 ## Q131770: PDC Not Listed in Server Manager After Changing Computer Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178183: XCLN: Creating New Profile Does Not Prompt for Profile Name"
-permalink: kb/178/Q178183/
+permalink: /kb/178/Q178183/
 ---
 
 ## Q178183: XCLN: Creating New Profile Does Not Prompt for Profile Name

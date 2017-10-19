@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148799: Err Msg: There Is Not Enough Disk Space to Upgrade..."
-permalink: kb/148/Q148799/
+permalink: /kb/148/Q148799/
 ---
 
 ## Q148799: Err Msg: There Is Not Enough Disk Space to Upgrade...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229810: SMS: Error: &quot;_com_error exception in MMC Admin UI!&quot;"
-permalink: kb/229/Q229810/
+permalink: /kb/229/Q229810/
 ---
 
 ## Q229810: SMS: Error: &quot;_com_error exception in MMC Admin UI!&quot;

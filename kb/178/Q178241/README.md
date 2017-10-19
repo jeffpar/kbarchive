@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178241: XCLN: Adobe Acrobat PDFs Encoded in Different Formats"
-permalink: kb/178/Q178241/
+permalink: /kb/178/Q178241/
 ---
 
 ## Q178241: XCLN: Adobe Acrobat PDFs Encoded in Different Formats

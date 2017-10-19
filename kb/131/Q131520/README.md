@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131520: Err Msg &quot;The Mailbox Name or Password Is Incorrect&quot; in Mail"
-permalink: kb/131/Q131520/
+permalink: /kb/131/Q131520/
 ---
 
 ## Q131520: Err Msg &quot;The Mailbox Name or Password Is Incorrect&quot; in Mail

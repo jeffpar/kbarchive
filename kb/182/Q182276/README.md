@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182276: XFOR: Incorrect Envelope Information When Meeting Request Is For"
-permalink: kb/182/Q182276/
+permalink: /kb/182/Q182276/
 ---
 
 ## Q182276: XFOR: Incorrect Envelope Information When Meeting Request Is For

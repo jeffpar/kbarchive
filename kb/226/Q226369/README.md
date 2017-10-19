@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226369: Windows NT Does Not Detect Media Change on ATAPI PD CD-ROM"
-permalink: kb/226/Q226369/
+permalink: /kb/226/Q226369/
 ---
 
 ## Q226369: Windows NT Does Not Detect Media Change on ATAPI PD CD-ROM

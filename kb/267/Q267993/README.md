@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267993: Access Violation in Snatrc.dll When You Enable CPI-C API Traces"
-permalink: kb/267/Q267993/
+permalink: /kb/267/Q267993/
 ---
 
 ## Q267993: Access Violation in Snatrc.dll When You Enable CPI-C API Traces

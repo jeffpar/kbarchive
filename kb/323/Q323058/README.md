@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323058: &quot;Unable to Obtain a Write Lock on Config File&quot; Error in SNA Mgr"
-permalink: kb/323/Q323058/
+permalink: /kb/323/Q323058/
 ---
 
 ## Q323058: &quot;Unable to Obtain a Write Lock on Config File&quot; Error in SNA Mgr

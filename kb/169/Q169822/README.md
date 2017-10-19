@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169822: DSMN RAS Dial-in Properties Deletes NetWare Compatibility"
-permalink: kb/169/Q169822/
+permalink: /kb/169/Q169822/
 ---
 
 ## Q169822: DSMN RAS Dial-in Properties Deletes NetWare Compatibility

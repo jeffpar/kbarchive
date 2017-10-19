@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231938: BUG: ResetToDefault Doesn't Work on Events and Methods in VFP 6"
-permalink: kb/231/Q231938/
+permalink: /kb/231/Q231938/
 ---
 
 ## Q231938: BUG: ResetToDefault Doesn't Work on Events and Methods in VFP 6

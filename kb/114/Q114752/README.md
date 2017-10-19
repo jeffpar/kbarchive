@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114752: Commands and Functions Affected by SET COMPATIBLE"
-permalink: kb/114/Q114752/
+permalink: /kb/114/Q114752/
 ---
 
 ## Q114752: Commands and Functions Affected by SET COMPATIBLE

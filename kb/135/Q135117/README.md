@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135117: PRB: Unable to Modify Tables in Database Flagged as Read-only"
-permalink: kb/135/Q135117/
+permalink: /kb/135/Q135117/
 ---
 
 ## Q135117: PRB: Unable to Modify Tables in Database Flagged as Read-only

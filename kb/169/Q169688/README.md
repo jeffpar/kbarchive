@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169688: XADM: Admin Unescapes Invalid X.400 Characters in DDA Fields"
-permalink: kb/169/Q169688/
+permalink: /kb/169/Q169688/
 ---
 
 ## Q169688: XADM: Admin Unescapes Invalid X.400 Characters in DDA Fields

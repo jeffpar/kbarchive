@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122562: DOC: _set_se_translator and set_terminate Help Info Incorrect"
-permalink: kb/122/Q122562/
+permalink: /kb/122/Q122562/
 ---
 
 ## Q122562: DOC: _set_se_translator and set_terminate Help Info Incorrect

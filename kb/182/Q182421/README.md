@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182421: APPC UserID &amp; Password in CPIC Side Info Converted to Capitals"
-permalink: kb/182/Q182421/
+permalink: /kb/182/Q182421/
 ---
 
 ## Q182421: APPC UserID &amp; Password in CPIC Side Info Converted to Capitals

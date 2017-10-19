@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181451: XADM: Setting Diagnostics Logging Levels in the Registry"
-permalink: kb/181/Q181451/
+permalink: /kb/181/Q181451/
 ---
 
 ## Q181451: XADM: Setting Diagnostics Logging Levels in the Registry

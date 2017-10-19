@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138786: PRB: Just-In-Time Debugging Launches Wrong Debugger"
-permalink: kb/138/Q138786/
+permalink: /kb/138/Q138786/
 ---
 
 ## Q138786: PRB: Just-In-Time Debugging Launches Wrong Debugger

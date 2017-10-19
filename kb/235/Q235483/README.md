@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235483: XFOR: Adding Secondary SMTP Proxy Address for GroupWise Dirsync"
-permalink: kb/235/Q235483/
+permalink: /kb/235/Q235483/
 ---
 
 ## Q235483: XFOR: Adding Secondary SMTP Proxy Address for GroupWise Dirsync

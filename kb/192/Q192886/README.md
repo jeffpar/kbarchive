@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192886: PRB: Alpha MS Oracle ODBC Driver Does Not Work with Oracle8"
-permalink: kb/192/Q192886/
+permalink: /kb/192/Q192886/
 ---
 
 ## Q192886: PRB: Alpha MS Oracle ODBC Driver Does Not Work with Oracle8

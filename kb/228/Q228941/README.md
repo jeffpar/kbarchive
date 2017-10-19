@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228941: MCSE Readiness Review - Exam 70-098 (Windows 98) Corrections"
-permalink: kb/228/Q228941/
+permalink: /kb/228/Q228941/
 ---
 
 ## Q228941: MCSE Readiness Review - Exam 70-098 (Windows 98) Corrections

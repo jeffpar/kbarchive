@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85961: Epson AP-3250 Printer Emulations"
-permalink: kb/085/Q85961/
+permalink: /kb/085/Q85961/
 ---
 
 ## Q85961: Epson AP-3250 Printer Emulations

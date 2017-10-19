@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92790: WFWG Err Msg: Add SystemROMBreakpoint=FALSE to SYSTEM.INI"
-permalink: kb/092/Q92790/
+permalink: /kb/092/Q92790/
 ---
 
 ## Q92790: WFWG Err Msg: Add SystemROMBreakpoint=FALSE to SYSTEM.INI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249824: BUG: VOLTRACK Is Erroneously Unloaded After 255 Device Additions"
-permalink: kb/249/Q249824/
+permalink: /kb/249/Q249824/
 ---
 
 ## Q249824: BUG: VOLTRACK Is Erroneously Unloaded After 255 Device Additions

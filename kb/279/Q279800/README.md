@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279800: XFOR: Comments Do Not Appear in Updated Lotus Notes Meeting"
-permalink: kb/279/Q279800/
+permalink: /kb/279/Q279800/
 ---
 
 ## Q279800: XFOR: Comments Do Not Appear in Updated Lotus Notes Meeting

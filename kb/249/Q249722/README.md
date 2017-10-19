@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249722: No ODBC Logging Format in PWS4.0"
-permalink: kb/249/Q249722/
+permalink: /kb/249/Q249722/
 ---
 
 ## Q249722: No ODBC Logging Format in PWS4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195731: XCON: MTA Stops and Numerous Events Appear in Event Log"
-permalink: kb/195/Q195731/
+permalink: /kb/195/Q195731/
 ---
 
 ## Q195731: XCON: MTA Stops and Numerous Events Appear in Event Log

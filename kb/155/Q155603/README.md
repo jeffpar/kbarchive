@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155603: Some S3 Video Cards Do Not Set Refresh Rate Properly"
-permalink: kb/155/Q155603/
+permalink: /kb/155/Q155603/
 ---
 
 ## Q155603: Some S3 Video Cards Do Not Set Refresh Rate Properly

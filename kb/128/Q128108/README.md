@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128108: Avoid Fixed Pitch Font in Thai Application"
-permalink: kb/128/Q128108/
+permalink: /kb/128/Q128108/
 ---
 
 ## Q128108: Avoid Fixed Pitch Font in Thai Application

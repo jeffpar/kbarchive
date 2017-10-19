@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263572: HOWTO: Extract MAPI Properties of Current User in Outlook Form"
-permalink: kb/263/Q263572/
+permalink: /kb/263/Q263572/
 ---
 
 ## Q263572: HOWTO: Extract MAPI Properties of Current User in Outlook Form

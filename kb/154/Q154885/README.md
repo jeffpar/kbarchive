@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154885: PRB: Tabbing Problem When Sheridan SSTab Control Hosts OCXs"
-permalink: kb/154/Q154885/
+permalink: /kb/154/Q154885/
 ---
 
 ## Q154885: PRB: Tabbing Problem When Sheridan SSTab Control Hosts OCXs

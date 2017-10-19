@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104638: FIX: CFile::SetStatus Throws Exception When Setting Time"
-permalink: kb/104/Q104638/
+permalink: /kb/104/Q104638/
 ---
 
 ## Q104638: FIX: CFile::SetStatus Throws Exception When Setting Time

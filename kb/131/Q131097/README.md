@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131097: How To Set Up The Macintosh Client and Windows NT Mail"
-permalink: kb/131/Q131097/
+permalink: /kb/131/Q131097/
 ---
 
 ## Q131097: How To Set Up The Macintosh Client and Windows NT Mail

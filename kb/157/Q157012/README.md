@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157012: XFOR: Corrupted Message When Using Hebrew or Arabic"
-permalink: kb/157/Q157012/
+permalink: /kb/157/Q157012/
 ---
 
 ## Q157012: XFOR: Corrupted Message When Using Hebrew or Arabic

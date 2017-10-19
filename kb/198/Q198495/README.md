@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198495: XWEB: &quot;Failed To Open This Message&quot; Error After Applying SP1"
-permalink: kb/198/Q198495/
+permalink: /kb/198/Q198495/
 ---
 
 ## Q198495: XWEB: &quot;Failed To Open This Message&quot; Error After Applying SP1

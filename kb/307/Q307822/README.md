@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307822: COMTI NewRecordset Method Fails With Error -2147417851"
-permalink: kb/307/Q307822/
+permalink: /kb/307/Q307822/
 ---
 
 ## Q307822: COMTI NewRecordset Method Fails With Error -2147417851

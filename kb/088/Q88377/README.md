@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88377: PC Win: Deleting Messages from Shared Folders"
-permalink: kb/088/Q88377/
+permalink: /kb/088/Q88377/
 ---
 
 ## Q88377: PC Win: Deleting Messages from Shared Folders

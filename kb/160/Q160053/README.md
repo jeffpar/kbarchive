@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160053: XCLN: Mobile Users of Exchange on Win3.1 Using One Configuration"
-permalink: kb/160/Q160053/
+permalink: /kb/160/Q160053/
 ---
 
 ## Q160053: XCLN: Mobile Users of Exchange on Win3.1 Using One Configuration

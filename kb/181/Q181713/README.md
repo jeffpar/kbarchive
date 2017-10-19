@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181713: XCLN: Cannot Resolve Name When Sending To SMTP Address Using Bro"
-permalink: kb/181/Q181713/
+permalink: /kb/181/Q181713/
 ---
 
 ## Q181713: XCLN: Cannot Resolve Name When Sending To SMTP Address Using Bro

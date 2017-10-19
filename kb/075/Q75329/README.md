@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75329: Paintbrush Prints Too Many Pages on Laser Printers"
-permalink: kb/075/Q75329/
+permalink: /kb/075/Q75329/
 ---
 
 ## Q75329: Paintbrush Prints Too Many Pages on Laser Printers

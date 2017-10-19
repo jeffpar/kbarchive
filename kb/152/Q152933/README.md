@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152933: XCLN: PowerPoint Presentation Can't Be Opened from Public Folder"
-permalink: kb/152/Q152933/
+permalink: /kb/152/Q152933/
 ---
 
 ## Q152933: XCLN: PowerPoint Presentation Can't Be Opened from Public Folder

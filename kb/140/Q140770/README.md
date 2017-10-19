@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140770: PRB: Accessing Visual FoxPro 3.0 Files from Visual Basic 4.0"
-permalink: kb/140/Q140770/
+permalink: /kb/140/Q140770/
 ---
 
 ## Q140770: PRB: Accessing Visual FoxPro 3.0 Files from Visual Basic 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136828: ICMP Does Not Provide MTU Hint in ICMP Dest Unreachable, DF Set"
-permalink: kb/136/Q136828/
+permalink: /kb/136/Q136828/
 ---
 
 ## Q136828: ICMP Does Not Provide MTU Hint in ICMP Dest Unreachable, DF Set

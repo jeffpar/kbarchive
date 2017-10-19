@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135622: DOC: Extra Characters After Printing String Comparision"
-permalink: kb/135/Q135622/
+permalink: /kb/135/Q135622/
 ---
 
 ## Q135622: DOC: Extra Characters After Printing String Comparision

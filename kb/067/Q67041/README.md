@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67041: BUG: Structure Tags Visible Outside of Function Prototype Scope"
-permalink: kb/067/Q67041/
+permalink: /kb/067/Q67041/
 ---
 
 ## Q67041: BUG: Structure Tags Visible Outside of Function Prototype Scope

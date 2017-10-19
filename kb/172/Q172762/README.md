@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172762: Continuous Bhnt.sys Load and Unload Causes STOP 0xA and 0x7F"
-permalink: kb/172/Q172762/
+permalink: /kb/172/Q172762/
 ---
 
 ## Q172762: Continuous Bhnt.sys Load and Unload Causes STOP 0xA and 0x7F

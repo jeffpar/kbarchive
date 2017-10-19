@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92900: Mixing Tone and Pulse Dialing in Cardfile and Terminal"
-permalink: kb/092/Q92900/
+permalink: /kb/092/Q92900/
 ---
 
 ## Q92900: Mixing Tone and Pulse Dialing in Cardfile and Terminal

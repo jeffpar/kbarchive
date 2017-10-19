@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166572: XADM: 5.0 Proxy Address Generator and Scandinavian Characters"
-permalink: kb/166/Q166572/
+permalink: /kb/166/Q166572/
 ---
 
 ## Q166572: XADM: 5.0 Proxy Address Generator and Scandinavian Characters

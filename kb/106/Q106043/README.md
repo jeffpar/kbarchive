@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106043: Windows for Workgroups 3.11 Hangs with 09-07-93 EXP16ODI.COM"
-permalink: kb/106/Q106043/
+permalink: /kb/106/Q106043/
 ---
 
 ## Q106043: Windows for Workgroups 3.11 Hangs with 09-07-93 EXP16ODI.COM

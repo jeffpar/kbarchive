@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101142: PC Forms: Compatibility with Windows NT Mail32"
-permalink: kb/101/Q101142/
+permalink: /kb/101/Q101142/
 ---
 
 ## Q101142: PC Forms: Compatibility with Windows NT Mail32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309277: Asheron's Call Dark Majesty: Minimum System Requirements"
-permalink: kb/309/Q309277/
+permalink: /kb/309/Q309277/
 ---
 
 ## Q309277: Asheron's Call Dark Majesty: Minimum System Requirements

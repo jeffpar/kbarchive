@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150510: Pregnancy and Child Care: Find Highlight is Inconsistent"
-permalink: kb/150/Q150510/
+permalink: /kb/150/Q150510/
 ---
 
 ## Q150510: Pregnancy and Child Care: Find Highlight is Inconsistent

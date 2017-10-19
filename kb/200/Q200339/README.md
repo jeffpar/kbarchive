@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200339: Promiscuous Mode Madge TR NIC Can Halt Mainframe Connection"
-permalink: kb/200/Q200339/
+permalink: /kb/200/Q200339/
 ---
 
 ## Q200339: Promiscuous Mode Madge TR NIC Can Halt Mainframe Connection

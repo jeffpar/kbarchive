@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315101: Cannot Cancel Novell Print Job After You Apply Q299444 SRP"
-permalink: kb/315/Q315101/
+permalink: /kb/315/Q315101/
 ---
 
 ## Q315101: Cannot Cancel Novell Print Job After You Apply Q299444 SRP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302535: SMS: Problems with Smsapm32.exe with No Distribution Points"
-permalink: kb/302/Q302535/
+permalink: /kb/302/Q302535/
 ---
 
 ## Q302535: SMS: Problems with Smsapm32.exe with No Distribution Points

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159171: XADM: Mailboxes Show Multiple Instances in Admin Resources Page"
-permalink: kb/159/Q159171/
+permalink: /kb/159/Q159171/
 ---
 
 ## Q159171: XADM: Mailboxes Show Multiple Instances in Admin Resources Page

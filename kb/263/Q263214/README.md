@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263214: Executive Status Err Msg on Shutdown w/ Windows 2000 Server"
-permalink: kb/263/Q263214/
+permalink: /kb/263/Q263214/
 ---
 
 ## Q263214: Executive Status Err Msg on Shutdown w/ Windows 2000 Server

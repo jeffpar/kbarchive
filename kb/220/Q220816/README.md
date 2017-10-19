@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220816: FILE: Application Wizard License Not Found"
-permalink: kb/220/Q220816/
+permalink: /kb/220/Q220816/
 ---
 
 ## Q220816: FILE: Application Wizard License Not Found

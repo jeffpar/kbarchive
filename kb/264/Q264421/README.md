@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264421: BUG: Application Error Closing Form with Graphics in RichTextBox"
-permalink: kb/264/Q264421/
+permalink: /kb/264/Q264421/
 ---
 
 ## Q264421: BUG: Application Error Closing Form with Graphics in RichTextBox

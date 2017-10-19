@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97872: EMS Not Recommended with LAN Man, Windows 386 Enhanced"
-permalink: kb/097/Q97872/
+permalink: /kb/097/Q97872/
 ---
 
 ## Q97872: EMS Not Recommended with LAN Man, Windows 386 Enhanced

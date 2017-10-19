@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230205: Out of Environment Space Error Message in MS-DOS Programs"
-permalink: kb/230/Q230205/
+permalink: /kb/230/Q230205/
 ---
 
 ## Q230205: Out of Environment Space Error Message in MS-DOS Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231930: Non-US Locales Cause Index Server Queries to Not Work"
-permalink: kb/231/Q231930/
+permalink: /kb/231/Q231930/
 ---
 
 ## Q231930: Non-US Locales Cause Index Server Queries to Not Work

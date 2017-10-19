@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130728: OLE Controls Available in Visual FoxPro"
-permalink: kb/130/Q130728/
+permalink: /kb/130/Q130728/
 ---
 
 ## Q130728: OLE Controls Available in Visual FoxPro

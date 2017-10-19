@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134393: FIX: Can't Bring a Grid Forward When It's Beneath Another Grid"
-permalink: kb/134/Q134393/
+permalink: /kb/134/Q134393/
 ---
 
 ## Q134393: FIX: Can't Bring a Grid Forward When It's Beneath Another Grid

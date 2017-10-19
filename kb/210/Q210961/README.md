@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210961: Files Added to Favorites Folder May Not Appear in Favorites Menu"
-permalink: kb/210/Q210961/
+permalink: /kb/210/Q210961/
 ---
 
 ## Q210961: Files Added to Favorites Folder May Not Appear in Favorites Menu

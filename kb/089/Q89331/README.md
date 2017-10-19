@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89331: Stack Traces Under Windows 3.1 SDK Debugging Kernel"
-permalink: kb/089/Q89331/
+permalink: /kb/089/Q89331/
 ---
 
 ## Q89331: Stack Traces Under Windows 3.1 SDK Debugging Kernel

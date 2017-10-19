@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257779: FIX: Printer Dialog of DataReport PrintReport Is Always Portrait"
-permalink: kb/257/Q257779/
+permalink: /kb/257/Q257779/
 ---
 
 ## Q257779: FIX: Printer Dialog of DataReport PrintReport Is Always Portrait

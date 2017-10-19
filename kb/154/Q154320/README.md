@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154320: BUG: AfxOleInit Returns TRUE Without Initializing OLE in a DLL"
-permalink: kb/154/Q154320/
+permalink: /kb/154/Q154320/
 ---
 
 ## Q154320: BUG: AfxOleInit Returns TRUE Without Initializing OLE in a DLL

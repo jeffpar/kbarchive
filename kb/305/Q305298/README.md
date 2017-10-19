@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305298: ENC: &quot;Encarta Failed to Connect&quot; Err Msg upon Clicking Link"
-permalink: kb/305/Q305298/
+permalink: /kb/305/Q305298/
 ---
 
 ## Q305298: ENC: &quot;Encarta Failed to Connect&quot; Err Msg upon Clicking Link

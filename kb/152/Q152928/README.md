@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152928: XFOR: MTA does not Generate Requested Delivery Report"
-permalink: kb/152/Q152928/
+permalink: /kb/152/Q152928/
 ---
 
 ## Q152928: XFOR: MTA does not Generate Requested Delivery Report

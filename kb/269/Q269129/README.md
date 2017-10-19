@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269129: PC DirSync: Making Exchange Server Computer the Dirsync Server"
-permalink: kb/269/Q269129/
+permalink: /kb/269/Q269129/
 ---
 
 ## Q269129: PC DirSync: Making Exchange Server Computer the Dirsync Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248013: Err Msg: HTTP Error 500-12 Application Restarting"
-permalink: kb/248/Q248013/
+permalink: /kb/248/Q248013/
 ---
 
 ## Q248013: Err Msg: HTTP Error 500-12 Application Restarting

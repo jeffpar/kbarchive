@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309621: PRB: Index Server Cannot Query Documents Over 256 KB"
-permalink: kb/309/Q309621/
+permalink: /kb/309/Q309621/
 ---
 
 ## Q309621: PRB: Index Server Cannot Query Documents Over 256 KB

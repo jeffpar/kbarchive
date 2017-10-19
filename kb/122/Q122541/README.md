@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122541: BUG: Goto() Within Try-Except Block Causes C2705 Error"
-permalink: kb/122/Q122541/
+permalink: /kb/122/Q122541/
 ---
 
 ## Q122541: BUG: Goto() Within Try-Except Block Causes C2705 Error

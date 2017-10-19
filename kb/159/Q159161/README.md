@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159161: XCON: Connecting Soft-Switch EMX to Microsoft Exchange Server"
-permalink: kb/159/Q159161/
+permalink: /kb/159/Q159161/
 ---
 
 ## Q159161: XCON: Connecting Soft-Switch EMX to Microsoft Exchange Server

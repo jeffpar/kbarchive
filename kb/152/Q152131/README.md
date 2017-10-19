@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152131: FIX: C1001: Extern in Function Call or Bad Type in Prototype"
-permalink: kb/152/Q152131/
+permalink: /kb/152/Q152131/
 ---
 
 ## Q152131: FIX: C1001: Extern in Function Call or Bad Type in Prototype

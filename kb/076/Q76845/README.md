@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76845: System Hangs with Kraft Mouse and Driver 3.01"
-permalink: kb/076/Q76845/
+permalink: /kb/076/Q76845/
 ---
 
 ## Q76845: System Hangs with Kraft Mouse and Driver 3.01

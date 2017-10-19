@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226513: NPFS Leak When AddJob API Returns a Named Pipe"
-permalink: kb/226/Q226513/
+permalink: /kb/226/Q226513/
 ---
 
 ## Q226513: NPFS Leak When AddJob API Returns a Named Pipe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226831: SMS: Slow File Transfer from Alpha Servers to Win95/98 Clients"
-permalink: kb/226/Q226831/
+permalink: /kb/226/Q226831/
 ---
 
 ## Q226831: SMS: Slow File Transfer from Alpha Servers to Win95/98 Clients

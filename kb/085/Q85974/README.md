@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85974: Err Msg: &quot;Incorrect MS-DOS Version&quot; During Setup (W/QEMM386)"
-permalink: kb/085/Q85974/
+permalink: /kb/085/Q85974/
 ---
 
 ## Q85974: Err Msg: &quot;Incorrect MS-DOS Version&quot; During Setup (W/QEMM386)

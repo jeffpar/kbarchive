@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95536: Results of DBLSPACE /CHKDSK"
-permalink: kb/095/Q95536/
+permalink: /kb/095/Q95536/
 ---
 
 ## Q95536: Results of DBLSPACE /CHKDSK

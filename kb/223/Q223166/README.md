@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223166: PRB: &quot;Error 7 - Out of Memory &quot; When Loading Books Online"
-permalink: kb/223/Q223166/
+permalink: /kb/223/Q223166/
 ---
 
 ## Q223166: PRB: &quot;Error 7 - Out of Memory &quot; When Loading Books Online

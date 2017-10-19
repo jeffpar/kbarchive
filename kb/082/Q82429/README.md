@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82429: No-Squint II Cursor Enhancement Package and Windows"
-permalink: kb/082/Q82429/
+permalink: /kb/082/Q82429/
 ---
 
 ## Q82429: No-Squint II Cursor Enhancement Package and Windows

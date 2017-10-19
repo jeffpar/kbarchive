@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193574: FIX: DBGETPROP() of Offline Property May Incorrectly Return .T."
-permalink: kb/193/Q193574/
+permalink: /kb/193/Q193574/
 ---
 
 ## Q193574: FIX: DBGETPROP() of Offline Property May Incorrectly Return .T.

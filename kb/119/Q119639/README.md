@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119639: PC WRmt: Can't Start Mail Remote Automatically w/ AT&amp;T Driver"
-permalink: kb/119/Q119639/
+permalink: /kb/119/Q119639/
 ---
 
 ## Q119639: PC WRmt: Can't Start Mail Remote Automatically w/ AT&amp;T Driver

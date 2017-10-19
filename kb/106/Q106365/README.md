@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106365: Positions of Minimized Icons Are Not Saved in File Manager"
-permalink: kb/106/Q106365/
+permalink: /kb/106/Q106365/
 ---
 
 ## Q106365: Positions of Minimized Icons Are Not Saved in File Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90757: PC WFW: Admin Not Included in Directory Synchronization"
-permalink: kb/090/Q90757/
+permalink: /kb/090/Q90757/
 ---
 
 ## Q90757: PC WFW: Admin Not Included in Directory Synchronization

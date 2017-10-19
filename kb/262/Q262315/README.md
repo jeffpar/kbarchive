@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262315: INFO: ILOVEYOU Virus Attacks FoxPro SCT Files"
-permalink: kb/262/Q262315/
+permalink: /kb/262/Q262315/
 ---
 
 ## Q262315: INFO: ILOVEYOU Virus Attacks FoxPro SCT Files

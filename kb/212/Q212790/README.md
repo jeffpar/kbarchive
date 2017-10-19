@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212790: SMS Installer Does Not Calculate Required Disk Space"
-permalink: kb/212/Q212790/
+permalink: /kb/212/Q212790/
 ---
 
 ## Q212790: SMS Installer Does Not Calculate Required Disk Space

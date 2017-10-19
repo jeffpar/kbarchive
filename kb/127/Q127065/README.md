@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127065: Phone Number Does Not Appear in Modem Log File"
-permalink: kb/127/Q127065/
+permalink: /kb/127/Q127065/
 ---
 
 ## Q127065: Phone Number Does Not Appear in Modem Log File

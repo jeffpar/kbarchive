@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300057: The Sample Passport Web Site Pages Are Not Working Correctly"
-permalink: kb/300/Q300057/
+permalink: /kb/300/Q300057/
 ---
 
 ## Q300057: The Sample Passport Web Site Pages Are Not Working Correctly

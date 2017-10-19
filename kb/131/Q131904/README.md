@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131904: INVDOS Does Not Report TCP/IP-32 3.11a Client IP Address"
-permalink: kb/131/Q131904/
+permalink: /kb/131/Q131904/
 ---
 
 ## Q131904: INVDOS Does Not Report TCP/IP-32 3.11a Client IP Address

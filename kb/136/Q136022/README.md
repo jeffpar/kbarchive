@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136022: Mac Bookshelf 95: Israel Anthem Suddenly Stops"
-permalink: kb/136/Q136022/
+permalink: /kb/136/Q136022/
 ---
 
 ## Q136022: Mac Bookshelf 95: Israel Anthem Suddenly Stops

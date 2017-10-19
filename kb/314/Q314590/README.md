@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314590: Automap: Err Msg: Registry Information Was Not Copied..."
-permalink: kb/314/Q314590/
+permalink: /kb/314/Q314590/
 ---
 
 ## Q314590: Automap: Err Msg: Registry Information Was Not Copied...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138953: BUG: Static Identifiers Do Not Show Up in ClassView"
-permalink: kb/138/Q138953/
+permalink: /kb/138/Q138953/
 ---
 
 ## Q138953: BUG: Static Identifiers Do Not Show Up in ClassView

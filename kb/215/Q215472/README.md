@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215472: XFOR: How the X.400 Connector Handles High-Priority Mail"
-permalink: kb/215/Q215472/
+permalink: /kb/215/Q215472/
 ---
 
 ## Q215472: XFOR: How the X.400 Connector Handles High-Priority Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181450: XADM: Advanced Security Revocation Not Immediate"
-permalink: kb/181/Q181450/
+permalink: /kb/181/Q181450/
 ---
 
 ## Q181450: XADM: Advanced Security Revocation Not Immediate

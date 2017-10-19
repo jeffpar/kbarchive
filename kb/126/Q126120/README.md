@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126120: MS POWERPOINT 4 FOR WIN SBS: Corrections and Comments"
-permalink: kb/126/Q126120/
+permalink: /kb/126/Q126120/
 ---
 
 ## Q126120: MS POWERPOINT 4 FOR WIN SBS: Corrections and Comments

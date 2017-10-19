@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225335: Toshiba Laptop APM Software May Not Function with SP4"
-permalink: kb/225/Q225335/
+permalink: /kb/225/Q225335/
 ---
 
 ## Q225335: Toshiba Laptop APM Software May Not Function with SP4

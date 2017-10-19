@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228845: Zone Transfers Are Incomplete When Deleting a Delegation"
-permalink: kb/228/Q228845/
+permalink: /kb/228/Q228845/
 ---
 
 ## Q228845: Zone Transfers Are Incomplete When Deleting a Delegation

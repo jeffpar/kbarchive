@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256211: SMS: Smsapm32.exe Does Not Stop When Client Agent Is Upgraded"
-permalink: kb/256/Q256211/
+permalink: /kb/256/Q256211/
 ---
 
 ## Q256211: SMS: Smsapm32.exe Does Not Stop When Client Agent Is Upgraded

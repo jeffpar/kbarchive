@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250861: XCLN: Team Folders Errors When Publishing the Folder to the Web"
-permalink: kb/250/Q250861/
+permalink: /kb/250/Q250861/
 ---
 
 ## Q250861: XCLN: Team Folders Errors When Publishing the Folder to the Web

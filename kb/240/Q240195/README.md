@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240195: &quot;NET USER /TIMES&quot; Command Does Not Work in Year 2000"
-permalink: kb/240/Q240195/
+permalink: /kb/240/Q240195/
 ---
 
 ## Q240195: &quot;NET USER /TIMES&quot; Command Does Not Work in Year 2000

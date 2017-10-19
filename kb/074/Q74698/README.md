@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74698: SDK Installation Incompatible with Networked Windows"
-permalink: kb/074/Q74698/
+permalink: /kb/074/Q74698/
 ---
 
 ## Q74698: SDK Installation Incompatible with Networked Windows

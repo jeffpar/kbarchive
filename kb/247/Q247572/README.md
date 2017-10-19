@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247572: Problems with AddSystem and Addsytemgui SMS Resource Kit Tools"
-permalink: kb/247/Q247572/
+permalink: /kb/247/Q247572/
 ---
 
 ## Q247572: Problems with AddSystem and Addsytemgui SMS Resource Kit Tools

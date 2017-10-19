@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158224: WD97: Cannot Find Veenlr3.hlp After Typical Installation"
-permalink: kb/158/Q158224/
+permalink: /kb/158/Q158224/
 ---
 
 ## Q158224: WD97: Cannot Find Veenlr3.hlp After Typical Installation

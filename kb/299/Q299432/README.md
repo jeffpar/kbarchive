@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299432: Cookies Not Deleted for My Site When User Closes Browser Window"
-permalink: kb/299/Q299432/
+permalink: /kb/299/Q299432/
 ---
 
 ## Q299432: Cookies Not Deleted for My Site When User Closes Browser Window

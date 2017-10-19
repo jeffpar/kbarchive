@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168910: WD97: Word Hangs Saving Document with WordArt to RTF"
-permalink: kb/168/Q168910/
+permalink: /kb/168/Q168910/
 ---
 
 ## Q168910: WD97: Word Hangs Saving Document with WordArt to RTF

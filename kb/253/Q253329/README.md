@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253329: Age of Empires II Troubleshooter Available"
-permalink: kb/253/Q253329/
+permalink: /kb/253/Q253329/
 ---
 
 ## Q253329: Age of Empires II Troubleshooter Available

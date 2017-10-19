@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233435: Business Planner: Black Bar Is Printed Beneath Heading of Page"
-permalink: kb/233/Q233435/
+permalink: /kb/233/Q233435/
 ---
 
 ## Q233435: Business Planner: Black Bar Is Printed Beneath Heading of Page

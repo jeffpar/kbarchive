@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309412: Services for UNIX 2.0 Redirector Not Working After Upgrade to XP"
-permalink: kb/309/Q309412/
+permalink: /kb/309/Q309412/
 ---
 
 ## Q309412: Services for UNIX 2.0 Redirector Not Working After Upgrade to XP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179316: WD97: Envelope Address Style Not Applied to Envelope Address"
-permalink: kb/179/Q179316/
+permalink: /kb/179/Q179316/
 ---
 
 ## Q179316: WD97: Envelope Address Style Not Applied to Envelope Address

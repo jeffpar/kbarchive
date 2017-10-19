@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230728: Err Msg: STOP 0x0000000A Only Displays the First Two Lines"
-permalink: kb/230/Q230728/
+permalink: /kb/230/Q230728/
 ---
 
 ## Q230728: Err Msg: STOP 0x0000000A Only Displays the First Two Lines

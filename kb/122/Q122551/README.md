@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122551: Files Copied by PC-Based Clients Not Viewable by Mac Clients"
-permalink: kb/122/Q122551/
+permalink: /kb/122/Q122551/
 ---
 
 ## Q122551: Files Copied by PC-Based Clients Not Viewable by Mac Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272113: XADM: Store Causes AV When Processing Outbound Internet Mail"
-permalink: kb/272/Q272113/
+permalink: /kb/272/Q272113/
 ---
 
 ## Q272113: XADM: Store Causes AV When Processing Outbound Internet Mail

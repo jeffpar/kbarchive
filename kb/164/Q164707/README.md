@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164707: XFOR: Connecting the CCMC to a cc:Mail PO on a NetWare Server"
-permalink: kb/164/Q164707/
+permalink: /kb/164/Q164707/
 ---
 
 ## Q164707: XFOR: Connecting the CCMC to a cc:Mail PO on a NetWare Server

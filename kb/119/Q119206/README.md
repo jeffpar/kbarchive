@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119206: Using WM_COMMNOTIFY in an MFC Application"
-permalink: kb/119/Q119206/
+permalink: /kb/119/Q119206/
 ---
 
 ## Q119206: Using WM_COMMNOTIFY in an MFC Application

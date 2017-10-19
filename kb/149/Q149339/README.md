@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149339: Memory leak in RPCSS Running Exchange 4.0 on Windows NT 3.51"
-permalink: kb/149/Q149339/
+permalink: /kb/149/Q149339/
 ---
 
 ## Q149339: Memory leak in RPCSS Running Exchange 4.0 on Windows NT 3.51

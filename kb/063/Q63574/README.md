@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63574: Installing Windows 3.0 for Different Graphic Resolutions"
-permalink: kb/063/Q63574/
+permalink: /kb/063/Q63574/
 ---
 
 ## Q63574: Installing Windows 3.0 for Different Graphic Resolutions

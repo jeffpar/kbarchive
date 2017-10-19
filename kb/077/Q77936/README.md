@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77936: Swap Tool Not Included with Windows SDK 3.1"
-permalink: kb/077/Q77936/
+permalink: /kb/077/Q77936/
 ---
 
 ## Q77936: Swap Tool Not Included with Windows SDK 3.1

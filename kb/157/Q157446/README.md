@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157446: CorelDraw 6 cannot be installed on Korean NT Workstation 3.51"
-permalink: kb/157/Q157446/
+permalink: /kb/157/Q157446/
 ---
 
 ## Q157446: CorelDraw 6 cannot be installed on Korean NT Workstation 3.51

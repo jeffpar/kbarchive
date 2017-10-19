@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178021: XFOR: Many DAT Files in the Mtadata Directory"
-permalink: kb/178/Q178021/
+permalink: /kb/178/Q178021/
 ---
 
 ## Q178021: XFOR: Many DAT Files in the Mtadata Directory

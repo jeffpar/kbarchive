@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127179: PRB: Output from TIME() Does Not Change with SET HOURS"
-permalink: kb/127/Q127179/
+permalink: /kb/127/Q127179/
 ---
 
 ## Q127179: PRB: Output from TIME() Does Not Change with SET HOURS

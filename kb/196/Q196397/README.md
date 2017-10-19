@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196397: XADM: Using V1 Certificates After Applying 5.5 Service Pack 1"
-permalink: kb/196/Q196397/
+permalink: /kb/196/Q196397/
 ---
 
 ## Q196397: XADM: Using V1 Certificates After Applying 5.5 Service Pack 1

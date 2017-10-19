@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66702: PRB: CV2206 Warning: Corrupt OMF Detected in &lt;filename&gt;"
-permalink: kb/066/Q66702/
+permalink: /kb/066/Q66702/
 ---
 
 ## Q66702: PRB: CV2206 Warning: Corrupt OMF Detected in &lt;filename&gt;

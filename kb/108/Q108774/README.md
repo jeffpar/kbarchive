@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108774: Some Characters Not Available with Bitstream"
-permalink: kb/108/Q108774/
+permalink: /kb/108/Q108774/
 ---
 
 ## Q108774: Some Characters Not Available with Bitstream

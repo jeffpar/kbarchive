@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161527: Encarta 97 World Atlas: How To Turn Off Opening Video"
-permalink: kb/161/Q161527/
+permalink: /kb/161/Q161527/
 ---
 
 ## Q161527: Encarta 97 World Atlas: How To Turn Off Opening Video

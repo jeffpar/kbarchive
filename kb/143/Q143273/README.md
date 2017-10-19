@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143273: HOWTO: Insert TAB Characters in RichTextBox Control in VB"
-permalink: kb/143/Q143273/
+permalink: /kb/143/Q143273/
 ---
 
 ## Q143273: HOWTO: Insert TAB Characters in RichTextBox Control in VB

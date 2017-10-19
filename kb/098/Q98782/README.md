@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98782: Mac Wkst: Message Summary Screen Not Displayed"
-permalink: kb/098/Q98782/
+permalink: /kb/098/Q98782/
 ---
 
 ## Q98782: Mac Wkst: Message Summary Screen Not Displayed

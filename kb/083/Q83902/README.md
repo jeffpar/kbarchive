@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83902: Windows 3.1 Cannot Run on a Novell Nondedicated File Server"
-permalink: kb/083/Q83902/
+permalink: /kb/083/Q83902/
 ---
 
 ## Q83902: Windows 3.1 Cannot Run on a Novell Nondedicated File Server

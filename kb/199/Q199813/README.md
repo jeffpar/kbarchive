@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199813: XFOR: CalCon Not Supported With InterOrg Public Folder Tool"
-permalink: kb/199/Q199813/
+permalink: /kb/199/Q199813/
 ---
 
 ## Q199813: XFOR: CalCon Not Supported With InterOrg Public Folder Tool

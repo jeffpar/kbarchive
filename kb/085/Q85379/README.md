@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85379: Manual Installation of Windows Resource Kit Version 3.1"
-permalink: kb/085/Q85379/
+permalink: /kb/085/Q85379/
 ---
 
 ## Q85379: Manual Installation of Windows Resource Kit Version 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125929: Windows NT Setup Displayed Twice in Task List"
-permalink: kb/125/Q125929/
+permalink: /kb/125/Q125929/
 ---
 
 ## Q125929: Windows NT Setup Displayed Twice in Task List

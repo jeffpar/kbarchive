@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168830: HOWTO: Cast an Object to a Different Interface"
-permalink: kb/168/Q168830/
+permalink: /kb/168/Q168830/
 ---
 
 ## Q168830: HOWTO: Cast an Object to a Different Interface

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197689: PRB: MSDN Causes Error After Installation on External Drives"
-permalink: kb/197/Q197689/
+permalink: /kb/197/Q197689/
 ---
 
 ## Q197689: PRB: MSDN Causes Error After Installation on External Drives

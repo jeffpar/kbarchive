@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111913: Creating Comma-Delimited File That Retains Trailing Space"
-permalink: kb/111/Q111913/
+permalink: /kb/111/Q111913/
 ---
 
 ## Q111913: Creating Comma-Delimited File That Retains Trailing Space

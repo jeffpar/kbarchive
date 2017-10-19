@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96343: Usage of PAGENO() Function in FoxBASE+/Mac"
-permalink: kb/096/Q96343/
+permalink: /kb/096/Q96343/
 ---
 
 ## Q96343: Usage of PAGENO() Function in FoxBASE+/Mac

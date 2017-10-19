@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157745: Command Extensions Cause Access Violation in Cmd.exe"
-permalink: kb/157/Q157745/
+permalink: /kb/157/Q157745/
 ---
 
 ## Q157745: Command Extensions Cause Access Violation in Cmd.exe

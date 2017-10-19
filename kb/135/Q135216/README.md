@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135216: Changing Folder or Printer Name Loses Shared Status"
-permalink: kb/135/Q135216/
+permalink: /kb/135/Q135216/
 ---
 
 ## Q135216: Changing Folder or Printer Name Loses Shared Status

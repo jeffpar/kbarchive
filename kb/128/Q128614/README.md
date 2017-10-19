@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128614: SMS: INVDOS Fails with Large PKG_16.CFG File"
-permalink: kb/128/Q128614/
+permalink: /kb/128/Q128614/
 ---
 
 ## Q128614: SMS: INVDOS Fails with Large PKG_16.CFG File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170370: BUG: Deactivate Event of Non-Modal ActiveX Form Fails to Fire"
-permalink: kb/170/Q170370/
+permalink: /kb/170/Q170370/
 ---
 
 ## Q170370: BUG: Deactivate Event of Non-Modal ActiveX Form Fails to Fire

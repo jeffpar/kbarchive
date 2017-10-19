@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244991: Services Do Not Start with Intel EtherExpress Pro 100+ NIC."
-permalink: kb/244/Q244991/
+permalink: /kb/244/Q244991/
 ---
 
 ## Q244991: Services Do Not Start with Intel EtherExpress Pro 100+ NIC.

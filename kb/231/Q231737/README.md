@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231737: XIMS: Internet Mail Service Doesn't Start; Logs 4070 and 4131"
-permalink: kb/231/Q231737/
+permalink: /kb/231/Q231737/
 ---
 
 ## Q231737: XIMS: Internet Mail Service Doesn't Start; Logs 4070 and 4131

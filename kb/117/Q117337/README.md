@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117337: Full Network Printer Path Not Shown in Microsoft Excel 5.0"
-permalink: kb/117/Q117337/
+permalink: /kb/117/Q117337/
 ---
 
 ## Q117337: Full Network Printer Path Not Shown in Microsoft Excel 5.0

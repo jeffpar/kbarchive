@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173682: Print Service Doesn't Print Jobs Concurrently If PDT Is Used"
-permalink: kb/173/Q173682/
+permalink: /kb/173/Q173682/
 ---
 
 ## Q173682: Print Service Doesn't Print Jobs Concurrently If PDT Is Used

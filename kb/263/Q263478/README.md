@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263478: Urban Assault Err Msg: Invalid Page Fault in Module Mss32.dll"
-permalink: kb/263/Q263478/
+permalink: /kb/263/Q263478/
 ---
 
 ## Q263478: Urban Assault Err Msg: Invalid Page Fault in Module Mss32.dll

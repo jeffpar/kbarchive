@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68752: NEC Prospeed 386 with Math Coprocessor May Hang Windows Setup"
-permalink: kb/068/Q68752/
+permalink: /kb/068/Q68752/
 ---
 
 ## Q68752: NEC Prospeed 386 with Math Coprocessor May Hang Windows Setup

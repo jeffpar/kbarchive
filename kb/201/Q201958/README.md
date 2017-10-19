@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201958: DOC: DataGrid Object Code Example Does Not Work"
-permalink: kb/201/Q201958/
+permalink: /kb/201/Q201958/
 ---
 
 ## Q201958: DOC: DataGrid Object Code Example Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165390: Document Margins Not Maintained in WordPad"
-permalink: kb/165/Q165390/
+permalink: /kb/165/Q165390/
 ---
 
 ## Q165390: Document Margins Not Maintained in WordPad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99241: DoubleSpace User Interface Text Not Visible on Monochrome"
-permalink: kb/099/Q99241/
+permalink: /kb/099/Q99241/
 ---
 
 ## Q99241: DoubleSpace User Interface Text Not Visible on Monochrome

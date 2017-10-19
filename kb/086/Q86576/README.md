@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86576: The Number Nine Graphics Card and Windows 3.1"
-permalink: kb/086/Q86576/
+permalink: /kb/086/Q86576/
 ---
 
 ## Q86576: The Number Nine Graphics Card and Windows 3.1

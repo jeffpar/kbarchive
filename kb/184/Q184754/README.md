@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184754: Several Threads Created in LRPC Running Stress Test in IIS"
-permalink: kb/184/Q184754/
+permalink: /kb/184/Q184754/
 ---
 
 ## Q184754: Several Threads Created in LRPC Running Stress Test in IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123174: Intergraph HardPC Incompatible with Windows 95"
-permalink: kb/123/Q123174/
+permalink: /kb/123/Q123174/
 ---
 
 ## Q123174: Intergraph HardPC Incompatible with Windows 95

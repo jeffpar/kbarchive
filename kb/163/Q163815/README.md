@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163815: NTBACKUP Reports Verify Errors on Files in Mac Volume After SP5"
-permalink: kb/163/Q163815/
+permalink: /kb/163/Q163815/
 ---
 
 ## Q163815: NTBACKUP Reports Verify Errors on Files in Mac Volume After SP5

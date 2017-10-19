@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91114: WFWG Err Msg: NET3651: There Is No Protocol Added..."
-permalink: kb/091/Q91114/
+permalink: /kb/091/Q91114/
 ---
 
 ## Q91114: WFWG Err Msg: NET3651: There Is No Protocol Added...

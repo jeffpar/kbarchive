@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148405: Icons for NOIDMIFS Do Not Appear in SMS Admin UI"
-permalink: kb/148/Q148405/
+permalink: /kb/148/Q148405/
 ---
 
 ## Q148405: Icons for NOIDMIFS Do Not Appear in SMS Admin UI

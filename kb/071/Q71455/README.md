@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71455: HOWTO: Tracking Down Lost System Resources"
-permalink: kb/071/Q71455/
+permalink: /kb/071/Q71455/
 ---
 
 ## Q71455: HOWTO: Tracking Down Lost System Resources

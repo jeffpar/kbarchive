@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159995: Windows NT Does Not Detect Previous WinNT 3.5x Install"
-permalink: kb/159/Q159995/
+permalink: /kb/159/Q159995/
 ---
 
 ## Q159995: Windows NT Does Not Detect Previous WinNT 3.5x Install

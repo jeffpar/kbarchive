@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140831: Cannot Build APPC Library DTRACS.LIB"
-permalink: kb/140/Q140831/
+permalink: /kb/140/Q140831/
 ---
 
 ## Q140831: Cannot Build APPC Library DTRACS.LIB

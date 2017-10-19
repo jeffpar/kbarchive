@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124529: HOWTO: Access SourceSafe Code From a Central Directory"
-permalink: kb/124/Q124529/
+permalink: /kb/124/Q124529/
 ---
 
 ## Q124529: HOWTO: Access SourceSafe Code From a Central Directory

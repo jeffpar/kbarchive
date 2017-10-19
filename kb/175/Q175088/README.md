@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175088: Bookshelf 98: Quick Zip Code Returns Different Results"
-permalink: kb/175/Q175088/
+permalink: /kb/175/Q175088/
 ---
 
 ## Q175088: Bookshelf 98: Quick Zip Code Returns Different Results

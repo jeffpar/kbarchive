@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143019: PPT7: Contents of PowerPoint Viewer (32-Bit) Disks"
-permalink: kb/143/Q143019/
+permalink: /kb/143/Q143019/
 ---
 
 ## Q143019: PPT7: Contents of PowerPoint Viewer (32-Bit) Disks

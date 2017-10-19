@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178709: XFOR: Internet Mail Service Is Not Properly Encoding Messages"
-permalink: kb/178/Q178709/
+permalink: /kb/178/Q178709/
 ---
 
 ## Q178709: XFOR: Internet Mail Service Is Not Properly Encoding Messages

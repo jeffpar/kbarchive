@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122326: BUG: Win32s Setup May Fail if BUFFERS or FILES Set Too Small"
-permalink: kb/122/Q122326/
+permalink: /kb/122/Q122326/
 ---
 
 ## Q122326: BUG: Win32s Setup May Fail if BUFFERS or FILES Set Too Small

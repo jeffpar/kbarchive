@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168256: HOWTO: Programmatically Launch Dial-Up Networking Connection"
-permalink: kb/168/Q168256/
+permalink: /kb/168/Q168256/
 ---
 
 ## Q168256: HOWTO: Programmatically Launch Dial-Up Networking Connection

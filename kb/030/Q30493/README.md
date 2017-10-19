@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30493: DOCERR: Errors in Chapter 5 of MASM Programmer's Guide"
-permalink: kb/030/Q30493/
+permalink: /kb/030/Q30493/
 ---
 
 ## Q30493: DOCERR: Errors in Chapter 5 of MASM Programmer's Guide

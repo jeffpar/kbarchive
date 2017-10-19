@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142421: FIX: D2004 Caused by /Tp or /Tc Option in Visual C++ 4.0"
-permalink: kb/142/Q142421/
+permalink: /kb/142/Q142421/
 ---
 
 ## Q142421: FIX: D2004 Caused by /Tp or /Tc Option in Visual C++ 4.0

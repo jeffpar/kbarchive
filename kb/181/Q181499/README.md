@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181499: USB Over Current Condition Causes Windows 95 Hang"
-permalink: kb/181/Q181499/
+permalink: /kb/181/Q181499/
 ---
 
 ## Q181499: USB Over Current Condition Causes Windows 95 Hang

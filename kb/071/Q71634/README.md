@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71634: Loading 10net Redirector High Hangs Unisys Workstation"
-permalink: kb/071/Q71634/
+permalink: /kb/071/Q71634/
 ---
 
 ## Q71634: Loading 10net Redirector High Hangs Unisys Workstation

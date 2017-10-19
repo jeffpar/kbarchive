@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181624: LPR Port No Longer Appears as an Available Printer Port"
-permalink: kb/181/Q181624/
+permalink: /kb/181/Q181624/
 ---
 
 ## Q181624: LPR Port No Longer Appears as an Available Printer Port

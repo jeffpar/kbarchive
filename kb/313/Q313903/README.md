@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313903: HOW TO: Change a User Name in a Domain in Windows NT 4.0"
-permalink: kb/313/Q313903/
+permalink: /kb/313/Q313903/
 ---
 
 ## Q313903: HOW TO: Change a User Name in a Domain in Windows NT 4.0

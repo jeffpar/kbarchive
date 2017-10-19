@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206897: BUG: Behavior of Lightweight WLVScroll Different from VScrollBar"
-permalink: kb/206/Q206897/
+permalink: /kb/206/Q206897/
 ---
 
 ## Q206897: BUG: Behavior of Lightweight WLVScroll Different from VScrollBar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90420: Optimizing FoxBASE+ Searches with SEEK and FIND"
-permalink: kb/090/Q90420/
+permalink: /kb/090/Q90420/
 ---
 
 ## Q90420: Optimizing FoxBASE+ Searches with SEEK and FIND

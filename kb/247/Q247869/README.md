@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247869: MS00-003: Local Procedure Call May Permit Unauthorized Account U"
-permalink: kb/247/Q247869/
+permalink: /kb/247/Q247869/
 ---
 
 ## Q247869: MS00-003: Local Procedure Call May Permit Unauthorized Account U

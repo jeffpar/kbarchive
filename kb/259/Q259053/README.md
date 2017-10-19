@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259053: ASN Decoding Errors in Genlogs on a Zoomit Server"
-permalink: kb/259/Q259053/
+permalink: /kb/259/Q259053/
 ---
 
 ## Q259053: ASN Decoding Errors in Genlogs on a Zoomit Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247082: How to Make Windows NT Dial a Prefix for a RAS Callback"
-permalink: kb/247/Q247082/
+permalink: /kb/247/Q247082/
 ---
 
 ## Q247082: How to Make Windows NT Dial a Prefix for a RAS Callback

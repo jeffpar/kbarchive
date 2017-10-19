@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164620: FP: How to Add a Script to the ActiveX Calendar Control"
-permalink: kb/164/Q164620/
+permalink: /kb/164/Q164620/
 ---
 
 ## Q164620: FP: How to Add a Script to the ActiveX Calendar Control

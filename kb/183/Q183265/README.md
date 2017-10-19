@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183265: OL98: (CW) Enabling Outlook Automatic Upgrade"
-permalink: kb/183/Q183265/
+permalink: /kb/183/Q183265/
 ---
 
 ## Q183265: OL98: (CW) Enabling Outlook Automatic Upgrade

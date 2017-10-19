@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130863: PRB: Cannot Change Mouse Pointer for Non-Active Cells in Grid"
-permalink: kb/130/Q130863/
+permalink: /kb/130/Q130863/
 ---
 
 ## Q130863: PRB: Cannot Change Mouse Pointer for Non-Active Cells in Grid

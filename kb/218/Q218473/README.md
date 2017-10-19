@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218473: Restricting Changes to Base System Objects"
-permalink: kb/218/Q218473/
+permalink: /kb/218/Q218473/
 ---
 
 ## Q218473: Restricting Changes to Base System Objects

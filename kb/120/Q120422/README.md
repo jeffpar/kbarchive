@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120422: Turbo Pascal has Transparent Installation Screen Backgrounds"
-permalink: kb/120/Q120422/
+permalink: /kb/120/Q120422/
 ---
 
 ## Q120422: Turbo Pascal has Transparent Installation Screen Backgrounds

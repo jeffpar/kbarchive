@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201743: Rotated Text Prints Distorted When Using Non-Square Resolution"
-permalink: kb/201/Q201743/
+permalink: /kb/201/Q201743/
 ---
 
 ## Q201743: Rotated Text Prints Distorted When Using Non-Square Resolution

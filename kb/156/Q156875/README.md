@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156875: PRB: Empty Bars Appear in Shortcut Menu"
-permalink: kb/156/Q156875/
+permalink: /kb/156/Q156875/
 ---
 
 ## Q156875: PRB: Empty Bars Appear in Shortcut Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149849: FIX: Report Writer Incorrectly Numbers Pages of Report"
-permalink: kb/149/Q149849/
+permalink: /kb/149/Q149849/
 ---
 
 ## Q149849: FIX: Report Writer Incorrectly Numbers Pages of Report

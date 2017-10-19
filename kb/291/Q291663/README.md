@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291663: Error Message When Distribute Software Wizard Used"
-permalink: kb/291/Q291663/
+permalink: /kb/291/Q291663/
 ---
 
 ## Q291663: Error Message When Distribute Software Wizard Used

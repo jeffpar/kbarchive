@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223796: Flight Simulator: No Aircraft Traffic on Ground or in Air"
-permalink: kb/223/Q223796/
+permalink: /kb/223/Q223796/
 ---
 
 ## Q223796: Flight Simulator: No Aircraft Traffic on Ground or in Air

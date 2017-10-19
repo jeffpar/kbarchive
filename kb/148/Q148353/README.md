@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148353: Access Denied Using CHGPASS with DSMN"
-permalink: kb/148/Q148353/
+permalink: /kb/148/Q148353/
 ---
 
 ## Q148353: Access Denied Using CHGPASS with DSMN

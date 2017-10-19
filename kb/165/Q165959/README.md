@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165959: Reading a File Saved with the Event Viewer of Another Computer"
-permalink: kb/165/Q165959/
+permalink: /kb/165/Q165959/
 ---
 
 ## Q165959: Reading a File Saved with the Event Viewer of Another Computer

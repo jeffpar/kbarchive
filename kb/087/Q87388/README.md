@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87388: PC DB: How to Tell If a CONTROL.GLB File Is Corrupted"
-permalink: kb/087/Q87388/
+permalink: /kb/087/Q87388/
 ---
 
 ## Q87388: PC DB: How to Tell If a CONTROL.GLB File Is Corrupted

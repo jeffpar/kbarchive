@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134346: Remoteboot Workstation Cannot Reconnect After Net 808 Errors"
-permalink: kb/134/Q134346/
+permalink: /kb/134/Q134346/
 ---
 
 ## Q134346: Remoteboot Workstation Cannot Reconnect After Net 808 Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185973: SMS: INVWIN32 Stops Responding and Causes 100 Percent CPU Usage"
-permalink: kb/185/Q185973/
+permalink: /kb/185/Q185973/
 ---
 
 ## Q185973: SMS: INVWIN32 Stops Responding and Causes 100 Percent CPU Usage

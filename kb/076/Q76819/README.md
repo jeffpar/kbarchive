@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76819: Installing MS-DOS 5 Upgrade on NetWare Diskless Workstation"
-permalink: kb/076/Q76819/
+permalink: /kb/076/Q76819/
 ---
 
 ## Q76819: Installing MS-DOS 5 Upgrade on NetWare Diskless Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189666: BUG: Toolbar Displays Multiple Selected Toggle Buttons"
-permalink: kb/189/Q189666/
+permalink: /kb/189/Q189666/
 ---
 
 ## Q189666: BUG: Toolbar Displays Multiple Selected Toggle Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133168: Mac Ancient Lands: Folder not Removed By Installer"
-permalink: kb/133/Q133168/
+permalink: /kb/133/Q133168/
 ---
 
 ## Q133168: Mac Ancient Lands: Folder not Removed By Installer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43083: DOSSHELL Returns to DOS after Executing Batch File"
-permalink: kb/043/Q43083/
+permalink: /kb/043/Q43083/
 ---
 
 ## Q43083: DOSSHELL Returns to DOS after Executing Batch File

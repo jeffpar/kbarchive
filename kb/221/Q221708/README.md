@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221708: FIX: Class Browser Open File History List Truncates File Names"
-permalink: kb/221/Q221708/
+permalink: /kb/221/Q221708/
 ---
 
 ## Q221708: FIX: Class Browser Open File History List Truncates File Names

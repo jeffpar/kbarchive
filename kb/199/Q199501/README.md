@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199501: PRB: LNK1555 Errors, and Near Versus Far Data"
-permalink: kb/199/Q199501/
+permalink: /kb/199/Q199501/
 ---
 
 ## Q199501: PRB: LNK1555 Errors, and Near Versus Far Data

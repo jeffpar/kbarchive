@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122987: VSHARE.386 Does Not Work with Novell DOS 6.0 or 7.0"
-permalink: kb/122/Q122987/
+permalink: /kb/122/Q122987/
 ---
 
 ## Q122987: VSHARE.386 Does Not Work with Novell DOS 6.0 or 7.0

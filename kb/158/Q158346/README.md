@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158346: XCLN: Err Msg: The Spelling Operation Could not be Completed"
-permalink: kb/158/Q158346/
+permalink: /kb/158/Q158346/
 ---
 
 ## Q158346: XCLN: Err Msg: The Spelling Operation Could not be Completed

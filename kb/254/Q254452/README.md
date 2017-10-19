@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254452: Streets and Trips 2001: Help Is Displayed in Unexpected Language"
-permalink: kb/254/Q254452/
+permalink: /kb/254/Q254452/
 ---
 
 ## Q254452: Streets and Trips 2001: Help Is Displayed in Unexpected Language

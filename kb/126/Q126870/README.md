@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126870: How Transaction Processing Affects Record Locking"
-permalink: kb/126/Q126870/
+permalink: /kb/126/Q126870/
 ---
 
 ## Q126870: How Transaction Processing Affects Record Locking

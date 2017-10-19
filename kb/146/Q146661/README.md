@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146661: XCLN: Cannot Paste Bitmaps or Files into a RichEntry Field"
-permalink: kb/146/Q146661/
+permalink: /kb/146/Q146661/
 ---
 
 ## Q146661: XCLN: Cannot Paste Bitmaps or Files into a RichEntry Field

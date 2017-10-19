@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133009: Bookshelf: Copy to Word Function Causes GP Fault"
-permalink: kb/133/Q133009/
+permalink: /kb/133/Q133009/
 ---
 
 ## Q133009: Bookshelf: Copy to Word Function Causes GP Fault

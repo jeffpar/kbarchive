@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142062: Unable to Run Win16 Sockets Application under Windows 3.1"
-permalink: kb/142/Q142062/
+permalink: /kb/142/Q142062/
 ---
 
 ## Q142062: Unable to Run Win16 Sockets Application under Windows 3.1

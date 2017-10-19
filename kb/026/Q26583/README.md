@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26583: DOCERR: @DataSize Misspelled"
-permalink: kb/026/Q26583/
+permalink: /kb/026/Q26583/
 ---
 
 ## Q26583: DOCERR: @DataSize Misspelled

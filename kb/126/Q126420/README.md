@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126420: NT RAS Client with TCP/IP Alone Cannot Browse the Network"
-permalink: kb/126/Q126420/
+permalink: /kb/126/Q126420/
 ---
 
 ## Q126420: NT RAS Client with TCP/IP Alone Cannot Browse the Network

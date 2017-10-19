@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139012: FIX: Cannot Map Functions to Special Keys in Developer Studio"
-permalink: kb/139/Q139012/
+permalink: /kb/139/Q139012/
 ---
 
 ## Q139012: FIX: Cannot Map Functions to Special Keys in Developer Studio

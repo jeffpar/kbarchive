@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135192: Error Message: Insufficient Memory to Initialize Windows"
-permalink: kb/135/Q135192/
+permalink: /kb/135/Q135192/
 ---
 
 ## Q135192: Error Message: Insufficient Memory to Initialize Windows

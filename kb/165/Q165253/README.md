@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165253: WD97: Bullets and Numbering Not Aligned in Document Map"
-permalink: kb/165/Q165253/
+permalink: /kb/165/Q165253/
 ---
 
 ## Q165253: WD97: Bullets and Numbering Not Aligned in Document Map

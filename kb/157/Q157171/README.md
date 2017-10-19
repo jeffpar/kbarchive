@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157171: Complex Filled Shapes Near Bottom of Page Print Incorrectly"
-permalink: kb/157/Q157171/
+permalink: /kb/157/Q157171/
 ---
 
 ## Q157171: Complex Filled Shapes Near Bottom of Page Print Incorrectly

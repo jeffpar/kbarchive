@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309027: Academic Learning Series Microsoft Exchange 2000 Server Implemen"
-permalink: kb/309/Q309027/
+permalink: /kb/309/Q309027/
 ---
 
 ## Q309027: Academic Learning Series Microsoft Exchange 2000 Server Implemen

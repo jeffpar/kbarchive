@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154588: XADM: SP2 Resets Logging on the Information Store"
-permalink: kb/154/Q154588/
+permalink: /kb/154/Q154588/
 ---
 
 ## Q154588: XADM: SP2 Resets Logging on the Information Store

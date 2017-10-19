@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165515: WD97: Run-Time Error '4605': Command Not Available"
-permalink: kb/165/Q165515/
+permalink: /kb/165/Q165515/
 ---
 
 ## Q165515: WD97: Run-Time Error '4605': Command Not Available

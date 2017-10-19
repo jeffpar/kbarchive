@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307519: Computer Hangs When You Use VPN Ports"
-permalink: kb/307/Q307519/
+permalink: /kb/307/Q307519/
 ---
 
 ## Q307519: Computer Hangs When You Use VPN Ports

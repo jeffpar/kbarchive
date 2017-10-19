@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155541: INFO: Configure Multiple SNA Servers to Use Single Distributed L"
-permalink: kb/155/Q155541/
+permalink: /kb/155/Q155541/
 ---
 
 ## Q155541: INFO: Configure Multiple SNA Servers to Use Single Distributed L

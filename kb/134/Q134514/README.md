@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134514: Lotus Notes Does Not Print to a Network Printer with UNC Path"
-permalink: kb/134/Q134514/
+permalink: /kb/134/Q134514/
 ---
 
 ## Q134514: Lotus Notes Does Not Print to a Network Printer with UNC Path

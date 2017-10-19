@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314431: PRB: Programmatically Changing Focus Does Not Cause Validation"
-permalink: kb/314/Q314431/
+permalink: /kb/314/Q314431/
 ---
 
 ## Q314431: PRB: Programmatically Changing Focus Does Not Cause Validation

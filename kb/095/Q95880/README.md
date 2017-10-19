@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95880: Banyan VINES Pop-Up Application Does Not Function with WFWG"
-permalink: kb/095/Q95880/
+permalink: /kb/095/Q95880/
 ---
 
 ## Q95880: Banyan VINES Pop-Up Application Does Not Function with WFWG

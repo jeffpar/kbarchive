@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198640: SMS: NDS Container Script Is Not Modified"
-permalink: kb/198/Q198640/
+permalink: /kb/198/Q198640/
 ---
 
 ## Q198640: SMS: NDS Container Script Is Not Modified

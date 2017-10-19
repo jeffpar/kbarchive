@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145776: XCLN: Cannot Send Folder as Attachment with Windows Explorer"
-permalink: kb/145/Q145776/
+permalink: /kb/145/Q145776/
 ---
 
 ## Q145776: XCLN: Cannot Send Folder as Attachment with Windows Explorer

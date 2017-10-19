@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124557: WordPerfect 6 ErrMsg: The WP Draw Server Could Not Be Launched"
-permalink: kb/124/Q124557/
+permalink: /kb/124/Q124557/
 ---
 
 ## Q124557: WordPerfect 6 ErrMsg: The WP Draw Server Could Not Be Launched

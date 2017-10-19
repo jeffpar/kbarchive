@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87156: Mac Wkst: Password Verification/Offline Operation"
-permalink: kb/087/Q87156/
+permalink: /kb/087/Q87156/
 ---
 
 ## Q87156: Mac Wkst: Password Verification/Offline Operation

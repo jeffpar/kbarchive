@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231913: Midtown Madness: Game Hangs When You Change Screen Resolution"
-permalink: kb/231/Q231913/
+permalink: /kb/231/Q231913/
 ---
 
 ## Q231913: Midtown Madness: Game Hangs When You Change Screen Resolution

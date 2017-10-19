@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198733: XADM: SA Logs Event ID 5007 with Message Tracking Enabled"
-permalink: kb/198/Q198733/
+permalink: /kb/198/Q198733/
 ---
 
 ## Q198733: XADM: SA Logs Event ID 5007 with Message Tracking Enabled

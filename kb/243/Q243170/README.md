@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243170: Asheron's Call: Text in the Chat Box Contains Unexpected Charact"
-permalink: kb/243/Q243170/
+permalink: /kb/243/Q243170/
 ---
 
 ## Q243170: Asheron's Call: Text in the Chat Box Contains Unexpected Charact

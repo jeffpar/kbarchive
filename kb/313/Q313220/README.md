@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313220: PRB: Unexpected Connections to SQL Server with JDBC"
-permalink: kb/313/Q313220/
+permalink: /kb/313/Q313220/
 ---
 
 ## Q313220: PRB: Unexpected Connections to SQL Server with JDBC

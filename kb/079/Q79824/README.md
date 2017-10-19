@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79824: FIX: Last Letter of NMAKE Command-Line Macro Incremented"
-permalink: kb/079/Q79824/
+permalink: /kb/079/Q79824/
 ---
 
 ## Q79824: FIX: Last Letter of NMAKE Command-Line Macro Incremented

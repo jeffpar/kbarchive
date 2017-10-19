@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224265: Expedia Streets and Trips 2000: Stops Responding When You Print"
-permalink: kb/224/Q224265/
+permalink: /kb/224/Q224265/
 ---
 
 ## Q224265: Expedia Streets and Trips 2000: Stops Responding When You Print

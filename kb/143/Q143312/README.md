@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143312: Form with a Menu Is Not Sizable During Run Time"
-permalink: kb/143/Q143312/
+permalink: /kb/143/Q143312/
 ---
 
 ## Q143312: Form with a Menu Is Not Sizable During Run Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166135: FIX: Print Preview Behavior Changes Since VC 4.2"
-permalink: kb/166/Q166135/
+permalink: /kb/166/Q166135/
 ---
 
 ## Q166135: FIX: Print Preview Behavior Changes Since VC 4.2

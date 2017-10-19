@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192761: BUG: Startup Program Fails with NOLOGO Switch"
-permalink: kb/192/Q192761/
+permalink: /kb/192/Q192761/
 ---
 
 ## Q192761: BUG: Startup Program Fails with NOLOGO Switch

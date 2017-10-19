@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159841: Computer May Hang When PC Tools Pro 9.0 Is Used with FAT32"
-permalink: kb/159/Q159841/
+permalink: /kb/159/Q159841/
 ---
 
 ## Q159841: Computer May Hang When PC Tools Pro 9.0 Is Used with FAT32

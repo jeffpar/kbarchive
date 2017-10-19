@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237739: XADM: Exchange On-line Restore Fails with Event ID 8010"
-permalink: kb/237/Q237739/
+permalink: /kb/237/Q237739/
 ---
 
 ## Q237739: XADM: Exchange On-line Restore Fails with Event ID 8010

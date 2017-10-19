@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191859: BUG: MonthView Control Prevents CommandButton Click Event"
-permalink: kb/191/Q191859/
+permalink: /kb/191/Q191859/
 ---
 
 ## Q191859: BUG: MonthView Control Prevents CommandButton Click Event

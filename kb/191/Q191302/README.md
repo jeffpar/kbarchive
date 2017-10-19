@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191302: SMS: Rservice.exe Does Not List Total Failures Correctly"
-permalink: kb/191/Q191302/
+permalink: /kb/191/Q191302/
 ---
 
 ## Q191302: SMS: Rservice.exe Does Not List Total Failures Correctly

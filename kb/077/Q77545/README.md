@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77545: PC Adm: Description of Regular and Interval Times"
-permalink: kb/077/Q77545/
+permalink: /kb/077/Q77545/
 ---
 
 ## Q77545: PC Adm: Description of Regular and Interval Times

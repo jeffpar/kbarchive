@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95722: How to Export Memo Fields to an ASCII File"
-permalink: kb/095/Q95722/
+permalink: /kb/095/Q95722/
 ---
 
 ## Q95722: How to Export Memo Fields to an ASCII File

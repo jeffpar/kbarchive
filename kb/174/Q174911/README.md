@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174911: AUDIO: Copy To Feature May cause GPF"
-permalink: kb/174/Q174911/
+permalink: /kb/174/Q174911/
 ---
 
 ## Q174911: AUDIO: Copy To Feature May cause GPF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196692: FIX: Selecting Internet Tab Causes Access Violation"
-permalink: kb/196/Q196692/
+permalink: /kb/196/Q196692/
 ---
 
 ## Q196692: FIX: Selecting Internet Tab Causes Access Violation

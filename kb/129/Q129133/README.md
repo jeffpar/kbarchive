@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129133: XCLN: Can't Switch from Message Back to Address Book"
-permalink: kb/129/Q129133/
+permalink: /kb/129/Q129133/
 ---
 
 ## Q129133: XCLN: Can't Switch from Message Back to Address Book

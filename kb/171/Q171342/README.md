@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171342: SMS: Running Office as a Shared SMS Application"
-permalink: kb/171/Q171342/
+permalink: /kb/171/Q171342/
 ---
 
 ## Q171342: SMS: Running Office as a Shared SMS Application

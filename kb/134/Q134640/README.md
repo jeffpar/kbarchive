@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134640: How to Force Uppercase Input by Using the Form Designer"
-permalink: kb/134/Q134640/
+permalink: /kb/134/Q134640/
 ---
 
 ## Q134640: How to Force Uppercase Input by Using the Form Designer

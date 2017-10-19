@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317314: Midtown Madness 2: Game Is Excessively Slow to Start"
-permalink: kb/317/Q317314/
+permalink: /kb/317/Q317314/
 ---
 
 ## Q317314: Midtown Madness 2: Game Is Excessively Slow to Start

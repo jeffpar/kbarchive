@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238250: SMSCliSvcAcct&amp; May Be Used When Netware Redirector Is Installed"
-permalink: kb/238/Q238250/
+permalink: /kb/238/Q238250/
 ---
 
 ## Q238250: SMSCliSvcAcct&amp; May Be Used When Netware Redirector Is Installed

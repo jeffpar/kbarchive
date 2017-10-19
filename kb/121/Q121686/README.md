@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121686: Contents of Space Simulator README.TXT File"
-permalink: kb/121/Q121686/
+permalink: /kb/121/Q121686/
 ---
 
 ## Q121686: Contents of Space Simulator README.TXT File

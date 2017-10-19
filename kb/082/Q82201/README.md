@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82201: DR DOS 6.0 EMM386.SYS and Windows"
-permalink: kb/082/Q82201/
+permalink: /kb/082/Q82201/
 ---
 
 ## Q82201: DR DOS 6.0 EMM386.SYS and Windows

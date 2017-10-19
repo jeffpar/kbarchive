@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173349: FIX: OLEDropMode=0 Doesn't Stop DragDrop of File to Rich TextBox"
-permalink: kb/173/Q173349/
+permalink: /kb/173/Q173349/
 ---
 
 ## Q173349: FIX: OLEDropMode=0 Doesn't Stop DragDrop of File to Rich TextBox

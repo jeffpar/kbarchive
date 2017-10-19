@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102775: Problems with WfWG to Windows NT Connectivity"
-permalink: kb/102/Q102775/
+permalink: /kb/102/Q102775/
 ---
 
 ## Q102775: Problems with WfWG to Windows NT Connectivity

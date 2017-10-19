@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113189: ListDlg.exe Implements a List Box Full of Dialog Boxes"
-permalink: kb/113/Q113189/
+permalink: /kb/113/Q113189/
 ---
 
 ## Q113189: ListDlg.exe Implements a List Box Full of Dialog Boxes

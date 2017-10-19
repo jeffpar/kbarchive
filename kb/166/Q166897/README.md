@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166897: Windows NT 3.51 Regedt32 Fails to Load a Hive from WinNT 4.0"
-permalink: kb/166/Q166897/
+permalink: /kb/166/Q166897/
 ---
 
 ## Q166897: Windows NT 3.51 Regedt32 Fails to Load a Hive from WinNT 4.0

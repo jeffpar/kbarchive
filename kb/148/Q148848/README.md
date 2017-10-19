@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148848: FIX: &quot;Item not found in this collection&quot; Message Box"
-permalink: kb/148/Q148848/
+permalink: /kb/148/Q148848/
 ---
 
 ## Q148848: FIX: &quot;Item not found in this collection&quot; Message Box

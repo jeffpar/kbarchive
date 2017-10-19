@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240870: &quot;Access Denied&quot; When SP5 RRAS Client Access SP5 RRAS Server"
-permalink: kb/240/Q240870/
+permalink: /kb/240/Q240870/
 ---
 
 ## Q240870: &quot;Access Denied&quot; When SP5 RRAS Client Access SP5 RRAS Server

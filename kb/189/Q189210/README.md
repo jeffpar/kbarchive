@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189210: Running Office 97 Updated Edition Samples Folder Missing"
-permalink: kb/189/Q189210/
+permalink: /kb/189/Q189210/
 ---
 
 ## Q189210: Running Office 97 Updated Edition Samples Folder Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129705: How DBCS Characters Are Used Depends on the Operating System"
-permalink: kb/129/Q129705/
+permalink: /kb/129/Q129705/
 ---
 
 ## Q129705: How DBCS Characters Are Used Depends on the Operating System

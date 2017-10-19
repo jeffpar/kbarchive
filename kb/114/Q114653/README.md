@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114653: Err Msg: Failure: PROTOCOL.INI Does Not Have a DRIVERNAME="
-permalink: kb/114/Q114653/
+permalink: /kb/114/Q114653/
 ---
 
 ## Q114653: Err Msg: Failure: PROTOCOL.INI Does Not Have a DRIVERNAME=

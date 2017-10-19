@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238725: PRB: ShowColor Method Might Not Work on Palm-Size Devices"
-permalink: kb/238/Q238725/
+permalink: /kb/238/Q238725/
 ---
 
 ## Q238725: PRB: ShowColor Method Might Not Work on Palm-Size Devices

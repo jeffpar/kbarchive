@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107443: PC Adm: Microsoft Mail ADMIN.EXE 3.2.17 Update"
-permalink: kb/107/Q107443/
+permalink: /kb/107/Q107443/
 ---
 
 ## Q107443: PC Adm: Microsoft Mail ADMIN.EXE 3.2.17 Update

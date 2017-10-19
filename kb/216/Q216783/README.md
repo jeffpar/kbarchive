@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216783: Unable to Completely Disconnect a Terminal Server Connection"
-permalink: kb/216/Q216783/
+permalink: /kb/216/Q216783/
 ---
 
 ## Q216783: Unable to Completely Disconnect a Terminal Server Connection

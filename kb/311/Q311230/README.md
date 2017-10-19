@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311230: PRB: Font Height Doesn't Change with a Printer Definition Table"
-permalink: kb/311/Q311230/
+permalink: /kb/311/Q311230/
 ---
 
 ## Q311230: PRB: Font Height Doesn't Change with a Printer Definition Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132058: PC Win: GP-Fault in DEMILAYR.DLL Caused by Corrupt XTN File"
-permalink: kb/132/Q132058/
+permalink: /kb/132/Q132058/
 ---
 
 ## Q132058: PC Win: GP-Fault in DEMILAYR.DLL Caused by Corrupt XTN File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73615: Unable to Install MS-DOS 5.0 from Backup Copy"
-permalink: kb/073/Q73615/
+permalink: /kb/073/Q73615/
 ---
 
 ## Q73615: Unable to Install MS-DOS 5.0 from Backup Copy

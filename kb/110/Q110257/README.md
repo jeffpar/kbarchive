@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110257: Flight Simulator: Landing Light Does Not Turn on Automatically"
-permalink: kb/110/Q110257/
+permalink: /kb/110/Q110257/
 ---
 
 ## Q110257: Flight Simulator: Landing Light Does Not Turn on Automatically

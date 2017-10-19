@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81607: Rebooting from a Batch File with SMARTDRV.EXE Loaded"
-permalink: kb/081/Q81607/
+permalink: /kb/081/Q81607/
 ---
 
 ## Q81607: Rebooting from a Batch File with SMARTDRV.EXE Loaded

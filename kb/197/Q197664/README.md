@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197664: Empty Browser Window Opens When You View Multimedia Catalog"
-permalink: kb/197/Q197664/
+permalink: /kb/197/Q197664/
 ---
 
 ## Q197664: Empty Browser Window Opens When You View Multimedia Catalog

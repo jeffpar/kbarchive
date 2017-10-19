@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197010: WD97: Drop Cap (Framed Paragraph) Causes Unwanted Behavior"
-permalink: kb/197/Q197010/
+permalink: /kb/197/Q197010/
 ---
 
 ## Q197010: WD97: Drop Cap (Framed Paragraph) Causes Unwanted Behavior

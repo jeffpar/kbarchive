@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156721: XCLN: Double-Clicking an Attachment Might Open New Message"
-permalink: kb/156/Q156721/
+permalink: /kb/156/Q156721/
 ---
 
 ## Q156721: XCLN: Double-Clicking an Attachment Might Open New Message

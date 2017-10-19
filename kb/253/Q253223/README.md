@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253223: XADM: ADC Doesn't Replicate 5.5 Mailbox to Active Directory Obj."
-permalink: kb/253/Q253223/
+permalink: /kb/253/Q253223/
 ---
 
 ## Q253223: XADM: ADC Doesn't Replicate 5.5 Mailbox to Active Directory Obj.

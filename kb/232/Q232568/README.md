@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232568: Permissions on the Temp&#92;x Folder Are Incorrectly Reset"
-permalink: kb/232/Q232568/
+permalink: /kb/232/Q232568/
 ---
 
 ## Q232568: Permissions on the Temp&#92;x Folder Are Incorrectly Reset

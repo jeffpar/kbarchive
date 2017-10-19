@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117816: MacCinemania 94: Cannot Pause and Restart Sounds"
-permalink: kb/117/Q117816/
+permalink: /kb/117/Q117816/
 ---
 
 ## Q117816: MacCinemania 94: Cannot Pause and Restart Sounds

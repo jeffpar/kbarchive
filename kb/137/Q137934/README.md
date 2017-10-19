@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137934: TN3270 Refresh Cycle Time Description"
-permalink: kb/137/Q137934/
+permalink: /kb/137/Q137934/
 ---
 
 ## Q137934: TN3270 Refresh Cycle Time Description

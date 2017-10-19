@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128531: README.TXT: Windows NT Version 3.51 U.S. Service Pack"
-permalink: kb/128/Q128531/
+permalink: /kb/128/Q128531/
 ---
 
 ## Q128531: README.TXT: Windows NT Version 3.51 U.S. Service Pack

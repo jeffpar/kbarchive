@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157037: SMS: Out of Memory Error When Launching Program Group Control"
-permalink: kb/157/Q157037/
+permalink: /kb/157/Q157037/
 ---
 
 ## Q157037: SMS: Out of Memory Error When Launching Program Group Control

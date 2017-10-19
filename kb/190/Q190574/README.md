@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190574: &quot;No Matching Places Were Found&quot; When You Search for Restaurant"
-permalink: kb/190/Q190574/
+permalink: /kb/190/Q190574/
 ---
 
 ## Q190574: &quot;No Matching Places Were Found&quot; When You Search for Restaurant

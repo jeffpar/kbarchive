@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180434: XFOR: How to Remove, Reinstall, and Verify Dirsync Configuration"
-permalink: kb/180/Q180434/
+permalink: /kb/180/Q180434/
 ---
 
 ## Q180434: XFOR: How to Remove, Reinstall, and Verify Dirsync Configuration

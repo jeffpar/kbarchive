@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309151: Incoming SDLC PU Passthrough Connection Fails"
-permalink: kb/309/Q309151/
+permalink: /kb/309/Q309151/
 ---
 
 ## Q309151: Incoming SDLC PU Passthrough Connection Fails

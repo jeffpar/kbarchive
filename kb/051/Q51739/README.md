@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51739: DevMode.exe Changes Printer Parameters from Application"
-permalink: kb/051/Q51739/
+permalink: /kb/051/Q51739/
 ---
 
 ## Q51739: DevMode.exe Changes Printer Parameters from Application

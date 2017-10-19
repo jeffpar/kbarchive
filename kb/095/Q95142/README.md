@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95142: Setting System Attribute on SYSTEM.INI Causes GP Fault"
-permalink: kb/095/Q95142/
+permalink: /kb/095/Q95142/
 ---
 
 ## Q95142: Setting System Attribute on SYSTEM.INI Causes GP Fault

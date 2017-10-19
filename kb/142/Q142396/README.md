@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142396: PRB: Alignment Tool Mis-Aligns Check Boxes"
-permalink: kb/142/Q142396/
+permalink: /kb/142/Q142396/
 ---
 
 ## Q142396: PRB: Alignment Tool Mis-Aligns Check Boxes

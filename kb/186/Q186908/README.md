@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186908: HOWTO: Determine When Your Application Gains or Loses Focus"
-permalink: kb/186/Q186908/
+permalink: /kb/186/Q186908/
 ---
 
 ## Q186908: HOWTO: Determine When Your Application Gains or Loses Focus

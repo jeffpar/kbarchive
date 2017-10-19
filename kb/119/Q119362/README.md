@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119362: PC Adm: Remote User Init-Disk Hangs"
-permalink: kb/119/Q119362/
+permalink: /kb/119/Q119362/
 ---
 
 ## Q119362: PC Adm: Remote User Init-Disk Hangs

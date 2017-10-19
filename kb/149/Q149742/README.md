@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149742: Magic School Bus: Out of Memory Printing to Laser Printer"
-permalink: kb/149/Q149742/
+permalink: /kb/149/Q149742/
 ---
 
 ## Q149742: Magic School Bus: Out of Memory Printing to Laser Printer

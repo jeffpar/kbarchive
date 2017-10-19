@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96518: Differences Between DOSSHELL.INI in MS-DOS Versions 5 and 6"
-permalink: kb/096/Q96518/
+permalink: /kb/096/Q96518/
 ---
 
 ## Q96518: Differences Between DOSSHELL.INI in MS-DOS Versions 5 and 6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262168: How to Disable 8BITMIME in Windows 2000 SMTP Service"
-permalink: kb/262/Q262168/
+permalink: /kb/262/Q262168/
 ---
 
 ## Q262168: How to Disable 8BITMIME in Windows 2000 SMTP Service

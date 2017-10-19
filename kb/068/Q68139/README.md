@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68139: Cannot Create Macro with Macro Recorder to End Windows Session"
-permalink: kb/068/Q68139/
+permalink: /kb/068/Q68139/
 ---
 
 ## Q68139: Cannot Create Macro with Macro Recorder to End Windows Session

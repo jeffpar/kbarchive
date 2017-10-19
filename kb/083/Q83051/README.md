@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83051: Maintaining OLE Functionality when Reinstalling Windows 3.1"
-permalink: kb/083/Q83051/
+permalink: /kb/083/Q83051/
 ---
 
 ## Q83051: Maintaining OLE Functionality when Reinstalling Windows 3.1

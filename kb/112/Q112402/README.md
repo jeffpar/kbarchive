@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112402: DIR and File Manager Show SFM Files with Wrong Size"
-permalink: kb/112/Q112402/
+permalink: /kb/112/Q112402/
 ---
 
 ## Q112402: DIR and File Manager Show SFM Files with Wrong Size

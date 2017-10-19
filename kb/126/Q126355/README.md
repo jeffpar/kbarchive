@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126355: Intel EtherExpress Pro Detected as 82595-Based Ethernet"
-permalink: kb/126/Q126355/
+permalink: /kb/126/Q126355/
 ---
 
 ## Q126355: Intel EtherExpress Pro Detected as 82595-Based Ethernet

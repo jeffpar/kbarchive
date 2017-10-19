@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246188: Err Msg: This Feature Is Not Available in This Version of..."
-permalink: kb/246/Q246188/
+permalink: /kb/246/Q246188/
 ---
 
 ## Q246188: Err Msg: This Feature Is Not Available in This Version of...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119753: ADT2: ADT Repair/Compact Documentation Error"
-permalink: kb/119/Q119753/
+permalink: /kb/119/Q119753/
 ---
 
 ## Q119753: ADT2: ADT Repair/Compact Documentation Error

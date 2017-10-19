@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245017: How to Redirect an MS-DOS-Based Print Job to a Network Printer."
-permalink: kb/245/Q245017/
+permalink: /kb/245/Q245017/
 ---
 
 ## Q245017: How to Redirect an MS-DOS-Based Print Job to a Network Printer.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250390: Programs Cannot Print or Access Violations After Applying SP5"
-permalink: kb/250/Q250390/
+permalink: /kb/250/Q250390/
 ---
 
 ## Q250390: Programs Cannot Print or Access Violations After Applying SP5

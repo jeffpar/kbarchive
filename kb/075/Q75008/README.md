@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75008: Virtual Display Device I/O Trapping"
-permalink: kb/075/Q75008/
+permalink: /kb/075/Q75008/
 ---
 
 ## Q75008: Virtual Display Device I/O Trapping

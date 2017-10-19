@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65670: Saving Resources Using Multiple PROGMAN.INI Files"
-permalink: kb/065/Q65670/
+permalink: /kb/065/Q65670/
 ---
 
 ## Q65670: Saving Resources Using Multiple PROGMAN.INI Files

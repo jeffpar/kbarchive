@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235896: Files That Are Not Removed When You Uninstall Service Pack 5"
-permalink: kb/235/Q235896/
+permalink: /kb/235/Q235896/
 ---
 
 ## Q235896: Files That Are Not Removed When You Uninstall Service Pack 5

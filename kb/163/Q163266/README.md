@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163266: SNA Server Service Always Sends a Null XID on a Leased Line"
-permalink: kb/163/Q163266/
+permalink: /kb/163/Q163266/
 ---
 
 ## Q163266: SNA Server Service Always Sends a Null XID on a Leased Line

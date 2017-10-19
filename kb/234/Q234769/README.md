@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234769: BUG: Unregistering CE ATL Servers Don't Remove Registry Entries"
-permalink: kb/234/Q234769/
+permalink: /kb/234/Q234769/
 ---
 
 ## Q234769: BUG: Unregistering CE ATL Servers Don't Remove Registry Entries

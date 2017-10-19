@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99056: PC Forms: Electronic Forms Designer Cache"
-permalink: kb/099/Q99056/
+permalink: /kb/099/Q99056/
 ---
 
 ## Q99056: PC Forms: Electronic Forms Designer Cache

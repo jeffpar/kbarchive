@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120750: Setting Up VIDCAP32.EXE and Video Spigot"
-permalink: kb/120/Q120750/
+permalink: /kb/120/Q120750/
 ---
 
 ## Q120750: Setting Up VIDCAP32.EXE and Video Spigot

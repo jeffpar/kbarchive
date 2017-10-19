@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151910: File Copy Animation Appears as Shredded Paper"
-permalink: kb/151/Q151910/
+permalink: /kb/151/Q151910/
 ---
 
 ## Q151910: File Copy Animation Appears as Shredded Paper

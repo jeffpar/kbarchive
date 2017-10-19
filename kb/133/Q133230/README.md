@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133230: Bookshelf: Changing the Order of Quickshelf Buttons"
-permalink: kb/133/Q133230/
+permalink: /kb/133/Q133230/
 ---
 
 ## Q133230: Bookshelf: Changing the Order of Quickshelf Buttons

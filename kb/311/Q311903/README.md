@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311903: Cannot Release Transport After You Send Async and Sync Notes"
-permalink: kb/311/Q311903/
+permalink: /kb/311/Q311903/
 ---
 
 ## Q311903: Cannot Release Transport After You Send Async and Sync Notes

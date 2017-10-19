@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180545: Error Message: The Server on Which the Printer Resides..."
-permalink: kb/180/Q180545/
+permalink: /kb/180/Q180545/
 ---
 
 ## Q180545: Error Message: The Server on Which the Printer Resides...

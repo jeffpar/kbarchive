@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102344: Microsoft Product Support Options Q&amp;A"
-permalink: kb/102/Q102344/
+permalink: /kb/102/Q102344/
 ---
 
 ## Q102344: Microsoft Product Support Options Q&amp;A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154960: Windows 95 Does Not Retain Primary WINS Server IP Address"
-permalink: kb/154/Q154960/
+permalink: /kb/154/Q154960/
 ---
 
 ## Q154960: Windows 95 Does Not Retain Primary WINS Server IP Address

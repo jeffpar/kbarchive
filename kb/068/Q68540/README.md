@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68540: Installing Windows Printer Description Files from the SDL"
-permalink: kb/068/Q68540/
+permalink: /kb/068/Q68540/
 ---
 
 ## Q68540: Installing Windows Printer Description Files from the SDL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186950: XCLN: Installing and Using Global Address List Modify Tool"
-permalink: kb/186/Q186950/
+permalink: /kb/186/Q186950/
 ---
 
 ## Q186950: XCLN: Installing and Using Global Address List Modify Tool

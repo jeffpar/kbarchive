@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197584: Bookshelf 99: Buttons Cover Find Box and Search Option"
-permalink: kb/197/Q197584/
+permalink: /kb/197/Q197584/
 ---
 
 ## Q197584: Bookshelf 99: Buttons Cover Find Box and Search Option

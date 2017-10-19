@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86615: Cakewalk Professional for Windows May Cause GP Fault"
-permalink: kb/086/Q86615/
+permalink: /kb/086/Q86615/
 ---
 
 ## Q86615: Cakewalk Professional for Windows May Cause GP Fault

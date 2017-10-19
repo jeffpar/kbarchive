@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106124: Microsoft 6.x Backup Doesn't Back Up Empty Subdirectories"
-permalink: kb/106/Q106124/
+permalink: /kb/106/Q106124/
 ---
 
 ## Q106124: Microsoft 6.x Backup Doesn't Back Up Empty Subdirectories

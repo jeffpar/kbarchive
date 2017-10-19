@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169901: Perfmon: Processor Spikes on Multiprocessor Computer"
-permalink: kb/169/Q169901/
+permalink: /kb/169/Q169901/
 ---
 
 ## Q169901: Perfmon: Processor Spikes on Multiprocessor Computer

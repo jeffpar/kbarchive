@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265746: PRB: eVB: Scrollbars Appear Incorrectly in Run Mode"
-permalink: kb/265/Q265746/
+permalink: /kb/265/Q265746/
 ---
 
 ## Q265746: PRB: eVB: Scrollbars Appear Incorrectly in Run Mode

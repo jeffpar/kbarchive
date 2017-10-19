@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199796: Mfcfont.exe Persists MFC ActiveX Control Stock Font Property"
-permalink: kb/199/Q199796/
+permalink: /kb/199/Q199796/
 ---
 
 ## Q199796: Mfcfont.exe Persists MFC ActiveX Control Stock Font Property

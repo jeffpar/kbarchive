@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150986: PPT7: Sample PowerPoint Templates Available on the Internet"
-permalink: kb/150/Q150986/
+permalink: /kb/150/Q150986/
 ---
 
 ## Q150986: PPT7: Sample PowerPoint Templates Available on the Internet

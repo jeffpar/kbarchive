@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242013: Non-Administrators Can Modify Profile Locations in Registry"
-permalink: kb/242/Q242013/
+permalink: /kb/242/Q242013/
 ---
 
 ## Q242013: Non-Administrators Can Modify Profile Locations in Registry

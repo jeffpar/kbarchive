@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99290: Adaptec/MS-DOS Support for Drives Greater than 1 GB"
-permalink: kb/099/Q99290/
+permalink: /kb/099/Q99290/
 ---
 
 ## Q99290: Adaptec/MS-DOS Support for Drives Greater than 1 GB

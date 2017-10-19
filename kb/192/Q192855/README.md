@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192855: System Preparation Tool Does Not Save Desktop Preferences"
-permalink: kb/192/Q192855/
+permalink: /kb/192/Q192855/
 ---
 
 ## Q192855: System Preparation Tool Does Not Save Desktop Preferences

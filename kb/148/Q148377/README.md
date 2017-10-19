@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148377: Available Servers List Blank Running Rconsole 4.1 with FPNW"
-permalink: kb/148/Q148377/
+permalink: /kb/148/Q148377/
 ---
 
 ## Q148377: Available Servers List Blank Running Rconsole 4.1 with FPNW

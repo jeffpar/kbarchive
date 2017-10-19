@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157026: Print.doc File Does Not Exist on Windows NT 4.0 Compact Disc"
-permalink: kb/157/Q157026/
+permalink: /kb/157/Q157026/
 ---
 
 ## Q157026: Print.doc File Does Not Exist on Windows NT 4.0 Compact Disc

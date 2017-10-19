@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101877: GRiD 2260 PEN Pointing Device is Disabled in Virtual Machine"
-permalink: kb/101/Q101877/
+permalink: /kb/101/Q101877/
 ---
 
 ## Q101877: GRiD 2260 PEN Pointing Device is Disabled in Virtual Machine

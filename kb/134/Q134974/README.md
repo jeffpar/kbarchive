@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134974: Microsoft Fax Transmits at Lower Connection Speed"
-permalink: kb/134/Q134974/
+permalink: /kb/134/Q134974/
 ---
 
 ## Q134974: Microsoft Fax Transmits at Lower Connection Speed

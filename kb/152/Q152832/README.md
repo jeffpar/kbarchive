@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152832: How to Set Up USR Sportster 128K Modem for Dual-Channel ISDN"
-permalink: kb/152/Q152832/
+permalink: /kb/152/Q152832/
 ---
 
 ## Q152832: How to Set Up USR Sportster 128K Modem for Dual-Channel ISDN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78807: DDEMeta.exe - DDEML with Metafiles"
-permalink: kb/078/Q78807/
+permalink: /kb/078/Q78807/
 ---
 
 ## Q78807: DDEMeta.exe - DDEML with Metafiles

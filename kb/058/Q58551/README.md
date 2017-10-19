@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58551: Mac DOS: Running Mail with the 3Com EtherLink II Card"
-permalink: kb/058/Q58551/
+permalink: /kb/058/Q58551/
 ---
 
 ## Q58551: Mac DOS: Running Mail with the 3Com EtherLink II Card

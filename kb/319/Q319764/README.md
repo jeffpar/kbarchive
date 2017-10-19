@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319764: FS2002: Error Message: Cannot Find the Default Flight"
-permalink: kb/319/Q319764/
+permalink: /kb/319/Q319764/
 ---
 
 ## Q319764: FS2002: Error Message: Cannot Find the Default Flight

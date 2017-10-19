@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105929: MS-DOS 6.2 Setup Truncates Long Lines in SYSTEM.INI"
-permalink: kb/105/Q105929/
+permalink: /kb/105/Q105929/
 ---
 
 ## Q105929: MS-DOS 6.2 Setup Truncates Long Lines in SYSTEM.INI

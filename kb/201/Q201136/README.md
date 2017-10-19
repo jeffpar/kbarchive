@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201136: SMSINST: SMS Installer Repackage Creates Only One Program Group"
-permalink: kb/201/Q201136/
+permalink: /kb/201/Q201136/
 ---
 
 ## Q201136: SMSINST: SMS Installer Repackage Creates Only One Program Group

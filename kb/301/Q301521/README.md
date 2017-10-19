@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301521: MSN Explorer Hangs When Outlook XP Requests Data From The Server"
-permalink: kb/301/Q301521/
+permalink: /kb/301/Q301521/
 ---
 
 ## Q301521: MSN Explorer Hangs When Outlook XP Requests Data From The Server

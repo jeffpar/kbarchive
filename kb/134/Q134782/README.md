@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134782: PPT7: Some Filled Objects on Embedded Slides Don't Print Properl"
-permalink: kb/134/Q134782/
+permalink: /kb/134/Q134782/
 ---
 
 ## Q134782: PPT7: Some Filled Objects on Embedded Slides Don't Print Properl

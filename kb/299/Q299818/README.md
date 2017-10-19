@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299818: Train Simulator: E, SHIFT+E Work in Hisatsu w/ Simple Controls"
-permalink: kb/299/Q299818/
+permalink: /kb/299/Q299818/
 ---
 
 ## Q299818: Train Simulator: E, SHIFT+E Work in Hisatsu w/ Simple Controls

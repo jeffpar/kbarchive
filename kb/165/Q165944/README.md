@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165944: FIX: &amp;(&#42;variable) Causes C1001, trees.c line 6256"
-permalink: kb/165/Q165944/
+permalink: /kb/165/Q165944/
 ---
 
 ## Q165944: FIX: &amp;(&#42;variable) Causes C1001, trees.c line 6256

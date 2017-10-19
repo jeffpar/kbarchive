@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183225: XADM: GPF Occurs on Double-Byte Character Set Server"
-permalink: kb/183/Q183225/
+permalink: /kb/183/Q183225/
 ---
 
 ## Q183225: XADM: GPF Occurs on Double-Byte Character Set Server

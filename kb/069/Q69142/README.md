@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69142: Reinitializing After Changing Editor Settings Is Very Slow"
-permalink: kb/069/Q69142/
+permalink: /kb/069/Q69142/
 ---
 
 ## Q69142: Reinitializing After Changing Editor Settings Is Very Slow

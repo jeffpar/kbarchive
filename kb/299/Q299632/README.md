@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299632: Editing Dictionary For Spelling Checker In MSN Explorer 6.1"
-permalink: kb/299/Q299632/
+permalink: /kb/299/Q299632/
 ---
 
 ## Q299632: Editing Dictionary For Spelling Checker In MSN Explorer 6.1

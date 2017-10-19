@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82832: Panacea WinSpeed 1.0 Has Problems Under Windows 3.1"
-permalink: kb/082/Q82832/
+permalink: /kb/082/Q82832/
 ---
 
 ## Q82832: Panacea WinSpeed 1.0 Has Problems Under Windows 3.1

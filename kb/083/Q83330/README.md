@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83330: System Error with HP NewWave under Windows 3.1"
-permalink: kb/083/Q83330/
+permalink: /kb/083/Q83330/
 ---
 
 ## Q83330: System Error with HP NewWave under Windows 3.1

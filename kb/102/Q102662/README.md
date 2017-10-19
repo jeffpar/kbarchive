@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102662: 16-Bit Applications Often Cause Random and Diverse Messages"
-permalink: kb/102/Q102662/
+permalink: /kb/102/Q102662/
 ---
 
 ## Q102662: 16-Bit Applications Often Cause Random and Diverse Messages

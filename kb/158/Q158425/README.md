@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158425: CG3: Errors and Unable to View Clipart in Clip Gallery"
-permalink: kb/158/Q158425/
+permalink: /kb/158/Q158425/
 ---
 
 ## Q158425: CG3: Errors and Unable to View Clipart in Clip Gallery

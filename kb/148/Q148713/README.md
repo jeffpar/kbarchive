@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148713: PC WSPlus: How to View the Schedule of Resource Accounts"
-permalink: kb/148/Q148713/
+permalink: /kb/148/Q148713/
 ---
 
 ## Q148713: PC WSPlus: How to View the Schedule of Resource Accounts

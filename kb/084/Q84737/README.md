@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84737: BUG: RCVCOM /? Incorrectly Displays RMCVCOM Instead of RCVCOM"
-permalink: kb/084/Q84737/
+permalink: /kb/084/Q84737/
 ---
 
 ## Q84737: BUG: RCVCOM /? Incorrectly Displays RMCVCOM Instead of RCVCOM

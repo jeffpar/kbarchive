@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142296: Cannot Resume Paused Print Job on Windows NT 3.5 Server"
-permalink: kb/142/Q142296/
+permalink: /kb/142/Q142296/
 ---
 
 ## Q142296: Cannot Resume Paused Print Job on Windows NT 3.5 Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185349: Problems Remotely Accessing W3 or FTP Perfmon Counters"
-permalink: kb/185/Q185349/
+permalink: /kb/185/Q185349/
 ---
 
 ## Q185349: Problems Remotely Accessing W3 or FTP Perfmon Counters

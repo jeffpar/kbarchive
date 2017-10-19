@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288238: Fix from Q275657 Causes Problems with HTML Admin"
-permalink: kb/288/Q288238/
+permalink: /kb/288/Q288238/
 ---
 
 ## Q288238: Fix from Q275657 Causes Problems with HTML Admin

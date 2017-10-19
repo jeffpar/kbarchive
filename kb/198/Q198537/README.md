@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198537: BUG: &quot;Sorry! An error occurred when generating the object.&quot;"
-permalink: kb/198/Q198537/
+permalink: /kb/198/Q198537/
 ---
 
 ## Q198537: BUG: &quot;Sorry! An error occurred when generating the object.&quot;

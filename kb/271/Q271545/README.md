@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271545: XCON: Message Timeouts and Open Retry Timeouts"
-permalink: kb/271/Q271545/
+permalink: /kb/271/Q271545/
 ---
 
 ## Q271545: XCON: Message Timeouts and Open Retry Timeouts

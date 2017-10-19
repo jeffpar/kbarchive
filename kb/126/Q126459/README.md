@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126459: Windows NT Backup Fails During Restore with a DPT 2022"
-permalink: kb/126/Q126459/
+permalink: /kb/126/Q126459/
 ---
 
 ## Q126459: Windows NT Backup Fails During Restore with a DPT 2022

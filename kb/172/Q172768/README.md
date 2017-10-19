@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172768: MSN and Internet Desktop Icons Do Not Respond"
-permalink: kb/172/Q172768/
+permalink: /kb/172/Q172768/
 ---
 
 ## Q172768: MSN and Internet Desktop Icons Do Not Respond

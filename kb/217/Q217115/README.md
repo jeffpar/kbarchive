@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217115: &quot;Invalid Syntax&quot; Connecting to Microsoft Windows Update Web Site"
-permalink: kb/217/Q217115/
+permalink: /kb/217/Q217115/
 ---
 
 ## Q217115: &quot;Invalid Syntax&quot; Connecting to Microsoft Windows Update Web Site

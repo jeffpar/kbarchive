@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177799: PRB: &quot;License Information for This Component Not Found&quot; Error"
-permalink: kb/177/Q177799/
+permalink: /kb/177/Q177799/
 ---
 
 ## Q177799: PRB: &quot;License Information for This Component Not Found&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148937: XADM: Setting Age Limits on Public Folders"
-permalink: kb/148/Q148937/
+permalink: /kb/148/Q148937/
 ---
 
 ## Q148937: XADM: Setting Age Limits on Public Folders

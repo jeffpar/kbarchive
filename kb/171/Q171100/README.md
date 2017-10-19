@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171100: PRB: PR_NDR_XXX Properties Not Removed from Recipients"
-permalink: kb/171/Q171100/
+permalink: /kb/171/Q171100/
 ---
 
 ## Q171100: PRB: PR_NDR_XXX Properties Not Removed from Recipients

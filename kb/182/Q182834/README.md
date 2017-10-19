@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182834: Missing Error Messages When Using Diagnostic Capture"
-permalink: kb/182/Q182834/
+permalink: /kb/182/Q182834/
 ---
 
 ## Q182834: Missing Error Messages When Using Diagnostic Capture

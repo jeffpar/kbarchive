@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134976: PPT7: How to Restore the Default Design Template"
-permalink: kb/134/Q134976/
+permalink: /kb/134/Q134976/
 ---
 
 ## Q134976: PPT7: How to Restore the Default Design Template

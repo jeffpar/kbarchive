@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86618: Printing on 14-by-11-Inch Paper with the NEC Pinwriter P5XL"
-permalink: kb/086/Q86618/
+permalink: /kb/086/Q86618/
 ---
 
 ## Q86618: Printing on 14-by-11-Inch Paper with the NEC Pinwriter P5XL

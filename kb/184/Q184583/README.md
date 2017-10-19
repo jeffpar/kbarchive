@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184583: XADM: Owner and Permissions on Distribution List Object"
-permalink: kb/184/Q184583/
+permalink: /kb/184/Q184583/
 ---
 
 ## Q184583: XADM: Owner and Permissions on Distribution List Object

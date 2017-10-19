@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131668: Error Message: Error Opening EAGLEMAC.BIN"
-permalink: kb/131/Q131668/
+permalink: /kb/131/Q131668/
 ---
 
 ## Q131668: Error Message: Error Opening EAGLEMAC.BIN

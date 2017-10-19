@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156410: STOP 0x1E or 0x50 Error on Multiprocessor DEC Alpha Computer"
-permalink: kb/156/Q156410/
+permalink: /kb/156/Q156410/
 ---
 
 ## Q156410: STOP 0x1E or 0x50 Error on Multiprocessor DEC Alpha Computer

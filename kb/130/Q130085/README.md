@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130085: Details of the .VCX File Architecture"
-permalink: kb/130/Q130085/
+permalink: /kb/130/Q130085/
 ---
 
 ## Q130085: Details of the .VCX File Architecture

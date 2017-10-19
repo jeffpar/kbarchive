@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151712: Remotely Synchronizing the Time Between Two Computers"
-permalink: kb/151/Q151712/
+permalink: /kb/151/Q151712/
 ---
 
 ## Q151712: Remotely Synchronizing the Time Between Two Computers

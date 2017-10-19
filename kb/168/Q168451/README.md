@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168451: Cached IP Address Never Expires for SNMP Trap Destination"
-permalink: kb/168/Q168451/
+permalink: /kb/168/Q168451/
 ---
 
 ## Q168451: Cached IP Address Never Expires for SNMP Trap Destination

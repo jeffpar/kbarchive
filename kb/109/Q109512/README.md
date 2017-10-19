@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109512: SETUP.TXT from Windows for Workgroups 3.11 (Part 3 of 3)"
-permalink: kb/109/Q109512/
+permalink: /kb/109/Q109512/
 ---
 
 ## Q109512: SETUP.TXT from Windows for Workgroups 3.11 (Part 3 of 3)

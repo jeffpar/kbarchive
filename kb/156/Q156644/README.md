@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156644: Deadly Tide: Setup Troubleshooting"
-permalink: kb/156/Q156644/
+permalink: /kb/156/Q156644/
 ---
 
 ## Q156644: Deadly Tide: Setup Troubleshooting

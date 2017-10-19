@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187617: Off97 SBS: MS FrontPage No Longer Available For Download"
-permalink: kb/187/Q187617/
+permalink: /kb/187/Q187617/
 ---
 
 ## Q187617: Off97 SBS: MS FrontPage No Longer Available For Download

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163400: SET: Screen Displays &quot;Boot 2&gt;&quot; Prompt After First Setup Reboot"
-permalink: kb/163/Q163400/
+permalink: /kb/163/Q163400/
 ---
 
 ## Q163400: SET: Screen Displays &quot;Boot 2&gt;&quot; Prompt After First Setup Reboot

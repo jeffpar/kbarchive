@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171804: FIX: Change Event Not Fired When Selecting an Item in DBCombo"
-permalink: kb/171/Q171804/
+permalink: /kb/171/Q171804/
 ---
 
 ## Q171804: FIX: Change Event Not Fired When Selecting an Item in DBCombo

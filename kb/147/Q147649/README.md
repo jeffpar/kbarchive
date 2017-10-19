@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147649: Encarta 1995: Minimum System Requirements"
-permalink: kb/147/Q147649/
+permalink: /kb/147/Q147649/
 ---
 
 ## Q147649: Encarta 1995: Minimum System Requirements

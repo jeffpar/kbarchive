@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137475: SMC 8416 EtherEZ Card Does Not Allow Reconfiguration"
-permalink: kb/137/Q137475/
+permalink: /kb/137/Q137475/
 ---
 
 ## Q137475: SMC 8416 EtherEZ Card Does Not Allow Reconfiguration

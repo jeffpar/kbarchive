@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183728: BUG: &quot;Failed To Reload Project&quot; Err Opening VB Group File"
-permalink: kb/183/Q183728/
+permalink: /kb/183/Q183728/
 ---
 
 ## Q183728: BUG: &quot;Failed To Reload Project&quot; Err Opening VB Group File

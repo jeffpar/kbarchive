@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121913: Err Msg: Error 59: An Unexpected Network Error Has Occurred"
-permalink: kb/121/Q121913/
+permalink: /kb/121/Q121913/
 ---
 
 ## Q121913: Err Msg: Error 59: An Unexpected Network Error Has Occurred

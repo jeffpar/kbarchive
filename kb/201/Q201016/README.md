@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201016: SMS: All Senders Except Courier Sender Log to Sender.log"
-permalink: kb/201/Q201016/
+permalink: /kb/201/Q201016/
 ---
 
 ## Q201016: SMS: All Senders Except Courier Sender Log to Sender.log

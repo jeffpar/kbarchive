@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130740: Hairline Borders Do Not Print Using Access 2.0 in Windows NT"
-permalink: kb/130/Q130740/
+permalink: /kb/130/Q130740/
 ---
 
 ## Q130740: Hairline Borders Do Not Print Using Access 2.0 in Windows NT

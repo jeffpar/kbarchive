@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92756: Media Player: Basic AVI Playback Troubleshooting"
-permalink: kb/092/Q92756/
+permalink: /kb/092/Q92756/
 ---
 
 ## Q92756: Media Player: Basic AVI Playback Troubleshooting

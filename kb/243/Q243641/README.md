@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243641: Asheron's Call: Unable to Accept Item from Computer Character"
-permalink: kb/243/Q243641/
+permalink: /kb/243/Q243641/
 ---
 
 ## Q243641: Asheron's Call: Unable to Accept Item from Computer Character

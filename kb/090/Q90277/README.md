@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90277: Path Used for Spool Files for a Shared Printer"
-permalink: kb/090/Q90277/
+permalink: /kb/090/Q90277/
 ---
 
 ## Q90277: Path Used for Spool Files for a Shared Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318232: SMS: The &quot;BROWSTAT.EXE STATUS&quot; Command Does Not Return a List"
-permalink: kb/318/Q318232/
+permalink: /kb/318/Q318232/
 ---
 
 ## Q318232: SMS: The &quot;BROWSTAT.EXE STATUS&quot; Command Does Not Return a List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105246: Using XTree for Windows Version 2.0 with Windows NT"
-permalink: kb/105/Q105246/
+permalink: /kb/105/Q105246/
 ---
 
 ## Q105246: Using XTree for Windows Version 2.0 with Windows NT

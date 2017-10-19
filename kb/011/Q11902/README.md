@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11902: PRB: Assume Directive Not Displayed"
-permalink: kb/011/Q11902/
+permalink: /kb/011/Q11902/
 ---
 
 ## Q11902: PRB: Assume Directive Not Displayed

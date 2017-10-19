@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195993: WD97: Invalid Parameter Error When Inserting Address"
-permalink: kb/195/Q195993/
+permalink: /kb/195/Q195993/
 ---
 
 ## Q195993: WD97: Invalid Parameter Error When Inserting Address

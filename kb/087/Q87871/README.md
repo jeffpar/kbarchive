@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87871: Bookshelf 1992 Animations Stop When Screen Saver Started"
-permalink: kb/087/Q87871/
+permalink: /kb/087/Q87871/
 ---
 
 ## Q87871: Bookshelf 1992 Animations Stop When Screen Saver Started

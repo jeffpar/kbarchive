@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187519: NTBackup Will Not Run from Command Line with Blank Space"
-permalink: kb/187/Q187519/
+permalink: /kb/187/Q187519/
 ---
 
 ## Q187519: NTBackup Will Not Run from Command Line with Blank Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157286: STL Sample for the includes Function"
-permalink: kb/157/Q157286/
+permalink: /kb/157/Q157286/
 ---
 
 ## Q157286: STL Sample for the includes Function

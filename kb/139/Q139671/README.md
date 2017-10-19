@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139671: Error Message: EMM386 Has Detected Error #6"
-permalink: kb/139/Q139671/
+permalink: /kb/139/Q139671/
 ---
 
 ## Q139671: Error Message: EMM386 Has Detected Error #6

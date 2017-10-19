@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124737: X400: Unable to Send or Receive Mail"
-permalink: kb/124/Q124737/
+permalink: /kb/124/Q124737/
 ---
 
 ## Q124737: X400: Unable to Send or Receive Mail

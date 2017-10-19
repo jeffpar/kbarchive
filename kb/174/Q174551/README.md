@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174551: TCP/IP Advanced Security Option Clears Automatically"
-permalink: kb/174/Q174551/
+permalink: /kb/174/Q174551/
 ---
 
 ## Q174551: TCP/IP Advanced Security Option Clears Automatically

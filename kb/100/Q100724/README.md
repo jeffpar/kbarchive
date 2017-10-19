@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100724: DEVICE? and DEVICEHIGH? Statements Not Functioning"
-permalink: kb/100/Q100724/
+permalink: /kb/100/Q100724/
 ---
 
 ## Q100724: DEVICE? and DEVICEHIGH? Statements Not Functioning

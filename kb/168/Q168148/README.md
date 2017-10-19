@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168148: How To Clear Path Entries In The Map Network Drive Dialog Box"
-permalink: kb/168/Q168148/
+permalink: /kb/168/Q168148/
 ---
 
 ## Q168148: How To Clear Path Entries In The Map Network Drive Dialog Box

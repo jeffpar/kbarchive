@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271764: PRB: Application-defined or Object-defined Error in WebClass App"
-permalink: kb/271/Q271764/
+permalink: /kb/271/Q271764/
 ---
 
 ## Q271764: PRB: Application-defined or Object-defined Error in WebClass App

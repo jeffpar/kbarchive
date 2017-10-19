@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123663: BUG: The Command &quot;ml /?&quot; Causes Unexpected Errors"
-permalink: kb/123/Q123663/
+permalink: /kb/123/Q123663/
 ---
 
 ## Q123663: BUG: The Command &quot;ml /?&quot; Causes Unexpected Errors

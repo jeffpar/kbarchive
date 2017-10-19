@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184239: FIX: Service Control Manager (Services.exe) Fails"
-permalink: kb/184/Q184239/
+permalink: /kb/184/Q184239/
 ---
 
 ## Q184239: FIX: Service Control Manager (Services.exe) Fails

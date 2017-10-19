@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105292: Defective Parallel Port Card May Cause .WAV Sounds to Repeat"
-permalink: kb/105/Q105292/
+permalink: /kb/105/Q105292/
 ---
 
 ## Q105292: Defective Parallel Port Card May Cause .WAV Sounds to Repeat

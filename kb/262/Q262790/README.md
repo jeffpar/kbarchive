@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262790: SMS: Documentation Error Referencing .xnf Form Installation Fold"
-permalink: kb/262/Q262790/
+permalink: /kb/262/Q262790/
 ---
 
 ## Q262790: SMS: Documentation Error Referencing .xnf Form Installation Fold

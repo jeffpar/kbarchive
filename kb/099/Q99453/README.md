@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99453: NET COPY Gives Moved Files New Directory's Permissions"
-permalink: kb/099/Q99453/
+permalink: /kb/099/Q99453/
 ---
 
 ## Q99453: NET COPY Gives Moved Files New Directory's Permissions

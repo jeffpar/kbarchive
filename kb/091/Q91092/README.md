@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91092: Help Button on NetWare Attach to Server Dialog Doesn't Work"
-permalink: kb/091/Q91092/
+permalink: /kb/091/Q91092/
 ---
 
 ## Q91092: Help Button on NetWare Attach to Server Dialog Doesn't Work

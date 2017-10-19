@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174446: Fax Appears in Sent Items Folder But Fax Is Not Sent"
-permalink: kb/174/Q174446/
+permalink: /kb/174/Q174446/
 ---
 
 ## Q174446: Fax Appears in Sent Items Folder But Fax Is Not Sent

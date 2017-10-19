@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162299: PRB: Icons on Controls Have Garbled White Area to Right/Below"
-permalink: kb/162/Q162299/
+permalink: /kb/162/Q162299/
 ---
 
 ## Q162299: PRB: Icons on Controls Have Garbled White Area to Right/Below

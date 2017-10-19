@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83956: Write Does Not Double-Space Fonts That Are 22 Points or Larger"
-permalink: kb/083/Q83956/
+permalink: /kb/083/Q83956/
 ---
 
 ## Q83956: Write Does Not Double-Space Fonts That Are 22 Points or Larger

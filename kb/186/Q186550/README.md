@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186550: Terminal Server Error Messages: 1000 to 1199"
-permalink: kb/186/Q186550/
+permalink: /kb/186/Q186550/
 ---
 
 ## Q186550: Terminal Server Error Messages: 1000 to 1199

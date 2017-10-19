@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132045: PC Win: Files Installed with Version 3.2a"
-permalink: kb/132/Q132045/
+permalink: /kb/132/Q132045/
 ---
 
 ## Q132045: PC Win: Files Installed with Version 3.2a

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154106: XLCN: Can't Scroll If Entire Address Can't Be Seen"
-permalink: kb/154/Q154106/
+permalink: /kb/154/Q154106/
 ---
 
 ## Q154106: XLCN: Can't Scroll If Entire Address Can't Be Seen

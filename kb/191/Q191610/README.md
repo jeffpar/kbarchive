@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191610: Assigning LUs/Pools to Workstation MAC Addresses Not Supported"
-permalink: kb/191/Q191610/
+permalink: /kb/191/Q191610/
 ---
 
 ## Q191610: Assigning LUs/Pools to Workstation MAC Addresses Not Supported

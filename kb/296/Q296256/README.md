@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296256: SMS: Online Resources for the Seagate Crystal Reports Tool"
-permalink: kb/296/Q296256/
+permalink: /kb/296/Q296256/
 ---
 
 ## Q296256: SMS: Online Resources for the Seagate Crystal Reports Tool

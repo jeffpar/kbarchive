@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90916: Packard Bell OEM Windows Does Not Include a Drivers Disk"
-permalink: kb/090/Q90916/
+permalink: /kb/090/Q90916/
 ---
 
 ## Q90916: Packard Bell OEM Windows Does Not Include a Drivers Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132680: PRB: Hiding a Modal Form Removes Its Modal Attribute"
-permalink: kb/132/Q132680/
+permalink: /kb/132/Q132680/
 ---
 
 ## Q132680: PRB: Hiding a Modal Form Removes Its Modal Attribute

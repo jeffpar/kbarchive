@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166875: 5250 Emulator Won't Connect Even Though Sessions Are Available"
-permalink: kb/166/Q166875/
+permalink: /kb/166/Q166875/
 ---
 
 ## Q166875: 5250 Emulator Won't Connect Even Though Sessions Are Available

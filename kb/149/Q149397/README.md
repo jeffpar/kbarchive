@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149397: Cacls.exe May Terminate Prematurely"
-permalink: kb/149/Q149397/
+permalink: /kb/149/Q149397/
 ---
 
 ## Q149397: Cacls.exe May Terminate Prematurely

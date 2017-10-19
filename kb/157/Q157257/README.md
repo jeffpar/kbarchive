@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157257: XCLN: How to Change a Send Form to a Post Form"
-permalink: kb/157/Q157257/
+permalink: /kb/157/Q157257/
 ---
 
 ## Q157257: XCLN: How to Change a Send Form to a Post Form

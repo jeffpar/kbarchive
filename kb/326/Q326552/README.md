@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326552: SNA Server and HIS Web Client Not Supported When in TN Mode"
-permalink: kb/326/Q326552/
+permalink: /kb/326/Q326552/
 ---
 
 ## Q326552: SNA Server and HIS Web Client Not Supported When in TN Mode

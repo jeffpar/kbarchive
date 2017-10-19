@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134794: Automap: Latitude and Longitude Coordinates Fail With Go To"
-permalink: kb/134/Q134794/
+permalink: /kb/134/Q134794/
 ---
 
 ## Q134794: Automap: Latitude and Longitude Coordinates Fail With Go To

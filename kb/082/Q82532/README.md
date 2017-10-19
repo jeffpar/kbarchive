@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82532: GenSoft's BitCapture Causes GP Fault"
-permalink: kb/082/Q82532/
+permalink: /kb/082/Q82532/
 ---
 
 ## Q82532: GenSoft's BitCapture Causes GP Fault

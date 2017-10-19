@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43503: Mac Wkst: Changing Automatic Login Setup Preferences"
-permalink: kb/043/Q43503/
+permalink: /kb/043/Q43503/
 ---
 
 ## Q43503: Mac Wkst: Changing Automatic Login Setup Preferences

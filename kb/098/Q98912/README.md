@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98912: PC WFW: Version 3.2 Postoffice Upgrade Instructions"
-permalink: kb/098/Q98912/
+permalink: /kb/098/Q98912/
 ---
 
 ## Q98912: PC WFW: Version 3.2 Postoffice Upgrade Instructions

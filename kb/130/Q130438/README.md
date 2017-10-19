@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130438: BUG: Program Crashes When Memo Field Mapped to CLongBinary"
-permalink: kb/130/Q130438/
+permalink: /kb/130/Q130438/
 ---
 
 ## Q130438: BUG: Program Crashes When Memo Field Mapped to CLongBinary

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262698: FIX: Visual C++ 6.0 Debugger Hangs on Multiprocessor Computers"
-permalink: kb/262/Q262698/
+permalink: /kb/262/Q262698/
 ---
 
 ## Q262698: FIX: Visual C++ 6.0 Debugger Hangs on Multiprocessor Computers

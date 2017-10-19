@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174331: Error Message Received Adding Second Time Service to Cluster"
-permalink: kb/174/Q174331/
+permalink: /kb/174/Q174331/
 ---
 
 ## Q174331: Error Message Received Adding Second Time Service to Cluster

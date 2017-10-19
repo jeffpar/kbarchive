@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183032: XCLN: Error: Mapi Mapisend Failed: 3"
-permalink: kb/183/Q183032/
+permalink: /kb/183/Q183032/
 ---
 
 ## Q183032: XCLN: Error: Mapi Mapisend Failed: 3

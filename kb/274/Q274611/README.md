@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274611: CFS2: Green Lines Appear on Screen or Buttons Are Misplaced"
-permalink: kb/274/Q274611/
+permalink: /kb/274/Q274611/
 ---
 
 ## Q274611: CFS2: Green Lines Appear on Screen or Buttons Are Misplaced

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224105: XCLN: LDAP Query Returns Error Message: This Name Could Not..."
-permalink: kb/224/Q224105/
+permalink: /kb/224/Q224105/
 ---
 
 ## Q224105: XCLN: LDAP Query Returns Error Message: This Name Could Not...

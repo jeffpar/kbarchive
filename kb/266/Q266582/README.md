@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266582: Encarta Researcher: Researcher Window Is Repeatedly Displayed"
-permalink: kb/266/Q266582/
+permalink: /kb/266/Q266582/
 ---
 
 ## Q266582: Encarta Researcher: Researcher Window Is Repeatedly Displayed

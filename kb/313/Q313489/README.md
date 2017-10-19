@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313489: Content Headers in Body of Response OK w/ ISAPI Filter Install"
-permalink: kb/313/Q313489/
+permalink: /kb/313/Q313489/
 ---
 
 ## Q313489: Content Headers in Body of Response OK w/ ISAPI Filter Install

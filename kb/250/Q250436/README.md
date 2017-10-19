@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250436: XCLN: Schedule Plus Does Not Open Outlook Calendar Across Domain"
-permalink: kb/250/Q250436/
+permalink: /kb/250/Q250436/
 ---
 
 ## Q250436: XCLN: Schedule Plus Does Not Open Outlook Calendar Across Domain

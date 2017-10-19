@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131008: How to Use Logevent.exe to Log Events From a Batch File"
-permalink: kb/131/Q131008/
+permalink: /kb/131/Q131008/
 ---
 
 ## Q131008: How to Use Logevent.exe to Log Events From a Batch File

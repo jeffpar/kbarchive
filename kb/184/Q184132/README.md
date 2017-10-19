@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184132: Err Msg: Value Entered Does Not Match with the Specified Type"
-permalink: kb/184/Q184132/
+permalink: /kb/184/Q184132/
 ---
 
 ## Q184132: Err Msg: Value Entered Does Not Match with the Specified Type

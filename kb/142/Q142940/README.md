@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142940: How to Gain Access to the View Menu in an .EXE File"
-permalink: kb/142/Q142940/
+permalink: /kb/142/Q142940/
 ---
 
 ## Q142940: How to Gain Access to the View Menu in an .EXE File

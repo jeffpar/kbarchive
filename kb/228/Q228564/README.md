@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228564: Zone: Computer Is Disconnected from the Internet"
-permalink: kb/228/Q228564/
+permalink: /kb/228/Q228564/
 ---
 
 ## Q228564: Zone: Computer Is Disconnected from the Internet

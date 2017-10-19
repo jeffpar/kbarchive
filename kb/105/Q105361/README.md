@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105361: SMTP: Locations of Domain Name Service (DNS) Files"
-permalink: kb/105/Q105361/
+permalink: /kb/105/Q105361/
 ---
 
 ## Q105361: SMTP: Locations of Domain Name Service (DNS) Files

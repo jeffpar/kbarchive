@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304203: DAV WebDAV PROPPATCH Verb Returns 405 Method Not Allowed"
-permalink: kb/304/Q304203/
+permalink: /kb/304/Q304203/
 ---
 
 ## Q304203: DAV WebDAV PROPPATCH Verb Returns 405 Method Not Allowed

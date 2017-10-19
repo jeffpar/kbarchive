@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195642: STOP 0xA on Computer Running Microsoft Client for NetWare"
-permalink: kb/195/Q195642/
+permalink: /kb/195/Q195642/
 ---
 
 ## Q195642: STOP 0xA on Computer Running Microsoft Client for NetWare

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184465: &quot;Take Ownership&quot; Assigns Ownership to the Wrong User"
-permalink: kb/184/Q184465/
+permalink: /kb/184/Q184465/
 ---
 
 ## Q184465: &quot;Take Ownership&quot; Assigns Ownership to the Wrong User

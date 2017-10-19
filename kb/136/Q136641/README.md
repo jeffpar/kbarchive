@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136641: PRB: Spell Checking Edit Box Contents Does Not Work"
-permalink: kb/136/Q136641/
+permalink: /kb/136/Q136641/
 ---
 
 ## Q136641: PRB: Spell Checking Edit Box Contents Does Not Work

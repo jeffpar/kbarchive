@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71251: Read-Only Calendar Data File Cannot Use Save As Command"
-permalink: kb/071/Q71251/
+permalink: /kb/071/Q71251/
 ---
 
 ## Q71251: Read-Only Calendar Data File Cannot Use Save As Command

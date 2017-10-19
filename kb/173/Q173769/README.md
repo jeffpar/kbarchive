@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173769: FAQ: What Has Been Fixed in Visual FoxPro 5.0a?"
-permalink: kb/173/Q173769/
+permalink: /kb/173/Q173769/
 ---
 
 ## Q173769: FAQ: What Has Been Fixed in Visual FoxPro 5.0a?

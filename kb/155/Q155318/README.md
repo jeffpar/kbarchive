@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155318: HOWTO: Hide a Form at Startup Using the DO FORM Command"
-permalink: kb/155/Q155318/
+permalink: /kb/155/Q155318/
 ---
 
 ## Q155318: HOWTO: Hide a Form at Startup Using the DO FORM Command

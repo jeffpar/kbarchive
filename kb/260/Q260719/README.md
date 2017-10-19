@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260719: StarLancer: Quits Unexpectedly When You Start a New Mission"
-permalink: kb/260/Q260719/
+permalink: /kb/260/Q260719/
 ---
 
 ## Q260719: StarLancer: Quits Unexpectedly When You Start a New Mission

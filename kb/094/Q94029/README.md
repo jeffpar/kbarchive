@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94029: TrueType Font Pack 2 for Windows v.1 Disks (5.25 &quot;, 1.2 MB)"
-permalink: kb/094/Q94029/
+permalink: /kb/094/Q94029/
 ---
 
 ## Q94029: TrueType Font Pack 2 for Windows v.1 Disks (5.25 &quot;, 1.2 MB)

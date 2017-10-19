@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172180: WD97: General Information About Headers and Footers"
-permalink: kb/172/Q172180/
+permalink: /kb/172/Q172180/
 ---
 
 ## Q172180: WD97: General Information About Headers and Footers

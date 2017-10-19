@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28233: DOCERR: Signed/Unsigned Comparisons"
-permalink: kb/028/Q28233/
+permalink: /kb/028/Q28233/
 ---
 
 ## Q28233: DOCERR: Signed/Unsigned Comparisons

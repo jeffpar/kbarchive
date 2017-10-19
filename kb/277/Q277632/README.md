@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277632: Memory Leak in Inetinfo.exe When Using the ADs IIS Provider"
-permalink: kb/277/Q277632/
+permalink: /kb/277/Q277632/
 ---
 
 ## Q277632: Memory Leak in Inetinfo.exe When Using the ADs IIS Provider

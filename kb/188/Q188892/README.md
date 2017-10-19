@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188892: How to Use EVTSCAN with Netmon Tracing to Capture Event 23s"
-permalink: kb/188/Q188892/
+permalink: /kb/188/Q188892/
 ---
 
 ## Q188892: How to Use EVTSCAN with Netmon Tracing to Capture Event 23s

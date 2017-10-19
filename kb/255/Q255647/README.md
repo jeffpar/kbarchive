@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255647: Resource Monitor Problem Results in Event 1116"
-permalink: kb/255/Q255647/
+permalink: /kb/255/Q255647/
 ---
 
 ## Q255647: Resource Monitor Problem Results in Event 1116

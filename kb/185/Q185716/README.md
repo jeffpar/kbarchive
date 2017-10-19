@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185716: Snalink.exe May Trap If the SNA Server Service Is Autostarted"
-permalink: kb/185/Q185716/
+permalink: /kb/185/Q185716/
 ---
 
 ## Q185716: Snalink.exe May Trap If the SNA Server Service Is Autostarted

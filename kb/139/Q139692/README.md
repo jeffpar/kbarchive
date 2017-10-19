@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139692: FIX: Assertion Failed, Line 475 of Sockcore.cpp"
-permalink: kb/139/Q139692/
+permalink: /kb/139/Q139692/
 ---
 
 ## Q139692: FIX: Assertion Failed, Line 475 of Sockcore.cpp

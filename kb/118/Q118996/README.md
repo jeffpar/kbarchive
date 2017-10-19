@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118996: Encarta 1994 Err Msg: Encarta Must Be Loaded To Use Dictionary!"
-permalink: kb/118/Q118996/
+permalink: /kb/118/Q118996/
 ---
 
 ## Q118996: Encarta 1994 Err Msg: Encarta Must Be Loaded To Use Dictionary!

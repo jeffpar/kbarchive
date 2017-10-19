@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235372: XADM: Display Name Corrupts and Information Store Stops"
-permalink: kb/235/Q235372/
+permalink: /kb/235/Q235372/
 ---
 
 ## Q235372: XADM: Display Name Corrupts and Information Store Stops

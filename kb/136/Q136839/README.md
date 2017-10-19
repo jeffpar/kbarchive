@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136839: DOC: Changing Default Icon Gives Wrong Step in Setup Wizard"
-permalink: kb/136/Q136839/
+permalink: /kb/136/Q136839/
 ---
 
 ## Q136839: DOC: Changing Default Icon Gives Wrong Step in Setup Wizard

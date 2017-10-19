@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147209: Cannot Change Default Font for Received Message in MS Exchange"
-permalink: kb/147/Q147209/
+permalink: /kb/147/Q147209/
 ---
 
 ## Q147209: Cannot Change Default Font for Received Message in MS Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150691: Complete Gardening Message: Unable To Find Bookmarks"
-permalink: kb/150/Q150691/
+permalink: /kb/150/Q150691/
 ---
 
 ## Q150691: Complete Gardening Message: Unable To Find Bookmarks

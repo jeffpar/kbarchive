@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166646: WD97: Cannot Print Multiple Copies to HP LaserJet 5"
-permalink: kb/166/Q166646/
+permalink: /kb/166/Q166646/
 ---
 
 ## Q166646: WD97: Cannot Print Multiple Copies to HP LaserJet 5

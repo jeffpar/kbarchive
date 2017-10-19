@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246392: How to Uninstall Microsoft Metadirectory Services"
-permalink: kb/246/Q246392/
+permalink: /kb/246/Q246392/
 ---
 
 ## Q246392: How to Uninstall Microsoft Metadirectory Services

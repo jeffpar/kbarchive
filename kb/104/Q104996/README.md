@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104996: Divide By Zero Error with MS-DOS FORMAT Command"
-permalink: kb/104/Q104996/
+permalink: /kb/104/Q104996/
 ---
 
 ## Q104996: Divide By Zero Error with MS-DOS FORMAT Command

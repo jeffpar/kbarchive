@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167326: FIX: Intrinsic Version of strcmp May Return Incorrect Result"
-permalink: kb/167/Q167326/
+permalink: /kb/167/Q167326/
 ---
 
 ## Q167326: FIX: Intrinsic Version of strcmp May Return Incorrect Result

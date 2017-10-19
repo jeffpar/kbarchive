@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220952: XWEB: &quot;There Were Problems Sending The Item&quot; Saving Contact in O"
-permalink: kb/220/Q220952/
+permalink: /kb/220/Q220952/
 ---
 
 ## Q220952: XWEB: &quot;There Were Problems Sending The Item&quot; Saving Contact in O

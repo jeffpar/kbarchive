@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160562: Network NIC Icon Appears with a Number for its Description"
-permalink: kb/160/Q160562/
+permalink: /kb/160/Q160562/
 ---
 
 ## Q160562: Network NIC Icon Appears with a Number for its Description

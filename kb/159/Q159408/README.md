@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159408: PRB: &quot;Error in Loading DLL&quot; if Calling Multimedia API Functions"
-permalink: kb/159/Q159408/
+permalink: /kb/159/Q159408/
 ---
 
 ## Q159408: PRB: &quot;Error in Loading DLL&quot; if Calling Multimedia API Functions

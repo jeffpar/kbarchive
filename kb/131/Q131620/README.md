@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131620: Filename Extension Remains .SC2 When Exporting"
-permalink: kb/131/Q131620/
+permalink: /kb/131/Q131620/
 ---
 
 ## Q131620: Filename Extension Remains .SC2 When Exporting

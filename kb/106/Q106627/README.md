@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106627: PC Shell 6.0 Problems with DoubleSpace-Compressed Drives"
-permalink: kb/106/Q106627/
+permalink: /kb/106/Q106627/
 ---
 
 ## Q106627: PC Shell 6.0 Problems with DoubleSpace-Compressed Drives

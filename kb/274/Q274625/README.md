@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274625: Combat Flight Simulator 2: Poor Video Performance"
-permalink: kb/274/Q274625/
+permalink: /kb/274/Q274625/
 ---
 
 ## Q274625: Combat Flight Simulator 2: Poor Video Performance

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107817: MS-DOS 6.2 Setup Err Msg: There Is Not Enough Free Space..."
-permalink: kb/107/Q107817/
+permalink: /kb/107/Q107817/
 ---
 
 ## Q107817: MS-DOS 6.2 Setup Err Msg: There Is Not Enough Free Space...

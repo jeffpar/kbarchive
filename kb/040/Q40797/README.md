@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40797: Mac DOS: Connect/Access AppleTalk Networks at Remote Sites"
-permalink: kb/040/Q40797/
+permalink: /kb/040/Q40797/
 ---
 
 ## Q40797: Mac DOS: Connect/Access AppleTalk Networks at Remote Sites

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218460: SMS: Members of Global User Groups Do Not Inherit Permissions"
-permalink: kb/218/Q218460/
+permalink: /kb/218/Q218460/
 ---
 
 ## Q218460: SMS: Members of Global User Groups Do Not Inherit Permissions

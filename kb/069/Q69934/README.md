@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69934: INFO: #define Must Evaluate to Integer Const for #if Expression"
-permalink: kb/069/Q69934/
+permalink: /kb/069/Q69934/
 ---
 
 ## Q69934: INFO: #define Must Evaluate to Integer Const for #if Expression

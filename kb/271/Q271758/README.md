@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271758: XADM: Cannot Reinstall Network Associates GroupShield Exchange"
-permalink: kb/271/Q271758/
+permalink: /kb/271/Q271758/
 ---
 
 ## Q271758: XADM: Cannot Reinstall Network Associates GroupShield Exchange

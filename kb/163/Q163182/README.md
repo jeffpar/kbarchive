@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163182: ODE97: ODE Setup Does Not Check for MS Access 97 or Office 97"
-permalink: kb/163/Q163182/
+permalink: /kb/163/Q163182/
 ---
 
 ## Q163182: ODE97: ODE Setup Does Not Check for MS Access 97 or Office 97

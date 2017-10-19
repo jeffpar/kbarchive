@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229820: Expedia Streets and Trips 2000: &quot;Runtime Error!&quot; When You Print"
-permalink: kb/229/Q229820/
+permalink: /kb/229/Q229820/
 ---
 
 ## Q229820: Expedia Streets and Trips 2000: &quot;Runtime Error!&quot; When You Print

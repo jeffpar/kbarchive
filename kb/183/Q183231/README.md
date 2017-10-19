@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183231: NetWare Login Scripts Fail When Using CSNW Remotely"
-permalink: kb/183/Q183231/
+permalink: /kb/183/Q183231/
 ---
 
 ## Q183231: NetWare Login Scripts Fail When Using CSNW Remotely

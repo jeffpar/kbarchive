@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247639: WD97: Err Msg: &quot;Style Not Defined&quot; with StyleRef Field"
-permalink: kb/247/Q247639/
+permalink: /kb/247/Q247639/
 ---
 
 ## Q247639: WD97: Err Msg: &quot;Style Not Defined&quot; with StyleRef Field

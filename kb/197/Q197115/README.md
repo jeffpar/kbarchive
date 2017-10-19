@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197115: XFOR: PROFS Connector Sends NULL Date and Time to RSCS"
-permalink: kb/197/Q197115/
+permalink: /kb/197/Q197115/
 ---
 
 ## Q197115: XFOR: PROFS Connector Sends NULL Date and Time to RSCS

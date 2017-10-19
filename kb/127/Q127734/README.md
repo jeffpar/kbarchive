@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127734: HOWTO: Ensure ODBC.DLL and ODBCCURS.DLL Cursor Levels Match"
-permalink: kb/127/Q127734/
+permalink: /kb/127/Q127734/
 ---
 
 ## Q127734: HOWTO: Ensure ODBC.DLL and ODBCCURS.DLL Cursor Levels Match

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242511: AoE II: Hangs or Quits Unexpectedly During Opening Movie"
-permalink: kb/242/Q242511/
+permalink: /kb/242/Q242511/
 ---
 
 ## Q242511: AoE II: Hangs or Quits Unexpectedly During Opening Movie

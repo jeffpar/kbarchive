@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191854: RAS Authentication Does Not Work Connecting to RRAS Server"
-permalink: kb/191/Q191854/
+permalink: /kb/191/Q191854/
 ---
 
 ## Q191854: RAS Authentication Does Not Work Connecting to RRAS Server

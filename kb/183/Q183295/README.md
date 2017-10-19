@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183295: FIX: Invalid Cursor State Error with the MS Oracle ODBC Driver"
-permalink: kb/183/Q183295/
+permalink: /kb/183/Q183295/
 ---
 
 ## Q183295: FIX: Invalid Cursor State Error with the MS Oracle ODBC Driver

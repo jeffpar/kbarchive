@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310091: SSO Fails If Host Security Domain Added Through SNACFG.exe"
-permalink: kb/310/Q310091/
+permalink: /kb/310/Q310091/
 ---
 
 ## Q310091: SSO Fails If Host Security Domain Added Through SNACFG.exe

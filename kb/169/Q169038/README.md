@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169038: SMS: Event ID 132 Occurs After Applying an SMS 1.2 Service Pack"
-permalink: kb/169/Q169038/
+permalink: /kb/169/Q169038/
 ---
 
 ## Q169038: SMS: Event ID 132 Occurs After Applying an SMS 1.2 Service Pack

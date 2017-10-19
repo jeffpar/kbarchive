@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245352: Administrators Are Unable to Add Either Local or Domain Printers"
-permalink: kb/245/Q245352/
+permalink: /kb/245/Q245352/
 ---
 
 ## Q245352: Administrators Are Unable to Add Either Local or Domain Printers

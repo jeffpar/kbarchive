@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244666: XCLN: Column Heading Fields Do Not Appear When Mail Is Unread"
-permalink: kb/244/Q244666/
+permalink: /kb/244/Q244666/
 ---
 
 ## Q244666: XCLN: Column Heading Fields Do Not Appear When Mail Is Unread

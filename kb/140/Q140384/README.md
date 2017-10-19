@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140384: FTP Server Welcome Banner Has Old Computer Name"
-permalink: kb/140/Q140384/
+permalink: /kb/140/Q140384/
 ---
 
 ## Q140384: FTP Server Welcome Banner Has Old Computer Name

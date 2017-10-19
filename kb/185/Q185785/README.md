@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185785: Unable to View Entire NetWare Volume Name"
-permalink: kb/185/Q185785/
+permalink: /kb/185/Q185785/
 ---
 
 ## Q185785: Unable to View Entire NetWare Volume Name

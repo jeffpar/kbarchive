@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271498: Golf 2001: Problems When You Use Password Protected Screen Saver"
-permalink: kb/271/Q271498/
+permalink: /kb/271/Q271498/
 ---
 
 ## Q271498: Golf 2001: Problems When You Use Password Protected Screen Saver

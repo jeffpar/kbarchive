@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150200: FIX: Treeview Control Does Not Receive Key Events"
-permalink: kb/150/Q150200/
+permalink: /kb/150/Q150200/
 ---
 
 ## Q150200: FIX: Treeview Control Does Not Receive Key Events

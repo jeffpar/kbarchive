@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80263: PC Gen: Contents of Modem Script File TELEBIT.MDM"
-permalink: kb/080/Q80263/
+permalink: /kb/080/Q80263/
 ---
 
 ## Q80263: PC Gen: Contents of Modem Script File TELEBIT.MDM

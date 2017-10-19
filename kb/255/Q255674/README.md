@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255674: Drwtsn32 Does Not Work If User Does Not Have Write Rights"
-permalink: kb/255/Q255674/
+permalink: /kb/255/Q255674/
 ---
 
 ## Q255674: Drwtsn32 Does Not Work If User Does Not Have Write Rights

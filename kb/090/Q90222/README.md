@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90222: Printer Manager and Critical Errors Can Halt Servers"
-permalink: kb/090/Q90222/
+permalink: /kb/090/Q90222/
 ---
 
 ## Q90222: Printer Manager and Critical Errors Can Halt Servers

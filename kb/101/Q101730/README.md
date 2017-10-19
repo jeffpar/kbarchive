@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101730: Deleting COM Ports from a Windows NT Installation"
-permalink: kb/101/Q101730/
+permalink: /kb/101/Q101730/
 ---
 
 ## Q101730: Deleting COM Ports from a Windows NT Installation

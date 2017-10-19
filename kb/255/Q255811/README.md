@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255811: 39-Character Host Name Address Limitation in Compass"
-permalink: kb/255/Q255811/
+permalink: /kb/255/Q255811/
 ---
 
 ## Q255811: 39-Character Host Name Address Limitation in Compass

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174969: DOC: Btrieve Driver Does Not Ship with VFP 5.0"
-permalink: kb/174/Q174969/
+permalink: /kb/174/Q174969/
 ---
 
 ## Q174969: DOC: Btrieve Driver Does Not Ship with VFP 5.0

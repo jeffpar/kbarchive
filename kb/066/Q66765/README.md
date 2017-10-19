@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66765: ASD: SHIFT+BACKSPACE Does Not Engage Thrust Reversers"
-permalink: kb/066/Q66765/
+permalink: /kb/066/Q66765/
 ---
 
 ## Q66765: ASD: SHIFT+BACKSPACE Does Not Engage Thrust Reversers

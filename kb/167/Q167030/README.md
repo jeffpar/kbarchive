@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167030: XCLN: Using Exchange Client with IE Dial When Needed (AutoDial)"
-permalink: kb/167/Q167030/
+permalink: /kb/167/Q167030/
 ---
 
 ## Q167030: XCLN: Using Exchange Client with IE Dial When Needed (AutoDial)

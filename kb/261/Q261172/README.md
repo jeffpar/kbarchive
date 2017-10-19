@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261172: PRB: fnevObjectDeleted Returns Short Term Entry ID from Exchange"
-permalink: kb/261/Q261172/
+permalink: /kb/261/Q261172/
 ---
 
 ## Q261172: PRB: fnevObjectDeleted Returns Short Term Entry ID from Exchange

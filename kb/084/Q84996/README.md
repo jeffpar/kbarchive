@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84996: Emulation Modes for Diconix 300W Printer"
-permalink: kb/084/Q84996/
+permalink: /kb/084/Q84996/
 ---
 
 ## Q84996: Emulation Modes for Diconix 300W Printer

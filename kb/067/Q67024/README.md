@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67024: Bitstream Fontware 3.0 Installation Kit Character Sets"
-permalink: kb/067/Q67024/
+permalink: /kb/067/Q67024/
 ---
 
 ## Q67024: Bitstream Fontware 3.0 Installation Kit Character Sets

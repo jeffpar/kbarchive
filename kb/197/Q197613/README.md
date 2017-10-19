@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197613: Internet Directory: Updates have been discontinued"
-permalink: kb/197/Q197613/
+permalink: /kb/197/Q197613/
 ---
 
 ## Q197613: Internet Directory: Updates have been discontinued

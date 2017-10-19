@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243408: XADM: Move Server Wizard Stops Working, Event ID 264"
-permalink: kb/243/Q243408/
+permalink: /kb/243/Q243408/
 ---
 
 ## Q243408: XADM: Move Server Wizard Stops Working, Event ID 264

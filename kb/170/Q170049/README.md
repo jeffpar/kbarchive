@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170049: XCLN: Exchange Client Cannot Change Password Under OS/2 3.x"
-permalink: kb/170/Q170049/
+permalink: /kb/170/Q170049/
 ---
 
 ## Q170049: XCLN: Exchange Client Cannot Change Password Under OS/2 3.x

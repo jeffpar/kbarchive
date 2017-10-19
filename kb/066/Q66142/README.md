@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66142: System Requirements for Windows Entertainment Pack"
-permalink: kb/066/Q66142/
+permalink: /kb/066/Q66142/
 ---
 
 ## Q66142: System Requirements for Windows Entertainment Pack

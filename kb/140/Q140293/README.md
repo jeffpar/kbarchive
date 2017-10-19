@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140293: FIX: Missing Closing Parenthesis Acts Like a Comment"
-permalink: kb/140/Q140293/
+permalink: /kb/140/Q140293/
 ---
 
 ## Q140293: FIX: Missing Closing Parenthesis Acts Like a Comment

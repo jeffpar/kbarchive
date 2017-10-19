@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296784: SMS: Collid.lkp File Is Corrupted on Secondary Sites"
-permalink: kb/296/Q296784/
+permalink: /kb/296/Q296784/
 ---
 
 ## Q296784: SMS: Collid.lkp File Is Corrupted on Secondary Sites

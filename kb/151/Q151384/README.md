@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151384: Fury3: Double-clicking Fury3 Twice Can Launch Two Instances"
-permalink: kb/151/Q151384/
+permalink: /kb/151/Q151384/
 ---
 
 ## Q151384: Fury3: Double-clicking Fury3 Twice Can Launch Two Instances

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84923: Vector Fonts Don't Print When Printing TrueType As Graphics"
-permalink: kb/084/Q84923/
+permalink: /kb/084/Q84923/
 ---
 
 ## Q84923: Vector Fonts Don't Print When Printing TrueType As Graphics

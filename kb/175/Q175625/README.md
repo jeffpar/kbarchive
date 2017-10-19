@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175625: FILE: TopClose.exe Closes Child Forms of Top-Level Forms"
-permalink: kb/175/Q175625/
+permalink: /kb/175/Q175625/
 ---
 
 ## Q175625: FILE: TopClose.exe Closes Child Forms of Top-Level Forms

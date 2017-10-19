@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273554: SMS: License Requirements for Servers and Clients Using SMS"
-permalink: kb/273/Q273554/
+permalink: /kb/273/Q273554/
 ---
 
 ## Q273554: SMS: License Requirements for Servers and Clients Using SMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156166: SMTP: Troubleshooting Error SMTPGET: 20 - Insufficient Memory"
-permalink: kb/156/Q156166/
+permalink: /kb/156/Q156166/
 ---
 
 ## Q156166: SMTP: Troubleshooting Error SMTPGET: 20 - Insufficient Memory

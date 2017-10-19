@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132545: Windows NT 3.51 Step Up Installation"
-permalink: kb/132/Q132545/
+permalink: /kb/132/Q132545/
 ---
 
 ## Q132545: Windows NT 3.51 Step Up Installation

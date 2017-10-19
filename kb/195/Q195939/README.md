@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195939: XFOR: Behavior of Notes, SNADS, and PROFS Log Files"
-permalink: kb/195/Q195939/
+permalink: /kb/195/Q195939/
 ---
 
 ## Q195939: XFOR: Behavior of Notes, SNADS, and PROFS Log Files

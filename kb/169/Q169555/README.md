@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169555: SMS: Audit16 Fails If Username in Sms.ini Is Too Long"
-permalink: kb/169/Q169555/
+permalink: /kb/169/Q169555/
 ---
 
 ## Q169555: SMS: Audit16 Fails If Username in Sms.ini Is Too Long

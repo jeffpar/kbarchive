@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195522: Host Password May Be Revealed By Manipulating SSCP-LU Session"
-permalink: kb/195/Q195522/
+permalink: /kb/195/Q195522/
 ---
 
 ## Q195522: Host Password May Be Revealed By Manipulating SSCP-LU Session

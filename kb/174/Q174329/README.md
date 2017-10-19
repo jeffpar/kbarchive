@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174329: SMSINST: Creating Backup Copies of Replaced Files"
-permalink: kb/174/Q174329/
+permalink: /kb/174/Q174329/
 ---
 
 ## Q174329: SMSINST: Creating Backup Copies of Replaced Files

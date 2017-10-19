@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103944: PC Win: GP Fault Copying Many Messages to Shared Folder"
-permalink: kb/103/Q103944/
+permalink: /kb/103/Q103944/
 ---
 
 ## Q103944: PC Win: GP Fault Copying Many Messages to Shared Folder

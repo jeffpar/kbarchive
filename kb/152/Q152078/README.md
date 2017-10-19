@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152078: Determining the Product Option of a Windows NT Setup"
-permalink: kb/152/Q152078/
+permalink: /kb/152/Q152078/
 ---
 
 ## Q152078: Determining the Product Option of a Windows NT Setup

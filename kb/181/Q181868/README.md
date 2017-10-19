@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181868: Config.pol File Attributes Change After Supervisor Logs On"
-permalink: kb/181/Q181868/
+permalink: /kb/181/Q181868/
 ---
 
 ## Q181868: Config.pol File Attributes Change After Supervisor Logs On

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145910: Runtime Heap Error Running CLI_NT"
-permalink: kb/145/Q145910/
+permalink: /kb/145/Q145910/
 ---
 
 ## Q145910: Runtime Heap Error Running CLI_NT

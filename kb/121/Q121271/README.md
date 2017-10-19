@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121271: Bypassing Novell Login Scripts for Troubleshooting Purposes"
-permalink: kb/121/Q121271/
+permalink: /kb/121/Q121271/
 ---
 
 ## Q121271: Bypassing Novell Login Scripts for Troubleshooting Purposes

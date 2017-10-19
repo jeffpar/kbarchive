@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186162: XCLN: Schedule+ Prints Black Bars in Monthly View"
-permalink: kb/186/Q186162/
+permalink: /kb/186/Q186162/
 ---
 
 ## Q186162: XCLN: Schedule+ Prints Black Bars in Monthly View

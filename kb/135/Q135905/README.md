@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135905: How to Retrieve Records That Were Previously Zapped"
-permalink: kb/135/Q135905/
+permalink: /kb/135/Q135905/
 ---
 
 ## Q135905: How to Retrieve Records That Were Previously Zapped

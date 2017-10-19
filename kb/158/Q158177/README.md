@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158177: Games: How to Turn off Screen Savers"
-permalink: kb/158/Q158177/
+permalink: /kb/158/Q158177/
 ---
 
 ## Q158177: Games: How to Turn off Screen Savers

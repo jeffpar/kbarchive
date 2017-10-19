@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161068: Publishing Both Default.asp and Default.htm Within IIS"
-permalink: kb/161/Q161068/
+permalink: /kb/161/Q161068/
 ---
 
 ## Q161068: Publishing Both Default.asp and Default.htm Within IIS

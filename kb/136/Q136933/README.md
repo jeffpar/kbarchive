@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136933: Out of Virtual Memory Using Office 95 Shortcut Bar"
-permalink: kb/136/Q136933/
+permalink: /kb/136/Q136933/
 ---
 
 ## Q136933: Out of Virtual Memory Using Office 95 Shortcut Bar

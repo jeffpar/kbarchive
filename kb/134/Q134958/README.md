@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134958: WINS Errors 4204, 4294, and 7023 are Logged"
-permalink: kb/134/Q134958/
+permalink: /kb/134/Q134958/
 ---
 
 ## Q134958: WINS Errors 4204, 4294, and 7023 are Logged

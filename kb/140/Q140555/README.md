@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140555: Asynch Verb Completion Via WinNT Events"
-permalink: kb/140/Q140555/
+permalink: /kb/140/Q140555/
 ---
 
 ## Q140555: Asynch Verb Completion Via WinNT Events

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132832: ScanDisk Out of Memory Error Message"
-permalink: kb/132/Q132832/
+permalink: /kb/132/Q132832/
 ---
 
 ## Q132832: ScanDisk Out of Memory Error Message

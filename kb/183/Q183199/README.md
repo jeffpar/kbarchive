@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183199: DHCP Server Does Not Provide Options to Remote Boot Clients"
-permalink: kb/183/Q183199/
+permalink: /kb/183/Q183199/
 ---
 
 ## Q183199: DHCP Server Does Not Provide Options to Remote Boot Clients

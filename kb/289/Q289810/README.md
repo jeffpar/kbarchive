@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289810: BUG: Right-Clicking Close Button May Cause VFP to Shut Down"
-permalink: kb/289/Q289810/
+permalink: /kb/289/Q289810/
 ---
 
 ## Q289810: BUG: Right-Clicking Close Button May Cause VFP to Shut Down

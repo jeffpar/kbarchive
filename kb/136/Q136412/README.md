@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136412: Cannot Set Backup Access Number to Dial as Long Distance"
-permalink: kb/136/Q136412/
+permalink: /kb/136/Q136412/
 ---
 
 ## Q136412: Cannot Set Backup Access Number to Dial as Long Distance

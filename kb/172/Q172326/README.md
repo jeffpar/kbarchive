@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172326: WD97: Spelling Checker Constantly Checks Same Word"
-permalink: kb/172/Q172326/
+permalink: /kb/172/Q172326/
 ---
 
 ## Q172326: WD97: Spelling Checker Constantly Checks Same Word

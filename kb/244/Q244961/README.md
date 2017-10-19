@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244961: FIX: Analyze.exe -f Replaces Project Data Files with 0 Byte File"
-permalink: kb/244/Q244961/
+permalink: /kb/244/Q244961/
 ---
 
 ## Q244961: FIX: Analyze.exe -f Replaces Project Data Files with 0 Byte File

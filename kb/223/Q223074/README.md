@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223074: FIX: Update Does Not Time Out if Data Is Locked"
-permalink: kb/223/Q223074/
+permalink: /kb/223/Q223074/
 ---
 
 ## Q223074: FIX: Update Does Not Time Out if Data Is Locked

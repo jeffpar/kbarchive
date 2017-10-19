@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192526: XFOR: Macintosh Mail Source Extractor Makes Corrupt PSTs"
-permalink: kb/192/Q192526/
+permalink: /kb/192/Q192526/
 ---
 
 ## Q192526: XFOR: Macintosh Mail Source Extractor Makes Corrupt PSTs

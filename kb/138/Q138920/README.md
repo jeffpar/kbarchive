@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138920: How to Enable One Check Box While Disabling the Others"
-permalink: kb/138/Q138920/
+permalink: /kb/138/Q138920/
 ---
 
 ## Q138920: How to Enable One Check Box While Disabling the Others

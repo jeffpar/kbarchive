@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281424: FIX: Bad Code Is Generated with /Og Enabled"
-permalink: kb/281/Q281424/
+permalink: /kb/281/Q281424/
 ---
 
 ## Q281424: FIX: Bad Code Is Generated with /Og Enabled

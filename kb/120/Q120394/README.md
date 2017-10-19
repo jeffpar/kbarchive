@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120394: BUG: PS for DOS GPFs When Using an NT Makefile"
-permalink: kb/120/Q120394/
+permalink: /kb/120/Q120394/
 ---
 
 ## Q120394: BUG: PS for DOS GPFs When Using an NT Makefile

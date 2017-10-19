@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50259: Mac Form: RETURN Key Not Advance to New Line in Custom Form"
-permalink: kb/050/Q50259/
+permalink: /kb/050/Q50259/
 ---
 
 ## Q50259: Mac Form: RETURN Key Not Advance to New Line in Custom Form

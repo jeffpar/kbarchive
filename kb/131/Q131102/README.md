@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131102: FIX: Enumerating Connection Points Causes GP Fault"
-permalink: kb/131/Q131102/
+permalink: /kb/131/Q131102/
 ---
 
 ## Q131102: FIX: Enumerating Connection Points Causes GP Fault

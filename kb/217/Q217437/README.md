@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217437: FIX: Visual C++ Debugger Crashes on Breakpoint"
-permalink: kb/217/Q217437/
+permalink: /kb/217/Q217437/
 ---
 
 ## Q217437: FIX: Visual C++ Debugger Crashes on Breakpoint

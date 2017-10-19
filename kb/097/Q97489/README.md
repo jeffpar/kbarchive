@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97489: MS-DOS Err Msg: Error Updating Version Table in MSDOS.SYS"
-permalink: kb/097/Q97489/
+permalink: /kb/097/Q97489/
 ---
 
 ## Q97489: MS-DOS Err Msg: Error Updating Version Table in MSDOS.SYS

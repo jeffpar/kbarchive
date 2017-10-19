@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132476: Visual Basic Applications Cannot Print When Run from Scheduler"
-permalink: kb/132/Q132476/
+permalink: /kb/132/Q132476/
 ---
 
 ## Q132476: Visual Basic Applications Cannot Print When Run from Scheduler

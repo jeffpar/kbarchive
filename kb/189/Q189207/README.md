@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189207: How the Web Was Won Comments and Corrections"
-permalink: kb/189/Q189207/
+permalink: /kb/189/Q189207/
 ---
 
 ## Q189207: How the Web Was Won Comments and Corrections

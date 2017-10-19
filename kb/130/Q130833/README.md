@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130833: How to Find If Two Object Variables Refer to One Instance"
-permalink: kb/130/Q130833/
+permalink: /kb/130/Q130833/
 ---
 
 ## Q130833: How to Find If Two Object Variables Refer to One Instance

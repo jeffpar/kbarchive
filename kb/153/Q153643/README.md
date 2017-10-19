@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153643: Registry Editor Scroll Bars Do Not Appear in Quick Viewer"
-permalink: kb/153/Q153643/
+permalink: /kb/153/Q153643/
 ---
 
 ## Q153643: Registry Editor Scroll Bars Do Not Appear in Quick Viewer

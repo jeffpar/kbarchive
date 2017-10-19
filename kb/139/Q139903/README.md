@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139903: Doc Err: File Manager Registry Entries for Users"
-permalink: kb/139/Q139903/
+permalink: /kb/139/Q139903/
 ---
 
 ## Q139903: Doc Err: File Manager Registry Entries for Users

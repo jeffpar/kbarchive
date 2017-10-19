@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224174: XADM: Administrator Program Inaccurate When Mailbox Is Over 2 GB"
-permalink: kb/224/Q224174/
+permalink: /kb/224/Q224174/
 ---
 
 ## Q224174: XADM: Administrator Program Inaccurate When Mailbox Is Over 2 GB

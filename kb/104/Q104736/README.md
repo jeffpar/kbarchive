@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104736: System Hangs When DoubleDisk Gold Is Installed"
-permalink: kb/104/Q104736/
+permalink: /kb/104/Q104736/
 ---
 
 ## Q104736: System Hangs When DoubleDisk Gold Is Installed

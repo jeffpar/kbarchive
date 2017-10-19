@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171188: How To Enable the Slow Network Time Out Value"
-permalink: kb/171/Q171188/
+permalink: /kb/171/Q171188/
 ---
 
 ## Q171188: How To Enable the Slow Network Time Out Value

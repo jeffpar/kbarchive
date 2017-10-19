@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134858: Removing NetBIOS from Above TCP/IP-32 for Windows for Workgroups"
-permalink: kb/134/Q134858/
+permalink: /kb/134/Q134858/
 ---
 
 ## Q134858: Removing NetBIOS from Above TCP/IP-32 for Windows for Workgroups

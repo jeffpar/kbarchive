@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120396: PRB: Image Functions Fail with Image Outside of Viewport"
-permalink: kb/120/Q120396/
+permalink: /kb/120/Q120396/
 ---
 
 ## Q120396: PRB: Image Functions Fail with Image Outside of Viewport

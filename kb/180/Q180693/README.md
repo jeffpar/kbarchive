@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180693: IPX Clients Fail to Obtain A Sponsor Connection"
-permalink: kb/180/Q180693/
+permalink: /kb/180/Q180693/
 ---
 
 ## Q180693: IPX Clients Fail to Obtain A Sponsor Connection

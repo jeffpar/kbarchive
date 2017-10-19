@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149591: PPT7: PowerPoint 7.0a Stops Responding When Switching Views"
-permalink: kb/149/Q149591/
+permalink: /kb/149/Q149591/
 ---
 
 ## Q149591: PPT7: PowerPoint 7.0a Stops Responding When Switching Views

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222621: XADM: Buffer Is Not Cleared in Exchange LDAP Service"
-permalink: kb/222/Q222621/
+permalink: /kb/222/Q222621/
 ---
 
 ## Q222621: XADM: Buffer Is Not Cleared in Exchange LDAP Service

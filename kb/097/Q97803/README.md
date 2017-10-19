@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97803: MSBackup Stops on Disk Two And Continues to Count User Time"
-permalink: kb/097/Q97803/
+permalink: /kb/097/Q97803/
 ---
 
 ## Q97803: MSBackup Stops on Disk Two And Continues to Count User Time

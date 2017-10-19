@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142390: Windows NT Drivers for Yamaha CDR-100 CD-ROM Drive"
-permalink: kb/142/Q142390/
+permalink: /kb/142/Q142390/
 ---
 
 ## Q142390: Windows NT Drivers for Yamaha CDR-100 CD-ROM Drive

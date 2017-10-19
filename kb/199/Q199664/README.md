@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199664: SMSINST: Cannot Remove More Than Two Sections in .ini File"
-permalink: kb/199/Q199664/
+permalink: /kb/199/Q199664/
 ---
 
 ## Q199664: SMSINST: Cannot Remove More Than Two Sections in .ini File

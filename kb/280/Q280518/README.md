@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280518: SMS: Client Installation Process Stops Responding"
-permalink: kb/280/Q280518/
+permalink: /kb/280/Q280518/
 ---
 
 ## Q280518: SMS: Client Installation Process Stops Responding

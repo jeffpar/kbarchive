@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246954: Unattended RAS Installation Prompts for New IP Address"
-permalink: kb/246/Q246954/
+permalink: /kb/246/Q246954/
 ---
 
 ## Q246954: Unattended RAS Installation Prompts for New IP Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132902: SMS Primary Site Configuration Menu May Re-appear During Setup"
-permalink: kb/132/Q132902/
+permalink: /kb/132/Q132902/
 ---
 
 ## Q132902: SMS Primary Site Configuration Menu May Re-appear During Setup

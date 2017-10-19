@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118324: Choosing Network Icon Hangs System with Access 1.1 Installed"
-permalink: kb/118/Q118324/
+permalink: /kb/118/Q118324/
 ---
 
 ## Q118324: Choosing Network Icon Hangs System with Access 1.1 Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139307: PRB: Wizard-Generated Picture Buttons Need Bitmap in .Exe"
-permalink: kb/139/Q139307/
+permalink: /kb/139/Q139307/
 ---
 
 ## Q139307: PRB: Wizard-Generated Picture Buttons Need Bitmap in .Exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159188: XADM: Content Conversion Errors with Large Recipient Lists"
-permalink: kb/159/Q159188/
+permalink: /kb/159/Q159188/
 ---
 
 ## Q159188: XADM: Content Conversion Errors with Large Recipient Lists

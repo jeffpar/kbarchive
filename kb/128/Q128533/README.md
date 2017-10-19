@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128533: Cannot Type Simplified Chinese with MS PingYing in Taiwan Locale"
-permalink: kb/128/Q128533/
+permalink: /kb/128/Q128533/
 ---
 
 ## Q128533: Cannot Type Simplified Chinese with MS PingYing in Taiwan Locale

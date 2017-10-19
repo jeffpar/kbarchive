@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305614: SMSINST: Unexpected Results with &quot;Install File&quot; Action"
-permalink: kb/305/Q305614/
+permalink: /kb/305/Q305614/
 ---
 
 ## Q305614: SMSINST: Unexpected Results with &quot;Install File&quot; Action

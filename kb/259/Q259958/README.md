@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259958: StarLancer: How to Preserve Saved Games"
-permalink: kb/259/Q259958/
+permalink: /kb/259/Q259958/
 ---
 
 ## Q259958: StarLancer: How to Preserve Saved Games

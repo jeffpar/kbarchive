@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150307: NDIS Drivers Available with NetWare Real-Mode Client"
-permalink: kb/150/Q150307/
+permalink: /kb/150/Q150307/
 ---
 
 ## Q150307: NDIS Drivers Available with NetWare Real-Mode Client

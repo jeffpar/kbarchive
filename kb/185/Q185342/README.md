@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185342: SMS: How to Install, Share, and Inventory Software"
-permalink: kb/185/Q185342/
+permalink: /kb/185/Q185342/
 ---
 
 ## Q185342: SMS: How to Install, Share, and Inventory Software

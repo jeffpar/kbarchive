@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176351: BUG: Referenced Project Causes &quot;Failed to Reload the Project&quot;"
-permalink: kb/176/Q176351/
+permalink: /kb/176/Q176351/
 ---
 
 ## Q176351: BUG: Referenced Project Causes &quot;Failed to Reload the Project&quot;

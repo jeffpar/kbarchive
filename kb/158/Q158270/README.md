@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158270: SNA 2.11 SP1 Win 3.x Client Logon Fails if NT Password Expired"
-permalink: kb/158/Q158270/
+permalink: /kb/158/Q158270/
 ---
 
 ## Q158270: SNA 2.11 SP1 Win 3.x Client Logon Fails if NT Password Expired

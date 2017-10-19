@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174478: Minimizing or Maximizing Does Not Redraw Window Properly"
-permalink: kb/174/Q174478/
+permalink: /kb/174/Q174478/
 ---
 
 ## Q174478: Minimizing or Maximizing Does Not Redraw Window Properly

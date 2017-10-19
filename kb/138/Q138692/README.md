@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138692: HOWTO: Configure a Time-Out on a CSocket Operation"
-permalink: kb/138/Q138692/
+permalink: /kb/138/Q138692/
 ---
 
 ## Q138692: HOWTO: Configure a Time-Out on a CSocket Operation

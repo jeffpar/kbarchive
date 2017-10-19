@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172215: How to Force 128-bit Data Encryption for RAS"
-permalink: kb/172/Q172215/
+permalink: /kb/172/Q172215/
 ---
 
 ## Q172215: How to Force 128-bit Data Encryption for RAS

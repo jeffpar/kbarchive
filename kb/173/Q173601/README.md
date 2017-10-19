@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173601: WD97: Cannot Color Table Border in HTML Document"
-permalink: kb/173/Q173601/
+permalink: /kb/173/Q173601/
 ---
 
 ## Q173601: WD97: Cannot Color Table Border in HTML Document

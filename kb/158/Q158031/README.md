@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158031: GEX: Troubleshooting Sound Problems"
-permalink: kb/158/Q158031/
+permalink: /kb/158/Q158031/
 ---
 
 ## Q158031: GEX: Troubleshooting Sound Problems

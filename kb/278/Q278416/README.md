@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278416: Err Msg: Could Not Start the WWW, FTP, SMTP, and NNTP Service"
-permalink: kb/278/Q278416/
+permalink: /kb/278/Q278416/
 ---
 
 ## Q278416: Err Msg: Could Not Start the WWW, FTP, SMTP, and NNTP Service

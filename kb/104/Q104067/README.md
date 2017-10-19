@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104067: X400: Setting Up the Gateway as an EiconCard Redirector"
-permalink: kb/104/Q104067/
+permalink: /kb/104/Q104067/
 ---
 
 ## Q104067: X400: Setting Up the Gateway as an EiconCard Redirector

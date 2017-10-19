@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22343: PRB: Does Not Support Logical Operations on FORTRAN Strings"
-permalink: kb/022/Q22343/
+permalink: /kb/022/Q22343/
 ---
 
 ## Q22343: PRB: Does Not Support Logical Operations on FORTRAN Strings

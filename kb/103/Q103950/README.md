@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103950: SetSelectorLimit() Crossing 1 Megabyte Boundary"
-permalink: kb/103/Q103950/
+permalink: /kb/103/Q103950/
 ---
 
 ## Q103950: SetSelectorLimit() Crossing 1 Megabyte Boundary

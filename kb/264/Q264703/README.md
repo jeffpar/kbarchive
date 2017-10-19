@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264703: SMS:Queries Missing During Collection Creation"
-permalink: kb/264/Q264703/
+permalink: /kb/264/Q264703/
 ---
 
 ## Q264703: SMS:Queries Missing During Collection Creation

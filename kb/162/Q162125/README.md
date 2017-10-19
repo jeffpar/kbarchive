@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162125: Installation Error: Invalid Page Fault in Kernel32.dll"
-permalink: kb/162/Q162125/
+permalink: /kb/162/Q162125/
 ---
 
 ## Q162125: Installation Error: Invalid Page Fault in Kernel32.dll

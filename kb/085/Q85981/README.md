@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85981: Sound Device Error Using After Dark Version 2.0"
-permalink: kb/085/Q85981/
+permalink: /kb/085/Q85981/
 ---
 
 ## Q85981: Sound Device Error Using After Dark Version 2.0

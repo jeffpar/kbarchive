@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129311: Visual FoxPro Has 3 New SYS Functions Related to Memory"
-permalink: kb/129/Q129311/
+permalink: /kb/129/Q129311/
 ---
 
 ## Q129311: Visual FoxPro Has 3 New SYS Functions Related to Memory

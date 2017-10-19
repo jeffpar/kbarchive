@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82478: GP Fault in FINSTALL.DLL Copying Turbo Tax Soft Fonts"
-permalink: kb/082/Q82478/
+permalink: /kb/082/Q82478/
 ---
 
 ## Q82478: GP Fault in FINSTALL.DLL Copying Turbo Tax Soft Fonts

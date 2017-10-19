@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146401: XCLN: Bcc Addressee Stripped from Message"
-permalink: kb/146/Q146401/
+permalink: /kb/146/Q146401/
 ---
 
 ## Q146401: XCLN: Bcc Addressee Stripped from Message

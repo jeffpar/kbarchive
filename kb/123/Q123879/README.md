@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123879: Backup Operators Group Cannot Access Schedule Service"
-permalink: kb/123/Q123879/
+permalink: /kb/123/Q123879/
 ---
 
 ## Q123879: Backup Operators Group Cannot Access Schedule Service

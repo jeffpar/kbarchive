@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129693: X400: Err Msg: ERROR 4 (Converting X.400 Delivery Report)..."
-permalink: kb/129/Q129693/
+permalink: /kb/129/Q129693/
 ---
 
 ## Q129693: X400: Err Msg: ERROR 4 (Converting X.400 Delivery Report)...

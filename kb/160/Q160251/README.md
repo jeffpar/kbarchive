@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160251: BUG: &quot;Invalid Page Fault&quot; After OLE Automation with WordPerfect"
-permalink: kb/160/Q160251/
+permalink: /kb/160/Q160251/
 ---
 
 ## Q160251: BUG: &quot;Invalid Page Fault&quot; After OLE Automation with WordPerfect

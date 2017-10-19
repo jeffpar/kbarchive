@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180736: HOWTO: Create a Timer Event Using the Windows API Functions"
-permalink: kb/180/Q180736/
+permalink: /kb/180/Q180736/
 ---
 
 ## Q180736: HOWTO: Create a Timer Event Using the Windows API Functions

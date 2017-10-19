@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159306: XADM: IS Maintenance Tasks Not on IS Schedule"
-permalink: kb/159/Q159306/
+permalink: /kb/159/Q159306/
 ---
 
 ## Q159306: XADM: IS Maintenance Tasks Not on IS Schedule

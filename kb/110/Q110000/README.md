@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110000: BUG: Format Editor Displays G Descriptor Using E Format"
-permalink: kb/110/Q110000/
+permalink: /kb/110/Q110000/
 ---
 
 ## Q110000: BUG: Format Editor Displays G Descriptor Using E Format

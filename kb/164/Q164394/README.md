@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164394: BOOTP Service Does Not Populate ARP Cache"
-permalink: kb/164/Q164394/
+permalink: /kb/164/Q164394/
 ---
 
 ## Q164394: BOOTP Service Does Not Populate ARP Cache

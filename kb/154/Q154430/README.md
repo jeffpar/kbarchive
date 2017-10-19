@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154430: BUG: Visual C++ 4.2 DAO Breaks Certain Access95B Functions"
-permalink: kb/154/Q154430/
+permalink: /kb/154/Q154430/
 ---
 
 ## Q154430: BUG: Visual C++ 4.2 DAO Breaks Certain Access95B Functions

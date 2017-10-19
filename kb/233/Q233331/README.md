@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233331: XADM: How to Configure a View-Only Admin to Create Mailboxes"
-permalink: kb/233/Q233331/
+permalink: /kb/233/Q233331/
 ---
 
 ## Q233331: XADM: How to Configure a View-Only Admin to Create Mailboxes

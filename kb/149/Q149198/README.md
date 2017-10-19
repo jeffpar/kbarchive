@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149198: TN3270 Users Are Able to Get an LU After It Has Been Removed"
-permalink: kb/149/Q149198/
+permalink: /kb/149/Q149198/
 ---
 
 ## Q149198: TN3270 Users Are Able to Get an LU After It Has Been Removed

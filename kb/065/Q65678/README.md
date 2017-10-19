@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65678: Running the WordPerfect Tutorial from an Icon with Windows"
-permalink: kb/065/Q65678/
+permalink: /kb/065/Q65678/
 ---
 
 ## Q65678: Running the WordPerfect Tutorial from an Icon with Windows

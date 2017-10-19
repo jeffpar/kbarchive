@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244239: Stop 0xA in Netbt.sys When Using Third-Party Servers"
-permalink: kb/244/Q244239/
+permalink: /kb/244/Q244239/
 ---
 
 ## Q244239: Stop 0xA in Netbt.sys When Using Third-Party Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260526: PRB: Using TOP Clause Returns No Data from SQL 7.0/2000 Table"
-permalink: kb/260/Q260526/
+permalink: /kb/260/Q260526/
 ---
 
 ## Q260526: PRB: Using TOP Clause Returns No Data from SQL 7.0/2000 Table

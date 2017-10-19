@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135682: PRB: Drag and Drop with TYMED_FILE Runs Out of File Handles"
-permalink: kb/135/Q135682/
+permalink: /kb/135/Q135682/
 ---
 
 ## Q135682: PRB: Drag and Drop with TYMED_FILE Runs Out of File Handles

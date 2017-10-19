@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171379: HOWTO: Use the Proxy Property in the Internet Transfer Control"
-permalink: kb/171/Q171379/
+permalink: /kb/171/Q171379/
 ---
 
 ## Q171379: HOWTO: Use the Proxy Property in the Internet Transfer Control

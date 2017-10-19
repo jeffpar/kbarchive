@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186710: FEEDIGNOREFINAL is Not a Valid Option"
-permalink: kb/186/Q186710/
+permalink: /kb/186/Q186710/
 ---
 
 ## Q186710: FEEDIGNOREFINAL is Not a Valid Option

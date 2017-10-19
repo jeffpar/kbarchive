@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179053: FS98: Shortcuts Created in Different Folders in Windows NT 4.0"
-permalink: kb/179/Q179053/
+permalink: /kb/179/Q179053/
 ---
 
 ## Q179053: FS98: Shortcuts Created in Different Folders in Windows NT 4.0

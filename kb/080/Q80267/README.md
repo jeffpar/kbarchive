@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80267: PC Gen: Contents of Modem Script File ULTRA96.MDM"
-permalink: kb/080/Q80267/
+permalink: /kb/080/Q80267/
 ---
 
 ## Q80267: PC Gen: Contents of Modem Script File ULTRA96.MDM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140440: FIX: Global Overloaded Delete Operator Causes LNK2005"
-permalink: kb/140/Q140440/
+permalink: /kb/140/Q140440/
 ---
 
 ## Q140440: FIX: Global Overloaded Delete Operator Causes LNK2005

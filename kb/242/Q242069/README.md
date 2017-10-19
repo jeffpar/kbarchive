@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242069: Err Msg: Error Invoking the Security Editor"
-permalink: kb/242/Q242069/
+permalink: /kb/242/Q242069/
 ---
 
 ## Q242069: Err Msg: Error Invoking the Security Editor

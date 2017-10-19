@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285201: Entertainment PocketPak Setup Does Not Recognize Device Type"
-permalink: kb/285/Q285201/
+permalink: /kb/285/Q285201/
 ---
 
 ## Q285201: Entertainment PocketPak Setup Does Not Recognize Device Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192821: STOP 0x0000009A During Restore of Registry"
-permalink: kb/192/Q192821/
+permalink: /kb/192/Q192821/
 ---
 
 ## Q192821: STOP 0x0000009A During Restore of Registry

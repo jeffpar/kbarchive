@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192504: Microsoft Windows 98 Training Comments and Corrections"
-permalink: kb/192/Q192504/
+permalink: /kb/192/Q192504/
 ---
 
 ## Q192504: Microsoft Windows 98 Training Comments and Corrections

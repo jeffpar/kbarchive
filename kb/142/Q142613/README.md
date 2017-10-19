@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142613: System Control Application Shows Insufficient Memory Dialog Box"
-permalink: kb/142/Q142613/
+permalink: /kb/142/Q142613/
 ---
 
 ## Q142613: System Control Application Shows Insufficient Memory Dialog Box

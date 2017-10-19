@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242466: XADM: Error Message: The Key Management Server Is Unable to..."
-permalink: kb/242/Q242466/
+permalink: /kb/242/Q242466/
 ---
 
 ## Q242466: XADM: Error Message: The Key Management Server Is Unable to...

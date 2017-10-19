@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263681: SMS: MSI App May Not Install Correctly w/ NT AutoLogon"
-permalink: kb/263/Q263681/
+permalink: /kb/263/Q263681/
 ---
 
 ## Q263681: SMS: MSI App May Not Install Correctly w/ NT AutoLogon

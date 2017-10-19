@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174836: FIX: Problems Shutting Down When Using the Inet Control"
-permalink: kb/174/Q174836/
+permalink: /kb/174/Q174836/
 ---
 
 ## Q174836: FIX: Problems Shutting Down When Using the Inet Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151799: HOWTO: Use the Animated Copy Functions in Windows 95/98/Me"
-permalink: kb/151/Q151799/
+permalink: /kb/151/Q151799/
 ---
 
 ## Q151799: HOWTO: Use the Animated Copy Functions in Windows 95/98/Me

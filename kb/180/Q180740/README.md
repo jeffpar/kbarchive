@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180740: PPT7: Embossed Graphics in Converted File Appear as Solid Color"
-permalink: kb/180/Q180740/
+permalink: /kb/180/Q180740/
 ---
 
 ## Q180740: PPT7: Embossed Graphics in Converted File Appear as Solid Color

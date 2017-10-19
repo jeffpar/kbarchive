@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104246: Causes of L2023 : Entry WEP : Export Imported"
-permalink: kb/104/Q104246/
+permalink: /kb/104/Q104246/
 ---
 
 ## Q104246: Causes of L2023 : Entry WEP : Export Imported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175149: Bookshelf 98: Invalid Page Fault Viewing 360-Degree Views"
-permalink: kb/175/Q175149/
+permalink: /kb/175/Q175149/
 ---
 
 ## Q175149: Bookshelf 98: Invalid Page Fault Viewing 360-Degree Views

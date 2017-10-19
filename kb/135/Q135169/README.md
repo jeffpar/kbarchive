@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135169: New File Changes Background Color in Paint"
-permalink: kb/135/Q135169/
+permalink: /kb/135/Q135169/
 ---
 
 ## Q135169: New File Changes Background Color in Paint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297133: PRB: UPPER Function Operates on High-ASCII Characters"
-permalink: kb/297/Q297133/
+permalink: /kb/297/Q297133/
 ---
 
 ## Q297133: PRB: UPPER Function Operates on High-ASCII Characters

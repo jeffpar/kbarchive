@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92463: Err Msg with Infinite Disk: One of the Library Files Needed..."
-permalink: kb/092/Q92463/
+permalink: /kb/092/Q92463/
 ---
 
 ## Q92463: Err Msg with Infinite Disk: One of the Library Files Needed...

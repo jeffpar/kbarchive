@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176929: Err Msg: The Password You Have Typed Was Incorrect..."
-permalink: kb/176/Q176929/
+permalink: /kb/176/Q176929/
 ---
 
 ## Q176929: Err Msg: The Password You Have Typed Was Incorrect...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123662: BUG: Select Case Does Not Allow Character Expression String"
-permalink: kb/123/Q123662/
+permalink: /kb/123/Q123662/
 ---
 
 ## Q123662: BUG: Select Case Does Not Allow Character Expression String

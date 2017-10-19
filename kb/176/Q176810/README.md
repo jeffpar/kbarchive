@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176810: HOWTO: Manually Modify and Rebuild CAB Files"
-permalink: kb/176/Q176810/
+permalink: /kb/176/Q176810/
 ---
 
 ## Q176810: HOWTO: Manually Modify and Rebuild CAB Files

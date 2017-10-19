@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259553: XADM: Install. Exchange Server 5.5 in Windows 2000 Domain"
-permalink: kb/259/Q259553/
+permalink: /kb/259/Q259553/
 ---
 
 ## Q259553: XADM: Install. Exchange Server 5.5 in Windows 2000 Domain

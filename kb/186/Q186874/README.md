@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186874: Using NWConv to Migrate Users That Already Exist in Windows NT"
-permalink: kb/186/Q186874/
+permalink: /kb/186/Q186874/
 ---
 
 ## Q186874: Using NWConv to Migrate Users That Already Exist in Windows NT

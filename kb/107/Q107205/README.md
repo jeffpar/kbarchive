@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107205: SMTP: WHEN Info Missing in Schedule+ Meeting Requests"
-permalink: kb/107/Q107205/
+permalink: /kb/107/Q107205/
 ---
 
 ## Q107205: SMTP: WHEN Info Missing in Schedule+ Meeting Requests

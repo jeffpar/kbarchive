@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180761: BUG: Line Controls Drawn on a Frame Are Not Visible at Run-time"
-permalink: kb/180/Q180761/
+permalink: /kb/180/Q180761/
 ---
 
 ## Q180761: BUG: Line Controls Drawn on a Frame Are Not Visible at Run-time

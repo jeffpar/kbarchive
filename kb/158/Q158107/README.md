@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158107: GEX Setup Repeatedly Installs DirectX Drivers"
-permalink: kb/158/Q158107/
+permalink: /kb/158/Q158107/
 ---
 
 ## Q158107: GEX Setup Repeatedly Installs DirectX Drivers

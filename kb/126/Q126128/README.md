@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126128: Message Popup Changes Color When Using OpenGL Screen Saver"
-permalink: kb/126/Q126128/
+permalink: /kb/126/Q126128/
 ---
 
 ## Q126128: Message Popup Changes Color When Using OpenGL Screen Saver

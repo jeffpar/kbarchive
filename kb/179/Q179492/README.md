@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179492: PRB: Error Message &quot;MSVBVM50.dll Not Found&quot;"
-permalink: kb/179/Q179492/
+permalink: /kb/179/Q179492/
 ---
 
 ## Q179492: PRB: Error Message &quot;MSVBVM50.dll Not Found&quot;

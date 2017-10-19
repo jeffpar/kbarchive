@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240788: XIMS: Outbound Limitation Works Improperly Post 5.5 SP2"
-permalink: kb/240/Q240788/
+permalink: /kb/240/Q240788/
 ---
 
 ## Q240788: XIMS: Outbound Limitation Works Improperly Post 5.5 SP2

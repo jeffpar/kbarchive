@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143262: HOWTO: Enable the Windows 95/98/Me Size Grip in a VB Form"
-permalink: kb/143/Q143262/
+permalink: /kb/143/Q143262/
 ---
 
 ## Q143262: HOWTO: Enable the Windows 95/98/Me Size Grip in a VB Form

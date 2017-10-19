@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116235: INFO: FoxPro Can Use SQL pass-through commands and ODBC"
-permalink: kb/116/Q116235/
+permalink: /kb/116/Q116235/
 ---
 
 ## Q116235: INFO: FoxPro Can Use SQL pass-through commands and ODBC

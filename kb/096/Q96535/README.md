@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96535: PC WRmt: How to Recover from Mistyping Password on First Login"
-permalink: kb/096/Q96535/
+permalink: /kb/096/Q96535/
 ---
 
 ## Q96535: PC WRmt: How to Recover from Mistyping Password on First Login

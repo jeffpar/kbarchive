@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112173: PC WSPlus: Drag &amp; Drop Schedule+ Reassigns Appointment Times"
-permalink: kb/112/Q112173/
+permalink: /kb/112/Q112173/
 ---
 
 ## Q112173: PC WSPlus: Drag &amp; Drop Schedule+ Reassigns Appointment Times

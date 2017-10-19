@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120449: PC Gen: Summary List of Mail for PC Networks 3.2a Bug Fixes"
-permalink: kb/120/Q120449/
+permalink: /kb/120/Q120449/
 ---
 
 ## Q120449: PC Gen: Summary List of Mail for PC Networks 3.2a Bug Fixes

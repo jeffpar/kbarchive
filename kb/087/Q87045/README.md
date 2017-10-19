@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87045: SMTP: What the Gateway to SMTP Does"
-permalink: kb/087/Q87045/
+permalink: /kb/087/Q87045/
 ---
 
 ## Q87045: SMTP: What the Gateway to SMTP Does

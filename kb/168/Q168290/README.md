@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168290: FIX: GPF When Setting Font of Multi-selected Controls"
-permalink: kb/168/Q168290/
+permalink: /kb/168/Q168290/
 ---
 
 ## Q168290: FIX: GPF When Setting Font of Multi-selected Controls

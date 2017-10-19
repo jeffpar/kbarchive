@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69927: PC Hangs with 8514/a Display and Printing to Banyan Network"
-permalink: kb/069/Q69927/
+permalink: /kb/069/Q69927/
 ---
 
 ## Q69927: PC Hangs with 8514/a Display and Printing to Banyan Network

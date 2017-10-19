@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124017: Encarta 1995: How to Rewrite a Damaged Driver"
-permalink: kb/124/Q124017/
+permalink: /kb/124/Q124017/
 ---
 
 ## Q124017: Encarta 1995: How to Rewrite a Damaged Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175494: XFOR: Dequeing SMTP Mail Outside of Dialup Connections"
-permalink: kb/175/Q175494/
+permalink: /kb/175/Q175494/
 ---
 
 ## Q175494: XFOR: Dequeing SMTP Mail Outside of Dialup Connections

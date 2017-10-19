@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84752: Troubleshooting Media Player MIDI Sound Problems"
-permalink: kb/084/Q84752/
+permalink: /kb/084/Q84752/
 ---
 
 ## Q84752: Troubleshooting Media Player MIDI Sound Problems

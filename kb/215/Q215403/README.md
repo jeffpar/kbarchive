@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215403: BUG: VBCE Design Time HelpContextID Not Persisted at Run Time"
-permalink: kb/215/Q215403/
+permalink: /kb/215/Q215403/
 ---
 
 ## Q215403: BUG: VBCE Design Time HelpContextID Not Persisted at Run Time

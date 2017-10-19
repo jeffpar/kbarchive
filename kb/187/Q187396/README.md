@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187396: Monster Truck Madness 2: Minimum System Requirements"
-permalink: kb/187/Q187396/
+permalink: /kb/187/Q187396/
 ---
 
 ## Q187396: Monster Truck Madness 2: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172747: WD97: What's New in the Web Page Authoring Tools Update"
-permalink: kb/172/Q172747/
+permalink: /kb/172/Q172747/
 ---
 
 ## Q172747: WD97: What's New in the Web Page Authoring Tools Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180310: XCLN: Outlook Cannot View Replica of Nested Public Folder"
-permalink: kb/180/Q180310/
+permalink: /kb/180/Q180310/
 ---
 
 ## Q180310: XCLN: Outlook Cannot View Replica of Nested Public Folder

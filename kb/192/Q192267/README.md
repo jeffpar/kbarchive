@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192267: Various STOP Errors When Opening Files on Novell NetWare Servers"
-permalink: kb/192/Q192267/
+permalink: /kb/192/Q192267/
 ---
 
 ## Q192267: Various STOP Errors When Opening Files on Novell NetWare Servers

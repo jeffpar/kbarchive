@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138265: Creator Field Empty When Creating Recurring Tasks"
-permalink: kb/138/Q138265/
+permalink: /kb/138/Q138265/
 ---
 
 ## Q138265: Creator Field Empty When Creating Recurring Tasks

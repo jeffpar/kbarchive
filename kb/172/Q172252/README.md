@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172252: FIX: DBCombo Click Event Fires During Form Load"
-permalink: kb/172/Q172252/
+permalink: /kb/172/Q172252/
 ---
 
 ## Q172252: FIX: DBCombo Click Event Fires During Form Load

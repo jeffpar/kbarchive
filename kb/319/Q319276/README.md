@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319276: FIX: Fatal Exception Error with VAL() and Alpha Character"
-permalink: kb/319/Q319276/
+permalink: /kb/319/Q319276/
 ---
 
 ## Q319276: FIX: Fatal Exception Error with VAL() and Alpha Character

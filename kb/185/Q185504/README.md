@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185504: XFOR: Dxadata Folder Cannot Be Moved to Different Location"
-permalink: kb/185/Q185504/
+permalink: /kb/185/Q185504/
 ---
 
 ## Q185504: XFOR: Dxadata Folder Cannot Be Moved to Different Location

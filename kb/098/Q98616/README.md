@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98616: Printing Overlaps .75 Inch to Next Page on Okidata ML 380"
-permalink: kb/098/Q98616/
+permalink: /kb/098/Q98616/
 ---
 
 ## Q98616: Printing Overlaps .75 Inch to Next Page on Okidata ML 380

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166429: PCNTW: How to Set Appropriate System Locale for Applications"
-permalink: kb/166/Q166429/
+permalink: /kb/166/Q166429/
 ---
 
 ## Q166429: PCNTW: How to Set Appropriate System Locale for Applications

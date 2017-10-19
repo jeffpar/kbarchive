@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302604: Train Simulator: Train Simulator Doesn't Start After Install"
-permalink: kb/302/Q302604/
+permalink: /kb/302/Q302604/
 ---
 
 ## Q302604: Train Simulator: Train Simulator Doesn't Start After Install

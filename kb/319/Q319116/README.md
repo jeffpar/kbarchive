@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319116: &quot;Error 718&quot; Err Msg When You Connect to the Internet Through MSN"
-permalink: kb/319/Q319116/
+permalink: /kb/319/Q319116/
 ---
 
 ## Q319116: &quot;Error 718&quot; Err Msg When You Connect to the Internet Through MSN

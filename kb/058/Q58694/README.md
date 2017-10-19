@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58694: Purpose of Using Local Security in LAN Manager"
-permalink: kb/058/Q58694/
+permalink: /kb/058/Q58694/
 ---
 
 ## Q58694: Purpose of Using Local Security in LAN Manager

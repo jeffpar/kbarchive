@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193953: PRB: COM .Dll In MTS 'Sharing' Datasessions Between Instances"
-permalink: kb/193/Q193953/
+permalink: /kb/193/Q193953/
 ---
 
 ## Q193953: PRB: COM .Dll In MTS 'Sharing' Datasessions Between Instances

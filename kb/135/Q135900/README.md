@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135900: Windows 95 CD-ROM Internet.txt File"
-permalink: kb/135/Q135900/
+permalink: /kb/135/Q135900/
 ---
 
 ## Q135900: Windows 95 CD-ROM Internet.txt File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165340: Change Permissions Needed on Index Server System Files"
-permalink: kb/165/Q165340/
+permalink: /kb/165/Q165340/
 ---
 
 ## Q165340: Change Permissions Needed on Index Server System Files

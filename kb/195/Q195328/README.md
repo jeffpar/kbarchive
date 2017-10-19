@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195328: WD97: Mail Merge Main Document Restored to Normal Word Document"
-permalink: kb/195/Q195328/
+permalink: /kb/195/Q195328/
 ---
 
 ## Q195328: WD97: Mail Merge Main Document Restored to Normal Word Document

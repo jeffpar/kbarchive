@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164262: Windows Explorer Refresh Changes Current Selection"
-permalink: kb/164/Q164262/
+permalink: /kb/164/Q164262/
 ---
 
 ## Q164262: Windows Explorer Refresh Changes Current Selection

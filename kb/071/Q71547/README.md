@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71547: Known Problems with TIGA Driver"
-permalink: kb/071/Q71547/
+permalink: /kb/071/Q71547/
 ---
 
 ## Q71547: Known Problems with TIGA Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141636: How to Set Up a Grid as a Destination for Drag and Drop"
-permalink: kb/141/Q141636/
+permalink: /kb/141/Q141636/
 ---
 
 ## Q141636: How to Set Up a Grid as a Destination for Drag and Drop

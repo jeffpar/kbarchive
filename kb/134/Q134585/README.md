@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134585: Terminal Window Displays Random Characters During Logon"
-permalink: kb/134/Q134585/
+permalink: /kb/134/Q134585/
 ---
 
 ## Q134585: Terminal Window Displays Random Characters During Logon

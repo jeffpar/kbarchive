@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137889: Closing Quick Windows Viewer From Task List Closes SMS.EXE"
-permalink: kb/137/Q137889/
+permalink: /kb/137/Q137889/
 ---
 
 ## Q137889: Closing Quick Windows Viewer From Task List Closes SMS.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190505: BUG: Passing a Double Variable Causes Overflow Error in IDE"
-permalink: kb/190/Q190505/
+permalink: /kb/190/Q190505/
 ---
 
 ## Q190505: BUG: Passing a Double Variable Causes Overflow Error in IDE

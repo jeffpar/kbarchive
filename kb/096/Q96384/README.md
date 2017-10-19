@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96384: DoubleSpace Err Msg: Unrecognized Error #109"
-permalink: kb/096/Q96384/
+permalink: /kb/096/Q96384/
 ---
 
 ## Q96384: DoubleSpace Err Msg: Unrecognized Error #109

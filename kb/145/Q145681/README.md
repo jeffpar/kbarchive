@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145681: FIX: TreeView Nodeclick Differences with Mouse and Keyboard"
-permalink: kb/145/Q145681/
+permalink: /kb/145/Q145681/
 ---
 
 ## Q145681: FIX: TreeView Nodeclick Differences with Mouse and Keyboard

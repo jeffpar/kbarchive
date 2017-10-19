@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156545: XFOR: How to Set Up a 2nd MS-type Proxy Address for MSMail Users"
-permalink: kb/156/Q156545/
+permalink: /kb/156/Q156545/
 ---
 
 ## Q156545: XFOR: How to Set Up a 2nd MS-type Proxy Address for MSMail Users

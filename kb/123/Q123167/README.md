@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123167: Support for the Compaq Ethernet 16TP Network Adapter"
-permalink: kb/123/Q123167/
+permalink: /kb/123/Q123167/
 ---
 
 ## Q123167: Support for the Compaq Ethernet 16TP Network Adapter

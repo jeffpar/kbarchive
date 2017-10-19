@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165477: How to Add Modem Tracking to System Monitor"
-permalink: kb/165/Q165477/
+permalink: /kb/165/Q165477/
 ---
 
 ## Q165477: How to Add Modem Tracking to System Monitor

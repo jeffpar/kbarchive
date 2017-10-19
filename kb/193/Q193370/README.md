@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193370: Encarta Virtual Globe 99: Program Hangs When You Print Article"
-permalink: kb/193/Q193370/
+permalink: /kb/193/Q193370/
 ---
 
 ## Q193370: Encarta Virtual Globe 99: Program Hangs When You Print Article

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137363: Problems with ATI Mach32 Video Adapter on MCA Computer"
-permalink: kb/137/Q137363/
+permalink: /kb/137/Q137363/
 ---
 
 ## Q137363: Problems with ATI Mach32 Video Adapter on MCA Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108442: Mac Art Gallery/Wine Guide: Right Side of Image Is Cropped"
-permalink: kb/108/Q108442/
+permalink: /kb/108/Q108442/
 ---
 
 ## Q108442: Mac Art Gallery/Wine Guide: Right Side of Image Is Cropped

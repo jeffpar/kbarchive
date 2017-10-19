@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154919: Internet Explorer 3.0 Setup Prompts to Overwrite Riched20.dll"
-permalink: kb/154/Q154919/
+permalink: /kb/154/Q154919/
 ---
 
 ## Q154919: Internet Explorer 3.0 Setup Prompts to Overwrite Riched20.dll

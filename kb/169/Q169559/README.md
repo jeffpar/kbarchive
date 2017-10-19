@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169559: SMS: Remote Control Agent Shows Memory Leak with 3Com NIC"
-permalink: kb/169/Q169559/
+permalink: /kb/169/Q169559/
 ---
 
 ## Q169559: SMS: Remote Control Agent Shows Memory Leak with 3Com NIC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149957: SMS Shared Packages Can Change Existing Rights on NetWare"
-permalink: kb/149/Q149957/
+permalink: /kb/149/Q149957/
 ---
 
 ## Q149957: SMS Shared Packages Can Change Existing Rights on NetWare

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140675: Windows NT Doesn't Show All Files on OS/2 Server"
-permalink: kb/140/Q140675/
+permalink: /kb/140/Q140675/
 ---
 
 ## Q140675: Windows NT Doesn't Show All Files on OS/2 Server

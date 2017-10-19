@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58262: Location of Installed Windows 3.0 Drivers"
-permalink: kb/058/Q58262/
+permalink: /kb/058/Q58262/
 ---
 
 ## Q58262: Location of Installed Windows 3.0 Drivers

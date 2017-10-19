@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325976: Flight Simulator: Reverse Thrusters Do Not Work Correctly"
-permalink: kb/325/Q325976/
+permalink: /kb/325/Q325976/
 ---
 
 ## Q325976: Flight Simulator: Reverse Thrusters Do Not Work Correctly

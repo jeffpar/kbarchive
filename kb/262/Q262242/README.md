@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262242: SMS: Error in HINV32.LOG When Turnng On WIN32_NTLOGEVENT"
-permalink: kb/262/Q262242/
+permalink: /kb/262/Q262242/
 ---
 
 ## Q262242: SMS: Error in HINV32.LOG When Turnng On WIN32_NTLOGEVENT

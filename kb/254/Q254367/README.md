@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254367: How to Configure pcAnywhere Behind a Proxy Server"
-permalink: kb/254/Q254367/
+permalink: /kb/254/Q254367/
 ---
 
 ## Q254367: How to Configure pcAnywhere Behind a Proxy Server

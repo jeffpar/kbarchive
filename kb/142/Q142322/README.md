@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142322: BUG: File Manager Doesn't Associate Files Without Extensions"
-permalink: kb/142/Q142322/
+permalink: /kb/142/Q142322/
 ---
 
 ## Q142322: BUG: File Manager Doesn't Associate Files Without Extensions

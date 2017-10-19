@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136074: STOP Msg: 0x0000007B on Digitial Venturis 466 with 32-Bit I/O"
-permalink: kb/136/Q136074/
+permalink: /kb/136/Q136074/
 ---
 
 ## Q136074: STOP Msg: 0x0000007B on Digitial Venturis 466 with 32-Bit I/O

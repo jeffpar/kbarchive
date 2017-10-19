@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142414: PC Win: Err Msg: Address Is No Longer Valid. User or PO..."
-permalink: kb/142/Q142414/
+permalink: /kb/142/Q142414/
 ---
 
 ## Q142414: PC Win: Err Msg: Address Is No Longer Valid. User or PO...

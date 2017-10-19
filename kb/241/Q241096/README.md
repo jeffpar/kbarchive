@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241096: MapPoint 2000: How to Install Program to Run from the Hard Disk"
-permalink: kb/241/Q241096/
+permalink: /kb/241/Q241096/
 ---
 
 ## Q241096: MapPoint 2000: How to Install Program to Run from the Hard Disk

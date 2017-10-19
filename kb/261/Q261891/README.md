@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261891: XADM: Public Folder Size Displayed Incorr. If Larger Than 4.3 GB"
-permalink: kb/261/Q261891/
+permalink: /kb/261/Q261891/
 ---
 
 ## Q261891: XADM: Public Folder Size Displayed Incorr. If Larger Than 4.3 GB

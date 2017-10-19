@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139050: PRB: &quot;Setup not intended for this version of Windows&quot; Error"
-permalink: kb/139/Q139050/
+permalink: /kb/139/Q139050/
 ---
 
 ## Q139050: PRB: &quot;Setup not intended for this version of Windows&quot; Error

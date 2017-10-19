@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67679: Mac Wkst: 2.00 Voice Form and the Macinstosh LC and IIsi"
-permalink: kb/067/Q67679/
+permalink: /kb/067/Q67679/
 ---
 
 ## Q67679: Mac Wkst: 2.00 Voice Form and the Macinstosh LC and IIsi

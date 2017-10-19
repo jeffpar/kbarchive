@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181380: RAS Disconnects Due to Line Noise When Using Multitech Modems"
-permalink: kb/181/Q181380/
+permalink: /kb/181/Q181380/
 ---
 
 ## Q181380: RAS Disconnects Due to Line Noise When Using Multitech Modems

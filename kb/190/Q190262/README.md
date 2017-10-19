@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190262: PRB: ISMOUSE Function Always Returns .T. in Windows 95 &amp; 98"
-permalink: kb/190/Q190262/
+permalink: /kb/190/Q190262/
 ---
 
 ## Q190262: PRB: ISMOUSE Function Always Returns .T. in Windows 95 &amp; 98

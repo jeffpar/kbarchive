@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105165: PC DOS: MS-DOS Client Doesn't Log Msg. If Print Selected First"
-permalink: kb/105/Q105165/
+permalink: /kb/105/Q105165/
 ---
 
 ## Q105165: PC DOS: MS-DOS Client Doesn't Log Msg. If Print Selected First

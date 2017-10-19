@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168977: Time Suffix Appears Distorted in Windows 95 Clock"
-permalink: kb/168/Q168977/
+permalink: /kb/168/Q168977/
 ---
 
 ## Q168977: Time Suffix Appears Distorted in Windows 95 Clock

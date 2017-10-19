@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149199: Err Msg in XCOPY &quot;Access Denied&quot;"
-permalink: kb/149/Q149199/
+permalink: /kb/149/Q149199/
 ---
 
 ## Q149199: Err Msg in XCOPY &quot;Access Denied&quot;

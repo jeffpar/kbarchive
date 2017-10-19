@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196074: How to Store the Authenticated User Name in a Session Variable"
-permalink: kb/196/Q196074/
+permalink: /kb/196/Q196074/
 ---
 
 ## Q196074: How to Store the Authenticated User Name in a Session Variable

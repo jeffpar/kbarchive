@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169748: SMS: Packages Not Copied to NetWare Distribution Servers"
-permalink: kb/169/Q169748/
+permalink: /kb/169/Q169748/
 ---
 
 ## Q169748: SMS: Packages Not Copied to NetWare Distribution Servers

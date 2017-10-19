@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172707: File Manager Shows Incorrect Date for Year 2000 or Later"
-permalink: kb/172/Q172707/
+permalink: /kb/172/Q172707/
 ---
 
 ## Q172707: File Manager Shows Incorrect Date for Year 2000 or Later

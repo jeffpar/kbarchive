@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290884: HOWTO: Determine Which Application Is Running in COM+ or MTS"
-permalink: kb/290/Q290884/
+permalink: /kb/290/Q290884/
 ---
 
 ## Q290884: HOWTO: Determine Which Application Is Running in COM+ or MTS

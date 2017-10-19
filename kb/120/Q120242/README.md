@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120242: How to Have Individual CONFIG.FPM Files on Workstations"
-permalink: kb/120/Q120242/
+permalink: /kb/120/Q120242/
 ---
 
 ## Q120242: How to Have Individual CONFIG.FPM Files on Workstations

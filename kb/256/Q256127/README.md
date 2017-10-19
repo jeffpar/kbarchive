@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256127: SMS: Changing Software Metering Server Service Account Password"
-permalink: kb/256/Q256127/
+permalink: /kb/256/Q256127/
 ---
 
 ## Q256127: SMS: Changing Software Metering Server Service Account Password

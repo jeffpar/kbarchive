@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260530: SMS: Collection Properties Comment Box Allows 130 Characters"
-permalink: kb/260/Q260530/
+permalink: /kb/260/Q260530/
 ---
 
 ## Q260530: SMS: Collection Properties Comment Box Allows 130 Characters

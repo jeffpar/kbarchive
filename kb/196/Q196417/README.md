@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196417: XADM: Move Server Performance Issue in Large Configurations"
-permalink: kb/196/Q196417/
+permalink: /kb/196/Q196417/
 ---
 
 ## Q196417: XADM: Move Server Performance Issue in Large Configurations

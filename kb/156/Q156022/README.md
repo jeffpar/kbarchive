@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156022: PPT7: Text in Drawing Objects Prints Double to HP LaserJet 4"
-permalink: kb/156/Q156022/
+permalink: /kb/156/Q156022/
 ---
 
 ## Q156022: PPT7: Text in Drawing Objects Prints Double to HP LaserJet 4

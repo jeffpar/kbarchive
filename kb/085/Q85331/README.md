@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85331: BUG: System Menu Wrong for CS_NOCLOSE-Style MDI Child"
-permalink: kb/085/Q85331/
+permalink: /kb/085/Q85331/
 ---
 
 ## Q85331: BUG: System Menu Wrong for CS_NOCLOSE-Style MDI Child

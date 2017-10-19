@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288722: Non-Delivery Reports with Event ID 2025 Error Code BB8 or 50A"
-permalink: kb/288/Q288722/
+permalink: /kb/288/Q288722/
 ---
 
 ## Q288722: Non-Delivery Reports with Event ID 2025 Error Code BB8 or 50A

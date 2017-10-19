@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262695: XADM: Move Mailbox Stops After Encountering a Corrupted Mailbox"
-permalink: kb/262/Q262695/
+permalink: /kb/262/Q262695/
 ---
 
 ## Q262695: XADM: Move Mailbox Stops After Encountering a Corrupted Mailbox

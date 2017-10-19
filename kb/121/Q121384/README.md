@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121384: Eight or More Clauses Causes Query Execution Error"
-permalink: kb/121/Q121384/
+permalink: /kb/121/Q121384/
 ---
 
 ## Q121384: Eight or More Clauses Causes Query Execution Error

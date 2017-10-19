@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302580: Printing Epson-777 Word-95-Document"
-permalink: kb/302/Q302580/
+permalink: /kb/302/Q302580/
 ---
 
 ## Q302580: Printing Epson-777 Word-95-Document

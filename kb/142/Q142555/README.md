@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142555: Installing IIS FTP over Microsoft Windows NT FTP Service"
-permalink: kb/142/Q142555/
+permalink: /kb/142/Q142555/
 ---
 
 ## Q142555: Installing IIS FTP over Microsoft Windows NT FTP Service

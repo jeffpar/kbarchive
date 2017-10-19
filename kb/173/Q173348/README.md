@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173348: PRB: ActiveControl Set to &quot;Nothing&quot; on Disabled Form"
-permalink: kb/173/Q173348/
+permalink: /kb/173/Q173348/
 ---
 
 ## Q173348: PRB: ActiveControl Set to &quot;Nothing&quot; on Disabled Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195541: Large Number of Mounts/Dismounts on NTFS Causes Memory Leak"
-permalink: kb/195/Q195541/
+permalink: /kb/195/Q195541/
 ---
 
 ## Q195541: Large Number of Mounts/Dismounts on NTFS Causes Memory Leak

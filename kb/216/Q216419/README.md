@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216419: SMS: Client Installation Requires a Valid TEMP Directory"
-permalink: kb/216/Q216419/
+permalink: /kb/216/Q216419/
 ---
 
 ## Q216419: SMS: Client Installation Requires a Valid TEMP Directory

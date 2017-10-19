@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122164: WFWG Doesn't Run with Novell/Eagle NE200 PCMCIA Ethernet Card"
-permalink: kb/122/Q122164/
+permalink: /kb/122/Q122164/
 ---
 
 ## Q122164: WFWG Doesn't Run with Novell/Eagle NE200 PCMCIA Ethernet Card

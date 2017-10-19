@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185624: Calls to NtQueryVolumeInformationFile May Cause Stop 0x0000001E"
-permalink: kb/185/Q185624/
+permalink: /kb/185/Q185624/
 ---
 
 ## Q185624: Calls to NtQueryVolumeInformationFile May Cause Stop 0x0000001E

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157699: XCON: Messages Sent to Wang Via X.400 Do Not Return Receipts"
-permalink: kb/157/Q157699/
+permalink: /kb/157/Q157699/
 ---
 
 ## Q157699: XCON: Messages Sent to Wang Via X.400 Do Not Return Receipts

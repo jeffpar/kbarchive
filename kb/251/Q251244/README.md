@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251244: WD97: Cannot Change Outlook Contacts Folder for Labels/Envelopes"
-permalink: kb/251/Q251244/
+permalink: /kb/251/Q251244/
 ---
 
 ## Q251244: WD97: Cannot Change Outlook Contacts Folder for Labels/Envelopes

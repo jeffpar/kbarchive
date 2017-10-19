@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100021: Unable to Access Compressed Drives Using DBLBOOT.BAT Disk"
-permalink: kb/100/Q100021/
+permalink: /kb/100/Q100021/
 ---
 
 ## Q100021: Unable to Access Compressed Drives Using DBLBOOT.BAT Disk

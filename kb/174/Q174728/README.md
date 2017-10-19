@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174728: XADM: Err Msg: Error Occurred While Processing E-mail Address"
-permalink: kb/174/Q174728/
+permalink: /kb/174/Q174728/
 ---
 
 ## Q174728: XADM: Err Msg: Error Occurred While Processing E-mail Address

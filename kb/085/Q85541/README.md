@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85541: HP ThinkJet Driver Missing Paper Sizes in Common Dialog Boxes"
-permalink: kb/085/Q85541/
+permalink: /kb/085/Q85541/
 ---
 
 ## Q85541: HP ThinkJet Driver Missing Paper Sizes in Common Dialog Boxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135180: Device Manager Reports a PCI-to-ISA Bridge Conflict"
-permalink: kb/135/Q135180/
+permalink: /kb/135/Q135180/
 ---
 
 ## Q135180: Device Manager Reports a PCI-to-ISA Bridge Conflict

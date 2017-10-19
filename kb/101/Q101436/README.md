@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101436: Deleting DoubleSpace Drives Causes the System to Hang"
-permalink: kb/101/Q101436/
+permalink: /kb/101/Q101436/
 ---
 
 ## Q101436: Deleting DoubleSpace Drives Causes the System to Hang

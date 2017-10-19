@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137778: Setup Fails or Data Corruption Occurs w/ Conner CFP1060S Drive"
-permalink: kb/137/Q137778/
+permalink: /kb/137/Q137778/
 ---
 
 ## Q137778: Setup Fails or Data Corruption Occurs w/ Conner CFP1060S Drive

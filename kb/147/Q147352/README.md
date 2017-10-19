@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147352: XCLN: Creating Default User Profiles"
-permalink: kb/147/Q147352/
+permalink: /kb/147/Q147352/
 ---
 
 ## Q147352: XCLN: Creating Default User Profiles

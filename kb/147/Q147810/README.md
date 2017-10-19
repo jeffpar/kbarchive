@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147810: HOWTO: Use Windows BitBlt Function in Visual Basic Application"
-permalink: kb/147/Q147810/
+permalink: /kb/147/Q147810/
 ---
 
 ## Q147810: HOWTO: Use Windows BitBlt Function in Visual Basic Application

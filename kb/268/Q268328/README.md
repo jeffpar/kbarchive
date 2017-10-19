@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268328: ST2000: Printer Hangs When You Print Map and Directions"
-permalink: kb/268/Q268328/
+permalink: /kb/268/Q268328/
 ---
 
 ## Q268328: ST2000: Printer Hangs When You Print Map and Directions

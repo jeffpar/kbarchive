@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177271: WD97: Converted WordBasic On Error Statements May Fail"
-permalink: kb/177/Q177271/
+permalink: /kb/177/Q177271/
 ---
 
 ## Q177271: WD97: Converted WordBasic On Error Statements May Fail

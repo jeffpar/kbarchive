@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171820: FIX: ListView/ListItems Don't Refresh When ColumnHeaders Cleared"
-permalink: kb/171/Q171820/
+permalink: /kb/171/Q171820/
 ---
 
 ## Q171820: FIX: ListView/ListItems Don't Refresh When ColumnHeaders Cleared

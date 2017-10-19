@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233309: Error Message When Using IPX/SPX to Dial into RAS or RRAS"
-permalink: kb/233/Q233309/
+permalink: /kb/233/Q233309/
 ---
 
 ## Q233309: Error Message When Using IPX/SPX to Dial into RAS or RRAS

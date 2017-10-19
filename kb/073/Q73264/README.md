@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73264: Setup Unable to Upgrade Disk Manager Partitions &gt; 512 MB"
-permalink: kb/073/Q73264/
+permalink: /kb/073/Q73264/
 ---
 
 ## Q73264: Setup Unable to Upgrade Disk Manager Partitions &gt; 512 MB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83733: Windows 3.1 Cannot Upgrade Windows 2.x"
-permalink: kb/083/Q83733/
+permalink: /kb/083/Q83733/
 ---
 
 ## Q83733: Windows 3.1 Cannot Upgrade Windows 2.x

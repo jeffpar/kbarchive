@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233453: MSBP Err Msg: Some Components of the Wizard Engine Are Missing"
-permalink: kb/233/Q233453/
+permalink: /kb/233/Q233453/
 ---
 
 ## Q233453: MSBP Err Msg: Some Components of the Wizard Engine Are Missing

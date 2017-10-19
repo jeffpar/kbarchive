@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117427: PC Ext: MS-DOS External and RebootOnCE"
-permalink: kb/117/Q117427/
+permalink: /kb/117/Q117427/
 ---
 
 ## Q117427: PC Ext: MS-DOS External and RebootOnCE

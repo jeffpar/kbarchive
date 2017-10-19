@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230158: Err: &quot;The Network Path Was Not Found&quot; When Using Server Manager"
-permalink: kb/230/Q230158/
+permalink: /kb/230/Q230158/
 ---
 
 ## Q230158: Err: &quot;The Network Path Was Not Found&quot; When Using Server Manager

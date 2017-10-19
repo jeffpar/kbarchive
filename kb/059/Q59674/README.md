@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59674: Must Restart for Desktop Tile/Center Change"
-permalink: kb/059/Q59674/
+permalink: /kb/059/Q59674/
 ---
 
 ## Q59674: Must Restart for Desktop Tile/Center Change

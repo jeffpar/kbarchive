@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156506: PRB: ADD OBJECT Syntax Error from Browser Code Snippet"
-permalink: kb/156/Q156506/
+permalink: /kb/156/Q156506/
 ---
 
 ## Q156506: PRB: ADD OBJECT Syntax Error from Browser Code Snippet

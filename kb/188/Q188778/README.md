@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188778: XADM: Replying To or Forwarding Resent Message Causes NDR"
-permalink: kb/188/Q188778/
+permalink: /kb/188/Q188778/
 ---
 
 ## Q188778: XADM: Replying To or Forwarding Resent Message Causes NDR

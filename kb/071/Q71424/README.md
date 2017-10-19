@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71424: INFO: Type float Variable Arguments Are Promoted to Type double"
-permalink: kb/071/Q71424/
+permalink: /kb/071/Q71424/
 ---
 
 ## Q71424: INFO: Type float Variable Arguments Are Promoted to Type double

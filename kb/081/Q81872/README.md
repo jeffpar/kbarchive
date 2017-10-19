@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81872: Detecting Multimedia Extensions and Drivers"
-permalink: kb/081/Q81872/
+permalink: /kb/081/Q81872/
 ---
 
 ## Q81872: Detecting Multimedia Extensions and Drivers

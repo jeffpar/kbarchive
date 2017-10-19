@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166122: Mac Encarta 97: Can't Select Text From Right to Left"
-permalink: kb/166/Q166122/
+permalink: /kb/166/Q166122/
 ---
 
 ## Q166122: Mac Encarta 97: Can't Select Text From Right to Left

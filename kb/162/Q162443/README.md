@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162443: Msbatch.inf Parameters: Setting Color Depth and Resolution"
-permalink: kb/162/Q162443/
+permalink: /kb/162/Q162443/
 ---
 
 ## Q162443: Msbatch.inf Parameters: Setting Color Depth and Resolution

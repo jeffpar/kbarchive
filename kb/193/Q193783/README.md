@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193783: HOWTO: Use the _ShortCutMenu Foundation Class"
-permalink: kb/193/Q193783/
+permalink: /kb/193/Q193783/
 ---
 
 ## Q193783: HOWTO: Use the _ShortCutMenu Foundation Class

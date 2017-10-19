@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132950: Event ID 3216 and 3208 Logged For Replicator Service"
-permalink: kb/132/Q132950/
+permalink: /kb/132/Q132950/
 ---
 
 ## Q132950: Event ID 3216 and 3208 Logged For Replicator Service

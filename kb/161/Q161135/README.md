@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161135: PPT: Sample Code to Extract Text from an Organization Chart"
-permalink: kb/161/Q161135/
+permalink: /kb/161/Q161135/
 ---
 
 ## Q161135: PPT: Sample Code to Extract Text from an Organization Chart

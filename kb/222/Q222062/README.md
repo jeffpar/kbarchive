@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222062: Ntmarta.dll in German SP4 has Conflicting Base Address"
-permalink: kb/222/Q222062/
+permalink: /kb/222/Q222062/
 ---
 
 ## Q222062: Ntmarta.dll in German SP4 has Conflicting Base Address

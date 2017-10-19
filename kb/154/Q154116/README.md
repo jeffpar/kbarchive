@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154116: HOWTO: Debug OLE Applications"
-permalink: kb/154/Q154116/
+permalink: /kb/154/Q154116/
 ---
 
 ## Q154116: HOWTO: Debug OLE Applications

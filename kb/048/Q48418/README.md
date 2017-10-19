@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48418: Water Visible Through Storm Clouds in Flight Simulator"
-permalink: kb/048/Q48418/
+permalink: /kb/048/Q48418/
 ---
 
 ## Q48418: Water Visible Through Storm Clouds in Flight Simulator

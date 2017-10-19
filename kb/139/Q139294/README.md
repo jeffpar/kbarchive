@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139294: FIX: Replace &quot;Beginning of Line&quot; Skips Blank Lines"
-permalink: kb/139/Q139294/
+permalink: /kb/139/Q139294/
 ---
 
 ## Q139294: FIX: Replace &quot;Beginning of Line&quot; Skips Blank Lines

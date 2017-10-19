@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190451: BUG: Exiting VB While T-SQL Debugger Is Running Causes Hang"
-permalink: kb/190/Q190451/
+permalink: /kb/190/Q190451/
 ---
 
 ## Q190451: BUG: Exiting VB While T-SQL Debugger Is Running Causes Hang

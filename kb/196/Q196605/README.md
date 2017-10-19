@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196605: LU-LU Test Tool Generates Invalid Event 96"
-permalink: kb/196/Q196605/
+permalink: /kb/196/Q196605/
 ---
 
 ## Q196605: LU-LU Test Tool Generates Invalid Event 96

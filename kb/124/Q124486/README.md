@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124486: PC Win: Month Displays as &quot;MM&quot; in Received Date"
-permalink: kb/124/Q124486/
+permalink: /kb/124/Q124486/
 ---
 
 ## Q124486: PC Win: Month Displays as &quot;MM&quot; in Received Date

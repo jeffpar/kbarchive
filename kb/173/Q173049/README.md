@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173049: PRB: &quot;Locate&quot; Dialog Appears When Running Setup Wizard"
-permalink: kb/173/Q173049/
+permalink: /kb/173/Q173049/
 ---
 
 ## Q173049: PRB: &quot;Locate&quot; Dialog Appears When Running Setup Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139477: FIX: Insufficient Disk Space Causes Visual C++ to Fail"
-permalink: kb/139/Q139477/
+permalink: /kb/139/Q139477/
 ---
 
 ## Q139477: FIX: Insufficient Disk Space Causes Visual C++ to Fail

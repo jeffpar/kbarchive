@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96814: Microsoft SoundBits Browser Does Not Run Minimized"
-permalink: kb/096/Q96814/
+permalink: /kb/096/Q96814/
 ---
 
 ## Q96814: Microsoft SoundBits Browser Does Not Run Minimized

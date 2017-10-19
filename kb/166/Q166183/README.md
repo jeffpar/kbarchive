@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166183: FPNW Server Returns Error When User Opens More Than 256 Files"
-permalink: kb/166/Q166183/
+permalink: /kb/166/Q166183/
 ---
 
 ## Q166183: FPNW Server Returns Error When User Opens More Than 256 Files

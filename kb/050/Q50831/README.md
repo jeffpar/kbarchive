@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50831: Control Panel Timer Not Accurate to the Second"
-permalink: kb/050/Q50831/
+permalink: /kb/050/Q50831/
 ---
 
 ## Q50831: Control Panel Timer Not Accurate to the Second

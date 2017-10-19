@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166208: Kids Plus!: How To Remove Plus! For Kids From Your Computer"
-permalink: kb/166/Q166208/
+permalink: /kb/166/Q166208/
 ---
 
 ## Q166208: Kids Plus!: How To Remove Plus! For Kids From Your Computer

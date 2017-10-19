@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89832: Clipboard Files Don't Display at a Different Resolution"
-permalink: kb/089/Q89832/
+permalink: /kb/089/Q89832/
 ---
 
 ## Q89832: Clipboard Files Don't Display at a Different Resolution

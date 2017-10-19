@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167090: PPT: How to Videotape a PowerPoint Presentation"
-permalink: kb/167/Q167090/
+permalink: /kb/167/Q167090/
 ---
 
 ## Q167090: PPT: How to Videotape a PowerPoint Presentation

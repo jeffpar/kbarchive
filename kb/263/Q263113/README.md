@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263113: XADM: Gear Icon for Mailboxes on a DL After Import from CSV"
-permalink: kb/263/Q263113/
+permalink: /kb/263/Q263113/
 ---
 
 ## Q263113: XADM: Gear Icon for Mailboxes on a DL After Import from CSV

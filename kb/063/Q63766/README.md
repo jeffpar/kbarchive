@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63766: File Manager Displays Minutes as Even in Windows"
-permalink: kb/063/Q63766/
+permalink: /kb/063/Q63766/
 ---
 
 ## Q63766: File Manager Displays Minutes as Even in Windows

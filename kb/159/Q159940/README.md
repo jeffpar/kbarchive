@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159940: WD97: General Information About Hyperlinks in Word"
-permalink: kb/159/Q159940/
+permalink: /kb/159/Q159940/
 ---
 
 ## Q159940: WD97: General Information About Hyperlinks in Word

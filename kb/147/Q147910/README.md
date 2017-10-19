@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147910: Network Printing Options with the Tektronix Phaser"
-permalink: kb/147/Q147910/
+permalink: /kb/147/Q147910/
 ---
 
 ## Q147910: Network Printing Options with the Tektronix Phaser

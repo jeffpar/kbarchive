@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73668: MS-DOS-Based Application Characteristics Under Windows"
-permalink: kb/073/Q73668/
+permalink: /kb/073/Q73668/
 ---
 
 ## Q73668: MS-DOS-Based Application Characteristics Under Windows

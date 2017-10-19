@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168207: PRB: Cannot Find NULL Records with Parameterized Query"
-permalink: kb/168/Q168207/
+permalink: /kb/168/Q168207/
 ---
 
 ## Q168207: PRB: Cannot Find NULL Records with Parameterized Query

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11979: How Windows Resolves Far Calls When Movable Flag Is Used"
-permalink: kb/011/Q11979/
+permalink: /kb/011/Q11979/
 ---
 
 ## Q11979: How Windows Resolves Far Calls When Movable Flag Is Used

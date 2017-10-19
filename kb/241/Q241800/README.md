@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241800: &quot;STOP&quot; Error Message When Using Solstice 3.2"
-permalink: kb/241/Q241800/
+permalink: /kb/241/Q241800/
 ---
 
 ## Q241800: &quot;STOP&quot; Error Message When Using Solstice 3.2

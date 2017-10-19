@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89467: LAN Man 2.1 Test Summary (Tripp Lite BC800LAN)"
-permalink: kb/089/Q89467/
+permalink: /kb/089/Q89467/
 ---
 
 ## Q89467: LAN Man 2.1 Test Summary (Tripp Lite BC800LAN)

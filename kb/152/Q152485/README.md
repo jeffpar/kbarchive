@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152485: Using Iomega Write-protected Media"
-permalink: kb/152/Q152485/
+permalink: /kb/152/Q152485/
 ---
 
 ## Q152485: Using Iomega Write-protected Media

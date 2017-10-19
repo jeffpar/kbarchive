@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241186: XADM: DirRep Bridgeheads Generate Unnecessary Notifications"
-permalink: kb/241/Q241186/
+permalink: /kb/241/Q241186/
 ---
 
 ## Q241186: XADM: DirRep Bridgeheads Generate Unnecessary Notifications

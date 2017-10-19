@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165996: SNA Server Print Service Needs to Convert NL to CRLF"
-permalink: kb/165/Q165996/
+permalink: /kb/165/Q165996/
 ---
 
 ## Q165996: SNA Server Print Service Needs to Convert NL to CRLF

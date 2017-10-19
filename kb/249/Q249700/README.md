@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249700: PRB: Hot Keys of a ToolBar ActiveX Control are not Active"
-permalink: kb/249/Q249700/
+permalink: /kb/249/Q249700/
 ---
 
 ## Q249700: PRB: Hot Keys of a ToolBar ActiveX Control are not Active

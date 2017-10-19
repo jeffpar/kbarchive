@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84038: Assigning a Shortcut Key to a Windows 3.1 Screen Saver"
-permalink: kb/084/Q84038/
+permalink: /kb/084/Q84038/
 ---
 
 ## Q84038: Assigning a Shortcut Key to a Windows 3.1 Screen Saver

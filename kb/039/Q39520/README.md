@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39520: Passing an Integer from C to MASM, Returning a Double"
-permalink: kb/039/Q39520/
+permalink: /kb/039/Q39520/
 ---
 
 ## Q39520: Passing an Integer from C to MASM, Returning a Double

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137154: FIX: ClassWizard Generates Bad Code for Tree View Messages"
-permalink: kb/137/Q137154/
+permalink: /kb/137/Q137154/
 ---
 
 ## Q137154: FIX: ClassWizard Generates Bad Code for Tree View Messages

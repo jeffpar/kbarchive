@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174076: Invalid Password Message When Strong Passwords Are Required"
-permalink: kb/174/Q174076/
+permalink: /kb/174/Q174076/
 ---
 
 ## Q174076: Invalid Password Message When Strong Passwords Are Required

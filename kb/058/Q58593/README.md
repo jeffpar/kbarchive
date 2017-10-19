@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58593: Mac Hyp: AddHandle Attaches a Macintosh Resource to a Message"
-permalink: kb/058/Q58593/
+permalink: /kb/058/Q58593/
 ---
 
 ## Q58593: Mac Hyp: AddHandle Attaches a Macintosh Resource to a Message

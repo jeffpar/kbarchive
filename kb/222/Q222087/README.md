@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222087: How To Combine Multiple SNA Subdomains Into One Using Snacfg"
-permalink: kb/222/Q222087/
+permalink: /kb/222/Q222087/
 ---
 
 ## Q222087: How To Combine Multiple SNA Subdomains Into One Using Snacfg

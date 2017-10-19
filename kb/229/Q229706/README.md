@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229706: Managing a Microsoft Windows NT Network Corrections"
-permalink: kb/229/Q229706/
+permalink: /kb/229/Q229706/
 ---
 
 ## Q229706: Managing a Microsoft Windows NT Network Corrections

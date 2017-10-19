@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39485: MS-DOS: Maximum Usage of FASTOPEN in Expanded Memory"
-permalink: kb/039/Q39485/
+permalink: /kb/039/Q39485/
 ---
 
 ## Q39485: MS-DOS: Maximum Usage of FASTOPEN in Expanded Memory

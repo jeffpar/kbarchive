@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153558: Running Deinstall.cmd on an OS/2 Client Does Not Remove SMS"
-permalink: kb/153/Q153558/
+permalink: /kb/153/Q153558/
 ---
 
 ## Q153558: Running Deinstall.cmd on an OS/2 Client Does Not Remove SMS

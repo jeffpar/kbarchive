@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109455: Writer: Some Backgrounds Don't Support Multiple Columns"
-permalink: kb/109/Q109455/
+permalink: /kb/109/Q109455/
 ---
 
 ## Q109455: Writer: Some Backgrounds Don't Support Multiple Columns

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198710: SMSINST: Edit ini File May Produce Unexpected Results"
-permalink: kb/198/Q198710/
+permalink: /kb/198/Q198710/
 ---
 
 ## Q198710: SMSINST: Edit ini File May Produce Unexpected Results

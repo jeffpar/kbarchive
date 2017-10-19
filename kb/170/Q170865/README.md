@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170865: ErrMsg: Reentrant Call to Interupt Window on Netscape 2.0 (UNIX)"
-permalink: kb/170/Q170865/
+permalink: /kb/170/Q170865/
 ---
 
 ## Q170865: ErrMsg: Reentrant Call to Interupt Window on Netscape 2.0 (UNIX)

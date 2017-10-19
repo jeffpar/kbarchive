@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255221: Client Can't Connect to Secure Web Site Requiring Reverse Lookup"
-permalink: kb/255/Q255221/
+permalink: /kb/255/Q255221/
 ---
 
 ## Q255221: Client Can't Connect to Secure Web Site Requiring Reverse Lookup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307608: INFO: Availability of URLScan Version 2.5 Security Tool"
-permalink: kb/307/Q307608/
+permalink: /kb/307/Q307608/
 ---
 
 ## Q307608: INFO: Availability of URLScan Version 2.5 Security Tool

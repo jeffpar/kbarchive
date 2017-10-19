@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175273: SNA Server Leaks Memory If Detailed Logging Is Enabled"
-permalink: kb/175/Q175273/
+permalink: /kb/175/Q175273/
 ---
 
 ## Q175273: SNA Server Leaks Memory If Detailed Logging Is Enabled

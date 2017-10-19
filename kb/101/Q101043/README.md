@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101043: Comprehensive List of WFWG Resource Kit 3.1 Doc Errs"
-permalink: kb/101/Q101043/
+permalink: /kb/101/Q101043/
 ---
 
 ## Q101043: Comprehensive List of WFWG Resource Kit 3.1 Doc Errs

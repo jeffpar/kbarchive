@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190865: XCLN: Outlook Error: Unable to Forward Meeting-Related Messages"
-permalink: kb/190/Q190865/
+permalink: /kb/190/Q190865/
 ---
 
 ## Q190865: XCLN: Outlook Error: Unable to Forward Meeting-Related Messages

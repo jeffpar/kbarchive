@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182513: XADM: Exchange Server Setup Stops With 0xc002041d"
-permalink: kb/182/Q182513/
+permalink: /kb/182/Q182513/
 ---
 
 ## Q182513: XADM: Exchange Server Setup Stops With 0xc002041d

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95541: Err Msg: &quot;Cannot Find STRAKCP.DLL&quot; using Z-Nix SuperMouse"
-permalink: kb/095/Q95541/
+permalink: /kb/095/Q95541/
 ---
 
 ## Q95541: Err Msg: &quot;Cannot Find STRAKCP.DLL&quot; using Z-Nix SuperMouse

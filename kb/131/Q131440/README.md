@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131440: Mac Encarta 1995: Fonts Not Installed to Non-Startup Drive"
-permalink: kb/131/Q131440/
+permalink: /kb/131/Q131440/
 ---
 
 ## Q131440: Mac Encarta 1995: Fonts Not Installed to Non-Startup Drive

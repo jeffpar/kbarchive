@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193114: XCLN: How To Generate A User-Specific Profile w/ IExpress &amp; ODK"
-permalink: kb/193/Q193114/
+permalink: /kb/193/Q193114/
 ---
 
 ## Q193114: XCLN: How To Generate A User-Specific Profile w/ IExpress &amp; ODK

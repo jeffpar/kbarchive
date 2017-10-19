@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171343: FP: How to Edit the List of Servers in FrontPage Explorer"
-permalink: kb/171/Q171343/
+permalink: /kb/171/Q171343/
 ---
 
 ## Q171343: FP: How to Edit the List of Servers in FrontPage Explorer

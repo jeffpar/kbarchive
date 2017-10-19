@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190501: FIX: Resizing CToolbar with Dropdown Arrow Buttons Freezes Apps"
-permalink: kb/190/Q190501/
+permalink: /kb/190/Q190501/
 ---
 
 ## Q190501: FIX: Resizing CToolbar with Dropdown Arrow Buttons Freezes Apps

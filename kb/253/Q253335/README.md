@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253335: BUG: CE CommonDialog: ShowOpen Displays Only My Documents Files"
-permalink: kb/253/Q253335/
+permalink: /kb/253/Q253335/
 ---
 
 ## Q253335: BUG: CE CommonDialog: ShowOpen Displays Only My Documents Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141914: PRB: Record Number is Not Refreshed in Status Bar"
-permalink: kb/141/Q141914/
+permalink: /kb/141/Q141914/
 ---
 
 ## Q141914: PRB: Record Number is Not Refreshed in Status Bar

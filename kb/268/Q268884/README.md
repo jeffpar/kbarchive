@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268884: HOWTO: Set or Retrieve the Authentication Level of a DCOM Client"
-permalink: kb/268/Q268884/
+permalink: /kb/268/Q268884/
 ---
 
 ## Q268884: HOWTO: Set or Retrieve the Authentication Level of a DCOM Client

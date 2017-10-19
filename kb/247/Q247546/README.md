@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247546: SMS: Discovery Data Manager Fails to Enumerate Sites"
-permalink: kb/247/Q247546/
+permalink: /kb/247/Q247546/
 ---
 
 ## Q247546: SMS: Discovery Data Manager Fails to Enumerate Sites

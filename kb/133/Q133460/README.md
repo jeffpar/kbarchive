@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133460: Macintosh Multimedia: Finder Items Lose Color"
-permalink: kb/133/Q133460/
+permalink: /kb/133/Q133460/
 ---
 
 ## Q133460: Macintosh Multimedia: Finder Items Lose Color

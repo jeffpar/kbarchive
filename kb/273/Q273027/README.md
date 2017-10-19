@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273027: Gethostbyname() May Return Wrong IP Address"
-permalink: kb/273/Q273027/
+permalink: /kb/273/Q273027/
 ---
 
 ## Q273027: Gethostbyname() May Return Wrong IP Address

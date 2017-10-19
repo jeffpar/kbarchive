@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150978: SFM: Optimizing Polling Rate for Macintosh Clients for PCMail"
-permalink: kb/150/Q150978/
+permalink: /kb/150/Q150978/
 ---
 
 ## Q150978: SFM: Optimizing Polling Rate for Macintosh Clients for PCMail

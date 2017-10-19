@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99109: DOC: Bad Printing Code Example in Guide to Programming"
-permalink: kb/099/Q99109/
+permalink: /kb/099/Q99109/
 ---
 
 ## Q99109: DOC: Bad Printing Code Example in Guide to Programming

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146259: XADM: Field Help Dialog Doesn't List Fields Alphabetically"
-permalink: kb/146/Q146259/
+permalink: /kb/146/Q146259/
 ---
 
 ## Q146259: XADM: Field Help Dialog Doesn't List Fields Alphabetically

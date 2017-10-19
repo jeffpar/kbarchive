@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178556: Seagate Tape Will Not Autoeject After NTBackup Finishes"
-permalink: kb/178/Q178556/
+permalink: /kb/178/Q178556/
 ---
 
 ## Q178556: Seagate Tape Will Not Autoeject After NTBackup Finishes

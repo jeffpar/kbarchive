@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242902: AoE II Err Msg: Could Not Initialize Graphics System..."
-permalink: kb/242/Q242902/
+permalink: /kb/242/Q242902/
 ---
 
 ## Q242902: AoE II Err Msg: Could Not Initialize Graphics System...

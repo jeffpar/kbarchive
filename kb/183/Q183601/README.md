@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183601: Slow Links Are Not Detected Between a Workstation and a Server"
-permalink: kb/183/Q183601/
+permalink: /kb/183/Q183601/
 ---
 
 ## Q183601: Slow Links Are Not Detected Between a Workstation and a Server

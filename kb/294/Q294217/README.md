@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294217: Cannot Retrieve Custom HTTP Variables That Contain an Underscore"
-permalink: kb/294/Q294217/
+permalink: /kb/294/Q294217/
 ---
 
 ## Q294217: Cannot Retrieve Custom HTTP Variables That Contain an Underscore

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152360: Error Message: Cannot Find Ccdialer.exe"
-permalink: kb/152/Q152360/
+permalink: /kb/152/Q152360/
 ---
 
 ## Q152360: Error Message: Cannot Find Ccdialer.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68560: DLL Installs an ISR That Can Signal an Application"
-permalink: kb/068/Q68560/
+permalink: /kb/068/Q68560/
 ---
 
 ## Q68560: DLL Installs an ISR That Can Signal an Application

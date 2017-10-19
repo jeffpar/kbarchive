@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122702: Using the System Account as a Service in Windows NT 3.5"
-permalink: kb/122/Q122702/
+permalink: /kb/122/Q122702/
 ---
 
 ## Q122702: Using the System Account as a Service in Windows NT 3.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165097: WD97: WordBasic.ToolsCalculate Returns Incorrect Result"
-permalink: kb/165/Q165097/
+permalink: /kb/165/Q165097/
 ---
 
 ## Q165097: WD97: WordBasic.ToolsCalculate Returns Incorrect Result

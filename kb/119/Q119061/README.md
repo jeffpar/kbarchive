@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119061: Writer/Artist: Importing and Exporting Pictures"
-permalink: kb/119/Q119061/
+permalink: /kb/119/Q119061/
 ---
 
 ## Q119061: Writer/Artist: Importing and Exporting Pictures

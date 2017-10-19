@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106100: PC DOS: Err Msg: Keyboard Is Disabled. Saving Image."
-permalink: kb/106/Q106100/
+permalink: /kb/106/Q106100/
 ---
 
 ## Q106100: PC DOS: Err Msg: Keyboard Is Disabled. Saving Image.

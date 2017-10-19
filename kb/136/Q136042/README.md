@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136042: BUG: SET TOPIC Overwritten by SET MESSAGE"
-permalink: kb/136/Q136042/
+permalink: /kb/136/Q136042/
 ---
 
 ## Q136042: BUG: SET TOPIC Overwritten by SET MESSAGE

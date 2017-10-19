@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135223: Reveal TV300 Adapter Affects Display Color During Setup"
-permalink: kb/135/Q135223/
+permalink: /kb/135/Q135223/
 ---
 
 ## Q135223: Reveal TV300 Adapter Affects Display Color During Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146725: XFOR: NDR's Send Again Moves Bcc: Recipient to To: Line"
-permalink: kb/146/Q146725/
+permalink: /kb/146/Q146725/
 ---
 
 ## Q146725: XFOR: NDR's Send Again Moves Bcc: Recipient to To: Line

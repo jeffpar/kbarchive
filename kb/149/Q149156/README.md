@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149156: BUG: Common Blocks Cannot Be Viewed in the Watch Window"
-permalink: kb/149/Q149156/
+permalink: /kb/149/Q149156/
 ---
 
 ## Q149156: BUG: Common Blocks Cannot Be Viewed in the Watch Window

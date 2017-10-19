@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193152: Preserving Virtual Directories and Servers During Uninstall"
-permalink: kb/193/Q193152/
+permalink: /kb/193/Q193152/
 ---
 
 ## Q193152: Preserving Virtual Directories and Servers During Uninstall

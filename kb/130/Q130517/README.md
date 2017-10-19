@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130517: How to Modify Config.sys in Windows 95"
-permalink: kb/130/Q130517/
+permalink: /kb/130/Q130517/
 ---
 
 ## Q130517: How to Modify Config.sys in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125920: PROFS: Template Information Lost Using IMPORT -T"
-permalink: kb/125/Q125920/
+permalink: /kb/125/Q125920/
 ---
 
 ## Q125920: PROFS: Template Information Lost Using IMPORT -T

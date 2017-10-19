@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250482: Establishing Replication Agreements Between MMS Servers"
-permalink: kb/250/Q250482/
+permalink: /kb/250/Q250482/
 ---
 
 ## Q250482: Establishing Replication Agreements Between MMS Servers

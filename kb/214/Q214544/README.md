@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214544: NSLOOKUP Does Not Devolve MX Record Queries"
-permalink: kb/214/Q214544/
+permalink: /kb/214/Q214544/
 ---
 
 ## Q214544: NSLOOKUP Does Not Devolve MX Record Queries

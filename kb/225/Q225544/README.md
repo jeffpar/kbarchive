@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225544: FTP Messages Cannot Contain the Plus Symbol (+) Using HTMLA"
-permalink: kb/225/Q225544/
+permalink: /kb/225/Q225544/
 ---
 
 ## Q225544: FTP Messages Cannot Contain the Plus Symbol (+) Using HTMLA

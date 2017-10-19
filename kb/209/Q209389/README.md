@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209389: IIS 4.0 Prompts for Password with Web-based Password Change Tool"
-permalink: kb/209/Q209389/
+permalink: /kb/209/Q209389/
 ---
 
 ## Q209389: IIS 4.0 Prompts for Password with Web-based Password Change Tool

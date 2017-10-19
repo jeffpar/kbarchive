@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient"
-permalink: kb/102/Q102119/
+permalink: /kb/102/Q102119/
 ---
 
 ## Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130614: Setup Does Not Install 32-Bit Token Ring Network Components"
-permalink: kb/130/Q130614/
+permalink: /kb/130/Q130614/
 ---
 
 ## Q130614: Setup Does Not Install 32-Bit Token Ring Network Components

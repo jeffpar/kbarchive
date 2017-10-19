@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175977: XADM: Install Exchange Server &amp; Client 5.0 w/ Citrix WinFrame"
-permalink: kb/175/Q175977/
+permalink: /kb/175/Q175977/
 ---
 
 ## Q175977: XADM: Install Exchange Server &amp; Client 5.0 w/ Citrix WinFrame

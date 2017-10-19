@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166037: Mac Kids/Multimedia: ErrMsg: Not Enough Room on Drive"
-permalink: kb/166/Q166037/
+permalink: /kb/166/Q166037/
 ---
 
 ## Q166037: Mac Kids/Multimedia: ErrMsg: Not Enough Room on Drive

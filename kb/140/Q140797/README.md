@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140797: Streets 4.0: Scale Changes When Viewing Multiple Windows"
-permalink: kb/140/Q140797/
+permalink: /kb/140/Q140797/
 ---
 
 ## Q140797: Streets 4.0: Scale Changes When Viewing Multiple Windows

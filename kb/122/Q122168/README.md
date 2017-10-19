@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122168: WFWG Hangs with Intel EtherExpress ISA and Adaptec 2940 Cards"
-permalink: kb/122/Q122168/
+permalink: /kb/122/Q122168/
 ---
 
 ## Q122168: WFWG Hangs with Intel EtherExpress ISA and Adaptec 2940 Cards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85485: PSP.EXE 3.1 or Earlier May Causes Windows 3.1 to Fail"
-permalink: kb/085/Q85485/
+permalink: /kb/085/Q85485/
 ---
 
 ## Q85485: PSP.EXE 3.1 or Earlier May Causes Windows 3.1 to Fail

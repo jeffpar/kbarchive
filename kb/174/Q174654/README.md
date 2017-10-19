@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174654: Running GSNW without a Preferred Server Statement"
-permalink: kb/174/Q174654/
+permalink: /kb/174/Q174654/
 ---
 
 ## Q174654: Running GSNW without a Preferred Server Statement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153153: Error Message: &quot;SMS.EXE - Application Error&quot;"
-permalink: kb/153/Q153153/
+permalink: /kb/153/Q153153/
 ---
 
 ## Q153153: Error Message: &quot;SMS.EXE - Application Error&quot;

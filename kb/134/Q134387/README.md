@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134387: Cannot Boot Windows NT 3.5x From Duplexed Mirror Drive"
-permalink: kb/134/Q134387/
+permalink: /kb/134/Q134387/
 ---
 
 ## Q134387: Cannot Boot Windows NT 3.5x From Duplexed Mirror Drive

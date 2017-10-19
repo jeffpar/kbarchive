@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182045: FIX: Excessive Delay Before Build, Export Makefile, or Debug"
-permalink: kb/182/Q182045/
+permalink: /kb/182/Q182045/
 ---
 
 ## Q182045: FIX: Excessive Delay Before Build, Export Makefile, or Debug

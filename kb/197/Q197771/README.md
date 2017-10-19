@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197771: Bookshelf 99: Right-Click Define Feature Starts Bookshelf Basics"
-permalink: kb/197/Q197771/
+permalink: /kb/197/Q197771/
 ---
 
 ## Q197771: Bookshelf 99: Right-Click Define Feature Starts Bookshelf Basics

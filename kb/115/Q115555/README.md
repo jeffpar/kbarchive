@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115555: SMTP: Gateway Screen Border Displays Random Characters"
-permalink: kb/115/Q115555/
+permalink: /kb/115/Q115555/
 ---
 
 ## Q115555: SMTP: Gateway Screen Border Displays Random Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184312: Microsoft Management Console Fails to Function Correctly"
-permalink: kb/184/Q184312/
+permalink: /kb/184/Q184312/
 ---
 
 ## Q184312: Microsoft Management Console Fails to Function Correctly

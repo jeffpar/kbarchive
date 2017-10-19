@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180678: Folder on FPNW Server Inaccessible to intraNetWare Client"
-permalink: kb/180/Q180678/
+permalink: /kb/180/Q180678/
 ---
 
 ## Q180678: Folder on FPNW Server Inaccessible to intraNetWare Client

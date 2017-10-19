@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132084: NMAKE 1.4 on Windows 95 Won't Stop on Errors"
-permalink: kb/132/Q132084/
+permalink: /kb/132/Q132084/
 ---
 
 ## Q132084: NMAKE 1.4 on Windows 95 Won't Stop on Errors

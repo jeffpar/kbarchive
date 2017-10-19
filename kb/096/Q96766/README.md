@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96766: Running Both Extended and Expanded Memory on Your Computer"
-permalink: kb/096/Q96766/
+permalink: /kb/096/Q96766/
 ---
 
 ## Q96766: Running Both Extended and Expanded Memory on Your Computer

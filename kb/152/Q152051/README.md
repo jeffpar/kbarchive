@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152051: IBM Gothic Box Font Appears Garbled"
-permalink: kb/152/Q152051/
+permalink: /kb/152/Q152051/
 ---
 
 ## Q152051: IBM Gothic Box Font Appears Garbled

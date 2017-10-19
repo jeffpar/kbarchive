@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66630: ASD: Flight Timing Gate Scoring"
-permalink: kb/066/Q66630/
+permalink: /kb/066/Q66630/
 ---
 
 ## Q66630: ASD: Flight Timing Gate Scoring

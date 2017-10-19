@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121043: STOP screen when installing Windows NT 3.5 on 386 SMP machine"
-permalink: kb/121/Q121043/
+permalink: /kb/121/Q121043/
 ---
 
 ## Q121043: STOP screen when installing Windows NT 3.5 on 386 SMP machine

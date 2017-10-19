@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242572: Games: Compatibility Issues with Some CD-ROM Drives"
-permalink: kb/242/Q242572/
+permalink: /kb/242/Q242572/
 ---
 
 ## Q242572: Games: Compatibility Issues with Some CD-ROM Drives

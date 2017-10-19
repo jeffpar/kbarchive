@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266253: How to Enter Phone Numbers in Phone Dialer Correctly"
-permalink: kb/266/Q266253/
+permalink: /kb/266/Q266253/
 ---
 
 ## Q266253: How to Enter Phone Numbers in Phone Dialer Correctly

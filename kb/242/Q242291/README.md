@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242291: INFO: GetResultView Event Does Not Fire As Expected"
-permalink: kb/242/Q242291/
+permalink: /kb/242/Q242291/
 ---
 
 ## Q242291: INFO: GetResultView Event Does Not Fire As Expected

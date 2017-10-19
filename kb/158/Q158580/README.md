@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158580: STL Sample for the set::(swap, begin, end) Function"
-permalink: kb/158/Q158580/
+permalink: /kb/158/Q158580/
 ---
 
 ## Q158580: STL Sample for the set::(swap, begin, end) Function

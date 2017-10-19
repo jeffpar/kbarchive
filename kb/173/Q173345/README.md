@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173345: XADM: PerfWiz Allows Memory Limit to be Set to Less than 16 MB"
-permalink: kb/173/Q173345/
+permalink: /kb/173/Q173345/
 ---
 
 ## Q173345: XADM: PerfWiz Allows Memory Limit to be Set to Less than 16 MB

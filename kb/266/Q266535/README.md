@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266535: Encarta Researcher: Cannot Start Program on Dual Boot Computer"
-permalink: kb/266/Q266535/
+permalink: /kb/266/Q266535/
 ---
 
 ## Q266535: Encarta Researcher: Cannot Start Program on Dual Boot Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172078: HOWTO: Enable Autorun for Applications Distributed on CD-ROM"
-permalink: kb/172/Q172078/
+permalink: /kb/172/Q172078/
 ---
 
 ## Q172078: HOWTO: Enable Autorun for Applications Distributed on CD-ROM

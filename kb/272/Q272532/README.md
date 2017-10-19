@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272532: PRB: DatePicker Value Is Incorrect When You Enter Invalid Date"
-permalink: kb/272/Q272532/
+permalink: /kb/272/Q272532/
 ---
 
 ## Q272532: PRB: DatePicker Value Is Incorrect When You Enter Invalid Date

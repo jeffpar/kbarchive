@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263526: XADM: Appointments Sent in Different Time Zones Not Processed"
-permalink: kb/263/Q263526/
+permalink: /kb/263/Q263526/
 ---
 
 ## Q263526: XADM: Appointments Sent in Different Time Zones Not Processed

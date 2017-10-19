@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266551: Encarta Researcher: Contents of Article Is Not Displayed"
-permalink: kb/266/Q266551/
+permalink: /kb/266/Q266551/
 ---
 
 ## Q266551: Encarta Researcher: Contents of Article Is Not Displayed

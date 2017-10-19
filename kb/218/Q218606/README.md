@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218606: HOWTO: Use ASP and Scripting.FileSystemObject to Create a TOC"
-permalink: kb/218/Q218606/
+permalink: /kb/218/Q218606/
 ---
 
 ## Q218606: HOWTO: Use ASP and Scripting.FileSystemObject to Create a TOC

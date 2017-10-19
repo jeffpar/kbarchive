@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194559: SMS: SNMPELEA May Conflict with Compaq Insight Manager Agents"
-permalink: kb/194/Q194559/
+permalink: /kb/194/Q194559/
 ---
 
 ## Q194559: SMS: SNMPELEA May Conflict with Compaq Insight Manager Agents

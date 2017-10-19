@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163526: SMS: Polycenter/Assetworks and SMS Support Policy"
-permalink: kb/163/Q163526/
+permalink: /kb/163/Q163526/
 ---
 
 ## Q163526: SMS: Polycenter/Assetworks and SMS Support Policy

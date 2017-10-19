@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129787: HOWTO: Build a Code Resource"
-permalink: kb/129/Q129787/
+permalink: /kb/129/Q129787/
 ---
 
 ## Q129787: HOWTO: Build a Code Resource

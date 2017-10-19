@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141910: BUG: Validate Database Dialog Allows Choice of Invalid Table"
-permalink: kb/141/Q141910/
+permalink: /kb/141/Q141910/
 ---
 
 ## Q141910: BUG: Validate Database Dialog Allows Choice of Invalid Table

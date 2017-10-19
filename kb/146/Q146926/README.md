@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146926: XCLN: Exchange Client Starts Microsoft Network Login"
-permalink: kb/146/Q146926/
+permalink: /kb/146/Q146926/
 ---
 
 ## Q146926: XCLN: Exchange Client Starts Microsoft Network Login

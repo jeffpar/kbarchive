@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72853: BUG: H2INC Produces Garbage/GP Faults w/ Some Function Typedefs"
-permalink: kb/072/Q72853/
+permalink: /kb/072/Q72853/
 ---
 
 ## Q72853: BUG: H2INC Produces Garbage/GP Faults w/ Some Function Typedefs

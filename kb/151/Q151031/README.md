@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151031: FIX: SetMinHeight Does Not Work Correctly with CStatusBar"
-permalink: kb/151/Q151031/
+permalink: /kb/151/Q151031/
 ---
 
 ## Q151031: FIX: SetMinHeight Does Not Work Correctly with CStatusBar

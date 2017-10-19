@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108237: Services for Macintosh: Differences in Permissions Dialogs"
-permalink: kb/108/Q108237/
+permalink: /kb/108/Q108237/
 ---
 
 ## Q108237: Services for Macintosh: Differences in Permissions Dialogs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131963: PC Mac: Client Hangs When Accessing PO on NT 3.5 Server"
-permalink: kb/131/Q131963/
+permalink: /kb/131/Q131963/
 ---
 
 ## Q131963: PC Mac: Client Hangs When Accessing PO on NT 3.5 Server

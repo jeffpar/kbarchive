@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182479: XFOR: GP Fault Sending or Receiving SMTP Messages"
-permalink: kb/182/Q182479/
+permalink: /kb/182/Q182479/
 ---
 
 ## Q182479: XFOR: GP Fault Sending or Receiving SMTP Messages

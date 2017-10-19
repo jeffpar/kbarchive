@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281502: IA-2 MSN Companion Starting Screen"
-permalink: kb/281/Q281502/
+permalink: /kb/281/Q281502/
 ---
 
 ## Q281502: IA-2 MSN Companion Starting Screen

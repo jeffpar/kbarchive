@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132309: Wizards Do Not Appear in ALT+TAB Task List"
-permalink: kb/132/Q132309/
+permalink: /kb/132/Q132309/
 ---
 
 ## Q132309: Wizards Do Not Appear in ALT+TAB Task List

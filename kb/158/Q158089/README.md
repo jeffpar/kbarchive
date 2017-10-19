@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158089: Internal Internet Links Do Not Work"
-permalink: kb/158/Q158089/
+permalink: /kb/158/Q158089/
 ---
 
 ## Q158089: Internal Internet Links Do Not Work

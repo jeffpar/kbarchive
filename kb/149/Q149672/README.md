@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149672: PCMSVC32 Reports Incorrect Job Status for Completed Jobs"
-permalink: kb/149/Q149672/
+permalink: /kb/149/Q149672/
 ---
 
 ## Q149672: PCMSVC32 Reports Incorrect Job Status for Completed Jobs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243917: SNA Workstation 4.0 Access Violation When SnaBase Ends"
-permalink: kb/243/Q243917/
+permalink: /kb/243/Q243917/
 ---
 
 ## Q243917: SNA Workstation 4.0 Access Violation When SnaBase Ends

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184196: Rchelp.sys Causes a STOP Error at Boot on WinNT Clients"
-permalink: kb/184/Q184196/
+permalink: /kb/184/Q184196/
 ---
 
 ## Q184196: Rchelp.sys Causes a STOP Error at Boot on WinNT Clients

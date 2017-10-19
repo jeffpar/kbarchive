@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126022: Contents of FONTMAP.TXT for Ultimate Haunted House"
-permalink: kb/126/Q126022/
+permalink: /kb/126/Q126022/
 ---
 
 ## Q126022: Contents of FONTMAP.TXT for Ultimate Haunted House

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182757: WD97: Tables Appear Incomplete in File Open Preview"
-permalink: kb/182/Q182757/
+permalink: /kb/182/Q182757/
 ---
 
 ## Q182757: WD97: Tables Appear Incomplete in File Open Preview

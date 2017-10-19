@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201177: INFO: Visual Studio Macros for MFC and ATL Source Code"
-permalink: kb/201/Q201177/
+permalink: /kb/201/Q201177/
 ---
 
 ## Q201177: INFO: Visual Studio Macros for MFC and ATL Source Code

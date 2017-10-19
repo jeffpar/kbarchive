@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172455: ExitFox.exe Overcomes &quot;Cannot Quit Visual FoxPro&quot; Error"
-permalink: kb/172/Q172455/
+permalink: /kb/172/Q172455/
 ---
 
 ## Q172455: ExitFox.exe Overcomes &quot;Cannot Quit Visual FoxPro&quot; Error

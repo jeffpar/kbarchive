@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182716: XCLN: Internet Options Tab Missing from Send Options Dialog Box"
-permalink: kb/182/Q182716/
+permalink: /kb/182/Q182716/
 ---
 
 ## Q182716: XCLN: Internet Options Tab Missing from Send Options Dialog Box

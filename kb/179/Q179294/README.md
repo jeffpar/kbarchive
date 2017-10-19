@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179294: FIX: Record In Use Message Editing in Browse and Using Find"
-permalink: kb/179/Q179294/
+permalink: /kb/179/Q179294/
 ---
 
 ## Q179294: FIX: Record In Use Message Editing in Browse and Using Find

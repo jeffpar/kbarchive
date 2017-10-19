@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59651: XyWrite Uses ALT+TAB Key Combination"
-permalink: kb/059/Q59651/
+permalink: /kb/059/Q59651/
 ---
 
 ## Q59651: XyWrite Uses ALT+TAB Key Combination

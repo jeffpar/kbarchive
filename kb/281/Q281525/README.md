@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281525: Can I View Shockwave Files?"
-permalink: kb/281/Q281525/
+permalink: /kb/281/Q281525/
 ---
 
 ## Q281525: Can I View Shockwave Files?

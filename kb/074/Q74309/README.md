@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74309: View File Contents Option Under MS-DOS Shell"
-permalink: kb/074/Q74309/
+permalink: /kb/074/Q74309/
 ---
 
 ## Q74309: View File Contents Option Under MS-DOS Shell

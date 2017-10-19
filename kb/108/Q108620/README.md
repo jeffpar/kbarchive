@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108620: PRB: Can't Find QuickTime Movie Embedded in General Field"
-permalink: kb/108/Q108620/
+permalink: /kb/108/Q108620/
 ---
 
 ## Q108620: PRB: Can't Find QuickTime Movie Embedded in General Field

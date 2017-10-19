@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99001: Mac Gty: Additional Steps for Upgrading MCI CommGATE Gateway"
-permalink: kb/099/Q99001/
+permalink: /kb/099/Q99001/
 ---
 
 ## Q99001: Mac Gty: Additional Steps for Upgrading MCI CommGATE Gateway

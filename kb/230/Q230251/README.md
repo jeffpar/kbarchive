@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230251: XFOR: Exchange Notes Connector Installation Failure, LMEISTAT"
-permalink: kb/230/Q230251/
+permalink: /kb/230/Q230251/
 ---
 
 ## Q230251: XFOR: Exchange Notes Connector Installation Failure, LMEISTAT

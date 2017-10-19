@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84422: Windows Err Msg: Unable to Enter Protected Mode"
-permalink: kb/084/Q84422/
+permalink: /kb/084/Q84422/
 ---
 
 ## Q84422: Windows Err Msg: Unable to Enter Protected Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177676: Stop 0x00000024 May Occur When Bypass Traverse Checking Disabled"
-permalink: kb/177/Q177676/
+permalink: /kb/177/Q177676/
 ---
 
 ## Q177676: Stop 0x00000024 May Occur When Bypass Traverse Checking Disabled

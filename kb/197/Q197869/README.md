@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197869: XCLN: Routing Restrictions Require SMTP Authentication"
-permalink: kb/197/Q197869/
+permalink: /kb/197/Q197869/
 ---
 
 ## Q197869: XCLN: Routing Restrictions Require SMTP Authentication

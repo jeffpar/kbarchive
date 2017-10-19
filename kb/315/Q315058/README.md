@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315058: Microsoft ASP.NET Step by Step Comments and Corrections"
-permalink: kb/315/Q315058/
+permalink: /kb/315/Q315058/
 ---
 
 ## Q315058: Microsoft ASP.NET Step by Step Comments and Corrections

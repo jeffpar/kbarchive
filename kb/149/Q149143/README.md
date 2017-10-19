@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149143: BUG: FOR3852 and FOR1768 Caused by Space Before !MS&#36;FREEFORM"
-permalink: kb/149/Q149143/
+permalink: /kb/149/Q149143/
 ---
 
 ## Q149143: BUG: FOR3852 and FOR1768 Caused by Space Before !MS&#36;FREEFORM

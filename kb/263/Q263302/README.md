@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263302: The AM/PM Characters on the Taskbar Clock Are Garbled"
-permalink: kb/263/Q263302/
+permalink: /kb/263/Q263302/
 ---
 
 ## Q263302: The AM/PM Characters on the Taskbar Clock Are Garbled

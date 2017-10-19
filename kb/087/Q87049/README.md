@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87049: MCI: Main Software Components in an MCI Gateway"
-permalink: kb/087/Q87049/
+permalink: /kb/087/Q87049/
 ---
 
 ## Q87049: MCI: Main Software Components in an MCI Gateway

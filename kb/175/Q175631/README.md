@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175631: MSN Sign-In Screen Appears After Disconnecting from the Internet"
-permalink: kb/175/Q175631/
+permalink: /kb/175/Q175631/
 ---
 
 ## Q175631: MSN Sign-In Screen Appears After Disconnecting from the Internet

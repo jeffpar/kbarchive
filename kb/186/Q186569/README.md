@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186569: Security Configuration in Terminal Server"
-permalink: kb/186/Q186569/
+permalink: /kb/186/Q186569/
 ---
 
 ## Q186569: Security Configuration in Terminal Server

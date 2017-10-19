@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154091: Windows 95 Dial-Up Networking 1.3 Upgrade Release Notes"
-permalink: kb/154/Q154091/
+permalink: /kb/154/Q154091/
 ---
 
 ## Q154091: Windows 95 Dial-Up Networking 1.3 Upgrade Release Notes

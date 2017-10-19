@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185027: XADM: Event 1282 Logged After Removing TCP/IP From Server"
-permalink: kb/185/Q185027/
+permalink: /kb/185/Q185027/
 ---
 
 ## Q185027: XADM: Event 1282 Logged After Removing TCP/IP From Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238882: HOWTO: Know When Your Screen Saver Starts"
-permalink: kb/238/Q238882/
+permalink: /kb/238/Q238882/
 ---
 
 ## Q238882: HOWTO: Know When Your Screen Saver Starts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108937: PRB: Graying Text in Disabled Multi-line Edit Controls"
-permalink: kb/108/Q108937/
+permalink: /kb/108/Q108937/
 ---
 
 ## Q108937: PRB: Graying Text in Disabled Multi-line Edit Controls

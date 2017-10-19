@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170959: FP: Animation Starts Immediately After Page Opened in Browser"
-permalink: kb/170/Q170959/
+permalink: /kb/170/Q170959/
 ---
 
 ## Q170959: FP: Animation Starts Immediately After Page Opened in Browser

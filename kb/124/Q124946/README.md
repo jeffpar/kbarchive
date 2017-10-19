@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124946: Error: Macintosh Has Virtual Memory Enabled"
-permalink: kb/124/Q124946/
+permalink: /kb/124/Q124946/
 ---
 
 ## Q124946: Error: Macintosh Has Virtual Memory Enabled

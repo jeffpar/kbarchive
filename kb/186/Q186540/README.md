@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186540: Terminal Server Error Messages: 2300 to 2399"
-permalink: kb/186/Q186540/
+permalink: /kb/186/Q186540/
 ---
 
 ## Q186540: Terminal Server Error Messages: 2300 to 2399

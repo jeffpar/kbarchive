@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72301: Creating Wallpaper with Windows 3.0 Paintbrush"
-permalink: kb/072/Q72301/
+permalink: /kb/072/Q72301/
 ---
 
 ## Q72301: Creating Wallpaper with Windows 3.0 Paintbrush

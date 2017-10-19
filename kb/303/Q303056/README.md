@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303056: XADM:  BackOffice Resource Kit Utility Support Boundaries"
-permalink: kb/303/Q303056/
+permalink: /kb/303/Q303056/
 ---
 
 ## Q303056: XADM:  BackOffice Resource Kit Utility Support Boundaries

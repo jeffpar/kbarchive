@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139395: Compressed Audio Fails or Errors Occur After Windows Restart"
-permalink: kb/139/Q139395/
+permalink: /kb/139/Q139395/
 ---
 
 ## Q139395: Compressed Audio Fails or Errors Occur After Windows Restart

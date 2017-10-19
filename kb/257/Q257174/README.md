@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257174: Using Mapped Drives with IIS"
-permalink: kb/257/Q257174/
+permalink: /kb/257/Q257174/
 ---
 
 ## Q257174: Using Mapped Drives with IIS

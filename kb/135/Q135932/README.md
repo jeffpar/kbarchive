@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135932: PC DB: LISTUSER Version 2.1 Displays Unrecognizable Characters"
-permalink: kb/135/Q135932/
+permalink: /kb/135/Q135932/
 ---
 
 ## Q135932: PC DB: LISTUSER Version 2.1 Displays Unrecognizable Characters

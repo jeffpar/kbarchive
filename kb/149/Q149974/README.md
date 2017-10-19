@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149974: XADM: ISINTEG Prematurely Aborts Processing in Test 22"
-permalink: kb/149/Q149974/
+permalink: /kb/149/Q149974/
 ---
 
 ## Q149974: XADM: ISINTEG Prematurely Aborts Processing in Test 22

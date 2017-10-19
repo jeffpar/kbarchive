@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156408: Setting Up Virtual Directory May Cause &quot;Logon Failure&quot; ErrMsg"
-permalink: kb/156/Q156408/
+permalink: /kb/156/Q156408/
 ---
 
 ## Q156408: Setting Up Virtual Directory May Cause &quot;Logon Failure&quot; ErrMsg

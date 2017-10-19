@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130940: Inventory Update Reporting Interval"
-permalink: kb/130/Q130940/
+permalink: /kb/130/Q130940/
 ---
 
 ## Q130940: Inventory Update Reporting Interval

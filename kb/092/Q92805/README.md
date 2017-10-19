@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92805: PC Win: Spelling and Custom Dict Entries in WIN.INI"
-permalink: kb/092/Q92805/
+permalink: /kb/092/Q92805/
 ---
 
 ## Q92805: PC Win: Spelling and Custom Dict Entries in WIN.INI

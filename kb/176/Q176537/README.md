@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176537: How to Run the Sounds Tool by Itself"
-permalink: kb/176/Q176537/
+permalink: /kb/176/Q176537/
 ---
 
 ## Q176537: How to Run the Sounds Tool by Itself

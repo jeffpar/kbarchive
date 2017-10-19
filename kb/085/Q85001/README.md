@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85001: System Hangs When Restoring from SCSI Tape Drive"
-permalink: kb/085/Q85001/
+permalink: /kb/085/Q85001/
 ---
 
 ## Q85001: System Hangs When Restoring from SCSI Tape Drive

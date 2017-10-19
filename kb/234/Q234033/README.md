@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234033: XCLN: Exchange 5.5 Upgrade CD Installation Problems"
-permalink: kb/234/Q234033/
+permalink: /kb/234/Q234033/
 ---
 
 ## Q234033: XCLN: Exchange 5.5 Upgrade CD Installation Problems

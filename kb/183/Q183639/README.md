@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183639: PRB: Oracle Cursors Remain Open After Calling VB rdoQuery"
-permalink: kb/183/Q183639/
+permalink: /kb/183/Q183639/
 ---
 
 ## Q183639: PRB: Oracle Cursors Remain Open After Calling VB rdoQuery

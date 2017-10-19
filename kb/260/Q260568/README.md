@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260568: BUG: Error: Platform Manager Failed to Queue File Cemon.exe"
-permalink: kb/260/Q260568/
+permalink: /kb/260/Q260568/
 ---
 
 ## Q260568: BUG: Error: Platform Manager Failed to Queue File Cemon.exe

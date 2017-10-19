@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164845: XADM: Access Violation in Srvrmax.exe During Setup"
-permalink: kb/164/Q164845/
+permalink: /kb/164/Q164845/
 ---
 
 ## Q164845: XADM: Access Violation in Srvrmax.exe During Setup

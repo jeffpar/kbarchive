@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169080: Cannot Select System.dat File with Emergency Recovery Utility"
-permalink: kb/169/Q169080/
+permalink: /kb/169/Q169080/
 ---
 
 ## Q169080: Cannot Select System.dat File with Emergency Recovery Utility

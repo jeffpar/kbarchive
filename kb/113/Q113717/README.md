@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113717: Err Msg: Mviewer2 Caused a GP Fault in CNMNIA94.DLL"
-permalink: kb/113/Q113717/
+permalink: /kb/113/Q113717/
 ---
 
 ## Q113717: Err Msg: Mviewer2 Caused a GP Fault in CNMNIA94.DLL

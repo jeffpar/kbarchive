@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259488: Slovakian Month Names Have Incorrect Grammar in Long Date"
-permalink: kb/259/Q259488/
+permalink: /kb/259/Q259488/
 ---
 
 ## Q259488: Slovakian Month Names Have Incorrect Grammar in Long Date

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93051: Okidata ML92 Prints Random Characters"
-permalink: kb/093/Q93051/
+permalink: /kb/093/Q93051/
 ---
 
 ## Q93051: Okidata ML92 Prints Random Characters

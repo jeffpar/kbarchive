@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108409: BUG: Access Violation/Hang on Divide by Zero with Intrinsic"
-permalink: kb/108/Q108409/
+permalink: /kb/108/Q108409/
 ---
 
 ## Q108409: BUG: Access Violation/Hang on Divide by Zero with Intrinsic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193780: XFOR: Message Sent with X.400 One-Off Address Generates NDR"
-permalink: kb/193/Q193780/
+permalink: /kb/193/Q193780/
 ---
 
 ## Q193780: XFOR: Message Sent with X.400 One-Off Address Generates NDR

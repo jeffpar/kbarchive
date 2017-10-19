@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198516: WLBS Uses Port 2504 for Remote Control"
-permalink: kb/198/Q198516/
+permalink: /kb/198/Q198516/
 ---
 
 ## Q198516: WLBS Uses Port 2504 for Remote Control

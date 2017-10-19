@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179589: How to Configure the Ascend Pipeline 25-Px to Work with MSN"
-permalink: kb/179/Q179589/
+permalink: /kb/179/Q179589/
 ---
 
 ## Q179589: How to Configure the Ascend Pipeline 25-Px to Work with MSN

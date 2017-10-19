@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222912: XADM: Cannot Modify Database Paths on Clustered Server"
-permalink: kb/222/Q222912/
+permalink: /kb/222/Q222912/
 ---
 
 ## Q222912: XADM: Cannot Modify Database Paths on Clustered Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182626: Access Is Denied When Attempting to Put Files on FTP Server"
-permalink: kb/182/Q182626/
+permalink: /kb/182/Q182626/
 ---
 
 ## Q182626: Access Is Denied When Attempting to Put Files on FTP Server

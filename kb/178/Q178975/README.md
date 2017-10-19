@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178975: XADM: Remove All Does Not Remove Setup Key in Registry"
-permalink: kb/178/Q178975/
+permalink: /kb/178/Q178975/
 ---
 
 ## Q178975: XADM: Remove All Does Not Remove Setup Key in Registry

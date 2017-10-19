@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106531: BUG: Debugger Problems Modifying Character Variables"
-permalink: kb/106/Q106531/
+permalink: /kb/106/Q106531/
 ---
 
 ## Q106531: BUG: Debugger Problems Modifying Character Variables

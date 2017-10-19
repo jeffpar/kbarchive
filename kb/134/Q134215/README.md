@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134215: BUG: OLE SUBCLASS: Subclassing of OleControl/OLE Unspecified"
-permalink: kb/134/Q134215/
+permalink: /kb/134/Q134215/
 ---
 
 ## Q134215: BUG: OLE SUBCLASS: Subclassing of OleControl/OLE Unspecified

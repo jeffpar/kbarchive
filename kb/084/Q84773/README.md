@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84773: Default Program and Group Icons Added During Windows 3.1 Setup"
-permalink: kb/084/Q84773/
+permalink: /kb/084/Q84773/
 ---
 
 ## Q84773: Default Program and Group Icons Added During Windows 3.1 Setup

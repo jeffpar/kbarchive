@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177394: HOWTO: Troubleshoot Run-Time Error '429' in DCOM Applications"
-permalink: kb/177/Q177394/
+permalink: /kb/177/Q177394/
 ---
 
 ## Q177394: HOWTO: Troubleshoot Run-Time Error '429' in DCOM Applications

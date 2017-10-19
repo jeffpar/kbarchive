@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101520: INF: SQLDescribeCol Limitation on Meta Data"
-permalink: kb/101/Q101520/
+permalink: /kb/101/Q101520/
 ---
 
 ## Q101520: INF: SQLDescribeCol Limitation on Meta Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193899: Event ID 1008, 4005 with Missing TCP/IP Performance Counters"
-permalink: kb/193/Q193899/
+permalink: /kb/193/Q193899/
 ---
 
 ## Q193899: Event ID 1008, 4005 with Missing TCP/IP Performance Counters

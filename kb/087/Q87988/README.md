@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87988: Calendar Prints Time in 24-Hour Format"
-permalink: kb/087/Q87988/
+permalink: /kb/087/Q87988/
 ---
 
 ## Q87988: Calendar Prints Time in 24-Hour Format

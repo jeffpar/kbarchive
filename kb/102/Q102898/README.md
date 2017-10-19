@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102898: User Manager Focus on Machine Name Instead of Domain Name"
-permalink: kb/102/Q102898/
+permalink: /kb/102/Q102898/
 ---
 
 ## Q102898: User Manager Focus on Machine Name Instead of Domain Name

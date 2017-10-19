@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161284: WD97: Word Hangs When Ungrouping 32nd Linked Text Box To Object"
-permalink: kb/161/Q161284/
+permalink: /kb/161/Q161284/
 ---
 
 ## Q161284: WD97: Word Hangs When Ungrouping 32nd Linked Text Box To Object

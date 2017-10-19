@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152513: Troubleshooting Performance Monitor Counter Problems"
-permalink: kb/152/Q152513/
+permalink: /kb/152/Q152513/
 ---
 
 ## Q152513: Troubleshooting Performance Monitor Counter Problems

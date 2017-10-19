@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236949: Improper Shutdown Occurrence Is Reported in the Event Viewer Sys"
-permalink: kb/236/Q236949/
+permalink: /kb/236/Q236949/
 ---
 
 ## Q236949: Improper Shutdown Occurrence Is Reported in the Event Viewer Sys

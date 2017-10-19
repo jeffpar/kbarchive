@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173658: XWEB: Mailbox Access via OWA Depends on IIS Token Cache"
-permalink: kb/173/Q173658/
+permalink: /kb/173/Q173658/
 ---
 
 ## Q173658: XWEB: Mailbox Access via OWA Depends on IIS Token Cache

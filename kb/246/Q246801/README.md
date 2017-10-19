@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246801: STOP 0x0000000a Error with Windows NT Server 4.0 SP4 and OFM 5.1"
-permalink: kb/246/Q246801/
+permalink: /kb/246/Q246801/
 ---
 
 ## Q246801: STOP 0x0000000a Error with Windows NT Server 4.0 SP4 and OFM 5.1

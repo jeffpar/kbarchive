@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153531: Quick Viewer Resizes Incorrectly During Remote Control"
-permalink: kb/153/Q153531/
+permalink: /kb/153/Q153531/
 ---
 
 ## Q153531: Quick Viewer Resizes Incorrectly During Remote Control

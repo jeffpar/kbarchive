@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221677: FIX: SQL Upsizing Wizard Problem if Upsized View Has '==' Filter"
-permalink: kb/221/Q221677/
+permalink: /kb/221/Q221677/
 ---
 
 ## Q221677: FIX: SQL Upsizing Wizard Problem if Upsized View Has '==' Filter

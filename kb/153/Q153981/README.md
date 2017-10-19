@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153981: Error Message: Windows Cannot Find Autorun.exe"
-permalink: kb/153/Q153981/
+permalink: /kb/153/Q153981/
 ---
 
 ## Q153981: Error Message: Windows Cannot Find Autorun.exe

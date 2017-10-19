@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272559: XADM: Information Store Crashes When You Save a Complex View"
-permalink: kb/272/Q272559/
+permalink: /kb/272/Q272559/
 ---
 
 ## Q272559: XADM: Information Store Crashes When You Save a Complex View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108196: PC DOS: MS-DOS Client Does Not Show Changed WELCOME.GLB Header"
-permalink: kb/108/Q108196/
+permalink: /kb/108/Q108196/
 ---
 
 ## Q108196: PC DOS: MS-DOS Client Does Not Show Changed WELCOME.GLB Header

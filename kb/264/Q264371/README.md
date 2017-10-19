@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264371: Viacompact Tool Deletes X500.db File Unexpectedly"
-permalink: kb/264/Q264371/
+permalink: /kb/264/Q264371/
 ---
 
 ## Q264371: Viacompact Tool Deletes X500.db File Unexpectedly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50047: Mac Wkst: Security for Changing Password"
-permalink: kb/050/Q50047/
+permalink: /kb/050/Q50047/
 ---
 
 ## Q50047: Mac Wkst: Security for Changing Password

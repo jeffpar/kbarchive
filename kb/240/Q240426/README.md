@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240426: SMS: Cannot Obtain Performance Data for SMS Counters"
-permalink: kb/240/Q240426/
+permalink: /kb/240/Q240426/
 ---
 
 ## Q240426: SMS: Cannot Obtain Performance Data for SMS Counters

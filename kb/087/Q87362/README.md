@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87362: Windows Setup Hangs on AST Premium 386/386c"
-permalink: kb/087/Q87362/
+permalink: /kb/087/Q87362/
 ---
 
 ## Q87362: Windows Setup Hangs on AST Premium 386/386c

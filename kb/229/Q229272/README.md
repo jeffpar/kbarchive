@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229272: FIX: Datacombo Returns -2147217848 (80040e4e) Change Canceled"
-permalink: kb/229/Q229272/
+permalink: /kb/229/Q229272/
 ---
 
 ## Q229272: FIX: Datacombo Returns -2147217848 (80040e4e) Change Canceled

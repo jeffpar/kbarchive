@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150171: Baseball 1994: Minimum System Requirements"
-permalink: kb/150/Q150171/
+permalink: /kb/150/Q150171/
 ---
 
 ## Q150171: Baseball 1994: Minimum System Requirements

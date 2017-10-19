@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106504: Ability to Change Password Added to SNA Win3.x Client"
-permalink: kb/106/Q106504/
+permalink: /kb/106/Q106504/
 ---
 
 ## Q106504: Ability to Change Password Added to SNA Win3.x Client

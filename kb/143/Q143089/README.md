@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143089: FP: Multiple Errors Trying to Access Web Sites"
-permalink: kb/143/Q143089/
+permalink: /kb/143/Q143089/
 ---
 
 ## Q143089: FP: Multiple Errors Trying to Access Web Sites

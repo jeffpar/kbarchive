@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108157: 32-Bit File Access Cache Size Is Incorrectly Displayed"
-permalink: kb/108/Q108157/
+permalink: /kb/108/Q108157/
 ---
 
 ## Q108157: 32-Bit File Access Cache Size Is Incorrectly Displayed

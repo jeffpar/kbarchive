@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194842: BUG: Custom AppWizard Lacks Toolbar Templates for Standard Steps"
-permalink: kb/194/Q194842/
+permalink: /kb/194/Q194842/
 ---
 
 ## Q194842: BUG: Custom AppWizard Lacks Toolbar Templates for Standard Steps

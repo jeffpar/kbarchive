@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61968: Enabling Source Browser Menu Related to .BSC &amp; .MAK Files"
-permalink: kb/061/Q61968/
+permalink: /kb/061/Q61968/
 ---
 
 ## Q61968: Enabling Source Browser Menu Related to .BSC &amp; .MAK Files

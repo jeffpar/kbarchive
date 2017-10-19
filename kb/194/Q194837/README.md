@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194837: HOW TO: Distribute a Visual Basic Windows CE Application"
-permalink: kb/194/Q194837/
+permalink: /kb/194/Q194837/
 ---
 
 ## Q194837: HOW TO: Distribute a Visual Basic Windows CE Application

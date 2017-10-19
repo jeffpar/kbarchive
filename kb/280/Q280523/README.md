@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280523: Client Certificate Mapping Does Not Work with French Locale"
-permalink: kb/280/Q280523/
+permalink: /kb/280/Q280523/
 ---
 
 ## Q280523: Client Certificate Mapping Does Not Work with French Locale

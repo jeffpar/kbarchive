@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266205: XFOR: Delivery and Read Receipts Are Not Received"
-permalink: kb/266/Q266205/
+permalink: /kb/266/Q266205/
 ---
 
 ## Q266205: XFOR: Delivery and Read Receipts Are Not Received

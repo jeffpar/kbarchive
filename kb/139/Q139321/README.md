@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139321: Bookshelf and Works 4.0 Err Msg: Insert Bookshelf Disc"
-permalink: kb/139/Q139321/
+permalink: /kb/139/Q139321/
 ---
 
 ## Q139321: Bookshelf and Works 4.0 Err Msg: Insert Bookshelf Disc

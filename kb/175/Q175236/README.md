@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175236: XFOR: Failed Message Conversion Error on Inbound Messages"
-permalink: kb/175/Q175236/
+permalink: /kb/175/Q175236/
 ---
 
 ## Q175236: XFOR: Failed Message Conversion Error on Inbound Messages

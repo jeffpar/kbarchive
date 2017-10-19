@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193458: Err Msg: A Previous Version of USB Supplement Has Been Found..."
-permalink: kb/193/Q193458/
+permalink: /kb/193/Q193458/
 ---
 
 ## Q193458: Err Msg: A Previous Version of USB Supplement Has Been Found...

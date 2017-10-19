@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102123: Mac Wkst: QuickMail Displayed Using Mail-Enabled Applications"
-permalink: kb/102/Q102123/
+permalink: /kb/102/Q102123/
 ---
 
 ## Q102123: Mac Wkst: QuickMail Displayed Using Mail-Enabled Applications

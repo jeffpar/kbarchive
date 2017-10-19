@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250770: Problems Viewing Web Page that Starts a New Instance of Browser"
-permalink: kb/250/Q250770/
+permalink: /kb/250/Q250770/
 ---
 
 ## Q250770: Problems Viewing Web Page that Starts a New Instance of Browser

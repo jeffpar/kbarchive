@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273742: XADM: Error Message: Setup Failed While Installing Sub-Component"
-permalink: kb/273/Q273742/
+permalink: /kb/273/Q273742/
 ---
 
 ## Q273742: XADM: Error Message: Setup Failed While Installing Sub-Component

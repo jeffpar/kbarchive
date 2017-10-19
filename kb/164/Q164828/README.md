@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164828: PPT7: Hang, Error Using PowerPoint Write-Up Command w/ Word 97"
-permalink: kb/164/Q164828/
+permalink: /kb/164/Q164828/
 ---
 
 ## Q164828: PPT7: Hang, Error Using PowerPoint Write-Up Command w/ Word 97

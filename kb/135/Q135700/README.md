@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135700: Modifications to NETBT.SYS to Support Layered Drivers"
-permalink: kb/135/Q135700/
+permalink: /kb/135/Q135700/
 ---
 
 ## Q135700: Modifications to NETBT.SYS to Support Layered Drivers

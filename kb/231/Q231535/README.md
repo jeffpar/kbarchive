@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231535: MapPoint 2000: Drawing Tools Do Not Work in World View"
-permalink: kb/231/Q231535/
+permalink: /kb/231/Q231535/
 ---
 
 ## Q231535: MapPoint 2000: Drawing Tools Do Not Work in World View

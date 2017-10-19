@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250268: Domain Name Server Generates Event ID 156"
-permalink: kb/250/Q250268/
+permalink: /kb/250/Q250268/
 ---
 
 ## Q250268: Domain Name Server Generates Event ID 156

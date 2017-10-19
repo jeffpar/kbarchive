@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169500: HOWTO: Call Driver Specific Functions in a Remote View"
-permalink: kb/169/Q169500/
+permalink: /kb/169/Q169500/
 ---
 
 ## Q169500: HOWTO: Call Driver Specific Functions in a Remote View

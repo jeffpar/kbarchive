@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231327: How to Determine If Windows 95 Year 2000 Upgrade Is Installed"
-permalink: kb/231/Q231327/
+permalink: /kb/231/Q231327/
 ---
 
 ## Q231327: How to Determine If Windows 95 Year 2000 Upgrade Is Installed

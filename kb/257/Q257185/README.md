@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257185: SMS: Remotely Installed Client Doesn't Report Version Info"
-permalink: kb/257/Q257185/
+permalink: /kb/257/Q257185/
 ---
 
 ## Q257185: SMS: Remotely Installed Client Doesn't Report Version Info

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287716: SMS: Error Messages Are Logged in Site Component Manager"
-permalink: kb/287/Q287716/
+permalink: /kb/287/Q287716/
 ---
 
 ## Q287716: SMS: Error Messages Are Logged in Site Component Manager

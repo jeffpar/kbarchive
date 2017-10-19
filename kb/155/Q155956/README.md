@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155956: Cannot Restore Default Setting for Shutdown Button"
-permalink: kb/155/Q155956/
+permalink: /kb/155/Q155956/
 ---
 
 ## Q155956: Cannot Restore Default Setting for Shutdown Button

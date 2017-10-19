@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271970: Cron Service May Stop Unexpectedly Because of Access Violation"
-permalink: kb/271/Q271970/
+permalink: /kb/271/Q271970/
 ---
 
 ## Q271970: Cron Service May Stop Unexpectedly Because of Access Violation

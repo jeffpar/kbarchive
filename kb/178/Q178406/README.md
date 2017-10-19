@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178406: Availability of Animated Cursor Editor and Image Editor Programs"
-permalink: kb/178/Q178406/
+permalink: /kb/178/Q178406/
 ---
 
 ## Q178406: Availability of Animated Cursor Editor and Image Editor Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104518: PC Win: Inbox Shadowing Does Not Synchronize Changes"
-permalink: kb/104/Q104518/
+permalink: /kb/104/Q104518/
 ---
 
 ## Q104518: PC Win: Inbox Shadowing Does Not Synchronize Changes

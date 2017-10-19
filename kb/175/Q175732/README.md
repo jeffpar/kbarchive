@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175732: Installing and Using the KiXtart Login Processor Tool"
-permalink: kb/175/Q175732/
+permalink: /kb/175/Q175732/
 ---
 
 ## Q175732: Installing and Using the KiXtart Login Processor Tool

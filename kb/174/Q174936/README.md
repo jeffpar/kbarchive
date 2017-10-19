@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174936: SMS: Event to Trap Translator Cannot Send Traps &gt; 4,096 Bytes"
-permalink: kb/174/Q174936/
+permalink: /kb/174/Q174936/
 ---
 
 ## Q174936: SMS: Event to Trap Translator Cannot Send Traps &gt; 4,096 Bytes

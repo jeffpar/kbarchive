@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243357: ABNT2 Keyboard Layout Is Not Included in Windows NT"
-permalink: kb/243/Q243357/
+permalink: /kb/243/Q243357/
 ---
 
 ## Q243357: ABNT2 Keyboard Layout Is Not Included in Windows NT

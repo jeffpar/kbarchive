@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116063: ADT2: &quot;Setup Parse Error&quot; Error Message in Run-Time Setup"
-permalink: kb/116/Q116063/
+permalink: /kb/116/Q116063/
 ---
 
 ## Q116063: ADT2: &quot;Setup Parse Error&quot; Error Message in Run-Time Setup

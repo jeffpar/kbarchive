@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268712: SMS: Error Message When You Perform a Site Reset"
-permalink: kb/268/Q268712/
+permalink: /kb/268/Q268712/
 ---
 
 ## Q268712: SMS: Error Message When You Perform a Site Reset

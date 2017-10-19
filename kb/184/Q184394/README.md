@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184394: Upgrading PWS 1.x to 4.0 Leaves Network Service Entry"
-permalink: kb/184/Q184394/
+permalink: /kb/184/Q184394/
 ---
 
 ## Q184394: Upgrading PWS 1.x to 4.0 Leaves Network Service Entry

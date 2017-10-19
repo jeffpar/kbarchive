@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240731: CREATEPROCESS FAILED Error During Silent Install"
-permalink: kb/240/Q240731/
+permalink: /kb/240/Q240731/
 ---
 
 ## Q240731: CREATEPROCESS FAILED Error During Silent Install

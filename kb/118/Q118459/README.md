@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118459: CONN: Dir-Sync and Connection Can Cause Misdirected Mail"
-permalink: kb/118/Q118459/
+permalink: /kb/118/Q118459/
 ---
 
 ## Q118459: CONN: Dir-Sync and Connection Can Cause Misdirected Mail

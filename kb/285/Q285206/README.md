@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285206: SMS: How to Use Smsls.bat Logon Script with an OU"
-permalink: kb/285/Q285206/
+permalink: /kb/285/Q285206/
 ---
 
 ## Q285206: SMS: How to Use Smsls.bat Logon Script with an OU

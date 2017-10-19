@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151689: XADM: Error Starting Key Management Server"
-permalink: kb/151/Q151689/
+permalink: /kb/151/Q151689/
 ---
 
 ## Q151689: XADM: Error Starting Key Management Server

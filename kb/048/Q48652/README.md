@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48652: Mac Srv: Finding Server Serial Number of Server Installer Disk"
-permalink: kb/048/Q48652/
+permalink: /kb/048/Q48652/
 ---
 
 ## Q48652: Mac Srv: Finding Server Serial Number of Server Installer Disk

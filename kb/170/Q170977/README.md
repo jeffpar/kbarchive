@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170977: Error 629: The Port Was Disconnected by the Remote Machine"
-permalink: kb/170/Q170977/
+permalink: /kb/170/Q170977/
 ---
 
 ## Q170977: Error 629: The Port Was Disconnected by the Remote Machine

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186963: Incorrect Dimensions in Executive Form with Mannesmann Driver"
-permalink: kb/186/Q186963/
+permalink: /kb/186/Q186963/
 ---
 
 ## Q186963: Incorrect Dimensions in Executive Form with Mannesmann Driver

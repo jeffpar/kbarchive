@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130579: PRB: UserId and Password Viewable in Database Container"
-permalink: kb/130/Q130579/
+permalink: /kb/130/Q130579/
 ---
 
 ## Q130579: PRB: UserId and Password Viewable in Database Container

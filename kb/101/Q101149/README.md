@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101149: MS-DOS Upgrade 720K Disk Set Does Not Have SMARTMON.&#42; Files"
-permalink: kb/101/Q101149/
+permalink: /kb/101/Q101149/
 ---
 
 ## Q101149: MS-DOS Upgrade 720K Disk Set Does Not Have SMARTMON.&#42; Files

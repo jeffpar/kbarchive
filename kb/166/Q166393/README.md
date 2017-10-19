@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166393: Windows NT May Hang or Show &quot;Stop 0x1E&quot; Error with Iomega Drive"
-permalink: kb/166/Q166393/
+permalink: /kb/166/Q166393/
 ---
 
 ## Q166393: Windows NT May Hang or Show &quot;Stop 0x1E&quot; Error with Iomega Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120751: CopyDoubler's Fast Replace Fails on SFM Volumes with Error -48"
-permalink: kb/120/Q120751/
+permalink: /kb/120/Q120751/
 ---
 
 ## Q120751: CopyDoubler's Fast Replace Fails on SFM Volumes with Error -48

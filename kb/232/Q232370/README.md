@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232370: XCON: MTA Loses Attachment on FTBP Messages with No Subject"
-permalink: kb/232/Q232370/
+permalink: /kb/232/Q232370/
 ---
 
 ## Q232370: XCON: MTA Loses Attachment on FTBP Messages with No Subject

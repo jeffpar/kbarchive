@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155476: PPT7: Lines on Handouts Page Vary in Thickness When Printed"
-permalink: kb/155/Q155476/
+permalink: /kb/155/Q155476/
 ---
 
 ## Q155476: PPT7: Lines on Handouts Page Vary in Thickness When Printed

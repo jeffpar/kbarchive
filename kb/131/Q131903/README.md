@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131903: How to Set Up IBM Token Ring PCMCIA for Windows for Workgroups"
-permalink: kb/131/Q131903/
+permalink: /kb/131/Q131903/
 ---
 
 ## Q131903: How to Set Up IBM Token Ring PCMCIA for Windows for Workgroups

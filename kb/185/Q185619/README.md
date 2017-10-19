@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185619: Windows 95 Accesses the Floppy Disk Drive at Startup"
-permalink: kb/185/Q185619/
+permalink: /kb/185/Q185619/
 ---
 
 ## Q185619: Windows 95 Accesses the Floppy Disk Drive at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165914: XCLN: Troubleshooting the Free/Busy Connector"
-permalink: kb/165/Q165914/
+permalink: /kb/165/Q165914/
 ---
 
 ## Q165914: XCLN: Troubleshooting the Free/Busy Connector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93162: BUG: Cannot Watch Undimensioned Array"
-permalink: kb/093/Q93162/
+permalink: /kb/093/Q93162/
 ---
 
 ## Q93162: BUG: Cannot Watch Undimensioned Array

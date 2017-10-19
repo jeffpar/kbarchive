@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82258: Page Color Turns Black in PageMaker 4.0"
-permalink: kb/082/Q82258/
+permalink: /kb/082/Q82258/
 ---
 
 ## Q82258: Page Color Turns Black in PageMaker 4.0

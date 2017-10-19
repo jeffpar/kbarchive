@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182465: ACCDATE Command Line Does Not Work with Windows 95"
-permalink: kb/182/Q182465/
+permalink: /kb/182/Q182465/
 ---
 
 ## Q182465: ACCDATE Command Line Does Not Work with Windows 95

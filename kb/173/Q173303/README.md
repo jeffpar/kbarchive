@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173303: XADM: 5.0 Administrator Program Stops 4.0 Directory Service"
-permalink: kb/173/Q173303/
+permalink: /kb/173/Q173303/
 ---
 
 ## Q173303: XADM: 5.0 Administrator Program Stops 4.0 Directory Service

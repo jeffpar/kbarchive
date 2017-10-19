@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63585: Everex 1200 and 2400 BPS Modems and Windows Terminal"
-permalink: kb/063/Q63585/
+permalink: /kb/063/Q63585/
 ---
 
 ## Q63585: Everex 1200 and 2400 BPS Modems and Windows Terminal

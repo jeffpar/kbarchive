@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179691: PRB: Adding Property in ClassWizard Changes DISPIDs for Methods"
-permalink: kb/179/Q179691/
+permalink: /kb/179/Q179691/
 ---
 
 ## Q179691: PRB: Adding Property in ClassWizard Changes DISPIDs for Methods

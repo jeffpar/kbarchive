@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143316: Unconf: Haunted House GPF Using Some Ensoniq Sound Cards"
-permalink: kb/143/Q143316/
+permalink: /kb/143/Q143316/
 ---
 
 ## Q143316: Unconf: Haunted House GPF Using Some Ensoniq Sound Cards

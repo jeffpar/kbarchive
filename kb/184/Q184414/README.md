@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184414: Access Violation When Printing PostScript to SFM Print Server"
-permalink: kb/184/Q184414/
+permalink: /kb/184/Q184414/
 ---
 
 ## Q184414: Access Violation When Printing PostScript to SFM Print Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168356: XFOR: Cannot Reply to SMTP Mail Coming from the ccMail Connector"
-permalink: kb/168/Q168356/
+permalink: /kb/168/Q168356/
 ---
 
 ## Q168356: XFOR: Cannot Reply to SMTP Mail Coming from the ccMail Connector

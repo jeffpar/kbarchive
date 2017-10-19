@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177121: Format Tape Command Unavailable in Ntbackup.exe"
-permalink: kb/177/Q177121/
+permalink: /kb/177/Q177121/
 ---
 
 ## Q177121: Format Tape Command Unavailable in Ntbackup.exe

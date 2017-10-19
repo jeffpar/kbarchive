@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183901: Microsoft DNS Server Depends on the WINS Client Binding"
-permalink: kb/183/Q183901/
+permalink: /kb/183/Q183901/
 ---
 
 ## Q183901: Microsoft DNS Server Depends on the WINS Client Binding

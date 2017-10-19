@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195104: XADM: Configuring an LDAP Referral Server in 5.5"
-permalink: kb/195/Q195104/
+permalink: /kb/195/Q195104/
 ---
 
 ## Q195104: XADM: Configuring an LDAP Referral Server in 5.5

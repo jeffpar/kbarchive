@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236849: Host Account Cache Needs to Start Before SnaServer Service"
-permalink: kb/236/Q236849/
+permalink: /kb/236/Q236849/
 ---
 
 ## Q236849: Host Account Cache Needs to Start Before SnaServer Service

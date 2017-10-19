@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113429: FIX: C1001: coff.c, Line 280, new of &#95;&#95;declspec(dllimport)"
-permalink: kb/113/Q113429/
+permalink: /kb/113/Q113429/
 ---
 
 ## Q113429: FIX: C1001: coff.c, Line 280, new of &#95;&#95;declspec(dllimport)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68170: Disabling Shadow RAM on the AST Bravo 386sx"
-permalink: kb/068/Q68170/
+permalink: /kb/068/Q68170/
 ---
 
 ## Q68170: Disabling Shadow RAM on the AST Bravo 386sx

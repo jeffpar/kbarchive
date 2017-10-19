@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258769: XCLN: Outlook 2000 Err. Mssg.: &quot;Error While Archiving Folder...&quot;"
-permalink: kb/258/Q258769/
+permalink: /kb/258/Q258769/
 ---
 
 ## Q258769: XCLN: Outlook 2000 Err. Mssg.: &quot;Error While Archiving Folder...&quot;

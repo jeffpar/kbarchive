@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295329: HOWTO: Renew VeriSign SSL Certificate with New Key in IIS 5.0 MM"
-permalink: kb/295/Q295329/
+permalink: /kb/295/Q295329/
 ---
 
 ## Q295329: HOWTO: Renew VeriSign SSL Certificate with New Key in IIS 5.0 MM

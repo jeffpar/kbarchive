@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155337: No 2-Up Printing Option in PostScript Printer Driver"
-permalink: kb/155/Q155337/
+permalink: /kb/155/Q155337/
 ---
 
 ## Q155337: No 2-Up Printing Option in PostScript Printer Driver

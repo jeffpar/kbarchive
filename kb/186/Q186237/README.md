@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186237: WD97: How to Move AutoCorrect Entries Between Computers"
-permalink: kb/186/Q186237/
+permalink: /kb/186/Q186237/
 ---
 
 ## Q186237: WD97: How to Move AutoCorrect Entries Between Computers

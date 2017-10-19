@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150478: Julia Child: Manual Installation For Windows 95"
-permalink: kb/150/Q150478/
+permalink: /kb/150/Q150478/
 ---
 
 ## Q150478: Julia Child: Manual Installation For Windows 95

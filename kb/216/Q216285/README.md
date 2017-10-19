@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216285: HOW TO: Display a Picture by Using an Access Database in FP2000"
-permalink: kb/216/Q216285/
+permalink: /kb/216/Q216285/
 ---
 
 ## Q216285: HOW TO: Display a Picture by Using an Access Database in FP2000

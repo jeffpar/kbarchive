@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114030: PC WRmt: AT&amp;T Credit Card Calling Modem Script"
-permalink: kb/114/Q114030/
+permalink: /kb/114/Q114030/
 ---
 
 ## Q114030: PC WRmt: AT&amp;T Credit Card Calling Modem Script

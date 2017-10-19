@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118447: PC Adm: Using IMPORT -A Removes Users from Postoffice List"
-permalink: kb/118/Q118447/
+permalink: /kb/118/Q118447/
 ---
 
 ## Q118447: PC Adm: Using IMPORT -A Removes Users from Postoffice List

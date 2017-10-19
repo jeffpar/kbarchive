@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185684: WD97: Wrong Calculation Result with Bookmarks in Table"
-permalink: kb/185/Q185684/
+permalink: /kb/185/Q185684/
 ---
 
 ## Q185684: WD97: Wrong Calculation Result with Bookmarks in Table

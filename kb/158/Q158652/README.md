@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158652: Mac Encarta 97: Anthems Do Not Play with Low Memory"
-permalink: kb/158/Q158652/
+permalink: /kb/158/Q158652/
 ---
 
 ## Q158652: Mac Encarta 97: Anthems Do Not Play with Low Memory

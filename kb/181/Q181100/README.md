@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181100: Print Server Incorrectly Handles DBCS Codes in SCS Datastream"
-permalink: kb/181/Q181100/
+permalink: /kb/181/Q181100/
 ---
 
 ## Q181100: Print Server Incorrectly Handles DBCS Codes in SCS Datastream

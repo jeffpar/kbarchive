@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245574: HOWTO: Configure REMOTE_HOST to Perform Reverse DNS Lookup IIS"
-permalink: kb/245/Q245574/
+permalink: /kb/245/Q245574/
 ---
 
 ## Q245574: HOWTO: Configure REMOTE_HOST to Perform Reverse DNS Lookup IIS

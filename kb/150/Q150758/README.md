@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150758: Installing MSN 1.3 Downgrades Access Number Phone Book"
-permalink: kb/150/Q150758/
+permalink: /kb/150/Q150758/
 ---
 
 ## Q150758: Installing MSN 1.3 Downgrades Access Number Phone Book

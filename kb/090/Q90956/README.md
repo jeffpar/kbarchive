@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90956: Specifying a Memo Field Text Editor for FoxBASE+"
-permalink: kb/090/Q90956/
+permalink: /kb/090/Q90956/
 ---
 
 ## Q90956: Specifying a Memo Field Text Editor for FoxBASE+

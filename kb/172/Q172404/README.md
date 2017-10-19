@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172404: PRB: Opening Excel 4.0 Worksheets with DAO"
-permalink: kb/172/Q172404/
+permalink: /kb/172/Q172404/
 ---
 
 ## Q172404: PRB: Opening Excel 4.0 Worksheets with DAO

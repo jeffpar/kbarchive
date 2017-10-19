@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158922: Removed Device Not Detected by Add New Hardware Wizard"
-permalink: kb/158/Q158922/
+permalink: /kb/158/Q158922/
 ---
 
 ## Q158922: Removed Device Not Detected by Add New Hardware Wizard

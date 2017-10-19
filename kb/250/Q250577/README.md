@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250577: HOWTO: Use Picture Box in UserControl and DataRepeater"
-permalink: kb/250/Q250577/
+permalink: /kb/250/Q250577/
 ---
 
 ## Q250577: HOWTO: Use Picture Box in UserControl and DataRepeater

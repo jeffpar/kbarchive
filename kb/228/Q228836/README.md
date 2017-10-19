@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228836: Installing a New Certificate for Use in SSL/TLS"
-permalink: kb/228/Q228836/
+permalink: /kb/228/Q228836/
 ---
 
 ## Q228836: Installing a New Certificate for Use in SSL/TLS

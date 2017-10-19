@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152487: Rcmd.exe Err Msg: Error 123 Failed to Connect to &#92;&#92;&#92;&#92;Servername"
-permalink: kb/152/Q152487/
+permalink: /kb/152/Q152487/
 ---
 
 ## Q152487: Rcmd.exe Err Msg: Error 123 Failed to Connect to &#92;&#92;&#92;&#92;Servername

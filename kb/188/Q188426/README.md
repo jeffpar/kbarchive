@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188426: WD97: Macro to Insert Style Name in Each Paragraph"
-permalink: kb/188/Q188426/
+permalink: /kb/188/Q188426/
 ---
 
 ## Q188426: WD97: Macro to Insert Style Name in Each Paragraph

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152889: XCLN: Digital Signature Overwrites the Message Body"
-permalink: kb/152/Q152889/
+permalink: /kb/152/Q152889/
 ---
 
 ## Q152889: XCLN: Digital Signature Overwrites the Message Body

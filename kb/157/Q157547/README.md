@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157547: WD97: Extra Images Created After Using Web Page Wizard"
-permalink: kb/157/Q157547/
+permalink: /kb/157/Q157547/
 ---
 
 ## Q157547: WD97: Extra Images Created After Using Web Page Wizard

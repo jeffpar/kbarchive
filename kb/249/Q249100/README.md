@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249100: XFOR: Configuring Internet Mail Service for Mail w. No DNS Entry"
-permalink: kb/249/Q249100/
+permalink: /kb/249/Q249100/
 ---
 
 ## Q249100: XFOR: Configuring Internet Mail Service for Mail w. No DNS Entry

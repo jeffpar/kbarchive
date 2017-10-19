@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190736: FIX: Typing SYS Function Into Hidden Property Causes Crash"
-permalink: kb/190/Q190736/
+permalink: /kb/190/Q190736/
 ---
 
 ## Q190736: FIX: Typing SYS Function Into Hidden Property Causes Crash

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111962: M2052 or M2010 Err Msg Appears After You Install WFWG 3.11"
-permalink: kb/111/Q111962/
+permalink: /kb/111/Q111962/
 ---
 
 ## Q111962: M2052 or M2010 Err Msg Appears After You Install WFWG 3.11

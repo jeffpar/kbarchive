@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148425: Duplexed Mirror Generation Fails with Insufficient Space"
-permalink: kb/148/Q148425/
+permalink: /kb/148/Q148425/
 ---
 
 ## Q148425: Duplexed Mirror Generation Fails with Insufficient Space

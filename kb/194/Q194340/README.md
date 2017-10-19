@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194340: Access Violation When Using Rcp.exe to Copy to UNIX"
-permalink: kb/194/Q194340/
+permalink: /kb/194/Q194340/
 ---
 
 ## Q194340: Access Violation When Using Rcp.exe to Copy to UNIX

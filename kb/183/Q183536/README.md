@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183536: XWEB: Pressing ESC Key Erases Text in Appointment in OWA"
-permalink: kb/183/Q183536/
+permalink: /kb/183/Q183536/
 ---
 
 ## Q183536: XWEB: Pressing ESC Key Erases Text in Appointment in OWA

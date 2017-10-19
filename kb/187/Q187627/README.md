@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187627: Command Line Options for Internal App Compatibility Tools"
-permalink: kb/187/Q187627/
+permalink: /kb/187/Q187627/
 ---
 
 ## Q187627: Command Line Options for Internal App Compatibility Tools

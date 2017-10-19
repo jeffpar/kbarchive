@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268380: XADM: Store Crashes When RTF Is Enabled over the IMAP4 Protocol"
-permalink: kb/268/Q268380/
+permalink: /kb/268/Q268380/
 ---
 
 ## Q268380: XADM: Store Crashes When RTF Is Enabled over the IMAP4 Protocol

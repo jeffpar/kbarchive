@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139968: TextOut() Is Different in Hebrew and Arabic Windows"
-permalink: kb/139/Q139968/
+permalink: /kb/139/Q139968/
 ---
 
 ## Q139968: TextOut() Is Different in Hebrew and Arabic Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196727: HOWTO: Process Idle Time and Termination in Performance Monitor"
-permalink: kb/196/Q196727/
+permalink: /kb/196/Q196727/
 ---
 
 ## Q196727: HOWTO: Process Idle Time and Termination in Performance Monitor

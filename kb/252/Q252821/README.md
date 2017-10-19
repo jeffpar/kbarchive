@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252821: XGEN: Read Contact Properties from ASP Page with VBScript"
-permalink: kb/252/Q252821/
+permalink: /kb/252/Q252821/
 ---
 
 ## Q252821: XGEN: Read Contact Properties from ASP Page with VBScript

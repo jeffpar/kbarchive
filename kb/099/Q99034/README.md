@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99034: SONET Signal Rates"
-permalink: kb/099/Q99034/
+permalink: /kb/099/Q99034/
 ---
 
 ## Q99034: SONET Signal Rates

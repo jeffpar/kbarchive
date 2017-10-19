@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67133: Arranging Program Manager Group Icons in a Specific Order"
-permalink: kb/067/Q67133/
+permalink: /kb/067/Q67133/
 ---
 
 ## Q67133: Arranging Program Manager Group Icons in a Specific Order

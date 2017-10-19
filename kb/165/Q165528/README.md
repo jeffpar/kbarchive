@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165528: WD97: Contprel.dot Template Missing AutoText Entries"
-permalink: kb/165/Q165528/
+permalink: /kb/165/Q165528/
 ---
 
 ## Q165528: WD97: Contprel.dot Template Missing AutoText Entries

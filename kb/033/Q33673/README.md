@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33673: Windows PIF Settings for Microsoft Works for MS-DOS"
-permalink: kb/033/Q33673/
+permalink: /kb/033/Q33673/
 ---
 
 ## Q33673: Windows PIF Settings for Microsoft Works for MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108345: DOCERR: GetCharQQ Not Accepting Direction Keys in QuickWin"
-permalink: kb/108/Q108345/
+permalink: /kb/108/Q108345/
 ---
 
 ## Q108345: DOCERR: GetCharQQ Not Accepting Direction Keys in QuickWin

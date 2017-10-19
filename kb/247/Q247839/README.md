@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247839: XCLN: Agents Tab Missing in Outlook Inbox Properties"
-permalink: kb/247/Q247839/
+permalink: /kb/247/Q247839/
 ---
 
 ## Q247839: XCLN: Agents Tab Missing in Outlook Inbox Properties

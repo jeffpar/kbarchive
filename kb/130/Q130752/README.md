@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130752: PC DB: Use of the ALIAS.TPL"
-permalink: kb/130/Q130752/
+permalink: /kb/130/Q130752/
 ---
 
 ## Q130752: PC DB: Use of the ALIAS.TPL

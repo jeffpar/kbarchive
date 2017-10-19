@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265096: &quot;Stop 41&quot; Error Message Occurs and Event 2000 Is Logged"
-permalink: kb/265/Q265096/
+permalink: /kb/265/Q265096/
 ---
 
 ## Q265096: &quot;Stop 41&quot; Error Message Occurs and Event 2000 Is Logged

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129749: Using Undo Command in Paint Undoes Unfinished Operation"
-permalink: kb/129/Q129749/
+permalink: /kb/129/Q129749/
 ---
 
 ## Q129749: Using Undo Command in Paint Undoes Unfinished Operation

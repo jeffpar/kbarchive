@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99383: Access Pack for Windows WIN.INI Settings"
-permalink: kb/099/Q99383/
+permalink: /kb/099/Q99383/
 ---
 
 ## Q99383: Access Pack for Windows WIN.INI Settings

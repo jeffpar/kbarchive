@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218183: ServletExec Shuts Down the W3SVC Service"
-permalink: kb/218/Q218183/
+permalink: /kb/218/Q218183/
 ---
 
 ## Q218183: ServletExec Shuts Down the W3SVC Service

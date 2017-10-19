@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147320: World of Flight: Minimum System Requirements"
-permalink: kb/147/Q147320/
+permalink: /kb/147/Q147320/
 ---
 
 ## Q147320: World of Flight: Minimum System Requirements

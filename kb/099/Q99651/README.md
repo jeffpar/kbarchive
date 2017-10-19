@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99651: Err Msg: DBLSPACE.BIN Cannot Be Loaded from Your CONFIG.SYS..."
-permalink: kb/099/Q99651/
+permalink: /kb/099/Q99651/
 ---
 
 ## Q99651: Err Msg: DBLSPACE.BIN Cannot Be Loaded from Your CONFIG.SYS...

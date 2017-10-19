@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122399: Enabling Help Desk Options for MS-DOS Clients"
-permalink: kb/122/Q122399/
+permalink: /kb/122/Q122399/
 ---
 
 ## Q122399: Enabling Help Desk Options for MS-DOS Clients

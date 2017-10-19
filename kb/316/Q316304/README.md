@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316304: HOW TO: Configure a Stripe Set with Parity in Windows NT Server"
-permalink: kb/316/Q316304/
+permalink: /kb/316/Q316304/
 ---
 
 ## Q316304: HOW TO: Configure a Stripe Set with Parity in Windows NT Server

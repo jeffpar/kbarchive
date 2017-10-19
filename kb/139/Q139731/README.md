@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139731: Network Errors Using 3COM 3C590 NIC In Windows NT"
-permalink: kb/139/Q139731/
+permalink: /kb/139/Q139731/
 ---
 
 ## Q139731: Network Errors Using 3COM 3C590 NIC In Windows NT

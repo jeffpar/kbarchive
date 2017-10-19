@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71212: BT M5200F Hangs During Setup of MS-DOS Upgrade"
-permalink: kb/071/Q71212/
+permalink: /kb/071/Q71212/
 ---
 
 ## Q71212: BT M5200F Hangs During Setup of MS-DOS Upgrade

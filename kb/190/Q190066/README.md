@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190066: FIX: Table Can Not Be USED After REPLACE of Memo in TRANSACTION"
-permalink: kb/190/Q190066/
+permalink: /kb/190/Q190066/
 ---
 
 ## Q190066: FIX: Table Can Not Be USED After REPLACE of Memo in TRANSACTION

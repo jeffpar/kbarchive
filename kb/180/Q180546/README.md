@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180546: Automating Updates to Local Groups on Member Servers"
-permalink: kb/180/Q180546/
+permalink: /kb/180/Q180546/
 ---
 
 ## Q180546: Automating Updates to Local Groups on Member Servers

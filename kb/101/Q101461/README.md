@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101461: SMTP: Microsoft Mail SMTPGATE.EXE Version 3.0.9 Update"
-permalink: kb/101/Q101461/
+permalink: /kb/101/Q101461/
 ---
 
 ## Q101461: SMTP: Microsoft Mail SMTPGATE.EXE Version 3.0.9 Update

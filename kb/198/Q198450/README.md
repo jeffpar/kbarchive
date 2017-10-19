@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198450: XCLN: You do not have create permissions on this folder"
-permalink: kb/198/Q198450/
+permalink: /kb/198/Q198450/
 ---
 
 ## Q198450: XCLN: You do not have create permissions on this folder

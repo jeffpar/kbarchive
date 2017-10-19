@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80773: File Manager Window Not Visible"
-permalink: kb/080/Q80773/
+permalink: /kb/080/Q80773/
 ---
 
 ## Q80773: File Manager Window Not Visible

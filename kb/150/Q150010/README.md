@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150010: XCLN: MS Mail Service May Not be Available for Win3.x Clients"
-permalink: kb/150/Q150010/
+permalink: /kb/150/Q150010/
 ---
 
 ## Q150010: XCLN: MS Mail Service May Not be Available for Win3.x Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193134: XCLN: Contact Folders Use Mail Folder Icon in OWA"
-permalink: kb/193/Q193134/
+permalink: /kb/193/Q193134/
 ---
 
 ## Q193134: XCLN: Contact Folders Use Mail Folder Icon in OWA

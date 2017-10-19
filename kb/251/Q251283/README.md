@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251283: XIMS: Enabling FrontPage Server Extensions to Relay on Exchange"
-permalink: kb/251/Q251283/
+permalink: /kb/251/Q251283/
 ---
 
 ## Q251283: XIMS: Enabling FrontPage Server Extensions to Relay on Exchange

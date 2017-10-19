@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306886: BUG: Split Causes DataGrid to Repaint Itself Continuously"
-permalink: kb/306/Q306886/
+permalink: /kb/306/Q306886/
 ---
 
 ## Q306886: BUG: Split Causes DataGrid to Repaint Itself Continuously

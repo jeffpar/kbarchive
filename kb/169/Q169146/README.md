@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169146: Error Message When Running Network Monitor"
-permalink: kb/169/Q169146/
+permalink: /kb/169/Q169146/
 ---
 
 ## Q169146: Error Message When Running Network Monitor

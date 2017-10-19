@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141298: NCR 3350 MCA Floppy Drive Hangs in Windows NT 3.51"
-permalink: kb/141/Q141298/
+permalink: /kb/141/Q141298/
 ---
 
 ## Q141298: NCR 3350 MCA Floppy Drive Hangs in Windows NT 3.51

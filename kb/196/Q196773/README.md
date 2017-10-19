@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196773: FIX: Slow View Performance with Sybase ODBC Driver"
-permalink: kb/196/Q196773/
+permalink: /kb/196/Q196773/
 ---
 
 ## Q196773: FIX: Slow View Performance with Sybase ODBC Driver

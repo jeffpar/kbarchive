@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129887: Introducing the Powerful New Picture Object in VB 4.0"
-permalink: kb/129/Q129887/
+permalink: /kb/129/Q129887/
 ---
 
 ## Q129887: Introducing the Powerful New Picture Object in VB 4.0

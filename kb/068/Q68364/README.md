@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68364: Mac Adm: Forcing Mail to Do a Network Scan of Servers"
-permalink: kb/068/Q68364/
+permalink: /kb/068/Q68364/
 ---
 
 ## Q68364: Mac Adm: Forcing Mail to Do a Network Scan of Servers

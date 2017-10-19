@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80525: FltSim: Using System Time Causes Night Flight"
-permalink: kb/080/Q80525/
+permalink: /kb/080/Q80525/
 ---
 
 ## Q80525: FltSim: Using System Time Causes Night Flight

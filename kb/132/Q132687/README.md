@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132687: PC WSPlus: Documentation for Mixed Networks Dynamic Schedule"
-permalink: kb/132/Q132687/
+permalink: /kb/132/Q132687/
 ---
 
 ## Q132687: PC WSPlus: Documentation for Mixed Networks Dynamic Schedule

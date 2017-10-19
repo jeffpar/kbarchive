@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163889: XADM: Trust Levels not Used in Exchange Directory Replication"
-permalink: kb/163/Q163889/
+permalink: /kb/163/Q163889/
 ---
 
 ## Q163889: XADM: Trust Levels not Used in Exchange Directory Replication

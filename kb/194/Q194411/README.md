@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194411: XWEB: OWA Error: &quot;The proxy server has encountered an error&quot;"
-permalink: kb/194/Q194411/
+permalink: /kb/194/Q194411/
 ---
 
 ## Q194411: XWEB: OWA Error: &quot;The proxy server has encountered an error&quot;

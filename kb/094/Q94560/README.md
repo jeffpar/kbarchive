@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94560: Sound Finder &amp; Quick Recorder Description &amp; Label Text Limits"
-permalink: kb/094/Q94560/
+permalink: /kb/094/Q94560/
 ---
 
 ## Q94560: Sound Finder &amp; Quick Recorder Description &amp; Label Text Limits

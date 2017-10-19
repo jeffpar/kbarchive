@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables"
-permalink: kb/157/Q157254/
+permalink: /kb/157/Q157254/
 ---
 
 ## Q157254: BUG: SELECT-SQL Error When Joining Parent to Two Child Tables

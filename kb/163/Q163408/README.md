@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163408: ODE97: MSDN Sampler: License Help Topic Incorrect"
-permalink: kb/163/Q163408/
+permalink: /kb/163/Q163408/
 ---
 
 ## Q163408: ODE97: MSDN Sampler: License Help Topic Incorrect

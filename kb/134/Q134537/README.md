@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134537: No Sound or Incorrect Sound from Sound Card"
-permalink: kb/134/Q134537/
+permalink: /kb/134/Q134537/
 ---
 
 ## Q134537: No Sound or Incorrect Sound from Sound Card

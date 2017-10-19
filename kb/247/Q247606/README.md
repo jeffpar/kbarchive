@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247606: NFL Fever 2000: Unable to Delete a Created Player"
-permalink: kb/247/Q247606/
+permalink: /kb/247/Q247606/
 ---
 
 ## Q247606: NFL Fever 2000: Unable to Delete a Created Player

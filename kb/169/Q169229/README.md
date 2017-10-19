@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169229: How to Remove and Reinstall DHCP and Keep the DHCP Config"
-permalink: kb/169/Q169229/
+permalink: /kb/169/Q169229/
 ---
 
 ## Q169229: How to Remove and Reinstall DHCP and Keep the DHCP Config

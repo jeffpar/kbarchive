@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303028: Error Message When You Modify otherMailbox or Mail"
-permalink: kb/303/Q303028/
+permalink: /kb/303/Q303028/
 ---
 
 ## Q303028: Error Message When You Modify otherMailbox or Mail

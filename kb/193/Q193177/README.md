@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193177: WD97: AutoNum Field Not Updated Correctly Inside Table Cell"
-permalink: kb/193/Q193177/
+permalink: /kb/193/Q193177/
 ---
 
 ## Q193177: WD97: AutoNum Field Not Updated Correctly Inside Table Cell

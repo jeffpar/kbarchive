@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198072: WD97: IPF Opening Word 97 File with Text Box, Square Wrap"
-permalink: kb/198/Q198072/
+permalink: /kb/198/Q198072/
 ---
 
 ## Q198072: WD97: IPF Opening Word 97 File with Text Box, Square Wrap

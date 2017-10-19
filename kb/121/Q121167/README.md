@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121167: GP Fault Occurs &amp; Keyboard Is Remapped w/ProofReader &amp; Word 6"
-permalink: kb/121/Q121167/
+permalink: /kb/121/Q121167/
 ---
 
 ## Q121167: GP Fault Occurs &amp; Keyboard Is Remapped w/ProofReader &amp; Word 6

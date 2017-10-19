@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138317: Fw1180.exe Describes Screen Issues in FoxPro for Windows"
-permalink: kb/138/Q138317/
+permalink: /kb/138/Q138317/
 ---
 
 ## Q138317: Fw1180.exe Describes Screen Issues in FoxPro for Windows

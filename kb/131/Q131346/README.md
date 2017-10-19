@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131346: HOWTO: Hide and Restore (Unhide) System Toolbars"
-permalink: kb/131/Q131346/
+permalink: /kb/131/Q131346/
 ---
 
 ## Q131346: HOWTO: Hide and Restore (Unhide) System Toolbars

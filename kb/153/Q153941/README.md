@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153941: Install May Stop Responding on SCSI Drives Greater Than 8.4 GB"
-permalink: kb/153/Q153941/
+permalink: /kb/153/Q153941/
 ---
 
 ## Q153941: Install May Stop Responding on SCSI Drives Greater Than 8.4 GB

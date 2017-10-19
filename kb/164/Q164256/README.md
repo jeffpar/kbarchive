@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164256: ODE97: ODE Setup Wizard Creates Unexpected Registry Keys"
-permalink: kb/164/Q164256/
+permalink: /kb/164/Q164256/
 ---
 
 ## Q164256: ODE97: ODE Setup Wizard Creates Unexpected Registry Keys

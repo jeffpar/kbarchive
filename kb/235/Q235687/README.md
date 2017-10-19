@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235687: FIX:Error 0xC00E0022 Receiving a Mess per MSMQ-MQSeries Bridge"
-permalink: kb/235/Q235687/
+permalink: /kb/235/Q235687/
 ---
 
 ## Q235687: FIX:Error 0xC00E0022 Receiving a Mess per MSMQ-MQSeries Bridge

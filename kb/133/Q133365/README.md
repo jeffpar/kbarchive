@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133365: Windows 95/98: Troubleshooting Problems with Compressed Audio"
-permalink: kb/133/Q133365/
+permalink: /kb/133/Q133365/
 ---
 
 ## Q133365: Windows 95/98: Troubleshooting Problems with Compressed Audio

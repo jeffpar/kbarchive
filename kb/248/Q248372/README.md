@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248372: Incorrect User Name When Using Office 97 Applications"
-permalink: kb/248/Q248372/
+permalink: /kb/248/Q248372/
 ---
 
 ## Q248372: Incorrect User Name When Using Office 97 Applications

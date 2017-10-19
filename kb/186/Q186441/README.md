@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186441: Schedule on Server Can Be Locked by User with Read-Only Access"
-permalink: kb/186/Q186441/
+permalink: /kb/186/Q186441/
 ---
 
 ## Q186441: Schedule on Server Can Be Locked by User with Read-Only Access

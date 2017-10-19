@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241533: Dr. Watson in Mmc.exe with SNA Server and SMS on Same Computer"
-permalink: kb/241/Q241533/
+permalink: /kb/241/Q241533/
 ---
 
 ## Q241533: Dr. Watson in Mmc.exe with SNA Server and SMS on Same Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186113: Internet Explorer Input Method Editor 4.0 for Japanese/Korean"
-permalink: kb/186/Q186113/
+permalink: /kb/186/Q186113/
 ---
 
 ## Q186113: Internet Explorer Input Method Editor 4.0 for Japanese/Korean

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269608: XADM: &quot;Data Error (cyclic redundancy check) 0xC0020017&quot; Error"
-permalink: kb/269/Q269608/
+permalink: /kb/269/Q269608/
 ---
 
 ## Q269608: XADM: &quot;Data Error (cyclic redundancy check) 0xC0020017&quot; Error

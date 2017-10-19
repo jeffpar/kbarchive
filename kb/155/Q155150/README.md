@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155150: Writer 2: Email Asks for Exchange Profile if Exchange Is Not Run"
-permalink: kb/155/Q155150/
+permalink: /kb/155/Q155150/
 ---
 
 ## Q155150: Writer 2: Email Asks for Exchange Profile if Exchange Is Not Run

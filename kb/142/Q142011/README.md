@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142011: How to Close a Remote Process by Using the Scheduler Service"
-permalink: kb/142/Q142011/
+permalink: /kb/142/Q142011/
 ---
 
 ## Q142011: How to Close a Remote Process by Using the Scheduler Service

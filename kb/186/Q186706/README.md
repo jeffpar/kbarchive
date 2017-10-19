@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186706: XWEB: Edit E-mail Button Info Missing in Contact Help Link (?)"
-permalink: kb/186/Q186706/
+permalink: /kb/186/Q186706/
 ---
 
 ## Q186706: XWEB: Edit E-mail Button Info Missing in Contact Help Link (?)

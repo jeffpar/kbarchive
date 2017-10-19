@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247147: WD97: Index Headings Incorrect with Some Nordic Characters"
-permalink: kb/247/Q247147/
+permalink: /kb/247/Q247147/
 ---
 
 ## Q247147: WD97: Index Headings Incorrect with Some Nordic Characters

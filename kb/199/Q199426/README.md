@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199426: SMS: Inventory Shows Incorrect Memory Amount for OS/2 Clients"
-permalink: kb/199/Q199426/
+permalink: /kb/199/Q199426/
 ---
 
 ## Q199426: SMS: Inventory Shows Incorrect Memory Amount for OS/2 Clients

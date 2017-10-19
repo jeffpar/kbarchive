@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87959: CLIENT.WRI from WinLogin 1.0"
-permalink: kb/087/Q87959/
+permalink: /kb/087/Q87959/
 ---
 
 ## Q87959: CLIENT.WRI from WinLogin 1.0

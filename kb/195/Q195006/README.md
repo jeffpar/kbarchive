@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195006: XADM: Resource Failure Error with More Than 800 MB of RAM"
-permalink: kb/195/Q195006/
+permalink: /kb/195/Q195006/
 ---
 
 ## Q195006: XADM: Resource Failure Error with More Than 800 MB of RAM

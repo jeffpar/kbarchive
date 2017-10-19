@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176042: FIX: Altering a Button's Tab Order Causes Illegal Operation"
-permalink: kb/176/Q176042/
+permalink: /kb/176/Q176042/
 ---
 
 ## Q176042: FIX: Altering a Button's Tab Order Causes Illegal Operation

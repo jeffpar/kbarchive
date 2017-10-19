@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199176: XFOR: GroupWise/Lotus Notes DXA Slow to Respond to Full Reload"
-permalink: kb/199/Q199176/
+permalink: /kb/199/Q199176/
 ---
 
 ## Q199176: XFOR: GroupWise/Lotus Notes DXA Slow to Respond to Full Reload

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259032: Understanding Attribute Flow in Microsoft Metadirectory Services"
-permalink: kb/259/Q259032/
+permalink: /kb/259/Q259032/
 ---
 
 ## Q259032: Understanding Attribute Flow in Microsoft Metadirectory Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152140: Fatal Exception When Logging on to NetWare from Windows95 Client"
-permalink: kb/152/Q152140/
+permalink: /kb/152/Q152140/
 ---
 
 ## Q152140: Fatal Exception When Logging on to NetWare from Windows95 Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264171: Incomplete Secondary Site Removal Creates Component Status 3400"
-permalink: kb/264/Q264171/
+permalink: /kb/264/Q264171/
 ---
 
 ## Q264171: Incomplete Secondary Site Removal Creates Component Status 3400

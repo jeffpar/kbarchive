@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237767: XADM: Understanding Offline and Snapshot Backups"
-permalink: kb/237/Q237767/
+permalink: /kb/237/Q237767/
 ---
 
 ## Q237767: XADM: Understanding Offline and Snapshot Backups

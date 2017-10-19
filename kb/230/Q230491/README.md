@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230491: PRB: CDBVariant Contains Wrong BOOL Value with GetFieldValue"
-permalink: kb/230/Q230491/
+permalink: /kb/230/Q230491/
 ---
 
 ## Q230491: PRB: CDBVariant Contains Wrong BOOL Value with GetFieldValue

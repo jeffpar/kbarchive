@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229728: XCON: Intersite MTA Distribution List Cache Issue"
-permalink: kb/229/Q229728/
+permalink: /kb/229/Q229728/
 ---
 
 ## Q229728: XCON: Intersite MTA Distribution List Cache Issue

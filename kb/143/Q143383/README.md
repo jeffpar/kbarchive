@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143383: XCLN: Double-Clicking Expansion Indicator Selects Folder"
-permalink: kb/143/Q143383/
+permalink: /kb/143/Q143383/
 ---
 
 ## Q143383: XCLN: Double-Clicking Expansion Indicator Selects Folder

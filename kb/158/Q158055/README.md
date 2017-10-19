@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158055: WD97: Word 97 Table Borders Do Not Display"
-permalink: kb/158/Q158055/
+permalink: /kb/158/Q158055/
 ---
 
 ## Q158055: WD97: Word 97 Table Borders Do Not Display

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131071: Virtual Functions &amp; Multiple Inheritance in Visual FoxPro"
-permalink: kb/131/Q131071/
+permalink: /kb/131/Q131071/
 ---
 
 ## Q131071: Virtual Functions &amp; Multiple Inheritance in Visual FoxPro

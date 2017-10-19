@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88461: Golf: Window Location Changes after Maximize or Minimize"
-permalink: kb/088/Q88461/
+permalink: /kb/088/Q88461/
 ---
 
 ## Q88461: Golf: Window Location Changes after Maximize or Minimize

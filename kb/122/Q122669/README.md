@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122669: MSB Human: Overview"
-permalink: kb/122/Q122669/
+permalink: /kb/122/Q122669/
 ---
 
 ## Q122669: MSB Human: Overview

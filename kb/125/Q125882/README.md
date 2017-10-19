@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125882: INFO: SNA Server Connection Stays Inactive"
-permalink: kb/125/Q125882/
+permalink: /kb/125/Q125882/
 ---
 
 ## Q125882: INFO: SNA Server Connection Stays Inactive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169863: PRB: Error Logging into the Anomaly Tracking System"
-permalink: kb/169/Q169863/
+permalink: /kb/169/Q169863/
 ---
 
 ## Q169863: PRB: Error Logging into the Anomaly Tracking System

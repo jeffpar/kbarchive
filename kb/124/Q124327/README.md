@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124327: How To Calculate a Person's Current Age"
-permalink: kb/124/Q124327/
+permalink: /kb/124/Q124327/
 ---
 
 ## Q124327: How To Calculate a Person's Current Age

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131750: Characters on Screen Appear Very Small"
-permalink: kb/131/Q131750/
+permalink: /kb/131/Q131750/
 ---
 
 ## Q131750: Characters on Screen Appear Very Small

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136509: External Modem Cannot Receive Data"
-permalink: kb/136/Q136509/
+permalink: /kb/136/Q136509/
 ---
 
 ## Q136509: External Modem Cannot Receive Data

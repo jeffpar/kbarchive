@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82810: Where Windows Searches for REG.DAT"
-permalink: kb/082/Q82810/
+permalink: /kb/082/Q82810/
 ---
 
 ## Q82810: Where Windows Searches for REG.DAT

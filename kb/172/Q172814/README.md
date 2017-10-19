@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172814: Control Unit Image Number Not Supported on ESCON"
-permalink: kb/172/Q172814/
+permalink: /kb/172/Q172814/
 ---
 
 ## Q172814: Control Unit Image Number Not Supported on ESCON

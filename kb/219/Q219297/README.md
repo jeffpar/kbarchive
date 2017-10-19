@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219297: How to Disable the My Briefcase Icon on the Desktop"
-permalink: kb/219/Q219297/
+permalink: /kb/219/Q219297/
 ---
 
 ## Q219297: How to Disable the My Briefcase Icon on the Desktop

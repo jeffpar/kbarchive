@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158874: Finding Extensible Counters Used by Performance Monitor"
-permalink: kb/158/Q158874/
+permalink: /kb/158/Q158874/
 ---
 
 ## Q158874: Finding Extensible Counters Used by Performance Monitor

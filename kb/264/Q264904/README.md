@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264904: Age of Empires II: Map on Game Screen Scrolls Up Unexpectedly"
-permalink: kb/264/Q264904/
+permalink: /kb/264/Q264904/
 ---
 
 ## Q264904: Age of Empires II: Map on Game Screen Scrolls Up Unexpectedly

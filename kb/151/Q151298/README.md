@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151298: Application Trap when Pass an Invalid Conversation ID to CPI-C"
-permalink: kb/151/Q151298/
+permalink: /kb/151/Q151298/
 ---
 
 ## Q151298: Application Trap when Pass an Invalid Conversation ID to CPI-C

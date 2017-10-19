@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177278: Bookshelf 98: Unable to Open 360 Degree Views"
-permalink: kb/177/Q177278/
+permalink: /kb/177/Q177278/
 ---
 
 ## Q177278: Bookshelf 98: Unable to Open 360 Degree Views

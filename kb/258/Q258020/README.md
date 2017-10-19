@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258020: &quot;Object Not Found&quot; Error Message Accessing &quot;The Known Universe&quot;"
-permalink: kb/258/Q258020/
+permalink: /kb/258/Q258020/
 ---
 
 ## Q258020: &quot;Object Not Found&quot; Error Message Accessing &quot;The Known Universe&quot;

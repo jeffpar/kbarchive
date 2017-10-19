@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184468: XADM: Edbutil.exe and Eseutil.exe Cannot Dump Log File Header"
-permalink: kb/184/Q184468/
+permalink: /kb/184/Q184468/
 ---
 
 ## Q184468: XADM: Edbutil.exe and Eseutil.exe Cannot Dump Log File Header

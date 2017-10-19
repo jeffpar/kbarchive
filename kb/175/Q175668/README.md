@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175668: MultiSoc : Illustrates Using Sockets in Multiple Threads"
-permalink: kb/175/Q175668/
+permalink: /kb/175/Q175668/
 ---
 
 ## Q175668: MultiSoc : Illustrates Using Sockets in Multiple Threads

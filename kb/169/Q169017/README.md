@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169017: Information on Groups &amp; Resources Using Cluster Server"
-permalink: kb/169/Q169017/
+permalink: /kb/169/Q169017/
 ---
 
 ## Q169017: Information on Groups &amp; Resources Using Cluster Server

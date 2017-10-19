@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247784: INFO: '80020101' Returned From Some ActiveX Scripting Methods"
-permalink: kb/247/Q247784/
+permalink: /kb/247/Q247784/
 ---
 
 ## Q247784: INFO: '80020101' Returned From Some ActiveX Scripting Methods

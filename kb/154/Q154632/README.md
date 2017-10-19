@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154632: FIX: Accept Returns FALSE but GetLastError Returns 0"
-permalink: kb/154/Q154632/
+permalink: /kb/154/Q154632/
 ---
 
 ## Q154632: FIX: Accept Returns FALSE but GetLastError Returns 0

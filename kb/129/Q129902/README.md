@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129902: PC Win:Valid Character for Attachment Sent from AppleTalk Mail"
-permalink: kb/129/Q129902/
+permalink: /kb/129/Q129902/
 ---
 
 ## Q129902: PC Win:Valid Character for Attachment Sent from AppleTalk Mail

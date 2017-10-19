@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160855: SMS: Pcmsvc32.exe Fails to Process PCM Instruction Files"
-permalink: kb/160/Q160855/
+permalink: /kb/160/Q160855/
 ---
 
 ## Q160855: SMS: Pcmsvc32.exe Fails to Process PCM Instruction Files

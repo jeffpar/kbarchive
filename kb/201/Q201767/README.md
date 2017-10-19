@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201767: SMS: How to Add a NDS Volume to be CAP  of a SMS 2.0 Site"
-permalink: kb/201/Q201767/
+permalink: /kb/201/Q201767/
 ---
 
 ## Q201767: SMS: How to Add a NDS Volume to be CAP  of a SMS 2.0 Site

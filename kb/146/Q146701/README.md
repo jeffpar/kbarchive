@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146701: XCLN: Item Count Wrong in Msg. Find If Use Group-By-View"
-permalink: kb/146/Q146701/
+permalink: /kb/146/Q146701/
 ---
 
 ## Q146701: XCLN: Item Count Wrong in Msg. Find If Use Group-By-View

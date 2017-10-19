@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161948: XCON: MTA NDRs Messages with Headers in P2 Part of Message"
-permalink: kb/161/Q161948/
+permalink: /kb/161/Q161948/
 ---
 
 ## Q161948: XCON: MTA NDRs Messages with Headers in P2 Part of Message

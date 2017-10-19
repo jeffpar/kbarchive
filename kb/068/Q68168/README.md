@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68168: Using the GeoGraphics Geological Survey Program with Windows"
-permalink: kb/068/Q68168/
+permalink: /kb/068/Q68168/
 ---
 
 ## Q68168: Using the GeoGraphics Geological Survey Program with Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139747: MS-DOS-Based Program Reports Not Enough NetWare Server Space"
-permalink: kb/139/Q139747/
+permalink: /kb/139/Q139747/
 ---
 
 ## Q139747: MS-DOS-Based Program Reports Not Enough NetWare Server Space

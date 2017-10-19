@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118547: PRB: Multithreaded Program Crashes"
-permalink: kb/118/Q118547/
+permalink: /kb/118/Q118547/
 ---
 
 ## Q118547: PRB: Multithreaded Program Crashes

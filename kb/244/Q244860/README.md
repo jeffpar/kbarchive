@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244860: XCLN: Foreign Characters in Subject Line Appear as ????????"
-permalink: kb/244/Q244860/
+permalink: /kb/244/Q244860/
 ---
 
 ## Q244860: XCLN: Foreign Characters in Subject Line Appear as ????????

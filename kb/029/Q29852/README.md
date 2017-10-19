@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29852: HOWTO: Use fopen() to Append Data to File Terminated w/ CTRL+Z"
-permalink: kb/029/Q29852/
+permalink: /kb/029/Q29852/
 ---
 
 ## Q29852: HOWTO: Use fopen() to Append Data to File Terminated w/ CTRL+Z

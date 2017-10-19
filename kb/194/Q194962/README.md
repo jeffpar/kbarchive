@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194962: WINS Admin UI Overlaps Fields in Show Mappings Dialog Box"
-permalink: kb/194/Q194962/
+permalink: /kb/194/Q194962/
 ---
 
 ## Q194962: WINS Admin UI Overlaps Fields in Show Mappings Dialog Box

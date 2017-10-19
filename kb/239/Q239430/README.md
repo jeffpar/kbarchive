@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239430: Bookshelf 98: How to Use Command-Line Switches"
-permalink: kb/239/Q239430/
+permalink: /kb/239/Q239430/
 ---
 
 ## Q239430: Bookshelf 98: How to Use Command-Line Switches

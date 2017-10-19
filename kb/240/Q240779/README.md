@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240779: Event Log Error: Event ID 105 from Service W3SVC or FTPSVC"
-permalink: kb/240/Q240779/
+permalink: /kb/240/Q240779/
 ---
 
 ## Q240779: Event Log Error: Event ID 105 from Service W3SVC or FTPSVC

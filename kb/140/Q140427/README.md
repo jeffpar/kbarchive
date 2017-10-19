@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140427: Using the Novell Attach Command in Windows NT"
-permalink: kb/140/Q140427/
+permalink: /kb/140/Q140427/
 ---
 
 ## Q140427: Using the Novell Attach Command in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170422: SNA Server APPC Returns AP_BAD_PARTNER_LU_ALIAS in Error"
-permalink: kb/170/Q170422/
+permalink: /kb/170/Q170422/
 ---
 
 ## Q170422: SNA Server APPC Returns AP_BAD_PARTNER_LU_ALIAS in Error

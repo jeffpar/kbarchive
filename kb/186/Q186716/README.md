@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186716: WD97: Not Asked to Save Data Source Closing Mail Merge Document"
-permalink: kb/186/Q186716/
+permalink: /kb/186/Q186716/
 ---
 
 ## Q186716: WD97: Not Asked to Save Data Source Closing Mail Merge Document

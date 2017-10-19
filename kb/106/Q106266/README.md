@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106266: System Slows After 32-Bit File Access Is Enabled"
-permalink: kb/106/Q106266/
+permalink: /kb/106/Q106266/
 ---
 
 ## Q106266: System Slows After 32-Bit File Access Is Enabled

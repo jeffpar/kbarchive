@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142868: IIS: Authentication and Security Features"
-permalink: kb/142/Q142868/
+permalink: /kb/142/Q142868/
 ---
 
 ## Q142868: IIS: Authentication and Security Features

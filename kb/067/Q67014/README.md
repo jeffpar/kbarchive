@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67014: Fontware Installation Kit Not Enough Disk Space Available"
-permalink: kb/067/Q67014/
+permalink: /kb/067/Q67014/
 ---
 
 ## Q67014: Fontware Installation Kit Not Enough Disk Space Available

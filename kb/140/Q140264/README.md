@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140264: Issues with Multiple Concentrators with Digi DIGIFEP5.SYS Driver"
-permalink: kb/140/Q140264/
+permalink: /kb/140/Q140264/
 ---
 
 ## Q140264: Issues with Multiple Concentrators with Digi DIGIFEP5.SYS Driver

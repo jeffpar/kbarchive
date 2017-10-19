@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169638: XADM: Exchange Uses Information Store for Intersite Replication"
-permalink: kb/169/Q169638/
+permalink: /kb/169/Q169638/
 ---
 
 ## Q169638: XADM: Exchange Uses Information Store for Intersite Replication

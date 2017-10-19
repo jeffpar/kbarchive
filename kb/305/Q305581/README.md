@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305581: Golfer Animations Run Too Fast"
-permalink: kb/305/Q305581/
+permalink: /kb/305/Q305581/
 ---
 
 ## Q305581: Golfer Animations Run Too Fast

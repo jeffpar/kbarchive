@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132913: How to Use EXTRACT.EXE to Copy Files from DMF Disks"
-permalink: kb/132/Q132913/
+permalink: /kb/132/Q132913/
 ---
 
 ## Q132913: How to Use EXTRACT.EXE to Copy Files from DMF Disks

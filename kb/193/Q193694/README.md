@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193694: Index Server Cannot Filter Older Office Documents"
-permalink: kb/193/Q193694/
+permalink: /kb/193/Q193694/
 ---
 
 ## Q193694: Index Server Cannot Filter Older Office Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176218: WD: Grammar Checker Change Button Unavailable (Dimmed)"
-permalink: kb/176/Q176218/
+permalink: /kb/176/Q176218/
 ---
 
 ## Q176218: WD: Grammar Checker Change Button Unavailable (Dimmed)

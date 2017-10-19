@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86230: PRB: Avoiding &quot;Insufficient Memory to Run&quot; Errors"
-permalink: kb/086/Q86230/
+permalink: /kb/086/Q86230/
 ---
 
 ## Q86230: PRB: Avoiding &quot;Insufficient Memory to Run&quot; Errors

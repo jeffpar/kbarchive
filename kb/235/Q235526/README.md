@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235526: Event ID 295 Error Message Importing Foreign Language Templates"
-permalink: kb/235/Q235526/
+permalink: /kb/235/Q235526/
 ---
 
 ## Q235526: Event ID 295 Error Message Importing Foreign Language Templates

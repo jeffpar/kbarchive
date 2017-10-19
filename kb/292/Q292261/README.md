@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292261: Advertised Programs Do Not Generate Status .mif Files"
-permalink: kb/292/Q292261/
+permalink: /kb/292/Q292261/
 ---
 
 ## Q292261: Advertised Programs Do Not Generate Status .mif Files

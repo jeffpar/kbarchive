@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128959: Error Message: This File Could Not Be Found &lt;Filename&gt;"
-permalink: kb/128/Q128959/
+permalink: /kb/128/Q128959/
 ---
 
 ## Q128959: Error Message: This File Could Not Be Found &lt;Filename&gt;

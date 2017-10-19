@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139107: Err Msg: Uninstall Is Unable to Write to the MBR"
-permalink: kb/139/Q139107/
+permalink: /kb/139/Q139107/
 ---
 
 ## Q139107: Err Msg: Uninstall Is Unable to Write to the MBR

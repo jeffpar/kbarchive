@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96488: MS-DOS 6 Upgrade Directory Listing for 3.5 Inch (1.44 MB)"
-permalink: kb/096/Q96488/
+permalink: /kb/096/Q96488/
 ---
 
 ## Q96488: MS-DOS 6 Upgrade Directory Listing for 3.5 Inch (1.44 MB)

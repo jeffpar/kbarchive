@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166648: Word Cannot Retrieve the Business Address from Outlook"
-permalink: kb/166/Q166648/
+permalink: /kb/166/Q166648/
 ---
 
 ## Q166648: Word Cannot Retrieve the Business Address from Outlook

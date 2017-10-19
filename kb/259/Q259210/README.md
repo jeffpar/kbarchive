@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259210: Puzzle Collection: Setup Starts and Quits Immediately"
-permalink: kb/259/Q259210/
+permalink: /kb/259/Q259210/
 ---
 
 ## Q259210: Puzzle Collection: Setup Starts and Quits Immediately

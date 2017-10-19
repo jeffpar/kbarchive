@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309366: INFO: VB 6.0 Does Not Support Windows XP Themes or Visual Styles"
-permalink: kb/309/Q309366/
+permalink: /kb/309/Q309366/
 ---
 
 ## Q309366: INFO: VB 6.0 Does Not Support Windows XP Themes or Visual Styles

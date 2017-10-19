@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292730: FTP Directory Listing Returns Lowercase File Names"
-permalink: kb/292/Q292730/
+permalink: /kb/292/Q292730/
 ---
 
 ## Q292730: FTP Directory Listing Returns Lowercase File Names

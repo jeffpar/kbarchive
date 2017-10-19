@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234797: BLOB Data Doesn't Update with CRecordset::Open appendOnly Option"
-permalink: kb/234/Q234797/
+permalink: /kb/234/Q234797/
 ---
 
 ## Q234797: BLOB Data Doesn't Update with CRecordset::Open appendOnly Option

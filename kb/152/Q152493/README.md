@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152493: FIX: ISAPI Extension Wizard Generates Bad OnAuthentication"
-permalink: kb/152/Q152493/
+permalink: /kb/152/Q152493/
 ---
 
 ## Q152493: FIX: ISAPI Extension Wizard Generates Bad OnAuthentication

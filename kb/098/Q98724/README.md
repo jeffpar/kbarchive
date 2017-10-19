@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98724: Password Case Sensitivity and System Error 1219"
-permalink: kb/098/Q98724/
+permalink: /kb/098/Q98724/
 ---
 
 ## Q98724: Password Case Sensitivity and System Error 1219

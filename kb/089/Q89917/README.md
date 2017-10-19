@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89917: Copying to LPT Port in MS-DOS Session Slow"
-permalink: kb/089/Q89917/
+permalink: /kb/089/Q89917/
 ---
 
 ## Q89917: Copying to LPT Port in MS-DOS Session Slow

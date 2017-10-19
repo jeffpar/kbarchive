@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199315: FIX: Method with BOOL&#42; Parameter Type Overwriting Memory in VB"
-permalink: kb/199/Q199315/
+permalink: /kb/199/Q199315/
 ---
 
 ## Q199315: FIX: Method with BOOL&#42; Parameter Type Overwriting Memory in VB

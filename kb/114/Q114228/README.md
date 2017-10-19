@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114228: HOWTO: Add Icons After Distributed Setup Program Is Run"
-permalink: kb/114/Q114228/
+permalink: /kb/114/Q114228/
 ---
 
 ## Q114228: HOWTO: Add Icons After Distributed Setup Program Is Run

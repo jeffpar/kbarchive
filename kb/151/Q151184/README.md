@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151184: SMS: Disabling Inventory Collection over Slow Connections"
-permalink: kb/151/Q151184/
+permalink: /kb/151/Q151184/
 ---
 
 ## Q151184: SMS: Disabling Inventory Collection over Slow Connections

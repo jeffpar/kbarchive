@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10212: INFO: Definition of a Region"
-permalink: kb/010/Q10212/
+permalink: /kb/010/Q10212/
 ---
 
 ## Q10212: INFO: Definition of a Region

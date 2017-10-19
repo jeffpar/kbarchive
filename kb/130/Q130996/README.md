@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130996: PRB: &quot;Save As&quot; Directory Isn't the Same as Default Directory"
-permalink: kb/130/Q130996/
+permalink: /kb/130/Q130996/
 ---
 
 ## Q130996: PRB: &quot;Save As&quot; Directory Isn't the Same as Default Directory

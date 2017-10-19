@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174775: How Windows NT Challenge/Response Works"
-permalink: kb/174/Q174775/
+permalink: /kb/174/Q174775/
 ---
 
 ## Q174775: How Windows NT Challenge/Response Works

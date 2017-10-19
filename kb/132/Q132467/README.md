@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132467: Firing Order for Rules and Triggers in Visual FoxPro"
-permalink: kb/132/Q132467/
+permalink: /kb/132/Q132467/
 ---
 
 ## Q132467: Firing Order for Rules and Triggers in Visual FoxPro

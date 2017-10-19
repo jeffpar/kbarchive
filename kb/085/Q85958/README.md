@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85958: PPT: Embossing Diagonal Lines and Angles"
-permalink: kb/085/Q85958/
+permalink: /kb/085/Q85958/
 ---
 
 ## Q85958: PPT: Embossing Diagonal Lines and Angles

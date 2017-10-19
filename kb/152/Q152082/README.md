@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152082: XADM: Cannot Modify DL if DL and Owner Not in the Same Site"
-permalink: kb/152/Q152082/
+permalink: /kb/152/Q152082/
 ---
 
 ## Q152082: XADM: Cannot Modify DL if DL and Owner Not in the Same Site

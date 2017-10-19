@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130782: Access 2.0 Command Line gets Truncated Under Windows NT 3.5"
-permalink: kb/130/Q130782/
+permalink: /kb/130/Q130782/
 ---
 
 ## Q130782: Access 2.0 Command Line gets Truncated Under Windows NT 3.5

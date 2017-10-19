@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138044: How to Add an Existing Form to a FormSet"
-permalink: kb/138/Q138044/
+permalink: /kb/138/Q138044/
 ---
 
 ## Q138044: How to Add an Existing Form to a FormSet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106520: FIX: /Ge Fails to Detect Stack Overflow"
-permalink: kb/106/Q106520/
+permalink: /kb/106/Q106520/
 ---
 
 ## Q106520: FIX: /Ge Fails to Detect Stack Overflow

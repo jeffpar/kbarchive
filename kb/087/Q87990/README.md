@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87990: PC WSPlus: No Error Message When Printers Removed"
-permalink: kb/087/Q87990/
+permalink: /kb/087/Q87990/
 ---
 
 ## Q87990: PC WSPlus: No Error Message When Printers Removed

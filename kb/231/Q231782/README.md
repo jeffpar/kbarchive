@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231782: SMS: Smsmon32 and/or Odpwin9x May Cause Windows 95/98 to Hang"
-permalink: kb/231/Q231782/
+permalink: /kb/231/Q231782/
 ---
 
 ## Q231782: SMS: Smsmon32 and/or Odpwin9x May Cause Windows 95/98 to Hang

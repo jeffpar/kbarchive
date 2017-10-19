@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154668: Computer Hangs Sending Large Print Jobs to WFW 3.11 Server"
-permalink: kb/154/Q154668/
+permalink: /kb/154/Q154668/
 ---
 
 ## Q154668: Computer Hangs Sending Large Print Jobs to WFW 3.11 Server

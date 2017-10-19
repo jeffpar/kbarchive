@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156065: Shortcut Key Launches Multiple Instances of Program"
-permalink: kb/156/Q156065/
+permalink: /kb/156/Q156065/
 ---
 
 ## Q156065: Shortcut Key Launches Multiple Instances of Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170972: WD97: IExplorer Back Button Ignored After Hyperlink from Word"
-permalink: kb/170/Q170972/
+permalink: /kb/170/Q170972/
 ---
 
 ## Q170972: WD97: IExplorer Back Button Ignored After Hyperlink from Word

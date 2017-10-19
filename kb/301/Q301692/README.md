@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301692: SMS: Processor Speed May Be Incorrectly Reported as 1 GHz"
-permalink: kb/301/Q301692/
+permalink: /kb/301/Q301692/
 ---
 
 ## Q301692: SMS: Processor Speed May Be Incorrectly Reported as 1 GHz

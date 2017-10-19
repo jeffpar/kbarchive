@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161890: RCMD Strips Quotes from the Command Line"
-permalink: kb/161/Q161890/
+permalink: /kb/161/Q161890/
 ---
 
 ## Q161890: RCMD Strips Quotes from the Command Line

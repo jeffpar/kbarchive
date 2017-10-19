@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150048: Syscon Changes Maximum Password Age on FPNW Server"
-permalink: kb/150/Q150048/
+permalink: /kb/150/Q150048/
 ---
 
 ## Q150048: Syscon Changes Maximum Password Age on FPNW Server

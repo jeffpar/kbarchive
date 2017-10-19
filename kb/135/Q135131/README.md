@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135131: Cannot Minimize PowerPoint 4.0 Viewer"
-permalink: kb/135/Q135131/
+permalink: /kb/135/Q135131/
 ---
 
 ## Q135131: Cannot Minimize PowerPoint 4.0 Viewer

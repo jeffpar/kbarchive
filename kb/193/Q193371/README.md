@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193371: WINS/DHCP Admin Show Expiration Dates 2000 - 2009 with One Digit"
-permalink: kb/193/Q193371/
+permalink: /kb/193/Q193371/
 ---
 
 ## Q193371: WINS/DHCP Admin Show Expiration Dates 2000 - 2009 with One Digit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159933: Account Locked Out Unavailable in User Manager"
-permalink: kb/159/Q159933/
+permalink: /kb/159/Q159933/
 ---
 
 ## Q159933: Account Locked Out Unavailable in User Manager

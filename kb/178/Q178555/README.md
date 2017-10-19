@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178555: How to Move a Scheduled Job to Another NT Server"
-permalink: kb/178/Q178555/
+permalink: /kb/178/Q178555/
 ---
 
 ## Q178555: How to Move a Scheduled Job to Another NT Server

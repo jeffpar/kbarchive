@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179661: WD97: File Sharing Options Are Ignored"
-permalink: kb/179/Q179661/
+permalink: /kb/179/Q179661/
 ---
 
 ## Q179661: WD97: File Sharing Options Are Ignored

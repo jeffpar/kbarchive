@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157525: BUG: Remote View Has Only Two Join Types"
-permalink: kb/157/Q157525/
+permalink: /kb/157/Q157525/
 ---
 
 ## Q157525: BUG: Remote View Has Only Two Join Types

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280358: WD97: Change Case Command Does Not Change to Sentence/Title Case"
-permalink: kb/280/Q280358/
+permalink: /kb/280/Q280358/
 ---
 
 ## Q280358: WD97: Change Case Command Does Not Change to Sentence/Title Case

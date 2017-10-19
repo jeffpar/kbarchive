@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112285: PC Adm: IMPORT -R Versus Replace Command in Text File"
-permalink: kb/112/Q112285/
+permalink: /kb/112/Q112285/
 ---
 
 ## Q112285: PC Adm: IMPORT -R Versus Replace Command in Text File

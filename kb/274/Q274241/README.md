@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274241: XADM: Digitally Signed Messages  Received Without Signature"
-permalink: kb/274/Q274241/
+permalink: /kb/274/Q274241/
 ---
 
 ## Q274241: XADM: Digitally Signed Messages  Received Without Signature

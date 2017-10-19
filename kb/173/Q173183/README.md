@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173183: Grpcpy.doc Contains Editing Marks Making It Difficult to Read"
-permalink: kb/173/Q173183/
+permalink: /kb/173/Q173183/
 ---
 
 ## Q173183: Grpcpy.doc Contains Editing Marks Making It Difficult to Read

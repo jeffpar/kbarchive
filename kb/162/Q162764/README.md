@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162764: Unix FTP Clients Get 1 Line at a Time w/ SNA Server AFTP Gateway"
-permalink: kb/162/Q162764/
+permalink: /kb/162/Q162764/
 ---
 
 ## Q162764: Unix FTP Clients Get 1 Line at a Time w/ SNA Server AFTP Gateway

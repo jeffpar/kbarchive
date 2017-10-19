@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168879: INF: Driver Manager Trace Facility Logs User Names and  Password"
-permalink: kb/168/Q168879/
+permalink: /kb/168/Q168879/
 ---
 
 ## Q168879: INF: Driver Manager Trace Facility Logs User Names and  Password

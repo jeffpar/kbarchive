@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189303: SMS: Service Pack Upgrade Button Unavailable When Running Setup"
-permalink: kb/189/Q189303/
+permalink: /kb/189/Q189303/
 ---
 
 ## Q189303: SMS: Service Pack Upgrade Button Unavailable When Running Setup

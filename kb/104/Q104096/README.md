@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104096: IniHeadr.exe Reads Section Headers from .INI Files"
-permalink: kb/104/Q104096/
+permalink: /kb/104/Q104096/
 ---
 
 ## Q104096: IniHeadr.exe Reads Section Headers from .INI Files

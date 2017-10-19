@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143032: PRB: RDO: Hstmt Error with Asynchronous SQL Server Queries"
-permalink: kb/143/Q143032/
+permalink: /kb/143/Q143032/
 ---
 
 ## Q143032: PRB: RDO: Hstmt Error with Asynchronous SQL Server Queries

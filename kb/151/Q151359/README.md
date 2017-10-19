@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151359: XCLN: Out of Memory Errors Starting Schedule+ After Exchange"
-permalink: kb/151/Q151359/
+permalink: /kb/151/Q151359/
 ---
 
 ## Q151359: XCLN: Out of Memory Errors Starting Schedule+ After Exchange

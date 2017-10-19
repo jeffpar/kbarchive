@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305045: PRB: Messagebox() or Inputbox() Fails to Time Out"
-permalink: kb/305/Q305045/
+permalink: /kb/305/Q305045/
 ---
 
 ## Q305045: PRB: Messagebox() or Inputbox() Fails to Time Out

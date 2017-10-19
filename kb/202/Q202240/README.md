@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202240: XFOR: Messages Queued at Lotus cc:Mail Post Office, Event ID 54"
-permalink: kb/202/Q202240/
+permalink: /kb/202/Q202240/
 ---
 
 ## Q202240: XFOR: Messages Queued at Lotus cc:Mail Post Office, Event ID 54

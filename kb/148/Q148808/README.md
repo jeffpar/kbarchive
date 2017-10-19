@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148808: FIX: C2670: Template Function Cannot Convert Parameter"
-permalink: kb/148/Q148808/
+permalink: /kb/148/Q148808/
 ---
 
 ## Q148808: FIX: C2670: Template Function Cannot Convert Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168040: BUG: Insert Object from File Dialog Box Shows Hidden Files"
-permalink: kb/168/Q168040/
+permalink: /kb/168/Q168040/
 ---
 
 ## Q168040: BUG: Insert Object from File Dialog Box Shows Hidden Files

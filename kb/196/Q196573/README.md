@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196573: Application Error in Outlook.exe Using Matrox Millennium"
-permalink: kb/196/Q196573/
+permalink: /kb/196/Q196573/
 ---
 
 ## Q196573: Application Error in Outlook.exe Using Matrox Millennium

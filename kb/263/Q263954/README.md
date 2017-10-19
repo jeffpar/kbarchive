@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263954: Possible Loss of Transactions in Microsoft Metadirectory Service"
-permalink: kb/263/Q263954/
+permalink: /kb/263/Q263954/
 ---
 
 ## Q263954: Possible Loss of Transactions in Microsoft Metadirectory Service

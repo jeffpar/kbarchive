@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276350: Microsoft Casino: Common Sound Issues"
-permalink: kb/276/Q276350/
+permalink: /kb/276/Q276350/
 ---
 
 ## Q276350: Microsoft Casino: Common Sound Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71767: INFO: C2059, C2143: Syntax Errors Involving 'int constant'"
-permalink: kb/071/Q71767/
+permalink: /kb/071/Q71767/
 ---
 
 ## Q71767: INFO: C2059, C2143: Syntax Errors Involving 'int constant'

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131573: Windows 95 Does Not Disable Third-Party Screen Savers"
-permalink: kb/131/Q131573/
+permalink: /kb/131/Q131573/
 ---
 
 ## Q131573: Windows 95 Does Not Disable Third-Party Screen Savers

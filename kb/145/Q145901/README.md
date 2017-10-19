@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145901: Mac Encarta 96: Cannot Paste Audio Copied from Encyclopedia"
-permalink: kb/145/Q145901/
+permalink: /kb/145/Q145901/
 ---
 
 ## Q145901: Mac Encarta 96: Cannot Paste Audio Copied from Encyclopedia

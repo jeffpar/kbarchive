@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78065: Proper Installation of the Redistributable DLLs"
-permalink: kb/078/Q78065/
+permalink: /kb/078/Q78065/
 ---
 
 ## Q78065: Proper Installation of the Redistributable DLLs

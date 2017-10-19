@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223060: FIX: T-SQL Shows Incorrect Parameters in Local Variables Window"
-permalink: kb/223/Q223060/
+permalink: /kb/223/Q223060/
 ---
 
 ## Q223060: FIX: T-SQL Shows Incorrect Parameters in Local Variables Window

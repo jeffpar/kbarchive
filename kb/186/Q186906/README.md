@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186906: FIX: VBScript Macro Names Cannot Contain MBCS Characters"
-permalink: kb/186/Q186906/
+permalink: /kb/186/Q186906/
 ---
 
 ## Q186906: FIX: VBScript Macro Names Cannot Contain MBCS Characters

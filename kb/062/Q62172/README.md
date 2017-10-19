@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62172: Mac Hyp: Setting the Message Subject"
-permalink: kb/062/Q62172/
+permalink: /kb/062/Q62172/
 ---
 
 ## Q62172: Mac Hyp: Setting the Message Subject

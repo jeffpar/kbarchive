@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171857: Long File Name Lost After Using Send To Command with WordPad"
-permalink: kb/171/Q171857/
+permalink: /kb/171/Q171857/
 ---
 
 ## Q171857: Long File Name Lost After Using Send To Command with WordPad

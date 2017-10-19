@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196745: Very Slow Paged Pool Leak in Windows NT 4.0"
-permalink: kb/196/Q196745/
+permalink: /kb/196/Q196745/
 ---
 
 ## Q196745: Very Slow Paged Pool Leak in Windows NT 4.0

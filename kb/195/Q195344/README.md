@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195344: My Personal Tutor: Sound Is Distorted When You Run Program"
-permalink: kb/195/Q195344/
+permalink: /kb/195/Q195344/
 ---
 
 ## Q195344: My Personal Tutor: Sound Is Distorted When You Run Program

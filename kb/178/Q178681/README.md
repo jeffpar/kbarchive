@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178681: Headers on SDK Documents Print Incorrectly"
-permalink: kb/178/Q178681/
+permalink: /kb/178/Q178681/
 ---
 
 ## Q178681: Headers on SDK Documents Print Incorrectly

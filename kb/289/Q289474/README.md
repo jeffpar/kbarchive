@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289474: Academic Learning Series Windows 2000 Server Comments and Correc"
-permalink: kb/289/Q289474/
+permalink: /kb/289/Q289474/
 ---
 
 ## Q289474: Academic Learning Series Windows 2000 Server Comments and Correc

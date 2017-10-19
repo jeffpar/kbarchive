@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174249: Flight Simulator 95: No Multiplayer Mode"
-permalink: kb/174/Q174249/
+permalink: /kb/174/Q174249/
 ---
 
 ## Q174249: Flight Simulator 95: No Multiplayer Mode

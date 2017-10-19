@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244526: XCON: RAS MTA Transport Stack Is only Type of Stack Available"
-permalink: kb/244/Q244526/
+permalink: /kb/244/Q244526/
 ---
 
 ## Q244526: XCON: RAS MTA Transport Stack Is only Type of Stack Available

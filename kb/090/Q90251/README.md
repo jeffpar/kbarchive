@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90251: Hearts: Cannot Detect Other Player's Cards"
-permalink: kb/090/Q90251/
+permalink: /kb/090/Q90251/
 ---
 
 ## Q90251: Hearts: Cannot Detect Other Player's Cards

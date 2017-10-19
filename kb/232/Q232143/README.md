@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232143: Various Errors When MSI File Creates and Modifies Files and Keys"
-permalink: kb/232/Q232143/
+permalink: /kb/232/Q232143/
 ---
 
 ## Q232143: Various Errors When MSI File Creates and Modifies Files and Keys

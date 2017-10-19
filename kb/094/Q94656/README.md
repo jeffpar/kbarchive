@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94656: Excessive Memory Consumption in MS-DOS with WFWG"
-permalink: kb/094/Q94656/
+permalink: /kb/094/Q94656/
 ---
 
 ## Q94656: Excessive Memory Consumption in MS-DOS with WFWG

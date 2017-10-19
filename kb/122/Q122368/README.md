@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122368: &quot;Insufficient Memory&quot; Messages Appear When You Use Word 6"
-permalink: kb/122/Q122368/
+permalink: /kb/122/Q122368/
 ---
 
 ## Q122368: &quot;Insufficient Memory&quot; Messages Appear When You Use Word 6

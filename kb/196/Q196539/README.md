@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196539: WD97: How to Add Borders to Calendars Created by Wizard"
-permalink: kb/196/Q196539/
+permalink: /kb/196/Q196539/
 ---
 
 ## Q196539: WD97: How to Add Borders to Calendars Created by Wizard

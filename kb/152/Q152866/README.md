@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152866: XADM: No Command to Import MMF File on MIPS or Alpha"
-permalink: kb/152/Q152866/
+permalink: /kb/152/Q152866/
 ---
 
 ## Q152866: XADM: No Command to Import MMF File on MIPS or Alpha

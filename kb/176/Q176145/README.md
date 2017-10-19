@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176145: XADM: Admins Can Edit DL Members Even When Hidden from AB"
-permalink: kb/176/Q176145/
+permalink: /kb/176/Q176145/
 ---
 
 ## Q176145: XADM: Admins Can Edit DL Members Even When Hidden from AB

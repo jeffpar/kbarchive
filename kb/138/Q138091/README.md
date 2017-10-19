@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138091: FIX: Internal Error When Add New Telephony Location"
-permalink: kb/138/Q138091/
+permalink: /kb/138/Q138091/
 ---
 
 ## Q138091: FIX: Internal Error When Add New Telephony Location

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148251: Dinosaurs: Minimum System Requirements"
-permalink: kb/148/Q148251/
+permalink: /kb/148/Q148251/
 ---
 
 ## Q148251: Dinosaurs: Minimum System Requirements

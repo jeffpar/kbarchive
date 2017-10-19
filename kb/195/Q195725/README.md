@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195725: Intermediate Network Driver Causes STOP 0x0000001E on MP PC"
-permalink: kb/195/Q195725/
+permalink: /kb/195/Q195725/
 ---
 
 ## Q195725: Intermediate Network Driver Causes STOP 0x0000001E on MP PC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172785: Internet Icon Missing from Desktop After Installing MSN"
-permalink: kb/172/Q172785/
+permalink: /kb/172/Q172785/
 ---
 
 ## Q172785: Internet Icon Missing from Desktop After Installing MSN

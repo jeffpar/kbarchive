@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153912: Internet Shortcuts Do Not Function After Reinstalling MSN"
-permalink: kb/153/Q153912/
+permalink: /kb/153/Q153912/
 ---
 
 ## Q153912: Internet Shortcuts Do Not Function After Reinstalling MSN

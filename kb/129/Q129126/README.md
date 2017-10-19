@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129126: New Access Privileges for Event Log, Audit Log and Registry"
-permalink: kb/129/Q129126/
+permalink: /kb/129/Q129126/
 ---
 
 ## Q129126: New Access Privileges for Event Log, Audit Log and Registry

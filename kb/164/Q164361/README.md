@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164361: FIX: Using EditBox SelStart Property Causes Refresh Problems"
-permalink: kb/164/Q164361/
+permalink: /kb/164/Q164361/
 ---
 
 ## Q164361: FIX: Using EditBox SelStart Property Causes Refresh Problems

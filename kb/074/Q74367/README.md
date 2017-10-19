@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74367: MS-DOS 5.0 Shell Refers to PRINT.COM; Should Be PRINT.EXE"
-permalink: kb/074/Q74367/
+permalink: /kb/074/Q74367/
 ---
 
 ## Q74367: MS-DOS 5.0 Shell Refers to PRINT.COM; Should Be PRINT.EXE

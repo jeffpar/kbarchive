@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199817: XFOR: Notes CALCON May Cause Session Leak on Notes Server"
-permalink: kb/199/Q199817/
+permalink: /kb/199/Q199817/
 ---
 
 ## Q199817: XFOR: Notes CALCON May Cause Session Leak on Notes Server

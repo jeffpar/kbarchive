@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228895: Age of Empires: Trade Workshop Building Is Displayed on the Map"
-permalink: kb/228/Q228895/
+permalink: /kb/228/Q228895/
 ---
 
 ## Q228895: Age of Empires: Trade Workshop Building Is Displayed on the Map

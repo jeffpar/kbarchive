@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283282: SMS: Hardware Inventory Reports Wrong Disk Size in Windows 95/98"
-permalink: kb/283/Q283282/
+permalink: /kb/283/Q283282/
 ---
 
 ## Q283282: SMS: Hardware Inventory Reports Wrong Disk Size in Windows 95/98

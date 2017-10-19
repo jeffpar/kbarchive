@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240852: WD97: IPF When You Click ActiveX Control in Protected Document"
-permalink: kb/240/Q240852/
+permalink: /kb/240/Q240852/
 ---
 
 ## Q240852: WD97: IPF When You Click ActiveX Control in Protected Document

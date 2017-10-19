@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189912: BUG: RELEASE CLASSLIB in App or EXE Requires Use of ALIAS"
-permalink: kb/189/Q189912/
+permalink: /kb/189/Q189912/
 ---
 
 ## Q189912: BUG: RELEASE CLASSLIB in App or EXE Requires Use of ALIAS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68830: Maximum Video Resolution for MS-DOS Apps in Windows"
-permalink: kb/068/Q68830/
+permalink: /kb/068/Q68830/
 ---
 
 ## Q68830: Maximum Video Resolution for MS-DOS Apps in Windows

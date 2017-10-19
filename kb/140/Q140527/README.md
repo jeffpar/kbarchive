@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140527: PRB: Assertion Failed on Line 837 - Sockcore.cpp"
-permalink: kb/140/Q140527/
+permalink: /kb/140/Q140527/
 ---
 
 ## Q140527: PRB: Assertion Failed on Line 837 - Sockcore.cpp

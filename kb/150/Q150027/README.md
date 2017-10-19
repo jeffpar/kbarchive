@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150027: FPNW Sends Print Operator Broadcasts to All Users"
-permalink: kb/150/Q150027/
+permalink: /kb/150/Q150027/
 ---
 
 ## Q150027: FPNW Sends Print Operator Broadcasts to All Users

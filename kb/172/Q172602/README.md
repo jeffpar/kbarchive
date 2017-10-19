@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172602: Event ID 3 Logged After Application Exception in Snaservr.exe"
-permalink: kb/172/Q172602/
+permalink: /kb/172/Q172602/
 ---
 
 ## Q172602: Event ID 3 Logged After Application Exception in Snaservr.exe

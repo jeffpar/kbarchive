@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174273: How to Copy Files and Maintain NTFS and Share Permissions"
-permalink: kb/174/Q174273/
+permalink: /kb/174/Q174273/
 ---
 
 ## Q174273: How to Copy Files and Maintain NTFS and Share Permissions

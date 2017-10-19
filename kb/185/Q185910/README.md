@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185910: SMS: SMS Database Schema Is Not Published"
-permalink: kb/185/Q185910/
+permalink: /kb/185/Q185910/
 ---
 
 ## Q185910: SMS: SMS Database Schema Is Not Published

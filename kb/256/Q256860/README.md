@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256860: XFOR: Lotus Notes Users Unable to View Exchange Users' Free Busy"
-permalink: kb/256/Q256860/
+permalink: /kb/256/Q256860/
 ---
 
 ## Q256860: XFOR: Lotus Notes Users Unable to View Exchange Users' Free Busy

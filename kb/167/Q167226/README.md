@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167226: XFOR: Notes Color Graphics Appear Monochrome in Exchange"
-permalink: kb/167/Q167226/
+permalink: /kb/167/Q167226/
 ---
 
 ## Q167226: XFOR: Notes Color Graphics Appear Monochrome in Exchange

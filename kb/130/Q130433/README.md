@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130433: Secondary Time Zone Defaults to Pacific Time"
-permalink: kb/130/Q130433/
+permalink: /kb/130/Q130433/
 ---
 
 ## Q130433: Secondary Time Zone Defaults to Pacific Time

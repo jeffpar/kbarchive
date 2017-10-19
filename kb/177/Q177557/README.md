@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177557: XFOR: Recipients Ignored on Mail Sent to Two or More CMS Nodes"
-permalink: kb/177/Q177557/
+permalink: /kb/177/Q177557/
 ---
 
 ## Q177557: XFOR: Recipients Ignored on Mail Sent to Two or More CMS Nodes

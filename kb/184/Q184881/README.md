@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184881: Reverse Lookups with BIND Earlier Than 4.8.3 Fail"
-permalink: kb/184/Q184881/
+permalink: /kb/184/Q184881/
 ---
 
 ## Q184881: Reverse Lookups with BIND Earlier Than 4.8.3 Fail

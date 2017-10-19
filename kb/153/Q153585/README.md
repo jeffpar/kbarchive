@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153585: SMS: Program Group Not Deleted From Windows NT Client"
-permalink: kb/153/Q153585/
+permalink: /kb/153/Q153585/
 ---
 
 ## Q153585: SMS: Program Group Not Deleted From Windows NT Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182531: Problems with the Windows NT Client Configuration Tool"
-permalink: kb/182/Q182531/
+permalink: /kb/182/Q182531/
 ---
 
 ## Q182531: Problems with the Windows NT Client Configuration Tool

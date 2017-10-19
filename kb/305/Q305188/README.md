@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305188: Integrating Passport Sign In Features for WindowsXP and Passport"
-permalink: kb/305/Q305188/
+permalink: /kb/305/Q305188/
 ---
 
 ## Q305188: Integrating Passport Sign In Features for WindowsXP and Passport

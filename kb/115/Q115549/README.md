@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115549: FAX: Ferrari Board Functions; Gateway Fails w/ Corrupt RRS.FAX"
-permalink: kb/115/Q115549/
+permalink: /kb/115/Q115549/
 ---
 
 ## Q115549: FAX: Ferrari Board Functions; Gateway Fails w/ Corrupt RRS.FAX

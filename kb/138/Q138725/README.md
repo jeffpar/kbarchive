@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138725: PC WSPlus: Definition of &#42;.POF Files (Access Control List)"
-permalink: kb/138/Q138725/
+permalink: /kb/138/Q138725/
 ---
 
 ## Q138725: PC WSPlus: Definition of &#42;.POF Files (Access Control List)

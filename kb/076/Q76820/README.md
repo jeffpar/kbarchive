@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76820: Programs Don't Load into Upper Memory Area"
-permalink: kb/076/Q76820/
+permalink: /kb/076/Q76820/
 ---
 
 ## Q76820: Programs Don't Load into Upper Memory Area

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160160: Monster Truck Madness: Joystick Calibration with NT 4.0"
-permalink: kb/160/Q160160/
+permalink: /kb/160/Q160160/
 ---
 
 ## Q160160: Monster Truck Madness: Joystick Calibration with NT 4.0

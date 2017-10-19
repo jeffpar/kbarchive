@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110495: Self-Extracting Files on NTFS Don't Work from Command Prompt"
-permalink: kb/110/Q110495/
+permalink: /kb/110/Q110495/
 ---
 
 ## Q110495: Self-Extracting Files on NTFS Don't Work from Command Prompt

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234365: XADM: ISINTEG -Patch May Take Several Hours to Finish"
-permalink: kb/234/Q234365/
+permalink: /kb/234/Q234365/
 ---
 
 ## Q234365: XADM: ISINTEG -Patch May Take Several Hours to Finish

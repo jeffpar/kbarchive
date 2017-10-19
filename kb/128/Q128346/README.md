@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128346: Error Messages Creating an Emergency Boot Disk"
-permalink: kb/128/Q128346/
+permalink: /kb/128/Q128346/
 ---
 
 ## Q128346: Error Messages Creating an Emergency Boot Disk

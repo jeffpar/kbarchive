@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148382: BUG: Menus Disappear When All Child Windows Are Closed"
-permalink: kb/148/Q148382/
+permalink: /kb/148/Q148382/
 ---
 
 ## Q148382: BUG: Menus Disappear When All Child Windows Are Closed

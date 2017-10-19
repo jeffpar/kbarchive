@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129447: PRB: Can't Watch Properties or Fields Used in a WITH Statement"
-permalink: kb/129/Q129447/
+permalink: /kb/129/Q129447/
 ---
 
 ## Q129447: PRB: Can't Watch Properties or Fields Used in a WITH Statement

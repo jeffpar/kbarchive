@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176502: RAS Authentication Rechallenge Resets Compression Flag"
-permalink: kb/176/Q176502/
+permalink: /kb/176/Q176502/
 ---
 
 ## Q176502: RAS Authentication Rechallenge Resets Compression Flag

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137832: Bookshelf 1995: QuickShelf Toolbar Settings Are Not Saved"
-permalink: kb/137/Q137832/
+permalink: /kb/137/Q137832/
 ---
 
 ## Q137832: Bookshelf 1995: QuickShelf Toolbar Settings Are Not Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205247: Overriding Automatic WINS and DNS Server Assignment for RAS/DUN"
-permalink: kb/205/Q205247/
+permalink: /kb/205/Q205247/
 ---
 
 ## Q205247: Overriding Automatic WINS and DNS Server Assignment for RAS/DUN

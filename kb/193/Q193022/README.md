@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193022: HOWTO: Set ActiveX Procedure and User Interface Defaults"
-permalink: kb/193/Q193022/
+permalink: /kb/193/Q193022/
 ---
 
 ## Q193022: HOWTO: Set ActiveX Procedure and User Interface Defaults

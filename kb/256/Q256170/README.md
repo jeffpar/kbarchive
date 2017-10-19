@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256170: BUG: C2065 When You Build ATL COM Server with Connection Points"
-permalink: kb/256/Q256170/
+permalink: /kb/256/Q256170/
 ---
 
 ## Q256170: BUG: C2065 When You Build ATL COM Server with Connection Points

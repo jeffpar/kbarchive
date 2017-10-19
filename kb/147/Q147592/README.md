@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147592: Setting Up Network Client 3.0 On Cogent EM960/964 PCI Adapter"
-permalink: kb/147/Q147592/
+permalink: /kb/147/Q147592/
 ---
 
 ## Q147592: Setting Up Network Client 3.0 On Cogent EM960/964 PCI Adapter

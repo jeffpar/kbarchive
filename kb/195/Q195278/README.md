@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195278: Visual InterDev 6.0 Programmer's Guide Comments and Corrections"
-permalink: kb/195/Q195278/
+permalink: /kb/195/Q195278/
 ---
 
 ## Q195278: Visual InterDev 6.0 Programmer's Guide Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244211: Cannot Save Office 97 Files to Terminal Server ICA Client"
-permalink: kb/244/Q244211/
+permalink: /kb/244/Q244211/
 ---
 
 ## Q244211: Cannot Save Office 97 Files to Terminal Server ICA Client

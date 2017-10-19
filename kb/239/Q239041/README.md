@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239041: IIS: The FTP PORT Command May be Issued Before Client has Logon"
-permalink: kb/239/Q239041/
+permalink: /kb/239/Q239041/
 ---
 
 ## Q239041: IIS: The FTP PORT Command May be Issued Before Client has Logon

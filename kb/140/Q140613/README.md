@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140613: FIX:SQLDISCONNECT() May Cause Exception Error in Visual FoxPro"
-permalink: kb/140/Q140613/
+permalink: /kb/140/Q140613/
 ---
 
 ## Q140613: FIX:SQLDISCONNECT() May Cause Exception Error in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257707: FIX: Recordset Not Updated After Invoking the Move Method"
-permalink: kb/257/Q257707/
+permalink: /kb/257/Q257707/
 ---
 
 ## Q257707: FIX: Recordset Not Updated After Invoking the Move Method

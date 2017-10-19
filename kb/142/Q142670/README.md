@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142670: WD97: ConvertNumberToText Method Fails"
-permalink: kb/142/Q142670/
+permalink: /kb/142/Q142670/
 ---
 
 ## Q142670: WD97: ConvertNumberToText Method Fails

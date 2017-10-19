@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104364: PC Forms: Message Displayed in Compose Form"
-permalink: kb/104/Q104364/
+permalink: /kb/104/Q104364/
 ---
 
 ## Q104364: PC Forms: Message Displayed in Compose Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132928: Error Using Filename with More Than 236 Characters in WordPad"
-permalink: kb/132/Q132928/
+permalink: /kb/132/Q132928/
 ---
 
 ## Q132928: Error Using Filename with More Than 236 Characters in WordPad

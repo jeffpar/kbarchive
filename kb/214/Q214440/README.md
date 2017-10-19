@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214440: Terminal Server STOP 0xA When Remote Clients Log Off"
-permalink: kb/214/Q214440/
+permalink: /kb/214/Q214440/
 ---
 
 ## Q214440: Terminal Server STOP 0xA When Remote Clients Log Off

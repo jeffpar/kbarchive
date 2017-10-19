@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171256: IBM DFT Link Service Properties Refers to DCA DFT Adapter"
-permalink: kb/171/Q171256/
+permalink: /kb/171/Q171256/
 ---
 
 ## Q171256: IBM DFT Link Service Properties Refers to DCA DFT Adapter

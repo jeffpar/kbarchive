@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235785: SMS: SMS Backup Schedule Is Updated Only Once a Day"
-permalink: kb/235/Q235785/
+permalink: /kb/235/Q235785/
 ---
 
 ## Q235785: SMS: SMS Backup Schedule Is Updated Only Once a Day

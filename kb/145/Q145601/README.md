@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145601: PC Mac: Err Msg: Sorry, System Error of Type 10 or 11 Occurred"
-permalink: kb/145/Q145601/
+permalink: /kb/145/Q145601/
 ---
 
 ## Q145601: PC Mac: Err Msg: Sorry, System Error of Type 10 or 11 Occurred

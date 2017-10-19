@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113277: BUG: Popup Not Cleared in FoxPro for Windows"
-permalink: kb/113/Q113277/
+permalink: /kb/113/Q113277/
 ---
 
 ## Q113277: BUG: Popup Not Cleared in FoxPro for Windows

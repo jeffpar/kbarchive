@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271454: ELL French &amp; Spanish Error Message: Unable to Find the CD-ROM"
-permalink: kb/271/Q271454/
+permalink: /kb/271/Q271454/
 ---
 
 ## Q271454: ELL French &amp; Spanish Error Message: Unable to Find the CD-ROM

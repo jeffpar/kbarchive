@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83033: Novell NetWare: Error Message on Printer Reconnections"
-permalink: kb/083/Q83033/
+permalink: /kb/083/Q83033/
 ---
 
 ## Q83033: Novell NetWare: Error Message on Printer Reconnections

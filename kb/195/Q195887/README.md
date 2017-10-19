@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195887: Shortcuts Created Under Terminal Server 4.0 Resolve to UNC Paths"
-permalink: kb/195/Q195887/
+permalink: /kb/195/Q195887/
 ---
 
 ## Q195887: Shortcuts Created Under Terminal Server 4.0 Resolve to UNC Paths

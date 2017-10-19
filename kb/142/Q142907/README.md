@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142907: IBM Auto 16/4 Token Ring Adapter Drivers Does Not Load"
-permalink: kb/142/Q142907/
+permalink: /kb/142/Q142907/
 ---
 
 ## Q142907: IBM Auto 16/4 Token Ring Adapter Drivers Does Not Load

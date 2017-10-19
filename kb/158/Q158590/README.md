@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158590: XCON: Delivery Restrictions Max CPU and Slow Down Msg Delivery"
-permalink: kb/158/Q158590/
+permalink: /kb/158/Q158590/
 ---
 
 ## Q158590: XCON: Delivery Restrictions Max CPU and Slow Down Msg Delivery

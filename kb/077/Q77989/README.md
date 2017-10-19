@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77989: Cannot Access Bookmarks from Main Tutorial Screen"
-permalink: kb/077/Q77989/
+permalink: /kb/077/Q77989/
 ---
 
 ## Q77989: Cannot Access Bookmarks from Main Tutorial Screen

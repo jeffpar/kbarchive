@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153478: Unexpected Errors 0x89ff and 0x88ff with FPNW"
-permalink: kb/153/Q153478/
+permalink: /kb/153/Q153478/
 ---
 
 ## Q153478: Unexpected Errors 0x89ff and 0x88ff with FPNW

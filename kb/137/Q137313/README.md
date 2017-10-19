@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137313: Err Msg: Microsoft Backup Could Not Create an Image List..."
-permalink: kb/137/Q137313/
+permalink: /kb/137/Q137313/
 ---
 
 ## Q137313: Err Msg: Microsoft Backup Could Not Create an Image List...

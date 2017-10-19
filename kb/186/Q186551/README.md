@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186551: Terminal Server Error Messages: 1200 to 1399"
-permalink: kb/186/Q186551/
+permalink: /kb/186/Q186551/
 ---
 
 ## Q186551: Terminal Server Error Messages: 1200 to 1399

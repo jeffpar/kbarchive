@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189013: Atapi.sys Does Not Support Multiple Logical Devices"
-permalink: kb/189/Q189013/
+permalink: /kb/189/Q189013/
 ---
 
 ## Q189013: Atapi.sys Does Not Support Multiple Logical Devices

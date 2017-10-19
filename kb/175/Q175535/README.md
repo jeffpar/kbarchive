@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175535: PRB: Printing Rotated Text with Visual Basic"
-permalink: kb/175/Q175535/
+permalink: /kb/175/Q175535/
 ---
 
 ## Q175535: PRB: Printing Rotated Text with Visual Basic

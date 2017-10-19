@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107115: 3270 Applet Keyboard Functions"
-permalink: kb/107/Q107115/
+permalink: /kb/107/Q107115/
 ---
 
 ## Q107115: 3270 Applet Keyboard Functions

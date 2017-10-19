@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135485: Windows 95 CD-ROM Msdosdrv.txt File (2 of 2)"
-permalink: kb/135/Q135485/
+permalink: /kb/135/Q135485/
 ---
 
 ## Q135485: Windows 95 CD-ROM Msdosdrv.txt File (2 of 2)

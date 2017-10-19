@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280804: Memory Leak in Mapsvc.exe When Synchronizing Many Users"
-permalink: kb/280/Q280804/
+permalink: /kb/280/Q280804/
 ---
 
 ## Q280804: Memory Leak in Mapsvc.exe When Synchronizing Many Users

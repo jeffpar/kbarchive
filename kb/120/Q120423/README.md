@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120423: CA-SuperProject for MS-DOS Tutorial Generates &quot;Ghost&quot; Pointers"
-permalink: kb/120/Q120423/
+permalink: /kb/120/Q120423/
 ---
 
 ## Q120423: CA-SuperProject for MS-DOS Tutorial Generates &quot;Ghost&quot; Pointers

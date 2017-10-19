@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247072: SAMPLE: DnDZoom.exe - ATL Control Implements OLE Drag and Drop"
-permalink: kb/247/Q247072/
+permalink: /kb/247/Q247072/
 ---
 
 ## Q247072: SAMPLE: DnDZoom.exe - ATL Control Implements OLE Drag and Drop

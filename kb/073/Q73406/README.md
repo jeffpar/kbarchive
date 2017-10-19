@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73406: Program Group File Format Differences with MS-DOS Shell"
-permalink: kb/073/Q73406/
+permalink: /kb/073/Q73406/
 ---
 
 ## Q73406: Program Group File Format Differences with MS-DOS Shell

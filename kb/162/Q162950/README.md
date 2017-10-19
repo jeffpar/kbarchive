@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162950: XADM: Err Msg When Using Isinteg -Patch: ECBadConfig"
-permalink: kb/162/Q162950/
+permalink: /kb/162/Q162950/
 ---
 
 ## Q162950: XADM: Err Msg When Using Isinteg -Patch: ECBadConfig

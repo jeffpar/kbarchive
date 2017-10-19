@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87354: Intel SatisFAXtion File CASMGR.EXE May Cause Windows to Hang"
-permalink: kb/087/Q87354/
+permalink: /kb/087/Q87354/
 ---
 
 ## Q87354: Intel SatisFAXtion File CASMGR.EXE May Cause Windows to Hang

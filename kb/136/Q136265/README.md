@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136265: PRB: Input/Output Operation Fails When Starting Visual FoxPro"
-permalink: kb/136/Q136265/
+permalink: /kb/136/Q136265/
 ---
 
 ## Q136265: PRB: Input/Output Operation Fails When Starting Visual FoxPro

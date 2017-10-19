@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163625: XFOR: How to Completely Remove a Requestor"
-permalink: kb/163/Q163625/
+permalink: /kb/163/Q163625/
 ---
 
 ## Q163625: XFOR: How to Completely Remove a Requestor

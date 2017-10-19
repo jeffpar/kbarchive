@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192174: XADM: Removing and Re-Installing the Event Service"
-permalink: kb/192/Q192174/
+permalink: /kb/192/Q192174/
 ---
 
 ## Q192174: XADM: Removing and Re-Installing the Event Service

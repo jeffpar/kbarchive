@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202817: BUG: ErrMsg: Not All of the Windows in the Workspace Opened"
-permalink: kb/202/Q202817/
+permalink: /kb/202/Q202817/
 ---
 
 ## Q202817: BUG: ErrMsg: Not All of the Windows in the Workspace Opened

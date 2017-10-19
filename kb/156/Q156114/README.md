@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156114: XCLN: How to Print an Exchange Form with Graphics"
-permalink: kb/156/Q156114/
+permalink: /kb/156/Q156114/
 ---
 
 ## Q156114: XCLN: How to Print an Exchange Form with Graphics

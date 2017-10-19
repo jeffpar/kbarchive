@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152725: XCLN: How to Connect over the Internet to an Exchange Server"
-permalink: kb/152/Q152725/
+permalink: /kb/152/Q152725/
 ---
 
 ## Q152725: XCLN: How to Connect over the Internet to an Exchange Server

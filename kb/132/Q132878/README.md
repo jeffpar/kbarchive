@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132878: PC Ext: START Status Message on External"
-permalink: kb/132/Q132878/
+permalink: /kb/132/Q132878/
 ---
 
 ## Q132878: PC Ext: START Status Message on External

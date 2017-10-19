@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137268: List of Systems SNA Server Can Connect To"
-permalink: kb/137/Q137268/
+permalink: /kb/137/Q137268/
 ---
 
 ## Q137268: List of Systems SNA Server Can Connect To

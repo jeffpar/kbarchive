@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122938: Telnet is Not a Valid Option in Windows NT 3.5 Terminal"
-permalink: kb/122/Q122938/
+permalink: /kb/122/Q122938/
 ---
 
 ## Q122938: Telnet is Not a Valid Option in Windows NT 3.5 Terminal

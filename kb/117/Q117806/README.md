@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117806: DoubleSpace Conversion Kit: Description &amp; How to Obtain"
-permalink: kb/117/Q117806/
+permalink: /kb/117/Q117806/
 ---
 
 ## Q117806: DoubleSpace Conversion Kit: Description &amp; How to Obtain

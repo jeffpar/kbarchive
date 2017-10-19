@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101257: FIX: Incorrect Behavior in MaskedEdit BorderStyle Property"
-permalink: kb/101/Q101257/
+permalink: /kb/101/Q101257/
 ---
 
 ## Q101257: FIX: Incorrect Behavior in MaskedEdit BorderStyle Property

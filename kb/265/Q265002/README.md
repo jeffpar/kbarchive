@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265002: INFO: Multiple LUN USB Storage Devices Are Not Supported"
-permalink: kb/265/Q265002/
+permalink: /kb/265/Q265002/
 ---
 
 ## Q265002: INFO: Multiple LUN USB Storage Devices Are Not Supported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158821: Cannot Install Gravis UltraSound Pro Drivers Correctly"
-permalink: kb/158/Q158821/
+permalink: /kb/158/Q158821/
 ---
 
 ## Q158821: Cannot Install Gravis UltraSound Pro Drivers Correctly

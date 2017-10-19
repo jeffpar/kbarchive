@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178288: Flight Simulator 98: Contents of the Setup Patch Readme File"
-permalink: kb/178/Q178288/
+permalink: /kb/178/Q178288/
 ---
 
 ## Q178288: Flight Simulator 98: Contents of the Setup Patch Readme File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189492: XFOR: IMCEASMTP-swadmin+40corporate+2ecom@&#42; in NDR Message"
-permalink: kb/189/Q189492/
+permalink: /kb/189/Q189492/
 ---
 
 ## Q189492: XFOR: IMCEASMTP-swadmin+40corporate+2ecom@&#42; in NDR Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132626: Mouse Pointer Disappears with S3 Video Adapter"
-permalink: kb/132/Q132626/
+permalink: /kb/132/Q132626/
 ---
 
 ## Q132626: Mouse Pointer Disappears with S3 Video Adapter

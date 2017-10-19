@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168422: WD97: Batch Conversion Wizard Cannot Convert Templates"
-permalink: kb/168/Q168422/
+permalink: /kb/168/Q168422/
 ---
 
 ## Q168422: WD97: Batch Conversion Wizard Cannot Convert Templates

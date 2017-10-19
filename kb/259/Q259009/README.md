@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259009: XADM: Is SMTP Address Used by Hidden Recipient or Public Folder"
-permalink: kb/259/Q259009/
+permalink: /kb/259/Q259009/
 ---
 
 ## Q259009: XADM: Is SMTP Address Used by Hidden Recipient or Public Folder

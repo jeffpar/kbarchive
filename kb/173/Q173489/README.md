@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173489: WD97: Cannot Open Hyperlinked Document Using Shortcut Menu"
-permalink: kb/173/Q173489/
+permalink: /kb/173/Q173489/
 ---
 
 ## Q173489: WD97: Cannot Open Hyperlinked Document Using Shortcut Menu

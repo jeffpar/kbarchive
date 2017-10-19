@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216703: Windows NT LDAP Connections Remain Open After LDAP Query"
-permalink: kb/216/Q216703/
+permalink: /kb/216/Q216703/
 ---
 
 ## Q216703: Windows NT LDAP Connections Remain Open After LDAP Query

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317895: MS02-018: Patch for Cross-Site Scripting in IIS Help File Search"
-permalink: kb/317/Q317895/
+permalink: /kb/317/Q317895/
 ---
 
 ## Q317895: MS02-018: Patch for Cross-Site Scripting in IIS Help File Search

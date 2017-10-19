@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242580: Online Investing Comments and Corrections"
-permalink: kb/242/Q242580/
+permalink: /kb/242/Q242580/
 ---
 
 ## Q242580: Online Investing Comments and Corrections

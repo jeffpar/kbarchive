@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68542: Windows Err Msg: Insufficient Memory to Run App (with HELP)"
-permalink: kb/068/Q68542/
+permalink: /kb/068/Q68542/
 ---
 
 ## Q68542: Windows Err Msg: Insufficient Memory to Run App (with HELP)

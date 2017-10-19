@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154963: DosSetSigHandler API Not Behaving as Expected in OS/2 Subsystem"
-permalink: kb/154/Q154963/
+permalink: /kb/154/Q154963/
 ---
 
 ## Q154963: DosSetSigHandler API Not Behaving as Expected in OS/2 Subsystem

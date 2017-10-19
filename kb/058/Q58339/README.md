@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58339: Windows 3.0 WIN.INI [devices] Section"
-permalink: kb/058/Q58339/
+title: "Q58339: Windows 3.0 WIN.INI &#91;devices&#93; Section"
+permalink: /kb/058/Q58339/
 ---
 
-## Q58339: Windows 3.0 WIN.INI [devices] Section
+## Q58339: Windows 3.0 WIN.INI &#91;devices&#93; Section
 
 	Article: Q58339
 	Product(s): Microsoft Windows 95.x Retail Product

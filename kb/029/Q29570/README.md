@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29570: PRB: Error &quot;constant expected&quot; with ORG Directive"
-permalink: kb/029/Q29570/
+permalink: /kb/029/Q29570/
 ---
 
 ## Q29570: PRB: Error &quot;constant expected&quot; with ORG Directive

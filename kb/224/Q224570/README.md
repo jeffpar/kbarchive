@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224570: UpDnDate DateTime Ctrl w/ Spin Button &amp; Cback Field"
-permalink: kb/224/Q224570/
+permalink: /kb/224/Q224570/
 ---
 
 ## Q224570: UpDnDate DateTime Ctrl w/ Spin Button &amp; Cback Field

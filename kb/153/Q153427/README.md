@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153427: PRB: Controls Not Initialized in CPropertyPage::OnInitDialog()"
-permalink: kb/153/Q153427/
+permalink: /kb/153/Q153427/
 ---
 
 ## Q153427: PRB: Controls Not Initialized in CPropertyPage::OnInitDialog()

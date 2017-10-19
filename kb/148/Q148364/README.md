@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148364: PC DirSync: Rebuild Terminating Without Status Message"
-permalink: kb/148/Q148364/
+permalink: /kb/148/Q148364/
 ---
 
 ## Q148364: PC DirSync: Rebuild Terminating Without Status Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197861: ADOCtl.Exe Demonstrates Active Documents, RDS and ADO"
-permalink: kb/197/Q197861/
+permalink: /kb/197/Q197861/
 ---
 
 ## Q197861: ADOCtl.Exe Demonstrates Active Documents, RDS and ADO

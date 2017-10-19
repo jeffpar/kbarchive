@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154853: Intel MMX Technology Support in Visual C++"
-permalink: kb/154/Q154853/
+permalink: /kb/154/Q154853/
 ---
 
 ## Q154853: Intel MMX Technology Support in Visual C++

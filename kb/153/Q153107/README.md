@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153107: Incorrect Configuration of TEMPDB Causes Query Execution Error"
-permalink: kb/153/Q153107/
+permalink: /kb/153/Q153107/
 ---
 
 ## Q153107: Incorrect Configuration of TEMPDB Causes Query Execution Error

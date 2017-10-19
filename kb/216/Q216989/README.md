@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216989: XFOR: Chat Service May Truncate Complete Chat Room List"
-permalink: kb/216/Q216989/
+permalink: /kb/216/Q216989/
 ---
 
 ## Q216989: XFOR: Chat Service May Truncate Complete Chat Room List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169494: Minimized Program Does Not Open When Clicked"
-permalink: kb/169/Q169494/
+permalink: /kb/169/Q169494/
 ---
 
 ## Q169494: Minimized Program Does Not Open When Clicked

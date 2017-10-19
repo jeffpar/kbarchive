@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189729: XCLN: How to Remove Outlook Express Icon Using ODK"
-permalink: kb/189/Q189729/
+permalink: /kb/189/Q189729/
 ---
 
 ## Q189729: XCLN: How to Remove Outlook Express Icon Using ODK

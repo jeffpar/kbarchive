@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83998: PRB: PrintDlg() Returns PDERR_NODEVICES w/ HP DeskJet"
-permalink: kb/083/Q83998/
+permalink: /kb/083/Q83998/
 ---
 
 ## Q83998: PRB: PrintDlg() Returns PDERR_NODEVICES w/ HP DeskJet

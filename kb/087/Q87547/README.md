@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87547: BUG: Warning Level Disabled After Selecting Processor"
-permalink: kb/087/Q87547/
+permalink: /kb/087/Q87547/
 ---
 
 ## Q87547: BUG: Warning Level Disabled After Selecting Processor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148945: Error in &quot;Services for Netware Networks&quot;"
-permalink: kb/148/Q148945/
+permalink: /kb/148/Q148945/
 ---
 
 ## Q148945: Error in &quot;Services for Netware Networks&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159684: Configuring Routing and Remote Access Dial-Up Interfaces"
-permalink: kb/159/Q159684/
+permalink: /kb/159/Q159684/
 ---
 
 ## Q159684: Configuring Routing and Remote Access Dial-Up Interfaces

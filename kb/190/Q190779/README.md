@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190779: Zone: How to Add Names to the Friends List"
-permalink: kb/190/Q190779/
+permalink: /kb/190/Q190779/
 ---
 
 ## Q190779: Zone: How to Add Names to the Friends List

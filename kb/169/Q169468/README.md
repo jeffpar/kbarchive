@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169468: BUG: SQL Server ODBC Driver AVs When Inserting from a Remote SP"
-permalink: kb/169/Q169468/
+permalink: /kb/169/Q169468/
 ---
 
 ## Q169468: BUG: SQL Server ODBC Driver AVs When Inserting from a Remote SP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142889: INFO: Standards Supported by Visual C++ &amp; Microsoft Products"
-permalink: kb/142/Q142889/
+permalink: /kb/142/Q142889/
 ---
 
 ## Q142889: INFO: Standards Supported by Visual C++ &amp; Microsoft Products

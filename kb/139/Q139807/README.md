@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139807: Daylight Savings Time Change Repeats Continuously"
-permalink: kb/139/Q139807/
+permalink: /kb/139/Q139807/
 ---
 
 ## Q139807: Daylight Savings Time Change Repeats Continuously

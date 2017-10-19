@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171082: BUG: SQLTables w/ Table Type of 'VIEW' Return 'SYS' and 'SYSTEM'"
-permalink: kb/171/Q171082/
+permalink: /kb/171/Q171082/
 ---
 
 ## Q171082: BUG: SQLTables w/ Table Type of 'VIEW' Return 'SYS' and 'SYSTEM'

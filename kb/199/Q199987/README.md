@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199987: SMS: How to Avoid Client Contention Between SMS 1.2 and SMS 2.0"
-permalink: kb/199/Q199987/
+permalink: /kb/199/Q199987/
 ---
 
 ## Q199987: SMS: How to Avoid Client Contention Between SMS 1.2 and SMS 2.0

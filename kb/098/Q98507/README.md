@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98507: HP PaintJet XL Prints from Paper Tray with Manual Feed Option"
-permalink: kb/098/Q98507/
+permalink: /kb/098/Q98507/
 ---
 
 ## Q98507: HP PaintJet XL Prints from Paper Tray with Manual Feed Option

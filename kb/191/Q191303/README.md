@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191303: SMS: Ipconfig.exe Makes Inventory Stop on Windows for Workgroups"
-permalink: kb/191/Q191303/
+permalink: /kb/191/Q191303/
 ---
 
 ## Q191303: SMS: Ipconfig.exe Makes Inventory Stop on Windows for Workgroups

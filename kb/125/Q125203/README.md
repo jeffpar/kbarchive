@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125203: Mac Encarta 94: No Text in Article When Using Find"
-permalink: kb/125/Q125203/
+permalink: /kb/125/Q125203/
 ---
 
 ## Q125203: Mac Encarta 94: No Text in Article When Using Find

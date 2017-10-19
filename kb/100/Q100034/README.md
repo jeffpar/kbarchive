@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100034: MAC Wkst: Pasting Sounds into the Voice Form"
-permalink: kb/100/Q100034/
+permalink: /kb/100/Q100034/
 ---
 
 ## Q100034: MAC Wkst: Pasting Sounds into the Voice Form

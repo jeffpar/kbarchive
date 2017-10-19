@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201431: HOWTO: Write Automation for Visual SourceSafe 5.0/6.0"
-permalink: kb/201/Q201431/
+permalink: /kb/201/Q201431/
 ---
 
 ## Q201431: HOWTO: Write Automation for Visual SourceSafe 5.0/6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199160: Performance Tuning Wins and DHCP"
-permalink: kb/199/Q199160/
+permalink: /kb/199/Q199160/
 ---
 
 ## Q199160: Performance Tuning Wins and DHCP

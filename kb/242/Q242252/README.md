@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242252: XWEB: Outlook Web Access First Chance Exception in Emsmdb32.dll"
-permalink: kb/242/Q242252/
+permalink: /kb/242/Q242252/
 ---
 
 ## Q242252: XWEB: Outlook Web Access First Chance Exception in Emsmdb32.dll

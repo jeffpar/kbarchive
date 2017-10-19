@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156243: PRB: Closing SDI Form with Menu Causes Objects to Shift Upward"
-permalink: kb/156/Q156243/
+permalink: /kb/156/Q156243/
 ---
 
 ## Q156243: PRB: Closing SDI Form with Menu Causes Objects to Shift Upward

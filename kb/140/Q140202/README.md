@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140202: SAMPLE: MFCARRAY Using Safe Arrays in MFC Automation"
-permalink: kb/140/Q140202/
+permalink: /kb/140/Q140202/
 ---
 
 ## Q140202: SAMPLE: MFCARRAY Using Safe Arrays in MFC Automation

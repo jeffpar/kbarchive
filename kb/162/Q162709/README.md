@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162709: PPT: How to Use the AddLine Method"
-permalink: kb/162/Q162709/
+permalink: /kb/162/Q162709/
 ---
 
 ## Q162709: PPT: How to Use the AddLine Method

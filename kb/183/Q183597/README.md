@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183597: XCLN: Outbound Mail Stuck In Client Outbox"
-permalink: kb/183/Q183597/
+permalink: /kb/183/Q183597/
 ---
 
 ## Q183597: XCLN: Outbound Mail Stuck In Client Outbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198706: SMS: Software Metering Components on the Client"
-permalink: kb/198/Q198706/
+permalink: /kb/198/Q198706/
 ---
 
 ## Q198706: SMS: Software Metering Components on the Client

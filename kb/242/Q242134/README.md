@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242134: Err Msg: Request Is Not Accepted by the Network"
-permalink: kb/242/Q242134/
+permalink: /kb/242/Q242134/
 ---
 
 ## Q242134: Err Msg: Request Is Not Accepted by the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148743: Cannot Complete MSN 1.2 Upgrade If Msnver.txt File Is Missing"
-permalink: kb/148/Q148743/
+permalink: /kb/148/Q148743/
 ---
 
 ## Q148743: Cannot Complete MSN 1.2 Upgrade If Msnver.txt File Is Missing

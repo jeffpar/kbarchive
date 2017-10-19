@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173519: WINS Allows Duplicate Name Registrations Across Slow Link"
-permalink: kb/173/Q173519/
+permalink: /kb/173/Q173519/
 ---
 
 ## Q173519: WINS Allows Duplicate Name Registrations Across Slow Link

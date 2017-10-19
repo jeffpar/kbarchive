@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172970: DMOD Does Not Recreate I/O Threads If Reinitialized"
-permalink: kb/172/Q172970/
+permalink: /kb/172/Q172970/
 ---
 
 ## Q172970: DMOD Does Not Recreate I/O Threads If Reinitialized

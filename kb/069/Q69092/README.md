@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69092: Paintbrush Prints Blank Sheet on HP Printers"
-permalink: kb/069/Q69092/
+permalink: /kb/069/Q69092/
 ---
 
 ## Q69092: Paintbrush Prints Blank Sheet on HP Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152792: FIX: Multiple ActiveX Control Containers Under Win32s Problems"
-permalink: kb/152/Q152792/
+permalink: /kb/152/Q152792/
 ---
 
 ## Q152792: FIX: Multiple ActiveX Control Containers Under Win32s Problems

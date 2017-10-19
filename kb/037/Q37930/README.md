@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37930: Mac DOS: Printing Mail Messages from the Mailbox"
-permalink: kb/037/Q37930/
+permalink: /kb/037/Q37930/
 ---
 
 ## Q37930: Mac DOS: Printing Mail Messages from the Mailbox

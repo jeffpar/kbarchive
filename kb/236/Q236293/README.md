@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236293: Spooler Service Stops When Using Windows 95/98 Printer Driver"
-permalink: kb/236/Q236293/
+permalink: /kb/236/Q236293/
 ---
 
 ## Q236293: Spooler Service Stops When Using Windows 95/98 Printer Driver

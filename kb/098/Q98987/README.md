@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98987: System Hangs (and Other Problems) with I82593.DOS Loaded High"
-permalink: kb/098/Q98987/
+permalink: /kb/098/Q98987/
 ---
 
 ## Q98987: System Hangs (and Other Problems) with I82593.DOS Loaded High

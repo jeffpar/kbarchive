@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137453: Disconnect Option Not Available When Using Remote Mail"
-permalink: kb/137/Q137453/
+permalink: /kb/137/Q137453/
 ---
 
 ## Q137453: Disconnect Option Not Available When Using Remote Mail

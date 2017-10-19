@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153428: Microsoft Phone Dials Local Number as Long Distance"
-permalink: kb/153/Q153428/
+permalink: /kb/153/Q153428/
 ---
 
 ## Q153428: Microsoft Phone Dials Local Number as Long Distance

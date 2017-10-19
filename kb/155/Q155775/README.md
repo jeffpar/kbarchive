@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155775: WD97: Date Field Changes to Text Using Letter Wizard"
-permalink: kb/155/Q155775/
+permalink: /kb/155/Q155775/
 ---
 
 ## Q155775: WD97: Date Field Changes to Text Using Letter Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260204: XWEB: Access Denied Error Message When Installing Outlook Web Ac"
-permalink: kb/260/Q260204/
+permalink: /kb/260/Q260204/
 ---
 
 ## Q260204: XWEB: Access Denied Error Message When Installing Outlook Web Ac

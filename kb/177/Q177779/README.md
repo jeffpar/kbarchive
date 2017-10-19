@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177779: XADM: Error Message in Store.exe on Messages Sent from PROFS"
-permalink: kb/177/Q177779/
+permalink: /kb/177/Q177779/
 ---
 
 ## Q177779: XADM: Error Message in Store.exe on Messages Sent from PROFS

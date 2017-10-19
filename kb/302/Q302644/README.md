@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302644: Settings My Account Change My Information"
-permalink: kb/302/Q302644/
+permalink: /kb/302/Q302644/
 ---
 
 ## Q302644: Settings My Account Change My Information

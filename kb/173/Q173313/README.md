@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173313: Ntbackup Can Read Tapes Created by Third-Party Backup Programs"
-permalink: kb/173/Q173313/
+permalink: /kb/173/Q173313/
 ---
 
 ## Q173313: Ntbackup Can Read Tapes Created by Third-Party Backup Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91169: Computer Hangs After Removing Token Ring Card"
-permalink: kb/091/Q91169/
+permalink: /kb/091/Q91169/
 ---
 
 ## Q91169: Computer Hangs After Removing Token Ring Card

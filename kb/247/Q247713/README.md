@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247713: BUG: ClassView Doesn't Show All Methods for an Interface"
-permalink: kb/247/Q247713/
+permalink: /kb/247/Q247713/
 ---
 
 ## Q247713: BUG: ClassView Doesn't Show All Methods for an Interface

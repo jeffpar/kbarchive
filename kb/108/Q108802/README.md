@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108802: WFWG 3.11 May Fail After Upgrading (Missing SlotNumber= Entry)"
-permalink: kb/108/Q108802/
+permalink: /kb/108/Q108802/
 ---
 
 ## Q108802: WFWG 3.11 May Fail After Upgrading (Missing SlotNumber= Entry)

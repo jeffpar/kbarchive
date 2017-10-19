@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197305: BUG: Error with Std EXE Converted from ActiveX Control Project"
-permalink: kb/197/Q197305/
+permalink: /kb/197/Q197305/
 ---
 
 ## Q197305: BUG: Error with Std EXE Converted from ActiveX Control Project

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233398: PRB: Common Dialog ShowHelp Method does not Work with CHM Files"
-permalink: kb/233/Q233398/
+permalink: /kb/233/Q233398/
 ---
 
 ## Q233398: PRB: Common Dialog ShowHelp Method does not Work with CHM Files

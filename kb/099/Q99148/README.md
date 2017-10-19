@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99148: Microsoft Anti-Virus CHKLIST.MS Files Explained"
-permalink: kb/099/Q99148/
+permalink: /kb/099/Q99148/
 ---
 
 ## Q99148: Microsoft Anti-Virus CHKLIST.MS Files Explained

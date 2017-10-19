@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299507: FIX: Disabled Label On a Form Only Wraps One of Two Colors"
-permalink: kb/299/Q299507/
+permalink: /kb/299/Q299507/
 ---
 
 ## Q299507: FIX: Disabled Label On a Form Only Wraps One of Two Colors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205493: FP: How to Use the META Element with Web Spiders and Robots"
-permalink: kb/205/Q205493/
+permalink: /kb/205/Q205493/
 ---
 
 ## Q205493: FP: How to Use the META Element with Web Spiders and Robots

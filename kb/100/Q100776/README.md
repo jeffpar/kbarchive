@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100776: PRB: Using Windows NT PDK Header Files in Visual C++"
-permalink: kb/100/Q100776/
+permalink: /kb/100/Q100776/
 ---
 
 ## Q100776: PRB: Using Windows NT PDK Header Files in Visual C++

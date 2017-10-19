@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136638: HOWTO: Send E-mail Programmatically Using MSMAPI OLE Control"
-permalink: kb/136/Q136638/
+permalink: /kb/136/Q136638/
 ---
 
 ## Q136638: HOWTO: Send E-mail Programmatically Using MSMAPI OLE Control

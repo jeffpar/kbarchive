@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173455: XWEB: OWA Returns Exchange Server Down Error Message"
-permalink: kb/173/Q173455/
+permalink: /kb/173/Q173455/
 ---
 
 ## Q173455: XWEB: OWA Returns Exchange Server Down Error Message

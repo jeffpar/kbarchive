@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264725: SMS: Systems Management Server Online Support"
-permalink: kb/264/Q264725/
+permalink: /kb/264/Q264725/
 ---
 
 ## Q264725: SMS: Systems Management Server Online Support

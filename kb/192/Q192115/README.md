@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192115: XADM: Event ID 1026: Invalid Argument in MTSID"
-permalink: kb/192/Q192115/
+permalink: /kb/192/Q192115/
 ---
 
 ## Q192115: XADM: Event ID 1026: Invalid Argument in MTSID

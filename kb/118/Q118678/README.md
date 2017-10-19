@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118678: FIX: Internal Make Error U1073"
-permalink: kb/118/Q118678/
+permalink: /kb/118/Q118678/
 ---
 
 ## Q118678: FIX: Internal Make Error U1073

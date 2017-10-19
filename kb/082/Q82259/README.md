@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82259: Windows 3.0 Paintbrush Requires Save As to Create Monochrome"
-permalink: kb/082/Q82259/
+permalink: /kb/082/Q82259/
 ---
 
 ## Q82259: Windows 3.0 Paintbrush Requires Save As to Create Monochrome

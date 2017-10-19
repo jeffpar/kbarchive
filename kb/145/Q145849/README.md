@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145849: ErrMsg: Ir32.dll Set to Read Only Causes Setup to Fail"
-permalink: kb/145/Q145849/
+permalink: /kb/145/Q145849/
 ---
 
 ## Q145849: ErrMsg: Ir32.dll Set to Read Only Causes Setup to Fail

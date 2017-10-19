@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177958: XADM: BCC Recipient Becomes TO Recipient"
-permalink: kb/177/Q177958/
+permalink: /kb/177/Q177958/
 ---
 
 ## Q177958: XADM: BCC Recipient Becomes TO Recipient

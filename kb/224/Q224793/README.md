@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224793: List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 3)"
-permalink: kb/224/Q224793/
+permalink: /kb/224/Q224793/
 ---
 
 ## Q224793: List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 3)

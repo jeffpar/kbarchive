@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136114: Objects in ROT Not Released When Process Terminates Abnormally"
-permalink: kb/136/Q136114/
+permalink: /kb/136/Q136114/
 ---
 
 ## Q136114: Objects in ROT Not Released When Process Terminates Abnormally

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169674: XADM: Read Receipt May Not Be Delivered If Message Read Offline"
-permalink: kb/169/Q169674/
+permalink: /kb/169/Q169674/
 ---
 
 ## Q169674: XADM: Read Receipt May Not Be Delivered If Message Read Offline

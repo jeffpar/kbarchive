@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133456: PRB: Can't Open or Save a File Named CON or LPT1"
-permalink: kb/133/Q133456/
+permalink: /kb/133/Q133456/
 ---
 
 ## Q133456: PRB: Can't Open or Save a File Named CON or LPT1

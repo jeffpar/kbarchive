@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227943: How IIS Handles Reverse Lookup Failures"
-permalink: kb/227/Q227943/
+permalink: /kb/227/Q227943/
 ---
 
 ## Q227943: How IIS Handles Reverse Lookup Failures

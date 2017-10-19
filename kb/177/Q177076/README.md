@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177076: How to Start the Add Printer Wizard at a Command Prompt"
-permalink: kb/177/Q177076/
+permalink: /kb/177/Q177076/
 ---
 
 ## Q177076: How to Start the Add Printer Wizard at a Command Prompt

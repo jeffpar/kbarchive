@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297265: INFO: All Bound IP Addresses Don't Appear in MMC Drop-Down List"
-permalink: kb/297/Q297265/
+permalink: /kb/297/Q297265/
 ---
 
 ## Q297265: INFO: All Bound IP Addresses Don't Appear in MMC Drop-Down List

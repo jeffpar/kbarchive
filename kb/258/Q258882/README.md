@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258882: Management Agent Can Be Damaged by Low-Disk-Space Condition"
-permalink: kb/258/Q258882/
+permalink: /kb/258/Q258882/
 ---
 
 ## Q258882: Management Agent Can Be Damaged by Low-Disk-Space Condition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164648: DLS Properties Should Require Entry for Remote Link"
-permalink: kb/164/Q164648/
+permalink: /kb/164/Q164648/
 ---
 
 ## Q164648: DLS Properties Should Require Entry for Remote Link

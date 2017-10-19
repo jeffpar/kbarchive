@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101606: PC Adm: Data Disk Not Updated After Regenerate"
-permalink: kb/101/Q101606/
+permalink: /kb/101/Q101606/
 ---
 
 ## Q101606: PC Adm: Data Disk Not Updated After Regenerate

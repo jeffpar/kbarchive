@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186302: XWEB: OWA Logon Page Shows Version 5.01 After SP2 Upgrade"
-permalink: kb/186/Q186302/
+permalink: /kb/186/Q186302/
 ---
 
 ## Q186302: XWEB: OWA Logon Page Shows Version 5.01 After SP2 Upgrade

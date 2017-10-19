@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155979: Windows NT/2000 Backup Does Not Recognize Windows 95/98 Backup"
-permalink: kb/155/Q155979/
+permalink: /kb/155/Q155979/
 ---
 
 ## Q155979: Windows NT/2000 Backup Does Not Recognize Windows 95/98 Backup

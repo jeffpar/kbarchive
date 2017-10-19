@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88145: SMARTDrive Shows Status of Nonexistent Floppy Drives"
-permalink: kb/088/Q88145/
+permalink: /kb/088/Q88145/
 ---
 
 ## Q88145: SMARTDrive Shows Status of Nonexistent Floppy Drives

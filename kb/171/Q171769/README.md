@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171769: Restoring a User Profile On a Windows NT Workstation or Server"
-permalink: kb/171/Q171769/
+permalink: /kb/171/Q171769/
 ---
 
 ## Q171769: Restoring a User Profile On a Windows NT Workstation or Server

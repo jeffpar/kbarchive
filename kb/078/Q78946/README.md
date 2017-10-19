@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78946: Flight Sim: Turning System Sound Off Doesn't Turn Off FS Sound"
-permalink: kb/078/Q78946/
+permalink: /kb/078/Q78946/
 ---
 
 ## Q78946: Flight Sim: Turning System Sound Off Doesn't Turn Off FS Sound

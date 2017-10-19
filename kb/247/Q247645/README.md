@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247645: Flight Simulator 2000: Sounds Are Fuzzy or Distorted"
-permalink: kb/247/Q247645/
+permalink: /kb/247/Q247645/
 ---
 
 ## Q247645: Flight Simulator 2000: Sounds Are Fuzzy or Distorted

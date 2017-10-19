@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98044: PC WRmt: Setup May Fail If Program Manager Not Running"
-permalink: kb/098/Q98044/
+permalink: /kb/098/Q98044/
 ---
 
 ## Q98044: PC WRmt: Setup May Fail If Program Manager Not Running

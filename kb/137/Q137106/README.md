@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137106: Internet Mail Accepts Only Files as Attachments"
-permalink: kb/137/Q137106/
+permalink: /kb/137/Q137106/
 ---
 
 ## Q137106: Internet Mail Accepts Only Files as Attachments

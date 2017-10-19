@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129501: Mac Srv: Mail Server and Client AppleTalk Protocols"
-permalink: kb/129/Q129501/
+permalink: /kb/129/Q129501/
 ---
 
 ## Q129501: Mac Srv: Mail Server and Client AppleTalk Protocols

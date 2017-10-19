@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112237: SMTP: ERROR Write and ERROR Read Messages"
-permalink: kb/112/Q112237/
+permalink: /kb/112/Q112237/
 ---
 
 ## Q112237: SMTP: ERROR Write and ERROR Read Messages

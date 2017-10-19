@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27104: DOCERR: LODS Adjusts the SI Register, Not the DI Register"
-permalink: kb/027/Q27104/
+permalink: /kb/027/Q27104/
 ---
 
 ## Q27104: DOCERR: LODS Adjusts the SI Register, Not the DI Register

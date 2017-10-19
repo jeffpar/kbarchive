@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86085: PC WSPlus: Friendly Name Does Not Change When Updated"
-permalink: kb/086/Q86085/
+permalink: /kb/086/Q86085/
 ---
 
 ## Q86085: PC WSPlus: Friendly Name Does Not Change When Updated

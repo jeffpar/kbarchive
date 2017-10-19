@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146205: Account Dates on MSN Are Not Displayed in Localized Format"
-permalink: kb/146/Q146205/
+permalink: /kb/146/Q146205/
 ---
 
 ## Q146205: Account Dates on MSN Are Not Displayed in Localized Format

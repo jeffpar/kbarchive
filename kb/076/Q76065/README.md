@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76065: Summa Graphics Pointing Devices and MS-DOS 5.0"
-permalink: kb/076/Q76065/
+permalink: /kb/076/Q76065/
 ---
 
 ## Q76065: Summa Graphics Pointing Devices and MS-DOS 5.0

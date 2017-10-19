@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110572: Deleting Fax from Outbox Does Not Remove It from the Queue"
-permalink: kb/110/Q110572/
+permalink: /kb/110/Q110572/
 ---
 
 ## Q110572: Deleting Fax from Outbox Does Not Remove It from the Queue

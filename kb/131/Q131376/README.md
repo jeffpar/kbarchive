@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131376: FIX: C2974 Error When Calling Templated Base Class Functions"
-permalink: kb/131/Q131376/
+permalink: /kb/131/Q131376/
 ---
 
 ## Q131376: FIX: C2974 Error When Calling Templated Base Class Functions

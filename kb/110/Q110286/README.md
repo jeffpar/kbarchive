@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110286: Video for Windows 1.1 Disk 1: (5.25 Inch)"
-permalink: kb/110/Q110286/
+permalink: /kb/110/Q110286/
 ---
 
 ## Q110286: Video for Windows 1.1 Disk 1: (5.25 Inch)

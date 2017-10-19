@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103226: SAMPLE: VBCobSQL.exe - Mixed-Language Apps (VB, COBOL, SQL)"
-permalink: kb/103/Q103226/
+permalink: /kb/103/Q103226/
 ---
 
 ## Q103226: SAMPLE: VBCobSQL.exe - Mixed-Language Apps (VB, COBOL, SQL)

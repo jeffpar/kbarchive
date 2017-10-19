@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147406: Stravinsky: Minimum System Requirements"
-permalink: kb/147/Q147406/
+permalink: /kb/147/Q147406/
 ---
 
 ## Q147406: Stravinsky: Minimum System Requirements

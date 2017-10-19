@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260031: Error Message Generated when Exporting Foreign Users to Exchange"
-permalink: kb/260/Q260031/
+permalink: /kb/260/Q260031/
 ---
 
 ## Q260031: Error Message Generated when Exporting Foreign Users to Exchange

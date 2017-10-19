@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157015: XCON: MTA Outbound Connection Refused by X.400 Host"
-permalink: kb/157/Q157015/
+permalink: /kb/157/Q157015/
 ---
 
 ## Q157015: XCON: MTA Outbound Connection Refused by X.400 Host

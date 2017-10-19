@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171992: Creating Connection Gets Error Even If Link Service Selected"
-permalink: kb/171/Q171992/
+permalink: /kb/171/Q171992/
 ---
 
 ## Q171992: Creating Connection Gets Error Even If Link Service Selected

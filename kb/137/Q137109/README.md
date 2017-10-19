@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137109: Algorithm Used to Accept Requests from SNA Devices"
-permalink: kb/137/Q137109/
+permalink: /kb/137/Q137109/
 ---
 
 ## Q137109: Algorithm Used to Accept Requests from SNA Devices

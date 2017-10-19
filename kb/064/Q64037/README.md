@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64037: ATI SX Motherboards and Windows 3.0"
-permalink: kb/064/Q64037/
+permalink: /kb/064/Q64037/
 ---
 
 ## Q64037: ATI SX Motherboards and Windows 3.0

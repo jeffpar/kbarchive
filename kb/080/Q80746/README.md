@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80746: Dell NX-20 Requires HIMEM.SYS /M:1"
-permalink: kb/080/Q80746/
+permalink: /kb/080/Q80746/
 ---
 
 ## Q80746: Dell NX-20 Requires HIMEM.SYS /M:1

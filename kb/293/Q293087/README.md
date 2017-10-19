@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293087: WORD97: &quot;Formatting is too Complex&quot; Err Msg When You Run Macro"
-permalink: kb/293/Q293087/
+permalink: /kb/293/Q293087/
 ---
 
 ## Q293087: WORD97: &quot;Formatting is too Complex&quot; Err Msg When You Run Macro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190225: HOWTO: Do a MergeCells with FlexGrid or Hierarchical FlexGrid"
-permalink: kb/190/Q190225/
+permalink: /kb/190/Q190225/
 ---
 
 ## Q190225: HOWTO: Do a MergeCells with FlexGrid or Hierarchical FlexGrid

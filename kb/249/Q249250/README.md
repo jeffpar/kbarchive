@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249250: XADM: Proxy Addresses May Be Modified After Applying Window"
-permalink: kb/249/Q249250/
+permalink: /kb/249/Q249250/
 ---
 
 ## Q249250: XADM: Proxy Addresses May Be Modified After Applying Window

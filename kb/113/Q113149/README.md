@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113149: PC Win: Err Msg: A Folder Could Not Be Accessed"
-permalink: kb/113/Q113149/
+permalink: /kb/113/Q113149/
 ---
 
 ## Q113149: PC Win: Err Msg: A Folder Could Not Be Accessed

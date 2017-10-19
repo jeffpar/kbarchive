@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176618: Migration Tool for NetWare Does Not Create Local Groups"
-permalink: kb/176/Q176618/
+permalink: /kb/176/Q176618/
 ---
 
 ## Q176618: Migration Tool for NetWare Does Not Create Local Groups

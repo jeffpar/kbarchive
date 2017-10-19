@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83996: Windows Software Development Kit Installation Procedure"
-permalink: kb/083/Q83996/
+permalink: /kb/083/Q83996/
 ---
 
 ## Q83996: Windows Software Development Kit Installation Procedure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152246: Refresh Setting in Visual FoxPro Has Effect on Buffered Data"
-permalink: kb/152/Q152246/
+permalink: /kb/152/Q152246/
 ---
 
 ## Q152246: Refresh Setting in Visual FoxPro Has Effect on Buffered Data

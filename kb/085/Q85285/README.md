@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85285: PRB: Petzold's COLORS1 Sample Application Consumes Resources"
-permalink: kb/085/Q85285/
+permalink: /kb/085/Q85285/
 ---
 
 ## Q85285: PRB: Petzold's COLORS1 Sample Application Consumes Resources

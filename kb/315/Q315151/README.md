@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315151: FP: Error Message: Cannot Establish Secure Connection Using SSL"
-permalink: kb/315/Q315151/
+permalink: /kb/315/Q315151/
 ---
 
 ## Q315151: FP: Error Message: Cannot Establish Secure Connection Using SSL

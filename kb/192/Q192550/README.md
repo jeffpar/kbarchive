@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192550: BUG: VBCE: Control Manager Does Not Properly Uninstall Control"
-permalink: kb/192/Q192550/
+permalink: /kb/192/Q192550/
 ---
 
 ## Q192550: BUG: VBCE: Control Manager Does Not Properly Uninstall Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134382: CONN: DocErr: EXTERNAL.EXE and Manual Dir-Sync"
-permalink: kb/134/Q134382/
+permalink: /kb/134/Q134382/
 ---
 
 ## Q134382: CONN: DocErr: EXTERNAL.EXE and Manual Dir-Sync

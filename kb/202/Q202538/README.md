@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202538: SMS: How to Edit MOF Files with MOF Manager"
-permalink: kb/202/Q202538/
+permalink: /kb/202/Q202538/
 ---
 
 ## Q202538: SMS: How to Edit MOF Files with MOF Manager

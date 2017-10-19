@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173070: WD97: Unwanted Tab Stop Inserted in Outline Numbered Sequence"
-permalink: kb/173/Q173070/
+permalink: /kb/173/Q173070/
 ---
 
 ## Q173070: WD97: Unwanted Tab Stop Inserted in Outline Numbered Sequence

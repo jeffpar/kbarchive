@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149765: BUG:Wrong Default Value in Remote Data Object MaxRows Property"
-permalink: kb/149/Q149765/
+permalink: /kb/149/Q149765/
 ---
 
 ## Q149765: BUG:Wrong Default Value in Remote Data Object MaxRows Property

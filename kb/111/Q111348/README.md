@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111348: Stripe Set with Parity Incorrectly Displays RECOVERED"
-permalink: kb/111/Q111348/
+permalink: /kb/111/Q111348/
 ---
 
 ## Q111348: Stripe Set with Parity Incorrectly Displays RECOVERED

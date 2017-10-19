@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161055: FIX: Property Sheet Changes Causes Illegal Operation Error"
-permalink: kb/161/Q161055/
+permalink: /kb/161/Q161055/
 ---
 
 ## Q161055: FIX: Property Sheet Changes Causes Illegal Operation Error

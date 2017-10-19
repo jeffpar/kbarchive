@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138602: ListBox Scroll Behavior Depends on Physical Dimensions"
-permalink: kb/138/Q138602/
+permalink: /kb/138/Q138602/
 ---
 
 ## Q138602: ListBox Scroll Behavior Depends on Physical Dimensions

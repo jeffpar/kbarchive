@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171622: CMINIT Returns Error 24 if Symbolic Name Not Space-Padded"
-permalink: kb/171/Q171622/
+permalink: /kb/171/Q171622/
 ---
 
 ## Q171622: CMINIT Returns Error 24 if Symbolic Name Not Space-Padded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197500: XADM: Tape Backup Program Hangs During Exchange Backup"
-permalink: kb/197/Q197500/
+permalink: /kb/197/Q197500/
 ---
 
 ## Q197500: XADM: Tape Backup Program Hangs During Exchange Backup

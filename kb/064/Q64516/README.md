@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64516: Viewing Printer Error Messages on an HP LaserJet III"
-permalink: kb/064/Q64516/
+permalink: /kb/064/Q64516/
 ---
 
 ## Q64516: Viewing Printer Error Messages on an HP LaserJet III

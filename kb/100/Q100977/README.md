@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100977: No Inbox in Windows for Workgroups Mail or Microsoft Mail 3.0"
-permalink: kb/100/Q100977/
+permalink: /kb/100/Q100977/
 ---
 
 ## Q100977: No Inbox in Windows for Workgroups Mail or Microsoft Mail 3.0

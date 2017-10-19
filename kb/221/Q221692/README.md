@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221692: FIX:Project Object Modify Method Fails if Path Contains Spaces"
-permalink: kb/221/Q221692/
+permalink: /kb/221/Q221692/
 ---
 
 ## Q221692: FIX:Project Object Modify Method Fails if Path Contains Spaces

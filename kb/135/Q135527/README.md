@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135527: Err Msg: Windows NT Could Not Be Started As Configured"
-permalink: kb/135/Q135527/
+permalink: /kb/135/Q135527/
 ---
 
 ## Q135527: Err Msg: Windows NT Could Not Be Started As Configured

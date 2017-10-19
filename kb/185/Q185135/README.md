@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185135: Zone: Wrong Game Is Displayed When You Click a Game Room Link"
-permalink: kb/185/Q185135/
+permalink: /kb/185/Q185135/
 ---
 
 ## Q185135: Zone: Wrong Game Is Displayed When You Click a Game Room Link

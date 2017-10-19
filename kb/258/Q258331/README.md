@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258331: Baseball 2001: Pauses Occur During Game Play"
-permalink: kb/258/Q258331/
+permalink: /kb/258/Q258331/
 ---
 
 ## Q258331: Baseball 2001: Pauses Occur During Game Play

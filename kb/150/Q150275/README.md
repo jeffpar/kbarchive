@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150275: Redirector Doesn't Close the Session After User Logs Off"
-permalink: kb/150/Q150275/
+permalink: /kb/150/Q150275/
 ---
 
 ## Q150275: Redirector Doesn't Close the Session After User Logs Off

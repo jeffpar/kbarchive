@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251164: SMS: Changing Time Zone Recopies Three Core SMS Client Files"
-permalink: kb/251/Q251164/
+permalink: /kb/251/Q251164/
 ---
 
 ## Q251164: SMS: Changing Time Zone Recopies Three Core SMS Client Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184710: XADM: Exchange Admin Program Will Not Run On Windows 95/98"
-permalink: kb/184/Q184710/
+permalink: /kb/184/Q184710/
 ---
 
 ## Q184710: XADM: Exchange Admin Program Will Not Run On Windows 95/98

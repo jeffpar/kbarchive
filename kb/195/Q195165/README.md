@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195165: SNA Print Server FMH5 ATTACH PIP Data is Corrupted"
-permalink: kb/195/Q195165/
+permalink: /kb/195/Q195165/
 ---
 
 ## Q195165: SNA Print Server FMH5 ATTACH PIP Data is Corrupted

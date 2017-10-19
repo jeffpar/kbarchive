@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169109: PRB: Parse Maps Do Not Handle Multi-select List Boxes"
-permalink: kb/169/Q169109/
+permalink: /kb/169/Q169109/
 ---
 
 ## Q169109: PRB: Parse Maps Do Not Handle Multi-select List Boxes

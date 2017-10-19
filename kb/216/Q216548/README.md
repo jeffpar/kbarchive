@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216548: HOWTO: Add Submenus Using Add-Ins"
-permalink: kb/216/Q216548/
+permalink: /kb/216/Q216548/
 ---
 
 ## Q216548: HOWTO: Add Submenus Using Add-Ins

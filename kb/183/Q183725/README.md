@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183725: Query Form Doesn't Provide Link to NNTP Articles"
-permalink: kb/183/Q183725/
+permalink: /kb/183/Q183725/
 ---
 
 ## Q183725: Query Form Doesn't Provide Link to NNTP Articles

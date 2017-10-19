@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64535: FIX: Incorrect Code Generated for IRET With PROC USES"
-permalink: kb/064/Q64535/
+permalink: /kb/064/Q64535/
 ---
 
 ## Q64535: FIX: Incorrect Code Generated for IRET With PROC USES

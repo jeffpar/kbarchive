@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173002: ACC: How Replication Manager Determines Base Replica"
-permalink: kb/173/Q173002/
+permalink: /kb/173/Q173002/
 ---
 
 ## Q173002: ACC: How Replication Manager Determines Base Replica

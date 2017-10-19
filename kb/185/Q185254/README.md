@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185254: CART: Error Message When You Install the Cart101.exe Patch"
-permalink: kb/185/Q185254/
+permalink: /kb/185/Q185254/
 ---
 
 ## Q185254: CART: Error Message When You Install the Cart101.exe Patch

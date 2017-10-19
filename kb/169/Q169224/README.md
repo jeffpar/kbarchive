@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169224: Mastering: Palette Problems with 256 Color Depth"
-permalink: kb/169/Q169224/
+permalink: /kb/169/Q169224/
 ---
 
 ## Q169224: Mastering: Palette Problems with 256 Color Depth

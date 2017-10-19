@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137258: Writer/Artist: How to Install to Run from a Network File Server"
-permalink: kb/137/Q137258/
+permalink: /kb/137/Q137258/
 ---
 
 ## Q137258: Writer/Artist: How to Install to Run from a Network File Server

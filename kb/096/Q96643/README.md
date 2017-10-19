@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96643: PC Rmt: 3.0 Modem Scripts Disk [3.5, 5.25]"
-permalink: kb/096/Q96643/
+title: "Q96643: PC Rmt: 3.0 Modem Scripts Disk &#91;3.5, 5.25&#93;"
+permalink: /kb/096/Q96643/
 ---
 
-## Q96643: PC Rmt: 3.0 Modem Scripts Disk [3.5, 5.25]
+## Q96643: PC Rmt: 3.0 Modem Scripts Disk &#91;3.5, 5.25&#93;
 
 	Article: Q96643
 	Product(s): Microsoft Mail For PC Networks

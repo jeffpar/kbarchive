@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66962: Dell 316LT and Dell 320LT Require EMMExclude with Windows 3.0"
-permalink: kb/066/Q66962/
+permalink: /kb/066/Q66962/
 ---
 
 ## Q66962: Dell 316LT and Dell 320LT Require EMMExclude with Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262952: XFOR: Routing Cost on Exchange Connectors"
-permalink: kb/262/Q262952/
+permalink: /kb/262/Q262952/
 ---
 
 ## Q262952: XFOR: Routing Cost on Exchange Connectors

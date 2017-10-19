@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164488: HOWTO: Registry Settings for the Microsoft DNS Server"
-permalink: kb/164/Q164488/
+permalink: /kb/164/Q164488/
 ---
 
 ## Q164488: HOWTO: Registry Settings for the Microsoft DNS Server

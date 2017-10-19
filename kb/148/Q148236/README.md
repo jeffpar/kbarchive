@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148236: Bookshelf 96-97: Newsgroup Logon Asks You to Disconnect"
-permalink: kb/148/Q148236/
+permalink: /kb/148/Q148236/
 ---
 
 ## Q148236: Bookshelf 96-97: Newsgroup Logon Asks You to Disconnect

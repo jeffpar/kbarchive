@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171390: Cluster Service May Not Start if DC Is Unavailable"
-permalink: kb/171/Q171390/
+permalink: /kb/171/Q171390/
 ---
 
 ## Q171390: Cluster Service May Not Start if DC Is Unavailable

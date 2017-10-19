@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166719: FIX: Wrong Exception Rethrown with Global Optimization"
-permalink: kb/166/Q166719/
+permalink: /kb/166/Q166719/
 ---
 
 ## Q166719: FIX: Wrong Exception Rethrown with Global Optimization

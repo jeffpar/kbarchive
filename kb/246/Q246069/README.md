@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246069: Encoding Form Data for SQL Server Input and Output to HTML"
-permalink: kb/246/Q246069/
+permalink: /kb/246/Q246069/
 ---
 
 ## Q246069: Encoding Form Data for SQL Server Input and Output to HTML

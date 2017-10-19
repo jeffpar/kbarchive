@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95881: WFWG: Enable Sharing Must Be Selected to View a WFWG Server"
-permalink: kb/095/Q95881/
+permalink: /kb/095/Q95881/
 ---
 
 ## Q95881: WFWG: Enable Sharing Must Be Selected to View a WFWG Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89526: Setup Errors With Productivity Pack on Removable Media"
-permalink: kb/089/Q89526/
+permalink: /kb/089/Q89526/
 ---
 
 ## Q89526: Setup Errors With Productivity Pack on Removable Media

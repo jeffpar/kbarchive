@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160592: WD97: Can't Print Multiple Files from Open Dialog Box"
-permalink: kb/160/Q160592/
+permalink: /kb/160/Q160592/
 ---
 
 ## Q160592: WD97: Can't Print Multiple Files from Open Dialog Box

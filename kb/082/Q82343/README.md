@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82343: Superbase 4 for Windows Causes System Resources Drain"
-permalink: kb/082/Q82343/
+permalink: /kb/082/Q82343/
 ---
 
 ## Q82343: Superbase 4 for Windows Causes System Resources Drain

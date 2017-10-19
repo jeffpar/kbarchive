@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72792: Placing .OBJ File in Program List Gives Unexpected Result"
-permalink: kb/072/Q72792/
+permalink: /kb/072/Q72792/
 ---
 
 ## Q72792: Placing .OBJ File in Program List Gives Unexpected Result

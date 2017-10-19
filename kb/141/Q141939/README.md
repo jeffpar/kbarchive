@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141939: HOWTO: Create an OLE Server to Implement &quot;Thunking&quot;"
-permalink: kb/141/Q141939/
+permalink: /kb/141/Q141939/
 ---
 
 ## Q141939: HOWTO: Create an OLE Server to Implement &quot;Thunking&quot;

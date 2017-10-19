@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256322: Error Configuring IIS to Use Samba Network Share As Its Root"
-permalink: kb/256/Q256322/
+permalink: /kb/256/Q256322/
 ---
 
 ## Q256322: Error Configuring IIS to Use Samba Network Share As Its Root

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196707: PRB: Windows NT 4.0 CHKDSK Refuses to Check NTFS 3.0/3.1 Volumes"
-permalink: kb/196/Q196707/
+permalink: /kb/196/Q196707/
 ---
 
 ## Q196707: PRB: Windows NT 4.0 CHKDSK Refuses to Check NTFS 3.0/3.1 Volumes

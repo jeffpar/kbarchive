@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80874: EMM386 May Not Provide LIM 3.2 Support"
-permalink: kb/080/Q80874/
+permalink: /kb/080/Q80874/
 ---
 
 ## Q80874: EMM386 May Not Provide LIM 3.2 Support

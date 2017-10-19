@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222119: SNA Server Fails With Event 686 Using Persistent Verification"
-permalink: kb/222/Q222119/
+permalink: /kb/222/Q222119/
 ---
 
 ## Q222119: SNA Server Fails With Event 686 Using Persistent Verification

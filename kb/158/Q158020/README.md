@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158020: SMS: Error 529 When Installing a Client"
-permalink: kb/158/Q158020/
+permalink: /kb/158/Q158020/
 ---
 
 ## Q158020: SMS: Error 529 When Installing a Client

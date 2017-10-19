@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140584: HOWTO: Link with the Correct C Run-Time (CRT) Library"
-permalink: kb/140/Q140584/
+permalink: /kb/140/Q140584/
 ---
 
 ## Q140584: HOWTO: Link with the Correct C Run-Time (CRT) Library

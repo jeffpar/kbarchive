@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83735: LVMD.386 and LMOUSE.DRV Not Installed with Windows 3.1"
-permalink: kb/083/Q83735/
+permalink: /kb/083/Q83735/
 ---
 
 ## Q83735: LVMD.386 and LMOUSE.DRV Not Installed with Windows 3.1

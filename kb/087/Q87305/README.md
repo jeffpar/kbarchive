@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87305: X400: Outgoing Messages Will No Longer Sit in Outgoing Queue"
-permalink: kb/087/Q87305/
+permalink: /kb/087/Q87305/
 ---
 
 ## Q87305: X400: Outgoing Messages Will No Longer Sit in Outgoing Queue

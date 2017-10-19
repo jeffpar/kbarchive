@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79764: Use SetHandleCount to Open More than 15 Files at Once in VB"
-permalink: kb/079/Q79764/
+permalink: /kb/079/Q79764/
 ---
 
 ## Q79764: Use SetHandleCount to Open More than 15 Files at Once in VB

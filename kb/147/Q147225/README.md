@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147225: SMC 8216 EtherCard Elite 16 Ultra May Cause Error Message"
-permalink: kb/147/Q147225/
+permalink: /kb/147/Q147225/
 ---
 
 ## Q147225: SMC 8216 EtherCard Elite 16 Ultra May Cause Error Message

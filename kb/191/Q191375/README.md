@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191375: HOWTO: Use COMCLASSINFO() to Check Installed ADO Version"
-permalink: kb/191/Q191375/
+permalink: /kb/191/Q191375/
 ---
 
 ## Q191375: HOWTO: Use COMCLASSINFO() to Check Installed ADO Version

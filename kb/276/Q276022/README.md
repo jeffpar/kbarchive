@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276022: Windows 95 and Window 98 Client Fails to Use Multiple Firewall E"
-permalink: kb/276/Q276022/
+permalink: /kb/276/Q276022/
 ---
 
 ## Q276022: Windows 95 and Window 98 Client Fails to Use Multiple Firewall E

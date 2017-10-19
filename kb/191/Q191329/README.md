@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191329: SMS: How to Install the PCM Service Without Using RSERVICE"
-permalink: kb/191/Q191329/
+permalink: /kb/191/Q191329/
 ---
 
 ## Q191329: SMS: How to Install the PCM Service Without Using RSERVICE

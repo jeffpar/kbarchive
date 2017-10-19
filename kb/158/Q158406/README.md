@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158406: DOCERR: The AutoIncrement Property Does Not Exist"
-permalink: kb/158/Q158406/
+permalink: /kb/158/Q158406/
 ---
 
 ## Q158406: DOCERR: The AutoIncrement Property Does Not Exist

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131781: Program Items Replaced With Question Marks After Migration"
-permalink: kb/131/Q131781/
+permalink: /kb/131/Q131781/
 ---
 
 ## Q131781: Program Items Replaced With Question Marks After Migration

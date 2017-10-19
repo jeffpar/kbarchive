@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171138: Secure TCP Port Not Properly Specified"
-permalink: kb/171/Q171138/
+permalink: /kb/171/Q171138/
 ---
 
 ## Q171138: Secure TCP Port Not Properly Specified

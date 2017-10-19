@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82799: TrueType Font Doesn't Appear Bold"
-permalink: kb/082/Q82799/
+permalink: /kb/082/Q82799/
 ---
 
 ## Q82799: TrueType Font Doesn't Appear Bold

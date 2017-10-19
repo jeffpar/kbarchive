@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71128: Windows 3.0a Disk Directories (3.5 Inch)"
-permalink: kb/071/Q71128/
+permalink: /kb/071/Q71128/
 ---
 
 ## Q71128: Windows 3.0a Disk Directories (3.5 Inch)

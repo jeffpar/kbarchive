@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187629: Terminal Server Licensing"
-permalink: kb/187/Q187629/
+permalink: /kb/187/Q187629/
 ---
 
 ## Q187629: Terminal Server Licensing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299756: Train Simulator: Sound Cuts Off Suddenly as Trains Pass"
-permalink: kb/299/Q299756/
+permalink: /kb/299/Q299756/
 ---
 
 ## Q299756: Train Simulator: Sound Cuts Off Suddenly as Trains Pass

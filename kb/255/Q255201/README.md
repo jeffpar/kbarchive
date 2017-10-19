@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255201: Cannot Log On to PDC After Unsuccessful Installation of NDS"
-permalink: kb/255/Q255201/
+permalink: /kb/255/Q255201/
 ---
 
 ## Q255201: Cannot Log On to PDC After Unsuccessful Installation of NDS

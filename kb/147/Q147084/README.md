@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147084: XFOR: Message Received from Unknown Dirsync Requestor"
-permalink: kb/147/Q147084/
+permalink: /kb/147/Q147084/
 ---
 
 ## Q147084: XFOR: Message Received from Unknown Dirsync Requestor

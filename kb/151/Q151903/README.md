@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151903: PRB: VB Does Not Support Dual Interfaces in OLE Controls"
-permalink: kb/151/Q151903/
+permalink: /kb/151/Q151903/
 ---
 
 ## Q151903: PRB: VB Does Not Support Dual Interfaces in OLE Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195626: FIX: Save As HTML Not Working Correctly with Double Data Types"
-permalink: kb/195/Q195626/
+permalink: /kb/195/Q195626/
 ---
 
 ## Q195626: FIX: Save As HTML Not Working Correctly with Double Data Types

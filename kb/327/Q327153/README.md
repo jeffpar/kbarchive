@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327153: PRB: ASP Pages Do Not Process and DCOM Event 10010 Appears"
-permalink: kb/327/Q327153/
+permalink: /kb/327/Q327153/
 ---
 
 ## Q327153: PRB: ASP Pages Do Not Process and DCOM Event 10010 Appears

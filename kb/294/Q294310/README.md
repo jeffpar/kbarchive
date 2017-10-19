@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294310: Programming Collaborative Web Applications With Exchange 2000 Se"
-permalink: kb/294/Q294310/
+permalink: /kb/294/Q294310/
 ---
 
 ## Q294310: Programming Collaborative Web Applications With Exchange 2000 Se

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138370: Nonstandard LPT Port Names Disable Access to Shared Printers"
-permalink: kb/138/Q138370/
+permalink: /kb/138/Q138370/
 ---
 
 ## Q138370: Nonstandard LPT Port Names Disable Access to Shared Printers

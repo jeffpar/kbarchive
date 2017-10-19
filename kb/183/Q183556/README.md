@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183556: SNADDM Service Fails If Install Directory Path Is Too Long"
-permalink: kb/183/Q183556/
+permalink: /kb/183/Q183556/
 ---
 
 ## Q183556: SNADDM Service Fails If Install Directory Path Is Too Long

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139376: SNA Server Does Not Support Printer LU Pools"
-permalink: kb/139/Q139376/
+permalink: /kb/139/Q139376/
 ---
 
 ## Q139376: SNA Server Does Not Support Printer LU Pools

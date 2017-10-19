@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236013: IIS Clustered Sites Do Not Failover When Debugging Inetinfo.exe"
-permalink: kb/236/Q236013/
+permalink: /kb/236/Q236013/
 ---
 
 ## Q236013: IIS Clustered Sites Do Not Failover When Debugging Inetinfo.exe

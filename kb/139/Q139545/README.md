@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139545: STG: MFC Docfile Viewer"
-permalink: kb/139/Q139545/
+permalink: /kb/139/Q139545/
 ---
 
 ## Q139545: STG: MFC Docfile Viewer

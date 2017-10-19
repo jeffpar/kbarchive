@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198499: XWEB: Post Reply to Custom HTML Form Posts in Web Forms Folder"
-permalink: kb/198/Q198499/
+permalink: /kb/198/Q198499/
 ---
 
 ## Q198499: XWEB: Post Reply to Custom HTML Form Posts in Web Forms Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245038: Err Msg: Password on This Account Cannot Be Changed at This..."
-permalink: kb/245/Q245038/
+permalink: /kb/245/Q245038/
 ---
 
 ## Q245038: Err Msg: Password on This Account Cannot Be Changed at This...

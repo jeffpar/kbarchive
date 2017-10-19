@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135930: PC Adm: Err Msg: Failure to Update Part or All of RDI System"
-permalink: kb/135/Q135930/
+permalink: /kb/135/Q135930/
 ---
 
 ## Q135930: PC Adm: Err Msg: Failure to Update Part or All of RDI System

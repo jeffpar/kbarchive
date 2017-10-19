@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232581: BUG: GetMetaFile() Fails on Long File Names"
-permalink: kb/232/Q232581/
+permalink: /kb/232/Q232581/
 ---
 
 ## Q232581: BUG: GetMetaFile() Fails on Long File Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248699: Iomega Tools Causes Blank File Name When Renaming Files"
-permalink: kb/248/Q248699/
+permalink: /kb/248/Q248699/
 ---
 
 ## Q248699: Iomega Tools Causes Blank File Name When Renaming Files

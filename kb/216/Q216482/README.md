@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216482: How to Control the Ciphers for SSL and TLS"
-permalink: kb/216/Q216482/
+permalink: /kb/216/Q216482/
 ---
 
 ## Q216482: How to Control the Ciphers for SSL and TLS

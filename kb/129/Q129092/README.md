@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129092: Subfolder in Bulletin Board Counted as Conversation"
-permalink: kb/129/Q129092/
+permalink: /kb/129/Q129092/
 ---
 
 ## Q129092: Subfolder in Bulletin Board Counted as Conversation

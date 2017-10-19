@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187870: HOWTO: How to Remove and Reinstall the Windows NT 4.0 Option Pac"
-permalink: kb/187/Q187870/
+permalink: /kb/187/Q187870/
 ---
 
 ## Q187870: HOWTO: How to Remove and Reinstall the Windows NT 4.0 Option Pac

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112905: PC Adm: Err Msg: Notice 36 Error Reading Groups"
-permalink: kb/112/Q112905/
+permalink: /kb/112/Q112905/
 ---
 
 ## Q112905: PC Adm: Err Msg: Notice 36 Error Reading Groups

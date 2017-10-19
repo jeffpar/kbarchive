@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130324: PRB: Invalid Foxuser Causes Frequent Win32s Errors"
-permalink: kb/130/Q130324/
+permalink: /kb/130/Q130324/
 ---
 
 ## Q130324: PRB: Invalid Foxuser Causes Frequent Win32s Errors

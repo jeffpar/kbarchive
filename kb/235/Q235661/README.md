@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235661: WD97: Error Msg: &quot;Word cannot edit the Microsoft Excel Chart&quot;"
-permalink: kb/235/Q235661/
+permalink: /kb/235/Q235661/
 ---
 
 ## Q235661: WD97: Error Msg: &quot;Word cannot edit the Microsoft Excel Chart&quot;

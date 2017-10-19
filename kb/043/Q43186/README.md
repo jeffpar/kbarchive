@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43186: Mac Srv: Creating a Group of Users/Groups"
-permalink: kb/043/Q43186/
+permalink: /kb/043/Q43186/
 ---
 
 ## Q43186: Mac Srv: Creating a Group of Users/Groups

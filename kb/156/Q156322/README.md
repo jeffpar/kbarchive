@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156322: FIX: RETURN TO Procedurename Command Doesn't Work in Forms"
-permalink: kb/156/Q156322/
+permalink: /kb/156/Q156322/
 ---
 
 ## Q156322: FIX: RETURN TO Procedurename Command Doesn't Work in Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173644: Err Msg: Error 645 Received When Connecting to MSN"
-permalink: kb/173/Q173644/
+permalink: /kb/173/Q173644/
 ---
 
 ## Q173644: Err Msg: Error 645 Received When Connecting to MSN

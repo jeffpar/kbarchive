@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197508: WD97: Error Message: Wizard Cannot Use the Active Document"
-permalink: kb/197/Q197508/
+permalink: /kb/197/Q197508/
 ---
 
 ## Q197508: WD97: Error Message: Wizard Cannot Use the Active Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175486: XCLN: Exchange Win 3.x Client Cannot Open XNK Sent from Outlook"
-permalink: kb/175/Q175486/
+permalink: /kb/175/Q175486/
 ---
 
 ## Q175486: XCLN: Exchange Win 3.x Client Cannot Open XNK Sent from Outlook

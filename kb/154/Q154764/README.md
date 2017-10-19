@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154764: PRB: Excluding Libraries with the Visual C++ Profiler"
-permalink: kb/154/Q154764/
+permalink: /kb/154/Q154764/
 ---
 
 ## Q154764: PRB: Excluding Libraries with the Visual C++ Profiler

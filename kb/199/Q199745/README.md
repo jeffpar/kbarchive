@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199745: SMS: Ensuring SW Metering Does Not Start Out of License Apps"
-permalink: kb/199/Q199745/
+permalink: /kb/199/Q199745/
 ---
 
 ## Q199745: SMS: Ensuring SW Metering Does Not Start Out of License Apps

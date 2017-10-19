@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120452: Invalid Machine ID with OEM Windows Sound System 2.0"
-permalink: kb/120/Q120452/
+permalink: /kb/120/Q120452/
 ---
 
 ## Q120452: Invalid Machine ID with OEM Windows Sound System 2.0

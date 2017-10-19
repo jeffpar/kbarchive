@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82670: Error Creating an Invalid Directory from File Manager"
-permalink: kb/082/Q82670/
+permalink: /kb/082/Q82670/
 ---
 
 ## Q82670: Error Creating an Invalid Directory from File Manager

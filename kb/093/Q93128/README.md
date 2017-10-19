@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93128: Err Msg: &quot;WinPrint Manager Printer Error...&quot; (WinJet)"
-permalink: kb/093/Q93128/
+permalink: /kb/093/Q93128/
 ---
 
 ## Q93128: Err Msg: &quot;WinPrint Manager Printer Error...&quot; (WinJet)

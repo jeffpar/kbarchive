@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293227: XFOR: Notes R5 Multiple Mail.box Structure May Cause Event Error"
-permalink: kb/293/Q293227/
+permalink: /kb/293/Q293227/
 ---
 
 ## Q293227: XFOR: Notes R5 Multiple Mail.box Structure May Cause Event Error

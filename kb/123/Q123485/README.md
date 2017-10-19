@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123485: Troubleshooting Print Overflow/Overrun Errors w/LaserJet 4"
-permalink: kb/123/Q123485/
+permalink: /kb/123/Q123485/
 ---
 
 ## Q123485: Troubleshooting Print Overflow/Overrun Errors w/LaserJet 4

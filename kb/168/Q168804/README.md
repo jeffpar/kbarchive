@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168804: WD97: Operating Parameter Limitations and Specifications"
-permalink: kb/168/Q168804/
+permalink: /kb/168/Q168804/
 ---
 
 ## Q168804: WD97: Operating Parameter Limitations and Specifications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226504: SMS: APM Does Not Execute the Correct Number of Advertisements"
-permalink: kb/226/Q226504/
+permalink: /kb/226/Q226504/
 ---
 
 ## Q226504: SMS: APM Does Not Execute the Correct Number of Advertisements

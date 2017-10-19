@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65444: Using Invalid Shell in SYSTEM.INI File Causes UAE"
-permalink: kb/065/Q65444/
+permalink: /kb/065/Q65444/
 ---
 
 ## Q65444: Using Invalid Shell in SYSTEM.INI File Causes UAE

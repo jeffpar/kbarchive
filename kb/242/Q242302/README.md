@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242302: Poor Server Performance with High CPU Usage on Terminal Server"
-permalink: kb/242/Q242302/
+permalink: /kb/242/Q242302/
 ---
 
 ## Q242302: Poor Server Performance with High CPU Usage on Terminal Server

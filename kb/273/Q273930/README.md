@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273930: Crimson Skies: Quits Unexpectedly After Finishing Game on Zone"
-permalink: kb/273/Q273930/
+permalink: /kb/273/Q273930/
 ---
 
 ## Q273930: Crimson Skies: Quits Unexpectedly After Finishing Game on Zone

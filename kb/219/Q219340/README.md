@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219340: Unable to Read Files from a Remote LANMAN 2.1 Compatible Server"
-permalink: kb/219/Q219340/
+permalink: /kb/219/Q219340/
 ---
 
 ## Q219340: Unable to Read Files from a Remote LANMAN 2.1 Compatible Server

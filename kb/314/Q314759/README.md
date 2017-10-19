@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314759: Microsoft ADO.NET Step by Step Comments and Corrections"
-permalink: kb/314/Q314759/
+permalink: /kb/314/Q314759/
 ---
 
 ## Q314759: Microsoft ADO.NET Step by Step Comments and Corrections

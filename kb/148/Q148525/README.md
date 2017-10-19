@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148525: Removable Media Does Not Eject if Formatted in NTFS"
-permalink: kb/148/Q148525/
+permalink: /kb/148/Q148525/
 ---
 
 ## Q148525: Removable Media Does Not Eject if Formatted in NTFS

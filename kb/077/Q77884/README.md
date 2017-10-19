@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77884: PRB: Complex Printing Region Printed Incorrectly"
-permalink: kb/077/Q77884/
+permalink: /kb/077/Q77884/
 ---
 
 ## Q77884: PRB: Complex Printing Region Printed Incorrectly

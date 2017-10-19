@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130317: PC Mac: Cannot Access New Messages on Windows NT 3.5 Server"
-permalink: kb/130/Q130317/
+permalink: /kb/130/Q130317/
 ---
 
 ## Q130317: PC Mac: Cannot Access New Messages on Windows NT 3.5 Server

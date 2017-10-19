@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269284: INFO: Undocumented Function SYS(1104)"
-permalink: kb/269/Q269284/
+permalink: /kb/269/Q269284/
 ---
 
 ## Q269284: INFO: Undocumented Function SYS(1104)

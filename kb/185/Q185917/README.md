@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185917: SMS: Remote Control Agent Installed Regardless of Site Settings"
-permalink: kb/185/Q185917/
+permalink: /kb/185/Q185917/
 ---
 
 ## Q185917: SMS: Remote Control Agent Installed Regardless of Site Settings

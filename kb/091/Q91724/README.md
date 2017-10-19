@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91724: Save Changes Dialog Box: Changes Not Saved"
-permalink: kb/091/Q91724/
+permalink: /kb/091/Q91724/
 ---
 
 ## Q91724: Save Changes Dialog Box: Changes Not Saved

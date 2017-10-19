@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154743: PRB: Using FoxBASE+ Label Form in Visual FoxPro"
-permalink: kb/154/Q154743/
+permalink: /kb/154/Q154743/
 ---
 
 ## Q154743: PRB: Using FoxBASE+ Label Form in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126571: HOWTO: Obtain the Program Name in a Windows-Based Application"
-permalink: kb/126/Q126571/
+permalink: /kb/126/Q126571/
 ---
 
 ## Q126571: HOWTO: Obtain the Program Name in a Windows-Based Application

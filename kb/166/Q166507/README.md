@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166507: HOWTO: Recover from a Lost Anomaly Tracking System Password"
-permalink: kb/166/Q166507/
+permalink: /kb/166/Q166507/
 ---
 
 ## Q166507: HOWTO: Recover from a Lost Anomaly Tracking System Password

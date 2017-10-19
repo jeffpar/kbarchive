@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129308: PRB: Pivot Table in Excel Does Not Update"
-permalink: kb/129/Q129308/
+permalink: /kb/129/Q129308/
 ---
 
 ## Q129308: PRB: Pivot Table in Excel Does Not Update

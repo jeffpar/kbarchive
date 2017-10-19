@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250912: &quot;C:&#92;Windows&#92;System&#92;Timedate.cpl&quot; Error Starting Date/Time Tool"
-permalink: kb/250/Q250912/
+permalink: /kb/250/Q250912/
 ---
 
 ## Q250912: &quot;C:&#92;Windows&#92;System&#92;Timedate.cpl&quot; Error Starting Date/Time Tool

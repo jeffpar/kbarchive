@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240983: Pandora's Box: Scratchy or Distorted Sound"
-permalink: kb/240/Q240983/
+permalink: /kb/240/Q240983/
 ---
 
 ## Q240983: Pandora's Box: Scratchy or Distorted Sound

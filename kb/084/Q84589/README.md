@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84589: Certain Phoenix BIOS Versions Hang System with CTRL+ALT+DEL"
-permalink: kb/084/Q84589/
+permalink: /kb/084/Q84589/
 ---
 
 ## Q84589: Certain Phoenix BIOS Versions Hang System with CTRL+ALT+DEL

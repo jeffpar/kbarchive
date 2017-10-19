@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242053: Event ID 4319: Duplicate names on the network."
-permalink: kb/242/Q242053/
+permalink: /kb/242/Q242053/
 ---
 
 ## Q242053: Event ID 4319: Duplicate names on the network.

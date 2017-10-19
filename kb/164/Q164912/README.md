@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164912: Host Account Cache Requires Configuration of Master/Backup Role"
-permalink: kb/164/Q164912/
+permalink: /kb/164/Q164912/
 ---
 
 ## Q164912: Host Account Cache Requires Configuration of Master/Backup Role

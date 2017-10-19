@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163586: FP: Can't Insert Blank Line Above or Below Table"
-permalink: kb/163/Q163586/
+permalink: /kb/163/Q163586/
 ---
 
 ## Q163586: FP: Can't Insert Blank Line Above or Below Table

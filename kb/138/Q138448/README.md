@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138448: Certain Extended ASCII Characters are Not Valid in Zone Names"
-permalink: kb/138/Q138448/
+permalink: /kb/138/Q138448/
 ---
 
 ## Q138448: Certain Extended ASCII Characters are Not Valid in Zone Names

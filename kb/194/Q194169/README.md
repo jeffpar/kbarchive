@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194169: SNMP Process Object Returns the Incorrect Value"
-permalink: kb/194/Q194169/
+permalink: /kb/194/Q194169/
 ---
 
 ## Q194169: SNMP Process Object Returns the Incorrect Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173752: WinNT ERR: Access Denied with User Manager"
-permalink: kb/173/Q173752/
+permalink: /kb/173/Q173752/
 ---
 
 ## Q173752: WinNT ERR: Access Denied with User Manager

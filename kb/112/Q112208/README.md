@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112208: PC Win: User Delete Privilege Does Not Apply to Windows Client"
-permalink: kb/112/Q112208/
+permalink: /kb/112/Q112208/
 ---
 
 ## Q112208: PC Win: User Delete Privilege Does Not Apply to Windows Client

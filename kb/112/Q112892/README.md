@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112892: PC WRmt: Friendly Name Doesn't Change"
-permalink: kb/112/Q112892/
+permalink: /kb/112/Q112892/
 ---
 
 ## Q112892: PC WRmt: Friendly Name Doesn't Change

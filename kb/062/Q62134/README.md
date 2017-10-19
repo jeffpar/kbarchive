@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62134: Mac Hyp: Getting a List of User Names"
-permalink: kb/062/Q62134/
+permalink: /kb/062/Q62134/
 ---
 
 ## Q62134: Mac Hyp: Getting a List of User Names

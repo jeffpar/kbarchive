@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238184: Err Msg: &quot;Transport Driver Error...&quot; with Citrix Client"
-permalink: kb/238/Q238184/
+permalink: /kb/238/Q238184/
 ---
 
 ## Q238184: Err Msg: &quot;Transport Driver Error...&quot; with Citrix Client

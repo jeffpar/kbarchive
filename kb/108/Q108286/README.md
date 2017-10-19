@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108286: FIX: Incorrect F2560 with Adjustable Sized Arrays and /4Yb"
-permalink: kb/108/Q108286/
+permalink: /kb/108/Q108286/
 ---
 
 ## Q108286: FIX: Incorrect F2560 with Adjustable Sized Arrays and /4Yb

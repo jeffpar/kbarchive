@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258629: Error 997 Attempting to Delete Online Cluster Server Resource"
-permalink: kb/258/Q258629/
+permalink: /kb/258/Q258629/
 ---
 
 ## Q258629: Error 997 Attempting to Delete Online Cluster Server Resource

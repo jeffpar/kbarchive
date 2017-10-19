@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160784: XADM: Errmsg: Initialization of Dynamic Link Library Kernel32"
-permalink: kb/160/Q160784/
+permalink: /kb/160/Q160784/
 ---
 
 ## Q160784: XADM: Errmsg: Initialization of Dynamic Link Library Kernel32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48749: Ocean 300 Feet Above Sea Level North of Port Angeles"
-permalink: kb/048/Q48749/
+permalink: /kb/048/Q48749/
 ---
 
 ## Q48749: Ocean 300 Feet Above Sea Level North of Port Angeles

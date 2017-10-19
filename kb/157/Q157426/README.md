@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157426: XCLN: &quot;All Your Access Permissions Could Not Be Reset...&quot; Err"
-permalink: kb/157/Q157426/
+permalink: /kb/157/Q157426/
 ---
 
 ## Q157426: XCLN: &quot;All Your Access Permissions Could Not Be Reset...&quot; Err

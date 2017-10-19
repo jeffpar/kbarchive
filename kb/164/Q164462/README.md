@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164462: Conner 4mm DAT Tape Devices Fail After About 30 Seconds"
-permalink: kb/164/Q164462/
+permalink: /kb/164/Q164462/
 ---
 
 ## Q164462: Conner 4mm DAT Tape Devices Fail After About 30 Seconds

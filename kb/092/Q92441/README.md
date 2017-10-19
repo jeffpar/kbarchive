@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92441: SAMPLE: VerStamp.exe Accesses File Version Information Resource"
-permalink: kb/092/Q92441/
+permalink: /kb/092/Q92441/
 ---
 
 ## Q92441: SAMPLE: VerStamp.exe Accesses File Version Information Resource

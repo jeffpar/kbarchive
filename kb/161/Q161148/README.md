@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161148: PRB: ActiveX Control Click Event Not Firing When Form Is Modal"
-permalink: kb/161/Q161148/
+permalink: /kb/161/Q161148/
 ---
 
 ## Q161148: PRB: ActiveX Control Click Event Not Firing When Form Is Modal

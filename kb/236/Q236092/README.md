@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236092: FIX: &quot;Error Spawning 'vcspawn.exe'. The build could not be perfo"
-permalink: kb/236/Q236092/
+permalink: /kb/236/Q236092/
 ---
 
 ## Q236092: FIX: &quot;Error Spawning 'vcspawn.exe'. The build could not be perfo

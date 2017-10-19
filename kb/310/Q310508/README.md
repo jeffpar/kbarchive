@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310508: SMS: Client May Not Accelerate After Uninstalling Remote Control"
-permalink: kb/310/Q310508/
+permalink: /kb/310/Q310508/
 ---
 
 ## Q310508: SMS: Client May Not Accelerate After Uninstalling Remote Control

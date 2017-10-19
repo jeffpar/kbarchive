@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165928: WD97: Range.Text Length Includes &quot;End Of Cell&quot; for Table Cell"
-permalink: kb/165/Q165928/
+permalink: /kb/165/Q165928/
 ---
 
 ## Q165928: WD97: Range.Text Length Includes &quot;End Of Cell&quot; for Table Cell

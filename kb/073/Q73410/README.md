@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73410: MS-DOS 5.x and 6.x Install to Drive C Only"
-permalink: kb/073/Q73410/
+permalink: /kb/073/Q73410/
 ---
 
 ## Q73410: MS-DOS 5.x and 6.x Install to Drive C Only

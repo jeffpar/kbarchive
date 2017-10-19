@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81295: Setup Err Msg: Sector Not Found Error Reading Drive A:"
-permalink: kb/081/Q81295/
+permalink: /kb/081/Q81295/
 ---
 
 ## Q81295: Setup Err Msg: Sector Not Found Error Reading Drive A:

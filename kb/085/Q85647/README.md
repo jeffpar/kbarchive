@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85647: PC Adm: Err Msg: Notice 56: Error Deleting User Address"
-permalink: kb/085/Q85647/
+permalink: /kb/085/Q85647/
 ---
 
 ## Q85647: PC Adm: Err Msg: Notice 56: Error Deleting User Address

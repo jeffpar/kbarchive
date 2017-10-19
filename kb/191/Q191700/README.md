@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191700: PRB: Cannot Change Visual FoxPro Installation Directory"
-permalink: kb/191/Q191700/
+permalink: /kb/191/Q191700/
 ---
 
 ## Q191700: PRB: Cannot Change Visual FoxPro Installation Directory

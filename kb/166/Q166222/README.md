@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166222: Dlc.sys Sends Frame Reject (FRMR) and Drops Connection"
-permalink: kb/166/Q166222/
+permalink: /kb/166/Q166222/
 ---
 
 ## Q166222: Dlc.sys Sends Frame Reject (FRMR) and Drops Connection

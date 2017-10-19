@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92359: INFO: Using the FoxPro LOOKUP() Function"
-permalink: kb/092/Q92359/
+permalink: /kb/092/Q92359/
 ---
 
 ## Q92359: INFO: Using the FoxPro LOOKUP() Function

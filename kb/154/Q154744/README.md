@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154744: PRB: Modifying CWinApp Members Causes Error in DBGHEAP.C"
-permalink: kb/154/Q154744/
+permalink: /kb/154/Q154744/
 ---
 
 ## Q154744: PRB: Modifying CWinApp Members Causes Error in DBGHEAP.C

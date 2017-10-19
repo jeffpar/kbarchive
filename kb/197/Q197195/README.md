@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197195: Schedule+ Four-Digit Year Entries Require All Four Digits"
-permalink: kb/197/Q197195/
+permalink: /kb/197/Q197195/
 ---
 
 ## Q197195: Schedule+ Four-Digit Year Entries Require All Four Digits

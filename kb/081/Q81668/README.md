@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81668: LANTASTI.386 Must Be On PATH= Environment"
-permalink: kb/081/Q81668/
+permalink: /kb/081/Q81668/
 ---
 
 ## Q81668: LANTASTI.386 Must Be On PATH= Environment

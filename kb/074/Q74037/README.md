@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74037: Use Only Application Name when Adding to SETVER Version Table"
-permalink: kb/074/Q74037/
+permalink: /kb/074/Q74037/
 ---
 
 ## Q74037: Use Only Application Name when Adding to SETVER Version Table

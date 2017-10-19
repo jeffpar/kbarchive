@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161432: WINS Static Entries Overwritten by Duplicate Group Names"
-permalink: kb/161/Q161432/
+permalink: /kb/161/Q161432/
 ---
 
 ## Q161432: WINS Static Entries Overwritten by Duplicate Group Names

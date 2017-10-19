@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195824: XFOR: SBS Error: Mt.exe Unable to Locate Dll"
-permalink: kb/195/Q195824/
+permalink: /kb/195/Q195824/
 ---
 
 ## Q195824: XFOR: SBS Error: Mt.exe Unable to Locate Dll

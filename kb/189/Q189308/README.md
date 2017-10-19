@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189308: Manager Fails to Detect Installed Link Service"
-permalink: kb/189/Q189308/
+permalink: /kb/189/Q189308/
 ---
 
 ## Q189308: Manager Fails to Detect Installed Link Service

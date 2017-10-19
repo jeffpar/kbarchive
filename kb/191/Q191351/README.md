@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191351: SMS: Long Environment Paths May Cause Incomplete Inventory"
-permalink: kb/191/Q191351/
+permalink: /kb/191/Q191351/
 ---
 
 ## Q191351: SMS: Long Environment Paths May Cause Incomplete Inventory

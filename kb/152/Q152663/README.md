@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152663: Monthly View Print Out Will Not Wrap Appointment Text"
-permalink: kb/152/Q152663/
+permalink: /kb/152/Q152663/
 ---
 
 ## Q152663: Monthly View Print Out Will Not Wrap Appointment Text

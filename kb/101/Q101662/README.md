@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101662: How to Change the Background Color When Playing Fullscreen"
-permalink: kb/101/Q101662/
+permalink: /kb/101/Q101662/
 ---
 
 ## Q101662: How to Change the Background Color When Playing Fullscreen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197923: Memotool.exe Saves User Defined Toolbar Positions"
-permalink: kb/197/Q197923/
+permalink: /kb/197/Q197923/
 ---
 
 ## Q197923: Memotool.exe Saves User Defined Toolbar Positions

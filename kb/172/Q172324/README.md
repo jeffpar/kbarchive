@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172324: Unable to Print to AppleTalk Printer"
-permalink: kb/172/Q172324/
+permalink: /kb/172/Q172324/
 ---
 
 ## Q172324: Unable to Print to AppleTalk Printer

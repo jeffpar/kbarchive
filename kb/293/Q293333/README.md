@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293333: SHIFT+TAB Works the Same as Just Using the TAB Key"
-permalink: kb/293/Q293333/
+permalink: /kb/293/Q293333/
 ---
 
 ## Q293333: SHIFT+TAB Works the Same as Just Using the TAB Key

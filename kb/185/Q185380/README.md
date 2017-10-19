@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185380: &quot;Directory Listing Denied&quot; When Browsing a Web Site"
-permalink: kb/185/Q185380/
+permalink: /kb/185/Q185380/
 ---
 
 ## Q185380: &quot;Directory Listing Denied&quot; When Browsing a Web Site

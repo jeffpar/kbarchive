@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278721: How to change the &quot;helper&quot; on MSN Companion"
-permalink: kb/278/Q278721/
+permalink: /kb/278/Q278721/
 ---
 
 ## Q278721: How to change the &quot;helper&quot; on MSN Companion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100307: No Default Guest Account in Windows NT Advanced Server"
-permalink: kb/100/Q100307/
+permalink: /kb/100/Q100307/
 ---
 
 ## Q100307: No Default Guest Account in Windows NT Advanced Server

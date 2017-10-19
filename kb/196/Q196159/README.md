@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196159: XADM: Event 1002 Starting the DS after Failing to Move a Server"
-permalink: kb/196/Q196159/
+permalink: /kb/196/Q196159/
 ---
 
 ## Q196159: XADM: Event 1002 Starting the DS after Failing to Move a Server

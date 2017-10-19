@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184549: Service Fails Unexpectedly with Access Violation in s1ppcass()"
-permalink: kb/184/Q184549/
+permalink: /kb/184/Q184549/
 ---
 
 ## Q184549: Service Fails Unexpectedly with Access Violation in s1ppcass()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156326: No Network Access with DEC Network Adapter"
-permalink: kb/156/Q156326/
+permalink: /kb/156/Q156326/
 ---
 
 ## Q156326: No Network Access with DEC Network Adapter

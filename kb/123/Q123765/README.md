@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123765: The WINNT.SIF File Created by WINNT and WINNT32"
-permalink: kb/123/Q123765/
+permalink: /kb/123/Q123765/
 ---
 
 ## Q123765: The WINNT.SIF File Created by WINNT and WINNT32

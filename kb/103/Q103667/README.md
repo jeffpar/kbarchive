@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103667: Defrag Returns Errorlevel 0 When You Exit (Press ESC)"
-permalink: kb/103/Q103667/
+permalink: /kb/103/Q103667/
 ---
 
 ## Q103667: Defrag Returns Errorlevel 0 When You Exit (Press ESC)

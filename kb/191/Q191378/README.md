@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191378: WD97: Print: Odd Pages and Even Pages Have Opposite Effect"
-permalink: kb/191/Q191378/
+permalink: /kb/191/Q191378/
 ---
 
 ## Q191378: WD97: Print: Odd Pages and Even Pages Have Opposite Effect

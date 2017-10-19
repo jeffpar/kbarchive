@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66985: Negative Score in Tetris Near 32,000"
-permalink: kb/066/Q66985/
+permalink: /kb/066/Q66985/
 ---
 
 ## Q66985: Negative Score in Tetris Near 32,000

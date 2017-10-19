@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78704: PC DOS: Group Folder Owner Can Always Use Group Folder"
-permalink: kb/078/Q78704/
+permalink: /kb/078/Q78704/
 ---
 
 ## Q78704: PC DOS: Group Folder Owner Can Always Use Group Folder

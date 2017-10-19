@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85960: Group Icons Missing After Windows 3.1 Installation"
-permalink: kb/085/Q85960/
+permalink: /kb/085/Q85960/
 ---
 
 ## Q85960: Group Icons Missing After Windows 3.1 Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229493: XCON: How to Move X.400 Connectors Between Bridgeheads"
-permalink: kb/229/Q229493/
+permalink: /kb/229/Q229493/
 ---
 
 ## Q229493: XCON: How to Move X.400 Connectors Between Bridgeheads

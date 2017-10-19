@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137599: PPT7: Setup Does Not Install the CorelDRAW .CDR Filter"
-permalink: kb/137/Q137599/
+permalink: /kb/137/Q137599/
 ---
 
 ## Q137599: PPT7: Setup Does Not Install the CorelDRAW .CDR Filter

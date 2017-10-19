@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141445: DLGDB32 CDialog Sharing a CRecordset Object"
-permalink: kb/141/Q141445/
+permalink: /kb/141/Q141445/
 ---
 
 ## Q141445: DLGDB32 CDialog Sharing a CRecordset Object

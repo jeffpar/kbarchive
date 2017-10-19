@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137374: Devices Attached to Adaptec 2740 Not Recognized"
-permalink: kb/137/Q137374/
+permalink: /kb/137/Q137374/
 ---
 
 ## Q137374: Devices Attached to Adaptec 2740 Not Recognized

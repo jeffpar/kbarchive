@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123032: BUG: SKIP Produces Unexpected Results"
-permalink: kb/123/Q123032/
+permalink: /kb/123/Q123032/
 ---
 
 ## Q123032: BUG: SKIP Produces Unexpected Results

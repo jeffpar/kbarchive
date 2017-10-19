@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182166: XFOR: Extra Designators in Korean ISO-2022-KR Encoded Messages"
-permalink: kb/182/Q182166/
+permalink: /kb/182/Q182166/
 ---
 
 ## Q182166: XFOR: Extra Designators in Korean ISO-2022-KR Encoded Messages

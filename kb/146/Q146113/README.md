@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146113: PC DB: Effect of Compress on System Used .KEY and .MBG Files"
-permalink: kb/146/Q146113/
+permalink: /kb/146/Q146113/
 ---
 
 ## Q146113: PC DB: Effect of Compress on System Used .KEY and .MBG Files

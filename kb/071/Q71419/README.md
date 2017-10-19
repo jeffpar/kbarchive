@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71419: PC NAU StarLan Card and LAN Manager 2.0"
-permalink: kb/071/Q71419/
+permalink: /kb/071/Q71419/
 ---
 
 ## Q71419: PC NAU StarLan Card and LAN Manager 2.0

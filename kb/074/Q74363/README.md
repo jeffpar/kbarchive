@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74363: PRB: Fatal Exit 0x00FF or 0xD000: MakeProcInstance Fails"
-permalink: kb/074/Q74363/
+permalink: /kb/074/Q74363/
 ---
 
 ## Q74363: PRB: Fatal Exit 0x00FF or 0xD000: MakeProcInstance Fails

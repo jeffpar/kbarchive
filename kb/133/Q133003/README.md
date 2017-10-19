@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133003: BUG: SQL SELECT Brings Up Dialog Twice Erroneously"
-permalink: kb/133/Q133003/
+permalink: /kb/133/Q133003/
 ---
 
 ## Q133003: BUG: SQL SELECT Brings Up Dialog Twice Erroneously

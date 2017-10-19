@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165572: 5250 Applet Issues with SNA 3.0"
-permalink: kb/165/Q165572/
+permalink: /kb/165/Q165572/
 ---
 
 ## Q165572: 5250 Applet Issues with SNA 3.0

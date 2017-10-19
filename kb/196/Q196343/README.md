@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196343: XFOR: Extensions for Attachments Handled Incorrectly by SNADS"
-permalink: kb/196/Q196343/
+permalink: /kb/196/Q196343/
 ---
 
 ## Q196343: XFOR: Extensions for Attachments Handled Incorrectly by SNADS

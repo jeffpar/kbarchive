@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154741: HOWTO: Transmit and Receive Binary Data using MSCOMM32"
-permalink: kb/154/Q154741/
+permalink: /kb/154/Q154741/
 ---
 
 ## Q154741: HOWTO: Transmit and Receive Binary Data using MSCOMM32

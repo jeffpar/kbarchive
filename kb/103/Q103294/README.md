@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103294: Microsoft Dinosaurs in Windows NT"
-permalink: kb/103/Q103294/
+permalink: /kb/103/Q103294/
 ---
 
 ## Q103294: Microsoft Dinosaurs in Windows NT

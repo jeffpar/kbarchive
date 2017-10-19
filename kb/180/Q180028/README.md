@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180028: PRB: DBC With Stored Procedure Produces Error When Opened"
-permalink: kb/180/Q180028/
+permalink: /kb/180/Q180028/
 ---
 
 ## Q180028: PRB: DBC With Stored Procedure Produces Error When Opened

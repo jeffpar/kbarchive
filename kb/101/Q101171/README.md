@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101171: Determining Video Resolution with Windows Paintbrush"
-permalink: kb/101/Q101171/
+permalink: /kb/101/Q101171/
 ---
 
 ## Q101171: Determining Video Resolution with Windows Paintbrush

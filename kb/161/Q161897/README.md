@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161897: FIX: Uninstalling Distributed Setup Removes OCX Licenses"
-permalink: kb/161/Q161897/
+permalink: /kb/161/Q161897/
 ---
 
 ## Q161897: FIX: Uninstalling Distributed Setup Removes OCX Licenses

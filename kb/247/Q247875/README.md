@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247875: XCLN: Mapped Drive Letter Path Changes to UNC Path"
-permalink: kb/247/Q247875/
+permalink: /kb/247/Q247875/
 ---
 
 ## Q247875: XCLN: Mapped Drive Letter Path Changes to UNC Path

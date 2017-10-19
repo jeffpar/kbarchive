@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128703: Cannot Change Video Resolution on HP Vectra Computer"
-permalink: kb/128/Q128703/
+permalink: /kb/128/Q128703/
 ---
 
 ## Q128703: Cannot Change Video Resolution on HP Vectra Computer

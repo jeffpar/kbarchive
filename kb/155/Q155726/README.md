@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155726: Scivdd.dll Generates Error Messages at Windows NT Startup"
-permalink: kb/155/Q155726/
+permalink: /kb/155/Q155726/
 ---
 
 ## Q155726: Scivdd.dll Generates Error Messages at Windows NT Startup

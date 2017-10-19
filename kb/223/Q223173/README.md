@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223173: Bookshelf 2000: What's New in Bookshelf 2000"
-permalink: kb/223/Q223173/
+permalink: /kb/223/Q223173/
 ---
 
 ## Q223173: Bookshelf 2000: What's New in Bookshelf 2000

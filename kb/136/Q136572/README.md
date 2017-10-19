@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136572: Golf Setup Message: Some disks may not be required"
-permalink: kb/136/Q136572/
+permalink: /kb/136/Q136572/
 ---
 
 ## Q136572: Golf Setup Message: Some disks may not be required

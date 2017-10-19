@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135603: Customizing Microsoft Office Toolbar for Separate Memory Space"
-permalink: kb/135/Q135603/
+permalink: /kb/135/Q135603/
 ---
 
 ## Q135603: Customizing Microsoft Office Toolbar for Separate Memory Space

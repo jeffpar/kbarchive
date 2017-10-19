@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126253: Scenes 1.0: After Dark 3.0 Causes GP Fault"
-permalink: kb/126/Q126253/
+permalink: /kb/126/Q126253/
 ---
 
 ## Q126253: Scenes 1.0: After Dark 3.0 Causes GP Fault

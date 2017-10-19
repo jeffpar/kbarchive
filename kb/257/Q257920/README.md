@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257920: &quot;The Specified Name ...&quot; Message When Installing MSCS Server"
-permalink: kb/257/Q257920/
+permalink: /kb/257/Q257920/
 ---
 
 ## Q257920: &quot;The Specified Name ...&quot; Message When Installing MSCS Server

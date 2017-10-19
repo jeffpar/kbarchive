@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157751: Cannot Open Internet Site When Connecting to MSN"
-permalink: kb/157/Q157751/
+permalink: /kb/157/Q157751/
 ---
 
 ## Q157751: Cannot Open Internet Site When Connecting to MSN

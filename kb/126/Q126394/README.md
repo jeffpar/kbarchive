@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126394: SNA Server Doesn't Include Bundled Support for Windows HLLAPI"
-permalink: kb/126/Q126394/
+permalink: /kb/126/Q126394/
 ---
 
 ## Q126394: SNA Server Doesn't Include Bundled Support for Windows HLLAPI

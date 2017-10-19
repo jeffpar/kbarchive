@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147580: Member ID Appears Twice in Chat Member List"
-permalink: kb/147/Q147580/
+permalink: /kb/147/Q147580/
 ---
 
 ## Q147580: Member ID Appears Twice in Chat Member List

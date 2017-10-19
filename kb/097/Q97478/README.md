@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97478: Font Assistant Does Not Print Sample Page with HP LaserJet 4"
-permalink: kb/097/Q97478/
+permalink: /kb/097/Q97478/
 ---
 
 ## Q97478: Font Assistant Does Not Print Sample Page with HP LaserJet 4

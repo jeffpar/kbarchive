@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176125: XADM: Outbound Unicode 2.0 Messages Not Decoded Properly"
-permalink: kb/176/Q176125/
+permalink: /kb/176/Q176125/
 ---
 
 ## Q176125: XADM: Outbound Unicode 2.0 Messages Not Decoded Properly

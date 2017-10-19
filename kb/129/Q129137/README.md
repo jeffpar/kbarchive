@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129137: XCLN: Font Size Doesn't Change When Using the Toolbar"
-permalink: kb/129/Q129137/
+permalink: /kb/129/Q129137/
 ---
 
 ## Q129137: XCLN: Font Size Doesn't Change When Using the Toolbar

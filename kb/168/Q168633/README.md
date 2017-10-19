@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168633: XGEN: When Do You Need a Client Access License (CAL)?"
-permalink: kb/168/Q168633/
+permalink: /kb/168/Q168633/
 ---
 
 ## Q168633: XGEN: When Do You Need a Client Access License (CAL)?

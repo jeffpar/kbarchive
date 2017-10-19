@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263325: SMS: MMC 1.2 Requires Internet Explorer 5 or Later"
-permalink: kb/263/Q263325/
+permalink: /kb/263/Q263325/
 ---
 
 ## Q263325: SMS: MMC 1.2 Requires Internet Explorer 5 or Later

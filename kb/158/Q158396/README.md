@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158396: Explorer Hangs When Creating a New Folder On a MAC Volume"
-permalink: kb/158/Q158396/
+permalink: /kb/158/Q158396/
 ---
 
 ## Q158396: Explorer Hangs When Creating a New Folder On a MAC Volume

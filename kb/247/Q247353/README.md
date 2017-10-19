@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247353: DLC Connections Fail to Restart after Outage"
-permalink: kb/247/Q247353/
+permalink: /kb/247/Q247353/
 ---
 
 ## Q247353: DLC Connections Fail to Restart after Outage

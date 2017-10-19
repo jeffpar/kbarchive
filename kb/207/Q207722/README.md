@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207722: SMS: Retaining Status Summaries After Advertisement Done"
-permalink: kb/207/Q207722/
+permalink: /kb/207/Q207722/
 ---
 
 ## Q207722: SMS: Retaining Status Summaries After Advertisement Done

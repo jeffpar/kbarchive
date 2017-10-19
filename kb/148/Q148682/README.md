@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148682: Comparison of Upgrade and Non-Upgrade Versions of Windows 95"
-permalink: kb/148/Q148682/
+permalink: /kb/148/Q148682/
 ---
 
 ## Q148682: Comparison of Upgrade and Non-Upgrade Versions of Windows 95

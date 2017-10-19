@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121025: Print Screen Hangs Machine After Exiting Windows or WFWG"
-permalink: kb/121/Q121025/
+permalink: /kb/121/Q121025/
 ---
 
 ## Q121025: Print Screen Hangs Machine After Exiting Windows or WFWG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68536: Helvetica and Times Roman Font Substitutions in Windows 3.00"
-permalink: kb/068/Q68536/
+permalink: /kb/068/Q68536/
 ---
 
 ## Q68536: Helvetica and Times Roman Font Substitutions in Windows 3.00

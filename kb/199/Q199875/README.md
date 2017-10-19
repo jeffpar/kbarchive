@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199875: HTML in Action Corrections and Comments"
-permalink: kb/199/Q199875/
+permalink: /kb/199/Q199875/
 ---
 
 ## Q199875: HTML in Action Corrections and Comments

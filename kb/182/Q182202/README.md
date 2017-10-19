@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182202: XADM: Clean Mailbox Progress Bar Displays Incorrect Message Coun"
-permalink: kb/182/Q182202/
+permalink: /kb/182/Q182202/
 ---
 
 ## Q182202: XADM: Clean Mailbox Progress Bar Displays Incorrect Message Coun

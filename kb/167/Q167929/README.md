@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167929: PRB: Memory Leaks Reported When Using Multiple MFC DLLs"
-permalink: kb/167/Q167929/
+permalink: /kb/167/Q167929/
 ---
 
 ## Q167929: PRB: Memory Leaks Reported When Using Multiple MFC DLLs

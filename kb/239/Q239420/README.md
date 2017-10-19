@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239420: XFOR: Mailbox Receives Repeated Copies of Inbound Internet Mess."
-permalink: kb/239/Q239420/
+permalink: /kb/239/Q239420/
 ---
 
 ## Q239420: XFOR: Mailbox Receives Repeated Copies of Inbound Internet Mess.

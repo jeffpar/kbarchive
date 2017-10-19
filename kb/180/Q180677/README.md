@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180677: New Features in IIS 4.0"
-permalink: kb/180/Q180677/
+permalink: /kb/180/Q180677/
 ---
 
 ## Q180677: New Features in IIS 4.0

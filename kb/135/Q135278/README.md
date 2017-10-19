@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135278: Not Enough Free Disk Space to Remove The Microsoft Network"
-permalink: kb/135/Q135278/
+permalink: /kb/135/Q135278/
 ---
 
 ## Q135278: Not Enough Free Disk Space to Remove The Microsoft Network

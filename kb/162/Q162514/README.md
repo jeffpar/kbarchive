@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162514: WINSLI Thunking WinSliCleanup() Closes All Instances"
-permalink: kb/162/Q162514/
+permalink: /kb/162/Q162514/
 ---
 
 ## Q162514: WINSLI Thunking WinSliCleanup() Closes All Instances

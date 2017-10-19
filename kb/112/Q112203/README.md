@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112203: PC DOS: How to Create Subfolders in the MS-DOS Client"
-permalink: kb/112/Q112203/
+permalink: /kb/112/Q112203/
 ---
 
 ## Q112203: PC DOS: How to Create Subfolders in the MS-DOS Client

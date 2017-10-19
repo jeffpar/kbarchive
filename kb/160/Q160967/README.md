@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160967: SMS: Components Fail to Load Language DLLs and Help Files"
-permalink: kb/160/Q160967/
+permalink: /kb/160/Q160967/
 ---
 
 ## Q160967: SMS: Components Fail to Load Language DLLs and Help Files

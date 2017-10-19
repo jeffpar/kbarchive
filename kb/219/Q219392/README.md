@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219392: System Drive Cannot be Hidden in Windows NT Explorer View"
-permalink: kb/219/Q219392/
+permalink: /kb/219/Q219392/
 ---
 
 ## Q219392: System Drive Cannot be Hidden in Windows NT Explorer View

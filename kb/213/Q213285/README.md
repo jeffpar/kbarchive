@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213285: SMS: NetWare Bindery Server Must Be Client's Preferred Server"
-permalink: kb/213/Q213285/
+permalink: /kb/213/Q213285/
 ---
 
 ## Q213285: SMS: NetWare Bindery Server Must Be Client's Preferred Server

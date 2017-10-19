@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174810: Outlook Express Requires MSN 2.5 or later"
-permalink: kb/174/Q174810/
+permalink: /kb/174/Q174810/
 ---
 
 ## Q174810: Outlook Express Requires MSN 2.5 or later

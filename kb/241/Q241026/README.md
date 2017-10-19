@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241026: NBA Inside Drive 2000: Text Appears Blocky or Distorted"
-permalink: kb/241/Q241026/
+permalink: /kb/241/Q241026/
 ---
 
 ## Q241026: NBA Inside Drive 2000: Text Appears Blocky or Distorted

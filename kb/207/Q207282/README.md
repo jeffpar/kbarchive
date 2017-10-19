@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207282: PRB: Cannot Use Title Bar to Activate Forms in Converted 2.6 App"
-permalink: kb/207/Q207282/
+permalink: /kb/207/Q207282/
 ---
 
 ## Q207282: PRB: Cannot Use Title Bar to Activate Forms in Converted 2.6 App

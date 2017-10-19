@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153609: Alerter Aborts After Deadlocking with Another Process"
-permalink: kb/153/Q153609/
+permalink: /kb/153/Q153609/
 ---
 
 ## Q153609: Alerter Aborts After Deadlocking with Another Process

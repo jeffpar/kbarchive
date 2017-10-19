@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148708: No Network Access After Running Sclntupd.exe"
-permalink: kb/148/Q148708/
+permalink: /kb/148/Q148708/
 ---
 
 ## Q148708: No Network Access After Running Sclntupd.exe

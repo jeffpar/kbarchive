@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146221: How to Use Wildcards in a String Search Routine"
-permalink: kb/146/Q146221/
+permalink: /kb/146/Q146221/
 ---
 
 ## Q146221: How to Use Wildcards in a String Search Routine

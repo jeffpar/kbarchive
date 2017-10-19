@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140055: Installing Office 95 using Systems Management Server"
-permalink: kb/140/Q140055/
+permalink: /kb/140/Q140055/
 ---
 
 ## Q140055: Installing Office 95 using Systems Management Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165649: Pooling Of Local APPC LUs Not Functioning Properly"
-permalink: kb/165/Q165649/
+permalink: /kb/165/Q165649/
 ---
 
 ## Q165649: Pooling Of Local APPC LUs Not Functioning Properly

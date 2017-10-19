@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156176: BUG: BorderWidth=0 Does Not Eliminate Border for Shape Control"
-permalink: kb/156/Q156176/
+permalink: /kb/156/Q156176/
 ---
 
 ## Q156176: BUG: BorderWidth=0 Does Not Eliminate Border for Shape Control

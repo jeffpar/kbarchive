@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152196: How to Install and Use Microsoft Fax"
-permalink: kb/152/Q152196/
+permalink: /kb/152/Q152196/
 ---
 
 ## Q152196: How to Install and Use Microsoft Fax

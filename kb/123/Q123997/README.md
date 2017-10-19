@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123997: Inserted Picture Converted w/Visio 3 Contains Horizontal Lines"
-permalink: kb/123/Q123997/
+permalink: /kb/123/Q123997/
 ---
 
 ## Q123997: Inserted Picture Converted w/Visio 3 Contains Horizontal Lines

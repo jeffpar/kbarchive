@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234731: MS Pocket Guide to MS Internet Explorer 5 Comments and Correctio"
-permalink: kb/234/Q234731/
+permalink: /kb/234/Q234731/
 ---
 
 ## Q234731: MS Pocket Guide to MS Internet Explorer 5 Comments and Correctio

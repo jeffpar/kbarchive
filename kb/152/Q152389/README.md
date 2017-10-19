@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152389: FP: Microsoft Internet Information Server Not in Server Type Lis"
-permalink: kb/152/Q152389/
+permalink: /kb/152/Q152389/
 ---
 
 ## Q152389: FP: Microsoft Internet Information Server Not in Server Type Lis

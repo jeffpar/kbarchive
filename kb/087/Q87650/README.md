@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87650: X400: Command-Line Options Available to the X.400 Gateway"
-permalink: kb/087/Q87650/
+permalink: /kb/087/Q87650/
 ---
 
 ## Q87650: X400: Command-Line Options Available to the X.400 Gateway

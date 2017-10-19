@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108368: FIX: Error F1001 in range.c Compiling with -Ox"
-permalink: kb/108/Q108368/
+permalink: /kb/108/Q108368/
 ---
 
 ## Q108368: FIX: Error F1001 in range.c Compiling with -Ox

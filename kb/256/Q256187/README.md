@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256187: XFOR: MS Mail Interchange Service Stops Processing Messages"
-permalink: kb/256/Q256187/
+permalink: /kb/256/Q256187/
 ---
 
 ## Q256187: XFOR: MS Mail Interchange Service Stops Processing Messages

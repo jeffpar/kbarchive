@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233463: MSBP: Unexpected Behavior When You Press and Hold Down CTRL+C"
-permalink: kb/233/Q233463/
+permalink: /kb/233/Q233463/
 ---
 
 ## Q233463: MSBP: Unexpected Behavior When You Press and Hold Down CTRL+C

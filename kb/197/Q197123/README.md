@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197123: PRB: Out-Of-Date Dependency Information for MSCal.ocx"
-permalink: kb/197/Q197123/
+permalink: /kb/197/Q197123/
 ---
 
 ## Q197123: PRB: Out-Of-Date Dependency Information for MSCal.ocx

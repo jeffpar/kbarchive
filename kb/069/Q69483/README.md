@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69483: Running SMARTDrive with Windows and Future Domain's LDRIVE.SYS"
-permalink: kb/069/Q69483/
+permalink: /kb/069/Q69483/
 ---
 
 ## Q69483: Running SMARTDrive with Windows and Future Domain's LDRIVE.SYS

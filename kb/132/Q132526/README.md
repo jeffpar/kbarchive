@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132526: Microsoft Exposition CD Catalog Information"
-permalink: kb/132/Q132526/
+permalink: /kb/132/Q132526/
 ---
 
 ## Q132526: Microsoft Exposition CD Catalog Information

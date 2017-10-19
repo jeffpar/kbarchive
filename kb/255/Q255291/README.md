@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255291: XADM: Event ID 1356 - LDAP Modify Request Fails with Error 16"
-permalink: kb/255/Q255291/
+permalink: /kb/255/Q255291/
 ---
 
 ## Q255291: XADM: Event ID 1356 - LDAP Modify Request Fails with Error 16

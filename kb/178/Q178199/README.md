@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178199: HOWTO: Create a Resource DLL File Containing an AVI"
-permalink: kb/178/Q178199/
+permalink: /kb/178/Q178199/
 ---
 
 ## Q178199: HOWTO: Create a Resource DLL File Containing an AVI

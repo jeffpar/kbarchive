@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178753: FIX: ListView ItemClick Event Executes Multiple Times"
-permalink: kb/178/Q178753/
+permalink: /kb/178/Q178753/
 ---
 
 ## Q178753: FIX: ListView ItemClick Event Executes Multiple Times

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176270: Treewrap.exe - Sample TreeView Control in Visual FoxPro"
-permalink: kb/176/Q176270/
+permalink: /kb/176/Q176270/
 ---
 
 ## Q176270: Treewrap.exe - Sample TreeView Control in Visual FoxPro

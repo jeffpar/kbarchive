@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134594: Cannot Back Up to NetWare Tape Drive with Network Archivist"
-permalink: kb/134/Q134594/
+permalink: /kb/134/Q134594/
 ---
 
 ## Q134594: Cannot Back Up to NetWare Tape Drive with Network Archivist

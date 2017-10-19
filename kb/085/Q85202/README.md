@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85202: INFO: Technical Details of TrueType Fonts"
-permalink: kb/085/Q85202/
+permalink: /kb/085/Q85202/
 ---
 
 ## Q85202: INFO: Technical Details of TrueType Fonts

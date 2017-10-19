@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115887: Err Msg 55: WorkGroup Add-On For Dos and Windows NTAS"
-permalink: kb/115/Q115887/
+permalink: /kb/115/Q115887/
 ---
 
 ## Q115887: Err Msg 55: WorkGroup Add-On For Dos and Windows NTAS

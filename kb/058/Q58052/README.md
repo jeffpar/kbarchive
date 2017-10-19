@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58052: Mac Wkst: Alternative to User-Defined Address Groups for 2.00"
-permalink: kb/058/Q58052/
+permalink: /kb/058/Q58052/
 ---
 
 ## Q58052: Mac Wkst: Alternative to User-Defined Address Groups for 2.00

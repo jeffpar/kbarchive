@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76899: Restoring Boot Partition Boot Sector Using Uninstall"
-permalink: kb/076/Q76899/
+permalink: /kb/076/Q76899/
 ---
 
 ## Q76899: Restoring Boot Partition Boot Sector Using Uninstall

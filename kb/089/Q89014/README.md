@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89014: Video Problems with the Compaq Portable III/Portable 386"
-permalink: kb/089/Q89014/
+permalink: /kb/089/Q89014/
 ---
 
 ## Q89014: Video Problems with the Compaq Portable III/Portable 386

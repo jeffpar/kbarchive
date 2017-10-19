@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191285: Services for Macintosh Index Corruption on Large Volumes"
-permalink: kb/191/Q191285/
+permalink: /kb/191/Q191285/
 ---
 
 ## Q191285: Services for Macintosh Index Corruption on Large Volumes

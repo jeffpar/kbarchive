@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129036: Screen Saver Preview Button Does Not Work"
-permalink: kb/129/Q129036/
+permalink: /kb/129/Q129036/
 ---
 
 ## Q129036: Screen Saver Preview Button Does Not Work

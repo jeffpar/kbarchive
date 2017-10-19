@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192507: Microsoft Word 97 At A Glance Comments and Corrections"
-permalink: kb/192/Q192507/
+permalink: /kb/192/Q192507/
 ---
 
 ## Q192507: Microsoft Word 97 At A Glance Comments and Corrections

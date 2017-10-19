@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180795: XADM: Intrasite Directory Replication Fails with Error 1720"
-permalink: kb/180/Q180795/
+permalink: /kb/180/Q180795/
 ---
 
 ## Q180795: XADM: Intrasite Directory Replication Fails with Error 1720

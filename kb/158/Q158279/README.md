@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158279: XCON: Dynamic RAS Connector Cannot Deliver Mail"
-permalink: kb/158/Q158279/
+permalink: /kb/158/Q158279/
 ---
 
 ## Q158279: XCON: Dynamic RAS Connector Cannot Deliver Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124625: Encarta Err Msg: &quot;Specified File Cannot Be Played&quot;"
-permalink: kb/124/Q124625/
+permalink: /kb/124/Q124625/
 ---
 
 ## Q124625: Encarta Err Msg: &quot;Specified File Cannot Be Played&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139508: Internet Firewall Support in SNA Server"
-permalink: kb/139/Q139508/
+permalink: /kb/139/Q139508/
 ---
 
 ## Q139508: Internet Firewall Support in SNA Server

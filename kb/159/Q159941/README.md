@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159941: WD97: General Information About &quot;Auto&quot; Features in Word 97"
-permalink: kb/159/Q159941/
+permalink: /kb/159/Q159941/
 ---
 
 ## Q159941: WD97: General Information About &quot;Auto&quot; Features in Word 97

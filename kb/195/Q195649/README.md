@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195649: Service Making Connection to NetWare Server May Fail"
-permalink: kb/195/Q195649/
+permalink: /kb/195/Q195649/
 ---
 
 ## Q195649: Service Making Connection to NetWare Server May Fail

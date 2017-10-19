@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140677: FIX: Go Back Button in InfoView Viewer Window Is Disabled"
-permalink: kb/140/Q140677/
+permalink: /kb/140/Q140677/
 ---
 
 ## Q140677: FIX: Go Back Button in InfoView Viewer Window Is Disabled

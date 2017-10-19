@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154030: INFO: Configuring SNA Server for Use w/ an Attachmate Twinax Ada"
-permalink: kb/154/Q154030/
+permalink: /kb/154/Q154030/
 ---
 
 ## Q154030: INFO: Configuring SNA Server for Use w/ an Attachmate Twinax Ada

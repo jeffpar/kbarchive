@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159073: Screen Corruption on Dell Laptops Using Cirrus Video"
-permalink: kb/159/Q159073/
+permalink: /kb/159/Q159073/
 ---
 
 ## Q159073: Screen Corruption on Dell Laptops Using Cirrus Video

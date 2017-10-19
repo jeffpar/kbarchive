@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97607: MemMaker Err Msg: Invalid Session ID"
-permalink: kb/097/Q97607/
+permalink: /kb/097/Q97607/
 ---
 
 ## Q97607: MemMaker Err Msg: Invalid Session ID

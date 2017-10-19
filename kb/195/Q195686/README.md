@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195686: Explanation of ICMP Redirect Behavior"
-permalink: kb/195/Q195686/
+permalink: /kb/195/Q195686/
 ---
 
 ## Q195686: Explanation of ICMP Redirect Behavior

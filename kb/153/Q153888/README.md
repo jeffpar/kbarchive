@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153888: PRB: RFX_LongBinary Not Optimized for SQL Server"
-permalink: kb/153/Q153888/
+permalink: /kb/153/Q153888/
 ---
 
 ## Q153888: PRB: RFX_LongBinary Not Optimized for SQL Server

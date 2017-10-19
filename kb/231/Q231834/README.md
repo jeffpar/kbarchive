@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231834: PRB: ADO to SQL w/ ODBC Not Supporting adAsyncFetchNonBlocking"
-permalink: kb/231/Q231834/
+permalink: /kb/231/Q231834/
 ---
 
 ## Q231834: PRB: ADO to SQL w/ ODBC Not Supporting adAsyncFetchNonBlocking

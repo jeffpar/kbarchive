@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151217: Password Substitution Is Not Available in SNASVCMG Mode"
-permalink: kb/151/Q151217/
+permalink: /kb/151/Q151217/
 ---
 
 ## Q151217: Password Substitution Is Not Available in SNASVCMG Mode

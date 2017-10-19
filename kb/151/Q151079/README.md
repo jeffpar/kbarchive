@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151079: BUG: Label of ListView Items Large When LabelWrap Set to TRUE"
-permalink: kb/151/Q151079/
+permalink: /kb/151/Q151079/
 ---
 
 ## Q151079: BUG: Label of ListView Items Large When LabelWrap Set to TRUE

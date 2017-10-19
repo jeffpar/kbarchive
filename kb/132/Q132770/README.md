@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132770: Duplicate SCSI Device Entries Appear in Device Manager"
-permalink: kb/132/Q132770/
+permalink: /kb/132/Q132770/
 ---
 
 ## Q132770: Duplicate SCSI Device Entries Appear in Device Manager

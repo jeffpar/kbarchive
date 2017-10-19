@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80279: MS-DOS Window on 8514/a or SuperVGA Monitor Is Small"
-permalink: kb/080/Q80279/
+permalink: /kb/080/Q80279/
 ---
 
 ## Q80279: MS-DOS Window on 8514/a or SuperVGA Monitor Is Small

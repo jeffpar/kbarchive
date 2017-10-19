@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154120: Debugging User Profiles and System Policies in Windows NT 4.0"
-permalink: kb/154/Q154120/
+permalink: /kb/154/Q154120/
 ---
 
 ## Q154120: Debugging User Profiles and System Policies in Windows NT 4.0

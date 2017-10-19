@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129288: PRB: VB 4.0 EXEs Are Different When Compared Byte-by-Byte"
-permalink: kb/129/Q129288/
+permalink: /kb/129/Q129288/
 ---
 
 ## Q129288: PRB: VB 4.0 EXEs Are Different When Compared Byte-by-Byte

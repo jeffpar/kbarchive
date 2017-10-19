@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198548: XWEB: OWA Causes an Access Violation in MAPI"
-permalink: kb/198/Q198548/
+permalink: /kb/198/Q198548/
 ---
 
 ## Q198548: XWEB: OWA Causes an Access Violation in MAPI

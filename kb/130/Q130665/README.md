@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130665: PRB: &quot;&lt;arrayname&gt; is not an array&quot; Error When Creating Array"
-permalink: kb/130/Q130665/
+permalink: /kb/130/Q130665/
 ---
 
 ## Q130665: PRB: &quot;&lt;arrayname&gt; is not an array&quot; Error When Creating Array

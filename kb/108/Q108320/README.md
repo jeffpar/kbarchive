@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108320: Open(Station) Documented Incorrectly"
-permalink: kb/108/Q108320/
+permalink: /kb/108/Q108320/
 ---
 
 ## Q108320: Open(Station) Documented Incorrectly

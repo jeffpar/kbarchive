@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256202: SMS: Upgrading SQL Server May Not Succeed When Running SMS"
-permalink: kb/256/Q256202/
+permalink: /kb/256/Q256202/
 ---
 
 ## Q256202: SMS: Upgrading SQL Server May Not Succeed When Running SMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266250: XFOR: Internet Mail Service on Cluster Uses Node IP Address"
-permalink: kb/266/Q266250/
+permalink: /kb/266/Q266250/
 ---
 
 ## Q266250: XFOR: Internet Mail Service on Cluster Uses Node IP Address

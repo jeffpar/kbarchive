@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195856: XADM: How to Detect and Remove Long Values in Exchange Database"
-permalink: kb/195/Q195856/
+permalink: /kb/195/Q195856/
 ---
 
 ## Q195856: XADM: How to Detect and Remove Long Values in Exchange Database

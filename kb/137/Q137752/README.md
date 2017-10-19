@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137752: Cannot Print to Microsoft Fax Printer Driver"
-permalink: kb/137/Q137752/
+permalink: /kb/137/Q137752/
 ---
 
 ## Q137752: Cannot Print to Microsoft Fax Printer Driver

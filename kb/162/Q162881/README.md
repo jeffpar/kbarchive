@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162881: RIP Table Sent While Shutting Down When Silent RIP Set"
-permalink: kb/162/Q162881/
+permalink: /kb/162/Q162881/
 ---
 
 ## Q162881: RIP Table Sent While Shutting Down When Silent RIP Set

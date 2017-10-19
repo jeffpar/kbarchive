@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107984: Flight Simulator for MS-DOS: Cannot Activate Thrust Reversers"
-permalink: kb/107/Q107984/
+permalink: /kb/107/Q107984/
 ---
 
 ## Q107984: Flight Simulator for MS-DOS: Cannot Activate Thrust Reversers

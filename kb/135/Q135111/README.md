@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135111: BUG: &quot;Feature Not Available&quot; Error If READ in Form of Formset"
-permalink: kb/135/Q135111/
+permalink: /kb/135/Q135111/
 ---
 
 ## Q135111: BUG: &quot;Feature Not Available&quot; Error If READ in Form of Formset

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186722: HOWTO: Programmatically Install a True Type Font"
-permalink: kb/186/Q186722/
+permalink: /kb/186/Q186722/
 ---
 
 ## Q186722: HOWTO: Programmatically Install a True Type Font

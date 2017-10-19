@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125779: HOWTO: Color Text ClassWizard Updates to Make Mods Easy to See"
-permalink: kb/125/Q125779/
+permalink: /kb/125/Q125779/
 ---
 
 ## Q125779: HOWTO: Color Text ClassWizard Updates to Make Mods Easy to See

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243008: IIS Won't Start if Client for Microsoft Networks Is Uninstalled"
-permalink: kb/243/Q243008/
+permalink: /kb/243/Q243008/
 ---
 
 ## Q243008: IIS Won't Start if Client for Microsoft Networks Is Uninstalled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207799: IBM PS/1 Will Not Boot on or After January 1, 2000"
-permalink: kb/207/Q207799/
+permalink: /kb/207/Q207799/
 ---
 
 ## Q207799: IBM PS/1 Will Not Boot on or After January 1, 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163349: ACC97: IPF Adding DB with Large Number of Objects to VSS 4.0"
-permalink: kb/163/Q163349/
+permalink: /kb/163/Q163349/
 ---
 
 ## Q163349: ACC97: IPF Adding DB with Large Number of Objects to VSS 4.0

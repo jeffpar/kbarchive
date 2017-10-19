@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80019: Mac AL: Acquiring the AppleLink Gateway"
-permalink: kb/080/Q80019/
+permalink: /kb/080/Q80019/
 ---
 
 ## Q80019: Mac AL: Acquiring the AppleLink Gateway

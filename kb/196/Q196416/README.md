@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196416: XADM: Move Server Wizard Displays Setup Icons in Toolbar"
-permalink: kb/196/Q196416/
+permalink: /kb/196/Q196416/
 ---
 
 ## Q196416: XADM: Move Server Wizard Displays Setup Icons in Toolbar

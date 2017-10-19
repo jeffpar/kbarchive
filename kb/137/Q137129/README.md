@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137129: Automap: Gas Calculations are Incorrect"
-permalink: kb/137/Q137129/
+permalink: /kb/137/Q137129/
 ---
 
 ## Q137129: Automap: Gas Calculations are Incorrect

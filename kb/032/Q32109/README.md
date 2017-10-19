@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32109: INFO: Two Syntaxes for Calling Functions with Pointers"
-permalink: kb/032/Q32109/
+permalink: /kb/032/Q32109/
 ---
 
 ## Q32109: INFO: Two Syntaxes for Calling Functions with Pointers

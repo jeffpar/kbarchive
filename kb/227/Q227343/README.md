@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227343: Connection Manager Stops Responding When Canceling VPN Dialing"
-permalink: kb/227/Q227343/
+permalink: /kb/227/Q227343/
 ---
 
 ## Q227343: Connection Manager Stops Responding When Canceling VPN Dialing

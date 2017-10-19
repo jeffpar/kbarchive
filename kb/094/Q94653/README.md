@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94653: Using FC.EXE to Verify CD-ROM File System Drivers"
-permalink: kb/094/Q94653/
+permalink: /kb/094/Q94653/
 ---
 
 ## Q94653: Using FC.EXE to Verify CD-ROM File System Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76874: MSCDEX CD-ROM Driver and Windows with Multimedia Extensions"
-permalink: kb/076/Q76874/
+permalink: /kb/076/Q76874/
 ---
 
 ## Q76874: MSCDEX CD-ROM Driver and Windows with Multimedia Extensions

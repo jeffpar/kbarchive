@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68137: Calculator Err Msg: Result Is Too Large for Display"
-permalink: kb/068/Q68137/
+permalink: /kb/068/Q68137/
 ---
 
 ## Q68137: Calculator Err Msg: Result Is Too Large for Display

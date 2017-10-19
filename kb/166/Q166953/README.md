@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166953: WD97: Cannot Locate Msconv97.dll When Converting Files"
-permalink: kb/166/Q166953/
+permalink: /kb/166/Q166953/
 ---
 
 ## Q166953: WD97: Cannot Locate Msconv97.dll When Converting Files

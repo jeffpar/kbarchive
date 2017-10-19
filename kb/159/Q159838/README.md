@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159838: XADM: Procedure Used During Backup"
-permalink: kb/159/Q159838/
+permalink: /kb/159/Q159838/
 ---
 
 ## Q159838: XADM: Procedure Used During Backup

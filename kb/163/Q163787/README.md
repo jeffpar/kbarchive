@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163787: FIX: Form Wizard Doesn't Limit Grid Contents to Related Record"
-permalink: kb/163/Q163787/
+permalink: /kb/163/Q163787/
 ---
 
 ## Q163787: FIX: Form Wizard Doesn't Limit Grid Contents to Related Record

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server"
-permalink: kb/197/Q197965/
+permalink: /kb/197/Q197965/
 ---
 
 ## Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server

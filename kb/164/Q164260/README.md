@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164260: Compressing and Uncompressing Files Cause File Cache to Grow"
-permalink: kb/164/Q164260/
+permalink: /kb/164/Q164260/
 ---
 
 ## Q164260: Compressing and Uncompressing Files Cause File Cache to Grow

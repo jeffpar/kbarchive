@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139913: BUG: GotFocus &amp; Valid Events Fire Unexpectedly in Box of Grid"
-permalink: kb/139/Q139913/
+permalink: /kb/139/Q139913/
 ---
 
 ## Q139913: BUG: GotFocus &amp; Valid Events Fire Unexpectedly in Box of Grid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260063: XADM: News Article with Followup-To Property Defined Not Posted"
-permalink: kb/260/Q260063/
+permalink: /kb/260/Q260063/
 ---
 
 ## Q260063: XADM: News Article with Followup-To Property Defined Not Posted

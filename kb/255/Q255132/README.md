@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255132: ACC2000: &quot;Stop 0x1e&quot; Creating Report with Access Report Wizard"
-permalink: kb/255/Q255132/
+permalink: /kb/255/Q255132/
 ---
 
 ## Q255132: ACC2000: &quot;Stop 0x1e&quot; Creating Report with Access Report Wizard

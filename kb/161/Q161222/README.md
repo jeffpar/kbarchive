@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161222: PCMCIA Adapter Displayed Incorrectly in Device Manager"
-permalink: kb/161/Q161222/
+permalink: /kb/161/Q161222/
 ---
 
 ## Q161222: PCMCIA Adapter Displayed Incorrectly in Device Manager

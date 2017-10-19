@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App"
-permalink: kb/188/Q188715/
+permalink: /kb/188/Q188715/
 ---
 
 ## Q188715: Global ASA Not Firing When Visual InterDev Made IIS 4.0 App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250063: Duplicates in Inventory After Site Inventory Synchronization"
-permalink: kb/250/Q250063/
+permalink: /kb/250/Q250063/
 ---
 
 ## Q250063: Duplicates in Inventory After Site Inventory Synchronization

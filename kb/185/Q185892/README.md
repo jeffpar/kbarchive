@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185892: Unwanted Popup Message While Printing to an LPR Printer"
-permalink: kb/185/Q185892/
+permalink: /kb/185/Q185892/
 ---
 
 ## Q185892: Unwanted Popup Message While Printing to an LPR Printer

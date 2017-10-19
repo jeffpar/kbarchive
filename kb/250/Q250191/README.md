@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250191: Cannot Access InetKit Library Using BackOffice with Windows 2000"
-permalink: kb/250/Q250191/
+permalink: /kb/250/Q250191/
 ---
 
 ## Q250191: Cannot Access InetKit Library Using BackOffice with Windows 2000

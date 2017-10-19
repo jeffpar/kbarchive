@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163524: How to Import an LMHOSTS File into the WINS Database"
-permalink: kb/163/Q163524/
+permalink: /kb/163/Q163524/
 ---
 
 ## Q163524: How to Import an LMHOSTS File into the WINS Database

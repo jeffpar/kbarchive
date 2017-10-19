@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159971: SetTimer() API Causes Memory Leak in the WOW Subsystem"
-permalink: kb/159/Q159971/
+permalink: /kb/159/Q159971/
 ---
 
 ## Q159971: SetTimer() API Causes Memory Leak in the WOW Subsystem

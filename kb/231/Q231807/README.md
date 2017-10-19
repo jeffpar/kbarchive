@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231807: WD97: Wildcard Calculates Search and Replace Text Improperly"
-permalink: kb/231/Q231807/
+permalink: /kb/231/Q231807/
 ---
 
 ## Q231807: WD97: Wildcard Calculates Search and Replace Text Improperly

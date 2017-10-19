@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67777: PRB: Inconsistent Error Attempting to Load Nonexistent Extension"
-permalink: kb/067/Q67777/
+permalink: /kb/067/Q67777/
 ---
 
 ## Q67777: PRB: Inconsistent Error Attempting to Load Nonexistent Extension

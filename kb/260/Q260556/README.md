@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260556: Can't Associate NT Accounts with Exchange Mailboxes with LDAP MA"
-permalink: kb/260/Q260556/
+permalink: /kb/260/Q260556/
 ---
 
 ## Q260556: Can't Associate NT Accounts with Exchange Mailboxes with LDAP MA

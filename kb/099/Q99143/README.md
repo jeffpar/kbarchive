@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99143: Running ftp from Remote Boot Workstation"
-permalink: kb/099/Q99143/
+permalink: /kb/099/Q99143/
 ---
 
 ## Q99143: Running ftp from Remote Boot Workstation

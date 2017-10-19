@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228264: Baseball 2000: Black Screen Displayed After Clicking &quot;Play Ball&quot;"
-permalink: kb/228/Q228264/
+permalink: /kb/228/Q228264/
 ---
 
 ## Q228264: Baseball 2000: Black Screen Displayed After Clicking &quot;Play Ball&quot;

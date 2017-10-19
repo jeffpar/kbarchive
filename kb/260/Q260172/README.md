@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260172: FIX: MFC ISAPI Parse Functions Fail Under Stress on Multiple-CPU"
-permalink: kb/260/Q260172/
+permalink: /kb/260/Q260172/
 ---
 
 ## Q260172: FIX: MFC ISAPI Parse Functions Fail Under Stress on Multiple-CPU

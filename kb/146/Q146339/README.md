@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146339: Windows 95 Not Mapping to Specified Domain in SMSLS.INI"
-permalink: kb/146/Q146339/
+permalink: /kb/146/Q146339/
 ---
 
 ## Q146339: Windows 95 Not Mapping to Specified Domain in SMSLS.INI

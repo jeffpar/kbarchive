@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95423: Installing LAN Manager on IBM DOS 5.02 Workstations"
-permalink: kb/095/Q95423/
+permalink: /kb/095/Q95423/
 ---
 
 ## Q95423: Installing LAN Manager on IBM DOS 5.02 Workstations

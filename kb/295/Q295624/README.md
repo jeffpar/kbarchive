@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295624: Stop 0x00000050/0x00000019 Printing Extended Chars to PS Printer"
-permalink: kb/295/Q295624/
+permalink: /kb/295/Q295624/
 ---
 
 ## Q295624: Stop 0x00000050/0x00000019 Printing Extended Chars to PS Printer

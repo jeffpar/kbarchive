@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200344: SMS: Defining Site Boundaries in Systems Management Server 2.0"
-permalink: kb/200/Q200344/
+permalink: /kb/200/Q200344/
 ---
 
 ## Q200344: SMS: Defining Site Boundaries in Systems Management Server 2.0

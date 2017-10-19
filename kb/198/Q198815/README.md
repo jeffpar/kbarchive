@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198815: XCON: Chat MMC Snap-in Requires Double-click to Sort By Priority"
-permalink: kb/198/Q198815/
+permalink: /kb/198/Q198815/
 ---
 
 ## Q198815: XCON: Chat MMC Snap-in Requires Double-click to Sort By Priority

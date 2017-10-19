@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193749: PRB: Setting Scrollbars &gt; 0 Changes Height and Width Property"
-permalink: kb/193/Q193749/
+permalink: /kb/193/Q193749/
 ---
 
 ## Q193749: PRB: Setting Scrollbars &gt; 0 Changes Height and Width Property

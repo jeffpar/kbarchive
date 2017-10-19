@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119765: INFO: Example DDX Routine for Access Memo Fields"
-permalink: kb/119/Q119765/
+permalink: /kb/119/Q119765/
 ---
 
 ## Q119765: INFO: Example DDX Routine for Access Memo Fields

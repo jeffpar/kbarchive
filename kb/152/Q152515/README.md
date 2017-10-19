@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152515: BUG: VFP Does Not Redraw Correctly After Resolution Change"
-permalink: kb/152/Q152515/
+permalink: /kb/152/Q152515/
 ---
 
 ## Q152515: BUG: VFP Does Not Redraw Correctly After Resolution Change

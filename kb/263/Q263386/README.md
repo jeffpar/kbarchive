@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263386: Error Installing SMS Components on Windows NT Terminal Server"
-permalink: kb/263/Q263386/
+permalink: /kb/263/Q263386/
 ---
 
 ## Q263386: Error Installing SMS Components on Windows NT Terminal Server

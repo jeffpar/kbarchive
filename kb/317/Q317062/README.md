@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317062: Unable to Add Users to SNA HAC DB in Multi-Domain Environment"
-permalink: kb/317/Q317062/
+permalink: /kb/317/Q317062/
 ---
 
 ## Q317062: Unable to Add Users to SNA HAC DB in Multi-Domain Environment

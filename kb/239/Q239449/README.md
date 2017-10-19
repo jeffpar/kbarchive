@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239449: Err: Internet Explorer Can't Open the Site Https://&lt;Sitename&gt;..."
-permalink: kb/239/Q239449/
+permalink: /kb/239/Q239449/
 ---
 
 ## Q239449: Err: Internet Explorer Can't Open the Site Https://&lt;Sitename&gt;...

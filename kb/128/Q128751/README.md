@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128751: No &quot;Advanced&quot; button in Client TCP/IP Configuration Box"
-permalink: kb/128/Q128751/
+permalink: /kb/128/Q128751/
 ---
 
 ## Q128751: No &quot;Advanced&quot; button in Client TCP/IP Configuration Box

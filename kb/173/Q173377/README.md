@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173377: WD97: Style Changes Not Retained with HTML Styles"
-permalink: kb/173/Q173377/
+permalink: /kb/173/Q173377/
 ---
 
 ## Q173377: WD97: Style Changes Not Retained with HTML Styles

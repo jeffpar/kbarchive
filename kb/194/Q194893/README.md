@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194893: BUG: Help System Closes After Closing Printer Properties Window"
-permalink: kb/194/Q194893/
+permalink: /kb/194/Q194893/
 ---
 
 ## Q194893: BUG: Help System Closes After Closing Printer Properties Window

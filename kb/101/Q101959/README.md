@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101959: NETX.EXE and LOADHIGH in Remote Boot Configuration"
-permalink: kb/101/Q101959/
+permalink: /kb/101/Q101959/
 ---
 
 ## Q101959: NETX.EXE and LOADHIGH in Remote Boot Configuration

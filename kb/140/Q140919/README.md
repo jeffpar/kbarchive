@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140919: INVDOS Reports an Intel Processor Running at 50Mhz as 66Mhz"
-permalink: kb/140/Q140919/
+permalink: /kb/140/Q140919/
 ---
 
 ## Q140919: INVDOS Reports an Intel Processor Running at 50Mhz as 66Mhz

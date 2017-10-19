@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165922: WD97: Converting ActiveX to Picture Causes Invalid Page Fault"
-permalink: kb/165/Q165922/
+permalink: /kb/165/Q165922/
 ---
 
 ## Q165922: WD97: Converting ActiveX to Picture Causes Invalid Page Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160947: XCON: NDR and Event ID 290 in Event Log Sending X.400 Message"
-permalink: kb/160/Q160947/
+permalink: /kb/160/Q160947/
 ---
 
 ## Q160947: XCON: NDR and Event ID 290 in Event Log Sending X.400 Message

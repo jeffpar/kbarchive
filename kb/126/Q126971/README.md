@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126971: PC Win: Recipients Removed from Mail Message"
-permalink: kb/126/Q126971/
+permalink: /kb/126/Q126971/
 ---
 
 ## Q126971: PC Win: Recipients Removed from Mail Message

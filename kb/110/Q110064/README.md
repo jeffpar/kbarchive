@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110064: Bug: Appstart Crashes WordPerfect 6.0"
-permalink: kb/110/Q110064/
+permalink: /kb/110/Q110064/
 ---
 
 ## Q110064: Bug: Appstart Crashes WordPerfect 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163401: How to Disable Network Redirector File Caching"
-permalink: kb/163/Q163401/
+permalink: /kb/163/Q163401/
 ---
 
 ## Q163401: How to Disable Network Redirector File Caching

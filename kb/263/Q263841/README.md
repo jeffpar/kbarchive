@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263841: PC DB: NDR When Sending from Microsoft Mail to Exchange Server"
-permalink: kb/263/Q263841/
+permalink: /kb/263/Q263841/
 ---
 
 ## Q263841: PC DB: NDR When Sending from Microsoft Mail to Exchange Server

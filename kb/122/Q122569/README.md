@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122569: APPCTL Err Msg: Failed to Connect to SMS Network Server..."
-permalink: kb/122/Q122569/
+permalink: /kb/122/Q122569/
 ---
 
 ## Q122569: APPCTL Err Msg: Failed to Connect to SMS Network Server...

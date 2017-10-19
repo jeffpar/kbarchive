@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84349: Windows 3.1 Does Not Install MS-DOS Mouse Driver"
-permalink: kb/084/Q84349/
+permalink: /kb/084/Q84349/
 ---
 
 ## Q84349: Windows 3.1 Does Not Install MS-DOS Mouse Driver

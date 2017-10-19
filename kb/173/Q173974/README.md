@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173974: HOWTO: Add MFC Support to an ATL Project"
-permalink: kb/173/Q173974/
+permalink: /kb/173/Q173974/
 ---
 
 ## Q173974: HOWTO: Add MFC Support to an ATL Project

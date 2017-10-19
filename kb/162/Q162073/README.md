@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162073: FIX: Import Wizard Does Not Import Spreadsheet Cells as Null"
-permalink: kb/162/Q162073/
+permalink: /kb/162/Q162073/
 ---
 
 ## Q162073: FIX: Import Wizard Does Not Import Spreadsheet Cells as Null

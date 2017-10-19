@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117526: List of Major CD-ROM Drive Manufacturers (N-O)"
-permalink: kb/117/Q117526/
+permalink: /kb/117/Q117526/
 ---
 
 ## Q117526: List of Major CD-ROM Drive Manufacturers (N-O)

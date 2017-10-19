@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191502: HOWTO: Use Component Gallery to Build an Application"
-permalink: kb/191/Q191502/
+permalink: /kb/191/Q191502/
 ---
 
 ## Q191502: HOWTO: Use Component Gallery to Build an Application

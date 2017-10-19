@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64487: Cannot Close Files After UPS Service Warning Message"
-permalink: kb/064/Q64487/
+permalink: /kb/064/Q64487/
 ---
 
 ## Q64487: Cannot Close Files After UPS Service Warning Message

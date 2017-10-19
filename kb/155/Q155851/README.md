@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155851: HOWTO: Implement Cross Platform Solution 3.0 Mac/5.0 Win"
-permalink: kb/155/Q155851/
+permalink: /kb/155/Q155851/
 ---
 
 ## Q155851: HOWTO: Implement Cross Platform Solution 3.0 Mac/5.0 Win

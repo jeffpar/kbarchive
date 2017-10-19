@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239635: World Atlas 2000: How to Install Program to Run from Hard Disk"
-permalink: kb/239/Q239635/
+permalink: /kb/239/Q239635/
 ---
 
 ## Q239635: World Atlas 2000: How to Install Program to Run from Hard Disk

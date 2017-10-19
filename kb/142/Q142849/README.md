@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142849: Obtaining a Secure Sockets Layer (PCT/SSL) Digital Certificate"
-permalink: kb/142/Q142849/
+permalink: /kb/142/Q142849/
 ---
 
 ## Q142849: Obtaining a Secure Sockets Layer (PCT/SSL) Digital Certificate

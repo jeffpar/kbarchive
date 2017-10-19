@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89652: 14 Default TrueType Fonts in Windows 3.1"
-permalink: kb/089/Q89652/
+permalink: /kb/089/Q89652/
 ---
 
 ## Q89652: 14 Default TrueType Fonts in Windows 3.1

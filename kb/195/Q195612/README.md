@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195612: Local Named Object Is Mistakenly Created in Global Name Space"
-permalink: kb/195/Q195612/
+permalink: /kb/195/Q195612/
 ---
 
 ## Q195612: Local Named Object Is Mistakenly Created in Global Name Space

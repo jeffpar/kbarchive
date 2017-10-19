@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189504: PRB: Menu Builder Creates Duplicate Hot Keys"
-permalink: kb/189/Q189504/
+permalink: /kb/189/Q189504/
 ---
 
 ## Q189504: PRB: Menu Builder Creates Duplicate Hot Keys

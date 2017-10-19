@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289582: HTTPS Connections Fail After You Upgrade to IIS 4.0 &amp; Enable SSL"
-permalink: kb/289/Q289582/
+permalink: /kb/289/Q289582/
 ---
 
 ## Q289582: HTTPS Connections Fail After You Upgrade to IIS 4.0 &amp; Enable SSL

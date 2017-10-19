@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247515: Program Is Not Listed in Add/Remove Programs After Installation"
-permalink: kb/247/Q247515/
+permalink: /kb/247/Q247515/
 ---
 
 ## Q247515: Program Is Not Listed in Add/Remove Programs After Installation

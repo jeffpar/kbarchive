@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114739: AppleTalk Print Jobs Stay in Queue and Don't Print"
-permalink: kb/114/Q114739/
+permalink: /kb/114/Q114739/
 ---
 
 ## Q114739: AppleTalk Print Jobs Stay in Queue and Don't Print

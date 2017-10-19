@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326014: XWEB: Error Message: Self Registration of Cdo.dll Failed"
-permalink: kb/326/Q326014/
+permalink: /kb/326/Q326014/
 ---
 
 ## Q326014: XWEB: Error Message: Self Registration of Cdo.dll Failed

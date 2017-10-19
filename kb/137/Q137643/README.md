@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137643: Diskcopy Cannot Copy a Compressed Floppy Disk"
-permalink: kb/137/Q137643/
+permalink: /kb/137/Q137643/
 ---
 
 ## Q137643: Diskcopy Cannot Copy a Compressed Floppy Disk

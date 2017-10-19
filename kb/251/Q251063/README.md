@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251063: Password Change Notification Incorrectly Notifies Accounts"
-permalink: kb/251/Q251063/
+permalink: /kb/251/Q251063/
 ---
 
 ## Q251063: Password Change Notification Incorrectly Notifies Accounts

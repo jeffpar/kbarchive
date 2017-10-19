@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71506: Paintbrush Cannot Rotate a Graphic"
-permalink: kb/071/Q71506/
+permalink: /kb/071/Q71506/
 ---
 
 ## Q71506: Paintbrush Cannot Rotate a Graphic

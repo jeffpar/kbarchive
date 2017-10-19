@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74940: Keeping MS-DOS-Based App Active Under Windows 3.1"
-permalink: kb/074/Q74940/
+permalink: /kb/074/Q74940/
 ---
 
 ## Q74940: Keeping MS-DOS-Based App Active Under Windows 3.1

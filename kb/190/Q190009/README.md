@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190009: Client Cert. Mapping Only Works w/First Page on Proxy Connection"
-permalink: kb/190/Q190009/
+permalink: /kb/190/Q190009/
 ---
 
 ## Q190009: Client Cert. Mapping Only Works w/First Page on Proxy Connection

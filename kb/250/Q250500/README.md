@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250500: XADM: Sybari Antigen Software Interaction with Exchange Server"
-permalink: kb/250/Q250500/
+permalink: /kb/250/Q250500/
 ---
 
 ## Q250500: XADM: Sybari Antigen Software Interaction with Exchange Server

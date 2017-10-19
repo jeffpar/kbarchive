@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142677: Base Priority of the CMD Process"
-permalink: kb/142/Q142677/
+permalink: /kb/142/Q142677/
 ---
 
 ## Q142677: Base Priority of the CMD Process

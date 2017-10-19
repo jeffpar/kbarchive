@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148949: Inventory of a File with a Path Defined Will Fail"
-permalink: kb/148/Q148949/
+permalink: /kb/148/Q148949/
 ---
 
 ## Q148949: Inventory of a File with a Path Defined Will Fail

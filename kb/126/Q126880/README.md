@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126880: Baseball 1995: Online Tips (BS95TBLS.TXT)"
-permalink: kb/126/Q126880/
+permalink: /kb/126/Q126880/
 ---
 
 ## Q126880: Baseball 1995: Online Tips (BS95TBLS.TXT)

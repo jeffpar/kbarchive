@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231210: SMS: Smsman.exe Is Unable to Start the Removal Process"
-permalink: kb/231/Q231210/
+permalink: /kb/231/Q231210/
 ---
 
 ## Q231210: SMS: Smsman.exe Is Unable to Start the Removal Process

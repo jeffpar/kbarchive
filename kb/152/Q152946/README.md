@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152946: XADM: Exchange Store Stops Due to Data Corruption"
-permalink: kb/152/Q152946/
+permalink: /kb/152/Q152946/
 ---
 
 ## Q152946: XADM: Exchange Store Stops Due to Data Corruption

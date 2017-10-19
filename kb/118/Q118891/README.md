@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118891: Installing and Using the Debugging Version of Windows"
-permalink: kb/118/Q118891/
+permalink: /kb/118/Q118891/
 ---
 
 ## Q118891: Installing and Using the Debugging Version of Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120823: Remove Folders Policy Confusing"
-permalink: kb/120/Q120823/
+permalink: /kb/120/Q120823/
 ---
 
 ## Q120823: Remove Folders Policy Confusing

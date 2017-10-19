@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93005: FIX: /Z Switch Gives &quot;Unknown Option&quot; Error in MASM 6.0b"
-permalink: kb/093/Q93005/
+permalink: /kb/093/Q93005/
 ---
 
 ## Q93005: FIX: /Z Switch Gives &quot;Unknown Option&quot; Error in MASM 6.0b

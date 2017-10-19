@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50547: White Text Prints in Black"
-permalink: kb/050/Q50547/
+permalink: /kb/050/Q50547/
 ---
 
 ## Q50547: White Text Prints in Black

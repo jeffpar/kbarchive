@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66193: ATC Menu Appears Incorrectly Sending Multiplayer Messages"
-permalink: kb/066/Q66193/
+permalink: /kb/066/Q66193/
 ---
 
 ## Q66193: ATC Menu Appears Incorrectly Sending Multiplayer Messages

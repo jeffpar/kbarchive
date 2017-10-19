@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259163: XADM: Cannot Open Attachments If Virus Scanning Is Enabled"
-permalink: kb/259/Q259163/
+permalink: /kb/259/Q259163/
 ---
 
 ## Q259163: XADM: Cannot Open Attachments If Virus Scanning Is Enabled

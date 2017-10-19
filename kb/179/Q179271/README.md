@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179271: FIX: C1001 Error for More Than One Explicit Instantiation"
-permalink: kb/179/Q179271/
+permalink: /kb/179/Q179271/
 ---
 
 ## Q179271: FIX: C1001 Error for More Than One Explicit Instantiation

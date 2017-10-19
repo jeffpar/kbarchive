@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126974: STOP 0x24 Generated With NTFS"
-permalink: kb/126/Q126974/
+permalink: /kb/126/Q126974/
 ---
 
 ## Q126974: STOP 0x24 Generated With NTFS

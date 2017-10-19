@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150880: XADM: Running Administrator From Untrusted NT Domain"
-permalink: kb/150/Q150880/
+permalink: /kb/150/Q150880/
 ---
 
 ## Q150880: XADM: Running Administrator From Untrusted NT Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187994: XWEB: File Attachments in OWA Append 2 Extra Bytes CR/LF"
-permalink: kb/187/Q187994/
+permalink: /kb/187/Q187994/
 ---
 
 ## Q187994: XWEB: File Attachments in OWA Append 2 Extra Bytes CR/LF

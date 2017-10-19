@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192677: XWEB: Name, Company, Business Phone, &amp; E-mail Fields are Empty"
-permalink: kb/192/Q192677/
+permalink: /kb/192/Q192677/
 ---
 
 ## Q192677: XWEB: Name, Company, Business Phone, &amp; E-mail Fields are Empty

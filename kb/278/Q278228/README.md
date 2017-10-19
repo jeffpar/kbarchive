@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278228: INSERTS and DELETES from ACCESS to a DB2 Linked Table May Fail"
-permalink: kb/278/Q278228/
+permalink: /kb/278/Q278228/
 ---
 
 ## Q278228: INSERTS and DELETES from ACCESS to a DB2 Linked Table May Fail

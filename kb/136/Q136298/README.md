@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136298: Using NET DIAG Produces French Output from NET.EXE"
-permalink: kb/136/Q136298/
+permalink: /kb/136/Q136298/
 ---
 
 ## Q136298: Using NET DIAG Produces French Output from NET.EXE

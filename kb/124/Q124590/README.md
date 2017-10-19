@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124590: Cinemania 1995: Font Changes When Printing a Two-Page Document"
-permalink: kb/124/Q124590/
+permalink: /kb/124/Q124590/
 ---
 
 ## Q124590: Cinemania 1995: Font Changes When Printing a Two-Page Document

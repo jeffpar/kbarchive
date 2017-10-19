@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221711: FIX: FFCs - Problem with Element Tag With _XMLTag in _html.vcx"
-permalink: kb/221/Q221711/
+permalink: /kb/221/Q221711/
 ---
 
 ## Q221711: FIX: FFCs - Problem with Element Tag With _XMLTag in _html.vcx

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183103: Year 2000 Fix for Halncr.dll"
-permalink: kb/183/Q183103/
+permalink: /kb/183/Q183103/
 ---
 
 ## Q183103: Year 2000 Fix for Halncr.dll

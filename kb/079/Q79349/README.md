@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79349: Windows: Paper Feed Option on Printer Setup for HP Plotter"
-permalink: kb/079/Q79349/
+permalink: /kb/079/Q79349/
 ---
 
 ## Q79349: Windows: Paper Feed Option on Printer Setup for HP Plotter

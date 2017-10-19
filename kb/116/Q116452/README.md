@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116452: Windows 95 and After Dark 2.0 Issues"
-permalink: kb/116/Q116452/
+permalink: /kb/116/Q116452/
 ---
 
 ## Q116452: Windows 95 and After Dark 2.0 Issues

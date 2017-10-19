@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116111: Parallel and Printing Problems After Upgrading to WFWG 3.11"
-permalink: kb/116/Q116111/
+permalink: /kb/116/Q116111/
 ---
 
 ## Q116111: Parallel and Printing Problems After Upgrading to WFWG 3.11

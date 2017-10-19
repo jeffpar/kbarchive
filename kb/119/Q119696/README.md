@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119696: PC Adm: Err Msg: Please Update Your Version of Foldcomp"
-permalink: kb/119/Q119696/
+permalink: /kb/119/Q119696/
 ---
 
 ## Q119696: PC Adm: Err Msg: Please Update Your Version of Foldcomp

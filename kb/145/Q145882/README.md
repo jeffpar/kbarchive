@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145882: STOP 0x3f and Events 1001 and 2021 Appear On Heavily Used IIS"
-permalink: kb/145/Q145882/
+permalink: /kb/145/Q145882/
 ---
 
 ## Q145882: STOP 0x3f and Events 1001 and 2021 Appear On Heavily Used IIS

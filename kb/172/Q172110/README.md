@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172110: Cannot Install Windows NT Workstation from ZAK Server"
-permalink: kb/172/Q172110/
+permalink: /kb/172/Q172110/
 ---
 
 ## Q172110: Cannot Install Windows NT Workstation from ZAK Server

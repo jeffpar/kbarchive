@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142094: PC DOS: Err Msg: Notice 38: Empty Personal Address List (PAL)"
-permalink: kb/142/Q142094/
+permalink: /kb/142/Q142094/
 ---
 
 ## Q142094: PC DOS: Err Msg: Notice 38: Empty Personal Address List (PAL)

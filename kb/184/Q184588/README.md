@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184588: Outwars: Frame Rate Is Reduced if You Enable Fogging"
-permalink: kb/184/Q184588/
+permalink: /kb/184/Q184588/
 ---
 
 ## Q184588: Outwars: Frame Rate Is Reduced if You Enable Fogging

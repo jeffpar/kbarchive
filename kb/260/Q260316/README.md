@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260316: XADM: Unable to Expand Public Folder Hierarchy"
-permalink: kb/260/Q260316/
+permalink: /kb/260/Q260316/
 ---
 
 ## Q260316: XADM: Unable to Expand Public Folder Hierarchy

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196185: XADM: Reply All to Moved Messages Sends Copy to Sender"
-permalink: kb/196/Q196185/
+permalink: /kb/196/Q196185/
 ---
 
 ## Q196185: XADM: Reply All to Moved Messages Sends Copy to Sender

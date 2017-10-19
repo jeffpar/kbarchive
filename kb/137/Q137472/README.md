@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137472: HOWTO: How to Deal with a load=foxrstart.exe Line in the Win.ini"
-permalink: kb/137/Q137472/
+permalink: /kb/137/Q137472/
 ---
 
 ## Q137472: HOWTO: How to Deal with a load=foxrstart.exe Line in the Win.ini

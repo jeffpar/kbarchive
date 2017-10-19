@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96554: WFWG: Microsoft Diagnostics (MSD) May Fail in Standard Mode"
-permalink: kb/096/Q96554/
+permalink: /kb/096/Q96554/
 ---
 
 ## Q96554: WFWG: Microsoft Diagnostics (MSD) May Fail in Standard Mode

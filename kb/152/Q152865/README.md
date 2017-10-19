@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152865: XCLN: Last Update Time Not Saved Using Remote Mail"
-permalink: kb/152/Q152865/
+permalink: /kb/152/Q152865/
 ---
 
 ## Q152865: XCLN: Last Update Time Not Saved Using Remote Mail

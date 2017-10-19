@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145902: XCLN: Pressing ESC Key Does Not Close Profiles Dialog"
-permalink: kb/145/Q145902/
+permalink: /kb/145/Q145902/
 ---
 
 ## Q145902: XCLN: Pressing ESC Key Does Not Close Profiles Dialog

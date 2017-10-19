@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134987: Installing 3.51 Service Pack 1 with Shell Technology Preview"
-permalink: kb/134/Q134987/
+permalink: /kb/134/Q134987/
 ---
 
 ## Q134987: Installing 3.51 Service Pack 1 with Shell Technology Preview

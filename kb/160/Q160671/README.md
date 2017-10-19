@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160671: Stop 0x0000007F May Occur on Compaq SystemPro"
-permalink: kb/160/Q160671/
+permalink: /kb/160/Q160671/
 ---
 
 ## Q160671: Stop 0x0000007F May Occur on Compaq SystemPro

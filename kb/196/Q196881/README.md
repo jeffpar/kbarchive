@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196881: WD97: How to Modify the Sales Tax Form Field in Invoice.dot"
-permalink: kb/196/Q196881/
+permalink: /kb/196/Q196881/
 ---
 
 ## Q196881: WD97: How to Modify the Sales Tax Form Field in Invoice.dot

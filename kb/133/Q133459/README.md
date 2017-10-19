@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133459: Art Gallery: Animations Fail with QVision 2000 Video Driver"
-permalink: kb/133/Q133459/
+permalink: /kb/133/Q133459/
 ---
 
 ## Q133459: Art Gallery: Animations Fail with QVision 2000 Video Driver

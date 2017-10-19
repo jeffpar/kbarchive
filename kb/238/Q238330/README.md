@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238330: Add Printer Wizard Offers More Printer Selections in Service Pac"
-permalink: kb/238/Q238330/
+permalink: /kb/238/Q238330/
 ---
 
 ## Q238330: Add Printer Wizard Offers More Printer Selections in Service Pac

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99716: SMTP: Attachments Named ATT1, ATT2, ATT#"
-permalink: kb/099/Q99716/
+permalink: /kb/099/Q99716/
 ---
 
 ## Q99716: SMTP: Attachments Named ATT1, ATT2, ATT#

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259213: XCLN: Journaling Configured, No Data in Outlook 97 &amp; Outlook 98"
-permalink: kb/259/Q259213/
+permalink: /kb/259/Q259213/
 ---
 
 ## Q259213: XCLN: Journaling Configured, No Data in Outlook 97 &amp; Outlook 98

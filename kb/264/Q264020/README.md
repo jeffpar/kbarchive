@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264020: XADM: How to Restrict External Internet Mail in One Mailbox"
-permalink: kb/264/Q264020/
+permalink: /kb/264/Q264020/
 ---
 
 ## Q264020: XADM: How to Restrict External Internet Mail in One Mailbox

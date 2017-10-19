@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145796: Print Manager Displays Macintosh EPS Document As File Name"
-permalink: kb/145/Q145796/
+permalink: /kb/145/Q145796/
 ---
 
 ## Q145796: Print Manager Displays Macintosh EPS Document As File Name

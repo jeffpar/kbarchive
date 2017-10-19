@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80653: PC Win: Scroll Bar on Compose Note Jumps Up and Down"
-permalink: kb/080/Q80653/
+permalink: /kb/080/Q80653/
 ---
 
 ## Q80653: PC Win: Scroll Bar on Compose Note Jumps Up and Down

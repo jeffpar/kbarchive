@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169772: PRB: VB5 .OCX Property Missing from VB4 Properties Window"
-permalink: kb/169/Q169772/
+permalink: /kb/169/Q169772/
 ---
 
 ## Q169772: PRB: VB5 .OCX Property Missing from VB4 Properties Window

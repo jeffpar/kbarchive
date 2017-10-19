@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168424: FIX: Localize Sample Can Not Be Built"
-permalink: kb/168/Q168424/
+permalink: /kb/168/Q168424/
 ---
 
 ## Q168424: FIX: Localize Sample Can Not Be Built

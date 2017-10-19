@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116487: BUG: No Compiler Error for Ambiguous C++ Conversion"
-permalink: kb/116/Q116487/
+permalink: /kb/116/Q116487/
 ---
 
 ## Q116487: BUG: No Compiler Error for Ambiguous C++ Conversion

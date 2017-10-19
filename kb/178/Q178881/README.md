@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178881: BUG: MSChart Control Can't Plot Data Points &gt;15 Decimal Places"
-permalink: kb/178/Q178881/
+permalink: /kb/178/Q178881/
 ---
 
 ## Q178881: BUG: MSChart Control Can't Plot Data Points &gt;15 Decimal Places

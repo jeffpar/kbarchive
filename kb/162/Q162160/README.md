@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162160: FIX: CFileDialog::DoModal Does Not Return 0"
-permalink: kb/162/Q162160/
+permalink: /kb/162/Q162160/
 ---
 
 ## Q162160: FIX: CFileDialog::DoModal Does Not Return 0

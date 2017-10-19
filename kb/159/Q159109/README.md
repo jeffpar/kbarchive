@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159109: ExitWindowsEx Does Not Work With NEC Power Switch Service"
-permalink: kb/159/Q159109/
+permalink: /kb/159/Q159109/
 ---
 
 ## Q159109: ExitWindowsEx Does Not Work With NEC Power Switch Service

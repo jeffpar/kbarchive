@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99698: Mac Bkup: Backup Can Stop Remote Connection"
-permalink: kb/099/Q99698/
+permalink: /kb/099/Q99698/
 ---
 
 ## Q99698: Mac Bkup: Backup Can Stop Remote Connection

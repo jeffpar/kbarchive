@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274049: Encarta: Recording Problems When Two Sound Cards Are Installed"
-permalink: kb/274/Q274049/
+permalink: /kb/274/Q274049/
 ---
 
 ## Q274049: Encarta: Recording Problems When Two Sound Cards Are Installed

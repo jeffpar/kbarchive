@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33820: FS: Napa County Airport Is Not Visible"
-permalink: kb/033/Q33820/
+permalink: /kb/033/Q33820/
 ---
 
 ## Q33820: FS: Napa County Airport Is Not Visible

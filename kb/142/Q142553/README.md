@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142553: How to Create an Engraved Effect on a Form"
-permalink: kb/142/Q142553/
+permalink: /kb/142/Q142553/
 ---
 
 ## Q142553: How to Create an Engraved Effect on a Form

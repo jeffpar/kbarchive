@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136955: Hang When Ejecting Audio CD with Panasonic CR-562B Drive"
-permalink: kb/136/Q136955/
+permalink: /kb/136/Q136955/
 ---
 
 ## Q136955: Hang When Ejecting Audio CD with Panasonic CR-562B Drive

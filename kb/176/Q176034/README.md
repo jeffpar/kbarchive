@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176034: XWEB: Outlook View Does Not Appear in OWA View List"
-permalink: kb/176/Q176034/
+permalink: /kb/176/Q176034/
 ---
 
 ## Q176034: XWEB: Outlook View Does Not Appear in OWA View List

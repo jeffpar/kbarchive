@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169014: How to Setup for a Remote Debug"
-permalink: kb/169/Q169014/
+permalink: /kb/169/Q169014/
 ---
 
 ## Q169014: How to Setup for a Remote Debug

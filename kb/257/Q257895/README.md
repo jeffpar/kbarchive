@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257895: XCLN: Support for Macintosh Operating System"
-permalink: kb/257/Q257895/
+permalink: /kb/257/Q257895/
 ---
 
 ## Q257895: XCLN: Support for Macintosh Operating System

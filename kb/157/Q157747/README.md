@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157747: PPT: Palatino Font Prints Squished From Windows 95"
-permalink: kb/157/Q157747/
+permalink: /kb/157/Q157747/
 ---
 
 ## Q157747: PPT: Palatino Font Prints Squished From Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139122: Manage WINS &amp; DHCP by Using Only Local Administrator Privilege"
-permalink: kb/139/Q139122/
+permalink: /kb/139/Q139122/
 ---
 
 ## Q139122: Manage WINS &amp; DHCP by Using Only Local Administrator Privilege

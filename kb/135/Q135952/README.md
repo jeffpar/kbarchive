@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135952: ScanDisk Last Result: Check Was Stopped Because of an Error"
-permalink: kb/135/Q135952/
+permalink: /kb/135/Q135952/
 ---
 
 ## Q135952: ScanDisk Last Result: Check Was Stopped Because of an Error

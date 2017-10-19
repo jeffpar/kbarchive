@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308202: HOW TO: Create and Configure a Catalog for Indexing"
-permalink: kb/308/Q308202/
+permalink: /kb/308/Q308202/
 ---
 
 ## Q308202: HOW TO: Create and Configure a Catalog for Indexing

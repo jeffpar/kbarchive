@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148186: DOCERR: RETURN Statement Not Supported in Main Program Unit"
-permalink: kb/148/Q148186/
+permalink: /kb/148/Q148186/
 ---
 
 ## Q148186: DOCERR: RETURN Statement Not Supported in Main Program Unit

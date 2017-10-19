@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227797: Offline Logon Servers Continue to Show Errors in Site Status"
-permalink: kb/227/Q227797/
+permalink: /kb/227/Q227797/
 ---
 
 ## Q227797: Offline Logon Servers Continue to Show Errors in Site Status

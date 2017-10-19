@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183407: XADM: Err Msg: There Are No Mailboxes in Container Specified"
-permalink: kb/183/Q183407/
+permalink: /kb/183/Q183407/
 ---
 
 ## Q183407: XADM: Err Msg: There Are No Mailboxes in Container Specified

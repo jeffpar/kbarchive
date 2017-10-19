@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159523: XCLN: Can't Install SP2 on Windows NT w/out Admin Privileges"
-permalink: kb/159/Q159523/
+permalink: /kb/159/Q159523/
 ---
 
 ## Q159523: XCLN: Can't Install SP2 on Windows NT w/out Admin Privileges

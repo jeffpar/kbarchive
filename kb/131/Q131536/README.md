@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131536: Mac Encarta 95: Encarta Fails to Start and Stopwatch Appears"
-permalink: kb/131/Q131536/
+permalink: /kb/131/Q131536/
 ---
 
 ## Q131536: Mac Encarta 95: Encarta Fails to Start and Stopwatch Appears

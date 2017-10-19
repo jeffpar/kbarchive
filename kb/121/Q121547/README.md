@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121547: Setup Doesn't Detect NEC 260 IDE CD-ROM Used by Gateway 2000"
-permalink: kb/121/Q121547/
+permalink: /kb/121/Q121547/
 ---
 
 ## Q121547: Setup Doesn't Detect NEC 260 IDE CD-ROM Used by Gateway 2000

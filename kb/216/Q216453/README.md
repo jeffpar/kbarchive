@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216453: FP: FP98: Security Patch for FrontPage Personal Web Server"
-permalink: kb/216/Q216453/
+permalink: /kb/216/Q216453/
 ---
 
 ## Q216453: FP: FP98: Security Patch for FrontPage Personal Web Server

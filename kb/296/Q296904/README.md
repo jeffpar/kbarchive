@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296904: HOWTO: Install the PocketPC Emulator with JScript Support"
-permalink: kb/296/Q296904/
+permalink: /kb/296/Q296904/
 ---
 
 ## Q296904: HOWTO: Install the PocketPC Emulator with JScript Support

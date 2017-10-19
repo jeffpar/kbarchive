@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57561: Mac DOS: Support for Hercules InColor Graphics Cards"
-permalink: kb/057/Q57561/
+permalink: /kb/057/Q57561/
 ---
 
 ## Q57561: Mac DOS: Support for Hercules InColor Graphics Cards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237755: INF Error Message After Internet Explorer 4.01 SP2 Installation"
-permalink: kb/237/Q237755/
+permalink: /kb/237/Q237755/
 ---
 
 ## Q237755: INF Error Message After Internet Explorer 4.01 SP2 Installation

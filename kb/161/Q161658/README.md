@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161658: XCLN: Run-Time Error 424: Object Required Form Error"
-permalink: kb/161/Q161658/
+permalink: /kb/161/Q161658/
 ---
 
 ## Q161658: XCLN: Run-Time Error 424: Object Required Form Error

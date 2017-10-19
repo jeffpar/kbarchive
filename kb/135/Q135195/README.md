@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135195: Net Watcher Does Not Display Files in &quot;By Connection&quot; View"
-permalink: kb/135/Q135195/
+permalink: /kb/135/Q135195/
 ---
 
 ## Q135195: Net Watcher Does Not Display Files in &quot;By Connection&quot; View

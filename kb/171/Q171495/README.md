@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171495: FIX: Get Statement Not Working Correctly with Large UDT"
-permalink: kb/171/Q171495/
+permalink: /kb/171/Q171495/
 ---
 
 ## Q171495: FIX: Get Statement Not Working Correctly with Large UDT

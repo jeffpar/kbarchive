@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132622: Cannot Print with Avery LabelPro"
-permalink: kb/132/Q132622/
+permalink: /kb/132/Q132622/
 ---
 
 ## Q132622: Cannot Print with Avery LabelPro

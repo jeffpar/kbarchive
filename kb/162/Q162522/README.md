@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162522: ADT/ODE: Distributing a Split Database Application with ODE/ADT"
-permalink: kb/162/Q162522/
+permalink: /kb/162/Q162522/
 ---
 
 ## Q162522: ADT/ODE: Distributing a Split Database Application with ODE/ADT

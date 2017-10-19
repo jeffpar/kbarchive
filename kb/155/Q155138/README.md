@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155138: Stop 0x00000077 in Fpnwsrv.sys During Burst Mode Read"
-permalink: kb/155/Q155138/
+permalink: /kb/155/Q155138/
 ---
 
 ## Q155138: Stop 0x00000077 in Fpnwsrv.sys During Burst Mode Read

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136036: Supported Network Adapters Not Available in Remoteboot Manager"
-permalink: kb/136/Q136036/
+permalink: /kb/136/Q136036/
 ---
 
 ## Q136036: Supported Network Adapters Not Available in Remoteboot Manager

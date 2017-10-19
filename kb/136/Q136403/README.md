@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136403: Description of UDP Ports"
-permalink: kb/136/Q136403/
+permalink: /kb/136/Q136403/
 ---
 
 ## Q136403: Description of UDP Ports

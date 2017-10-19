@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165854: SNA 3.0 Service Pack 1 Readme.txt File"
-permalink: kb/165/Q165854/
+permalink: /kb/165/Q165854/
 ---
 
 ## Q165854: SNA 3.0 Service Pack 1 Readme.txt File

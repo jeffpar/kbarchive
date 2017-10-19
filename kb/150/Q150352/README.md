@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150352: MSB Earth: Other Program Windows Are Resized After Using MSB"
-permalink: kb/150/Q150352/
+permalink: /kb/150/Q150352/
 ---
 
 ## Q150352: MSB Earth: Other Program Windows Are Resized After Using MSB

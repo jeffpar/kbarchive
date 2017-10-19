@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113122: Bookshelf: After Jumping to Topic, Cannot Find Info"
-permalink: kb/113/Q113122/
+permalink: /kb/113/Q113122/
 ---
 
 ## Q113122: Bookshelf: After Jumping to Topic, Cannot Find Info

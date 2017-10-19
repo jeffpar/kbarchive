@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234487: XCLN: Send To Mail Recipient Opens an Outlook Plain Text Message"
-permalink: kb/234/Q234487/
+permalink: /kb/234/Q234487/
 ---
 
 ## Q234487: XCLN: Send To Mail Recipient Opens an Outlook Plain Text Message

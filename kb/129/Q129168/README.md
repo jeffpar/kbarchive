@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129168: How to Recover Corrupt DataBase Container Files"
-permalink: kb/129/Q129168/
+permalink: /kb/129/Q129168/
 ---
 
 ## Q129168: How to Recover Corrupt DataBase Container Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67165: AllocCStoDSAlias Function Not Documented &amp; Not Supported"
-permalink: kb/067/Q67165/
+permalink: /kb/067/Q67165/
 ---
 
 ## Q67165: AllocCStoDSAlias Function Not Documented &amp; Not Supported

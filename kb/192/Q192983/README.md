@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192983: XCON: Content Conversion Errors on OLE Embedded Objects"
-permalink: kb/192/Q192983/
+permalink: /kb/192/Q192983/
 ---
 
 ## Q192983: XCON: Content Conversion Errors on OLE Embedded Objects

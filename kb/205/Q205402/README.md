@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205402: FIX: ClassView Doesn't Show Derived Classes in Embedded Namespac"
-permalink: kb/205/Q205402/
+permalink: /kb/205/Q205402/
 ---
 
 ## Q205402: FIX: ClassView Doesn't Show Derived Classes in Embedded Namespac

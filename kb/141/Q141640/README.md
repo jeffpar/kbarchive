@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141640: Mac Encarta 96 Encyclopedia: Manual Installation Instructions"
-permalink: kb/141/Q141640/
+permalink: /kb/141/Q141640/
 ---
 
 ## Q141640: Mac Encarta 96 Encyclopedia: Manual Installation Instructions

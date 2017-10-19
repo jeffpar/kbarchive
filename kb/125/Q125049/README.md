@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125049: BUG: ExtractIcon Not Freeing Up Memory"
-permalink: kb/125/Q125049/
+permalink: /kb/125/Q125049/
 ---
 
 ## Q125049: BUG: ExtractIcon Not Freeing Up Memory

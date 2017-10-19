@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99621: Changing Font Used in Print Commands in FP for Windows"
-permalink: kb/099/Q99621/
+permalink: /kb/099/Q99621/
 ---
 
 ## Q99621: Changing Font Used in Print Commands in FP for Windows

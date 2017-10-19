@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107979: MemMaker Err Msg: Error Reading CONFIG.SYS in Root"
-permalink: kb/107/Q107979/
+permalink: /kb/107/Q107979/
 ---
 
 ## Q107979: MemMaker Err Msg: Error Reading CONFIG.SYS in Root

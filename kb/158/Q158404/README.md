@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158404: PRB: Cannot Start VFP from Run Open Line If Space in Path"
-permalink: kb/158/Q158404/
+permalink: /kb/158/Q158404/
 ---
 
 ## Q158404: PRB: Cannot Start VFP from Run Open Line If Space in Path

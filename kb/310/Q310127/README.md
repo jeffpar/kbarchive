@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310127: SMS: Operating System Appears as &quot;Windows 9x&quot; at Parent Site"
-permalink: kb/310/Q310127/
+permalink: /kb/310/Q310127/
 ---
 
 ## Q310127: SMS: Operating System Appears as &quot;Windows 9x&quot; at Parent Site

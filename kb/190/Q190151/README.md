@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190151: SNA Server in a Cluster Server Environment"
-permalink: kb/190/Q190151/
+permalink: /kb/190/Q190151/
 ---
 
 ## Q190151: SNA Server in a Cluster Server Environment

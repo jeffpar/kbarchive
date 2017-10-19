@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151694: Trimble Mobile GPS Disk Contents (3.5 inch, 1.44 MB)"
-permalink: kb/151/Q151694/
+permalink: /kb/151/Q151694/
 ---
 
 ## Q151694: Trimble Mobile GPS Disk Contents (3.5 inch, 1.44 MB)

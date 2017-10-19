@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123402: Microsoft Office Manager ToolTips Don't Appear"
-permalink: kb/123/Q123402/
+permalink: /kb/123/Q123402/
 ---
 
 ## Q123402: Microsoft Office Manager ToolTips Don't Appear

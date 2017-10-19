@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73716: BACKUP Deletes Files from Root of Destination Disk"
-permalink: kb/073/Q73716/
+permalink: /kb/073/Q73716/
 ---
 
 ## Q73716: BACKUP Deletes Files from Root of Destination Disk

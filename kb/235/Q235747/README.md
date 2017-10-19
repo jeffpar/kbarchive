@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235747: SMS: Software Metering Tips Nonexistent Check Boxes"
-permalink: kb/235/Q235747/
+permalink: /kb/235/Q235747/
 ---
 
 ## Q235747: SMS: Software Metering Tips Nonexistent Check Boxes

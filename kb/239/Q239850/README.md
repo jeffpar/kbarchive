@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239850: Schannel Updated to Support Multiple SGC Certificate Authorities"
-permalink: kb/239/Q239850/
+permalink: /kb/239/Q239850/
 ---
 
 ## Q239850: Schannel Updated to Support Multiple SGC Certificate Authorities

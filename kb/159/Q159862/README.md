@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159862: Close Combat: Unable to Determine Leader's Affect on Team(s)"
-permalink: kb/159/Q159862/
+permalink: /kb/159/Q159862/
 ---
 
 ## Q159862: Close Combat: Unable to Determine Leader's Affect on Team(s)

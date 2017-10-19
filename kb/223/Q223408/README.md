@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223408: Scheduled Logoff Fails on Locked Workstation If Screen Saver On"
-permalink: kb/223/Q223408/
+permalink: /kb/223/Q223408/
 ---
 
 ## Q223408: Scheduled Logoff Fails on Locked Workstation If Screen Saver On

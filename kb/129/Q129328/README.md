@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129328: Cannot View Files and Directories on a Compressed NTFS Partition"
-permalink: kb/129/Q129328/
+permalink: /kb/129/Q129328/
 ---
 
 ## Q129328: Cannot View Files and Directories on a Compressed NTFS Partition

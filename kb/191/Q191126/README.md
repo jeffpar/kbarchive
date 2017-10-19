@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191126: PRB: Font Changes as ActiveX Control Resizes"
-permalink: kb/191/Q191126/
+permalink: /kb/191/Q191126/
 ---
 
 ## Q191126: PRB: Font Changes as ActiveX Control Resizes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279172: WP: &quot;Library not registered&quot; Error During Index Server Query"
-permalink: kb/279/Q279172/
+permalink: /kb/279/Q279172/
 ---
 
 ## Q279172: WP: &quot;Library not registered&quot; Error During Index Server Query

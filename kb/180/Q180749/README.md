@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180749: BUG: Menu Shortcuts May Not Be Disabled with Form"
-permalink: kb/180/Q180749/
+permalink: /kb/180/Q180749/
 ---
 
 ## Q180749: BUG: Menu Shortcuts May Not Be Disabled with Form

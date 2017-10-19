@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128399: MS-DOS-Based Application Checks for Existence of Windows"
-permalink: kb/128/Q128399/
+permalink: /kb/128/Q128399/
 ---
 
 ## Q128399: MS-DOS-Based Application Checks for Existence of Windows

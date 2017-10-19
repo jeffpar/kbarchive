@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238954: XWEB: OWA Server Connectivity over a Firewall/Proxy using NAT"
-permalink: kb/238/Q238954/
+permalink: /kb/238/Q238954/
 ---
 
 ## Q238954: XWEB: OWA Server Connectivity over a Firewall/Proxy using NAT

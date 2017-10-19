@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173981: PRB: Behavior Differences of Print Dialog on Different Platforms"
-permalink: kb/173/Q173981/
+permalink: /kb/173/Q173981/
 ---
 
 ## Q173981: PRB: Behavior Differences of Print Dialog on Different Platforms

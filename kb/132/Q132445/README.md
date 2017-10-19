@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132445: File Manager Hangs on Computer Using Mitsumi CD-ROM Driver"
-permalink: kb/132/Q132445/
+permalink: /kb/132/Q132445/
 ---
 
 ## Q132445: File Manager Hangs on Computer Using Mitsumi CD-ROM Driver

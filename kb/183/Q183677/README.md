@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183677: Client Authentication with Personal Certificates Fail"
-permalink: kb/183/Q183677/
+permalink: /kb/183/Q183677/
 ---
 
 ## Q183677: Client Authentication with Personal Certificates Fail

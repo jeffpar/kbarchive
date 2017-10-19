@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120735: Space Simulator Err Msg: Violated System Integrity in Windows"
-permalink: kb/120/Q120735/
+permalink: /kb/120/Q120735/
 ---
 
 ## Q120735: Space Simulator Err Msg: Violated System Integrity in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184602: Outwars: How to Host or Join a Multiplayer Game"
-permalink: kb/184/Q184602/
+permalink: /kb/184/Q184602/
 ---
 
 ## Q184602: Outwars: How to Host or Join a Multiplayer Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184437: XADM: Information Store Stops with Large Number of NNTP Users"
-permalink: kb/184/Q184437/
+permalink: /kb/184/Q184437/
 ---
 
 ## Q184437: XADM: Information Store Stops with Large Number of NNTP Users

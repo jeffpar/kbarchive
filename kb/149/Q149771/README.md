@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149771: BUG: Rebind Fails if Retrieve Fields Are Set at Design Time"
-permalink: kb/149/Q149771/
+permalink: /kb/149/Q149771/
 ---
 
 ## Q149771: BUG: Rebind Fails if Retrieve Fields Are Set at Design Time

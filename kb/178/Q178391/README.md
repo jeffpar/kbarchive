@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178391: PRB: Oracle TNS: Authentication Service Initialization Error"
-permalink: kb/178/Q178391/
+permalink: /kb/178/Q178391/
 ---
 
 ## Q178391: PRB: Oracle TNS: Authentication Service Initialization Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48768: Mac Srv: Unable to Determine Server from Chooser Window"
-permalink: kb/048/Q48768/
+permalink: /kb/048/Q48768/
 ---
 
 ## Q48768: Mac Srv: Unable to Determine Server from Chooser Window

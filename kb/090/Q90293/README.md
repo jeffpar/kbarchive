@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90293: .SHG Files Cannot Be Edited"
-permalink: kb/090/Q90293/
+permalink: /kb/090/Q90293/
 ---
 
 ## Q90293: .SHG Files Cannot Be Edited

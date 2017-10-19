@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87149: Mac Wkst: Connection to a Mail Server While Offline"
-permalink: kb/087/Q87149/
+permalink: /kb/087/Q87149/
 ---
 
 ## Q87149: Mac Wkst: Connection to a Mail Server While Offline

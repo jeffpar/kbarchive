@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132628: Resolution Change Does Not Realign Microsoft Office Toolbar"
-permalink: kb/132/Q132628/
+permalink: /kb/132/Q132628/
 ---
 
 ## Q132628: Resolution Change Does Not Realign Microsoft Office Toolbar

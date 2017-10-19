@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59093: FIX: F6412 &quot;SHARE Not Installed&quot; Error When File Name Invalid"
-permalink: kb/059/Q59093/
+permalink: /kb/059/Q59093/
 ---
 
 ## Q59093: FIX: F6412 &quot;SHARE Not Installed&quot; Error When File Name Invalid

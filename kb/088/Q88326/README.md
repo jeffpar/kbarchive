@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88326: Unable to Exit Paintbrush with Earlier DLL Files Installed"
-permalink: kb/088/Q88326/
+permalink: /kb/088/Q88326/
 ---
 
 ## Q88326: Unable to Exit Paintbrush with Earlier DLL Files Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152055: FIX: No Error and Constructor Not Called if Prototype Missing"
-permalink: kb/152/Q152055/
+permalink: /kb/152/Q152055/
 ---
 
 ## Q152055: FIX: No Error and Constructor Not Called if Prototype Missing

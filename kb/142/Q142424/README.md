@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142424: Third-Party Browsers Do Not Automatically Disconnect from MSN"
-permalink: kb/142/Q142424/
+permalink: /kb/142/Q142424/
 ---
 
 ## Q142424: Third-Party Browsers Do Not Automatically Disconnect from MSN

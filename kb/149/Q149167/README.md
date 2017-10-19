@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149167: Unable to Allocate Resources from the NDIS Wrapper"
-permalink: kb/149/Q149167/
+permalink: /kb/149/Q149167/
 ---
 
 ## Q149167: Unable to Allocate Resources from the NDIS Wrapper

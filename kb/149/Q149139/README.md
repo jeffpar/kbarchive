@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149139: FIX: Visual C++ Breaks ODBC CLongBinary w/ GlobalReAll Misuse"
-permalink: kb/149/Q149139/
+permalink: /kb/149/Q149139/
 ---
 
 ## Q149139: FIX: Visual C++ Breaks ODBC CLongBinary w/ GlobalReAll Misuse

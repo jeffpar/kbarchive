@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128453: Windows NT 3.51 Hangs (Memory Access Violation) Running Exchange"
-permalink: kb/128/Q128453/
+permalink: /kb/128/Q128453/
 ---
 
 ## Q128453: Windows NT 3.51 Hangs (Memory Access Violation) Running Exchange

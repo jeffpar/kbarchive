@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261951: MSB Bugs: Cannot Print Field Manual at Freshwater Pond"
-permalink: kb/261/Q261951/
+permalink: /kb/261/Q261951/
 ---
 
 ## Q261951: MSB Bugs: Cannot Print Field Manual at Freshwater Pond

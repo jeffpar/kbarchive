@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180402: PRB: MFC ActiveX Control Ignores ARROW Keys on VB Container"
-permalink: kb/180/Q180402/
+permalink: /kb/180/Q180402/
 ---
 
 ## Q180402: PRB: MFC ActiveX Control Ignores ARROW Keys on VB Container

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293094: Negative Numbers In MSN Explorer E-mail Folders"
-permalink: kb/293/Q293094/
+permalink: /kb/293/Q293094/
 ---
 
 ## Q293094: Negative Numbers In MSN Explorer E-mail Folders

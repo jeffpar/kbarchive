@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107091: PROFS: Duplicate Messages Delivered to PROFS Users"
-permalink: kb/107/Q107091/
+permalink: /kb/107/Q107091/
 ---
 
 ## Q107091: PROFS: Duplicate Messages Delivered to PROFS Users

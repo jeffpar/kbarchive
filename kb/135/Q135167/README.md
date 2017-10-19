@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135167: INCLUDE/DISPLAY Login Script Commands Do Not Accept UNC Paths"
-permalink: kb/135/Q135167/
+permalink: /kb/135/Q135167/
 ---
 
 ## Q135167: INCLUDE/DISPLAY Login Script Commands Do Not Accept UNC Paths

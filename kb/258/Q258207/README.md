@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258207: BUG: Err Msg in Locals and Watch Window in Visual Basic 6.0"
-permalink: kb/258/Q258207/
+permalink: /kb/258/Q258207/
 ---
 
 ## Q258207: BUG: Err Msg in Locals and Watch Window in Visual Basic 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153645: Appctl16.exe Doesn't Look in Package Source Directory for Config"
-permalink: kb/153/Q153645/
+permalink: /kb/153/Q153645/
 ---
 
 ## Q153645: Appctl16.exe Doesn't Look in Package Source Directory for Config

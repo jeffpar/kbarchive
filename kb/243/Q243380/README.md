@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243380: XADM: Using Windows 2000 Backup Utility to Perform Online Backup"
-permalink: kb/243/Q243380/
+permalink: /kb/243/Q243380/
 ---
 
 ## Q243380: XADM: Using Windows 2000 Backup Utility to Perform Online Backup

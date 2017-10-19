@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158772: Err Msg: Fltsim95 Caused an Invalid Page Fault in Simsui.dll"
-permalink: kb/158/Q158772/
+permalink: /kb/158/Q158772/
 ---
 
 ## Q158772: Err Msg: Fltsim95 Caused an Invalid Page Fault in Simsui.dll

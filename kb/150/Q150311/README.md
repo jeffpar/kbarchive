@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150311: Call Forwarding Feature May Not Work"
-permalink: kb/150/Q150311/
+permalink: /kb/150/Q150311/
 ---
 
 ## Q150311: Call Forwarding Feature May Not Work

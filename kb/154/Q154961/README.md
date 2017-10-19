@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154961: &quot;Allow New Users to Login&quot; Always On After Restarting FPNW"
-permalink: kb/154/Q154961/
+permalink: /kb/154/Q154961/
 ---
 
 ## Q154961: &quot;Allow New Users to Login&quot; Always On After Restarting FPNW

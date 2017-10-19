@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104781: Cannot Delete SUBST Drives If You Are Using DoubleSpace"
-permalink: kb/104/Q104781/
+permalink: /kb/104/Q104781/
 ---
 
 ## Q104781: Cannot Delete SUBST Drives If You Are Using DoubleSpace

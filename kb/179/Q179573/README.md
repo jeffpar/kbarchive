@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179573: XADM: Orphaned Objects and Exchange Server Directory"
-permalink: kb/179/Q179573/
+permalink: /kb/179/Q179573/
 ---
 
 ## Q179573: XADM: Orphaned Objects and Exchange Server Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233470: Business Planner Err Msg: The Macros in the Project Are Disabled"
-permalink: kb/233/Q233470/
+permalink: /kb/233/Q233470/
 ---
 
 ## Q233470: Business Planner Err Msg: The Macros in the Project Are Disabled

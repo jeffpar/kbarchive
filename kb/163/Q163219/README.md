@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163219: Spooler Uses 92%+ CPU When a Lexmark TCP/IP Printer Goes Offline"
-permalink: kb/163/Q163219/
+permalink: /kb/163/Q163219/
 ---
 
 ## Q163219: Spooler Uses 92%+ CPU When a Lexmark TCP/IP Printer Goes Offline

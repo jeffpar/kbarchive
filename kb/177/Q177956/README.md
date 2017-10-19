@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177956: XFOR: Interoperability Between Exchange Server 5.0 and 5.5"
-permalink: kb/177/Q177956/
+permalink: /kb/177/Q177956/
 ---
 
 ## Q177956: XFOR: Interoperability Between Exchange Server 5.0 and 5.5

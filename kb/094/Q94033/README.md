@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94033: Windows: Auto Resume Failure on Toshiba Computers"
-permalink: kb/094/Q94033/
+permalink: /kb/094/Q94033/
 ---
 
 ## Q94033: Windows: Auto Resume Failure on Toshiba Computers

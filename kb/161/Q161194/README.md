@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161194: Access Violation When Adding a Printer in Windows NT 4.0"
-permalink: kb/161/Q161194/
+permalink: /kb/161/Q161194/
 ---
 
 ## Q161194: Access Violation When Adding a Printer in Windows NT 4.0

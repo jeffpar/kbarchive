@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139712: Removable SCSI Media Not Visible in Windows Explorer"
-permalink: kb/139/Q139712/
+permalink: /kb/139/Q139712/
 ---
 
 ## Q139712: Removable SCSI Media Not Visible in Windows Explorer

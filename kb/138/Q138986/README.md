@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138986: 3D Movie Maker: Plane/Actor Flips Over When Raising or Lowering"
-permalink: kb/138/Q138986/
+permalink: /kb/138/Q138986/
 ---
 
 ## Q138986: 3D Movie Maker: Plane/Actor Flips Over When Raising or Lowering

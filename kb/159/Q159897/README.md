@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159897: PRB: Listbox Repaint Problem under Middle East Windows 3.1"
-permalink: kb/159/Q159897/
+permalink: /kb/159/Q159897/
 ---
 
 ## Q159897: PRB: Listbox Repaint Problem under Middle East Windows 3.1

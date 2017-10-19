@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64882: Logitech Serial Mouse and Proteon P-1340 Card with Windows"
-permalink: kb/064/Q64882/
+permalink: /kb/064/Q64882/
 ---
 
 ## Q64882: Logitech Serial Mouse and Proteon P-1340 Card with Windows

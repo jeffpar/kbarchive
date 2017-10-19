@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128896: PRB: Exception in Service Causes JIT Debugger to Hang Computer"
-permalink: kb/128/Q128896/
+permalink: /kb/128/Q128896/
 ---
 
 ## Q128896: PRB: Exception in Service Causes JIT Debugger to Hang Computer

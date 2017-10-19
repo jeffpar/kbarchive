@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154855: System Reserved Partitions on PowerPCs"
-permalink: kb/154/Q154855/
+permalink: /kb/154/Q154855/
 ---
 
 ## Q154855: System Reserved Partitions on PowerPCs

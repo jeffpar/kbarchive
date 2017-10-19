@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234499: Microsoft Pocket Guide to Access 2000 Comments and Corrections"
-permalink: kb/234/Q234499/
+permalink: /kb/234/Q234499/
 ---
 
 ## Q234499: Microsoft Pocket Guide to Access 2000 Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221585: FIX: C1001 - Internal Compiler Error on String Default Argument"
-permalink: kb/221/Q221585/
+permalink: /kb/221/Q221585/
 ---
 
 ## Q221585: FIX: C1001 - Internal Compiler Error on String Default Argument

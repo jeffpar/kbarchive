@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66729: Lotus 3.0 Does Not Run Under Windows 3.0 in Enhanced Mode"
-permalink: kb/066/Q66729/
+permalink: /kb/066/Q66729/
 ---
 
 ## Q66729: Lotus 3.0 Does Not Run Under Windows 3.0 in Enhanced Mode

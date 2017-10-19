@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150126: BUG: FOR4280 Warning Given for Unused Result Variables"
-permalink: kb/150/Q150126/
+permalink: /kb/150/Q150126/
 ---
 
 ## Q150126: BUG: FOR4280 Warning Given for Unused Result Variables

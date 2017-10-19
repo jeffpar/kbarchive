@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194106: FP98: How to Edit/Delete Articles in a FrontPage Discussion Web"
-permalink: kb/194/Q194106/
+permalink: /kb/194/Q194106/
 ---
 
 ## Q194106: FP98: How to Edit/Delete Articles in a FrontPage Discussion Web

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235868: Invoking COMTI Method Elicits MTS Event ID 4128"
-permalink: kb/235/Q235868/
+permalink: /kb/235/Q235868/
 ---
 
 ## Q235868: Invoking COMTI Method Elicits MTS Event ID 4128

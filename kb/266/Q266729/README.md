@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266729: Netlogon Behavior in Windows NT 4.0"
-permalink: kb/266/Q266729/
+permalink: /kb/266/Q266729/
 ---
 
 ## Q266729: Netlogon Behavior in Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173256: Flight Simulator for Win95 Inside Moves, Corrections"
-permalink: kb/173/Q173256/
+permalink: /kb/173/Q173256/
 ---
 
 ## Q173256: Flight Simulator for Win95 Inside Moves, Corrections

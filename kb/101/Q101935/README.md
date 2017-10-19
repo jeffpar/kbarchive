@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101935: PC Win: How to Recover Missing Columns in Message Center Viewer"
-permalink: kb/101/Q101935/
+permalink: /kb/101/Q101935/
 ---
 
 ## Q101935: PC Win: How to Recover Missing Columns in Message Center Viewer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168714: XADM: Manager Field Incorrect After Import"
-permalink: kb/168/Q168714/
+permalink: /kb/168/Q168714/
 ---
 
 ## Q168714: XADM: Manager Field Incorrect After Import

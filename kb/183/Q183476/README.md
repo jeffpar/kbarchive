@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183476: Windows NT 4.0 Service Pack 4 Includes a New Version of SMTP"
-permalink: kb/183/Q183476/
+permalink: /kb/183/Q183476/
 ---
 
 ## Q183476: Windows NT 4.0 Service Pack 4 Includes a New Version of SMTP

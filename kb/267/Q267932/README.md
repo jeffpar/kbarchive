@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267932: Secure Communication Shows Key Manager Button, But No Edit"
-permalink: kb/267/Q267932/
+permalink: /kb/267/Q267932/
 ---
 
 ## Q267932: Secure Communication Shows Key Manager Button, But No Edit

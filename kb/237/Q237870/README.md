@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237870: HOWTO: Increment Version Information After Each Build in VC++"
-permalink: kb/237/Q237870/
+permalink: /kb/237/Q237870/
 ---
 
 ## Q237870: HOWTO: Increment Version Information After Each Build in VC++

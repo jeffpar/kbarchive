@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167321: FIX: Wrong Namespace Member Selected for Qualified ID"
-permalink: kb/167/Q167321/
+permalink: /kb/167/Q167321/
 ---
 
 ## Q167321: FIX: Wrong Namespace Member Selected for Qualified ID

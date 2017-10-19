@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157945: PRB: What to Do If Syntax Coloring Is Not Working"
-permalink: kb/157/Q157945/
+permalink: /kb/157/Q157945/
 ---
 
 ## Q157945: PRB: What to Do If Syntax Coloring Is Not Working

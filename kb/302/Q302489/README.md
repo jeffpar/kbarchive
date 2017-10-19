@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302489: MechWarrior: Error 0036: Old File Not Found"
-permalink: kb/302/Q302489/
+permalink: /kb/302/Q302489/
 ---
 
 ## Q302489: MechWarrior: Error 0036: Old File Not Found

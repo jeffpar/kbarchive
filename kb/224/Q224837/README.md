@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224837: DCOM Clients Ping Server After Client Program Has Shut Down"
-permalink: kb/224/Q224837/
+permalink: /kb/224/Q224837/
 ---
 
 ## Q224837: DCOM Clients Ping Server After Client Program Has Shut Down

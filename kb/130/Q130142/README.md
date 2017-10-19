@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130142: HOWTO: Install SourceSafe on a Windows NT Client Workstation"
-permalink: kb/130/Q130142/
+permalink: /kb/130/Q130142/
 ---
 
 ## Q130142: HOWTO: Install SourceSafe on a Windows NT Client Workstation

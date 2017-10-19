@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95818: Brooklyn Bridge Installation Changes CONFIG.SYS File"
-permalink: kb/095/Q95818/
+permalink: /kb/095/Q95818/
 ---
 
 ## Q95818: Brooklyn Bridge Installation Changes CONFIG.SYS File

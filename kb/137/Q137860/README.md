@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137860: STOP Msg: 0x0000007B Installing Windows NT on HP Vectra XU/XUC"
-permalink: kb/137/Q137860/
+permalink: /kb/137/Q137860/
 ---
 
 ## Q137860: STOP Msg: 0x0000007B Installing Windows NT on HP Vectra XU/XUC

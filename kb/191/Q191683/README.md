@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191683: BUG: @...GET Does Not Display the Complete Century Date"
-permalink: kb/191/Q191683/
+permalink: /kb/191/Q191683/
 ---
 
 ## Q191683: BUG: @...GET Does Not Display the Complete Century Date

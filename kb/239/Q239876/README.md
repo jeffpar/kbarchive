@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239876: NFL Fever 2000: Main Screen Is Not Centered on Your Monitor"
-permalink: kb/239/Q239876/
+permalink: /kb/239/Q239876/
 ---
 
 ## Q239876: NFL Fever 2000: Main Screen Is Not Centered on Your Monitor

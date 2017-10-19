@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280118: XFOR: Non-Delivery Report with &quot;501 Sender Domain Must Exist&quot; Me"
-permalink: kb/280/Q280118/
+permalink: /kb/280/Q280118/
 ---
 
 ## Q280118: XFOR: Non-Delivery Report with &quot;501 Sender Domain Must Exist&quot; Me

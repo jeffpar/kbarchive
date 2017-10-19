@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103849: PC Ext: Modem Scripts That Only Support 9600 Baud"
-permalink: kb/103/Q103849/
+permalink: /kb/103/Q103849/
 ---
 
 ## Q103849: PC Ext: Modem Scripts That Only Support 9600 Baud

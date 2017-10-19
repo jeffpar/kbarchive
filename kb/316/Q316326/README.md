@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316326: Asheron's Call: Game Quits or Err Msg: Client Has Encountered..."
-permalink: kb/316/Q316326/
+permalink: /kb/316/Q316326/
 ---
 
 ## Q316326: Asheron's Call: Game Quits or Err Msg: Client Has Encountered...

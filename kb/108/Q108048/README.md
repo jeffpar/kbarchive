@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108048: Printing Graphics from DOS Client Prints Incorrectly"
-permalink: kb/108/Q108048/
+permalink: /kb/108/Q108048/
 ---
 
 ## Q108048: Printing Graphics from DOS Client Prints Incorrectly

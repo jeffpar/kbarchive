@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134873: PPT7: Shaded Backgrounds Appear Banded in Word or Excel"
-permalink: kb/134/Q134873/
+permalink: /kb/134/Q134873/
 ---
 
 ## Q134873: PPT7: Shaded Backgrounds Appear Banded in Word or Excel

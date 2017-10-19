@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295749: XFOR: Internet Mail Service Set to Route Inbound Tries Outbound"
-permalink: kb/295/Q295749/
+permalink: /kb/295/Q295749/
 ---
 
 ## Q295749: XFOR: Internet Mail Service Set to Route Inbound Tries Outbound

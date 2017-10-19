@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137990: Error Printing Command Reference Topic in Windows NT Help"
-permalink: kb/137/Q137990/
+permalink: /kb/137/Q137990/
 ---
 
 ## Q137990: Error Printing Command Reference Topic in Windows NT Help

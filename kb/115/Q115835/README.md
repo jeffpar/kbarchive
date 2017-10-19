@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115835: TCP/IP Stack for Workgroups Add-On 3.11 Fails to Load"
-permalink: kb/115/Q115835/
+permalink: /kb/115/Q115835/
 ---
 
 ## Q115835: TCP/IP Stack for Workgroups Add-On 3.11 Fails to Load

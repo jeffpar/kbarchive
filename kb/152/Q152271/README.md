@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152271: EnumServicesStatus() Results in Services.exe Memory Leak"
-permalink: kb/152/Q152271/
+permalink: /kb/152/Q152271/
 ---
 
 ## Q152271: EnumServicesStatus() Results in Services.exe Memory Leak

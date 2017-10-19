@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166441: HOWTO: Getting IIS to work with Informix ODBC"
-permalink: kb/166/Q166441/
+permalink: /kb/166/Q166441/
 ---
 
 ## Q166441: HOWTO: Getting IIS to work with Informix ODBC

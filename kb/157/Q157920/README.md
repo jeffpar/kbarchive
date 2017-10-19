@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157920: INFO: How to Prevent Welcome to Windows NT Screen During Setup"
-permalink: kb/157/Q157920/
+permalink: /kb/157/Q157920/
 ---
 
 ## Q157920: INFO: How to Prevent Welcome to Windows NT Screen During Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149541: XCLN: Unable to Send or Save Messages"
-permalink: kb/149/Q149541/
+permalink: /kb/149/Q149541/
 ---
 
 ## Q149541: XCLN: Unable to Send or Save Messages

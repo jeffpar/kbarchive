@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189441: Accounts Missing After Migration with DSMN"
-permalink: kb/189/Q189441/
+permalink: /kb/189/Q189441/
 ---
 
 ## Q189441: Accounts Missing After Migration with DSMN

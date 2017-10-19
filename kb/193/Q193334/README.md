@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193334: PRB: Modification to DefProgramGroup in Setup.lst is Ignored"
-permalink: kb/193/Q193334/
+permalink: /kb/193/Q193334/
 ---
 
 ## Q193334: PRB: Modification to DefProgramGroup in Setup.lst is Ignored

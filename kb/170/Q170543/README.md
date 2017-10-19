@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170543: FP97: Font Set in Font Options Dialog Box Not Used in Browser"
-permalink: kb/170/Q170543/
+permalink: /kb/170/Q170543/
 ---
 
 ## Q170543: FP97: Font Set in Font Options Dialog Box Not Used in Browser

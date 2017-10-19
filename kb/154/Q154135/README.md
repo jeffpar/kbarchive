@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154135: How To Control Hours of Web Site Availability"
-permalink: kb/154/Q154135/
+permalink: /kb/154/Q154135/
 ---
 
 ## Q154135: How To Control Hours of Web Site Availability

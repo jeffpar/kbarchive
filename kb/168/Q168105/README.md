@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168105: WinNT Fails to Create a Memory.dmp On Any Other LUN Than 0"
-permalink: kb/168/Q168105/
+permalink: /kb/168/Q168105/
 ---
 
 ## Q168105: WinNT Fails to Create a Memory.dmp On Any Other LUN Than 0

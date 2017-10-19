@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221817: DirectX: Game Stops Responding (Hangs) or Quits Unexpectedly"
-permalink: kb/221/Q221817/
+permalink: /kb/221/Q221817/
 ---
 
 ## Q221817: DirectX: Game Stops Responding (Hangs) or Quits Unexpectedly

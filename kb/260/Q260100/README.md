@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260100: FIX: Printform Ignores Changes in Printer.orientation"
-permalink: kb/260/Q260100/
+permalink: /kb/260/Q260100/
 ---
 
 ## Q260100: FIX: Printform Ignores Changes in Printer.orientation

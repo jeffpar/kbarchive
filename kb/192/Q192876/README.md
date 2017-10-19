@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192876: BUG: DataFormat Doesn't Behave as Expected Using Datacombo/List"
-permalink: kb/192/Q192876/
+permalink: /kb/192/Q192876/
 ---
 
 ## Q192876: BUG: DataFormat Doesn't Behave as Expected Using Datacombo/List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195277: Programming Visual C++ 5th Ed. Comments and Corrections"
-permalink: kb/195/Q195277/
+permalink: /kb/195/Q195277/
 ---
 
 ## Q195277: Programming Visual C++ 5th Ed. Comments and Corrections

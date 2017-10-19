@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123733: MSB Solar: Minimum System Requirements"
-permalink: kb/123/Q123733/
+permalink: /kb/123/Q123733/
 ---
 
 ## Q123733: MSB Solar: Minimum System Requirements

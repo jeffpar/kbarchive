@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190977: BUG: Custom AppWizard Generates Incorrect Toolbars and Bitmaps"
-permalink: kb/190/Q190977/
+permalink: /kb/190/Q190977/
 ---
 
 ## Q190977: BUG: Custom AppWizard Generates Incorrect Toolbars and Bitmaps

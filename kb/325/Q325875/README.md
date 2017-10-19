@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325875: MechWarrior 4: How to Use Custom Decals for Insignias"
-permalink: kb/325/Q325875/
+permalink: /kb/325/Q325875/
 ---
 
 ## Q325875: MechWarrior 4: How to Use Custom Decals for Insignias

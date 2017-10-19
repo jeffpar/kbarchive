@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130769: FIX: Negative Value Passed to mktime() Generates Wrong Date"
-permalink: kb/130/Q130769/
+permalink: /kb/130/Q130769/
 ---
 
 ## Q130769: FIX: Negative Value Passed to mktime() Generates Wrong Date

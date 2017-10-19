@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130398: PC NTMMTA: Err Msg: Unable to Load Unicode Font"
-permalink: kb/130/Q130398/
+permalink: /kb/130/Q130398/
 ---
 
 ## Q130398: PC NTMMTA: Err Msg: Unable to Load Unicode Font

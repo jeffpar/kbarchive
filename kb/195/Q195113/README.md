@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195113: XCLN: Problem Opening Attachments with Netscape Navigator"
-permalink: kb/195/Q195113/
+permalink: /kb/195/Q195113/
 ---
 
 ## Q195113: XCLN: Problem Opening Attachments with Netscape Navigator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184863: FP: Text in FrontPage Editor Looks Different in Browser"
-permalink: kb/184/Q184863/
+permalink: /kb/184/Q184863/
 ---
 
 ## Q184863: FP: Text in FrontPage Editor Looks Different in Browser

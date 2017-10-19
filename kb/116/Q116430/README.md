@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116430: PPT: Font Substitutions - Macintosh to Windows"
-permalink: kb/116/Q116430/
+permalink: /kb/116/Q116430/
 ---
 
 ## Q116430: PPT: Font Substitutions - Macintosh to Windows

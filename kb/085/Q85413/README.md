@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85413: MS-DOS 5.0a Upgrade README.TXT: Hardware Compatibility"
-permalink: kb/085/Q85413/
+permalink: /kb/085/Q85413/
 ---
 
 ## Q85413: MS-DOS 5.0a Upgrade README.TXT: Hardware Compatibility

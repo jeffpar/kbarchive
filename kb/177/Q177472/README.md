@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177472: QuickTime Not Listed in Add/Remove Programs Under Windows NT 4.0"
-permalink: kb/177/Q177472/
+permalink: /kb/177/Q177472/
 ---
 
 ## Q177472: QuickTime Not Listed in Add/Remove Programs Under Windows NT 4.0

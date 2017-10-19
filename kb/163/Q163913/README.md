@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163913: XADM: IS or DS Stops Due to Lack of Drive Space for Log Files"
-permalink: kb/163/Q163913/
+permalink: /kb/163/Q163913/
 ---
 
 ## Q163913: XADM: IS or DS Stops Due to Lack of Drive Space for Log Files

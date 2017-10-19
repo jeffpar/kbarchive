@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224834: Setting Filter to View Only Browser Frames in Network Monitor"
-permalink: kb/224/Q224834/
+permalink: /kb/224/Q224834/
 ---
 
 ## Q224834: Setting Filter to View Only Browser Frames in Network Monitor

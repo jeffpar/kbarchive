@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111566: Microsoft Mail Err Msg: Error: Unable to Allocate Hook..."
-permalink: kb/111/Q111566/
+permalink: /kb/111/Q111566/
 ---
 
 ## Q111566: Microsoft Mail Err Msg: Error: Unable to Allocate Hook...

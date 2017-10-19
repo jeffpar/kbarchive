@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148806: FIX: Cannot Open Document From Shell If EXE Has Long File Name"
-permalink: kb/148/Q148806/
+permalink: /kb/148/Q148806/
 ---
 
 ## Q148806: FIX: Cannot Open Document From Shell If EXE Has Long File Name

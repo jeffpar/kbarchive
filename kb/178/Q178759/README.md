@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178759: XCLN: Outlook Spell Check Suggests More Words Than Exchange"
-permalink: kb/178/Q178759/
+permalink: /kb/178/Q178759/
 ---
 
 ## Q178759: XCLN: Outlook Spell Check Suggests More Words Than Exchange

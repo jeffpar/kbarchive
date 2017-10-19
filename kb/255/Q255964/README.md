@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255964: Allegiance: Incorrectly Prompted to Click the Launch Button"
-permalink: kb/255/Q255964/
+permalink: /kb/255/Q255964/
 ---
 
 ## Q255964: Allegiance: Incorrectly Prompted to Click the Launch Button

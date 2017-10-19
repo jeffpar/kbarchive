@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128895: PRB: LNK2001 Link Error on Floating Division Functions"
-permalink: kb/128/Q128895/
+permalink: /kb/128/Q128895/
 ---
 
 ## Q128895: PRB: LNK2001 Link Error on Floating Division Functions

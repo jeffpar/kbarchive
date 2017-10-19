@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q303211: Err Msg: &quot;[Object Error] No such partner or key version found&quot;"
-permalink: kb/303/Q303211/
+title: "Q303211: Err Msg: &quot;&#91;Object Error&#93; No such partner or key version found&quot;"
+permalink: /kb/303/Q303211/
 ---
 
-## Q303211: Err Msg: &quot;[Object Error] No such partner or key version found&quot;
+## Q303211: Err Msg: &quot;&#91;Object Error&#93; No such partner or key version found&quot;
 
 	Article: Q303211
 	Product(s): Microsoft Developer Network

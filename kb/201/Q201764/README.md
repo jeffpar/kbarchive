@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201764: SMS: Windows NT 4.0 Service Pack 3 Upgrade Fails"
-permalink: kb/201/Q201764/
+permalink: /kb/201/Q201764/
 ---
 
 ## Q201764: SMS: Windows NT 4.0 Service Pack 3 Upgrade Fails

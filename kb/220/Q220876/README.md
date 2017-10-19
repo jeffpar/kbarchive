@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220876: HOWTO: Restore an Entire Database Archive with Restore Wizard"
-permalink: kb/220/Q220876/
+permalink: /kb/220/Q220876/
 ---
 
 ## Q220876: HOWTO: Restore an Entire Database Archive with Restore Wizard

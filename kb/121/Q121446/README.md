@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121446: Writer/Artist: All Drives Are Checked At Startup"
-permalink: kb/121/Q121446/
+permalink: /kb/121/Q121446/
 ---
 
 ## Q121446: Writer/Artist: All Drives Are Checked At Startup

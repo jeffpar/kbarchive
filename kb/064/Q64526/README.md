@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64526: Amount of Memory Used by MS-DOS"
-permalink: kb/064/Q64526/
+permalink: /kb/064/Q64526/
 ---
 
 ## Q64526: Amount of Memory Used by MS-DOS

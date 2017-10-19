@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184765: XADM: Setting up the Organization Forms Library"
-permalink: kb/184/Q184765/
+permalink: /kb/184/Q184765/
 ---
 
 ## Q184765: XADM: Setting up the Organization Forms Library

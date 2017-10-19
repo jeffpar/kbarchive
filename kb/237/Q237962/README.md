@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237962: MMC Application Exception after Applying SNA Server 4.0 SP2"
-permalink: kb/237/Q237962/
+permalink: /kb/237/Q237962/
 ---
 
 ## Q237962: MMC Application Exception after Applying SNA Server 4.0 SP2

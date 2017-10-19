@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237867: INF: SyncPoint Support Synchronization Failure CICS Cold Start"
-permalink: kb/237/Q237867/
+permalink: /kb/237/Q237867/
 ---
 
 ## Q237867: INF: SyncPoint Support Synchronization Failure CICS Cold Start

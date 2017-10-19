@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99495: EMM386.EXE with AUTO Switch Causes MemMaker to Hang"
-permalink: kb/099/Q99495/
+permalink: /kb/099/Q99495/
 ---
 
 ## Q99495: EMM386.EXE with AUTO Switch Causes MemMaker to Hang

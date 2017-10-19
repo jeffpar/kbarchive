@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220881: Repeated Logon Prompt in Windows NT 4.0"
-permalink: kb/220/Q220881/
+permalink: /kb/220/Q220881/
 ---
 
 ## Q220881: Repeated Logon Prompt in Windows NT 4.0

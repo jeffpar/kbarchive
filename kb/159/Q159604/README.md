@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159604: Viewing Long File Names from Windows 95 Using Winfile.exe"
-permalink: kb/159/Q159604/
+permalink: /kb/159/Q159604/
 ---
 
 ## Q159604: Viewing Long File Names from Windows 95 Using Winfile.exe

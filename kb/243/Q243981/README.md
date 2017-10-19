@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243981: FS 2000: Troubleshooting Joystick Problems (Part 1)"
-permalink: kb/243/Q243981/
+permalink: /kb/243/Q243981/
 ---
 
 ## Q243981: FS 2000: Troubleshooting Joystick Problems (Part 1)

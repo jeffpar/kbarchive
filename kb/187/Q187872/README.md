@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187872: HOWTO: Determine Jet Memory Usage with DAO MaxBufferSize"
-permalink: kb/187/Q187872/
+permalink: /kb/187/Q187872/
 ---
 
 ## Q187872: HOWTO: Determine Jet Memory Usage with DAO MaxBufferSize

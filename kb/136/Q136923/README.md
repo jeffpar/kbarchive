@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136923: Purpose of Edit User Defined Properties and Methods Dialog Box"
-permalink: kb/136/Q136923/
+permalink: /kb/136/Q136923/
 ---
 
 ## Q136923: Purpose of Edit User Defined Properties and Methods Dialog Box

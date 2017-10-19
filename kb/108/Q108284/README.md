@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108284: FIX: DX2010 w/ GETARG When RUNQQ Takes Five or more Arguments"
-permalink: kb/108/Q108284/
+permalink: /kb/108/Q108284/
 ---
 
 ## Q108284: FIX: DX2010 w/ GETARG When RUNQQ Takes Five or more Arguments

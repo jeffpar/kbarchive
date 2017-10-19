@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244586: XADM: Mailbox Manager Logging Levels in Exchange Server"
-permalink: kb/244/Q244586/
+permalink: /kb/244/Q244586/
 ---
 
 ## Q244586: XADM: Mailbox Manager Logging Levels in Exchange Server

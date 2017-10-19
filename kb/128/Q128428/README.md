@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128428: Err Msg on MIPS computer: &quot;Can't find smssu16.dll&quot;"
-permalink: kb/128/Q128428/
+permalink: /kb/128/Q128428/
 ---
 
 ## Q128428: Err Msg on MIPS computer: &quot;Can't find smssu16.dll&quot;

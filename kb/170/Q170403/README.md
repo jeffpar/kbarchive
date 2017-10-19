@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170403: XCON: Err Msg: Unable to Interrogate Database..."
-permalink: kb/170/Q170403/
+permalink: /kb/170/Q170403/
 ---
 
 ## Q170403: XCON: Err Msg: Unable to Interrogate Database...

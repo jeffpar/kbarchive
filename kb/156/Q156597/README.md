@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156597: Head-to-Head Play on Directly Connected Macintosh Computers"
-permalink: kb/156/Q156597/
+permalink: /kb/156/Q156597/
 ---
 
 ## Q156597: Head-to-Head Play on Directly Connected Macintosh Computers

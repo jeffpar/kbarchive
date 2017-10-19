@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73409: FIX: MASM 6.0 Fails with /Ta if Filename Has No Period"
-permalink: kb/073/Q73409/
+permalink: /kb/073/Q73409/
 ---
 
 ## Q73409: FIX: MASM 6.0 Fails with /Ta if Filename Has No Period

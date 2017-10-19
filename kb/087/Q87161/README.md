@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87161: Mac Wkst: How to Invoke Offline Operation"
-permalink: kb/087/Q87161/
+permalink: /kb/087/Q87161/
 ---
 
 ## Q87161: Mac Wkst: How to Invoke Offline Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184236: BUG: Filebuf overflow() and underflow() Call filebuf::sync()"
-permalink: kb/184/Q184236/
+permalink: /kb/184/Q184236/
 ---
 
 ## Q184236: BUG: Filebuf overflow() and underflow() Call filebuf::sync()

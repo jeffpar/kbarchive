@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315656: FIX: USE Table CONNSTRING Ignores NODATA and ALIAS Clauses"
-permalink: kb/315/Q315656/
+permalink: /kb/315/Q315656/
 ---
 
 ## Q315656: FIX: USE Table CONNSTRING Ignores NODATA and ALIAS Clauses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83384: Registration Cards Not Included with Windows 3.1 Upgrade"
-permalink: kb/083/Q83384/
+permalink: /kb/083/Q83384/
 ---
 
 ## Q83384: Registration Cards Not Included with Windows 3.1 Upgrade

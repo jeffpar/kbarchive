@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122302: FIX: C1001 Error Compiling Naked Function with /Og and /G5"
-permalink: kb/122/Q122302/
+permalink: /kb/122/Q122302/
 ---
 
 ## Q122302: FIX: C1001 Error Compiling Naked Function with /Og and /G5

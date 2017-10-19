@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173257: Where Are the Practice Files in VB Deluxe Learning Edition?"
-permalink: kb/173/Q173257/
+permalink: /kb/173/Q173257/
 ---
 
 ## Q173257: Where Are the Practice Files in VB Deluxe Learning Edition?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149140: BUG: Access Violation Writing Namelist With Equivalence Member"
-permalink: kb/149/Q149140/
+permalink: /kb/149/Q149140/
 ---
 
 ## Q149140: BUG: Access Violation Writing Namelist With Equivalence Member

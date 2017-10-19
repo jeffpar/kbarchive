@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104790: Using Int 21h Get/Set Media ID in the Windows Environment"
-permalink: kb/104/Q104790/
+permalink: /kb/104/Q104790/
 ---
 
 ## Q104790: Using Int 21h Get/Set Media ID in the Windows Environment

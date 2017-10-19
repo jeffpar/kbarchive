@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165842: Opening Manager Takes Long Time with Many LU Pools Configured"
-permalink: kb/165/Q165842/
+permalink: /kb/165/Q165842/
 ---
 
 ## Q165842: Opening Manager Takes Long Time with Many LU Pools Configured

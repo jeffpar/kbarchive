@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113283: WFWG Err Msg: Schedule+ Has Not Been Installed on Your Mail..."
-permalink: kb/113/Q113283/
+permalink: /kb/113/Q113283/
 ---
 
 ## Q113283: WFWG Err Msg: Schedule+ Has Not Been Installed on Your Mail...

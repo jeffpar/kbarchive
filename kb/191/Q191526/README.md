@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191526: PRB: READ MENU In DO..WHILE Loop Causes VFP Screen to Jump"
-permalink: kb/191/Q191526/
+permalink: /kb/191/Q191526/
 ---
 
 ## Q191526: PRB: READ MENU In DO..WHILE Loop Causes VFP Screen to Jump

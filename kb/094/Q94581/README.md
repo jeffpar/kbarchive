@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94581: BUG: Redirected CodeView Output Yields Unexpected Results"
-permalink: kb/094/Q94581/
+permalink: /kb/094/Q94581/
 ---
 
 ## Q94581: BUG: Redirected CodeView Output Yields Unexpected Results

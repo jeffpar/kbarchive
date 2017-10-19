@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129838: BUG: GPF in Excel After Using Excel Spreadsheet in OLE Control"
-permalink: kb/129/Q129838/
+permalink: /kb/129/Q129838/
 ---
 
 ## Q129838: BUG: GPF in Excel After Using Excel Spreadsheet in OLE Control

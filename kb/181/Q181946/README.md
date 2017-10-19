@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181946: HOWTO: Create a NetDDE Client and Server in Visual Basic"
-permalink: kb/181/Q181946/
+permalink: /kb/181/Q181946/
 ---
 
 ## Q181946: HOWTO: Create a NetDDE Client and Server in Visual Basic

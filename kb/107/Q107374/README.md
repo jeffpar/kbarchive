@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107374: WFWG 3.11: Hardware Compatibility List - Modems for RAS"
-permalink: kb/107/Q107374/
+permalink: /kb/107/Q107374/
 ---
 
 ## Q107374: WFWG 3.11: Hardware Compatibility List - Modems for RAS

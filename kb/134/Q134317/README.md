@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134317: PRB: Error: Bad Source File Value in INF File Description line"
-permalink: kb/134/Q134317/
+permalink: /kb/134/Q134317/
 ---
 
 ## Q134317: PRB: Error: Bad Source File Value in INF File Description line

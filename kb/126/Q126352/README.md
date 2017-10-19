@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126352: File Manager Reports Size of NetWare Volume Incorrectly"
-permalink: kb/126/Q126352/
+permalink: /kb/126/Q126352/
 ---
 
 ## Q126352: File Manager Reports Size of NetWare Volume Incorrectly

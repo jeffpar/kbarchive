@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247250: XCLN: Cannot Remove Signature from Custom Form w/AutoSignature"
-permalink: kb/247/Q247250/
+permalink: /kb/247/Q247250/
 ---
 
 ## Q247250: XCLN: Cannot Remove Signature from Custom Form w/AutoSignature

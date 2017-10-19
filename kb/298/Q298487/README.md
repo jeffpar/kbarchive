@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298487: BUG: Localized Versions of CAB Files for Msjint35.dll Missing"
-permalink: kb/298/Q298487/
+permalink: /kb/298/Q298487/
 ---
 
 ## Q298487: BUG: Localized Versions of CAB Files for Msjint35.dll Missing

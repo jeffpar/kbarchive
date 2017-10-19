@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170750: INFO: End of Line Character Settings for Visual SourceSafe"
-permalink: kb/170/Q170750/
+permalink: /kb/170/Q170750/
 ---
 
 ## Q170750: INFO: End of Line Character Settings for Visual SourceSafe

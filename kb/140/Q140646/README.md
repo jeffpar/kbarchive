@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140646: How to Start Windows Explorer By Double-Clicking My Computer"
-permalink: kb/140/Q140646/
+permalink: /kb/140/Q140646/
 ---
 
 ## Q140646: How to Start Windows Explorer By Double-Clicking My Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324201: PRB: Object Browser Generates Incorrect Interface Code"
-permalink: kb/324/Q324201/
+permalink: /kb/324/Q324201/
 ---
 
 ## Q324201: PRB: Object Browser Generates Incorrect Interface Code

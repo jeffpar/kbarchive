@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78830: PC Ext: Reverse Carrier for Voice/Modem Switches"
-permalink: kb/078/Q78830/
+permalink: /kb/078/Q78830/
 ---
 
 ## Q78830: PC Ext: Reverse Carrier for Voice/Modem Switches

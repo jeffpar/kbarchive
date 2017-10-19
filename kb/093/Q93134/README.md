@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93134: PC Win: Mail Message File (MMF) Compression"
-permalink: kb/093/Q93134/
+permalink: /kb/093/Q93134/
 ---
 
 ## Q93134: PC Win: Mail Message File (MMF) Compression

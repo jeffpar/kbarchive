@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182963: XADM: How to Compare USNs for Intrasite Replication"
-permalink: kb/182/Q182963/
+permalink: /kb/182/Q182963/
 ---
 
 ## Q182963: XADM: How to Compare USNs for Intrasite Replication

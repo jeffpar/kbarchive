@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136822: Cannot Open E-mail Attachment Using MSN or Attachment Is Missing"
-permalink: kb/136/Q136822/
+permalink: /kb/136/Q136822/
 ---
 
 ## Q136822: Cannot Open E-mail Attachment Using MSN or Attachment Is Missing

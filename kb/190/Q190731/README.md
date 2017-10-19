@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190731: BUG: Pageframe Border Disappears When Sparse Set to False"
-permalink: kb/190/Q190731/
+permalink: /kb/190/Q190731/
 ---
 
 ## Q190731: BUG: Pageframe Border Disappears When Sparse Set to False

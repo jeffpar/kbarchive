@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71530: HP Intellifont-for-Windows 3.0 Description"
-permalink: kb/071/Q71530/
+permalink: /kb/071/Q71530/
 ---
 
 ## Q71530: HP Intellifont-for-Windows 3.0 Description

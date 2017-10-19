@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152650: Win95 Changes to Full Screen During Inventory Process"
-permalink: kb/152/Q152650/
+permalink: /kb/152/Q152650/
 ---
 
 ## Q152650: Win95 Changes to Full Screen During Inventory Process

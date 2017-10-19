@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139929: SNMP Queries of Very Long OIDs May Cause SNMP Service to Hang"
-permalink: kb/139/Q139929/
+permalink: /kb/139/Q139929/
 ---
 
 ## Q139929: SNMP Queries of Very Long OIDs May Cause SNMP Service to Hang

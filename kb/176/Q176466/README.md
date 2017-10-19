@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176466: XGEN: TCP Ports and Microsoft Exchange: In-depth Discussion"
-permalink: kb/176/Q176466/
+permalink: /kb/176/Q176466/
 ---
 
 ## Q176466: XGEN: TCP Ports and Microsoft Exchange: In-depth Discussion

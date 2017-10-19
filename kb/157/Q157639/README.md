@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157639: WD97: Incorrect Hyperlink, Error Inserting from Insert Field"
-permalink: kb/157/Q157639/
+permalink: /kb/157/Q157639/
 ---
 
 ## Q157639: WD97: Incorrect Hyperlink, Error Inserting from Insert Field

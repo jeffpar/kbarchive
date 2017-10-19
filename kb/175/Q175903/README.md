@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175903: ARI Bit Mismatch"
-permalink: kb/175/Q175903/
+permalink: /kb/175/Q175903/
 ---
 
 ## Q175903: ARI Bit Mismatch

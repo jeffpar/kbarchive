@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163699: &quot;Disk May be Full&quot; Message When Saving File to a Novell Server"
-permalink: kb/163/Q163699/
+permalink: /kb/163/Q163699/
 ---
 
 ## Q163699: &quot;Disk May be Full&quot; Message When Saving File to a Novell Server

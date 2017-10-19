@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73666: WINMEM32 Not Version Dependent"
-permalink: kb/073/Q73666/
+permalink: /kb/073/Q73666/
 ---
 
 ## Q73666: WINMEM32 Not Version Dependent

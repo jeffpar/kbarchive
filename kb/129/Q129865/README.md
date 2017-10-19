@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129865: Limitations of the AINSTANCE Function"
-permalink: kb/129/Q129865/
+permalink: /kb/129/Q129865/
 ---
 
 ## Q129865: Limitations of the AINSTANCE Function

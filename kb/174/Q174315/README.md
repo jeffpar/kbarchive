@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174315: WD97: Warning When You Save Multilingual Web Page or HTML File"
-permalink: kb/174/Q174315/
+permalink: /kb/174/Q174315/
 ---
 
 ## Q174315: WD97: Warning When You Save Multilingual Web Page or HTML File

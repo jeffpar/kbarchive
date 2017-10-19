@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73431: Setup Hangs When Creating Windows Directory"
-permalink: kb/073/Q73431/
+permalink: /kb/073/Q73431/
 ---
 
 ## Q73431: Setup Hangs When Creating Windows Directory

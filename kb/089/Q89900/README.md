@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89900: Sound Finder Does Not Restore Minimized Quick Recorder"
-permalink: kb/089/Q89900/
+permalink: /kb/089/Q89900/
 ---
 
 ## Q89900: Sound Finder Does Not Restore Minimized Quick Recorder

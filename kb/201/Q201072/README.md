@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201072: XFOR: Mail to Postmaster Account Doesn't Arrive"
-permalink: kb/201/Q201072/
+permalink: /kb/201/Q201072/
 ---
 
 ## Q201072: XFOR: Mail to Postmaster Account Doesn't Arrive

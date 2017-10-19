@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111284: Service Pack 2 Backup Program Doesn't Back Up Registry Hives"
-permalink: kb/111/Q111284/
+permalink: /kb/111/Q111284/
 ---
 
 ## Q111284: Service Pack 2 Backup Program Doesn't Back Up Registry Hives

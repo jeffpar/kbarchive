@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263388: SMS: Cordless Mouse May Not Work After Remote Control Install"
-permalink: kb/263/Q263388/
+permalink: /kb/263/Q263388/
 ---
 
 ## Q263388: SMS: Cordless Mouse May Not Work After Remote Control Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134696: Adaptec APA-1460 Support in Windows NT 3.51"
-permalink: kb/134/Q134696/
+permalink: /kb/134/Q134696/
 ---
 
 ## Q134696: Adaptec APA-1460 Support in Windows NT 3.51

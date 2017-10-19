@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139002: Cinemania 1996: Readme.wri Contents"
-permalink: kb/139/Q139002/
+permalink: /kb/139/Q139002/
 ---
 
 ## Q139002: Cinemania 1996: Readme.wri Contents

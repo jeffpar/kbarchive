@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191397: XCON: During DRAS Call, Server Unavailable on the Local Network"
-permalink: kb/191/Q191397/
+permalink: /kb/191/Q191397/
 ---
 
 ## Q191397: XCON: During DRAS Call, Server Unavailable on the Local Network

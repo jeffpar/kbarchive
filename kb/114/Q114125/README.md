@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114125: PC WRmt: Simple MAPI Programs Only Send Mail with Remote"
-permalink: kb/114/Q114125/
+permalink: /kb/114/Q114125/
 ---
 
 ## Q114125: PC WRmt: Simple MAPI Programs Only Send Mail with Remote

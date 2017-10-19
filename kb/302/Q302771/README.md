@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302771: E-mail Spellcheck Is Listed As Installed And Available, But Is N"
-permalink: kb/302/Q302771/
+permalink: /kb/302/Q302771/
 ---
 
 ## Q302771: E-mail Spellcheck Is Listed As Installed And Available, But Is N

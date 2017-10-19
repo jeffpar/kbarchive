@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175440: XFOR: Protocol Authentication on Exchange Server"
-permalink: kb/175/Q175440/
+permalink: /kb/175/Q175440/
 ---
 
 ## Q175440: XFOR: Protocol Authentication on Exchange Server

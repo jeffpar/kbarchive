@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93566: PC Win: Appears to Hang When Printing from Shared Folder"
-permalink: kb/093/Q93566/
+permalink: /kb/093/Q93566/
 ---
 
 ## Q93566: PC Win: Appears to Hang When Printing from Shared Folder

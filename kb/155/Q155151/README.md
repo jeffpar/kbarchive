@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155151: Writer 2: Help Is Limited in Certain Areas"
-permalink: kb/155/Q155151/
+permalink: /kb/155/Q155151/
 ---
 
 ## Q155151: Writer 2: Help Is Limited in Certain Areas

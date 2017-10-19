@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130578: HOWTO: Customize the Visual FoxPro Environment"
-permalink: kb/130/Q130578/
+permalink: /kb/130/Q130578/
 ---
 
 ## Q130578: HOWTO: Customize the Visual FoxPro Environment

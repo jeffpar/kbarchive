@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248071: HOWTO: Distribute a Custom DLL with Your eVB Application"
-permalink: kb/248/Q248071/
+permalink: /kb/248/Q248071/
 ---
 
 ## Q248071: HOWTO: Distribute a Custom DLL with Your eVB Application

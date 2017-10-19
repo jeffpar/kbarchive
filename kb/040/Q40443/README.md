@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40443: Type of Aircraft Not Saved in User Mode"
-permalink: kb/040/Q40443/
+permalink: /kb/040/Q40443/
 ---
 
 ## Q40443: Type of Aircraft Not Saved in User Mode

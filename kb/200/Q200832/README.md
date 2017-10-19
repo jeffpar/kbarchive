@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200832: SMS: Conflict Does Not Allow Multiple Remote Control Sessions"
-permalink: kb/200/Q200832/
+permalink: /kb/200/Q200832/
 ---
 
 ## Q200832: SMS: Conflict Does Not Allow Multiple Remote Control Sessions

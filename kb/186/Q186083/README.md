@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186083: INFO: New Features of Class Browser"
-permalink: kb/186/Q186083/
+permalink: /kb/186/Q186083/
 ---
 
 ## Q186083: INFO: New Features of Class Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179077: WD97: Creating a Hyperlink to a Microsoft Access Table or Query"
-permalink: kb/179/Q179077/
+permalink: /kb/179/Q179077/
 ---
 
 ## Q179077: WD97: Creating a Hyperlink to a Microsoft Access Table or Query

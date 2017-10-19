@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190440: XADM: Service Specific Error 4294966746 Starting Store"
-permalink: kb/190/Q190440/
+permalink: /kb/190/Q190440/
 ---
 
 ## Q190440: XADM: Service Specific Error 4294966746 Starting Store

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103801: FFAPI: Err Msg: 190 Automatic File Transfer Not Supported"
-permalink: kb/103/Q103801/
+permalink: /kb/103/Q103801/
 ---
 
 ## Q103801: FFAPI: Err Msg: 190 Automatic File Transfer Not Supported

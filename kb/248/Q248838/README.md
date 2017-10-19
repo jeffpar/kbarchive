@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248838: XADM: Exchange Server 5.5 Post-SP3 Information Store Fixes"
-permalink: kb/248/Q248838/
+permalink: /kb/248/Q248838/
 ---
 
 ## Q248838: XADM: Exchange Server 5.5 Post-SP3 Information Store Fixes

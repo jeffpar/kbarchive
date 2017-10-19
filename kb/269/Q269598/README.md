@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269598: Windows NT MA Running in Creator Mode Generates Error 1314"
-permalink: kb/269/Q269598/
+permalink: /kb/269/Q269598/
 ---
 
 ## Q269598: Windows NT MA Running in Creator Mode Generates Error 1314

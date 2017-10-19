@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260511: Asheron's Call Error Message: Server Connection Lost"
-permalink: kb/260/Q260511/
+permalink: /kb/260/Q260511/
 ---
 
 ## Q260511: Asheron's Call Error Message: Server Connection Lost

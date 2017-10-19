@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138388: Dynamically Loading/Unloading WINRUI32.DLL Causes System Hang"
-permalink: kb/138/Q138388/
+permalink: /kb/138/Q138388/
 ---
 
 ## Q138388: Dynamically Loading/Unloading WINRUI32.DLL Causes System Hang

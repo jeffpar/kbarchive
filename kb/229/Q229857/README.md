@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229857: SMS: Identical Site Names on Multiple Sites Can Cause Problems"
-permalink: kb/229/Q229857/
+permalink: /kb/229/Q229857/
 ---
 
 ## Q229857: SMS: Identical Site Names on Multiple Sites Can Cause Problems

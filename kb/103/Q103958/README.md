@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103958: PC Win: Header Fields May Be Misaligned When Redrawn"
-permalink: kb/103/Q103958/
+permalink: /kb/103/Q103958/
 ---
 
 ## Q103958: PC Win: Header Fields May Be Misaligned When Redrawn

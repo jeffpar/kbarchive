@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73581: Can't Exit from Lotus Agenda with EMM386.EXE"
-permalink: kb/073/Q73581/
+permalink: /kb/073/Q73581/
 ---
 
 ## Q73581: Can't Exit from Lotus Agenda with EMM386.EXE

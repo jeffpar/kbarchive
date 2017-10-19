@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143098: FP: How to Add White Space to a Web Page"
-permalink: kb/143/Q143098/
+permalink: /kb/143/Q143098/
 ---
 
 ## Q143098: FP: How to Add White Space to a Web Page

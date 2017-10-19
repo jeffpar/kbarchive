@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131792: PRB: OnClose() Is Called When Closing Print Preview Dialog Box"
-permalink: kb/131/Q131792/
+permalink: /kb/131/Q131792/
 ---
 
 ## Q131792: PRB: OnClose() Is Called When Closing Print Preview Dialog Box

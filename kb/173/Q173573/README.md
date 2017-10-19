@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173573: WinNT 4.0 Post SP3 Hotfix Can Cause Stop 0x1E in Win32k.sys"
-permalink: kb/173/Q173573/
+permalink: /kb/173/Q173573/
 ---
 
 ## Q173573: WinNT 4.0 Post SP3 Hotfix Can Cause Stop 0x1E in Win32k.sys

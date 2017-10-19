@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128714: Windows Sound System Produces Clicking Sounds in Windows 95"
-permalink: kb/128/Q128714/
+permalink: /kb/128/Q128714/
 ---
 
 ## Q128714: Windows Sound System Produces Clicking Sounds in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297172: XADM: Arcserve Backup Agent Fails with Error 301"
-permalink: kb/297/Q297172/
+permalink: /kb/297/Q297172/
 ---
 
 ## Q297172: XADM: Arcserve Backup Agent Fails with Error 301

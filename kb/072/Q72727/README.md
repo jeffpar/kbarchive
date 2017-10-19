@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72727: PRB: No Error for Same Register Listed Twice in USES Clause"
-permalink: kb/072/Q72727/
+permalink: /kb/072/Q72727/
 ---
 
 ## Q72727: PRB: No Error for Same Register Listed Twice in USES Clause

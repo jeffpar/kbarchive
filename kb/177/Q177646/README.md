@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177646: Stop 0x0000000A with IOMEGA JAZ Drive"
-permalink: kb/177/Q177646/
+permalink: /kb/177/Q177646/
 ---
 
 ## Q177646: Stop 0x0000000A with IOMEGA JAZ Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238406: PRB: Resetting DataCombo RowSource Resets BoundColumn Property"
-permalink: kb/238/Q238406/
+permalink: /kb/238/Q238406/
 ---
 
 ## Q238406: PRB: Resetting DataCombo RowSource Resets BoundColumn Property

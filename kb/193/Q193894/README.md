@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193894: XCON: MTA Stops Processing Messages and Generates 9156 Events"
-permalink: kb/193/Q193894/
+permalink: /kb/193/Q193894/
 ---
 
 ## Q193894: XCON: MTA Stops Processing Messages and Generates 9156 Events

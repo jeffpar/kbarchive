@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238127: SMS: SMS_NT_LOGON_DISCOVERY_AGENT May Experience Logon Problems"
-permalink: kb/238/Q238127/
+permalink: /kb/238/Q238127/
 ---
 
 ## Q238127: SMS: SMS_NT_LOGON_DISCOVERY_AGENT May Experience Logon Problems

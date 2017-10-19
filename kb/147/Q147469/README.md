@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147469: Cannot Change SMS Site Server Computer's NetBIOS Name"
-permalink: kb/147/Q147469/
+permalink: /kb/147/Q147469/
 ---
 
 ## Q147469: Cannot Change SMS Site Server Computer's NetBIOS Name

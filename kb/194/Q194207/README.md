@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194207: HOWTO: How to Use Access Autonumber Column with OLE DB Templates"
-permalink: kb/194/Q194207/
+permalink: /kb/194/Q194207/
 ---
 
 ## Q194207: HOWTO: How to Use Access Autonumber Column with OLE DB Templates

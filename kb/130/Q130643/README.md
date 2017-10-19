@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130643: FIX: Closing Resource Browser System Menu Doesn't Save Changes"
-permalink: kb/130/Q130643/
+permalink: /kb/130/Q130643/
 ---
 
 ## Q130643: FIX: Closing Resource Browser System Menu Doesn't Save Changes

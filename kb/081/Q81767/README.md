@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81767: System Changes Made by PC Tools 7.1 with Windows 3.0 and 3.1"
-permalink: kb/081/Q81767/
+permalink: /kb/081/Q81767/
 ---
 
 ## Q81767: System Changes Made by PC Tools 7.1 with Windows 3.0 and 3.1

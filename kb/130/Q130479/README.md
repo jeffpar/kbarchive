@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130479: FTP OnNet PPP Connection to Windows NT 3.5 RAS Server Fails"
-permalink: kb/130/Q130479/
+permalink: /kb/130/Q130479/
 ---
 
 ## Q130479: FTP OnNet PPP Connection to Windows NT 3.5 RAS Server Fails

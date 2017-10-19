@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187911: XCLN: Outlook Template Adds Zeros to Raw Number Field"
-permalink: kb/187/Q187911/
+permalink: /kb/187/Q187911/
 ---
 
 ## Q187911: XCLN: Outlook Template Adds Zeros to Raw Number Field

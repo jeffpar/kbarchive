@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152602: DOC: MSBV3032.DLL Incorrectly Referenced in On-Line Help"
-permalink: kb/152/Q152602/
+permalink: /kb/152/Q152602/
 ---
 
 ## Q152602: DOC: MSBV3032.DLL Incorrectly Referenced in On-Line Help

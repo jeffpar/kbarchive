@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177838: XADM: NT Security Descriptor Associated w/ DL Owner Not Updated"
-permalink: kb/177/Q177838/
+permalink: /kb/177/Q177838/
 ---
 
 ## Q177838: XADM: NT Security Descriptor Associated w/ DL Owner Not Updated

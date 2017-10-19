@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137867: No Postoffice Needed for The Microsoft Network Mail"
-permalink: kb/137/Q137867/
+permalink: /kb/137/Q137867/
 ---
 
 ## Q137867: No Postoffice Needed for The Microsoft Network Mail

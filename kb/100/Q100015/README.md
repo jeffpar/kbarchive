@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100015: Converting to 8-Bit Color Results in Gray Scale from VidEdit"
-permalink: kb/100/Q100015/
+permalink: /kb/100/Q100015/
 ---
 
 ## Q100015: Converting to 8-Bit Color Results in Gray Scale from VidEdit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85650: PC MAPI: MAPI_GUARANTEE_FIFO Incorrectly Defined"
-permalink: kb/085/Q85650/
+permalink: /kb/085/Q85650/
 ---
 
 ## Q85650: PC MAPI: MAPI_GUARANTEE_FIFO Incorrectly Defined

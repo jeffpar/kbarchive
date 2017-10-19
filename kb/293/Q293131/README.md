@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293131: &quot;HTTP 400 - Bad Request&quot; Err Msg if Content Length Header is 0"
-permalink: kb/293/Q293131/
+permalink: /kb/293/Q293131/
 ---
 
 ## Q293131: &quot;HTTP 400 - Bad Request&quot; Err Msg if Content Length Header is 0

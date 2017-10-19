@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99750: Using LAN Manager 2.2 OS/2 Workstation to Support OS/2"
-permalink: kb/099/Q99750/
+permalink: /kb/099/Q99750/
 ---
 
 ## Q99750: Using LAN Manager 2.2 OS/2 Workstation to Support OS/2

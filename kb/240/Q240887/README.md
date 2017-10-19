@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240887: BUG: Fatal Error w/Memo Field in Watch Window Bound to Edit Box"
-permalink: kb/240/Q240887/
+permalink: /kb/240/Q240887/
 ---
 
 ## Q240887: BUG: Fatal Error w/Memo Field in Watch Window Bound to Edit Box

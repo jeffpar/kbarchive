@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114358: Insufficient Disk Space to Install MS-DOS 6.21 Upgrade"
-permalink: kb/114/Q114358/
+permalink: /kb/114/Q114358/
 ---
 
 ## Q114358: Insufficient Disk Space to Install MS-DOS 6.21 Upgrade

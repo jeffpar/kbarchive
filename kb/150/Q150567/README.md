@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150567: Btrieve Clients May Fail to Connect to Servers Running RAS, IPX/"
-permalink: kb/150/Q150567/
+permalink: /kb/150/Q150567/
 ---
 
 ## Q150567: Btrieve Clients May Fail to Connect to Servers Running RAS, IPX/

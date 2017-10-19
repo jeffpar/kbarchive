@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199110: SMS: How Bandwidth Calculations Differ in SMS 2.0"
-permalink: kb/199/Q199110/
+permalink: /kb/199/Q199110/
 ---
 
 ## Q199110: SMS: How Bandwidth Calculations Differ in SMS 2.0

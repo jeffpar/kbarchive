@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272714: XFOR: Fax Sent to 1(262)xxx-xxxx Gets Addressed to 1Cxxx-xxxx"
-permalink: kb/272/Q272714/
+permalink: /kb/272/Q272714/
 ---
 
 ## Q272714: XFOR: Fax Sent to 1(262)xxx-xxxx Gets Addressed to 1Cxxx-xxxx

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196604: SNA Server Manager May Not Find Subdomain When Started"
-permalink: kb/196/Q196604/
+permalink: /kb/196/Q196604/
 ---
 
 ## Q196604: SNA Server Manager May Not Find Subdomain When Started

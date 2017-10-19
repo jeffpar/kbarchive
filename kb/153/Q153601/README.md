@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153601: XCOPY /F Command Does Not Display Destination Path"
-permalink: kb/153/Q153601/
+permalink: /kb/153/Q153601/
 ---
 
 ## Q153601: XCOPY /F Command Does Not Display Destination Path

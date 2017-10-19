@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84512: HP LaserJet IIIP and IIID Settings Not Saved"
-permalink: kb/084/Q84512/
+permalink: /kb/084/Q84512/
 ---
 
 ## Q84512: HP LaserJet IIIP and IIID Settings Not Saved

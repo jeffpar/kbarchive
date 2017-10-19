@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238380: Windows NT 4.0 Sometimes Hangs at Shutdown"
-permalink: kb/238/Q238380/
+permalink: /kb/238/Q238380/
 ---
 
 ## Q238380: Windows NT 4.0 Sometimes Hangs at Shutdown

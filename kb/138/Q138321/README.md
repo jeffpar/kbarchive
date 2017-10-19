@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138321: Err Msg at Logon: Unable To Log You On Because Your Profile..."
-permalink: kb/138/Q138321/
+permalink: /kb/138/Q138321/
 ---
 
 ## Q138321: Err Msg at Logon: Unable To Log You On Because Your Profile...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201820: SMS: Remote Control Displays Wrong Mouse Pointer"
-permalink: kb/201/Q201820/
+permalink: /kb/201/Q201820/
 ---
 
 ## Q201820: SMS: Remote Control Displays Wrong Mouse Pointer

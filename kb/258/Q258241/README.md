@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258241: BUG: SYS(1271) Used in Property of a Class Crashes Visual FoxPro"
-permalink: kb/258/Q258241/
+permalink: /kb/258/Q258241/
 ---
 
 ## Q258241: BUG: SYS(1271) Used in Property of a Class Crashes Visual FoxPro

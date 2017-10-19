@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245555: Games Error Message: Invalid Page Fault in Module &lt;Program File&gt;"
-permalink: kb/245/Q245555/
+permalink: /kb/245/Q245555/
 ---
 
 ## Q245555: Games Error Message: Invalid Page Fault in Module &lt;Program File&gt;

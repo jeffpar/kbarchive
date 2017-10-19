@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231305: WINS Randomize1cList Feature Aids Load-Balancing Between DCs"
-permalink: kb/231/Q231305/
+permalink: /kb/231/Q231305/
 ---
 
 ## Q231305: WINS Randomize1cList Feature Aids Load-Balancing Between DCs

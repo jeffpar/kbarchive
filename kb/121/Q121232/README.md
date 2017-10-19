@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121232: Greyed Out Connect To Printer Option in Print Manager"
-permalink: kb/121/Q121232/
+permalink: /kb/121/Q121232/
 ---
 
 ## Q121232: Greyed Out Connect To Printer Option in Print Manager

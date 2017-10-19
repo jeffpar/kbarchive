@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129648: Calling a Form as If It Were a Function to Return a Value"
-permalink: kb/129/Q129648/
+permalink: /kb/129/Q129648/
 ---
 
 ## Q129648: Calling a Form as If It Were a Function to Return a Value

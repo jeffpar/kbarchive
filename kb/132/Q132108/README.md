@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132108: NE3200 not reset properly on warm boot"
-permalink: kb/132/Q132108/
+permalink: /kb/132/Q132108/
 ---
 
 ## Q132108: NE3200 not reset properly on warm boot

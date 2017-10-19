@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136148: MONITOR.EXE &amp; DATALOG.EXE Alerts Have Invalid System Log Data"
-permalink: kb/136/Q136148/
+permalink: /kb/136/Q136148/
 ---
 
 ## Q136148: MONITOR.EXE &amp; DATALOG.EXE Alerts Have Invalid System Log Data

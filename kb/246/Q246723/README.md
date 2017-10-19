@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246723: How to Programmatically Timeout an (MC_)ALLOCATE Verb"
-permalink: kb/246/Q246723/
+permalink: /kb/246/Q246723/
 ---
 
 ## Q246723: How to Programmatically Timeout an (MC_)ALLOCATE Verb

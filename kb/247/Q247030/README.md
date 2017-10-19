@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247030: XADM: Custom Attributes 11-15 Are Not Replicated to Other Sites"
-permalink: kb/247/Q247030/
+permalink: /kb/247/Q247030/
 ---
 
 ## Q247030: XADM: Custom Attributes 11-15 Are Not Replicated to Other Sites

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121684: PRB: Boxes in MS-DOS Reports Print Incorrectly on Macintosh"
-permalink: kb/121/Q121684/
+permalink: /kb/121/Q121684/
 ---
 
 ## Q121684: PRB: Boxes in MS-DOS Reports Print Incorrectly on Macintosh

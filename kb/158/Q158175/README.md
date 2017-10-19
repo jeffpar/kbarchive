@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158175: HOWTO: Determine the Differences Between DoEvents and Sleep"
-permalink: kb/158/Q158175/
+permalink: /kb/158/Q158175/
 ---
 
 ## Q158175: HOWTO: Determine the Differences Between DoEvents and Sleep

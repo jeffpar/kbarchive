@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235021: Quick Course in Microsoft Excel 2000 Comments and Corrections"
-permalink: kb/235/Q235021/
+permalink: /kb/235/Q235021/
 ---
 
 ## Q235021: Quick Course in Microsoft Excel 2000 Comments and Corrections

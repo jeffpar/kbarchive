@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160979: TN3270 Server Does Not Handle Models 3, 4, and 5 Correctly"
-permalink: kb/160/Q160979/
+permalink: /kb/160/Q160979/
 ---
 
 ## Q160979: TN3270 Server Does Not Handle Models 3, 4, and 5 Correctly

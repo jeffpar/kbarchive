@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216259: XADM: IS Stops Responding Due to Critical Section Leak, Event ID"
-permalink: kb/216/Q216259/
+permalink: /kb/216/Q216259/
 ---
 
 ## Q216259: XADM: IS Stops Responding Due to Critical Section Leak, Event ID

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117425: Err Msg: SCREG.EXE Application Error"
-permalink: kb/117/Q117425/
+permalink: /kb/117/Q117425/
 ---
 
 ## Q117425: Err Msg: SCREG.EXE Application Error

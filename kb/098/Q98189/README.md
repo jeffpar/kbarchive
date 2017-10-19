@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98189: Compaq 32 Bit EISA NIC (Netflex)"
-permalink: kb/098/Q98189/
+permalink: /kb/098/Q98189/
 ---
 
 ## Q98189: Compaq 32 Bit EISA NIC (Netflex)

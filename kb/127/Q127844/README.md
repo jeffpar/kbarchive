@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127844: PRB: Object that Received the Destroy Not Released"
-permalink: kb/127/Q127844/
+permalink: /kb/127/Q127844/
 ---
 
 ## Q127844: PRB: Object that Received the Destroy Not Released

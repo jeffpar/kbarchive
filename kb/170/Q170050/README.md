@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170050: Error Message &quot;Can't Find Msnet32.dll&quot; With NT Server Tools"
-permalink: kb/170/Q170050/
+permalink: /kb/170/Q170050/
 ---
 
 ## Q170050: Error Message &quot;Can't Find Msnet32.dll&quot; With NT Server Tools

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171959: Mac Bookshelf 98: Text and Images Not Copied at Same Time"
-permalink: kb/171/Q171959/
+permalink: /kb/171/Q171959/
 ---
 
 ## Q171959: Mac Bookshelf 98: Text and Images Not Copied at Same Time

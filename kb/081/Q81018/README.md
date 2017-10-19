@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81018: Program Filename Box Documented Incorrectly in PIF Editor Help"
-permalink: kb/081/Q81018/
+permalink: /kb/081/Q81018/
 ---
 
 ## Q81018: Program Filename Box Documented Incorrectly in PIF Editor Help

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174789: Perl Script Gets Access Denied Error on IIS"
-permalink: kb/174/Q174789/
+permalink: /kb/174/Q174789/
 ---
 
 ## Q174789: Perl Script Gets Access Denied Error on IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133349: How to Set Up a Floppy-Disk-Boot Server-Based Installation"
-permalink: kb/133/Q133349/
+permalink: /kb/133/Q133349/
 ---
 
 ## Q133349: How to Set Up a Floppy-Disk-Boot Server-Based Installation

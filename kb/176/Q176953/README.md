@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176953: Host Print Transform Dialog Accepts and Sends Lowercase to AS400"
-permalink: kb/176/Q176953/
+permalink: /kb/176/Q176953/
 ---
 
 ## Q176953: Host Print Transform Dialog Accepts and Sends Lowercase to AS400

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112915: PC Win: How Windows Client Handles Return Receipts"
-permalink: kb/112/Q112915/
+permalink: /kb/112/Q112915/
 ---
 
 ## Q112915: PC Win: How Windows Client Handles Return Receipts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173581: WD97: Inserted Video Missing When HTML Document Is Reopened"
-permalink: kb/173/Q173581/
+permalink: /kb/173/Q173581/
 ---
 
 ## Q173581: WD97: Inserted Video Missing When HTML Document Is Reopened

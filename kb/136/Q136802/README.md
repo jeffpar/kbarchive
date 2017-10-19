@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136802: XADM: Permissions Page Not Displayed"
-permalink: kb/136/Q136802/
+permalink: /kb/136/Q136802/
 ---
 
 ## Q136802: XADM: Permissions Page Not Displayed

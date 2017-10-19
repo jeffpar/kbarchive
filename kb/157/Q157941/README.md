@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157941: XFOR: Attachment Moved When Sent Over MS Mail Connector"
-permalink: kb/157/Q157941/
+permalink: /kb/157/Q157941/
 ---
 
 ## Q157941: XFOR: Attachment Moved When Sent Over MS Mail Connector

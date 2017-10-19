@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158734: SMS: Using Execute.exe to Install Applications"
-permalink: kb/158/Q158734/
+permalink: /kb/158/Q158734/
 ---
 
 ## Q158734: SMS: Using Execute.exe to Install Applications

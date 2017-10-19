@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190199: BUG: OLEcont MSDN Sample Does Not Allow a SaveAs Cancel"
-permalink: kb/190/Q190199/
+permalink: /kb/190/Q190199/
 ---
 
 ## Q190199: BUG: OLEcont MSDN Sample Does Not Allow a SaveAs Cancel

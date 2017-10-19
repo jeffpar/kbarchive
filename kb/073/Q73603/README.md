@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73603: Reliable REad/Write in Enh Mode with SSTOR.SYS UPDATE"
-permalink: kb/073/Q73603/
+permalink: /kb/073/Q73603/
 ---
 
 ## Q73603: Reliable REad/Write in Enh Mode with SSTOR.SYS UPDATE

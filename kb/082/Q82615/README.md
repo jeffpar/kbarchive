@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82615: Version Conflict Message When Installing Windows 3.1"
-permalink: kb/082/Q82615/
+permalink: /kb/082/Q82615/
 ---
 
 ## Q82615: Version Conflict Message When Installing Windows 3.1

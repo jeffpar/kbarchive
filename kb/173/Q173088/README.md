@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173088: How to Remove and Reinstall the Dial-Up Adapter for MSN"
-permalink: kb/173/Q173088/
+permalink: /kb/173/Q173088/
 ---
 
 ## Q173088: How to Remove and Reinstall the Dial-Up Adapter for MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156734: XADM: Err Msg: Attribute Member Of is not Directly Importable"
-permalink: kb/156/Q156734/
+permalink: /kb/156/Q156734/
 ---
 
 ## Q156734: XADM: Err Msg: Attribute Member Of is not Directly Importable

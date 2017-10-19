@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110389: Mac OOF: Common Errors and Troubleshooting OOF"
-permalink: kb/110/Q110389/
+permalink: /kb/110/Q110389/
 ---
 
 ## Q110389: Mac OOF: Common Errors and Troubleshooting OOF

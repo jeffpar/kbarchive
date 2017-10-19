@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279188: FIX: VSS Doesn't Provide Feedback When It Deletes Projects"
-permalink: kb/279/Q279188/
+permalink: /kb/279/Q279188/
 ---
 
 ## Q279188: FIX: VSS Doesn't Provide Feedback When It Deletes Projects

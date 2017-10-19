@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97408: DDEEXEC Demonstrates DDE Execute Strings"
-permalink: kb/097/Q97408/
+permalink: /kb/097/Q97408/
 ---
 
 ## Q97408: DDEEXEC Demonstrates DDE Execute Strings

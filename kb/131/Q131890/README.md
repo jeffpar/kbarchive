@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131890: DOGS: OPTHELP.TXT Contents"
-permalink: kb/131/Q131890/
+permalink: /kb/131/Q131890/
 ---
 
 ## Q131890: DOGS: OPTHELP.TXT Contents

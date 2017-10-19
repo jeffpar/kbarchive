@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179821: How to Delete the MSN Icon on the Desktop"
-permalink: kb/179/Q179821/
+permalink: /kb/179/Q179821/
 ---
 
 ## Q179821: How to Delete the MSN Icon on the Desktop

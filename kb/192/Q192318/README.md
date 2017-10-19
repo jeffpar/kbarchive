@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192318: WD97: Use Field to Print Text in Footer Except on Last Page"
-permalink: kb/192/Q192318/
+permalink: /kb/192/Q192318/
 ---
 
 ## Q192318: WD97: Use Field to Print Text in Footer Except on Last Page

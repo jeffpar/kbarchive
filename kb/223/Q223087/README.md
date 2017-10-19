@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223087: FIX: Accelerator keys Not Handled in ActiveX Control"
-permalink: kb/223/Q223087/
+permalink: /kb/223/Q223087/
 ---
 
 ## Q223087: FIX: Accelerator keys Not Handled in ActiveX Control

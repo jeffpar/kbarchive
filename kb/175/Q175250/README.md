@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175250: Extra Modem Settings U-Z for Connecting to MSN"
-permalink: kb/175/Q175250/
+permalink: /kb/175/Q175250/
 ---
 
 ## Q175250: Extra Modem Settings U-Z for Connecting to MSN

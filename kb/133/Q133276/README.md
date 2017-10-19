@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133276: FIX: ClassWizard Generates Incorrect UDN_DELTAPOS Handler"
-permalink: kb/133/Q133276/
+permalink: /kb/133/Q133276/
 ---
 
 ## Q133276: FIX: ClassWizard Generates Incorrect UDN_DELTAPOS Handler

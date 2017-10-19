@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90190: Changes Made to SYSTEM.INI by Sound Master II Board"
-permalink: kb/090/Q90190/
+permalink: /kb/090/Q90190/
 ---
 
 ## Q90190: Changes Made to SYSTEM.INI by Sound Master II Board

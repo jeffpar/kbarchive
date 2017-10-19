@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81643: Exchanging a Disk Between DR-DOS 6.0 and MS-DOS"
-permalink: kb/081/Q81643/
+permalink: /kb/081/Q81643/
 ---
 
 ## Q81643: Exchanging a Disk Between DR-DOS 6.0 and MS-DOS

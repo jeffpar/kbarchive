@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306427: DB2OLEDB Provider: AV When Doing INSERT into DB2 Table"
-permalink: kb/306/Q306427/
+permalink: /kb/306/Q306427/
 ---
 
 ## Q306427: DB2OLEDB Provider: AV When Doing INSERT into DB2 Table

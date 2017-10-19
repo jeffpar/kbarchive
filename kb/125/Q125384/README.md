@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125384: Performance Monitor Does Not Monitor Process File Operations"
-permalink: kb/125/Q125384/
+permalink: /kb/125/Q125384/
 ---
 
 ## Q125384: Performance Monitor Does Not Monitor Process File Operations

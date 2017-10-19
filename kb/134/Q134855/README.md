@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134855: PRB: Unable to Edit Blank Text Boxes in a Grid"
-permalink: kb/134/Q134855/
+permalink: /kb/134/Q134855/
 ---
 
 ## Q134855: PRB: Unable to Edit Blank Text Boxes in a Grid

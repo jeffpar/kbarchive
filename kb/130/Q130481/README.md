@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130481: CMD Technology PCI-0640x IDE Controller Requires New Driver"
-permalink: kb/130/Q130481/
+permalink: /kb/130/Q130481/
 ---
 
 ## Q130481: CMD Technology PCI-0640x IDE Controller Requires New Driver

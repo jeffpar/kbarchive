@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123649: MHS: Err Msg: Outpost: Could Not Create Mail Item"
-permalink: kb/123/Q123649/
+permalink: /kb/123/Q123649/
 ---
 
 ## Q123649: MHS: Err Msg: Outpost: Could Not Create Mail Item

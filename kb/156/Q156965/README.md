@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156965: XFOR: SMTP Header Time Conflicts with Sent Time on Message"
-permalink: kb/156/Q156965/
+permalink: /kb/156/Q156965/
 ---
 
 ## Q156965: XFOR: SMTP Header Time Conflicts with Sent Time on Message

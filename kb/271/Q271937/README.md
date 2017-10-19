@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271937: SMS: Systems Management Server 2.0 Support of SQL Server 2000"
-permalink: kb/271/Q271937/
+permalink: /kb/271/Q271937/
 ---
 
 ## Q271937: SMS: Systems Management Server 2.0 Support of SQL Server 2000

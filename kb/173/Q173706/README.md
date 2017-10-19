@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173706: XADM: Performance Optimizer Sets Store Threads Differently"
-permalink: kb/173/Q173706/
+permalink: /kb/173/Q173706/
 ---
 
 ## Q173706: XADM: Performance Optimizer Sets Store Threads Differently

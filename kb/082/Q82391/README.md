@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82391: Windows Hangs with Kurta Mouse Driver"
-permalink: kb/082/Q82391/
+permalink: /kb/082/Q82391/
 ---
 
 ## Q82391: Windows Hangs with Kurta Mouse Driver

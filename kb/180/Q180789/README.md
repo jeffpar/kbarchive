@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180789: Cancelling APPC RECEIVE_AND_POST Causes SNA Event ID 95"
-permalink: kb/180/Q180789/
+permalink: /kb/180/Q180789/
 ---
 
 ## Q180789: Cancelling APPC RECEIVE_AND_POST Causes SNA Event ID 95

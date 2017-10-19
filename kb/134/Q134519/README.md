@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134519: Adjusting Color Intensity in Picture Publisher Has no Effect"
-permalink: kb/134/Q134519/
+permalink: /kb/134/Q134519/
 ---
 
 ## Q134519: Adjusting Color Intensity in Picture Publisher Has no Effect

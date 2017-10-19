@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261083: MCM2: Cannot Switch Game Controller During Game Play"
-permalink: kb/261/Q261083/
+permalink: /kb/261/Q261083/
 ---
 
 ## Q261083: MCM2: Cannot Switch Game Controller During Game Play

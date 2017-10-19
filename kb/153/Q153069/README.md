@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153069: How to Contact MSN Support When You Are Unable to Connect"
-permalink: kb/153/Q153069/
+permalink: /kb/153/Q153069/
 ---
 
 ## Q153069: How to Contact MSN Support When You Are Unable to Connect

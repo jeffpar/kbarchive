@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192596: FIX: ASP May Fail When IIS Is in Low Memory Condition"
-permalink: kb/192/Q192596/
+permalink: /kb/192/Q192596/
 ---
 
 ## Q192596: FIX: ASP May Fail When IIS Is in Low Memory Condition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243168: Asheron's Call Requires a Pentium 166 or Higher..."
-permalink: kb/243/Q243168/
+permalink: /kb/243/Q243168/
 ---
 
 ## Q243168: Asheron's Call Requires a Pentium 166 or Higher...

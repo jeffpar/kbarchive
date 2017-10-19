@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190011: Perl Script Mappings Converted to Uppercase During Upgrade"
-permalink: kb/190/Q190011/
+permalink: /kb/190/Q190011/
 ---
 
 ## Q190011: Perl Script Mappings Converted to Uppercase During Upgrade

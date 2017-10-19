@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106628: Comprehensive List - &quot;MS-DOS 6.2 Upgrade for Dummies&quot; Doc Errs"
-permalink: kb/106/Q106628/
+permalink: /kb/106/Q106628/
 ---
 
 ## Q106628: Comprehensive List - &quot;MS-DOS 6.2 Upgrade for Dummies&quot; Doc Errs

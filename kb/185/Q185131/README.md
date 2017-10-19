@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185131: XADM: Dynamic Link Library Edb.dll Could Not Be Found"
-permalink: kb/185/Q185131/
+permalink: /kb/185/Q185131/
 ---
 
 ## Q185131: XADM: Dynamic Link Library Edb.dll Could Not Be Found

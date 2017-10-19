@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196556: WD97: Text Won't Wrap Around Frame or Text Box in Header/Footer"
-permalink: kb/196/Q196556/
+permalink: /kb/196/Q196556/
 ---
 
 ## Q196556: WD97: Text Won't Wrap Around Frame or Text Box in Header/Footer

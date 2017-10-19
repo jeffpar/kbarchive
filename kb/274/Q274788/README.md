@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274788: Encarta 2001: Find Box Is Not Displayed on Home Screen"
-permalink: kb/274/Q274788/
+permalink: /kb/274/Q274788/
 ---
 
 ## Q274788: Encarta 2001: Find Box Is Not Displayed on Home Screen

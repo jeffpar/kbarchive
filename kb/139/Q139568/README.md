@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139568: How to Dock a Toolbar that Is Part of a Formset"
-permalink: kb/139/Q139568/
+permalink: /kb/139/Q139568/
 ---
 
 ## Q139568: How to Dock a Toolbar that Is Part of a Formset

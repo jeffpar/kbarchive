@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242515: ALS TCP/IP For Windows NT Comments and Corrections"
-permalink: kb/242/Q242515/
+permalink: /kb/242/Q242515/
 ---
 
 ## Q242515: ALS TCP/IP For Windows NT Comments and Corrections

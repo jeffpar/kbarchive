@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306500: PRB: &quot;Foxcode Script '' Failure&quot; Error with Intellisense"
-permalink: kb/306/Q306500/
+permalink: /kb/306/Q306500/
 ---
 
 ## Q306500: PRB: &quot;Foxcode Script '' Failure&quot; Error with Intellisense

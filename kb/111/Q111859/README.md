@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111859: PC WSPlus: Lost Connection to LAN Manager or NetWare Server"
-permalink: kb/111/Q111859/
+permalink: /kb/111/Q111859/
 ---
 
 ## Q111859: PC WSPlus: Lost Connection to LAN Manager or NetWare Server

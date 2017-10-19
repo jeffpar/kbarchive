@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167682: Application Exceptions When Opening a SNA Server 2.11 COM.CFG"
-permalink: kb/167/Q167682/
+permalink: /kb/167/Q167682/
 ---
 
 ## Q167682: Application Exceptions When Opening a SNA Server 2.11 COM.CFG

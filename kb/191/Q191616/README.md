@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191616: BUG: Order of Evaluation Change Between Native Code and P-Code"
-permalink: kb/191/Q191616/
+permalink: /kb/191/Q191616/
 ---
 
 ## Q191616: BUG: Order of Evaluation Change Between Native Code and P-Code

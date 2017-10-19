@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138296: HOWTO: Use UNC Paths in Visual SourceSafe"
-permalink: kb/138/Q138296/
+permalink: /kb/138/Q138296/
 ---
 
 ## Q138296: HOWTO: Use UNC Paths in Visual SourceSafe

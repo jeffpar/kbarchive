@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217921: SBS FAX: Unsent Fax Does Not Stay in Queue for Days Specified"
-permalink: kb/217/Q217921/
+permalink: /kb/217/Q217921/
 ---
 
 ## Q217921: SBS FAX: Unsent Fax Does Not Stay in Queue for Days Specified

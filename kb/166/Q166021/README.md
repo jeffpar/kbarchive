@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166021: Plus! For Kids: Protect It Cannot Disable Main System Icons"
-permalink: kb/166/Q166021/
+permalink: /kb/166/Q166021/
 ---
 
 ## Q166021: Plus! For Kids: Protect It Cannot Disable Main System Icons

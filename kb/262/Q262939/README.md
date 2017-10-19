@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262939: XADM: Internet Mail Service Won't Start After DC Demoted"
-permalink: kb/262/Q262939/
+permalink: /kb/262/Q262939/
 ---
 
 ## Q262939: XADM: Internet Mail Service Won't Start After DC Demoted

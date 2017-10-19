@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263410: SMS: Distribution Manager Orphans Package Share"
-permalink: kb/263/Q263410/
+permalink: /kb/263/Q263410/
 ---
 
 ## Q263410: SMS: Distribution Manager Orphans Package Share

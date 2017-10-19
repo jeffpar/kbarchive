@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192043: XADM: Cannot Get Properties of Public Folders After a Restore"
-permalink: kb/192/Q192043/
+permalink: /kb/192/Q192043/
 ---
 
 ## Q192043: XADM: Cannot Get Properties of Public Folders After a Restore

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66849: ASD: Additional Objects Available"
-permalink: kb/066/Q66849/
+permalink: /kb/066/Q66849/
 ---
 
 ## Q66849: ASD: Additional Objects Available

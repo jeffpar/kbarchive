@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153192: IIS Queries Against Oracle Datasource Cause Access Violations"
-permalink: kb/153/Q153192/
+permalink: /kb/153/Q153192/
 ---
 
 ## Q153192: IIS Queries Against Oracle Datasource Cause Access Violations

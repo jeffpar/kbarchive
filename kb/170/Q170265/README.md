@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170265: WD97: Error Opening Korean Document with Numbering in U.S. Word"
-permalink: kb/170/Q170265/
+permalink: /kb/170/Q170265/
 ---
 
 ## Q170265: WD97: Error Opening Korean Document with Numbering in U.S. Word

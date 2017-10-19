@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216904: How to Access a Client Authentication Certificate"
-permalink: kb/216/Q216904/
+permalink: /kb/216/Q216904/
 ---
 
 ## Q216904: How to Access a Client Authentication Certificate

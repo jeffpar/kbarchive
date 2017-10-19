@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156997: XFOR: IMC NDRs or Misdirects Mail Without Domain Address"
-permalink: kb/156/Q156997/
+permalink: /kb/156/Q156997/
 ---
 
 ## Q156997: XFOR: IMC NDRs or Misdirects Mail Without Domain Address

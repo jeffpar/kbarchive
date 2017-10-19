@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235206: SMS: BackOffice Resource Kit 4.5 Lists Incorrect File Locations"
-permalink: kb/235/Q235206/
+permalink: /kb/235/Q235206/
 ---
 
 ## Q235206: SMS: BackOffice Resource Kit 4.5 Lists Incorrect File Locations

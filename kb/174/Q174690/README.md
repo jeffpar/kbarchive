@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174690: XGEN: Perflib Errors 1008, 1009, 1011 in Application Logs"
-permalink: kb/174/Q174690/
+permalink: /kb/174/Q174690/
 ---
 
 ## Q174690: XGEN: Perflib Errors 1008, 1009, 1011 in Application Logs

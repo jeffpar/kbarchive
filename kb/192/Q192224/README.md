@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192224: Windows NT Option Pack Update for IIS Available for Download"
-permalink: kb/192/Q192224/
+permalink: /kb/192/Q192224/
 ---
 
 ## Q192224: Windows NT Option Pack Update for IIS Available for Download

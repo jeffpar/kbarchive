@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138240: Powerpoint Quick Preview Launch Generates Error Using Appstart"
-permalink: kb/138/Q138240/
+permalink: /kb/138/Q138240/
 ---
 
 ## Q138240: Powerpoint Quick Preview Launch Generates Error Using Appstart

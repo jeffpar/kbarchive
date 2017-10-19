@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149460: BUG: 16-Bit Setup Does Not Detect a 32-Bit Installation"
-permalink: kb/149/Q149460/
+permalink: /kb/149/Q149460/
 ---
 
 ## Q149460: BUG: 16-Bit Setup Does Not Detect a 32-Bit Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51282: Mac Srv Wkst: Running Mail with Gatekeeper"
-permalink: kb/051/Q51282/
+permalink: /kb/051/Q51282/
 ---
 
 ## Q51282: Mac Srv Wkst: Running Mail with Gatekeeper

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156632: PRB: SetFocus Does Not Function in All Control Methods"
-permalink: kb/156/Q156632/
+permalink: /kb/156/Q156632/
 ---
 
 ## Q156632: PRB: SetFocus Does Not Function in All Control Methods

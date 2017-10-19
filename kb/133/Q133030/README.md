@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133030: Upgrading Windows NT 3.1 to Windows NT 3.51 on Compaq Computers"
-permalink: kb/133/Q133030/
+permalink: /kb/133/Q133030/
 ---
 
 ## Q133030: Upgrading Windows NT 3.1 to Windows NT 3.51 on Compaq Computers

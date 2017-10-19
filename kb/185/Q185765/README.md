@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185765: HP LaserJet 4Si Driver Unprintable Region is Incorrect"
-permalink: kb/185/Q185765/
+permalink: /kb/185/Q185765/
 ---
 
 ## Q185765: HP LaserJet 4Si Driver Unprintable Region is Incorrect

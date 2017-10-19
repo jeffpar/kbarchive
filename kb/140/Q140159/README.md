@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140159: Streets 4.0: Unable to Print Highways with HP Printer"
-permalink: kb/140/Q140159/
+permalink: /kb/140/Q140159/
 ---
 
 ## Q140159: Streets 4.0: Unable to Print Highways with HP Printer

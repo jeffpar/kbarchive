@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124744: Command Prompt Err Msg: All Pipe Instances Are Busy"
-permalink: kb/124/Q124744/
+permalink: /kb/124/Q124744/
 ---
 
 ## Q124744: Command Prompt Err Msg: All Pipe Instances Are Busy

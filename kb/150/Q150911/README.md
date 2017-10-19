@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150911: CACLS Output Cannot Be Redirected"
-permalink: kb/150/Q150911/
+permalink: /kb/150/Q150911/
 ---
 
 ## Q150911: CACLS Output Cannot Be Redirected

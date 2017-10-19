@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186301: XWEB: Outlook Web Access Does Not Include Outlook Today"
-permalink: kb/186/Q186301/
+permalink: /kb/186/Q186301/
 ---
 
 ## Q186301: XWEB: Outlook Web Access Does Not Include Outlook Today

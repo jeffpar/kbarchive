@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275598: XCON: Invalid Characters Cause Information Store Crash"
-permalink: kb/275/Q275598/
+permalink: /kb/275/Q275598/
 ---
 
 ## Q275598: XCON: Invalid Characters Cause Information Store Crash

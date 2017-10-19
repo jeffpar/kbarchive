@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171119: Err. Msg.: Access Forbidden During Certificate Creation"
-permalink: kb/171/Q171119/
+permalink: /kb/171/Q171119/
 ---
 
 ## Q171119: Err. Msg.: Access Forbidden During Certificate Creation

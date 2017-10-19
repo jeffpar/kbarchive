@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294966: PRB: RepairDatabase Method Is No Longer Available in DAO 3.6"
-permalink: kb/294/Q294966/
+permalink: /kb/294/Q294966/
 ---
 
 ## Q294966: PRB: RepairDatabase Method Is No Longer Available in DAO 3.6

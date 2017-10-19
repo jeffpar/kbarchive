@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175873: FS98/2000: Using Aircraft and Adventures from Earlier Versions"
-permalink: kb/175/Q175873/
+permalink: /kb/175/Q175873/
 ---
 
 ## Q175873: FS98/2000: Using Aircraft and Adventures from Earlier Versions

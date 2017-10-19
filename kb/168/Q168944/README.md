@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168944: Epson Stylus Color 800 Does Not Print with Service Pack 3"
-permalink: kb/168/Q168944/
+permalink: /kb/168/Q168944/
 ---
 
 ## Q168944: Epson Stylus Color 800 Does Not Print with Service Pack 3

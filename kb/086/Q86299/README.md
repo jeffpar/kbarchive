@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86299: Microsoft Windows &amp; MS-DOS 5 Upgrade"
-permalink: kb/086/Q86299/
+permalink: /kb/086/Q86299/
 ---
 
 ## Q86299: Microsoft Windows &amp; MS-DOS 5 Upgrade

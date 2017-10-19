@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280051: Foreign User Exclusion Template Has a Duplicate Message Number"
-permalink: kb/280/Q280051/
+permalink: /kb/280/Q280051/
 ---
 
 ## Q280051: Foreign User Exclusion Template Has a Duplicate Message Number

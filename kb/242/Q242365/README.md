@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242365: XADM: How to Install Mailbox Manager for SP3 from the FTP Site"
-permalink: kb/242/Q242365/
+permalink: /kb/242/Q242365/
 ---
 
 ## Q242365: XADM: How to Install Mailbox Manager for SP3 from the FTP Site

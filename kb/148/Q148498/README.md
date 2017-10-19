@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148498: DOC: CListBox::ItemFromPoint() Works Only in Windows 95"
-permalink: kb/148/Q148498/
+permalink: /kb/148/Q148498/
 ---
 
 ## Q148498: DOC: CListBox::ItemFromPoint() Works Only in Windows 95

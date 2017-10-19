@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75861: Using Lotus Metro Versions 1.0 and 1.1 with MS-DOS Version 5.0"
-permalink: kb/075/Q75861/
+permalink: /kb/075/Q75861/
 ---
 
 ## Q75861: Using Lotus Metro Versions 1.0 and 1.1 with MS-DOS Version 5.0

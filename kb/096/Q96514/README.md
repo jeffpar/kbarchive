@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96514: Difference Between the DIR /C and DIR /CH Commands"
-permalink: kb/096/Q96514/
+permalink: /kb/096/Q96514/
 ---
 
 ## Q96514: Difference Between the DIR /C and DIR /CH Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10022: OFF97: EPS File Is Not Printed or Is Printed Incorrectly in NT"
-permalink: kb/010/Q10022/
+permalink: /kb/010/Q10022/
 ---
 
 ## Q10022: OFF97: EPS File Is Not Printed or Is Printed Incorrectly in NT

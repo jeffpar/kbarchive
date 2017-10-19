@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306292: Microsoft PowerPoint Version 2002 Step by Step Comments and Corr"
-permalink: kb/306/Q306292/
+permalink: /kb/306/Q306292/
 ---
 
 ## Q306292: Microsoft PowerPoint Version 2002 Step by Step Comments and Corr

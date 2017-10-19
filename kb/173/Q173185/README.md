@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173185: XCLN: Err Msg: The Schedule File Could Not Be Opened"
-permalink: kb/173/Q173185/
+permalink: /kb/173/Q173185/
 ---
 
 ## Q173185: XCLN: Err Msg: The Schedule File Could Not Be Opened

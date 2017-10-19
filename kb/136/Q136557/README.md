@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136557: BUG: SHOW WINDOW &lt;name&gt; REFRESH in BROWSE VALID Does Not Work"
-permalink: kb/136/Q136557/
+permalink: /kb/136/Q136557/
 ---
 
 ## Q136557: BUG: SHOW WINDOW &lt;name&gt; REFRESH in BROWSE VALID Does Not Work

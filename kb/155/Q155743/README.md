@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155743: Directory Import Error: Unable to Process Object"
-permalink: kb/155/Q155743/
+permalink: /kb/155/Q155743/
 ---
 
 ## Q155743: Directory Import Error: Unable to Process Object

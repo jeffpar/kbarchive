@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196188: XADM: Outlook Displays Overdue Notices for Past Appointments"
-permalink: kb/196/Q196188/
+permalink: /kb/196/Q196188/
 ---
 
 ## Q196188: XADM: Outlook Displays Overdue Notices for Past Appointments

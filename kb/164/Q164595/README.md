@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164595: Duplicate Route Not Removed After Second Redirection"
-permalink: kb/164/Q164595/
+permalink: /kb/164/Q164595/
 ---
 
 ## Q164595: Duplicate Route Not Removed After Second Redirection

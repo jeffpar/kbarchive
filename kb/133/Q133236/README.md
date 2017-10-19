@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133236: HOWTO: Configure Books Online to Search Multiple Books"
-permalink: kb/133/Q133236/
+permalink: /kb/133/Q133236/
 ---
 
 ## Q133236: HOWTO: Configure Books Online to Search Multiple Books

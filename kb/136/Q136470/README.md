@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136470: HP Vectra 486/50 Computer Hangs After Choosing to Restart"
-permalink: kb/136/Q136470/
+permalink: /kb/136/Q136470/
 ---
 
 ## Q136470: HP Vectra 486/50 Computer Hangs After Choosing to Restart

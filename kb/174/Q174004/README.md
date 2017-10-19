@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174004: FIX: Cannot Change Variant Array in Class Module"
-permalink: kb/174/Q174004/
+permalink: /kb/174/Q174004/
 ---
 
 ## Q174004: FIX: Cannot Change Variant Array in Class Module

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187672: Access Violation in RAS Using Multilink"
-permalink: kb/187/Q187672/
+permalink: /kb/187/Q187672/
 ---
 
 ## Q187672: Access Violation in RAS Using Multilink

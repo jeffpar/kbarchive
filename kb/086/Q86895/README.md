@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86895: Possible Problems with Windows 3.0, 3.1 Using Setup /P"
-permalink: kb/086/Q86895/
+permalink: /kb/086/Q86895/
 ---
 
 ## Q86895: Possible Problems with Windows 3.0, 3.1 Using Setup /P

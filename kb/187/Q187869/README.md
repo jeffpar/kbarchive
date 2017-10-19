@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187869: XADM: Information Store Stops While Processing Message"
-permalink: kb/187/Q187869/
+permalink: /kb/187/Q187869/
 ---
 
 ## Q187869: XADM: Information Store Stops While Processing Message

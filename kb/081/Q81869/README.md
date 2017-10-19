@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81869: Using mciSendCommand() to Control CD-ROM Drive"
-permalink: kb/081/Q81869/
+permalink: /kb/081/Q81869/
 ---
 
 ## Q81869: Using mciSendCommand() to Control CD-ROM Drive

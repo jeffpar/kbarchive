@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191355: FIX: ATL Doesn't Call InitCommonControls in ActiveX Control"
-permalink: kb/191/Q191355/
+permalink: /kb/191/Q191355/
 ---
 
 ## Q191355: FIX: ATL Doesn't Call InitCommonControls in ActiveX Control

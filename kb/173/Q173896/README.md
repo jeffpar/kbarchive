@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173896: XWEB: Err Msg: Netscape is Unable to Connect to the Server"
-permalink: kb/173/Q173896/
+permalink: /kb/173/Q173896/
 ---
 
 ## Q173896: XWEB: Err Msg: Netscape is Unable to Connect to the Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162216: Flight Sim 95: Err Msg: Invalid Page Fault in Weatherm.dll"
-permalink: kb/162/Q162216/
+permalink: /kb/162/Q162216/
 ---
 
 ## Q162216: Flight Sim 95: Err Msg: Invalid Page Fault in Weatherm.dll

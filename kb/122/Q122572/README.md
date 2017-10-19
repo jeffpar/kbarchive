@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122572: Multiple Events Appear for Intelligent Digiboard Adapters"
-permalink: kb/122/Q122572/
+permalink: /kb/122/Q122572/
 ---
 
 ## Q122572: Multiple Events Appear for Intelligent Digiboard Adapters

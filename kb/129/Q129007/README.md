@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129007: HPMON Logs Event 1044 But Job Prints Correctly"
-permalink: kb/129/Q129007/
+permalink: /kb/129/Q129007/
 ---
 
 ## Q129007: HPMON Logs Event 1044 But Job Prints Correctly

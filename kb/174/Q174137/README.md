@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174137: Unable to Navigate Using Program Viewer in MSN"
-permalink: kb/174/Q174137/
+permalink: /kb/174/Q174137/
 ---
 
 ## Q174137: Unable to Navigate Using Program Viewer in MSN

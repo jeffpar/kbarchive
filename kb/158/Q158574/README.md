@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158574: STL Sample for the set::count Function"
-permalink: kb/158/Q158574/
+permalink: /kb/158/Q158574/
 ---
 
 ## Q158574: STL Sample for the set::count Function

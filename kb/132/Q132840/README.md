@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132840: Insufficient Memory Errors in Tony Larussa Baseball 3 Game"
-permalink: kb/132/Q132840/
+permalink: /kb/132/Q132840/
 ---
 
 ## Q132840: Insufficient Memory Errors in Tony Larussa Baseball 3 Game

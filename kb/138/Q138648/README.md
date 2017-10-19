@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138648: CLEAR ALL Command Releases Objects Added to _SCREEN"
-permalink: kb/138/Q138648/
+permalink: /kb/138/Q138648/
 ---
 
 ## Q138648: CLEAR ALL Command Releases Objects Added to _SCREEN

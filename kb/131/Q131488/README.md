@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131488: Today's Date Is the Default Date in Go To Dialog Box"
-permalink: kb/131/Q131488/
+permalink: /kb/131/Q131488/
 ---
 
 ## Q131488: Today's Date Is the Default Date in Go To Dialog Box

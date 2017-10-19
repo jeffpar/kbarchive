@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89568: Additional Documentation for GetDOSEnvironment()"
-permalink: kb/089/Q89568/
+permalink: /kb/089/Q89568/
 ---
 
 ## Q89568: Additional Documentation for GetDOSEnvironment()

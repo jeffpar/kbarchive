@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155560: Canvas 95 Does Not Run in Windows NT"
-permalink: kb/155/Q155560/
+permalink: /kb/155/Q155560/
 ---
 
 ## Q155560: Canvas 95 Does Not Run in Windows NT

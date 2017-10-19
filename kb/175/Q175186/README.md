@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175186: Extra Modem Settings A-C for Connecting to MSN"
-permalink: kb/175/Q175186/
+permalink: /kb/175/Q175186/
 ---
 
 ## Q175186: Extra Modem Settings A-C for Connecting to MSN

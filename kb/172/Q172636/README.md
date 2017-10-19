@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172636: Blank Manager Screen If Sponsor Server Registry Not Available"
-permalink: kb/172/Q172636/
+permalink: /kb/172/Q172636/
 ---
 
 ## Q172636: Blank Manager Screen If Sponsor Server Registry Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294319: Microsoft SQL Server 7.0 Performance Tuning Technical Reference"
-permalink: kb/294/Q294319/
+permalink: /kb/294/Q294319/
 ---
 
 ## Q294319: Microsoft SQL Server 7.0 Performance Tuning Technical Reference

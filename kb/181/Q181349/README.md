@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181349: Applications and Icons Not Displayed in Start Menu"
-permalink: kb/181/Q181349/
+permalink: /kb/181/Q181349/
 ---
 
 ## Q181349: Applications and Icons Not Displayed in Start Menu

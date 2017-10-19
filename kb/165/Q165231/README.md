@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165231: WD97: Fax Wizard Leaves .tmp Files Behind"
-permalink: kb/165/Q165231/
+permalink: /kb/165/Q165231/
 ---
 
 ## Q165231: WD97: Fax Wizard Leaves .tmp Files Behind

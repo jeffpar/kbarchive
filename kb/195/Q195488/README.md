@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195488: INFO: Installing Visual Modeler for Visual Basic 5.0 and 6.0"
-permalink: kb/195/Q195488/
+permalink: /kb/195/Q195488/
 ---
 
 ## Q195488: INFO: Installing Visual Modeler for Visual Basic 5.0 and 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78560: Determining Inclusion Address Ranges for EMM386"
-permalink: kb/078/Q78560/
+permalink: /kb/078/Q78560/
 ---
 
 ## Q78560: Determining Inclusion Address Ranges for EMM386

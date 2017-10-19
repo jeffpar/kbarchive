@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162807: Err Msg: RAS Error 633: The Port Is in Use or Not Configured"
-permalink: kb/162/Q162807/
+permalink: /kb/162/Q162807/
 ---
 
 ## Q162807: Err Msg: RAS Error 633: The Port Is in Use or Not Configured

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312920: CiCatalogFlags Cannot Disable Local NTFS Notifications"
-permalink: kb/312/Q312920/
+permalink: /kb/312/Q312920/
 ---
 
 ## Q312920: CiCatalogFlags Cannot Disable Local NTFS Notifications

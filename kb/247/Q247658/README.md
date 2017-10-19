@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247658: HOW TO: Configure SSL Server and Client Cache Elements"
-permalink: kb/247/Q247658/
+permalink: /kb/247/Q247658/
 ---
 
 ## Q247658: HOW TO: Configure SSL Server and Client Cache Elements

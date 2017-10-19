@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124660: Paradox Err Msg: &quot;The File WINTUTOR.EXE Could Not Be Found&quot;"
-permalink: kb/124/Q124660/
+permalink: /kb/124/Q124660/
 ---
 
 ## Q124660: Paradox Err Msg: &quot;The File WINTUTOR.EXE Could Not Be Found&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219320: Unexpected Print Results When Printer Is Turned On After Startup"
-permalink: kb/219/Q219320/
+permalink: /kb/219/Q219320/
 ---
 
 ## Q219320: Unexpected Print Results When Printer Is Turned On After Startup

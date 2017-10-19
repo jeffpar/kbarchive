@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224436: OL98: Melissa Macro Virus Alert"
-permalink: kb/224/Q224436/
+permalink: /kb/224/Q224436/
 ---
 
 ## Q224436: OL98: Melissa Macro Virus Alert

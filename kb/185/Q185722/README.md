@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185722: SFM Rebuilds Indexes upon Restarting of Windows NT"
-permalink: kb/185/Q185722/
+permalink: /kb/185/Q185722/
 ---
 
 ## Q185722: SFM Rebuilds Indexes upon Restarting of Windows NT

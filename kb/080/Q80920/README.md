@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80920: FltSim: EFIS Flight Path for Martha's Vineyard Does Not Show"
-permalink: kb/080/Q80920/
+permalink: /kb/080/Q80920/
 ---
 
 ## Q80920: FltSim: EFIS Flight Path for Martha's Vineyard Does Not Show

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197428: BUG: DataRepeater Control does not Update Records"
-permalink: kb/197/Q197428/
+permalink: /kb/197/Q197428/
 ---
 
 ## Q197428: BUG: DataRepeater Control does not Update Records

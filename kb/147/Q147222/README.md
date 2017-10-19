@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147222: Group of Hotfixes for Exchange 5.5 and IIS 4.0"
-permalink: kb/147/Q147222/
+permalink: /kb/147/Q147222/
 ---
 
 ## Q147222: Group of Hotfixes for Exchange 5.5 and IIS 4.0

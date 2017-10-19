@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121349: EGA3.CPI File Not Included with MS-DOS 6.22 Upgrade 720K Disks"
-permalink: kb/121/Q121349/
+permalink: /kb/121/Q121349/
 ---
 
 ## Q121349: EGA3.CPI File Not Included with MS-DOS 6.22 Upgrade 720K Disks

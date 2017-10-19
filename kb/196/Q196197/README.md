@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196197: PRB: Getting a File From Project Label Using OLE Automation"
-permalink: kb/196/Q196197/
+permalink: /kb/196/Q196197/
 ---
 
 ## Q196197: PRB: Getting a File From Project Label Using OLE Automation

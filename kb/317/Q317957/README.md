@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317957: PRB: Connection Information Is Broken After You Check In Without"
-permalink: kb/317/Q317957/
+permalink: /kb/317/Q317957/
 ---
 
 ## Q317957: PRB: Connection Information Is Broken After You Check In Without

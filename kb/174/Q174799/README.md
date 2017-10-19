@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174799: How to Install Service Packs in a Cluster"
-permalink: kb/174/Q174799/
+permalink: /kb/174/Q174799/
 ---
 
 ## Q174799: How to Install Service Packs in a Cluster

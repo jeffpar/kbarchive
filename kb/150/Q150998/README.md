@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150998: Bookshelf '96-'97: Adjusting QuickShelf Toolbar to Fit Screen"
-permalink: kb/150/Q150998/
+permalink: /kb/150/Q150998/
 ---
 
 ## Q150998: Bookshelf '96-'97: Adjusting QuickShelf Toolbar to Fit Screen

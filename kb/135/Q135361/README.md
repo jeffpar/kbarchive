@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135361: BUG: SEEK Command Fails If Collate Is Set to &quot;Machine&quot;"
-permalink: kb/135/Q135361/
+permalink: /kb/135/Q135361/
 ---
 
 ## Q135361: BUG: SEEK Command Fails If Collate Is Set to &quot;Machine&quot;

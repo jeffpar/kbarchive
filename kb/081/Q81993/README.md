@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81993: Controlling a Videodisc Player"
-permalink: kb/081/Q81993/
+permalink: /kb/081/Q81993/
 ---
 
 ## Q81993: Controlling a Videodisc Player

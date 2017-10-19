@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130464: BUG: Number Entry Starts at Center or Left in a Browse"
-permalink: kb/130/Q130464/
+permalink: /kb/130/Q130464/
 ---
 
 ## Q130464: BUG: Number Entry Starts at Center or Left in a Browse

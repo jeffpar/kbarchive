@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254037: XFOR: Access Violation Occurs in Nnotes.dll w/ Lotus Notes 4.6a"
-permalink: kb/254/Q254037/
+permalink: /kb/254/Q254037/
 ---
 
 ## Q254037: XFOR: Access Violation Occurs in Nnotes.dll w/ Lotus Notes 4.6a

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69577: FORMAT and 8-Sector Disks in MS-DOS"
-permalink: kb/069/Q69577/
+permalink: /kb/069/Q69577/
 ---
 
 ## Q69577: FORMAT and 8-Sector Disks in MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249798: IBM MQSeries TCP/IP Channels Do Not Start After Applying SP6"
-permalink: kb/249/Q249798/
+permalink: /kb/249/Q249798/
 ---
 
 ## Q249798: IBM MQSeries TCP/IP Channels Do Not Start After Applying SP6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225465: Add User Wizard Populated with Company Data"
-permalink: kb/225/Q225465/
+permalink: /kb/225/Q225465/
 ---
 
 ## Q225465: Add User Wizard Populated with Company Data

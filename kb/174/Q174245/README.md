@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174245: Err Msg: An Unknown Error Has Occurred: 501 Invalid Address"
-permalink: kb/174/Q174245/
+permalink: /kb/174/Q174245/
 ---
 
 ## Q174245: Err Msg: An Unknown Error Has Occurred: 501 Invalid Address

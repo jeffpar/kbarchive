@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84373: Wang PC with BIOS 1.14 Requires /M:2 Switch in DEVICE="
-permalink: kb/084/Q84373/
+permalink: /kb/084/Q84373/
 ---
 
 ## Q84373: Wang PC with BIOS 1.14 Requires /M:2 Switch in DEVICE=

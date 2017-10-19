@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86571: Earlier Hitachi CD-ROMs May Not Work with Media Player"
-permalink: kb/086/Q86571/
+permalink: /kb/086/Q86571/
 ---
 
 ## Q86571: Earlier Hitachi CD-ROMs May Not Work with Media Player

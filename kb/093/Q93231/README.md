@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93231: Joint Data Systems Video BIOS Needs Upgrade"
-permalink: kb/093/Q93231/
+permalink: /kb/093/Q93231/
 ---
 
 ## Q93231: Joint Data Systems Video BIOS Needs Upgrade

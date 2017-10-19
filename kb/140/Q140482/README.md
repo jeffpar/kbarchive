@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140482: PPT7: Help Index Shows What's New in Word 95 Topic"
-permalink: kb/140/Q140482/
+permalink: /kb/140/Q140482/
 ---
 
 ## Q140482: PPT7: Help Index Shows What's New in Word 95 Topic

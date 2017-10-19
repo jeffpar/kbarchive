@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164149: HOWTO: Build Custom COM Interface Marshalers with Visual C++"
-permalink: kb/164/Q164149/
+permalink: /kb/164/Q164149/
 ---
 
 ## Q164149: HOWTO: Build Custom COM Interface Marshalers with Visual C++

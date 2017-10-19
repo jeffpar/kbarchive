@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71301: DayBook: Mouse Required to Use Run-Time ToolBook Version 1.00"
-permalink: kb/071/Q71301/
+permalink: /kb/071/Q71301/
 ---
 
 ## Q71301: DayBook: Mouse Required to Use Run-Time ToolBook Version 1.00

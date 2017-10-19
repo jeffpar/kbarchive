@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177308: XADM: Slow Client Logon Due to Missing Addressing Template"
-permalink: kb/177/Q177308/
+permalink: /kb/177/Q177308/
 ---
 
 ## Q177308: XADM: Slow Client Logon Due to Missing Addressing Template

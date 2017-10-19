@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168204: HOWTO: Kill an Application with System Menu Using VB"
-permalink: kb/168/Q168204/
+permalink: /kb/168/Q168204/
 ---
 
 ## Q168204: HOWTO: Kill an Application with System Menu Using VB

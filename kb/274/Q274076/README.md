@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274076: Microsoft Reader: Text Is Displayed Upside Down"
-permalink: kb/274/Q274076/
+permalink: /kb/274/Q274076/
 ---
 
 ## Q274076: Microsoft Reader: Text Is Displayed Upside Down

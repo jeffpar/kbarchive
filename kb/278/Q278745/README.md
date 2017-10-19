@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278745: SMS: Site Component Manager Reinstalls Component Servers"
-permalink: kb/278/Q278745/
+permalink: /kb/278/Q278745/
 ---
 
 ## Q278745: SMS: Site Component Manager Reinstalls Component Servers

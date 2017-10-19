@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159205: SFM File Type and Creator Properties Invalid"
-permalink: kb/159/Q159205/
+permalink: /kb/159/Q159205/
 ---
 
 ## Q159205: SFM File Type and Creator Properties Invalid

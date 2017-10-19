@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112914: VB 3: PC WFW: Prompt for Network and Postoffice Name"
-permalink: kb/112/Q112914/
+permalink: /kb/112/Q112914/
 ---
 
 ## Q112914: VB 3: PC WFW: Prompt for Network and Postoffice Name

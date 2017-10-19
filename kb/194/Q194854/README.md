@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194854: X400: Message Containing ISO 6937 Body Part Is Not Delivered"
-permalink: kb/194/Q194854/
+permalink: /kb/194/Q194854/
 ---
 
 ## Q194854: X400: Message Containing ISO 6937 Body Part Is Not Delivered

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131017: How to Use Data Sessions in a Toolbar to Show Changes"
-permalink: kb/131/Q131017/
+permalink: /kb/131/Q131017/
 ---
 
 ## Q131017: How to Use Data Sessions in a Toolbar to Show Changes

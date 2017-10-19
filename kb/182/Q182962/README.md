@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182962: XADM: Pfadmin: Setacl Sets &quot;Default&quot; User Role to None"
-permalink: kb/182/Q182962/
+permalink: /kb/182/Q182962/
 ---
 
 ## Q182962: XADM: Pfadmin: Setacl Sets &quot;Default&quot; User Role to None

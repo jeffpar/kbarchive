@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314617: Bicycle Card Games: First Score Remains After Second Game Starts"
-permalink: kb/314/Q314617/
+permalink: /kb/314/Q314617/
 ---
 
 ## Q314617: Bicycle Card Games: First Score Remains After Second Game Starts

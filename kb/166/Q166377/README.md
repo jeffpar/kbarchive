@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166377: FIX: Report Designer Changes Font from Wingdings to Default Font"
-permalink: kb/166/Q166377/
+permalink: /kb/166/Q166377/
 ---
 
 ## Q166377: FIX: Report Designer Changes Font from Wingdings to Default Font

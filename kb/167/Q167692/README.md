@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167692: FIX: Assertion Line 257 in File Dlgprop.cpp"
-permalink: kb/167/Q167692/
+permalink: /kb/167/Q167692/
 ---
 
 ## Q167692: FIX: Assertion Line 257 in File Dlgprop.cpp

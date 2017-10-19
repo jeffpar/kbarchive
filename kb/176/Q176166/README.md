@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176166: DOCFIX: RichTextBox OLEDragMode/OLEDropMode Defaults Incorrect"
-permalink: kb/176/Q176166/
+permalink: /kb/176/Q176166/
 ---
 
 ## Q176166: DOCFIX: RichTextBox OLEDragMode/OLEDropMode Defaults Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138503: PRB: Visual FoxPro Help Jumps to Wrong Topic"
-permalink: kb/138/Q138503/
+permalink: /kb/138/Q138503/
 ---
 
 ## Q138503: PRB: Visual FoxPro Help Jumps to Wrong Topic

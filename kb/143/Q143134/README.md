@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143134: OEMSETUP.INF Modifications for Automated Windows NT Setup"
-permalink: kb/143/Q143134/
+permalink: /kb/143/Q143134/
 ---
 
 ## Q143134: OEMSETUP.INF Modifications for Automated Windows NT Setup

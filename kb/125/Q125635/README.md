@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125635: BUG: Win 3.1 Kernel Debugger 3.10.46 Locks Up on Pentium Sys"
-permalink: kb/125/Q125635/
+permalink: /kb/125/Q125635/
 ---
 
 ## Q125635: BUG: Win 3.1 Kernel Debugger 3.10.46 Locks Up on Pentium Sys

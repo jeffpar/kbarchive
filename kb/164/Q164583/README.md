@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164583: PPT: Sample VB Code to Retrieve the Path to PowerPoint"
-permalink: kb/164/Q164583/
+permalink: /kb/164/Q164583/
 ---
 
 ## Q164583: PPT: Sample VB Code to Retrieve the Path to PowerPoint

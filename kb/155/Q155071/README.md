@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155071: Slide Transition Sounds Lost with 16-Bit Viewer"
-permalink: kb/155/Q155071/
+permalink: /kb/155/Q155071/
 ---
 
 ## Q155071: Slide Transition Sounds Lost with 16-Bit Viewer

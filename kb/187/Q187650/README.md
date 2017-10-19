@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187650: Error: &quot;Server Returned Invalid or Unrecognized Response&quot;"
-permalink: kb/187/Q187650/
+permalink: /kb/187/Q187650/
 ---
 
 ## Q187650: Error: &quot;Server Returned Invalid or Unrecognized Response&quot;

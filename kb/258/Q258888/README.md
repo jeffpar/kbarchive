@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258888: PRB: Error When Query Builder Runs Parameterized Queries"
-permalink: kb/258/Q258888/
+permalink: /kb/258/Q258888/
 ---
 
 ## Q258888: PRB: Error When Query Builder Runs Parameterized Queries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198047: WD97: Can't Find Text Using Wildcards with Find or Replace"
-permalink: kb/198/Q198047/
+permalink: /kb/198/Q198047/
 ---
 
 ## Q198047: WD97: Can't Find Text Using Wildcards with Find or Replace

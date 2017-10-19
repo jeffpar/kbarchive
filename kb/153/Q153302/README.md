@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153302: Error Reading Site Control File from Parent Site"
-permalink: kb/153/Q153302/
+permalink: /kb/153/Q153302/
 ---
 
 ## Q153302: Error Reading Site Control File from Parent Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214743: HOWTO: Determine the IDE Mode From an Add-In"
-permalink: kb/214/Q214743/
+permalink: /kb/214/Q214743/
 ---
 
 ## Q214743: HOWTO: Determine the IDE Mode From an Add-In

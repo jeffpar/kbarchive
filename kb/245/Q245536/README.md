@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245536: How to Change an SNA Server's Configuration Role with SVCONFIG"
-permalink: kb/245/Q245536/
+permalink: /kb/245/Q245536/
 ---
 
 ## Q245536: How to Change an SNA Server's Configuration Role with SVCONFIG

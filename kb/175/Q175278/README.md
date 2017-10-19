@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175278: How to Install Additional Drives on the Shared SCSI Bus"
-permalink: kb/175/Q175278/
+permalink: /kb/175/Q175278/
 ---
 
 ## Q175278: How to Install Additional Drives on the Shared SCSI Bus

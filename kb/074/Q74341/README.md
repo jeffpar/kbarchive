@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74341: Creating Pen Windows Dictionaries"
-permalink: kb/074/Q74341/
+permalink: /kb/074/Q74341/
 ---
 
 ## Q74341: Creating Pen Windows Dictionaries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154556: Delegation Requires a Stop and Restart of the DNS Server"
-permalink: kb/154/Q154556/
+permalink: /kb/154/Q154556/
 ---
 
 ## Q154556: Delegation Requires a Stop and Restart of the DNS Server

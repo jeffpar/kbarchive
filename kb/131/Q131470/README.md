@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131470: PRINT.EXE Command Fails on Eleventh Try From Batch File"
-permalink: kb/131/Q131470/
+permalink: /kb/131/Q131470/
 ---
 
 ## Q131470: PRINT.EXE Command Fails on Eleventh Try From Batch File

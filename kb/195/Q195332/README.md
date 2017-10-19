@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195332: WD97: Address Position Not Retained on Mail Merge Envelopes"
-permalink: kb/195/Q195332/
+permalink: /kb/195/Q195332/
 ---
 
 ## Q195332: WD97: Address Position Not Retained on Mail Merge Envelopes

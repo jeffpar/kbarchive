@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234622: PRB: VC++ 6.0 Setup Does Not Copy the CRT Make Files"
-permalink: kb/234/Q234622/
+permalink: /kb/234/Q234622/
 ---
 
 ## Q234622: PRB: VC++ 6.0 Setup Does Not Copy the CRT Make Files

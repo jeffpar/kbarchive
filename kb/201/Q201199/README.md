@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201199: XADM: Event Viewer ID 13005 from Information Store"
-permalink: kb/201/Q201199/
+permalink: /kb/201/Q201199/
 ---
 
 ## Q201199: XADM: Event Viewer ID 13005 from Information Store

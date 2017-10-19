@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33112: Removing BACKUP.??? and CONTROL.??? from a Backup Disk"
-permalink: kb/033/Q33112/
+permalink: /kb/033/Q33112/
 ---
 
 ## Q33112: Removing BACKUP.??? and CONTROL.??? from a Backup Disk

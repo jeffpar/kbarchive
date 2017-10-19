@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186714: XCON: Cannot Configure MTA to Provide Adequate Message Control"
-permalink: kb/186/Q186714/
+permalink: /kb/186/Q186714/
 ---
 
 ## Q186714: XCON: Cannot Configure MTA to Provide Adequate Message Control

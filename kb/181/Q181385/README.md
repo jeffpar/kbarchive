@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181385: Update.exe from Service Pack May Overwrite Newer OEM Files"
-permalink: kb/181/Q181385/
+permalink: /kb/181/Q181385/
 ---
 
 ## Q181385: Update.exe from Service Pack May Overwrite Newer OEM Files

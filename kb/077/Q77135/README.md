@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77135: HOWTO: Different Ways to Close an Application Under Windows"
-permalink: kb/077/Q77135/
+permalink: /kb/077/Q77135/
 ---
 
 ## Q77135: HOWTO: Different Ways to Close an Application Under Windows

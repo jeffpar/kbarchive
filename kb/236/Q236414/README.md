@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236414: Cannot Use Shares with LMCompatibilityLevel set to Only NTLM 2"
-permalink: kb/236/Q236414/
+permalink: /kb/236/Q236414/
 ---
 
 ## Q236414: Cannot Use Shares with LMCompatibilityLevel set to Only NTLM 2

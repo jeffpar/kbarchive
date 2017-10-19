@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183064: XCON: MTA Does Not Correctly Handle DDA Values With Equal Signs"
-permalink: kb/183/Q183064/
+permalink: /kb/183/Q183064/
 ---
 
 ## Q183064: XCON: MTA Does Not Correctly Handle DDA Values With Equal Signs

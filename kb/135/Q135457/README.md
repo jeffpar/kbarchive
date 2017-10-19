@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135457: PC Gen: DocErr: New Mail Utility Errorlevel Incorrectly Stated"
-permalink: kb/135/Q135457/
+permalink: /kb/135/Q135457/
 ---
 
 ## Q135457: PC Gen: DocErr: New Mail Utility Errorlevel Incorrectly Stated

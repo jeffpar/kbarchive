@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72489: Support for LINK.EXE Shipped with MS-DOS"
-permalink: kb/072/Q72489/
+permalink: /kb/072/Q72489/
 ---
 
 ## Q72489: Support for LINK.EXE Shipped with MS-DOS

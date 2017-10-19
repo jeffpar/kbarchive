@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77856: IF EXIST Finds Hidden and System Files"
-permalink: kb/077/Q77856/
+permalink: /kb/077/Q77856/
 ---
 
 ## Q77856: IF EXIST Finds Hidden and System Files

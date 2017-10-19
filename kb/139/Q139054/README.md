@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139054: Cannot Find The File Specified with AT Command"
-permalink: kb/139/Q139054/
+permalink: /kb/139/Q139054/
 ---
 
 ## Q139054: Cannot Find The File Specified with AT Command

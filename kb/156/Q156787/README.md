@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156787: MSB Ocean: Typographic Error in Tide Pool"
-permalink: kb/156/Q156787/
+permalink: /kb/156/Q156787/
 ---
 
 ## Q156787: MSB Ocean: Typographic Error in Tide Pool

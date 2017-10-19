@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192237: Message &quot;Click here to begin&quot; Missing from Taskbar"
-permalink: kb/192/Q192237/
+permalink: /kb/192/Q192237/
 ---
 
 ## Q192237: Message &quot;Click here to begin&quot; Missing from Taskbar

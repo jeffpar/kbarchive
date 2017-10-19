@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100859: List of Encarta AVI Files Without Sound"
-permalink: kb/100/Q100859/
+permalink: /kb/100/Q100859/
 ---
 
 ## Q100859: List of Encarta AVI Files Without Sound

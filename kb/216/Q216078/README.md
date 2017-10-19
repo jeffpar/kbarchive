@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216078: DirectX: List of New Features Included in Microsoft DirectX 6.1"
-permalink: kb/216/Q216078/
+permalink: /kb/216/Q216078/
 ---
 
 ## Q216078: DirectX: List of New Features Included in Microsoft DirectX 6.1

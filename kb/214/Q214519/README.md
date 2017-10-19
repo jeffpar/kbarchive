@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214519: Combat Flight Simulator: Minimum System Requirements"
-permalink: kb/214/Q214519/
+permalink: /kb/214/Q214519/
 ---
 
 ## Q214519: Combat Flight Simulator: Minimum System Requirements

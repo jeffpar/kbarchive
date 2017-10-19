@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186216: XFOR: Date Appended to Attached Files Sent to cc:Mail List"
-permalink: kb/186/Q186216/
+permalink: /kb/186/Q186216/
 ---
 
 ## Q186216: XFOR: Date Appended to Attached Files Sent to cc:Mail List

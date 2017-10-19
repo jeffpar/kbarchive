@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101933: PC DirSync: Import Accepts All External Address Lists"
-permalink: kb/101/Q101933/
+permalink: /kb/101/Q101933/
 ---
 
 ## Q101933: PC DirSync: Import Accepts All External Address Lists

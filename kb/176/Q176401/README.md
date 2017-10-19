@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176401: Microsoft Personal Web Server Not Included on CD-ROM"
-permalink: kb/176/Q176401/
+permalink: /kb/176/Q176401/
 ---
 
 ## Q176401: Microsoft Personal Web Server Not Included on CD-ROM

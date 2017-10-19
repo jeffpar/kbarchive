@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142733: Cannot Connect To Internet Or MSN With Two Network Cards"
-permalink: kb/142/Q142733/
+permalink: /kb/142/Q142733/
 ---
 
 ## Q142733: Cannot Connect To Internet Or MSN With Two Network Cards

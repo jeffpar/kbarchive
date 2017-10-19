@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114405: X400: First Contact Form for X.400 Gateway"
-permalink: kb/114/Q114405/
+permalink: /kb/114/Q114405/
 ---
 
 ## Q114405: X400: First Contact Form for X.400 Gateway

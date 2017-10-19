@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184972: Golf 98/99: Sounds Are Not Played in Multiplayer Game"
-permalink: kb/184/Q184972/
+permalink: /kb/184/Q184972/
 ---
 
 ## Q184972: Golf 98/99: Sounds Are Not Played in Multiplayer Game

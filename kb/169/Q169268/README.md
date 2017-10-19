@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169268: FTP Err Msg: Error: Connection Timed Out"
-permalink: kb/169/Q169268/
+permalink: /kb/169/Q169268/
 ---
 
 ## Q169268: FTP Err Msg: Error: Connection Timed Out

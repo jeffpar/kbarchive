@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107174: PRB: Not Enough Space for Environment"
-permalink: kb/107/Q107174/
+permalink: /kb/107/Q107174/
 ---
 
 ## Q107174: PRB: Not Enough Space for Environment

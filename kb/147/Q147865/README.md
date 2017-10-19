@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147865: Incorrect Error Message Displayed When Dialing Analog Line"
-permalink: kb/147/Q147865/
+permalink: /kb/147/Q147865/
 ---
 
 ## Q147865: Incorrect Error Message Displayed When Dialing Analog Line

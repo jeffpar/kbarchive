@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153039: XFOR: Non-TNEF Attachments Inbound From IMC at Top of Message"
-permalink: kb/153/Q153039/
+permalink: /kb/153/Q153039/
 ---
 
 ## Q153039: XFOR: Non-TNEF Attachments Inbound From IMC at Top of Message

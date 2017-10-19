@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95115: WFWG: Using Two Network Cards with the SMCMAC.DOS Driver"
-permalink: kb/095/Q95115/
+permalink: /kb/095/Q95115/
 ---
 
 ## Q95115: WFWG: Using Two Network Cards with the SMCMAC.DOS Driver

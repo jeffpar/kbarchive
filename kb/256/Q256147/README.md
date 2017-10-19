@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256147: BS2000 Err Msg: Current Shockwave Cannot Handle New Format"
-permalink: kb/256/Q256147/
+permalink: /kb/256/Q256147/
 ---
 
 ## Q256147: BS2000 Err Msg: Current Shockwave Cannot Handle New Format

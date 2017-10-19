@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186196: PRB: Jet ODBC Driver Error 40002: Operation Invalid at This Time"
-permalink: kb/186/Q186196/
+permalink: /kb/186/Q186196/
 ---
 
 ## Q186196: PRB: Jet ODBC Driver Error 40002: Operation Invalid at This Time

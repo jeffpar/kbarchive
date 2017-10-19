@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94941: BUG: EXTERNDEF ABS Fails with Span Dependent Value"
-permalink: kb/094/Q94941/
+permalink: /kb/094/Q94941/
 ---
 
 ## Q94941: BUG: EXTERNDEF ABS Fails with Span Dependent Value

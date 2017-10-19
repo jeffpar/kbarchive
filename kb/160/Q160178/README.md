@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160178: XADM: Exchange Information Store Performance Monitor Counters"
-permalink: kb/160/Q160178/
+permalink: /kb/160/Q160178/
 ---
 
 ## Q160178: XADM: Exchange Information Store Performance Monitor Counters

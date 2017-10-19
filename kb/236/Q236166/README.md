@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236166: Using NET STOP and NET START Commands with IIS Services"
-permalink: kb/236/Q236166/
+permalink: /kb/236/Q236166/
 ---
 
 ## Q236166: Using NET STOP and NET START Commands with IIS Services

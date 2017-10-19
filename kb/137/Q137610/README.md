@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137610: SMS: Senders Do Not Check for Sufficient Disk Space"
-permalink: kb/137/Q137610/
+permalink: /kb/137/Q137610/
 ---
 
 ## Q137610: SMS: Senders Do Not Check for Sufficient Disk Space

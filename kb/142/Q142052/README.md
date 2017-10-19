@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142052: RAS Clients Using TCP/IP Can Access All Subnets But Their Own"
-permalink: kb/142/Q142052/
+permalink: /kb/142/Q142052/
 ---
 
 ## Q142052: RAS Clients Using TCP/IP Can Access All Subnets But Their Own

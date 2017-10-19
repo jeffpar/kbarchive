@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120426: GPF When PowerBuilder Watcom Engine Is Run in Separate VDM"
-permalink: kb/120/Q120426/
+permalink: /kb/120/Q120426/
 ---
 
 ## Q120426: GPF When PowerBuilder Watcom Engine Is Run in Separate VDM

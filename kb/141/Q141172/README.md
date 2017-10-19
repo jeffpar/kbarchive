@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141172: PRB: Database Errors Not Shown When Closing Form"
-permalink: kb/141/Q141172/
+permalink: /kb/141/Q141172/
 ---
 
 ## Q141172: PRB: Database Errors Not Shown When Closing Form

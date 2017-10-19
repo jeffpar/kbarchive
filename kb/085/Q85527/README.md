@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85527: Adobe Type Manager Overwrites HP DeskJet Soft Fonts"
-permalink: kb/085/Q85527/
+permalink: /kb/085/Q85527/
 ---
 
 ## Q85527: Adobe Type Manager Overwrites HP DeskJet Soft Fonts

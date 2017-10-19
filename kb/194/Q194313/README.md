@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194313: XCLN: Outlook for Windows 3.x Remove All Does Not Delete Recall"
-permalink: kb/194/Q194313/
+permalink: /kb/194/Q194313/
 ---
 
 ## Q194313: XCLN: Outlook for Windows 3.x Remove All Does Not Delete Recall

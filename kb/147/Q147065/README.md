@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147065: XCLN: Not Open Attachment w/ Incorrect Extension"
-permalink: kb/147/Q147065/
+permalink: /kb/147/Q147065/
 ---
 
 ## Q147065: XCLN: Not Open Attachment w/ Incorrect Extension

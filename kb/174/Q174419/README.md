@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174419: HOWTO: Configure a Subnetted Reverse Lookup Zone on Windows NT"
-permalink: kb/174/Q174419/
+permalink: /kb/174/Q174419/
 ---
 
 ## Q174419: HOWTO: Configure a Subnetted Reverse Lookup Zone on Windows NT

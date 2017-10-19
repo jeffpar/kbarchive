@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292520: Conflicting Access Control List Entries Cause Error Message"
-permalink: kb/292/Q292520/
+permalink: /kb/292/Q292520/
 ---
 
 ## Q292520: Conflicting Access Control List Entries Cause Error Message

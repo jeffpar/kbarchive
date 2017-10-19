@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164897: Zone: Description and Policies of the Web site"
-permalink: kb/164/Q164897/
+permalink: /kb/164/Q164897/
 ---
 
 ## Q164897: Zone: Description and Policies of the Web site

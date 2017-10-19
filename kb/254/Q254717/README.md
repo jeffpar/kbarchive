@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254717: XADM: Event 1171: Exception e0010002 Has Occurred..."
-permalink: kb/254/Q254717/
+permalink: /kb/254/Q254717/
 ---
 
 ## Q254717: XADM: Event 1171: Exception e0010002 Has Occurred...

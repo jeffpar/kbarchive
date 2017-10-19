@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196851: WD97: Space Added Before Number After Pasting to Text"
-permalink: kb/196/Q196851/
+permalink: /kb/196/Q196851/
 ---
 
 ## Q196851: WD97: Space Added Before Number After Pasting to Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159851: Rotated TrueType Fonts Printed Improperly on HP LaserJet 4"
-permalink: kb/159/Q159851/
+permalink: /kb/159/Q159851/
 ---
 
 ## Q159851: Rotated TrueType Fonts Printed Improperly on HP LaserJet 4

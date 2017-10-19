@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255694: PRB: MSDN Library Setup Reports &quot;Not Enough Disk Space&quot;"
-permalink: kb/255/Q255694/
+permalink: /kb/255/Q255694/
 ---
 
 ## Q255694: PRB: MSDN Library Setup Reports &quot;Not Enough Disk Space&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83240: Professional Oracle Error: No Extended Memory Available"
-permalink: kb/083/Q83240/
+permalink: /kb/083/Q83240/
 ---
 
 ## Q83240: Professional Oracle Error: No Extended Memory Available

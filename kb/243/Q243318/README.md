@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243318: How to Use Dh.exe to Troubleshoot User-Mode Memory Leaks"
-permalink: kb/243/Q243318/
+permalink: /kb/243/Q243318/
 ---
 
 ## Q243318: How to Use Dh.exe to Troubleshoot User-Mode Memory Leaks

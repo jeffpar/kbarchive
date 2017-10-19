@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281825: Users Cannot Change Web Client Configuration Settings"
-permalink: kb/281/Q281825/
+permalink: /kb/281/Q281825/
 ---
 
 ## Q281825: Users Cannot Change Web Client Configuration Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133036: No Recording Control Slider with SoundBlaster Pro Sound Card"
-permalink: kb/133/Q133036/
+permalink: /kb/133/Q133036/
 ---
 
 ## Q133036: No Recording Control Slider with SoundBlaster Pro Sound Card

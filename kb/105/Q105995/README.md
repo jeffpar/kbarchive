@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105995: AT Command May Fail Copying Files to a LAN Manager Server"
-permalink: kb/105/Q105995/
+permalink: /kb/105/Q105995/
 ---
 
 ## Q105995: AT Command May Fail Copying Files to a LAN Manager Server

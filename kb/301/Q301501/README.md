@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301501: MSN Explorer 6.1 freezes if you click &quot;Put in Folder&quot; button whi"
-permalink: kb/301/Q301501/
+permalink: /kb/301/Q301501/
 ---
 
 ## Q301501: MSN Explorer 6.1 freezes if you click &quot;Put in Folder&quot; button whi

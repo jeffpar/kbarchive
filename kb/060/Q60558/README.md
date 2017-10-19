@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60558: Flight Simulator: Getting Color on IBM PS/2 25-004"
-permalink: kb/060/Q60558/
+permalink: /kb/060/Q60558/
 ---
 
 ## Q60558: Flight Simulator: Getting Color on IBM PS/2 25-004

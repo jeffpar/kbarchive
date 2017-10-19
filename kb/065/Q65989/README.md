@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65989: Flight Sim: Plane Stalls or Nose Dives Unexpectedly"
-permalink: kb/065/Q65989/
+permalink: /kb/065/Q65989/
 ---
 
 ## Q65989: Flight Sim: Plane Stalls or Nose Dives Unexpectedly

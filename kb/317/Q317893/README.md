@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317893: SMS: Sender Does Not Respond to Schedule or Rate Limit Changes"
-permalink: kb/317/Q317893/
+permalink: /kb/317/Q317893/
 ---
 
 ## Q317893: SMS: Sender Does Not Respond to Schedule or Rate Limit Changes

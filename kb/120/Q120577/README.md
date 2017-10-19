@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120577: FIX: GP Fault When Copying Between Two Resource Scripts"
-permalink: kb/120/Q120577/
+permalink: /kb/120/Q120577/
 ---
 
 ## Q120577: FIX: GP Fault When Copying Between Two Resource Scripts

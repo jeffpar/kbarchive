@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99595: HOWTO: Use @ ... SAY Commands &amp; Control Codes to Print in FP/W"
-permalink: kb/099/Q99595/
+permalink: /kb/099/Q99595/
 ---
 
 ## Q99595: HOWTO: Use @ ... SAY Commands &amp; Control Codes to Print in FP/W

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216576: Err Msg: Setup Was Unable to Write to the Floppy Disk in..."
-permalink: kb/216/Q216576/
+permalink: /kb/216/Q216576/
 ---
 
 ## Q216576: Err Msg: Setup Was Unable to Write to the Floppy Disk in...

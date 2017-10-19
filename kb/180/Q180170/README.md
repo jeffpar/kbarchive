@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180170: DOC: TopIndex Property Incorrectly Documented"
-permalink: kb/180/Q180170/
+permalink: /kb/180/Q180170/
 ---
 
 ## Q180170: DOC: TopIndex Property Incorrectly Documented

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159173: XCLN: Scanpst.exe Fails w/ Divide By Zero During Step 7 (of 8)"
-permalink: kb/159/Q159173/
+permalink: /kb/159/Q159173/
 ---
 
 ## Q159173: XCLN: Scanpst.exe Fails w/ Divide By Zero During Step 7 (of 8)

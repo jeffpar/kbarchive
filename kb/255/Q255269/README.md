@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255269: XADM: POP3, IMAP Clients Can't Authenticate After Dcpromo"
-permalink: kb/255/Q255269/
+permalink: /kb/255/Q255269/
 ---
 
 ## Q255269: XADM: POP3, IMAP Clients Can't Authenticate After Dcpromo

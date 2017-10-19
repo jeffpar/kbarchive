@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231883: SMS: Provider Is Unable to Connect to SQL Server"
-permalink: kb/231/Q231883/
+permalink: /kb/231/Q231883/
 ---
 
 ## Q231883: SMS: Provider Is Unable to Connect to SQL Server

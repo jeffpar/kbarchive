@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132796: HP Ethertwist PC Lan Adapter/16 Plus Error Message"
-permalink: kb/132/Q132796/
+permalink: /kb/132/Q132796/
 ---
 
 ## Q132796: HP Ethertwist PC Lan Adapter/16 Plus Error Message

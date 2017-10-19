@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99445: Loading and Using PRTSC.EXE"
-permalink: kb/099/Q99445/
+permalink: /kb/099/Q99445/
 ---
 
 ## Q99445: Loading and Using PRTSC.EXE

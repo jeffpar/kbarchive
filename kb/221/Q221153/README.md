@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221153: Control Panel Does Not Open"
-permalink: kb/221/Q221153/
+permalink: /kb/221/Q221153/
 ---
 
 ## Q221153: Control Panel Does Not Open

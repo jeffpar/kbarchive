@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136503: Fury3 Err Msg: Unable to Open .POD File..."
-permalink: kb/136/Q136503/
+permalink: /kb/136/Q136503/
 ---
 
 ## Q136503: Fury3 Err Msg: Unable to Open .POD File...

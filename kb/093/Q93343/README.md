@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93343: Calling Int86?, Intdos?, and DOS3Call() from Windows"
-permalink: kb/093/Q93343/
+permalink: /kb/093/Q93343/
 ---
 
 ## Q93343: Calling Int86?, Intdos?, and DOS3Call() from Windows

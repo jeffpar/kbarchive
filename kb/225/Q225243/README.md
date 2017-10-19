@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225243: Err Msg: A Device That Is Required to Play This Type of Media..."
-permalink: kb/225/Q225243/
+permalink: /kb/225/Q225243/
 ---
 
 ## Q225243: Err Msg: A Device That Is Required to Play This Type of Media...

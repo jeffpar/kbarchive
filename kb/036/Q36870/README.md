@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36870: INFO: C2106 Error Assigning a String Literal to a char Array"
-permalink: kb/036/Q36870/
+permalink: /kb/036/Q36870/
 ---
 
 ## Q36870: INFO: C2106 Error Assigning a String Literal to a char Array

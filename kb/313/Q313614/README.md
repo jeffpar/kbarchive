@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313614: SMS: Administrator Console Queries Enumerate Slowly"
-permalink: kb/313/Q313614/
+permalink: /kb/313/Q313614/
 ---
 
 ## Q313614: SMS: Administrator Console Queries Enumerate Slowly

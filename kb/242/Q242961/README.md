@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242961: Exchange Server DNS Error Messages When Using Dial-Up Networking"
-permalink: kb/242/Q242961/
+permalink: /kb/242/Q242961/
 ---
 
 ## Q242961: Exchange Server DNS Error Messages When Using Dial-Up Networking

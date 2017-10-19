@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65445: Printing Directory Listings from Windows File Manager"
-permalink: kb/065/Q65445/
+permalink: /kb/065/Q65445/
 ---
 
 ## Q65445: Printing Directory Listings from Windows File Manager

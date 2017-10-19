@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142580: BUGLIST: List of Problems in Visual SourceSafe 4.0"
-permalink: kb/142/Q142580/
+permalink: /kb/142/Q142580/
 ---
 
 ## Q142580: BUGLIST: List of Problems in Visual SourceSafe 4.0

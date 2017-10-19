@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173364: XADM: Exchange 5.0 and 5.5 Tracking Log Event Numbers"
-permalink: kb/173/Q173364/
+permalink: /kb/173/Q173364/
 ---
 
 ## Q173364: XADM: Exchange 5.0 and 5.5 Tracking Log Event Numbers

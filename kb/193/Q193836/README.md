@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193836: NET USE Attempt Across Domains Fails Without Name Resolution"
-permalink: kb/193/Q193836/
+permalink: /kb/193/Q193836/
 ---
 
 ## Q193836: NET USE Attempt Across Domains Fails Without Name Resolution

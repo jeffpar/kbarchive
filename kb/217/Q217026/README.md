@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217026: PRB: IIPF from UserControl with a User-Defined Validate Event"
-permalink: kb/217/Q217026/
+permalink: /kb/217/Q217026/
 ---
 
 ## Q217026: PRB: IIPF from UserControl with a User-Defined Validate Event

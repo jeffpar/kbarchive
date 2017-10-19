@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172552: How to Configure TCP/IP for The Microsoft Network"
-permalink: kb/172/Q172552/
+permalink: /kb/172/Q172552/
 ---
 
 ## Q172552: How to Configure TCP/IP for The Microsoft Network

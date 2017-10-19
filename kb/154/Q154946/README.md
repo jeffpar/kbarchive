@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154946: Bugcheck 93 in the RDR"
-permalink: kb/154/Q154946/
+permalink: /kb/154/Q154946/
 ---
 
 ## Q154946: Bugcheck 93 in the RDR

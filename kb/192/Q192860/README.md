@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192860: PRB: Creating Join in Join Condition Dialog Box Creates Filter"
-permalink: kb/192/Q192860/
+permalink: /kb/192/Q192860/
 ---
 
 ## Q192860: PRB: Creating Join in Join Condition Dialog Box Creates Filter

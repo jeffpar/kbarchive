@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83054: SYSINI.WRI from Windows 3.1"
-permalink: kb/083/Q83054/
+permalink: /kb/083/Q83054/
 ---
 
 ## Q83054: SYSINI.WRI from Windows 3.1

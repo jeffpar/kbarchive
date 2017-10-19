@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72744: Determining That SHARE Is Loaded Under Microsoft Windows"
-permalink: kb/072/Q72744/
+permalink: /kb/072/Q72744/
 ---
 
 ## Q72744: Determining That SHARE Is Loaded Under Microsoft Windows

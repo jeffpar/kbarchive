@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323064: Access Violation in NotifySendHeader"
-permalink: kb/323/Q323064/
+permalink: /kb/323/Q323064/
 ---
 
 ## Q323064: Access Violation in NotifySendHeader

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141464: WD97: Title Bar of Embedded Word Document Missing Document Name"
-permalink: kb/141/Q141464/
+permalink: /kb/141/Q141464/
 ---
 
 ## Q141464: WD97: Title Bar of Embedded Word Document Missing Document Name

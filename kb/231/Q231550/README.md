@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231550: Err Msg: Microsoft MapPoint 2000 GB Was Previously Installed..."
-permalink: kb/231/Q231550/
+permalink: /kb/231/Q231550/
 ---
 
 ## Q231550: Err Msg: Microsoft MapPoint 2000 GB Was Previously Installed...

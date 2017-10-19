@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72308: User's Guide Incorrectly Describes SPART.PAR &amp; 386SPART.PAR"
-permalink: kb/072/Q72308/
+permalink: /kb/072/Q72308/
 ---
 
 ## Q72308: User's Guide Incorrectly Describes SPART.PAR &amp; 386SPART.PAR

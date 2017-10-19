@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244209: How to Perform Network Tracing in a Switched Environment"
-permalink: kb/244/Q244209/
+permalink: /kb/244/Q244209/
 ---
 
 ## Q244209: How to Perform Network Tracing in a Switched Environment

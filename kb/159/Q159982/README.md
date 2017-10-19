@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159982: Assigning Specific LUs to TN3270 Users Doesn't Work Reliably"
-permalink: kb/159/Q159982/
+permalink: /kb/159/Q159982/
 ---
 
 ## Q159982: Assigning Specific LUs to TN3270 Users Doesn't Work Reliably

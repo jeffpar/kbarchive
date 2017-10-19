@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96361: PRB: @ ... SAY MEMO Prints Word &quot;Memo&quot;"
-permalink: kb/096/Q96361/
+permalink: /kb/096/Q96361/
 ---
 
 ## Q96361: PRB: @ ... SAY MEMO Prints Word &quot;Memo&quot;

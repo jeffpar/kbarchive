@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155025: DBWEB: Control Panel Hangs when dbWeb Service is Running"
-permalink: kb/155/Q155025/
+permalink: /kb/155/Q155025/
 ---
 
 ## Q155025: DBWEB: Control Panel Hangs when dbWeb Service is Running

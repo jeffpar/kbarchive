@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94197: Quarterdeck's QEMM May Require WINSTLTH.VXD File"
-permalink: kb/094/Q94197/
+permalink: /kb/094/Q94197/
 ---
 
 ## Q94197: Quarterdeck's QEMM May Require WINSTLTH.VXD File

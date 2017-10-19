@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237729: NFL Fever: Only One of Two Installed Video Adapters Is Listed"
-permalink: kb/237/Q237729/
+permalink: /kb/237/Q237729/
 ---
 
 ## Q237729: NFL Fever: Only One of Two Installed Video Adapters Is Listed

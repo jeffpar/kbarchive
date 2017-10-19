@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230594: XWEB: Errors Inserting Attachments Using Outlook Web Access"
-permalink: kb/230/Q230594/
+permalink: /kb/230/Q230594/
 ---
 
 ## Q230594: XWEB: Errors Inserting Attachments Using Outlook Web Access

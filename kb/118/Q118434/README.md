@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118434: BUG: GETFILEINFOQQ with UNPACKTIMEQQ Fails in MS-DOS"
-permalink: kb/118/Q118434/
+permalink: /kb/118/Q118434/
 ---
 
 ## Q118434: BUG: GETFILEINFOQQ with UNPACKTIMEQQ Fails in MS-DOS

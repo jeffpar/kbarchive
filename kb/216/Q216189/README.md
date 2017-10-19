@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216189: HOWTO: Right Justify the Help Menu Item in Visual Basic"
-permalink: kb/216/Q216189/
+permalink: /kb/216/Q216189/
 ---
 
 ## Q216189: HOWTO: Right Justify the Help Menu Item in Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179269: HOWTO: Use Source Profiler to Profile Dynamic-Link Libraries"
-permalink: kb/179/Q179269/
+permalink: /kb/179/Q179269/
 ---
 
 ## Q179269: HOWTO: Use Source Profiler to Profile Dynamic-Link Libraries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130375: List of Books About Windows NT"
-permalink: kb/130/Q130375/
+permalink: /kb/130/Q130375/
 ---
 
 ## Q130375: List of Books About Windows NT

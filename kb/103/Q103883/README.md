@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103883: Overview: &quot;Local&quot; I/O Operation"
-permalink: kb/103/Q103883/
+permalink: /kb/103/Q103883/
 ---
 
 ## Q103883: Overview: &quot;Local&quot; I/O Operation

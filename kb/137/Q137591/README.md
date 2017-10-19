@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137591: Recycle Bin Icons Reversed After Removing Desktop Themes"
-permalink: kb/137/Q137591/
+permalink: /kb/137/Q137591/
 ---
 
 ## Q137591: Recycle Bin Icons Reversed After Removing Desktop Themes

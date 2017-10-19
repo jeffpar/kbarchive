@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155290: PowerPoint Stops Responding During HTML Export"
-permalink: kb/155/Q155290/
+permalink: /kb/155/Q155290/
 ---
 
 ## Q155290: PowerPoint Stops Responding During HTML Export

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156998: XADM: To: Recipients Shown Half-size if Client is on Server"
-permalink: kb/156/Q156998/
+permalink: /kb/156/Q156998/
 ---
 
 ## Q156998: XADM: To: Recipients Shown Half-size if Client is on Server

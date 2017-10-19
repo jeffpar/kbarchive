@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192971: WD97: Definitions of Typography Terms in Word"
-permalink: kb/192/Q192971/
+permalink: /kb/192/Q192971/
 ---
 
 ## Q192971: WD97: Definitions of Typography Terms in Word

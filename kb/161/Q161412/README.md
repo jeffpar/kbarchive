@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161412: SMS: 'Too Many Parameters' Error When Running Smsls.bat"
-permalink: kb/161/Q161412/
+permalink: /kb/161/Q161412/
 ---
 
 ## Q161412: SMS: 'Too Many Parameters' Error When Running Smsls.bat

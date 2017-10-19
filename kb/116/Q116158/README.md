@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116158: RAS Server Resets in Answer Mode with Sportster Modem"
-permalink: kb/116/Q116158/
+permalink: /kb/116/Q116158/
 ---
 
 ## Q116158: RAS Server Resets in Answer Mode with Sportster Modem

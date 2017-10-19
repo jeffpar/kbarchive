@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59673: Directory Tree Not Updated After Rename"
-permalink: kb/059/Q59673/
+permalink: /kb/059/Q59673/
 ---
 
 ## Q59673: Directory Tree Not Updated After Rename

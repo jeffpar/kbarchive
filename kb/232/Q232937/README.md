@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232937: UNC Shortcut Do Not Work with RAS to Server with Over 700 Shares"
-permalink: kb/232/Q232937/
+permalink: /kb/232/Q232937/
 ---
 
 ## Q232937: UNC Shortcut Do Not Work with RAS to Server with Over 700 Shares

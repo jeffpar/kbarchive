@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125743: Dr. Watson Log Displays Incorrect Version of Windows NT"
-permalink: kb/125/Q125743/
+permalink: /kb/125/Q125743/
 ---
 
 ## Q125743: Dr. Watson Log Displays Incorrect Version of Windows NT

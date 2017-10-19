@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140825: Node Retries Open(Link) on X.25 Even After Error is Reported"
-permalink: kb/140/Q140825/
+permalink: /kb/140/Q140825/
 ---
 
 ## Q140825: Node Retries Open(Link) on X.25 Even After Error is Reported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155186: Start Menu Minimized When Program Minimizes Itself"
-permalink: kb/155/Q155186/
+permalink: /kb/155/Q155186/
 ---
 
 ## Q155186: Start Menu Minimized When Program Minimizes Itself

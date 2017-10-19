@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136258: HOWTO: Troubleshoot Visual C++ Setup Problems in Windows NT"
-permalink: kb/136/Q136258/
+permalink: /kb/136/Q136258/
 ---
 
 ## Q136258: HOWTO: Troubleshoot Visual C++ Setup Problems in Windows NT

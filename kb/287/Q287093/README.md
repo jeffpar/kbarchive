@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287093: INFO: DB2OLEDB Supports UPDATE/DELETE from SQL Linked Server"
-permalink: kb/287/Q287093/
+permalink: /kb/287/Q287093/
 ---
 
 ## Q287093: INFO: DB2OLEDB Supports UPDATE/DELETE from SQL Linked Server

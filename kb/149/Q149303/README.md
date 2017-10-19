@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149303: TN3287 Support Added to the TN3270 Server"
-permalink: kb/149/Q149303/
+permalink: /kb/149/Q149303/
 ---
 
 ## Q149303: TN3287 Support Added to the TN3270 Server

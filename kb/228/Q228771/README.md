@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228771: PDF Import of Inventory Rules Does Not Validate Date Criteria"
-permalink: kb/228/Q228771/
+permalink: /kb/228/Q228771/
 ---
 
 ## Q228771: PDF Import of Inventory Rules Does Not Validate Date Criteria

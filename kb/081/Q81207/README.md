@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81207: WD97: Printing a Range of Pages in a Multiple-Section Document"
-permalink: kb/081/Q81207/
+permalink: /kb/081/Q81207/
 ---
 
 ## Q81207: WD97: Printing a Range of Pages in a Multiple-Section Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166622: XADM: SA Crashes When Generating Offline Address Book"
-permalink: kb/166/Q166622/
+permalink: /kb/166/Q166622/
 ---
 
 ## Q166622: XADM: SA Crashes When Generating Offline Address Book

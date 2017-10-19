@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260366: SMS Executive Service Can Hang If Started by Site Backup Service"
-permalink: kb/260/Q260366/
+permalink: /kb/260/Q260366/
 ---
 
 ## Q260366: SMS Executive Service Can Hang If Started by Site Backup Service

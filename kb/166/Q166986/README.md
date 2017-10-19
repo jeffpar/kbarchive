@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166986: XCLN: Error Printing from MS Schedule+ If Normal.fmt Corrupted"
-permalink: kb/166/Q166986/
+permalink: /kb/166/Q166986/
 ---
 
 ## Q166986: XCLN: Error Printing from MS Schedule+ If Normal.fmt Corrupted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130406: DOCERR: SHOW(2) Does Not Set Modal Form or Formset to Modeless"
-permalink: kb/130/Q130406/
+permalink: /kb/130/Q130406/
 ---
 
 ## Q130406: DOCERR: SHOW(2) Does Not Set Modal Form or Formset to Modeless

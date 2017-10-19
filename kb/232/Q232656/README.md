@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232656: XCON: MTA X.400 1988 to 1984 Downgrade Failure Causes NDR"
-permalink: kb/232/Q232656/
+permalink: /kb/232/Q232656/
 ---
 
 ## Q232656: XCON: MTA X.400 1988 to 1984 Downgrade Failure Causes NDR

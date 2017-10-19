@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218107: SNA Server 4.0 SP2 Requires Internet Explorer 3.02 or Later"
-permalink: kb/218/Q218107/
+permalink: /kb/218/Q218107/
 ---
 
 ## Q218107: SNA Server 4.0 SP2 Requires Internet Explorer 3.02 or Later

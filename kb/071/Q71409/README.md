@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71409: Mac Hyp: Removing an Enclosure Before Sending a Message"
-permalink: kb/071/Q71409/
+permalink: /kb/071/Q71409/
 ---
 
 ## Q71409: Mac Hyp: Removing an Enclosure Before Sending a Message

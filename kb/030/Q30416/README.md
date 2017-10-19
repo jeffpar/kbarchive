@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30416: FIX: Only First LOCAL Variable Generates CodeView Information"
-permalink: kb/030/Q30416/
+permalink: /kb/030/Q30416/
 ---
 
 ## Q30416: FIX: Only First LOCAL Variable Generates CodeView Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153949: CSNW Does Not Support MS-DOS Name Space Correctly"
-permalink: kb/153/Q153949/
+permalink: /kb/153/Q153949/
 ---
 
 ## Q153949: CSNW Does Not Support MS-DOS Name Space Correctly

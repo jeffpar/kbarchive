@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193600: Windows NT Load Balancing Service Setup Screen Is Slow to Load"
-permalink: kb/193/Q193600/
+permalink: /kb/193/Q193600/
 ---
 
 ## Q193600: Windows NT Load Balancing Service Setup Screen Is Slow to Load

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275182: PRB: FormResize Appears to Have No Effect When the SIP Is Shown"
-permalink: kb/275/Q275182/
+permalink: /kb/275/Q275182/
 ---
 
 ## Q275182: PRB: FormResize Appears to Have No Effect When the SIP Is Shown

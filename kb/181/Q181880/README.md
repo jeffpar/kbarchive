@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181880: PRB: &quot;Access to an Unnamed File Was Denied&quot; Error"
-permalink: kb/181/Q181880/
+permalink: /kb/181/Q181880/
 ---
 
 ## Q181880: PRB: &quot;Access to an Unnamed File Was Denied&quot; Error

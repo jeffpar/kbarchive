@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304299: SAMPLE: Using the Voice Control from eMbedded Visual Basic"
-permalink: kb/304/Q304299/
+permalink: /kb/304/Q304299/
 ---
 
 ## Q304299: SAMPLE: Using the Voice Control from eMbedded Visual Basic

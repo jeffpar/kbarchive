@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172525: WD97: Incorrect Format of Phone Number in Mail Merge Result"
-permalink: kb/172/Q172525/
+permalink: /kb/172/Q172525/
 ---
 
 ## Q172525: WD97: Incorrect Format of Phone Number in Mail Merge Result

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97151: Acer Computers Hang After Installing DoubleSpace"
-permalink: kb/097/Q97151/
+permalink: /kb/097/Q97151/
 ---
 
 ## Q97151: Acer Computers Hang After Installing DoubleSpace

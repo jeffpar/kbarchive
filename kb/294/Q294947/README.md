@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294947: XFOR:Event IDs 43, 86,  and  85  When Starting cc:Mail Connector"
-permalink: kb/294/Q294947/
+permalink: /kb/294/Q294947/
 ---
 
 ## Q294947: XFOR:Event IDs 43, 86,  and  85  When Starting cc:Mail Connector

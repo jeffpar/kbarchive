@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153656: Shared Applications and Drive Mapping Problems"
-permalink: kb/153/Q153656/
+permalink: /kb/153/Q153656/
 ---
 
 ## Q153656: Shared Applications and Drive Mapping Problems

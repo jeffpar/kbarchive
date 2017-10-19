@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123741: Cannot Run RAS Programs When a Service References RASAPI32.DLL"
-permalink: kb/123/Q123741/
+permalink: /kb/123/Q123741/
 ---
 
 ## Q123741: Cannot Run RAS Programs When a Service References RASAPI32.DLL

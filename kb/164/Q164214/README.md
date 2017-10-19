@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164214: Distance Vector Routing Basics"
-permalink: kb/164/Q164214/
+permalink: /kb/164/Q164214/
 ---
 
 ## Q164214: Distance Vector Routing Basics

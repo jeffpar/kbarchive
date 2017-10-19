@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141662: FAX: Err Msg: Failure to Submit Fax"
-permalink: kb/141/Q141662/
+permalink: /kb/141/Q141662/
 ---
 
 ## Q141662: FAX: Err Msg: Failure to Submit Fax

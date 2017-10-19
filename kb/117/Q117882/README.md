@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117882: Baskerville Old Face &amp; New Caledonia Are Not Spaced Correctly"
-permalink: kb/117/Q117882/
+permalink: /kb/117/Q117882/
 ---
 
 ## Q117882: Baskerville Old Face &amp; New Caledonia Are Not Spaced Correctly

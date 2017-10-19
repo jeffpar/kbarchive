@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176641: FIX: Do Until Loop Evaluates &quot;True&quot; as -1 Exclusively"
-permalink: kb/176/Q176641/
+permalink: /kb/176/Q176641/
 ---
 
 ## Q176641: FIX: Do Until Loop Evaluates &quot;True&quot; as -1 Exclusively

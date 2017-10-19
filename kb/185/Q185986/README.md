@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185986: XADM: Attached DBCS Message Not Displayed Properly"
-permalink: kb/185/Q185986/
+permalink: /kb/185/Q185986/
 ---
 
 ## Q185986: XADM: Attached DBCS Message Not Displayed Properly

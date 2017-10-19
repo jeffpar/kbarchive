@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241347: FIX: Inserting/Updating Dates Before &quot;01-01-1900&quot; Into SQL"
-permalink: kb/241/Q241347/
+permalink: /kb/241/Q241347/
 ---
 
 ## Q241347: FIX: Inserting/Updating Dates Before &quot;01-01-1900&quot; Into SQL

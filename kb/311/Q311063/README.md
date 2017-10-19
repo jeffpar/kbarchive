@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311063: PRB: FSIZE() Returns Zero If Expression Has Trailing Spaces"
-permalink: kb/311/Q311063/
+permalink: /kb/311/Q311063/
 ---
 
 ## Q311063: PRB: FSIZE() Returns Zero If Expression Has Trailing Spaces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266315: Memory Dump Is Not Written Correctly with No Entry in Event Log"
-permalink: kb/266/Q266315/
+permalink: /kb/266/Q266315/
 ---
 
 ## Q266315: Memory Dump Is Not Written Correctly with No Entry in Event Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156123: Manic Marbles Trial Version: Known Issues"
-permalink: kb/156/Q156123/
+permalink: /kb/156/Q156123/
 ---
 
 ## Q156123: Manic Marbles Trial Version: Known Issues

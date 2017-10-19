@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264086: HOWTO: Automatically Log on to IIS Using NT Challenge/Response"
-permalink: kb/264/Q264086/
+permalink: /kb/264/Q264086/
 ---
 
 ## Q264086: HOWTO: Automatically Log on to IIS Using NT Challenge/Response

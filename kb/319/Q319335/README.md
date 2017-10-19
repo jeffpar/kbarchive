@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319335: Err Msg: Server Service Was Unable to Map Error Code 1722"
-permalink: kb/319/Q319335/
+permalink: /kb/319/Q319335/
 ---
 
 ## Q319335: Err Msg: Server Service Was Unable to Map Error Code 1722

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172395: PRB: Intl Number Settings Cause Upsizing Wizard Failure"
-permalink: kb/172/Q172395/
+permalink: /kb/172/Q172395/
 ---
 
 ## Q172395: PRB: Intl Number Settings Cause Upsizing Wizard Failure

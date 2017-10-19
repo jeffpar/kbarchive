@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221563: How to Remove Windows Entertainment Pack Software Titles"
-permalink: kb/221/Q221563/
+permalink: /kb/221/Q221563/
 ---
 
 ## Q221563: How to Remove Windows Entertainment Pack Software Titles

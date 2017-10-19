@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168298: HOWTO: DDP_Text Not implemented for COleDateTime and COleCurrenc"
-permalink: kb/168/Q168298/
+permalink: /kb/168/Q168298/
 ---
 
 ## Q168298: HOWTO: DDP_Text Not implemented for COleDateTime and COleCurrenc

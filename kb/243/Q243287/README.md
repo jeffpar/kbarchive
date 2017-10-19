@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243287: Error Message: EBUxxx Caused a Divide Error in Module EBUxxx.exe"
-permalink: kb/243/Q243287/
+permalink: /kb/243/Q243287/
 ---
 
 ## Q243287: Error Message: EBUxxx Caused a Divide Error in Module EBUxxx.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155124: XADM: Error: Initializing Extension Data Attributes"
-permalink: kb/155/Q155124/
+permalink: /kb/155/Q155124/
 ---
 
 ## Q155124: XADM: Error: Initializing Extension Data Attributes

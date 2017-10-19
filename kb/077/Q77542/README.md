@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77542: Norton Speed Disk Not Compatible with SMARTDrive"
-permalink: kb/077/Q77542/
+permalink: /kb/077/Q77542/
 ---
 
 ## Q77542: Norton Speed Disk Not Compatible with SMARTDrive

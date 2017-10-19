@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248032: Err Msg: Forbidden: Site Access Denied 403.8"
-permalink: kb/248/Q248032/
+permalink: /kb/248/Q248032/
 ---
 
 ## Q248032: Err Msg: Forbidden: Site Access Denied 403.8

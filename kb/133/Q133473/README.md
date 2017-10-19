@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133473: NWCONV.EXE Hangs Converting a Non-Default Group w/ &gt; 30 Members"
-permalink: kb/133/Q133473/
+permalink: /kb/133/Q133473/
 ---
 
 ## Q133473: NWCONV.EXE Hangs Converting a Non-Default Group w/ &gt; 30 Members

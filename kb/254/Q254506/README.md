@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254506: XADM: Hidden Public Folders Shown in GAL of Other Site"
-permalink: kb/254/Q254506/
+permalink: /kb/254/Q254506/
 ---
 
 ## Q254506: XADM: Hidden Public Folders Shown in GAL of Other Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131934: ACC: Cannot Reference OLE Control in Datasheet View"
-permalink: kb/131/Q131934/
+permalink: /kb/131/Q131934/
 ---
 
 ## Q131934: ACC: Cannot Reference OLE Control in Datasheet View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134324: File Manager Displays Day And Minutes As &quot;d&quot; and &quot;mm&quot;"
-permalink: kb/134/Q134324/
+permalink: /kb/134/Q134324/
 ---
 
 ## Q134324: File Manager Displays Day And Minutes As &quot;d&quot; and &quot;mm&quot;

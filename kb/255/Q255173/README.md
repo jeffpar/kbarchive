@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255173: Applet Stop Responding When Connecting with TN3270E"
-permalink: kb/255/Q255173/
+permalink: /kb/255/Q255173/
 ---
 
 ## Q255173: Applet Stop Responding When Connecting with TN3270E

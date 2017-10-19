@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168729: WD97: View Merged Data Fails After Using Find Record"
-permalink: kb/168/Q168729/
+permalink: /kb/168/Q168729/
 ---
 
 ## Q168729: WD97: View Merged Data Fails After Using Find Record

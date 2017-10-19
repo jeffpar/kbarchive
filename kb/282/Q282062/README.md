@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282062: IIS Does Not Authenticate for the /_AuthChangeUrl URL"
-permalink: kb/282/Q282062/
+permalink: /kb/282/Q282062/
 ---
 
 ## Q282062: IIS Does Not Authenticate for the /_AuthChangeUrl URL

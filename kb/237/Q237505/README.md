@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237505: Encarta Encyclopedia: Repeatedly Prompted to Insert CD-ROM"
-permalink: kb/237/Q237505/
+permalink: /kb/237/Q237505/
 ---
 
 ## Q237505: Encarta Encyclopedia: Repeatedly Prompted to Insert CD-ROM

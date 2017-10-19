@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174333: Installing Win95 Print Drivers on WinNT 4.0 Asks for Wrong Disk"
-permalink: kb/174/Q174333/
+permalink: /kb/174/Q174333/
 ---
 
 ## Q174333: Installing Win95 Print Drivers on WinNT 4.0 Asks for Wrong Disk

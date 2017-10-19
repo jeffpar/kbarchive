@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77861: Control Panel's Sound Won't Play Certain Wave Files"
-permalink: kb/077/Q77861/
+permalink: /kb/077/Q77861/
 ---
 
 ## Q77861: Control Panel's Sound Won't Play Certain Wave Files

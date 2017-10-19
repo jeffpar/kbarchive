@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184491: Some Print Jobs Print in Bold Text or Incorrect Font"
-permalink: kb/184/Q184491/
+permalink: /kb/184/Q184491/
 ---
 
 ## Q184491: Some Print Jobs Print in Bold Text or Incorrect Font

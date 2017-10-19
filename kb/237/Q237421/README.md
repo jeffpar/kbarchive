@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237421: XCON: Euro Sent Through X.400 Connector Displayed Incorrectly"
-permalink: kb/237/Q237421/
+permalink: /kb/237/Q237421/
 ---
 
 ## Q237421: XCON: Euro Sent Through X.400 Connector Displayed Incorrectly

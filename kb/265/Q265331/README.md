@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265331: HOWTO: Read a REG_EXPAND_SZ Value From the Registry"
-permalink: kb/265/Q265331/
+permalink: /kb/265/Q265331/
 ---
 
 ## Q265331: HOWTO: Read a REG_EXPAND_SZ Value From the Registry

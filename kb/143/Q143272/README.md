@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143272: How to Restart Windows Without Restarting the Computer"
-permalink: kb/143/Q143272/
+permalink: /kb/143/Q143272/
 ---
 
 ## Q143272: How to Restart Windows Without Restarting the Computer

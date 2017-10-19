@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177010: Age of Empires: Black Screen When You Start the Game"
-permalink: kb/177/Q177010/
+permalink: /kb/177/Q177010/
 ---
 
 ## Q177010: Age of Empires: Black Screen When You Start the Game

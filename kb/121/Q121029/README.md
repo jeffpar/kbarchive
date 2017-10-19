@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121029: Copying Audio Does Not Produce Sound in Destination"
-permalink: kb/121/Q121029/
+permalink: /kb/121/Q121029/
 ---
 
 ## Q121029: Copying Audio Does Not Produce Sound in Destination

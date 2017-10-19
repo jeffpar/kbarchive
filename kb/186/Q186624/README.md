@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186624: Terminal Server Client Shortcut Key Combinations"
-permalink: kb/186/Q186624/
+permalink: /kb/186/Q186624/
 ---
 
 ## Q186624: Terminal Server Client Shortcut Key Combinations

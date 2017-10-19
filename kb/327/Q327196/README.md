@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327196: INFO: SNADLC Link Service Naming Algorithm Changes"
-permalink: kb/327/Q327196/
+permalink: /kb/327/Q327196/
 ---
 
 ## Q327196: INFO: SNADLC Link Service Naming Algorithm Changes

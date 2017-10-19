@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216955: PRB: Negative Values Put in Remote View Rounded Up in SQL Table"
-permalink: kb/216/Q216955/
+permalink: /kb/216/Q216955/
 ---
 
 ## Q216955: PRB: Negative Values Put in Remote View Rounded Up in SQL Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146029: XCLN: No Status Indicator When Attach/Save/Send Attachments"
-permalink: kb/146/Q146029/
+permalink: /kb/146/Q146029/
 ---
 
 ## Q146029: XCLN: No Status Indicator When Attach/Save/Send Attachments

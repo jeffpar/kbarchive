@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177652: Stop 0x7B During Setup with More Than 1.792 GB of Memory"
-permalink: kb/177/Q177652/
+permalink: /kb/177/Q177652/
 ---
 
 ## Q177652: Stop 0x7B During Setup with More Than 1.792 GB of Memory

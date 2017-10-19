@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59140: Mac AL: Menus in the AppleLink Gateway Installer"
-permalink: kb/059/Q59140/
+permalink: /kb/059/Q59140/
 ---
 
 ## Q59140: Mac AL: Menus in the AppleLink Gateway Installer

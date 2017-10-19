@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221346: Stop 0x0000007f Exception Handling Problem in Termdd.sys"
-permalink: kb/221/Q221346/
+permalink: /kb/221/Q221346/
 ---
 
 ## Q221346: Stop 0x0000007f Exception Handling Problem in Termdd.sys

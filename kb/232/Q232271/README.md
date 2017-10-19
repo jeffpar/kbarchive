@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232271: How to Optimize Windows NT Server Using the Registry"
-permalink: kb/232/Q232271/
+permalink: /kb/232/Q232271/
 ---
 
 ## Q232271: How to Optimize Windows NT Server Using the Registry

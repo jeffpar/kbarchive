@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236940: Problems with ATAPI Multiple-LUN Devices"
-permalink: kb/236/Q236940/
+permalink: /kb/236/Q236940/
 ---
 
 ## Q236940: Problems with ATAPI Multiple-LUN Devices

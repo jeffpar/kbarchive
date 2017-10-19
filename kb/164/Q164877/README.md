@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164877: SMS: PCMSVC32 Doesn't Send Status MIF After Running Job"
-permalink: kb/164/Q164877/
+permalink: /kb/164/Q164877/
 ---
 
 ## Q164877: SMS: PCMSVC32 Doesn't Send Status MIF After Running Job

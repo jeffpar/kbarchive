@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124814: Windows NT 3.51 Product Overview"
-permalink: kb/124/Q124814/
+permalink: /kb/124/Q124814/
 ---
 
 ## Q124814: Windows NT 3.51 Product Overview

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138213: Uninstall Incorrectly Removes Dynamic Link Library Files"
-permalink: kb/138/Q138213/
+permalink: /kb/138/Q138213/
 ---
 
 ## Q138213: Uninstall Incorrectly Removes Dynamic Link Library Files

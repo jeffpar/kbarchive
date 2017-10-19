@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157400: Soccer: Using the IntelliPoint Mouse with Soccer"
-permalink: kb/157/Q157400/
+permalink: /kb/157/Q157400/
 ---
 
 ## Q157400: Soccer: Using the IntelliPoint Mouse with Soccer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201713: SMS: Error Message on Child Site During Upgrade of Parent"
-permalink: kb/201/Q201713/
+permalink: /kb/201/Q201713/
 ---
 
 ## Q201713: SMS: Error Message on Child Site During Upgrade of Parent

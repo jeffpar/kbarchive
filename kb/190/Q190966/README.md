@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190966: BUG: IntelliSense Limitations with Templates"
-permalink: kb/190/Q190966/
+permalink: /kb/190/Q190966/
 ---
 
 ## Q190966: BUG: IntelliSense Limitations with Templates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191555: Urban Assault: Progress Is Lost When You Click &quot;Last Saved&quot;"
-permalink: kb/191/Q191555/
+permalink: /kb/191/Q191555/
 ---
 
 ## Q191555: Urban Assault: Progress Is Lost When You Click &quot;Last Saved&quot;

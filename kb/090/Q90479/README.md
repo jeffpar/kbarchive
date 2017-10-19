@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90479: PC DOS: Err Msg: No Users Defined in Personal Address List"
-permalink: kb/090/Q90479/
+permalink: /kb/090/Q90479/
 ---
 
 ## Q90479: PC DOS: Err Msg: No Users Defined in Personal Address List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95686: Err Msg: &quot;Can't Find File&quot; When Saving Write File to Disk"
-permalink: kb/095/Q95686/
+permalink: /kb/095/Q95686/
 ---
 
 ## Q95686: Err Msg: &quot;Can't Find File&quot; When Saving Write File to Disk

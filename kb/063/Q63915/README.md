@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63915: Tandy 2500 XL ROM DOS Needs Configuration Setup"
-permalink: kb/063/Q63915/
+permalink: /kb/063/Q63915/
 ---
 
 ## Q63915: Tandy 2500 XL ROM DOS Needs Configuration Setup

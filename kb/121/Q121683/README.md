@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121683: SMS Site Configuration Manager Internal Error Codes"
-permalink: kb/121/Q121683/
+permalink: /kb/121/Q121683/
 ---
 
 ## Q121683: SMS Site Configuration Manager Internal Error Codes

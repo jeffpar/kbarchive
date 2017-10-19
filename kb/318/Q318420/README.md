@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318420: Computer Hangs with a &quot;Stop 0x0000000A&quot; Error in Netbt.sys"
-permalink: kb/318/Q318420/
+permalink: /kb/318/Q318420/
 ---
 
 ## Q318420: Computer Hangs with a &quot;Stop 0x0000000A&quot; Error in Netbt.sys

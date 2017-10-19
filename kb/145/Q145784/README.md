@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145784: XCLN: &quot;Close and Return&quot; from Word Doesn't Return to Exchange"
-permalink: kb/145/Q145784/
+permalink: /kb/145/Q145784/
 ---
 
 ## Q145784: XCLN: &quot;Close and Return&quot; from Word Doesn't Return to Exchange

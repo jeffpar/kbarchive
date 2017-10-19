@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236048: Account Creation for Secondary Site Requires Network Connection"
-permalink: kb/236/Q236048/
+permalink: /kb/236/Q236048/
 ---
 
 ## Q236048: Account Creation for Secondary Site Requires Network Connection

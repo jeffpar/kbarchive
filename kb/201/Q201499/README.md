@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201499: PRB: NSLOOKUP Shows No IP Address for a Domain Name"
-permalink: kb/201/Q201499/
+permalink: /kb/201/Q201499/
 ---
 
 ## Q201499: PRB: NSLOOKUP Shows No IP Address for a Domain Name

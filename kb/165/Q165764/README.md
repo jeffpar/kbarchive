@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165764: Pstat.exe Does Not Run on an Alpha Computer"
-permalink: kb/165/Q165764/
+permalink: /kb/165/Q165764/
 ---
 
 ## Q165764: Pstat.exe Does Not Run on an Alpha Computer

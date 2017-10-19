@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148761: Description of Windows 95 OEM Service Release 1"
-permalink: kb/148/Q148761/
+permalink: /kb/148/Q148761/
 ---
 
 ## Q148761: Description of Windows 95 OEM Service Release 1

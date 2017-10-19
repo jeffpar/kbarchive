@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197276: PRB: Closing Top-Level Form with Docked Toolbar Leaves Image"
-permalink: kb/197/Q197276/
+permalink: /kb/197/Q197276/
 ---
 
 ## Q197276: PRB: Closing Top-Level Form with Docked Toolbar Leaves Image

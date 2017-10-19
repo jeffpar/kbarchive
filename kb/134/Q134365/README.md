@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134365: PPT: Cannot Use Slide Master to Change Case of Slide Text"
-permalink: kb/134/Q134365/
+permalink: /kb/134/Q134365/
 ---
 
 ## Q134365: PPT: Cannot Use Slide Master to Change Case of Slide Text

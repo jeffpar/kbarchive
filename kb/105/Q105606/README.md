@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105606: MS-DOS 6.2 DBLSPACE.INF File"
-permalink: kb/105/Q105606/
+permalink: /kb/105/Q105606/
 ---
 
 ## Q105606: MS-DOS 6.2 DBLSPACE.INF File

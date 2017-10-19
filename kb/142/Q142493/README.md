@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142493: BUG: Cannot Cast Double to int for Use in an Array Declarator"
-permalink: kb/142/Q142493/
+permalink: /kb/142/Q142493/
 ---
 
 ## Q142493: BUG: Cannot Cast Double to int for Use in an Array Declarator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136105: No Network Access After First Boot on EISA Computer"
-permalink: kb/136/Q136105/
+permalink: /kb/136/Q136105/
 ---
 
 ## Q136105: No Network Access After First Boot on EISA Computer

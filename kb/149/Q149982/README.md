@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149982: BUG: GetDlgItem() Returns NULL Under Win32s"
-permalink: kb/149/Q149982/
+permalink: /kb/149/Q149982/
 ---
 
 ## Q149982: BUG: GetDlgItem() Returns NULL Under Win32s

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145745: INFO: Function Differences Between Asc/AscB/AscW and Chr/ChrB/Ch"
-permalink: kb/145/Q145745/
+permalink: /kb/145/Q145745/
 ---
 
 ## Q145745: INFO: Function Differences Between Asc/AscB/AscW and Chr/ChrB/Ch

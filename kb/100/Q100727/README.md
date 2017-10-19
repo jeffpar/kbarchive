@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100727: Encarta Err Msg: MindMaze: Player Already Playing"
-permalink: kb/100/Q100727/
+permalink: /kb/100/Q100727/
 ---
 
 ## Q100727: Encarta Err Msg: MindMaze: Player Already Playing

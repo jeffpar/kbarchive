@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59139: Mac Srv Wkst: Time in Summary Window Displayed in 24-Hr Format"
-permalink: kb/059/Q59139/
+permalink: /kb/059/Q59139/
 ---
 
 ## Q59139: Mac Srv Wkst: Time in Summary Window Displayed in 24-Hr Format

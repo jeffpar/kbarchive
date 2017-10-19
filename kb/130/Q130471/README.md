@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130471: PRB: EXTERN Attribute Prevents F4999 on Unreferenced Function"
-permalink: kb/130/Q130471/
+permalink: /kb/130/Q130471/
 ---
 
 ## Q130471: PRB: EXTERN Attribute Prevents F4999 on Unreferenced Function

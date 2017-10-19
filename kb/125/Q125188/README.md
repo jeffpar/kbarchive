@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125188: Err Msg: CVF Has Been Deleted or Has Been Seriously Damaged"
-permalink: kb/125/Q125188/
+permalink: /kb/125/Q125188/
 ---
 
 ## Q125188: Err Msg: CVF Has Been Deleted or Has Been Seriously Damaged

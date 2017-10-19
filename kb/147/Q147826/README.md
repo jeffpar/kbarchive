@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147826: 3c595 Adapter Auto-Detects Wrong Media Speed"
-permalink: kb/147/Q147826/
+permalink: /kb/147/Q147826/
 ---
 
 ## Q147826: 3c595 Adapter Auto-Detects Wrong Media Speed

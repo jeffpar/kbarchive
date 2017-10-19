@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119088: PC DOS: 4096 Is Maximum Number of Inbox Entries"
-permalink: kb/119/Q119088/
+permalink: /kb/119/Q119088/
 ---
 
 ## Q119088: PC DOS: 4096 Is Maximum Number of Inbox Entries

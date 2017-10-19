@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235788: SMS: Distribution Mgr Process PKG File and Update Distribution"
-permalink: kb/235/Q235788/
+permalink: /kb/235/Q235788/
 ---
 
 ## Q235788: SMS: Distribution Mgr Process PKG File and Update Distribution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194206: FIX: Jet Drivers Do Not Support Bit-wise Operators"
-permalink: kb/194/Q194206/
+permalink: /kb/194/Q194206/
 ---
 
 ## Q194206: FIX: Jet Drivers Do Not Support Bit-wise Operators

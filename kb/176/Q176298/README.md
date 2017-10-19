@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176298: Age Of Empires: Location of Product Identification Number (PID)"
-permalink: kb/176/Q176298/
+permalink: /kb/176/Q176298/
 ---
 
 ## Q176298: Age Of Empires: Location of Product Identification Number (PID)

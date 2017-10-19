@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125471: PRB: BINDMSF Error: Cannot Create Binder file &#92;2"
-permalink: kb/125/Q125471/
+permalink: /kb/125/Q125471/
 ---
 
 ## Q125471: PRB: BINDMSF Error: Cannot Create Binder file &#92;2

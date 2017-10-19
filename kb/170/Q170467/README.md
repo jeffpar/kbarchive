@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170467: Poor Color Quality with HP DeskJet 800-Series Printers"
-permalink: kb/170/Q170467/
+permalink: /kb/170/Q170467/
 ---
 
 ## Q170467: Poor Color Quality with HP DeskJet 800-Series Printers

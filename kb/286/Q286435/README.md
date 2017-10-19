@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286435: OLMAC: Error Message:  Exceeded the Maximum Amount of Text"
-permalink: kb/286/Q286435/
+permalink: /kb/286/Q286435/
 ---
 
 ## Q286435: OLMAC: Error Message:  Exceeded the Maximum Amount of Text

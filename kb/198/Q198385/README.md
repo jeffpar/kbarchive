@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198385: PRB: Error Running Setup Wizard under Apple OS 8.5"
-permalink: kb/198/Q198385/
+permalink: /kb/198/Q198385/
 ---
 
 ## Q198385: PRB: Error Running Setup Wizard under Apple OS 8.5

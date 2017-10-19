@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190109: HOWTO: Keep RDO Cursor Open After Transaction"
-permalink: kb/190/Q190109/
+permalink: /kb/190/Q190109/
 ---
 
 ## Q190109: HOWTO: Keep RDO Cursor Open After Transaction

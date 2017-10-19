@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308238: SMS Rchelp.sys File Prevents Chkdsk.exe From Running"
-permalink: kb/308/Q308238/
+permalink: /kb/308/Q308238/
 ---
 
 ## Q308238: SMS Rchelp.sys File Prevents Chkdsk.exe From Running

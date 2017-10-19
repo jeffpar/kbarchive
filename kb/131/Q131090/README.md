@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131090: XCLN: Status Bar Message Count Not Updated During Filter"
-permalink: kb/131/Q131090/
+permalink: /kb/131/Q131090/
 ---
 
 ## Q131090: XCLN: Status Bar Message Count Not Updated During Filter

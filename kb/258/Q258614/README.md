@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258614: HTML Filter Emits DocAuthor Property Instead of the Title"
-permalink: kb/258/Q258614/
+permalink: /kb/258/Q258614/
 ---
 
 ## Q258614: HTML Filter Emits DocAuthor Property Instead of the Title

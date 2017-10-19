@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180401: XADM: Directory Replication After Site Address Is Changed"
-permalink: kb/180/Q180401/
+permalink: /kb/180/Q180401/
 ---
 
 ## Q180401: XADM: Directory Replication After Site Address Is Changed

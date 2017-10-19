@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134759: Event 2000 Occurs When You Print to a Shared Printer"
-permalink: kb/134/Q134759/
+permalink: /kb/134/Q134759/
 ---
 
 ## Q134759: Event 2000 Occurs When You Print to a Shared Printer

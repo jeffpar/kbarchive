@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124709: PATCH: Out of Memory Error w/ AddNew/Update on Dynaset/Table"
-permalink: kb/124/Q124709/
+permalink: /kb/124/Q124709/
 ---
 
 ## Q124709: PATCH: Out of Memory Error w/ AddNew/Update on Dynaset/Table

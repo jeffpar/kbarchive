@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137865: PC DirSync: Incorrect SMTP Addresses in POL After Dir-Sync"
-permalink: kb/137/Q137865/
+permalink: /kb/137/Q137865/
 ---
 
 ## Q137865: PC DirSync: Incorrect SMTP Addresses in POL After Dir-Sync

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322224: DOC: MSDN InstanceDescriptor Class Example Is Incorrect"
-permalink: kb/322/Q322224/
+permalink: /kb/322/Q322224/
 ---
 
 ## Q322224: DOC: MSDN InstanceDescriptor Class Example Is Incorrect

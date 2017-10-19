@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111839: SMTP: Gateway Does Not Get Outgoing Messages from Postoffice"
-permalink: kb/111/Q111839/
+permalink: /kb/111/Q111839/
 ---
 
 ## Q111839: SMTP: Gateway Does Not Get Outgoing Messages from Postoffice

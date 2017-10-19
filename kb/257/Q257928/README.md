@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257928: How to Manually Remove the Cluster Service"
-permalink: kb/257/Q257928/
+permalink: /kb/257/Q257928/
 ---
 
 ## Q257928: How to Manually Remove the Cluster Service

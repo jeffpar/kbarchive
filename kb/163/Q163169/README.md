@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163169: Windows NT Does Not Recognize Second PCMCIA Network Adapter"
-permalink: kb/163/Q163169/
+permalink: /kb/163/Q163169/
 ---
 
 ## Q163169: Windows NT Does Not Recognize Second PCMCIA Network Adapter

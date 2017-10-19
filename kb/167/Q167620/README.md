@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167620: WD97: TOC Styles Don't Have Tab Stop When Applied Manually"
-permalink: kb/167/Q167620/
+permalink: /kb/167/Q167620/
 ---
 
 ## Q167620: WD97: TOC Styles Don't Have Tab Stop When Applied Manually

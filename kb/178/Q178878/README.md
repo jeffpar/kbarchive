@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178878: WD97: Error 5152 Running Macro To Insert Graphic w/URL Address"
-permalink: kb/178/Q178878/
+permalink: /kb/178/Q178878/
 ---
 
 ## Q178878: WD97: Error 5152 Running Macro To Insert Graphic w/URL Address

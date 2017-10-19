@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192499: SMS: Query Operator to Find Items Whose Value Is &lt;NULL&gt;"
-permalink: kb/192/Q192499/
+permalink: /kb/192/Q192499/
 ---
 
 ## Q192499: SMS: Query Operator to Find Items Whose Value Is &lt;NULL&gt;

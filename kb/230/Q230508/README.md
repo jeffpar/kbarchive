@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230508: XCON: How to Configure X.400 to Send System Messages Only"
-permalink: kb/230/Q230508/
+permalink: /kb/230/Q230508/
 ---
 
 ## Q230508: XCON: How to Configure X.400 to Send System Messages Only

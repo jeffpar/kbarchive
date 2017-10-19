@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132147: Test To Profile Display Takes Too Much Time"
-permalink: kb/132/Q132147/
+permalink: /kb/132/Q132147/
 ---
 
 ## Q132147: Test To Profile Display Takes Too Much Time

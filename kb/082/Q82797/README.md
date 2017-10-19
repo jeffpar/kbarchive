@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82797: Windows 3.1 Does Not Require VPICDA.386"
-permalink: kb/082/Q82797/
+permalink: /kb/082/Q82797/
 ---
 
 ## Q82797: Windows 3.1 Does Not Require VPICDA.386

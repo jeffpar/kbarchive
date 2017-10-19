@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173836: Learn VB Now Hangs With IE 4.0 Platform Preview"
-permalink: kb/173/Q173836/
+permalink: /kb/173/Q173836/
 ---
 
 ## Q173836: Learn VB Now Hangs With IE 4.0 Platform Preview

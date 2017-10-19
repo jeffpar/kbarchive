@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168473: Hide Drives on Default User Sets Restrictions"
-permalink: kb/168/Q168473/
+permalink: /kb/168/Q168473/
 ---
 
 ## Q168473: Hide Drives on Default User Sets Restrictions

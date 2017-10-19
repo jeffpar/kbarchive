@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143042: PRB: Version Compatibility of OLE Servers"
-permalink: kb/143/Q143042/
+permalink: /kb/143/Q143042/
 ---
 
 ## Q143042: PRB: Version Compatibility of OLE Servers

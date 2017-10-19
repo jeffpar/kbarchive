@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256231: WD97: Printing Label Ignores Direct Formatting"
-permalink: kb/256/Q256231/
+permalink: /kb/256/Q256231/
 ---
 
 ## Q256231: WD97: Printing Label Ignores Direct Formatting

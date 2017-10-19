@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137043: SMTP: Benchmarking the SMTP Gateway"
-permalink: kb/137/Q137043/
+permalink: /kb/137/Q137043/
 ---
 
 ## Q137043: SMTP: Benchmarking the SMTP Gateway

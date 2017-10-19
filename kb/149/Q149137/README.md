@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149137: FIX: ODBC Long Binary Functions Use SQL_NO_TOTAL Incorrectly"
-permalink: kb/149/Q149137/
+permalink: /kb/149/Q149137/
 ---
 
 ## Q149137: FIX: ODBC Long Binary Functions Use SQL_NO_TOTAL Incorrectly

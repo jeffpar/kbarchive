@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110741: Printer Drivers Included in WFWG 3.1 but Not WFWG 3.11"
-permalink: kb/110/Q110741/
+permalink: /kb/110/Q110741/
 ---
 
 ## Q110741: Printer Drivers Included in WFWG 3.1 but Not WFWG 3.11

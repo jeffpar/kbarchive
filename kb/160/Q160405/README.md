@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160405: Video Memory Not Correctly Detected on Dell Latitude Laptops"
-permalink: kb/160/Q160405/
+permalink: /kb/160/Q160405/
 ---
 
 ## Q160405: Video Memory Not Correctly Detected on Dell Latitude Laptops

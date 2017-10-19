@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170264: Office 97 Programs Do Not Expand Environment Variables"
-permalink: kb/170/Q170264/
+permalink: /kb/170/Q170264/
 ---
 
 ## Q170264: Office 97 Programs Do Not Expand Environment Variables

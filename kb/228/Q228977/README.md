@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228977: Midtown Madness: Game Quits Unexpectedly When You Honk the Horn"
-permalink: kb/228/Q228977/
+permalink: /kb/228/Q228977/
 ---
 
 ## Q228977: Midtown Madness: Game Quits Unexpectedly When You Honk the Horn

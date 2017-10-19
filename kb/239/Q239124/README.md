@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239124: Time Stamp Errors Running Windows NT on an AS/400-Based Computer"
-permalink: kb/239/Q239124/
+permalink: /kb/239/Q239124/
 ---
 
 ## Q239124: Time Stamp Errors Running Windows NT on an AS/400-Based Computer

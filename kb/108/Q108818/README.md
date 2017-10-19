@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108818: WFWG May Hang at Startup with 32-Bit File Access &amp; NoEmmDriver"
-permalink: kb/108/Q108818/
+permalink: /kb/108/Q108818/
 ---
 
 ## Q108818: WFWG May Hang at Startup with 32-Bit File Access &amp; NoEmmDriver

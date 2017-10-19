@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84146: Xircom Pocket Ethernet Adapter Requires Updated Drivers"
-permalink: kb/084/Q84146/
+permalink: /kb/084/Q84146/
 ---
 
 ## Q84146: Xircom Pocket Ethernet Adapter Requires Updated Drivers

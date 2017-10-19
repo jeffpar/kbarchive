@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147471: PC Ext: Remote Client Sets Hop Count to Ten"
-permalink: kb/147/Q147471/
+permalink: /kb/147/Q147471/
 ---
 
 ## Q147471: PC Ext: Remote Client Sets Hop Count to Ten

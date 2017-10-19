@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226470: XWEB: Using OWA with Windows Load Balancing Service (WLBS)"
-permalink: kb/226/Q226470/
+permalink: /kb/226/Q226470/
 ---
 
 ## Q226470: XWEB: Using OWA with Windows Load Balancing Service (WLBS)

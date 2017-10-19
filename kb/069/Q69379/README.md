@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69379: COMPAQ CDROM Adapters and Windows 3.00"
-permalink: kb/069/Q69379/
+permalink: /kb/069/Q69379/
 ---
 
 ## Q69379: COMPAQ CDROM Adapters and Windows 3.00

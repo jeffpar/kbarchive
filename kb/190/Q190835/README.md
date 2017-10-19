@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190835: Paper Bin Displays Incorrect Form to Tray Assignment"
-permalink: kb/190/Q190835/
+permalink: /kb/190/Q190835/
 ---
 
 ## Q190835: Paper Bin Displays Incorrect Form to Tray Assignment

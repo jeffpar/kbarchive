@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128142: Systems with SMC NICs Hang When Using SMCMAC.DOS of NCADMIN"
-permalink: kb/128/Q128142/
+permalink: /kb/128/Q128142/
 ---
 
 ## Q128142: Systems with SMC NICs Hang When Using SMCMAC.DOS of NCADMIN

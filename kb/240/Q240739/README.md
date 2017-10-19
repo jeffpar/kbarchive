@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240739: IBM ServeRAID Cluster Solutions Causes Cluster Handle Leak"
-permalink: kb/240/Q240739/
+permalink: /kb/240/Q240739/
 ---
 
 ## Q240739: IBM ServeRAID Cluster Solutions Causes Cluster Handle Leak

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107179: Encarta 1994: Manual Installation Instructions"
-permalink: kb/107/Q107179/
+permalink: /kb/107/Q107179/
 ---
 
 ## Q107179: Encarta 1994: Manual Installation Instructions

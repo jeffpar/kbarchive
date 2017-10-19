@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180832: FIX: Toolbar Buttons Do Not Appear Correctly at Run-time"
-permalink: kb/180/Q180832/
+permalink: /kb/180/Q180832/
 ---
 
 ## Q180832: FIX: Toolbar Buttons Do Not Appear Correctly at Run-time

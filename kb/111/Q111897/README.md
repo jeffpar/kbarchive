@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111897: PC WSPlus: Files Installed During Schedule+ 1.0a Setup"
-permalink: kb/111/Q111897/
+permalink: /kb/111/Q111897/
 ---
 
 ## Q111897: PC WSPlus: Files Installed During Schedule+ 1.0a Setup

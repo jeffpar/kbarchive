@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134575: Error Msg While Installing Printer: Driver Could Not Be Loaded"
-permalink: kb/134/Q134575/
+permalink: /kb/134/Q134575/
 ---
 
 ## Q134575: Error Msg While Installing Printer: Driver Could Not Be Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240452: Secure RPC Traffic Problem When Using RPC Ping Tool"
-permalink: kb/240/Q240452/
+permalink: /kb/240/Q240452/
 ---
 
 ## Q240452: Secure RPC Traffic Problem When Using RPC Ping Tool

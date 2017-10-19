@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130160: PRB: &quot;Convert.app cannot be run as a standalone program&quot; Error"
-permalink: kb/130/Q130160/
+permalink: /kb/130/Q130160/
 ---
 
 ## Q130160: PRB: &quot;Convert.app cannot be run as a standalone program&quot; Error

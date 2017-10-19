@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92582: HP DeskJet 550C Black Output Appears Green"
-permalink: kb/092/Q92582/
+permalink: /kb/092/Q92582/
 ---
 
 ## Q92582: HP DeskJet 550C Black Output Appears Green

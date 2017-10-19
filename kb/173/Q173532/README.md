@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173532: RADIUS Authentication Causes Access Violation in Mprouter.exe"
-permalink: kb/173/Q173532/
+permalink: /kb/173/Q173532/
 ---
 
 ## Q173532: RADIUS Authentication Causes Access Violation in Mprouter.exe

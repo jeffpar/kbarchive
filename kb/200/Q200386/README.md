@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200386: SMS: NetWare Server Roles in SMS 2.0"
-permalink: kb/200/Q200386/
+permalink: /kb/200/Q200386/
 ---
 
 ## Q200386: SMS: NetWare Server Roles in SMS 2.0

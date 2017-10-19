@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172469: Last Byte of Transparent Section Interpreted Incorrectly"
-permalink: kb/172/Q172469/
+permalink: /kb/172/Q172469/
 ---
 
 ## Q172469: Last Byte of Transparent Section Interpreted Incorrectly

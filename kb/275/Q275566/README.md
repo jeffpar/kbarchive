@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275566: PRB: Default Settings Change When Restarting Visual FoxPro"
-permalink: kb/275/Q275566/
+permalink: /kb/275/Q275566/
 ---
 
 ## Q275566: PRB: Default Settings Change When Restarting Visual FoxPro

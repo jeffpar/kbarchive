@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127757: Automap Streets: Recovering Maps from the Backup Disk"
-permalink: kb/127/Q127757/
+permalink: /kb/127/Q127757/
 ---
 
 ## Q127757: Automap Streets: Recovering Maps from the Backup Disk

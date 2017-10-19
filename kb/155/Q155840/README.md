@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155840: XCON: How the Use of '&amp;' in Organization Name Affects Exchange"
-permalink: kb/155/Q155840/
+permalink: /kb/155/Q155840/
 ---
 
 ## Q155840: XCON: How the Use of '&amp;' in Organization Name Affects Exchange

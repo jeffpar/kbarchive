@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105138: WFWG Mail: DoubleSpace and Highest Security Options"
-permalink: kb/105/Q105138/
+permalink: /kb/105/Q105138/
 ---
 
 ## Q105138: WFWG Mail: DoubleSpace and Highest Security Options

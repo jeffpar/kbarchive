@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83904: Emerson 286 or 386sx Hangs During Windows Startup"
-permalink: kb/083/Q83904/
+permalink: /kb/083/Q83904/
 ---
 
 ## Q83904: Emerson 286 or 386sx Hangs During Windows Startup

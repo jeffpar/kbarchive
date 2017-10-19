@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131486: No Task Visible for Upcoming Tasks in Schedule+"
-permalink: kb/131/Q131486/
+permalink: /kb/131/Q131486/
 ---
 
 ## Q131486: No Task Visible for Upcoming Tasks in Schedule+

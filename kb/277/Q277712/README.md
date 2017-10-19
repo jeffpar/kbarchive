@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277712: HOWTO: Change the Axis Label Font and the Font Size in MSChart"
-permalink: kb/277/Q277712/
+permalink: /kb/277/Q277712/
 ---
 
 ## Q277712: HOWTO: Change the Axis Label Font and the Font Size in MSChart

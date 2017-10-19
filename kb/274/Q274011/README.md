@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274011: BUG: SET(&quot;FILTER&quot;) Converts Dates to Current Date Format"
-permalink: kb/274/Q274011/
+permalink: /kb/274/Q274011/
 ---
 
 ## Q274011: BUG: SET(&quot;FILTER&quot;) Converts Dates to Current Date Format

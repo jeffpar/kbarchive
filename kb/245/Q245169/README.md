@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245169: SMS: DDM May Stop Unexpectedly During Site Attachment Processing"
-permalink: kb/245/Q245169/
+permalink: /kb/245/Q245169/
 ---
 
 ## Q245169: SMS: DDM May Stop Unexpectedly During Site Attachment Processing

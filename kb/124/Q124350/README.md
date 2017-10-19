@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124350: WFWG Err Msg: The API Return Buffer Is Too Small"
-permalink: kb/124/Q124350/
+permalink: /kb/124/Q124350/
 ---
 
 ## Q124350: WFWG Err Msg: The API Return Buffer Is Too Small

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167526: FIX: ATL Control May Cause an Access Violation"
-permalink: kb/167/Q167526/
+permalink: /kb/167/Q167526/
 ---
 
 ## Q167526: FIX: ATL Control May Cause an Access Violation

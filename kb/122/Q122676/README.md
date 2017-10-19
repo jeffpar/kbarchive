@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122676: INFO: Multiple Threads and MFC _USRDLLs"
-permalink: kb/122/Q122676/
+permalink: /kb/122/Q122676/
 ---
 
 ## Q122676: INFO: Multiple Threads and MFC _USRDLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323189: &quot;Random Sponsors&quot; Option Doesn't Work on HIS End-User Client"
-permalink: kb/323/Q323189/
+permalink: /kb/323/Q323189/
 ---
 
 ## Q323189: &quot;Random Sponsors&quot; Option Doesn't Work on HIS End-User Client

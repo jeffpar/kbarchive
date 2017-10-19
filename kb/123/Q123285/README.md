@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123285: IPCONFIG Displays Invalid Results"
-permalink: kb/123/Q123285/
+permalink: /kb/123/Q123285/
 ---
 
 ## Q123285: IPCONFIG Displays Invalid Results

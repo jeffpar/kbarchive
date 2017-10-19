@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309559: MechWarrior 4: Err Msg: Setup Has Detected Beta or Test Version"
-permalink: kb/309/Q309559/
+permalink: /kb/309/Q309559/
 ---
 
 ## Q309559: MechWarrior 4: Err Msg: Setup Has Detected Beta or Test Version

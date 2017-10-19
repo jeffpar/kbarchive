@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172992: FIX: /Og Causes C1001 While Looping"
-permalink: kb/172/Q172992/
+permalink: /kb/172/Q172992/
 ---
 
 ## Q172992: FIX: /Og Causes C1001 While Looping

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259671: How to Change the Default Installation Paths for FTP and the Web"
-permalink: kb/259/Q259671/
+permalink: /kb/259/Q259671/
 ---
 
 ## Q259671: How to Change the Default Installation Paths for FTP and the Web

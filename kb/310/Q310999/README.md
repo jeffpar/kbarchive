@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310999: Can't Use the Spell Check Function Of Hotmail"
-permalink: kb/310/Q310999/
+permalink: /kb/310/Q310999/
 ---
 
 ## Q310999: Can't Use the Spell Check Function Of Hotmail

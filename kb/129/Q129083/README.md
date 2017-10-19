@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129083: Microsoft Visual Basic Toolbox Does Not Minimize"
-permalink: kb/129/Q129083/
+permalink: /kb/129/Q129083/
 ---
 
 ## Q129083: Microsoft Visual Basic Toolbox Does Not Minimize

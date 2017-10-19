@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312533: Intermittent Stop Error in Rdr.sys"
-permalink: kb/312/Q312533/
+permalink: /kb/312/Q312533/
 ---
 
 ## Q312533: Intermittent Stop Error in Rdr.sys

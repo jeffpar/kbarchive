@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181500: XFOR: DXM Access Violation Processing NAMEM Macro"
-permalink: kb/181/Q181500/
+permalink: /kb/181/Q181500/
 ---
 
 ## Q181500: XFOR: DXM Access Violation Processing NAMEM Macro

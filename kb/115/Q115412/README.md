@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115412: WD97: How to Change the Page Size to A4 for Custom Labels"
-permalink: kb/115/Q115412/
+permalink: /kb/115/Q115412/
 ---
 
 ## Q115412: WD97: How to Change the Page Size to A4 for Custom Labels

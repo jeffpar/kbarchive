@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115600: Problems Accessing Floppy Disk Drives"
-permalink: kb/115/Q115600/
+permalink: /kb/115/Q115600/
 ---
 
 ## Q115600: Problems Accessing Floppy Disk Drives

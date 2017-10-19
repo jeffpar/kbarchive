@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139006: Finding Referenced Labs in Mastering Microsoft Visual FoxPro"
-permalink: kb/139/Q139006/
+permalink: /kb/139/Q139006/
 ---
 
 ## Q139006: Finding Referenced Labs in Mastering Microsoft Visual FoxPro

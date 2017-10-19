@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62079: Mac Hyp: Initializing a New Message"
-permalink: kb/062/Q62079/
+permalink: /kb/062/Q62079/
 ---
 
 ## Q62079: Mac Hyp: Initializing a New Message

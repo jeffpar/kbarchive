@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175868: BUG: T-SQL Debugger Does Not Run on NT with User Account"
-permalink: kb/175/Q175868/
+permalink: /kb/175/Q175868/
 ---
 
 ## Q175868: BUG: T-SQL Debugger Does Not Run on NT with User Account

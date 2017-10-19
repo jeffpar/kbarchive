@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132699: Pressing ALT+SPACEBAR Does Not Open System Menu"
-permalink: kb/132/Q132699/
+permalink: /kb/132/Q132699/
 ---
 
 ## Q132699: Pressing ALT+SPACEBAR Does Not Open System Menu

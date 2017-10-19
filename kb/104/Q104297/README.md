@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104297: PC Win: Err Msg: A Message Could Not Be Copied"
-permalink: kb/104/Q104297/
+permalink: /kb/104/Q104297/
 ---
 
 ## Q104297: PC Win: Err Msg: A Message Could Not Be Copied

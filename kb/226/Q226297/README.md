@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226297: SMS: How Remote Tools Locates a Client and Establishes a Session"
-permalink: kb/226/Q226297/
+permalink: /kb/226/Q226297/
 ---
 
 ## Q226297: SMS: How Remote Tools Locates a Client and Establishes a Session

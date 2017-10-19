@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229779: PRB: Data Environment Stores Paths as Relative Paths"
-permalink: kb/229/Q229779/
+permalink: /kb/229/Q229779/
 ---
 
 ## Q229779: PRB: Data Environment Stores Paths as Relative Paths

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156702: Windows NT 4 &quot;Browse Folders Using a Separate Window&quot; Option"
-permalink: kb/156/Q156702/
+permalink: /kb/156/Q156702/
 ---
 
 ## Q156702: Windows NT 4 &quot;Browse Folders Using a Separate Window&quot; Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245040: How to Restrict Workstation Access to Local Administrators Only."
-permalink: kb/245/Q245040/
+permalink: /kb/245/Q245040/
 ---
 
 ## Q245040: How to Restrict Workstation Access to Local Administrators Only.

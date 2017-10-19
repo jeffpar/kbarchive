@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265143: .nim File for NetWare Servers Reports &quot;No Data Available&quot;"
-permalink: kb/265/Q265143/
+permalink: /kb/265/Q265143/
 ---
 
 ## Q265143: .nim File for NetWare Servers Reports &quot;No Data Available&quot;

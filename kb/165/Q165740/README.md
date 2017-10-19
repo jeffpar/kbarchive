@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165740: WD97: Cross-Reference to ListNum Field Is Incomplete"
-permalink: kb/165/Q165740/
+permalink: /kb/165/Q165740/
 ---
 
 ## Q165740: WD97: Cross-Reference to ListNum Field Is Incomplete

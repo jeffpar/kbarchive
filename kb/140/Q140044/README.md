@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140044: Visual Basic Menus Disappear Using Shell Technology Preview"
-permalink: kb/140/Q140044/
+permalink: /kb/140/Q140044/
 ---
 
 ## Q140044: Visual Basic Menus Disappear Using Shell Technology Preview

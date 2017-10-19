@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181780: WD97: Text from WordBasic.Input Command Truncated After Comma"
-permalink: kb/181/Q181780/
+permalink: /kb/181/Q181780/
 ---
 
 ## Q181780: WD97: Text from WordBasic.Input Command Truncated After Comma

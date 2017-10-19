@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103900: PC WRmt Ext: Telebit Modem Poor Throughput w/ 9600 Connection"
-permalink: kb/103/Q103900/
+permalink: /kb/103/Q103900/
 ---
 
 ## Q103900: PC WRmt Ext: Telebit Modem Poor Throughput w/ 9600 Connection

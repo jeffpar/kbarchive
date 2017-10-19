@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195452: XCLN: Blank Column Header Icon May Appear in a Custom View"
-permalink: kb/195/Q195452/
+permalink: /kb/195/Q195452/
 ---
 
 ## Q195452: XCLN: Blank Column Header Icon May Appear in a Custom View

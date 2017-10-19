@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157686: XCON: MTA Crashes When Logging Event 321"
-permalink: kb/157/Q157686/
+permalink: /kb/157/Q157686/
 ---
 
 ## Q157686: XCON: MTA Crashes When Logging Event 321

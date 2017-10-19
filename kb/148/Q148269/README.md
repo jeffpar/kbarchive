@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148269: Encarta: Video Not Updated When Changing Views"
-permalink: kb/148/Q148269/
+permalink: /kb/148/Q148269/
 ---
 
 ## Q148269: Encarta: Video Not Updated When Changing Views

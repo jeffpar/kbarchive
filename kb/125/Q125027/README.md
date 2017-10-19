@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125027: DOCERR: DK Guide References Non-Existent Disk Image Screen"
-permalink: kb/125/Q125027/
+permalink: /kb/125/Q125027/
 ---
 
 ## Q125027: DOCERR: DK Guide References Non-Existent Disk Image Screen

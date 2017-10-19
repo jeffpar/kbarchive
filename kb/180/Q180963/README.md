@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180963: Denial of Service Attack Causes Windows NT Systems to Restart"
-permalink: kb/180/Q180963/
+permalink: /kb/180/Q180963/
 ---
 
 ## Q180963: Denial of Service Attack Causes Windows NT Systems to Restart

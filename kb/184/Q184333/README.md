@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184333: XADM: Message Class Changed during Forward from Public Folder"
-permalink: kb/184/Q184333/
+permalink: /kb/184/Q184333/
 ---
 
 ## Q184333: XADM: Message Class Changed during Forward from Public Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164666: Err Msg: While Initializing Device IOS..."
-permalink: kb/164/Q164666/
+permalink: /kb/164/Q164666/
 ---
 
 ## Q164666: Err Msg: While Initializing Device IOS...

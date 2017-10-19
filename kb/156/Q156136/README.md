@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156136: FIX: F1 Help Not Hooked to Some New Dialog Boxes"
-permalink: kb/156/Q156136/
+permalink: /kb/156/Q156136/
 ---
 
 ## Q156136: FIX: F1 Help Not Hooked to Some New Dialog Boxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256950: SMS: Cannot Schedule Crystal Report on Windows 2000 Server"
-permalink: kb/256/Q256950/
+permalink: /kb/256/Q256950/
 ---
 
 ## Q256950: SMS: Cannot Schedule Crystal Report on Windows 2000 Server

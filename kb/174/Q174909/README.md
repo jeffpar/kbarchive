@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174909: Bookshelf/Dictionary: Cannot Copy Wave Audio (.wav) Sounds"
-permalink: kb/174/Q174909/
+permalink: /kb/174/Q174909/
 ---
 
 ## Q174909: Bookshelf/Dictionary: Cannot Copy Wave Audio (.wav) Sounds

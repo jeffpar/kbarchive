@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250330: XADM: Error 80004005 Installing Mailbox Manager After Restore"
-permalink: kb/250/Q250330/
+permalink: /kb/250/Q250330/
 ---
 
 ## Q250330: XADM: Error 80004005 Installing Mailbox Manager After Restore

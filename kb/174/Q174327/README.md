@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174327: DLL Initialization Failure May Occur When Loading Crypt32.dll"
-permalink: kb/174/Q174327/
+permalink: /kb/174/Q174327/
 ---
 
 ## Q174327: DLL Initialization Failure May Occur When Loading Crypt32.dll

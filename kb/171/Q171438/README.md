@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171438: PRB: Passing Arrays by Reference to OLE Objects Not Supported"
-permalink: kb/171/Q171438/
+permalink: /kb/171/Q171438/
 ---
 
 ## Q171438: PRB: Passing Arrays by Reference to OLE Objects Not Supported

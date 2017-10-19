@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104739: Apps and Copying Files to Floppy Seem Slow with Automount"
-permalink: kb/104/Q104739/
+permalink: /kb/104/Q104739/
 ---
 
 ## Q104739: Apps and Copying Files to Floppy Seem Slow with Automount

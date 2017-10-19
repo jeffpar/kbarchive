@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59598: Mac AL: Sample Gateway Message on AppleLink"
-permalink: kb/059/Q59598/
+permalink: /kb/059/Q59598/
 ---
 
 ## Q59598: Mac AL: Sample Gateway Message on AppleLink

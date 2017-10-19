@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166640: XFOR: Unable to Delete Read Receipts from Mail Sent to PROFS"
-permalink: kb/166/Q166640/
+permalink: /kb/166/Q166640/
 ---
 
 ## Q166640: XFOR: Unable to Delete Read Receipts from Mail Sent to PROFS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227029: SMS: &quot;All Tasks&quot; List May Be Incomplete When Activated on Query"
-permalink: kb/227/Q227029/
+permalink: /kb/227/Q227029/
 ---
 
 ## Q227029: SMS: &quot;All Tasks&quot; List May Be Incomplete When Activated on Query

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229927: SMS: Long Event to Trap Translator Description Brings Error"
-permalink: kb/229/Q229927/
+permalink: /kb/229/Q229927/
 ---
 
 ## Q229927: SMS: Long Event to Trap Translator Description Brings Error

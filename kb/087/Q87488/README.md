@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87488: X400: Dist_umpdu Routing Failed Error Message"
-permalink: kb/087/Q87488/
+permalink: /kb/087/Q87488/
 ---
 
 ## Q87488: X400: Dist_umpdu Routing Failed Error Message

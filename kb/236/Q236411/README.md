@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236411: DNS Event Log Key Does Not Work as Expected"
-permalink: kb/236/Q236411/
+permalink: /kb/236/Q236411/
 ---
 
 ## Q236411: DNS Event Log Key Does Not Work as Expected

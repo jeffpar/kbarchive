@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152611: OSR2 Cannot Dual-Boot Between Windows 3.x and Windows 95"
-permalink: kb/152/Q152611/
+permalink: /kb/152/Q152611/
 ---
 
 ## Q152611: OSR2 Cannot Dual-Boot Between Windows 3.x and Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66632: Windows SDK Support for Microsoft FORTRAN Compilers"
-permalink: kb/066/Q66632/
+permalink: /kb/066/Q66632/
 ---
 
 ## Q66632: Windows SDK Support for Microsoft FORTRAN Compilers

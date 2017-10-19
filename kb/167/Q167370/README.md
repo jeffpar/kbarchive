@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167370: WD97: Word Stops Responding Opening MacWord 5.x File"
-permalink: kb/167/Q167370/
+permalink: /kb/167/Q167370/
 ---
 
 ## Q167370: WD97: Word Stops Responding Opening MacWord 5.x File

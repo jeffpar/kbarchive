@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169756: XFOR: Using the LinkAge Log Browser for Troubleshooting"
-permalink: kb/169/Q169756/
+permalink: /kb/169/Q169756/
 ---
 
 ## Q169756: XFOR: Using the LinkAge Log Browser for Troubleshooting

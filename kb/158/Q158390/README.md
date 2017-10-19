@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158390: Return of Arcade: Sound Option Is Not Available"
-permalink: kb/158/Q158390/
+permalink: /kb/158/Q158390/
 ---
 
 ## Q158390: Return of Arcade: Sound Option Is Not Available

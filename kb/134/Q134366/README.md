@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134366: FIX:GENDBC Error: Command contains unrecognized phrase/keyword"
-permalink: kb/134/Q134366/
+permalink: /kb/134/Q134366/
 ---
 
 ## Q134366: FIX:GENDBC Error: Command contains unrecognized phrase/keyword

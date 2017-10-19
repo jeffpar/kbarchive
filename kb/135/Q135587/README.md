@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135587: TCP/IP-32 3.11a May Produce IP Broadcast Storm"
-permalink: kb/135/Q135587/
+permalink: /kb/135/Q135587/
 ---
 
 ## Q135587: TCP/IP-32 3.11a May Produce IP Broadcast Storm

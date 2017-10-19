@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105930: PC WRmt: Mail Remote Displays &quot;SENDING&quot; When It Isn't Sending"
-permalink: kb/105/Q105930/
+permalink: /kb/105/Q105930/
 ---
 
 ## Q105930: PC WRmt: Mail Remote Displays &quot;SENDING&quot; When It Isn't Sending

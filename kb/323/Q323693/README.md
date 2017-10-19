@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323693: PRB: Err Msg When You Add File with Long Name to VSS Database"
-permalink: kb/323/Q323693/
+permalink: /kb/323/Q323693/
 ---
 
 ## Q323693: PRB: Err Msg When You Add File with Long Name to VSS Database

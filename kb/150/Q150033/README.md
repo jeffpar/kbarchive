@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150033: BUG: Clicking Menu Does Not Go Straight to the Click Event"
-permalink: kb/150/Q150033/
+permalink: /kb/150/Q150033/
 ---
 
 ## Q150033: BUG: Clicking Menu Does Not Go Straight to the Click Event

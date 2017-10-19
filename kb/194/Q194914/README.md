@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194914: HOWTO: Minimize All Windows From Visual Basic"
-permalink: kb/194/Q194914/
+permalink: /kb/194/Q194914/
 ---
 
 ## Q194914: HOWTO: Minimize All Windows From Visual Basic

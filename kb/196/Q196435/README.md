@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196435: WD97: How to Show/Hide Hidden Text"
-permalink: kb/196/Q196435/
+permalink: /kb/196/Q196435/
 ---
 
 ## Q196435: WD97: How to Show/Hide Hidden Text

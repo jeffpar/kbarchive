@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142030: BUG: &quot;Version Information Missing&quot; When Changing Display Type"
-permalink: kb/142/Q142030/
+permalink: /kb/142/Q142030/
 ---
 
 ## Q142030: BUG: &quot;Version Information Missing&quot; When Changing Display Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174738: XFOR: Migrated Users Assigned Random PST Password"
-permalink: kb/174/Q174738/
+permalink: /kb/174/Q174738/
 ---
 
 ## Q174738: XFOR: Migrated Users Assigned Random PST Password

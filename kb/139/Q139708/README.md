@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139708: Compression Agent Resets to 5 Percent Complete"
-permalink: kb/139/Q139708/
+permalink: /kb/139/Q139708/
 ---
 
 ## Q139708: Compression Agent Resets to 5 Percent Complete

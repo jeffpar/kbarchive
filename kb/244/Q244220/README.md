@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244220: Computer Stops Responding When Creating IIS Server Instance"
-permalink: kb/244/Q244220/
+permalink: /kb/244/Q244220/
 ---
 
 ## Q244220: Computer Stops Responding When Creating IIS Server Instance

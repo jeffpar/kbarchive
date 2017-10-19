@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178546: CSNW Does Not Display Directory Name with Extended Characters"
-permalink: kb/178/Q178546/
+permalink: /kb/178/Q178546/
 ---
 
 ## Q178546: CSNW Does Not Display Directory Name with Extended Characters

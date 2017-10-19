@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282988: Microsoft Reader: Problems Starting, Unable to Display EULA"
-permalink: kb/282/Q282988/
+permalink: /kb/282/Q282988/
 ---
 
 ## Q282988: Microsoft Reader: Problems Starting, Unable to Display EULA

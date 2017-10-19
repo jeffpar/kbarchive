@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153717: XCON: Dynamic RAS Connector Not Sending Over NetBeui"
-permalink: kb/153/Q153717/
+permalink: /kb/153/Q153717/
 ---
 
 ## Q153717: XCON: Dynamic RAS Connector Not Sending Over NetBeui

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229647: RPC, RAS, PPTP (40-bit) Encryption Added to Windows NT 4.0 Frenc"
-permalink: kb/229/Q229647/
+permalink: /kb/229/Q229647/
 ---
 
 ## Q229647: RPC, RAS, PPTP (40-bit) Encryption Added to Windows NT 4.0 Frenc

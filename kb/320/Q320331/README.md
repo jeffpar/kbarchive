@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320331: User Name Mapping Becomes Inconsistent in a Cluster Environment"
-permalink: kb/320/Q320331/
+permalink: /kb/320/Q320331/
 ---
 
 ## Q320331: User Name Mapping Becomes Inconsistent in a Cluster Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175201: UNCONF: MSB ErrMsg: Error 99 Starting Magic School Bus Programs"
-permalink: kb/175/Q175201/
+permalink: /kb/175/Q175201/
 ---
 
 ## Q175201: UNCONF: MSB ErrMsg: Error 99 Starting Magic School Bus Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166995: XCLN: Mail Notifications Not Received for Each New Message"
-permalink: kb/166/Q166995/
+permalink: /kb/166/Q166995/
 ---
 
 ## Q166995: XCLN: Mail Notifications Not Received for Each New Message

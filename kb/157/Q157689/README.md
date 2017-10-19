@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157689: XFOR: Importing Large Numbers of MHS Addresses is Very Slow"
-permalink: kb/157/Q157689/
+permalink: /kb/157/Q157689/
 ---
 
 ## Q157689: XFOR: Importing Large Numbers of MHS Addresses is Very Slow

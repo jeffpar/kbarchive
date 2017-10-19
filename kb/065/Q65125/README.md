@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65125: FILE: Developing Network Applications for Windows 3.1"
-permalink: kb/065/Q65125/
+permalink: /kb/065/Q65125/
 ---
 
 ## Q65125: FILE: Developing Network Applications for Windows 3.1

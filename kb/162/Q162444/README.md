@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162444: FIX: Unable to Load Installable ISAM Error in Visual FoxPro 5"
-permalink: kb/162/Q162444/
+permalink: /kb/162/Q162444/
 ---
 
 ## Q162444: FIX: Unable to Load Installable ISAM Error in Visual FoxPro 5

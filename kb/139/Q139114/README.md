@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139114: SNA Server Support for ASCII-EBCDIC Character Conversion"
-permalink: kb/139/Q139114/
+permalink: /kb/139/Q139114/
 ---
 
 ## Q139114: SNA Server Support for ASCII-EBCDIC Character Conversion

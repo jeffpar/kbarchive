@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135330: FIX: StatusBarText Does Not Change with SetFocus Method"
-permalink: kb/135/Q135330/
+permalink: /kb/135/Q135330/
 ---
 
 ## Q135330: FIX: StatusBarText Does Not Change with SetFocus Method

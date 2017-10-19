@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92528: Terminating Windows-Based Application from Another App"
-permalink: kb/092/Q92528/
+permalink: /kb/092/Q92528/
 ---
 
 ## Q92528: Terminating Windows-Based Application from Another App

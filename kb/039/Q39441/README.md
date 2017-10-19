@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39441: The ORG Directive and Actual Offsets"
-permalink: kb/039/Q39441/
+permalink: /kb/039/Q39441/
 ---
 
 ## Q39441: The ORG Directive and Actual Offsets

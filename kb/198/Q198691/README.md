@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198691: SMS: Forcing Changes in RC Settings to 32-bit Clients"
-permalink: kb/198/Q198691/
+permalink: /kb/198/Q198691/
 ---
 
 ## Q198691: SMS: Forcing Changes in RC Settings to 32-bit Clients

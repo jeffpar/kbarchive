@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131582: ThinkPad with PCMCIA Adapter Hangs in Protected Mode"
-permalink: kb/131/Q131582/
+permalink: /kb/131/Q131582/
 ---
 
 ## Q131582: ThinkPad with PCMCIA Adapter Hangs in Protected Mode

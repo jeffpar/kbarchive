@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87097: Content of CHANGES.TXT from Multimedia OEM Supplemental Kit"
-permalink: kb/087/Q87097/
+permalink: /kb/087/Q87097/
 ---
 
 ## Q87097: Content of CHANGES.TXT from Multimedia OEM Supplemental Kit

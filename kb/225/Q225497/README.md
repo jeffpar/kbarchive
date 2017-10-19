@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225497: PRB: Windows 95 May Fail to Boot Due to I/O Subsystem Failure"
-permalink: kb/225/Q225497/
+permalink: /kb/225/Q225497/
 ---
 
 ## Q225497: PRB: Windows 95 May Fail to Boot Due to I/O Subsystem Failure

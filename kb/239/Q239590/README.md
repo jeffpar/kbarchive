@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239590: SMS: SMSCliToknAcct Connection Attempts to Mapped Drives in Path"
-permalink: kb/239/Q239590/
+permalink: /kb/239/Q239590/
 ---
 
 ## Q239590: SMS: SMSCliToknAcct Connection Attempts to Mapped Drives in Path

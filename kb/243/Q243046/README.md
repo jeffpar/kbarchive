@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243046: SNMPAPI Does Not Send Traps Without LAN Adapter on Computer"
-permalink: kb/243/Q243046/
+permalink: /kb/243/Q243046/
 ---
 
 ## Q243046: SNMPAPI Does Not Send Traps Without LAN Adapter on Computer

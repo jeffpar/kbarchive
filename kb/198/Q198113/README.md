@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198113: XCLN:How To Use IExpress To Generate Profiles for Users at Logon"
-permalink: kb/198/Q198113/
+permalink: /kb/198/Q198113/
 ---
 
 ## Q198113: XCLN:How To Use IExpress To Generate Profiles for Users at Logon

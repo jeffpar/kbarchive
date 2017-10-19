@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176465: XFOR: Information Store Stops Unexpectedly with Null Recipient"
-permalink: kb/176/Q176465/
+permalink: /kb/176/Q176465/
 ---
 
 ## Q176465: XFOR: Information Store Stops Unexpectedly with Null Recipient

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250466: After Installing SCM Permissions Are Incorrect"
-permalink: kb/250/Q250466/
+permalink: /kb/250/Q250466/
 ---
 
 ## Q250466: After Installing SCM Permissions Are Incorrect

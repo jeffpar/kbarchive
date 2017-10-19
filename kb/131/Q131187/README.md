@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131187: Installing Windows NT on a NEC Versa P/75 (Enhanced IDE)"
-permalink: kb/131/Q131187/
+permalink: /kb/131/Q131187/
 ---
 
 ## Q131187: Installing Windows NT on a NEC Versa P/75 (Enhanced IDE)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166876: SMS: Remote Control Stops Win95 Client Using STB Lightspeed"
-permalink: kb/166/Q166876/
+permalink: /kb/166/Q166876/
 ---
 
 ## Q166876: SMS: Remote Control Stops Win95 Client Using STB Lightspeed

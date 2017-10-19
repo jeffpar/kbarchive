@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176942: Fatal Exception Error or Computer Hangs with Incoming Fax"
-permalink: kb/176/Q176942/
+permalink: /kb/176/Q176942/
 ---
 
 ## Q176942: Fatal Exception Error or Computer Hangs with Incoming Fax

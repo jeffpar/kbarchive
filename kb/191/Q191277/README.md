@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191277: PRB: VARTYPE() Function Returns Data Type Mismatch Error"
-permalink: kb/191/Q191277/
+permalink: /kb/191/Q191277/
 ---
 
 ## Q191277: PRB: VARTYPE() Function Returns Data Type Mismatch Error

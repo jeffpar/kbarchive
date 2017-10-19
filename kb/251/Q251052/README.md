@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251052: XADM: Move Server Wizard Stops After Information Store Fix"
-permalink: kb/251/Q251052/
+permalink: /kb/251/Q251052/
 ---
 
 ## Q251052: XADM: Move Server Wizard Stops After Information Store Fix

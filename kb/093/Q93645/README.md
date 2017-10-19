@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93645: Windows Help Internal Variables"
-permalink: kb/093/Q93645/
+permalink: /kb/093/Q93645/
 ---
 
 ## Q93645: Windows Help Internal Variables

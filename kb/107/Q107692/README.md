@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107692: &quot;Backward Compatibility Hack Enabled&quot; Warning"
-permalink: kb/107/Q107692/
+permalink: /kb/107/Q107692/
 ---
 
 ## Q107692: &quot;Backward Compatibility Hack Enabled&quot; Warning

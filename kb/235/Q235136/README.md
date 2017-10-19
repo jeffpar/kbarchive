@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235136: SMS: Command Fails When Running an Advertisement Using %windir%"
-permalink: kb/235/Q235136/
+permalink: /kb/235/Q235136/
 ---
 
 ## Q235136: SMS: Command Fails When Running an Advertisement Using %windir%

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176725: XCLN: Microsoft Exchange MS-DOS Client Fails with Memory Error"
-permalink: kb/176/Q176725/
+permalink: /kb/176/Q176725/
 ---
 
 ## Q176725: XCLN: Microsoft Exchange MS-DOS Client Fails with Memory Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152908: XCLN: Error Accessing Disk Exporting to Timex Datalink on NT"
-permalink: kb/152/Q152908/
+permalink: /kb/152/Q152908/
 ---
 
 ## Q152908: XCLN: Error Accessing Disk Exporting to Timex Datalink on NT

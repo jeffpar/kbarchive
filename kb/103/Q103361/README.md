@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103361: 16-Bit Windows-Based Applications May Hang w/Network Printer"
-permalink: kb/103/Q103361/
+permalink: /kb/103/Q103361/
 ---
 
 ## Q103361: 16-Bit Windows-Based Applications May Hang w/Network Printer

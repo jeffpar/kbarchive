@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173756: FAQ: What is Visual FoxPro 5.0a"
-permalink: kb/173/Q173756/
+permalink: /kb/173/Q173756/
 ---
 
 ## Q173756: FAQ: What is Visual FoxPro 5.0a

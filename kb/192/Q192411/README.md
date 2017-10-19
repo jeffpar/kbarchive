@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192411: Error 605: Cannot Set Port Information"
-permalink: kb/192/Q192411/
+permalink: /kb/192/Q192411/
 ---
 
 ## Q192411: Error 605: Cannot Set Port Information

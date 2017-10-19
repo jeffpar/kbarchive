@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199192: XFOR:IMS Ignores MIME Settings for Specific Domains"
-permalink: kb/199/Q199192/
+permalink: /kb/199/Q199192/
 ---
 
 ## Q199192: XFOR:IMS Ignores MIME Settings for Specific Domains

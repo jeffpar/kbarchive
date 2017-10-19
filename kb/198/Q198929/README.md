@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198929: Error 'ASP 0115' Unexpected Error. A Trappable Error Occurred"
-permalink: kb/198/Q198929/
+permalink: /kb/198/Q198929/
 ---
 
 ## Q198929: Error 'ASP 0115' Unexpected Error. A Trappable Error Occurred

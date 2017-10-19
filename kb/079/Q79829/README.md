@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79829: FIX: /Zm and &#36;-Constant Produces A2075 in MASM 6.0"
-permalink: kb/079/Q79829/
+permalink: /kb/079/Q79829/
 ---
 
 ## Q79829: FIX: /Zm and &#36;-Constant Produces A2075 in MASM 6.0

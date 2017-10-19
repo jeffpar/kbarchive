@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243164: Suppressing Form Feed Between Print Jobs Containing End Bracket"
-permalink: kb/243/Q243164/
+permalink: /kb/243/Q243164/
 ---
 
 ## Q243164: Suppressing Form Feed Between Print Jobs Containing End Bracket

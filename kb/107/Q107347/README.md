@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107347: Network Card Drivers That Must Load in Conventional Memory"
-permalink: kb/107/Q107347/
+permalink: /kb/107/Q107347/
 ---
 
 ## Q107347: Network Card Drivers That Must Load in Conventional Memory

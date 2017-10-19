@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182005: Euro Currency Not Available in Windows NT Character Sets"
-permalink: kb/182/Q182005/
+permalink: /kb/182/Q182005/
 ---
 
 ## Q182005: Euro Currency Not Available in Windows NT Character Sets

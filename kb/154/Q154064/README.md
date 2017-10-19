@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154064: How To Direct Output to Installed GX Printers"
-permalink: kb/154/Q154064/
+permalink: /kb/154/Q154064/
 ---
 
 ## Q154064: How To Direct Output to Installed GX Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280048: Delete Option Is Unavailable When Trying to Remove Admin Web Sit"
-permalink: kb/280/Q280048/
+permalink: /kb/280/Q280048/
 ---
 
 ## Q280048: Delete Option Is Unavailable When Trying to Remove Admin Web Sit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229020: FIX: Date in @ GET Displays Incorrect Year With SET CENTURY OFF"
-permalink: kb/229/Q229020/
+permalink: /kb/229/Q229020/
 ---
 
 ## Q229020: FIX: Date in @ GET Displays Incorrect Year With SET CENTURY OFF

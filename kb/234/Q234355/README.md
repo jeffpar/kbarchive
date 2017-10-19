@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234355: Access Violation On SBS When Client Attempts an FTP Session"
-permalink: kb/234/Q234355/
+permalink: /kb/234/Q234355/
 ---
 
 ## Q234355: Access Violation On SBS When Client Attempts an FTP Session

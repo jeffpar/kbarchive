@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196661: Windows NT 4.0 Does Not Support Universal Serial Bus"
-permalink: kb/196/Q196661/
+permalink: /kb/196/Q196661/
 ---
 
 ## Q196661: Windows NT 4.0 Does Not Support Universal Serial Bus

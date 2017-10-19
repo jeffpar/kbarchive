@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132830: Some Start Menu Icons Different After Upgrading from Win 3.1"
-permalink: kb/132/Q132830/
+permalink: /kb/132/Q132830/
 ---
 
 ## Q132830: Some Start Menu Icons Different After Upgrading from Win 3.1

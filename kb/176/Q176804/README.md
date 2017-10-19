@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176804: Getdrive.exe: How To List the Drives on a Win32 System"
-permalink: kb/176/Q176804/
+permalink: /kb/176/Q176804/
 ---
 
 ## Q176804: Getdrive.exe: How To List the Drives on a Win32 System

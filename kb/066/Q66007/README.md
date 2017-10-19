@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66007: PC Adm: Changing Network and Postoffice Names"
-permalink: kb/066/Q66007/
+permalink: /kb/066/Q66007/
 ---
 
 ## Q66007: PC Adm: Changing Network and Postoffice Names

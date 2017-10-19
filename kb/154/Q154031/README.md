@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154031: INFO: Microsoft SNA Server over SDLLC"
-permalink: kb/154/Q154031/
+permalink: /kb/154/Q154031/
 ---
 
 ## Q154031: INFO: Microsoft SNA Server over SDLLC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159162: XCON: MSMail Read-Receipts Missing Data Across Organizations"
-permalink: kb/159/Q159162/
+permalink: /kb/159/Q159162/
 ---
 
 ## Q159162: XCON: MSMail Read-Receipts Missing Data Across Organizations

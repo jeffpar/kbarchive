@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238048: Encarta Dictionary 2000: Pronunciations Are Not Played"
-permalink: kb/238/Q238048/
+permalink: /kb/238/Q238048/
 ---
 
 ## Q238048: Encarta Dictionary 2000: Pronunciations Are Not Played

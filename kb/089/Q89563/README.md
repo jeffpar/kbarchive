@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89563: INFO: Using SetParent() to Change a Window Parent"
-permalink: kb/089/Q89563/
+permalink: /kb/089/Q89563/
 ---
 
 ## Q89563: INFO: Using SetParent() to Change a Window Parent

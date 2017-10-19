@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145954: HOWTO: Set Up 3270 Device Emulation To AS/400"
-permalink: kb/145/Q145954/
+permalink: /kb/145/Q145954/
 ---
 
 ## Q145954: HOWTO: Set Up 3270 Device Emulation To AS/400

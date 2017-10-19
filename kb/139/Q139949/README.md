@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139949: Golf 2.0: Err Msg with Low-Res Courses and How to Convert"
-permalink: kb/139/Q139949/
+permalink: /kb/139/Q139949/
 ---
 
 ## Q139949: Golf 2.0: Err Msg with Low-Res Courses and How to Convert

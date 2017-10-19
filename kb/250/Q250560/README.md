@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250560: Terminal Server Hangs While Closing Down a Session"
-permalink: kb/250/Q250560/
+permalink: /kb/250/Q250560/
 ---
 
 ## Q250560: Terminal Server Hangs While Closing Down a Session

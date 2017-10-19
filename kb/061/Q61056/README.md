@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61056: Why Zero-Length .SBR Files Are Left on the Disk by the PWB"
-permalink: kb/061/Q61056/
+permalink: /kb/061/Q61056/
 ---
 
 ## Q61056: Why Zero-Length .SBR Files Are Left on the Disk by the PWB

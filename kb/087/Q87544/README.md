@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87544: FIX: &quot;Application Error&quot; When HEAPSIZE MAXVAL in .DEF File"
-permalink: kb/087/Q87544/
+permalink: /kb/087/Q87544/
 ---
 
 ## Q87544: FIX: &quot;Application Error&quot; When HEAPSIZE MAXVAL in .DEF File

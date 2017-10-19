@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194764: Print Screen in 5250 Applet Does Not Support Greek Code Page"
-permalink: kb/194/Q194764/
+permalink: /kb/194/Q194764/
 ---
 
 ## Q194764: Print Screen in 5250 Applet Does Not Support Greek Code Page

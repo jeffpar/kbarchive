@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161038: Winsock Apps Fail on First Attempt at NetBIOS Name Resolution"
-permalink: kb/161/Q161038/
+permalink: /kb/161/Q161038/
 ---
 
 ## Q161038: Winsock Apps Fail on First Attempt at NetBIOS Name Resolution

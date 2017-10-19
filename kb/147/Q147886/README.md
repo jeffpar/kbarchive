@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147886: HOWTO: How VB Can Get Windows Status Information via API Calls"
-permalink: kb/147/Q147886/
+permalink: /kb/147/Q147886/
 ---
 
 ## Q147886: HOWTO: How VB Can Get Windows Status Information via API Calls

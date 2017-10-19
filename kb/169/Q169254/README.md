@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169254: PRB: Error -44 Encountered (Disk is Write Protected)"
-permalink: kb/169/Q169254/
+permalink: /kb/169/Q169254/
 ---
 
 ## Q169254: PRB: Error -44 Encountered (Disk is Write Protected)

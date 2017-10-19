@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185453: HOWTO: Associate a File Extension with Your Application (Win32)"
-permalink: kb/185/Q185453/
+permalink: /kb/185/Q185453/
 ---
 
 ## Q185453: HOWTO: Associate a File Extension with Your Application (Win32)

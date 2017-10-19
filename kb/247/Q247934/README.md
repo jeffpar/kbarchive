@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247934: XADM: Events 1000 and 4096 Starting InterOrg Sync Tool"
-permalink: kb/247/Q247934/
+permalink: /kb/247/Q247934/
 ---
 
 ## Q247934: XADM: Events 1000 and 4096 Starting InterOrg Sync Tool

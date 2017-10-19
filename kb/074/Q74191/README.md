@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74191: MS-DOS Editor Corrupts Nontext Files"
-permalink: kb/074/Q74191/
+permalink: /kb/074/Q74191/
 ---
 
 ## Q74191: MS-DOS Editor Corrupts Nontext Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308172: DOC:Performance Counter Docs Mention MS-Search Instead of Search"
-permalink: kb/308/Q308172/
+permalink: /kb/308/Q308172/
 ---
 
 ## Q308172: DOC:Performance Counter Docs Mention MS-Search Instead of Search

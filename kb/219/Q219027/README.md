@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219027: STOP 0x00000024 in Ntfs.sys with Service Pack 4"
-permalink: kb/219/Q219027/
+permalink: /kb/219/Q219027/
 ---
 
 ## Q219027: STOP 0x00000024 in Ntfs.sys with Service Pack 4

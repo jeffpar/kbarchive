@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173680: XADM: New User Inherits Permissions of Deleted User"
-permalink: kb/173/Q173680/
+permalink: /kb/173/Q173680/
 ---
 
 ## Q173680: XADM: New User Inherits Permissions of Deleted User

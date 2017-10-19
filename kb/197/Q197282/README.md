@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197282: Combat Flight Simulator: Mouse Pointer Behaves Erratically"
-permalink: kb/197/Q197282/
+permalink: /kb/197/Q197282/
 ---
 
 ## Q197282: Combat Flight Simulator: Mouse Pointer Behaves Erratically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178527: PRB: VB5 SP2 and SP3 Give Incorrect Floating Point Results"
-permalink: kb/178/Q178527/
+permalink: /kb/178/Q178527/
 ---
 
 ## Q178527: PRB: VB5 SP2 and SP3 Give Incorrect Floating Point Results

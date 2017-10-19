@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95346: Problem with Proteon 1390 and 1392 Network Interface Cards"
-permalink: kb/095/Q95346/
+permalink: /kb/095/Q95346/
 ---
 
 ## Q95346: Problem with Proteon 1390 and 1392 Network Interface Cards

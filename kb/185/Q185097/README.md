@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185097: SNA Server Does not Support Compression across 3270/FMI"
-permalink: kb/185/Q185097/
+permalink: /kb/185/Q185097/
 ---
 
 ## Q185097: SNA Server Does not Support Compression across 3270/FMI

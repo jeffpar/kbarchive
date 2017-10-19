@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62052: Mac Hyp: Getting the Name of Currently Logged On User"
-permalink: kb/062/Q62052/
+permalink: /kb/062/Q62052/
 ---
 
 ## Q62052: Mac Hyp: Getting the Name of Currently Logged On User

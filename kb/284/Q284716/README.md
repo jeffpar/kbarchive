@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284716: INFO: Browser Shows Err Msg:  Remote Procedure Call Failed"
-permalink: kb/284/Q284716/
+permalink: /kb/284/Q284716/
 ---
 
 ## Q284716: INFO: Browser Shows Err Msg:  Remote Procedure Call Failed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295330: BUG: AV in MSVBVM60.dll Using WinInet .ocx in COM DLL"
-permalink: kb/295/Q295330/
+permalink: /kb/295/Q295330/
 ---
 
 ## Q295330: BUG: AV in MSVBVM60.dll Using WinInet .ocx in COM DLL

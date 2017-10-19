@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161577: HOWTO: Use Keyword Expansion in HTML Files"
-permalink: kb/161/Q161577/
+permalink: /kb/161/Q161577/
 ---
 
 ## Q161577: HOWTO: Use Keyword Expansion in HTML Files

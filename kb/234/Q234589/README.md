@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234589: Running Microsoft Office 2000 Premium Comments and Corrections"
-permalink: kb/234/Q234589/
+permalink: /kb/234/Q234589/
 ---
 
 ## Q234589: Running Microsoft Office 2000 Premium Comments and Corrections

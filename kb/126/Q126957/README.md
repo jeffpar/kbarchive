@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126957: Composer Titles: Older Sound Blaster CSPMAN.DLL Causes Errors"
-permalink: kb/126/Q126957/
+permalink: /kb/126/Q126957/
 ---
 
 ## Q126957: Composer Titles: Older Sound Blaster CSPMAN.DLL Causes Errors

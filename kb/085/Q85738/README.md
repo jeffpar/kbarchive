@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85738: Windows 3.1 EPS Files Do Not Include TIFF Preview"
-permalink: kb/085/Q85738/
+permalink: /kb/085/Q85738/
 ---
 
 ## Q85738: Windows 3.1 EPS Files Do Not Include TIFF Preview

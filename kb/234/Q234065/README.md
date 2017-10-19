@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234065: XGEN: Troubleshooting the MTA Queue to Internet Mail Service"
-permalink: kb/234/Q234065/
+permalink: /kb/234/Q234065/
 ---
 
 ## Q234065: XGEN: Troubleshooting the MTA Queue to Internet Mail Service

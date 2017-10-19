@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134599: Cannot Access Shared Folder with Extended Characters in Name"
-permalink: kb/134/Q134599/
+permalink: /kb/134/Q134599/
 ---
 
 ## Q134599: Cannot Access Shared Folder with Extended Characters in Name

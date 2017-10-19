@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288323: Web Browsers Receive &quot;HTTP 401.5&quot;  Using NT Challenge/Response"
-permalink: kb/288/Q288323/
+permalink: /kb/288/Q288323/
 ---
 
 ## Q288323: Web Browsers Receive &quot;HTTP 401.5&quot;  Using NT Challenge/Response

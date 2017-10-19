@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173025: FIX: /Og Causes C1001 with Member Lookup in an Infinite Loop"
-permalink: kb/173/Q173025/
+permalink: /kb/173/Q173025/
 ---
 
 ## Q173025: FIX: /Og Causes C1001 with Member Lookup in an Infinite Loop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167252: Windows 95 Stops Responding When PC Cillin 95 Starts"
-permalink: kb/167/Q167252/
+permalink: /kb/167/Q167252/
 ---
 
 ## Q167252: Windows 95 Stops Responding When PC Cillin 95 Starts

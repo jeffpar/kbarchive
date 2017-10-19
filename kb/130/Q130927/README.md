@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130927: Error Attempting to Format a Striped Drive: Device Is Busy"
-permalink: kb/130/Q130927/
+permalink: /kb/130/Q130927/
 ---
 
 ## Q130927: Error Attempting to Format a Striped Drive: Device Is Busy

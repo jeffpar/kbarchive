@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194393: New Window From Here Option in MMC May Cause Fatal Error"
-permalink: kb/194/Q194393/
+permalink: /kb/194/Q194393/
 ---
 
 ## Q194393: New Window From Here Option in MMC May Cause Fatal Error

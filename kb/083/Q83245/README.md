@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83245: New Features in Windows 3.1"
-permalink: kb/083/Q83245/
+permalink: /kb/083/Q83245/
 ---
 
 ## Q83245: New Features in Windows 3.1

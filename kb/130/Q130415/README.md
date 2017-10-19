@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130415: Golf 2.0 Err Msg: Crucial Files Missing"
-permalink: kb/130/Q130415/
+permalink: /kb/130/Q130415/
 ---
 
 ## Q130415: Golf 2.0 Err Msg: Crucial Files Missing

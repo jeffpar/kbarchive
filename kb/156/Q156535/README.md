@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156535: Cannot Open Phone Book File After Using Internet Setup Wizard"
-permalink: kb/156/Q156535/
+permalink: /kb/156/Q156535/
 ---
 
 ## Q156535: Cannot Open Phone Book File After Using Internet Setup Wizard

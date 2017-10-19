@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190869: INFO: Visual FoxPro 6.0 Required Run-Time Files"
-permalink: kb/190/Q190869/
+permalink: /kb/190/Q190869/
 ---
 
 ## Q190869: INFO: Visual FoxPro 6.0 Required Run-Time Files

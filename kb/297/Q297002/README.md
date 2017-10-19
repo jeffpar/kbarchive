@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297002: &quot;The RPC Server Is Unavailable&quot; Err Msg and Events 5718 and 3013"
-permalink: kb/297/Q297002/
+permalink: /kb/297/Q297002/
 ---
 
 ## Q297002: &quot;The RPC Server Is Unavailable&quot; Err Msg and Events 5718 and 3013

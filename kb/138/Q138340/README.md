@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138340: Trouble Quitting Program Started with AT.EXE Scheduler"
-permalink: kb/138/Q138340/
+permalink: /kb/138/Q138340/
 ---
 
 ## Q138340: Trouble Quitting Program Started with AT.EXE Scheduler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154976: Error Message Running Jet Database Engine Stress Test"
-permalink: kb/154/Q154976/
+permalink: /kb/154/Q154976/
 ---
 
 ## Q154976: Error Message Running Jet Database Engine Stress Test

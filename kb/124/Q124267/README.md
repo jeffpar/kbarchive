@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124267: Display Adapter Information and Useful Switches"
-permalink: kb/124/Q124267/
+permalink: /kb/124/Q124267/
 ---
 
 ## Q124267: Display Adapter Information and Useful Switches

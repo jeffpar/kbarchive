@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185637: HOWTO: Use APIs to Check, Enable, or Disable Full Window Drag"
-permalink: kb/185/Q185637/
+permalink: /kb/185/Q185637/
 ---
 
 ## Q185637: HOWTO: Use APIs to Check, Enable, or Disable Full Window Drag

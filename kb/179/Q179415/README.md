@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179415: Multimedia: Program Cannot Find or Recognize Update Files"
-permalink: kb/179/Q179415/
+permalink: /kb/179/Q179415/
 ---
 
 ## Q179415: Multimedia: Program Cannot Find or Recognize Update Files

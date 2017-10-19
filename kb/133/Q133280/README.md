@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133280: FTPSVC: Delay Receiving FTP Directory Annotation and Prompt"
-permalink: kb/133/Q133280/
+permalink: /kb/133/Q133280/
 ---
 
 ## Q133280: FTPSVC: Delay Receiving FTP Directory Annotation and Prompt

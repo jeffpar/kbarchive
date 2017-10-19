@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163643: XFOR: Notifications not Delivered to Public Folder"
-permalink: kb/163/Q163643/
+permalink: /kb/163/Q163643/
 ---
 
 ## Q163643: XFOR: Notifications not Delivered to Public Folder

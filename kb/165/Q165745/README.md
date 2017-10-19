@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165745: DOC: CMiniFrameWnd::Create Is Missing MFS_BLOCKSYSMENU"
-permalink: kb/165/Q165745/
+permalink: /kb/165/Q165745/
 ---
 
 ## Q165745: DOC: CMiniFrameWnd::Create Is Missing MFS_BLOCKSYSMENU

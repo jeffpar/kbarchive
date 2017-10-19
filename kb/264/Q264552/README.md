@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264552: Modification Error Occurs When Exporting Custom Recipients"
-permalink: kb/264/Q264552/
+permalink: /kb/264/Q264552/
 ---
 
 ## Q264552: Modification Error Occurs When Exporting Custom Recipients

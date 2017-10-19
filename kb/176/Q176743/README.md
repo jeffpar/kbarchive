@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176743: XADM: Help Topic for LDAP Search Options is Incorrect"
-permalink: kb/176/Q176743/
+permalink: /kb/176/Q176743/
 ---
 
 ## Q176743: XADM: Help Topic for LDAP Search Options is Incorrect

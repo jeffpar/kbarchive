@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59141: Accessing Environment Variables In a Makefile"
-permalink: kb/059/Q59141/
+permalink: /kb/059/Q59141/
 ---
 
 ## Q59141: Accessing Environment Variables In a Makefile

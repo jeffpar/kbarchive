@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198407: STREAMS Does Not Handle User Data Correctly"
-permalink: kb/198/Q198407/
+permalink: /kb/198/Q198407/
 ---
 
 ## Q198407: STREAMS Does Not Handle User Data Correctly

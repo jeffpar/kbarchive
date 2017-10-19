@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239650: XFOR: Migration Wizard for Lotus Notes May Stop Responding"
-permalink: kb/239/Q239650/
+permalink: /kb/239/Q239650/
 ---
 
 ## Q239650: XFOR: Migration Wizard for Lotus Notes May Stop Responding

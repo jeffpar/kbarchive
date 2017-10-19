@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268227: XCON: Event ID 9406 and 2240 Occur When Starting the MTA"
-permalink: kb/268/Q268227/
+permalink: /kb/268/Q268227/
 ---
 
 ## Q268227: XCON: Event ID 9406 and 2240 Occur When Starting the MTA

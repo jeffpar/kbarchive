@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248070: BUG: VBCE: Clicking ComboBox May Trigger Command Click Event"
-permalink: kb/248/Q248070/
+permalink: /kb/248/Q248070/
 ---
 
 ## Q248070: BUG: VBCE: Clicking ComboBox May Trigger Command Click Event

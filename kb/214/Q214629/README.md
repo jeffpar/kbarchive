@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214629: How To Retrieve 3270 LU Information For SNA Server"
-permalink: kb/214/Q214629/
+permalink: /kb/214/Q214629/
 ---
 
 ## Q214629: How To Retrieve 3270 LU Information For SNA Server

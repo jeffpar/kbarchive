@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135695: Unclear Error Appears When Saving Notepad File On NTFS Drive"
-permalink: kb/135/Q135695/
+permalink: /kb/135/Q135695/
 ---
 
 ## Q135695: Unclear Error Appears When Saving Notepad File On NTFS Drive

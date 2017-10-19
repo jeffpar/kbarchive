@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233373: CPIC App No Longer Limited to Single Local APPC LU"
-permalink: kb/233/Q233373/
+permalink: /kb/233/Q233373/
 ---
 
 ## Q233373: CPIC App No Longer Limited to Single Local APPC LU

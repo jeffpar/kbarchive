@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187720: HOWTO: How to Disable ODBC Login Prompt at Run-Time"
-permalink: kb/187/Q187720/
+permalink: /kb/187/Q187720/
 ---
 
 ## Q187720: HOWTO: How to Disable ODBC Login Prompt at Run-Time

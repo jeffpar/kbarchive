@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86263: Redirecting Debugging Information Under Windows 3.0, 3.1"
-permalink: kb/086/Q86263/
+permalink: /kb/086/Q86263/
 ---
 
 ## Q86263: Redirecting Debugging Information Under Windows 3.0, 3.1

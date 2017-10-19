@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207807: Custom Date Properties in Microsoft Word Document Do Not Display"
-permalink: kb/207/Q207807/
+permalink: /kb/207/Q207807/
 ---
 
 ## Q207807: Custom Date Properties in Microsoft Word Document Do Not Display

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90406: Upgrades from Windows 3.1 Inherit Persistent Connections"
-permalink: kb/090/Q90406/
+permalink: /kb/090/Q90406/
 ---
 
 ## Q90406: Upgrades from Windows 3.1 Inherit Persistent Connections

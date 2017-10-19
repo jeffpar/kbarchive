@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149134: BUG: EN and ES Edit Descriptors Cause Incorrect Output"
-permalink: kb/149/Q149134/
+permalink: /kb/149/Q149134/
 ---
 
 ## Q149134: BUG: EN and ES Edit Descriptors Cause Incorrect Output

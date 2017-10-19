@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112159: Configuring SNA Server to Talk to AS/400 Over SDLC"
-permalink: kb/112/Q112159/
+permalink: /kb/112/Q112159/
 ---
 
 ## Q112159: Configuring SNA Server to Talk to AS/400 Over SDLC

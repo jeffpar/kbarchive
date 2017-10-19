@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88758: AMI BIOS May Need to Be Upgraded for IDE Hard Drive"
-permalink: kb/088/Q88758/
+permalink: /kb/088/Q88758/
 ---
 
 ## Q88758: AMI BIOS May Need to Be Upgraded for IDE Hard Drive

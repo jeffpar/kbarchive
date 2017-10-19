@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151161: PRB: Case Sensitivity Problem With RDO"
-permalink: kb/151/Q151161/
+permalink: /kb/151/Q151161/
 ---
 
 ## Q151161: PRB: Case Sensitivity Problem With RDO

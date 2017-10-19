@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240106: RAS Server Does Not Automatically Disconnect"
-permalink: kb/240/Q240106/
+permalink: /kb/240/Q240106/
 ---
 
 ## Q240106: RAS Server Does Not Automatically Disconnect

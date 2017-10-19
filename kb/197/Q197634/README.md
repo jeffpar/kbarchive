@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197634: How to Create Pushpins by Importing Addresses from a Text File"
-permalink: kb/197/Q197634/
+permalink: /kb/197/Q197634/
 ---
 
 ## Q197634: How to Create Pushpins by Importing Addresses from a Text File

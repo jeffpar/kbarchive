@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172840: FILE: Visual Basic Data Sheets"
-permalink: kb/172/Q172840/
+permalink: /kb/172/Q172840/
 ---
 
 ## Q172840: FILE: Visual Basic Data Sheets

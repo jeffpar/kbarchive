@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239950: WINS Architecture and Capacity Planning White Paper Available"
-permalink: kb/239/Q239950/
+permalink: /kb/239/Q239950/
 ---
 
 ## Q239950: WINS Architecture and Capacity Planning White Paper Available

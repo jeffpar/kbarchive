@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146326: XFOR: No Events Logged when the IMC Refuses Inbound Connection"
-permalink: kb/146/Q146326/
+permalink: /kb/146/Q146326/
 ---
 
 ## Q146326: XFOR: No Events Logged when the IMC Refuses Inbound Connection

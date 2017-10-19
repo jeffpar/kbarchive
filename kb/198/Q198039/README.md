@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198039: WD97: Understanding the Template Path and Normal.dot"
-permalink: kb/198/Q198039/
+permalink: /kb/198/Q198039/
 ---
 
 ## Q198039: WD97: Understanding the Template Path and Normal.dot

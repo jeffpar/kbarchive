@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199274: XCON: Event 13005 During POP3 Logon"
-permalink: kb/199/Q199274/
+permalink: /kb/199/Q199274/
 ---
 
 ## Q199274: XCON: Event 13005 During POP3 Logon

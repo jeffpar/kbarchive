@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241006: NBA 2000: Slow Frame Rate and Poor Graphics Performance"
-permalink: kb/241/Q241006/
+permalink: /kb/241/Q241006/
 ---
 
 ## Q241006: NBA 2000: Slow Frame Rate and Poor Graphics Performance

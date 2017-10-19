@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313437: HOW TO: Enable Logging in IIS 5.0"
-permalink: kb/313/Q313437/
+permalink: /kb/313/Q313437/
 ---
 
 ## Q313437: HOW TO: Enable Logging in IIS 5.0

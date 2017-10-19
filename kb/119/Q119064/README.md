@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119064: HOWTO: Retrieving a List of All ODBC Data Sources"
-permalink: kb/119/Q119064/
+permalink: /kb/119/Q119064/
 ---
 
 ## Q119064: HOWTO: Retrieving a List of All ODBC Data Sources

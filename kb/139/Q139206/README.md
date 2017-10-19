@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139206: Hardware List Not Updated After Installing New .inf File"
-permalink: kb/139/Q139206/
+permalink: /kb/139/Q139206/
 ---
 
 ## Q139206: Hardware List Not Updated After Installing New .inf File

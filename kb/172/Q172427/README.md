@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172427: Web Clients Cannot Resolve Name by Domain Name Only"
-permalink: kb/172/Q172427/
+permalink: /kb/172/Q172427/
 ---
 
 ## Q172427: Web Clients Cannot Resolve Name by Domain Name Only

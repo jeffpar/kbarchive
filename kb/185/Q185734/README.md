@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185734: DNS Server Access Violation in Dns!sendNbstatResponse Routine"
-permalink: kb/185/Q185734/
+permalink: /kb/185/Q185734/
 ---
 
 ## Q185734: DNS Server Access Violation in Dns!sendNbstatResponse Routine

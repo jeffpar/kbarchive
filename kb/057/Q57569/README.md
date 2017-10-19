@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57569: FltSim: Use Tandy Video Drivers for Panasonic Computers"
-permalink: kb/057/Q57569/
+permalink: /kb/057/Q57569/
 ---
 
 ## Q57569: FltSim: Use Tandy Video Drivers for Panasonic Computers

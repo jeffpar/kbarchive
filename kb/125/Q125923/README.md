@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125923: Playing Time Missing in Beethoven 2nd Movement"
-permalink: kb/125/Q125923/
+permalink: /kb/125/Q125923/
 ---
 
 ## Q125923: Playing Time Missing in Beethoven 2nd Movement

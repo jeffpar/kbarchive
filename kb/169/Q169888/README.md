@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169888: User-Define Path Dropped When User and System Paths Too Large"
-permalink: kb/169/Q169888/
+permalink: /kb/169/Q169888/
 ---
 
 ## Q169888: User-Define Path Dropped When User and System Paths Too Large

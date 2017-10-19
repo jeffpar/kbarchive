@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246115: XCON: Internet Mail Service Won't Start, Logs Event 2140 and 100"
-permalink: kb/246/Q246115/
+permalink: /kb/246/Q246115/
 ---
 
 ## Q246115: XCON: Internet Mail Service Won't Start, Logs Event 2140 and 100

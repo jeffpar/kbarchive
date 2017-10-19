@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226877: SMS: 2.0 CD Key Format Differs SQL 6.5 CD Key Format"
-permalink: kb/226/Q226877/
+permalink: /kb/226/Q226877/
 ---
 
 ## Q226877: SMS: 2.0 CD Key Format Differs SQL 6.5 CD Key Format

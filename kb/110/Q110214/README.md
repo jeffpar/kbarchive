@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110214: Repair Utility Tries to Copy Files if Changed"
-permalink: kb/110/Q110214/
+permalink: /kb/110/Q110214/
 ---
 
 ## Q110214: Repair Utility Tries to Copy Files if Changed

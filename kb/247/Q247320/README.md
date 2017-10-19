@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247320: User ID Can be Edited When &quot;User May Override Mapping&quot; Is Disabl"
-permalink: kb/247/Q247320/
+permalink: /kb/247/Q247320/
 ---
 
 ## Q247320: User ID Can be Edited When &quot;User May Override Mapping&quot; Is Disabl

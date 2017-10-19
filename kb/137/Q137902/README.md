@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137902: SNASERVR.EXE Traps When it Receives an Illegal SIGNAL Command"
-permalink: kb/137/Q137902/
+permalink: /kb/137/Q137902/
 ---
 
 ## Q137902: SNASERVR.EXE Traps When it Receives an Illegal SIGNAL Command

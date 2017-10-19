@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49850: FS 4.0: Crosswinds Too High in Instruction Mode"
-permalink: kb/049/Q49850/
+permalink: /kb/049/Q49850/
 ---
 
 ## Q49850: FS 4.0: Crosswinds Too High in Instruction Mode

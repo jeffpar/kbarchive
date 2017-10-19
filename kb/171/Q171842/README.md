@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171842: FIX: GetSetting Function Is Leaking Handles"
-permalink: kb/171/Q171842/
+permalink: /kb/171/Q171842/
 ---
 
 ## Q171842: FIX: GetSetting Function Is Leaking Handles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261078: Motocross Madness 2: Hangs When You Click &quot;Start Race!&quot;"
-permalink: kb/261/Q261078/
+permalink: /kb/261/Q261078/
 ---
 
 ## Q261078: Motocross Madness 2: Hangs When You Click &quot;Start Race!&quot;

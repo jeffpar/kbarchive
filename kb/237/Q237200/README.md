@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237200: WD97: Form Fields Not Visible Pasted as Word Document Object"
-permalink: kb/237/Q237200/
+permalink: /kb/237/Q237200/
 ---
 
 ## Q237200: WD97: Form Fields Not Visible Pasted as Word Document Object

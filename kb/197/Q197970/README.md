@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197970: XADM: Attributes Missing When Recreating DS Objects with DS/IS"
-permalink: kb/197/Q197970/
+permalink: /kb/197/Q197970/
 ---
 
 ## Q197970: XADM: Attributes Missing When Recreating DS Objects with DS/IS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137749: How to Perform an Automated Backup with System Agent"
-permalink: kb/137/Q137749/
+permalink: /kb/137/Q137749/
 ---
 
 ## Q137749: How to Perform an Automated Backup with System Agent

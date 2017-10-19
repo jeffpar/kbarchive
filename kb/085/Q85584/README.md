@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85584: WRK 3.1 Troubleshooting Multimedia is Misleading"
-permalink: kb/085/Q85584/
+permalink: /kb/085/Q85584/
 ---
 
 ## Q85584: WRK 3.1 Troubleshooting Multimedia is Misleading

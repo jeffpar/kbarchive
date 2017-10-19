@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11467: Reference Counts for Windows Dynamic Libraries"
-permalink: kb/011/Q11467/
+permalink: /kb/011/Q11467/
 ---
 
 ## Q11467: Reference Counts for Windows Dynamic Libraries

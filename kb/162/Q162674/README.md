@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162674: XCON: MTA Sockets Error 10054 Connecting Over TCP/IP X.400"
-permalink: kb/162/Q162674/
+permalink: /kb/162/Q162674/
 ---
 
 ## Q162674: XCON: MTA Sockets Error 10054 Connecting Over TCP/IP X.400

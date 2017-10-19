@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124378: Setup Err Msg: Setup Error 4: Could Not Load &lt;Filename&gt;"
-permalink: kb/124/Q124378/
+permalink: /kb/124/Q124378/
 ---
 
 ## Q124378: Setup Err Msg: Setup Error 4: Could Not Load &lt;Filename&gt;

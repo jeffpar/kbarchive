@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215462: WD97: Template Security Patch Installation Issues"
-permalink: kb/215/Q215462/
+permalink: /kb/215/Q215462/
 ---
 
 ## Q215462: WD97: Template Security Patch Installation Issues

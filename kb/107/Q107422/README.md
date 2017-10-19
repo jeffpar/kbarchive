@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107422: Windows NT Resource Kit Vol. 1 - 3.5 Inch Disk Contents"
-permalink: kb/107/Q107422/
+permalink: /kb/107/Q107422/
 ---
 
 ## Q107422: Windows NT Resource Kit Vol. 1 - 3.5 Inch Disk Contents

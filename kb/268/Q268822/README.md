@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268822: XWEB: Redirecting http://&lt;servername&gt;/exchange Users to https://"
-permalink: kb/268/Q268822/
+permalink: /kb/268/Q268822/
 ---
 
 ## Q268822: XWEB: Redirecting http://&lt;servername&gt;/exchange Users to https://

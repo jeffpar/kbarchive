@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170472: XADM: Access Denied Error When Starting Exchange Administrator"
-permalink: kb/170/Q170472/
+permalink: /kb/170/Q170472/
 ---
 
 ## Q170472: XADM: Access Denied Error When Starting Exchange Administrator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138755: FIX: GPF When Drag-Drop Resources Between Two Resource Scripts"
-permalink: kb/138/Q138755/
+permalink: /kb/138/Q138755/
 ---
 
 ## Q138755: FIX: GPF When Drag-Drop Resources Between Two Resource Scripts

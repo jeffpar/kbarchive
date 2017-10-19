@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34142: PRB: Link Error L1073: &quot;File-segment Limit Exceeded&quot;"
-permalink: kb/034/Q34142/
+permalink: /kb/034/Q34142/
 ---
 
 ## Q34142: PRB: Link Error L1073: &quot;File-segment Limit Exceeded&quot;

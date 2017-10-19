@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132419: Problems Sending Fax after Installing Bookshelf"
-permalink: kb/132/Q132419/
+permalink: /kb/132/Q132419/
 ---
 
 ## Q132419: Problems Sending Fax after Installing Bookshelf

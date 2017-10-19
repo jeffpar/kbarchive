@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81587: Windows 3.1 Disk Directories (5.25 Inch)"
-permalink: kb/081/Q81587/
+permalink: /kb/081/Q81587/
 ---
 
 ## Q81587: Windows 3.1 Disk Directories (5.25 Inch)

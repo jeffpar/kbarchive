@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78407: Wyse DOS 3.3 Partitions Incompatible with MS-DOS 5.x and 6.x"
-permalink: kb/078/Q78407/
+permalink: /kb/078/Q78407/
 ---
 
 ## Q78407: Wyse DOS 3.3 Partitions Incompatible with MS-DOS 5.x and 6.x

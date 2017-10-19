@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142041: How to Set Up a Default RPC Name Server"
-permalink: kb/142/Q142041/
+permalink: /kb/142/Q142041/
 ---
 
 ## Q142041: How to Set Up a Default RPC Name Server

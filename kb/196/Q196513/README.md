@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196513: WD97: How to Simulate WordPerfect's Flush Right Command in Word"
-permalink: kb/196/Q196513/
+permalink: /kb/196/Q196513/
 ---
 
 ## Q196513: WD97: How to Simulate WordPerfect's Flush Right Command in Word

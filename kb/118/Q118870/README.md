@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118870: Enhanced Functions of Sejin J Mouse Keyboard Do Not Work"
-permalink: kb/118/Q118870/
+permalink: /kb/118/Q118870/
 ---
 
 ## Q118870: Enhanced Functions of Sejin J Mouse Keyboard Do Not Work

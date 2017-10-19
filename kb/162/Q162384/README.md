@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162384: XCON: How to Troubleshoot MTA Starting Failures"
-permalink: kb/162/Q162384/
+permalink: /kb/162/Q162384/
 ---
 
 ## Q162384: XCON: How to Troubleshoot MTA Starting Failures

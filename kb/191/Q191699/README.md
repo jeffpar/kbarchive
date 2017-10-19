@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191699: XID Type for PU Passthrough May Cause Failed Connection"
-permalink: kb/191/Q191699/
+permalink: /kb/191/Q191699/
 ---
 
 ## Q191699: XID Type for PU Passthrough May Cause Failed Connection

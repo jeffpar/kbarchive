@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140073: PC NTMMTA: Err Msg: Failure to Initialize Modem Session"
-permalink: kb/140/Q140073/
+permalink: /kb/140/Q140073/
 ---
 
 ## Q140073: PC NTMMTA: Err Msg: Failure to Initialize Modem Session

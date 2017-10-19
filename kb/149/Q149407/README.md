@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149407: HOWTO: How to Display a Bitmap in a CStatusBar Pane"
-permalink: kb/149/Q149407/
+permalink: /kb/149/Q149407/
 ---
 
 ## Q149407: HOWTO: How to Display a Bitmap in a CStatusBar Pane

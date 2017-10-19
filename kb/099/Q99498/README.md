@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99498: Quantum Hard Card EZ Driver Hangs MemMaker"
-permalink: kb/099/Q99498/
+permalink: /kb/099/Q99498/
 ---
 
 ## Q99498: Quantum Hard Card EZ Driver Hangs MemMaker

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238050: Encarta Dictionary 2000: Cannot Scroll Using IntelliMouse Wheel"
-permalink: kb/238/Q238050/
+permalink: /kb/238/Q238050/
 ---
 
 ## Q238050: Encarta Dictionary 2000: Cannot Scroll Using IntelliMouse Wheel

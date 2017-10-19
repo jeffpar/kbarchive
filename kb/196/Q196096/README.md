@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196096: Client Application Can Use a Modem on SBS for Incoming Calls"
-permalink: kb/196/Q196096/
+permalink: /kb/196/Q196096/
 ---
 
 ## Q196096: Client Application Can Use a Modem on SBS for Incoming Calls

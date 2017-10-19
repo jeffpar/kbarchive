@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174841: How to Manage Windows Tips at Startup"
-permalink: kb/174/Q174841/
+permalink: /kb/174/Q174841/
 ---
 
 ## Q174841: How to Manage Windows Tips at Startup

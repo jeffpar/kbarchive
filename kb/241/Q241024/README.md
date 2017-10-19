@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241024: Slow File Access from Macintosh Client on Windows NT Server"
-permalink: kb/241/Q241024/
+permalink: /kb/241/Q241024/
 ---
 
 ## Q241024: Slow File Access from Macintosh Client on Windows NT Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185366: Return of Arcade: Exception 10H When You Calibrate Joystick"
-permalink: kb/185/Q185366/
+permalink: /kb/185/Q185366/
 ---
 
 ## Q185366: Return of Arcade: Exception 10H When You Calibrate Joystick

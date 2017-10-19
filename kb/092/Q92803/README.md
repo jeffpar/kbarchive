@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92803: Writing CR/LF Combination Using CFile::Write() Function"
-permalink: kb/092/Q92803/
+permalink: /kb/092/Q92803/
 ---
 
 ## Q92803: Writing CR/LF Combination Using CFile::Write() Function

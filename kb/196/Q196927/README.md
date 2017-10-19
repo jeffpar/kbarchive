@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196927: XIMS: Configuring a Single Domain w/ Connected Sites via IMS"
-permalink: kb/196/Q196927/
+permalink: /kb/196/Q196927/
 ---
 
 ## Q196927: XIMS: Configuring a Single Domain w/ Connected Sites via IMS

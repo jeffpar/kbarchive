@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131483: Error Message: Quick Recorder - A Memory Error Has Occurred"
-permalink: kb/131/Q131483/
+permalink: /kb/131/Q131483/
 ---
 
 ## Q131483: Error Message: Quick Recorder - A Memory Error Has Occurred

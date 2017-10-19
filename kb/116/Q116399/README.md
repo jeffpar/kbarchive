@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116399: Valid File Formats in BitEdit Dependent on Installed Filters"
-permalink: kb/116/Q116399/
+permalink: /kb/116/Q116399/
 ---
 
 ## Q116399: Valid File Formats in BitEdit Dependent on Installed Filters

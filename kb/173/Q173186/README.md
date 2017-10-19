@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173186: XCLN: Installing the Server Space Client Extension Tool"
-permalink: kb/173/Q173186/
+permalink: /kb/173/Q173186/
 ---
 
 ## Q173186: XCLN: Installing the Server Space Client Extension Tool

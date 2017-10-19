@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157517: BUG: Uninstalling DAO 3.0 SDK Prevents Help Files from Working"
-permalink: kb/157/Q157517/
+permalink: /kb/157/Q157517/
 ---
 
 ## Q157517: BUG: Uninstalling DAO 3.0 SDK Prevents Help Files from Working

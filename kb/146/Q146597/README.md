@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146597: XCLN: Open Copy of Message Doesn't Close When Source Deleted"
-permalink: kb/146/Q146597/
+permalink: /kb/146/Q146597/
 ---
 
 ## Q146597: XCLN: Open Copy of Message Doesn't Close When Source Deleted

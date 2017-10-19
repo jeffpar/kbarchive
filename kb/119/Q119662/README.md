@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119662: Bookshelf 1994: Can Print Only Once to Canon BJ-200"
-permalink: kb/119/Q119662/
+permalink: /kb/119/Q119662/
 ---
 
 ## Q119662: Bookshelf 1994: Can Print Only Once to Canon BJ-200

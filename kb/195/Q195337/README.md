@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195337: MSN: E-mail Notification Temporarily Disabled"
-permalink: kb/195/Q195337/
+permalink: /kb/195/Q195337/
 ---
 
 ## Q195337: MSN: E-mail Notification Temporarily Disabled

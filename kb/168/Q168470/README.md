@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168470: SCopy Copies Local Domain Group to Other Domains"
-permalink: kb/168/Q168470/
+permalink: /kb/168/Q168470/
 ---
 
 ## Q168470: SCopy Copies Local Domain Group to Other Domains

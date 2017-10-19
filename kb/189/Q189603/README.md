@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189603: INFO: NewObject Command Respects the SET PROCEDURE Command"
-permalink: kb/189/Q189603/
+permalink: /kb/189/Q189603/
 ---
 
 ## Q189603: INFO: NewObject Command Respects the SET PROCEDURE Command

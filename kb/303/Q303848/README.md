@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303848: SMS: Data Access/Share Name Box Is Limited to 64 Characters"
-permalink: kb/303/Q303848/
+permalink: /kb/303/Q303848/
 ---
 
 ## Q303848: SMS: Data Access/Share Name Box Is Limited to 64 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119663: Mac Bookshelf 94, 95, 96-97: Fragmented Audio in Videos"
-permalink: kb/119/Q119663/
+permalink: /kb/119/Q119663/
 ---
 
 ## Q119663: Mac Bookshelf 94, 95, 96-97: Fragmented Audio in Videos

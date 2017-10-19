@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148652: PRB: LNK2005 Errors When Link C Run-Time Libraries Are Linked Be"
-permalink: kb/148/Q148652/
+permalink: /kb/148/Q148652/
 ---
 
 ## Q148652: PRB: LNK2005 Errors When Link C Run-Time Libraries Are Linked Be

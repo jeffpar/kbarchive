@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118543: Dangerous Creatures: Hot Spots No Longer Hot When You Return"
-permalink: kb/118/Q118543/
+permalink: /kb/118/Q118543/
 ---
 
 ## Q118543: Dangerous Creatures: Hot Spots No Longer Hot When You Return

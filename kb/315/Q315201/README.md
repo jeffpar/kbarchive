@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315201: FS2002: How to Import Adventures from Flight Simulator 2000"
-permalink: kb/315/Q315201/
+permalink: /kb/315/Q315201/
 ---
 
 ## Q315201: FS2002: How to Import Adventures from Flight Simulator 2000

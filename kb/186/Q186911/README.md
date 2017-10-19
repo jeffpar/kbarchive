@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186911: XWEB: Cancelled Meeting Request Is Sent With High Importance"
-permalink: kb/186/Q186911/
+permalink: /kb/186/Q186911/
 ---
 
 ## Q186911: XWEB: Cancelled Meeting Request Is Sent With High Importance

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187989: XCON: No Message Flow Between Servers: IDs 1097, 2124,2171"
-permalink: kb/187/Q187989/
+permalink: /kb/187/Q187989/
 ---
 
 ## Q187989: XCON: No Message Flow Between Servers: IDs 1097, 2124,2171

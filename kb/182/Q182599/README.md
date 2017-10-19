@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182599: XCLN: Multinational Clients Cannot Add Some Users to PAB"
-permalink: kb/182/Q182599/
+permalink: /kb/182/Q182599/
 ---
 
 ## Q182599: XCLN: Multinational Clients Cannot Add Some Users to PAB

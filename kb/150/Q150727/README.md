@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150727: PCM Error: Unable to Connect. &lt;errcode&gt; -&#92;&#92;Server&#92;Share"
-permalink: kb/150/Q150727/
+permalink: /kb/150/Q150727/
 ---
 
 ## Q150727: PCM Error: Unable to Connect. &lt;errcode&gt; -&#92;&#92;Server&#92;Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124564: MIDL Compiler Wraps the Operation Number After 255"
-permalink: kb/124/Q124564/
+permalink: /kb/124/Q124564/
 ---
 
 ## Q124564: MIDL Compiler Wraps the Operation Number After 255

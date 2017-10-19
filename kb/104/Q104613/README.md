@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104613: Arcade: Description of Missile Command"
-permalink: kb/104/Q104613/
+permalink: /kb/104/Q104613/
 ---
 
 ## Q104613: Arcade: Description of Missile Command

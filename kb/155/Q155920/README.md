@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155920: XFOR: Setting Accept/Reject by Host in IMC Connection Settings"
-permalink: kb/155/Q155920/
+permalink: /kb/155/Q155920/
 ---
 
 ## Q155920: XFOR: Setting Accept/Reject by Host in IMC Connection Settings

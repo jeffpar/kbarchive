@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134865: PPT7: Presentation Conference Fails with Errors"
-permalink: kb/134/Q134865/
+permalink: /kb/134/Q134865/
 ---
 
 ## Q134865: PPT7: Presentation Conference Fails with Errors

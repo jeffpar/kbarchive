@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308944: Spelling Checker Issues In MSN Explorer--Run Detect and Repair U"
-permalink: kb/308/Q308944/
+permalink: /kb/308/Q308944/
 ---
 
 ## Q308944: Spelling Checker Issues In MSN Explorer--Run Detect and Repair U

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104901: BUG: Anti-Virus TSRs May Prevent Builds from VWB"
-permalink: kb/104/Q104901/
+permalink: /kb/104/Q104901/
 ---
 
 ## Q104901: BUG: Anti-Virus TSRs May Prevent Builds from VWB

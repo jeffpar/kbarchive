@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135303: PC Win: Err Msg: General Mail Failure. Close Excel, Restart..."
-permalink: kb/135/Q135303/
+permalink: /kb/135/Q135303/
 ---
 
 ## Q135303: PC Win: Err Msg: General Mail Failure. Close Excel, Restart...

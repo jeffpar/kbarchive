@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236936: Removing SSL Key Leaves Behind Undeletable Port"
-permalink: kb/236/Q236936/
+permalink: /kb/236/Q236936/
 ---
 
 ## Q236936: Removing SSL Key Leaves Behind Undeletable Port

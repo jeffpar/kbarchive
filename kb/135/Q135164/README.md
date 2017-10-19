@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135164: SLIP Connection: Ping Works, Other Programs Do Not"
-permalink: kb/135/Q135164/
+permalink: /kb/135/Q135164/
 ---
 
 ## Q135164: SLIP Connection: Ping Works, Other Programs Do Not

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160611: SMS: AppleTalk Session Protocol Parameter Error with PCMMAC"
-permalink: kb/160/Q160611/
+permalink: /kb/160/Q160611/
 ---
 
 ## Q160611: SMS: AppleTalk Session Protocol Parameter Error with PCMMAC

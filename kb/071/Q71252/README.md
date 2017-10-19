@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71252: Null Pointer Assignment"
-permalink: kb/071/Q71252/
+permalink: /kb/071/Q71252/
 ---
 
 ## Q71252: Null Pointer Assignment

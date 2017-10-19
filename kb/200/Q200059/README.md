@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200059: XFOR: IMC Generates NDR with Mail From: &lt;&gt;"
-permalink: kb/200/Q200059/
+permalink: /kb/200/Q200059/
 ---
 
 ## Q200059: XFOR: IMC Generates NDR with Mail From: &lt;&gt;

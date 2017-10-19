@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160229: FP: New File Name Not Reflected in FrontPage Editor"
-permalink: kb/160/Q160229/
+permalink: /kb/160/Q160229/
 ---
 
 ## Q160229: FP: New File Name Not Reflected in FrontPage Editor

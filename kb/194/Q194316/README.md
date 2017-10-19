@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194316: TN3270 Access Violation Occurs When 15,000 Sessions Configured"
-permalink: kb/194/Q194316/
+permalink: /kb/194/Q194316/
 ---
 
 ## Q194316: TN3270 Access Violation Occurs When 15,000 Sessions Configured

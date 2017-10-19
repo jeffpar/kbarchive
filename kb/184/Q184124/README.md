@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184124: Service Still Runs Although WinNT Prompts to Turn Off Computer"
-permalink: kb/184/Q184124/
+permalink: /kb/184/Q184124/
 ---
 
 ## Q184124: Service Still Runs Although WinNT Prompts to Turn Off Computer

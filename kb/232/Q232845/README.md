@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232845: LoadBarState asserts while restoring two/more floating toolbars"
-permalink: kb/232/Q232845/
+permalink: /kb/232/Q232845/
 ---
 
 ## Q232845: LoadBarState asserts while restoring two/more floating toolbars

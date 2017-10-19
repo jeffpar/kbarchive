@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89009: Music Box version 1.0 Does Not Retain Track Titles"
-permalink: kb/089/Q89009/
+permalink: /kb/089/Q89009/
 ---
 
 ## Q89009: Music Box version 1.0 Does Not Retain Track Titles

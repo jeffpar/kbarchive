@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75787: MS-DOS 5.0 and IBM AT with BIOS dated 1/10/84"
-permalink: kb/075/Q75787/
+permalink: /kb/075/Q75787/
 ---
 
 ## Q75787: MS-DOS 5.0 and IBM AT with BIOS dated 1/10/84

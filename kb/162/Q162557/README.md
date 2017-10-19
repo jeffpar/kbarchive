@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162557: SMS: Sharing Violations When Creating Inventory RAW Files"
-permalink: kb/162/Q162557/
+permalink: /kb/162/Q162557/
 ---
 
 ## Q162557: SMS: Sharing Violations When Creating Inventory RAW Files

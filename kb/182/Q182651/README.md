@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182651: Error Msg. When Editing Properties for Multiple Print Servers"
-permalink: kb/182/Q182651/
+permalink: /kb/182/Q182651/
 ---
 
 ## Q182651: Error Msg. When Editing Properties for Multiple Print Servers

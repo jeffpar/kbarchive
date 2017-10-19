@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110182: Err Msg: ATIOEM Accelerator Not Found"
-permalink: kb/110/Q110182/
+permalink: /kb/110/Q110182/
 ---
 
 ## Q110182: Err Msg: ATIOEM Accelerator Not Found

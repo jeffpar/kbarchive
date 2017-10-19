@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155620: ATAPI Devices Listed in SCSI Adapters Tool"
-permalink: kb/155/Q155620/
+permalink: /kb/155/Q155620/
 ---
 
 ## Q155620: ATAPI Devices Listed in SCSI Adapters Tool

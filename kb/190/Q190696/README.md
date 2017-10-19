@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190696: XADM: Event ID 116, Service Database Corruption"
-permalink: kb/190/Q190696/
+permalink: /kb/190/Q190696/
 ---
 
 ## Q190696: XADM: Event ID 116, Service Database Corruption

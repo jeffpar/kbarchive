@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171849: FIX: Debugger Hangs When Very Long STL Symbol in Watch Window"
-permalink: kb/171/Q171849/
+permalink: /kb/171/Q171849/
 ---
 
 ## Q171849: FIX: Debugger Hangs When Very Long STL Symbol in Watch Window

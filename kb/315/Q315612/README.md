@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315612: Train Simulator: Tools Update Available for Download"
-permalink: kb/315/Q315612/
+permalink: /kb/315/Q315612/
 ---
 
 ## Q315612: Train Simulator: Tools Update Available for Download

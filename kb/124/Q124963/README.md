@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124963: TCP/IP Fails with SMC Ultra Elite 32 EISA Adapter"
-permalink: kb/124/Q124963/
+permalink: /kb/124/Q124963/
 ---
 
 ## Q124963: TCP/IP Fails with SMC Ultra Elite 32 EISA Adapter

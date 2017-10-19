@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314402: PRB:Slow Clients Disconnected When Large Synchronous Writes Used"
-permalink: kb/314/Q314402/
+permalink: /kb/314/Q314402/
 ---
 
 ## Q314402: PRB:Slow Clients Disconnected When Large Synchronous Writes Used

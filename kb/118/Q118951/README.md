@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118951: Maintain Drive Letters for SFMCONV Clone Upgrade"
-permalink: kb/118/Q118951/
+permalink: /kb/118/Q118951/
 ---
 
 ## Q118951: Maintain Drive Letters for SFMCONV Clone Upgrade

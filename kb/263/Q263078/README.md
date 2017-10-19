@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263078: DB5_setSingleValuedAttribute() Returns &quot;Invalid Encoding (0)&quot;"
-permalink: kb/263/Q263078/
+permalink: /kb/263/Q263078/
 ---
 
 ## Q263078: DB5_setSingleValuedAttribute() Returns &quot;Invalid Encoding (0)&quot;

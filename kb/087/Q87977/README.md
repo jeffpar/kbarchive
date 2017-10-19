@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87977: AS/400 Folders Not Recognized in Windows 3.1 386-Enhanced Mode"
-permalink: kb/087/Q87977/
+permalink: /kb/087/Q87977/
 ---
 
 ## Q87977: AS/400 Folders Not Recognized in Windows 3.1 386-Enhanced Mode

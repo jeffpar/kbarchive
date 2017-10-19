@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231964: NFS Server and File Permissions"
-permalink: kb/231/Q231964/
+permalink: /kb/231/Q231964/
 ---
 
 ## Q231964: NFS Server and File Permissions

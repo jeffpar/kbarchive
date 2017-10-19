@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198376: WD97: Scroll Bars Reappear After Print Preview Full Screen"
-permalink: kb/198/Q198376/
+permalink: /kb/198/Q198376/
 ---
 
 ## Q198376: WD97: Scroll Bars Reappear After Print Preview Full Screen

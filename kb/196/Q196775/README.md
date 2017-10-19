@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196775: PRB: TreeView SelectedItem Property Does Not Return Correct Node"
-permalink: kb/196/Q196775/
+permalink: /kb/196/Q196775/
 ---
 
 ## Q196775: PRB: TreeView SelectedItem Property Does Not Return Correct Node

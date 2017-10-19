@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265721: DOC: /CEConfig Switch Builds Incorrect Platform"
-permalink: kb/265/Q265721/
+permalink: /kb/265/Q265721/
 ---
 
 ## Q265721: DOC: /CEConfig Switch Builds Incorrect Platform

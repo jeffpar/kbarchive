@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162965: ODE97: &quot;Setup Error 993&quot; Reinstalling MS ODE Tools Sampler"
-permalink: kb/162/Q162965/
+permalink: /kb/162/Q162965/
 ---
 
 ## Q162965: ODE97: &quot;Setup Error 993&quot; Reinstalling MS ODE Tools Sampler

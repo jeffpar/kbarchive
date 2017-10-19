@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322943: Configure Server Extensions Option Is Missing"
-permalink: kb/322/Q322943/
+permalink: /kb/322/Q322943/
 ---
 
 ## Q322943: Configure Server Extensions Option Is Missing

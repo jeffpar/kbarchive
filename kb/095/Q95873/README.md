@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95873: GP Fault in PROGMAN.EXE with More Than 40 Program Groups"
-permalink: kb/095/Q95873/
+permalink: /kb/095/Q95873/
 ---
 
 ## Q95873: GP Fault in PROGMAN.EXE with More Than 40 Program Groups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117421: List of Major Sound Card Manufacturers (D-L)"
-permalink: kb/117/Q117421/
+permalink: /kb/117/Q117421/
 ---
 
 ## Q117421: List of Major Sound Card Manufacturers (D-L)

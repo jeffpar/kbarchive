@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126703: PRB: &quot;Cannot Access Selected Table&quot; in Query Designer or RQBE"
-permalink: kb/126/Q126703/
+permalink: /kb/126/Q126703/
 ---
 
 ## Q126703: PRB: &quot;Cannot Access Selected Table&quot; in Query Designer or RQBE

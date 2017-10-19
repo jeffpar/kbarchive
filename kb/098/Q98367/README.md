@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98367: How to Update Scrollable Lists in FoxBASE+/Mac"
-permalink: kb/098/Q98367/
+permalink: /kb/098/Q98367/
 ---
 
 ## Q98367: How to Update Scrollable Lists in FoxBASE+/Mac

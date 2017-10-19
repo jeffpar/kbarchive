@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169875: WD97: Pressing BACKSPACE Doesn't Delete Section Break"
-permalink: kb/169/Q169875/
+permalink: /kb/169/Q169875/
 ---
 
 ## Q169875: WD97: Pressing BACKSPACE Doesn't Delete Section Break

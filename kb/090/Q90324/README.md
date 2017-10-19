@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90324: Workgroups Mail and Mail 3.0 Do Not Work with COMPAQ DOS 3.31"
-permalink: kb/090/Q90324/
+permalink: /kb/090/Q90324/
 ---
 
 ## Q90324: Workgroups Mail and Mail 3.0 Do Not Work with COMPAQ DOS 3.31

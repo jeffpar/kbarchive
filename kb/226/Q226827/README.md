@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226827: SMS: Offline Software Metering Server May Affect Client Behavior"
-permalink: kb/226/Q226827/
+permalink: /kb/226/Q226827/
 ---
 
 ## Q226827: SMS: Offline Software Metering Server May Affect Client Behavior

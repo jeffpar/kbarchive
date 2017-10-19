@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182265: APPC Display Call Fails With AP_STATE_CHECK (Primary_rc = 0002)"
-permalink: kb/182/Q182265/
+permalink: /kb/182/Q182265/
 ---
 
 ## Q182265: APPC Display Call Fails With AP_STATE_CHECK (Primary_rc = 0002)

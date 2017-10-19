@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139675: TN3270: Limiting Users by Port Value"
-permalink: kb/139/Q139675/
+permalink: /kb/139/Q139675/
 ---
 
 ## Q139675: TN3270: Limiting Users by Port Value

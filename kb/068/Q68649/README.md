@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68649: Troubleshooting Windows 3.0 Standard Mode Problems"
-permalink: kb/068/Q68649/
+permalink: /kb/068/Q68649/
 ---
 
 ## Q68649: Troubleshooting Windows 3.0 Standard Mode Problems

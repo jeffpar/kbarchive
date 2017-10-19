@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153533: Scheduler Cannot Cancel Job"
-permalink: kb/153/Q153533/
+permalink: /kb/153/Q153533/
 ---
 
 ## Q153533: Scheduler Cannot Cancel Job

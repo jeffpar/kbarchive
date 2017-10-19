@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124374: Windows NT 3.1 Computer Cannot Log On to Windows NT 3.5 Domain"
-permalink: kb/124/Q124374/
+permalink: /kb/124/Q124374/
 ---
 
 ## Q124374: Windows NT 3.1 Computer Cannot Log On to Windows NT 3.5 Domain

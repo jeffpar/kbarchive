@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150128: BUG: MATHERRQQ() Complex Result Variable Not Used"
-permalink: kb/150/Q150128/
+permalink: /kb/150/Q150128/
 ---
 
 ## Q150128: BUG: MATHERRQQ() Complex Result Variable Not Used

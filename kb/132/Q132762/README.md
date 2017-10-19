@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132762: Format Type Options Are Unavailable"
-permalink: kb/132/Q132762/
+permalink: /kb/132/Q132762/
 ---
 
 ## Q132762: Format Type Options Are Unavailable

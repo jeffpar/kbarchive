@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196252: XFOR: 119 Character Limit for &quot;Administrator info&quot; in Web Admin"
-permalink: kb/196/Q196252/
+permalink: /kb/196/Q196252/
 ---
 
 ## Q196252: XFOR: 119 Character Limit for &quot;Administrator info&quot; in Web Admin

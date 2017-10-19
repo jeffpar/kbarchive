@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141646: Mac Encarta 96: Program Fails to Run from the Compact Disc"
-permalink: kb/141/Q141646/
+permalink: /kb/141/Q141646/
 ---
 
 ## Q141646: Mac Encarta 96: Program Fails to Run from the Compact Disc

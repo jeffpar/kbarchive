@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95993: WFWG: Cannot See Workstations When Using Tiara NIC"
-permalink: kb/095/Q95993/
+permalink: /kb/095/Q95993/
 ---
 
 ## Q95993: WFWG: Cannot See Workstations When Using Tiara NIC

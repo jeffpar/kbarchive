@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131875: BUG: Form Designer Window Won't Scroll When Selecting Objects"
-permalink: kb/131/Q131875/
+permalink: /kb/131/Q131875/
 ---
 
 ## Q131875: BUG: Form Designer Window Won't Scroll When Selecting Objects

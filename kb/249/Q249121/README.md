@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249121: SMS: COMMIT TRANSACTION Request Has No BEGIN TRANSACTION"
-permalink: kb/249/Q249121/
+permalink: /kb/249/Q249121/
 ---
 
 ## Q249121: SMS: COMMIT TRANSACTION Request Has No BEGIN TRANSACTION

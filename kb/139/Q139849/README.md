@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139849: WD97: Err Msg: &quot;Word Cannot Open Document&quot; with Long File Name"
-permalink: kb/139/Q139849/
+permalink: /kb/139/Q139849/
 ---
 
 ## Q139849: WD97: Err Msg: &quot;Word Cannot Open Document&quot; with Long File Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313834: BUG: The Validate Event Does Not Fire for Controls on the SSTab"
-permalink: kb/313/Q313834/
+permalink: /kb/313/Q313834/
 ---
 
 ## Q313834: BUG: The Validate Event Does Not Fire for Controls on the SSTab

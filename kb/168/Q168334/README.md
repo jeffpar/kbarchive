@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168334: WD97: Read-Only Recommended Option Lost When Saving"
-permalink: kb/168/Q168334/
+permalink: /kb/168/Q168334/
 ---
 
 ## Q168334: WD97: Read-Only Recommended Option Lost When Saving

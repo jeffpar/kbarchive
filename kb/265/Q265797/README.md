@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265797: INFO: Use of User-Defined Data Types in eMbedded Visual Basic"
-permalink: kb/265/Q265797/
+permalink: /kb/265/Q265797/
 ---
 
 ## Q265797: INFO: Use of User-Defined Data Types in eMbedded Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139215: BUG: Labels Truncated When Printable Page Option Is Selected"
-permalink: kb/139/Q139215/
+permalink: /kb/139/Q139215/
 ---
 
 ## Q139215: BUG: Labels Truncated When Printable Page Option Is Selected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254366: WD97: Inserted Excel Worksheet Object Too Large for Word Page"
-permalink: kb/254/Q254366/
+permalink: /kb/254/Q254366/
 ---
 
 ## Q254366: WD97: Inserted Excel Worksheet Object Too Large for Word Page

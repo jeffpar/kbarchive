@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154419: INFO: Standard C++ Library Frequently Asked Questions"
-permalink: kb/154/Q154419/
+permalink: /kb/154/Q154419/
 ---
 
 ## Q154419: INFO: Standard C++ Library Frequently Asked Questions

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q106530: FIX: F4201 on Entry with Attribute [VALUE]"
-permalink: kb/106/Q106530/
+title: "Q106530: FIX: F4201 on Entry with Attribute &#91;VALUE&#93;"
+permalink: /kb/106/Q106530/
 ---
 
-## Q106530: FIX: F4201 on Entry with Attribute [VALUE]
+## Q106530: FIX: F4201 on Entry with Attribute &#91;VALUE&#93;
 
 	Article: Q106530
 	Product(s): Microsoft Fortran Compiler

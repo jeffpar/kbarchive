@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305024: PRB: Source Code Control Not Available as Visual Basic Add-In"
-permalink: kb/305/Q305024/
+permalink: /kb/305/Q305024/
 ---
 
 ## Q305024: PRB: Source Code Control Not Available as Visual Basic Add-In

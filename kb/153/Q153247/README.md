@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153247: Despooler Uses More Bytes After Move to a Helper Server"
-permalink: kb/153/Q153247/
+permalink: /kb/153/Q153247/
 ---
 
 ## Q153247: Despooler Uses More Bytes After Move to a Helper Server

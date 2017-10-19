@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265435: WD97: How to Add and Remove Page Numbers"
-permalink: kb/265/Q265435/
+permalink: /kb/265/Q265435/
 ---
 
 ## Q265435: WD97: How to Add and Remove Page Numbers

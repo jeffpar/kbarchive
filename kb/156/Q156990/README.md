@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156990: XADM: Move Buttons on MIME Property Page Toggle Back and Forth"
-permalink: kb/156/Q156990/
+permalink: /kb/156/Q156990/
 ---
 
 ## Q156990: XADM: Move Buttons on MIME Property Page Toggle Back and Forth

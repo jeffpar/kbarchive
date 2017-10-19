@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262844: PRB: Error -2147024893 When You Try to Start IIS Admin Service"
-permalink: kb/262/Q262844/
+permalink: /kb/262/Q262844/
 ---
 
 ## Q262844: PRB: Error -2147024893 When You Try to Start IIS Admin Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152932: XCON: X.400 Connector Uses Session Selector on X.400 Connections"
-permalink: kb/152/Q152932/
+permalink: /kb/152/Q152932/
 ---
 
 ## Q152932: XCON: X.400 Connector Uses Session Selector on X.400 Connections

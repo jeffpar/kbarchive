@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87550: FIX: CV 4.0 Port Input Command Does Not Display Value"
-permalink: kb/087/Q87550/
+permalink: /kb/087/Q87550/
 ---
 
 ## Q87550: FIX: CV 4.0 Port Input Command Does Not Display Value

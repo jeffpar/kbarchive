@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242110: Keyboard intermittently stops responding on Compaq computers."
-permalink: kb/242/Q242110/
+permalink: /kb/242/Q242110/
 ---
 
 ## Q242110: Keyboard intermittently stops responding on Compaq computers.

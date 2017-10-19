@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216664: HOWTO: Prevent the ENTER Key From Firing in TreevView Control"
-permalink: kb/216/Q216664/
+permalink: /kb/216/Q216664/
 ---
 
 ## Q216664: HOWTO: Prevent the ENTER Key From Firing in TreevView Control

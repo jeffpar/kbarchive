@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153678: Do-It-Yourself Guide: Ceramic Tile Estimator Limitation"
-permalink: kb/153/Q153678/
+permalink: /kb/153/Q153678/
 ---
 
 ## Q153678: Do-It-Yourself Guide: Ceramic Tile Estimator Limitation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185207: PRB: ODBC's SQL Config Driver Failed for Driver SQL Server-setup"
-permalink: kb/185/Q185207/
+permalink: /kb/185/Q185207/
 ---
 
 ## Q185207: PRB: ODBC's SQL Config Driver Failed for Driver SQL Server-setup

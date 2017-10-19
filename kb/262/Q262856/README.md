@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262856: SMS: Invalid Pointer Causes Low-rights Client Install to Fail"
-permalink: kb/262/Q262856/
+permalink: /kb/262/Q262856/
 ---
 
 ## Q262856: SMS: Invalid Pointer Causes Low-rights Client Install to Fail

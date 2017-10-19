@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135856: RIP Table Does Not Update When New RIPX Response Is Received"
-permalink: kb/135/Q135856/
+permalink: /kb/135/Q135856/
 ---
 
 ## Q135856: RIP Table Does Not Update When New RIPX Response Is Received

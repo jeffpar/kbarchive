@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183496: XADM: Importing International Characters Into Exchange Fails"
-permalink: kb/183/Q183496/
+permalink: /kb/183/Q183496/
 ---
 
 ## Q183496: XADM: Importing International Characters Into Exchange Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289117: SQL Server Account Information Missing From Accounts Tab"
-permalink: kb/289/Q289117/
+permalink: /kb/289/Q289117/
 ---
 
 ## Q289117: SQL Server Account Information Missing From Accounts Tab

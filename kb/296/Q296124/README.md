@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296124: Online Investing, Second Edition Comments And Corrections"
-permalink: kb/296/Q296124/
+permalink: /kb/296/Q296124/
 ---
 
 ## Q296124: Online Investing, Second Edition Comments And Corrections

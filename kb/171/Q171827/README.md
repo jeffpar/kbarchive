@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171827: FIX: Printing userdrawn usercontrol in IE Doesn't Work"
-permalink: kb/171/Q171827/
+permalink: /kb/171/Q171827/
 ---
 
 ## Q171827: FIX: Printing userdrawn usercontrol in IE Doesn't Work

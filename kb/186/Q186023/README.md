@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186023: FIX: Set Collate Causes Display Problems for Related Tables"
-permalink: kb/186/Q186023/
+permalink: /kb/186/Q186023/
 ---
 
 ## Q186023: FIX: Set Collate Causes Display Problems for Related Tables

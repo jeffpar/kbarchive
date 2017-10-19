@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99891: How to Obtain TCP/IP-32 3.11b for Windows for Workgroups"
-permalink: kb/099/Q99891/
+permalink: /kb/099/Q99891/
 ---
 
 ## Q99891: How to Obtain TCP/IP-32 3.11b for Windows for Workgroups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174075: Strong Passwords With Passfilt.dll Are Not Enforced"
-permalink: kb/174/Q174075/
+permalink: /kb/174/Q174075/
 ---
 
 ## Q174075: Strong Passwords With Passfilt.dll Are Not Enforced

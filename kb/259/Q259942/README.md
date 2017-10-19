@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259942: HOWTO: Set Where .tmp Files Are Created with the VFP ODBC Driver"
-permalink: kb/259/Q259942/
+permalink: /kb/259/Q259942/
 ---
 
 ## Q259942: HOWTO: Set Where .tmp Files Are Created with the VFP ODBC Driver

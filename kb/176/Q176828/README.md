@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176828: MSN Sign-In Screen Prompts Repeatedly in Windows NT"
-permalink: kb/176/Q176828/
+permalink: /kb/176/Q176828/
 ---
 
 ## Q176828: MSN Sign-In Screen Prompts Repeatedly in Windows NT

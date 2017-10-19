@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253233: INFO: NdisQueryMapRegisterCount Is Obsolete on Windows 2000"
-permalink: kb/253/Q253233/
+permalink: /kb/253/Q253233/
 ---
 
 ## Q253233: INFO: NdisQueryMapRegisterCount Is Obsolete on Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112890: PC WSPlus: Cursor Jumps to Beginning of Line Often"
-permalink: kb/112/Q112890/
+permalink: /kb/112/Q112890/
 ---
 
 ## Q112890: PC WSPlus: Cursor Jumps to Beginning of Line Often

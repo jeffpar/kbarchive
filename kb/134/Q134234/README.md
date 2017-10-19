@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134234: PC Adm: Err Msg: Notice 38 Cannot Add Local Postoffice Name..."
-permalink: kb/134/Q134234/
+permalink: /kb/134/Q134234/
 ---
 
 ## Q134234: PC Adm: Err Msg: Notice 38 Cannot Add Local Postoffice Name...

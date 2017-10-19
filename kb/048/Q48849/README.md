@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48849: Output Appears Wavey on Okidata Printers"
-permalink: kb/048/Q48849/
+permalink: /kb/048/Q48849/
 ---
 
 ## Q48849: Output Appears Wavey on Okidata Printers

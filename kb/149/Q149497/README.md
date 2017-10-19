@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149497: SMS Does Not Correctly Identify New Pentium Processor Speeds"
-permalink: kb/149/Q149497/
+permalink: /kb/149/Q149497/
 ---
 
 ## Q149497: SMS Does Not Correctly Identify New Pentium Processor Speeds

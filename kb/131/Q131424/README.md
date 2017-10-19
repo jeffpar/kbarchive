@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131424: PC NTMMTA: Advantages of Running EXTERNAL.EXE as a Service"
-permalink: kb/131/Q131424/
+permalink: /kb/131/Q131424/
 ---
 
 ## Q131424: PC NTMMTA: Advantages of Running EXTERNAL.EXE as a Service

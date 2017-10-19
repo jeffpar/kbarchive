@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194201: BUG: ASCII 159 Appears With ! Text Box Format and Function Keys"
-permalink: kb/194/Q194201/
+permalink: /kb/194/Q194201/
 ---
 
 ## Q194201: BUG: ASCII 159 Appears With ! Text Box Format and Function Keys

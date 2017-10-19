@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174779: Require Secure SSL Channel Not Available"
-permalink: kb/174/Q174779/
+permalink: /kb/174/Q174779/
 ---
 
 ## Q174779: Require Secure SSL Channel Not Available

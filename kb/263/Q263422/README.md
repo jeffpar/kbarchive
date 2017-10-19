@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263422: SMS: Refreshing Multiple Network Trace Maps Causes Icon Overlap"
-permalink: kb/263/Q263422/
+permalink: /kb/263/Q263422/
 ---
 
 ## Q263422: SMS: Refreshing Multiple Network Trace Maps Causes Icon Overlap

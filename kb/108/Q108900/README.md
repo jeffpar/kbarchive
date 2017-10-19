@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108900: How to Return After F8 into a C Run-Time Library Function"
-permalink: kb/108/Q108900/
+permalink: /kb/108/Q108900/
 ---
 
 ## Q108900: How to Return After F8 into a C Run-Time Library Function

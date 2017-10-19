@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129922: BUG: Error Occurs When Stepping through BROWSE FOR UDF() Code"
-permalink: kb/129/Q129922/
+permalink: /kb/129/Q129922/
 ---
 
 ## Q129922: BUG: Error Occurs When Stepping through BROWSE FOR UDF() Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138404: How To Use License Manager on a Windows NT Workstation"
-permalink: kb/138/Q138404/
+permalink: /kb/138/Q138404/
 ---
 
 ## Q138404: How To Use License Manager on a Windows NT Workstation

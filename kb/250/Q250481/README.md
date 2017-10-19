@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250481: How to Set Up a Referral in Microsoft Metadirectory Services"
-permalink: kb/250/Q250481/
+permalink: /kb/250/Q250481/
 ---
 
 ## Q250481: How to Set Up a Referral in Microsoft Metadirectory Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74449: DOSSHELL.INI and Password Encryption"
-permalink: kb/074/Q74449/
+permalink: /kb/074/Q74449/
 ---
 
 ## Q74449: DOSSHELL.INI and Password Encryption

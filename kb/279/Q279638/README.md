@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279638: MechWarrior 4: Bottom of Introductory Movie Is Not Displayed"
-permalink: kb/279/Q279638/
+permalink: /kb/279/Q279638/
 ---
 
 ## Q279638: MechWarrior 4: Bottom of Introductory Movie Is Not Displayed

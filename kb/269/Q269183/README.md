@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269183: XFOR: Exchange Server 5.5 Post-SP3 MS Mail Connector Fixes"
-permalink: kb/269/Q269183/
+permalink: /kb/269/Q269183/
 ---
 
 ## Q269183: XFOR: Exchange Server 5.5 Post-SP3 MS Mail Connector Fixes

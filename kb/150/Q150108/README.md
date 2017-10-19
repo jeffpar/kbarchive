@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150108: User in 15 or More Groups Can't Connect to RCMD Service"
-permalink: kb/150/Q150108/
+permalink: /kb/150/Q150108/
 ---
 
 ## Q150108: User in 15 or More Groups Can't Connect to RCMD Service

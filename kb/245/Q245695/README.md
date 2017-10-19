@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245695: Error Message: &quot;Access is Denied&quot; When Changing Password"
-permalink: kb/245/Q245695/
+permalink: /kb/245/Q245695/
 ---
 
 ## Q245695: Error Message: &quot;Access is Denied&quot; When Changing Password

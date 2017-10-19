@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154484: Stop 0xA in Afd.sys"
-permalink: kb/154/Q154484/
+permalink: /kb/154/Q154484/
 ---
 
 ## Q154484: Stop 0xA in Afd.sys

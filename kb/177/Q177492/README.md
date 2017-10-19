@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177492: XADM: Key Management Server Fails to Reissue Key"
-permalink: kb/177/Q177492/
+permalink: /kb/177/Q177492/
 ---
 
 ## Q177492: XADM: Key Management Server Fails to Reissue Key

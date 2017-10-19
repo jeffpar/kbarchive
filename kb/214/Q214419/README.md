@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214419: BUG: CHANGECP.EXE in Plus! for Windows 95 Install Incorrect OEM"
-permalink: kb/214/Q214419/
+permalink: /kb/214/Q214419/
 ---
 
 ## Q214419: BUG: CHANGECP.EXE in Plus! for Windows 95 Install Incorrect OEM

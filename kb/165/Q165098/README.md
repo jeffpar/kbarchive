@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165098: WD97: Cannot Trap FormFieldOptions Command on Double-Click"
-permalink: kb/165/Q165098/
+permalink: /kb/165/Q165098/
 ---
 
 ## Q165098: WD97: Cannot Trap FormFieldOptions Command on Double-Click

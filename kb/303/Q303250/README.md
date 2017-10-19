@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303250: XADM: Command Line Directory Export Does Not Succeed"
-permalink: kb/303/Q303250/
+permalink: /kb/303/Q303250/
 ---
 
 ## Q303250: XADM: Command Line Directory Export Does Not Succeed

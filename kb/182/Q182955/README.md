@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182955: XWEB: Some MHTML and HTML Messages Are Not Displayed Correctly"
-permalink: kb/182/Q182955/
+permalink: /kb/182/Q182955/
 ---
 
 ## Q182955: XWEB: Some MHTML and HTML Messages Are Not Displayed Correctly

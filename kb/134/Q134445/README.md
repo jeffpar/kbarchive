@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134445: Flight Simulator 5.1: Panasonic KXL-D720 Does Not Read Disc"
-permalink: kb/134/Q134445/
+permalink: /kb/134/Q134445/
 ---
 
 ## Q134445: Flight Simulator 5.1: Panasonic KXL-D720 Does Not Read Disc

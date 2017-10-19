@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321406: Dungeon Siege: Known Sound Issues"
-permalink: kb/321/Q321406/
+permalink: /kb/321/Q321406/
 ---
 
 ## Q321406: Dungeon Siege: Known Sound Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151926: Delayed WinLogon When Drive Mapped to Local Share"
-permalink: kb/151/Q151926/
+permalink: /kb/151/Q151926/
 ---
 
 ## Q151926: Delayed WinLogon When Drive Mapped to Local Share

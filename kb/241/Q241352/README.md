@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241352: How to Prevent DNS Cache Pollution"
-permalink: kb/241/Q241352/
+permalink: /kb/241/Q241352/
 ---
 
 ## Q241352: How to Prevent DNS Cache Pollution

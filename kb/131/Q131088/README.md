@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131088: XCLN: Message Finder and Filter Don't Display Bcc'd Messages"
-permalink: kb/131/Q131088/
+permalink: /kb/131/Q131088/
 ---
 
 ## Q131088: XCLN: Message Finder and Filter Don't Display Bcc'd Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282968: Err Msg: &quot;Unable to generate a new key request&quot; w/Key Manager"
-permalink: kb/282/Q282968/
+permalink: /kb/282/Q282968/
 ---
 
 ## Q282968: Err Msg: &quot;Unable to generate a new key request&quot; w/Key Manager

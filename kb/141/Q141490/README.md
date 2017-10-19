@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141490: Flight Simulator: How to Configure for MS Sidewinder 3D Pro"
-permalink: kb/141/Q141490/
+permalink: /kb/141/Q141490/
 ---
 
 ## Q141490: Flight Simulator: How to Configure for MS Sidewinder 3D Pro

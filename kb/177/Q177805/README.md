@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177805: XCLN: Setup Cannot Register Comcat.dll in the System Registry"
-permalink: kb/177/Q177805/
+permalink: /kb/177/Q177805/
 ---
 
 ## Q177805: XCLN: Setup Cannot Register Comcat.dll in the System Registry

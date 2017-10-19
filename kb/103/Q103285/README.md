@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103285: Contents of Windows NT SETUP.TXT, Part 2"
-permalink: kb/103/Q103285/
+permalink: /kb/103/Q103285/
 ---
 
 ## Q103285: Contents of Windows NT SETUP.TXT, Part 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202466: BUG: DNS Admin Reports Incorrect Time in Statistics Field"
-permalink: kb/202/Q202466/
+permalink: /kb/202/Q202466/
 ---
 
 ## Q202466: BUG: DNS Admin Reports Incorrect Time in Statistics Field

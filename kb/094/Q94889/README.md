@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94889: SMC Microchannel Adapter Works with SMC EtherCard Driver"
-permalink: kb/094/Q94889/
+permalink: /kb/094/Q94889/
 ---
 
 ## Q94889: SMC Microchannel Adapter Works with SMC EtherCard Driver

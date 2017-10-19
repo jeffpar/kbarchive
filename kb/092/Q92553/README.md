@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92553: Creating a Combined Ascending and Descending Index"
-permalink: kb/092/Q92553/
+permalink: /kb/092/Q92553/
 ---
 
 ## Q92553: Creating a Combined Ascending and Descending Index

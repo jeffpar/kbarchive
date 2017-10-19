@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160164: XCLN: MAC: Application Error Type 1"
-permalink: kb/160/Q160164/
+permalink: /kb/160/Q160164/
 ---
 
 ## Q160164: XCLN: MAC: Application Error Type 1

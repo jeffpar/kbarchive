@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75737: PRB: One Cause of Fatal Exit 0x001A"
-permalink: kb/075/Q75737/
+permalink: /kb/075/Q75737/
 ---
 
 ## Q75737: PRB: One Cause of Fatal Exit 0x001A

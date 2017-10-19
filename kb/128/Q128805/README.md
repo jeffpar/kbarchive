@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128805: FIX: Explicit Call to Virtual Destructor Corrupts Stack"
-permalink: kb/128/Q128805/
+permalink: /kb/128/Q128805/
 ---
 
 ## Q128805: FIX: Explicit Call to Virtual Destructor Corrupts Stack

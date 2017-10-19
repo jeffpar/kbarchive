@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119642: PC Ext: Version Differences Locking External P1 File for Async"
-permalink: kb/119/Q119642/
+permalink: /kb/119/Q119642/
 ---
 
 ## Q119642: PC Ext: Version Differences Locking External P1 File for Async

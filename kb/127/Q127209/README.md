@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127209: Orchid Vidiola Capture Card Causes Setup to Hang"
-permalink: kb/127/Q127209/
+permalink: /kb/127/Q127209/
 ---
 
 ## Q127209: Orchid Vidiola Capture Card Causes Setup to Hang

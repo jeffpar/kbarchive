@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189430: Domain Name Shows up Twice in Browse List"
-permalink: kb/189/Q189430/
+permalink: /kb/189/Q189430/
 ---
 
 ## Q189430: Domain Name Shows up Twice in Browse List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190934: FIX: Degree of Derived Table Error When Updating Oracle Data"
-permalink: kb/190/Q190934/
+permalink: /kb/190/Q190934/
 ---
 
 ## Q190934: FIX: Degree of Derived Table Error When Updating Oracle Data

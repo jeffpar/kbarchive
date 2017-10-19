@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82094: Microsoft Replacement MOUSE.DRV May Hang Windows"
-permalink: kb/082/Q82094/
+permalink: /kb/082/Q82094/
 ---
 
 ## Q82094: Microsoft Replacement MOUSE.DRV May Hang Windows

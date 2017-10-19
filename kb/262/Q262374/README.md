@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262374: XADM: 2140 and 1002 with Error -1811 Error Starting Exchange"
-permalink: kb/262/Q262374/
+permalink: /kb/262/Q262374/
 ---
 
 ## Q262374: XADM: 2140 and 1002 with Error -1811 Error Starting Exchange

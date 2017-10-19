@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92799: Configuring the Buffer Size Used by the MCIWAVE Driver"
-permalink: kb/092/Q92799/
+permalink: /kb/092/Q92799/
 ---
 
 ## Q92799: Configuring the Buffer Size Used by the MCIWAVE Driver

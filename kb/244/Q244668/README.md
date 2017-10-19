@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244668: XCLN: Outlook 2000 Upgrade Error Message: Unable to Switch to..."
-permalink: kb/244/Q244668/
+permalink: /kb/244/Q244668/
 ---
 
 ## Q244668: XCLN: Outlook 2000 Upgrade Error Message: Unable to Switch to...

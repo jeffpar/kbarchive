@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148477: Golf Err Msg with Windows 95/98: Could Not Find Directory"
-permalink: kb/148/Q148477/
+permalink: /kb/148/Q148477/
 ---
 
 ## Q148477: Golf Err Msg with Windows 95/98: Could Not Find Directory

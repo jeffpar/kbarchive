@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127909: Seed Routing Not Working With C.O.P.S. LocalTalk NIC"
-permalink: kb/127/Q127909/
+permalink: /kb/127/Q127909/
 ---
 
 ## Q127909: Seed Routing Not Working With C.O.P.S. LocalTalk NIC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306065: Direct Cable Connection Between Win2000 and Win98 Not Working"
-permalink: kb/306/Q306065/
+permalink: /kb/306/Q306065/
 ---
 
 ## Q306065: Direct Cable Connection Between Win2000 and Win98 Not Working

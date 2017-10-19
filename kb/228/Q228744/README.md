@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q228744: Runtime Error 1512 for String [Input] Parameter -- Korean Window"
-permalink: kb/228/Q228744/
+title: "Q228744: Runtime Error 1512 for String &#91;Input&#93; Parameter -- Korean Window"
+permalink: /kb/228/Q228744/
 ---
 
-## Q228744: Runtime Error 1512 for String [Input] Parameter -- Korean Window
+## Q228744: Runtime Error 1512 for String &#91;Input&#93; Parameter -- Korean Window
 
 	Article: Q228744
 	Product(s): Microsoft SNA Server

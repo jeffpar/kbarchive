@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268343: Umdhtools.exe: How to Use Umdh.exe to Find Memory Leaks"
-permalink: kb/268/Q268343/
+permalink: /kb/268/Q268343/
 ---
 
 ## Q268343: Umdhtools.exe: How to Use Umdh.exe to Find Memory Leaks

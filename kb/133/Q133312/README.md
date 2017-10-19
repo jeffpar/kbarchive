@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133312: SNA Server Win 3.x APPC/CPIC Apps Hang Using Blocking Hook"
-permalink: kb/133/Q133312/
+permalink: /kb/133/Q133312/
 ---
 
 ## Q133312: SNA Server Win 3.x APPC/CPIC Apps Hang Using Blocking Hook

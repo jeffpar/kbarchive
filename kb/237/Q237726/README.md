@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237726: NFL Fever 2000: Wrong Team Has Possession of the Ball When You R"
-permalink: kb/237/Q237726/
+permalink: /kb/237/Q237726/
 ---
 
 ## Q237726: NFL Fever 2000: Wrong Team Has Possession of the Ball When You R

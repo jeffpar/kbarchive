@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193688: HTMLA: Object Already Exists When Creating New Web Sites"
-permalink: kb/193/Q193688/
+permalink: /kb/193/Q193688/
 ---
 
 ## Q193688: HTMLA: Object Already Exists When Creating New Web Sites

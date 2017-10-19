@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158899: Prompted for Password When Restoring Persistent Connections"
-permalink: kb/158/Q158899/
+permalink: /kb/158/Q158899/
 ---
 
 ## Q158899: Prompted for Password When Restoring Persistent Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157079: XCLN: How to Move the Location of an OST File"
-permalink: kb/157/Q157079/
+permalink: /kb/157/Q157079/
 ---
 
 ## Q157079: XCLN: How to Move the Location of an OST File

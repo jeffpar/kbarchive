@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213321: SMS: Site Server Performance Is Degraded with NetWare Redirector"
-permalink: kb/213/Q213321/
+permalink: /kb/213/Q213321/
 ---
 
 ## Q213321: SMS: Site Server Performance Is Degraded with NetWare Redirector

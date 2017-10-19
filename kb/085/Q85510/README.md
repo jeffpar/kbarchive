@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85510: CodeView Does Not Use Default Arguments for Functions"
-permalink: kb/085/Q85510/
+permalink: /kb/085/Q85510/
 ---
 
 ## Q85510: CodeView Does Not Use Default Arguments for Functions

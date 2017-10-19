@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277725: HOWTO: Copy Fields Containing NULL to Text File"
-permalink: kb/277/Q277725/
+permalink: /kb/277/Q277725/
 ---
 
 ## Q277725: HOWTO: Copy Fields Containing NULL to Text File

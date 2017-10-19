@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166518: XADM: New Public Folder Created by INS Defaults to US ASCII"
-permalink: kb/166/Q166518/
+permalink: /kb/166/Q166518/
 ---
 
 ## Q166518: XADM: New Public Folder Created by INS Defaults to US ASCII

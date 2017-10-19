@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87867: PC Win: Err Msg: The Application Could Not Be Executed"
-permalink: kb/087/Q87867/
+permalink: /kb/087/Q87867/
 ---
 
 ## Q87867: PC Win: Err Msg: The Application Could Not Be Executed

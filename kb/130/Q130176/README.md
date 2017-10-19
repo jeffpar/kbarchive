@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130176: Project versus File Labeling in SourceSafe"
-permalink: kb/130/Q130176/
+permalink: /kb/130/Q130176/
 ---
 
 ## Q130176: Project versus File Labeling in SourceSafe

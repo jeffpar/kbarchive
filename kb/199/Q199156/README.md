@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199156: PRB: DAO Field Object Assignment Slows as Field Count Increases"
-permalink: kb/199/Q199156/
+permalink: /kb/199/Q199156/
 ---
 
 ## Q199156: PRB: DAO Field Object Assignment Slows as Field Count Increases

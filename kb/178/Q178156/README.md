@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178156: XCLN: How to Change the Default Directory Location"
-permalink: kb/178/Q178156/
+permalink: /kb/178/Q178156/
 ---
 
 ## Q178156: XCLN: How to Change the Default Directory Location

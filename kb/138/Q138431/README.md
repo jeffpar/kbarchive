@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138431: System Policy Custom Desktop Icons Not Downloaded"
-permalink: kb/138/Q138431/
+permalink: /kb/138/Q138431/
 ---
 
 ## Q138431: System Policy Custom Desktop Icons Not Downloaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190878: HOWTO: Get Visual FoxPro Options Registry Settings"
-permalink: kb/190/Q190878/
+permalink: /kb/190/Q190878/
 ---
 
 ## Q190878: HOWTO: Get Visual FoxPro Options Registry Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48879: Mac Adm: Blank Space User Names Not Allowed"
-permalink: kb/048/Q48879/
+permalink: /kb/048/Q48879/
 ---
 
 ## Q48879: Mac Adm: Blank Space User Names Not Allowed

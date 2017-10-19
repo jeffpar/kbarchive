@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166750: ARP Cache Entries May Not Time Out for 10 Minutes"
-permalink: kb/166/Q166750/
+permalink: /kb/166/Q166750/
 ---
 
 ## Q166750: ARP Cache Entries May Not Time Out for 10 Minutes

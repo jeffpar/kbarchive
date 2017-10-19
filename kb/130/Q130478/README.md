@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130478: Reconcile Feature Fixes Inconsistent IP Addresses"
-permalink: kb/130/Q130478/
+permalink: /kb/130/Q130478/
 ---
 
 ## Q130478: Reconcile Feature Fixes Inconsistent IP Addresses

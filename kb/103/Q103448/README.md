@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103448: PC Win: Folder Names Limited to 127 Characters"
-permalink: kb/103/Q103448/
+permalink: /kb/103/Q103448/
 ---
 
 ## Q103448: PC Win: Folder Names Limited to 127 Characters

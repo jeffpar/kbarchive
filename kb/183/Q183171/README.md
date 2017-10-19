@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183171: XADM: Internet Mail Service Error with 5.5 Added to Site"
-permalink: kb/183/Q183171/
+permalink: /kb/183/Q183171/
 ---
 
 ## Q183171: XADM: Internet Mail Service Error with 5.5 Added to Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141379: Using SCSI CD-ROM Recorders with Windows NT"
-permalink: kb/141/Q141379/
+permalink: /kb/141/Q141379/
 ---
 
 ## Q141379: Using SCSI CD-ROM Recorders with Windows NT

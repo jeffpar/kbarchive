@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231655: FIX: VC++ Crashes Opening Files or Adding Files to Projects"
-permalink: kb/231/Q231655/
+permalink: /kb/231/Q231655/
 ---
 
 ## Q231655: FIX: VC++ Crashes Opening Files or Adding Files to Projects

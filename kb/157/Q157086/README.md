@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157086: WD97: Limitations of Converting from Word Format to HTML"
-permalink: kb/157/Q157086/
+permalink: /kb/157/Q157086/
 ---
 
 ## Q157086: WD97: Limitations of Converting from Word Format to HTML

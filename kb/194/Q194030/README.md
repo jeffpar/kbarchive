@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194030: XCLN: MS Exchange Server 5.5 Service Pack 1 Incorrect CD Key"
-permalink: kb/194/Q194030/
+permalink: /kb/194/Q194030/
 ---
 
 ## Q194030: XCLN: MS Exchange Server 5.5 Service Pack 1 Incorrect CD Key

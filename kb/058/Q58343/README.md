@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58343: Windows 3.0 SYSTEM.INI [nonwindowsapp] Section"
-permalink: kb/058/Q58343/
+title: "Q58343: Windows 3.0 SYSTEM.INI &#91;nonwindowsapp&#93; Section"
+permalink: /kb/058/Q58343/
 ---
 
-## Q58343: Windows 3.0 SYSTEM.INI [nonwindowsapp] Section
+## Q58343: Windows 3.0 SYSTEM.INI &#91;nonwindowsapp&#93; Section
 
 	Article: Q58343
 	Product(s): Microsoft Windows 95.x Retail Product

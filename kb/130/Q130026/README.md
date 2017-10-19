@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130026: Best of Windows Entertainment Pack: Listing of Games"
-permalink: kb/130/Q130026/
+permalink: /kb/130/Q130026/
 ---
 
 ## Q130026: Best of Windows Entertainment Pack: Listing of Games

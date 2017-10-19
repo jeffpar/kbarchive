@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148169: HP LaserJet 5Si Printer Property Changes Affect All Programs"
-permalink: kb/148/Q148169/
+permalink: /kb/148/Q148169/
 ---
 
 ## Q148169: HP LaserJet 5Si Printer Property Changes Affect All Programs

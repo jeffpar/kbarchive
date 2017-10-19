@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175667: Error Message: Copy Profile Error"
-permalink: kb/175/Q175667/
+permalink: /kb/175/Q175667/
 ---
 
 ## Q175667: Error Message: Copy Profile Error

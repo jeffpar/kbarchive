@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128494: File Filter Can Exclude Only Registered File Types"
-permalink: kb/128/Q128494/
+permalink: /kb/128/Q128494/
 ---
 
 ## Q128494: File Filter Can Exclude Only Registered File Types

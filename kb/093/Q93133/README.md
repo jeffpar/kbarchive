@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93133: PC DOS: Advanced Security on NetWare MS-DOS Client"
-permalink: kb/093/Q93133/
+permalink: /kb/093/Q93133/
 ---
 
 ## Q93133: PC DOS: Advanced Security on NetWare MS-DOS Client

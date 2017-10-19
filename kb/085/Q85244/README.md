@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85244: Windows 3.1 Setup: Pressing ESC Causes File to Be Skipped"
-permalink: kb/085/Q85244/
+permalink: /kb/085/Q85244/
 ---
 
 ## Q85244: Windows 3.1 Setup: Pressing ESC Causes File to Be Skipped

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188651: XADM: Public Folder Deletion Causes One Replication Message"
-permalink: kb/188/Q188651/
+permalink: /kb/188/Q188651/
 ---
 
 ## Q188651: XADM: Public Folder Deletion Causes One Replication Message

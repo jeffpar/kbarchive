@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140959: XADM: Incorrect Buffering of X.121 Address for X.25"
-permalink: kb/140/Q140959/
+permalink: /kb/140/Q140959/
 ---
 
 ## Q140959: XADM: Incorrect Buffering of X.121 Address for X.25

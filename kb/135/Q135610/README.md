@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135610: How to Use the MoverLists Object Class with a Table Field"
-permalink: kb/135/Q135610/
+permalink: /kb/135/Q135610/
 ---
 
 ## Q135610: How to Use the MoverLists Object Class with a Table Field

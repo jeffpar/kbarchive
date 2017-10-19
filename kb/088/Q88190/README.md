@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88190: PRB: DLL System Hook Function Not Affecting Apps System-Wide"
-permalink: kb/088/Q88190/
+permalink: /kb/088/Q88190/
 ---
 
 ## Q88190: PRB: DLL System Hook Function Not Affecting Apps System-Wide

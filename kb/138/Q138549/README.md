@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138549: FTP Server Fails to Open New Daily Log"
-permalink: kb/138/Q138549/
+permalink: /kb/138/Q138549/
 ---
 
 ## Q138549: FTP Server Fails to Open New Daily Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303979: Importing Netscape 4.77 &amp; 6.X Bookmarks into Internet Explorer 5"
-permalink: kb/303/Q303979/
+permalink: /kb/303/Q303979/
 ---
 
 ## Q303979: Importing Netscape 4.77 &amp; 6.X Bookmarks into Internet Explorer 5

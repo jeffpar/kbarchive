@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157157: STL Sample for the heap Functions"
-permalink: kb/157/Q157157/
+permalink: /kb/157/Q157157/
 ---
 
 ## Q157157: STL Sample for the heap Functions

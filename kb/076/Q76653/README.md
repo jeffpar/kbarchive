@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76653: Flight Simulator: Scenery Disks for Versions 1.0 and 4.0"
-permalink: kb/076/Q76653/
+permalink: /kb/076/Q76653/
 ---
 
 ## Q76653: Flight Simulator: Scenery Disks for Versions 1.0 and 4.0

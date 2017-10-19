@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70991: WD97: Auto Macros in Word"
-permalink: kb/070/Q70991/
+permalink: /kb/070/Q70991/
 ---
 
 ## Q70991: WD97: Auto Macros in Word

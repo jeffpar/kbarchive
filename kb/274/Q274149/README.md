@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274149: Cookies Are Not Marked as Secure in IIS"
-permalink: kb/274/Q274149/
+permalink: /kb/274/Q274149/
 ---
 
 ## Q274149: Cookies Are Not Marked as Secure in IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148385: IFMEMBER.EXE Fails If User Is Member of More Than 15 Groups"
-permalink: kb/148/Q148385/
+permalink: /kb/148/Q148385/
 ---
 
 ## Q148385: IFMEMBER.EXE Fails If User Is Member of More Than 15 Groups

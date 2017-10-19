@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189262: FTP Passive Mode May Terminate Session"
-permalink: kb/189/Q189262/
+permalink: /kb/189/Q189262/
 ---
 
 ## Q189262: FTP Passive Mode May Terminate Session

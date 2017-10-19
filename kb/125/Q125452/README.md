@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125452: Using the SMS Tracer Utility"
-permalink: kb/125/Q125452/
+permalink: /kb/125/Q125452/
 ---
 
 ## Q125452: Using the SMS Tracer Utility

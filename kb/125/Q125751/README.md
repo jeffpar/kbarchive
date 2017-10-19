@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125751: AUDIT16.EXE Fails on OS/2 Client Computers"
-permalink: kb/125/Q125751/
+permalink: /kb/125/Q125751/
 ---
 
 ## Q125751: AUDIT16.EXE Fails on OS/2 Client Computers

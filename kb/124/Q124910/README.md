@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124910: Using Ontrack Disk Manager to Support Large IDE Drives"
-permalink: kb/124/Q124910/
+permalink: /kb/124/Q124910/
 ---
 
 ## Q124910: Using Ontrack Disk Manager to Support Large IDE Drives

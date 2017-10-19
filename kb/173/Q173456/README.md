@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173456: WD97: Error with Dutch, French, German, or Spanish Grammar Check"
-permalink: kb/173/Q173456/
+permalink: /kb/173/Q173456/
 ---
 
 ## Q173456: WD97: Error with Dutch, French, German, or Spanish Grammar Check

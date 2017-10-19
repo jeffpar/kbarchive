@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253647: SMS: Logon Server Manager Does Not Remove Non-Existent Domain"
-permalink: kb/253/Q253647/
+permalink: /kb/253/Q253647/
 ---
 
 ## Q253647: SMS: Logon Server Manager Does Not Remove Non-Existent Domain

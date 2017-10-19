@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244506: XCLN: Error Message: Directory Change Failed. Defaulting to ..."
-permalink: kb/244/Q244506/
+permalink: /kb/244/Q244506/
 ---
 
 ## Q244506: XCLN: Error Message: Directory Change Failed. Defaulting to ...

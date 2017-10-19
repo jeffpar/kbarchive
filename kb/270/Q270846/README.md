@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270846: Microsoft Reader: Minimum System Requirements for Windows"
-permalink: kb/270/Q270846/
+permalink: /kb/270/Q270846/
 ---
 
 ## Q270846: Microsoft Reader: Minimum System Requirements for Windows

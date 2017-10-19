@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171484: FIX: Code Module Window Displayed Transparently in SDI"
-permalink: kb/171/Q171484/
+permalink: /kb/171/Q171484/
 ---
 
 ## Q171484: FIX: Code Module Window Displayed Transparently in SDI

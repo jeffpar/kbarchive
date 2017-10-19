@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143185: Internet Information Server Performance Monitor Counters"
-permalink: kb/143/Q143185/
+permalink: /kb/143/Q143185/
 ---
 
 ## Q143185: Internet Information Server Performance Monitor Counters

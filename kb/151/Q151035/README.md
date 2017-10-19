@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151035: Encarta 96-97: Minimize Pinpointer Preference Not Functioning"
-permalink: kb/151/Q151035/
+permalink: /kb/151/Q151035/
 ---
 
 ## Q151035: Encarta 96-97: Minimize Pinpointer Preference Not Functioning

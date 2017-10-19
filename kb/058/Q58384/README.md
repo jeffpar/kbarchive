@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58384: Known Problems with Windows Solitaire"
-permalink: kb/058/Q58384/
+permalink: /kb/058/Q58384/
 ---
 
 ## Q58384: Known Problems with Windows Solitaire

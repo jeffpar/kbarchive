@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82774: Why Does Setup add STACKS=9,256 to the CONFIG.SYS File?"
-permalink: kb/082/Q82774/
+permalink: /kb/082/Q82774/
 ---
 
 ## Q82774: Why Does Setup add STACKS=9,256 to the CONFIG.SYS File?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121799: PC Win: MS Word Attachments Open Multiple Copies of Program"
-permalink: kb/121/Q121799/
+permalink: /kb/121/Q121799/
 ---
 
 ## Q121799: PC Win: MS Word Attachments Open Multiple Copies of Program

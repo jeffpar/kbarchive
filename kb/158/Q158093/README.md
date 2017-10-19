@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158093: GEX: Game Crashes if Compact Disc Is Removed"
-permalink: kb/158/Q158093/
+permalink: /kb/158/Q158093/
 ---
 
 ## Q158093: GEX: Game Crashes if Compact Disc Is Removed

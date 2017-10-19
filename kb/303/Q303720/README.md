@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303720: Access Violation Occurs in Messenger Service During Shutdown"
-permalink: kb/303/Q303720/
+permalink: /kb/303/Q303720/
 ---
 
 ## Q303720: Access Violation Occurs in Messenger Service During Shutdown

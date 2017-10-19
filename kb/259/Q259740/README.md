@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259740: SMS: Remote Control Prompts for User's Credentials"
-permalink: kb/259/Q259740/
+permalink: /kb/259/Q259740/
 ---
 
 ## Q259740: SMS: Remote Control Prompts for User's Credentials

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76582: PRB: Reset A20 Bit Set During DPMI Simulate Interrupt Crash"
-permalink: kb/076/Q76582/
+permalink: /kb/076/Q76582/
 ---
 
 ## Q76582: PRB: Reset A20 Bit Set During DPMI Simulate Interrupt Crash

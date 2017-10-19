@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128212: PRB: Error LNK2001 Generated When Porting 16-bit Code to Win32"
-permalink: kb/128/Q128212/
+permalink: /kb/128/Q128212/
 ---
 
 ## Q128212: PRB: Error LNK2001 Generated When Porting 16-bit Code to Win32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216547: BUG: Err.Raise 40040 Stores the Err.Number as 440"
-permalink: kb/216/Q216547/
+permalink: /kb/216/Q216547/
 ---
 
 ## Q216547: BUG: Err.Raise 40040 Stores the Err.Number as 440

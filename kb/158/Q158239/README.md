@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158239: BUG: VCX Corrupted by Saving Two Classes with the Same Name"
-permalink: kb/158/Q158239/
+permalink: /kb/158/Q158239/
 ---
 
 ## Q158239: BUG: VCX Corrupted by Saving Two Classes with the Same Name

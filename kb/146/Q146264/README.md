@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146264: XFOR: Clarification of the IMC Maximum Message Size"
-permalink: kb/146/Q146264/
+permalink: /kb/146/Q146264/
 ---
 
 ## Q146264: XFOR: Clarification of the IMC Maximum Message Size

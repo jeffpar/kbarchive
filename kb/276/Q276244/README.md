@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276244: Microsoft Casino: Minimum System Requirements"
-permalink: kb/276/Q276244/
+permalink: /kb/276/Q276244/
 ---
 
 ## Q276244: Microsoft Casino: Minimum System Requirements

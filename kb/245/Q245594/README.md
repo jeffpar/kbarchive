@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245594: How to Reinstall BackOffice 4.5 Suite Components"
-permalink: kb/245/Q245594/
+permalink: /kb/245/Q245594/
 ---
 
 ## Q245594: How to Reinstall BackOffice 4.5 Suite Components

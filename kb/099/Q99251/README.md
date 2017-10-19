@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99251: FILE: VBRUN300.EXE Resolves GP Fault in KRNL286"
-permalink: kb/099/Q99251/
+permalink: /kb/099/Q99251/
 ---
 
 ## Q99251: FILE: VBRUN300.EXE Resolves GP Fault in KRNL286

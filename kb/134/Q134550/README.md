@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134550: No Sound in MS-DOS-Based Programs with Gravis Ultrasound Card"
-permalink: kb/134/Q134550/
+permalink: /kb/134/Q134550/
 ---
 
 ## Q134550: No Sound in MS-DOS-Based Programs with Gravis Ultrasound Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170890: WD97: Macro to Send a Word Document as Text or an Attachment"
-permalink: kb/170/Q170890/
+permalink: /kb/170/Q170890/
 ---
 
 ## Q170890: WD97: Macro to Send a Word Document as Text or an Attachment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272286: Redirection Variable Fails When You Use a POST Method"
-permalink: kb/272/Q272286/
+permalink: /kb/272/Q272286/
 ---
 
 ## Q272286: Redirection Variable Fails When You Use a POST Method

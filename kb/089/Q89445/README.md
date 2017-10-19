@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89445: INFO: Causes for Failure of DC-Creation Functions"
-permalink: kb/089/Q89445/
+permalink: /kb/089/Q89445/
 ---
 
 ## Q89445: INFO: Causes for Failure of DC-Creation Functions

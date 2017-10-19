@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166047: Fatal Exception Error Running Add New Hardware Wizard"
-permalink: kb/166/Q166047/
+permalink: /kb/166/Q166047/
 ---
 
 ## Q166047: Fatal Exception Error Running Add New Hardware Wizard

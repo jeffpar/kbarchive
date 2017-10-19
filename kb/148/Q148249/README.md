@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148249: DOC: Help File Example for SELECT SQL UNION Does Not Work"
-permalink: kb/148/Q148249/
+permalink: /kb/148/Q148249/
 ---
 
 ## Q148249: DOC: Help File Example for SELECT SQL UNION Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44816: PRB: printf() Appears to Print Incorrect Results for Floats"
-permalink: kb/044/Q44816/
+permalink: /kb/044/Q44816/
 ---
 
 ## Q44816: PRB: printf() Appears to Print Incorrect Results for Floats

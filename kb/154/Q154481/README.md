@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154481: XGEN: README.TXT: Microsoft Exchange 5.0 U.S. Service Pack 1"
-permalink: kb/154/Q154481/
+permalink: /kb/154/Q154481/
 ---
 
 ## Q154481: XGEN: README.TXT: Microsoft Exchange 5.0 U.S. Service Pack 1

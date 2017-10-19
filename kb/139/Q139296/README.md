@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139296: BUG: C2955 Error Generated If Using Same Name as Template"
-permalink: kb/139/Q139296/
+permalink: /kb/139/Q139296/
 ---
 
 ## Q139296: BUG: C2955 Error Generated If Using Same Name as Template

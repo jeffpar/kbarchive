@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110882: GP Fault in WINLOGON.EXE"
-permalink: kb/110/Q110882/
+permalink: /kb/110/Q110882/
 ---
 
 ## Q110882: GP Fault in WINLOGON.EXE

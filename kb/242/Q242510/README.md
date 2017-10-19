@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242510: Calling SetEntriesInAcl() Function Generates Error Message 87"
-permalink: kb/242/Q242510/
+permalink: /kb/242/Q242510/
 ---
 
 ## Q242510: Calling SetEntriesInAcl() Function Generates Error Message 87

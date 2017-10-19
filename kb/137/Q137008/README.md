@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137008: Setup Must Write to Disk 2 During First Install"
-permalink: kb/137/Q137008/
+permalink: /kb/137/Q137008/
 ---
 
 ## Q137008: Setup Must Write to Disk 2 During First Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246009: Windows NT 4.0 Service Pack 6a Available"
-permalink: kb/246/Q246009/
+permalink: /kb/246/Q246009/
 ---
 
 ## Q246009: Windows NT 4.0 Service Pack 6a Available

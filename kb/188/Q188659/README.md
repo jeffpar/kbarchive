@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188659: HOWTO: Use a Satellite DLL for Localization Purposes"
-permalink: kb/188/Q188659/
+permalink: /kb/188/Q188659/
 ---
 
 ## Q188659: HOWTO: Use a Satellite DLL for Localization Purposes

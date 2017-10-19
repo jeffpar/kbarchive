@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159266: Error Message at Boot with Ositech Trumpcard Ethernet Adapter"
-permalink: kb/159/Q159266/
+permalink: /kb/159/Q159266/
 ---
 
 ## Q159266: Error Message at Boot with Ositech Trumpcard Ethernet Adapter

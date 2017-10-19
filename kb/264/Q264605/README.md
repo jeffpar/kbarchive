@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264605: StarLancer: Cannot Fire Rear-Facing Weapons"
-permalink: kb/264/Q264605/
+permalink: /kb/264/Q264605/
 ---
 
 ## Q264605: StarLancer: Cannot Fire Rear-Facing Weapons

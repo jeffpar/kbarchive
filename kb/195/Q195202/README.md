@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195202: WD97: Err Msg: &quot;Word Could Not Merge the Main Document...&quot;"
-permalink: kb/195/Q195202/
+permalink: /kb/195/Q195202/
 ---
 
 ## Q195202: WD97: Err Msg: &quot;Word Could Not Merge the Main Document...&quot;

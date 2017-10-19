@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159193: XCON: MTA Terminates Unexpectedly with Event ID 9405"
-permalink: kb/159/Q159193/
+permalink: /kb/159/Q159193/
 ---
 
 ## Q159193: XCON: MTA Terminates Unexpectedly with Event ID 9405

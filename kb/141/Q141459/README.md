@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141459: PRB: Can't Export from Static Libraries w/_declspec(dllexport)"
-permalink: kb/141/Q141459/
+permalink: /kb/141/Q141459/
 ---
 
 ## Q141459: PRB: Can't Export from Static Libraries w/_declspec(dllexport)

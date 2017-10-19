@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82564: WingZ Help During Install Does Not Respond"
-permalink: kb/082/Q82564/
+permalink: /kb/082/Q82564/
 ---
 
 ## Q82564: WingZ Help During Install Does Not Respond

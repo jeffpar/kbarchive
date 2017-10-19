@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135966: &quot;A DLL Initialization Routine Failed&quot; Setting Up MS Plus!"
-permalink: kb/135/Q135966/
+permalink: /kb/135/Q135966/
 ---
 
 ## Q135966: &quot;A DLL Initialization Routine Failed&quot; Setting Up MS Plus!

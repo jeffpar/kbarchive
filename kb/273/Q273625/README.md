@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273625: Midtown Madness 2: How to Troubleshoot Video Problems"
-permalink: kb/273/Q273625/
+permalink: /kb/273/Q273625/
 ---
 
 ## Q273625: Midtown Madness 2: How to Troubleshoot Video Problems

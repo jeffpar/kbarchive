@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309647: Combat Flight Sim 2: Game Stops Responding or Sound Is Distorted"
-permalink: kb/309/Q309647/
+permalink: /kb/309/Q309647/
 ---
 
 ## Q309647: Combat Flight Sim 2: Game Stops Responding or Sound Is Distorted

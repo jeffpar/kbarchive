@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248611: Setsockopt Is Unable to Mark the Internet Protocol Type of Servi"
-permalink: kb/248/Q248611/
+permalink: /kb/248/Q248611/
 ---
 
 ## Q248611: Setsockopt Is Unable to Mark the Internet Protocol Type of Servi

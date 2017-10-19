@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133752: Streets 4.0: Road Atlas Demo Will Not Run On Windows NT"
-permalink: kb/133/Q133752/
+permalink: /kb/133/Q133752/
 ---
 
 ## Q133752: Streets 4.0: Road Atlas Demo Will Not Run On Windows NT

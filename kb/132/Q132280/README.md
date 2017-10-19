@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132280: Writer/Artist: DocErr: Control Room Access is Incorrect"
-permalink: kb/132/Q132280/
+permalink: /kb/132/Q132280/
 ---
 
 ## Q132280: Writer/Artist: DocErr: Control Room Access is Incorrect

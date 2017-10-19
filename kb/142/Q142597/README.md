@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142597: TCP/IP Required for LAN or Third-Party Internet Connection"
-permalink: kb/142/Q142597/
+permalink: /kb/142/Q142597/
 ---
 
 ## Q142597: TCP/IP Required for LAN or Third-Party Internet Connection

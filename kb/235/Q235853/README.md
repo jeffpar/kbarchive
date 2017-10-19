@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235853: XWEB: MAPI Message Property PR_PRIORITY Is Not Created with CDO"
-permalink: kb/235/Q235853/
+permalink: /kb/235/Q235853/
 ---
 
 ## Q235853: XWEB: MAPI Message Property PR_PRIORITY Is Not Created with CDO

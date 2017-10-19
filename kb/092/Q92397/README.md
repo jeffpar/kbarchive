@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92397: Bernoulli Drives and Windows"
-permalink: kb/092/Q92397/
+permalink: /kb/092/Q92397/
 ---
 
 ## Q92397: Bernoulli Drives and Windows

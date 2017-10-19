@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154829: PRB: Rights by Project Are Not Always Inherited"
-permalink: kb/154/Q154829/
+permalink: /kb/154/Q154829/
 ---
 
 ## Q154829: PRB: Rights by Project Are Not Always Inherited

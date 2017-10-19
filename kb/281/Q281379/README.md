@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281379: Cannot Define New Inbox Assistant Rules w. Outlook for Macintosh"
-permalink: kb/281/Q281379/
+permalink: /kb/281/Q281379/
 ---
 
 ## Q281379: Cannot Define New Inbox Assistant Rules w. Outlook for Macintosh

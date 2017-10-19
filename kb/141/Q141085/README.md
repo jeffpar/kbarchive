@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141085: HARDCORE VISUAL BASIC: Corrections and Comments"
-permalink: kb/141/Q141085/
+permalink: /kb/141/Q141085/
 ---
 
 ## Q141085: HARDCORE VISUAL BASIC: Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153398: FIX: Namespace and Typedef Cause C1001:'msc1.cpp',line 1090"
-permalink: kb/153/Q153398/
+permalink: /kb/153/Q153398/
 ---
 
 ## Q153398: FIX: Namespace and Typedef Cause C1001:'msc1.cpp',line 1090

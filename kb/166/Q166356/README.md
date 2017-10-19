@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166356: FP: How to Create a New Web in Microsoft FrontPage"
-permalink: kb/166/Q166356/
+permalink: /kb/166/Q166356/
 ---
 
 ## Q166356: FP: How to Create a New Web in Microsoft FrontPage

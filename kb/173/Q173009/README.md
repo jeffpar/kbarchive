@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173009: FIX: Run-Time Error 87 Using RegEnumValue Function"
-permalink: kb/173/Q173009/
+permalink: /kb/173/Q173009/
 ---
 
 ## Q173009: FIX: Run-Time Error 87 Using RegEnumValue Function

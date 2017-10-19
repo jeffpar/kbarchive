@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166991: OS/2 Error 1588444941 When Starting OS/2 App as a Service"
-permalink: kb/166/Q166991/
+permalink: /kb/166/Q166991/
 ---
 
 ## Q166991: OS/2 Error 1588444941 When Starting OS/2 App as a Service

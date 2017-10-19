@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216829: How to Write a Client Authentication Certificate to a File"
-permalink: kb/216/Q216829/
+permalink: /kb/216/Q216829/
 ---
 
 ## Q216829: How to Write a Client Authentication Certificate to a File

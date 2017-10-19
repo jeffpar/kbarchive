@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177766: Remove All Leaves Exchange Keys In Registry"
-permalink: kb/177/Q177766/
+permalink: /kb/177/Q177766/
 ---
 
 ## Q177766: Remove All Leaves Exchange Keys In Registry

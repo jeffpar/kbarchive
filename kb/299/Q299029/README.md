@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299029: XCLN: &quot;404 File Not Found&quot; Error Trying to Gain Access to Logon"
-permalink: kb/299/Q299029/
+permalink: /kb/299/Q299029/
 ---
 
 ## Q299029: XCLN: &quot;404 File Not Found&quot; Error Trying to Gain Access to Logon

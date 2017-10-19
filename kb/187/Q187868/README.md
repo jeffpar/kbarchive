@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187868: XADM: Downloading Messages Using Outlook Express Crashes Store"
-permalink: kb/187/Q187868/
+permalink: /kb/187/Q187868/
 ---
 
 ## Q187868: XADM: Downloading Messages Using Outlook Express Crashes Store

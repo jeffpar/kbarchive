@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31810: Writing Faster Macro Assembler Programs"
-permalink: kb/031/Q31810/
+permalink: /kb/031/Q31810/
 ---
 
 ## Q31810: Writing Faster Macro Assembler Programs

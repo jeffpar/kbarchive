@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196389: STOP 0x0000000A or STOP 0x00000050 in NTOSKRNL.EXE"
-permalink: kb/196/Q196389/
+permalink: /kb/196/Q196389/
 ---
 
 ## Q196389: STOP 0x0000000A or STOP 0x00000050 in NTOSKRNL.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174063: WD97: Data in Wrong Cell After Being Pasted from Table to Graph"
-permalink: kb/174/Q174063/
+permalink: /kb/174/Q174063/
 ---
 
 ## Q174063: WD97: Data in Wrong Cell After Being Pasted from Table to Graph

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267925: PRB: Opening Binary File for Input Returns Only One Character"
-permalink: kb/267/Q267925/
+permalink: /kb/267/Q267925/
 ---
 
 ## Q267925: PRB: Opening Binary File for Input Returns Only One Character

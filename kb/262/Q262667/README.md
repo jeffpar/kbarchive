@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262667: FIX: Wrong Result Using RtlMoveMemory to Copy Nested UDT"
-permalink: kb/262/Q262667/
+permalink: /kb/262/Q262667/
 ---
 
 ## Q262667: FIX: Wrong Result Using RtlMoveMemory to Copy Nested UDT

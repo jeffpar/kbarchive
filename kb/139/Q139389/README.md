@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139389: How to Read OLE Type Library Information in Visual FoxPro"
-permalink: kb/139/Q139389/
+permalink: /kb/139/Q139389/
 ---
 
 ## Q139389: How to Read OLE Type Library Information in Visual FoxPro

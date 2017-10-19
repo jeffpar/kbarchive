@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176085: HOWTO: Use the System Tray Directly from Visual Basic"
-permalink: kb/176/Q176085/
+permalink: /kb/176/Q176085/
 ---
 
 ## Q176085: HOWTO: Use the System Tray Directly from Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87492: X400: Multiple Icons Sending Files Across X.400 Backbone"
-permalink: kb/087/Q87492/
+permalink: /kb/087/Q87492/
 ---
 
 ## Q87492: X400: Multiple Icons Sending Files Across X.400 Backbone

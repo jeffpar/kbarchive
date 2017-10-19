@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132973: FIX: OLE Automation After Loading Word Manually Gives GP Fault"
-permalink: kb/132/Q132973/
+permalink: /kb/132/Q132973/
 ---
 
 ## Q132973: FIX: OLE Automation After Loading Word Manually Gives GP Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138454: Using NetWare Utilities Without Making a Drive Connection"
-permalink: kb/138/Q138454/
+permalink: /kb/138/Q138454/
 ---
 
 ## Q138454: Using NetWare Utilities Without Making a Drive Connection

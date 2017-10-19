@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111579: BUG: Rotated TrueType Font Repaints Many Times"
-permalink: kb/111/Q111579/
+permalink: /kb/111/Q111579/
 ---
 
 ## Q111579: BUG: Rotated TrueType Font Repaints Many Times

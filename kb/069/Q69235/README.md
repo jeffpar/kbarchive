@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69235: Mac Srv: Err Msg: ...Mail Server Could Not Be Loaded..."
-permalink: kb/069/Q69235/
+permalink: /kb/069/Q69235/
 ---
 
 ## Q69235: Mac Srv: Err Msg: ...Mail Server Could Not Be Loaded...

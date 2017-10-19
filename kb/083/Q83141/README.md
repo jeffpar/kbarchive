@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83141: SMARTDrive May Be Required to Use EMM386.SYS or EMM386.EXE"
-permalink: kb/083/Q83141/
+permalink: /kb/083/Q83141/
 ---
 
 ## Q83141: SMARTDrive May Be Required to Use EMM386.SYS or EMM386.EXE

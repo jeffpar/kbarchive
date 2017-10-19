@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104134: PC Win: Send Mail Command Doesn't Support Extended Characters"
-permalink: kb/104/Q104134/
+permalink: /kb/104/Q104134/
 ---
 
 ## Q104134: PC Win: Send Mail Command Doesn't Support Extended Characters

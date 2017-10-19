@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224977: XADM: Store Fails to Start: 4294965882, FFFFFA7A, Event 177,..."
-permalink: kb/224/Q224977/
+permalink: /kb/224/Q224977/
 ---
 
 ## Q224977: XADM: Store Fails to Start: 4294965882, FFFFFA7A, Event 177,...

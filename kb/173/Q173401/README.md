@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173401: Netscape Navigator Starts When You View Internet Newsgroups"
-permalink: kb/173/Q173401/
+permalink: /kb/173/Q173401/
 ---
 
 ## Q173401: Netscape Navigator Starts When You View Internet Newsgroups

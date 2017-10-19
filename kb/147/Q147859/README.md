@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147859: ErrMsg: NET PRINT May Cause Internal Error"
-permalink: kb/147/Q147859/
+permalink: /kb/147/Q147859/
 ---
 
 ## Q147859: ErrMsg: NET PRINT May Cause Internal Error

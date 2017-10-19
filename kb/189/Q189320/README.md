@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189320: Persistent Dial on Demand Connection Fails After 20 Minutes"
-permalink: kb/189/Q189320/
+permalink: /kb/189/Q189320/
 ---
 
 ## Q189320: Persistent Dial on Demand Connection Fails After 20 Minutes

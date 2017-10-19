@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50210: Flt Sim: Plane Position Shifts 2 Degrees per Minute"
-permalink: kb/050/Q50210/
+permalink: /kb/050/Q50210/
 ---
 
 ## Q50210: Flt Sim: Plane Position Shifts 2 Degrees per Minute

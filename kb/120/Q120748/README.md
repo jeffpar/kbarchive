@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120748: Math Rabbit Fails with a General Protection Fault in Windows NT"
-permalink: kb/120/Q120748/
+permalink: /kb/120/Q120748/
 ---
 
 ## Q120748: Math Rabbit Fails with a General Protection Fault in Windows NT

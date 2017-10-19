@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197991: How to Configure WLBS Using Multiple Network Interface Cards"
-permalink: kb/197/Q197991/
+permalink: /kb/197/Q197991/
 ---
 
 ## Q197991: How to Configure WLBS Using Multiple Network Interface Cards

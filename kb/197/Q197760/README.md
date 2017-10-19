@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197760: WD97: Vertical Cell Alignment Lost Pasting to Word for Windows"
-permalink: kb/197/Q197760/
+permalink: /kb/197/Q197760/
 ---
 
 ## Q197760: WD97: Vertical Cell Alignment Lost Pasting to Word for Windows

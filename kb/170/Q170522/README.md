@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170522: Old Firmware on Tape Drives Can Cause Tape Device Errors"
-permalink: kb/170/Q170522/
+permalink: /kb/170/Q170522/
 ---
 
 ## Q170522: Old Firmware on Tape Drives Can Cause Tape Device Errors

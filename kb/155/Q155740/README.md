@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155740: .avi File Hangs When Played with MIDI on Alpha Computer"
-permalink: kb/155/Q155740/
+permalink: /kb/155/Q155740/
 ---
 
 ## Q155740: .avi File Hangs When Played with MIDI on Alpha Computer

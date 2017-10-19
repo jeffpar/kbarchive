@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260649: Error Message When You Use WebDav to Copy a Large File"
-permalink: kb/260/Q260649/
+permalink: /kb/260/Q260649/
 ---
 
 ## Q260649: Error Message When You Use WebDav to Copy a Large File

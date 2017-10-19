@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184114: WD97: Table of Contents Loses Character Formatting"
-permalink: kb/184/Q184114/
+permalink: /kb/184/Q184114/
 ---
 
 ## Q184114: WD97: Table of Contents Loses Character Formatting

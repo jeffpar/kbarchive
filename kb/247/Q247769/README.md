@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247769: XADM: Error 1067 Occurs When Starting Directory Service After Re"
-permalink: kb/247/Q247769/
+permalink: /kb/247/Q247769/
 ---
 
 ## Q247769: XADM: Error 1067 Occurs When Starting Directory Service After Re

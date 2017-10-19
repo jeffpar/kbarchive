@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150667: Mac Bookshelf 96-97: China's National Anthem Does Not Play"
-permalink: kb/150/Q150667/
+permalink: /kb/150/Q150667/
 ---
 
 ## Q150667: Mac Bookshelf 96-97: China's National Anthem Does Not Play

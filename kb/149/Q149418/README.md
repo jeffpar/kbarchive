@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149418: Problems with HP &quot;Fonts for the Family&quot; Font Package"
-permalink: kb/149/Q149418/
+permalink: /kb/149/Q149418/
 ---
 
 ## Q149418: Problems with HP &quot;Fonts for the Family&quot; Font Package

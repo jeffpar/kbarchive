@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81522: Manually Reconstructing Windows Productivity Pack Groups"
-permalink: kb/081/Q81522/
+permalink: /kb/081/Q81522/
 ---
 
 ## Q81522: Manually Reconstructing Windows Productivity Pack Groups

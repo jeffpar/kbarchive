@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160583: Windows NT 4.0 with More Than 4 Processors May Stall &amp; Reboot"
-permalink: kb/160/Q160583/
+permalink: /kb/160/Q160583/
 ---
 
 ## Q160583: Windows NT 4.0 with More Than 4 Processors May Stall &amp; Reboot

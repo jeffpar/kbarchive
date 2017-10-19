@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223075: FIX:GDI Resource Problem w/Many Forms and Intrinsic Data Control"
-permalink: kb/223/Q223075/
+permalink: /kb/223/Q223075/
 ---
 
 ## Q223075: FIX:GDI Resource Problem w/Many Forms and Intrinsic Data Control

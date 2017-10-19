@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84143: Windows 3.1 PRINT SCREEN May Fail in Low-Memory Situations"
-permalink: kb/084/Q84143/
+permalink: /kb/084/Q84143/
 ---
 
 ## Q84143: Windows 3.1 PRINT SCREEN May Fail in Low-Memory Situations

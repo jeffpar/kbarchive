@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180356: NWConv Fails to Apply Correct Group Permissions"
-permalink: kb/180/Q180356/
+permalink: /kb/180/Q180356/
 ---
 
 ## Q180356: NWConv Fails to Apply Correct Group Permissions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230755: Microsoft Commerce Solutions Comments and Corrections"
-permalink: kb/230/Q230755/
+permalink: /kb/230/Q230755/
 ---
 
 ## Q230755: Microsoft Commerce Solutions Comments and Corrections

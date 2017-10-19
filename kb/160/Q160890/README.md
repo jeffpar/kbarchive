@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160890: Errors in HyperTerminal with No Service Provider Installed"
-permalink: kb/160/Q160890/
+permalink: /kb/160/Q160890/
 ---
 
 ## Q160890: Errors in HyperTerminal with No Service Provider Installed

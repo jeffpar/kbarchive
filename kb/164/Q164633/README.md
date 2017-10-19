@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164633: SNA Server Issues with DBCS 3270 Printing."
-permalink: kb/164/Q164633/
+permalink: /kb/164/Q164633/
 ---
 
 ## Q164633: SNA Server Issues with DBCS 3270 Printing.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303108: MechWarrior 4: Err Msg: EXCEPTION Stack Overflow or File Not..."
-permalink: kb/303/Q303108/
+permalink: /kb/303/Q303108/
 ---
 
 ## Q303108: MechWarrior 4: Err Msg: EXCEPTION Stack Overflow or File Not...

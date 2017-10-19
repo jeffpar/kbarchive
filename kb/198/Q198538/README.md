@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198538: DocMgrEx.exe Assoc Multiple File Extensions w/1 Doc Type"
-permalink: kb/198/Q198538/
+permalink: /kb/198/Q198538/
 ---
 
 ## Q198538: DocMgrEx.exe Assoc Multiple File Extensions w/1 Doc Type

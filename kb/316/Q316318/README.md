@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316318: HOWTO: Use NetQueryDisplayInformation() in Visual Basic"
-permalink: kb/316/Q316318/
+permalink: /kb/316/Q316318/
 ---
 
 ## Q316318: HOWTO: Use NetQueryDisplayInformation() in Visual Basic

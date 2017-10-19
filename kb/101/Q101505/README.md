@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101505: Macintosh Users Logon Only as Guest, Not Registered User"
-permalink: kb/101/Q101505/
+permalink: /kb/101/Q101505/
 ---
 
 ## Q101505: Macintosh Users Logon Only as Guest, Not Registered User

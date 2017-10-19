@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136784: PC WRmt: Err Msg: Error in Converting RNETWORK.GLB"
-permalink: kb/136/Q136784/
+permalink: /kb/136/Q136784/
 ---
 
 ## Q136784: PC WRmt: Err Msg: Error in Converting RNETWORK.GLB

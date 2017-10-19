@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163734: WD97: Word Solution Migration Information on the Web"
-permalink: kb/163/Q163734/
+permalink: /kb/163/Q163734/
 ---
 
 ## Q163734: WD97: Word Solution Migration Information on the Web

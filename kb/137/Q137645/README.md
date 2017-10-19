@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137645: Cannot Back Up Mapped Banyan Drives"
-permalink: kb/137/Q137645/
+permalink: /kb/137/Q137645/
 ---
 
 ## Q137645: Cannot Back Up Mapped Banyan Drives

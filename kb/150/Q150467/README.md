@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150467: PRB: Modal Form Flickers When Exiting Form with DBGrid Control"
-permalink: kb/150/Q150467/
+permalink: /kb/150/Q150467/
 ---
 
 ## Q150467: PRB: Modal Form Flickers When Exiting Form with DBGrid Control

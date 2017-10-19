@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143030: RAS Clients Not Able to Connect to RAS Server's Network"
-permalink: kb/143/Q143030/
+permalink: /kb/143/Q143030/
 ---
 
 ## Q143030: RAS Clients Not Able to Connect to RAS Server's Network

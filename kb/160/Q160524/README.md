@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160524: Using the TELES S0 16.3 Bit ISDN Card with MSN"
-permalink: kb/160/Q160524/
+permalink: /kb/160/Q160524/
 ---
 
 ## Q160524: Using the TELES S0 16.3 Bit ISDN Card with MSN

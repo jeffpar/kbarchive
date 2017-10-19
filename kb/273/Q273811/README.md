@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273811: AoE II Expansion: The Conquerors: Minimum System Requirements"
-permalink: kb/273/Q273811/
+permalink: /kb/273/Q273811/
 ---
 
 ## Q273811: AoE II Expansion: The Conquerors: Minimum System Requirements

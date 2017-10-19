@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116486: FIX: Compiler May Generate Invalid Errors for Local Classes"
-permalink: kb/116/Q116486/
+permalink: /kb/116/Q116486/
 ---
 
 ## Q116486: FIX: Compiler May Generate Invalid Errors for Local Classes

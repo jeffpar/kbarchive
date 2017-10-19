@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32849: Switch Settings For Pure Data ARCNET Adapters"
-permalink: kb/032/Q32849/
+permalink: /kb/032/Q32849/
 ---
 
 ## Q32849: Switch Settings For Pure Data ARCNET Adapters

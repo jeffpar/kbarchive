@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11863: INFO: Printer Page Area in Windows"
-permalink: kb/011/Q11863/
+permalink: /kb/011/Q11863/
 ---
 
 ## Q11863: INFO: Printer Page Area in Windows

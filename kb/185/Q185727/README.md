@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185727: BUG: closesocket() Fails with 10038 After _open_osfhandle()"
-permalink: kb/185/Q185727/
+permalink: /kb/185/Q185727/
 ---
 
 ## Q185727: BUG: closesocket() Fails with 10038 After _open_osfhandle()

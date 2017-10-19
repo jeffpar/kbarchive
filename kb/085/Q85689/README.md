@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85689: About Program Manager's Kilobyte Reading Is Wrong"
-permalink: kb/085/Q85689/
+permalink: /kb/085/Q85689/
 ---
 
 ## Q85689: About Program Manager's Kilobyte Reading Is Wrong

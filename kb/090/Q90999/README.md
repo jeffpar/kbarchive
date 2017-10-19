@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90999: Network Problems with AMI Pro and JustWrite"
-permalink: kb/090/Q90999/
+permalink: /kb/090/Q90999/
 ---
 
 ## Q90999: Network Problems with AMI Pro and JustWrite

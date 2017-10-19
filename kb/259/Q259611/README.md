@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259611: Determining Intel Pentium Processor Identification/Frequency"
-permalink: kb/259/Q259611/
+permalink: /kb/259/Q259611/
 ---
 
 ## Q259611: Determining Intel Pentium Processor Identification/Frequency

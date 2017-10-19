@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153356: Encarta 1996: Error When Starting Yearbook Builder"
-permalink: kb/153/Q153356/
+permalink: /kb/153/Q153356/
 ---
 
 ## Q153356: Encarta 1996: Error When Starting Yearbook Builder

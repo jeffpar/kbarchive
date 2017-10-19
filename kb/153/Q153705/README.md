@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153705: XCLN: Messages with Large Attachments Sit in Outbox"
-permalink: kb/153/Q153705/
+permalink: /kb/153/Q153705/
 ---
 
 ## Q153705: XCLN: Messages with Large Attachments Sit in Outbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138141: INFO: Tips For Troubleshooting Remote OLE Automation Errors"
-permalink: kb/138/Q138141/
+permalink: /kb/138/Q138141/
 ---
 
 ## Q138141: INFO: Tips For Troubleshooting Remote OLE Automation Errors

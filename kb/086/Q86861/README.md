@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86861: Alternate Backup Software for LAN Manager"
-permalink: kb/086/Q86861/
+permalink: /kb/086/Q86861/
 ---
 
 ## Q86861: Alternate Backup Software for LAN Manager

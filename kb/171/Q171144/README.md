@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171144: XCLN: DocErr: Delegate Owner Does Not Receive Reminders"
-permalink: kb/171/Q171144/
+permalink: /kb/171/Q171144/
 ---
 
 ## Q171144: XCLN: DocErr: Delegate Owner Does Not Receive Reminders

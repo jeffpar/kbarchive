@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155811: IIS 2.0 Reinstall Option Restores Default Publication Settings"
-permalink: kb/155/Q155811/
+permalink: /kb/155/Q155811/
 ---
 
 ## Q155811: IIS 2.0 Reinstall Option Restores Default Publication Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88467: Problems with Some Video Drivers Running at 32,000 Colors"
-permalink: kb/088/Q88467/
+permalink: /kb/088/Q88467/
 ---
 
 ## Q88467: Problems with Some Video Drivers Running at 32,000 Colors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161560: Microsoft Excel 4.0 Documents Are Not Properly Filtered"
-permalink: kb/161/Q161560/
+permalink: /kb/161/Q161560/
 ---
 
 ## Q161560: Microsoft Excel 4.0 Documents Are Not Properly Filtered

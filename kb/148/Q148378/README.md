@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148378: Setup of RAS with Multiple Modems Gives Slow Performance"
-permalink: kb/148/Q148378/
+permalink: /kb/148/Q148378/
 ---
 
 ## Q148378: Setup of RAS with Multiple Modems Gives Slow Performance

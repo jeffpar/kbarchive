@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218188: XADM: Sender Receives NDR When Sending to User From OAB"
-permalink: kb/218/Q218188/
+permalink: /kb/218/Q218188/
 ---
 
 ## Q218188: XADM: Sender Receives NDR When Sending to User From OAB

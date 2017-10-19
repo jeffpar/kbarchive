@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103821: PC Win: Mail for Windows PABNSP.DLL 3.2.0.4046 Update"
-permalink: kb/103/Q103821/
+permalink: /kb/103/Q103821/
 ---
 
 ## Q103821: PC Win: Mail for Windows PABNSP.DLL 3.2.0.4046 Update

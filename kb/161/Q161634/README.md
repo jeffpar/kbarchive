@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161634: INF: Connection Pooling Requires Same Henv and Driver"
-permalink: kb/161/Q161634/
+permalink: /kb/161/Q161634/
 ---
 
 ## Q161634: INF: Connection Pooling Requires Same Henv and Driver

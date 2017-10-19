@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156412: Index Server Will Not Index Virtual Directories"
-permalink: kb/156/Q156412/
+permalink: /kb/156/Q156412/
 ---
 
 ## Q156412: Index Server Will Not Index Virtual Directories

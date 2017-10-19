@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124591: Multimedia Applications: &quot;Setup Was Unable to Find SHARE.EXE&quot;"
-permalink: kb/124/Q124591/
+permalink: /kb/124/Q124591/
 ---
 
 ## Q124591: Multimedia Applications: &quot;Setup Was Unable to Find SHARE.EXE&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174531: DirectDraw Fails Surface Creation with Large Dimensions"
-permalink: kb/174/Q174531/
+permalink: /kb/174/Q174531/
 ---
 
 ## Q174531: DirectDraw Fails Surface Creation with Large Dimensions

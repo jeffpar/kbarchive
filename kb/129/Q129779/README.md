@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129779: PC Mac: Err Msg: File Pathname Exceeds Max. Length of 67 Char."
-permalink: kb/129/Q129779/
+permalink: /kb/129/Q129779/
 ---
 
 ## Q129779: PC Mac: Err Msg: File Pathname Exceeds Max. Length of 67 Char.

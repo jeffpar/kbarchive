@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128596: Default Wavemix.ini from Golf 2.0"
-permalink: kb/128/Q128596/
+permalink: /kb/128/Q128596/
 ---
 
 ## Q128596: Default Wavemix.ini from Golf 2.0

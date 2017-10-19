@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170427: XFOR: Hebrew Zayin Character Not Preserved"
-permalink: kb/170/Q170427/
+permalink: /kb/170/Q170427/
 ---
 
 ## Q170427: XFOR: Hebrew Zayin Character Not Preserved

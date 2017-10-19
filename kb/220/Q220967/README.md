@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220967: Explanation of COMTI Metadata Elements"
-permalink: kb/220/Q220967/
+permalink: /kb/220/Q220967/
 ---
 
 ## Q220967: Explanation of COMTI Metadata Elements

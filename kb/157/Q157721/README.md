@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157721: HOWTO: Determine FileFormat Values for Excel SaveAs Method"
-permalink: kb/157/Q157721/
+permalink: /kb/157/Q157721/
 ---
 
 ## Q157721: HOWTO: Determine FileFormat Values for Excel SaveAs Method

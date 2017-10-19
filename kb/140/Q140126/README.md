@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140126: How to Configure Microsoft 16-Bit DLC Protocol with Windows 95"
-permalink: kb/140/Q140126/
+permalink: /kb/140/Q140126/
 ---
 
 ## Q140126: How to Configure Microsoft 16-Bit DLC Protocol with Windows 95

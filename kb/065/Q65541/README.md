@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65541: How to Interpret 12-Bit FATs"
-permalink: kb/065/Q65541/
+permalink: /kb/065/Q65541/
 ---
 
 ## Q65541: How to Interpret 12-Bit FATs

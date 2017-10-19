@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66309: FIX: PWB May Exit to MS-DOS If TMP Is Set Incorrectly"
-permalink: kb/066/Q66309/
+permalink: /kb/066/Q66309/
 ---
 
 ## Q66309: FIX: PWB May Exit to MS-DOS If TMP Is Set Incorrectly

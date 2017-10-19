@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62648: Write Err Msg: Insufficient Memory to Complete Operation..."
-permalink: kb/062/Q62648/
+permalink: /kb/062/Q62648/
 ---
 
 ## Q62648: Write Err Msg: Insufficient Memory to Complete Operation...

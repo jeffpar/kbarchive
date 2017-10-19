@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137926: Underline Not Printed on IBM 40x9 Printers Using Courier"
-permalink: kb/137/Q137926/
+permalink: /kb/137/Q137926/
 ---
 
 ## Q137926: Underline Not Printed on IBM 40x9 Printers Using Courier

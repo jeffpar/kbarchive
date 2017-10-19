@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233550: Component Builder Appears to Change Component's Transaction ID"
-permalink: kb/233/Q233550/
+permalink: /kb/233/Q233550/
 ---
 
 ## Q233550: Component Builder Appears to Change Component's Transaction ID

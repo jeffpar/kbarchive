@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193676: PC DirSync: Problem using Outlook Journaling on MSMail PO"
-permalink: kb/193/Q193676/
+permalink: /kb/193/Q193676/
 ---
 
 ## Q193676: PC DirSync: Problem using Outlook Journaling on MSMail PO

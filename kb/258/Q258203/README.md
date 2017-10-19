@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258203: XFOR: How to Configure Exchange to Share SMTP Domain Name Space"
-permalink: kb/258/Q258203/
+permalink: /kb/258/Q258203/
 ---
 
 ## Q258203: XFOR: How to Configure Exchange to Share SMTP Domain Name Space

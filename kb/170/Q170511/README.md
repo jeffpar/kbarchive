@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170511: PRB: WizardBar Notification Slows Down Dialog Editor"
-permalink: kb/170/Q170511/
+permalink: /kb/170/Q170511/
 ---
 
 ## Q170511: PRB: WizardBar Notification Slows Down Dialog Editor

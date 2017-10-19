@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231736: False &quot;Read Only&quot; Message When Opening AutoCAD R14 File"
-permalink: kb/231/Q231736/
+permalink: /kb/231/Q231736/
 ---
 
 ## Q231736: False &quot;Read Only&quot; Message When Opening AutoCAD R14 File

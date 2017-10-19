@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155438: PRB: &quot;Directory Not Found&quot; When Using Macintosh Client 4.00a"
-permalink: kb/155/Q155438/
+permalink: /kb/155/Q155438/
 ---
 
 ## Q155438: PRB: &quot;Directory Not Found&quot; When Using Macintosh Client 4.00a

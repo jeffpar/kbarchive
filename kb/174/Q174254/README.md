@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174254: XADM: GroupWise Users must Grant Access Rights to be Migrated"
-permalink: kb/174/Q174254/
+permalink: /kb/174/Q174254/
 ---
 
 ## Q174254: XADM: GroupWise Users must Grant Access Rights to be Migrated

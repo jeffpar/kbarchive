@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304152: MS Reader: Message Prompting You to Uninstall Earlier Version"
-permalink: kb/304/Q304152/
+permalink: /kb/304/Q304152/
 ---
 
 ## Q304152: MS Reader: Message Prompting You to Uninstall Earlier Version

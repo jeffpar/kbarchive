@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140142: SMS: Next Data Record Button Not Grayed Out at End of List"
-permalink: kb/140/Q140142/
+permalink: /kb/140/Q140142/
 ---
 
 ## Q140142: SMS: Next Data Record Button Not Grayed Out at End of List

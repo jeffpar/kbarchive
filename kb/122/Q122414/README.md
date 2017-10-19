@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122414: RAS: Error 651 with the Evercom 24E+ Modem"
-permalink: kb/122/Q122414/
+permalink: /kb/122/Q122414/
 ---
 
 ## Q122414: RAS: Error 651 with the Evercom 24E+ Modem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70072: Corrupt RES File May Crash Dialog Editor"
-permalink: kb/070/Q70072/
+permalink: /kb/070/Q70072/
 ---
 
 ## Q70072: Corrupt RES File May Crash Dialog Editor

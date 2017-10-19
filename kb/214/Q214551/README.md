@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214551: Close Combat III: The Russian Front: Minimum System Requirements"
-permalink: kb/214/Q214551/
+permalink: /kb/214/Q214551/
 ---
 
 ## Q214551: Close Combat III: The Russian Front: Minimum System Requirements

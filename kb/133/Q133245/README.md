@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133245: BUG: One-to-Many Report Wizard Doesn't Sort in Correct Order"
-permalink: kb/133/Q133245/
+permalink: /kb/133/Q133245/
 ---
 
 ## Q133245: BUG: One-to-Many Report Wizard Doesn't Sort in Correct Order

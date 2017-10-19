@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86407: PRB: Windows Write Does Not Load under Pen Windows"
-permalink: kb/086/Q86407/
+permalink: /kb/086/Q86407/
 ---
 
 ## Q86407: PRB: Windows Write Does Not Load under Pen Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300849: XADM: Error Messages Occur When You Run the ExMerge Utility"
-permalink: kb/300/Q300849/
+permalink: /kb/300/Q300849/
 ---
 
 ## Q300849: XADM: Error Messages Occur When You Run the ExMerge Utility

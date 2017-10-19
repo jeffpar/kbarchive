@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76714: INFO: Only One .rc File Is Permitted Per Project"
-permalink: kb/076/Q76714/
+permalink: /kb/076/Q76714/
 ---
 
 ## Q76714: INFO: Only One .rc File Is Permitted Per Project

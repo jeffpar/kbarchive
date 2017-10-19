@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69099: Setup Detects Incorrect Keyboard"
-permalink: kb/069/Q69099/
+permalink: /kb/069/Q69099/
 ---
 
 ## Q69099: Setup Detects Incorrect Keyboard

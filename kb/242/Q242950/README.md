@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242950: Registry Settings Are Not Migrated During Upgrade"
-permalink: kb/242/Q242950/
+permalink: /kb/242/Q242950/
 ---
 
 ## Q242950: Registry Settings Are Not Migrated During Upgrade

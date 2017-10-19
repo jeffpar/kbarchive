@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104034: DBLSPACE ERR Msg: Invalid DBLSPACE.INI Setting: SWITCHES=/N"
-permalink: kb/104/Q104034/
+permalink: /kb/104/Q104034/
 ---
 
 ## Q104034: DBLSPACE ERR Msg: Invalid DBLSPACE.INI Setting: SWITCHES=/N

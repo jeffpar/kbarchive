@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221991: Screen Saver Vulnerability Lets User Privileges Be Elevated"
-permalink: kb/221/Q221991/
+permalink: /kb/221/Q221991/
 ---
 
 ## Q221991: Screen Saver Vulnerability Lets User Privileges Be Elevated

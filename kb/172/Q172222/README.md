@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172222: Err Msg: No More Internal File Identifiers Available"
-permalink: kb/172/Q172222/
+permalink: /kb/172/Q172222/
 ---
 
 ## Q172222: Err Msg: No More Internal File Identifiers Available

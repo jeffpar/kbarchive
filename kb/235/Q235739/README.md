@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235739: SMS: Intel P3 CPU Name Incorrectly Reported"
-permalink: kb/235/Q235739/
+permalink: /kb/235/Q235739/
 ---
 
 ## Q235739: SMS: Intel P3 CPU Name Incorrectly Reported

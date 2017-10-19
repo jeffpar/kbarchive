@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197721: XCLN: NDR When Sending A Message to A Local Recipient"
-permalink: kb/197/Q197721/
+permalink: /kb/197/Q197721/
 ---
 
 ## Q197721: XCLN: NDR When Sending A Message to A Local Recipient

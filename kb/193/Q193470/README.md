@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193470: FIX: Setup Error 827 Installing Multiple OCX Files"
-permalink: kb/193/Q193470/
+permalink: /kb/193/Q193470/
 ---
 
 ## Q193470: FIX: Setup Error 827 Installing Multiple OCX Files

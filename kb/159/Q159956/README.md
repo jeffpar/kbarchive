@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159956: FIX: Dirty Flag Not Cleared During Edit() or Update()"
-permalink: kb/159/Q159956/
+permalink: /kb/159/Q159956/
 ---
 
 ## Q159956: FIX: Dirty Flag Not Cleared During Edit() or Update()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196822: INFO: Files Installed Windows 98&#92;SYSTEM Folder by MSDN Step 5"
-permalink: kb/196/Q196822/
+permalink: /kb/196/Q196822/
 ---
 
 ## Q196822: INFO: Files Installed Windows 98&#92;SYSTEM Folder by MSDN Step 5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321209: PRB: Start Menu Hangs When You Install File-Monitoring Utilities"
-permalink: kb/321/Q321209/
+permalink: /kb/321/Q321209/
 ---
 
 ## Q321209: PRB: Start Menu Hangs When You Install File-Monitoring Utilities

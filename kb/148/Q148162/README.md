@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148162: Cannot Add Local Account to Local Group With NET LOCALGROUP"
-permalink: kb/148/Q148162/
+permalink: /kb/148/Q148162/
 ---
 
 ## Q148162: Cannot Add Local Account to Local Group With NET LOCALGROUP

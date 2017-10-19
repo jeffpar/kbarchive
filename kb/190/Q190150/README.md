@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190150: HOWTO: Force Application Setup to Use the Default Directory"
-permalink: kb/190/Q190150/
+permalink: /kb/190/Q190150/
 ---
 
 ## Q190150: HOWTO: Force Application Setup to Use the Default Directory

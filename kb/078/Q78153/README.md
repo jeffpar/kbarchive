@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78153: &quot;Golden&quot; (Complete) Backup and Restore"
-permalink: kb/078/Q78153/
+permalink: /kb/078/Q78153/
 ---
 
 ## Q78153: &quot;Golden&quot; (Complete) Backup and Restore

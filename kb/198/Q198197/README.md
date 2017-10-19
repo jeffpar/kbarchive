@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198197: Combat Flight Simulator: Functionality of Numeric Keypad"
-permalink: kb/198/Q198197/
+permalink: /kb/198/Q198197/
 ---
 
 ## Q198197: Combat Flight Simulator: Functionality of Numeric Keypad

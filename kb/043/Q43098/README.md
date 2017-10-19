@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43098: Mac Adm: Steps for Adding New User(s)"
-permalink: kb/043/Q43098/
+permalink: /kb/043/Q43098/
 ---
 
 ## Q43098: Mac Adm: Steps for Adding New User(s)

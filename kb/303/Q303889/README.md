@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303889: MX Record Failover Does Not Occur When 4xx Error Occurs"
-permalink: kb/303/Q303889/
+permalink: /kb/303/Q303889/
 ---
 
 ## Q303889: MX Record Failover Does Not Occur When 4xx Error Occurs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127890: PC DynAd: Dynadmin Does Not Allow Blank Admin Password"
-permalink: kb/127/Q127890/
+permalink: /kb/127/Q127890/
 ---
 
 ## Q127890: PC DynAd: Dynadmin Does Not Allow Blank Admin Password

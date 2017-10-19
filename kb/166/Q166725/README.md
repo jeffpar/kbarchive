@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166725: SMS: How to Upgrade Windows NT Workstation 3.51 to 4.0 w/ SMS"
-permalink: kb/166/Q166725/
+permalink: /kb/166/Q166725/
 ---
 
 ## Q166725: SMS: How to Upgrade Windows NT Workstation 3.51 to 4.0 w/ SMS

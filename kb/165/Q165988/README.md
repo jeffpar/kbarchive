@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165988: SNA Print Server Doesn't Interpret LU3 Orders"
-permalink: kb/165/Q165988/
+permalink: /kb/165/Q165988/
 ---
 
 ## Q165988: SNA Print Server Doesn't Interpret LU3 Orders

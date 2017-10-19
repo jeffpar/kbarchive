@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283075: Networking Essentials Second Edition Training Kit, Deluxe Multim"
-permalink: kb/283/Q283075/
+permalink: /kb/283/Q283075/
 ---
 
 ## Q283075: Networking Essentials Second Edition Training Kit, Deluxe Multim

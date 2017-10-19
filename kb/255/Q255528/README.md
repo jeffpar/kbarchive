@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255528: BUG:  Violation in Constructor w/ Variable Number of Arguments"
-permalink: kb/255/Q255528/
+permalink: /kb/255/Q255528/
 ---
 
 ## Q255528: BUG:  Violation in Constructor w/ Variable Number of Arguments

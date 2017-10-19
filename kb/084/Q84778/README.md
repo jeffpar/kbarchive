@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84778: Memory Use Limitations in Microsoft Windows"
-permalink: kb/084/Q84778/
+permalink: /kb/084/Q84778/
 ---
 
 ## Q84778: Memory Use Limitations in Microsoft Windows

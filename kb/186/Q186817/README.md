@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186817: 100 Percent CPU Usage with RCMD or REMOTE"
-permalink: kb/186/Q186817/
+permalink: /kb/186/Q186817/
 ---
 
 ## Q186817: 100 Percent CPU Usage with RCMD or REMOTE

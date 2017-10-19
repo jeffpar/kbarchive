@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119332: Output from &quot;lib /list &lt;import library&gt;&quot;"
-permalink: kb/119/Q119332/
+permalink: /kb/119/Q119332/
 ---
 
 ## Q119332: Output from &quot;lib /list &lt;import library&gt;&quot;

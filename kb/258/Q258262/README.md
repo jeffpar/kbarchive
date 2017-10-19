@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258262: HOWTO: Write a DWORD to the Registry"
-permalink: kb/258/Q258262/
+permalink: /kb/258/Q258262/
 ---
 
 ## Q258262: HOWTO: Write a DWORD to the Registry

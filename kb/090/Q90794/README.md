@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90794: SMARTDRV.EXE Hangs After CTRL+ALT+DEL"
-permalink: kb/090/Q90794/
+permalink: /kb/090/Q90794/
 ---
 
 ## Q90794: SMARTDRV.EXE Hangs After CTRL+ALT+DEL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114304: ACLs Not Translated When User Names Have Extended Characters"
-permalink: kb/114/Q114304/
+permalink: /kb/114/Q114304/
 ---
 
 ## Q114304: ACLs Not Translated When User Names Have Extended Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160067: Golf 3.0 Trial Version Is Available"
-permalink: kb/160/Q160067/
+permalink: /kb/160/Q160067/
 ---
 
 ## Q160067: Golf 3.0 Trial Version Is Available

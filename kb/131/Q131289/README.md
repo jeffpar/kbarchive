@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131289: How to Add to the System Menu as Visual FoxPro Starts"
-permalink: kb/131/Q131289/
+permalink: /kb/131/Q131289/
 ---
 
 ## Q131289: How to Add to the System Menu as Visual FoxPro Starts

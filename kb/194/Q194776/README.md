@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194776: HOWTO: Install a Visual Basic Application on Terminal Server"
-permalink: kb/194/Q194776/
+permalink: /kb/194/Q194776/
 ---
 
 ## Q194776: HOWTO: Install a Visual Basic Application on Terminal Server

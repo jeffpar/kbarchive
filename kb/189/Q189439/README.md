@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189439: WD97: Word Fails to Open &quot;Cannot Open the Existing &lt;Square&gt;&quot;"
-permalink: kb/189/Q189439/
+permalink: /kb/189/Q189439/
 ---
 
 ## Q189439: WD97: Word Fails to Open &quot;Cannot Open the Existing &lt;Square&gt;&quot;

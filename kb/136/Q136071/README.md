@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136071: DOC: ON ERROR Not Invoked when Error Occurs in Error Event"
-permalink: kb/136/Q136071/
+permalink: /kb/136/Q136071/
 ---
 
 ## Q136071: DOC: ON ERROR Not Invoked when Error Occurs in Error Event

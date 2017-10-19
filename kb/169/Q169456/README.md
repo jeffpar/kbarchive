@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169456: Multihomed DNS Server May Fail Recursive Queries"
-permalink: kb/169/Q169456/
+permalink: /kb/169/Q169456/
 ---
 
 ## Q169456: Multihomed DNS Server May Fail Recursive Queries

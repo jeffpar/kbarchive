@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234647: Windows 95/98 Clients Hang with &quot;Mprexe.exe Not Responding&quot;"
-permalink: kb/234/Q234647/
+permalink: /kb/234/Q234647/
 ---
 
 ## Q234647: Windows 95/98 Clients Hang with &quot;Mprexe.exe Not Responding&quot;

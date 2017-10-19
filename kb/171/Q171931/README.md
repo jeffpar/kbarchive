@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171931: Microsoft Press CD-ROM and Floppy Disk Replacement Policy"
-permalink: kb/171/Q171931/
+permalink: /kb/171/Q171931/
 ---
 
 ## Q171931: Microsoft Press CD-ROM and Floppy Disk Replacement Policy

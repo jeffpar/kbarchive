@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139069: FIX: Append-Only on Dynaset Recordsets Forces Read-Only"
-permalink: kb/139/Q139069/
+permalink: /kb/139/Q139069/
 ---
 
 ## Q139069: FIX: Append-Only on Dynaset Recordsets Forces Read-Only

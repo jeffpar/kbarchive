@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247838: SMS: Clients Not Installed When Site Server in Resource Domain"
-permalink: kb/247/Q247838/
+permalink: /kb/247/Q247838/
 ---
 
 ## Q247838: SMS: Clients Not Installed When Site Server in Resource Domain

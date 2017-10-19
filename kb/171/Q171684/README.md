@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171684: WD97: Differences Between RTF and Binary Export Converter"
-permalink: kb/171/Q171684/
+permalink: /kb/171/Q171684/
 ---
 
 ## Q171684: WD97: Differences Between RTF and Binary Export Converter

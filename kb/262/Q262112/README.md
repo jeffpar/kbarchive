@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262112: XCON: How Exchange Server Routes One-Off Messages Internally"
-permalink: kb/262/Q262112/
+permalink: /kb/262/Q262112/
 ---
 
 ## Q262112: XCON: How Exchange Server Routes One-Off Messages Internally

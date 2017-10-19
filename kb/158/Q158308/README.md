@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158308: XFOR: Err Msg: Initialization of Dynamic Link Library Failed"
-permalink: kb/158/Q158308/
+permalink: /kb/158/Q158308/
 ---
 
 ## Q158308: XFOR: Err Msg: Initialization of Dynamic Link Library Failed

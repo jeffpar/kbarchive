@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99861: PRB: Using SetCommState() to Toggle DTR/RTS for Flow Control"
-permalink: kb/099/Q99861/
+permalink: /kb/099/Q99861/
 ---
 
 ## Q99861: PRB: Using SetCommState() to Toggle DTR/RTS for Flow Control

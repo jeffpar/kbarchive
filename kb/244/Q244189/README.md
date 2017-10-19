@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244189: Flight Simulator 2000: List of New Features"
-permalink: kb/244/Q244189/
+permalink: /kb/244/Q244189/
 ---
 
 ## Q244189: Flight Simulator 2000: List of New Features

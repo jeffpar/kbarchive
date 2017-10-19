@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306826: HOWTO: Get and Set the Memory Settings with eVB"
-permalink: kb/306/Q306826/
+permalink: /kb/306/Q306826/
 ---
 
 ## Q306826: HOWTO: Get and Set the Memory Settings with eVB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82501: Blank OLE Packager Objects in Write and Cardfile"
-permalink: kb/082/Q82501/
+permalink: /kb/082/Q82501/
 ---
 
 ## Q82501: Blank OLE Packager Objects in Write and Cardfile

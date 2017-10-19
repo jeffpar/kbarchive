@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74288: Some Windows Functions Cannot Be Called from LibMain"
-permalink: kb/074/Q74288/
+permalink: /kb/074/Q74288/
 ---
 
 ## Q74288: Some Windows Functions Cannot Be Called from LibMain

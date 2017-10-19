@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201802: SMS: Supported Naming Conventions for NDS Logon Point Creation"
-permalink: kb/201/Q201802/
+permalink: /kb/201/Q201802/
 ---
 
 ## Q201802: SMS: Supported Naming Conventions for NDS Logon Point Creation

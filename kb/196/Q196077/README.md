@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196077: SNARAS Ports Become Unavailable after Network Outage"
-permalink: kb/196/Q196077/
+permalink: /kb/196/Q196077/
 ---
 
 ## Q196077: SNARAS Ports Become Unavailable after Network Outage

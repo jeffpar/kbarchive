@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274160: FIX: Four-Part Inserts to DB2 Through LinkedServer Fail"
-permalink: kb/274/Q274160/
+permalink: /kb/274/Q274160/
 ---
 
 ## Q274160: FIX: Four-Part Inserts to DB2 Through LinkedServer Fail

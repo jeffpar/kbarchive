@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302689: PRB: Webfolders Does Not Work if Content (UNC) Stored On Novell"
-permalink: kb/302/Q302689/
+permalink: /kb/302/Q302689/
 ---
 
 ## Q302689: PRB: Webfolders Does Not Work if Content (UNC) Stored On Novell

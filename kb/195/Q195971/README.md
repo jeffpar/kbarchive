@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195971: XADM: Deadlock in STORE Due to a Stack Overflow"
-permalink: kb/195/Q195971/
+permalink: /kb/195/Q195971/
 ---
 
 ## Q195971: XADM: Deadlock in STORE Due to a Stack Overflow

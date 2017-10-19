@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268000: XADM: Exchange 5.5 Server from Select CD Limits IS to 16 GB"
-permalink: kb/268/Q268000/
+permalink: /kb/268/Q268000/
 ---
 
 ## Q268000: XADM: Exchange 5.5 Server from Select CD Limits IS to 16 GB

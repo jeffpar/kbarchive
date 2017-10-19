@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71448: Moving Task with Minimized Icons Causes a UAE in Windows"
-permalink: kb/071/Q71448/
+permalink: /kb/071/Q71448/
 ---
 
 ## Q71448: Moving Task with Minimized Icons Causes a UAE in Windows

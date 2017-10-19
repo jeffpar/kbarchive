@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135175: Cannot Use Two Xircom PCMCIA Network Cards at Once"
-permalink: kb/135/Q135175/
+permalink: /kb/135/Q135175/
 ---
 
 ## Q135175: Cannot Use Two Xircom PCMCIA Network Cards at Once

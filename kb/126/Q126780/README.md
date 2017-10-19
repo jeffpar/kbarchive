@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126780: PRB: Operator/Operand Type Mismatch When Comparing Two Objects"
-permalink: kb/126/Q126780/
+permalink: /kb/126/Q126780/
 ---
 
 ## Q126780: PRB: Operator/Operand Type Mismatch When Comparing Two Objects

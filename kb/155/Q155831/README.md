@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155831: XADM: Set TCP/IP for Exchange/Outlook Client Through Firewall"
-permalink: kb/155/Q155831/
+permalink: /kb/155/Q155831/
 ---
 
 ## Q155831: XADM: Set TCP/IP for Exchange/Outlook Client Through Firewall

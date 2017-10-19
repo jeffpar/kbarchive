@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134203: PC MAPI: How to Resolve MAPI Name Mangling in Visual C++"
-permalink: kb/134/Q134203/
+permalink: /kb/134/Q134203/
 ---
 
 ## Q134203: PC MAPI: How to Resolve MAPI Name Mangling in Visual C++

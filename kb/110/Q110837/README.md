@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110837: Altimeter Does Not Display Meters"
-permalink: kb/110/Q110837/
+permalink: /kb/110/Q110837/
 ---
 
 ## Q110837: Altimeter Does Not Display Meters

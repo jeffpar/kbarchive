@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140833: APPC Allocation Error Running Multithreaded Random &amp; Bounce TP"
-permalink: kb/140/Q140833/
+permalink: /kb/140/Q140833/
 ---
 
 ## Q140833: APPC Allocation Error Running Multithreaded Random &amp; Bounce TP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139286: PC WSPlus: Dynamic Connections Limited to 8 Netware Servers"
-permalink: kb/139/Q139286/
+permalink: /kb/139/Q139286/
 ---
 
 ## Q139286: PC WSPlus: Dynamic Connections Limited to 8 Netware Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188414: Random Stop 0x0000000A When Running IPX over Token Ring"
-permalink: kb/188/Q188414/
+permalink: /kb/188/Q188414/
 ---
 
 ## Q188414: Random Stop 0x0000000A When Running IPX over Token Ring

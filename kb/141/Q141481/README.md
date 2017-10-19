@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141481: Radius Video Driver Causes General Protection Fault"
-permalink: kb/141/Q141481/
+permalink: /kb/141/Q141481/
 ---
 
 ## Q141481: Radius Video Driver Causes General Protection Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96831: How to Boot from the Hard Disk on an IBM PS/1"
-permalink: kb/096/Q96831/
+permalink: /kb/096/Q96831/
 ---
 
 ## Q96831: How to Boot from the Hard Disk on an IBM PS/1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216558: Recycling Server Causes Invalid RPC Binding for Host Security"
-permalink: kb/216/Q216558/
+permalink: /kb/216/Q216558/
 ---
 
 ## Q216558: Recycling Server Causes Invalid RPC Binding for Host Security

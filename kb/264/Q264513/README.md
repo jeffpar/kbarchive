@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264513: Games Err Msg: Setup Encountered a Disk Error While Writing..."
-permalink: kb/264/Q264513/
+permalink: /kb/264/Q264513/
 ---
 
 ## Q264513: Games Err Msg: Setup Encountered a Disk Error While Writing...

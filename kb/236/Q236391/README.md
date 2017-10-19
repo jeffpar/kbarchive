@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236391: Restoring SNA Configuration May Not Save Host Security Domains"
-permalink: kb/236/Q236391/
+permalink: /kb/236/Q236391/
 ---
 
 ## Q236391: Restoring SNA Configuration May Not Save Host Security Domains

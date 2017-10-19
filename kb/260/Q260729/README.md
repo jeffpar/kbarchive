@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260729: HOW TO: Enable Schannel Logging"
-permalink: kb/260/Q260729/
+permalink: /kb/260/Q260729/
 ---
 
 ## Q260729: HOW TO: Enable Schannel Logging

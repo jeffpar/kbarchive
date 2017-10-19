@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151797: HOWTO: How To Create an SQL Outer Join Using the View Designer"
-permalink: kb/151/Q151797/
+permalink: /kb/151/Q151797/
 ---
 
 ## Q151797: HOWTO: How To Create an SQL Outer Join Using the View Designer

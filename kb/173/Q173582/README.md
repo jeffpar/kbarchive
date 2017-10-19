@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173582: HOWTO: Using OLE Automation to Display Outlook from VFP"
-permalink: kb/173/Q173582/
+permalink: /kb/173/Q173582/
 ---
 
 ## Q173582: HOWTO: Using OLE Automation to Display Outlook from VFP

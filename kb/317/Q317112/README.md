@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317112: SMS: Site Server Enumerates Group Membership Too Often"
-permalink: kb/317/Q317112/
+permalink: /kb/317/Q317112/
 ---
 
 ## Q317112: SMS: Site Server Enumerates Group Membership Too Often

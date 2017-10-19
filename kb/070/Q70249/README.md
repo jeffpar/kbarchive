@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70249: Max Identifier Length May Cause Mixed C/MASM Conflict"
-permalink: kb/070/Q70249/
+permalink: /kb/070/Q70249/
 ---
 
 ## Q70249: Max Identifier Length May Cause Mixed C/MASM Conflict

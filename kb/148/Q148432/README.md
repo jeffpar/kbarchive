@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148432: XADM: Location of the Key Management Server Software"
-permalink: kb/148/Q148432/
+permalink: /kb/148/Q148432/
 ---
 
 ## Q148432: XADM: Location of the Key Management Server Software

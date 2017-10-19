@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186316: ODE97: ODE License Information Missing in ODE About Box"
-permalink: kb/186/Q186316/
+permalink: /kb/186/Q186316/
 ---
 
 ## Q186316: ODE97: ODE License Information Missing in ODE About Box

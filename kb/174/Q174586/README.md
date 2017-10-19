@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174586: SMS: RSERVICE /Query Loops When Sites Have &gt; 1,400 Clients"
-permalink: kb/174/Q174586/
+permalink: /kb/174/Q174586/
 ---
 
 ## Q174586: SMS: RSERVICE /Query Loops When Sites Have &gt; 1,400 Clients

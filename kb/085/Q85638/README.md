@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85638: WRK Flowchart Incorrectly States SMARTDrive Cache"
-permalink: kb/085/Q85638/
+permalink: /kb/085/Q85638/
 ---
 
 ## Q85638: WRK Flowchart Incorrectly States SMARTDrive Cache

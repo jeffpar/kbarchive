@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98473: INFO: Updating the Application Status Bar on Demand"
-permalink: kb/098/Q98473/
+permalink: /kb/098/Q98473/
 ---
 
 ## Q98473: INFO: Updating the Application Status Bar on Demand

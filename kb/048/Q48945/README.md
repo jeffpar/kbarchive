@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48945: Mac Wkst: Keyboard Shortcuts for Cc and Bcc"
-permalink: kb/048/Q48945/
+permalink: /kb/048/Q48945/
 ---
 
 ## Q48945: Mac Wkst: Keyboard Shortcuts for Cc and Bcc

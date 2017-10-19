@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162000: BUG: Visual FoxPro/Mac Setup Wizard Cannot Copy Source Files"
-permalink: kb/162/Q162000/
+permalink: /kb/162/Q162000/
 ---
 
 ## Q162000: BUG: Visual FoxPro/Mac Setup Wizard Cannot Copy Source Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170400: Unauthorized Program Can Be Installed and Run on ZAK Workstation"
-permalink: kb/170/Q170400/
+permalink: /kb/170/Q170400/
 ---
 
 ## Q170400: Unauthorized Program Can Be Installed and Run on ZAK Workstation

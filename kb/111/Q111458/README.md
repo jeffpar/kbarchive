@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111458: Changing to EGA or Hercules Video Support in WFWG 3.11"
-permalink: kb/111/Q111458/
+permalink: /kb/111/Q111458/
 ---
 
 ## Q111458: Changing to EGA or Hercules Video Support in WFWG 3.11

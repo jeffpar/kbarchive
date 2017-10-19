@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176481: FIX: LUPDATE() Does Not Report Correct Century for Year 2000"
-permalink: kb/176/Q176481/
+permalink: /kb/176/Q176481/
 ---
 
 ## Q176481: FIX: LUPDATE() Does Not Report Correct Century for Year 2000

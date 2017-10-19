@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242187: XCLN: Insufficient Disk Space Error w/Outlook 98 Deployment Kit"
-permalink: kb/242/Q242187/
+permalink: /kb/242/Q242187/
 ---
 
 ## Q242187: XCLN: Insufficient Disk Space Error w/Outlook 98 Deployment Kit

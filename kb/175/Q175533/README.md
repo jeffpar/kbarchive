@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175533: BUG: Toolbar Does Not Wrap Correctly"
-permalink: kb/175/Q175533/
+permalink: /kb/175/Q175533/
 ---
 
 ## Q175533: BUG: Toolbar Does Not Wrap Correctly

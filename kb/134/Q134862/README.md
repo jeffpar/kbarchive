@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134862: Compressed Drive Not Mounted When Windows 95 Restarts"
-permalink: kb/134/Q134862/
+permalink: /kb/134/Q134862/
 ---
 
 ## Q134862: Compressed Drive Not Mounted When Windows 95 Restarts

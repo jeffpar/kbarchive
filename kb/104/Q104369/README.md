@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104369: PC WSPlus: Wrong Message When Deleting Meeting"
-permalink: kb/104/Q104369/
+permalink: /kb/104/Q104369/
 ---
 
 ## Q104369: PC WSPlus: Wrong Message When Deleting Meeting

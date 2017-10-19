@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167193: FIX: Buffering Lost when txtbtns Exit Clicked"
-permalink: kb/167/Q167193/
+permalink: /kb/167/Q167193/
 ---
 
 ## Q167193: FIX: Buffering Lost when txtbtns Exit Clicked

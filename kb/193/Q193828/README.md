@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193828: IMS Programs May Lock after COMTI Posts a Backout Operation"
-permalink: kb/193/Q193828/
+permalink: /kb/193/Q193828/
 ---
 
 ## Q193828: IMS Programs May Lock after COMTI Posts a Backout Operation

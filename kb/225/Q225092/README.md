@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225092: Evicting a Node in a Cluster Can Cause Problems in SQL"
-permalink: kb/225/Q225092/
+permalink: /kb/225/Q225092/
 ---
 
 ## Q225092: Evicting a Node in a Cluster Can Cause Problems in SQL

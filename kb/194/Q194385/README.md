@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194385: X400: Message Not Delivered and Screen Becomes Corrupted"
-permalink: kb/194/Q194385/
+permalink: /kb/194/Q194385/
 ---
 
 ## Q194385: X400: Message Not Delivered and Screen Becomes Corrupted

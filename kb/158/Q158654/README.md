@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158654: Mac Encarta 97: Home Screen Blank with Low Memory on 68K"
-permalink: kb/158/Q158654/
+permalink: /kb/158/Q158654/
 ---
 
 ## Q158654: Mac Encarta 97: Home Screen Blank with Low Memory on 68K

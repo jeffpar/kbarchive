@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288974: Registration Intitiates Before Each MSN Companion Session"
-permalink: kb/288/Q288974/
+permalink: /kb/288/Q288974/
 ---
 
 ## Q288974: Registration Intitiates Before Each MSN Companion Session

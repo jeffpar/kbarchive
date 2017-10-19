@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307986: SMS: Can't Install Virtual and Mouse Remote Control Is Stuck"
-permalink: kb/307/Q307986/
+permalink: /kb/307/Q307986/
 ---
 
 ## Q307986: SMS: Can't Install Virtual and Mouse Remote Control Is Stuck

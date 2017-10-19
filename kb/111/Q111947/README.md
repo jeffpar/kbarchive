@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111947: X400: Profile in X400ADM.EXE"
-permalink: kb/111/Q111947/
+permalink: /kb/111/Q111947/
 ---
 
 ## Q111947: X400: Profile in X400ADM.EXE

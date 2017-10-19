@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318852: Asheron's Call: Err Msg: The Character May Be Out of Date..."
-permalink: kb/318/Q318852/
+permalink: /kb/318/Q318852/
 ---
 
 ## Q318852: Asheron's Call: Err Msg: The Character May Be Out of Date...

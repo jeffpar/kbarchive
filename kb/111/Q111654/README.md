@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111654: BUG: StretchDIBits Not Correctly Stretching RLE DIBs w/ Jumps"
-permalink: kb/111/Q111654/
+permalink: /kb/111/Q111654/
 ---
 
 ## Q111654: BUG: StretchDIBits Not Correctly Stretching RLE DIBs w/ Jumps

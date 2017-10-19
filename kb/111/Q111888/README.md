@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111888: FIX: Inserts May Fail and Updates May Not Be Seen"
-permalink: kb/111/Q111888/
+permalink: /kb/111/Q111888/
 ---
 
 ## Q111888: FIX: Inserts May Fail and Updates May Not Be Seen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65448: Undoing a Deck Turn Over Decrements the Pass Counter"
-permalink: kb/065/Q65448/
+permalink: /kb/065/Q65448/
 ---
 
 ## Q65448: Undoing a Deck Turn Over Decrements the Pass Counter

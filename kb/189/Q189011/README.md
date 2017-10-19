@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189011: Using Performance Monitor Remotely Causes Access Violation"
-permalink: kb/189/Q189011/
+permalink: /kb/189/Q189011/
 ---
 
 ## Q189011: Using Performance Monitor Remotely Causes Access Violation

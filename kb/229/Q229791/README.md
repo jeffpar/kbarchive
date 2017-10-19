@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229791: XADM: Internet Newsgroup Folder Gets Replicated Automatically"
-permalink: kb/229/Q229791/
+permalink: /kb/229/Q229791/
 ---
 
 ## Q229791: XADM: Internet Newsgroup Folder Gets Replicated Automatically

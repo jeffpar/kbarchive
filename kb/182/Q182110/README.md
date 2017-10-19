@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182110: IIS Access Violates Calling Local COM Server"
-permalink: kb/182/Q182110/
+permalink: /kb/182/Q182110/
 ---
 
 ## Q182110: IIS Access Violates Calling Local COM Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163094: WD97: Define Command Missing from Shortcut Menu"
-permalink: kb/163/Q163094/
+permalink: /kb/163/Q163094/
 ---
 
 ## Q163094: WD97: Define Command Missing from Shortcut Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166544: XADM: DS Terminates Unexpectedly w/ Event IDs 1186, 1229, 1171"
-permalink: kb/166/Q166544/
+permalink: /kb/166/Q166544/
 ---
 
 ## Q166544: XADM: DS Terminates Unexpectedly w/ Event IDs 1186, 1229, 1171

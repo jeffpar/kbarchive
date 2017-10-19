@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142395: CommandButton FontSize Can Affect Button Size"
-permalink: kb/142/Q142395/
+permalink: /kb/142/Q142395/
 ---
 
 ## Q142395: CommandButton FontSize Can Affect Button Size

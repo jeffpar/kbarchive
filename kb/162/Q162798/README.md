@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162798: HOWTO: Use SET PRINTER TO NAME to Specify Report Destination"
-permalink: kb/162/Q162798/
+permalink: /kb/162/Q162798/
 ---
 
 ## Q162798: HOWTO: Use SET PRINTER TO NAME to Specify Report Destination

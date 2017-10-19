@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104522: Incorrect Swap File Name in Windows Resource Kit for 3.1"
-permalink: kb/104/Q104522/
+permalink: /kb/104/Q104522/
 ---
 
 ## Q104522: Incorrect Swap File Name in Windows Resource Kit for 3.1

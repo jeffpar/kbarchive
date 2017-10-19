@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152231: XFOR: How to Reset Exchange Server Dirsync Numbers"
-permalink: kb/152/Q152231/
+permalink: /kb/152/Q152231/
 ---
 
 ## Q152231: XFOR: How to Reset Exchange Server Dirsync Numbers

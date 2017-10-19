@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105260: Err Msg After Uncompressing: You Cannot Access Any..."
-permalink: kb/105/Q105260/
+permalink: /kb/105/Q105260/
 ---
 
 ## Q105260: Err Msg After Uncompressing: You Cannot Access Any...

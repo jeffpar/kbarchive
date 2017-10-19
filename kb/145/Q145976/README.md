@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145976: XCON: GWART Is Incorrect Due to Latency in Directory Replication"
-permalink: kb/145/Q145976/
+permalink: /kb/145/Q145976/
 ---
 
 ## Q145976: XCON: GWART Is Incorrect Due to Latency in Directory Replication

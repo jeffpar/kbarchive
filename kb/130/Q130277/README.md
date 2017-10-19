@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130277: PRB: WPARENT() Gives Error in 3.0 Different from Error in 2.x"
-permalink: kb/130/Q130277/
+permalink: /kb/130/Q130277/
 ---
 
 ## Q130277: PRB: WPARENT() Gives Error in 3.0 Different from Error in 2.x

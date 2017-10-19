@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266438: SMS: How to Query - IP Subnets in Systems Management Server 2.0"
-permalink: kb/266/Q266438/
+permalink: /kb/266/Q266438/
 ---
 
 ## Q266438: SMS: How to Query - IP Subnets in Systems Management Server 2.0

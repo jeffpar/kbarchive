@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111736: Printing Postscript from Project, Task Bars Shaded or Darkened"
-permalink: kb/111/Q111736/
+permalink: /kb/111/Q111736/
 ---
 
 ## Q111736: Printing Postscript from Project, Task Bars Shaded or Darkened

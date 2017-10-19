@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172312: PRB: WithEvents Does Not Work with Remote Automation"
-permalink: kb/172/Q172312/
+permalink: /kb/172/Q172312/
 ---
 
 ## Q172312: PRB: WithEvents Does Not Work with Remote Automation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151311: Mastering VB: Testing CD-ROM Drive for File Access"
-permalink: kb/151/Q151311/
+permalink: /kb/151/Q151311/
 ---
 
 ## Q151311: Mastering VB: Testing CD-ROM Drive for File Access

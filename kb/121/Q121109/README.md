@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121109: WD97: Font Changes During Mail Merge"
-permalink: kb/121/Q121109/
+permalink: /kb/121/Q121109/
 ---
 
 ## Q121109: WD97: Font Changes During Mail Merge

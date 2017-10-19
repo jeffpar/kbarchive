@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68679: ASD: Add a Point After Feature"
-permalink: kb/068/Q68679/
+permalink: /kb/068/Q68679/
 ---
 
 ## Q68679: ASD: Add a Point After Feature

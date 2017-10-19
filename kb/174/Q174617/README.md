@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174617: Chkdsk Runs While Running Microsoft Cluster Server Setup"
-permalink: kb/174/Q174617/
+permalink: /kb/174/Q174617/
 ---
 
 ## Q174617: Chkdsk Runs While Running Microsoft Cluster Server Setup

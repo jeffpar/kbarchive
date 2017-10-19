@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170465: WD97: Large MS-DOS File Is Damaged When Opened as MS-DOS Text"
-permalink: kb/170/Q170465/
+permalink: /kb/170/Q170465/
 ---
 
 ## Q170465: WD97: Large MS-DOS File Is Damaged When Opened as MS-DOS Text

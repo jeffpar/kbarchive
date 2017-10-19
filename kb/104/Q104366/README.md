@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104366: PC Forms: Custom Form Not Displayed"
-permalink: kb/104/Q104366/
+permalink: /kb/104/Q104366/
 ---
 
 ## Q104366: PC Forms: Custom Form Not Displayed

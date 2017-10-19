@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121224: DRVSPACE: DBLSPACE Files NOT Updated on Uncompressed Drive"
-permalink: kb/121/Q121224/
+permalink: /kb/121/Q121224/
 ---
 
 ## Q121224: DRVSPACE: DBLSPACE Files NOT Updated on Uncompressed Drive

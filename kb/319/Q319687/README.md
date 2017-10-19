@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319687: &quot;Failed to Save Document&quot; Err Msg When You Try to Save a Map"
-permalink: kb/319/Q319687/
+permalink: /kb/319/Q319687/
 ---
 
 ## Q319687: &quot;Failed to Save Document&quot; Err Msg When You Try to Save a Map

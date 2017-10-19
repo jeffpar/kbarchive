@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155063: Pure Black and White Add-in Not Installed on Workstation"
-permalink: kb/155/Q155063/
+permalink: /kb/155/Q155063/
 ---
 
 ## Q155063: Pure Black and White Add-in Not Installed on Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172507: Resources go Offline and Online Repeatedly in Cluster Admin."
-permalink: kb/172/Q172507/
+permalink: /kb/172/Q172507/
 ---
 
 ## Q172507: Resources go Offline and Online Repeatedly in Cluster Admin.

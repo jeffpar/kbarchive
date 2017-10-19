@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137134: Corrupt Fonts or Controls in Dialog Boxes"
-permalink: kb/137/Q137134/
+permalink: /kb/137/Q137134/
 ---
 
 ## Q137134: Corrupt Fonts or Controls in Dialog Boxes

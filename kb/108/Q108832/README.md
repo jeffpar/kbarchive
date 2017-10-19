@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108832: PC WRmt: Immediately on Send Option Retrieves No Unread Mail"
-permalink: kb/108/Q108832/
+permalink: /kb/108/Q108832/
 ---
 
 ## Q108832: PC WRmt: Immediately on Send Option Retrieves No Unread Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321090: SMS: Only Principal Site Creates an Advertisement for Client"
-permalink: kb/321/Q321090/
+permalink: /kb/321/Q321090/
 ---
 
 ## Q321090: SMS: Only Principal Site Creates an Advertisement for Client

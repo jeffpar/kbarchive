@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102118: Mac Wkst: Notification of Incoming Messages Delayed"
-permalink: kb/102/Q102118/
+permalink: /kb/102/Q102118/
 ---
 
 ## Q102118: Mac Wkst: Notification of Incoming Messages Delayed

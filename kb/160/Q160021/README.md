@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160021: WD97: GoBack Method Switches to Another Document"
-permalink: kb/160/Q160021/
+permalink: /kb/160/Q160021/
 ---
 
 ## Q160021: WD97: GoBack Method Switches to Another Document

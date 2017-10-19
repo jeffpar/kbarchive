@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152116: SAMPLE: DAO_OCX.EXE ActiveX Control Uses DAO to Query Database"
-permalink: kb/152/Q152116/
+permalink: /kb/152/Q152116/
 ---
 
 ## Q152116: SAMPLE: DAO_OCX.EXE ActiveX Control Uses DAO to Query Database

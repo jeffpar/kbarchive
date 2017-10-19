@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193173: PRB: Silent Setup of PDW Package Cannot Create New Folder"
-permalink: kb/193/Q193173/
+permalink: /kb/193/Q193173/
 ---
 
 ## Q193173: PRB: Silent Setup of PDW Package Cannot Create New Folder

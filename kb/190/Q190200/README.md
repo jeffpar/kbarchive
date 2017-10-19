@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190200: BUG: Name Conflict Error Even After Renaming Module"
-permalink: kb/190/Q190200/
+permalink: /kb/190/Q190200/
 ---
 
 ## Q190200: BUG: Name Conflict Error Even After Renaming Module

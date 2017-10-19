@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180547: XADM: Messages Generate NDR When Sent to Certain Sites"
-permalink: kb/180/Q180547/
+permalink: /kb/180/Q180547/
 ---
 
 ## Q180547: XADM: Messages Generate NDR When Sent to Certain Sites

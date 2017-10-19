@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173561: XADM: Can Not Limit Message Size Submitted by an Anonymous User"
-permalink: kb/173/Q173561/
+permalink: /kb/173/Q173561/
 ---
 
 ## Q173561: XADM: Can Not Limit Message Size Submitted by an Anonymous User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97105: FoxPro Err Msg: Incompatible Memory Manager"
-permalink: kb/097/Q97105/
+permalink: /kb/097/Q97105/
 ---
 
 ## Q97105: FoxPro Err Msg: Incompatible Memory Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232162: Incorrect CRL on Certificates Issued by Certificate Services 2.0"
-permalink: kb/232/Q232162/
+permalink: /kb/232/Q232162/
 ---
 
 ## Q232162: Incorrect CRL on Certificates Issued by Certificate Services 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249863: SGC Connections May Fail from Domestic Clients"
-permalink: kb/249/Q249863/
+permalink: /kb/249/Q249863/
 ---
 
 ## Q249863: SGC Connections May Fail from Domestic Clients

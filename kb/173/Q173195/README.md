@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173195: XCLN: Mac Client Shows No Insertion Point in Editable Field"
-permalink: kb/173/Q173195/
+permalink: /kb/173/Q173195/
 ---
 
 ## Q173195: XCLN: Mac Client Shows No Insertion Point in Editable Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106140: Cannot Run 32-Bit File Access with NE2000 ODI Driver"
-permalink: kb/106/Q106140/
+permalink: /kb/106/Q106140/
 ---
 
 ## Q106140: Cannot Run 32-Bit File Access with NE2000 ODI Driver

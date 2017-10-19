@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160688: Monster Truck: Retail Version Does Not Run But Demo Does"
-permalink: kb/160/Q160688/
+permalink: /kb/160/Q160688/
 ---
 
 ## Q160688: Monster Truck: Retail Version Does Not Run But Demo Does

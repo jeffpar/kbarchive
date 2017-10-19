@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126229: DOCERR: Moving Sender Outbox In SMS is Unsupported"
-permalink: kb/126/Q126229/
+permalink: /kb/126/Q126229/
 ---
 
 ## Q126229: DOCERR: Moving Sender Outbox In SMS is Unsupported

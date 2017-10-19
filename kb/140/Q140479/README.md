@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140479: Updated Sage.dll File Corrects Floating-Point Math Errors"
-permalink: kb/140/Q140479/
+permalink: /kb/140/Q140479/
 ---
 
 ## Q140479: Updated Sage.dll File Corrects Floating-Point Math Errors

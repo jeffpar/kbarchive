@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90726: WinLogin GP Fault in WLDAPI.DLL"
-permalink: kb/090/Q90726/
+permalink: /kb/090/Q90726/
 ---
 
 ## Q90726: WinLogin GP Fault in WLDAPI.DLL

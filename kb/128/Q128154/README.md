@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128154: How Toolbars Differ from Forms"
-permalink: kb/128/Q128154/
+permalink: /kb/128/Q128154/
 ---
 
 ## Q128154: How Toolbars Differ from Forms

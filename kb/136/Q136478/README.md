@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136478: Cannot Enter UNC Path for Windows NT Mail .MMF File"
-permalink: kb/136/Q136478/
+permalink: /kb/136/Q136478/
 ---
 
 ## Q136478: Cannot Enter UNC Path for Windows NT Mail .MMF File

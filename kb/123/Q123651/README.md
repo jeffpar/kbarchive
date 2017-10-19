@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123651: Writer: Starts Up in Black and White"
-permalink: kb/123/Q123651/
+permalink: /kb/123/Q123651/
 ---
 
 ## Q123651: Writer: Starts Up in Black and White

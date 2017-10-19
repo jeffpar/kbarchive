@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232394: HOWTO: Catch Run-time Errors in an ActiveX Script Host"
-permalink: kb/232/Q232394/
+permalink: /kb/232/Q232394/
 ---
 
 ## Q232394: HOWTO: Catch Run-time Errors in an ActiveX Script Host

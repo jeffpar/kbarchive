@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243385: Enabling Network Abstraction Layer Logging and Setting Logging"
-permalink: kb/243/Q243385/
+permalink: /kb/243/Q243385/
 ---
 
 ## Q243385: Enabling Network Abstraction Layer Logging and Setting Logging

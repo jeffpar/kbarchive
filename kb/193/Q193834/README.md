@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193834: Behavior of Unreachable Demand Dial Interfaces in RRAS"
-permalink: kb/193/Q193834/
+permalink: /kb/193/Q193834/
 ---
 
 ## Q193834: Behavior of Unreachable Demand Dial Interfaces in RRAS

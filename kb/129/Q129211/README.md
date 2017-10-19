@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129211: Frequently Asked Questions About Microsoft Exchange Profiles"
-permalink: kb/129/Q129211/
+permalink: /kb/129/Q129211/
 ---
 
 ## Q129211: Frequently Asked Questions About Microsoft Exchange Profiles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148860: HOWTO: Show Container's Toolbar During Inplace Activation"
-permalink: kb/148/Q148860/
+permalink: /kb/148/Q148860/
 ---
 
 ## Q148860: HOWTO: Show Container's Toolbar During Inplace Activation

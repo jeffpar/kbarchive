@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319282: FIX: SETFLDSTATE() Does Not Work for Field with Default Value"
-permalink: kb/319/Q319282/
+permalink: /kb/319/Q319282/
 ---
 
 ## Q319282: FIX: SETFLDSTATE() Does Not Work for Field with Default Value

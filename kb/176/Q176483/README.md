@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176483: PRB: Large Amounts of RAM Seem to Process Data Slowly"
-permalink: kb/176/Q176483/
+permalink: /kb/176/Q176483/
 ---
 
 ## Q176483: PRB: Large Amounts of RAM Seem to Process Data Slowly

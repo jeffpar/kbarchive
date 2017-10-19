@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180788: Changing User Rights Not Recognized Until Snabase is Restarted"
-permalink: kb/180/Q180788/
+permalink: /kb/180/Q180788/
 ---
 
 ## Q180788: Changing User Rights Not Recognized Until Snabase is Restarted

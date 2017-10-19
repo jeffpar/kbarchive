@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140335: Remote Mail Problems with Existing Connection to Mail Server"
-permalink: kb/140/Q140335/
+permalink: /kb/140/Q140335/
 ---
 
 ## Q140335: Remote Mail Problems with Existing Connection to Mail Server

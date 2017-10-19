@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149294: IBM CA/400 Gathers Incomplete List of Partner APPC LU Aliases"
-permalink: kb/149/Q149294/
+permalink: /kb/149/Q149294/
 ---
 
 ## Q149294: IBM CA/400 Gathers Incomplete List of Partner APPC LU Aliases

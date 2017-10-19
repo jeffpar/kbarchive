@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85288: Disk Controllers that Are Compatible with 32-Bit Disk Access"
-permalink: kb/085/Q85288/
+permalink: /kb/085/Q85288/
 ---
 
 ## Q85288: Disk Controllers that Are Compatible with 32-Bit Disk Access

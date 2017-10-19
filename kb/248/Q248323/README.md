@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248323: Fighter Ace II: Game Hangs When Switching from Direct3D to Glide"
-permalink: kb/248/Q248323/
+permalink: /kb/248/Q248323/
 ---
 
 ## Q248323: Fighter Ace II: Game Hangs When Switching from Direct3D to Glide

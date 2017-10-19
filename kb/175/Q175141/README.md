@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175141: Cluster Service Ignores Network Cards"
-permalink: kb/175/Q175141/
+permalink: /kb/175/Q175141/
 ---
 
 ## Q175141: Cluster Service Ignores Network Cards

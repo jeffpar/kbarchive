@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189915: BUG: ALTER TABLE Can Add Duplicate Relations to DBC"
-permalink: kb/189/Q189915/
+permalink: /kb/189/Q189915/
 ---
 
 ## Q189915: BUG: ALTER TABLE Can Add Duplicate Relations to DBC

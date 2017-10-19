@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182567: Fatal Exception in Msgsrv32.exe When You Quit Windows 95"
-permalink: kb/182/Q182567/
+permalink: /kb/182/Q182567/
 ---
 
 ## Q182567: Fatal Exception in Msgsrv32.exe When You Quit Windows 95

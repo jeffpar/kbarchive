@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107696: Modifying COMM.DRV to Support up to Nine Ports"
-permalink: kb/107/Q107696/
+permalink: /kb/107/Q107696/
 ---
 
 ## Q107696: Modifying COMM.DRV to Support up to Nine Ports

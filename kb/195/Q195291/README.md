@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195291: How to Disable #exec in Server-Side Include Files"
-permalink: kb/195/Q195291/
+permalink: /kb/195/Q195291/
 ---
 
 ## Q195291: How to Disable #exec in Server-Side Include Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137947: FIX: Bitmaps Black or Poor Quality Printed in LaserJet Reports"
-permalink: kb/137/Q137947/
+permalink: /kb/137/Q137947/
 ---
 
 ## Q137947: FIX: Bitmaps Black or Poor Quality Printed in LaserJet Reports

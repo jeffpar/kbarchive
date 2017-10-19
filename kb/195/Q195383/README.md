@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195383: WD97: Page Setup Not Available on File Menu"
-permalink: kb/195/Q195383/
+permalink: /kb/195/Q195383/
 ---
 
 ## Q195383: WD97: Page Setup Not Available on File Menu

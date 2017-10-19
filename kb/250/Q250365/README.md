@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250365: BUG: System Menu Gets Corrupted when File Dropped onto a MDI App"
-permalink: kb/250/Q250365/
+permalink: /kb/250/Q250365/
 ---
 
 ## Q250365: BUG: System Menu Gets Corrupted when File Dropped onto a MDI App

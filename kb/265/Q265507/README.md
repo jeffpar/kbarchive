@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265507: WD97: Picture's Object Anchor Moves Outside Table"
-permalink: kb/265/Q265507/
+permalink: /kb/265/Q265507/
 ---
 
 ## Q265507: WD97: Picture's Object Anchor Moves Outside Table

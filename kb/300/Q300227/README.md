@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300227: Microsoft Search Service May Not Delete Temporary Files"
-permalink: kb/300/Q300227/
+permalink: /kb/300/Q300227/
 ---
 
 ## Q300227: Microsoft Search Service May Not Delete Temporary Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139865: FIX: Programmatic Change in Grid Does Not Update ControlSource"
-permalink: kb/139/Q139865/
+permalink: /kb/139/Q139865/
 ---
 
 ## Q139865: FIX: Programmatic Change in Grid Does Not Update ControlSource

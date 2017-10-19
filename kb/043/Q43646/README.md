@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43646: INFO: What Causes the Startup Code to Be Included"
-permalink: kb/043/Q43646/
+permalink: /kb/043/Q43646/
 ---
 
 ## Q43646: INFO: What Causes the Startup Code to Be Included

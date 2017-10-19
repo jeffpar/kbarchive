@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102434: Accessing Global Symbols Defined in C from MASM"
-permalink: kb/102/Q102434/
+permalink: /kb/102/Q102434/
 ---
 
 ## Q102434: Accessing Global Symbols Defined in C from MASM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183385: WD97: No Insertion Point Deleting Text Box from Header/Footer"
-permalink: kb/183/Q183385/
+permalink: /kb/183/Q183385/
 ---
 
 ## Q183385: WD97: No Insertion Point Deleting Text Box from Header/Footer

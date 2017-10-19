@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112294: Err Msg Starting WFWG: Cannot Find NWGDI.DLL"
-permalink: kb/112/Q112294/
+permalink: /kb/112/Q112294/
 ---
 
 ## Q112294: Err Msg Starting WFWG: Cannot Find NWGDI.DLL

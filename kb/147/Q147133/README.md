@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147133: How to Set a Fax Modem to Answer Calls Automatically"
-permalink: kb/147/Q147133/
+permalink: /kb/147/Q147133/
 ---
 
 ## Q147133: How to Set a Fax Modem to Answer Calls Automatically

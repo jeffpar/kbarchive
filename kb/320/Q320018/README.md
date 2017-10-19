@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320018: Dungeon Siege: Minimum System Requirements for Version 1.0"
-permalink: kb/320/Q320018/
+permalink: /kb/320/Q320018/
 ---
 
 ## Q320018: Dungeon Siege: Minimum System Requirements for Version 1.0

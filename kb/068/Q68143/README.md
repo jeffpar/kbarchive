@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68143: PRB: Stringize Operator Fails to Insert Backslashes"
-permalink: kb/068/Q68143/
+permalink: /kb/068/Q68143/
 ---
 
 ## Q68143: PRB: Stringize Operator Fails to Insert Backslashes

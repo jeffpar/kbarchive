@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179448: 6-Day Password Change Notification Cannot Be Changed"
-permalink: kb/179/Q179448/
+permalink: /kb/179/Q179448/
 ---
 
 ## Q179448: 6-Day Password Change Notification Cannot Be Changed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152235: Monitor Service Stops Immediately After Being Started"
-permalink: kb/152/Q152235/
+permalink: /kb/152/Q152235/
 ---
 
 ## Q152235: Monitor Service Stops Immediately After Being Started

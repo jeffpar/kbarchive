@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98618: File Sizes and Dates for Windows Disks with New &quot;User's Guide&quot;"
-permalink: kb/098/Q98618/
+permalink: /kb/098/Q98618/
 ---
 
 ## Q98618: File Sizes and Dates for Windows Disks with New &quot;User's Guide&quot;

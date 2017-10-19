@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79276: HOWTO: Subclass the Desktop and Windows of Other Applications"
-permalink: kb/079/Q79276/
+permalink: /kb/079/Q79276/
 ---
 
 ## Q79276: HOWTO: Subclass the Desktop and Windows of Other Applications

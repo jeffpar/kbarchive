@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256198: SMS: Hardware Inventory Uses SMSCliToknAcct&amp; on Mapped Drives"
-permalink: kb/256/Q256198/
+permalink: /kb/256/Q256198/
 ---
 
 ## Q256198: SMS: Hardware Inventory Uses SMSCliToknAcct&amp; on Mapped Drives

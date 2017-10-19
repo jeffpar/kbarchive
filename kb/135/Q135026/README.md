@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135026: X400: Doc Err: Customized Address Maps File"
-permalink: kb/135/Q135026/
+permalink: /kb/135/Q135026/
 ---
 
 ## Q135026: X400: Doc Err: Customized Address Maps File

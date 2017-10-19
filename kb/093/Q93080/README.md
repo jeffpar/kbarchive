@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93080: PC Ext: External Tries Repeatedly to Deliver Mail"
-permalink: kb/093/Q93080/
+permalink: /kb/093/Q93080/
 ---
 
 ## Q93080: PC Ext: External Tries Repeatedly to Deliver Mail

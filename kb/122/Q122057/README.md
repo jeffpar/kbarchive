@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122057: How to Use Remote Control with TCP/IP"
-permalink: kb/122/Q122057/
+permalink: /kb/122/Q122057/
 ---
 
 ## Q122057: How to Use Remote Control with TCP/IP

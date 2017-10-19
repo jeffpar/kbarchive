@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174938: SMS: Rservice May Install Service with Bad Password"
-permalink: kb/174/Q174938/
+permalink: /kb/174/Q174938/
 ---
 
 ## Q174938: SMS: Rservice May Install Service with Bad Password

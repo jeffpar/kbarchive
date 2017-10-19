@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154586: Console Text Incorrectly Formatted"
-permalink: kb/154/Q154586/
+permalink: /kb/154/Q154586/
 ---
 
 ## Q154586: Console Text Incorrectly Formatted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82792: Meaning of SYSTEM.INI's MaxCOMPort Switch"
-permalink: kb/082/Q82792/
+permalink: /kb/082/Q82792/
 ---
 
 ## Q82792: Meaning of SYSTEM.INI's MaxCOMPort Switch

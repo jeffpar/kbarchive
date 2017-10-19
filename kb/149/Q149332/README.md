@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149332: Problems Connecting to MSN with U.S. Robotics Sportster Modem"
-permalink: kb/149/Q149332/
+permalink: /kb/149/Q149332/
 ---
 
 ## Q149332: Problems Connecting to MSN with U.S. Robotics Sportster Modem

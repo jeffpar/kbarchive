@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244205: WD97: FileName Code Does Not Resolve Mapped NetWare Server Path"
-permalink: kb/244/Q244205/
+permalink: /kb/244/Q244205/
 ---
 
 ## Q244205: WD97: FileName Code Does Not Resolve Mapped NetWare Server Path

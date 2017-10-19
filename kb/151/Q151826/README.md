@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151826: XADM: How to Migrate cc:Mail Messages to Exchange Mailboxes"
-permalink: kb/151/Q151826/
+permalink: /kb/151/Q151826/
 ---
 
 ## Q151826: XADM: How to Migrate cc:Mail Messages to Exchange Mailboxes

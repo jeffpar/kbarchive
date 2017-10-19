@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152336: How to Set Up the 3Com Impact for Dual-Channel ISDN"
-permalink: kb/152/Q152336/
+permalink: /kb/152/Q152336/
 ---
 
 ## Q152336: How to Set Up the 3Com Impact for Dual-Channel ISDN

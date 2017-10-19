@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176777: FIX: Multi-Use OLE .Exe File Not Releasing Memory"
-permalink: kb/176/Q176777/
+permalink: /kb/176/Q176777/
 ---
 
 ## Q176777: FIX: Multi-Use OLE .Exe File Not Releasing Memory

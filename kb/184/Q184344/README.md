@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184344: Reconcile on DHCP Scope Does Not Work Correctly for BOOTP Client"
-permalink: kb/184/Q184344/
+permalink: /kb/184/Q184344/
 ---
 
 ## Q184344: Reconcile on DHCP Scope Does Not Work Correctly for BOOTP Client

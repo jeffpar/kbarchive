@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108521: FIX: ClassWizard Parsing Error with Float Variables"
-permalink: kb/108/Q108521/
+permalink: /kb/108/Q108521/
 ---
 
 ## Q108521: FIX: ClassWizard Parsing Error with Float Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167150: WD97: Invalid Page Fault with WordBasic.EditLinks and &#92;Sel"
-permalink: kb/167/Q167150/
+permalink: /kb/167/Q167150/
 ---
 
 ## Q167150: WD97: Invalid Page Fault with WordBasic.EditLinks and &#92;Sel

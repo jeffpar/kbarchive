@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172014: WD97: Equation Editor Help Reference Incorrect"
-permalink: kb/172/Q172014/
+permalink: /kb/172/Q172014/
 ---
 
 ## Q172014: WD97: Equation Editor Help Reference Incorrect

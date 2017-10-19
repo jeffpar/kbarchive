@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190504: BUG: CommandButton Style Problem with Cyrillic Script"
-permalink: kb/190/Q190504/
+permalink: /kb/190/Q190504/
 ---
 
 ## Q190504: BUG: CommandButton Style Problem with Cyrillic Script

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181577: WD97: Text Form Fields Not Retained During Mail Merge"
-permalink: kb/181/Q181577/
+permalink: /kb/181/Q181577/
 ---
 
 ## Q181577: WD97: Text Form Fields Not Retained During Mail Merge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323056: &quot;Error Opening Sub-Domain&quot; Error Message When You Open SNA Manag"
-permalink: kb/323/Q323056/
+permalink: /kb/323/Q323056/
 ---
 
 ## Q323056: &quot;Error Opening Sub-Domain&quot; Error Message When You Open SNA Manag
